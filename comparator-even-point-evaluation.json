@@ -1,0 +1,14 @@
+{
+  "theorem_names": [
+    "SheafOfModules.presheafW_isMonoidal",
+    "ArithmeticThetaPalomarDual465.canonicalGlobalSectionsEquiv",
+    "ArithmeticThetaPalomarTheta473.evenPointThetaEvaluation"
+  ],
+  "challenge_module": "EvenPointEvaluationChallenge",
+  "solution_module": "EvenPointEvaluationSolution",
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

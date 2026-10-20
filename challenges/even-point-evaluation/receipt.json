@@ -1,0 +1,197 @@
+{
+  "utc": "2026-10-20T22:43:19.766193+00:00",
+  "status": "complete original099 independent local interface checked",
+  "new_ids": [
+    "accepted-099"
+  ],
+  "checks": {
+    "Challenge": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/Challenge.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/Challenge.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 27.2,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "8c1ed74b390630fb5193a91f29ec91d598f7c09a9c58b49d88fa3078bf7fb9a8",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "Solution": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/Solution.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/Solution.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.42,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "32ea770c3d839220ed4a946862b733903c4f22efb619bfe47d7d63351de3194f",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "ChallengeAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/ChallengeAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/ChallengeAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 22.19,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "3c264985f45056427977e35dd0b2fd5a2ef7528895b936a90346adabbec44f59",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "SolutionAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/SolutionAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/SolutionAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 28.05,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "61b466bab2f44a87a2762d338225c334ecda016fa0cd06dcc6a5877bcd2f1947",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "DefinitionCompatibility": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/DefinitionCompatibility.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/DefinitionCompatibility.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.17,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "fbaac1fb0e5c93476ef9b592682bbedc7998029529fa972979eb00c6e2205028",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "OriginalEndpointAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/OriginalEndpointAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/OriginalEndpointAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.17,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "8fb6b6ab93cc7e6bd634e1de832488d31c34e6c618bc41f63497c3a2c52e3d01",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "TargetTypeAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/TargetTypeAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/TargetTypeAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.12,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "032b7671a51e88d097d21ded16a7f7f5239d48512799736065e583c4ac3c925d",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "TargetHoleAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/TargetHoleAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/TargetHoleAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.57,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "c2b04cf9b1941bff80e5b992db52112d1cfe2843efec5a650caf73d0168ab93f",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    }
+  },
+  "audit_counts": {
+    "Challenge": {
+      "declarations": 377,
+      "propagated_holes": 132,
+      "project_imports": 0
+    },
+    "Solution": {
+      "declarations": 22,
+      "propagated_holes": 0,
+      "project_imports": 3182
+    }
+  },
+  "target_types_checked": 3,
+  "semantic_declarations_compatible": 163,
+  "all_holes_selected_exactly_once": true,
+  "full_original_theorem_equality_audit_passed": true,
+  "no_new_main_assumptions": true,
+  "stats": {
+    "Challenge": {
+      "lines": 517,
+      "bytes": 31736,
+      "sha256": "8c1ed74b390630fb5193a91f29ec91d598f7c09a9c58b49d88fa3078bf7fb9a8"
+    },
+    "Solution": {
+      "lines": 91,
+      "bytes": 8240,
+      "sha256": "32ea770c3d839220ed4a946862b733903c4f22efb619bfe47d7d63351de3194f"
+    }
+  },
+  "official_pass": false,
+  "actual_root_build_pending": true,
+  "bindings": {
+    "DefinitionCompatibility-check-01.log": "296106b0d12dd7685e3b30fcb98895b69af319b15554ca2f28e31baf89e6ae5a",
+    "OriginalEndpointAudit.lean": "8fb6b6ab93cc7e6bd634e1de832488d31c34e6c618bc41f63497c3a2c52e3d01",
+    "comparator.json": "efa0424d528bac4fcb00a9d2f63a801bbac873218628a6031381020f067c17ad",
+    "TargetHoleAudit-check-01.log": "3387b2d9db926b58ed0d311ac3488d8c46420e41e0dc1d3275dcfb2119845c26",
+    "TargetHoleAudit-receipt-01.json": "b7e6578457d04435538cc5562504a600af039ddf4ef90356d1c62583e8e994f0",
+    "compile.py": "254522f5893174a01b5e1c12326654b57a8d4d45c08bc55f606a19fdfcf3cc31",
+    "DefinitionCompatibility-receipt-01.json": "be55c2b89de3b5ebffc3ed3e95c80bf4c49b28b5447b8bff58fe908371d89039",
+    "Scope.json": "1f1121f8a2c25dad1658217f7f82dcd8b018db6b5c2a7ca82ad3d09895c9cee0",
+    "README.md": "599ca28c06f546885786f898182247a9cc0f676cbad5962a157a683da9301af6",
+    "OriginalEndpointAudit-check-01.log": "1e6c9bb4dc69a45080a552825cf3b4335e8c278f9f9406875784d9bdfa600c64",
+    "TargetHoleAudit.lean": "c2b04cf9b1941bff80e5b992db52112d1cfe2843efec5a650caf73d0168ab93f",
+    "SolutionAudit-check-01.log": "23d21139c5dbe0e46d60e58c46a49582cb23a455abc130469e8c549b9d8cf7b3",
+    "Solution.uncompressed.lean.txt": "40cdfc95a846fb58eea9795068bb1e49976d937a43f583e3fa632b33cd71fd2e",
+    "TargetTypeAudit.lean": "032b7671a51e88d097d21ded16a7f7f5239d48512799736065e583c4ac3c925d",
+    "assemble.py": "6f887d8fd33b603ea694a40a5152b5c5f25a9a76f10a6d248330396b0383c5ab",
+    "input-bindings.json": "3453eeb39ce6ab05f9293392de2b8ccbc65fe1d1ce709e7115f764138a5e5a54",
+    "SolutionAudit-receipt-01.json": "b1305358f4393db8d91fcd9d047c1c02e6db8a984a52e28dbd1f3669000dfd1c",
+    "Challenge-check-01.log": "2c414d8d0d1549124bbf68697cd611d8c6f70307c31cbdad2563284246ec1ae0",
+    "Solution-receipt-01.json": "f20d7265c1b9f962dd5b078bc5c4d7d16fd5120bbca15aa89ed31accbb96b849",
+    "ChallengeAudit-check-01.log": "064fc817a0cc85163ee422bc3f90dcd065d480f2b080947d4d4d829dd589bc9d",
+    "OriginalEndpointAudit-receipt-01.json": "3d5c7398605d1d6f774a60c59301b22693d8847debd1a84e29c4b61de7476e2a",
+    "finalize.py": "e4bc20c2cf84da5a74793ed0f3e25f74e2ccb71960a179f0fb092b871ce76b8c",
+    "SourceMap.json": "72fa73fa621810e9f3765725e82ce43a3841bd3438b570a9dd6b6411102d15b3",
+    "TargetTypeAudit-receipt-01.json": "a5ae58d4cbe492354a64fbe77bc79ec4f215ecc20908518219ece15524d91948",
+    "DefinitionCompatibility.lean": "fbaac1fb0e5c93476ef9b592682bbedc7998029529fa972979eb00c6e2205028",
+    "SolutionAudit.lean": "61b466bab2f44a87a2762d338225c334ecda016fa0cd06dcc6a5877bcd2f1947",
+    "Challenge.uncompressed.lean.txt": "d8f56ab5bf9ddc476f3e8891658b9055857498352cb18fd2348e300635956ad2",
+    "Solution.lean": "32ea770c3d839220ed4a946862b733903c4f22efb619bfe47d7d63351de3194f",
+    "ChallengeAudit.lean": "3c264985f45056427977e35dd0b2fd5a2ef7528895b936a90346adabbec44f59",
+    "Targets.json": "70390743046202b15b1988e49e5e7fed6c9d33a01fd535f7540e7c4fc7af663b",
+    "Challenge.lean": "8c1ed74b390630fb5193a91f29ec91d598f7c09a9c58b49d88fa3078bf7fb9a8",
+    "TargetTypeAudit-check-01.log": "bb5f7dfd5b6a2004069477db47299d7a48ebdac5fed930b1a8275dc92ccfb067",
+    "Challenge-receipt-01.json": "3d1af839e30f0ad14d16d8d984dba73acfab094d3c2e76ad9e00fa542f731143",
+    "Solution-check-01.log": "79ff4b964c6f5645720738590f906fc73c4cae80c32bb0c5fdd843de5da860ab",
+    "ChallengeAudit-receipt-01.json": "3ca0d2f4347e44cd730a09642a4bdaca57261c254fdd7cfcfb427720471602c6"
+  }
+}

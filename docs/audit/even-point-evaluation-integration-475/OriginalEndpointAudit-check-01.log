@@ -1,0 +1,7 @@
+'ArithmeticThetaPalomarTheta473.recover_original_099' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarTheta473.evaluationSection_eq_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarDual465.globalSectionsEquiv_eq_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

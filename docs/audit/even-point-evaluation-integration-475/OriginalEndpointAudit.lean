@@ -1,0 +1,9 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : @ArithmeticThetaMultiplierKeyR0217.even_point_theta_evaluation =
+  @ArithmeticThetaPalomarTheta473.recover_original_099 := rfl
+#print axioms ArithmeticThetaPalomarTheta473.recover_original_099
+#print axioms ArithmeticThetaPalomarTheta473.evaluationSection_eq_original
+#print axioms ArithmeticThetaPalomarDual465.globalSectionsEquiv_eq_original

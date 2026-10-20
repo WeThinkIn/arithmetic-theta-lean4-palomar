@@ -1,0 +1,23 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-099"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-099"
+  ],
+  "universe": "Original arbitrary universe u",
+  "target_count": 3,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Actual family, even point, order-two and avoidance conditions",
+    "Locally principal non-zero-divisor ideal invertibility and actual theta-line invertibility",
+    "Actual zeroSchemeIdeal built from all local coefficients and homomorphisms to the unit sheaf",
+    "Unique original rigidification at the identity",
+    "Actual pushforward generator is an isomorphism",
+    "Every normalized identity-evaluation map is an isomorphism",
+    "Actual generator/evaluation composite is the identity",
+    "Actual evaluation section generates the dual pushforward on every subopen"
+  ]
+}

@@ -1,0 +1,80 @@
+ Quot.sound]
+info: Proof/LocallyConstantMarkingComparisonR0216.lean:133:0: 'ArithmeticThetaEvenMarkingTorsorR0216.LocallyConstantMarkingComparison.localChange_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/LocallyConstantMarkingComparisonR0216.lean:178:0: 'ArithmeticThetaEvenMarkingTorsorR0216.LocallyConstantMarkingComparison.glue_localWitness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/LocallyConstantMarkingComparisonR0216.lean:233:0: 'ArithmeticThetaEvenMarkingTorsorR0216.LocallyConstantMarkingComparison.torsion_sections_locally_equal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/LocallyConstantMarkingComparisonR0216.lean:286:0: 'ArithmeticThetaEvenMarkingTorsorR0216.LocallyConstantMarkingComparison.field_marking_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/LocallyConstantMarkingComparisonR0216.lean:347:0: 'ArithmeticThetaEvenMarkingTorsorR0216.LocallyConstantMarkingComparison.field_evaluation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/LocallyConstantMarkingComparisonR0216.lean:437:0: 'ArithmeticThetaEvenMarkingTorsorR0216.LocallyConstantMarkingComparison.affine_field_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/LocallyConstantMarkingComparisonR0216.lean:529:0: 'ArithmeticThetaEvenMarkingTorsorR0216.LocallyConstantMarkingComparison.affine_specialization_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/LocallyConstantMarkingComparisonR0216.lean:595:0: 'ArithmeticThetaEvenMarkingTorsorR0216.LocallyConstantMarkingComparison.affine_local_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/LocallyConstantMarkingComparisonR0216.lean:596:0: 'ArithmeticThetaEvenMarkingTorsorR0216.LocallyConstantMarkingComparison.localWitness_of_open_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/LocallyConstantMarkingComparisonR0216.lean:677:0: 'ArithmeticThetaEvenMarkingTorsorR0216.LocallyConstantMarkingComparison.localWitness_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/LocallyConstantMarkingComparisonR0216.lean:689:0: 'ArithmeticThetaEvenMarkingTorsorR0216.locally_constant_marking_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12109/12114] Replayed EvenCoverTorsorR0216
+info: Proof/EvenCoverTorsorR0216.lean:171:0: 'ArithmeticThetaEvenMarkingTorsorR0216.even_cover_torsor' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [12110/12114] Replayed EvenCoverBaseChangeR0216
+warning: Proof/EvenCoverBaseChangeR0216.lean:136:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/EvenCoverBaseChangeR0216.lean:149:0: 'ArithmeticThetaEvenMarkingTorsorR0216.even_cover_base_change' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12112/12114] Replayed EvenPointThetaEvaluationR0217
+warning: Proof/EvenPointThetaEvaluationR0217.lean:132:7: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/EvenPointThetaEvaluationR0217.lean:299:0: 'ArithmeticThetaMultiplierKeyR0217.even_point_theta_evaluation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12113/12114] Built EvenPointEvaluationSolution (8.0s)
+warning: EvenPointEvaluationSolution.lean:82:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: EvenPointEvaluationSolution.lean:87:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [12114/12114] Built EvenPointEvaluationChallenge (33s)
+warning: EvenPointEvaluationChallenge.lean:293:8: declaration uses `sorry`
+warning: EvenPointEvaluationChallenge.lean:313:8: automatically included section variable(s) unused in theorem `SheafOfModules.tensorUnit_eq`:
+  [J.HasSheafCompose (forget₂ RingCat AddCommGrpCat)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [J.HasSheafCompose (forget₂ RingCat AddCommGrpCat)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EvenPointEvaluationChallenge.lean:389:8: declaration uses `sorry`
+warning: EvenPointEvaluationChallenge.lean:514:8: declaration uses `sorry`
+Build completed successfully (12114 jobs).

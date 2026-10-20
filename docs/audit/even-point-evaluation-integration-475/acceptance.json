@@ -1,0 +1,19 @@
+{
+  "accepted_for_local_integration": true,
+  "new_ids": [
+    "accepted-099"
+  ],
+  "basis": "Complete frozen473 source/type/axiom checks and474 root scope review; no official acceptance",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/Challenge.lean": "8c1ed74b390630fb5193a91f29ec91d598f7c09a9c58b49d88fa3078bf7fb9a8",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/Solution.lean": "32ea770c3d839220ed4a946862b733903c4f22efb619bfe47d7d63351de3194f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/Scope.json": "1f1121f8a2c25dad1658217f7f82dcd8b018db6b5c2a7ca82ad3d09895c9cee0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/SourceMap.json": "72fa73fa621810e9f3765725e82ce43a3841bd3438b570a9dd6b6411102d15b3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/receipt.json": "a0839234f6ed11035df57b78d58d155a8852b018ab7d7a67895b36736747da7f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/README.md": "599ca28c06f546885786f898182247a9cc0f676cbad5962a157a683da9301af6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/comparator.json": "efa0424d528bac4fcb00a9d2f63a801bbac873218628a6031381020f067c17ad",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/Targets.json": "70390743046202b15b1988e49e5e7fed6c9d33a01fd535f7540e7c4fc7af663b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-scope-review-474/Review.md": "c3d22aad468a57283d7c136056cdd24ae37aa619278e2faf610b56468f232979",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-scope-review-474/receipt.json": "3306762649b8dff1ef317f1d03782f21eacfa85ae2c9bbafc72e94eaf5713315"
+  }
+}

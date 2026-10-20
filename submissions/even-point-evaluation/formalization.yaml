@@ -1,0 +1,52 @@
+version: v0.4
+project:
+  name: Complete actual even-point theta evaluation
+  description: 'Full original099 at arbitrary universe u: actual even-point ideal
+    and dual line, exact zeroSchemeIdeal, unique identity rigidification, isomorphism
+    of the actual pushforward generator, and every normalized evaluation isomorphism
+    with generator/evaluation identity and frame generation on every subopen. No full
+    marking or phase assumption. Three support/main targets selected; no whole-paper
+    completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Full original099 at arbitrary universe u: actual even-point ideal and dual
+    line, exact zeroSchemeIdeal, unique identity rigidification, isomorphism of the
+    actual pushforward generator, and every normalized evaluation isomorphism with
+    generator/evaluation identity and frame generation on every subopen. No full marking
+    or phase assumption. Three support/main targets selected; no whole-paper completion
+    claimed.'
+fidelity:
+  divergences: Full original099 statement and universe recovered by compiled rfl equality;
+    actual ideal/kernel/dual/canonical section/pushforward/evaluation and all local
+    zero-scheme coefficients retained. Canonical global-sections equivalence proved
+    equal to original. No new main assumption. Three targets and163 semantic definitions
+    checked; Challenge517lines/31736bytes.

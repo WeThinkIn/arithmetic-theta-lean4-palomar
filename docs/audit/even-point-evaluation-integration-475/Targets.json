@@ -1,0 +1,23 @@
+{
+  "targets": [
+    {
+      "end": 294,
+      "name": "SheafOfModules.presheafW_isMonoidal",
+      "start": 293,
+      "hole_line": 294
+    },
+    {
+      "end": 390,
+      "name": "ArithmeticThetaPalomarDual465.canonicalGlobalSectionsEquiv",
+      "start": 389,
+      "hole_line": 390
+    },
+    {
+      "end": 516,
+      "name": "ArithmeticThetaPalomarTheta473.evenPointThetaEvaluation",
+      "start": 514,
+      "hole_line": 516
+    }
+  ],
+  "every_literal_hole_selected_exactly_once": true
+}

@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-20T22:43:53.811829+00:00",
+  "review_kind": "root source/type review, not separate-model or official review",
+  "local_scope_review_passed": true,
+  "new_original_endpoint_ids": [
+    "accepted-099"
+  ],
+  "mapped_original_statement_exact": true,
+  "original_universe_retained": true,
+  "no_added_main_assumptions": true,
+  "all_3_holes_targeted_once": true,
+  "all_target_types_and_universes_compared": true,
+  "original_statement_recovery_compiled": true,
+  "official_pass": false,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/Challenge.lean": "8c1ed74b390630fb5193a91f29ec91d598f7c09a9c58b49d88fa3078bf7fb9a8",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/Solution.lean": "32ea770c3d839220ed4a946862b733903c4f22efb619bfe47d7d63351de3194f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/receipt.json": "a0839234f6ed11035df57b78d58d155a8852b018ab7d7a67895b36736747da7f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/Scope.json": "1f1121f8a2c25dad1658217f7f82dcd8b018db6b5c2a7ca82ad3d09895c9cee0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/SourceMap.json": "72fa73fa621810e9f3765725e82ce43a3841bd3438b570a9dd6b6411102d15b3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/comparator.json": "efa0424d528bac4fcb00a9d2f63a801bbac873218628a6031381020f067c17ad",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/Targets.json": "70390743046202b15b1988e49e5e7fed6c9d33a01fd535f7540e7c4fc7af663b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/TargetTypeAudit-check-01.log": "bb5f7dfd5b6a2004069477db47299d7a48ebdac5fed930b1a8275dc92ccfb067",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/DefinitionCompatibility-check-01.log": "296106b0d12dd7685e3b30fcb98895b69af319b15554ca2f28e31baf89e6ae5a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/even-point-evaluation-package-473/OriginalEndpointAudit-check-01.log": "1e6c9bb4dc69a45080a552825cf3b4335e8c278f9f9406875784d9bdfa600c64"
+  },
+  "review_sha256": "c3d22aad468a57283d7c136056cdd24ae37aa619278e2faf610b56468f232979"
+}

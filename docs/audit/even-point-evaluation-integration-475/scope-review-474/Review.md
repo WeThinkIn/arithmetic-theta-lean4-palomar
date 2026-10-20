@@ -1,0 +1,11 @@
+# Full original099 source/type scope review
+
+Root source/type review, not separate-model or official semantic acceptance. The complete original099 type and all conjuncts are recovered by compiled rfl theorem equality at the original arbitrary universe u.
+
+Family retains the actual scheme, proper structure map, smooth relative dimension one, geometric connectedness and the entire original group law. EvenPoint retains the actual point, order-two equation and avoidance of the identity. The base remains any original scheme over a characteristic-zero field; no full-level marking, chosen Miller phase, affine presentation or global frame is assumed.
+
+The ideal is literally the kernel ideal of the point. Its invertibility predicate uses non-zero-divisor generators over an affine basic-open cover. The ideal module is the actual kernel module; the line is its internal-Hom dual; the theta section is curry of the ideal inclusion. zeroSchemeIdeal retains all local coefficients and all local morphisms to the unit sheaf, not merely a chosen generator or pointwise zero set. Its equality to the original ideal is a conclusion.
+
+All further conclusions remain: the actual line is invertible; the identity rigidification exists uniquely; the actual pushforward generator is an isomorphism; for every original rigidification, the actual evaluation is an isomorphism, generator followed by evaluation equals the identity, and its global evaluation section generates the actual dual pushforward on every subopen. The canonical global-section-to-hom equivalence is fixed by actual categorical evaluation and has a compiled equality bridge to the original. No conclusion becomes an assumption.
+
+Challenge is517lines/31736bytes and imports Mathlib only. Three holes are explicitly selected once. All3 target types/universes and original/Solution axiom closures match.163 non-Proposition types and available bodies match;377 Challenge and22 new Solution declarations pass all-declaration axiom checks.132 propagated Challenge holes come from the selected support constructions; Solution has zero holes and only standard axioms. Actual root build is still required for integration credit. Whole-paper verification and this configuration's official verification remain pending.
