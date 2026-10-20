@@ -5,13 +5,27 @@ on:
 permissions:
   contents: read
 jobs:
+  request:
+    runs-on: ubuntu-24.04
+    outputs:
+      id: ${{ steps.identifier.outputs.id }}
+    steps:
+      - id: identifier
+        name: Generate twelve-character preflight request identifier
+        run: |
+          python3 - <<'PY'
+          import os, secrets
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              print('id=' + secrets.token_hex(6), file=output)
+          PY
   palomar-preflight:
+    needs: request
     uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44
     with:
       repository: ${{ github.repository }}
       commit: ${{ github.sha }}
       pipeline_commit: d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44
-      request_id: preflight${{ github.run_id }}
+      request_id: ${{ needs.request.outputs.id }}
       mode: full
       execution_profile: palomar-standard-v1
       options: '{"comparator_config_path":"comparator.json","authorization_relationship":"I am a responsible author or maintainer"}'
