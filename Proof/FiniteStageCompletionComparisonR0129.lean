@@ -3,6 +3,9 @@ module
 public import InfinitesimalPolygonDefinitionsR0129
 
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Finite quotients of the actual node completion and coordinate completions. -/
 set_option autoImplicit false
@@ -170,8 +173,8 @@ theorem finite_stage_completion_comparison :
     have hfil : z - ArithmeticThetaAnnularTorsionPrereqR0053.complete k s ∈
         ArithmeticThetaAnnularTorsionPrereqR0053.filtration k (n+1) := by
       change z - algebraMap _ _ s ∈
-        (Ideal.span {algebraMap (ArithmeticThetaAnnularTorsionPrereqR0053.Node k)
-          (Hat k) (sourceParameter k)}) ^ (n+1)
+        (Ideal.span {(algebraMap (ArithmeticThetaAnnularTorsionPrereqR0053.Node k)
+          (Hat k) (sourceParameter k))}) ^ (n+1)
       rw [← tau_eq, ← node_ideal_eq]
       exact hs
     have hopen : trunc (HatOpen k side) (completeOpen k 0 side (openParameter k side)) n

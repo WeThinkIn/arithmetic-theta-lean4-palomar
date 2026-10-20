@@ -5,6 +5,10 @@ public import Theorems.Thm_Ideal_exists_mem_and_mem_and_radical_span_singleton_i
 public import P2M.Util
 
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_Ideal_exists_isPrime_le_and_le_and_ringKrullDim_quotient_eq_one
 
 set_option autoImplicit false
@@ -64,8 +68,8 @@ theorem ringKrullDim_eq_of_isIntegral_of_injective {R S : Type*} [CommRing R] [C
 
 theorem ringKrullDim_mvPolynomial_fin (k : Type u) [Field k] (s : ℕ) :
     ringKrullDim (MvPolynomial (Fin s) k) = s := by
-  rw [MvPolynomial.ringKrullDim_of_isNoetherianRing, ringKrullDim_eq_zero_of_field, zero_add,
-    Nat.card_eq_fintype_card, Fintype.card_fin]
+  rw [MvPolynomial.ringKrullDim_of_isNoetherianRing, ringKrullDim_eq_zero_of_field, zero_add]
+  simp [ENat.card_eq_coe_fintype_card]
 
 theorem height_eq_of_isMaximal_mvPolynomial (k : Type u) [Field k] :
     ∀ (n : ℕ) (M : Ideal (MvPolynomial (Fin n) k)), M.IsMaximal → M.height = n := by

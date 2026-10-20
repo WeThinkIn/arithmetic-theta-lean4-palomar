@@ -8,6 +8,8 @@ public import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Functor
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_WeierstrassProjModel_projModel_isPullback_baseChange
 
 set_option autoImplicit false
@@ -109,8 +111,8 @@ theorem polynomial_add_X0_cube (V : WeierstrassCurve.Projective R) :
 theorem mk_X0_cube_mem_span_mk_X2 (V : WeierstrassCurve.Projective R) :
     (Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal
         (X 0 : MvPolynomial (Fin 3) R)) ^ 3
-      ∈ Ideal.span {Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal
-          (X 2 : MvPolynomial (Fin 3) R)} := by
+      ∈ Ideal.span {(Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal
+          (X 2 : MvPolynomial (Fin 3) R))} := by
   have hpoly : Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal V.polynomial = 0 :=
     Ideal.Quotient.eq_zero_iff_mem.mpr (Ideal.subset_span (Set.mem_singleton _))
   have hid := congrArg (Ideal.Quotient.mk (projModelHomogeneousIdealCR V).toIdeal)

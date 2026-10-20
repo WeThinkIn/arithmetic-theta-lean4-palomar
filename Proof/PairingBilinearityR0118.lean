@@ -2,8 +2,13 @@ module
 
 public import AdditionFunctionDivisorR0118
 public import PairingShiftIndependenceR0118
+import all MovedSupportMillerPairingR0116
 
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Bilinearity of the actual moved-divisor evaluation. -/
 noncomputable section

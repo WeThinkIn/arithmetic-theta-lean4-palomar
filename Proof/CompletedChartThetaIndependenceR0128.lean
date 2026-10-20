@@ -4,6 +4,10 @@ public import AnnularFullSeriesIdentificationR0128
 public import Mathlib.LinearAlgebra.LinearIndependent.Basic
 
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Independence in the actual completed node, detected by all unit
 specializations and Dedekind independence of Laurent characters. -/

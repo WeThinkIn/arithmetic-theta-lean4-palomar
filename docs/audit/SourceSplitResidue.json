@@ -13,7 +13,7 @@
     "main_log": "evidence/direct-residue-main-78.log",
     "main_exit_code": 0,
     "root_argument": "--root=Proof",
-    "full_integration_build": "pending root79"
+    "full_integration_build": "Both split modules and downstream theorem wrapper passed in build-root-79.log; complete GoalRoot build still pending."
   },
   "main_outer_options_restored": [
     "autoImplicit false",

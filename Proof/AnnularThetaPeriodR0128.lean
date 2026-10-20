@@ -4,6 +4,11 @@ public import ThetaLimitRecoveryRootR0128
 public import AnnularThetaGluingDefinitionsR0128
 
 @[expose] public section
+set_option synthInstance.maxHeartbeats 200000
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
