@@ -1,0 +1,80 @@
+warning: MultiplierFourthChallenge.lean:839:8: declaration uses `sorry`
+warning: MultiplierFourthChallenge.lean:844:8: declaration uses `sorry`
+warning: MultiplierFourthChallenge.lean:875:8: declaration uses `sorry`
+warning: MultiplierFourthChallenge.lean:894:8: declaration uses `sorry`
+⚠ [12190/12190] Built MultiplierFourthSolution (28s)
+warning: MultiplierFourthSolution.lean:58:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: MultiplierFourthSolution.lean:250:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MultiplierFourthSolution.lean:256:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MultiplierFourthSolution.lean:264:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MultiplierFourthSolution.lean:267:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MultiplierFourthSolution.lean:272:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MultiplierFourthSolution.lean:272:574: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MultiplierFourthSolution.lean:275:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MultiplierFourthSolution.lean:275:574: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: MultiplierFourthSolution.lean:310:0: 'ArithmeticThetaPalomarCanonicalTensor382.canonicalTensorComparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MultiplierFourthSolution.lean:311:0: 'ArithmeticThetaPalomarCanonicalTensor382.compatible_iff_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: MultiplierFourthSolution.lean:339:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MultiplierFourthSolution.lean:343:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (12190 jobs).

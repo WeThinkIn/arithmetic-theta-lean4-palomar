@@ -1,0 +1,22 @@
+{
+  "base": "Frozen450 full multiplier interface plus382 canonical tensor comparison and literal actual sheaf tensor definitions",
+  "semantic_compatibility": "300 non-proof Challenge/Solution declarations have matching types and available bodies; canonical maps independently proved equal to originals",
+  "namespace_maps": {
+    "ArithmeticThetaPhaseFreeKeyR0219.FourthNormalized": "ArithmeticThetaPalomarFourth454.FourthNormalized with invertibility from hm.1"
+  },
+  "compiled_bridges": [
+    "powerPullback_eq_original",
+    "unitPullback_eq_original",
+    "fourthNormalized_iff",
+    "recover_original_100"
+  ],
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-package-450/Challenge.uncompressed.lean.txt": "fee780eae63547049082ba778aa167ec2eba6d0876f341a912beaaffeb4232ef",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-package-450/Solution.uncompressed.lean.txt": "68f1bed4ad4196f2389c4eb8ead90a00fda3e669ee7eca5c785ee78c6959a98e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/canonical-tensor-comparison-382/Challenge.lean": "17205941d93320aaaaa247582495e84e2457b78bcb9a804885de6baf0d2a8fa9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/canonical-tensor-comparison-382/Solution.lean": "d968f94fb581fc72dfd239ce2d3b2532d0fdce6f55489121a6650e469ccf07ae",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-package-450/comparator.json": "9ba435bb67c0d109bd70a2fd066f30af2ebf5a8314cd76ebeb99f366ce60fcbb"
+  },
+  "original_type_recovery": "Whole original100 recovered at arbitrary universe u; equality of theorems compiled by rfl; no extra invertibility assumption"
+}

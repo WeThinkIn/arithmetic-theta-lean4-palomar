@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-20T22:04:14.281397+00:00",
+  "review_kind": "root source/type scope review, not separate model or official review",
+  "local_scope_review_passed": true,
+  "covered_original_endpoint_ids": [
+    "accepted-100"
+  ],
+  "mapped_original_statement_exact": true,
+  "original_universe_retained": true,
+  "no_added_main_assumptions": true,
+  "all_eleven_holes_targeted": true,
+  "original_statement_recovery_compiled": true,
+  "official_pass": false,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/Challenge.lean": "93346e6458a1a8c4a837674915ab9c791f25ebcc8ce44771628fd435eae93425",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/Solution.lean": "c31597be8b330c185db27ea403679610c13412fb2a49c328a1d151fa7d0898f7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/receipt.json": "8f8b8acc51aff7006b7b32bc75845e9b84f7b3bcffb93370399c185ca66ab509",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/Scope.json": "383856c880e2f50b1132a5ea9f97052817bf41a960bdc70f2230a3acf6fa48d9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/SourceMap.json": "fa076a88e7c46260e200759adbc123836bc2cecc79094560705e760ce8c34a35",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/comparator.json": "c881094f66c60a8c2906b258e0aa996926eb540ee27296b3f9e6c40649368f96",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/DefinitionCompatibility-check-02.log": "8c900155ce9380d46949f09f9ad20f192287279c69646b529f2e9569b29417f7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/OriginalEndpointAudit-check-01.log": "a3cf17187194d95ea1c5ffeead229dc16c51ee5aeb364b76a1a016d9d5cdb3d2"
+  },
+  "review_sha256": "af996dec4f42450ba0ed8bfb8fa3dc1ae9024d3d9b4c807ae08a2aff2958aaa9"
+}

@@ -1,0 +1,26 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : @ArithmeticThetaSchemeFourCharacterR0215.scheme_alpha_character =
+  @ArithmeticThetaPalomarSchemeAlpha437.recover_original_052 := rfl
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.recover_original_052
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.realizesAlpha_iff
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.affineAlpha_iff
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.affineHodgeMap_eq
+#print axioms ArithmeticThetaPalomarConormal436.conormalMap_eq_original
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.alphaExists
+
+example : @ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier =
+  @ArithmeticThetaPalomarMultiplier450.recover_original_095 := rfl
+example : @ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier_base_change =
+  @ArithmeticThetaPalomarMultiplier450.recover_original_097 := rfl
+#print axioms ArithmeticThetaPalomarMultiplier450.recover_original_095
+#print axioms ArithmeticThetaPalomarMultiplier450.recover_original_097
+
+example : @ArithmeticThetaPhaseFreeKeyR0219.multiplier_fourth_trivialization =
+  @ArithmeticThetaPalomarFourth454.recover_original_100 := rfl
+#print axioms ArithmeticThetaPalomarFourth454.recover_original_100
+#print axioms ArithmeticThetaPalomarFourth454.fourthNormalized_iff
+#print axioms ArithmeticThetaPalomarFourth454.powerPullback_eq_original
+#print axioms ArithmeticThetaPalomarFourth454.unitPullback_eq_original

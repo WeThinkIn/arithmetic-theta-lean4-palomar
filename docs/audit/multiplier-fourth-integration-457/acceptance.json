@@ -1,0 +1,18 @@
+{
+  "accepted_for_local_integration": true,
+  "new_ids": [
+    "accepted-100"
+  ],
+  "basis": "Complete frozen original100 interface, exact definition compatibility and root source/type review; no official acceptance",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/Challenge.lean": "93346e6458a1a8c4a837674915ab9c791f25ebcc8ce44771628fd435eae93425",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/Solution.lean": "c31597be8b330c185db27ea403679610c13412fb2a49c328a1d151fa7d0898f7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/Scope.json": "383856c880e2f50b1132a5ea9f97052817bf41a960bdc70f2230a3acf6fa48d9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/SourceMap.json": "fa076a88e7c46260e200759adbc123836bc2cecc79094560705e760ce8c34a35",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/receipt.json": "8f8b8acc51aff7006b7b32bc75845e9b84f7b3bcffb93370399c185ca66ab509",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/README.md": "3634d00e4b90e69c84fcc43effbaef580f4cce33a23a9a07877daaaf469c3f1a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-package-454/comparator.json": "c881094f66c60a8c2906b258e0aa996926eb540ee27296b3f9e6c40649368f96",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-scope-review-456/Review.md": "af996dec4f42450ba0ed8bfb8fa3dc1ae9024d3d9b4c807ae08a2aff2958aaa9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-fourth-scope-review-456/receipt.json": "999ae48ef01d3de879cbe05b47943b33154988d901bd8cf7ba7759ee458f96d4"
+  }
+}

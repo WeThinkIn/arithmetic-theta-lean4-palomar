@@ -1,0 +1,26 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-100",
+    "accepted-095",
+    "accepted-097",
+    "accepted-052"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-100"
+  ],
+  "universe": "Original arbitrary universe u",
+  "target_count": 11,
+  "retained": [
+    "Actual recursively sheafified tensor power and tensor power of a section",
+    "Canonical tensor comparison uniquely characterized on every open and every local section at every exponent including0",
+    "Actual unit pullback map",
+    "Every original marked test and actual prescribed multiplier frame",
+    "Unique actual fourth-power trivialization normalized to1 in every marked test",
+    "Original IsMultiplier hypotheses unchanged; invertibility is extracted from that predicate",
+    "Inherited complete052095097 unchanged"
+  ],
+  "no_new_main_assumptions": true,
+  "new_endpoint_count": 1,
+  "official_verified": false,
+  "full_paper_claimed": false
+}

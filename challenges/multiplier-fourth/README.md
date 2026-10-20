@@ -1,0 +1,5 @@
+# Complete multiplier fourth-power trivialization
+
+Independent Mathlib-only Challenge retains full original100 at arbitrary universe u, with the actual recursively sheafified tensor power and its actual section tensor. The canonical pullback comparison is uniquely determined on every open and every local section; its identity with the original comparison is compiled. The unit map also equals the original. The actual fourth-power trivialization is uniquely normalized to1 in every original marked test and prescribed multiplier frame.
+
+The independent normalization uses the invertibility already supplied by the original IsMultiplier hypothesis. fourthNormalized_iff recovers the original predicate, and the complete original100 is recovered with a compiled rfl theorem audit. Eleven support/main holes are explicitly selected. Full declaration and semantic-definition audits are recorded in receipt.json. Inherited052/095/097 are not counted twice. Local evidence is not official acceptance or whole-paper completion.

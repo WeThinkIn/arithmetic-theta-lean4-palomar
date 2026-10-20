@@ -1,0 +1,53 @@
+version: v0.4
+project:
+  name: Complete multiplier fourth-power trivialization
+  description: 'Complete original accepted100 at arbitrary universe u: unique actual
+    fourth tensor power trivialization normalized to1 in every original marked test
+    and prescribed multiplier frame. Actual sheafified tensor and section tensors
+    retained. Canonical comparison uniquely specified on every local section and every
+    open and proved equal to original; invertibility comes from original IsMultiplier.
+    Eleven support/main targets selected. Inherited052095097 not recounted. See challenges/multiplier-fourth/Scope.json;
+    no whole-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Complete original accepted100 at arbitrary universe u: unique actual fourth
+    tensor power trivialization normalized to1 in every original marked test and prescribed
+    multiplier frame. Actual sheafified tensor and section tensors retained. Canonical
+    comparison uniquely specified on every local section and every open and proved
+    equal to original; invertibility comes from original IsMultiplier. Eleven support/main
+    targets selected. Inherited052095097 not recounted. See challenges/multiplier-fourth/Scope.json;
+    no whole-paper completion claimed.'
+fidelity:
+  divergences: 'Original100 full proposition and universe recovered through compiled
+    normalization equivalence and rfl theorem audit. Canonical tensor and unit pullbacks
+    equal original maps. No extra main assumption: invertibility is extracted from
+    IsMultiplier. Eleven support/main targets selected; inherited052095097 not recounted.'
