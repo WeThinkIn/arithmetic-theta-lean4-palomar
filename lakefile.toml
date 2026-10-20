@@ -1460,3 +1460,19 @@ roots = ["IsogenyAlphaCuspsChallenge"]
 [[lean_lib]]
 name = "IsogenyAlphaCuspsSolution"
 roots = ["IsogenyAlphaCuspsSolution"]
+
+[[lean_lib]]
+name = "CompactAlphaHalfLineChallenge"
+roots = ["CompactAlphaHalfLineChallenge"]
+
+[[lean_lib]]
+name = "CompactAlphaHalfLineSolution"
+roots = ["CompactAlphaHalfLineSolution"]
+
+[[lean_lib]]
+name = "IsogenyHalfLineChallenge"
+roots = ["IsogenyHalfLineChallenge"]
+
+[[lean_lib]]
+name = "IsogenyHalfLineSolution"
+roots = ["IsogenyHalfLineSolution"]

@@ -1,0 +1,9 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarIsogenyHalf506.recover_original_045 = ArithmeticThetaIsogenyHalfLinesR0193.isogeny_canonical_half_line := by rfl
+#print axioms ArithmeticThetaPalomarIsogenyHalf506.recover_original_045
+#print axioms ArithmeticThetaPalomarHalf505.binary_eq_original
+#print axioms ArithmeticThetaPalomarHalf505.powerComparison_eq_original
+#print axioms ArithmeticThetaPalomarIsogenyHalf506.branch_iff_original

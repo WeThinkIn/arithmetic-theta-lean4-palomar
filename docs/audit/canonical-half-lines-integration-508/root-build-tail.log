@@ -1,0 +1,100 @@
+warning: CompactAlphaHalfLineChallenge.lean:832:8: declaration uses `sorry`
+warning: CompactAlphaHalfLineChallenge.lean:865:8: declaration uses `sorry`
+warning: CompactAlphaHalfLineChallenge.lean:889:10: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: CompactAlphaHalfLineChallenge.lean:890:10: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: CompactAlphaHalfLineChallenge.lean:912:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: CompactAlphaHalfLineChallenge.lean:917:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: CompactAlphaHalfLineChallenge.lean:931:8: declaration uses `sorry`
+warning: CompactAlphaHalfLineChallenge.lean:976:8: declaration uses `sorry`
+⚠ [12025/12025] Built IsogenyHalfLineChallenge (24s)
+warning: IsogenyHalfLineChallenge.lean:24:14: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:26:8: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:28:6: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:34:6: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:35:6: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:36:6: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:38:14: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:62:6: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:64:9: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:73:8: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:80:8: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:102:8: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:106:8: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:107:8: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:466:0: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: IsogenyHalfLineChallenge.lean:504:8: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:723:8: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:738:8: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:740:8: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:790:8: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:821:8: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:845:10: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: IsogenyHalfLineChallenge.lean:846:10: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: IsogenyHalfLineChallenge.lean:868:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: IsogenyHalfLineChallenge.lean:873:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: IsogenyHalfLineChallenge.lean:887:8: declaration uses `sorry`
+warning: IsogenyHalfLineChallenge.lean:987:8: declaration uses `sorry`
+Build completed successfully (12025 jobs).

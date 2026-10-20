@@ -1,0 +1,56 @@
+version: v0.4
+project:
+  name: Complete compact alpha canonical half-divisor line
+  description: 'Full original042: for each actual compact component, constructs the
+    effective half-divisor of the same compact alpha, normality witness, actual bounded-pole
+    sheaf O(E), canonical rational-one section, invertibility and square isomorphism
+    to the same Hodge line. HalfAlphaDivisor retains exact all-frame Scheme.ord equality,
+    zero off cusps and orders0 or L/8. On every original canonical disk the complete
+    theta(t^(L/2)) coefficient and its square equal the specified normalized Hodge
+    generator. The unique comparison on every open/local tensor is proved equal to
+    the original canonical pullback map; every original theorem type is recovered.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Full original042: for each actual compact component, constructs the effective
+    half-divisor of the same compact alpha, normality witness, actual bounded-pole
+    sheaf O(E), canonical rational-one section, invertibility and square isomorphism
+    to the same Hodge line. HalfAlphaDivisor retains exact all-frame Scheme.ord equality,
+    zero off cusps and orders0 or L/8. On every original canonical disk the complete
+    theta(t^(L/2)) coefficient and its square equal the specified normalized Hodge
+    generator. The unique comparison on every open/local tensor is proved equal to
+    the original canonical pullback map; every original theorem type is recovered.'
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

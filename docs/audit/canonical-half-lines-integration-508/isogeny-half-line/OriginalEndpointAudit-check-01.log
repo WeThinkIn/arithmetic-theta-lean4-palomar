@@ -1,0 +1,4 @@
+'ArithmeticThetaPalomarIsogenyHalf506.recover_original_045' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarHalf505.binary_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarHalf505.powerComparison_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarIsogenyHalf506.branch_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]

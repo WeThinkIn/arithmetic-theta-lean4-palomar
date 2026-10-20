@@ -1,0 +1,10 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Solution.lean:80:2: error: Type mismatch: After simplification, term
+  he
+ has type
+  binary f H K =
+    ArithmeticThetaPullback.pullback_sheafTensor_iso X Y f H K ≪≫
+      (PresheafOfModules.sheafification (𝟙 X.ringCatSheaf.obj)).mapIso
+        (Iso.refl ((SheafOfModules.forget X.ringCatSheaf).obj ((Scheme.Modules.pullback f).obj H)) ⊗ᵢ
+          Iso.refl ((SheafOfModules.forget X.ringCatSheaf).obj ((Scheme.Modules.pullback f).obj K)))
+but is expected to have type
+  binary f H K = ArithmeticThetaPullback.pullback_sheafTensor_iso X Y f H K

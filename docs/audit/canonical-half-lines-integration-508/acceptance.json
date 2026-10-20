@@ -1,0 +1,35 @@
+{
+  "accepted_for_local_integration": true,
+  "basis": "Frozen complete505/506 source/type/axiom audits and507 root scope review; no official acceptance",
+  "packages": {
+    "compact-alpha-half-line": {
+      "bindings": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean": "ec0db01e3dbf4b1a1feff23176f4391c4e3d5c23f173e25b31c96d69d6a09dad",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Solution.lean": "34990cdcc74ef5b90ea99dfa5912e9b61d8015e13584871c066458834bf1707f",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Scope.json": "e7f086be51b935f4faf8f7a26b9f7dad2b38b9e44e55d6c6956e78d956877a28",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/SourceMap.json": "840cbf6bb7b47573f5248bcabd12da88c4f29c543c0d319d46073719e4d3f7ff",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/receipt.json": "2a5de162273a672f95b9295f471ef28fe61bb9f07bb281d96122cf3b17d33b3c",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/comparator.json": "3596e66010bfa2af50e1412609e8c06afa442cf7f5a5cf8e3189a0ed4969427b",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Targets.json": "2d67aea7e2a75ed78078c85446f3a95a8e7e4d4d6ea60361fb4bea241ec4e1a4"
+      },
+      "new_ids": [
+        "accepted-042"
+      ]
+    },
+    "isogeny-half-line": {
+      "bindings": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-half-line-package-506/Challenge.lean": "9de9dacefd0909e3461fdf6d2d46501b2ef2603298229ac27da6951478fea65c",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-half-line-package-506/Solution.lean": "0ecca22b5330ae01ab09dc487bdc446149c853f986fff179c3ec351cf7c30a16",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-half-line-package-506/Scope.json": "9cc435b3f26124993a44d849504c396256c09c13bd7c94f05aafe289903c30a7",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-half-line-package-506/SourceMap.json": "a6ad7c14f298a93715a229bbd9b23cad44f603cca6215c9d70ccb98dfc6cf0df",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-half-line-package-506/receipt.json": "519b26da7fb3af619bd535e5ea55c68b6c4638c4a67bb01502f86d985152dd4e",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-half-line-package-506/comparator.json": "8ca943d6e5bffafeb2060a67fa86564e5e11c193cbf07d44280fb38fb89764b9",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-half-line-package-506/Targets.json": "c9ebb55df23f7c5c005e5cffae75edca527b8c16264341402fde60f6b6183bed"
+      },
+      "new_ids": [
+        "accepted-045"
+      ]
+    }
+  },
+  "review_sha256": "d584e29f9593f252ed772771ee3198efb668736eb17078d1b2d9f1471fcf8def"
+}

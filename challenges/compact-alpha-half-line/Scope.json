@@ -1,0 +1,22 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-042"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-042"
+  ],
+  "universe": "Original k : Type algebraically closed characteristic-zero field, all positive L divisible by8",
+  "target_count": 22,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "All original supplied actual LevelData, Compactification, canonical Hodge Extension and full IsCompactAlpha",
+    "Constructs effective E, NormalAffine witness and full half-divisor order equality in every normal frame on every actual component",
+    "Actual boundedSections with Scheme.ord at all points, actual divisorPresheaf/sheaf and canonical rational-one section",
+    "Actual invertibility and beta : O(E)^2 isomorphic to the same Hodge line sending canonical section squared to the same alpha",
+    "Every original canonical disk and extending specified Hodge generator; actual frame h with canonical section=complete theta(t^(L/2))*h and beta(h^2)=that same generator",
+    "No extra cover, finite coefficient prefix or supplied half-line substitutes"
+  ],
+  "limitations": "Original geometry, canonical Hodge extension and compact alpha are supplied as in the original endpoint. This proves their actual canonical half-line and full branch, not construction of those inputs, a common comparison cover or official acceptance."
+}

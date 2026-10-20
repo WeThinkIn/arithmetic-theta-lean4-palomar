@@ -1,0 +1,62 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:25:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:27:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:29:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:36:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:37:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:38:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:41:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:65:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:68:9: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:80:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:87:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:113:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:120:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:121:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:541:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:590:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:934:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:951:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:953:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:1017:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:1052:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:1080:10: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:1081:10: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:1103:6: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:1108:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:1123:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean:1190:8: warning: declaration uses `sorry`

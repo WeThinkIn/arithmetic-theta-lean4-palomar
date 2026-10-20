@@ -1,0 +1,37 @@
+{
+  "ids": [
+    "accepted-042"
+  ],
+  "target_count": 22,
+  "attempts": {
+    "Challenge": "04",
+    "Solution": "04",
+    "ChallengeAudit": "02",
+    "SolutionAudit": "01",
+    "DefinitionCompatibility": "02",
+    "OriginalEndpointAudit": "01",
+    "TargetTypeAudit": "02",
+    "TargetHoleAudit": "02"
+  },
+  "title": "Complete compact alpha canonical half-divisor line",
+  "universe": "Original k : Type algebraically closed characteristic-zero field, all positive L divisible by8",
+  "basis": "Full actual canonical boundary Hodge, compact alpha and component definitions from501/495; original bounded-pole sheaf and canonical section; all-local-section unique tensor comparison from458 proved equal to original",
+  "namespace_map": {
+    "ArithmeticThetaSquareLinesR0192.compact_alpha_canonical_half_line": "ArithmeticThetaPalomarHalf505.compactAlphaCanonicalHalfLine"
+  },
+  "bridges": [
+    "Compiled equality of recover_original_042 with the full original theorem",
+    "binary_eq_original and powerComparison_eq_original identify the chosen unique local comparison with the precise original at every tensor exponent",
+    "branch_iff_original preserves the full original AlphaHalfBranch"
+  ],
+  "retained": [
+    "All original supplied actual LevelData, Compactification, canonical Hodge Extension and full IsCompactAlpha",
+    "Constructs effective E, NormalAffine witness and full half-divisor order equality in every normal frame on every actual component",
+    "Actual boundedSections with Scheme.ord at all points, actual divisorPresheaf/sheaf and canonical rational-one section",
+    "Actual invertibility and beta : O(E)^2 isomorphic to the same Hodge line sending canonical section squared to the same alpha",
+    "Every original canonical disk and extending specified Hodge generator; actual frame h with canonical section=complete theta(t^(L/2))*h and beta(h^2)=that same generator",
+    "No extra cover, finite coefficient prefix or supplied half-line substitutes"
+  ],
+  "limitations": "Original geometry, canonical Hodge extension and compact alpha are supplied as in the original endpoint. This proves their actual canonical half-line and full branch, not construction of those inputs, a common comparison cover or official acceptance.",
+  "description": "Full original042: for each actual compact component, constructs the effective half-divisor of the same compact alpha, normality witness, actual bounded-pole sheaf O(E), canonical rational-one section, invertibility and square isomorphism to the same Hodge line. HalfAlphaDivisor retains exact all-frame Scheme.ord equality, zero off cusps and orders0 or L/8. On every original canonical disk the complete theta(t^(L/2)) coefficient and its square equal the specified normalized Hodge generator. The unique comparison on every open/local tensor is proved equal to the original canonical pullback map; every original theorem type is recovered."
+}

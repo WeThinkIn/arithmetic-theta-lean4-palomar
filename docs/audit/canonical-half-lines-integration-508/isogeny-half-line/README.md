@@ -1,0 +1,7 @@
+# Complete isogeny canonical half-divisor line
+
+Full original045: from the original actual normalized isogeny alpha and its supplied compact realization, constructs on every actual compact component the effective finite-support half-divisor E, normality witness, actual bounded-pole sheaf O(E), canonical rational-one section, invertibility and beta:O(E)^2 isomorphic to the same Hodge line sending1_E squared to that same a_m. All original varying cusp orders, kernel coordinates and full CompactRealizes conditions remain. HalfDivisor is tested against actual Scheme.ord in every normal frame. Every canonical original source disk has a frame h_m with the complete theta(t^(L*m/2)) coefficient and square mapping to the specified normalized Hodge frame. No extra cover or fixed-order alpha predicate is substituted; the canonical tensor comparison is proved equal to the original.
+
+Challenge has 988 lines and 22 explicit support/main targets. All 587 semantic types/available bodies match the Solution environment, and every literal proof hole is selected exactly once. The original theorem is recovered by compiled equality; target universes/types and all Solution declaration axiom closures pass. Actual root integration and official verification are separate steps. No whole-paper acceptance is claimed.
+
+Original actual geometry, OpenAlpha and CompactRealizes are inputs as in the original endpoint. This constructs their canonical half-divisor line and full original-disk branch. It does not independently construct these inputs, a common cover or official acceptance.

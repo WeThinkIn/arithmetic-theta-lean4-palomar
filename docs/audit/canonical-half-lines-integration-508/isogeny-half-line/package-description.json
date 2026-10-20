@@ -1,0 +1,38 @@
+{
+  "ids": [
+    "accepted-045"
+  ],
+  "target_count": 22,
+  "attempts": {
+    "Challenge": "03",
+    "Solution": "01",
+    "ChallengeAudit": "01",
+    "SolutionAudit": "01",
+    "DefinitionCompatibility": "01",
+    "OriginalEndpointAudit": "01",
+    "TargetTypeAudit": "01",
+    "TargetHoleAudit": "01"
+  },
+  "title": "Complete isogeny canonical half-divisor line",
+  "universe": "Original k : Type algebraically closed characteristic-zero field; positive L,m, m even,8*m dividing L",
+  "basis": "Actual quotient/normalized alpha constructions from502; full actual component/bounded-pole divisor/unique tensor comparison constructions from505; original CompactRealizes and HalfDivisor",
+  "namespace_map": {
+    "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_canonical_half_line": "ArithmeticThetaPalomarIsogenyHalf506.isogenyCanonicalHalfLine"
+  },
+  "bridges": [
+    "Compiled equality of recover_original_045 with the full original theorem",
+    "Inherited binary_eq_original and powerComparison_eq_original identify the all-local-section unique tensor comparison with the original canonical comparison",
+    "branch_iff_original recovers full original HalfBranch for theta(t^(L*m/2))"
+  ],
+  "retained": [
+    "Original LevelData/Compactification/canonical Hodge Extension, actual cyclic Quotient/marking/intrinsic alpha and exact1/m differential pullback",
+    "Original supplied CompactRealizes: exact open restriction, every-cusp kernel coordinates/component and toric degrees/unit coefficient and full signed designated expansion",
+    "Constructs effective finite-support divisor E and normality witness on every actual component",
+    "HalfDivisor: zero off cusps, nonzero actual component alpha, existence of normal frame cover and exact actual section divisor2E in every normal frame",
+    "Actual bounded-pole sheaf O(E), rational-one section, invertibility and square isomorphism beta to same Hodge line mapping1_E squared to same a_m",
+    "Every original canonical source disk and extending Hodge frame admits h_m with1_E=complete theta(t^(L*m/2))*h_m and beta(h_m squared)=same Hodge frame",
+    "No common cover or old fixed0/L4-order predicate imposed on the general isogeny case"
+  ],
+  "limitations": "Original actual geometry, OpenAlpha and CompactRealizes are inputs as in the original endpoint. This constructs their canonical half-divisor line and full original-disk branch. It does not independently construct these inputs, a common cover or official acceptance.",
+  "description": "Full original045: from the original actual normalized isogeny alpha and its supplied compact realization, constructs on every actual compact component the effective finite-support half-divisor E, normality witness, actual bounded-pole sheaf O(E), canonical rational-one section, invertibility and beta:O(E)^2 isomorphic to the same Hodge line sending1_E squared to that same a_m. All original varying cusp orders, kernel coordinates and full CompactRealizes conditions remain. HalfDivisor is tested against actual Scheme.ord in every normal frame. Every canonical original source disk has a frame h_m with the complete theta(t^(L*m/2)) coefficient and square mapping to the specified normalized Hodge frame. No extra cover or fixed-order alpha predicate is substituted; the canonical tensor comparison is proved equal to the original."
+}

@@ -1,0 +1,62 @@
+version: v0.4
+project:
+  name: Complete isogeny canonical half-divisor line
+  description: 'Full original045: from the original actual normalized isogeny alpha
+    and its supplied compact realization, constructs on every actual compact component
+    the effective finite-support half-divisor E, normality witness, actual bounded-pole
+    sheaf O(E), canonical rational-one section, invertibility and beta:O(E)^2 isomorphic
+    to the same Hodge line sending1_E squared to that same a_m. All original varying
+    cusp orders, kernel coordinates and full CompactRealizes conditions remain. HalfDivisor
+    is tested against actual Scheme.ord in every normal frame. Every canonical original
+    source disk has a frame h_m with the complete theta(t^(L*m/2)) coefficient and
+    square mapping to the specified normalized Hodge frame. No extra cover or fixed-order
+    alpha predicate is substituted; the canonical tensor comparison is proved equal
+    to the original.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Full original045: from the original actual normalized isogeny alpha and
+    its supplied compact realization, constructs on every actual compact component
+    the effective finite-support half-divisor E, normality witness, actual bounded-pole
+    sheaf O(E), canonical rational-one section, invertibility and beta:O(E)^2 isomorphic
+    to the same Hodge line sending1_E squared to that same a_m. All original varying
+    cusp orders, kernel coordinates and full CompactRealizes conditions remain. HalfDivisor
+    is tested against actual Scheme.ord in every normal frame. Every canonical original
+    source disk has a frame h_m with the complete theta(t^(L*m/2)) coefficient and
+    square mapping to the specified normalized Hodge frame. No extra cover or fixed-order
+    alpha predicate is substituted; the canonical tensor comparison is proved equal
+    to the original.'
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

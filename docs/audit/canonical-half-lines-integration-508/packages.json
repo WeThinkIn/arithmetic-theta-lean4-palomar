@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "compact-alpha-half-line",
+    "root": "CompactAlphaHalfLine",
+    "source": "compact-alpha-half-line-package-505",
+    "ids": [
+      "accepted-042"
+    ],
+    "title": "Complete compact alpha canonical half-divisor line",
+    "description": "Full original042: for each actual compact component, constructs the effective half-divisor of the same compact alpha, normality witness, actual bounded-pole sheaf O(E), canonical rational-one section, invertibility and square isomorphism to the same Hodge line. HalfAlphaDivisor retains exact all-frame Scheme.ord equality, zero off cusps and orders0 or L/8. On every original canonical disk the complete theta(t^(L/2)) coefficient and its square equal the specified normalized Hodge generator. The unique comparison on every open/local tensor is proved equal to the original canonical pullback map; every original theorem type is recovered."
+  },
+  {
+    "slug": "isogeny-half-line",
+    "root": "IsogenyHalfLine",
+    "source": "isogeny-half-line-package-506",
+    "ids": [
+      "accepted-045"
+    ],
+    "title": "Complete isogeny canonical half-divisor line",
+    "description": "Full original045: from the original actual normalized isogeny alpha and its supplied compact realization, constructs on every actual compact component the effective finite-support half-divisor E, normality witness, actual bounded-pole sheaf O(E), canonical rational-one section, invertibility and beta:O(E)^2 isomorphic to the same Hodge line sending1_E squared to that same a_m. All original varying cusp orders, kernel coordinates and full CompactRealizes conditions remain. HalfDivisor is tested against actual Scheme.ord in every normal frame. Every canonical original source disk has a frame h_m with the complete theta(t^(L*m/2)) coefficient and square mapping to the specified normalized Hodge frame. No extra cover or fixed-order alpha predicate is substituted; the canonical tensor comparison is proved equal to the original."
+  }
+]

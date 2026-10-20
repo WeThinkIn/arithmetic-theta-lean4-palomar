@@ -1,0 +1,9 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarHalf505.recover_original_042 = ArithmeticThetaSquareLinesR0192.compact_alpha_canonical_half_line := by rfl
+#print axioms ArithmeticThetaPalomarHalf505.recover_original_042
+#print axioms ArithmeticThetaPalomarHalf505.binary_eq_original
+#print axioms ArithmeticThetaPalomarHalf505.powerComparison_eq_original
+#print axioms ArithmeticThetaPalomarHalf505.branch_iff_original

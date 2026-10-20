@@ -1,0 +1,17 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Solution.lean:80:165: error: unsolved goals
+X Y : Scheme
+f : X ⟶ Y
+H K : Y.Modules
+h :
+  ArithmeticThetaPalomarBinaryTensor458.Compatible f H K ((Scheme.Modules.pullback f).obj H)
+    ((Scheme.Modules.pullback f).obj K) (Iso.refl ((Scheme.Modules.pullback f).obj H))
+    (Iso.refl ((Scheme.Modules.pullback f).obj K)) (Classical.choose ⋯)
+he :
+  binary f H K =
+    ArithmeticThetaPullback.pullback_sheafTensor_iso X Y f H K ≪≫
+      ArithmeticThetaPullback.sheafTensorCongr X (Iso.refl ((Scheme.Modules.pullback f).obj H))
+        (Iso.refl ((Scheme.Modules.pullback f).obj K))
+⊢ (PresheafOfModules.sheafification (𝟙 X.ringCatSheaf.obj)).map
+      (𝟙 ((SheafOfModules.forget X.ringCatSheaf).obj ((Scheme.Modules.pullback f).obj H)) ⊗ₘ
+        𝟙 ((SheafOfModules.forget X.ringCatSheaf).obj ((Scheme.Modules.pullback f).obj K))) =
+    𝟙 (ArithmeticThetaSheafTensor.sheafTensor X ((Scheme.Modules.pullback f).obj H) ((Scheme.Modules.pullback f).obj K))
