@@ -1,0 +1,14 @@
+{
+  "label": "new-grind-check",
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+    "--from-export",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/third-yz-target-kernel-benchmark-429/new-grind.ndjson"
+  ],
+  "exit_code": 0,
+  "seconds": 54.37204218888655,
+  "peak_hwm_bytes": 9207468032,
+  "stop_reason": null,
+  "output_bytes": 41,
+  "output_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead"
+}

@@ -1,0 +1,451 @@
+'ArithmeticThetaFullSourceR0268.binary_orthogonal_example' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaElementary.rank_zero_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaElementary.rank_zero_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaElementary.rank_zero_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaLattice.even_integral_gram_orthogonalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaDet80.actual_coefficient_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaDet80.actual_minor_determinant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaDet80.actual_theta_kernel_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaDurfee.formal_jacobi_triple_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaOrthogonalAlgorithm.computed_natural_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaHadamard.jacobi_formal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaBinary.all_positive_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaBinary.similarity_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaBinary.ambient_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaBinary.same_order_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaRank16.no_similarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaRank16.integral_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaRank16.two_column_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaEarlyAssembly.actual_earlier_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaTateSeries.basic_fourth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaOrthogonalConsumerR0127.rational_preimage_cosets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaOrthogonalConsumerR0127.unary_parameter_identification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaOrthogonalConsumerR0127.individual_coset_integral_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaOrthogonalConsumerR0127.source_orthogonal_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaOrthogonalConsumerR0127.computed_family_formal_unary_consumer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaLDLEnumerationR0229.shifted_integer_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaLDLEnumerationR0229.rational_schur_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaLDLEnumerationR0229.computed_rational_ldl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaLDLEnumerationR0229.recursive_ellipsoid_enumeration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaLDLEnumerationR0229.ldl_theta_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaLDLEnumerationR0229.ldl_coefficient_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaGeneralDPlusR0242.general_dplus_even_unimodular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeneralDPlusR0242.general_dplus_dual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaGeneralDPlusR0242.general_dplus_theta_realization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaDegreeAssembly.certified_theta_image_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaTateIdentities.general_annular_addition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaElementary.norm_exponent_identities' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaElementary.norm_sign_exponent_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaLaurentNormR0064.powered_gamma_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaFormalCoverR0210.arbitrary_formal_cover_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:263:73: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:263:204: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:263:345: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaAlgebraicCoordinatesR0143.algebraic_tate_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaAlgebraicCoordinatesR0143.coordinate_exact_poles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:271:73: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:271:146: warning: Variable name `he` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _he
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:271:218: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:271:359: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaCubicModelR0144.algebraic_model_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:275:73: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:275:146: warning: Variable name `he` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _he
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:275:218: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:275:359: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaCompactifiedDifferentialR0145.global_normalized_differential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_existence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_naturality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaSchemeKatoUnitR0250.scheme_kato_unit_naturality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaKatoCharacterizationR0254.scheme_kato_intrinsic_characterization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaSchemeKatoNormR0251.finite_etale_norm_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaUnaryKatoPowerR0160.unary_power_geometric_realization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:303:73: warning: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:303:86: warning: Variable name `hmeven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hmeven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:303:104: warning: Variable name `hN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:303:117: warning: Variable name `hNeven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hNeven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:303:135: warning: Variable name `hmN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hmN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaCompactUnaryR0183.compact_unary_hodge_realization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:307:71: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:307:84: warning: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaComponentDegreeR0184.geometric_component_cusp_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:311:71: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:311:84: warning: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaComponentDegreeR0184.component_discriminant_divisor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:315:71: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:315:84: warning: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaComponentDegreeR0184.component_hodge_power_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaCommonHalfHodgeR0185.discriminant_twist_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaCommonHalfHodgeR0185.discriminant_tate_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaCommonHalfHodgeR0185.common_half_hodge_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaConservativeKernelR0189.arithmetic_geometric_family_existence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaConservativeKernelR0189.geometric_family_conservative_cutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaConservativeKernelR0189.conservative_matrix_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:343:197: warning: Variable name `hG` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hG
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaGlobalFourTorsionR0190.relative_four_torsion_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGlobalFourTorsionR0190.four_torsion_tate_behavior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:351:197: warning: Variable name `hG` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hG
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:351:884: warning: Variable name `hGs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hGs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaGlobalFourTorsionR0190.relative_alpha_naturality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGlobalFourTorsionR0190.compact_full_level_alpha' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaSquareLinesR0192.compact_alpha_canonical_half_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:363:84: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaSchemeFourCharacterR0215.scheme_miller_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaAmbientCompletedRootsR0227.ambient_prescribed_roots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaAmbientCompletedRootsR0227.smooth_point_simultaneous_roots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRationalTateR0247.scheme_period_one_discriminant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaUniversalEvaluationR0213.arbitrary_even_theta_rigidification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_designated_expansion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_all_cusp_orders' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaIsogenyHalfLinesR0193.isogeny_canonical_half_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:395:84: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaSchemeFourCharacterR0215.scheme_alpha_character' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaSharpKernelR0195.distinct_norm_sharp_arithmetic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaSharpKernelR0195.sharp_matrix_geometric_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaSharpKernelR0195.sharp_geometric_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaAdaptiveSolverR0230.checked_basis_change_relations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaAdaptiveSolverR0230.adaptive_universal_solver' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaAdaptiveSolverR0230.adaptive_checked_input' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaAdaptiveSolverR0230.adaptive_singleton_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaSchemeKatoExpansionR0252.scheme_kato_full_tate_expansion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaKatoInitialR0253.scheme_five_kato_initial_characterization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:439:84: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaMultiplierKeyR0217.even_point_theta_evaluation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:443:84: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaPhaseFreeKeyR0219.phase_free_key' depends on axioms: [propext, Classical.choice, Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:447:84: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaPhaseFreeKeyR0219.phase_free_key_naturality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaKeyTateR0220.phase_free_key_tate_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:455:84: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier' depends on axioms: [propext, Classical.choice, Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:459:84: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaPhaseFreeKeyR0219.phase_free_alpha_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:463:84: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:463:584: warning: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier_base_change' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:467:84: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaPhaseFreeKeyR0219.multiplier_fourth_trivialization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaArithmeticSectionsR0236.field_compact_discriminant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaCyclotomicModularityR0239.split_component_cusp_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:479:63: warning: Variable name `hζ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hζ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:479:90: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:479:103: warning: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaCyclotomicModularityR0239.split_component_discriminant_divisor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/PartialEndpointAudit431.lean:483:63: warning: Variable name `hζ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hζ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaCyclotomicModularityR0239.split_square_cover_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaArithmeticSectionsR0236.field_compact_unary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaArithmeticSectionsR0236.field_unary_compact_naturality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaArithmeticCommonCoverR0238.arithmetic_common_unary_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaFullSourceR0268.conservative_image_consumer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaCyclotomicModularityR0239.cyclotomic_matrix_modularity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaExtendedMetaplecticR0241.cyclotomic_extended_modularity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGlobalProjectiveRatiosR0266.global_arithmetic_projective_ratios' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,17 @@
+{
+  "name": "EarlyCertificateSolution-audit",
+  "exit_code": 0,
+  "seconds": 3.17244711285457,
+  "command": [
+    "python3",
+    "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "lake",
+    "env",
+    "lean",
+    "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-kernel-regression-repair-430",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/proof-kernel-regression-repair-430/EarlyCertificateSolutionAudit.lean"
+  ],
+  "log_sha256": "2a518f71205c2b68108dc76a6bb0db7285462f7f6a411a822d1790a13d8e8192"
+}

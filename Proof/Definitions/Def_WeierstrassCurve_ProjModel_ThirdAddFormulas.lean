@@ -262,7 +262,6 @@ theorem kw_lrThird_minor_XZ_mem_span :
   exact add_mem (Ideal.mul_mem_left _ _ (Ideal.subset_span (Set.mem_insert _ _)))
     (Ideal.mul_mem_left _ _ (Ideal.subset_span (Set.mem_insert_of_mem _ (Set.mem_singleton _))))
 
-set_option maxRecDepth 4096 in
 theorem kw_lrThird_minor_YZ :
     kw_lrThird_Y W * kw_lrAdd_Z W - kw_lrThird_Z W * kw_lrAdd_Y W
       = kw_lrThird_pYZ W * WP₁ + kw_lrThird_qYZ W * WP₂ := by
@@ -273,7 +272,7 @@ theorem kw_lrThird_minor_YZ :
     WeierstrassCurve.Projective.polynomial, WeierstrassCurve.toProjective,
     map_add, map_sub, map_mul, map_pow, map_neg, map_ofNat, map_one, rename_X, rename_C,
     MvPolynomial.algebraMap_eq]
-  grind only
+  ring
 
 theorem kw_lrThird_minor_YZ_mem_span :
     kw_lrThird_Y W * kw_lrAdd_Z W - kw_lrThird_Z W * kw_lrAdd_Y W

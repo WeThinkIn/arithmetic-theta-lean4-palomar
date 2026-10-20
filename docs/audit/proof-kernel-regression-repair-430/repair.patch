@@ -1,0 +1,42 @@
+diff --git a/Proof/Definitions/Def_WeierstrassCurve_ProjModel_AddFormulas.lean b/Proof/Definitions/Def_WeierstrassCurve_ProjModel_AddFormulas.lean
+index 058f3e0..122ab07 100644
+--- a/Proof/Definitions/Def_WeierstrassCurve_ProjModel_AddFormulas.lean
++++ b/Proof/Definitions/Def_WeierstrassCurve_ProjModel_AddFormulas.lean
+@@ -584,7 +584,6 @@ theorem kw_lrSym_minor_XZ_mem_span :
+   exact add_mem (Ideal.mul_mem_left _ _ (Ideal.subset_span (Set.mem_insert _ _)))
+     (Ideal.mul_mem_left _ _ (Ideal.subset_span (Set.mem_insert_of_mem _ (Set.mem_singleton _))))
+ 
+-set_option maxRecDepth 4096 in
+ theorem kw_lrSym_minor_YZ :
+     kw_lrSym_Y W * kw_lrAdd_Z W - kw_lrSym_Z W * kw_lrAdd_Y W
+       = kw_lrSym_pYZ W * WP₁ + kw_lrSym_qYZ W * WP₂ := by
+@@ -594,7 +593,7 @@ theorem kw_lrSym_minor_YZ :
+     WeierstrassCurve.Projective.polynomial, WeierstrassCurve.toProjective,
+     map_add, map_sub, map_mul, map_pow, map_neg, map_ofNat, rename_X, rename_C,
+     MvPolynomial.algebraMap_eq]
+-  grind only
++  ring
+ 
+ theorem kw_lrSym_minor_YZ_mem_span :
+     kw_lrSym_Y W * kw_lrAdd_Z W - kw_lrSym_Z W * kw_lrAdd_Y W
+diff --git a/Proof/Definitions/Def_WeierstrassCurve_ProjModel_ThirdAddFormulas.lean b/Proof/Definitions/Def_WeierstrassCurve_ProjModel_ThirdAddFormulas.lean
+index c6f3d23..579dab3 100644
+--- a/Proof/Definitions/Def_WeierstrassCurve_ProjModel_ThirdAddFormulas.lean
++++ b/Proof/Definitions/Def_WeierstrassCurve_ProjModel_ThirdAddFormulas.lean
+@@ -262,7 +262,6 @@ theorem kw_lrThird_minor_XZ_mem_span :
+   exact add_mem (Ideal.mul_mem_left _ _ (Ideal.subset_span (Set.mem_insert _ _)))
+     (Ideal.mul_mem_left _ _ (Ideal.subset_span (Set.mem_insert_of_mem _ (Set.mem_singleton _))))
+ 
+-set_option maxRecDepth 4096 in
+ theorem kw_lrThird_minor_YZ :
+     kw_lrThird_Y W * kw_lrAdd_Z W - kw_lrThird_Z W * kw_lrAdd_Y W
+       = kw_lrThird_pYZ W * WP₁ + kw_lrThird_qYZ W * WP₂ := by
+@@ -273,7 +272,7 @@ theorem kw_lrThird_minor_YZ :
+     WeierstrassCurve.Projective.polynomial, WeierstrassCurve.toProjective,
+     map_add, map_sub, map_mul, map_pow, map_neg, map_ofNat, map_one, rename_X, rename_C,
+     MvPolynomial.algebraMap_eq]
+-  grind only
++  ring
+ 
+ theorem kw_lrThird_minor_YZ_mem_span :
+     kw_lrThird_Y W * kw_lrAdd_Z W - kw_lrThird_Z W * kw_lrAdd_Y W

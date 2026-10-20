@@ -1,0 +1,1 @@
+{"label": "new-grind-check", "pid": 2390663, "command": ["/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker", "--from-export", "/home/Palomar/workspace/arithmetic-theta/evidence/yz-target-kernel-benchmark-428/new-grind.ndjson"]}

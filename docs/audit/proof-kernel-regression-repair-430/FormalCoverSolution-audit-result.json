@@ -1,0 +1,17 @@
+{
+  "name": "FormalCoverSolution-audit",
+  "exit_code": 0,
+  "seconds": 3.071791966445744,
+  "command": [
+    "python3",
+    "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "lake",
+    "env",
+    "lean",
+    "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-kernel-regression-repair-430",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/proof-kernel-regression-repair-430/FormalCoverSolutionAudit.lean"
+  ],
+  "log_sha256": "e4df6a744e044efe3af27f5695aa7941a75c043eb27f5b8b379f6058ab288932"
+}

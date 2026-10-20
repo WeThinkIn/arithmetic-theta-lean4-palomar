@@ -1,0 +1,82 @@
+{
+  "utc": "2026-10-20T21:14:06.929555+00:00",
+  "reason": "Both exact same theorem targets pass stock Lean kernel but grind costs10\u201312x elapsed and25\u201333x peak sampled high-water memory; restore original ring proofs only.",
+  "benchmarks": [
+    {
+      "name": "yz-target-kernel-benchmark-428",
+      "old": {
+        "label": "old-ring-check",
+        "command": [
+          "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+          "--from-export",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/yz-target-kernel-benchmark-428/old-ring.ndjson"
+        ],
+        "exit_code": 0,
+        "seconds": 6.566163058858365,
+        "peak_hwm_bytes": 528699392,
+        "stop_reason": null,
+        "output_bytes": 41,
+        "output_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead"
+      },
+      "new": {
+        "label": "new-grind-check",
+        "command": [
+          "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+          "--from-export",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/yz-target-kernel-benchmark-428/new-grind.ndjson"
+        ],
+        "exit_code": 0,
+        "seconds": 79.97687167907134,
+        "peak_hwm_bytes": 13190168576,
+        "stop_reason": null,
+        "output_bytes": 41,
+        "output_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead"
+      }
+    },
+    {
+      "name": "third-yz-target-kernel-benchmark-429",
+      "old": {
+        "label": "old-ring-check",
+        "command": [
+          "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+          "--from-export",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/third-yz-target-kernel-benchmark-429/old-ring.ndjson"
+        ],
+        "exit_code": 0,
+        "seconds": 5.266718118917197,
+        "peak_hwm_bytes": 277057536,
+        "stop_reason": null,
+        "output_bytes": 41,
+        "output_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead"
+      },
+      "new": {
+        "label": "new-grind-check",
+        "command": [
+          "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+          "--from-export",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/third-yz-target-kernel-benchmark-429/new-grind.ndjson"
+        ],
+        "exit_code": 0,
+        "seconds": 54.37204218888655,
+        "peak_hwm_bytes": 9207468032,
+        "stop_reason": null,
+        "output_bytes": 41,
+        "output_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead"
+      }
+    }
+  ],
+  "files": [
+    {
+      "file": "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_WeierstrassCurve_ProjModel_AddFormulas.lean",
+      "before_sha256": "80d2819a210c94ff57cf01b72acfe9ed5a3a3b6a24f1e33501b545a102a98178",
+      "after_sha256": "990214e2f4dc9885e0c2c8fc9ba315149588605f4881b9fca94abe839995c86d"
+    },
+    {
+      "file": "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_WeierstrassCurve_ProjModel_ThirdAddFormulas.lean",
+      "before_sha256": "f14eefb828a933c90b8779488f2fd399d4b11902d7572295ac912924d6d0b793",
+      "after_sha256": "0f9af7948a0090e011e345e1acd782827d7144d4715e1d6f3e5ddb4fa1e2bcc3"
+    }
+  ],
+  "original_delivery_modified": false,
+  "preserve_immutable416_comparator": true
+}

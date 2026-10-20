@@ -1,0 +1,17 @@
+{
+  "name": "FullSchemeDiscriminantSolution-audit",
+  "exit_code": 0,
+  "seconds": 3.27297800173983,
+  "command": [
+    "python3",
+    "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "lake",
+    "env",
+    "lean",
+    "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-kernel-regression-repair-430",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/proof-kernel-regression-repair-430/FullSchemeDiscriminantSolutionAudit.lean"
+  ],
+  "log_sha256": "330161d76ec0a26e6f3bffc4508982cec39d90e19474514e56a9afdccbd86f76"
+}

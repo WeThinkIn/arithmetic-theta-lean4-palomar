@@ -1,0 +1,17 @@
+{
+  "name": "SchemeTateUnitSolution-audit",
+  "exit_code": 0,
+  "seconds": 3.9696108852513134,
+  "command": [
+    "python3",
+    "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "lake",
+    "env",
+    "lean",
+    "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-kernel-regression-repair-430",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/proof-kernel-regression-repair-430/SchemeTateUnitSolutionAudit.lean"
+  ],
+  "log_sha256": "6761b9bee7b1e65d2871f82d02e338f81532208ce60365e4a395b026da5fb47f"
+}
