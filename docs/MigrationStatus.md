@@ -24,3 +24,9 @@ Lean4.35.0-rc2 and Mathlib065356127b1dc0016f66b7283ce0ce2c4055aa55 remain pinned
 Local main265 three-kernel attempt02 timed out after3600seconds: con-ron and NanoDa accepted, while Lean default had not completed and had not rejected. A bounded7200second default-only continuation uses the identical frozen export. This is not a complete Comparator pass; official results remain separate.
 
 See Coverage.md and PalomarPreflight.md for exact scope and run links. No full-paper semantic approval or permanent registration is claimed.
+
+## Additional independent interfaces351
+
+The sharp/adaptive/image configuration `comparator-sharp-adaptive-image.json` adds seven disjoint endpoints: accepted-046/049/064/065/066/067/088. Its Mathlib-only Challenge has485 lines/31089bytes. Local standalone checks and the actual named root-pair build passed; all225 non-internal Solution declarations have standard axiom closures. It preserves the exact distinct-norm cutoff, full kernels for larger prefixes, actual first-stop algorithm, checked integral changes, full null/image/unique-coordinate results and singleton-zero behavior. Scope and evidence are under `challenges/sharp-adaptive-image/` and `docs/audit/sharp-adaptive-image-351/`. This new configuration still requires its own official full preflight before ordinary intake.
+
+Together, complete-main and sharp/adaptive/image specify47 distinct original endpoints; the separate formal-cover package adds accepted-050 for48. These are independent interface coverage counts, not48 official semantic approvals. The other55 endpoints still need complete independent interfaces. Original scope remains13 requirements/103 endpoints.

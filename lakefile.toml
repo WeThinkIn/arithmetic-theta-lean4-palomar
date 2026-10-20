@@ -1257,3 +1257,11 @@ roots = ["CompleteMainAndComponentsChallenge"]
 [[lean_lib]]
 name = "CompleteMainAndComponentsSolution"
 roots = ["CompleteMainAndComponentsSolution"]
+
+[[lean_lib]]
+name = "SharpAdaptiveImageChallenge"
+roots = ["SharpAdaptiveImageChallenge"]
+
+[[lean_lib]]
+name = "SharpAdaptiveImageSolution"
+roots = ["SharpAdaptiveImageSolution"]

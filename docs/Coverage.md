@@ -53,10 +53,10 @@ The exact original statements are in SourceObligations.json; this register track
 | accepted-043 | `ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_designated_expansion` | exact type + standard axioms passed (joint audit 343) | pending |
 | accepted-044 | `ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_all_cusp_orders` | exact type + standard axioms passed (joint audit 343) | pending |
 | accepted-045 | `ArithmeticThetaIsogenyHalfLinesR0193.isogeny_canonical_half_line` | exact type + standard axioms passed (joint audit 343) | pending |
-| accepted-046 | `ArithmeticThetaSharpKernelR0195.distinct_norm_sharp_arithmetic` | exact type + standard axioms passed (joint audit 343) | pending |
+| accepted-046 | `ArithmeticThetaSharpKernelR0195.distinct_norm_sharp_arithmetic` | exact type + standard axioms passed (joint audit 343) | complete independent statement and implementation bridge compiled; joint225-declaration axiom audit and named root build351 passed; official comparison pending |
 | accepted-047 | `ArithmeticThetaSharpKernelR0195.sharp_matrix_geometric_family` | exact type + standard axioms passed (joint audit 343) | pending |
 | accepted-048 | `ArithmeticThetaSharpKernelR0195.sharp_geometric_cutoff` | exact type + standard axioms passed (joint audit 343) | pending |
-| accepted-049 | `ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel` | exact type + standard axioms passed (joint audit 343) | pending |
+| accepted-049 | `ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel` | exact type + standard axioms passed (joint audit 343) | complete independent statement and implementation bridge compiled; joint225-declaration axiom audit and named root build351 passed; official comparison pending |
 | accepted-050 | `ArithmeticThetaFormalCoverR0210.arbitrary_formal_cover_constant` | exact type + standard axioms passed (joint audit 343) | official mechanical verification passed; submission86n83vqdajt2 review available privately; not registered |
 | accepted-051 | `ArithmeticThetaSchemeFourCharacterR0215.scheme_miller_phase` | exact type + standard axioms passed (joint audit 343) | pending |
 | accepted-052 | `ArithmeticThetaSchemeFourCharacterR0215.scheme_alpha_character` | exact type + standard axioms passed (joint audit 343) | pending |
@@ -71,10 +71,10 @@ The exact original statements are in SourceObligations.json; this register track
 | accepted-061 | `ArithmeticThetaLDLEnumerationR0229.recursive_ellipsoid_enumeration` | exact type + standard axioms passed (joint audit 343) | independent component comparison passed locally; joint official preflights running (main-and-components and complete-main) |
 | accepted-062 | `ArithmeticThetaLDLEnumerationR0229.ldl_theta_prefix` | exact type + standard axioms passed (joint audit 343) | independent component comparison passed locally; joint official preflights running (main-and-components and complete-main) |
 | accepted-063 | `ArithmeticThetaLDLEnumerationR0229.ldl_coefficient_matrix` | exact type + standard axioms passed (joint audit 343) | independent component comparison passed locally; joint official preflights running (main-and-components and complete-main) |
-| accepted-064 | `ArithmeticThetaAdaptiveSolverR0230.checked_basis_change_relations` | exact type + standard axioms passed (joint audit 343) | pending |
-| accepted-065 | `ArithmeticThetaAdaptiveSolverR0230.adaptive_universal_solver` | exact type + standard axioms passed (joint audit 343) | pending |
-| accepted-066 | `ArithmeticThetaAdaptiveSolverR0230.adaptive_checked_input` | exact type + standard axioms passed (joint audit 343) | pending |
-| accepted-067 | `ArithmeticThetaAdaptiveSolverR0230.adaptive_singleton_zero` | exact type + standard axioms passed (joint audit 343) | pending |
+| accepted-064 | `ArithmeticThetaAdaptiveSolverR0230.checked_basis_change_relations` | exact type + standard axioms passed (joint audit 343) | complete independent statement and implementation bridge compiled; joint225-declaration axiom audit and named root build351 passed; official comparison pending |
+| accepted-065 | `ArithmeticThetaAdaptiveSolverR0230.adaptive_universal_solver` | exact type + standard axioms passed (joint audit 343) | complete independent statement and implementation bridge compiled; joint225-declaration axiom audit and named root build351 passed; official comparison pending |
+| accepted-066 | `ArithmeticThetaAdaptiveSolverR0230.adaptive_checked_input` | exact type + standard axioms passed (joint audit 343) | complete independent statement and implementation bridge compiled; joint225-declaration axiom audit and named root build351 passed; official comparison pending |
+| accepted-067 | `ArithmeticThetaAdaptiveSolverR0230.adaptive_singleton_zero` | exact type + standard axioms passed (joint audit 343) | complete independent statement and implementation bridge compiled; joint225-declaration axiom audit and named root build351 passed; official comparison pending |
 | accepted-068 | `ArithmeticThetaArithmeticSectionsR0236.field_compact_discriminant` | exact type + standard axioms passed (joint audit 343) | pending |
 | accepted-069 | `ArithmeticThetaArithmeticSectionsR0236.field_compact_unary` | exact type + standard axioms passed (joint audit 343) | pending |
 | accepted-070 | `ArithmeticThetaArithmeticSectionsR0236.field_unary_compact_naturality` | exact type + standard axioms passed (joint audit 343) | pending |
@@ -95,7 +95,7 @@ The exact original statements are in SourceObligations.json; this register track
 | accepted-085 | `ArithmeticThetaKatoInitialR0253.scheme_five_kato_initial_characterization` | exact type + standard axioms passed (joint audit 343) | pending |
 | accepted-086 | `ArithmeticThetaKatoCharacterizationR0254.scheme_kato_intrinsic_characterization` | exact type + standard axioms passed (joint audit 343) | pending |
 | accepted-087 | `ArithmeticThetaGlobalProjectiveRatiosR0266.global_arithmetic_projective_ratios` | exact type + standard axioms passed (joint audit 343) | pending |
-| accepted-088 | `ArithmeticThetaDegreeAssembly.certified_theta_image_data` | exact type + standard axioms passed (joint audit 343) | pending |
+| accepted-088 | `ArithmeticThetaDegreeAssembly.certified_theta_image_data` | exact type + standard axioms passed (joint audit 343) | complete independent statement and implementation bridge compiled; joint225-declaration axiom audit and named root build351 passed; official comparison pending |
 | accepted-089 | `ArithmeticThetaTateIdentities.general_annular_addition` | exact type + standard axioms passed (joint audit 343) | independent component comparison passed locally; joint official preflights running (main-and-components and complete-main) |
 | accepted-090 | `ArithmeticThetaElementary.norm_exponent_identities` | exact type + standard axioms passed (joint audit 343) | independent component comparison passed locally; joint official preflights running (main-and-components and complete-main) |
 | accepted-091 | `ArithmeticThetaElementary.norm_sign_exponent_even` | exact type + standard axioms passed (joint audit 343) | independent component comparison passed locally; joint official preflights running (main-and-components and complete-main) |
@@ -110,3 +110,7 @@ The exact original statements are in SourceObligations.json; this register track
 | accepted-100 | `ArithmeticThetaPhaseFreeKeyR0219.multiplier_fourth_trivialization` | exact type + standard axioms passed (joint audit 343) | pending |
 
 Joint audit343 checks all103 original exact endpoint propositions and standard axiom closures in one migrated environment. The complete GoalRoot build342 passed with unchanged source hashes. These results establish migration/type/axiom coverage. Independent Challenge comparison, semantic review and registration are recorded separately; no full-paper Palomar pass is claimed.
+
+The sharp/adaptive/image configuration `comparator-sharp-adaptive-image.json` adds seven disjoint endpoints: accepted-046/049/064/065/066/067/088. Its Mathlib-only Challenge has485 lines/31089bytes. Local standalone checks and the actual named root-pair build passed; all225 non-internal Solution declarations have standard axiom closures. It preserves the exact distinct-norm cutoff, full kernels for larger prefixes, actual first-stop algorithm, checked integral changes, full null/image/unique-coordinate results and singleton-zero behavior. Scope and evidence are under `challenges/sharp-adaptive-image/` and `docs/audit/sharp-adaptive-image-351/`. This new configuration still requires its own official full preflight before ordinary intake.
+
+Together, complete-main and sharp/adaptive/image specify47 distinct original endpoints; the separate formal-cover package adds accepted-050 for48. These are independent interface coverage counts, not48 official semantic approvals. The other55 endpoints still need complete independent interfaces. Original scope remains13 requirements/103 endpoints.

@@ -24,6 +24,10 @@ Its Mathlib-only Challenge has969 lines/62283bytes and43 targets covering40 comp
 
 The other63 original endpoints remain outside that independent configuration. In particular, full independent geometric interfaces, including scheme-discriminant existence/naturality, remain unfinished. The formal-cover configuration separately selects accepted-050. Source compilation and exact-type migration do not replace these independent statement comparisons.
 
+The sharp/adaptive/image configuration `comparator-sharp-adaptive-image.json` adds seven disjoint endpoints: accepted-046/049/064/065/066/067/088. Its Mathlib-only Challenge has485 lines/31089bytes. Local standalone checks and the actual named root-pair build passed; all225 non-internal Solution declarations have standard axiom closures. It preserves the exact distinct-norm cutoff, full kernels for larger prefixes, actual first-stop algorithm, checked integral changes, full null/image/unique-coordinate results and singleton-zero behavior. Scope and evidence are under `challenges/sharp-adaptive-image/` and `docs/audit/sharp-adaptive-image-351/`. This new configuration still requires its own official full preflight before ordinary intake.
+
+Together, complete-main and sharp/adaptive/image specify47 distinct original endpoints; the separate formal-cover package adds accepted-050 for48. These are independent interface coverage counts, not48 official semantic approvals. The other55 endpoints still need complete independent interfaces. Original scope remains13 requirements/103 endpoints.
+
 Challenge `sorry` declarations specify the targets required by Comparator; they are not accepted as Solution proofs. The legacy default `comparator.json` selects only an earlier finite-determination pilot. Use the explicit configuration paths below to reproduce the intended scope.
 
 ## Official Palomar status
@@ -60,6 +64,9 @@ lake exe cache get
 lake build +GoalRoot
 lake build CompleteMainAndComponentsChallenge CompleteMainAndComponentsSolution
 lake comparator --config comparator-main-complete.json
+# Sharp cutoff, certified adaptive solver and exact image:
+lake build SharpAdaptiveImageChallenge SharpAdaptiveImageSolution
+lake comparator --config comparator-sharp-adaptive-image.json
 # Separate scoped supporting lemma:
 lake build FormalCoverChallenge FormalCoverSolution
 lake comparator --config comparator-formal-cover.json

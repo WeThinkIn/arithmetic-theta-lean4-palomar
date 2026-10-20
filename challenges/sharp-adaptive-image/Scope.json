@@ -1,0 +1,142 @@
+{
+  "covered_ids": [
+    "accepted-046",
+    "accepted-049",
+    "accepted-064",
+    "accepted-065",
+    "accepted-066",
+    "accepted-067",
+    "accepted-088"
+  ],
+  "target_count": 7,
+  "fully_covered_prior_endpoint_count": 7,
+  "source_obligations": [
+    {
+      "id": "accepted-046",
+      "declaration": "ArithmeticThetaSharpKernelR0195.distinct_norm_sharp_arithmetic",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → 0 < ArithmeticThetaSharpKernelR0195.normCount A ∧ ∃ I : ArithmeticThetaSharpKernelR0195.NormIndex A, ArithmeticThetaSharpKernelR0195.IndexesNorms A I ∧ (∀ i, 0 < I.norm i ∧ Even (I.norm i) ∧ I.norm i ∣ ArithmeticThetaLatticeSectionsR0188.commonN A ∧ 8*I.norm i ∣ ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) ∧ ((ArithmeticThetaSharpKernelR0195.cutoff A : ℕ) : ℚ) ≤ (n : ℚ) * 2^(ArithmeticThetaSharpKernelR0195.normCount A-1) * ArithmeticThetaLevelCount.levelIndex (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) / (48*(ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A) : ℚ)) ∧ (n : ℚ) * 2^(ArithmeticThetaSharpKernelR0195.normCount A-1) * ArithmeticThetaLevelCount.levelIndex (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) / (48*(ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A) : ℚ)) < (ArithmeticThetaSharpKernelR0195.cutoff A : ℚ)+1",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 63–77 and 988–998: enumerate exactly the distinct computed diagonal norms, prove positivity and divisibility at the SAME N=lcm and L=24N², and identify natural division cutoff with the floor of n*2^(r-1)*I(L)/(48L) by both floor inequalities. Includes one distinct norm and repeated norms across the matrix family. Reuse computed_natural_data, indexed_full_unary_factorization and accepted cardinality/index formulas; the new bridge is the norm-only enumeration and sharp floor, not the already accepted distinct (m,nu) enumeration.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-049",
+      "declaration": "ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n h : ℕ), 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → (∀ B : ℕ, ArithmeticThetaSharpKernelR0195.cutoff A ≤ B → LinearMap.ker (ArithmeticThetaComputed.thetaMap A) = LinearMap.ker (((ArithmeticThetaComputed.coefficientMatrix A B).map (algebraMap ℚ ℂ)).mulVecLin)) ∧ (n = 0 → ArithmeticThetaSharpKernelR0195.cutoff A = 0 ∧ ∀ c : Fin h → ℂ, ArithmeticThetaComputed.thetaMap A c = PowerSeries.C (∑ i : Fin h, c i))",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source sharper-bound and main, 47–92 and 1060–1073: unconditional equality of the complete complex theta kernel with the actual computed rational coefficient matrix kernel at the exact B_dagger and every larger prefix. Includes arbitrary deficient rank, all complex coefficients, rank zero with B=0 and constant-series sum formula. Construct the geometric witnesses using sharp-matrix-geometric-family; reuse computed_prefix_map and the accepted rank-zero formula. The conservative bound does not imply this smaller cutoff and may not replace it.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-064",
+      "declaration": "ArithmeticThetaAdaptiveSolverR0230.checked_basis_change_relations",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n h : ℕ) (A : ArithmeticThetaAdaptiveSolverR0230.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ cs : List (ArithmeticThetaAdaptiveSolverR0230.Change n h), ArithmeticThetaAdaptiveSolverR0230.Relations A (ArithmeticThetaAdaptiveSolverR0230.changeRelations A cs)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 575–578: verify actual integral P^t A_i P=A_j and det P=±1 by an executable check, then produce full-series difference relations. Invalid proposed changes yield zero columns and never certify equality. Reuse integral_basis_change and identify its actual complete counting series with theta; do not reprove the norm-preserving bijection. Includes identity/repeated indices, both determinant signs, empty lists and rank zero.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-065",
+      "declaration": "ArithmeticThetaAdaptiveSolverR0230.adaptive_universal_solver",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n h d : ℕ) (A : ArithmeticThetaAdaptiveSolverR0230.Matrices n h) (R : Matrix (Fin h) (Fin d) ℚ), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ArithmeticThetaAdaptiveSolverR0230.Relations A R → 0 < h → ∃ o : ArithmeticThetaAdaptiveSolverR0230.Result h, ArithmeticThetaAdaptiveSolverR0230.solve A R = some o ∧ o.cutoff ≤ ArithmeticThetaAdaptiveSolverR0230.bound A ∧ ArithmeticThetaAdaptiveSolverR0230.Correct A o ∧ o.cutoff ∈ ArithmeticThetaAdaptiveSolverR0230.schedule (ArithmeticThetaAdaptiveSolverR0230.bound A) ∧ (o.cutoff = ArithmeticThetaAdaptiveSolverR0230.bound A ∨ ArithmeticThetaAdaptiveSolverR0230.early A R o.cutoff = true) ∧ ∀ b ∈ ArithmeticThetaAdaptiveSolverR0230.schedule (ArithmeticThetaAdaptiveSolverR0230.bound A), b < o.cutoff → ArithmeticThetaAdaptiveSolverR0230.early A R b = false",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 583–590: prove the actual executable solver terminates successfully on EVERY nonempty valid finite Gram family and established finite relation family; it returns the FIRST certified scheduled prefix, or the internally computed exact sharp cutoff. Prove full complex kernel and complete image basis/unique rational coordinates for its actual returned LDL matrix. Use the new cutoff identification and schedule, the early certificate, accepted sharp_matrix_kernel and sharp_exact_image_data. No external bound, attempt-budget premise, known full-kernel premise or full-rank restriction. Includes n=0 and arbitrary deficient rank.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-066",
+      "declaration": "ArithmeticThetaAdaptiveSolverR0230.adaptive_checked_input",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n h : ℕ) (A : ArithmeticThetaAdaptiveSolverR0230.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → 0 < h → ∀ cs : List (ArithmeticThetaAdaptiveSolverR0230.Change n h), ∃ o : ArithmeticThetaAdaptiveSolverR0230.Result h, ArithmeticThetaAdaptiveSolverR0230.solveChanges A cs = some o ∧ o.cutoff ≤ ArithmeticThetaAdaptiveSolverR0230.bound A ∧ ArithmeticThetaAdaptiveSolverR0230.Correct A o",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 575–590: the end-to-end certificate-producing entrypoint accepts only the valid matrix family and arbitrary finite candidate integral changes. It validates changes internally, executes the adaptive algorithm and returns full kernel/image data without assuming Relations. Empty candidates still terminate at the derived cap if no full-rank early stop occurs. Preserve rejection of invalid changes and consume checked_basis_change_relations.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-067",
+      "declaration": "ArithmeticThetaAdaptiveSolverR0230.adaptive_singleton_zero",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n : ℕ) (A : ArithmeticThetaAdaptiveSolverR0230.Matrices n 1), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ cs : List (ArithmeticThetaAdaptiveSolverR0230.Change n 1), ArithmeticThetaAdaptiveSolverR0230.solveChanges A cs = some (ArithmeticThetaAdaptiveSolverR0230.assemble A 0) ∧ ArithmeticThetaAdaptiveSolverR0230.Correct A (ArithmeticThetaAdaptiveSolverR0230.assemble A 0)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 575–576: the concrete executable entrypoint actually stops at cutoff zero for every singleton valid theta family, regardless of candidate changes or the symbolic bound. Reuse the accepted constant-term-one/counting providers and earlier certificates; this is new execution behavior, not a reproof of singleton independence. Include rank zero. Prove from the early gate, not modularity.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-088",
+      "declaration": "ArithmeticThetaDegreeAssembly.certified_theta_image_data",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n h B : ℕ) (A : Fin h → Matrix (Fin n) (Fin n) ℤ), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ W : Submodule ℂ (Fin h → ℂ), W ≤ LinearMap.ker (ArithmeticThetaComputed.thetaMap A) → Module.finrank ℂ W = h - (ArithmeticThetaComputed.coefficientMatrix A B).rank → (LinearIndependent ℂ (fun t : Fin (ArithmeticThetaElimination.freeColumns (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B))).length => fun j => ((ArithmeticThetaElimination.nullBasis (ArithmeticThetaComputed.coefficientMatrix A B) t j : ℚ) : ℂ)) ∧ Submodule.span ℂ (Set.range (fun t : Fin (ArithmeticThetaElimination.freeColumns (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B))).length => fun j => ((ArithmeticThetaElimination.nullBasis (ArithmeticThetaComputed.coefficientMatrix A B) t j : ℚ) : ℂ))) = LinearMap.ker (ArithmeticThetaComputed.thetaMap A)) ∧ (LinearIndependent ℂ (fun t : Fin (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B)).pivots.length => ArithmeticThetaComputed.theta (A (ArithmeticThetaComputed.selectedIndex A B t))) ∧ Submodule.span ℂ (Set.range (fun t : Fin (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B)).pivots.length => ArithmeticThetaComputed.theta (A (ArithmeticThetaComputed.selectedIndex A B t)))) = LinearMap.range (ArithmeticThetaComputed.thetaMap A)) ∧ ∀ j : Fin h, ArithmeticThetaComputed.theta (A j) = ∑ t : Fin (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B)).pivots.length, ((ArithmeticThetaElimination.columnCoordinates (ArithmeticThetaComputed.coefficientMatrix A B) j t : ℚ) : ℂ) • ArithmeticThetaComputed.theta (A (ArithmeticThetaComputed.selectedIndex A B t)) ∧ ∀ c : Fin (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B)).pivots.length → ℚ, ArithmeticThetaComputed.theta (A j) = ∑ t, ((c t : ℚ) : ℂ) • ArithmeticThetaComputed.theta (A (ArithmeticThetaComputed.selectedIndex A B t)) → c = ArithmeticThetaElimination.columnCoordinates (ArithmeticThetaComputed.coefficientMatrix A B) j",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 89–91,550–578: once the actual early certificate is justified, the computed rational null vectors give the entire complex theta kernel, the computed pivot theta series form an independent basis of the full formal image, and the computed rational coordinates reconstruct every whole series uniquely. Promote finite-prefix coordinate equalities to full-series equalities using the newly derived actual kernel equality. This does not assert modularity or arbitrary-bound success.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    }
+  ],
+  "comparator_run": false,
+  "official_precheck_run": false,
+  "full_paper_claimed": false,
+  "original_total_endpoints": 103,
+  "original_total_requirements": 13,
+  "new_beyond_complete_main": [
+    "accepted-046",
+    "accepted-049",
+    "accepted-064",
+    "accepted-065",
+    "accepted-066",
+    "accepted-067",
+    "accepted-088"
+  ],
+  "packages": [
+    {
+      "package": "sharp-main-package-349",
+      "files": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-main-package-349/Challenge.lean": "cd5b8e640e2e91cda80afb018adb82bdb857f23078fbf135a477019c5df95d0d",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-main-package-349/Solution.lean": "b9302e90f31b3f32e7f60d5221b5c1615805efa379d565fa170a201ec4be49d9",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-main-package-349/Scope.json": "cf179ef7644ba05f73fa28595d9ff3ed1238a77a18643c65698a0491b5048aa7",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-main-package-349/receipt.json": "2d9409fa7c1b826f49eb254654bbb019614562c08fb358c0459ed21858e356be"
+      }
+    },
+    {
+      "package": "adaptive-solver-package-348",
+      "files": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/adaptive-solver-package-348/Challenge.lean": "8e2cf726a18237f5544c2dd779a703d7bb8a62a36865f43e5f850f68f28088db",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/adaptive-solver-package-348/Solution.lean": "a9b0b781bdb9936bef1a53797063eb148863a25199c5e81314272b3f45b797dc",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/adaptive-solver-package-348/Scope.json": "883697057b18c9d6fb515b39a251a8de7387443a8823c9daac393cc9bd9e53ef",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/adaptive-solver-package-348/receipt.json": "acbef7e156d9563867ec8334a61c31fa427195c90bb6cb9e2da0b6b7730666a7"
+      }
+    },
+    {
+      "package": "certified-image-package-350",
+      "files": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/certified-image-package-350/Challenge.lean": "c403540cd3f1f110a6b26a95ca22eb0a8d2515aff92a71a4dd6f1a2fad2a5af3",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/certified-image-package-350/Solution.lean": "e1c7a440c50da5686d4392c46a14fb0c3dd50a737547491fb8b682c853916063",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/certified-image-package-350/Scope.json": "85fbf86d23602e919d887f2210f79d235cff21c82133df5d23da1ca939775f1b",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/certified-image-package-350/receipt.json": "3f7bacd62019165ced3791ae3c49ee9cc9c2adad9d41c322e231229d4253d8a3"
+      }
+    }
+  ]
+}

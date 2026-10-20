@@ -1,0 +1,18 @@
+{
+  "challenge_module": "SharpAdaptiveImageChallenge",
+  "solution_module": "SharpAdaptiveImageSolution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarSharp349.explicitSharpFiniteDetermination",
+    "ArithmeticThetaPalomarAdaptive348.checked_basis_change_relations",
+    "ArithmeticThetaPalomarAdaptive348.adaptive_universal_solver",
+    "ArithmeticThetaPalomarAdaptive348.adaptive_checked_input",
+    "ArithmeticThetaPalomarAdaptive348.adaptive_singleton_zero",
+    "ArithmeticThetaPalomarImage350.certifiedImage",
+    "ArithmeticThetaPalomarImage350.shellFinite"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "checks_passed": true,
+  "checks": {
+    "challenge-01": {
+      "exit_code": 0,
+      "seconds": 3.0178438466973603,
+      "command": [
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-j12",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-adaptive-image-351/Challenge.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-adaptive-image-351/Challenge.lean"
+      ]
+    },
+    "solution-01": {
+      "exit_code": 0,
+      "seconds": 4.019442243035883,
+      "command": [
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-j12",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-adaptive-image-351/Solution.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-adaptive-image-351/Solution.lean"
+      ]
+    },
+    "audit-01": {
+      "exit_code": 0,
+      "seconds": 2.9678073390387,
+      "command": [
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-j12",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-adaptive-image-351/Audit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-adaptive-image-351/Audit.lean"
+      ]
+    }
+  },
+  "declarations_audited": 225,
+  "unexpected_axioms": 0,
+  "component_sources_unchanged": true,
+  "challenge_lines": 485,
+  "challenge_bytes": 31089,
+  "source_endpoint_count": 7,
+  "comparator_run": false,
+  "official_precheck_run": false,
+  "files": {
+    "Audit.olean": "4141ad2e7d6a35597203f040139191a2891ea841a3334562b3e389318b434cbb",
+    "Solution.olean": "74285abd7efad0b587041bdac94272043578aa2c9e8e1c79d8977ff7c6a57e2b",
+    "challenge-01.log": "fc3ca9c6aaed1767e4f91b6b03514317490a72ea308668aa8f8d5e9fefbb2182",
+    "comparator.json": "53d519671f1ca78dd3abf4768d36a68e4f5e274518b0e4c244133cf108a3e59b",
+    "audit-01.log": "a1877f751b4727d95d724b8f33dac2a018a911ba42fb3e79a38032fc47d9fcf0",
+    "Scope.json": "7b621c0ce19512f622591f2472f2234f04d6502a731fa86201921a88a0721a38",
+    "README.md": "d442591cd725162fb5825a5cf1aef2a501d80a584009b78408f08dd3229913ec",
+    "Challenge.olean": "10b03508955fbe7d048e0f3c0c3efe203de6383fb68772a0038cd447f58505e3",
+    "challenge-01.json": "1012c9ab69e4a3e99873c443721167646bb08dfffd2de28a46f0139d8e757a78",
+    "audit-01.json": "bb04959e170490c160c07a476e0f9c33e5185efe7d750941403d81bd960f736c",
+    "solution-01.log": "5b5d74c579decb51da69184b5d79991bdee23ab990c01939c4a07b131c7ab10f",
+    "SourceMap.json": "cca2325c2d7d7a1b6f9a90d9a2d537cb1278cf82fb4a447a3d903bd912ebc9ba",
+    "Solution.lean": "de12500d33934e9a09cefe229df2da4e842dde7e7f18c64886bac1463b8cb8f9",
+    "Audit.lean": "ac1c33c42a7a11226c0dd7abf54cc35f932768369fa9c5bb0d659adc2178585e",
+    "Challenge.lean": "eabe53270a147ed5b53c22b4d5330fac18bb2c44b9e3e2ae6d5ae880b3e1db29",
+    "solution-01.json": "f8b04e86df61ac8171c46ab54ba3078d4ef87cdaef8f27ff29defa703e795d51",
+    "checkpoint.json": "f2ae201ab68758e524af264d0afb8caead0aacbea1c069411a84e4782c6d1bb2"
+  }
+}

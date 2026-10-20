@@ -1,0 +1,100 @@
+ Classical.choice,
+ Quot.sound]
+info: Proof/RatioUnaryRegularSectionsR0195.lean:320:0: 'ArithmeticThetaSharpKernelR0195.RatioUnaryRegularSectionsR0195.puncture_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/RatioUnaryRegularSectionsR0195.lean:321:0: 'ArithmeticThetaSharpKernelR0195.RatioUnaryRegularSectionsR0195.ratioMultiple_of_puncture' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/RatioUnaryRegularSectionsR0195.lean:342:0: 'ArithmeticThetaSharpKernelR0195.RatioUnaryRegularSectionsR0195.pulled_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/RatioUnaryRegularSectionsR0195.lean:410:0: 'ArithmeticThetaSharpKernelR0195.ratio_unary_regular_sections' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12034/12054] Replayed SharpMatrixGeometricFamilyR0195
+info: Proof/SharpMatrixGeometricFamilyR0195.lean:211:0: 'ArithmeticThetaSharpKernelR0195.sharp_matrix_geometric_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12035/12054] Replayed SharpGeometricCutoffR0195
+info: Proof/SharpGeometricCutoffR0195.lean:93:0: 'ArithmeticThetaSharpKernelR0195.sharp_geometric_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [12036/12054] Replayed SharpMatrixKernelR0195
+info: Proof/SharpMatrixKernelR0195.lean:47:0: 'ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [12037/12054] Replayed SharpExactImageDataR0195
+info: Proof/SharpExactImageDataR0195.lean:25:0: 'ArithmeticThetaSharpKernelR0195.sharp_exact_image_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [12039/12054] Replayed RationalSchurCompletionR0229
+info: Proof/RationalSchurCompletionR0229.lean:97:0: 'ArithmeticThetaLDLEnumerationR0229.rational_schur_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12040/12054] Replayed ShiftedIntegerIntervalR0229
+warning: Proof/ShiftedIntegerIntervalR0229.lean:60:32: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Proof/ShiftedIntegerIntervalR0229.lean:63:25: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [12041/12054] Replayed RecursiveEllipsoidEnumerationR0229
+warning: Proof/RecursiveEllipsoidEnumerationR0229.lean:47:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+info: Proof/RecursiveEllipsoidEnumerationR0229.lean:74:0: 'ArithmeticThetaLDLEnumerationR0229.recursive_ellipsoid_enumeration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12042/12054] Replayed LDLThetaPrefixR0229
+info: Proof/LDLThetaPrefixR0229.lean:129:0: 'ArithmeticThetaLDLEnumerationR0229.ldl_theta_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Proof/LDLThetaPrefixR0229.lean:130:0: 'ArithmeticThetaLDLEnumerationR0229.ldl_coefficient_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [12045/12054] Replayed ThetaSeriesConstruction
+warning: Proof/ThetaSeriesConstruction.lean:122:6: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hx0]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ℹ [12048/12054] Replayed ComputedSharpCutoffR0230
+info: Proof/ComputedSharpCutoffR0230.lean:56:0: 'ArithmeticThetaAdaptiveSolverR0230.computed_sharp_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [12049/12054] Replayed CappedDoublingScheduleR0230
+warning: Proof/CappedDoublingScheduleR0230.lean:53:30: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+info: Proof/CappedDoublingScheduleR0230.lean:92:0: 'ArithmeticThetaAdaptiveSolverR0230.capped_doubling_schedule' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [12050/12054] Replayed ExecutableRelationCertificateR0230
+info: Proof/ExecutableRelationCertificateR0230.lean:108:0: 'ArithmeticThetaAdaptiveSolverR0230.executable_relation_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12051/12054] Replayed CheckedBasisChangeRelationsR0230
+info: Proof/CheckedBasisChangeRelationsR0230.lean:55:0: 'ArithmeticThetaAdaptiveSolverR0230.checked_basis_change_relations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12052/12054] Replayed AdaptiveUniversalSolverR0230
+info: Proof/AdaptiveUniversalSolverR0230.lean:153:0: 'ArithmeticThetaAdaptiveSolverR0230.adaptive_universal_solver' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/AdaptiveUniversalSolverR0230.lean:154:0: 'ArithmeticThetaAdaptiveSolverR0230.adaptive_checked_input' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Proof/AdaptiveUniversalSolverR0230.lean:155:0: 'ArithmeticThetaAdaptiveSolverR0230.adaptive_singleton_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [12053/12054] Built SharpAdaptiveImageChallenge (3.9s)
+warning: SharpAdaptiveImageChallenge.lean:76:8: declaration uses `sorry`
+warning: SharpAdaptiveImageChallenge.lean:361:8: declaration uses `sorry`
+warning: SharpAdaptiveImageChallenge.lean:364:8: declaration uses `sorry`
+warning: SharpAdaptiveImageChallenge.lean:367:8: declaration uses `sorry`
+warning: SharpAdaptiveImageChallenge.lean:370:8: declaration uses `sorry`
+warning: SharpAdaptiveImageChallenge.lean:475:8: declaration uses `sorry`
+warning: SharpAdaptiveImageChallenge.lean:478:8: declaration uses `sorry`
+⚠ [12054/12054] Built SharpAdaptiveImageSolution (5.0s)
+info: SharpAdaptiveImageSolution.lean:195:0: 'ArithmeticThetaPalomarSharp349.explicitSharpFiniteDetermination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SharpAdaptiveImageSolution.lean:205:0: 'ArithmeticThetaPalomarSharp349.original046Correspondence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SharpAdaptiveImageSolution.lean:217:0: 'ArithmeticThetaPalomarSharp349.original049Correspondence' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: SharpAdaptiveImageSolution.lean:583:4: This simp argument is unused:
+  fromResult
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [correctWithState, ArithmeticThetaAdaptiveSolverR0230.Correct, fromState, matrix_bridge,
+    thetaMap_bridge, theta_bridge]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (12054 jobs).

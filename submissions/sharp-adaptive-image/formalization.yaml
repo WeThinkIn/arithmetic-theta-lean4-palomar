@@ -1,0 +1,52 @@
+version: v0.4
+project:
+  name: Sharp arithmetic theta bound, certified adaptive solver and exact image
+  description: 'Seven complete original endpoints: exact distinct-norm sharp cutoff
+    and all larger theta relation kernels; executable adaptive first-stop solver with
+    internal checked basis changes, complete kernel/image/unique-coordinate output
+    and singleton-zero behavior; certificate-derived exact theta image data. Includes
+    supporting finite-shell assertions. The other 96 original endpoints are outside
+    this configuration. See challenges/sharp-adaptive-image/Scope.json.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Seven complete original endpoints: exact distinct-norm sharp cutoff and
+    all larger theta relation kernels; executable adaptive first-stop solver with
+    internal checked basis changes, complete kernel/image/unique-coordinate output
+    and singleton-zero behavior; certificate-derived exact theta image data. Includes
+    supporting finite-shell assertions. The other 96 original endpoints are outside
+    this configuration. See challenges/sharp-adaptive-image/Scope.json.'
+fidelity:
+  divergences: Independent definitions and explicit proven bridges preserve accepted-046,
+    accepted-049, accepted-064 through accepted-067 and accepted-088. No full-paper
+    verification is claimed. Geometric construction endpoints accepted-047/048 and
+    scheme-discriminant endpoints accepted-080/081 are not public outputs of this
+    configuration.

@@ -71,7 +71,12 @@ algorithm requirements.
 
 ## Current status
 
-The current `comparator.json` is a pilot for existential finite determination
-only. Its Solution has not yet passed Comparator. No full-paper Palomar result
-is available. The port has a partial exact-type/axiom check for 99 endpoints (audit 316),
-with the remaining endpoints and the full joint build still pending.
+Complete GoalRoot migration build342 and joint audit343 passed all103 exact original endpoint types with standard axiom closures. No original delivery file was changed (baseline344,1207 files). The full source build is no longer pending.
+
+The stronger complete-main configuration specifies40 complete original endpoints with43 targets and is undergoing official full preflight39469688913 at35c8d4a. Its main theorem preserves FormalIdentity for the same U and bound B. The older39-endpoint run39461299032 remains independent. accepted-017 and the separate accepted-050 formal-cover scope have passed their respective official mechanical checks; the formal-cover submission has a private review available, without registration.
+
+The sharp/adaptive/image configuration `comparator-sharp-adaptive-image.json` adds seven disjoint endpoints: accepted-046/049/064/065/066/067/088. Its Mathlib-only Challenge has485 lines/31089bytes. Local standalone checks and the actual named root-pair build passed; all225 non-internal Solution declarations have standard axiom closures. It preserves the exact distinct-norm cutoff, full kernels for larger prefixes, actual first-stop algorithm, checked integral changes, full null/image/unique-coordinate results and singleton-zero behavior. Scope and evidence are under `challenges/sharp-adaptive-image/` and `docs/audit/sharp-adaptive-image-351/`. This new configuration still requires its own official full preflight before ordinary intake.
+
+Together, complete-main and sharp/adaptive/image specify47 distinct original endpoints; the separate formal-cover package adds accepted-050 for48. These are independent interface coverage counts, not48 official semantic approvals. The other55 endpoints still need complete independent interfaces. Original scope remains13 requirements/103 endpoints.
+
+No full-paper Palomar result is available. The legacy default comparator.json is an earlier pilot and should not be confused with these explicit configurations. Independent geometric specifications, including actual scheme-discriminant existence/naturality and the full sharp geometric family, remain open despite their migrated original-type proofs passing.
