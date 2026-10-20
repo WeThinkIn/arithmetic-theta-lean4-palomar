@@ -1225,3 +1225,11 @@ roots = ["Challenge"]
 [[lean_lib]]
 name = "Solution"
 roots = ["Solution"]
+
+[[lean_lib]]
+name = "EarlyCertificateChallenge"
+roots = ["EarlyCertificateChallenge"]
+
+[[lean_lib]]
+name = "EarlyCertificateSolution"
+roots = ["EarlyCertificateSolution"]

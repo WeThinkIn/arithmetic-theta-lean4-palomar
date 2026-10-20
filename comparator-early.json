@@ -1,0 +1,12 @@
+{
+  "challenge_module": "EarlyCertificateChallenge",
+  "solution_module": "EarlyCertificateSolution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarEarly205.earlierCertificate"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

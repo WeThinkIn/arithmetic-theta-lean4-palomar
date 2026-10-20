@@ -2,6 +2,15 @@ name: Palomar official mechanical preflight
 run-name: Palomar full preflight at ${{ github.sha }}
 on:
   workflow_dispatch:
+    inputs:
+      comparator_config_path:
+        description: 'Configuration: pilot or accepted-017 early certificate (neither is full-paper coverage)'
+        required: false
+        default: comparator.json
+        type: choice
+        options:
+          - comparator.json
+          - comparator-early.json
 permissions:
   contents: read
 jobs:
@@ -9,14 +18,25 @@ jobs:
     runs-on: ubuntu-24.04
     outputs:
       id: ${{ steps.identifier.outputs.id }}
+      options: ${{ steps.identifier.outputs.options }}
     steps:
       - id: identifier
         name: Generate twelve-character preflight request identifier
+        env:
+          COMPARATOR_CONFIG: ${{ inputs.comparator_config_path || 'comparator.json' }}
         run: |
           python3 - <<'PY'
-          import os, secrets
+          import json, os, secrets
           with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
               print('id=' + secrets.token_hex(6), file=output)
+              config = os.environ['COMPARATOR_CONFIG']
+              if config not in ('comparator.json', 'comparator-early.json'):
+                  raise SystemExit('Unsupported comparator configuration')
+              options = {
+                  'comparator_config_path': config,
+                  'authorization_relationship': 'I am a responsible author or maintainer',
+              }
+              print('options=' + json.dumps(options), file=output)
           PY
   palomar-preflight:
     needs: request
@@ -28,4 +48,4 @@ jobs:
       request_id: ${{ needs.request.outputs.id }}
       mode: full
       execution_profile: palomar-standard-v1
-      options: '{"comparator_config_path":"comparator.json","authorization_relationship":"I am a responsible author or maintainer"}'
+      options: ${{ needs.request.outputs.options }}
