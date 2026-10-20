@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-20T23:31:58.307806+00:00",
+  "run": 39469688913,
+  "commit": "35c8d4a1ed4ad19ac879a31a912ab5fcd707f558",
+  "official_pass": false,
+  "failure_kind": "infrastructure/resource-exhausted",
+  "stage": "comparator",
+  "solution_build_passed": true,
+  "solution_build_seconds": 8172.251,
+  "solution_export_passed": true,
+  "solution_export_seconds": 154.631,
+  "comparator_supervisor_timeout": true,
+  "final_kernel_verdict_available": false,
+  "bindings": {
+    "Review.md": "fd9c59bc9337a43310bc5777983fe0c3f60e9c544ef28aecdff7dcfc6b05fea2",
+    "artifact/mechanical-report.json": "6930189165c6777b1d69f364ba4567a07ab8206802be9aeddfa04fb7bbfebfa3",
+    "submitted-lakefile.toml": "77444c40009bbb5753acb1561c6092b09fd77b191895e6127ccbae57a123bc5c"
+  }
+}
