@@ -339,6 +339,7 @@ lemma pullback_right_unit {X Y : Scheme.{u}} (f : X ⟶ Y) (M : Y.Modules)
   rw [Category.assoc, Iso.hom_inv_id_app_assoc, ← Functor.map_comp, Iso.inv_hom_id_app,
     CategoryTheory.Functor.map_id, h, eqToHom_trans, eqToHom_refl]
 
+set_option synthInstance.maxHeartbeats 100000 in
 lemma pullback_left_unit {X Y : Scheme.{u}} (f : X ⟶ Y) (M : Y.Modules)
     (q : (Scheme.Modules.pullback f).obj M = (Scheme.Modules.pullback (𝟙 X ≫ f)).obj M) :
     (Scheme.Modules.pullbackId X).inv.app ((Scheme.Modules.pullback f).obj M) ≫

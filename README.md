@@ -6,8 +6,9 @@ This repository prepares an independent Palomar verification of the full
 arithmetic theta formalization accompanying `paper/Paper.pdf`. The
 GitHub repository is `WeThinkIn/arithmetic-theta-lean4-palomar`.
 
-**Status: migration in progress. No successful full port, full-paper Comparator
-verification, Palomar review, or registration is claimed.** The original Lean 4.33.1 audit and
+**Status: migration in progress. The accepted-050 scoped submission passed official
+mechanical verification and has a private semantic review available. Full GoalRoot migration,
+full-paper independent verification and registration remain incomplete.** The original Lean 4.33.1 audit and
 the new Lean 4.35.0-rc2 verification are distinct evidence.
 
 For a nonempty finite family of positive-definite even integral Gram matrices,
@@ -82,7 +83,8 @@ lake comparator --config comparator-formal-cover.json
 
 The four scoped root modules compiled successfully in build 276. The standalone
 formal-cover package passed local con-ron, NanoDa and Lean default checking in
-537.30 seconds; the combined main-and-components official check is pending.
+537.30 seconds and subsequently passed official preflight and submission verification.
+The combined main-and-components and stronger complete-main official checks are pending.
 The full GoalRoot source port still has unresolved compatibility issues. Oversized modules have been split;
 all required split modules must pass the migrated build before acceptance.
 The verification record will identify the exact submitted Git commit and the
@@ -108,24 +110,30 @@ Original Lean code is licensed under Apache-2.0 by authorization of the project 
 The owner authorized public visibility, official mechanical preflight and subsequent
 submission on 2026-10-20. The repository is now public. The manually dispatched
 workflow in `.github/workflows/palomar-preflight.yml` calls the official pinned
-PalomarSubmission workflow with `mode: full` and `palomar-standard-v1`. The workflow offers the pilot, early certificate, main-and-components and formal-cover
-configurations; each result applies only to its selected configuration. Formal submission must follow a passing full mechanical report.
+PalomarSubmission workflow with `mode: full` and `palomar-standard-v1`. The workflow offers the pilot, early certificate, main-and-components, formal-cover
+and complete-main configurations; each result applies only to its selected configuration. Formal submission must follow a passing full mechanical report.
 
 The latest joint migrated audit checks **99 of 103** original exact endpoint types and their standard axiom closures. The full GoalRoot build remains pending.
 
 The prepared `comparator-main-and-components.json` compares 43 targets: an explicit conservative full-series kernel bound, 39 complete prior endpoints and supporting results. Its Mathlib-only Challenge is 953 lines / 61,095 bytes. The main interface does not include the extra `FormalIdentity` field of original accepted-037; that original exact type separately passed audit 316. See `challenges/main-and-components/Scope.json`.
 
-`comparator-formal-cover.json` separately compares accepted-050. Both new configurations have scope-specific formalization metadata and require their own official full mechanical reports before intake. Geometry interfaces, including the independent scheme discriminant specification, remain unfinished. No full-paper Palomar verification or registration is claimed.
+`comparator-formal-cover.json` separately compares accepted-050. Both configurations have scope-specific formalization metadata. Formal-cover passed its official full report and completed intake; main-and-components remains in preflight. Geometry interfaces, including the independent scheme discriminant specification, remain unfinished. No full-paper Palomar verification or registration is claimed.
 
 ## Stronger complete main interface
 
 `comparator-main-complete.json` selects the separately compiled 969-line Challenge
 in `CompleteMainAndComponentsChallenge.lean`. It covers 40 complete prior endpoints
 with 43 targets, including the same-U FormalIdentity output of accepted-037.
-All four relevant root modules and the two recent compatibility repairs passed
+The stronger Challenge/Solution root pair and the two compatibility repairs passed
 actual Lake integration314. This stronger configuration requires its own official
 report; the older main-and-components report cannot validate the added output.
 
 The accepted-050 formal-cover entry completed ordinary intake as `86n83vqdajt2`.
-Its Palomar verification run39466419289 succeeded and it is awaiting semantic
-review. No permanent registration or full-paper pass is claimed.
+Its Palomar verification run39466419289 succeeded and it is at review-ready, with its semantic review held privately. No permanent registration or full-paper pass is claimed.
+
+Current complete-main preflight:
+[39469688913](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39469688913),
+source commit `35c8d4a1ed4ad19ac879a31a912ab5fcd707f558`.
+Formal-cover submission verification:
+[39466419289](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/39466419289).
+The latter is a mechanical pass for accepted-050 only; its semantic review is available privately.

@@ -1,0 +1,136 @@
+{
+  "status": "isolated_full_file_and_import_audit_passed",
+  "completed_utc": "2026-10-20T18:03:45.473202+00:00",
+  "original_source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/TautologicalSquarePullbackR0199.lean",
+  "original_sha256": "6959fb2e52ff0b7964a750c368e01f1682a8a502702d21560eb81902c2a62cf5",
+  "original_source_unchanged": true,
+  "repaired_source_sha256": "d3ceff6f26d1a5cad597902a14b0c5f361413703d901aa4219c43de9e58199b7",
+  "change": "Replace one ULift.ext/Subsingleton.elim block by exact congrArg Discrete.Hom.mk rfl",
+  "original_changed_lines": [
+    85,
+    86
+  ],
+  "declaration_signatures_preserved": true,
+  "exact_final_type_application_checked": true,
+  "axioms": {
+    "ArithmeticThetaStackLevelR0199.TautologicalSquarePullbackR0199.pointId": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.TautologicalSquarePullbackR0199.rootArrow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.TautologicalSquarePullbackR0199.pullComparison": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.TautologicalSquarePullbackR0199.component": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.TautologicalSquarePullbackR0199.underlying": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.TautologicalSquarePullbackR0199.underlying_naturality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.TautologicalSquarePullbackR0199.yonedaHom": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.TautologicalSquarePullbackR0199.yonedaHom_natural": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.TautologicalSquarePullbackR0199.component_hom": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.TautologicalSquarePullbackR0199.component_natural": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.tautological_square_pullback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_checked_declaration_count": 11,
+  "compilations": [
+    {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/TautologicalSquarePullbackR0199.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/TautologicalSquarePullbackR0199.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.98,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "d3ceff6f26d1a5cad597902a14b0c5f361413703d901aa4219c43de9e58199b7",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/Audit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.07,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "756610a8ad88a0ed39c13f8d2904143144ce9a0e1616a4327f31db2bd83937cb",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    }
+  ],
+  "dependency_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/StackLevelDefinitionsR0199.lean": "81212069a03727fc7aa9f4e5ebb9fef34aaf6db4b74da2b6f6696b1f5b05f6db",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/StackLevelDefinitionsR0199.olean": "ee0ef8599c464783748d7d118fb38d6b2adc84bf9b494660d9c5321948a5ea8d",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/Mathlib/CategoryTheory/Discrete/Basic.lean": "21f2ad5d04a86e443ed8f3735b06cfb8b4a5fe97e8dca5c9023074b2dcb28cd3",
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1"
+  },
+  "no_project_mutations": true,
+  "artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/Audit.olean.private": "98dda80fc3558ebb3e56b313ac5c608c426051ff3c046b3198486faefdc29d96",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/Audit.olean": "5ef49fd1a0ad91dce9da033b87dd671cc3d52d53b1d41e9ae7c6429a65b97846",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/TautologicalSquarePullbackR0199.ir": "56bcb3449c03b280901386c794362832dc06149406cd250028900dad2cc12d7d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/Audit-check-01.log": "ae0cc974e55482dce83e2027e19c935d59a23b1c9340b9700d765b3b77713952",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/compile.py": "e369949c6251c5a9368c8f3e40379ff0c621c3ca6fbe59735a887dce9e67058c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/TautologicalSquarePullbackR0199.lean": "d3ceff6f26d1a5cad597902a14b0c5f361413703d901aa4219c43de9e58199b7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/Audit-receipt-01.json": "9f5e1d633b6796302e13a5270a7ea4926db30822f9ded6bab5477617b268beac",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/minimal.patch": "297423cc264286a464d6f034b36928a3629fdf333183bdb6e10ccd397753e4f1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/Audit.ir": "61fef643a61d01db7352730da1acd05a256b337042e9217f833d4ca8eac2d6fb",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/TautologicalSquarePullbackR0199.olean.private": "0c540eb64c48097e598e1c134ca2d9b5ae9587020bc81383c55e156c3ef4843b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/Original.lean.txt": "6959fb2e52ff0b7964a750c368e01f1682a8a502702d21560eb81902c2a62cf5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/Audit.olean.server": "d488516f1f37f2fc35dcfd9055d61a31cd7a9af2faca8e65d99fc7d79a24ffe6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/TautologicalSquarePullbackR0199.ir.sig": "39d46b1d574c5d1a8cd8c59ba96a0e4f7119d4c70c98806b1b8f5a0ee731251e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/TautologicalSquarePullbackR0199-check-01.log": "ff39749a013fa8323be6655b0cd66aab2bbddb96a23c806c0d2cfe8a974a5826",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/Audit.ir.sig": "ae933e683f4f42e1614d22b9d9e256b83e87e063bbd9109cb58d441bf6f93ce1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/Audit.lean": "756610a8ad88a0ed39c13f8d2904143144ce9a0e1616a4327f31db2bd83937cb",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/Analysis.md": "aeb537594eba5cad57adb4832a185b64496e1d612274f4390a1e4efa9b437141",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/TautologicalSquarePullbackR0199-receipt-01.json": "baab9fb22c9b14becee162ce39337de63ac3987720776af76b20b84619b4eaba",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/TautologicalSquarePullbackR0199.olean.server": "a3148c9d86e9f0d8e8a5ce92d1f58d0a7eeb4c5285225a7ab33523860e842b4e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/TautologicalSquarePullbackR0199.olean": "7a8112d5845cf66297a039d6ba7e20b49e3578f74a42c52e0c6baecc775c5ec0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tautological-square-repair-327/checkpoint.json": "624703ba87d405eaa12dd6642c9ca4324ff6aec11eb6b8c22a6425f0d0cc70f8"
+  }
+}

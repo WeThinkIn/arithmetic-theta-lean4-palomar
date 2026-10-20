@@ -31,9 +31,9 @@ def comparison {S T : Over B} (a : S ⟶ T) :
   NatIso.ofComponents (fun f => (Cat.Hom.toNatIso
     (F.mapComp f.down.as.op.toLoc a.op.toLoc)).app x)
     (fun {f g} e => by
-      have h : f = g := ULift.ext _ _ (Discrete.ext (Discrete.eq_of_hom e))
+      have h : f = g := ULift.ext (Discrete.ext (Discrete.eq_of_hom e))
       subst g
-      have he : e = 𝟙 f := by apply ULift.ext; apply Subsingleton.elim
+      have he : e = 𝟙 f := by exact congrArg Discrete.Hom.mk rfl
       subst e
       simp)
 

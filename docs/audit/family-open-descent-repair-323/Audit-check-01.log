@@ -1,0 +1,42 @@
+'ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.effective_actual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.descentArrowIso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.underlyingArrowIso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.underlyingArrowIso_hom' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.underlyingArrowIso_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.categorical_faithful' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.categorical_full' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.categorical_essSurj' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.categorical_equivalence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMetaplecticStackR0207.actual_family_open_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Audit.lean:16:55: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Audit.lean:16:68: warning: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

@@ -1,0 +1,1253 @@
+[
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.fromSection_ne_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.relative_primitive_theta_commutator",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.pullback_left_unit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.commutator_iff",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.sectionAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.LinePair.toAut_injective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibreEnd_comp",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.sectionHom",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.fromSection_top",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.translatedCombination",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.levelCombinationAt_injective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.linear_twist_pow",
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.PullbackLifts.lift_commutation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.scalarAut_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.act_bijective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.PullbackLifts.squareNat.congr_simp",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.exists_fibre_eigensection",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.PullbackLifts.lift_changeMap",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.eigen_zero_ideal_invariant",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.LinePair.toAut",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibre_eigen_zero_invariant",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibre_two_rows_not_subset_zero_divisor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.invariant_iterates",
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.PullbackLifts.compLift",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibreTranslations_commute",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.central_twist_period",
+    "axioms": [
+      "propext"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.zeroSupport_smul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibreEnd",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.commutatorUnit_period",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibrePointAt_injective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.exists_common_eigenvector",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.PullbackLifts.lift",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibreEnd_fst",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.commutator_aut_relation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.translations_commute",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.PullbackLifts.lift_comp",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.changeMap.congr_simp",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.LinePair.congr_inv",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.LinePair.toAut_trans",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.sectionsIso",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.compose_identity_right",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.PullbackLifts.iso_paste",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.commutator_pow_eq_one",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.primitive_commutator_iff_geometric_tests",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.pullbackSection_top",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.actLinear",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.scalarAut_injective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.toAut_changeMap",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.pullback_right_unit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.eigen_zeroSupport_iterate",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.commutator_independent",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.sectionAct_commutator",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fieldFrame",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.commutatorUnit_spec",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.rawTranslationIso_pow",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.field_theta_cohomology",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibrePoint_end",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.baseChangedFamily",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.twoRowIndex_injective",
+    "axioms": [
+      "propext"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibreLift",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.linear_twist_pow_commute",
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.divisor_exists_fibre_point",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.shiftPoint",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.baseChanged_zero_ideal",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.thetaAct_relation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.compose_scaled_right",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.scalarAutHom",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.translatedTwoRows_orbit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.existsUnique_scaled",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.commutatorUnit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.scalarAut_commute",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.baseChanged_originPowerIso",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibre_zero_divisor",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.aut_pow_succ_hom",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.zeroSupport_iterate",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibreLineIso",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.act",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.zeroIdeal_act",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.field_unit_cohomology",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.baseChanged_zero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.LinePair.toAut_fiber",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.field_sections_finite",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.PullbackLifts.square_paste",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.toAut_scaled_right",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.scaled_mul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.LinePair.mapComp_inv_app",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.central_twist_power",
+    "axioms": [
+      "propext"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.LinePair.mapId_inv_app",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibreTranslation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.thetaAct",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.translatedTwoRows_injective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.shiftPoint_iterate",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.translationIso_period",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.eigen_zero_support_invariant",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.sectionAct_scaled",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibreEnd_snd",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.LinePair.toAut_base",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.toAut_compose",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.levelCombination",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibrePoint",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.act_commutation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.levelCombinationAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.powerLift",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.exists_theta_eigensection",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fieldLineIso",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.primitiveUnit_iff_field_tests",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.act_comp",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.toAut_powerLift",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibre_scalar",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibrePointAt_shift",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.translatedCombination_injective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.LinePair.fibration",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.exists_common_unit_eigenvector",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.translate_mul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibreLift_commutation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.isUnit_iff_field_nonzero",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.toAut_scaled_left",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.commutator_scaled",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.scalarAut_mul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.twoRowIndex",
+    "axioms": []
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.LinePair.obj",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.base_scalar_fixed",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.actOfHom",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.sectionAt_nsmul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.geometric_commutator_primitive",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.compose_identity_left",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibreAct_relation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.power_is_scalar",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.sectionAt_mul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.existsUnique_commutator",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.translatedTwoRows_card_le",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.changeMap_scaled",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.scalar_bijective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.scaled_injective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.translationIso",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.act_changeMap",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.field_line_cohomology",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibre_two_rows_card",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.compose_scaled_left",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibreEnd_isIso",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.PullbackLifts.lift_scaled",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.rawTranslationIso",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.pullback_scalar",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.act_smulIso",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.scalarAut",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibrePointAt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.zeroSupport",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibreAct",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibrePointAt_shift_iterate",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.primitiveUnit_iff_geometric_tests",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.PullbackLifts.pullbackCongr_refl",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.fibreEnd_id",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.translatedTwoRows",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.LinePair.toAut_refl",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.Sections.zeroSupport_act",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.field_sections_finrank",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.doubledLevel",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaRelativeThetaRelationsR0256.RelativePrimitiveThetaCommutator.PullbackLifts.squareNat",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+]

@@ -1,0 +1,168 @@
+{
+  "source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativePrimitiveThetaCommutatorR0256.lean",
+  "before_sha256": "144a3ab5eee73b637278376423c23507f771019b0a41be42d315ca1d03b4fdc0",
+  "candidate_sha256": "7a8f8d584fd9646285e5cdeb59d3255f74fc9a09010b42ef273fd57338037764",
+  "budget_seconds_per_compile": 600,
+  "threads": 12,
+  "observation_interval_seconds": 60,
+  "compiler": "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+  "wrapper": "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+  "lean_path": "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean",
+  "diagnosis": "Mono synthesis for composite of two actual pullback isomorphisms reaches default 20000 typeclass heartbeats; local finite budget increase retains the original proof and exact morphisms.",
+  "created_at_utc": "2026-10-20T18:11:56.325583+00:00",
+  "compile": {
+    "exit_code": 0,
+    "seconds": 32.454195888713,
+    "command": [
+      "python3",
+      "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+      "-j12",
+      "-o",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/primitive-theta-commutator-repair-329/RelativePrimitiveThetaCommutatorR0256.olean",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/primitive-theta-commutator-repair-329/RelativePrimitiveThetaCommutatorR0256.lean"
+    ]
+  },
+  "audit": {
+    "exit_code": 0,
+    "seconds": 3.0177492992952466,
+    "command": [
+      "python3",
+      "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+      "-j12",
+      "-o",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/primitive-theta-commutator-repair-329/Audit.olean",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/primitive-theta-commutator-repair-329/Audit.lean"
+    ]
+  },
+  "declarations_audited": 158,
+  "unexpected_axioms": 0,
+  "exact_type_checks": [
+    "pullback_left_unit",
+    "relative_primitive_theta_commutator literal original type"
+  ],
+  "only_local_finite_instance_search_budget_changed": true,
+  "all_original_mathematical_source_text_unchanged": true,
+  "project_source_unchanged": true,
+  "direct_dependency_artifacts_unchanged": true,
+  "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "files": [
+    {
+      "path": "Analysis.md",
+      "sha256": "e6912384a4312093c646aab54a15acffa1676e607eb61f97e09e39edee75974c",
+      "bytes": 2153
+    },
+    {
+      "path": "Audit.ir",
+      "sha256": "f532bbff0f1dbd4e3efacd9e6638aa5d230ca65745476cf6a298e2d83b3b0e64",
+      "bytes": 100032
+    },
+    {
+      "path": "Audit.ir.sig",
+      "sha256": "ae933e683f4f42e1614d22b9d9e256b83e87e063bbd9109cb58d441bf6f93ce1",
+      "bytes": 176
+    },
+    {
+      "path": "Audit.lean",
+      "sha256": "0a6cf083d0c76c1bd2e3e90abbd46a0ddd2c59a7bc2b9d0c2d901918962e4961",
+      "bytes": 2105
+    },
+    {
+      "path": "Audit.olean",
+      "sha256": "c5dff2804ba155761fc560c6f8d6eced3355512ce2fc532e6d1f0f85b6bb5c7b",
+      "bytes": 104784
+    },
+    {
+      "path": "Audit.olean.private",
+      "sha256": "2fdcdd07815e815fcf906b96339b1b319526a6ce01f48c01bad340c34bab52e6",
+      "bytes": 264504
+    },
+    {
+      "path": "Audit.olean.server",
+      "sha256": "c342b043db82e5d1a9b287bd57ed3ad68c4c103f50a4f25a52b12490a6e420be",
+      "bytes": 688
+    },
+    {
+      "path": "Original.lean.txt",
+      "sha256": "144a3ab5eee73b637278376423c23507f771019b0a41be42d315ca1d03b4fdc0",
+      "bytes": 99162
+    },
+    {
+      "path": "RelativePrimitiveThetaCommutatorR0256.ir",
+      "sha256": "ebda9adc7532ce3fb0c6910a524c4bae2ff5290fbb4602aa3dd0a433eb7b50f7",
+      "bytes": 8496
+    },
+    {
+      "path": "RelativePrimitiveThetaCommutatorR0256.ir.sig",
+      "sha256": "691fd047a283a6c589732f0c2f9e7d4a0e1eeffbe3d75a446a51a79a81489202",
+      "bytes": 176
+    },
+    {
+      "path": "RelativePrimitiveThetaCommutatorR0256.lean",
+      "sha256": "7a8f8d584fd9646285e5cdeb59d3255f74fc9a09010b42ef273fd57338037764",
+      "bytes": 99211
+    },
+    {
+      "path": "RelativePrimitiveThetaCommutatorR0256.olean",
+      "sha256": "db617202ec82e21c1839509601a98f5385525b58a2382063dbf3c7c67942994c",
+      "bytes": 843936
+    },
+    {
+      "path": "RelativePrimitiveThetaCommutatorR0256.olean.private",
+      "sha256": "d16dfbd08b19c799bc0817ff438e9c8c8e1a440db1f2fcf099f08e47596b7d94",
+      "bytes": 2563792
+    },
+    {
+      "path": "RelativePrimitiveThetaCommutatorR0256.olean.server",
+      "sha256": "90ce5581022cd7206a6d27faffff848ecb303eefe4d0addc90b56f41dd48e14f",
+      "bytes": 58232
+    },
+    {
+      "path": "audit-01.json",
+      "sha256": "bff49f9b8c7cc8a398a9772306400ec857d3a85a94ca1a1d0fde5ba28df34dce",
+      "bytes": 495
+    },
+    {
+      "path": "audit-01.log",
+      "sha256": "0be73a8aba76369daf9c885290ee641e1d14eec6def9bfeb5e7a4fd59c64bd7c",
+      "bytes": 23241
+    },
+    {
+      "path": "axiom-closures.json",
+      "sha256": "b89f35b23050017b97765f5ba29994b3ff40f78ead0faf1fecce9504080f504f",
+      "bytes": 33082
+    },
+    {
+      "path": "checkpoint.json",
+      "sha256": "f7f175d2298bf3d8afdba84d04c8dc78450c3667101e21b783ac98cbba5d7a39",
+      "bytes": 1627
+    },
+    {
+      "path": "compile-01.json",
+      "sha256": "c84c3f2f69b07edf8a25ba3d93f217cff0b325595797abc36b0cadb7b70dcd67",
+      "bytes": 556
+    },
+    {
+      "path": "compile-01.log",
+      "sha256": "8df83bfdc2f839102281caf105e2826a49ebe7d2cf72861747e4132cdb98bdde",
+      "bytes": 39067
+    },
+    {
+      "path": "dependency-bindings.json",
+      "sha256": "ae92474f476b0013ea003c822d0a8c8dce968b2893592c071607e495a4951229",
+      "bytes": 4833
+    },
+    {
+      "path": "repair.patch",
+      "sha256": "0e6a0f45ef6515ab94c91101aa7939695f38a22a0f0e3e603bb6be41b9262c88",
+      "bytes": 595
+    },
+    {
+      "path": "run.py",
+      "sha256": "0e882efe29af3b9ee02d55e374415b686a61ae2fdfdb3ee64d76475e47a6e50d",
+      "bytes": 740
+    }
+  ],
+  "scope": "Isolated full module compile, target module axiom audit and exact endpoint type checks. Parent target integration pending; not official Palomar validation."
+}

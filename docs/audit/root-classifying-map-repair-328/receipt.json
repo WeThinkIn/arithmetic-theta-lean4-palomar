@@ -1,0 +1,169 @@
+{
+  "source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/RootClassifyingMapR0199.lean",
+  "before_sha256": "3dabc06a54c126cee50335e08d3c2e56ad536d80753fa4173dba78b1509d16a4",
+  "candidate_sha256": "22c05d77cc5f466ad61bb982d7cfc4cf7a44b336b09b62cc316edc67b2ae48f8",
+  "budget_seconds_per_compile": 600,
+  "threads": 12,
+  "observation_interval_seconds": 60,
+  "compiler": "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+  "wrapper": "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+  "lean_path": "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean",
+  "diagnosis": "ULift.ext now has implicit endpoints; lifted discrete morphisms are Discrete.Hom rather than ULift. Keep same object-equality and morphism-uniqueness proof.",
+  "created_at_utc": "2026-10-20T18:04:41.741594+00:00",
+  "compile": {
+    "exit_code": 0,
+    "seconds": 26.096491707954556,
+    "command": [
+      "python3",
+      "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+      "-j12",
+      "-o",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/root-classifying-map-repair-328/RootClassifyingMapR0199.olean",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/root-classifying-map-repair-328/RootClassifyingMapR0199.lean"
+    ]
+  },
+  "audit": {
+    "exit_code": 0,
+    "seconds": 2.9680007938295603,
+    "command": [
+      "python3",
+      "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+      "-j12",
+      "-o",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/root-classifying-map-repair-328/Audit.olean",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/root-classifying-map-repair-328/Audit.lean"
+    ]
+  },
+  "module_declarations_audited": 4,
+  "unexpected_axioms": 0,
+  "exact_type_checks": [
+    "component",
+    "comparison",
+    "classify",
+    "root_classifying_map",
+    "Points morphisms definitionally equal Discrete.Hom"
+  ],
+  "project_source_unchanged": true,
+  "bound_dependency_source_and_objects_unchanged": true,
+  "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "files": [
+    {
+      "path": "Analysis.md",
+      "sha256": "1d51f5206edade6d5fd2412c0492223d858acd65d59c8df4a75d493a2f8b3f7a",
+      "bytes": 2177
+    },
+    {
+      "path": "Audit.ir",
+      "sha256": "b996c4038974952b05a89af336f44fe7269927f3ef69657eb46eb98890c95fac",
+      "bytes": 100016
+    },
+    {
+      "path": "Audit.ir.sig",
+      "sha256": "ae933e683f4f42e1614d22b9d9e256b83e87e063bbd9109cb58d441bf6f93ce1",
+      "bytes": 176
+    },
+    {
+      "path": "Audit.lean",
+      "sha256": "963a1958ff71c73153aeff1c28cecc5cf3a52c5f0e4071a9d4f87b665f546b0b",
+      "bytes": 2334
+    },
+    {
+      "path": "Audit.olean",
+      "sha256": "8dd5f015f28dbe2b0dbfe19b5d95dbee5cbae6030a44034385a9984f99f6640e",
+      "bytes": 104768
+    },
+    {
+      "path": "Audit.olean.private",
+      "sha256": "368fb5db481551bb1795acbb4fafa8258d23e7f72f4094a4fd8e5871fc021795",
+      "bytes": 264048
+    },
+    {
+      "path": "Audit.olean.server",
+      "sha256": "730b79e147682431e96ede98e19260089c22bca59b5b145a74279f9f20cb4437",
+      "bytes": 688
+    },
+    {
+      "path": "Original.lean.txt",
+      "sha256": "3dabc06a54c126cee50335e08d3c2e56ad536d80753fa4173dba78b1509d16a4",
+      "bytes": 4524
+    },
+    {
+      "path": "RootClassifyingMapR0199.ir",
+      "sha256": "e63753c370ec0ec4e98525ccbef342f2a6c6b5a2d637f7c069078c5ace5abad0",
+      "bytes": 60848
+    },
+    {
+      "path": "RootClassifyingMapR0199.ir.sig",
+      "sha256": "19056beaf90f944925438ff7b75c68d9b7b2d628e76a4c804729e756ee3b3d29",
+      "bytes": 176
+    },
+    {
+      "path": "RootClassifyingMapR0199.lean",
+      "sha256": "22c05d77cc5f466ad61bb982d7cfc4cf7a44b336b09b62cc316edc67b2ae48f8",
+      "bytes": 4514
+    },
+    {
+      "path": "RootClassifyingMapR0199.olean",
+      "sha256": "bd842ce7a07bce3d3675a9bbd000664d502b2fcf51580b6409f2d771433e56c3",
+      "bytes": 97264
+    },
+    {
+      "path": "RootClassifyingMapR0199.olean.private",
+      "sha256": "3f98f926ff85e5bcbc3e315d3d003739ac14eb748b6ac718084e1562cb4a7227",
+      "bytes": 481248
+    },
+    {
+      "path": "RootClassifyingMapR0199.olean.server",
+      "sha256": "a556d3c3c00bcf5bb5e08bcdb551441f860b70bfd434e1d19ecce9518eb3c2a1",
+      "bytes": 11496
+    },
+    {
+      "path": "audit-01.json",
+      "sha256": "2d65d094bcc77695c1e996aba843adafca00b67786845a59873ecbf9c6dcaafa",
+      "bytes": 483
+    },
+    {
+      "path": "audit-01.log",
+      "sha256": "b201eab378d98c6eff940d2ca47330dd7bedfb2434e3032fe3fcc8ae92489d21",
+      "bytes": 472
+    },
+    {
+      "path": "axiom-closures.json",
+      "sha256": "4387ce7059876c86894949c84cec42c8a67c5a8b3ba0c5b0e3300ef5c4d6449d",
+      "bytes": 710
+    },
+    {
+      "path": "checkpoint.json",
+      "sha256": "4f46d349af8991c2b1d5bf72610b4c65dd3671265d375890227e1eea78cbea18",
+      "bytes": 1584
+    },
+    {
+      "path": "compile-01.json",
+      "sha256": "44c1d94256b0d1b751eebfafab68ed22535a9241c3fb9ab8f3f7e3f245f78baa",
+      "bytes": 519
+    },
+    {
+      "path": "compile-01.log",
+      "sha256": "a38dcda2eceb8880830b5ebc0126d62d1f9870364a8e34c291219731d600db84",
+      "bytes": 7914
+    },
+    {
+      "path": "dependency-bindings.json",
+      "sha256": "ce3b81c47614ebfcd3370be490272ef79edc52be92899b877eaa57518b1e61a0",
+      "bytes": 619
+    },
+    {
+      "path": "repair.patch",
+      "sha256": "75356e470a7318f24ff539c8bf3388fee0e46f978e9a70f1cb5bd1aea2d78faf",
+      "bytes": 569
+    },
+    {
+      "path": "run.py",
+      "sha256": "0e882efe29af3b9ee02d55e374415b686a61ae2fdfdb3ee64d76475e47a6e50d",
+      "bytes": 740
+    }
+  ],
+  "scope": "Full isolated module compile, all named declarations axiom closure, and exact source type examples. Parent integration pending; not official Palomar validation."
+}

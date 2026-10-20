@@ -1,0 +1,137 @@
+{
+  "status": "isolated_full_file_and_import_audit_passed",
+  "completed_utc": "2026-10-20T17:57:30.499574+00:00",
+  "original_source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/ActualFamilyOpenDescentR0207.lean",
+  "original_sha256": "fc9180e274263c1ca19dba3b8ef85bb012097e5c824f52f67a703487618bdfc0",
+  "original_source_unchanged": true,
+  "repaired_source_sha256": "c4238b63dc3d10ba3fba42367c1d7827c1c4e5e8b0ee74ffd74ee5ea30bc8602",
+  "change": "Pin actual GroupoidData.Objects ambient category on exactly two asIso calls",
+  "original_changed_lines": [
+    486,
+    612
+  ],
+  "declaration_signatures_preserved": true,
+  "existing_actual_groupoid_instance_reused": true,
+  "line_631_cascade_fixed_without_edit": true,
+  "exact_final_type_application_checked": true,
+  "axioms": {
+    "ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.effective_actual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.descentArrowIso": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.underlyingArrowIso": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.underlyingArrowIso_hom": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.underlyingArrowIso_compatible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.categorical_faithful": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.categorical_full": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.categorical_essSurj": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaMetaplecticStackR0207.ActualFamilyOpenDescentProof.categorical_equivalence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaMetaplecticStackR0207.actual_family_open_descent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_checked_declaration_count": 10,
+  "compilations": [
+    {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/ActualFamilyOpenDescentR0207.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/ActualFamilyOpenDescentR0207.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 167.78,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "c4238b63dc3d10ba3fba42367c1d7827c1c4e5e8b0ee74ffd74ee5ea30bc8602",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Audit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.07,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "bc86373f3e7e1958ad3baadc172e5195450c558ccf98b8cfef99f2cc9a23855f",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    }
+  ],
+  "dependency_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/CoherentMetaplecticPullbackR0207.lean": "a95d3fb7412f7c77ed714e3792b85b8953638452039ce7fec72a00f0330849ed",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/CoherentMetaplecticPullbackR0207.olean": "80aefae13ce43a2f49a1fad81e16897a28b0841f76f990f18bae17f322ac3c50",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/MetaplecticComparisonDefinitionsR0206.lean": "74bdbbb6ca0a50c95ad535692d03d7b12cb3060047b96bde502532012aec60d5",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/MetaplecticStackDefinitionsR0207.lean": "d224fc3e87acd43d008b260025cb44f4c64ae55617eaa2a4b3334fdcef56f90f",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/Mathlib/CategoryTheory/Groupoid.lean": "3ffaa85173f3ffc0aa0198682046ab7f7f09406c72c50dd1e2c1652d7b58ada3",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/Mathlib/CategoryTheory/Iso.lean": "b47eab342f3e7d08f4ff8d4a16d4580b0273d63f1a790b25560236c92d4cace7",
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1"
+  },
+  "no_project_mutations": true,
+  "artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Audit.olean.private": "004d71d063c3a25ea8f01078fc320b15089f67c765e535f2130445f01e249e6f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Audit.olean": "4e398a2a615a178e23a89a9860e3104d5965b5468eb58b218a1cea2f8ccdfc0c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/ActualFamilyOpenDescentR0207.olean.server": "f0addae2a66daf41f33ffd3c69587829451c4172173eb1635829fbc3d10182a8",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Audit-check-01.log": "6d936da83a8f1eb7116a2bd31f8c9fe21b926cbabca7f4e8882ca23cad89115a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/compile.py": "e369949c6251c5a9368c8f3e40379ff0c621c3ca6fbe59735a887dce9e67058c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/ActualFamilyOpenDescentR0207.lean": "c4238b63dc3d10ba3fba42367c1d7827c1c4e5e8b0ee74ffd74ee5ea30bc8602",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/dependency-bindings.json": "c48b0bb936485846baef3eb6ed350dab07118ff129209c547adc2b7b898a38f4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/ActualFamilyOpenDescentR0207.ir": "12e463075970636461fb4ddfde9ce53961262a64cc49dafd8d213ed7716d5e49",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Audit-receipt-01.json": "d0bac36500a82f19c62c40f2f585129728074ff3d1d7c55f31efd60108276bef",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/minimal.patch": "f985a2d6ac87f2b844504a7dd6dc68f58285df4c753a890bfe14badfb24ced0a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Audit.ir": "e36996e9c8e9e891baf0982faa99bc4aef68b883cdfcd2df77f99bf12137d6f1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/ActualFamilyOpenDescentR0207.ir.sig": "352056e3f669aa1fa8d38e82b0151503987c3b5b0a24c5f2512d6454d03ba2a0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/ActualFamilyOpenDescentR0207.olean": "e482f636e567ad5a3b833ba2fbcfffd113d2266d58150ca850642a8a69a66fc6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/ActualFamilyOpenDescentR0207-check-01.log": "1a7d081e3c3943905454cbe8b71afd3cf592a3034190b79ceaf20cda734c402e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/ActualFamilyOpenDescentR0207-receipt-01.json": "ca02aff984d263d237e65f7cd7dcd983bd3c24801552b6cb22d633021e3bc04a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Original.lean.txt": "fc9180e274263c1ca19dba3b8ef85bb012097e5c824f52f67a703487618bdfc0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Audit.olean.server": "8cfda41c5d72581b1a0af8ffc190ac84d64464ad29db719d23198587dac03c8f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Audit.ir.sig": "ae933e683f4f42e1614d22b9d9e256b83e87e063bbd9109cb58d441bf6f93ce1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Audit.lean": "bc86373f3e7e1958ad3baadc172e5195450c558ccf98b8cfef99f2cc9a23855f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/Analysis.md": "29dc043757a263654fa337db05588ff94c27301145f61b86269d19273b46228f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/checkpoint.json": "d1cac580e274ada453f00d653fef642e760c5f779f454d6510559cc97b11010c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/family-open-descent-repair-323/ActualFamilyOpenDescentR0207.olean.private": "f681e6009f40a76a0a7d2af2d63766bf07731f6ebf5ecacf65b1c1d5134d4f8a"
+  }
+}

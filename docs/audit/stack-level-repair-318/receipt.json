@@ -1,0 +1,152 @@
+{
+  "status": "isolated_full_file_and_import_audit_passed",
+  "completed_utc": "2026-10-20T17:51:41.830225+00:00",
+  "original_source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/StackLevelDefinitionsR0199.lean",
+  "original_sha256": "fea6686aa8decbc93e4b3ab60fbc87381cb33d19b75809ad1c369a0d10b560ab",
+  "original_source_unchanged": true,
+  "repaired_source_sha256": "81212069a03727fc7aa9f4e5ebb9fef34aaf6db4b74da2b6f6696b1f5b05f6db",
+  "change": "Replace two ULift.ext/Subsingleton.elim blocks with congrArg Discrete.Hom.mk rfl; all signatures and other source unchanged",
+  "original_changed_lines": [
+    43,
+    44,
+    53,
+    54
+  ],
+  "declaration_signatures_preserved": true,
+  "actual_hom_defeq_and_functor_laws_checked": true,
+  "axioms": {
+    "ArithmeticThetaStackLevelR0199.Points": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.point": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.precompose": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.pointsFunctor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.representable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.ClassifiedMap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.TestFiber": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.fiberPull": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.FiberPresentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.FiniteEtaleLevel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.TautologicalComparison": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaStackLevelR0199.UsesFiber": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_checked_declaration_count": 12,
+  "compilations": [
+    {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.73,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "81212069a03727fc7aa9f4e5ebb9fef34aaf6db4b74da2b6f6696b1f5b05f6db",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/Audit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.32,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "e0c2d92c569f76180197fa1d7260d80ecb94e490b0dc7e950bdc5c70c1d6f488",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    }
+  ],
+  "dependency_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/FPQCRootStackR0198.lean": "2f8433415e9b527c4042f365137c7ee71404c9e0e3f049e3c9c8bf651b66bfb4",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/FPQCRootStackR0198.olean": "663b5d4503eeacc6fd29c0e0b409e72c06a09a39aef0e7a047ad5d9af5c76ef5",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/Mathlib/CategoryTheory/Discrete/Basic.lean": "21f2ad5d04a86e443ed8f3735b06cfb8b4a5fe97e8dca5c9023074b2dcb28cd3",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/Mathlib/CategoryTheory/Category/Basic.lean": "df2ca854387ea16a1defdf7bc051eafbb1bf180c84a1a52e8525376288af0bce",
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1"
+  },
+  "no_project_mutations": true,
+  "artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/Audit.olean.private": "26455062b45afeda395dfb50ce83e01c71657372db28930a324cea9fecc01e6d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/Audit.olean": "6fcd382ba73ac07ed1a8e994b07ec859c2a865f0400a12a18f0fd40c7871b4a4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199.ir": "19751e002ca02b07153efa29758b43a545aefa62d29648d928eece8e3ece92cf",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/Audit-check-01.log": "c45d3e06906710fdc4d72e2d4b271a6eabd3e807368e705a691e011256407db4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199-receipt.json": "72b413044c72998fe67397d90bc61b44dac6940965103c7679322c1aafaab29b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199-check-01.log": "7fc23d6afae0e33dbe47bd2a216439297a1466348a50a5e01b020032515a27c4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199-check-03.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/compile.py": "e369949c6251c5a9368c8f3e40379ff0c621c3ca6fbe59735a887dce9e67058c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/attempt01-StackLevelDefinitionsR0199.lean": "e820589e24dd43331ef7aeb24ded833d5e83bd6533cef9fa0909fc4679644629",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/Audit-receipt-01.json": "a6df9da4a7eb065830abca008d0f78fc37d23c0d84d56915657de5114b28e1d3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/minimal.patch": "898f8fed196b1c737a97af11bfa316af69d72a3966f8d94edceb92a79bdb79aa",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199.olean": "5a4634ed51a7ba2a477075d5ece634ec9e72d0bd6443765c1fd9807cafb7ac6e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/Audit.ir": "bb268afe046568e427e96af622f4f42c03ab3cd925dd4f9da41d10aa77f9187e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199-receipt-03.json": "54e21a4c5b9dbedc0a2bb2ec64bbc93368624ddbab9a8d6151a5458121c5fc99",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199.olean.private": "dbd4d4bcda79c95d8a23cca0b23f36b56c0c5d87ada78e0d234139806dfb54cd",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/attempt01-StackLevelDefinitionsR0199-receipt.json": "72b413044c72998fe67397d90bc61b44dac6940965103c7679322c1aafaab29b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199.ir.sig": "e7b88ed08011df7ca34efd0060f537820cc4d8837d543aa80290fc929959b240",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/Original.lean.txt": "fea6686aa8decbc93e4b3ab60fbc87381cb33d19b75809ad1c369a0d10b560ab",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/attempt02-StackLevelDefinitionsR0199.lean.txt": "24db81350be8aab78ef41946098ae1a2cb07e2431b68ae00f9d30bd3faea3950",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199-receipt-02.json": "5cd6ad214d5e81e0c5b315ef413810093e998eb98422968258223cfe622b81d3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/Audit.olean.server": "d488516f1f37f2fc35dcfd9055d61a31cd7a9af2faca8e65d99fc7d79a24ffe6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199.lean": "81212069a03727fc7aa9f4e5ebb9fef34aaf6db4b74da2b6f6696b1f5b05f6db",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/Audit.ir.sig": "ae933e683f4f42e1614d22b9d9e256b83e87e063bbd9109cb58d441bf6f93ce1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/attempt01-StackLevelDefinitionsR0199-check-01.log": "7fc23d6afae0e33dbe47bd2a216439297a1466348a50a5e01b020032515a27c4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199.olean.server": "16845a865f038151fe0593dccd3408a689f7fd9ff9bf10ab9913142f7118b136",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/Audit.lean": "e0c2d92c569f76180197fa1d7260d80ecb94e490b0dc7e950bdc5c70c1d6f488",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/Analysis.md": "425c7895df9229fe015cfdac499f41e688db15658ac958c8caeacc2d657f1bf8",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/StackLevelDefinitionsR0199-check-02.log": "7d7ecb47b7b8e8d3c8536d1adeed25817c7bc15295c757c7f06034a2828b8ff4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/stack-level-repair-318/checkpoint.json": "636afe0769b9704246018cf3c32e4fad4272dcecc081fd7de9aae3b479428ac2"
+  }
+}

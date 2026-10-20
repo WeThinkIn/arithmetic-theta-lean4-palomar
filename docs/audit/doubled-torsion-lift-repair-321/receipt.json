@@ -1,0 +1,293 @@
+{
+  "project": "/home/Palomar/workspace/arithmetic-theta/project",
+  "source_bindings": [
+    {
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeDoubledTorsionThetaLiftPreludeR0255.lean",
+      "sha256": "70b3457d415c80395acf955c1ef17c2dbae88f11725254e243605365e17a4f84"
+    },
+    {
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeDoubledTorsionThetaLiftR0255.lean",
+      "sha256": "732c06b75705a2af9f7b21555975cbfcc529574afa72693ab9692b8d731eaf7d"
+    }
+  ],
+  "candidate_provider_sha256": "59bc4a5cf836810abf5478e049bce98fe93a2a2a5a908c424284111183d95ef4",
+  "threads": 12,
+  "budget_seconds_per_compile": 600,
+  "observation_interval_seconds": 60,
+  "lean_path": "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean",
+  "compiler": "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+  "wrapper": "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+  "diagnosis": "import all exposes private constants but does not create the public names used by the consumer; publish only unitPullback and its two evaluation lemmas in provider.",
+  "created_at_utc": "2026-10-20T18:00:16.602353+00:00",
+  "project_sources_unchanged": true,
+  "consumer_source_byte_identical": true,
+  "provider_only_three_visibility_modifiers_changed": true,
+  "all_direct_dependency_bindings_unchanged": true,
+  "validation_results": {
+    "provider-01": {
+      "exit_code": 0,
+      "seconds": 148.50474024610594,
+      "command": [
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-j12",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/doubled-torsion-lift-repair-321/RelativeDoubledTorsionThetaLiftPreludeR0255.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/doubled-torsion-lift-repair-321/RelativeDoubledTorsionThetaLiftPreludeR0255.lean"
+      ]
+    },
+    "provider-axioms": {
+      "exit_code": 0,
+      "seconds": 2.967774162068963,
+      "command": [
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-j12",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/doubled-torsion-lift-repair-321/ProviderAxiomAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/doubled-torsion-lift-repair-321/ProviderAxiomAudit.lean"
+      ]
+    },
+    "consumer-01": {
+      "exit_code": 0,
+      "seconds": 203.46602592384443,
+      "command": [
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-j12",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/doubled-torsion-lift-repair-321/RelativeDoubledTorsionThetaLiftR0255.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/doubled-torsion-lift-repair-321/RelativeDoubledTorsionThetaLiftR0255.lean"
+      ]
+    },
+    "consumer-axioms": {
+      "exit_code": 0,
+      "seconds": 2.96776936808601,
+      "command": [
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-j12",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/doubled-torsion-lift-repair-321/AxiomAuditDirect.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/doubled-torsion-lift-repair-321/AxiomAuditDirect.lean"
+      ]
+    }
+  },
+  "provider_declarations_audited": 714,
+  "consumer_declarations_audited": 476,
+  "unexpected_axioms": 0,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "final_endpoint": "ArithmeticThetaRelativeThetaLiftsR0255.relative_doubled_torsion_theta_lift",
+  "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "files": [
+    {
+      "path": "Analysis.md",
+      "sha256": "8cd1fdcf07fbab45b1fbf70a6595916d2869cbd8dc7fa712ff2ee70c103b65ae",
+      "bytes": 2363
+    },
+    {
+      "path": "AxiomAuditDirect.ir",
+      "sha256": "cc0a590c412f7b9053a874ef2c245d388d4714b5c6feb8f48fce6e053c791f34",
+      "bytes": 100040
+    },
+    {
+      "path": "AxiomAuditDirect.ir.sig",
+      "sha256": "85a1c986d384f783db0654bad18f01ccde64d4551b6681912c007690424ccd3b",
+      "bytes": 176
+    },
+    {
+      "path": "AxiomAuditDirect.lean",
+      "sha256": "dcb1cddbd6d0c4adb6f6009b4cb1fe9f6eb05f82bdd51f088214e79bee1ac324",
+      "bytes": 940
+    },
+    {
+      "path": "AxiomAuditDirect.olean",
+      "sha256": "d7912b304012cae28e9233b1e16149c5a024c208397474545f1a3e11cb69d2c0",
+      "bytes": 104808
+    },
+    {
+      "path": "AxiomAuditDirect.olean.private",
+      "sha256": "3ad3a1fc0b225b53ce5bbed0c8fe5d919d5d42f2a7818112061b28e56a72e9de",
+      "bytes": 263152
+    },
+    {
+      "path": "AxiomAuditDirect.olean.server",
+      "sha256": "30b777d0bce81cb477b1a0a4293d311ca47fb0c1e18e6ede684912906d7f3917",
+      "bytes": 688
+    },
+    {
+      "path": "ProviderAxiomAudit.ir",
+      "sha256": "3c6654e5f3ad6427087d3291b9f7fd89a1f38dfecbb9ba2f63de6f39c00d0b42",
+      "bytes": 100096
+    },
+    {
+      "path": "ProviderAxiomAudit.ir.sig",
+      "sha256": "99f2a705afda020534ac2618904c12962dbf5934242e0beebb45333d0ffdb10e",
+      "bytes": 176
+    },
+    {
+      "path": "ProviderAxiomAudit.lean",
+      "sha256": "f475cdb4c0841adc0f3a20929724a6096d11a0e36be4db6e72d26375de33061f",
+      "bytes": 994
+    },
+    {
+      "path": "ProviderAxiomAudit.olean",
+      "sha256": "a6ac1afba4fe7ec31855ee678eb4e5fa3d38bd75a7ee54e229e68f5fcdd83bf1",
+      "bytes": 104864
+    },
+    {
+      "path": "ProviderAxiomAudit.olean.private",
+      "sha256": "6163af7107de609df1c7255b25de500af93320df2674c267c489c5ffde86bd20",
+      "bytes": 263152
+    },
+    {
+      "path": "ProviderAxiomAudit.olean.server",
+      "sha256": "ee2be8c213600b2bddd595ba64e7454183d962f81ca1687ff80efa784cbfb111",
+      "bytes": 688
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftPreludeR0255.ir",
+      "sha256": "a1e738c1132ece3a0c0cfdc74947d24aae2f926745648ccf86b1c2efdc085d8a",
+      "bytes": 65232
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftPreludeR0255.ir.sig",
+      "sha256": "0d2beae00362a48e25715ef37a85b6c292231de49590104f23ab313a826550f8",
+      "bytes": 176
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftPreludeR0255.lean",
+      "sha256": "59bc4a5cf836810abf5478e049bce98fe93a2a2a5a908c424284111183d95ef4",
+      "bytes": 503438
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftPreludeR0255.olean",
+      "sha256": "f62f7ffb158bd89f24d5bd51262f78b19e5acabc92c186f5dea3490964589dbf",
+      "bytes": 3103040
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftPreludeR0255.olean.private",
+      "sha256": "c4dc441b1fb58ad457b3b53fec5118a6e518b4c7139c75ec220111b32e5ddd8b",
+      "bytes": 13595864
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftPreludeR0255.olean.server",
+      "sha256": "7930429cd521803997df9786d148c245d5e3af7f15006da9ea6843ee9129feb5",
+      "bytes": 203184
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftR0255.ir",
+      "sha256": "48b5f58906cbcaadd28a1df5506fb8da051f87b0f666185d95c2518607d4bad3",
+      "bytes": 102480
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftR0255.ir.sig",
+      "sha256": "b97ecd4500f282992e127869534febd75a22968267c7685dfa478c9080ca089c",
+      "bytes": 176
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftR0255.lean",
+      "sha256": "732c06b75705a2af9f7b21555975cbfcc529574afa72693ab9692b8d731eaf7d",
+      "bytes": 528223
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftR0255.olean",
+      "sha256": "c00359058e81e21303df6c0631ac51b38cc8a043fada5e2f13e587f97664d796",
+      "bytes": 3262432
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftR0255.olean.private",
+      "sha256": "82a742b0ee7f7891779d7235287b90aea555d949621c581981ccb64a879b1e4a",
+      "bytes": 21709792
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftR0255.olean.server",
+      "sha256": "07d08f573d0a18e15be44e13d1ea0b086d19613979cd345c3be3f01234fbb06e",
+      "bytes": 138424
+    },
+    {
+      "path": "axiom-closures.json",
+      "sha256": "b5e7a6ebec8f25f8abc6cc8c0e2503891075e231697067f417761e892b2a964e",
+      "bytes": 374126
+    },
+    {
+      "path": "checkpoint.json",
+      "sha256": "93dcc84adca4119d99599ea52ff9dbd70d36ca87e4b1f1c4f67dfa4a99d28ade",
+      "bytes": 1934
+    },
+    {
+      "path": "consumer-01.json",
+      "sha256": "baaa77755c641f924f6b86bd9ae535b18710ddbd7847fd9a9e3426c289544c67",
+      "bytes": 545
+    },
+    {
+      "path": "consumer-01.log",
+      "sha256": "a03cdb7a180f8cdd87e3bf02464169dbfef4f3df26e6478f13e85facd87a92c0",
+      "bytes": 82375
+    },
+    {
+      "path": "consumer-axioms.json",
+      "sha256": "fa2ca6862fdf6b25b986d1367db3c058b4c0fab540be23013aa0b398479fa14f",
+      "bytes": 503
+    },
+    {
+      "path": "consumer-axioms.log",
+      "sha256": "5105c75f3e9c5d17552a22020bf1f88fd85a4d185d0869d8da7418a997820b1e",
+      "bytes": 108172
+    },
+    {
+      "path": "dependency-bindings.json",
+      "sha256": "5d7c2961ae63d5d26a24ca17add5deef281dda62b01919fecdd0ecb5b52cc73d",
+      "bytes": 56638
+    },
+    {
+      "path": "diagnosis.json",
+      "sha256": "9b1f0300aff159806d1a224313b9af20fa1e3ea124ff9a6eb0f761c00a6bbb14",
+      "bytes": 2195
+    },
+    {
+      "path": "provider-01.json",
+      "sha256": "5ccd084285d61c18a168da893b1ef0dfa5ccb352c3191542265fac106eab322a",
+      "bytes": 559
+    },
+    {
+      "path": "provider-01.log",
+      "sha256": "2194e6649b298d87057ea24d45db3f2b5056372a209d7391da2bc8cbccabca7f",
+      "bytes": 69675
+    },
+    {
+      "path": "provider-axioms.json",
+      "sha256": "b8c6efe91179fc63350a7031d3c17245061b721c36177bc5aa6cd8ca0cb7fb3d",
+      "bytes": 508
+    },
+    {
+      "path": "provider-axioms.log",
+      "sha256": "5f80e68709b336dd19bea02d65a22b559e9ee38e276d7393c8ff16b4d93c83df",
+      "bytes": 158154
+    },
+    {
+      "path": "provider-object-bindings.json",
+      "sha256": "77cef26034a30fe5fa31abd82c0c20e4b19bd9557e04b4532f4278ca16b60a42",
+      "bytes": 795
+    },
+    {
+      "path": "repair.patch",
+      "sha256": "a91816dbf8c1aef0624a257ba28abb78d9f2838ca0fee8af1a9c32382e623072",
+      "bytes": 1942
+    },
+    {
+      "path": "run.py",
+      "sha256": "0e882efe29af3b9ee02d55e374415b686a61ae2fdfdb3ee64d76475e47a6e50d",
+      "bytes": 740
+    }
+  ],
+  "scope": "Isolated provider and actual unchanged consumer compile plus direct module declaration axiom audits. Requires real project target integration; not official Palomar validation."
+}

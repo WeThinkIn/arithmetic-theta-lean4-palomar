@@ -1,0 +1,13 @@
+{
+  "exit_code": 0,
+  "seconds": 2.96776936808601,
+  "command": [
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+    "-j12",
+    "-o",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/doubled-torsion-lift-repair-321/AxiomAuditDirect.olean",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/doubled-torsion-lift-repair-321/AxiomAuditDirect.lean"
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "declaration": "ArithmeticThetaStackLevelR0199.RootClassifyingMapR0199.component",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaStackLevelR0199.RootClassifyingMapR0199.classify",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaStackLevelR0199.RootClassifyingMapR0199.comparison",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaStackLevelR0199.root_classifying_map",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+]

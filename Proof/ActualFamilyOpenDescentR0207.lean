@@ -483,7 +483,7 @@ lemma effective_actual (hL : 3 ≤ L) (heven : Even L)
     exact hi.trans (congrArg (fun q => ((pull L (f i).left).line X).hom ≫ q)
       (Category.id_comp (e.hom.hom i)))
   let u := liftConcreteHom H C g ψ hg'
-  refine ⟨X, ⟨Pseudofunctor.DescentData.isoMk (fun i => asIso (g i)) ?_⟩⟩
+  refine ⟨X, ⟨Pseudofunctor.DescentData.isoMk (fun i => asIso (C := (group L (V i).left).Objects) (g i)) ?_⟩⟩
   intro S p i j a a' ha ha'
   exact u.comm p a a' ha ha'
 
@@ -609,7 +609,7 @@ end RootBridge
 /-- Every actual descent arrow is invertible, with its original components. -/
 def descentArrowIso {T : Over (Base k)} {ι : Type 1} {V : ι → Over (Base k)}
     {f : ∀ i, V i ⟶ T} {D E : C.functor.DescentData f} (t : D ⟶ E) : D ≅ E :=
-  Pseudofunctor.DescentData.isoMk (fun i => asIso (t.hom i))
+  Pseudofunctor.DescentData.isoMk (fun i => asIso (C := (group L (V i).left).Objects) (t.hom i))
     (fun {_} p {_ _} a b ha hb => t.comm p a b ha hb)
 
 def underlyingArrowIso {T : Over (Base k)} {ι : Type 1} {V : ι → Over (Base k)}

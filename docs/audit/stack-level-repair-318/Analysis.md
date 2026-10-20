@@ -1,0 +1,11 @@
+# Isolated stack-level definitions repair 318
+
+The two failures at original lines 43 and 53 arise in pointsFunctor identity/composition proofs, after Functor.ext reduces them to equality of morphisms. The current Mathlib Discrete category uses the structure Discrete.Hom, whose sole field is an equality proof. CategoryTheory.uliftCategory raises the object universe but retains the original morphism type. Consequently these goals are equalities of Discrete.Hom values, not ULift values, and applying ULift.ext cannot match them.
+
+The minimal final patch replaces each two-line ULift.ext/Subsingleton.elim block with `exact congrArg Discrete.Hom.mk rfl`. This is exactly the proof used by the current Mathlib Discrete.hom_eq theorem: proof irrelevance identifies the sole equality-proof fields and congrArg identifies their structure constructors. It preserves the same arrow equality, object maps, composition direction, type universes and all subsequent geometric interfaces.
+
+Two short failed intermediate attempts are preserved. Removing ULift.ext alone left typeclass search unable to synthesize the wrapped Hom subsingleton; explicitly exposing Discrete.Hom still did not match the category-indexed Subsingleton instance automatically. The final direct constructor proof uses the same mathematical fact without relying on that typeclass match. No compiler options or instances were changed.
+
+The complete repaired source compiled successfully in 8.73 seconds with exit 0. An independent importer audit compiled in 3.32 seconds with exit 0. The audit checks the original functor type, the actual Hom type by rfl, its subsingleton property, and both identity/composition laws. All 12 public definitions/structures from Points through UsesFiber have only standard propext, Classical.choice and Quot.sound dependencies. No sorry/admit/new axiom was introduced.
+
+All work uses pinned Lean 4.35.0-rc2, 12 threads and a 300-second budget per file, with existing dependency objects. The audit LEAN_PATH begins with this isolated directory to ensure it consumes the repaired object. The original project source remains unchanged. Parent owns integration and any dependent root build; no shared Lake writer, export, Comparator, official workflow or network action was performed by this worker.

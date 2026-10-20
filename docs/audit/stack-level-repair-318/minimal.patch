@@ -1,0 +1,22 @@
+--- a/Proof/StackLevelDefinitionsR0199.lean
++++ b/Proof/StackLevelDefinitionsR0199.lean
+@@ -40,8 +40,7 @@
+       | up f => cases f; simp [point]
+     · change ∀ X Y f, _
+       intro X Z f
+-      apply ULift.ext
+-      apply Subsingleton.elim
++      exact congrArg Discrete.Hom.mk rfl
+   map_comp a b := by
+     apply Cat.Hom.ext
+     fapply CategoryTheory.Functor.ext
+@@ -50,8 +49,7 @@
+       simp only [Category.assoc]
+     · change ∀ X Y f, _
+       intro X Z f
+-      apply ULift.ext
+-      apply Subsingleton.elim
++      exact congrArg Discrete.Hom.mk rfl
+ 
+ abbrev representable {B : Scheme.{0}} (Y : Over B) := (pointsFunctor Y).toPseudofunctor'
+ 

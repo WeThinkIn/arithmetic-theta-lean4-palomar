@@ -8,10 +8,11 @@
   "identity_verified": true,
   "cleanup_pending": false,
   "vpn_stopped": true,
-  "semantic_review": "pending",
+  "semantic_review": "available privately; not registered",
   "registration": "not performed",
-  "status": "awaiting-review",
+  "status": "review-ready",
   "official_run_id": 39466419289,
   "official_run_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/39466419289",
-  "official_verification_conclusion": "success"
+  "official_verification_conclusion": "success",
+  "status_checked_at_utc": "2026-10-20T18:10:44.333884+00:00"
 }
