@@ -1,0 +1,21 @@
+../evidence/symmetric-import-160/SymmetricMarkingFiniteSignsR0142.lean:70:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaSymmetricMarkingR0142.SymmetricMarkingFiniteSignsR0142.constant_injective`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../evidence/symmetric-import-160/SymmetricMarkingFiniteSignsR0142.lean:73:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaSymmetricMarkingR0142.SymmetricMarkingFiniteSignsR0142.square_constant`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../evidence/symmetric-import-160/SymmetricMarkingFiniteSignsR0142.lean:188:8: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hh] at hc
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'ArithmeticThetaSymmetricMarkingR0142.symmetric_marking_finite_signs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

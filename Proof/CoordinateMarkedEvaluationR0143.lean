@@ -2,6 +2,9 @@ module
 
 public import AlgebraicTateCoordinatesR0143
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Evaluation of the literal coordinates at the actual marked sections. -/

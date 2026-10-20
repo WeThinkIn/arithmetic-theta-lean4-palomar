@@ -11,6 +11,7 @@ set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Complete identity specialization of the actual cleared theta numerator. -/
 set_option autoImplicit false
+set_option synthInstance.maxHeartbeats 200000
 noncomputable section
 universe u
 

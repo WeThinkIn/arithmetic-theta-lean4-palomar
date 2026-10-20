@@ -1,0 +1,32 @@
+{
+  "kind": "isolated-module-port-checks",
+  "lean": "4.35.0-rc2",
+  "results": [
+    {
+      "module": "GeometricScalarLiftR0141",
+      "exit_code": 0,
+      "source_sha256": "cdd6866a988fed2c3f29394569fcb7c67bd220bf4e2f70f4542c1c4d22827f80",
+      "log_sha256": "d2aa707440cafcb529802f0071ba0c1a4ca342fe0a9596fc0b3f7519d23be841",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "change": "Import all checked GenericThetaBasis proofs",
+      "integration": "passed Lake root153"
+    },
+    {
+      "module": "GeometricShiftLiftR0141",
+      "exit_code": 0,
+      "source_sha256": "08ac1883c708727d82c291df3a98d421506f313ec8ff60f1c2ae8ec9d12370e4",
+      "log_sha256": "8e0440901ac704da14ef905dd1c04d1b0e5dbe5c7532d9a8057ecd26c99a1623",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "change": "Import all checked GenericThetaBasis proofs; preserve inline public proofs with backward.proofsInPublic true",
+      "integration": "passed Lake root153"
+    }
+  ]
+}

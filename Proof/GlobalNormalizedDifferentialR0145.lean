@@ -17,6 +17,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsFrameOn_of_iSup
 
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_bijective_pullbackLocalSection_opensInclusion_and_isFrameOn_iff
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 set_option autoImplicit false

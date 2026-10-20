@@ -1,0 +1,17 @@
+{
+  "kind": "declaration-body-and-signature-preservation",
+  "files": [
+    {
+      "file": "Proof/GeometricScalarLiftR0141.lean",
+      "only_import_and_elaborator_options_changed": true,
+      "before_sha256": "fe624d820330c7306bc3cc30892a62d78dbe15ff746460d4eedb9fb2f757a00c",
+      "after_sha256": "cdd6866a988fed2c3f29394569fcb7c67bd220bf4e2f70f4542c1c4d22827f80"
+    },
+    {
+      "file": "Proof/GeometricShiftLiftR0141.lean",
+      "only_import_and_elaborator_options_changed": true,
+      "before_sha256": "12ab8d7eac097a0c2f713b328e19e5ba7f3f30d1aa5de8739a6b555cf4885a7e",
+      "after_sha256": "08ac1883c708727d82c291df3a98d421506f313ec8ff60f1c2ae8ec9d12370e4"
+    }
+  ]
+}

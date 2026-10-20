@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 2.72,
+  "source_sha256": "d8d9de121c1d3dacb9c6af5ddab0c5e185313f6b334624bbee8377badf99e662",
+  "object_sha256": "d532b2227e2f23b143fcae332f882735e78e8f8f7eccabf025bec28ff8ba65f9",
+  "source": "/home/Palomar/workspace/arithmetic-theta/evidence/worker-normalizedframe-135/ExactOriginalTypeBridge135.lean",
+  "module_search_prefix": "/home/Palomar/workspace/arithmetic-theta/evidence/worker-normalizedframe-135/namedproof"
+}

@@ -2,6 +2,9 @@ module
 
 public import GeometricThetaLiftsDefinitionsR0141
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! The geometric inversion lift: preservation of the actual identity divisor

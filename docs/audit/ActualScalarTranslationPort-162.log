@@ -1,0 +1,198 @@
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.scalarMap_iterate_eq_id_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.scalar_origin_orbit_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.scalar_origin_orbit_infinite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.markedPoint_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.markedLift_parameter_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.genericMarkedPoint_parameter_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.isTranslation_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.genericPoint_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.scalar_origin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.scalar_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.originPreserving_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.exists_translationIso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.translation_iff_residual_eq_id' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.scalar_residual_origin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.genericIso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.scalar_residual_is_group_automorphism' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.UniversePorts.Triangular.solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.UniversePorts.ChartExt.solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:1074:58: warning: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [MvPolynomial.aeval_X, Matrix.cons_val_one] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:1665:42: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:1666:42: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:1696:42: warning: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_neg, mul_neg, neg_neg] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.UniversePorts.LaurentCoeff.solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.UniversePorts.ChartEquiv.solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:2285:5: warning: Variable name `hΦc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hΦc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:2339:35: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:2340:35: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:2344:57: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:2345:57: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:2359:41: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:2360:41: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:2518:49: warning: This simp argument is unused:
+  Polynomial.eval₂_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [evB, Polynomial.coe_eval₂RingHom, Polynomial.eval₂_mul, Polynomial.eval₂_C, Polynomial.eval₂_X,
+    map_add, map_mul, hy]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:2518:71: warning: This simp argument is unused:
+  Polynomial.eval₂_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [evB, Polynomial.coe_eval₂RingHom, Polynomial.eval₂_add, Polynomial.eval₂_C, Polynomial.eval₂_X,
+    map_add, map_mul, hy]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:2657:5: warning: Variable name `hΦc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hΦc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.UniversePorts.LaurentFiltration.solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:2725:58: warning: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [MvPolynomial.aeval_X, Matrix.cons_val_one] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:2887:33: warning: Variable name `hΔ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hΔ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.UniversePorts.VariableChange.solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.FiniteOriginAutomorphisms.finite_originIso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.finite_actualOriginIso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.CurveDensity.section_eq_of_point_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.CurveDensity.dense_of_infinite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.CurveDensity.eq_of_infinite_sections' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.CurveDensity.commutingFamily_translations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:3254:64: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:3255:24: warning: Variable name `he` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _he
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/scalar-parser-162/ActualScalarTranslationR0146.lean:3255:54: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaMarkedGroupLawR0146.actual_scalar_translation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

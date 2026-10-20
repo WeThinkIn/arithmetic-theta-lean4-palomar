@@ -10,6 +10,9 @@ public import Theorems.Thm_AlgebraicGeometry_SmoothProperCurve_exists_twoChartPo
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Opens_isAffineOpen_and_finite_aeval_of_twoChart
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_pullbackSection_eq_zero_iff_mem_support_monoidalV2
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! The generic coordinate isomorphism: construction and uniqueness.

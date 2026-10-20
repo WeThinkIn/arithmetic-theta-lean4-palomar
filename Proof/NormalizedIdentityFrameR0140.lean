@@ -446,19 +446,24 @@ def pointStageFrame (h3 : 3 ≤ r) (M : Model k T) (hM : IsModel k T M)
     (compIso (point k n) (algebraicChart k M n) (baseRestriction k n ≫ s)
       (point_chart k M s hs n) (powerModule k M s d)).hom
 
+lemma baseRestriction_reduction_comp (M : Model k T) (s : baseScheme k ⟶ M.X)
+    (n N : ℕ) (h : n ≤ N) :
+    baseReduction k n N h ≫ (baseRestriction k N ≫ s) = baseRestriction k n ≫ s := by
+  rw [← Category.assoc, baseInclusion_reduction]
+
 lemma pointStageFrame_transition (h3 : 3 ≤ r) (M : Model k T) (hM : IsModel k T M)
     (s : baseScheme k ⟶ M.X) (hs : MarkedLift k M (zeroIndex r hr) 1 s)
     (d n N : ℕ) (h : n ≤ N) :
     pullFrame (baseReduction k n N h) (pointStageFrame k h3 M hM s hs d N) ≫
       (compIso (baseReduction k n N h) (baseRestriction k N ≫ s) (baseRestriction k n ≫ s)
-        (by rw [← Category.assoc, baseInclusion_reduction]) (powerModule k M s d)).hom =
+        (baseRestriction_reduction_comp k M s n N h) (powerModule k M s d)).hom =
     pointStageFrame k h3 M hM s hs d n :=
   transportFrame_compatible (chartReduction k n N h) (point k n) (point k N)
     (baseReduction k n N h) (point_reduction k n N h)
     (algebraicChart k M n) (algebraicChart k M N) (algebraicChart_reduction k M hM n N h)
     (baseRestriction k n ≫ s) (baseRestriction k N ≫ s)
     (point_chart k M s hs n) (point_chart k M s hs N)
-    (by rw [← Category.assoc, baseInclusion_reduction]) (powerModule k M s d)
+    (baseRestriction_reduction_comp k M s n N h) (powerModule k M s d)
     (algebraicChartFrame k h3 M hM s hs d n) (algebraicChartFrame k h3 M hM s hs d N)
     (algebraicChartFrame_transition k h3 M hM s hs d n N h)
 
@@ -498,7 +503,7 @@ lemma completedStageFrame_transition (h3 : 3 ≤ r) (M : Model k T) (hM : IsMode
     (Y := baseScheme k) (Z := M.X)
     (baseReduction k n N h) (baseRestriction k n) (baseRestriction k N)
     (baseInclusion_reduction k n N h) s
-    (by rw [← Category.assoc, baseInclusion_reduction]) (powerModule k M s d)
+    (baseRestriction_reduction_comp k M s n N h) (powerModule k M s d)
     (pointStageFrame k h3 M hM s hs d n) (pointStageFrame k h3 M hM s hs d N)
     (pointStageFrame_transition k h3 M hM s hs d n N h)
 

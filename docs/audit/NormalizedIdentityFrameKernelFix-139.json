@@ -1,0 +1,14 @@
+{
+  "source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/NormalizedIdentityFrameR0140.lean",
+  "before_sha256": "4669147f9f27f66596682c4d1a04a2c0b495365de99eee7a991b4fa35930871d",
+  "after_sha256": "c0172644f1faf5e577316d4b1061cb32f52f779011b2dd6d7d71d95567d0207f",
+  "repair": "Share one proved baseRestriction_reduction_comp equality in dependent isomorphisms; no new hypotheses or axioms",
+  "standalone_log": "NormalizedIdentityFrameKernelFix-139.log",
+  "lake_integration_log": "../../../../evidence/build-root-139.log",
+  "lake_module_passed": true,
+  "full_root_passed": false,
+  "cause": "Definitionally equal dependent transports used different proof expressions; sharing a proved equality avoids repeated kernel conversion.",
+  "original_transition_type_check": "NormalizedIdentityFrameOriginalType.lean",
+  "original_transition_type_log": "NormalizedIdentityFrameOriginalType.log",
+  "original_transition_type_result": "NormalizedIdentityFrameOriginalType-result.json"
+}

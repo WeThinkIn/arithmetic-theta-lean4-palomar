@@ -3,6 +3,9 @@ module
 public import NormalizedIdentityFrameR0140
 public import ThetaNumeratorIdentityValueR0140
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Actual algebraic identity evaluation from compatible finite reductions. -/

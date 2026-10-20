@@ -30,6 +30,9 @@ public import Theorems.Thm_WeierstrassProjModel_isOriginChartSection_kwZeroSect_
 public import ActualGenericGroupLawR0146
 public import Theorems.Thm_WeierstrassProjModel_RelativeGroupLaw_exists_iso_comp_eq_and_comp_hom_eq_mul
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 set_option autoImplicit false
@@ -702,10 +705,10 @@ open MvPolynomial in
 
 theorem mem_span_of_X_one_mul_mem {T : Type u} [CommRing T] (V : WeierstrassCurve.Projective T)
     (p : MvPolynomial (Fin 2) T)
-    (hp : X 1 * p ∈ Ideal.span {MvPolynomial.aeval
-        (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial}) :
-    p ∈ Ideal.span {MvPolynomial.aeval
-        (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial} := by
+    (hp : X 1 * p ∈ Ideal.span {(MvPolynomial.aeval
+        (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial)}) :
+    p ∈ Ideal.span {(MvPolynomial.aeval
+        (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial)} := by
   classical
   set F : MvPolynomial (Fin 2) T := MvPolynomial.aeval
         (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial with hF

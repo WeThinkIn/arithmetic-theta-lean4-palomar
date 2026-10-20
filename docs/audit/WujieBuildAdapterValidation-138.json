@@ -1,0 +1,92 @@
+{
+  "scope": "development tool integration only",
+  "original_builder": "/home/wujie-ai-lean4-proof-agent-program/tools/build_lean_dependency_cone.py",
+  "adapter": "../tools/wujie_cone.py",
+  "fresh_run": "wujie-cone-137",
+  "cache_run": "wujie-cone-138",
+  "fresh_modules": 1,
+  "cache_reused_modules": 1,
+  "new_mathematical_endpoints": 0,
+  "external_bound_files": 16783,
+  "isolated_toolchain": "Lean 4.35.0-rc2",
+  "legacy_4_33_audited_cache": "disabled",
+  "benefits": [
+    "dependency scheduling",
+    "source/object/environment hash checks",
+    "checkpoint/cache reuse",
+    "compile locking and bounded per-process threads"
+  ],
+  "limits": [
+    "does not parallelize a single kernel conversion",
+    "does not replace Lake project integration",
+    "does not constitute full delivery or Palomar acceptance",
+    "coarse external project binding invalidates cache when any bound project source/object changes"
+  ],
+  "adapter_sha256": "d407697d8d9e32faa2e508ccbf16b82be0e70ae7cc210468d37a68009868e94a",
+  "runs": {
+    "137": {
+      "cache": {
+        "cache_root": "/home/Palomar/workspace/arithmetic-theta/cache/wujie-cones-4.35",
+        "environment_binding": "passed",
+        "environment_sha256": "74578fc21757f57f0653501282c722e1246f34013663309747ff52629da66072",
+        "fresh_module_count": 1,
+        "module_count": 1,
+        "object_hash_recheck": "passed",
+        "reused_module_count": 0,
+        "reused_modules": [],
+        "schema_version": 1,
+        "source_hash_recheck": "passed"
+      },
+      "adapter_receipt": {
+        "authority_script": "/home/wujie-ai-lean4-proof-agent-program/tools/build_lean_dependency_cone.py",
+        "authority_sha256": "2996ad265fcf9c86641a9a1085bf50c0e663c07e81f2336fcd14d9d96115d5b6",
+        "adapter_sha256": "d407697d8d9e32faa2e508ccbf16b82be0e70ae7cc210468d37a68009868e94a",
+        "external_project": {
+          "file_count": 16783,
+          "sha256": "6227a9a018102290fa2706f8059089e5ce50405f15804bae841a8e0fe14f9599"
+        },
+        "toolchain": "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "legacy_audited_cache": "disabled: incompatible 4.33 toolchain",
+        "exit_code": 0,
+        "external_project_unchanged": true,
+        "external_project_after": {
+          "file_count": 16783,
+          "sha256": "6227a9a018102290fa2706f8059089e5ce50405f15804bae841a8e0fe14f9599"
+        }
+      }
+    },
+    "138": {
+      "cache": {
+        "cache_root": "/home/Palomar/workspace/arithmetic-theta/cache/wujie-cones-4.35",
+        "environment_binding": "passed",
+        "environment_sha256": "74578fc21757f57f0653501282c722e1246f34013663309747ff52629da66072",
+        "fresh_module_count": 0,
+        "module_count": 1,
+        "object_hash_recheck": "passed",
+        "reused_module_count": 1,
+        "reused_modules": [
+          "PartialEndpointAudit"
+        ],
+        "schema_version": 1,
+        "source_hash_recheck": "passed"
+      },
+      "adapter_receipt": {
+        "authority_script": "/home/wujie-ai-lean4-proof-agent-program/tools/build_lean_dependency_cone.py",
+        "authority_sha256": "2996ad265fcf9c86641a9a1085bf50c0e663c07e81f2336fcd14d9d96115d5b6",
+        "adapter_sha256": "d407697d8d9e32faa2e508ccbf16b82be0e70ae7cc210468d37a68009868e94a",
+        "external_project": {
+          "file_count": 16783,
+          "sha256": "6227a9a018102290fa2706f8059089e5ce50405f15804bae841a8e0fe14f9599"
+        },
+        "toolchain": "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "legacy_audited_cache": "disabled: incompatible 4.33 toolchain",
+        "exit_code": 0,
+        "external_project_unchanged": true,
+        "external_project_after": {
+          "file_count": 16783,
+          "sha256": "6227a9a018102290fa2706f8059089e5ce50405f15804bae841a8e0fe14f9599"
+        }
+      }
+    }
+  }
+}

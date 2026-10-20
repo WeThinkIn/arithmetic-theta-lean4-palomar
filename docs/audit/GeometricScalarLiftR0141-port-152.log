@@ -1,0 +1,22 @@
+../evidence/private-proof-import-148/GeometricScalarLiftR0141.lean:891:35: warning: This simp argument is unused:
+  Category.assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Iso.inv_hom_id_assoc] at hf
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../evidence/private-proof-import-148/GeometricScalarLiftR0141.lean:1201:13: warning: This simp argument is unused:
+  Scheme.Modules.Hom.comp_app
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ConcreteCategory.comp_apply, unitMulIso, fromSection_apply, homOfLE_refl, op_id] at hh
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../evidence/private-proof-import-148/GeometricScalarLiftR0141.lean:1201:42: warning: This simp argument is unused:
+  ConcreteCategory.comp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Scheme.Modules.Hom.comp_app, unitMulIso, fromSection_apply, homOfLE_refl, op_id] at hh
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ArithmeticThetaGeometricLiftsR0141.geometric_scalar_lift' depends on axioms: [propext, Classical.choice, Quot.sound]

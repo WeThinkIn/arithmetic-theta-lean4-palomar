@@ -1,6 +1,10 @@
 module
 
+import all GenericThetaBasisR0140
+
 public import GeometricThetaLiftsDefinitionsR0141
+
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 @[expose] public section
 

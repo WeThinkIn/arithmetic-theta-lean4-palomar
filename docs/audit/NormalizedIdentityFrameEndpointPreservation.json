@@ -1,0 +1,7 @@
+{
+  "normalized_identity_frame_signature_unchanged": true,
+  "signature_sha256": "a1ac0ee9599ba7f5da70dba34da95bc1ad63fe1a3ac7f6e5b03463be63376b07",
+  "source_original_signature_from": "rewrite/NormalizedIdentityFrameR0140.lean (original signature retained, only proof body changed)",
+  "new_source": "namedproof/NormalizedIdentityFrameR0140.lean",
+  "original_transition_signature_probe": "ExactOriginalType135.lean"
+}

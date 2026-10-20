@@ -1,0 +1,10 @@
+{
+  "lean_thread_default": 96,
+  "single_lake_writer": true,
+  "independent_probe_threads": 12,
+  "cpu_affinity_count": 96,
+  "logical_processors": 96,
+  "physical_cores": 48,
+  "total_memory_gib": 182,
+  "policy": "Lake dependency scheduler runs independent modules concurrently; bounded separate probes use separate source/output roots; cached modules are reused; original project is read-only."
+}

@@ -2,6 +2,9 @@ module
 
 public import CubicModelDefinitionsR0144
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! The cleared cubic on the actual finite node charts. -/

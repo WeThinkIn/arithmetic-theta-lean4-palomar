@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "source_sha256": "7482ad1197f5c4f0f9efb90c3efa0683d8453279e1364fdc28bce8e713af0571",
+  "log_sha256": "c3b3691533339aa2efc34e1a572523d4fc1e1e81e72781adb7e91315e28110d7",
+  "change": "Import all already checked GenericThetaBasisR0140 auxiliary proofs",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "lake_integration": "pending"
+}

@@ -1,5 +1,7 @@
 module
 
+import all GenericThetaBasisR0140
+
 public import GenericLiftScalarComparisonR0142
 
 @[expose] public section

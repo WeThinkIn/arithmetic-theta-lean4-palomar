@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "source_sha256": "ff4e18a1ca8200331cc1d909dd9d6c96b77f15b1d4f465d5c60edc03b294ad82",
+  "log_sha256": "3a53e5fc2d82bb790a9e0d028e9ef7364ce027e2a115cbd944183156fadb2516",
+  "change": "Parenthesize two singleton elements to disambiguate set syntax, plus diagnosed elaborator transparency settings",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "lake_integration": "pending"
+}

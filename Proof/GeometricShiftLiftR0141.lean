@@ -1,7 +1,13 @@
 module
 
+import all GenericThetaBasisR0140
+
 public import GeometricThetaLiftsDefinitionsR0141
 public import Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_IsInvertible_comap_of_isOpenImmersion
+
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
+set_option backward.proofsInPublic true
 
 @[expose] public section
 

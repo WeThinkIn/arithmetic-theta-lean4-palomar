@@ -1,0 +1,924 @@
+{
+  "scope": "incremental Lake root builds; failed overall builds do not establish full coverage",
+  "builds": [
+    {
+      "log": "/home/Palomar/workspace/arithmetic-theta/evidence/build-root-139.log",
+      "new_built_modules_in_log": 1,
+      "build_success_marker": false,
+      "build_failure_marker": true,
+      "failed_module_count": 1,
+      "failures": {
+        "Proof/AlgebraicIdentityEvaluationR0140.lean": [
+          {
+            "line": 82,
+            "column": 12,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 64,
+            "column": 66,
+            "message": "unsolved goals"
+          }
+        ]
+      }
+    },
+    {
+      "log": "/home/Palomar/workspace/arithmetic-theta/evidence/build-root-140.log",
+      "new_built_modules_in_log": 3,
+      "build_success_marker": false,
+      "build_failure_marker": true,
+      "failed_module_count": 3,
+      "failures": {
+        "Proof/GeometricInversionLiftR0141.lean": [
+          {
+            "line": 270,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 284,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 323,
+            "column": 6,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 323,
+            "column": 6,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 312,
+            "column": 51,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 461,
+            "column": 6,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 465,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 542,
+            "column": 23,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 489,
+            "column": 69,
+            "message": "unsolved goals"
+          }
+        ],
+        "Proof/GeometricScalarLiftR0141.lean": [
+          {
+            "line": 314,
+            "column": 6,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 314,
+            "column": 6,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 307,
+            "column": 34,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 363,
+            "column": 6,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 363,
+            "column": 15,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 359,
+            "column": 86,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 390,
+            "column": 16,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 390,
+            "column": 16,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 390,
+            "column": 16,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 472,
+            "column": 15,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 455,
+            "column": 87,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 549,
+            "column": 10,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 549,
+            "column": 4,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 1346,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 1361,
+            "column": 6,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 1356,
+            "column": 26,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 1501,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ],
+        "Proof/GeometricShiftLiftR0141.lean": [
+          {
+            "line": 123,
+            "column": 7,
+            "message": "failed to synthesize instance of type class"
+          },
+          {
+            "line": 405,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 1099,
+            "column": 2,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_62`"
+          },
+          {
+            "line": 1106,
+            "column": 4,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_62`"
+          },
+          {
+            "line": 1157,
+            "column": 2,
+            "message": "Tactic `generalize` failed: result is not type correct"
+          },
+          {
+            "line": 1672,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ]
+      }
+    },
+    {
+      "log": "/home/Palomar/workspace/arithmetic-theta/evidence/build-root-141.log",
+      "new_built_modules_in_log": 3,
+      "build_success_marker": false,
+      "build_failure_marker": true,
+      "failed_module_count": 3,
+      "failures": {
+        "Proof/TateXNumeratorSystemR0143.lean": [
+          {
+            "line": 59,
+            "column": 16,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 59,
+            "column": 16,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 59,
+            "column": 16,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 65,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 99,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 129,
+            "column": 6,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 128,
+            "column": 73,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 165,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 175,
+            "column": 6,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 175,
+            "column": 15,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 175,
+            "column": 24,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 173,
+            "column": 77,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 346,
+            "column": 18,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 346,
+            "column": 18,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 348,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 351,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 358,
+            "column": 16,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 358,
+            "column": 16,
+            "message": "failed to synthesize"
+          }
+        ],
+        "Proof/GeometricScalarLiftR0141.lean": [
+          {
+            "line": 1503,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ],
+        "Proof/GeometricShiftLiftR0141.lean": [
+          {
+            "line": 1101,
+            "column": 2,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1108,
+            "column": 4,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1159,
+            "column": 2,
+            "message": "Tactic `generalize` failed: result is not type correct"
+          },
+          {
+            "line": 1674,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ]
+      }
+    },
+    {
+      "log": "/home/Palomar/workspace/arithmetic-theta/evidence/build-root-142.log",
+      "new_built_modules_in_log": 2,
+      "build_success_marker": false,
+      "build_failure_marker": true,
+      "failed_module_count": 5,
+      "failures": {
+        "Proof/CoordinateExactPolesR0143.lean": [
+          {
+            "line": 35,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 43,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 43,
+            "column": 4,
+            "message": "failed to synthesize"
+          }
+        ],
+        "Proof/CoordinateGeometricInversionR0143.lean": [
+          {
+            "line": 28,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 33,
+            "column": 16,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 79,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 79,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 86,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 108,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 108,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 184,
+            "column": 16,
+            "message": "failed to synthesize"
+          }
+        ],
+        "Proof/CoordinateMarkedEvaluationR0143.lean": [
+          {
+            "line": 100,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 100,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 119,
+            "column": 16,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 119,
+            "column": 16,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 119,
+            "column": 16,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 141,
+            "column": 18,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 166,
+            "column": 18,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 186,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 203,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 213,
+            "column": 4,
+            "message": "failed to synthesize"
+          }
+        ],
+        "Proof/GeometricScalarLiftR0141.lean": [
+          {
+            "line": 1503,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ],
+        "Proof/GeometricShiftLiftR0141.lean": [
+          {
+            "line": 1101,
+            "column": 2,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1108,
+            "column": 4,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1159,
+            "column": 2,
+            "message": "Tactic `generalize` failed: result is not type correct"
+          },
+          {
+            "line": 1674,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ]
+      }
+    },
+    {
+      "log": "/home/Palomar/workspace/arithmetic-theta/evidence/build-root-143.log",
+      "new_built_modules_in_log": 5,
+      "build_success_marker": false,
+      "build_failure_marker": true,
+      "failed_module_count": 5,
+      "failures": {
+        "Proof/FiniteChartSplitCubicR0144.lean": [
+          {
+            "line": 162,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 169,
+            "column": 2,
+            "message": "failed to synthesize"
+          }
+        ],
+        "Proof/DegreeThreeCoordinateBasisR0144.lean": [
+          {
+            "line": 59,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 71,
+            "column": 4,
+            "message": "failed to synthesize"
+          }
+        ],
+        "Proof/DegreeTwoCoordinateBasisR0144.lean": [
+          {
+            "line": 70,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 99,
+            "column": 18,
+            "message": "failed to synthesize"
+          }
+        ],
+        "Proof/GeometricScalarLiftR0141.lean": [
+          {
+            "line": 1503,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ],
+        "Proof/GeometricShiftLiftR0141.lean": [
+          {
+            "line": 1101,
+            "column": 2,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1108,
+            "column": 4,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1159,
+            "column": 2,
+            "message": "Tactic `generalize` failed: result is not type correct"
+          },
+          {
+            "line": 1674,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ]
+      }
+    },
+    {
+      "log": "/home/Palomar/workspace/arithmetic-theta/evidence/build-root-144.log",
+      "new_built_modules_in_log": 3,
+      "build_success_marker": false,
+      "build_failure_marker": true,
+      "failed_module_count": 3,
+      "failures": {
+        "Proof/GeometricScalarLiftR0141.lean": [
+          {
+            "line": 1503,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ],
+        "Proof/AlgebraicModelCubicR0144.lean": [
+          {
+            "line": 383,
+            "column": 2,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 428,
+            "column": 4,
+            "message": "failed to synthesize"
+          }
+        ],
+        "Proof/GeometricShiftLiftR0141.lean": [
+          {
+            "line": 1101,
+            "column": 2,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1108,
+            "column": 4,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1159,
+            "column": 2,
+            "message": "Tactic `generalize` failed: result is not type correct"
+          },
+          {
+            "line": 1674,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ]
+      }
+    },
+    {
+      "log": "/home/Palomar/workspace/arithmetic-theta/evidence/build-root-145.log",
+      "new_built_modules_in_log": 1,
+      "build_success_marker": false,
+      "build_failure_marker": true,
+      "failed_module_count": 3,
+      "failures": {
+        "Proof/GeometricScalarLiftR0141.lean": [
+          {
+            "line": 1503,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ],
+        "Proof/GeometricShiftLiftR0141.lean": [
+          {
+            "line": 1101,
+            "column": 2,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1108,
+            "column": 4,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1159,
+            "column": 2,
+            "message": "Tactic `generalize` failed: result is not type correct"
+          },
+          {
+            "line": 1674,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ],
+        "Proof/GenericAffineCubicIsomorphismR0144.lean": [
+          {
+            "line": 765,
+            "column": 8,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 898,
+            "column": 10,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 861,
+            "column": 95,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 1047,
+            "column": 10,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 1047,
+            "column": 19,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 992,
+            "column": 95,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 1225,
+            "column": 28,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 1225,
+            "column": 21,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 1561,
+            "column": 8,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 1668,
+            "column": 10,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 1637,
+            "column": 41,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 2492,
+            "column": 6,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 2482,
+            "column": 0,
+            "message": "(deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached"
+          },
+          {
+            "line": 2619,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 2759,
+            "column": 9,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 2753,
+            "column": 0,
+            "message": "(deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached"
+          },
+          {
+            "line": 2829,
+            "column": 8,
+            "message": "(kernel) unknown constant 'ArithmeticThetaCubicModelR0144.GenericAffineCubicIsomorphismR0144.coordinateRingHom_injective'"
+          }
+        ]
+      }
+    },
+    {
+      "log": "/home/Palomar/workspace/arithmetic-theta/evidence/build-root-146.log",
+      "new_built_modules_in_log": 4,
+      "build_success_marker": false,
+      "build_failure_marker": true,
+      "failed_module_count": 3,
+      "failures": {
+        "Proof/GeometricScalarLiftR0141.lean": [
+          {
+            "line": 1503,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ],
+        "Proof/GeometricShiftLiftR0141.lean": [
+          {
+            "line": 1101,
+            "column": 2,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1108,
+            "column": 4,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1159,
+            "column": 2,
+            "message": "Tactic `generalize` failed: result is not type correct"
+          },
+          {
+            "line": 1674,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ],
+        "Proof/AffineDifferentialFrameR0145.lean": [
+          {
+            "line": 53,
+            "column": 19,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 45,
+            "column": 67,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 75,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 56,
+            "column": 0,
+            "message": "(deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached"
+          },
+          {
+            "line": 168,
+            "column": 4,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 247,
+            "column": 8,
+            "message": "(kernel) unknown constant 'ArithmeticThetaCompactifiedDifferentialR0145.AffineFrame.coprime'"
+          }
+        ]
+      }
+    },
+    {
+      "log": "/home/Palomar/workspace/arithmetic-theta/evidence/build-root-147.log",
+      "new_built_modules_in_log": 1,
+      "build_success_marker": false,
+      "build_failure_marker": true,
+      "failed_module_count": 3,
+      "failures": {
+        "Proof/GeometricScalarLiftR0141.lean": [
+          {
+            "line": 1503,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ],
+        "Proof/GeometricShiftLiftR0141.lean": [
+          {
+            "line": 1101,
+            "column": 2,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1108,
+            "column": 4,
+            "message": "Unknown constant `_private.GeometricShiftLiftR0141.0._proof_63`"
+          },
+          {
+            "line": 1159,
+            "column": 2,
+            "message": "Tactic `generalize` failed: result is not type correct"
+          },
+          {
+            "line": 1674,
+            "column": 6,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ],
+        "Proof/GlobalNormalizedDifferentialR0145.lean": [
+          {
+            "line": 705,
+            "column": 4,
+            "message": "failed to synthesize"
+          }
+        ]
+      }
+    },
+    {
+      "log": "/home/Palomar/workspace/arithmetic-theta/evidence/build-root-153.log",
+      "new_built_modules_in_log": 14,
+      "build_success_marker": false,
+      "build_failure_marker": true,
+      "failed_module_count": 2,
+      "failures": {
+        "Proof/SymmetricMarkingFiniteSignsR0142.lean": [
+          {
+            "line": 135,
+            "column": 8,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ],
+        "Proof/ActualScalarTranslationR0146.lean": [
+          {
+            "line": 706,
+            "column": 96,
+            "message": "unexpected token '}'; expected '|'"
+          },
+          {
+            "line": 814,
+            "column": 6,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 809,
+            "column": 79,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 1189,
+            "column": 6,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 1184,
+            "column": 79,
+            "message": "unsolved goals"
+          },
+          {
+            "line": 1863,
+            "column": 6,
+            "message": "failed to synthesize"
+          },
+          {
+            "line": 1858,
+            "column": 79,
+            "message": "unsolved goals"
+          }
+        ]
+      }
+    },
+    {
+      "log": "/home/Palomar/workspace/arithmetic-theta/evidence/build-root-154.log",
+      "new_built_modules_in_log": 0,
+      "build_success_marker": false,
+      "build_failure_marker": true,
+      "failed_module_count": 2,
+      "failures": {
+        "Proof/SymmetricMarkingFiniteSignsR0142.lean": [
+          {
+            "line": 135,
+            "column": 8,
+            "message": "(kernel) unknown constant '_private.GenericThetaBasisR0140.0._proof_48'"
+          }
+        ],
+        "Proof/ActualScalarTranslationR0146.lean": [
+          {
+            "line": 709,
+            "column": 96,
+            "message": "unexpected token '}'; expected '|'"
+          }
+        ]
+      }
+    }
+  ],
+  "new_built_module_events": 37,
+  "current_endpoint_audit": "partial-endpoint-audit-161-result.json",
+  "current_exact_endpoint_count": 44,
+  "current_build": "root163 running; integrates checked singleton syntax and symmetric marking import repairs"
+}

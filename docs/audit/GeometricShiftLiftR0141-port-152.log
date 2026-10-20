@@ -1,0 +1,137 @@
+../evidence/private-proof-import-151/GeometricShiftLiftR0141.lean:324:41: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+../evidence/private-proof-import-151/GeometricShiftLiftR0141.lean:324:52: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+../evidence/private-proof-import-151/GeometricShiftLiftR0141.lean:329:26: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+../evidence/private-proof-import-151/GeometricShiftLiftR0141.lean:329:37: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+../evidence/private-proof-import-151/GeometricShiftLiftR0141.lean:345:43: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+../evidence/private-proof-import-151/GeometricShiftLiftR0141.lean:345:54: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+../evidence/private-proof-import-151/GeometricShiftLiftR0141.lean:474:41: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+../evidence/private-proof-import-151/GeometricShiftLiftR0141.lean:702:33: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+../evidence/private-proof-import-151/GeometricShiftLiftR0141.lean:722:33: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.ModelShift.targetIso_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.ModelShift.stageMap_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.ModelShift.stageMap_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.RawAction.normalizedMap_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.RawAction.restrictMap_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.RawAction.normalized_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.ModelShift.exists_generic_cyclic_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.ModelShift.cleared_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+../evidence/private-proof-import-151/GeometricShiftLiftR0141.lean:1834:2: warning: Unused tactic linter: `change q ≫ rest ≫ inv (power g L q (n + 1)) = 𝟙 L` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.RawIteration.power_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.RawIteration.isIso_of_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+../evidence/private-proof-import-151/GeometricShiftLiftR0141.lean:1947:22: warning: This simp argument is unused:
+  Category.assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [iterateHom]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.FinalConstruction.exists_lift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.CyclicMap.iterate_basis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.ShiftPeriod.shift_period' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.shiftMap_isIso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.shift_marked' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.lift_unique_of_basis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.cyclic_lift_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.CompletedShift.term_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.CompletedShift.theta_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.CompletedShift.uniform_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.CompletedShift.numerator_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.CompletedShift.uniform_wrap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.CompletedShift.numerator_wrap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.CompletedShift.all_finite_numerators_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.factor_ideal_of_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.ActualStages.localMap_theta' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.ActualStages.exists_finite_cleared_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.FactorCompletion.exists_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.ModelShift.exists_algebraic_cleared_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.GeometricShiftLiftR0141.StageLocalShift.factor_numerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaGeometricLiftsR0141.geometric_shift_lift' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -2,6 +2,10 @@ module
 
 public import AlgebraicTateCoordinatesDefinitionsR0143
 
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Compatibility of the literal finite Tate X numerators. -/

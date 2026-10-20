@@ -2,6 +2,9 @@ module
 
 public import AlgebraicTateCoordinatesR0143
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Geometric inversion parity of the literal algebraic Tate coordinates. -/

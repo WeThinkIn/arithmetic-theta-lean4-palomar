@@ -2,6 +2,9 @@ module
 
 public import CubicModelDefinitionsR0144
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! The literal functions 1 and X give the complete degree-two section basis.
