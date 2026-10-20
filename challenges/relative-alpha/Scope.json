@@ -1,0 +1,25 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-038",
+    "accepted-039",
+    "accepted-052"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-038",
+    "accepted-039"
+  ],
+  "universe": "Original arbitrary universe u retained",
+  "target_count": 11,
+  "retained": [
+    "Full original038 root data for every positive level divisible by4",
+    "Full original039 unique realizing alpha frame and naturality over every original base change",
+    "Actual pointed Cartesian square, origin and all multiplication maps",
+    "Both actual full-level markings and both marked-point compatibility equalities",
+    "Canonical Hodge comparison uniquely fixed on every local derivative",
+    "Inherited complete052 unchanged"
+  ],
+  "no_new_main_assumptions": true,
+  "new_endpoint_count": 2,
+  "official_verified": false,
+  "full_paper_claimed": false
+}

@@ -1,0 +1,80 @@
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: RelativeAlphaSolution.lean:246:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RelativeAlphaSolution.lean:252:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: RelativeAlphaSolution.lean:311:0: 'ArithmeticThetaPointedComparison387.kaehler_hom_ext' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: RelativeAlphaSolution.lean:312:0: 'ArithmeticThetaPointedComparison387.pointed_compatible_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: RelativeAlphaSolution.lean:313:0: 'ArithmeticThetaPointedComparison387.pointed_comparison_exists_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RelativeAlphaSolution.lean:343:0: 'ArithmeticThetaPalomarPointed387.pointed_comparison_exists_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RelativeAlphaSolution.lean:344:0: 'ArithmeticThetaPalomarPointed387.pointed_compatible_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: RelativeAlphaSolution.lean:367:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: RelativeAlphaSolution.lean:368:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: RelativeAlphaSolution.lean:379:187: Variable name `hG` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hG
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RelativeAlphaSolution.lean:382:187: Variable name `hG` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hG
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RelativeAlphaSolution.lean:385:187: Variable name `hG` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hG
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RelativeAlphaSolution.lean:385:873: Variable name `hGs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hGs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RelativeAlphaSolution.lean:390:187: Variable name `hG` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hG
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RelativeAlphaSolution.lean:390:874: Variable name `hGs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hGs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (12065 jobs).

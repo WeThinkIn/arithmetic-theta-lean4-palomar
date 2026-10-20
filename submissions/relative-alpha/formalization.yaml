@@ -1,0 +1,53 @@
+version: v0.4
+project:
+  name: Complete relative alpha naturality
+  description: 'Complete original accepted038 and039 at arbitrary universe u: root
+    data and unique alpha frame for every positive level divisible by4, with naturality
+    for every original pointed Cartesian base change, preserving both full-level marking
+    equations. Canonical Hodge comparison uniquely specified on all local universal
+    derivatives and proved equal to the original. Inherited complete052 included without
+    duplicate credit. All eleven support/main targets selected. See challenges/relative-alpha/Scope.json;
+    no whole-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Complete original accepted038 and039 at arbitrary universe u: root data
+    and unique alpha frame for every positive level divisible by4, with naturality
+    for every original pointed Cartesian base change, preserving both full-level marking
+    equations. Canonical Hodge comparison uniquely specified on all local universal
+    derivatives and proved equal to the original. Inherited complete052 included without
+    duplicate credit. All eleven support/main targets selected. See challenges/relative-alpha/Scope.json;
+    no whole-paper completion claimed.'
+fidelity:
+  divergences: Original038/039 full propositions and universe recovered by compiled
+    reverse bridges and rfl audits. No extra main assumptions. Both canonical Hodge
+    and alpha pullback maps equal originals. Eleven support/main targets explicitly
+    selected; inherited052 not counted twice.

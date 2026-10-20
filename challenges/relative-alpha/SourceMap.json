@@ -1,0 +1,28 @@
+{
+  "base": "Frozen437 complete scheme-alpha interface, plus387 canonical pointed differential comparison with bridge inlined",
+  "semantic_compatibility": "207 non-proof Challenge/Solution declarations have matching types and available bodies; original canonical maps separately recovered",
+  "namespace_maps": {
+    "ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha": "ArithmeticThetaPalomarAffineAlpha437.RealizesAlpha",
+    "ArithmeticThetaGlobalFourTorsionR0190.pullAlpha": "ArithmeticThetaPalomarRelativeAlpha442.pullAlpha"
+  },
+  "compiled_bridges": [
+    "affineAlpha_iff",
+    "pointed_compatible_iff",
+    "hodgeComparison_eq_original",
+    "pullAlpha_eq_original",
+    "recover_original_038",
+    "recover_original_039",
+    "recover_original_052"
+  ],
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/Challenge.uncompressed.lean.txt": "1edad481631f7a298de257e346460cf78af2ccc4b36378cf78454649113ea66b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/Solution.uncompressed.lean.txt": "a365bd1f5b3fc58b6ca041fd2c92d62f28520923481e1807ea0edcebc8b57fff",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/pointed-differential-comparison-387/Challenge.lean": "452e61fa15424a774d60d652da0d6477cc2eb6b52397b52d13077bc8aff8f42f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/pointed-differential-comparison-387/Solution.lean": "e3c009905d9eec8c40d85172dd57d66b691701b5601a2d77bc813d8b14bd9afa",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/pointed-differential-comparison-387/Bridge.lean": "7de48eccd3c4adc91e82ae62cdefd962db22313917a71b3021b09e01816ddfcf",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeKatoNaturalityDefinitionsR0170.lean": "f3b3fe18444d1e8aeb0d0ee40b8ef8fc6b126d8de8d82e2125e5fcffa329ea32",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/comparator.json": "0b877e68fbd7321f4073c9b608f4867561a3047b29dadb36b95c87bff500438f"
+  },
+  "original_type_recovery": "Whole original038/039 recovered at arbitrary universe u; equality of theorems compiled by rfl"
+}

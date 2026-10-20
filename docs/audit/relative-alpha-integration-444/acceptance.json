@@ -1,0 +1,19 @@
+{
+  "accepted_for_local_integration": true,
+  "new_ids": [
+    "accepted-038",
+    "accepted-039"
+  ],
+  "basis": "Complete frozen original038/039 interface, exact definition compatibility and root source/type review; no official acceptance",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/relative-alpha-package-442/Challenge.lean": "d592d332d33870a539d36cded4ead5eb5b9154725db82aeea7c73dad338cd7a4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/relative-alpha-package-442/Solution.lean": "3b9e65c138f2e80b08a0405a5a61c1129331780ab5500d90c67d0619f393662e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/relative-alpha-package-442/Scope.json": "bdc06c2344c841dbd5a6b42108c51c5c3fb134e7ba309e6aaee9f307b23cb611",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/relative-alpha-package-442/SourceMap.json": "e8fd4fb6b6fad1ad7160e451f6cf487f7bfbebad5ab0566109952271f40141b8",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/relative-alpha-package-442/receipt.json": "61d10b226d2251332be500ea456dc506ea62a26210ab14fb77974af6a4259c95",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/relative-alpha-package-442/README.md": "cdaf1b2051cb6a5b57fb3255e6d93dcf2498fb45afc2d8dcf58394fa0a9adfea",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/relative-alpha-package-442/comparator.json": "3e05c055e440971fd3a03f176faa01346bd65a3dd7ffb67aa1e57508ac4a6b49",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/relative-alpha-scope-review-443/Review.md": "79d29aa2816e7cc192438530505de93f97b8fbb96de394fa94fee4c2c510966f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/relative-alpha-scope-review-443/receipt.json": "76c78aaf2c0192dd5be06697e965810e9099a16c078f7455c515b851226fed2c"
+  }
+}

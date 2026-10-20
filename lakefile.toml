@@ -1340,3 +1340,11 @@ roots = ["SchemeAlphaCharacterChallenge"]
 [[lean_lib]]
 name = "SchemeAlphaCharacterSolution"
 roots = ["SchemeAlphaCharacterSolution"]
+
+[[lean_lib]]
+name = "RelativeAlphaChallenge"
+roots = ["RelativeAlphaChallenge"]
+
+[[lean_lib]]
+name = "RelativeAlphaSolution"
+roots = ["RelativeAlphaSolution"]

@@ -1,0 +1,22 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : @ArithmeticThetaSchemeFourCharacterR0215.scheme_alpha_character =
+  @ArithmeticThetaPalomarSchemeAlpha437.recover_original_052 := rfl
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.recover_original_052
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.realizesAlpha_iff
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.affineAlpha_iff
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.affineHodgeMap_eq
+#print axioms ArithmeticThetaPalomarConormal436.conormalMap_eq_original
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.alphaExists
+
+example : @ArithmeticThetaGlobalFourTorsionR0190.relative_four_torsion_root =
+  @ArithmeticThetaPalomarRelativeAlpha442.recover_original_038 := rfl
+example : @ArithmeticThetaGlobalFourTorsionR0190.relative_alpha_naturality =
+  @ArithmeticThetaPalomarRelativeAlpha442.recover_original_039 := rfl
+#print axioms ArithmeticThetaPalomarRelativeAlpha442.recover_original_038
+#print axioms ArithmeticThetaPalomarRelativeAlpha442.recover_original_039
+#print axioms ArithmeticThetaPalomarRelativeAlpha442.hodgeComparison_eq_original
+#print axioms ArithmeticThetaPalomarRelativeAlpha442.pullAlpha_eq_original
+#print axioms ArithmeticThetaPalomarPointed387.pointed_compatible_iff

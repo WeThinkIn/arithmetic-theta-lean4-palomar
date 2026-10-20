@@ -1,0 +1,22 @@
+{
+  "challenge_module": "RelativeAlphaChallenge",
+  "solution_module": "RelativeAlphaSolution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarGlobalFrame401.canonicalDifferentialMap",
+    "ArithmeticThetaPalomarGlobalFrame401.normalizedFrameExists",
+    "ArithmeticThetaPalomarGlobalFrame401.hodgeGeneratorFrame",
+    "ArithmeticThetaPalomarGlobalFrame401.normalizedFrameExistsUnique",
+    "ArithmeticThetaPalomarConormal436.canonicalConormalMap",
+    "ArithmeticThetaPalomarSchemeAlpha437.alphaExists",
+    "ArithmeticThetaPalomarSchemeAlpha437.schemeAlphaCharacter",
+    "ArithmeticThetaPalomarPointed387.pointed_comparison_exists_unique",
+    "ArithmeticThetaPalomarRelativeAlpha442.weierstrassSmooth",
+    "ArithmeticThetaPalomarRelativeAlpha442.relativeFourTorsionRoot",
+    "ArithmeticThetaPalomarRelativeAlpha442.relativeAlphaNaturality"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

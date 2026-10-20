@@ -1,0 +1,15 @@
+'ArithmeticThetaPalomarSchemeAlpha437.recover_original_052' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarSchemeAlpha437.realizesAlpha_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarSchemeAlpha437.affineAlpha_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarSchemeAlpha437.affineHodgeMap_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarConormal436.conormalMap_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarSchemeAlpha437.alphaExists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarRelativeAlpha442.recover_original_038' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarRelativeAlpha442.recover_original_039' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarRelativeAlpha442.hodgeComparison_eq_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarRelativeAlpha442.pullAlpha_eq_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarPointed387.pointed_compatible_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
