@@ -1,0 +1,1 @@
+The two initial scoped preflights at ced6305 stopped during intake: metadata basenames must be formalization.yaml. No Lean or Comparator check ran. Metadata now uses submissions/<scope>/formalization.yaml. Proof sources and configuration target lists are unchanged.
