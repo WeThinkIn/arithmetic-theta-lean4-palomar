@@ -1,0 +1,4 @@
+PROJECT_IMPORT /home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/Definitions/Def_WeierstrassCurve_ProjModel_AddFormulas.olean; EXACT_ORIGINAL_TYPE_AST_MATCH WeierstrassProjModel.kw_lrSym_minor_YZ true; UNIVERSES_MATCH true
+PROJECT_IMPORT /home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/Definitions/Def_WeierstrassCurve_ProjModel_ThirdAddFormulas.olean; EXACT_ORIGINAL_TYPE_AST_MATCH WeierstrassProjModel.kw_lrThird_minor_YZ true; UNIVERSES_MATCH true
+'WeierstrassProjModel.kw_lrSym_minor_YZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeierstrassProjModel.kw_lrThird_minor_YZ' depends on axioms: [propext, Classical.choice, Quot.sound]

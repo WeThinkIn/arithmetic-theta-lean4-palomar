@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-20T20:31:38.528657+00:00",
+  "patch_sha256": "d01443be3140a99a79e00b9bf8f0b1bfb28934623372d387f52892ce47bedca3",
+  "only_reviewed_two_proof_changes": true,
+  "source_after": {
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_WeierstrassCurve_ProjModel_AddFormulas.lean": "80d2819a210c94ff57cf01b72acfe9ed5a3a3b6a24f1e33501b545a102a98178",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_WeierstrassCurve_ProjModel_ThirdAddFormulas.lean": "f14eefb828a933c90b8779488f2fd399d4b11902d7572295ac912924d6d0b793"
+  },
+  "old_full_export_reused_as_new_pass": false,
+  "downstream_rebuild_pending": true
+}

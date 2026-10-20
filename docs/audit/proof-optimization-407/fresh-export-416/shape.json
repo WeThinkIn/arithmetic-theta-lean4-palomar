@@ -1,0 +1,660 @@
+{
+  "utc": "2026-10-20T20:42:09.823642+00:00",
+  "source": "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimized-export-416/Solution.ndjson",
+  "sha256": "9a006868028eea55601046a6e50772356fe217f9b75440a402dfa223047c1830",
+  "records": 48991526,
+  "expression_records": 47780086,
+  "declaration_records": 156758,
+  "names": 1040130,
+  "seconds": 27.516990364994854,
+  "target_intervals": [
+    {
+      "names": [
+        "WeierstrassProjModel.kw_lrSym_minor_YZ"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 13945,
+      "preceding_expression_bytes": 739010,
+      "line": 14123059,
+      "previous_declaration": [
+        "_private.Definitions.Def_WeierstrassCurve_ProjModel_AddFormulas.0.WeierstrassProjModel.kw_lrSym_minor_YZ._proof_4"
+      ],
+      "interval_first_line": 14109113,
+      "type_expr": 13573261,
+      "value_expr": 13587182
+    },
+    {
+      "names": [
+        "WeierstrassProjModel.kw_lrThird_minor_YZ"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 11716,
+      "preceding_expression_bytes": 620961,
+      "line": 18328902,
+      "previous_declaration": [
+        "_private.Definitions.Def_WeierstrassCurve_ProjModel_ThirdAddFormulas.0.WeierstrassProjModel.kw_lrThird_minor_YZ._proof_4"
+      ],
+      "interval_first_line": 18317185,
+      "type_expr": 17725391,
+      "value_expr": 17737083
+    },
+    {
+      "names": [
+        "ArithmeticThetaPalomarMain172.explicitFiniteDetermination"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 1391,
+      "preceding_expression_bytes": 76129,
+      "line": 48991512,
+      "previous_declaration": [
+        "ArithmeticThetaPalomarMain172.Bridges250.coefficients_iff_of_kernel"
+      ],
+      "interval_first_line": 48990105,
+      "type_expr": 47778792,
+      "value_expr": 47780079
+    }
+  ],
+  "top_intervals": [
+    {
+      "names": [
+        "WeierstrassProjModel.kw_lrSym_minor_XZ"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 532083,
+      "preceding_expression_bytes": 28137449,
+      "line": 14100462,
+      "previous_declaration": [
+        "WeierstrassProjModel.kw_lrSym_qXZ"
+      ],
+      "interval_first_line": 13568374,
+      "type_expr": 13032567,
+      "value_expr": 13564625
+    },
+    {
+      "names": [
+        "P2MW.S_WeierstrassProjModel_kw_a2_checks_crossYZ.kw_lrApt_aeval_lrSym_cross_YZ"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 529762,
+      "preceding_expression_bytes": 28011391,
+      "line": 16495420,
+      "previous_declaration": [
+        "P2MW.S_WeierstrassProjModel_kw_a2_sixU_class_eq_addMap_of_delta_ne_zero.WeierstrassProjModel.kw_lrApt_aeval_lrSym_cross_XZ"
+      ],
+      "interval_first_line": 15965649,
+      "type_expr": 15404861,
+      "value_expr": 15934607
+    },
+    {
+      "names": [
+        "WeierstrassProjModel.kw_lrThird_minor_XZ"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 408599,
+      "preceding_expression_bytes": 21610607,
+      "line": 18311023,
+      "previous_declaration": [
+        "WeierstrassProjModel.kw_lrThird_qXZ"
+      ],
+      "interval_first_line": 17902419,
+      "type_expr": 17310664,
+      "value_expr": 17719238
+    },
+    {
+      "names": [
+        "P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_chartModels_extPushout_of_forall_res_symm_mk_eq.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 373711,
+      "preceding_expression_bytes": 20430794,
+      "line": 34568456,
+      "previous_declaration": [
+        "AlgebraicGeometry.OModulePresheaf.exists_overlapIso_extPushout_of_forall_res_symm_mk_eq"
+      ],
+      "interval_first_line": 34194686,
+      "type_expr": 33322295,
+      "value_expr": 33689214
+    },
+    {
+      "names": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_chartData_of_surjective_of_range_eq_ker_of_isProper_of_isAdicComplete.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 333204,
+      "preceding_expression_bytes": 18476426,
+      "line": 34904688,
+      "previous_declaration": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_chartData_of_surjective_of_range_eq_ker_of_isProper_of_isAdicComplete.RedX1.isScalarTower_compHom"
+      ],
+      "interval_first_line": 34571376,
+      "type_expr": 33695182,
+      "value_expr": 34025228
+    },
+    {
+      "names": [
+        "P2MW.S_WeierstrassProjModel_kw_a2_checks_addXYZ_crossXZ.kw_lrApt_aeval_lrSym_cross_XZ"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 330447,
+      "preceding_expression_bytes": 17464123,
+      "line": 15946018,
+      "previous_declaration": [
+        "P2MW.S_WeierstrassProjModel_kw_a2_checks_addXYZ_crossXZ.kw_lrApt_aeval_lrAdd_Z"
+      ],
+      "interval_first_line": 15615564,
+      "type_expr": 15055243,
+      "value_expr": 15385661
+    },
+    {
+      "names": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_forall_thread_smul_eq_apply_and_smul_eq_zero_of_isIso_pullback_snd_of_isProper.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 164297,
+      "preceding_expression_bytes": 8851079,
+      "line": 32994791,
+      "previous_declaration": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_forall_thread_smul_eq_apply_and_smul_eq_zero_of_isIso_pullback_snd_of_isProper.W_ASM.threads_of_torsion"
+      ],
+      "interval_first_line": 32830392,
+      "type_expr": 31961466,
+      "value_expr": 32125177
+    },
+    {
+      "names": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_isCoherent_forall_ker_eq_pow_smul_top_of_isProper_of_isAdicComplete.GEDriver.stepC"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 92187,
+      "preceding_expression_bytes": 4983132,
+      "line": 35704243,
+      "previous_declaration": [
+        "_private.ProperTowerAutomorphismEffectivityR0137.0.ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_isCoherent_forall_ker_eq_pow_smul_top_of_isProper_of_isAdicComplete.GEDriver.stepC._proof_1_2"
+      ],
+      "interval_first_line": 35611917,
+      "type_expr": 34726399,
+      "value_expr": 34818520
+    },
+    {
+      "names": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_basisData_range_eq_ker_comp_eq_of_surjective_of_range_eq_ker_of_isProper_of_isAdicComplete.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 86705,
+      "preceding_expression_bytes": 4799310,
+      "line": 35534577,
+      "previous_declaration": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.AlgebraicGeometry.OModulePresheaf.exists_basisData_of_chartData_of_isProper_of_isAdicComplete"
+      ],
+      "interval_first_line": 35447815,
+      "type_expr": 34564395,
+      "value_expr": 34649440
+    },
+    {
+      "names": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_forall_thread_smul_eq_apply_and_smul_eq_zero_of_isIso_pullback_snd_of_isProper.W_ASM.exists_frame"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 78541,
+      "preceding_expression_bytes": 4228210,
+      "line": 32533323,
+      "previous_declaration": [
+        "AlgebraicGeometry.OModulePresheaf.exists_isPullback_isProper_and_exists_forall_surjective_ker_eq_pow_smul_top_of_forall_ker_eq_pow_smul_top"
+      ],
+      "interval_first_line": 32454714,
+      "type_expr": 31590920,
+      "value_expr": 31666997
+    },
+    {
+      "names": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_chartData_of_surjective_of_range_eq_ker_of_isProper_of_isAdicComplete.RedX1.stageA"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 75949,
+      "preceding_expression_bytes": 4111961,
+      "line": 33995498,
+      "previous_declaration": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_chartData_of_surjective_of_range_eq_ker_of_isProper_of_isAdicComplete.RedX1.res_vtx_eq_of_d_eq_zero"
+      ],
+      "interval_first_line": 33919512,
+      "type_expr": 33046240,
+      "value_expr": 33117716
+    },
+    {
+      "names": [
+        "P2MW.S_Algebra_exists_monic_irreducible_map_algebraicClosure_hypersurfaceModel_of_forall_isSeparable.P2mHypModel.main"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 74930,
+      "preceding_expression_bytes": 3967439,
+      "line": 21985388,
+      "previous_declaration": [
+        "_private.P2M.Sol.S_Algebra_exists_monic_irreducible_map_algebraicClosure_hypersurfaceModel_of_forall_isSeparable.0.P2MW.S_Algebra_exists_monic_irreducible_map_algebraicClosure_hypersurfaceModel_of_forall_isSeparable.P2mHypModel.main._proof_1_2"
+      ],
+      "interval_first_line": 21910237,
+      "type_expr": 21244043,
+      "value_expr": 21318375
+    },
+    {
+      "names": [
+        "TateCurve.boundaryTerm_eq_neg_sum"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 67314,
+      "preceding_expression_bytes": 3553420,
+      "line": 29984180,
+      "previous_declaration": [
+        "Nat.cast_choose_two"
+      ],
+      "interval_first_line": 29916850,
+      "type_expr": 29086792,
+      "value_expr": 29154087
+    },
+    {
+      "names": [
+        "P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_chartModel_extPushout_of_surjective.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 64524,
+      "preceding_expression_bytes": 3535651,
+      "line": 34121630,
+      "previous_declaration": [
+        "LinearMap.ExtPushout.inl_injective"
+      ],
+      "interval_first_line": 34057076,
+      "type_expr": 33186178,
+      "value_expr": 33242835
+    },
+    {
+      "names": [
+        "ArithmeticThetaHodgeInitialR0163.geometric_discriminant_hodge"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 63687,
+      "preceding_expression_bytes": 3382180,
+      "line": 43869086,
+      "previous_declaration": [
+        "ArithmeticThetaHodgeInitialR0163.origin_logarithmic_taylor"
+      ],
+      "interval_first_line": 43805321,
+      "type_expr": 42738579,
+      "value_expr": 42802133
+    },
+    {
+      "names": [
+        "AlgebraicGeometry.Proj.lift_awayMap\u2090_awayMap\u2090_surjective"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 62834,
+      "preceding_expression_bytes": 3455082,
+      "line": 15380902,
+      "previous_declaration": [
+        "HomogeneousLocalization.val_awayMap_mk"
+      ],
+      "interval_first_line": 15317920,
+      "type_expr": 14763434,
+      "value_expr": 14825747
+    },
+    {
+      "names": [
+        "WeierstrassCurve.variableChange_\u0394"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 62744,
+      "preceding_expression_bytes": 3312708,
+      "line": 12532049,
+      "previous_declaration": [
+        "Mathlib.Tactic.Ring.Common.pow_bit1"
+      ],
+      "interval_first_line": 12469300,
+      "type_expr": 11965119,
+      "value_expr": 12027853
+    },
+    {
+      "names": [
+        "Algebra.exists_etale_isIdempotentElem_forall_liesOver_eq_aux"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 62360,
+      "preceding_expression_bytes": 3287994,
+      "line": 17198358,
+      "previous_declaration": [
+        "_private.Mathlib.RingTheory.Etale.QuasiFinite.0.Algebra.exists_etale_isIdempotentElem_forall_liesOver_eq_aux._simp_1_7"
+      ],
+      "interval_first_line": 17135924,
+      "type_expr": 16559710,
+      "value_expr": 16620611
+    },
+    {
+      "names": [
+        "P2MW.S_WeierstrassCurve_exists_variableChange_smul_eq_of_algHom_coordinateRing_triangular.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 60963,
+      "preceding_expression_bytes": 3217985,
+      "line": 48465470,
+      "previous_declaration": [
+        "P2MW.S_WeierstrassCurve_exists_variableChange_smul_eq_of_algHom_coordinateRing_triangular.VarChangeAlgAux.Kpoly.eq_1"
+      ],
+      "interval_first_line": 48404496,
+      "type_expr": 47200301,
+      "value_expr": 47260891
+    },
+    {
+      "names": [
+        "ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.UniversePorts.Triangular.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 60318,
+      "preceding_expression_bytes": 3185208,
+      "line": 24602117,
+      "previous_declaration": [
+        "ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.UniversePorts.Triangular.VarChangeAlgAux.Kpoly.eq_1"
+      ],
+      "interval_first_line": 24541779,
+      "type_expr": 23812661,
+      "value_expr": 23872622
+    },
+    {
+      "names": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_cocycle_of_chartData_of_isProper_of_isAdicComplete.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 57206,
+      "preceding_expression_bytes": 3148970,
+      "line": 35176083,
+      "previous_declaration": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_cocycle_of_chartData_of_isProper_of_isAdicComplete.RedY1.cocycle_of_regimes"
+      ],
+      "interval_first_line": 35118624,
+      "type_expr": 34237476,
+      "value_expr": 34293939
+    },
+    {
+      "names": [
+        "P2MW.S_WeierstrassProjModel_kw_a2_sixu_cov.kw_lrSixUCov_aeval_dblY"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 55759,
+      "preceding_expression_bytes": 2946907,
+      "line": 14636157,
+      "previous_declaration": [
+        "P2MW.S_WeierstrassProjModel_kw_a2_sixu_cov.kw_lrSixUCov_aeval_dblX"
+      ],
+      "interval_first_line": 14580391,
+      "type_expr": 14042042,
+      "value_expr": 14097786
+    },
+    {
+      "names": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_affHom_affHom_range_eq_ker_comp_eq_of_surjective_of_range_eq_ker_of_isProper_of_isAdicComplete.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 53805,
+      "preceding_expression_bytes": 2938552,
+      "line": 35595613,
+      "previous_declaration": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_affHom_affHom_range_eq_ker_comp_eq_of_surjective_of_range_eq_ker_of_isProper_of_isAdicComplete.RedC6bSol.app_eq_of_forall_basicOpen"
+      ],
+      "interval_first_line": 35541718,
+      "type_expr": 34656710,
+      "value_expr": 34710188
+    },
+    {
+      "names": [
+        "P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_isCoherent_linearEquiv_extQuot_of_isCoherent.EP3Geo.main"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 49837,
+      "preceding_expression_bytes": 2677252,
+      "line": 33691168,
+      "previous_declaration": [
+        "P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_isCoherent_linearEquiv_extQuot_of_isCoherent.EP3Geo.finite_E"
+      ],
+      "interval_first_line": 33641280,
+      "type_expr": 32766517,
+      "value_expr": 32815014
+    },
+    {
+      "names": [
+        "P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_orderedAffineCover_formalSplittingData_of_isProper_of_isAdicComplete.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 49749,
+      "preceding_expression_bytes": 2678904,
+      "line": 33897954,
+      "previous_declaration": [
+        "_private.P2M.Sol.S_AlgebraicGeometry_OModulePresheaf_exists_orderedAffineCover_formalSplittingData_of_isProper_of_isAdicComplete.0.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_orderedAffineCover_formalSplittingData_of_isProper_of_isAdicComplete.solution._proof_1_3"
+      ],
+      "interval_first_line": 33848173,
+      "type_expr": 32975772,
+      "value_expr": 33020716
+    },
+    {
+      "names": [
+        "ArithmeticThetaBoundaryHodgeR0182.open_unary_designated_expansion"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 49224,
+      "preceding_expression_bytes": 2589369,
+      "line": 47701766,
+      "previous_declaration": [
+        "ArithmeticThetaBoundaryHodgeR0182.OpenUnaryDesignatedExpansionR0182.TargetTest.unary_value"
+      ],
+      "interval_first_line": 47652445,
+      "type_expr": 46459787,
+      "value_expr": 46508471
+    },
+    {
+      "names": [
+        "AlgebraicGeometry.isIso_pushoutSection_of_iSup_eq"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 47292,
+      "preceding_expression_bytes": 2527559,
+      "line": 17454790,
+      "previous_declaration": [
+        "_private.Mathlib.AlgebraicGeometry.Morphisms.Flat.0.AlgebraicGeometry.isIso_pushoutSection_of_iSup_eq.match_1_10"
+      ],
+      "interval_first_line": 17407378,
+      "type_expr": 16825822,
+      "value_expr": 16872987
+    },
+    {
+      "names": [
+        "_private.Mathlib.AlgebraicGeometry.EllipticCurve.IsomOfJ.0.WeierstrassCurve.exists_variableChange_of_char_ne_two_or_three"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 46709,
+      "preceding_expression_bytes": 2470274,
+      "line": 36606152,
+      "previous_declaration": [
+        "WeierstrassCurve.exists_variableChange_isShortNF"
+      ],
+      "interval_first_line": 36559423,
+      "type_expr": 35651451,
+      "value_expr": 35698140
+    },
+    {
+      "names": [
+        "P2MW.S_AlgebraicGeometry_OModulePresheaf_forall_smul_eq_zero_and_exists_eq_smul_of_le_of_flat_of_bijective.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 46354,
+      "preceding_expression_bytes": 2502240,
+      "line": 32817886,
+      "previous_declaration": [
+        "LinearMap.forall_smul_eq_zero_and_forall_exists_eq_smul_of_ker_of_equiv_baseChange_of_flat"
+      ],
+      "interval_first_line": 32771441,
+      "type_expr": 31903947,
+      "value_expr": 31948461
+    },
+    {
+      "names": [
+        "P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_basicOpen_sections_free_of_isIntegral.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 45526,
+      "preceding_expression_bytes": 2427986,
+      "line": 28056898,
+      "previous_declaration": [
+        "P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_basicOpen_sections_free_of_isIntegral.AlgebraicGeometry.OModulePresheaf.GenericFreenessAux.isQuasicoherent_pow"
+      ],
+      "interval_first_line": 28011214,
+      "type_expr": 27218806,
+      "value_expr": 27263891
+    },
+    {
+      "names": [
+        "ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_basisData_of_chartData_of_isProper_of_isAdicComplete.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 44707,
+      "preceding_expression_bytes": 2472564,
+      "line": 35447661,
+      "previous_declaration": [
+        "AlgebraicGeometry.OModulePresheaf.exists_basisData_of_chartData_of_cocycle_of_comp_eq"
+      ],
+      "interval_first_line": 35402896,
+      "type_expr": 34519372,
+      "value_expr": 34562594
+    },
+    {
+      "names": [
+        "CategoryTheory.Limits.colimitLimitToLimitColimit_surjective"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 41618,
+      "preceding_expression_bytes": 2164657,
+      "line": 5268748,
+      "previous_declaration": [
+        "CategoryTheory.Bifunctor.map_id"
+      ],
+      "interval_first_line": 5227055,
+      "type_expr": 4958288,
+      "value_expr": 4999639
+    },
+    {
+      "names": [
+        "P2MW.S_WeierstrassProjModel_exists_variableChange_smul_eq_and_projMap_eq_inv_of_iso_of_kwZeroSect_comp_eq_of_isArtinianRing.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 40627,
+      "preceding_expression_bytes": 2150413,
+      "line": 48524952,
+      "previous_declaration": [
+        "WeierstrassProjModel.hom_ext_of_zChartIota_comp_eq"
+      ],
+      "interval_first_line": 48484281,
+      "type_expr": 47279979,
+      "value_expr": 47320142
+    },
+    {
+      "names": [
+        "P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_kernel_cokernel_adicSystem_of_affHom_of_forall_ker_eq_pow_smul_top.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 39733,
+      "preceding_expression_bytes": 2166459,
+      "line": 33216310,
+      "previous_declaration": [
+        "_private.P2M.Sol.S_AlgebraicGeometry_OModulePresheaf_exists_kernel_cokernel_adicSystem_of_affHom_of_forall_ker_eq_pow_smul_top.0.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_kernel_cokernel_adicSystem_of_affHom_of_forall_ker_eq_pow_smul_top.solution._proof_1_2"
+      ],
+      "interval_first_line": 33176530,
+      "type_expr": 32304997,
+      "value_expr": 32344074
+    },
+    {
+      "names": [
+        "P2MW.S_Module_exists_forall_surjective_ker_eq_pow_smul_top_of_adic_of_range_eq_ker.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 39725,
+      "preceding_expression_bytes": 2120276,
+      "line": 33355073,
+      "previous_declaration": [
+        "AdicCompletion.map_ker_subtype_injective_and_range_eq_ker_map"
+      ],
+      "interval_first_line": 33315242,
+      "type_expr": 32442961,
+      "value_expr": 32481923
+    },
+    {
+      "names": [
+        "P2MW.S_AlgebraicGeometry_Scheme_TwoAffineOpenCover_exists_baseChangeIsos_kaehlerSections.KaehlerBC.main"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 38115,
+      "preceding_expression_bytes": 2023394,
+      "line": 39683298,
+      "previous_declaration": [
+        "P2MW.S_AlgebraicGeometry_Scheme_TwoAffineOpenCover_exists_baseChangeIsos_kaehlerSections.KaehlerBC.BCData.cokerEquivH1"
+      ],
+      "interval_first_line": 39645143,
+      "type_expr": 38649562,
+      "value_expr": 38685745
+    },
+    {
+      "names": [
+        "WeierstrassCurve.Projective.negDblY_eq'"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 37797,
+      "preceding_expression_bytes": 1995852,
+      "line": 14321089,
+      "previous_declaration": [
+        "WeierstrassCurve.Projective.dblU.eq_1"
+      ],
+      "interval_first_line": 14283287,
+      "type_expr": 13746208,
+      "value_expr": 13783978
+    },
+    {
+      "names": [
+        "AlgebraicGeometry.exists_appTop_\u03c0_eq_of_isLimit"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 37437,
+      "preceding_expression_bytes": 1999941,
+      "line": 23485462,
+      "previous_declaration": [
+        "CategoryTheory.Limits.Cone.w_assoc"
+      ],
+      "interval_first_line": 23447942,
+      "type_expr": 22735794,
+      "value_expr": 22773032
+    },
+    {
+      "names": [
+        "P2MW.S_GoodReductionJacobian_RelativeGroupLaw_exists_isFrameOn_topDifferentials_forall_topFormMap_appLE_mul_eq.KeyLeftSkel.\u03c1_eq_one"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 37317,
+      "preceding_expression_bytes": 1975555,
+      "line": 40103316,
+      "previous_declaration": [
+        "P2MW.S_GoodReductionJacobian_RelativeGroupLaw_exists_isFrameOn_topDifferentials_forall_topFormMap_appLE_mul_eq.DkAsm.appLE_congr"
+      ],
+      "interval_first_line": 40065857,
+      "type_expr": 39062258,
+      "value_expr": 39099090
+    },
+    {
+      "names": [
+        "ArithmeticThetaMarkedGroupLawR0146.ActualScalarTranslation.UniversePorts.VariableChange.solution"
+      ],
+      "kind": "thm",
+      "preceding_expression_records": 37317,
+      "preceding_expression_bytes": 1977519,
+      "line": 24763562,
+      "previous_declaration": [
+        "AlgebraicGeometry.Proj.instIsSeparated"
+      ],
+      "interval_first_line": 24726195,
+      "type_expr": 23996082,
+      "value_expr": 24033001
+    }
+  ],
+  "limitation": "Counts expression insertions between serialized declaration records. This is a localization heuristic, not exact per-declaration DAG reachability, ownership, runtime, memory or proof validity. Nested dependency emission and global sharing affect attribution. No exporter or kernel was run."
+}

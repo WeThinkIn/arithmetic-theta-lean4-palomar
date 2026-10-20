@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "seconds": 3.918916000984609,
+  "command": [
+    "python3",
+    "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "lake",
+    "env",
+    "lean",
+    "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimized-export-416",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimized-export-416/OriginalMainTypeAudit.lean"
+  ],
+  "source_sha256": "2af92741958e81d1b03a005516a49b5496255d25f6c520dec502cf823014ff8d"
+}

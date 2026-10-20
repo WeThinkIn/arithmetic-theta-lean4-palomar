@@ -1,0 +1,259 @@
+{
+  "passed": true,
+  "source_bindings_unchanged": true,
+  "results": [
+    {
+      "name": "exact-type-audit",
+      "exit_code": 0,
+      "seconds": 1.6662146770395339,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "lake",
+        "env",
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/ExactTypeAudit.lean"
+      ],
+      "log_sha256": "b076ffdce14b71b4f4c644f8d615091255d80456875b22884839fb07db94af19"
+    },
+    {
+      "name": "CompleteMainAndComponentsSolution-audit",
+      "exit_code": 0,
+      "seconds": 4.022130164783448,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "lake",
+        "env",
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/CompleteMainAndComponentsSolutionAudit.lean"
+      ],
+      "log_sha256": "65829cb486e7d6d9ab225d05af5b2fdbd93f8761b40cc1e9044d36a432160b72"
+    },
+    {
+      "name": "EarlyCertificateSolution-audit",
+      "exit_code": 0,
+      "seconds": 3.0721498182974756,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "lake",
+        "env",
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/EarlyCertificateSolutionAudit.lean"
+      ],
+      "log_sha256": "2a518f71205c2b68108dc76a6bb0db7285462f7f6a411a822d1790a13d8e8192"
+    },
+    {
+      "name": "FormalCoverSolution-audit",
+      "exit_code": 0,
+      "seconds": 3.272097234148532,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "lake",
+        "env",
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/FormalCoverSolutionAudit.lean"
+      ],
+      "log_sha256": "e4df6a744e044efe3af27f5695aa7941a75c043eb27f5b8b379f6058ab288932"
+    },
+    {
+      "name": "FullSchemeDiscriminantSolution-audit",
+      "exit_code": 0,
+      "seconds": 3.2722643059678376,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "lake",
+        "env",
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/FullSchemeDiscriminantSolutionAudit.lean"
+      ],
+      "log_sha256": "330161d76ec0a26e6f3bffc4508982cec39d90e19474514e56a9afdccbd86f76"
+    },
+    {
+      "name": "MainAndComponentsSolution-audit",
+      "exit_code": 0,
+      "seconds": 3.7693498474545777,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "lake",
+        "env",
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/MainAndComponentsSolutionAudit.lean"
+      ],
+      "log_sha256": "899e7587ccadf2dbff8b9a0d8ad21de7197e10c90474bdcc4f49572d2bfe8119"
+    },
+    {
+      "name": "PeriodOneSolution-audit",
+      "exit_code": 0,
+      "seconds": 3.8711438453756273,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "lake",
+        "env",
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/PeriodOneSolutionAudit.lean"
+      ],
+      "log_sha256": "e0cea383e7aab06f496aa4addb0c935f9377a385eb1f96d18691e5e0a530986d"
+    },
+    {
+      "name": "SchemeInitialSolution-audit",
+      "exit_code": 0,
+      "seconds": 3.7693145000375807,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "lake",
+        "env",
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/SchemeInitialSolutionAudit.lean"
+      ],
+      "log_sha256": "d743ff7d3ebb0f5c6b18d5028d8519c30277c7d92bc6381feba397f792350e67"
+    },
+    {
+      "name": "SchemeKatoSolution-audit",
+      "exit_code": 0,
+      "seconds": 3.2184389689937234,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "lake",
+        "env",
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/SchemeKatoSolutionAudit.lean"
+      ],
+      "log_sha256": "3e72e42d7ac6a432bbfa67844d1086dcf95deb210e1bcb230de90e858a14c8fe"
+    },
+    {
+      "name": "SharpAdaptiveImageSolution-audit",
+      "exit_code": 0,
+      "seconds": 3.91967567615211,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "lake",
+        "env",
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/SharpAdaptiveImageSolutionAudit.lean"
+      ],
+      "log_sha256": "de7bb24ce2560abbd29920ce81aceb4b9d6ab575d0563b8d02a74aea8b44251d"
+    },
+    {
+      "name": "SharpAndCoordinatesSolution-audit",
+      "exit_code": 0,
+      "seconds": 3.869460556190461,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "lake",
+        "env",
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/SharpAndCoordinatesSolutionAudit.lean"
+      ],
+      "log_sha256": "feccaa7b8644b92dccb076e84e0ba97405aba19a19d2f9ca0d813f7a211e0ecb"
+    },
+    {
+      "name": "SharpAndRootsSolution-audit",
+      "exit_code": 0,
+      "seconds": 3.7193122282624245,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "lake",
+        "env",
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/SharpAndRootsSolutionAudit.lean"
+      ],
+      "log_sha256": "99125af24f4600a6bd73f38cf0ec80e6e97fff28de72a17a69b3225771744a36"
+    },
+    {
+      "name": "Solution-audit",
+      "exit_code": 0,
+      "seconds": 3.6188858742825687,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "lake",
+        "env",
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/SolutionAudit.lean"
+      ],
+      "log_sha256": "cba9ee1f61ff81b3f5f7e468315726a7f86b2bfd11a9b7a6455c93d0750fdc01"
+    },
+    {
+      "name": "all103-endpoint-audit",
+      "exit_code": 0,
+      "seconds": 7.874167984351516,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/audit_endpoint_batch.py",
+        "--number",
+        "415"
+      ],
+      "log_sha256": "b64ebf3f81d55a64be446aee0c57d8433ada8f8348e9d15b3e13ba724dde4fa6"
+    },
+    {
+      "name": "original-baseline",
+      "exit_code": 0,
+      "seconds": 0.1142694428563118,
+      "command": [
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "python3",
+        "/home/Palomar/workspace/arithmetic-theta/tools/check_baseline.py"
+      ],
+      "log_sha256": "7473398a2eee2384d57e7f2d8e399d8490516196c96e60d7f1c8bd20e4785d07"
+    }
+  ],
+  "official_comparator_pass": false,
+  "all103_audit_receipt": "evidence/partial-endpoint-audit-415-result.json"
+}

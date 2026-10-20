@@ -1,0 +1,17 @@
+{
+  "name": "SharpAndCoordinatesSolution-audit",
+  "exit_code": 0,
+  "seconds": 3.869460556190461,
+  "command": [
+    "python3",
+    "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "lake",
+    "env",
+    "lean",
+    "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/SharpAndCoordinatesSolutionAudit.lean"
+  ],
+  "log_sha256": "feccaa7b8644b92dccb076e84e0ba97405aba19a19d2f9ca0d813f7a211e0ecb"
+}

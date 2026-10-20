@@ -1,0 +1,17 @@
+{
+  "name": "exact-type-audit",
+  "exit_code": 0,
+  "seconds": 1.6662146770395339,
+  "command": [
+    "python3",
+    "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "lake",
+    "env",
+    "lean",
+    "--root=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/ExactTypeAudit.lean"
+  ],
+  "log_sha256": "b076ffdce14b71b4f4c644f8d615091255d80456875b22884839fb07db94af19"
+}

@@ -1,0 +1,2 @@
+EXACT_265_MAIN_TYPE_AST_AND_UNIVERSES_MATCH true
+'ArithmeticThetaPalomarMain172.explicitFiniteDetermination' depends on axioms: [propext, Classical.choice, Quot.sound]

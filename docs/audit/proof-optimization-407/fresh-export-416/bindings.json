@@ -1,0 +1,21 @@
+{
+  "/home/Palomar/workspace/arithmetic-theta/project/MainAndComponentsChallenge.lean": "14e906596669a3fecb8afa5913c6e572cb201f9a018e8c5ff351bfcbfb6dd428",
+  "/home/Palomar/workspace/arithmetic-theta/project/MainAndComponentsSolution.lean": "4b5a4f3c5924e1372f0d67cd5729bc48e37921fcf85365d96f9012ecc99e4fc6",
+  "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/MainAndComponentsChallenge.olean": "f002e4cef9f3dc600a994ba924c122dc15dc70177b977bea676ad91c8f5d8486",
+  "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/MainAndComponentsChallenge.olean.private": "bb0cb157ab359446702cb377f75f5f2e59c49c8796a35102264dd29fbb0c306c",
+  "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/MainAndComponentsChallenge.olean.server": "7d205e2216f1b7ee68a54113787022712192b6d93d0c2d818cdd68bea92fb1a0",
+  "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/MainAndComponentsSolution.olean": "74ea3e00ab0fd1a4d0e8077c2204e8c41d6a2a6f16b08c779d608671cc6292a7",
+  "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/MainAndComponentsSolution.olean.private": "1e466080a9f08d85ca27126a0c8df086abad17e341a9ad9815adbfafd6a91a75",
+  "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/MainAndComponentsSolution.olean.server": "77a17f7b2255ee793b2ffb30d22f616f1b33efcab358c63f2d9376b6507e28d8",
+  "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_WeierstrassCurve_ProjModel_AddFormulas.lean": "80d2819a210c94ff57cf01b72acfe9ed5a3a3b6a24f1e33501b545a102a98178",
+  "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/Definitions/Def_WeierstrassCurve_ProjModel_AddFormulas.olean": "a53a62168c073f666ce1ea46dd30c90b377034eb54efffda18dd8d68ee77325f",
+  "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/Definitions/Def_WeierstrassCurve_ProjModel_AddFormulas.olean.private": "21db351c50f3f4173867d4444cf7323f90754b31f1f1829c40feee12b292d825",
+  "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/Definitions/Def_WeierstrassCurve_ProjModel_AddFormulas.olean.server": "c1e31b28dac3c770019d9bb41dd74814d21fbd1307d77fd1f350439802463659",
+  "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_WeierstrassCurve_ProjModel_ThirdAddFormulas.lean": "f14eefb828a933c90b8779488f2fd399d4b11902d7572295ac912924d6d0b793",
+  "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/Definitions/Def_WeierstrassCurve_ProjModel_ThirdAddFormulas.olean": "9d1c76e33c0570af89fca4bd3b4bca31f3e448133e340fc490ea05b30f43d425",
+  "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/Definitions/Def_WeierstrassCurve_ProjModel_ThirdAddFormulas.olean.private": "1d10b82c716fd41060df16de396630969a917bc3e44ad2e168af97ac357ba4b0",
+  "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/Definitions/Def_WeierstrassCurve_ProjModel_ThirdAddFormulas.olean.server": "87241202d15d92c913e5bd70ed5891fe7cc50ee643c758286d487fcc753ad735",
+  "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanexport": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimization-integration-407/build-bindings.json": "fb116943f7898de37f0c29d54a540580081d9c7778924601381924b7ec7cef62",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/partial-endpoint-audit-415-result.json": "cbcb82d49269065f00f73833d934017511a7c78c22501bfb134a3dfcca9d01a3"
+}
