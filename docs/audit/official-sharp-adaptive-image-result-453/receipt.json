@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-20T21:59:02.287565+00:00",
+  "run": 39479248485,
+  "commit": "088eff2f29e306f17e4f594d38f624bd5ad48cd7",
+  "official_pass": false,
+  "failure_kind": "infrastructure/resource-exhausted",
+  "stage": "solution-build",
+  "memory_peak_bytes": 15850385408,
+  "oom_kill_count": 8,
+  "deadline_fired": false,
+  "bindings": {
+    "Review.md": "c6011a24dda88ebff83af88ee4199c90689d6c2ca97318e3d29dd8ae69a01809",
+    "artifact/mechanical-report.json": "b9903919f3fa45c23f6f57ec566759f79d3559228134b77a113011cb6bf6e409"
+  }
+}
