@@ -9,6 +9,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_Hom_isIso_of_isIso_a
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_tensorUnit_of_section_ne_zero_of_dual_section_ne_zero
 
 set_option autoImplicit false

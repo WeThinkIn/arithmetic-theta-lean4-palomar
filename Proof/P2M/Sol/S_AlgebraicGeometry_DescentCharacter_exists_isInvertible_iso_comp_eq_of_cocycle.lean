@@ -7,6 +7,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_DescentCharacter_exists_isInvertible_iso_comp_eq_of_cocycle
 attribute [-simp] AlgebraicGeometry.tilde.functorCompPullbackSpecIso_app Algebra.DescentCofaces.i₁_apply Algebra.DescentCofaces.i₂_apply Algebra.DescentCofaces.c₁₂_tmul Algebra.DescentCofaces.c₂₃_tmul Algebra.DescentCofaces.c₁₃_tmul
 
@@ -59,7 +62,6 @@ theorem mapComp'_hom_app (fg : X ⟶ Z) (hfg : f ≫ g = fg)
   subst hfg
   simp only [Pseudofunctor.mapComp', PrelaxFunctor.map₂Iso_hom, eqToIso.hom, PrelaxFunctor.map₂_eqToHom,
     Iso.trans_hom, Cat.Hom₂.comp_app, Cat.eqToHom_app, mapComp_hom_app]
-  rfl
 
 theorem mapComp'_inv_app (fg : X ⟶ Z) (hfg : f ≫ g = fg)
     (H : g.op.toLoc ≫ f.op.toLoc = fg.op.toLoc) (M : Z.Modules) :
@@ -69,7 +71,6 @@ theorem mapComp'_inv_app (fg : X ⟶ Z) (hfg : f ≫ g = fg)
   subst hfg
   simp only [Pseudofunctor.mapComp', Iso.trans_inv, PrelaxFunctor.map₂Iso_inv, eqToIso.inv, PrelaxFunctor.map₂_eqToHom,
     Cat.Hom₂.comp_app, Cat.eqToHom_app, mapComp_inv_app]
-  rfl
 
 theorem mapComp'_inv_comp_hom {P : Scheme.{u}} (q : X ⟶ Y) (M : Y.Modules) (r : P ⟶ Y) (g₁ g₂ : P ⟶ X)
     (hg₁ : g₁ ≫ q = r) (hg₂ : g₂ ≫ q = r)

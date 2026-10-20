@@ -4,6 +4,9 @@ public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_RiemannForm
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 set_option autoImplicit false
 
@@ -74,7 +77,6 @@ theorem sectionMk_comp {X Y : ∫ᶜ F} (e : X.base ≅ Y.base)
     rw [← Cat.Hom₂.comp_app, Iso.hom_inv_id, Cat.Hom₂.id_app]
   erw [reassoc_of% h2, h3]
   erw [Category.comp_id]
-  rfl
 
 instance isIso_homMk {X Y : ∫ᶜ F} (e : X.base ≅ Y.base)
     (φ : X.fiber ≅ (F.map e.hom.op.toLoc).toFunctor.obj Y.fiber) : IsIso (homMk e.hom φ.hom) := by

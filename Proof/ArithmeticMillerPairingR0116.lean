@@ -4,6 +4,10 @@ public import MovedSupportMillerPairingR0116
 public import Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 
 /-! Arithmetic-field components of the moved Miller pairing. -/
 noncomputable section
@@ -248,6 +252,16 @@ theorem translatedCoordinates_baseChange (he : Function.Injective e)
       simp only [← IsScalarTower.algebraMap_apply k K
         (FF K (fun i => algebraMap k K (e i)))]
       simp
+      have hsum :
+          algebraMap k (FF K (fun i => algebraMap k K (e i))) (e 0) +
+            algebraMap k (FF K (fun i => algebraMap k K (e i))) (e 1) +
+            algebraMap k (FF K (fun i => algebraMap k K (e i))) (e 2) =
+          algebraMap K (FF K (fun i => algebraMap k K (e i)))
+            (algebraMap k K (e 0) + algebraMap k K (e 1) + algebraMap k K (e 2)) := by
+        rw [map_add, map_add]
+        simp only [← IsScalarTower.algebraMap_apply k K
+          (FF K (fun i => algebraMap k K (e i)))]
+      exact ⟨hsum, Or.inl hsum⟩
 
 /-- Pullback by a rational point commutes with the coefficient-induced map. -/
 theorem translation_baseChange (he : Function.Injective e)

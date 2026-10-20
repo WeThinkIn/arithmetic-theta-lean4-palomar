@@ -11,6 +11,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_pullbackComp_pullbac
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullbackAlong_openCover_of_bijective_sections
 
 set_option autoImplicit false
@@ -50,7 +53,8 @@ noncomputable def sqIso {W X Y Z : Scheme.{u}} {f : W ⟶ X} {g : X ⟶ Z} {h : 
 theorem sqIso_hom_app {W X Y Z : Scheme.{u}} {f : W ⟶ X} {g : X ⟶ Z} {h : W ⟶ Y} {k : Y ⟶ Z}
     (e : f ≫ g = h ≫ k) (M : Z.Modules) :
     (sqIso e).hom.app M = (τ f g (h ≫ k) e).hom.app M ≫ (τ h k (h ≫ k) rfl).inv.app M := by
-  simp [sqIso, τ, pullbackCongr]
+  simp only [sqIso, τ, pullbackCongr, eqToIso_refl, Iso.trans_refl,
+    Iso.trans_hom, Iso.symm_hom, NatTrans.comp_app]
 
 section Route
 

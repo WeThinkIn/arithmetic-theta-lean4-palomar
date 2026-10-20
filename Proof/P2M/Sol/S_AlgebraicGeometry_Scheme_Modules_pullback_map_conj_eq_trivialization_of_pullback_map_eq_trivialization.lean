@@ -141,7 +141,8 @@ lemma assoc_app' {W : Scheme.{u}} (f : T' ⟶ T) (g : T ⟶ W) (h : W ⟶ A') (N
       _ = β.symm ≪≫ (β ≪≫ γ) ≪≫ (η.symm ≪≫ δ.symm) := by rw [h2']
       _ = γ ≪≫ η.symm ≪≫ δ.symm := by simp
   have h4 := congrArg Iso.hom h3
-  simpa [α, β, γ, δ, η, eqToIso] using h4
+  simp [α, β, γ, δ, η, eqToIso] at h4 ⊢
+  simpa only [Category.id_comp] using! h4
 
 end coh2
 
@@ -174,7 +175,8 @@ lemma assoc_app'' {W : Scheme.{u}} (f : T' ⟶ T) (g : T ⟶ W) (h : W ⟶ A') (
       _ = (δ ≪≫ η) ≪≫ (γ.symm ≪≫ β.symm) := by rw [h2]
       _ = δ ≪≫ η ≪≫ γ.symm ≪≫ β.symm := by simp
   have h4 := congrArg Iso.hom h3
-  simpa [α, β, γ, δ, η, eqToIso] using h4
+  simp [α, β, γ, δ, η, eqToIso] at h4 ⊢
+  simpa only [Category.id_comp] using! h4
 
 end coh3
 

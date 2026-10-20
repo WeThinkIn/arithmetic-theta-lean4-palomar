@@ -8,6 +8,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsFrameOn_tensorSect
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_GradedOAlgebra_IsCanonicalToProj_preimage_basicOpen_eq_preimage_of_projPresentation_of_isClosedImmersion
 
 set_option autoImplicit false

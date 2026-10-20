@@ -314,11 +314,11 @@ theorem kw_lrSymOC_isDomain_quotSpanPair :
       = MvPolynomial.map (C : R₀ →+* A) kw_lrSymOC_W₀.toProjective.polynomial := by
     have h := DFunLike.congr_fun (sumAlgEquiv_comp_rename_inl R₀ (Fin 3) (Fin 3))
       kw_lrSymOC_W₀.toProjective.polynomial
-    simpa [kw_lrAdd_WP₁, e] using h
+    simpa [kw_lrAdd_WP₁, e, A] using! h
   have heWP₂ : e WP₂₀ = C kw_lrSymOC_W₀.toProjective.polynomial := by
     have h := DFunLike.congr_fun (sumAlgEquiv_comp_rename_inr R₀ (Fin 3) (Fin 3))
       kw_lrSymOC_W₀.toProjective.polynomial
-    simpa [kw_lrAdd_WP₂, e] using h
+    simpa [kw_lrAdd_WP₂, e, A] using! h
 
   have hker : RingHom.ker ψ = Ideal.span {WP₁₀, WP₂₀} := by
 
@@ -1196,8 +1196,8 @@ theorem kw_lrChart_dehom_monomial_val (i : Fin 3) (d : Fin 3 →₀ ℕ) (c : R)
   push_cast [key]
   ring
 
+set_option synthInstance.maxHeartbeats 200000 in
 set_option maxSynthPendingDepth 3 in
-
 theorem kw_lrChart_dehom_isHomogeneous_val (i : Fin 3) (n : ℕ)
     (p : MvPolynomial (Fin 3) R) (hp : p.IsHomogeneous n) :
     (kw_lrChart_dehom W i p).val
@@ -1687,7 +1687,7 @@ theorem kw_pbac_ambient_irrelevant_le_span_X_CR :
     rw [MvPolynomial.coeff_sum]
     refine Finset.sum_eq_zero fun n _ => ?_
     by_cases h0 : n = 0
-    · rw [h0, hzero, MvPolynomial.coeff_zero]
+    · rw [h0, hzero, MvPolynomial.coeff_zero]; rfl
     · have hmem : ((DirectSum.decompose (homogeneousSubmodule (Fin 3) R) p n
           : MvPolynomial (Fin 3) R)).IsHomogeneous n :=
         (MvPolynomial.mem_homogeneousSubmodule _ _).mp (SetLike.coe_mem _)

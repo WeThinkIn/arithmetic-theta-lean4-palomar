@@ -1061,7 +1061,8 @@ theorem secAux_face {I I' : Finset (Fin (n + 1))} (hII' : I ⊆ I')
   refine ⟨1, ?_⟩
   simp only [OneMemClass.coe_one, one_mul, ProjSpaceCech.GradedModule.free_monMul_apply, mul_assoc]
   rw [← hprod]
-  exact congrArg (_ * ·) (mul_right_comm _ _ _)
+  congr 1
+  ac_rfl
 
 theorem quotSecEquiv_face {I I' : Finset (Fin (n + 1))}
     (hII' : I ⊆ I') (hI : I.Nonempty) :

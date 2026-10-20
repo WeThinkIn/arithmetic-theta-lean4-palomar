@@ -8,6 +8,10 @@ public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_isQuasicoherent_ofM
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_baseChange_sections_linearEquiv_pullback
 
 set_option autoImplicit false
@@ -355,7 +359,6 @@ theorem isLocalizedModule_powers_of_comap {A B M N : Type*} [CommRing A] [CommRi
     rw [Module.End.isUnit_iff] at hu
     have e : (fun y : N => r ^ n • y) = fun y : N => φ r ^ n • y := funext fun y => by rw [hN, map_pow]
     convert hu using 1
-    exact e
   · intro y
     obtain ⟨⟨x, ⟨_, n, rfl⟩⟩, hx⟩ := IsLocalizedModule.surj (Submonoid.powers (φ r)) f y
     refine ⟨⟨x, ⟨r ^ n, n, rfl⟩⟩, ?_⟩

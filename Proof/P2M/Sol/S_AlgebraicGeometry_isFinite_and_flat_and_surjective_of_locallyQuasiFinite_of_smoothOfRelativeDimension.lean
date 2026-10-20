@@ -10,6 +10,9 @@ public import Theorems.Thm_AlgebraicGeometry_SmoothOfRelativeDimension_topologic
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_isFinite_and_flat_and_surjective_of_locallyQuasiFinite_of_smoothOfRelativeDimension
 attribute [-simp] RegularLocalRingQuotientAscent.dualNumberFst_apply
 

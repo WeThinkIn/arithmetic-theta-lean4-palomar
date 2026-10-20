@@ -8,6 +8,9 @@ public import Theorems.Thm_AlgebraicGeometry_ProjSpace_exists_linearEquiv_twistO
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_OModulePresheaf_subsingleton_HSucc_tensor_twist_of_subsingleton_H_shift_familyFramesGradedModule
 
 set_option autoImplicit false
@@ -113,7 +116,7 @@ def c {i : ℕ} (s : (𝔘 ι).Idx i) (v : Fin (i + 1)) : Fin (r + 1) := (s.1 v)
 theorem c_injective {i : ℕ} (s : (𝔘 ι).Idx i) : Function.Injective (c s) := fun a b h => by
   have h' : s.1 a = s.1 b := by
     have : (s.1 a).down = (s.1 b).down := h
-    exact ULift.ext _ _ this
+    exact ULift.ext this
   exact s.2.injective h'
 
 def ch {i : ℕ} (s : (𝔘 ι).Idx i) : Fin (r + 1) := c s 0

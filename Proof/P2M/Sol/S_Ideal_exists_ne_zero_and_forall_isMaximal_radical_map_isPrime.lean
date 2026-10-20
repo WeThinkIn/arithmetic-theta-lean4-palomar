@@ -8,6 +8,8 @@ public import Theorems.Thm_Algebra_exists_monic_irreducible_map_algebraicClosure
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_Ideal_exists_ne_zero_and_forall_isMaximal_radical_map_isPrime
 
 set_option autoImplicit false
@@ -391,8 +393,8 @@ theorem main
 
     have hDF := Ideal.height_add_ringKrullDim_quotient_eq_ringKrullDim_of_finiteType n.ResidueField (RingHom.ker ψb)
     have hdimB : ringKrullDim (MvPolynomial (Fin d) n.ResidueField) = d := by
-      rw [MvPolynomial.ringKrullDim_of_isNoetherianRing, ringKrullDim_eq_zero_of_field, zero_add,
-        Nat.card_eq_fintype_card, Fintype.card_fin]
+      rw [MvPolynomial.ringKrullDim_of_isNoetherianRing, ringKrullDim_eq_zero_of_field, zero_add]
+      simp [ENat.card_eq_coe_fintype_card]
     rw [hdimB] at hDF
     have hht0 : (RingHom.ker ψb).height = 0 := by
       obtain ⟨hq, hhq⟩ : ∃ hq : ℕ, (RingHom.ker ψb).height = hq :=
@@ -424,7 +426,7 @@ theorem main
   have hgb : ∀ Qb ∈ minimalPrimes (C ⧸ n.map (algebraMap R C)), gb ∉ Qb := by
     intro Qb hQb hmem
     have h1 : MvPolynomial.map φ g = 0 := hinjQ Qb hQb _ (Ideal.Quotient.eq_zero_iff_mem.mpr hmem)
-    have h2 : (MvPolynomial.map φ g).coeff μ = 0 := by rw [h1, MvPolynomial.coeff_zero]
+    have h2 : (MvPolynomial.map φ g).coeff μ = 0 := by rw [h1]; rfl
     rw [MvPolynomial.coeff_map] at h2
     exact hγn ((hφ0 _).mp h2)
 

@@ -2,7 +2,13 @@ module
 
 public import RootCoverFlat
 
+import all Mathlib.AlgebraicGeometry.Morphisms.FlatRank
+
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 
 open AlgebraicGeometry CategoryTheory TopologicalSpace
 open ArithmeticThetaKummer ArithmeticThetaNormalization
@@ -117,9 +123,11 @@ theorem rootCover_generic_finrank_eq_functionField_finrank :
       apply Algebra.finrank_eq_of_equiv_equiv
         U.topIso.symm.commRingCatIsoToRingEquiv V.topIso.symm.commRingCatIsoToRingEquiv
       ext z
+      simp only [Scheme.Hom.resLE, Scheme.homOfLE_rfl, Category.id_comp,
+        Scheme.Hom.appLE_eq_app] at hc
       have hz := congr($(hc) z)
       change g.appTop (U.topIso.inv z) = V.topIso.inv ((ArithmeticThetaKummerCover.rootCoverMap X Ω s r).app U z)
-      simpa only [V, g, Scheme.Hom.resLE, Scheme.homOfLE_rfl, Category.id_comp, Scheme.Hom.appLE_eq_app, ConcreteCategory.comp_apply] using hz
+      simpa only [V, g, Arrow.mk_right, Scheme.Hom.resLE, Scheme.homOfLE_rfl, Category.id_comp, Scheme.Hom.appLE_eq_app, ConcreteCategory.comp_apply] using! hz
     exact hga.trans hfin.symm
   have hpull := Scheme.Hom.finrank_pullback_snd
     (ArithmeticThetaKummerCover.rootCoverMap X Ω s r) U.ι xU

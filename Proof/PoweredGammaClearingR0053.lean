@@ -3,6 +3,10 @@ module
 public import AnnularTorsionPrerequisiteDefinitionsR0053
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 
 /-! Finite negative-exponent clearing for the powered local gamma product. -/
 set_option autoImplicit false

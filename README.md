@@ -84,9 +84,7 @@ Third-party copyright notices and the library's Apache-2.0 license are retained
 under `docs/ThirdParty`. The original file hashes and the migration history are
 recorded in the separate local verification workspace.
 
-The license for the original project code is awaiting the author's selection;
-no repository-wide license grant is asserted yet. AI-assisted development is
-disclosed in `formalization.yaml`; AI systems are not listed as human authors.
+AI-assisted development is disclosed in `formalization.yaml`; AI systems are not listed as human authors.
 
 ## License and attribution
 
