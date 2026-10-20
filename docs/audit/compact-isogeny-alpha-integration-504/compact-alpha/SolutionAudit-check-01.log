@@ -1,0 +1,3 @@
+DECL ArithmeticThetaPalomarCompactAlpha501.recover_original_041 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCompactAlpha501.compactFullLevelAlpha AXIOMS [propext, Classical.choice, Quot.sound]
+AUDIT checked=2 propagated_holes=0 project_imports=2970

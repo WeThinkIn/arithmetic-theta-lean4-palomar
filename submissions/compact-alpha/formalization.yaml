@@ -1,0 +1,60 @@
+version: v0.4
+project:
+  name: Complete compact full-level alpha section
+  description: 'Full original041: over every original algebraically closed characteristic-zero
+    field and positive L divisible by8, the supplied actual full-level compactification
+    with canonical Hodge Extension has one unique genuine global alpha section. Its
+    restriction is the intrinsic alpha on every original normal affine classifying
+    test. At every actual marked cusp its full coefficient is t^j times a power-series
+    unit, with j=0 or L/4 and j even. At the canonical marking it has exactly the
+    complete theta(t^(L/2))^2 expansion in the same normalized Hodge generator. All
+    actual geometric objects, explicit algebraic root formulas, canonical differential
+    maps and full series remain visible; no unknown scalar or finite-prefix substitute
+    is used.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Full original041: over every original algebraically closed characteristic-zero
+    field and positive L divisible by8, the supplied actual full-level compactification
+    with canonical Hodge Extension has one unique genuine global alpha section. Its
+    restriction is the intrinsic alpha on every original normal affine classifying
+    test. At every actual marked cusp its full coefficient is t^j times a power-series
+    unit, with j=0 or L/4 and j even. At the canonical marking it has exactly the
+    complete theta(t^(L/2))^2 expansion in the same normalized Hodge generator. All
+    actual geometric objects, explicit algebraic root formulas, canonical differential
+    maps and full series remain visible; no unknown scalar or finite-prefix substitute
+    is used.'
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

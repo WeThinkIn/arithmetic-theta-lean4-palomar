@@ -1,0 +1,7 @@
+# Complete compact full-level alpha section
+
+Full original041: over every original algebraically closed characteristic-zero field and positive L divisible by8, the supplied actual full-level compactification with canonical Hodge Extension has one unique genuine global alpha section. Its restriction is the intrinsic alpha on every original normal affine classifying test. At every actual marked cusp its full coefficient is t^j times a power-series unit, with j=0 or L/4 and j even. At the canonical marking it has exactly the complete theta(t^(L/2))^2 expansion in the same normalized Hodge generator. All actual geometric objects, explicit algebraic root formulas, canonical differential maps and full series remain visible; no unknown scalar or finite-prefix substitute is used.
+
+Challenge has 935 lines and 16 explicit support/main targets. All 447 semantic types/available bodies match the Solution environment, and every literal proof hole is selected exactly once. The original theorem is recovered by compiled equality; target universes/types and all Solution declaration axiom closures pass. Actual root integration and official verification are separate steps. No whole-paper acceptance is claimed.
+
+The original LevelData, Compactification and canonical Hodge Extension are inputs. This endpoint constructs the unique compact alpha section for them; it does not separately construct those inputs or the half-divisor line, unary-family modularity or official acceptance.

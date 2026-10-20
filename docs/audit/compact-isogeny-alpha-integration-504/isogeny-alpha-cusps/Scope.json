@@ -1,0 +1,25 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-043",
+    "accepted-044"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-043",
+    "accepted-044"
+  ],
+  "universe": "Original k : Type algebraically closed characteristic-zero field, positive L,m, even m and 8*m dividing L",
+  "target_count": 17,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Actual supplied cyclic quotient: finite, etale, surjective, exact degree, scheme-theoretic kernel and universal property",
+    "Both full-four target labels are the prescribed images of source full-level labels",
+    "Intrinsic target alpha on every original Weierstrass test, with no expansion premise",
+    "Original ambient normalization 1/m times actual familyHodgeMap applied to the same target alpha",
+    "Complete signed theta(t^(L*m/2))^2 designated expansion in the original source normalized differential",
+    "At every actual source test, constructs kernel coordinates, actual component order d=L/gcd(L,i), toric degree e=m/d and full coefficient t^j times a unit",
+    "All exact order constraints retained: d>0,d divides m,e>0,e*d=m,Even j, and j=0 or 4*m*j=L*e^2"
+  ],
+  "limitations": "The original LevelData and OpenAlpha are inputs, retaining all quotient and intrinsic-section fields. These endpoints prove their complete designated expansion and all-cusp orders; they do not independently construct OpenAlpha, the compact extension, a half-line or official acceptance."
+}

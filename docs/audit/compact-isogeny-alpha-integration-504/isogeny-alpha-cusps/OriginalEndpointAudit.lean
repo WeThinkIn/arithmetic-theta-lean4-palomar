@@ -1,0 +1,8 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarIsogeny502.recover_original_043 = ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_designated_expansion := by rfl
+#print axioms ArithmeticThetaPalomarIsogeny502.recover_original_043
+example : ArithmeticThetaPalomarIsogeny502.recover_original_044 = ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_all_cusp_orders := by rfl
+#print axioms ArithmeticThetaPalomarIsogeny502.recover_original_044

@@ -1,0 +1,62 @@
+version: v0.4
+project:
+  name: Complete isogeny alpha expansion and every-cusp orders
+  description: Full original043/044 for the same isogeny-normalized alpha, all original
+    algebraically closed characteristic-zero fields, positive L,m with m even and8*m
+    dividing L. The actual quotient has its full finite-etale degree, scheme kernel
+    and universal property, and its full-four marking is forced by the original source
+    labels. The normalized pullback uses the actual differential map and literal factor1/m.
+    DesignatedExpansion proves the complete signed theta(t^(L*m/2))^2 coefficient
+    in the same source differential. AllCuspOrders constructs actual kernel coordinates
+    and the full t^j-unit coefficient for every source test, retaining the mixed component/toric
+    degrees and exact4*m*j=L*e^2 alternative with even j. No arbitrary target period,
+    differential factor, extra cover, unknown unit in the designated formula or finite-prefix
+    equality is substituted.
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: Full original043/044 for the same isogeny-normalized alpha, all original
+    algebraically closed characteristic-zero fields, positive L,m with m even and8*m
+    dividing L. The actual quotient has its full finite-etale degree, scheme kernel
+    and universal property, and its full-four marking is forced by the original source
+    labels. The normalized pullback uses the actual differential map and literal factor1/m.
+    DesignatedExpansion proves the complete signed theta(t^(L*m/2))^2 coefficient
+    in the same source differential. AllCuspOrders constructs actual kernel coordinates
+    and the full t^j-unit coefficient for every source test, retaining the mixed component/toric
+    degrees and exact4*m*j=L*e^2 alternative with even j. No arbitrary target period,
+    differential factor, extra cover, unknown unit in the designated formula or finite-prefix
+    equality is substituted.
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

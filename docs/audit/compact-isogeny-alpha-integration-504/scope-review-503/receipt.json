@@ -1,0 +1,93 @@
+{
+  "utc": "2026-10-20T23:39:43.701277+00:00",
+  "review_kind": "root source/type review; not separate-model or official",
+  "local_scope_review_passed": true,
+  "new_original_endpoint_ids": [
+    "accepted-041",
+    "accepted-043",
+    "accepted-044"
+  ],
+  "no_added_main_assumptions": true,
+  "original_statement_recovery_compiled": true,
+  "official_pass": false,
+  "stats": {
+    "compact-alpha-package-501": {
+      "stats": {
+        "Challenge": {
+          "lines": 935,
+          "bytes": 64689,
+          "sha256": "ed4550d693d9253728c79cba8077e4d5b806744541ec4942cbe6287dac39d97f"
+        },
+        "Solution": {
+          "lines": 13,
+          "bytes": 1720,
+          "sha256": "8f07d6dfeb31bee5c23708a7391465c21c360b8eba7f5b9448a67f6f0885181f"
+        }
+      },
+      "audit_counts": {
+        "Challenge": {
+          "declarations": 699,
+          "propagated_holes": 439,
+          "project_imports": 0
+        },
+        "Solution": {
+          "declarations": 2,
+          "propagated_holes": 0,
+          "project_imports": 2970
+        }
+      },
+      "semantic_declarations_compatible": 447,
+      "new_ids": [
+        "accepted-041"
+      ]
+    },
+    "isogeny-alpha-cusps-package-502": {
+      "stats": {
+        "Challenge": {
+          "lines": 999,
+          "bytes": 68126,
+          "sha256": "068ace87d8546785b7056e3c18cf1726c66d2511e1fcfa971e41b6cbbfb0f38b"
+        },
+        "Solution": {
+          "lines": 21,
+          "bytes": 1993,
+          "sha256": "2f0620e46604ae8a555472fe369b2d2a23f73556facb23074a74c48d232e0023"
+        }
+      },
+      "audit_counts": {
+        "Challenge": {
+          "declarations": 772,
+          "propagated_holes": 463,
+          "project_imports": 0
+        },
+        "Solution": {
+          "declarations": 4,
+          "propagated_holes": 0,
+          "project_imports": 2984
+        }
+      },
+      "semantic_declarations_compatible": 501,
+      "new_ids": [
+        "accepted-043",
+        "accepted-044"
+      ]
+    }
+  },
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-package-501/Challenge.lean": "ed4550d693d9253728c79cba8077e4d5b806744541ec4942cbe6287dac39d97f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-package-501/Solution.lean": "8f07d6dfeb31bee5c23708a7391465c21c360b8eba7f5b9448a67f6f0885181f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-package-501/receipt.json": "5a932c0d42430596bda896d2e432d90089899b1141f6e42c9c843f434c08af17",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-package-501/Scope.json": "948043d08a3fce39934b02237f8d807ec95d8892a2971c80f7383999b42b80ab",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-package-501/SourceMap.json": "383e4c2ee5a8cd5a906ade36aaa98bc8eb75e2bc886642a7d5ac24726d36e7c7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-package-501/comparator.json": "2266c64f834bd82d800e01d303bc853676815098d595184cdf5f3ed41e13f51a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-package-501/Targets.json": "fb169c91e9731ee15e472dce7ce9a3b9af7a43684fd32671eba1c9134fea4b89",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-alpha-cusps-package-502/Challenge.lean": "068ace87d8546785b7056e3c18cf1726c66d2511e1fcfa971e41b6cbbfb0f38b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-alpha-cusps-package-502/Solution.lean": "2f0620e46604ae8a555472fe369b2d2a23f73556facb23074a74c48d232e0023",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-alpha-cusps-package-502/receipt.json": "a84fbf8393057d35906a4c311fe38f96e814e4a99e90d12c961e7c59aaf1c10f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-alpha-cusps-package-502/Scope.json": "33a726d3610bd07ad72ee56a12384641629497984b4fa6067d956ab480305e18",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-alpha-cusps-package-502/SourceMap.json": "562c42e3bb937b862ada55893432c61972a8751d41cdfd760d4c767553030397",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-alpha-cusps-package-502/comparator.json": "3fed516f78723c0f872e4f3b225718709c1914273f55a17b10817836ee866fb9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-alpha-cusps-package-502/Targets.json": "6e20b17817aa397f91812462086972601d63e7610b2d62fab002551c3b870587"
+  },
+  "review_sha256": "392993b9aa37e96ecd6591958295e16026ba07f009020c2aef78c4da41a07aaa"
+}

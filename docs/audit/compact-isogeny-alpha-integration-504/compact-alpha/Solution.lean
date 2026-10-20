@@ -1,0 +1,13 @@
+module
+public import CompactFullLevelAlphaR0190
+@[expose] public section
+set_option autoImplicit false
+set_option backward.isDefEq.respectTransparency false
+noncomputable section
+namespace ArithmeticThetaPalomarCompactAlpha501
+theorem compactFullLevelAlpha :
+∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L : ℕ), 0 < L → 8 ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ∃! a : (H.line).presheaf.obj (Opposite.op ⊤), ArithmeticThetaGlobalFourTorsionR0190.IsOpenAlpha L k D (ArithmeticThetaGlobalFourTorsionR0190.restrictAlpha L k D X H a) ∧ ArithmeticThetaGlobalFourTorsionR0190.CuspOrders L k D X H a ∧ ArithmeticThetaGlobalFourTorsionR0190.ExactTateAlpha L k D X H a := by
+  exact ArithmeticThetaGlobalFourTorsionR0190.compact_full_level_alpha
+theorem recover_original_041 :
+∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L : ℕ), 0 < L → 8 ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ∃! a : (H.line).presheaf.obj (Opposite.op ⊤), ArithmeticThetaGlobalFourTorsionR0190.IsOpenAlpha L k D (ArithmeticThetaGlobalFourTorsionR0190.restrictAlpha L k D X H a) ∧ ArithmeticThetaGlobalFourTorsionR0190.CuspOrders L k D X H a ∧ ArithmeticThetaGlobalFourTorsionR0190.ExactTateAlpha L k D X H a := compactFullLevelAlpha
+end ArithmeticThetaPalomarCompactAlpha501

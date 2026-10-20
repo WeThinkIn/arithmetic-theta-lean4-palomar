@@ -1,0 +1,23 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-041"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-041"
+  ],
+  "universe": "Original k : Type algebraically closed characteristic-zero field, all positive L with 8 dividing L",
+  "target_count": 16,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Unique genuine global section of the supplied canonical compact Hodge line",
+    "Actual intrinsic alpha on every original normal affine classifying test with the same full marking",
+    "RealizesAlpha constructs actual split roots, quarter-label coordinates, unit coefficient and normalized differential",
+    "All genuine DiskTests and all actual extending normalized generators",
+    "Every-cusp power-series unit with exact order zero or L/4 and evenness",
+    "Complete theta(t^(L/2))^2 expansion on every canonical marking at the same disk and same generator",
+    "Actual Tate cubic, all differential sheaf/pullback definitions and full LevelData/Compactification constructors"
+  ],
+  "limitations": "The original LevelData, Compactification and canonical Hodge Extension are inputs. This endpoint constructs the unique compact alpha section for them; it does not separately construct those inputs or the half-divisor line, unary-family modularity or official acceptance."
+}

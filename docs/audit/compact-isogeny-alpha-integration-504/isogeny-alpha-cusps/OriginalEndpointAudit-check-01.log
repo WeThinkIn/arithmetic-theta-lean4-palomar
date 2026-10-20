@@ -1,0 +1,2 @@
+'ArithmeticThetaPalomarIsogeny502.recover_original_043' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarIsogeny502.recover_original_044' depends on axioms: [propext, Classical.choice, Quot.sound]

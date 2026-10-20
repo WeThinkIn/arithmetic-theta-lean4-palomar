@@ -1,0 +1,22 @@
+{
+  "basis": "Actual relative alpha and canonical differential constructions from501; exact original cyclic Quotient, target marking, OpenAlpha and full DesignatedExpansion/AllCuspOrders definitions",
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-package-501/Challenge.lean": "ed4550d693d9253728c79cba8077e4d5b806744541ec4942cbe6287dac39d97f",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/OpenHodgeDescentDefinitionsR0180.lean": "5aa0de772477a2887268f62ebb92f9a0af2086c1d73ca2f02af3d9ac5a45cbb5",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/IsogenyHalfLinesDefinitionsR0193.lean": "587e1bf629f04aa528b4e0778e70f1e08d4e56fbe5b27b98bf3cdbefafabb7b9",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/assemble.py": "c842db92af778e392376b5e4e8309c027e5e2af00ecf770c7e8442924c71705c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-package-501/comparator.json": "2266c64f834bd82d800e01d303bc853676815098d595184cdf5f3ed41e13f51a"
+  },
+  "semantic_definitions": 501,
+  "target_types": "All explicit target types/universes and standard axiom closures checked",
+  "namespace_map": {
+    "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_designated_expansion": "ArithmeticThetaPalomarIsogeny502.isogenyAlphaDesignatedExpansion",
+    "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_all_cusp_orders": "ArithmeticThetaPalomarIsogeny502.isogenyAlphaAllCuspOrders"
+  },
+  "bridges": [
+    "Compiled rfl equality recover_original_043 = original isogeny_alpha_designated_expansion",
+    "Compiled rfl equality recover_original_044 = original isogeny_alpha_all_cusp_orders",
+    "All semantic types and available bodies of actual quotient, familyHodgeMap, scalar normalization and testAlpha match originals"
+  ]
+}

@@ -1444,3 +1444,19 @@ roots = ["SplitCuspChallenge"]
 [[lean_lib]]
 name = "SplitCuspSolution"
 roots = ["SplitCuspSolution"]
+
+[[lean_lib]]
+name = "CompactAlphaChallenge"
+roots = ["CompactAlphaChallenge"]
+
+[[lean_lib]]
+name = "CompactAlphaSolution"
+roots = ["CompactAlphaSolution"]
+
+[[lean_lib]]
+name = "IsogenyAlphaCuspsChallenge"
+roots = ["IsogenyAlphaCuspsChallenge"]
+
+[[lean_lib]]
+name = "IsogenyAlphaCuspsSolution"
+roots = ["IsogenyAlphaCuspsSolution"]

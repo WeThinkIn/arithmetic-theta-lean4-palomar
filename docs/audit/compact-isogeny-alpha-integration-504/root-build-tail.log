@@ -1,0 +1,100 @@
+info: Proof/IsogenyAlphaDesignatedExpansionR0193.lean:651:0: 'ArithmeticThetaIsogenyHalfLinesR0193.DesignatedExpansionProof.normalized_test_formula_raw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [11914/11918] Replayed IsogenyAlphaAllCuspOrdersR0193
+warning: Proof/IsogenyAlphaAllCuspOrdersR0193.lean:103:31: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [TateCurve, curve, mul_zero, add_zero, zero_pow (by decide : 2 ≠ 0)] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Proof/IsogenyAlphaAllCuspOrdersR0193.lean:145:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Proof/IsogenyAlphaAllCuspOrdersR0193.lean:149:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: Proof/IsogenyAlphaAllCuspOrdersR0193.lean:283:7: Variable name `hGt` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hGt
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/IsogenyAlphaAllCuspOrdersR0193.lean:610:0: 'ArithmeticThetaIsogenyHalfLinesR0193.IsogenyAlphaAllCuspOrders.allowed_order_of_target' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/IsogenyAlphaAllCuspOrdersR0193.lean:611:0: 'ArithmeticThetaIsogenyHalfLinesR0193.IsogenyAlphaAllCuspOrders.four_marking_orders' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/IsogenyAlphaAllCuspOrdersR0193.lean:613:0: 'ArithmeticThetaIsogenyHalfLinesR0193.IsogenyAlphaAllCuspOrders.comparison_with_labels' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/IsogenyAlphaAllCuspOrdersR0193.lean:614:0: 'ArithmeticThetaIsogenyHalfLinesR0193.IsogenyAlphaAllCuspOrders.pure_alpha_orders' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/IsogenyAlphaAllCuspOrdersR0193.lean:615:0: 'ArithmeticThetaIsogenyHalfLinesR0193.IsogenyAlphaAllCuspOrders.constant_rescale_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/IsogenyAlphaAllCuspOrdersR0193.lean:616:0: 'ArithmeticThetaIsogenyHalfLinesR0193.IsogenyAlphaAllCuspOrders.test_alpha_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/IsogenyAlphaAllCuspOrdersR0193.lean:618:0: 'ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_all_cusp_orders' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [11915/11918] Built CompactAlphaSolution (2.7s)
+✔ [11916/11918] Built IsogenyAlphaCuspsSolution (2.7s)
+⚠ [11917/11918] Built CompactAlphaChallenge (18s)
+warning: CompactAlphaChallenge.lean:25:14: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:27:8: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:29:6: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:36:6: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:37:6: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:38:6: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:41:14: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:65:6: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:68:9: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:80:8: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:87:8: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:113:8: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:120:8: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:121:8: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:541:0: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CompactAlphaChallenge.lean:590:8: declaration uses `sorry`
+warning: CompactAlphaChallenge.lean:932:8: declaration uses `sorry`
+⚠ [11918/11918] Built IsogenyAlphaCuspsChallenge (19s)
+warning: IsogenyAlphaCuspsChallenge.lean:25:14: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:27:8: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:29:6: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:36:6: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:37:6: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:38:6: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:41:14: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:65:6: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:68:9: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:80:8: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:87:8: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:113:8: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:120:8: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:121:8: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:541:0: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: IsogenyAlphaCuspsChallenge.lean:590:8: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:991:8: declaration uses `sorry`
+warning: IsogenyAlphaCuspsChallenge.lean:996:8: declaration uses `sorry`
+Build completed successfully (11918 jobs).

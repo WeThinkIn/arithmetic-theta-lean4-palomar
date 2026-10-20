@@ -1,0 +1,37 @@
+{
+  "ids": [
+    "accepted-041"
+  ],
+  "target_count": 16,
+  "attempts": {
+    "Challenge": "01",
+    "Solution": "01",
+    "ChallengeAudit": "01",
+    "SolutionAudit": "01",
+    "DefinitionCompatibility": "01",
+    "OriginalEndpointAudit": "01",
+    "TargetTypeAudit": "01",
+    "TargetHoleAudit": "01"
+  },
+  "title": "Complete compact full-level alpha section",
+  "universe": "Original k : Type algebraically closed characteristic-zero field, all positive L with 8 dividing L",
+  "basis": "Actual LevelData/Compactification and full canonical boundary Hodge definitions from495, original intrinsic relative alpha, open classifying tests, all-cusp orders and complete designated theta expansion",
+  "namespace_map": {
+    "ArithmeticThetaGlobalFourTorsionR0190.compact_full_level_alpha": "ArithmeticThetaPalomarCompactAlpha501.compactFullLevelAlpha"
+  },
+  "bridges": [
+    "Compiled rfl equality recover_original_041 = original compact_full_level_alpha",
+    "All actual semantic types and available bodies match, including normalized differential and openComparison/diskGenericIso"
+  ],
+  "retained": [
+    "Unique genuine global section of the supplied canonical compact Hodge line",
+    "Actual intrinsic alpha on every original normal affine classifying test with the same full marking",
+    "RealizesAlpha constructs actual split roots, quarter-label coordinates, unit coefficient and normalized differential",
+    "All genuine DiskTests and all actual extending normalized generators",
+    "Every-cusp power-series unit with exact order zero or L/4 and evenness",
+    "Complete theta(t^(L/2))^2 expansion on every canonical marking at the same disk and same generator",
+    "Actual Tate cubic, all differential sheaf/pullback definitions and full LevelData/Compactification constructors"
+  ],
+  "limitations": "The original LevelData, Compactification and canonical Hodge Extension are inputs. This endpoint constructs the unique compact alpha section for them; it does not separately construct those inputs or the half-divisor line, unary-family modularity or official acceptance.",
+  "description": "Full original041: over every original algebraically closed characteristic-zero field and positive L divisible by8, the supplied actual full-level compactification with canonical Hodge Extension has one unique genuine global alpha section. Its restriction is the intrinsic alpha on every original normal affine classifying test. At every actual marked cusp its full coefficient is t^j times a power-series unit, with j=0 or L/4 and j even. At the canonical marking it has exactly the complete theta(t^(L/2))^2 expansion in the same normalized Hodge generator. All actual geometric objects, explicit algebraic root formulas, canonical differential maps and full series remain visible; no unknown scalar or finite-prefix substitute is used."
+}

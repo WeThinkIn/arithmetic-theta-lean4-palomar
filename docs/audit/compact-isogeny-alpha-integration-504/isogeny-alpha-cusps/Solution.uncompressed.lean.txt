@@ -1,0 +1,23 @@
+module
+public import IsogenyAlphaDesignatedExpansionR0193
+public import IsogenyAlphaAllCuspOrdersR0193
+@[expose] public section
+set_option autoImplicit false
+set_option backward.isDefEq.respectTransparency false
+noncomputable section
+namespace ArithmeticThetaPalomarIsogeny502
+theorem isogenyAlphaDesignatedExpansion :
+∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L m : ℕ), 0 < L → 0 < m → Even m → 8*m ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L), ∀ A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D, ArithmeticThetaIsogenyHalfLinesR0193.DesignatedExpansion k L m D A := by
+  exact ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_designated_expansion
+theorem recover_original_043 :
+∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L m : ℕ), 0 < L → 0 < m → Even m → 8*m ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L), ∀ A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D, ArithmeticThetaIsogenyHalfLinesR0193.DesignatedExpansion k L m D A := isogenyAlphaDesignatedExpansion
+
+end ArithmeticThetaPalomarIsogeny502
+namespace ArithmeticThetaPalomarIsogeny502
+theorem isogenyAlphaAllCuspOrders :
+∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L m : ℕ), 0 < L → 0 < m → Even m → 8*m ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L), ∀ A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D, ArithmeticThetaIsogenyHalfLinesR0193.AllCuspOrders k L m D A := by
+  exact ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_all_cusp_orders
+theorem recover_original_044 :
+∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L m : ℕ), 0 < L → 0 < m → Even m → 8*m ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L), ∀ A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D, ArithmeticThetaIsogenyHalfLinesR0193.AllCuspOrders k L m D A := isogenyAlphaAllCuspOrders
+
+end ArithmeticThetaPalomarIsogeny502

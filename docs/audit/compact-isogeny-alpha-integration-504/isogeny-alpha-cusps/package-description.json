@@ -1,0 +1,40 @@
+{
+  "ids": [
+    "accepted-043",
+    "accepted-044"
+  ],
+  "target_count": 17,
+  "attempts": {
+    "Challenge": "01",
+    "Solution": "01",
+    "ChallengeAudit": "01",
+    "SolutionAudit": "01",
+    "DefinitionCompatibility": "01",
+    "OriginalEndpointAudit": "01",
+    "TargetTypeAudit": "01",
+    "TargetHoleAudit": "01"
+  },
+  "title": "Complete isogeny alpha expansion and every-cusp orders",
+  "universe": "Original k : Type algebraically closed characteristic-zero field, positive L,m, even m and 8*m dividing L",
+  "basis": "Actual relative alpha and canonical differential constructions from501; exact original cyclic Quotient, target marking, OpenAlpha and full DesignatedExpansion/AllCuspOrders definitions",
+  "namespace_map": {
+    "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_designated_expansion": "ArithmeticThetaPalomarIsogeny502.isogenyAlphaDesignatedExpansion",
+    "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_all_cusp_orders": "ArithmeticThetaPalomarIsogeny502.isogenyAlphaAllCuspOrders"
+  },
+  "bridges": [
+    "Compiled rfl equality recover_original_043 = original isogeny_alpha_designated_expansion",
+    "Compiled rfl equality recover_original_044 = original isogeny_alpha_all_cusp_orders",
+    "All semantic types and available bodies of actual quotient, familyHodgeMap, scalar normalization and testAlpha match originals"
+  ],
+  "retained": [
+    "Actual supplied cyclic quotient: finite, etale, surjective, exact degree, scheme-theoretic kernel and universal property",
+    "Both full-four target labels are the prescribed images of source full-level labels",
+    "Intrinsic target alpha on every original Weierstrass test, with no expansion premise",
+    "Original ambient normalization 1/m times actual familyHodgeMap applied to the same target alpha",
+    "Complete signed theta(t^(L*m/2))^2 designated expansion in the original source normalized differential",
+    "At every actual source test, constructs kernel coordinates, actual component order d=L/gcd(L,i), toric degree e=m/d and full coefficient t^j times a unit",
+    "All exact order constraints retained: d>0,d divides m,e>0,e*d=m,Even j, and j=0 or 4*m*j=L*e^2"
+  ],
+  "limitations": "The original LevelData and OpenAlpha are inputs, retaining all quotient and intrinsic-section fields. These endpoints prove their complete designated expansion and all-cusp orders; they do not independently construct OpenAlpha, the compact extension, a half-line or official acceptance.",
+  "description": "Full original043/044 for the same isogeny-normalized alpha, all original algebraically closed characteristic-zero fields, positive L,m with m even and8*m dividing L. The actual quotient has its full finite-etale degree, scheme kernel and universal property, and its full-four marking is forced by the original source labels. The normalized pullback uses the actual differential map and literal factor1/m. DesignatedExpansion proves the complete signed theta(t^(L*m/2))^2 coefficient in the same source differential. AllCuspOrders constructs actual kernel coordinates and the full t^j-unit coefficient for every source test, retaining the mixed component/toric degrees and exact4*m*j=L*e^2 alternative with even j. No arbitrary target period, differential factor, extra cover, unknown unit in the designated formula or finite-prefix equality is substituted."
+}

@@ -1,0 +1,5 @@
+DECL ArithmeticThetaPalomarIsogeny502.isogenyAlphaDesignatedExpansion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarIsogeny502.recover_original_044 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarIsogeny502.recover_original_043 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarIsogeny502.isogenyAlphaAllCuspOrders AXIOMS [propext, Classical.choice, Quot.sound]
+AUDIT checked=4 propagated_holes=0 project_imports=2984

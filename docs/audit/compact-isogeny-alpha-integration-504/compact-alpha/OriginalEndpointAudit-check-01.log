@@ -1,0 +1,1 @@
+'ArithmeticThetaPalomarCompactAlpha501.recover_original_041' depends on axioms: [propext, Classical.choice, Quot.sound]

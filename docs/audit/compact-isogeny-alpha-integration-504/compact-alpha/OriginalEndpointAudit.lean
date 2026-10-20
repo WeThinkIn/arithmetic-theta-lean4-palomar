@@ -1,0 +1,6 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarCompactAlpha501.recover_original_041 = ArithmeticThetaGlobalFourTorsionR0190.compact_full_level_alpha := by rfl
+#print axioms ArithmeticThetaPalomarCompactAlpha501.recover_original_041
