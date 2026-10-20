@@ -1,0 +1,453 @@
+{
+  "original_requirement_count": 13,
+  "original_endpoint_count": 103,
+  "requirements_unchanged": [
+    "main",
+    "orthogonal-lemma",
+    "constant",
+    "norm",
+    "d2",
+    "roots",
+    "early",
+    "basic-fourth",
+    "level-four-root",
+    "four-character",
+    "projective-ratios",
+    "sharper-bound",
+    "arithmetic-modularity"
+  ],
+  "all_endpoints_retained": [
+    {
+      "id": "binary-orthogonal-example",
+      "declaration": "ArithmeticThetaFullSourceR0268.binary_orthogonal_example"
+    },
+    {
+      "id": "conservative-image-consumer",
+      "declaration": "ArithmeticThetaFullSourceR0268.conservative_image_consumer"
+    },
+    {
+      "id": "accepted-000",
+      "declaration": "ArithmeticThetaElementary.rank_zero_coefficients"
+    },
+    {
+      "id": "accepted-001",
+      "declaration": "ArithmeticThetaElementary.rank_zero_kernel"
+    },
+    {
+      "id": "accepted-002",
+      "declaration": "ArithmeticThetaElementary.rank_zero_image"
+    },
+    {
+      "id": "accepted-003",
+      "declaration": "ArithmeticThetaLattice.even_integral_gram_orthogonalization"
+    },
+    {
+      "id": "accepted-004",
+      "declaration": "ArithmeticThetaDet80.actual_coefficient_matrix"
+    },
+    {
+      "id": "accepted-005",
+      "declaration": "ArithmeticThetaDet80.actual_minor_determinant"
+    },
+    {
+      "id": "accepted-006",
+      "declaration": "ArithmeticThetaDet80.actual_theta_kernel_zero"
+    },
+    {
+      "id": "accepted-007",
+      "declaration": "ArithmeticThetaDurfee.formal_jacobi_triple_product"
+    },
+    {
+      "id": "accepted-008",
+      "declaration": "ArithmeticThetaOrthogonalAlgorithm.computed_natural_data"
+    },
+    {
+      "id": "accepted-009",
+      "declaration": "ArithmeticThetaHadamard.jacobi_formal"
+    },
+    {
+      "id": "accepted-010",
+      "declaration": "ArithmeticThetaBinary.all_positive_classes"
+    },
+    {
+      "id": "accepted-011",
+      "declaration": "ArithmeticThetaBinary.similarity_distinct"
+    },
+    {
+      "id": "accepted-012",
+      "declaration": "ArithmeticThetaBinary.ambient_realization"
+    },
+    {
+      "id": "accepted-013",
+      "declaration": "ArithmeticThetaBinary.same_order_classes"
+    },
+    {
+      "id": "accepted-014",
+      "declaration": "ArithmeticThetaRank16.no_similarity"
+    },
+    {
+      "id": "accepted-015",
+      "declaration": "ArithmeticThetaRank16.integral_identity"
+    },
+    {
+      "id": "accepted-016",
+      "declaration": "ArithmeticThetaRank16.two_column_kernel"
+    },
+    {
+      "id": "accepted-017",
+      "declaration": "ArithmeticThetaEarlyAssembly.actual_earlier_certificate"
+    },
+    {
+      "id": "accepted-018",
+      "declaration": "ArithmeticThetaTateSeries.basic_fourth"
+    },
+    {
+      "id": "accepted-019",
+      "declaration": "ArithmeticThetaAlgebraicCoordinatesR0143.algebraic_tate_coordinates"
+    },
+    {
+      "id": "accepted-020",
+      "declaration": "ArithmeticThetaAlgebraicCoordinatesR0143.coordinate_exact_poles"
+    },
+    {
+      "id": "accepted-021",
+      "declaration": "ArithmeticThetaCubicModelR0144.algebraic_model_cubic"
+    },
+    {
+      "id": "accepted-022",
+      "declaration": "ArithmeticThetaCompactifiedDifferentialR0145.global_normalized_differential"
+    },
+    {
+      "id": "accepted-023",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.rational_preimage_cosets"
+    },
+    {
+      "id": "accepted-024",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.unary_parameter_identification"
+    },
+    {
+      "id": "accepted-025",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.individual_coset_integral_product"
+    },
+    {
+      "id": "accepted-026",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.source_orthogonal_factorization"
+    },
+    {
+      "id": "accepted-027",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.computed_family_formal_unary_consumer"
+    },
+    {
+      "id": "accepted-028",
+      "declaration": "ArithmeticThetaCompactUnaryR0183.compact_unary_hodge_realization"
+    },
+    {
+      "id": "accepted-029",
+      "declaration": "ArithmeticThetaComponentDegreeR0184.geometric_component_cusp_bound"
+    },
+    {
+      "id": "accepted-030",
+      "declaration": "ArithmeticThetaComponentDegreeR0184.component_discriminant_divisor"
+    },
+    {
+      "id": "accepted-031",
+      "declaration": "ArithmeticThetaComponentDegreeR0184.component_hodge_power_degree"
+    },
+    {
+      "id": "accepted-032",
+      "declaration": "ArithmeticThetaCommonHalfHodgeR0185.discriminant_twist_unit"
+    },
+    {
+      "id": "accepted-033",
+      "declaration": "ArithmeticThetaCommonHalfHodgeR0185.discriminant_tate_root"
+    },
+    {
+      "id": "accepted-034",
+      "declaration": "ArithmeticThetaCommonHalfHodgeR0185.common_half_hodge_cover"
+    },
+    {
+      "id": "accepted-035",
+      "declaration": "ArithmeticThetaConservativeKernelR0189.arithmetic_geometric_family_existence"
+    },
+    {
+      "id": "accepted-036",
+      "declaration": "ArithmeticThetaConservativeKernelR0189.geometric_family_conservative_cutoff"
+    },
+    {
+      "id": "accepted-037",
+      "declaration": "ArithmeticThetaConservativeKernelR0189.conservative_matrix_kernel"
+    },
+    {
+      "id": "accepted-038",
+      "declaration": "ArithmeticThetaGlobalFourTorsionR0190.relative_four_torsion_root"
+    },
+    {
+      "id": "accepted-039",
+      "declaration": "ArithmeticThetaGlobalFourTorsionR0190.relative_alpha_naturality"
+    },
+    {
+      "id": "accepted-040",
+      "declaration": "ArithmeticThetaGlobalFourTorsionR0190.four_torsion_tate_behavior"
+    },
+    {
+      "id": "accepted-041",
+      "declaration": "ArithmeticThetaGlobalFourTorsionR0190.compact_full_level_alpha"
+    },
+    {
+      "id": "accepted-042",
+      "declaration": "ArithmeticThetaSquareLinesR0192.compact_alpha_canonical_half_line"
+    },
+    {
+      "id": "accepted-043",
+      "declaration": "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_designated_expansion"
+    },
+    {
+      "id": "accepted-044",
+      "declaration": "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_all_cusp_orders"
+    },
+    {
+      "id": "accepted-045",
+      "declaration": "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_canonical_half_line"
+    },
+    {
+      "id": "accepted-046",
+      "declaration": "ArithmeticThetaSharpKernelR0195.distinct_norm_sharp_arithmetic"
+    },
+    {
+      "id": "accepted-047",
+      "declaration": "ArithmeticThetaSharpKernelR0195.sharp_matrix_geometric_family"
+    },
+    {
+      "id": "accepted-048",
+      "declaration": "ArithmeticThetaSharpKernelR0195.sharp_geometric_cutoff"
+    },
+    {
+      "id": "accepted-049",
+      "declaration": "ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel"
+    },
+    {
+      "id": "accepted-050",
+      "declaration": "ArithmeticThetaFormalCoverR0210.arbitrary_formal_cover_constant"
+    },
+    {
+      "id": "accepted-051",
+      "declaration": "ArithmeticThetaSchemeFourCharacterR0215.scheme_miller_phase"
+    },
+    {
+      "id": "accepted-052",
+      "declaration": "ArithmeticThetaSchemeFourCharacterR0215.scheme_alpha_character"
+    },
+    {
+      "id": "accepted-053",
+      "declaration": "ArithmeticThetaPhaseFreeKeyR0219.phase_free_key"
+    },
+    {
+      "id": "accepted-054",
+      "declaration": "ArithmeticThetaPhaseFreeKeyR0219.phase_free_key_naturality"
+    },
+    {
+      "id": "accepted-055",
+      "declaration": "ArithmeticThetaKeyTateR0220.phase_free_key_tate_normalization"
+    },
+    {
+      "id": "accepted-056",
+      "declaration": "ArithmeticThetaAmbientCompletedRootsR0227.ambient_prescribed_roots"
+    },
+    {
+      "id": "accepted-057",
+      "declaration": "ArithmeticThetaAmbientCompletedRootsR0227.smooth_point_simultaneous_roots"
+    },
+    {
+      "id": "accepted-058",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.shifted_integer_interval"
+    },
+    {
+      "id": "accepted-059",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.rational_schur_completion"
+    },
+    {
+      "id": "accepted-060",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.computed_rational_ldl"
+    },
+    {
+      "id": "accepted-061",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.recursive_ellipsoid_enumeration"
+    },
+    {
+      "id": "accepted-062",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.ldl_theta_prefix"
+    },
+    {
+      "id": "accepted-063",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.ldl_coefficient_matrix"
+    },
+    {
+      "id": "accepted-064",
+      "declaration": "ArithmeticThetaAdaptiveSolverR0230.checked_basis_change_relations"
+    },
+    {
+      "id": "accepted-065",
+      "declaration": "ArithmeticThetaAdaptiveSolverR0230.adaptive_universal_solver"
+    },
+    {
+      "id": "accepted-066",
+      "declaration": "ArithmeticThetaAdaptiveSolverR0230.adaptive_checked_input"
+    },
+    {
+      "id": "accepted-067",
+      "declaration": "ArithmeticThetaAdaptiveSolverR0230.adaptive_singleton_zero"
+    },
+    {
+      "id": "accepted-068",
+      "declaration": "ArithmeticThetaArithmeticSectionsR0236.field_compact_discriminant"
+    },
+    {
+      "id": "accepted-069",
+      "declaration": "ArithmeticThetaArithmeticSectionsR0236.field_compact_unary"
+    },
+    {
+      "id": "accepted-070",
+      "declaration": "ArithmeticThetaArithmeticSectionsR0236.field_unary_compact_naturality"
+    },
+    {
+      "id": "accepted-071",
+      "declaration": "ArithmeticThetaArithmeticCommonCoverR0238.arithmetic_common_unary_family"
+    },
+    {
+      "id": "accepted-072",
+      "declaration": "ArithmeticThetaCyclotomicModularityR0239.split_component_cusp_bound"
+    },
+    {
+      "id": "accepted-073",
+      "declaration": "ArithmeticThetaCyclotomicModularityR0239.split_component_discriminant_divisor"
+    },
+    {
+      "id": "accepted-074",
+      "declaration": "ArithmeticThetaCyclotomicModularityR0239.split_square_cover_degree"
+    },
+    {
+      "id": "accepted-075",
+      "declaration": "ArithmeticThetaCyclotomicModularityR0239.cyclotomic_matrix_modularity"
+    },
+    {
+      "id": "accepted-076",
+      "declaration": "ArithmeticThetaExtendedMetaplecticR0241.cyclotomic_extended_modularity"
+    },
+    {
+      "id": "accepted-077",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_even_unimodular"
+    },
+    {
+      "id": "accepted-078",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_dual"
+    },
+    {
+      "id": "accepted-079",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_theta_realization"
+    },
+    {
+      "id": "accepted-080",
+      "declaration": "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_existence"
+    },
+    {
+      "id": "accepted-081",
+      "declaration": "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_naturality"
+    },
+    {
+      "id": "accepted-082",
+      "declaration": "ArithmeticThetaRationalTateR0247.scheme_period_one_discriminant"
+    },
+    {
+      "id": "accepted-083",
+      "declaration": "ArithmeticThetaSchemeKatoUnitR0250.scheme_kato_unit_naturality"
+    },
+    {
+      "id": "accepted-084",
+      "declaration": "ArithmeticThetaSchemeKatoExpansionR0252.scheme_kato_full_tate_expansion"
+    },
+    {
+      "id": "accepted-085",
+      "declaration": "ArithmeticThetaKatoInitialR0253.scheme_five_kato_initial_characterization"
+    },
+    {
+      "id": "accepted-086",
+      "declaration": "ArithmeticThetaKatoCharacterizationR0254.scheme_kato_intrinsic_characterization"
+    },
+    {
+      "id": "accepted-087",
+      "declaration": "ArithmeticThetaGlobalProjectiveRatiosR0266.global_arithmetic_projective_ratios"
+    },
+    {
+      "id": "accepted-088",
+      "declaration": "ArithmeticThetaDegreeAssembly.certified_theta_image_data"
+    },
+    {
+      "id": "accepted-089",
+      "declaration": "ArithmeticThetaTateIdentities.general_annular_addition"
+    },
+    {
+      "id": "accepted-090",
+      "declaration": "ArithmeticThetaElementary.norm_exponent_identities"
+    },
+    {
+      "id": "accepted-091",
+      "declaration": "ArithmeticThetaElementary.norm_sign_exponent_even"
+    },
+    {
+      "id": "accepted-092",
+      "declaration": "ArithmeticThetaLaurentNormR0064.powered_gamma_norm"
+    },
+    {
+      "id": "accepted-093",
+      "declaration": "ArithmeticThetaUnaryKatoPowerR0160.unary_power_geometric_realization"
+    },
+    {
+      "id": "accepted-094",
+      "declaration": "ArithmeticThetaUniversalEvaluationR0213.arbitrary_even_theta_rigidification"
+    },
+    {
+      "id": "accepted-095",
+      "declaration": "ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier"
+    },
+    {
+      "id": "accepted-096",
+      "declaration": "ArithmeticThetaPhaseFreeKeyR0219.phase_free_alpha_descent"
+    },
+    {
+      "id": "accepted-097",
+      "declaration": "ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier_base_change"
+    },
+    {
+      "id": "accepted-098",
+      "declaration": "ArithmeticThetaSchemeKatoNormR0251.finite_etale_norm_family"
+    },
+    {
+      "id": "accepted-099",
+      "declaration": "ArithmeticThetaMultiplierKeyR0217.even_point_theta_evaluation"
+    },
+    {
+      "id": "accepted-100",
+      "declaration": "ArithmeticThetaPhaseFreeKeyR0219.multiplier_fourth_trivialization"
+    }
+  ],
+  "this_package_primary_endpoint": "accepted-037",
+  "supporting_endpoints": [
+    "accepted-000",
+    "accepted-001",
+    "accepted-002",
+    "accepted-003",
+    "accepted-008",
+    "accepted-035",
+    "accepted-036"
+  ],
+  "not_covered_here": [
+    "full geometric proof route review",
+    "orthogonal whole-series factorization package",
+    "formal comparison and norm",
+    "discriminant and roots",
+    "four-torsion and character",
+    "projective ratios and sharper bound",
+    "arithmetic modularity and image",
+    "algorithms and examples"
+  ]
+}

@@ -71,7 +71,8 @@ lake comparator --config comparator.json
 ```
 
 These are the intended checks, not a record that they have passed. The source
-port currently contains unresolved compatibility issues and oversized files.
+port still has unresolved compatibility issues. Oversized modules have been split;
+all required split modules must pass the migrated build before acceptance.
 The verification record will identify the exact submitted Git commit and the
 configuration checked. Official mechanical preflight is separate from Palomar's
 automated semantic/editorial review and from optional permanent registration.
@@ -89,3 +90,17 @@ AI-assisted development is disclosed in `formalization.yaml`; AI systems are not
 ## License and attribution
 
 Original Lean code is licensed under Apache-2.0 by authorization of the project owner. Human author and responsible maintainer: Jue Ding. Third-party source headers and licenses are retained; see `docs/ThirdParty/fermats-last-theorem-LICENSE.txt`. Mathlib and other dependencies retain their respective licenses.
+
+## Public preflight status
+
+The owner authorized public visibility, official mechanical preflight and subsequent
+submission on 2026-10-20. The repository is now public. The manually dispatched
+workflow in `.github/workflows/palomar-preflight.yml` calls the official pinned
+PalomarSubmission workflow with `mode: full` and `palomar-standard-v1`. Its selected
+configuration is still the finite-determination pilot; a pass would apply to that
+configuration only. Formal submission must follow a passing full mechanical report.
+
+The latest joint migrated audit checks 44 of the 103 original exact endpoint
+types and standard axiom closures. The independent explicit-bound main statement
+is now drafted in `challenges/main-explicit`; its Solution bridges are still
+pending. No full-paper Palomar verification or registration is claimed.

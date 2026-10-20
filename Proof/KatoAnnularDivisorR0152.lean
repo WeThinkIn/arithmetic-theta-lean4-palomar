@@ -89,8 +89,8 @@ lemma generic_marked_ideal (h3 : 3 ≤ r) (M : Model k T) (hM : IsModel k T M)
     (i j : Fin r) (a : kˣ) (p : baseScheme k ⟶ M.X) (hp : MarkedLift k M i a p)
     (χ : chartScheme k ⟶ M.X) (hχ : IsChartMap k M j χ) :
     specIdeal ((genericPoint k M p hp.1).ker.comap (chartGenericMap k M χ hχ.1)) =
-      Ideal.span {ArithmeticThetaAnnularTorsionPrereqR0053.toGeneric k
-        (markedEquation k (hr := hr) j i a)} := by
+      Ideal.span {(ArithmeticThetaAnnularTorsionPrereqR0053.toGeneric k
+        (markedEquation k (hr := hr) j i a))} := by
   rw [← genericPoint_ker k M hM p hp.1,
     ← Scheme.IdealSheafData.comap_comp, chartGenericMap_inclusion,
     Scheme.IdealSheafData.comap_comp]

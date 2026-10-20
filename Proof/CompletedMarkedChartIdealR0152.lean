@@ -4,6 +4,9 @@ public import KatoAnnularDefinitionsR0152
 public import AlgebraizedMarkedIdealSpecializationR0136
 public import CompletedSectionKernelsR0053
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 set_option autoImplicit false

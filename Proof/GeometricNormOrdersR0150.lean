@@ -131,7 +131,7 @@ def localizedMaximalEquiv : p.primesOver S ≃ MaximalSpectrum B where
     have hm : m.asIdeal.LiesOver (IsLocalRing.maximalIdeal A) := by
       refine ⟨?_⟩
       exact (IsLocalRing.eq_maximalIdeal
-        (Ideal.isMaximal_comap_of_isIntegral_of_isMaximal (R := A) m.asIdeal)).symm
+        (Ideal.isMaximal_under_of_isIntegral_of_isMaximal (R := A) m.asIdeal)).symm
     letI := hm
     exact ⟨m.asIdeal.under S, inferInstance,
       IsLocalization.AtPrime.liesOver_comap_of_liesOver p A m.asIdeal⟩
@@ -215,12 +215,10 @@ theorem localized_residue_weight {R S A B : Type u}
   let m := localizedMaximalEquiv (A := A) (B := B) p Q
   haveI : m.asIdeal.LiesOver (IsLocalRing.maximalIdeal A) :=
     IsLocalization.AtPrime.liesOver_map_of_liesOver p A B Q.val
-  rw [residue_length_eq_inertia m, ← Ideal.inertiaDeg'_eq_inertiaDeg
-    (IsLocalRing.maximalIdeal A) m.asIdeal]
+  rw [residue_length_eq_inertia m]
   haveI : (Q.val.map (algebraMap S B)).LiesOver (IsLocalRing.maximalIdeal A) :=
     IsLocalization.AtPrime.liesOver_map_of_liesOver p A B Q.val
-  exact (IsLocalization.AtPrime.inertiaDeg_map_eq_inertiaDeg p A B Q.val).trans
-    (Ideal.inertiaDeg'_eq_inertiaDeg p Q.val)
+  exact IsLocalization.AtPrime.inertiaDeg_map_eq_inertiaDeg p A B Q.val
 
 variable {X Y : Scheme.{u}} [IsIntegral X] [IsIntegral Y]
 

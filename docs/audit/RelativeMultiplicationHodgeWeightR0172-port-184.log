@@ -1,0 +1,9 @@
+../evidence/compatibility-probes-184/RelativeMultiplicationHodgeWeightR0172.lean:626:187: warning: Variable name `hG` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hG
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaRelativeIsogenyHodgeR0172.relative_multiplication_hodge_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

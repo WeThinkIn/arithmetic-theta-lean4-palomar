@@ -1,0 +1,26 @@
+[
+  {
+    "module": "KatoAnnularOverlapR0152",
+    "exit_code": 0,
+    "sha256": "5f98a52c44439acf3277c23ffd448cbcf78e68183cf7c79d63156fccbca737bf",
+    "log_sha256": "700d94734e019e18caf8d6138530954443be1e330f47c4dcfd2f8614cf7bb295",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "integration": "pending"
+  },
+  {
+    "module": "RelativeMultiplicationHodgeWeightR0172",
+    "exit_code": 0,
+    "sha256": "de68f6c453f01d67efc2d8df2316e8cd74c5a29916904ffefc96ffdeccb348dc",
+    "log_sha256": "2759e58f27cb99c0d061acf65bcefcd0df5a40194301e298e47b0a7e0f0bdb3b",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "integration": "pending"
+  }
+]

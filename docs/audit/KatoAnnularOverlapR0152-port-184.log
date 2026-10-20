@@ -1,0 +1,25 @@
+../evidence/compatibility-probes-184/KatoAnnularOverlapR0152.lean:339:60: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/compatibility-probes-184/KatoAnnularOverlapR0152.lean:339:191: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/compatibility-probes-184/KatoAnnularOverlapR0152.lean:339:420: warning: Variable name `hχ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hχ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/compatibility-probes-184/KatoAnnularOverlapR0152.lean:339:651: warning: Variable name `hφ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hφ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaKatoAnnularR0152.kato_annular_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]

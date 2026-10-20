@@ -2,6 +2,9 @@ module
 
 public import TranslationInvariantDifferentialR0148
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 set_option autoImplicit false

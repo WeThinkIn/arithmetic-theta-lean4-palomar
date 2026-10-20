@@ -6,7 +6,9 @@ public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_formallyUnrami
 @[expose] public section
 
 set_option autoImplicit false
-set_option backward.isDefEq.respectTransparency true
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 set_option maxHeartbeats 800000
 set_option linter.style.haveILetI false
 noncomputable section
@@ -519,7 +521,7 @@ theorem tensor_differential_ext {R A B N : Type u} [CommRing R] [CommRing A] [Co
       G (1 ⊗ₜ[A] KaehlerDifferential.D R A a)) : F = G := by
   apply LinearMap.ext
   intro z
-  refine TensorProduct.induction_on z (by simp) ?_ ?_
+  refine TensorProduct.inductionOn z ?_ ?_
   · intro b ω
     obtain ⟨l,rfl⟩ := KaehlerDifferential.linearCombination_surjective R A ω
     simp only [Finsupp.linearCombination_apply, Finsupp.sum, TensorProduct.tmul_sum, map_sum]

@@ -3,6 +3,9 @@ module
 public import GenericKaehlerComparisonR0149
 public import IntegralHodgeFrameR0149
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Existence and uniqueness of the prescribed integral identity Hodge frame.

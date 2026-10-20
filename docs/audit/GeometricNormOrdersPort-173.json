@@ -1,0 +1,23 @@
+{
+  "file": "Proof/GeometricNormOrdersR0150.lean",
+  "sha256": "526564bb2a01d8fa35d82322f627adbcf3d179bd55a514d47ada222e8c18de95",
+  "changes": [
+    {
+      "old": "Ideal.isMaximal_comap_of_isIntegral_of_isMaximal (R := A) m.asIdeal",
+      "new": "Ideal.isMaximal_under_of_isIntegral_of_isMaximal (R := A) m.asIdeal",
+      "reason": "New comap API requires an explicit ring homomorphism/integrality; under API retains the existing algebra-map statement."
+    },
+    {
+      "old": "Convert both ends through inertiaDeg prime form and compose equality",
+      "new": "Use IsLocalization.AtPrime.inertiaDeg_map_eq_inertiaDeg directly",
+      "reason": "Pinned Mathlib now states this lemma with inertiaDeg on both sides."
+    }
+  ],
+  "module_build": "passed Lake root173",
+  "full_root": "running",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

@@ -163,14 +163,14 @@ private instance hatOpen_noetherian (side : Bool) : IsNoetherianRing (HatOpen k 
 
 set_option backward.isDefEq.respectTransparency true in
 private instance hatOpen_complete (side : Bool) : IsAdicComplete
-    (Ideal.span {completeOpen k 0 side
-      (ArithmeticThetaInfinitesimalPolygonR0129.openParameter k side)}) (HatOpen k side) := by
+    (Ideal.span {(completeOpen k 0 side
+      (ArithmeticThetaInfinitesimalPolygonR0129.openParameter k side))}) (HatOpen k side) := by
   have hfg : (openIdeal k 0 side).FG := Submodule.fg_span (Set.finite_singleton _)
   have h := AdicCompletion.isAdicComplete_map_algebraMap_of_fg
     (openIdeal k 0 side) hfg
   have he : (openIdeal k 0 side).map (algebraMap (RawOpen k side) (HatOpen k side)) =
-      Ideal.span {completeOpen k 0 side
-        (ArithmeticThetaInfinitesimalPolygonR0129.openParameter k side)} := by
+      Ideal.span {(completeOpen k 0 side
+        (ArithmeticThetaInfinitesimalPolygonR0129.openParameter k side))} := by
     change (Ideal.span {ot k 0 side}).map (completeOpen k 0 side) = _
     rw [Ideal.map_span, Set.image_singleton, parameter_eq]
   rw [he] at h
@@ -220,8 +220,8 @@ private lemma completed_overlap {r : ℕ} {hr : 0 < r} {T : Tower k r hr}
   let E : HatOpen k false ≃+* HatOpen k true := ArithmeticThetaCorrectedGammaR0061.overlap k r j.val hr j.isLt
   let b := Spec.map (CommRingCat.ofHom RX) ≫ chartBase k
   letI : IsSeparated M.p := hM.1.toIsSeparated
-  apply complete_hom_ext (R := HatOpen k true) (Ideal.span {completeOpen k 0 true
-    (ArithmeticThetaInfinitesimalPolygonR0129.openParameter k true)}) b M.p
+  apply complete_hom_ext (R := HatOpen k true) (Ideal.span {(completeOpen k 0 true
+    (ArithmeticThetaInfinitesimalPolygonR0129.openParameter k true))}) b M.p
   · rw [Category.assoc, (hχ j).1]
     change Spec.map (CommRingCat.ofHom (E.toRingHom.comp RY)) ≫
       Spec.map (CommRingCat.ofHom (ArithmeticThetaAnnularTorsionPrereqR0053.base k)) =
@@ -234,8 +234,8 @@ private lemma completed_overlap {r : ℕ} {hr : 0 < r} {T : Tower k r hr}
     let e := Scheme.Spec.mapIso (openComparison k n true).toCommRingCatIso.op
     apply (cancel_epi e.hom).mp
     have he : e.hom ≫ Spec.map (CommRingCat.ofHom (Ideal.Quotient.mk
-        ((Ideal.span {completeOpen k 0 true
-          (ArithmeticThetaInfinitesimalPolygonR0129.openParameter k true)}) ^ (n+1)))) =
+        ((Ideal.span {(completeOpen k 0 true
+          (ArithmeticThetaInfinitesimalPolygonR0129.openParameter k true))}) ^ (n+1)))) =
         Spec.map (CommRingCat.ofHom (openReduction k n true)) := by
       change Spec.map (CommRingCat.ofHom (openComparison k n true).toRingHom) ≫ _ = _
       rw [← Spec.map_comp]
