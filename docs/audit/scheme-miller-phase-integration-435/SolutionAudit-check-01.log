@@ -1,0 +1,5 @@
+DECL ArithmeticThetaPalomarSchemePhase433.schemeMillerPhase AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarSchemePhase433.recover_original_051 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarSchemePhase433.localDataExists AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarSchemePhase433.arbitrarySplitFiberBasis AXIOMS [propext, Classical.choice, Quot.sound]
+AUDIT checked=4 propagated_holes=0 project_imports=3128

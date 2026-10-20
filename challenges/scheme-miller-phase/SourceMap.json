@@ -1,0 +1,25 @@
+{
+  "base": "Exact lower scheme/projective/law definitions from394, same public original names; no imported project module in Challenge",
+  "new_definitions": "Exact source slices in assemble.py, comment/signature formatting only",
+  "semantic_compatibility": "208 non-proof declarations: original types and available definition bodies checked definitionally equal in an environment importing only original sources and Solution; constructors included",
+  "original_type_recovery": "recover_original_051 and compiled original theorem equality by rfl; generic universe u retained",
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/FullLevelCoverDefinitionsR0175.lean": "e1ba20c9519f5c097497a3db054fd8a22a1af77ec43825f98e2557b7e0d70a8b",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeLevelDefinitionsR0204.lean": "c744f228bd4533e8dc7d8b2ce0324865be6d24dcad2a7e5c805cc612a7cea1cc",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/LegendreComparisonDefinitionsR0177.lean": "65b7fbc51221ed2bc0f3ed707902afc2c0fcbd755a363b17020abcd34358191a",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/GlobalFourTorsionDefinitionsR0190.lean": "0b0f60b9582ece9bf02b549966fd083dff16d1f6713a860899c8ec29f27262b9",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/FourTorsionDefinitions.lean": "10cd3baa87d2baf0210753b7962c1f7ded94e4890d17a0f54fd4e6c52a9270ff",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/MillerGeometryDefinitionsR0114.lean": "5db0367e7ea14914fe0171b063b6504b5158710419deec00ea5241fc49572041",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/MillerReciprocityDefinitionsR0116.lean": "b441dfa43b4a99094c2f1f476866529749459a1fc3199834d19fda095a4f3f35",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/MarkingCharacterDefinitionsR0115.lean": "7730d4dda18033ef2442aa8cde9086b243ac7a8aa011e05319df30b84f7b64ed",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/GeometricFourPairingDefinitionsR0118.lean": "8fb7af0adbbc974e18f184ad56c6882ecd4633efd96f1b2d3d25611c55e5ed5e",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeFourCharacterDefinitionsR0211.lean": "a7a12522b96aecb72f883ba85862bda44652ea2c565039505c57aec670957fa0",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeGeometricPhaseR0211.lean": "423d36d672faa57fa3a0284ebc90f629006b8cfa3e8cc6f6aa8a9725be6ad98a",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/ArbitraryFourCharacterDefinitionsR0214.lean": "54f2e9716c63ab6f2420feed40df6059ab9a6a4bc82726553ad706eb144ab408",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeFourCharacterDefinitionsR0215.lean": "c3daaec330d6689ccadb5f2d190b3f3b50bbb9a02c83630994b1eeb77aa4cac3",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/ArbitrarySplitFiberBasisR0214.lean": "7dab21d5264dc4e694a308477be1b58a7bca5fb706797bf698dc20424ffec8ef",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-package-394/Challenge.lean": "6bef41d62c31f5f64a74753e64aa0e7fd291c8a83ad356553aa3222f06f6e5f2",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/global-normalized-frame-401/ChartSupport.lean.txt": "0bab80f5c401170b80c8f63275669d63a099ddfd2443cc50fbda1fd8eeec6020",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-051"
+  ],
+  "universe": "Original arbitrary universe u retained",
+  "target_count": 3,
+  "retained": [
+    "arbitrary actual smooth proper geometrically connected elliptic scheme family",
+    "actual full level4 group sections and torsion disjointness",
+    "unique global regular Miller phase",
+    "unit and square-minus-one conclusions",
+    "primitive order4 conditional only on nontrivial global sections",
+    "every actual affine Weierstrass test, including nonreduced, disconnected and empty bases",
+    "existence of affine coordinates and unit-denominator normalized polynomial ratio",
+    "actual generic tangent functions and chord-formula translations",
+    "actual moved-divisor evaluation with full Laurent infinity expansion",
+    "every characteristic-zero field fiber and all local pairing data"
+  ],
+  "nonvacuity_support": [
+    "actual local pairing data for every split cubic with distinct roots",
+    "original arbitrary-ring fiber-basis theorem with unique fiber coordinates, genuine four-torsion basis and original labels"
+  ],
+  "new_endpoint_count": 1,
+  "official_verified": false,
+  "full_paper_claimed": false
+}

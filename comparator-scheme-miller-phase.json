@@ -1,0 +1,14 @@
+{
+  "challenge_module": "SchemeMillerPhaseChallenge",
+  "solution_module": "SchemeMillerPhaseSolution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarSchemePhase433.localDataExists",
+    "ArithmeticThetaPalomarSchemePhase433.arbitrarySplitFiberBasis",
+    "ArithmeticThetaPalomarSchemePhase433.schemeMillerPhase"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

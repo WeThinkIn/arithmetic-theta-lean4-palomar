@@ -1,0 +1,80 @@
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Proof/CartesianIdentityIdealR0205.lean:37:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Proof/CartesianIdentityIdealR0205.lean:43:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Proof/CartesianIdentityIdealR0205.lean:44:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Proof/CartesianIdentityIdealR0205.lean:69:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: Proof/CartesianIdentityIdealR0205.lean:75:0: 'ArithmeticThetaSchemeHodgeR0205.cartesian_identity_ideal' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [12054/12060] Replayed SchemeCotangentCoherenceR0205
+info: Proof/SchemeCotangentCoherenceR0205.lean:178:0: 'ArithmeticThetaSchemeHodgeR0205.scheme_cotangent_coherence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [12055/12060] Replayed AffineConormalHodgeNaturalityR0205
+info: Proof/AffineConormalHodgeNaturalityR0205.lean:131:0: 'ArithmeticThetaSchemeHodgeR0205.affine_conormal_hodge_naturality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12057/12060] Replayed MarkedAffineTestComparisonR0215
+warning: Proof/MarkedAffineTestComparisonR0215.lean:98:78: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/MarkedAffineTestComparisonR0215.lean:107:0: 'ArithmeticThetaSchemeFourCharacterR0215.marked_affine_test_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12058/12060] Replayed SchemeMillerPhaseR0215
+warning: Proof/SchemeMillerPhaseR0215.lean:333:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/SchemeMillerPhaseR0215.lean:348:0: 'ArithmeticThetaSchemeFourCharacterR0215.scheme_miller_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [12059/12060] Built SchemeMillerPhaseSolution (2.6s)
+warning: SchemeMillerPhaseSolution.lean:18:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SchemeMillerPhaseSolution.lean:21:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [12060/12060] Built SchemeMillerPhaseChallenge (11s)
+warning: SchemeMillerPhaseChallenge.lean:652:8: declaration uses `sorry`
+warning: SchemeMillerPhaseChallenge.lean:654:8: declaration uses `sorry`
+warning: SchemeMillerPhaseChallenge.lean:657:8: declaration uses `sorry`
+Build completed successfully (12060 jobs).

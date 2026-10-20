@@ -1,0 +1,8 @@
+{
+  "targets": [
+    "ArithmeticThetaPalomarSchemePhase433.localDataExists",
+    "ArithmeticThetaPalomarSchemePhase433.arbitrarySplitFiberBasis",
+    "ArithmeticThetaPalomarSchemePhase433.schemeMillerPhase"
+  ],
+  "all_three_holes_selected": true
+}

@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-20T21:24:09.941535+00:00",
+  "review_kind": "root source/type scope review, not separate model or official review",
+  "local_scope_review_passed": true,
+  "covered_original_endpoint_ids": [
+    "accepted-051"
+  ],
+  "original_statement_text_exact": true,
+  "universe_u_retained": true,
+  "no_added_main_assumptions": true,
+  "all_three_holes_targeted": true,
+  "official_pass": false,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-miller-phase-package-433/Challenge.lean": "5af5f82c483c14256b1523c43334f6a93825e5407520899ef865c4e87c2e9bd4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-miller-phase-package-433/Solution.lean": "4dfadb79d2bbab21a1a31cd1f07d2a0ff5e50e92bd0bc6c2e3aa98333980ca08",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-miller-phase-package-433/receipt.json": "75e88304d00c83a61ebb0236d8f66ec2c067a13979e2b8d49c37584d9be65b69",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-miller-phase-package-433/Scope.json": "1217c360a45abf92ee9c10dfcbec0c6042201b10d33a4814cc4a829a8c9168f4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-miller-phase-package-433/SourceMap.json": "0474dc7ee608e51087707f8747432c9b8100f5ceadf72598c47397bd6726d395",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-miller-phase-package-433/comparator.json": "a2c10a15e2fd558be904e9f8d4295827abcbb0842e5172d7564d8b05d98da335",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-miller-phase-package-433/DefinitionCompatibility-check-02.log": "a621c7a0f5e8dcb2678d723215ba579464a2518af965dfb400290c860126c9df",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-miller-phase-package-433/OriginalEndpointAudit-check-01.log": "0277cac272e74dde8f23309eccd7f555e1435874b7c8f17e16de5bd7a357148c"
+  },
+  "review_sha256": "28fc89dbb4bbdbec2b30dcbf9bf37c986b0a5b187909c9ff0853942459329acb"
+}

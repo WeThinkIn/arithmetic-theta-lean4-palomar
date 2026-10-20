@@ -1,0 +1,8 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+example : @ArithmeticThetaSchemeFourCharacterR0215.scheme_miller_phase =
+  @ArithmeticThetaPalomarSchemePhase433.recover_original_051 := rfl
+#print axioms ArithmeticThetaPalomarSchemePhase433.recover_original_051
+#print axioms ArithmeticThetaPalomarSchemePhase433.localDataExists
+#print axioms ArithmeticThetaPalomarSchemePhase433.arbitrarySplitFiberBasis

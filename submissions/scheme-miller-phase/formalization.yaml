@@ -1,0 +1,54 @@
+version: v0.4
+project:
+  name: Complete scheme Miller phase
+  description: 'Complete original accepted051 at arbitrary universe u: unique actual
+    global Miller phase on every elliptic scheme family with a full level4 marking;
+    all affine-ring tests, unit-denominator normalization, unit and square identities,
+    conditional primitive order4, and actual moved-divisor pairing on every characteristic-zero
+    field fiber. Explicit local pairing-data and arbitrary-ring fiber-basis existence
+    support. Empty and nonreduced bases retained. See challenges/scheme-miller-phase/Scope.json;
+    no whole-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Complete original accepted051 at arbitrary universe u: unique actual global
+    Miller phase on every elliptic scheme family with a full level4 marking; all affine-ring
+    tests, unit-denominator normalization, unit and square identities, conditional
+    primitive order4, and actual moved-divisor pairing on every characteristic-zero
+    field fiber. Explicit local pairing-data and arbitrary-ring fiber-basis existence
+    support. Empty and nonreduced bases retained. See challenges/scheme-miller-phase/Scope.json;
+    no whole-paper completion claimed.'
+fidelity:
+  divergences: Original051 complete proposition and universe retained with compiled
+    original-type recovery.208 semantic declarations checked against original types
+    and available bodies. No reducedness, nonemptiness or global Nontrivial assumption,
+    no restriction to geometric-point tests, and no pairing identity assumed as local-data
+    input. This scope does not claim original052.

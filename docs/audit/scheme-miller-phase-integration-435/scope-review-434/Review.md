@@ -1,0 +1,13 @@
+# Complete original051 scope review
+
+Review kind: root source/type review supported by compiled compatibility checks; this is not an independent-model review or official semantic acceptance.
+
+The Challenge carries the exact complete accepted051 proposition at arbitrary universe u, without restricting the base to fields, reduced schemes, normal schemes, nonempty schemes or a chosen Weierstrass equation. Family retains properness, smooth relative dimension1, geometric connectedness and the actual natural group law. FullLevel retains actual ordered group sections, multiplication-by4 and disjointness from the actual identity subscheme for all nonzero residue combinations.
+
+AffineTest retains its ring, rational algebra, actual equation, ellipticity, origin-compatible law, actual base/comparison maps, pointed Cartesian square, compatibility of multiplication and both actual markings. affineScalar is the literal global-section pullback followed by the Spec global-sections isomorphism. MillerPhase requires existence of coordinates plus a unit denominator and the original polynomial equality on every such test. This retains nilpotent information and is stronger than agreement solely at field points.
+
+GeometricPhase uses the original completed-square fiber coordinates and moved-divisor pairing, with actual tangent/vertical functions, generic chord translation formulas and a Laurent-series embedding constrained at infinity. It does not insert a pairing identity as a field. localDataExists constructs those local data for every distinct-root split cubic, and arbitrarySplitFiberBasis is the entire original arbitrary-ring provider including unique fiber marking, genuine full-four basis and original labels. These support targets add conclusions, not assumptions to051.
+
+The global conclusion preserves unique phase existence, unit status, square=-1, primitive order4 conditional on Nontrivial global sections, and every affine test's geometric phase. Empty bases remain allowed without the impossible unconditional exact-order assertion in a zero ring. The external field/base map σ remains quantified exactly as in the original statement even where its use is only through the proof.
+
+All341 Challenge declarations were axiom-audited; precisely three declaration closures use the three selected target holes, with no project imports. All4 Solution declarations use only standard axioms.208 non-proof declarations including constructors have original definitionally equal types and available bodies. The compiled reverse bridge recovers the full original051 and its equality is rfl. Formatting was independently token-checked. These checks support local integration, not full independent-kernel or official acceptance. No052 credit is taken.
