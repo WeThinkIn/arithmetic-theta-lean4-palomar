@@ -1,0 +1,18 @@
+{
+  "accepted_for_local_integration": true,
+  "new_ids": [
+    "accepted-096"
+  ],
+  "basis": "Complete frozen original096 interface, exact definition compatibility and root source/type review; no official acceptance",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-alpha-descent-package-459/Challenge.lean": "78266232e01c0d580b7cbff429f8c568f7bf405f0f8c3bbde21713c54485fda5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-alpha-descent-package-459/Solution.lean": "6e60e3b5a96074a1297de68d0805631104ece97ba27217153e20ac319082d52a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-alpha-descent-package-459/Scope.json": "49bc9fdd95f7db9de317db54df459541da0f0001fef672bbe31d1d663dd2f918",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-alpha-descent-package-459/SourceMap.json": "2fcfa35e2ffc0a16ccfa80e563eae179a11a62270ea44ef8cb0fb78882780539",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-alpha-descent-package-459/receipt.json": "4963d116795c3970990a722d0e46d0d3e7a59878b49db6772fd13ecda20e13c8",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-alpha-descent-package-459/README.md": "57e3592b4f73a74f78bd102e847a27257ea40156a6bfb46db74680487acee646",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-alpha-descent-package-459/comparator.json": "a029d94d6d244bc410dd85fa7e1f93ad5b23a5fa45b76945b58b8e1628a0be74",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-alpha-descent-scope-review-460/Review.md": "19d4e38626264dbb3228e843a7fae763a92705ef0ab14e45bf520f398c2d3fd3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-alpha-descent-scope-review-460/receipt.json": "f4f3b4bc73249ff8de9e6b4be3bce4b7cf4b986d49255653ba34f8eb8f74c2b9"
+  }
+}

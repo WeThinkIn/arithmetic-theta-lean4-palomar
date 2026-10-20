@@ -1,0 +1,56 @@
+version: v0.4
+project:
+  name: Complete phase-free alpha descent
+  description: 'Complete original accepted096 at arbitrary universe u: unique descended
+    section in the actual cotangent tensor multiplier line, with frame generation
+    on every subopen. Descends retains every marked test, both existence witnesses
+    for actual cotangent comparison and realizing alpha, and full tensor equality
+    for every such comparison and section. Canonical binary tensor map uniquely specified
+    on every local pure tensor and proved equal to original. Eleven support/main targets
+    selected. Inherited052095097 not recounted. See challenges/phase-free-alpha-descent/Scope.json;
+    no whole-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Complete original accepted096 at arbitrary universe u: unique descended
+    section in the actual cotangent tensor multiplier line, with frame generation
+    on every subopen. Descends retains every marked test, both existence witnesses
+    for actual cotangent comparison and realizing alpha, and full tensor equality
+    for every such comparison and section. Canonical binary tensor map uniquely specified
+    on every local pure tensor and proved equal to original. Eleven support/main targets
+    selected. Inherited052095097 not recounted. See challenges/phase-free-alpha-descent/Scope.json;
+    no whole-paper completion claimed.'
+fidelity:
+  divergences: Original096 full proposition and universe recovered through compiled
+    cotangent/Descends equivalences, canonical tensor-map equality and rfl theorem
+    audit. Both nonvacuity existentials and all universal clauses retained. No extra
+    main assumption. Eleven support/main targets selected; inherited052095097 not
+    recounted.

@@ -1372,3 +1372,11 @@ roots = ["MultiplierFourthChallenge"]
 [[lean_lib]]
 name = "MultiplierFourthSolution"
 roots = ["MultiplierFourthSolution"]
+
+[[lean_lib]]
+name = "PhaseFreeAlphaDescentChallenge"
+roots = ["PhaseFreeAlphaDescentChallenge"]
+
+[[lean_lib]]
+name = "PhaseFreeAlphaDescentSolution"
+roots = ["PhaseFreeAlphaDescentSolution"]

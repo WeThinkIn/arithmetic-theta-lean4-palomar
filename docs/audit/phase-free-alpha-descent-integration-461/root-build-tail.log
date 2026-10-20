@@ -1,0 +1,80 @@
+warning: PhaseFreeAlphaDescentChallenge.lean:634:8: declaration uses `sorry`
+warning: PhaseFreeAlphaDescentChallenge.lean:636:8: declaration uses `sorry`
+warning: PhaseFreeAlphaDescentChallenge.lean:638:8: declaration uses `sorry`
+warning: PhaseFreeAlphaDescentChallenge.lean:649:8: declaration uses `sorry`
+warning: PhaseFreeAlphaDescentChallenge.lean:727:8: declaration uses `sorry`
+warning: PhaseFreeAlphaDescentChallenge.lean:729:8: declaration uses `sorry`
+warning: PhaseFreeAlphaDescentChallenge.lean:839:8: declaration uses `sorry`
+warning: PhaseFreeAlphaDescentChallenge.lean:844:8: declaration uses `sorry`
+warning: PhaseFreeAlphaDescentChallenge.lean:870:8: declaration uses `sorry`
+warning: PhaseFreeAlphaDescentChallenge.lean:915:8: declaration uses `sorry`
+⚠ [12190/12190] Built PhaseFreeAlphaDescentSolution (29s)
+warning: PhaseFreeAlphaDescentSolution.lean:58:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: PhaseFreeAlphaDescentSolution.lean:250:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeAlphaDescentSolution.lean:256:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeAlphaDescentSolution.lean:264:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeAlphaDescentSolution.lean:267:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeAlphaDescentSolution.lean:272:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeAlphaDescentSolution.lean:272:574: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeAlphaDescentSolution.lean:275:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeAlphaDescentSolution.lean:275:574: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeAlphaDescentSolution.lean:381:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeAlphaDescentSolution.lean:386:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (12190 jobs).

@@ -1,0 +1,28 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-096",
+    "accepted-095",
+    "accepted-097",
+    "accepted-052"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-096"
+  ],
+  "universe": "Original arbitrary universe u",
+  "target_count": 11,
+  "retained": [
+    "Actual sheafified binary tensor of the cotangent ideal pullback with the multiplier",
+    "Every original MarkedTest",
+    "Existence of the inclusion-compatible actual cotangent comparison on each test",
+    "Existence of the original realizing alpha on each test",
+    "Complete tensor equality for every compatible cotangent map and every realizing alpha",
+    "Canonical binary tensor comparison uniquely fixed on every local pure tensor for arbitrary modules",
+    "Unique descended global section, which is a frame on every subopen",
+    "Original IsMultiplier assumptions retained",
+    "Inherited complete052095097 unchanged"
+  ],
+  "no_new_main_assumptions": true,
+  "new_endpoint_count": 1,
+  "official_verified": false,
+  "full_paper_claimed": false
+}

@@ -1,0 +1,25 @@
+{
+  "base": "Frozen450 full multiplier interface plus458 canonical binary tensor and concrete357 identity-ideal comparisons",
+  "semantic_compatibility": "292 non-proof Challenge/Solution declarations have matching types and available bodies; original predicates and tensor map separately recovered",
+  "namespace_maps": {
+    "ArithmeticThetaPhaseFreeKeyR0219.Descends": "ArithmeticThetaPalomarAlphaDescent459.Descends",
+    "ArithmeticThetaMultiplierKeyR0217.productLine": "ArithmeticThetaPalomarAlphaDescent459.productLine",
+    "ArithmeticThetaSchemeHodgeR0205.CotangentCompatible": "ArithmeticThetaPalomarIdentity357.CotangentCompatible"
+  },
+  "compiled_bridges": [
+    "cotangentCompatible_iff",
+    "tensorComparison_eq_original",
+    "descends_iff",
+    "recover_original_096"
+  ],
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-package-450/Challenge.uncompressed.lean.txt": "fee780eae63547049082ba778aa167ec2eba6d0876f341a912beaaffeb4232ef",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-package-450/Solution.uncompressed.lean.txt": "68f1bed4ad4196f2389c4eb8ead90a00fda3e669ee7eca5c785ee78c6959a98e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/canonical-binary-tensor-458/Challenge.lean": "a0d78c01f7239ad5d5cb7e63c5d1957dc3bc174a6f5444f2810ebfaa07877f6e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/canonical-binary-tensor-458/Solution.lean": "d4b55a5ad357237a335ab37ef6661f3c781194642c44a8bcc01bf1a91852b2da",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Challenge.lean": "8f48731c3cfaa4368f5c88eb5b1e863968af359fce27363480fb012d3412de94",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-package-450/comparator.json": "9ba435bb67c0d109bd70a2fd066f30af2ebf5a8314cd76ebeb99f366ce60fcbb"
+  },
+  "original_type_recovery": "Whole original096 recovered at arbitrary universe u; theorem equality compiled by rfl; both nonvacuity existentials and all universal test clauses retained"
+}
