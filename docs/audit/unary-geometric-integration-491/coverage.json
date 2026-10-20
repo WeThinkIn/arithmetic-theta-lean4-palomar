@@ -1,0 +1,284 @@
+{
+  "utc": "2026-10-20T23:16:18.335302+00:00",
+  "original_endpoint_count": 103,
+  "prepared_interface_count": 77,
+  "pending_count": 26,
+  "scopes": {
+    "main-and-components-complete": [
+      "accepted-000",
+      "accepted-001",
+      "accepted-002",
+      "accepted-003",
+      "accepted-004",
+      "accepted-005",
+      "accepted-006",
+      "accepted-007",
+      "accepted-008",
+      "accepted-009",
+      "accepted-010",
+      "accepted-011",
+      "accepted-012",
+      "accepted-013",
+      "accepted-014",
+      "accepted-015",
+      "accepted-016",
+      "accepted-017",
+      "accepted-018",
+      "accepted-023",
+      "accepted-024",
+      "accepted-025",
+      "accepted-026",
+      "accepted-027",
+      "accepted-037",
+      "accepted-058",
+      "accepted-059",
+      "accepted-060",
+      "accepted-061",
+      "accepted-062",
+      "accepted-063",
+      "accepted-077",
+      "accepted-078",
+      "accepted-079",
+      "accepted-089",
+      "accepted-090",
+      "accepted-091",
+      "accepted-092",
+      "accepted-098",
+      "binary-orthogonal-example"
+    ],
+    "sharp-adaptive-image": [
+      "accepted-046",
+      "accepted-049",
+      "accepted-064",
+      "accepted-065",
+      "accepted-066",
+      "accepted-067",
+      "accepted-088"
+    ],
+    "sharp-and-roots": [
+      "accepted-049",
+      "accepted-056",
+      "accepted-057"
+    ],
+    "formal-cover": [
+      "accepted-050"
+    ],
+    "sharp-and-coordinates": [
+      "accepted-019",
+      "accepted-020",
+      "accepted-021",
+      "accepted-022",
+      "accepted-049"
+    ],
+    "full-scheme-discriminant": [
+      "accepted-080",
+      "accepted-081"
+    ],
+    "scheme-kato": [
+      "accepted-083",
+      "accepted-086"
+    ],
+    "period-one": [
+      "accepted-082"
+    ],
+    "scheme-initial": [
+      "accepted-085"
+    ],
+    "scheme-tate-unit": [
+      "accepted-084"
+    ],
+    "scheme-miller-phase": [
+      "accepted-051"
+    ],
+    "scheme-alpha-character": [
+      "accepted-052"
+    ],
+    "relative-alpha": [
+      "accepted-038",
+      "accepted-039",
+      "accepted-052"
+    ],
+    "tate-alpha": [
+      "accepted-040",
+      "accepted-052"
+    ],
+    "phase-free-multiplier": [
+      "accepted-095",
+      "accepted-097",
+      "accepted-052"
+    ],
+    "multiplier-fourth": [
+      "accepted-100",
+      "accepted-095",
+      "accepted-097",
+      "accepted-052"
+    ],
+    "phase-free-alpha-descent": [
+      "accepted-096",
+      "accepted-095",
+      "accepted-097",
+      "accepted-052"
+    ],
+    "phase-free-key": [
+      "accepted-052",
+      "accepted-053",
+      "accepted-054",
+      "accepted-095",
+      "accepted-096",
+      "accepted-097"
+    ],
+    "even-point-evaluation": [
+      "accepted-099"
+    ],
+    "key-tate": [
+      "accepted-055"
+    ],
+    "arbitrary-rigidification": [
+      "accepted-094"
+    ],
+    "component-cusp": [
+      "accepted-029"
+    ],
+    "unary-geometric": [
+      "accepted-093"
+    ]
+  },
+  "covered_ids": [
+    "accepted-000",
+    "accepted-001",
+    "accepted-002",
+    "accepted-003",
+    "accepted-004",
+    "accepted-005",
+    "accepted-006",
+    "accepted-007",
+    "accepted-008",
+    "accepted-009",
+    "accepted-010",
+    "accepted-011",
+    "accepted-012",
+    "accepted-013",
+    "accepted-014",
+    "accepted-015",
+    "accepted-016",
+    "accepted-017",
+    "accepted-018",
+    "accepted-019",
+    "accepted-020",
+    "accepted-021",
+    "accepted-022",
+    "accepted-023",
+    "accepted-024",
+    "accepted-025",
+    "accepted-026",
+    "accepted-027",
+    "accepted-029",
+    "accepted-037",
+    "accepted-038",
+    "accepted-039",
+    "accepted-040",
+    "accepted-046",
+    "accepted-049",
+    "accepted-050",
+    "accepted-051",
+    "accepted-052",
+    "accepted-053",
+    "accepted-054",
+    "accepted-055",
+    "accepted-056",
+    "accepted-057",
+    "accepted-058",
+    "accepted-059",
+    "accepted-060",
+    "accepted-061",
+    "accepted-062",
+    "accepted-063",
+    "accepted-064",
+    "accepted-065",
+    "accepted-066",
+    "accepted-067",
+    "accepted-077",
+    "accepted-078",
+    "accepted-079",
+    "accepted-080",
+    "accepted-081",
+    "accepted-082",
+    "accepted-083",
+    "accepted-084",
+    "accepted-085",
+    "accepted-086",
+    "accepted-088",
+    "accepted-089",
+    "accepted-090",
+    "accepted-091",
+    "accepted-092",
+    "accepted-093",
+    "accepted-094",
+    "accepted-095",
+    "accepted-096",
+    "accepted-097",
+    "accepted-098",
+    "accepted-099",
+    "accepted-100",
+    "binary-orthogonal-example"
+  ],
+  "pending_ids": [
+    "accepted-028",
+    "accepted-030",
+    "accepted-031",
+    "accepted-032",
+    "accepted-033",
+    "accepted-034",
+    "accepted-035",
+    "accepted-036",
+    "accepted-041",
+    "accepted-042",
+    "accepted-043",
+    "accepted-044",
+    "accepted-045",
+    "accepted-047",
+    "accepted-048",
+    "accepted-068",
+    "accepted-069",
+    "accepted-070",
+    "accepted-071",
+    "accepted-072",
+    "accepted-073",
+    "accepted-074",
+    "accepted-075",
+    "accepted-076",
+    "accepted-087",
+    "conservative-image-consumer"
+  ],
+  "known_official_mechanical_pass_ids": [
+    "accepted-017",
+    "accepted-050"
+  ],
+  "full_paper_semantic_pass": false,
+  "count_semantics": "Complete independent interface union with local checks, not official verification passes. Supporting targets excluded.",
+  "bindings": {
+    "challenges/main-and-components-complete/Scope.json": "36ea1823bf7be4bd07fe7066733376f24a0cba58faa2e2e8d97acf688e960d6c",
+    "challenges/sharp-adaptive-image/Scope.json": "7b621c0ce19512f622591f2472f2234f04d6502a731fa86201921a88a0721a38",
+    "challenges/sharp-and-roots/Scope.json": "1060cf70b6319273c81723cb40453aa1e0557b9b77265a711cf75fde210de66e",
+    "challenges/formal-cover/Scope.json": "cab009ffc4e7eda57df425b35374b6cee9a51d357a64374f0c367f7373cb3730",
+    "challenges/sharp-and-coordinates/Scope.json": "86992f2f946269bd09853acbe6144a87555c97f6d36805c8f4dcb2d9daac55d5",
+    "challenges/full-scheme-discriminant/Scope.json": "8887ed9b93a072fd80eccc20b3ee8fe6bdf9045cc8dfe0df56c086656cd9518a",
+    "challenges/scheme-kato/Scope.json": "e36322940bb22d8e6a727f15615868e68540f91a126435d7afa6292f37f5e880",
+    "challenges/period-one/Scope.json": "2ce514960aa740ce4c1b67f08a9b4dd44b4dcb188caf0fa75ee9e5acd9c3ae9d",
+    "challenges/scheme-initial/Scope.json": "31c085df9e09dadde45bfaed25dd80a12157e72eb14adb251183e76064ef881a",
+    "challenges/scheme-tate-unit/Scope.json": "3a8fae6e99953f9f47cd867ae3dc23eeacdc2a9a2a34f009dc1cea972c1516ad",
+    "challenges/scheme-miller-phase/Scope.json": "1217c360a45abf92ee9c10dfcbec0c6042201b10d33a4814cc4a829a8c9168f4",
+    "challenges/scheme-alpha-character/Scope.json": "d2d5d6dcec0b7b3ae102783c1a7ffaacfb507d80f985d73b400657e7ff844e92",
+    "challenges/relative-alpha/Scope.json": "bdc06c2344c841dbd5a6b42108c51c5c3fb134e7ba309e6aaee9f307b23cb611",
+    "challenges/tate-alpha/Scope.json": "9c2740f50b914114700aab1d45490242989fe2db51db84f004abfe46da685e65",
+    "challenges/phase-free-multiplier/Scope.json": "e480f3baa0babb8702243996f1187e3fe7bbb9349ff43cbd63977a5d0bfcb0be",
+    "challenges/multiplier-fourth/Scope.json": "383856c880e2f50b1132a5ea9f97052817bf41a960bdc70f2230a3acf6fa48d9",
+    "challenges/phase-free-alpha-descent/Scope.json": "49bc9fdd95f7db9de317db54df459541da0f0001fef672bbe31d1d663dd2f918",
+    "challenges/phase-free-key/Scope.json": "606be460cb9980d60e4c0cb0562012f9c8782f78b83ddbf2994e707edafec5f9",
+    "challenges/even-point-evaluation/Scope.json": "1f1121f8a2c25dad1658217f7f82dcd8b018db6b5c2a7ca82ad3d09895c9cee0",
+    "challenges/key-tate/Scope.json": "96bbb6310ba52e4302b99205192b636c82c6cfe4e97157d96d283e13167388a1",
+    "challenges/arbitrary-rigidification/Scope.json": "2466c98695de1f7f768d4c4259034af9779d068033721e834e45d17f1952326a",
+    "challenges/component-cusp/Scope.json": "0e19702d3f9eb60054a111b0c0dc84321eb2620db72e59927c2144bb8af89d72",
+    "challenges/unary-geometric/Scope.json": "300669126faafe27bc2947cb4317d5347ed5e114ac16261464ade4a452831fe9"
+  }
+}

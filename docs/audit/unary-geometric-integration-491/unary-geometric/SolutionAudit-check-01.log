@@ -1,0 +1,3 @@
+DECL ArithmeticThetaPalomarUnary489.recover_original_093 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarUnary489.unaryPowerGeometricRealization AXIOMS [propext, Classical.choice, Quot.sound]
+AUDIT checked=2 propagated_holes=0 project_imports=1470

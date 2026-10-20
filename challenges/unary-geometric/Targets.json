@@ -1,0 +1,11 @@
+{
+  "targets": [
+    {
+      "end": 461,
+      "name": "ArithmeticThetaPalomarUnary489.unaryPowerGeometricRealization",
+      "start": 459,
+      "hole_line": 461
+    }
+  ],
+  "every_literal_hole_selected_exactly_once": true
+}

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "UnaryGeometricChallenge",
+  "solution_module": "UnaryGeometricSolution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarUnary489.unaryPowerGeometricRealization"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

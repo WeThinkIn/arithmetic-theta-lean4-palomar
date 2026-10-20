@@ -1,0 +1,200 @@
+{
+  "utc": "2026-10-20T23:13:34.899506+00:00",
+  "status": "complete original093 independent local interface checked",
+  "new_ids": [
+    "accepted-093"
+  ],
+  "checks": {
+    "Challenge": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 21.49,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "0d457a4e655baeab737ea9507d50c4b451f403ad610414824d01860be220ad35",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "Solution": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Solution.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Solution.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.62,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "d88f9a2f2c6bd0d9859870c0fd166a3614963c566e9ad9213cb994276cd889a2",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "ChallengeAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/ChallengeAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/ChallengeAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 22.19,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "566dcdac1abe8d50c280207b125bf421799569bd0ef1861b6de9d52407425439",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "SolutionAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/SolutionAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/SolutionAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 24.59,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "6312f6a08d9a01e23c99ab6d289b4d75cbb04b3c272c7ade4068bfe7b608e0e1",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "DefinitionCompatibility": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/DefinitionCompatibility.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/DefinitionCompatibility.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.52,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "be43fae2792ce519c01b81bf1490cbbc6aeb2d89291f88eab5268e0982b0f42e",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "OriginalEndpointAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/OriginalEndpointAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/OriginalEndpointAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.37,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "d5c207a08fd63e9ee63069b09db2aa50420ae76f593048bc35c40dc6f9e03c8b",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "TargetTypeAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/TargetTypeAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/TargetTypeAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.67,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "938ad7ad9cf2fb1a456d4d8a0f435f90cb20ca0e42de0aa0348e0281bc82165c",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "TargetHoleAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/TargetHoleAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/TargetHoleAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.37,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "0da6e9708dd6a8c1374b0139a47f262298e0ceb369d4dd839666c08a685b11de",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    }
+  },
+  "audit_counts": {
+    "Challenge": {
+      "declarations": 226,
+      "propagated_holes": 1,
+      "project_imports": 0
+    },
+    "Solution": {
+      "declarations": 2,
+      "propagated_holes": 0,
+      "project_imports": 1470
+    }
+  },
+  "target_types_checked": 1,
+  "semantic_declarations_compatible": 148,
+  "all_holes_selected_exactly_once": true,
+  "full_original_theorem_equality_audit_passed": true,
+  "no_new_main_assumptions": true,
+  "stats": {
+    "Challenge": {
+      "lines": 461,
+      "bytes": 30307,
+      "sha256": "0d457a4e655baeab737ea9507d50c4b451f403ad610414824d01860be220ad35"
+    },
+    "Solution": {
+      "lines": 14,
+      "bytes": 916,
+      "sha256": "d88f9a2f2c6bd0d9859870c0fd166a3614963c566e9ad9213cb994276cd889a2"
+    }
+  },
+  "official_pass": false,
+  "actual_root_build_pending": true,
+  "bindings": {
+    "DefinitionCompatibility-check-01.log": "c358a7f360b8b739f1c35335b2bd2b400008d7ee739af0baf0ec6156f6a8ac9b",
+    "OriginalEndpointAudit.lean": "d5c207a08fd63e9ee63069b09db2aa50420ae76f593048bc35c40dc6f9e03c8b",
+    "comparator.json": "b9da37ada0722d27820321e0d240af500d8ee4d879e140f82d54c7fca56d3e11",
+    "TargetHoleAudit-check-01.log": "b49334cb3a6b232b57e06dac3cbfb6142353d2bf438fe87fb1389ef597b7643a",
+    "TargetHoleAudit-receipt-01.json": "2dee1ce44bd88f4056533bf46a966f923a891f60116c78324ecb6be370f0a0c5",
+    "compile.py": "254522f5893174a01b5e1c12326654b57a8d4d45c08bc55f606a19fdfcf3cc31",
+    "DefinitionCompatibility-receipt-01.json": "b74d90b4d2e4ecb7527adcb77c2952ad582d2d556a861b9fddcca88d7844a25e",
+    "Scope.json": "300669126faafe27bc2947cb4317d5347ed5e114ac16261464ade4a452831fe9",
+    "README.md": "6590170a1bc40247f7fe29766ca44272c49cf6102408209d5eee76084ba2322e",
+    "OriginalEndpointAudit-check-01.log": "f1264cfebeb07e65004be91d9bb56996d848a81e71202397ba63e2fa319fe103",
+    "TargetHoleAudit.lean": "0da6e9708dd6a8c1374b0139a47f262298e0ceb369d4dd839666c08a685b11de",
+    "SolutionAudit-check-01.log": "4977b317fc891f2ca776b6cee4471c6d290830b66f7e7fef1ca9a85675adbf80",
+    "Solution.uncompressed.lean.txt": "d88f9a2f2c6bd0d9859870c0fd166a3614963c566e9ad9213cb994276cd889a2",
+    "TargetTypeAudit.lean": "938ad7ad9cf2fb1a456d4d8a0f435f90cb20ca0e42de0aa0348e0281bc82165c",
+    "Challenge-check-02.log": "614799d76de3a2c4eba71a26aca3ded9de5d560f19773d40bfa62d33f4bf71b0",
+    "Challenge-receipt-02.json": "e1fd0bee4a10883776b16d60d15988f5470d2f46c150b3ea755ef7af2f1f3d47",
+    "Challenge.attempt01.lean.txt": "714c71c7aeb01b5d5e1188b91183c995d8a53e67bf2b377a6074b53fdb4fc156",
+    "assemble.py": "5ca7078e808a4e8a19306f062c0762800e042533c84bf627cec60407a04675c5",
+    "input-bindings.json": "5d3c5d162ea42e7d781f039a3e59652a3a123b401455a5ce23f53cca08fb137b",
+    "SolutionAudit-receipt-01.json": "6e989489ce1c074d071922e1b61e19f058b8e2caae03ca50990842e0f2b3a846",
+    "Challenge-check-01.log": "a8ca7dffd12586aba0e26734817894b643e9868d307e7205f1c636a497e541bd",
+    "Solution-receipt-01.json": "42e6241db685a572f7d41424b31cd2a0f068a79b4b2086f684ba6c7f9ae07503",
+    "ChallengeAudit-check-01.log": "818a4e252287ecc9cd1711284407cd4ed8dc010b61ce88257bd46fafff2807d2",
+    "OriginalEndpointAudit-receipt-01.json": "cd5f590400d463a630661b9e110ed026d2ea76478ca708fa638e60870078c585",
+    "finalize.py": "fe29445541ad5c36a964349bd645b83a2328d3e75ff38c6f69c624ac4cdfe392",
+    "SourceMap.json": "8cb61c030f3a1b5cf5b1938f3eb1e84d27490abae6514bb0b37636c78595efb9",
+    "TargetTypeAudit-receipt-01.json": "9b7a06aba4a5c8edd9a4db7803ad5f2da18519359c965c53610417bc34ff36b1",
+    "DefinitionCompatibility.lean": "be43fae2792ce519c01b81bf1490cbbc6aeb2d89291f88eab5268e0982b0f42e",
+    "SolutionAudit.lean": "6312f6a08d9a01e23c99ab6d289b4d75cbb04b3c272c7ade4068bfe7b608e0e1",
+    "Challenge.uncompressed.lean.txt": "8060edd51eb733e2cd5e57fd56a7c58246023940903a0d40771dc5ce619ebbe5",
+    "Solution.lean": "d88f9a2f2c6bd0d9859870c0fd166a3614963c566e9ad9213cb994276cd889a2",
+    "ChallengeAudit.lean": "566dcdac1abe8d50c280207b125bf421799569bd0ef1861b6de9d52407425439",
+    "Targets.json": "d7cc27ec29c7086131effc9d05d53048e8b51efca0cf9b3ab1d3244e344cbdc7",
+    "Challenge.lean": "0d457a4e655baeab737ea9507d50c4b451f403ad610414824d01860be220ad35",
+    "TargetTypeAudit-check-01.log": "69dff942ce3ceaf09abf9b4063961ba969c8554f97deb4a8d897f0992450586e",
+    "Challenge-receipt-01.json": "908ce814aa3217de0bfa3b715f2dc39a56f9fd007226ca5fd7963a5793af3228",
+    "Solution-check-01.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ChallengeAudit-receipt-01.json": "084958c5d8759aa3924e1488ec0486ce8b604ad2d0b8d7d34edaa89ebd5a30d9"
+  }
+}

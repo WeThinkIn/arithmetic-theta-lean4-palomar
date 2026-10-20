@@ -1,0 +1,37 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:230:22: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:244:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaInfinitesimalPolygonR0129.parameter_pow`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:455:26: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:455:39: warning: Variable name `he` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _he
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:455:171: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:455:483: warning: Variable name `hG` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hG
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:459:8: warning: declaration uses `sorry`

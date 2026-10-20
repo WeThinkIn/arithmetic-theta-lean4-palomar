@@ -1420,3 +1420,11 @@ roots = ["ComponentCuspChallenge"]
 [[lean_lib]]
 name = "ComponentCuspSolution"
 roots = ["ComponentCuspSolution"]
+
+[[lean_lib]]
+name = "UnaryGeometricChallenge"
+roots = ["UnaryGeometricChallenge"]
+
+[[lean_lib]]
+name = "UnaryGeometricSolution"
+roots = ["UnaryGeometricSolution"]

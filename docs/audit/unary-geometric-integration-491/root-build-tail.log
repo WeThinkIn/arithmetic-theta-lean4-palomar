@@ -1,0 +1,100 @@
+warning: Proof/ActualUnaryPowerValuesR0160.lean:38:71: Variable name `he` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _he
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Proof/ActualUnaryPowerValuesR0160.lean:38:203: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Proof/ActualUnaryPowerValuesR0160.lean:38:515: Variable name `hG` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hG
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Proof/ActualUnaryPowerValuesR0160.lean:110:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Proof/ActualUnaryPowerValuesR0160.lean:112:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Proof/ActualUnaryPowerValuesR0160.lean:114:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Proof/ActualUnaryPowerValuesR0160.lean:116:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: Proof/ActualUnaryPowerValuesR0160.lean:124:0: 'ArithmeticThetaUnaryKatoPowerR0160.actual_unary_power_values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/ActualUnaryPowerValuesR0160.lean:126:0: 'ArithmeticThetaUnaryKatoPowerR0160.actual_unary_geometric_realization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [10400/10402] Replayed UnaryPowerGeometricRealizationR0160
+info: Proof/UnaryPowerGeometricRealizationR0160.lean:20:0: 'ArithmeticThetaUnaryKatoPowerR0160.unary_power_geometric_realization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [10401/10402] Built UnaryGeometricSolution (2.4s)
+⚠ [10402/10402] Built UnaryGeometricChallenge (27s)
+warning: UnaryGeometricChallenge.lean:230:22: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: UnaryGeometricChallenge.lean:244:0: automatically included section variable(s) unused in theorem `ArithmeticThetaInfinitesimalPolygonR0129.parameter_pow`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: UnaryGeometricChallenge.lean:455:26: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: UnaryGeometricChallenge.lean:455:39: Variable name `he` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _he
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: UnaryGeometricChallenge.lean:455:171: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: UnaryGeometricChallenge.lean:455:483: Variable name `hG` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hG
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: UnaryGeometricChallenge.lean:459:8: declaration uses `sorry`
+Build completed successfully (10402 jobs).

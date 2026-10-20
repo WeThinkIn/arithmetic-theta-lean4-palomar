@@ -1,0 +1,21 @@
+{
+  "accepted_for_local_integration": true,
+  "basis": "Frozen complete489 source/type/axiom audits and490 root scope review; no official acceptance",
+  "packages": {
+    "unary-geometric": {
+      "bindings": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean": "0d457a4e655baeab737ea9507d50c4b451f403ad610414824d01860be220ad35",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Solution.lean": "d88f9a2f2c6bd0d9859870c0fd166a3614963c566e9ad9213cb994276cd889a2",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Scope.json": "300669126faafe27bc2947cb4317d5347ed5e114ac16261464ade4a452831fe9",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/SourceMap.json": "8cb61c030f3a1b5cf5b1938f3eb1e84d27490abae6514bb0b37636c78595efb9",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/receipt.json": "87bb90437a6cac9ae397d881229e785c305ebef6cfb5fd40b84504ef037491b0",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/comparator.json": "b9da37ada0722d27820321e0d240af500d8ee4d879e140f82d54c7fca56d3e11",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Targets.json": "d7cc27ec29c7086131effc9d05d53048e8b51efca0cf9b3ab1d3244e344cbdc7"
+      },
+      "new_ids": [
+        "accepted-093"
+      ]
+    }
+  },
+  "review_sha256": "a8bed67b666cbf950e30891bfbb1325765c1ff50cd07a1f3c991c5c3eb27bcd3"
+}

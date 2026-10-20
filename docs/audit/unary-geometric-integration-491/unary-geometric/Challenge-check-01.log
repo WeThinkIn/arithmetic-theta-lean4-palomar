@@ -1,0 +1,63 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:230:22: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:244:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaInfinitesimalPolygonR0129.parameter_pow`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:368:39: error: Ambiguous term
+  genericPoint
+Possible interpretations:
+  _root_.genericPoint : (α : Type ?u.49) → [inst : TopologicalSpace α] → [QuasiSober α] → [IrreducibleSpace α] → α
+  
+  ArithmeticThetaGenericEvaluationR0140.genericPoint : (k : Type ?u.48) →
+    [inst : Field k] →
+      [inst_1 : CharZero k] →
+        {r : ℕ} →
+          {hr : 0 < r} →
+            {T : Tower k r hr} →
+              (M : Model k T) →
+                (s : baseScheme k ⟶ M.X) → s ≫ M.p = 𝟙 (baseScheme k) → (Spec ↧(LaurentSeries k) ⟶ genericScheme k M)
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:368:30: error: unsolved goals
+k : Type u
+inst✝¹ : Field k
+inst✝ : CharZero k
+r : ℕ
+hr : 0 < r
+T : Tower k r hr
+M : Model k T
+V : Scheme
+t : V ⟶ Spec ↧(LaurentSeries k)
+s : baseScheme k ⟶ M.X
+hs : s ≫ M.p = 𝟙 (baseScheme k)
+⊢ t ≫ ArithmeticThetaGenericEvaluationR0140.genericPoint k M s hs ≫ pullback.snd M.p (genericBase k) = t
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:455:26: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:455:39: warning: Variable name `he` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _he
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:455:171: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:455:483: warning: Variable name `hG` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hG
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean:459:8: warning: declaration uses `sorry`

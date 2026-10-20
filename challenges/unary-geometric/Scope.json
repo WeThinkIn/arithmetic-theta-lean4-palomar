@@ -1,0 +1,22 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-093"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-093"
+  ],
+  "universe": "Original k : Type, characteristic-zero field; all positive d,m,N with m,N even and m dividing N",
+  "target_count": 1,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Constructed actual infinitesimal polygon tower with every chart, overlap and transition equation",
+    "Constructed actual proper flat model and all stage pullback squares",
+    "Constructed marked identity lift and scheme-valued group law with original origin law",
+    "Constructed integral locally Noetherian generic scheme and exact r=24*d*m^2",
+    "One unique actual function-field element with full Kato divisor at all points",
+    "All positive coprime multiplication norms for the actual generic-point field maps and their induced algebra structures",
+    "Every normalized residue has the specified actual marked lift and stalk-based value with the original complete Laurent quotient"
+  ]
+}
