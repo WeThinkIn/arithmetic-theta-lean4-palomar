@@ -1,0 +1,122 @@
+{
+  "schema": "independent-source-semantic-crosscheck-v1",
+  "attempt": 286,
+  "reviewer": "agent normalized_frame_kernel",
+  "created_at_utc": "2026-10-20T17:00:15.460662+00:00",
+  "project": "/home/Palomar/workspace/arithmetic-theta/project",
+  "commit": "2bd02cf8a38d686dc7a56012b1ca0291443816c9",
+  "namespace": "ArithmeticThetaPalomarMain172",
+  "declaration": "explicitFiniteDetermination",
+  "review_kind": "read-only source/interface crosscheck",
+  "official_semantic_pass": false,
+  "build_run": false,
+  "project_sources_modified_by_reviewer": false,
+  "challenge_solution_definition_prefix_text_equal": true,
+  "challenge_solution_theorem_type_text_equal": true,
+  "kernel_interface_mismatch_found": false,
+  "exact_accepted_037_independent_mirror": false,
+  "scope_difference": "Independent target omits FormalIdentity A U; original proved theorem retains it.",
+  "inputs": [
+    {
+      "path": "MainAndComponentsChallenge.lean",
+      "sha256": "14e906596669a3fecb8afa5913c6e572cb201f9a018e8c5ff351bfcbfb6dd428",
+      "bytes": 61095,
+      "working_copy_matches_commit_at_receipt": true
+    },
+    {
+      "path": "MainAndComponentsSolution.lean",
+      "sha256": "4b5a4f3c5924e1372f0d67cd5729bc48e37921fcf85365d96f9012ecc99e4fc6",
+      "bytes": 83386,
+      "working_copy_matches_commit_at_receipt": true
+    },
+    {
+      "path": "paper/OriginalTask.tex",
+      "sha256": "89cf15d63f655674b98a272aecc2610871c882e4b3588ff1fa63a39607a48be6",
+      "bytes": 56825,
+      "working_copy_matches_commit_at_receipt": true
+    },
+    {
+      "path": "docs/SourceObligations.json",
+      "sha256": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+      "bytes": 190714,
+      "working_copy_matches_commit_at_receipt": true
+    },
+    {
+      "path": "docs/Coverage.md",
+      "sha256": "c73221a8476e964091ab30d5c7d7ed15966d66b98339ca3f0e8bb9c536d1957f",
+      "bytes": 18679,
+      "working_copy_matches_commit_at_receipt": false
+    },
+    {
+      "path": "Proof/ConservativeMatrixKernelR0189.lean",
+      "sha256": "53501e4987b19b52dd90c59dc5307346a319c163800add58711997b2d91a3711",
+      "bytes": 5670,
+      "working_copy_matches_commit_at_receipt": true
+    },
+    {
+      "path": "Proof/ConservativeKernelDefinitionsR0189.lean",
+      "sha256": "7cc560cf4732ac310089f7cd4e1d5794e26c5305c7993a1ffec41eee15438160",
+      "bytes": 1424,
+      "working_copy_matches_commit_at_receipt": true
+    },
+    {
+      "path": "Proof/LatticeGlobalSectionsDefinitionsR0188.lean",
+      "sha256": "9b5618267dda03d1209826d911b31b337ae2a5bda072b296eba2c02528c85878",
+      "bytes": 7960,
+      "working_copy_matches_commit_at_receipt": true
+    },
+    {
+      "path": "Proof/CompactUnaryDefinitionsR0183.lean",
+      "sha256": "109aa0f196fb71ce524dd471f639d6599bac95c6dd7bae36547f5d7394d850ec",
+      "bytes": 4540,
+      "working_copy_matches_commit_at_receipt": true
+    },
+    {
+      "path": "Proof/ArithmeticGeometricFamilyExistenceR0189.lean",
+      "sha256": "302bcd07069912f39b90960aa192e311e2adafb9d356cf81f4288585713f497d",
+      "bytes": 4100,
+      "working_copy_matches_commit_at_receipt": true
+    },
+    {
+      "path": "Proof/GeometricFamilyConservativeCutoffR0189.lean",
+      "sha256": "c58d4a7a211327de8fa37e56f44a7ab0ea1408819d874249c7530038ed5c5397",
+      "bytes": 5532,
+      "working_copy_matches_commit_at_receipt": true
+    },
+    {
+      "path": "Proof/OpenHodgeDescentDefinitionsR0180.lean",
+      "sha256": "5aa0de772477a2887268f62ebb92f9a0af2086c1d73ca2f02af3d9ac5a45cbb5",
+      "bytes": 9388,
+      "working_copy_matches_commit_at_receipt": true
+    },
+    {
+      "path": "Proof/OpenUnaryDesignatedExpansionR0182.lean",
+      "sha256": "13aaf5052969ea354228c8238c01d959a7297738a43ef42370e33a1879f52fab",
+      "bytes": 201622,
+      "working_copy_matches_commit_at_receipt": true
+    }
+  ],
+  "accepted_037": {
+    "id": "accepted-037",
+    "declaration": "ArithmeticThetaConservativeKernelR0189.conservative_matrix_kernel",
+    "file": "Lean/FullSourceIntegrationR0268.lean",
+    "type": "∀ (n h : ℕ), 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∃ B : ℕ, (if n = 0 then B = 0 else ∃ U : ArithmeticThetaLatticeSectionsR0188.Indexing A, ArithmeticThetaLatticeSectionsR0188.Indexed A U ∧ ArithmeticThetaLatticeSectionsR0188.FormalIdentity A U ∧ B = ArithmeticThetaConservativeKernelR0189.cutoff A U ∧ (B : ℚ) = (n : ℚ) * ((ArithmeticThetaCompactUnaryR0183.exponent (ArithmeticThetaLatticeSectionsR0188.commonN A) : ℕ) : ℚ)^U.count * ArithmeticThetaLevelCount.levelIndex (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) / 48) ∧ (∀ B' : ℕ, B ≤ B' → LinearMap.ker (ArithmeticThetaComputed.thetaMap A) = LinearMap.ker (((ArithmeticThetaComputed.coefficientMatrix A B').map (algebraMap ℚ ℂ)).mulVecLin)) ∧ (n = 0 → ∀ c : Fin h → ℂ, ArithmeticThetaComputed.thetaMap A c = PowerSeries.C (∑ i : Fin h, c i))",
+    "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source main theorem lines 47–92 and proof lines 529–543: unconditional equality of the full complex theta kernel and the computed rational coefficient matrix kernel at the exact conservative B_*=n*K^s*I(L)/48 and every larger prefix. Include all deficient ranks, all complex coefficients, and n=0 with B=0 and the actual constant-series formula. Identify group cardinality with the displayed rational index product and prove integrality; do not accept an externally asserted cutoff. Rational pivot/image and modularity conclusions retain their separate original scope.",
+    "difficulty": "medium",
+    "depends_on": [
+      "binary-orthogonal-example",
+      "conservative-image-consumer"
+    ]
+  },
+  "accepted_037_canonical_json_sha256": "df402b74886430aaf8857a97c67131e7cbc4438137462922e27927b6cfa1cf33",
+  "report": {
+    "path": "Review.md",
+    "sha256": "7441ce21ad9778b5738c630091b31c298e43b2d045a8762024d9be1a6c2f0e64",
+    "bytes": 10029
+  },
+  "limitations": [
+    "No fresh compilation or kernel comparison performed.",
+    "Not an official Palomar semantic pass.",
+    "Not exhaustive review of geometric dependency closure."
+  ]
+}

@@ -10,6 +10,10 @@ public import Theorems.Thm_WeierstrassProjModel_exists_relativeGroupLaw_isCommut
 public import Theorems.Thm_WeierstrassProjModel_RelativeGroupLaw_mul_eq_of_one_eq_zeroSect_of_isElliptic_of_baseChangeIso
 public import Theorems.Thm_AlgebraicGeometry_locallyOfFinitePresentation_of_comp_of_locallyOfFiniteType
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option synthInstance.maxHeartbeats 200000
+
 @[expose] public section
 
 

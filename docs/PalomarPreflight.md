@@ -33,3 +33,9 @@ Two additional scoped configurations are prepared for official full preflight:
 `comparator-main-and-components.json` (43 targets, the main explicit bound and 39 complete prior endpoints) with `submissions/main-and-components/formalization.yaml`, and
 `comparator-formal-cover.json` (accepted-050) with `submissions/formal-cover/formalization.yaml`.
 All four root modules were genuinely rebuilt in Lake (build 276, exit 0); no isolated object was renamed. Their source bindings are in `docs/audit/root-packages-276/receipt.json`. Official checks and formal intake for these configurations remain pending.
+
+After correcting the required metadata basename, scoped official full runs were dispatched at commit `2bd02cf`:
+- Main and components: https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39461299032
+- Formal cover: https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39461300608
+
+Both passed the initial intake preparation. Their terminal mechanical results remain pending. The earlier ced6305 attempts stopped before Lean with a metadata filename error, archived in docs/audit/official-intake-format-282. No statement or proof was changed to correct that format.

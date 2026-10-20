@@ -1,5 +1,7 @@
 module
 
+import all GenericThetaBasisR0140
+
 public import Mathlib.LinearAlgebra.Eigenspace.Minpoly
 public import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
 public import Mathlib.RingTheory.Polynomial.Cyclotomic.Basic
@@ -1089,6 +1091,7 @@ lemma origin_higher_cohomology (m : ℕ) (hm : 0 < m)
   rw [groupLaw_origin] at h
   exact h
 
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false in
 /-- The Euler characteristic of O(m[0]) is m on every finite affine cover. -/
 lemma origin_eulerChar (m : ℕ) (hm : 0 < m)
     (𝒰 : (curve k L D X x).OrderedAffineCover) :

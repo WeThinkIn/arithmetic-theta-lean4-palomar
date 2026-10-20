@@ -1,0 +1,33 @@
+{
+  "original_obligation": {
+    "id": "accepted-037",
+    "declaration": "ArithmeticThetaConservativeKernelR0189.conservative_matrix_kernel",
+    "file": "Lean/FullSourceIntegrationR0268.lean",
+    "type": "\u2200 (n h : \u2115), 0 < h \u2192 \u2200 (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (\u2200 i, ArithmeticThetaComputed.validGram (A i)) \u2192 \u2203 B : \u2115, (if n = 0 then B = 0 else \u2203 U : ArithmeticThetaLatticeSectionsR0188.Indexing A, ArithmeticThetaLatticeSectionsR0188.Indexed A U \u2227 ArithmeticThetaLatticeSectionsR0188.FormalIdentity A U \u2227 B = ArithmeticThetaConservativeKernelR0189.cutoff A U \u2227 (B : \u211a) = (n : \u211a) * ((ArithmeticThetaCompactUnaryR0183.exponent (ArithmeticThetaLatticeSectionsR0188.commonN A) : \u2115) : \u211a)^U.count * ArithmeticThetaLevelCount.levelIndex (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) / 48) \u2227 (\u2200 B' : \u2115, B \u2264 B' \u2192 LinearMap.ker (ArithmeticThetaComputed.thetaMap A) = LinearMap.ker (((ArithmeticThetaComputed.coefficientMatrix A B').map (algebraMap \u211a \u2102)).mulVecLin)) \u2227 (n = 0 \u2192 \u2200 c : Fin h \u2192 \u2102, ArithmeticThetaComputed.thetaMap A c = PowerSeries.C (\u2211 i : Fin h, c i))",
+    "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source main theorem lines 47\u201392 and proof lines 529\u2013543: unconditional equality of the full complex theta kernel and the computed rational coefficient matrix kernel at the exact conservative B_*=n*K^s*I(L)/48 and every larger prefix. Include all deficient ranks, all complex coefficients, and n=0 with B=0 and the actual constant-series formula. Identify group cardinality with the displayed rational index product and prove integrality; do not accept an externally asserted cutoff. Rational pivot/image and modularity conclusions retain their separate original scope.",
+    "difficulty": "medium",
+    "depends_on": [
+      "binary-orthogonal-example",
+      "conservative-image-consumer"
+    ]
+  },
+  "independent_target": "ArithmeticThetaPalomarMainFormal295.explicitFiniteDeterminationWithFormalIdentity",
+  "same_witness_conjunction": true,
+  "shared_variables": [
+    "B",
+    "U",
+    "commonN A",
+    "U.count",
+    "U.pair",
+    "U.index"
+  ],
+  "restored_field": "FormalIdentity A U inside the SAME positive-rank existential U",
+  "mapping": "One original conservative_matrix_kernel result, fieldwise fromOriginal, FormalIdentity iff bridge, exact cutoff and coefficient-matrix bridges",
+  "original_scope_totals": {
+    "requirements": 13,
+    "endpoints": 103
+  },
+  "full_program_complete": false,
+  "validation": "independent source compilation and standard axiom audit; no fresh Comparator or official preflight",
+  "prior_weaker_interface_note": "This stronger single existence result supplies both old kernel interface and FormalIdentity; no claim of uniqueness or equality of arbitrary independently chosen existential witnesses."
+}

@@ -1,0 +1,12 @@
+{
+  "source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeFourCoverGeometryR0216.lean",
+  "before_sha256": "5f7843d20b0310d6831300080de8919f264684f81750b7174c79b904b12af614",
+  "candidate_sha256": "399325aa06fe13bfe68a2bfe1e78ac4ce91e98e13d5e085f2aa0d5559ce08d72",
+  "budget_seconds": 600,
+  "threads": 12,
+  "diagnosis": "AddHomClass synthesis timeout at line73 in root277; elaborator options only, no mathematical source change",
+  "exit_code": 0,
+  "seconds": 7.27,
+  "original_unchanged": true,
+  "sorryAx_in_log": false
+}

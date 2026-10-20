@@ -1,0 +1,31 @@
+{
+  "root277_exit_code": 1,
+  "root277_new_successful_modules": 88,
+  "changes": [
+    {
+      "source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/RamifiedCubicKatoEvaluationR0248.lean",
+      "before_sha256": "796cdad50f1dd5a4ce1fbcfa73bc297433df14de862d360e3633112b7a48eed6",
+      "candidate_sha256": "79d94b3e77f27d5710bc7d1c6b39d1f1b98b2614c0fbcb4ecddd99de828ccb5c",
+      "budget_seconds": 600,
+      "threads": 12,
+      "diagnosis": "typeclass Module Complex timeout during map_sub resolution in build277; preserve original theorems and proofs, change only elaborator options",
+      "exit_code": 0,
+      "seconds": 21.65,
+      "original_unchanged": true,
+      "sorryAx_in_log": false
+    },
+    {
+      "source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeFourCoverGeometryR0216.lean",
+      "before_sha256": "5f7843d20b0310d6831300080de8919f264684f81750b7174c79b904b12af614",
+      "candidate_sha256": "399325aa06fe13bfe68a2bfe1e78ac4ce91e98e13d5e085f2aa0d5559ce08d72",
+      "budget_seconds": 600,
+      "threads": 12,
+      "diagnosis": "AddHomClass synthesis timeout at line73 in root277; elaborator options only, no mathematical source change",
+      "exit_code": 0,
+      "seconds": 7.27,
+      "original_unchanged": true,
+      "sorryAx_in_log": false
+    }
+  ],
+  "remaining_repair": "FullLevelProjectiveRatiosR0194"
+}

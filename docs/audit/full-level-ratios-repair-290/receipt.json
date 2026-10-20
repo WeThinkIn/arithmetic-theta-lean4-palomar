@@ -1,0 +1,246 @@
+{
+  "source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/FullLevelProjectiveRatiosR0194.lean",
+  "original_sha256": "24cdb6bc5606a88e6fded4e7adf7fc123e455b4a4344672c832331f9afcc4206",
+  "candidate_sha256": "9ccc844713ff660c97453550fdc574e42a354e167dd3fb4c9292e72a2631cae5",
+  "threads": 12,
+  "budget_seconds": 600,
+  "observation_interval_seconds": 60,
+  "command": [
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+    "-j12",
+    "-o",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-level-ratios-repair-290/FullLevelProjectiveRatiosR0194.olean",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-level-ratios-repair-290/FullLevelProjectiveRatiosR0194.lean"
+  ],
+  "lean_path": "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean",
+  "diagnosis": [
+    "Use local instanceSearchTypes=false to let the elaborator transport the existing actual function-field module instance through definitional equality; proof and theorem statement remain unchanged.",
+    "import all GenericThetaBasisR0140 exposes compiler-generated proof constant of 0<2 in generic_theta_basis signature, without changing that theorem or its axiom closure."
+  ],
+  "attempt": 4,
+  "exit_code": 0,
+  "seconds": 121.26529218582436,
+  "created_at_utc": "2026-10-20T17:14:29.184208+00:00",
+  "original_source_unchanged": true,
+  "all_original_mathematical_source_text_unchanged": true,
+  "direct_dependency_bindings_unchanged": true,
+  "axiom_closures_checked": 190,
+  "all_axioms_standard": true,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "no_sorry_or_admit_in_candidate": true,
+  "files": [
+    {
+      "path": "Analysis.md",
+      "sha256": "cacfc046db113dc64180a1ba7424e5bf8c05e143e28ad83fc533ab026dd7401a",
+      "bytes": 3982
+    },
+    {
+      "path": "FullLevelProjectiveRatiosR0194.ir",
+      "sha256": "de58e2f7898a37c43173b669535a65a68119187d95d033352ca7ec08e237ec1e",
+      "bytes": 7528
+    },
+    {
+      "path": "FullLevelProjectiveRatiosR0194.ir.sig",
+      "sha256": "75f6e713e4a4bfc16000b44c3beff82033661cb16b4817e25cdd32b58d97eb26",
+      "bytes": 176
+    },
+    {
+      "path": "FullLevelProjectiveRatiosR0194.lean",
+      "sha256": "9ccc844713ff660c97453550fdc574e42a354e167dd3fb4c9292e72a2631cae5",
+      "bytes": 287862
+    },
+    {
+      "path": "FullLevelProjectiveRatiosR0194.olean",
+      "sha256": "f1c403bfdfc1a953d3c35bdcea757a87e1bca8c571f9a1042b93687cbcb0eb1e",
+      "bytes": 2524408
+    },
+    {
+      "path": "FullLevelProjectiveRatiosR0194.olean.private",
+      "sha256": "152c46ddbc75c66120d121e1f2a6c87699dea4a49207b933204aa820e862812a",
+      "bytes": 5038472
+    },
+    {
+      "path": "FullLevelProjectiveRatiosR0194.olean.server",
+      "sha256": "e7bb1f32621a9610141933375069330ca598cbf1f6c8e3c76e475ad4044c1d97",
+      "bytes": 103432
+    },
+    {
+      "path": "Prefix02.lean",
+      "sha256": "ebc99955e00250689a970da1dcad3d563560d9357f36dae0c4830d0b7d0dc6c1",
+      "bytes": 59781
+    },
+    {
+      "path": "Prefix03.lean",
+      "sha256": "8c4b9ba499bcdf99cb424ce2f20c691fe84ee90012b066e584c56194470528be",
+      "bytes": 59824
+    },
+    {
+      "path": "axiom-closures.json",
+      "sha256": "443a528075f2274120a3d2977e3a79751d4d1bade4efd2bfbac1f11fb8cef0b7",
+      "bytes": 42019
+    },
+    {
+      "path": "candidate-01.lean",
+      "sha256": "c7e52505a5dea37d168aa6e152921dc9e18c7a05508167e9482397578ed101af",
+      "bytes": 287778
+    },
+    {
+      "path": "candidate-02.lean",
+      "sha256": "b1c19af6d8bc2a02fb84715798e746be9e40ba2613d00c3bd02e43041029d428",
+      "bytes": 287819
+    },
+    {
+      "path": "candidate-03.lean",
+      "sha256": "692b362d4a6e065dd88bc8bf58e86670bc5d7921e72474a8255eaa178d589073",
+      "bytes": 287862
+    },
+    {
+      "path": "check-01.log",
+      "sha256": "161ad3e63e6574aa505ff511c14d8b46f021d1e7d5978d8750da75367b350a70",
+      "bytes": 33098
+    },
+    {
+      "path": "check-04.log",
+      "sha256": "2dd68d9b8727386f431d98854d4b93c5b3492a06c7b1b4094f562eed0b352251",
+      "bytes": 32374
+    },
+    {
+      "path": "check-prefix02.log",
+      "sha256": "68cc38847e5372c02b3ab295b934f6b7c9a2c68210e5b63369ed2d7f6454dbbd",
+      "bytes": 6967
+    },
+    {
+      "path": "check-prefix03.log",
+      "sha256": "68d9952d0647179d3701ba3b44186c45f78e04251dc821dd8b3f5175a6eeeada",
+      "bytes": 6422
+    },
+    {
+      "path": "checkpoint-02.json",
+      "sha256": "ff595451d8240de1de31f451e7dd9c2b19b4f8aeef2c12c718fff3c54cebc838",
+      "bytes": 1994
+    },
+    {
+      "path": "checkpoint-03.json",
+      "sha256": "f715a01029b7483d552b41d64ea23b068277b2d628dfac4deb37ec5800c39b8d",
+      "bytes": 1994
+    },
+    {
+      "path": "checkpoint-04.json",
+      "sha256": "ee0037d4f6aba3419b5b3c813fefda3b59e0c331a3a887ed5fe149a3a1bb140a",
+      "bytes": 2104
+    },
+    {
+      "path": "checkpoint-prefix02.json",
+      "sha256": "f4351b0830595de01f6beb01394344a27d8441d1840385fc3b54f6b3d99ad4a5",
+      "bytes": 1950
+    },
+    {
+      "path": "checkpoint-prefix03.json",
+      "sha256": "adbaafcaf28da6597d7b442c70da2a2e3cab60cc464beda346b072cfc2ba4683",
+      "bytes": 1950
+    },
+    {
+      "path": "checkpoint.json",
+      "sha256": "4d97e1340b26716af60c2e9e0e498ae6f4e84ada369c6975ca9e0ca40a4b63f7",
+      "bytes": 1978
+    },
+    {
+      "path": "dependency-bindings.json",
+      "sha256": "8afdc9904f8543e22c332c36c3a20e67689713ddc6f872bba31279f3f0f5c233",
+      "bytes": 10131
+    },
+    {
+      "path": "finalize.py",
+      "sha256": "95d8dcd85e952297b27e29d6ca1859c7882d608464d02144803adfd657d85861",
+      "bytes": 3125
+    },
+    {
+      "path": "repair.patch",
+      "sha256": "6c4a4f715b409bef8f8b25b9c7ac146341a2b5423d147864ed9e9c2f516095d8",
+      "bytes": 598
+    },
+    {
+      "path": "result-01.json",
+      "sha256": "dcd63bfc99462c6585e87fccd8b454f3977ce73fa67e65ff6c6b90511d28fc9e",
+      "bytes": 54
+    },
+    {
+      "path": "result-04.json",
+      "sha256": "beda3222a212d9f0169abe1b94e441515c7a96265265e2aeff7702fd8f84ab63",
+      "bytes": 54
+    },
+    {
+      "path": "result-prefix02.json",
+      "sha256": "edbdc0e0bbac8135467a012e2a40a3b40ee32a2e33ae25d11329914e64a12cff",
+      "bytes": 53
+    },
+    {
+      "path": "result-prefix03.json",
+      "sha256": "193be285bf421a0ebac2a1d05a881c18a25d489b3fc5d5bdc081da91c8d32318",
+      "bytes": 52
+    },
+    {
+      "path": "run-01.py",
+      "sha256": "006413d18d53920b58fbd54cd4243b9c6603f8d3a7fa1af52afbcd2984b6acb2",
+      "bytes": 581
+    },
+    {
+      "path": "run-04.py",
+      "sha256": "e5d1cc2b1d9ea299609dfb5be07c49bce8f33158ff5ba592bf2460132e5d9328",
+      "bytes": 584
+    },
+    {
+      "path": "run-prefix02.py",
+      "sha256": "312fabc9299bffb9011578239b6ceb03a85906c304735cfeaa66e9a04801dc06",
+      "bytes": 602
+    },
+    {
+      "path": "run-prefix03.py",
+      "sha256": "eb5e14173d08af1ae8ea01e2cfc5a5d9cd4d4678a695b2cfc4bdb571285f94d4",
+      "bytes": 602
+    }
+  ],
+  "external_diagnosis": [
+    {
+      "path": "/home/Palomar/workspace/arithmetic-theta/evidence/generic-theta-visibility-292/Analysis.md",
+      "sha256": "e5ea520a2afa961aeff8a3be3c8786dde30d9eecb6b20ec498408f624e454560"
+    },
+    {
+      "path": "/home/Palomar/workspace/arithmetic-theta/evidence/generic-theta-visibility-292/Normal.log",
+      "sha256": "7125ae3b5772996c40773a4042bd25d56538e38a76aa50c23e49403a36f47506"
+    },
+    {
+      "path": "/home/Palomar/workspace/arithmetic-theta/evidence/generic-theta-visibility-292/All.log",
+      "sha256": "1834682937e067912adc5681349f587408b36dceb601f357ed203765c81e0273"
+    },
+    {
+      "path": "/home/Palomar/workspace/arithmetic-theta/evidence/generic-theta-visibility-292/receipt.json",
+      "sha256": "56ba186972f152b3ba6fb7d0b3d4d324b6d158e8534fe3a29baca4505a0fe8a0"
+    },
+    {
+      "path": "/home/Palomar/workspace/arithmetic-theta/evidence/generic-theta-visibility-292/official-header-parser-receipt.json",
+      "sha256": "2c2eb27de6619a0c09275ee5c92303c5977d924ae773e0efc40a1ced4f24314a"
+    }
+  ],
+  "prior_attempts": [
+    {
+      "result": "result-01.json",
+      "status": "failed remaining Nontrivial inference; import-all fixed unknown private constant"
+    },
+    {
+      "result": "result-prefix02.json",
+      "status": "failed; explicit Nontrivial alias did not prevent over-reduction in rw"
+    },
+    {
+      "result": "result-prefix03.json",
+      "status": "proof fixed; invalid docstring/set_option positioning, then corrected"
+    }
+  ],
+  "validation_scope": "Isolated complete module compile and 190 existing transitive axiom closures. Parent must integrate unchanged patch and build the actual target. Not official Palomar preflight or full source audit."
+}

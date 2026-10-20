@@ -2,6 +2,10 @@ module
 
 public import PeriodOneNormDefinitionsR0248
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option synthInstance.maxHeartbeats 200000
+
 @[expose] public section
 
 set_option autoImplicit false

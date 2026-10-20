@@ -1,0 +1,65 @@
+{
+  "status": "local_comparator_passed",
+  "completed_utc": "2026-10-20T16:54:36.159540+00:00",
+  "compile_receipt_sha256": "6af12d2267071f78453ef3d736bede75eeefe9c50393c14e40af1cafe4300ede",
+  "export_session": 58652,
+  "comparator_session": 15902,
+  "comparator": {
+    "command": [
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake",
+      "comparator",
+      "--config=/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/comparator-external.json",
+      "--challenge-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Challenge.ndjson",
+      "--solution-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Solution.ndjson"
+    ],
+    "cwd": "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/project",
+    "exit_code": 0,
+    "elapsed_seconds": 537.3,
+    "normal_sandbox": true,
+    "external_kernels": {
+      "nanoda": "bundled",
+      "con-ron": "bundled --jobs=2"
+    },
+    "budget_seconds": 600
+  },
+  "bindings_unchanged_after_comparator": true,
+  "tool_digests": {
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanexport": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/early-comparator-211/bubblewrap-0.12.0/build/bwrap": "dd7c08cfc4cd60028638f03c7995a4a2f26cd47f1e3723ad66a45379d42ccd03"
+  },
+  "covered_ids": [
+    "accepted-050"
+  ],
+  "official_preflight": false,
+  "official_submission": false,
+  "shared_lake_output_modified": false,
+  "limitation": "Local source/object/export hash binding and normal-sandbox independent kernels; not official isolated source-provenance audit.",
+  "artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/comparator-session.json": "7ccd1dbc8006e20d2f4f2acfeea4d0d14c88549d886f7b5d9b59a53a21c7b6e1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/comparator.json": "d7b30d727eaa11159b62d9f439baa439de98d43d6a0f315eb5197f9532e736da",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/compile-receipt.json": "6af12d2267071f78453ef3d736bede75eeefe9c50393c14e40af1cafe4300ede",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Scope.json": "cab009ffc4e7eda57df425b35374b6cee9a51d357a64374f0c367f7373cb3730",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/README.md": "ff6cf3572525da28485be847ead68020448c2af16f992755a7557470949a567b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Challenge-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/checkpoint-01.json": "3a7df0440409e8315d9a958a433555c58ecd5049c59933e5bf429037ee888662",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/export-targets.json": "67bb0402dcb66f68bc124922db76bd3330fda062b8b429890fb3251b5de68389",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/comparator-external.json": "9e17e2c8653fedf838cfaedf4280a7a87e64d4f953e09e7bc01646817fd4d80a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/export.py": "392872921cd57126da7e0b7f8e5cf714de200ddb7fd1e80cb9a0bd99add4ba30",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Solution-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/comparator-modern-receipt.json": "f7419c269ad4c6ad3303c95e29d2359277f33e613ec76b5f0067f6511a1b3e58",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/input-bindings.json": "6bc6ed0d37b98351190fc72d80608c03f7b3c510d057807b6775064f776f93a9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Challenge-check-01.log": "ab4f54d717777621da69ab2c7c88e8ae60e5048cdb2966a3051c71260905ef93",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/comparator-modern.log": "d543f6f80ee30131f406a09c463955aa98bb45499cbce88384bb6666cfa5cf5d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/finalize.py": "01bc45bbc39b1d5dbdf9f65014ed8b6c0cccf1cfaf1fe0e9003f5f44dd4796e0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/export-receipts.json": "5eab489a51023cec2875eaa75735468d52b85f27514132043b820d14f859fb98",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Solution.lean": "c9179e2fdae25ed15af684713cd63f1cdb3f12baf0148eedd61a8a14ff84f86d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Challenge.lean": "69289c6a34df427890de847934d86af9c79922e311938feb80add9792ca66805",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Solution-check-01.log": "b8215836b3138a9e351bb01abca50d2d78872cf8e35eac4ea1299e9f457835c2",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/compare.py": "cd5de0560a7d758feac4b57cebf4357fc772428e9ef45b1ea886895809455d4d"
+  }
+}

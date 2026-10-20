@@ -23,7 +23,7 @@ integration endpoints. `docs/SourceObligations.json` preserves their original
 types and source accounts. `docs/Coverage.md` tracks their migration separately
 from independent Challenge coverage.
 
-Joint partial audit 273 has checked 62/103 original exact endpoint types and standard
+Joint partial audit 294 has checked 74/103 original exact endpoint types and standard
 axiom closures. The accepted-017 early-certificate subpackage separately passed
 local Comparator with con-ron, NanoDa and Lean default kernel using source-bound
 exports and a normal sandbox. Its official full mechanical
@@ -73,12 +73,17 @@ pinned in `lake-manifest.json`.
 ```sh
 lake exe cache get
 lake build +GoalRoot
-lake build Solution
-lake comparator --config comparator.json
+# Independent scoped interfaces:
+lake build MainAndComponentsChallenge MainAndComponentsSolution
+lake comparator --config comparator-main-and-components.json
+lake build FormalCoverChallenge FormalCoverSolution
+lake comparator --config comparator-formal-cover.json
 ```
 
-These are the intended checks, not a record that they have passed. The source
-port still has unresolved compatibility issues. Oversized modules have been split;
+The four scoped root modules compiled successfully in build 276. The standalone
+formal-cover package passed local con-ron, NanoDa and Lean default checking in
+537.30 seconds; the combined main-and-components official check is pending.
+The full GoalRoot source port still has unresolved compatibility issues. Oversized modules have been split;
 all required split modules must pass the migrated build before acceptance.
 The verification record will identify the exact submitted Git commit and the
 configuration checked. Official mechanical preflight is separate from Palomar's
@@ -106,8 +111,8 @@ workflow in `.github/workflows/palomar-preflight.yml` calls the official pinned
 PalomarSubmission workflow with `mode: full` and `palomar-standard-v1`. The workflow offers the pilot, early certificate, main-and-components and formal-cover
 configurations; each result applies only to its selected configuration. Formal submission must follow a passing full mechanical report.
 
-The latest joint migrated audit checks **62 of 103** original exact endpoint types and their standard axiom closures. The full GoalRoot build remains pending.
+The latest joint migrated audit checks **74 of 103** original exact endpoint types and their standard axiom closures. The full GoalRoot build remains pending.
 
-The prepared `comparator-main-and-components.json` compares 43 targets: an explicit conservative full-series kernel bound, 39 complete prior endpoints and supporting results. Its Mathlib-only Challenge is 953 lines / 61,095 bytes. The main interface does not include the extra `FormalIdentity` field of original accepted-037; that original exact type separately passed audit 273. See `challenges/main-and-components/Scope.json`.
+The prepared `comparator-main-and-components.json` compares 43 targets: an explicit conservative full-series kernel bound, 39 complete prior endpoints and supporting results. Its Mathlib-only Challenge is 953 lines / 61,095 bytes. The main interface does not include the extra `FormalIdentity` field of original accepted-037; that original exact type separately passed audit 294. See `challenges/main-and-components/Scope.json`.
 
 `comparator-formal-cover.json` separately compares accepted-050. Both new configurations have scope-specific formalization metadata and require their own official full mechanical reports before intake. Geometry interfaces, including the independent scheme discriminant specification, remain unfinished. No full-paper Palomar verification or registration is claimed.

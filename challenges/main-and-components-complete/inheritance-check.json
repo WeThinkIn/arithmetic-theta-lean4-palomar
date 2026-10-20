@@ -1,0 +1,18 @@
+{
+  "first_12_package_metadata_unchanged": true,
+  "first_12_retained_source_lines_unchanged": true,
+  "first_12_full_line_maps_unchanged": true,
+  "first_42_target_names_unchanged": true,
+  "last_target_replaced_exactly_by_295": "ArithmeticThetaPalomarMainFormal295.explicitFiniteDeterminationWithFormalIdentity",
+  "matches_precomputed_295_candidate_hash": true,
+  "frozen_274_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Challenge.lean": "14e906596669a3fecb8afa5913c6e572cb201f9a018e8c5ff351bfcbfb6dd428",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Solution.lean": "4b5a4f3c5924e1372f0d67cd5729bc48e37921fcf85365d96f9012ecc99e4fc6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/comparator.json": "92db29ab01a4baa493cb9ae5b0ad145e34259bb6c7b157a860068432eed70170",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/SourceMap.json": "6171d0cc52bde6485edf4244e2a9a595a488b686731106fce4d81570cf51b447",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Scope.json": "5e000b20e8937082b86b22d8c4b000cfd19c2e5285dca9e4dd6629ab4722ad5e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/receipt.json": "3dbfc3ba1c9ac20c4c135289f954ccd2dd7f1e7d87d33687fd7de349f7d4e2af",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/compile-receipt.json": "c0d7c42000fed81d32e49ebd6350be13c401cb9b55b032fc4109e8972551d78e"
+  },
+  "prior_official_reports_reused": false
+}

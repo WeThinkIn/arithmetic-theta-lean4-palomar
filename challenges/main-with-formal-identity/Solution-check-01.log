@@ -1,0 +1,64 @@
+'ArithmeticThetaPalomarMainFormal295.Bridges198.thetaMap_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges198.Representatives_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges198.shell_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges198.coefficientMatrix_complex_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges198.fromOriginal_indexed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges198.to_fromOriginal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges250.commonN_computed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges250.level_computed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges250.exponent_computed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges250.commonN_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges250.cutoff_rational' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges250.prefix_map_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges250.matrix_zero_iff_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges250.coefficients_iff_of_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/formal-identity-main-package-295/Solution.lean:378:18: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/home/Palomar/workspace/arithmetic-theta/evidence/formal-identity-main-package-295/Solution.lean:379:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/home/Palomar/workspace/arithmetic-theta/evidence/formal-identity-main-package-295/Solution.lean:379:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+'ArithmeticThetaPalomarMainFormal295.explicitFiniteDeterminationWithFormalIdentity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges295.clearedUnaryTheta_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges295.unarySeries_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges295.expanded_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges295.fromOriginal_formal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMainFormal295.Bridges295.toOriginal_formal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
