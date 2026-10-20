@@ -4,6 +4,9 @@ public import IdentityThetaSectionsDefinitionsR0138
 public import Mathlib.RingTheory.AdicCompletion.AsTensorProduct
 public import Mathlib.RingTheory.Flat.TorsionFree
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 /-! Literal completed theta numerators for the single identity equation.
 The proof first combines the full theta and gamma overlap identities without

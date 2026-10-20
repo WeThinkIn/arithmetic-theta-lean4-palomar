@@ -3,6 +3,9 @@ module
 public import IdentityStageSectionRealizationR0138
 public import ThetaNumeratorCompatibilityR0138
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Algebraization of the literal theta numerators for the single identity divisor. -/

@@ -3,6 +3,10 @@ module
 public import GenericThetaEvaluationDefinitionsR0140
 public import AnnularFullSeriesIdentificationR0128
 
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Complete identity specialization of the actual cleared theta numerator. -/

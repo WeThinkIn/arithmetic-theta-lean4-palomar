@@ -5,6 +5,9 @@ public import IdentityPositiveSectionsRankR0138
 public import Mathlib.LinearAlgebra.Matrix.Nonsingular
 public import Mathlib.LinearAlgebra.Matrix.Adjugate
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Saturation tools for the actual identity-divisor section module. -/

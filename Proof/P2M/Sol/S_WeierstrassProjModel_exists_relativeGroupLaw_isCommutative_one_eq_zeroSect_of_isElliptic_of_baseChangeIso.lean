@@ -86,7 +86,7 @@ theorem pointEquiv_natural (H : IsPullback g f f₀ sφ) {T T' : Scheme.{u}}
       schemeHomOverComp ψ (by rw [← Category.assoc, hψ]) (pointEquiv φ H t x) :=
   Subtype.ext (by simp)
 
-private def _root_.P2mGroupLawComm.baseChange (G₀ : RelativeGroupLaw R₀ f₀) (H : IsPullback g f f₀ sφ) :
+def baseChange (G₀ : RelativeGroupLaw R₀ f₀) (H : IsPullback g f f₀ sφ) :
     RelativeGroupLaw R f where
   mul t x y := (pointEquiv φ H t).symm (G₀.mul _ (pointEquiv φ H t x) (pointEquiv φ H t y))
   one t := (pointEquiv φ H t).symm (G₀.one _)
@@ -101,7 +101,6 @@ private def _root_.P2mGroupLawComm.baseChange (G₀ : RelativeGroupLaw R₀ f₀
       G₀.mul_natural (t ≫ sφ) (t' ≫ sφ) ψ (by rw [← Category.assoc, hψ]),
       ← pointEquiv_natural, ← pointEquiv_natural]
 
-p2m_export "P2mGroupLawComm" "baseChange"
 theorem baseChange_mul_push (G₀ : RelativeGroupLaw R₀ f₀) (H : IsPullback g f f₀ sφ)
     {T : Scheme.{u}} (t : T ⟶ Spec (CommRingCat.of R)) (x y : SchemeHomOver t f) :
     pointEquiv φ H t ((baseChange φ G₀ H).mul t x y) =

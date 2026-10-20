@@ -313,8 +313,8 @@ def kwProjWeierstrassRelGroupLawSupply :
         = pullback.lift (ψ ≫ x.1) (ψ ≫ y.1) _ ≫ addLaw.m
       rw [← Category.assoc]; congr 1
       exact pullback.hom_ext
-        (by rw [Category.assoc, pullback.lift_fst, pullback.lift_fst])
-        (by rw [Category.assoc, pullback.lift_snd, pullback.lift_snd]) }
+        (by erw [Category.assoc, pullback.lift_fst, pullback.lift_fst])
+        (by erw [Category.assoc, pullback.lift_snd, pullback.lift_snd]) }
 
 end Assembly
 

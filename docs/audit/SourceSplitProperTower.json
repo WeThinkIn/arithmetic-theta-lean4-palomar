@@ -1,0 +1,27 @@
+{
+  "original_sha256": "33cb2f1e003957186f6f08c696d3730d6b858e426c6e5839180de27920159de1",
+  "cut_marker": "/- Adapted source: P2M.Sol.S_AlgebraicGeometry_OModulePresheaf_exists_basisData_range_eq_ker_comp_eq_of_surjective_of_range_eq_ker_of_isProper_of_isAdicComplete. -/",
+  "prefix_body_preserved_exactly": true,
+  "tail_body_preserved_exactly": true,
+  "files": {
+    "ProperTowerAutomorphismEffectivityPreludeR0137.lean": 9113,
+    "ProperTowerAutomorphismEffectivityR0137.lean": 2008
+  },
+  "verification": {
+    "kind": "Lake integration",
+    "log": "evidence/build-root-117.log",
+    "modules": [
+      {
+        "module": "ProperTowerAutomorphismEffectivityPreludeR0137",
+        "sha256": "e15e440f6766a4850e5c8441154fa6e3d5a3da0a745ffdd4eb217bd606e95879",
+        "built": true
+      },
+      {
+        "module": "ProperTowerAutomorphismEffectivityR0137",
+        "sha256": "c47952a781c52631569de2fd077b22eb9f5dbd63e68f209f591270b5a1d008da",
+        "built": true
+      }
+    ],
+    "full_GoalRoot_passed": false
+  }
+}

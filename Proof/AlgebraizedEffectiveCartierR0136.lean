@@ -64,8 +64,6 @@ lemma raw_relative_one :
     Algebra.IsStandardSmoothOfRelativeDimension.of_algEquiv 1 ae.symm
   have hf := (RingHom.isStandardSmoothOfRelativeDimension_algebraMap 1).mpr ha
   convert hf using 1
-  exact (IsScalarTower.algebraMap_eq (PowerSeries k)
-    (ArithmeticThetaNodeCharts.Node k) (RawOpen k true)).symm
 
 lemma open_relative_one (n : ℕ) : SmoothOfRelativeDimension 1 (rightLeg k n ≫ structureMap k n) := by
   let f : PowerSeries k →+* RawOpen k true :=

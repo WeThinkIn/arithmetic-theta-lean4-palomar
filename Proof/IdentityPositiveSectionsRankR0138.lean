@@ -3,6 +3,9 @@ module
 public import IdentityChartIdealR0138
 public import PositiveSectionBasisR0134
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Coordinates for the positive powers of the SINGLE marked ideal. -/

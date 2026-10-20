@@ -809,7 +809,7 @@ theorem kw_lrApt_precomp_fac (σ : L ≃ₐ[K] L) (φ : SchemeHomOver (t_L) π) 
             ((σ.toAlgHom.restrictScalars R).comp (kw_lrApt_chartHom W L φ)).toRingHom)
           ≫ (coverE).f (kw_lrApt_chartIdx W L φ) := by
   show Spec.map _ ≫ φ.1 = _
-  rw [kw_lrApt_chartHom_fac W L φ, ← Category.assoc, ← Spec.map_comp]
+  erw [kw_lrApt_chartHom_fac W L φ, ← Category.assoc, ← Spec.map_comp]
   rfl
 
 theorem kw_lrApt_toPointClass_precomp (σ : L ≃ₐ[K] L) (φ : SchemeHomOver (t_L) π) :
@@ -1010,7 +1010,7 @@ theorem kw_pinpe_precomp_fac_ext (ι : F →ₐ[R] L)
           ≫ (projModelAffineOpenCoverCR R W.toProjective).openCover.f
               (kw_lrApt_chartIdx W F φ) := by
   show Spec.map _ ≫ φ.1 = _
-  rw [kw_lrApt_chartHom_fac W F φ, ← Category.assoc, ← Spec.map_comp]
+  erw [kw_lrApt_chartHom_fac W F φ, ← Category.assoc, ← Spec.map_comp]
   rfl
 
 theorem kw_pinpe_toPointClass_precomp_ext (ι : F →ₐ[R] L)
@@ -1277,7 +1277,7 @@ theorem comp_algebraMap_eq_of_fac
     χ.comp (algebraMap R _) = algebraMap R F := by
   have h := P.2
   have e2 := kw_lrApt_coverE_f_comp_π W i
-  rw [hfac, Category.assoc] at h
+  erw [hfac, Category.assoc] at h
   erw [e2, ← Spec.map_comp] at h
   have h2 := Spec.map_injective (h.trans (by rfl : kw_lrAptb_tF (R := R) F = Spec.map (CommRingCat.ofHom (algebraMap R F))))
   have h3 := congrArg CommRingCat.Hom.hom h2
@@ -1378,7 +1378,7 @@ theorem solution
         Spec.map (CommRingCat.ofHom ((algebraMap T F).comp (kwYChartEval T W))) ≫
           (projModelAffineOpenCoverCR T W.toProjective).openCover.f (1 : Fin 3) := by
       change Spec.map (CommRingCat.ofHom (algebraMap T F)) ≫ (Spec.map (CommRingCat.ofHom (kwYChartEval T W)) ≫ _) = _
-      rw [CommRingCat.ofHom_comp, Spec.map_comp, Category.assoc]
+      erw [← Category.assoc, ← Spec.map_comp]
       rfl
     let ψ := algHomOfFac W F _ 1 _ hfac
     have hcls := kw_lrApt_toPointClass_eq_of_fac W F _ 1 ψ hfac
