@@ -3,6 +3,9 @@ module
 public import SectionEquationOrderR0066
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Orders of the literal numerator, retaining the endpoint gamma factors. -/
 set_option autoImplicit false

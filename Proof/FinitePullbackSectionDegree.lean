@@ -5,7 +5,11 @@ public import PullbackLineFrames
 public import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant
 public import Mathlib.RingTheory.RamificationInertia.Basic
 
+import all Mathlib.AlgebraicGeometry.Morphisms.FlatRank
+
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 open AlgebraicGeometry CategoryTheory TopologicalSpace Opposite
 open ArithmeticThetaLineRoot ArithmeticThetaNormalizedSections
@@ -365,9 +369,9 @@ lemma residueDegree_eq_affine_inertia
   rw [Ideal.inertiaDeg_eq_of_isMaximal P]
   symm
   let eX : (Γ(X,U) ⧸ P) ≃+* X.residueField (p y) :=
-    IsLocalization.AtPrime.equivQuotMaximalIdeal P (X.presheaf.stalk (p y))
+    (IsLocalization.AtPrime.equivQuotMaximalIdeal P (X.presheaf.stalk (p y))).toRingEquiv
   let eY : (Γ(Y,p ⁻¹ᵁ U) ⧸ Q) ≃+* Y.residueField y :=
-    IsLocalization.AtPrime.equivQuotMaximalIdeal Q (Y.presheaf.stalk y)
+    (IsLocalization.AtPrime.equivQuotMaximalIdeal Q (Y.presheaf.stalk y)).toRingEquiv
   apply Algebra.finrank_eq_of_equiv_equiv eX eY
   ext a
   exact Scheme.evaluation_naturality_apply p y hy a

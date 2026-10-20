@@ -24,6 +24,9 @@ public import Mathlib.AlgebraicGeometry.Morphisms.Proper
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_WeierstrassProjModel_kw_ev_triple_projections_chartFactor_pointClass_indep
 
 set_option Elab.async false
@@ -1079,12 +1082,10 @@ theorem kw_trp_pair_fac (K : Type u) [Field K] [Algebra R K]
     simp only [Category.assoc]
     rw [kw_lrDoc_coverf_fst]
     erw [reassoc_of% (kw_lrApt_chartIso_inv_fst W i j)]
-    rfl
   · rw [hy, eⱼ, CommRingCat.ofHom_comp, Spec.map_comp]
     simp only [Category.assoc]
     rw [kw_lrDoc_coverf_snd]
     erw [reassoc_of% (kw_lrApt_chartIso_inv_snd W i j)]
-    rfl
 
 omit [IsDomain R] [IsNoetherianRing R] [W.IsElliptic] in
 theorem kw_trp_lift_ιV {K : Type u} [CommRing K] (i j : Fin 3) (l : Fin 3 ⊕ Fin 3)
@@ -1140,7 +1141,7 @@ theorem kw_trp_restrict [IsIntegral X3] (Q : X3 ⟶ pullback π π) (T : X3 ⟶ 
         ⟨o, ho, rfl⟩
     refine ⟨o', ho', IsLocalRing.closedPoint _, ?_⟩
     apply (pullback.snd (kw_trp_ιV W i j l) Q).isOpenEmbedding.injective
-    rw [he, ← Scheme.Hom.comp_apply, hηt₂, Scheme.fromSpecStalk_closedPoint]
+    erw [he, ← Scheme.Hom.comp_apply, hηt₂, Scheme.fromSpecStalk_closedPoint]
   have hfg : pullback.fst (kw_trp_ιV W i j l) Q ≫ kw_lrSixU_toE W i j l
       = pullback.snd (kw_trp_ιV W i j l) Q ≫ T :=
     ext_of_isDominant ηt (by rw [← Category.assoc, hηt₁, ← Category.assoc, hηt₂, hz])

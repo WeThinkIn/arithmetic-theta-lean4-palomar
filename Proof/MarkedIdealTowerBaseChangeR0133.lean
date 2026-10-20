@@ -3,6 +3,8 @@ module
 public import GlobalMarkedIdealChartsR0133
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Pullback of the actual marked ideal through every truncation in the tower. -/
 set_option autoImplicit false

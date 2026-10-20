@@ -4,6 +4,8 @@ public import FormalCoverAlgebraizationR0210
 public import FormalCoverDenominatorClearingR0210
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 open AlgebraicGeometry CategoryTheory Opposite
 set_option autoImplicit false
@@ -136,7 +138,7 @@ theorem arbitrary_formal_cover_constant
       change toFraction k X f (C.opens i) (genericScalar k X f (C.opens i) (PowerSeries.X^n*s)) =
         toFraction k X f (C.opens i) (genericScalar k X f (C.opens i) (PowerSeries.X^m*r))
       rw [map_mul, map_mul, map_mul, map_mul, hsi i, hri i, map_mul, hz i]
-      ring
+      ac_rfl
     have heA := congrArg A he
     rw [map_mul, map_mul] at heA
     change A (PowerSeries.X^n) * A s = A (PowerSeries.X^m) * A r at heA

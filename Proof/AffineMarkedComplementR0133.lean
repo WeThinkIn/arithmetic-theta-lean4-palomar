@@ -5,6 +5,7 @@ public import Theorems.Thm_AlgebraicGeometry_isAffine_of_isClosedImmersion_of_su
 public import Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_isReduced_subscheme_vanishingIdeal_and_le_ker
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Affine charts of the actual marked complement. -/
 set_option autoImplicit false

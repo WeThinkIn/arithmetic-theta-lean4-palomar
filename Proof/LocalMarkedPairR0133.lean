@@ -4,6 +4,8 @@ public import PolygonCartierDefinitionsR0133
 public import Mathlib.RingTheory.Ideal.Quotient.Operations
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! The two adjacent markings on a truncated node. -/
 set_option autoImplicit false
