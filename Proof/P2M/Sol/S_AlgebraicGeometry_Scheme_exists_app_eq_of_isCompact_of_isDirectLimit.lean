@@ -9,6 +9,10 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_exists_app_eq_app_of_isCompa
 public import P2M.Util
 
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_exists_app_eq_of_isCompact_of_isDirectLimit
 
 set_option autoImplicit false
@@ -357,9 +361,9 @@ theorem solution
       c₀.appLE _ _ e ((Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G j₀.1))))).presheaf.map (homOfLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G j₀.1))))).preimage_mono hle)).op (tV V)) =
         (Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))).presheaf.map (homOfLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))).preimage_mono ((hle.trans (hSle V))))).op s := by
     intro V O hle e
-    rw [← CategoryTheory.comp_apply, Scheme.Hom.map_appLE]
+    erw [← CategoryTheory.comp_apply, Scheme.Hom.map_appLE]
     have := congrArg ((Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))).presheaf.map (homOfLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))).preimage_mono hle)).op) (htV V)
-    rw [← CategoryTheory.comp_apply, Scheme.Hom.appLE_map, res_res] at this
+    erw [← CategoryTheory.comp_apply, Scheme.Hom.appLE_map, res_res] at this
     exact this
   have sB : ∀ V V' : ↥S, ∃ (j' : ι) (hjj' : j₀.1 ≤ j'),
       ∀ (c : Limits.pullback fX (Spec.map (CommRingCat.ofHom (φ i j' (j₀.2.trans hjj')))) ⟶ (Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G j₀.1)))))),
@@ -383,8 +387,8 @@ theorem solution
       rw [← Scheme.Hom.comp_preimage, hc₀₁]
     refine res_injective_of_eq hE ?_
     have kapp : ∀ x, (Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))).presheaf.map (homOfLE hE.le).op (c₀.app _ x) = c₀.appLE _ _ e x := fun x => by
-      rw [← CategoryTheory.comp_apply, Scheme.Hom.app_eq_appLE, Scheme.Hom.appLE_map]
-    rw [kapp, kapp, res_htV V _ inf_le_left e, res_htV V' _ inf_le_right e]
+      erw [← CategoryTheory.comp_apply, Scheme.Hom.app_eq_appLE, Scheme.Hom.appLE_map]
+    erw [kapp, kapp, res_htV V _ inf_le_left e, res_htV V' _ inf_le_right e]
   choose jB hjB hB using sB
 
   obtain ⟨m₁, hm₁, -⟩ := exists_ge₂ (fun p : ↥S × ↥S => (⟨jB p.1 p.2, j₀.2.trans (hjB p.1 p.2)⟩ : J))
@@ -455,7 +459,7 @@ theorem solution
     rw [← Scheme.Hom.comp_preimage, hcs₁]; exact le_rfl
   have kA : ∀ (V V' : ↥S) y, cs.appLE _ _ (e'' V V') y =
       (Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))).presheaf.map (homOfLE (e'' V V')).op (cs.app _ y) := fun V V' y => by
-    rw [← CategoryTheory.comp_apply, Scheme.Hom.app_eq_appLE, Scheme.Hom.appLE_map]
+    erw [← CategoryTheory.comp_apply, Scheme.Hom.app_eq_appLE, Scheme.Hom.appLE_map]
   have compat : TopCat.Presheaf.IsCompatible (Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))).sheaf.val
       (fun V : ↥S => (Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))) ⁻¹ᵁ ((V : X.affineOpens) : X.Opens)) τ := by
     intro V V'
@@ -465,12 +469,12 @@ theorem solution
         ((inf_le_left : (Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))) ⁻¹ᵁ ((V : X.affineOpens) : X.Opens) ⊓ (Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))) ⁻¹ᵁ ((V' : X.affineOpens) : X.Opens) ≤ _).trans
           (eV V)) (tV V) =
         cs.appLE _ _ (e'' V V') ((Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G j₀.1))))).presheaf.map (homOfLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G j₀.1))))).preimage_mono inf_le_left)).op (tV V)) := by
-      rw [← CategoryTheory.comp_apply, Scheme.Hom.map_appLE]
+      erw [← CategoryTheory.comp_apply, Scheme.Hom.map_appLE]
     have kR : cs.appLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G j₀.1))))) ⁻¹ᵁ ((V' : X.affineOpens) : X.Opens)) _
         ((inf_le_right : (Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))) ⁻¹ᵁ ((V : X.affineOpens) : X.Opens) ⊓ (Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))) ⁻¹ᵁ ((V' : X.affineOpens) : X.Opens) ≤ _).trans
           (eV V')) (tV V') =
         cs.appLE _ _ (e'' V V') ((Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G j₀.1))))).presheaf.map (homOfLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G j₀.1))))).preimage_mono inf_le_right)).op (tV V')) := by
-      rw [← CategoryTheory.comp_apply, Scheme.Hom.map_appLE]
+      erw [← CategoryTheory.comp_apply, Scheme.Hom.map_appLE]
     erw [kL, kR]
     rw [kA, kA, hagree]
   have hcovs : (Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))) ⁻¹ᵁ W ≤ ⨆ V : ↥S, (Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))) ⁻¹ᵁ ((V : X.affineOpens) : X.Opens) := by
@@ -491,9 +495,10 @@ theorem solution
     · rw [Category.assoc, hcs₂, ← Category.assoc]
       erw [hc2]
       rw [Category.assoc, ← Spec.map_comp, ← CommRingCat.ofHom_comp, ecompR]
+      rfl
   have k1 : (Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))).presheaf.map (eqToHom e).op (c.app ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))) ⁻¹ᵁ W) t) = c.appLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))) ⁻¹ᵁ W) ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))) ⁻¹ᵁ W) e.le t := by
-    rw [← CategoryTheory.comp_apply, Scheme.Hom.app_eq_appLE, Scheme.Hom.appLE_map]
-  rw [k1]
+    erw [← CategoryTheory.comp_apply, Scheme.Hom.app_eq_appLE, Scheme.Hom.appLE_map]
+  erw [k1]
   have hcovR : (Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))) ⁻¹ᵁ W ≤ ⨆ V : ↥S, (Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))) ⁻¹ᵁ ((V : X.affineOpens) : X.Opens) := by
     intro x hx
     have hx' : (Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))) x ∈ (⨆ V ∈ S, (V : X.Opens)) := by rw [← hSeq]; exact hx
@@ -505,16 +510,18 @@ theorem solution
     (fun V => homOfLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))).preimage_mono (hSle V))) hcovR
   intro V
   have eV' : (Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))) ⁻¹ᵁ ((V : X.affineOpens) : X.Opens) ≤ c ⁻¹ᵁ ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))) ⁻¹ᵁ ((V : X.affineOpens) : X.Opens)) := by
-    rw [← Scheme.Hom.comp_preimage, hc1]
+    erw [← Scheme.Hom.comp_preimage, hc1]
+    exact le_rfl
   change (Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))).presheaf.map (homOfLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))).preimage_mono (hSle V))).op (c.appLE _ _ e.le t) =
     (Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))).presheaf.map (homOfLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))).preimage_mono (hSle V))).op s
-  rw [← CategoryTheory.comp_apply, Scheme.Hom.appLE_map]
+  erw [← CategoryTheory.comp_apply, Scheme.Hom.appLE_map]
   have k2 : ∀ x, c.appLE _ _ eV' ((Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))).presheaf.map (homOfLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))).preimage_mono (hSle V))).op x) =
       c.appLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))) ⁻¹ᵁ W) ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))) ⁻¹ᵁ ((V : X.affineOpens) : X.Opens))
         (((homOfLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) R)))).preimage_mono (hSle V))).op.unop.le).trans e.le) x := fun x => by
-    rw [← CategoryTheory.comp_apply, Scheme.Hom.map_appLE]
+    erw [← CategoryTheory.comp_apply, Scheme.Hom.map_appLE]
+    rfl
   erw [← k2 t]
   change c.appLE _ _ eV' ((Limits.pullback fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))).sheaf.val.map (homOfLE ((Limits.pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap (G i) (G js.1))))).preimage_mono (hSle V))).op t) = _
-  rw [ht V, hτ V, appLE_appLE_of_comp_eq c cs c₀ hccs _ _ _ (eV V) eV' (e₁ V) (tV V), htV V]
+  erw [ht V, hτ V, appLE_appLE_of_comp_eq c cs c₀ hccs _ _ _ (eV V) eV' (e₁ V) (tV V), htV V]
 
 end

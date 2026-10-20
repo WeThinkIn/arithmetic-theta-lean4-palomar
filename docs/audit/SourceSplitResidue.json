@@ -1,0 +1,27 @@
+{
+  "original_sha256": "67e5f5d1bcfd1377b30d553a147af1b787d55c798478d15ba57173ade88a4063",
+  "cut_after_line": 8486,
+  "prefix_body_preserved_exactly": true,
+  "tail_body_preserved_exactly": true,
+  "files": {
+    "Proof/P2M/Sol/S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosedPrelude.lean": 8486,
+    "Proof/P2M/Sol/S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.lean": 4707
+  },
+  "verification": {
+    "prelude_log": "evidence/direct-residue-prelude-76.log",
+    "prelude_exit_code": 0,
+    "main_log": "evidence/direct-residue-main-78.log",
+    "main_exit_code": 0,
+    "root_argument": "--root=Proof",
+    "full_integration_build": "pending root79"
+  },
+  "main_outer_options_restored": [
+    "autoImplicit false",
+    "synthInstance.maxHeartbeats 6400000",
+    "maxHeartbeats 12800000"
+  ],
+  "source_sha256": {
+    "Proof/P2M/Sol/S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosedPrelude.lean": "c0b1a5cf80fcc5ec8c53d09230a222a395209bb24ab2ee1fe85a92396e7245cd",
+    "Proof/P2M/Sol/S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed.lean": "64e84cb12ae78cab750990f61fbb597d982c234f2daae0eef2a0aa5fbfc419c3"
+  }
+}

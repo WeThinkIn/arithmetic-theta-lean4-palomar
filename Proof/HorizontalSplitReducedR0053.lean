@@ -5,6 +5,10 @@ public import Mathlib.FieldTheory.KummerExtension
 public import Mathlib.RingTheory.Ideal.Quotient.Operations
 
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Horizontal Cartier equations split into the actual continuous sections. -/
 set_option autoImplicit false
@@ -64,8 +68,8 @@ theorem horizontal_split_reduced :
   let J : Fin c → Ideal (Chart k) := fun b => sectionIdeal k side (ζ ^ b.val)
   have hfac := horizontal_factorization k side c ζ (by omega) hζ
   have hprod : horizontalIdeal k side c = ∏ b : Fin c, J b := by
-    rw [show (∏ b : Fin c, J b) = Ideal.span {∏ b : Fin c,
-      sectionEquation k side (ζ ^ b.val)} from
+    rw [show (∏ b : Fin c, J b) = Ideal.span {(∏ b : Fin c,
+      sectionEquation k side (ζ ^ b.val))} from
         Ideal.prod_span_singleton Finset.univ _]
     rw [hfac]
     simpa only [horizontalIdeal, horizontalEquation, neg_sub] using

@@ -10,6 +10,9 @@ public import Theorems.Thm_WeierstrassProjModel_exists_yChartAway_equiv_coordina
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_WeierstrassProjModel_hom_ext_of_zChartIota_comp_eq
 
 set_option autoImplicit false
@@ -65,10 +68,10 @@ open MvPolynomial in
 
 theorem mem_span_of_X_one_mul_mem {T : Type} [CommRing T] (V : WeierstrassCurve.Projective T)
     (p : MvPolynomial (Fin 2) T)
-    (hp : X 1 * p ∈ Ideal.span {MvPolynomial.aeval
-        (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial}) :
-    p ∈ Ideal.span {MvPolynomial.aeval
-        (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial} := by
+    (hp : X 1 * p ∈ Ideal.span {(MvPolynomial.aeval
+        (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial)}) :
+    p ∈ Ideal.span {(MvPolynomial.aeval
+        (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial)} := by
   classical
   set F : MvPolynomial (Fin 2) T := MvPolynomial.aeval
         (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial with hF

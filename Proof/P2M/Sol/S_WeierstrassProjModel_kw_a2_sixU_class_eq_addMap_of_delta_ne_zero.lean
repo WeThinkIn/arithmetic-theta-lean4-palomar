@@ -9,6 +9,10 @@ public import Mathlib.RingTheory.MvPolynomial.WeightedHomogeneous
 public import P2M.Util
 
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_WeierstrassProjModel_kw_a2_sixU_class_eq_addMap_of_delta_ne_zero
 
 set_option autoImplicit false
@@ -1099,7 +1103,7 @@ theorem kw_lrApt_aeval_lrSym_smulL (Q : Fin 3 → F) (u : F) (m : Fin 3) :
   rw [hfun]
   exact kw_lrApt_aeval_weighted_scaling kw_lrBihom_wL (hw2 m) u (Sum.elim Q Q)
 
-private theorem kw_lrApt_sixUClass_liftToE_over_local (i j : Fin 3)
+theorem kw_lrApt_sixUClass_liftToE_over_local (i j : Fin 3)
     (ψᵢ : (𝒜 i) →ₐ[R] F) (ψⱼ : (𝒜 j) →ₐ[R] F) (l : Fin 3 ⊕ Fin 3)
     (hu : IsUnit ((Algebra.TensorProduct.productMap ψᵢ ψⱼ) (kw_lrSixU W i j l))) :
     (Spec.map (CommRingCat.ofHom

@@ -21,6 +21,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_leftUnitor_hom_app_t
 public import P2M.Util
 
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_isIso_pullback_map_projectionMorphism_iff
 
 set_option autoImplicit false
@@ -45,15 +48,13 @@ namespace PullbackTensorSections
 
 variable {X Y : Scheme.{u}} (f : X ⟶ Y)
 
-private abbrev _root_.AlgebraicGeometry.Scheme.Modules.PullbackTensorSections.adj (Z : Scheme.{u}) := SheafOfModules.sheafifyAdj Z.sheaf.obj Z.ringCatSheaf.property
-p2m_export "AlgebraicGeometry.Scheme.Modules.PullbackTensorSections" "adj"
+private abbrev adj (Z : Scheme.{u}) := SheafOfModules.sheafifyAdj Z.sheaf.obj Z.ringCatSheaf.property
 
-private abbrev _root_.AlgebraicGeometry.Scheme.Modules.PullbackTensorSections.ι (Z : Scheme.{u}) := SheafOfModules.toPMod Z.sheaf.obj Z.ringCatSheaf.property
+private abbrev ι (Z : Scheme.{u}) := SheafOfModules.toPMod Z.sheaf.obj Z.ringCatSheaf.property
 p2m_export "AlgebraicGeometry.Scheme.Modules.PullbackTensorSections" "ι"
 
-private abbrev _root_.AlgebraicGeometry.Scheme.Modules.PullbackTensorSections.pf := PresheafOfModules.PullbackMonoidal.pf (TopologicalSpace.Opens.map f.base)
+private abbrev pf := PresheafOfModules.PullbackMonoidal.pf (TopologicalSpace.Opens.map f.base)
   (R := X.sheaf.obj) (S := Y.sheaf.obj) f.c
-p2m_export "AlgebraicGeometry.Scheme.Modules.PullbackTensorSections" "pf"
 
 abbrev adj₀ := PresheafOfModules.PullbackMonoidal.adj (TopologicalSpace.Opens.map f.base)
   (R := X.sheaf.obj) (S := Y.sheaf.obj) f.c

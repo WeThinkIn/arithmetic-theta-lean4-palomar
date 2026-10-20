@@ -1,8 +1,13 @@
 module
 
 public import AllFourMillerProviderR0118
+import all MovedSupportMillerPairingR0116
 
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Shift and local-data independence for the actual four-torsion Miller functions. -/
 noncomputable section
@@ -108,11 +113,9 @@ private lemma tameSymbol_right_order_zero
     localLeading_eq_localValue_of_order_zero k e T E g A ho]
   simp
 
-/-- Name the already compiled private constant; this macro only resolves its exact name. -/
+/-- Reuse the original order-zero lemma through its defining module. -/
 macro "acceptedOrderZeroConstant" : term =>
-  pure (Lean.mkIdent (Lean.Name.str (Lean.Name.str
-    (Lean.Name.num `_private.MovedSupportMillerPairingR0116 0)
-    "ArithmeticThetaReciprocityR0116") "function_eq_constant_of_order_zero"))
+  `(ArithmeticThetaReciprocityR0116.function_eq_constant_of_order_zero)
 
 private lemma function_eq_constant_of_order_zero [IsAlgClosed k]
     (he : Function.Injective e)

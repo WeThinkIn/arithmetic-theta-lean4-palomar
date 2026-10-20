@@ -4,10 +4,10 @@ This is a work-in-progress repository snapshot, not a successful full build or P
 
 - Human author and responsible maintainer: Jue Ding. Original Lean code: Apache-2.0; third-party notices are retained.
 - Original scope: 13 requirements and 103 exact endpoint types.
-- Original source closure: 1,199 delivery modules plus 2,713 local-library modules. One source was split to meet the per-file line limit; two oversized files remain.
+- Original source closure: 1,199 delivery modules plus 2,713 local-library modules. Two sources have been split to meet the per-file line limit; one oversized file remains. The rational-function residue theorem split passed standalone checks for its 8,486-line Prelude and 4,707-line main file, with original outer compiler options restored; full integration is pending.
 - Lean: 4.35.0-rc2. Mathlib: 065356127b1dc0016f66b7283ce0ce2c4055aa55.
 - 39 of 103 original exact endpoint types passed a partial Lean and axiom audit. This is not a semantic review of the paper or a Comparator result. The other 64 endpoints remain pending.
-- Latest completed broad build (root46) exited 1: 152 modules newly built in that run; 40 modules had diagnostics. Later standalone checks passed repairs for Miller pairing base change, root-cover generic rank, Weierstrass group-law vocabulary, tensor/cohomology shifts, smooth proper curve construction, descent characters and additional dependency modules. The next full integration build is in progress. Counts of built modules are not counts of mathematical claims verified.
+- Latest completed broad build (root64) exited 1: 192 modules newly built in that run; 36 modules had diagnostics. Later standalone checks passed repairs for the direct-limit section constructions, completed coordinates and adjacent maps, Miller shift independence, theta-group law and Weierstrass chart/group-law modules. The next full integration build is in progress. Counts of built modules are not counts of mathematical claims verified.
 - Full GoalRoot build, Solution bridge, full-scope Challenge packages, Comparator, official preflight and Palomar review remain pending. The current comparator.json covers only the pilot finite-determination statement.
 - Original delivery files were checked against the preserved SHA-256 baseline; all 1,207 files were unchanged.
 

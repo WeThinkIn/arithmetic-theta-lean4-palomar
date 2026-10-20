@@ -56,7 +56,7 @@ theorem sqIso_hom_app {W X Y Z : Scheme.{u}} {f : W ⟶ X} {g : X ⟶ Z} {h : W 
     (e : f ≫ g = h ≫ k) (M : Z.Modules) :
     (sqIso e).hom.app M = (τ f g (h ≫ k) e).hom.app M ≫ (τ h k (h ≫ k) rfl).inv.app M := by
   simp only [sqIso, τ, pullbackCongr, eqToIso_refl, Iso.trans_refl,
-    Iso.trans_hom, Iso.symm_hom, NatTrans.comp_app]
+    Iso.trans_hom, Iso.symm_hom, NatTrans.comp_app, Category.assoc]
 
 section Route
 

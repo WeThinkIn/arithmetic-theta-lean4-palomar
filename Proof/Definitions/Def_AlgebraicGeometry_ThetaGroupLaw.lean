@@ -4,6 +4,9 @@ public import Definitions.Def_AlgebraicGeometry_ThetaGroupAction
 public import Definitions.Def_AlgebraicGeometry_ThetaGroup
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 set_option autoImplicit false
 
@@ -22,7 +25,6 @@ theorem mapComp_inv_app {X Y Z : Scheme.{0}} (a : X ⟶ Y) (b : Y ⟶ Z) (M : Z.
 theorem mapId_inv_app (X : Scheme.{0}) (N : X.Modules) :
     (fibration.mapId ⟨Opposite.op X⟩).inv.toNatTrans.app N = (pullbackId X).inv.app N := by
   simp [fibration, Pseudofunctor.comp_mapId]
-  exact Category.id_comp _
 
 theorem pullbackCongr_hom_app_eq_eqToHom {X Y : Scheme.{0}} {a b : X ⟶ Y} (h : a = b) (M : Y.Modules) :
     (pullbackCongr h).hom.app M = eqToHom (by rw [h]) := by
@@ -57,7 +59,6 @@ theorem autOfIso_trans (e₁ e₂ e₁₂ : X ≅ X) (h : e₁₂.hom = e₁.hom
     autOfIso_hom_base, RiemannForm.modulePair_fiber, fibration_map_toFunctor, mapComp_inv_app]
   simp only [transIso, Iso.trans_inv, Iso.symm_inv, Functor.mapIso_inv, Iso.app_inv, Iso.app_hom, Category.assoc,
     pullbackCongr_inv_app_eq_eqToHom]
-  rfl
 
 def reflIso (e : X ≅ X) (h : e.hom = 𝟙 X) : (Scheme.Modules.pullback e.hom).obj M ≅ M :=
   (pullbackCongr h).app M ≪≫ (pullbackId X).app M
@@ -68,7 +69,6 @@ theorem autOfIso_refl (e : X ≅ X) (h : e.hom = 𝟙 X) : autOfIso M e (reflIso
   simp only [Iso.refl_hom, Pseudofunctor.CoGrothendieck.categoryStruct_id_fiber, autOfIso_hom_fiber,
     RiemannForm.modulePair_fiber, RiemannForm.modulePair_base, mapId_inv_app]
   simp only [reflIso, Iso.trans_inv, Iso.app_inv, pullbackCongr_inv_app_eq_eqToHom]
-  rfl
 
 def symmIso (e e' : X ≅ X) (h : e'.hom ≫ e.hom = 𝟙 X) (φ : (Scheme.Modules.pullback e.hom).obj M ≅ M) :
     (Scheme.Modules.pullback e'.hom).obj M ≅ M :=
