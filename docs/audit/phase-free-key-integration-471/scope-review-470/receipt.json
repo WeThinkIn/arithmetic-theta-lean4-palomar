@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-20T22:37:44.093852+00:00",
+  "review_kind": "root source/type review, not separate-model or official review",
+  "local_scope_review_passed": true,
+  "new_original_endpoint_ids": [
+    "accepted-053",
+    "accepted-054"
+  ],
+  "mapped_original_statement_exact": true,
+  "original_universe_retained": true,
+  "no_added_main_assumptions": true,
+  "all_37_holes_targeted_once": true,
+  "all_target_types_and_universes_compared": true,
+  "original_statement_recovery_compiled": true,
+  "official_pass": false,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean": "c18e92bb9604808b15d69f4b81c655099a11d735de57be0e6da3c18a207179b4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Solution.lean": "91c9ebc25ddc3ae54215d44c6a7d0a5c7380d207d09a3fdfef95ba8870df6a32",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/receipt.json": "982a36dcfaa9535fc14088681afb8af71fb9cef42b50c6ac887555fbdcb6bef7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Scope.json": "606be460cb9980d60e4c0cb0562012f9c8782f78b83ddbf2994e707edafec5f9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/SourceMap.json": "93fea02b8e7339a9a99a1136cfe2c7b540c52581e6fa16aca263b02385f25550",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/comparator.json": "c554b26a4685d5d07cb8ffaacbe3ed91e5c694575d6c4d4d3a3fe52dcae51a8e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Targets.json": "1916c11085440685e8b5b4888ca13d47a5992ca9a619885bec872051a94fac98",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/transformation.json": "2b2e9708725e2efdc916584b50a8cbd6ce2fe8affe83f6a416a7184672cc7499",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/TargetTypeAudit-check-01.log": "2fa7f33e649040f3e06e92bab594cffdf0a52685e029b21bd95454f505c953a3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/DefinitionCompatibility-check-01.log": "be7562c0a319689cd659d0c1815263e15ce210fa4cfdc912b2946c8045d3c0b5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/OriginalEndpointAudit-check-01.log": "7ed8c116ff6e6299e10ef413704ad589f385b6140342d1deb4a92046734e0827"
+  },
+  "review_sha256": "650e7d11ed046b405354d2c6e9189a66161898d454fc856efe2ff18351741b1b"
+}

@@ -1,0 +1,80 @@
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: PhaseFreeKeySolution.lean:507:153: This simp argument is unused:
+  productComparison_eq_original
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, alphaNatural_iff,
+    evaluationSquareCompatible_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: PhaseFreeKeySolution.lean:509:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeKeySolution.lean:512:40: This simp argument is unused:
+  ArithmeticThetaPalomarAlphaDescent459.descends_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isKey_iff, alphaNatural_iff, evaluationSquareCompatible_iff, productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: PhaseFreeKeySolution.lean:512:185: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: PhaseFreeKeySolution.lean:514:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeKeySolution.lean:517:40: This simp argument is unused:
+  ArithmeticThetaPalomarAlphaDescent459.descends_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isKey_iff, alphaNatural_iff, evaluationSquareCompatible_iff, productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: PhaseFreeKeySolution.lean:517:185: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [12192/12192] Built PhaseFreeKeyChallenge (36s)
+warning: PhaseFreeKeyChallenge.lean:29:14: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:31:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:33:6: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:40:6: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:41:6: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:42:6: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:45:14: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:69:6: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:72:9: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:84:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:91:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:117:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:124:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:125:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:384:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:412:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:413:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:414:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:423:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:488:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:489:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:578:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:581:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:602:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:639:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:652:6: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:670:13: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:735:14: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:819:6: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:823:6: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:835:6: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:837:6: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:838:6: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:885:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:949:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:998:8: declaration uses `sorry`
+warning: PhaseFreeKeyChallenge.lean:999:8: declaration uses `sorry`
+Build completed successfully (12192 jobs).

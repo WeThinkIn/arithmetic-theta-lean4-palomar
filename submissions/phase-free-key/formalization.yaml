@@ -1,0 +1,53 @@
+version: v0.4
+project:
+  name: Complete phase-free key and naturality
+  description: 'Full original053054 at arbitrary universe u: actual even-point theta
+    ideal and dual line, canonical section, pushforward evaluation and tensor square;
+    unique normalized key isomorphism and its full naturality under arbitrary pointed
+    Cartesian base change. Every original rigidification, multiplier law, cotangent/alpha
+    witness and full morphism equality retained.37 support/main targets selected.
+    Inherited052095096097 not recounted. No whole-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Full original053054 at arbitrary universe u: actual even-point theta ideal
+    and dual line, canonical section, pushforward evaluation and tensor square; unique
+    normalized key isomorphism and its full naturality under arbitrary pointed Cartesian
+    base change. Every original rigidification, multiplier law, cotangent/alpha witness
+    and full morphism equality retained.37 support/main targets selected. Inherited052095096097
+    not recounted. No whole-paper completion claimed.'
+fidelity:
+  divergences: Original053054 full statements/universes recovered through actual dual/evaluation
+    and canonical tensor comparison bridges, with compiled rfl original-theorem equality.22
+    auxiliary Proposition proofs become explicit support comparison targets; no semantic
+    definition hole or new main assumption. All37 target types/universes and380 semantic
+    definitions checked. Challenge1000lines/81891bytes meets hard caps but exceeds
+    preferred review surface.

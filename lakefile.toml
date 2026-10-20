@@ -1380,3 +1380,11 @@ roots = ["PhaseFreeAlphaDescentChallenge"]
 [[lean_lib]]
 name = "PhaseFreeAlphaDescentSolution"
 roots = ["PhaseFreeAlphaDescentSolution"]
+
+[[lean_lib]]
+name = "PhaseFreeKeyChallenge"
+roots = ["PhaseFreeKeyChallenge"]
+
+[[lean_lib]]
+name = "PhaseFreeKeySolution"
+roots = ["PhaseFreeKeySolution"]

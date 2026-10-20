@@ -1,0 +1,28 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-052",
+    "accepted-053",
+    "accepted-054",
+    "accepted-095",
+    "accepted-096",
+    "accepted-097"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-053",
+    "accepted-054"
+  ],
+  "universe": "Original arbitrary universe u",
+  "target_count": 37,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "All original marked tests, multiplier laws, and cotangent/alpha nonvacuity witnesses",
+    "Actual even-point kernel ideal, ideal module, internal-Hom dual and curried canonical section",
+    "Actual theta pushforward, adjunction evaluation, evaluation section and tensor square",
+    "Every original rigidification and uniquely normalized key isomorphism",
+    "Arbitrary pointed Cartesian base change, even-point compatibility, actual cotangent and multiplier maps",
+    "Full alpha-section equality and complete key-morphism equality",
+    "Unique actual evaluation-compatible inverse-square comparison"
+  ]
+}

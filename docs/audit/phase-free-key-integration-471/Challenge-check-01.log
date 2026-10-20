@@ -1,0 +1,71 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:25:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:27:228: error: Fields missing: `mul_mem`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:30:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:37:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:38:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:39:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:42:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:66:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:69:9: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:81:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:88:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:114:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:121:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:122:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:381:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:410:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:412:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:414:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:424:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:490:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:492:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:583:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:588:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:611:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:649:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:664:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:682:13: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:740:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:751:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:760:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:838:107: error: unexpected token 'lemma'; expected ')'
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:839:111: error: unexpected token 'noncomputable'; expected ')'
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:844:9: error(lean.unknownIdentifier): Unknown identifier `tensorObj_map_tmul'`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:842:74: error: unsolved goals
+C : Type u
+inst✝ : Category.{u, u} C
+R : Cᵒᵖ ⥤ CommRingCat
+F G N : PresheafOfModules (R ⋙ forget₂ CommRingCat RingCat)
+κ : G ⟶ F.ihomObj N
+X Y : Cᵒᵖ
+g : X ⟶ Y
+x : ↑(PresheafOfModulesOfCommRing.obj F X)
+y : ↑(PresheafOfModulesOfCommRing.obj G X)
+⊢ (ConcreteCategory.hom (F.uncurryApp κ Y)) ((ModuleCat.Hom.hom ((F ⊗ G).map g)) (x ⊗ₜ[↑(R.obj X)] y)) =
+    (ModuleCat.Hom.hom (N.map g)) ((ModuleCat.Hom.hom (F.uncurryApp κ X)) (x ⊗ₜ[↑(R.obj X)] y))
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:850:113: error: unexpected token 'lemma'; expected ')'
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:851:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:852:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:866:13: error(lean.unknownIdentifier): Unknown identifier `uncurry'_app_tmul`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:860:59: error: unsolved goals
+C : Type u
+inst✝ : Category.{u, u} C
+R : Cᵒᵖ ⥤ CommRingCat
+F G✝ N✝ G G' N : PresheafOfModules (R ⋙ forget₂ CommRingCat RingCat)
+γ : G ⟶ G'
+κ : G' ⟶ F.ihomFunctor.obj N
+X : Cᵒᵖ
+x : ↑(PresheafOfModulesOfCommRing.obj F X)
+y : ↑(PresheafOfModulesOfCommRing.obj G X)
+⊢ (ConcreteCategory.hom ((F.uncurry' (γ ≫ κ)).app X)) (x ⊗ₜ[↑(R.obj X)] y) =
+    (ConcreteCategory.hom ((F.uncurry' κ).app X)) ((ConcreteCategory.hom ((F ◁ γ).app X)) (x ⊗ₜ[↑(R.obj X)] y))
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:899:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:914:8: warning: automatically included section variable(s) unused in theorem `SheafOfModules.tensorUnit_eq`:
+  [J.HasSheafCompose (forget₂ RingCat AddCommGrpCat)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [J.HasSheafCompose (forget₂ RingCat AddCommGrpCat)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:976:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:1027:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean:1030:8: warning: declaration uses `sorry`

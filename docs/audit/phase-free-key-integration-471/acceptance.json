@@ -1,0 +1,20 @@
+{
+  "accepted_for_local_integration": true,
+  "new_ids": [
+    "accepted-053",
+    "accepted-054"
+  ],
+  "basis": "Complete frozen469 source/type/axiom checks and470 root scope review; no official acceptance",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Challenge.lean": "c18e92bb9604808b15d69f4b81c655099a11d735de57be0e6da3c18a207179b4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Solution.lean": "91c9ebc25ddc3ae54215d44c6a7d0a5c7380d207d09a3fdfef95ba8870df6a32",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Scope.json": "606be460cb9980d60e4c0cb0562012f9c8782f78b83ddbf2994e707edafec5f9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/SourceMap.json": "93fea02b8e7339a9a99a1136cfe2c7b540c52581e6fa16aca263b02385f25550",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/receipt.json": "982a36dcfaa9535fc14088681afb8af71fb9cef42b50c6ac887555fbdcb6bef7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/README.md": "0099474a5164bda020687b07f574bfe1d7d2a2544a4ae66e1f3783499361714f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/comparator.json": "c554b26a4685d5d07cb8ffaacbe3ed91e5c694575d6c4d4d3a3fe52dcae51a8e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-key-surface-469/Targets.json": "1916c11085440685e8b5b4888ca13d47a5992ca9a619885bec872051a94fac98",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-scope-review-470/Review.md": "650e7d11ed046b405354d2c6e9189a66161898d454fc856efe2ff18351741b1b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-scope-review-470/receipt.json": "88ca205cade0282fe78e153417e55c3825fa0ea039fa0bf6f1189702ea094ade"
+  }
+}

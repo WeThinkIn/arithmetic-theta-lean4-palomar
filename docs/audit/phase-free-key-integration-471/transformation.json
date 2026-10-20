@@ -1,0 +1,257 @@
+{
+  "original_source_sha256": "c0a09cc3ee0ef9b9e48455e9c2d5dfcb1b743bc6383a51da4d8233d937bfaebd",
+  "proof_probe_sha256": "71404c41a31cc3cc6783b0f9dd60311f5fc679872f1f9dd8766d5c7a97abd7a7",
+  "removed_original_lines": [
+    31,
+    32,
+    33,
+    34,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    184,
+    185,
+    186,
+    348,
+    349,
+    350,
+    351,
+    441,
+    442,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    483,
+    484,
+    954,
+    988,
+    989,
+    1001,
+    1002,
+    1018,
+    1019,
+    1020,
+    1042,
+    1043,
+    1044,
+    1056,
+    1057,
+    1058,
+    1059,
+    1221,
+    1222,
+    1223,
+    1224,
+    1229,
+    1240,
+    1241,
+    1242,
+    1243,
+    1247,
+    1248,
+    1249,
+    1254,
+    1256,
+    1257,
+    1261,
+    1262,
+    1317,
+    1337,
+    1338
+  ],
+  "replacements": [
+    {
+      "start": 1146,
+      "end": 1152,
+      "name": "PresheafOfModules.uncurry'_curry'",
+      "replacement": "lemma uncurry'_curry' (\u03b8 : F \u2297 G \u27f6 N) : uncurry' F (curry' F \u03b8) = \u03b8 := by sorry"
+    },
+    {
+      "start": 226,
+      "end": 230,
+      "name": "WeierstrassProjModel.span_polynomial_isHomogeneousCR",
+      "replacement": "theorem span_polynomial_isHomogeneousCR (V : WeierstrassCurve.Projective R) : (Ideal.span {V.polynomial}).IsHomogeneous (homogeneousSubmodule (Fin 3) R) := by sorry"
+    },
+    {
+      "start": 62,
+      "end": 64,
+      "name": "HomogeneousIdealQuotientGrading.preDecompose_of_mem",
+      "replacement": "lemma preDecompose_of_mem (hmem : \u2200 (i : \u03b9) (a : A), a \u2208 \ud835\udc9c i \u2192 Ideal.Quotient.mk I a \u2208 \u212c i) {i : \u03b9} {a : A} (ha : a \u2208 \ud835\udc9c i) : preDecompose \ud835\udc9c I \u212c hmem a = DirectSum.of (fun j => \u212c j) i \u27e8Ideal.Quotient.mk I a, hmem i a ha\u27e9 := by sorry"
+    },
+    {
+      "start": 273,
+      "end": 276,
+      "name": "WeierstrassProjModel.kwYEvalRingHom_comp_algebraMap",
+      "replacement": "theorem kwYEvalRingHom_comp_algebraMap : (kwYEvalRingHom R W).comp (algebraMap R (ProjModelRingCR W.toProjective)) = RingHom.id R := by sorry"
+    },
+    {
+      "start": 163,
+      "end": 168,
+      "name": "HomogeneousIdealQuotientGrading.mem_quotGradingSubmodule_iff",
+      "replacement": "lemma mem_quotGradingSubmodule_iff {i : \u03b9} {x : A \u29f8 I} : x \u2208 quotGradingSubmodule \ud835\udc9c I i \u2194 \u2203 a \u2208 \ud835\udc9c i, Ideal.Quotient.mk I a = x := by sorry"
+    },
+    {
+      "start": 77,
+      "end": 80,
+      "name": "HomogeneousIdealQuotientGrading.quotDecompose_mk",
+      "replacement": "@[simp] lemma quotDecompose_mk\n    (hmem : \u2200 (i : \u03b9) (a : A), a \u2208 \ud835\udc9c i \u2192 Ideal.Quotient.mk I a \u2208 \u212c i)\n    (hI : I.IsHomogeneous \ud835\udc9c) (a : A) :\n    quotDecompose \ud835\udc9c I \u212c hmem hI (Ideal.Quotient.mk I a) = preDecompose \ud835\udc9c I \u212c hmem a := by sorry"
+    },
+    {
+      "start": 259,
+      "end": 261,
+      "name": "WeierstrassProjModel.kwYEvalRingHom_mk_X1",
+      "replacement": "theorem kwYEvalRingHom_mk_X1 : kwYEvalRingHom R W (Ideal.Quotient.mk _ (X 1 : MvPolynomial (Fin 3) R)) = 1 := by sorry"
+    },
+    {
+      "start": 930,
+      "end": 932,
+      "name": "PresheafOfModules.InternalHom.map_id_apply",
+      "replacement": "lemma map_id_apply (M : PresheafOfModules.{u} (R \u22d9 forget\u2082 _ _)) (X : C\u1d52\u1d56) (x : M.obj X) : M.map (\ud835\udfd9 X) x = x := by sorry"
+    },
+    {
+      "start": 192,
+      "end": 219,
+      "name": "ProjWeierstrassCubicPrime.isHomogeneous_polynomial",
+      "replacement": "theorem isHomogeneous_polynomial (V : WeierstrassCurve.Projective F) : V.polynomial.IsHomogeneous 3 := by sorry"
+    },
+    {
+      "start": 171,
+      "end": 174,
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedMonoid",
+      "replacement": "instance quotGradingSubmoduleGradedMonoid [AddMonoid \u03b9] [SetLike.GradedMonoid \ud835\udc9c] : SetLike.GradedMonoid (quotGradingSubmodule \ud835\udc9c I) := by sorry"
+    },
+    {
+      "start": 1153,
+      "end": 1159,
+      "name": "PresheafOfModules.curry'_uncurry'",
+      "replacement": "lemma curry'_uncurry' (\u03ba : G \u27f6 ihomObj F N) : curry' F (uncurry' F \u03ba) = \u03ba := by sorry"
+    },
+    {
+      "start": 1130,
+      "end": 1132,
+      "name": "PresheafOfModules.uncurryApp_tmul",
+      "replacement": "lemma uncurryApp_tmul (\u03ba : G \u27f6 ihomObj F N) (X : C\u1d52\u1d56) (x : F.obj X) (y : G.obj X) : DFunLike.coe (\u03b1 := (F.obj X \u2297 G.obj X :)) (\u03b2 := fun _ => N.obj X)\n      (uncurryApp F \u03ba X).hom (x \u2297\u209c[R.obj X] y) = (\u03ba.app X y).1 (\ud835\udfd9 X) x := by sorry"
+    },
+    {
+      "start": 1031,
+      "end": 1033,
+      "name": "PresheafOfModules.ihomObj_map_val",
+      "replacement": "@[simp] lemma ihomObj_map_val {X X' : C\u1d52\u1d56} (h : X \u27f6 X') (\u03c6 : (ihomObj F N).obj X) {Y : C\u1d52\u1d56}\n    (f : X' \u27f6 Y) (x : F.obj Y) :\n    ((ihomObj F N).map h \u03c6).1 f x = \u03c6.1 (h \u226b f) x := by sorry"
+    },
+    {
+      "start": 65,
+      "end": 68,
+      "name": "HomogeneousIdealQuotientGrading.coeAddMonoidHom_preDecompose",
+      "replacement": "lemma coeAddMonoidHom_preDecompose (hmem : \u2200 (i : \u03b9) (a : A), a \u2208 \ud835\udc9c i \u2192 Ideal.Quotient.mk I a \u2208 \u212c i) (a : A) : DirectSum.coeAddMonoidHom \u212c (preDecompose \ud835\udc9c I \u212c hmem a) = Ideal.Quotient.mk I a := by sorry"
+    },
+    {
+      "start": 1143,
+      "end": 1145,
+      "name": "PresheafOfModules.uncurry'_app_tmul",
+      "replacement": "lemma uncurry'_app_tmul (\u03ba : G \u27f6 ihomObj F N) {X : C\u1d52\u1d56} (x : F.obj X) (y : G.obj X) : DFunLike.coe (\u03b1 := (F.obj X \u2297 G.obj X :)) (\u03b2 := fun _ => N.obj X)\n      ((uncurry' F \u03ba).app X).hom (x \u2297\u209c[R.obj X] y) = (\u03ba.app X y).1 (\ud835\udfd9 X) x := by sorry"
+    },
+    {
+      "start": 36,
+      "end": 46,
+      "name": "HomogeneousIdealQuotientGrading.gradedMonoidOfImages",
+      "replacement": "theorem gradedMonoidOfImages [AddMonoid \u03b9] [SetLike.GradedMonoid \ud835\udc9c] (hmem : \u2200 (i : \u03b9) (a : A), a \u2208 \ud835\udc9c i \u2192 Ideal.Quotient.mk I a \u2208 \u212c i) (hsurj : \u2200 (i : \u03b9), \u2200 b \u2208 \u212c i, \u2203 a \u2208 \ud835\udc9c i, Ideal.Quotient.mk I a = b) : SetLike.GradedMonoid \u212c := by sorry"
+    },
+    {
+      "start": 951,
+      "end": 953,
+      "name": "PresheafOfModules.InternalHom.naturalFamilies_ext",
+      "replacement": "@[ext] lemma naturalFamilies_ext {X : C\u1d52\u1d56} {\u03c6 \u03c8 : naturalFamilies F N X}\n    (h : \u2200 \u2983Y : C\u1d52\u1d56\u2984 (f : X \u27f6 Y) (x : F.obj Y), \u03c6.1 f x = \u03c8.1 f x) : \u03c6 = \u03c8 := by sorry"
+    },
+    {
+      "start": 1126,
+      "end": 1129,
+      "name": "PresheafOfModules.tensorObj_map_tmul'",
+      "replacement": "lemma tensorObj_map_tmul' {X Y : C\u1d52\u1d56} (g : X \u27f6 Y) (x : F.obj X) (y : G.obj X) : DFunLike.coe (\u03b1 := (F.obj X \u2297 G.obj X :))\n      (\u03b2 := fun _ => (ModuleCat.restrictScalars (R.map g).hom).obj (F.obj Y \u2297 G.obj Y))\n      (ModuleCat.Hom.hom (R := \u2191(R.obj X)) ((F \u2297 G).map g)) (x \u2297\u209c[R.obj X] y) =\n    F.map g x \u2297\u209c[R.obj Y] G.map g y := by sorry"
+    },
+    {
+      "start": 69,
+      "end": 73,
+      "name": "HomogeneousIdealQuotientGrading.preDecompose_eq_zero_of_mem",
+      "replacement": "lemma preDecompose_eq_zero_of_mem (hmem : \u2200 (i : \u03b9) (a : A), a \u2208 \ud835\udc9c i \u2192 Ideal.Quotient.mk I a \u2208 \u212c i) (hI : I.IsHomogeneous \ud835\udc9c) {a : A} (ha : a \u2208 I) : preDecompose \ud835\udc9c I \u212c hmem a = 0 := by sorry"
+    },
+    {
+      "start": 28,
+      "end": 30,
+      "name": "HomogeneousIdealQuotientGrading.pieceHom_coe",
+      "replacement": "@[simp] lemma pieceHom_coe (hmem : \u2200 (i : \u03b9) (a : A), a \u2208 \ud835\udc9c i \u2192 Ideal.Quotient.mk I a \u2208 \u212c i)\n    (i : \u03b9) (a : \ud835\udc9c i) :\n    (pieceHom \ud835\udc9c I \u212c hmem i a : A \u29f8 I) = Ideal.Quotient.mk I (a : A) := by sorry"
+    },
+    {
+      "start": 48,
+      "end": 55,
+      "name": "HomogeneousIdealQuotientGrading.coeAddMonoidHom_map_pieceHom",
+      "replacement": "lemma coeAddMonoidHom_map_pieceHom (hmem : \u2200 (i : \u03b9) (a : A), a \u2208 \ud835\udc9c i \u2192 Ideal.Quotient.mk I a \u2208 \u212c i) (y : \u2a01 i, \ud835\udc9c i) : DirectSum.coeAddMonoidHom \u212c (DirectSum.map (pieceHom \ud835\udc9c I \u212c hmem) y) = Ideal.Quotient.mk I (DirectSum.coeAddMonoidHom \ud835\udc9c y) := by sorry"
+    },
+    {
+      "start": 277,
+      "end": 291,
+      "name": "WeierstrassProjModel.kwYChartEval_section",
+      "replacement": "theorem kwYChartEval_section : (kwYChartEval R W).comp ((HomogeneousLocalization.fromZeroRingHom (projModelGradingCR W.toProjective) _).comp (algebraMap R (projModelGradingCR W.toProjective 0))) = RingHom.id R := by sorry"
+    }
+  ],
+  "body_line_joining_changes_tokens": false,
+  "stats": {
+    "original_lines": 1375,
+    "proof_surface_lines": 1164,
+    "joined_lines": 1000,
+    "bytes": 81891
+  }
+}
