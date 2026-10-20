@@ -1,0 +1,7 @@
+{
+  "run_fresh_complete_three_kernel_comparator": true,
+  "reason": "Changed actual proof export; declaration diagnostic completed >83000 events within 900 seconds, crossed the YZ helper (80851 ms), peaked at about14.45GiB sampledRSS, and ended by diagnostic time budget without rejection. Genuine stock three-kernel comparison is now warranted; this is not a fourth replay of unchanged old265.",
+  "diagnostic_receipt": "evidence/kernel-declaration-diagnostic-421/receipt.json",
+  "official_acceptance": false,
+  "utc": "2026-10-20T21:08:58.387554+00:00"
+}

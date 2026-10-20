@@ -1,0 +1,10 @@
+{
+  "exit_code": 124,
+  "seconds": 3603.317491413094,
+  "deadline_fired": true,
+  "bindings_unchanged": true,
+  "passed": false,
+  "normal_sandbox": true,
+  "official_run": false,
+  "log_sha256": "5d21b171d40fdabe52ae57ca8a7a5cb8add7d361fc8b4f8e372c38012c2c6a28"
+}

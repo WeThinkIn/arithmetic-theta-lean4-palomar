@@ -1,0 +1,24 @@
+{
+  "command": [
+    "python3",
+    "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake",
+    "comparator",
+    "--config=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimized-export-416/comparator-three-kernel.json",
+    "--challenge-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimized-export-416/Challenge.ndjson",
+    "--solution-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimized-export-416/Solution.ndjson"
+  ],
+  "budget_seconds": 3600,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimized-export-416/comparator-three-kernel.json": "571a5c759d2344a50dbb8558c8e1f9e178dae35e71e578f60c023cf8209354f7",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
+  },
+  "export_receipts_sha256": "ad21b8755506f4e3ad9598f919b2979a08dcc38ed114ff02aaed84a4d221c612",
+  "normal_sandbox": true,
+  "official_run": false
+}

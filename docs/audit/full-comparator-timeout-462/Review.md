@@ -1,0 +1,7 @@
+# Full historical export comparator timeout
+
+This is a local stock three-kernel Comparator run, not an official Palomar verdict. The immutable grind-optimized export416 was checked with the pinned stock tools and normal bubblewrap sandbox. con-ron accepted156754 declarations and NanoDa accepted the same Solution export. The default Lean checker remained live until the parent3600-second total budget expired. The genuine comparator-receipt.json records exit124, deadline_fired=true, bindings_unchanged=true, passed=false and3603.32seconds including cleanup/hash verification. No default-kernel accept/reject verdict was emitted.
+
+The total budget includes con-ron and NanoDa work before defaultLean; the latter ran approximately42minutes. Last observed memory was a fewGiB, unlike the official453 cold-build OOM at14.76GiB. This local timeout and the official build failure are different stages and different inputs; neither proves mathematical invalidity.
+
+This export predates restoration430 of two ring polynomial proofs. Targeted stock-kernel benchmarks428429 showed those grind substitutions were more expensive despite smaller proof DAGs, so they were reverted in published source. No verdict from416 transfers to restored main or newly added interfaces. Do not rerun identical416 inputs as though waiting alone resolves the measured bottleneck. A new full run needs a concrete resource intervention and exact source/export bindings. Preserve pending official complete-main and sharp-roots jobs. Full ordinary intake and whole-paper acceptance remain incomplete.

@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-20T22:09:54.744996+00:00",
+  "status": "historical full Comparator timed out without default-kernel verdict",
+  "official_pass": false,
+  "whole_comparator_pass": false,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimized-export-416/comparator-receipt.json": "f2e40f17de876fdbf89cd6d4bf0734707e10de00aca6a1feb4a0a4eae3eab680",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimized-export-416/comparator.log": "5d21b171d40fdabe52ae57ca8a7a5cb8add7d361fc8b4f8e372c38012c2c6a28",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimized-export-416/comparator-checkpoint.json": "0fa4dfba2a3c3a2f9ff674e54035448075e78c93f06f21bab581ababc36f7ec1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimized-export-416/export-receipts.json": "ad21b8755506f4e3ad9598f919b2979a08dcc38ed114ff02aaed84a4d221c612",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/proof-optimized-export-416/comparator-run-acceptance.json": "cc2eb785e2f4e1b4c8cd266dd4eb90f84aadf3ee2683cde7b373bb2a992f206d"
+  },
+  "review_sha256": "3aa56e9332f60f0f7fbb6c69370ce1dbd8fbabc76cced24afc490c4277010fa3"
+}
