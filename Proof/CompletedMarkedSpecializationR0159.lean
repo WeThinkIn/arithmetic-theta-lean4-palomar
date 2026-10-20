@@ -2,6 +2,8 @@ module
 
 public import MarkedKatoValueDefinitionsR0159
 
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Actual completed marked specialization and its unique generic extension. -/

@@ -7,6 +7,9 @@ public import CoefficientNormDescentDefinitionsR0157
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option synthInstance.maxHeartbeats 200000
 noncomputable section
 namespace ArithmeticThetaCoefficientNormDescentR0157
 namespace CoefficientCompletedMapsR0157
@@ -62,7 +65,7 @@ private lemma polynomialMap_relation : polynomialMap k l ι (ArithmeticThetaScal
     Ideal.Quotient.eq_zero_iff_mem.mpr (Ideal.subset_span (by simp))
   simpa [polynomialMap, ArithmeticThetaScaledTateBridgeR0046.relation,
     ArithmeticThetaScaledTateBridgeR0046.parameter, baseMap,
-    ArithmeticThetaScaledTateBridgeR0046.x, ArithmeticThetaScaledTateBridgeR0046.y] using h
+    ArithmeticThetaScaledTateBridgeR0046.x, ArithmeticThetaScaledTateBridgeR0046.y] using! h
 
 private def nodeMap : Node k →+* Node l :=
   Ideal.Quotient.lift (ArithmeticThetaScaledTateBridgeR0046.relationIdeal k 1) (polynomialMap k l ι)

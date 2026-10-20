@@ -73,5 +73,5 @@ algorithm requirements.
 
 The current `comparator.json` is a pilot for existential finite determination
 only. Its Solution has not yet passed Comparator. No full-paper Palomar result
-is available. The port has a partial exact-type/axiom check for 44 endpoints,
+is available. The port has a partial exact-type/axiom check for 50 endpoints (audit 242),
 with the remaining endpoints and the full joint build still pending.

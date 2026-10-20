@@ -1,0 +1,57 @@
+{
+  "timestamp_utc": "2026-10-20T16:07:41.973915+00:00",
+  "status": "prepared integration proposal only; not applied or officially run",
+  "copy_map": [
+    {
+      "from": "challenges/early-certificate/Challenge.lean",
+      "to": "EarlyCertificateChallenge.lean",
+      "sha256": "800f0cd45e572e19c42df4146d2dab3bcc4ec3820705634ff937d10a9e9a0002",
+      "byte_identical": true
+    },
+    {
+      "from": "challenges/early-certificate/Solution.lean",
+      "to": "EarlyCertificateSolution.lean",
+      "sha256": "611ba7328412a0897eb8de48f003815fbc3a3b82d255f6cef2c9434aa0fb5919",
+      "byte_identical": true
+    }
+  ],
+  "target": "ArithmeticThetaPalomarEarly205.earlierCertificate",
+  "target_declaration_name_unchanged": true,
+  "source_resolution_by_extracted_official_functions": {
+    "challenge_module": "/home/Palomar/workspace/arithmetic-theta/evidence/early-official-integration-228/proposed/EarlyCertificateChallenge.lean",
+    "solution_module": "/home/Palomar/workspace/arithmetic-theta/evidence/early-official-integration-228/proposed/EarlyCertificateSolution.lean"
+  },
+  "module_shadowing_dependencies": {
+    "EarlyCertificateChallenge": [],
+    "EarlyCertificateSolution": []
+  },
+  "challenge_lines": 51,
+  "challenge_bytes": 2493,
+  "workflow_python_syntax_valid": true,
+  "default_configuration": "comparator.json",
+  "additional_configuration": "comparator-early.json",
+  "base_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/lakefile.toml": "780a621296237cf91e6dff3237ed30ece70554e3717fd211917ebc6347c0c7bd",
+    "/home/Palomar/workspace/arithmetic-theta/project/.github/workflows/palomar-preflight.yml": "e9268158b4670b0208c85669da1fd83b92baea0360246d580e83f7c7e15e64bd",
+    "/home/Palomar/workspace/arithmetic-theta/project/comparator.json": "d3947c622f47600ac75d7231629e1e96d41838ef4dae8a0df929b8d46c90291f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/palomar-current-verify_submission.py": "c575759d82c506f181b3736a110950fd32931c08a1be454262027d6205f178a2",
+    "/home/Palomar/workspace/arithmetic-theta/project/challenges/early-certificate/Challenge.lean": "800f0cd45e572e19c42df4146d2dab3bcc4ec3820705634ff937d10a9e9a0002",
+    "/home/Palomar/workspace/arithmetic-theta/project/challenges/early-certificate/Solution.lean": "611ba7328412a0897eb8de48f003815fbc3a3b82d255f6cef2c9434aa0fb5919"
+  },
+  "proposed_artifact_bindings": {
+    "EarlyCertificateChallenge.lean": "800f0cd45e572e19c42df4146d2dab3bcc4ec3820705634ff937d10a9e9a0002",
+    "EarlyCertificateSolution.lean": "611ba7328412a0897eb8de48f003815fbc3a3b82d255f6cef2c9434aa0fb5919",
+    "lakefile.toml": "82c3e96952cb3a33744d4a0a73efffc72ee0702b278fafa39151c8a541449519",
+    "comparator-early.json": "b773ca3535346dc8ad85aa24ec021a0d1b18f6f9de88fee9b1815d7a79516082",
+    ".github/workflows/palomar-preflight.yml": "77b655a95ea200a2c9a511c86b9eae1cf9f3de3dac30f2f7d2b8d7ae85597ef5"
+  },
+  "patch_sha256": "4abda5eacf3416d6f4643be51af35ec92d94dedab3776d6e2d1e176d4f9e0580",
+  "validation_limits": [
+    "No Lake configuration reload or target build while parent Lake is active.",
+    "Unique module filenames change compiled object provenance; original byte-identical 205 objects and 211 exports are prior local evidence only.",
+    "Official source provenance rebuild/check is still required at a committed public revision.",
+    "This package covers accepted-017 only, not all Algorithms/examples or the full paper."
+  ],
+  "git_apply_check_exit_code": 0,
+  "readme_sha256": "1266cd88e8c471e52bade3c71c8858cfece7b82bdfe9e6d1920b9444f37c80c5"
+}

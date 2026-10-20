@@ -1,0 +1,44 @@
+--- a/Proof/OriginLogarithmicTaylorR0163.lean
++++ b/Proof/OriginLogarithmicTaylorR0163.lean
+@@ -12,6 +12,8 @@
+ set_option maxRecDepth 4096
+ set_option backward.isDefEq.respectTransparency false
+ set_option backward.isDefEq.respectTransparency.types false
++set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
++set_option synthInstance.maxHeartbeats 200000
+ noncomputable section
+ 
+ namespace ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163
+@@ -38,10 +40,10 @@
+ /-- The logarithmic derivative in the parameter u=z-1. -/
+ def logDerivative (S : Type) [CommRing S] :
+     Derivation S (PowerSeries S) (PowerSeries S) :=
+-  (1 + PowerSeries.X : PowerSeries S) • PowerSeries.derivative S
++  (1 + PowerSeries.X : PowerSeries S) • PowerSeries.derivative (R := S)
+ 
+ lemma logDerivative_apply (f : PowerSeries S) :
+-    logDerivative S f = (1 + PowerSeries.X) * PowerSeries.derivative S f := rfl
++    logDerivative S f = (1 + PowerSeries.X) * PowerSeries.derivative (R := S) f := rfl
+ 
+ @[simp] lemma logDerivative_C (a : S) : logDerivative S (PowerSeries.C a) = 0 := by
+   simp [logDerivative_apply]
+@@ -221,8 +223,8 @@
+ variable {S S' : Type} [CommRing S] [CommRing S']
+ 
+ lemma derivative_map (f : S →+* S') (a : PowerSeries S) :
+-    PowerSeries.map f (PowerSeries.derivative S a) =
+-      PowerSeries.derivative S' (PowerSeries.map f a) := by
++    PowerSeries.map f (PowerSeries.derivative (R := S) a) =
++      PowerSeries.derivative (R := S') (PowerSeries.map f a) := by
+   ext i
+   simp only [PowerSeries.coeff_map, PowerSeries.coeff_derivative, map_mul,
+     map_add, map_natCast, map_one]
+@@ -430,7 +432,7 @@
+     (hx : Origin k M s hs (IsLocalRing.closedPoint (LaurentSeries k)) ∈ U)
+     (a : (genericScheme k M).presheaf.obj (Opposite.op U)) :
+     κ ((genericScheme k M).presheaf.germ U _ hx (frameDerivative k M δ U a)) =
+-      (1 + PowerSeries.X) * PowerSeries.derivative (LaurentSeries k)
++      (1 + PowerSeries.X) * PowerSeries.derivative (R := LaurentSeries k)
+         (κ ((genericScheme k M).presheaf.germ U _ hx a)) := by
+   letI : Nonempty U := ⟨⟨_,hx⟩⟩
+   have hh := expansionDefect_zero_of_affine (C := genericScheme k M) (genericStructure k M) δ E

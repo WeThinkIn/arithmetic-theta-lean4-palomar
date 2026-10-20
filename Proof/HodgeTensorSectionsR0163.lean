@@ -80,7 +80,7 @@ private def binaryEquiv (K : Type u) [Field K]
       invFun := fun y => e.symm (f.symm y)
       left_inv := fun x => by simp
       right_inv := fun y => by simp
-      map_add' := fun x y => by simp
+      map_add' := fun x y => by rw [e.map_add, f.map_add]
       map_smul' := fun c x => by
         change f (e (c • x)) = (scalarIso K c) • f (e x)
         rw [e.map_smulₛₗ, f.map_smul]

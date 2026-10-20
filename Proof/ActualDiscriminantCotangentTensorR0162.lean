@@ -4,6 +4,9 @@ public import CanonicalDifferentialTensorR0162
 public import TaylorGradedCoefficientR0162
 public import ActualOriginAugmentedTaylorR0162
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! The canonical relative cotangent tensor of the actual discriminant initial class. -/

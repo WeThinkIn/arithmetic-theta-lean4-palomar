@@ -35,9 +35,6 @@ lemma ideal_span : Submodule.span L (Set.range (idealInclusion K L A ε)) = ⊤ 
   clear hy
   obtain ⟨z, rfl⟩ := E.surjective y
   induction z with
-  | zero =>
-    rw [E.map_zero]
-    exact Submodule.zero_mem _
   | add x y hx hy => simpa using Submodule.add_mem _ hx hy
   | tmul l x =>
     have h : E (l ⊗ₜ[K] x) = l • idealInclusion K L A ε x := by

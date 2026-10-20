@@ -1,0 +1,30 @@
+info: Proof/NormalizedIntegralHodgeFrameR0149.lean:1296:0: 'ArithmeticThetaIntegralHodgeR0149.NormalizedIntegralHodgeFrameR0149.square_topScalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/NormalizedIntegralHodgeFrameR0149.lean:1298:0: 'ArithmeticThetaIntegralHodgeR0149.NormalizedIntegralHodgeFrameR0149.frame_from_unit_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: Proof/NormalizedIntegralHodgeFrameR0149.lean:1310:102: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Proof/NormalizedIntegralHodgeFrameR0149.lean:1310:175: Variable name `he` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _he
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Proof/NormalizedIntegralHodgeFrameR0149.lean:1310:247: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/NormalizedIntegralHodgeFrameR0149.lean:1331:0: 'ArithmeticThetaIntegralHodgeR0149.normalized_integral_hodge_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [10471/10472] Built HodgeTensorSectionsR0163 (4.6s)
+✔ [10472/10472] Built InitialTensorBaseChangeR0164 (5.8s)
+Build completed successfully (10472 jobs).

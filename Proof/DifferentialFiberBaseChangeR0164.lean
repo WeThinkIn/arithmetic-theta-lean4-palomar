@@ -31,8 +31,7 @@ private lemma kernel_eq (ε : A →ₐ[K] K) :
           (augmentation K L A ε).toRingHom := by
         apply RingHom.ext
         intro (x : Extended K L A)
-        refine TensorProduct.induction_on x ?_ ?_ ?_
-        · simp
+        refine TensorProduct.inductionOn x ?_ ?_
         · intro l a
           simp [m, augmentation, Algebra.TensorProduct.rid_tmul, Algebra.smul_def, mul_comm]
         · intro x y hx hy

@@ -1,0 +1,94 @@
+{
+  "timestamp_utc": "2026-10-20T16:17:04.299428+00:00",
+  "source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/OriginLogarithmicTaylorR0163.lean",
+  "original_source_sha256": "254348045e9bc36bdfaf74a9424aa31adedd7f33c6bca90ea4184acc33c32a1a",
+  "fixed_source": "/home/Palomar/workspace/arithmetic-theta/evidence/origin-log-taylor-245/OriginLogarithmicTaylorR0163.lean",
+  "fixed_source_sha256": "b32dd44b655f8d71329f370b018e1071e2918a4ad5429cfd2b071c6c2ba1bfc4",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/HodgeInitialDefinitionsR0163.olean": "90170a0e073967104efaa326406a5947f00a4d405fe76f1caf22440234a254dc"
+  },
+  "command": "LEAN_NUM_THREADS=12 timeout 300s python3 ../tools/run.py lake env lean --root=../evidence/origin-log-taylor-245 ../evidence/origin-log-taylor-245/OriginLogarithmicTaylorR0163.lean",
+  "cwd": "/home/Palomar/workspace/arithmetic-theta/project",
+  "max_wall_seconds": 300,
+  "main_source_modified": false,
+  "status": "passed",
+  "completed_utc": "2026-10-20T16:17:31.702916+00:00",
+  "terminal_session": 87227,
+  "exit_code": 0,
+  "log": "/home/Palomar/workspace/arithmetic-theta/evidence/origin-log-taylor-245/check-01.log",
+  "log_sha256": "364b6d0419873c13d0bfd3d18cdaaec86542ef596bbc5242a679706435fe0295",
+  "patch_sha256": "0843c6aed2fdf36951297bd76a2fda3f46489bfb72b9424dcbe02a798b30b1a0",
+  "axioms": {
+    "ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.finite_deriv_naturality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.taylor_reduction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.completed_numerator_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.laurentLogDerivative_powerSeries": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.expansionDefect_zero_of_affine": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.origin_chainRule_of_affine": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.taylor_field_scalar": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.completed_coordinate_numerator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.completed_coordinate_field_equation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.expanded_x_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.expanded_affine_defect_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaHodgeInitialR0163.origin_logarithmic_taylor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "bindings_unchanged": true,
+  "final_theorem_type_text_unchanged": true,
+  "mathematical_hypotheses_and_quantifiers_unchanged": true,
+  "changes": [
+    "5 formal derivative applications use named implicit coefficient ring (R := ...).",
+    "Add backward.isDefEq.respectTransparency.instanceSearchTypes false.",
+    "Raise synthInstance.maxHeartbeats from default 20000 to 200000."
+  ],
+  "no_visibility_changes_needed": true
+}

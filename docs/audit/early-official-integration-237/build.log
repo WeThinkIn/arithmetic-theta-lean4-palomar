@@ -1,0 +1,34 @@
+⚠ [8941/8950] Replayed EliminationReduction
+warning: Proof/EliminationReduction.lean:19:23: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Proof/EliminationReduction.lean:87:24: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Proof/EliminationReduction.lean:147:23: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Proof/EliminationReduction.lean:163:23: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Proof/EliminationReduction.lean:189:21: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [8942/8950] Replayed ComputedNullspaceBasis
+warning: Proof/ComputedNullspaceBasis.lean:93:36: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [8947/8950] Built EarlyCertificateChallenge (2.4s)
+warning: EarlyCertificateChallenge.lean:35:8: declaration uses `sorry`
+ℹ [8949/8950] Built EarlyCertificateSolution (2.4s)
+info: EarlyCertificateSolution.lean:71:0: 'ArithmeticThetaPalomarEarly205.coefficientMatrix_eq_computed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EarlyCertificateSolution.lean:72:0: 'ArithmeticThetaPalomarEarly205.earlierCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8950 jobs).

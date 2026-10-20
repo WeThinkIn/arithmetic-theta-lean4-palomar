@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "full_log_sha256": "7e2b1a4b7e880e0a751a17fe0d200fa2e9570c81f1d8a694257b29bcfebaf511",
+  "full_log_workspace_path": "/home/Palomar/workspace/arithmetic-theta/evidence/build-tensor-247.log",
+  "command": "python3 ../tools/run.py lake build +HodgeTensorSectionsR0163 +InitialTensorBaseChangeR0164",
+  "scope": "two targeted compatibility modules, not full GoalRoot"
+}

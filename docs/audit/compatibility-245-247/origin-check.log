@@ -1,0 +1,95 @@
+../evidence/origin-log-taylor-245/OriginLogarithmicTaylorR0163.lean:89:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.stageInverse_mul`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../evidence/origin-log-taylor-245/OriginLogarithmicTaylorR0163.lean:540:6: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+../evidence/origin-log-taylor-245/OriginLogarithmicTaylorR0163.lean:662:31: warning: Variable name `hχ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hχ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/origin-log-taylor-245/OriginLogarithmicTaylorR0163.lean:733:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.toIterated_injective`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../evidence/origin-log-taylor-245/OriginLogarithmicTaylorR0163.lean:740:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.laurentLogAdd_toIterated`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../evidence/origin-log-taylor-245/OriginLogarithmicTaylorR0163.lean:760:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.completed_equation_expansion`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.finite_deriv_naturality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.taylor_reduction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.completed_numerator_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.laurentLogDerivative_powerSeries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.expansionDefect_zero_of_affine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.origin_chainRule_of_affine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.taylor_field_scalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.completed_coordinate_numerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.completed_coordinate_field_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.expanded_x_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaHodgeInitialR0163.OriginLogarithmicTaylorR0163.expanded_affine_defect_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+../evidence/origin-log-taylor-245/OriginLogarithmicTaylorR0163.lean:967:58: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/origin-log-taylor-245/OriginLogarithmicTaylorR0163.lean:967:71: warning: Variable name `he` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _he
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/origin-log-taylor-245/OriginLogarithmicTaylorR0163.lean:967:203: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/origin-log-taylor-245/OriginLogarithmicTaylorR0163.lean:967:515: warning: Variable name `hG` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hG
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/origin-log-taylor-245/OriginLogarithmicTaylorR0163.lean:968:2: warning: Try this: intro k _ _ r hr h3 he T M hM s hs G hG _ _ X Y hX hY δ hδ ε κ hκ U hx a
+
+Note: This linter can be disabled with `set_option linter.tacticAnalysis.introMerge false`
+'ArithmeticThetaHodgeInitialR0163.origin_logarithmic_taylor' depends on axioms: [propext, Classical.choice, Quot.sound]

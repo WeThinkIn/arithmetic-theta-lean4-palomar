@@ -1,0 +1,605 @@
+{
+  "kind": "partial-exact-type-and-axiom-check",
+  "time_utc": "2026-10-20T16:13:19.549913+00:00",
+  "checked_endpoint_count": 50,
+  "required_endpoint_count": 103,
+  "exit_code": 0,
+  "complete_scope": false,
+  "palomar_comparator": false,
+  "probe_sha256": "61fd4b7fc15a4a11924a40d7bda13e69231f317b65937149018315dbf3f805ff",
+  "log_sha256": "2210aac63b8f3041ea325133359f226eefc116f787b95243b50ea83340f60ee5",
+  "checked": [
+    {
+      "id": "binary-orthogonal-example",
+      "declaration": "ArithmeticThetaFullSourceR0268.binary_orthogonal_example",
+      "import": "BinaryOrthogonalExampleR0268",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-000",
+      "declaration": "ArithmeticThetaElementary.rank_zero_coefficients",
+      "import": "RankZero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-001",
+      "declaration": "ArithmeticThetaElementary.rank_zero_kernel",
+      "import": "RankZero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-002",
+      "declaration": "ArithmeticThetaElementary.rank_zero_image",
+      "import": "RankZero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-003",
+      "declaration": "ArithmeticThetaLattice.even_integral_gram_orthogonalization",
+      "import": "IntegralGramOrthogonalization",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-004",
+      "declaration": "ArithmeticThetaDet80.actual_coefficient_matrix",
+      "import": "Det80CoefficientMinor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-005",
+      "declaration": "ArithmeticThetaDet80.actual_minor_determinant",
+      "import": "Det80CoefficientMinor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-006",
+      "declaration": "ArithmeticThetaDet80.actual_theta_kernel_zero",
+      "import": "Det80ThetaIndependence",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-007",
+      "declaration": "ArithmeticThetaDurfee.formal_jacobi_triple_product",
+      "import": "FormalJacobiTripleProduct",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-008",
+      "declaration": "ArithmeticThetaOrthogonalAlgorithm.computed_natural_data",
+      "import": "ComputedOrthogonalization",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-009",
+      "declaration": "ArithmeticThetaHadamard.jacobi_formal",
+      "import": "HadamardJacobi",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-010",
+      "declaration": "ArithmeticThetaBinary.all_positive_classes",
+      "import": "Det80CompleteClassification",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-011",
+      "declaration": "ArithmeticThetaBinary.similarity_distinct",
+      "import": "Det80Similarity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-012",
+      "declaration": "ArithmeticThetaBinary.ambient_realization",
+      "import": "Det80LocalRealization",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-013",
+      "declaration": "ArithmeticThetaBinary.same_order_classes",
+      "import": "Det80OrderClassification",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-014",
+      "declaration": "ArithmeticThetaRank16.no_similarity",
+      "import": "Rank16Nonisometry",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-015",
+      "declaration": "ArithmeticThetaRank16.integral_identity",
+      "import": "Rank16Theta",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-016",
+      "declaration": "ArithmeticThetaRank16.two_column_kernel",
+      "import": "Rank16Theta",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-017",
+      "declaration": "ArithmeticThetaEarlyAssembly.actual_earlier_certificate",
+      "import": "ActualEarlierCertificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-018",
+      "declaration": "ArithmeticThetaTateSeries.basic_fourth",
+      "import": "TateBasicFourthIdentity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-023",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.rational_preimage_cosets",
+      "import": "RationalPreimageCosetsR0127",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-024",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.unary_parameter_identification",
+      "import": "UnaryParameterIdentificationR0127",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-025",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.individual_coset_integral_product",
+      "import": "IndividualCosetIntegralProductR0127",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-026",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.source_orthogonal_factorization",
+      "import": "SourceOrthogonalFactorizationR0127",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-027",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.computed_family_formal_unary_consumer",
+      "import": "ComputedFamilyFormalUnaryConsumerR0127",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-058",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.shifted_integer_interval",
+      "import": "ShiftedIntegerIntervalR0229",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-059",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.rational_schur_completion",
+      "import": "RationalSchurCompletionR0229",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-060",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.computed_rational_ldl",
+      "import": "ComputedRationalLDLR0229",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-061",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.recursive_ellipsoid_enumeration",
+      "import": "RecursiveEllipsoidEnumerationR0229",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-062",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.ldl_theta_prefix",
+      "import": "LDLThetaPrefixR0229",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-063",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.ldl_coefficient_matrix",
+      "import": "LDLThetaPrefixR0229",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-077",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_even_unimodular",
+      "import": "GeneralDPlusEvenUnimodularR0242",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-078",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_dual",
+      "import": "GeneralDPlusDualR0242",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-079",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_theta_realization",
+      "import": "GeneralDPlusThetaRealizationR0242",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-088",
+      "declaration": "ArithmeticThetaDegreeAssembly.certified_theta_image_data",
+      "import": "EarlyCertificateAssembly",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-089",
+      "declaration": "ArithmeticThetaTateIdentities.general_annular_addition",
+      "import": "TateGeneralAddition",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-090",
+      "declaration": "ArithmeticThetaElementary.norm_exponent_identities",
+      "import": "NormExponentAlgebra",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-091",
+      "declaration": "ArithmeticThetaElementary.norm_sign_exponent_even",
+      "import": "NormExponentAlgebra",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-092",
+      "declaration": "ArithmeticThetaLaurentNormR0064.powered_gamma_norm",
+      "import": "LaurentPoweredNormR0064",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-050",
+      "declaration": "ArithmeticThetaFormalCoverR0210.arbitrary_formal_cover_constant",
+      "import": "ArbitraryFormalCoverConstantR0210",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-019",
+      "declaration": "ArithmeticThetaAlgebraicCoordinatesR0143.algebraic_tate_coordinates",
+      "import": "AlgebraicTateCoordinatesR0143",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-020",
+      "declaration": "ArithmeticThetaAlgebraicCoordinatesR0143.coordinate_exact_poles",
+      "import": "CoordinateExactPolesR0143",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-021",
+      "declaration": "ArithmeticThetaCubicModelR0144.algebraic_model_cubic",
+      "import": "AlgebraicModelCubicR0144",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-022",
+      "declaration": "ArithmeticThetaCompactifiedDifferentialR0145.global_normalized_differential",
+      "import": "GlobalNormalizedDifferentialR0145",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-080",
+      "declaration": "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_existence",
+      "import": "SchemeDiscriminantExistenceR0244",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-081",
+      "declaration": "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_naturality",
+      "import": "SchemeDiscriminantNaturalityR0244",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-083",
+      "declaration": "ArithmeticThetaSchemeKatoUnitR0250.scheme_kato_unit_naturality",
+      "import": "SchemeKatoUnitNaturalityR0250",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-086",
+      "declaration": "ArithmeticThetaKatoCharacterizationR0254.scheme_kato_intrinsic_characterization",
+      "import": "SchemeKatoIntrinsicCharacterizationR0254",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-098",
+      "declaration": "ArithmeticThetaSchemeKatoNormR0251.finite_etale_norm_family",
+      "import": "FiniteEtaleNormFamilyR0251",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-093",
+      "declaration": "ArithmeticThetaUnaryKatoPowerR0160.unary_power_geometric_realization",
+      "import": "UnaryPowerGeometricRealizationR0160",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "direct_provider_bindings": {
+    "Proof/BinaryOrthogonalExampleR0268.lean": "55907b0396d475fb3a3d8314c0b057b2654f6192ac26649dd914e41d42a35958",
+    ".lake/build/lib/lean/BinaryOrthogonalExampleR0268.olean": "ac44366b9a1cb613aa2b2fb66ed1bd3199319767c5b9161196392222d856ff4a",
+    "Proof/RankZero.lean": "cc4f6a9766708ed88ddeba65282b8423d4074e208ce9e16e2cfd8b0c7292570e",
+    ".lake/build/lib/lean/RankZero.olean": "538c12cbd111c25181c0c176c0a458a7d60c858a905235f91e3e3535b0995f6c",
+    "Proof/IntegralGramOrthogonalization.lean": "2bd17c168c92814ba360c4ea7b2416621343d43c01755194461a12b3a1556a8f",
+    ".lake/build/lib/lean/IntegralGramOrthogonalization.olean": "f7f615845833c4e8d93c6bb0508f0cd4b1b7f61a8f7d6e747f2482bb62c7abdb",
+    "Proof/Det80CoefficientMinor.lean": "786c4bcf8956c39010c59d5d4baba6ad04c441112a1a5bb3df3f747fef2c9020",
+    ".lake/build/lib/lean/Det80CoefficientMinor.olean": "058c6d898ae1112f0d9aaba12cd57a683495f2b389cdcc9d7992c4a3209a4645",
+    "Proof/Det80ThetaIndependence.lean": "ec353e6f31739c0b576ca20f55d02d5c5b760d5cea0205b1d38b313f504f35de",
+    ".lake/build/lib/lean/Det80ThetaIndependence.olean": "68df0aa9d1bbba6be20d482f27e81bd54a8a7cfc3760843f48106734bd6e64d6",
+    "Proof/FormalJacobiTripleProduct.lean": "dc17fdbcc1c52dd581edd399607021f33a1436f2fe8f363e0792414444b4df94",
+    ".lake/build/lib/lean/FormalJacobiTripleProduct.olean": "e4a58335a646e481bdfdf8529b15126b6489e72db2fed0d78765762496eff7f6",
+    "Proof/ComputedOrthogonalization.lean": "aaf4905e1a3dddde35b6e7801742385b7b9b9368452f7cab1288b294f06c988c",
+    ".lake/build/lib/lean/ComputedOrthogonalization.olean": "b4e220ffa00d391ffd3a6b95a5983b6e4fa264856e718501a587480627fce7d3",
+    "Proof/HadamardJacobi.lean": "4a79acaa1d6e783ab7a822af63059b0da1869c5e5e4534ba87e236d53d9ca8fe",
+    ".lake/build/lib/lean/HadamardJacobi.olean": "4c14fbf2569a33f284aaa577af955d0881069a949aac3b6002f58b56211d6c68",
+    "Proof/Det80CompleteClassification.lean": "346ccb696dd8355792004cae2cb1b615924af6d7ed090dc88d234f276e0d77f5",
+    ".lake/build/lib/lean/Det80CompleteClassification.olean": "92b0eaa59afa0fb72d2e7e417f90434b9c02f55e56eb1d7eab3a474f0121eb4e",
+    "Proof/Det80Similarity.lean": "ca5b38e019cb8db3f4f5d83fd819671772ba6c0eb1f91826d4b1e6a9c97040c4",
+    ".lake/build/lib/lean/Det80Similarity.olean": "3ffdd5e5aedb63464afb32777b64cd2a1e5624a83ee5892f52623be63bec34e6",
+    "Proof/Det80LocalRealization.lean": "038a26b6d8754765915eaf8ed96b4a306ed5e3845b902c192f1ab8967ae8b20b",
+    ".lake/build/lib/lean/Det80LocalRealization.olean": "c615e631a33214aa68aff18ebd6b2f67cbb9bfec0e3d03e5bfb77d9868a2dd05",
+    "Proof/Det80OrderClassification.lean": "3485abac78176343cce291caf256b17df12bd1656da7635ac52193dfb59224d3",
+    ".lake/build/lib/lean/Det80OrderClassification.olean": "9aecb09257a17d5237e3651493a804f3cb83c4c417f62dce457b53fe7053b1a5",
+    "Proof/Rank16Nonisometry.lean": "75c10719dc357ff8cfe49b140e00262b4d1e715918e9535581b81479b49c2b3c",
+    ".lake/build/lib/lean/Rank16Nonisometry.olean": "b985112724b1d0051f526cece41c6c04dece1e46ae077243f59b2713b27d0f61",
+    "Proof/Rank16Theta.lean": "7c74bf550f145b5298fbde1f177a8b8a6e61329daf131fd38d2f5294aff88e75",
+    ".lake/build/lib/lean/Rank16Theta.olean": "ee89d81211a8dae82f179ecd57a7f8a795f731e26c65463e7052ee6cdc61d2d1",
+    "Proof/ActualEarlierCertificate.lean": "7e19fa653bbf938dc93e244ea7b8c66ee9872a500f974066a3e7895d34d23c77",
+    ".lake/build/lib/lean/ActualEarlierCertificate.olean": "f9ecb000a95f61de292a837877453a219a74e03cbb23c835f1258b6e7c7d1df4",
+    "Proof/TateBasicFourthIdentity.lean": "946220cb62560a2d5e97cd249d29e3bef5e3b92eed8c46bf07462018197d6aff",
+    ".lake/build/lib/lean/TateBasicFourthIdentity.olean": "6a23bcc38faad6c5eb9af9d36d0f58b03c820e8bc644b4defb8be8d46f3c11ba",
+    "Proof/RationalPreimageCosetsR0127.lean": "77cedc3a8f91302f9e14636d61e994a169e6229b2e3c52486133ab24fe5dee81",
+    ".lake/build/lib/lean/RationalPreimageCosetsR0127.olean": "22a150b3fb3817559f64542c6eefe111d029f4c6a304e2029a77dee910bde31c",
+    "Proof/UnaryParameterIdentificationR0127.lean": "2de4792ad51f42475a78d11d15a03d9d27f9828e8eba2dee2ee8c70901e2347b",
+    ".lake/build/lib/lean/UnaryParameterIdentificationR0127.olean": "4cd04332c002d972b07d48d8810d51b03234699d5d04b9a2f24f8b60882b5950",
+    "Proof/IndividualCosetIntegralProductR0127.lean": "3a995d6481af9ac6b269eba22e04817793f52ba61f59adc5122a871a00791320",
+    ".lake/build/lib/lean/IndividualCosetIntegralProductR0127.olean": "eb02cd9f767aa856c0631a91cea69bd166c1dd6207b17882d526f999b06df81b",
+    "Proof/SourceOrthogonalFactorizationR0127.lean": "083dbebae946b29453af14a5f97655f3992ef2beff9dce63c431cfe77a6dcb35",
+    ".lake/build/lib/lean/SourceOrthogonalFactorizationR0127.olean": "dd35cfe4ee2137669f453673d754a1a3cba578973eb3ec3fd16e72258b748c57",
+    "Proof/ComputedFamilyFormalUnaryConsumerR0127.lean": "7406cafe4c03eb72942996487108b0c6af8fc964ef6ba2051ebc9b7cc22677ef",
+    ".lake/build/lib/lean/ComputedFamilyFormalUnaryConsumerR0127.olean": "ca284512f5580ad4314f334053bab7ccd279661cbbfb386b50e7b5f0bf7d94fa",
+    "Proof/ShiftedIntegerIntervalR0229.lean": "81b0ae8d69fd2e1a4966c35731998c83aa0f3f500fa289d6b9ce3b1916db84b4",
+    ".lake/build/lib/lean/ShiftedIntegerIntervalR0229.olean": "6f06bcf4ce292ae5b1f89d9693fe8c742c27375477d0216d9766e14e3dd61c5e",
+    "Proof/RationalSchurCompletionR0229.lean": "3b0fb6db1b17ca91c66a5f5aafcf321a99f6b4cedf9da8e4afcf7cfa7b34d971",
+    ".lake/build/lib/lean/RationalSchurCompletionR0229.olean": "4a34af12f8f1333d21d55be94de9dfd308c77c7a8f519f7510e4fb7b0c00d552",
+    "Proof/ComputedRationalLDLR0229.lean": "a99539bb1de344876eacafacf9db1a987e36bd59c960984a397e18b7432abe0e",
+    ".lake/build/lib/lean/ComputedRationalLDLR0229.olean": "f8222b92da2bcaedc852fd0777e148968aca6a71b46a8edd4985d0ea0ae67cad",
+    "Proof/RecursiveEllipsoidEnumerationR0229.lean": "ca3fe32d1f8c0fa4cc55d9fd0ed1c0bf852907c845a5d878058433c2cfb9022a",
+    ".lake/build/lib/lean/RecursiveEllipsoidEnumerationR0229.olean": "b96bda5be4848e1dd4766fe0bb22e9fbfe6d2224be30fb89e474861fe75cffac",
+    "Proof/LDLThetaPrefixR0229.lean": "b91f847f4b8fb6517760eb9e448c53fa99ecc794f934390050a6846a785626f4",
+    ".lake/build/lib/lean/LDLThetaPrefixR0229.olean": "9a6e1816646edb16258299c0847a948b32b93ec43e005351a74f5df98b0b9001",
+    "Proof/GeneralDPlusEvenUnimodularR0242.lean": "07b54ea3796d30f417e8e72eff1ff79308b898644262452b42516917e1a21cd9",
+    ".lake/build/lib/lean/GeneralDPlusEvenUnimodularR0242.olean": "99a4cd83e422ac0aea441e1b4965ae0247dff0d7a16cc105c0cd6e291147dc26",
+    "Proof/GeneralDPlusDualR0242.lean": "d9563d4ae0e5cfde3e31f3d69217e15767ab62abeaf2361b1ceaeb2d36953abc",
+    ".lake/build/lib/lean/GeneralDPlusDualR0242.olean": "4410ae14fc1cf355d0cc33100a721a151bdce3e3c274cab667a54059bed3e583",
+    "Proof/GeneralDPlusThetaRealizationR0242.lean": "bc6a6e32bc8f2cb2f32a0f6bb9eb7e9b17dd79aa96b56368326582ed231aac23",
+    ".lake/build/lib/lean/GeneralDPlusThetaRealizationR0242.olean": "6fcc055fad638b4daf04e644cfb0e1d76d0530bb134ecb625b8d96abac1ced33",
+    "Proof/EarlyCertificateAssembly.lean": "9a384fb618955c5727fde5f5aa48828b2e954091e9f09ca2890a782d8e4aa707",
+    ".lake/build/lib/lean/EarlyCertificateAssembly.olean": "875aff94986d259aee7c7b355ce1a9296c5a698d6ccf75b3d4e428ce5d7903e7",
+    "Proof/TateGeneralAddition.lean": "ae9c48034591e83a150502af266aad879d3db781ab1c69724a2a2d30d93cdabf",
+    ".lake/build/lib/lean/TateGeneralAddition.olean": "d7b37bd6a64f4a3a35162985957ede39b70e68e8999d801f5c09b06e78b33b71",
+    "Proof/NormExponentAlgebra.lean": "889a2441bafabfd89e42a591e05c9b498177c6924c78c0f8b83b4b5d94e960a6",
+    ".lake/build/lib/lean/NormExponentAlgebra.olean": "66c8ad9939afea244489728ad4355d3e8219eba514f82ce040139e644e3c459c",
+    "Proof/LaurentPoweredNormR0064.lean": "977c7775d3c6d4ee88c666635dbaeec5ff1bb01f7b7f21182a6b8accdcad87b2",
+    ".lake/build/lib/lean/LaurentPoweredNormR0064.olean": "2c5a9fd538088588f0dddb63a4c2a05e903e6f0ca3b322368a8039ba5878f31e",
+    "Proof/ArbitraryFormalCoverConstantR0210.lean": "c0ff8f81f208c8476f9308967f858af3ded06a8099c14699914846dee727361a",
+    ".lake/build/lib/lean/ArbitraryFormalCoverConstantR0210.olean": "f3bb9cf1d0096846942359ebfba0a49d1ea3abea4d1c3fe59d35905fd89c9438",
+    "Proof/AlgebraicTateCoordinatesR0143.lean": "853f6d7d0aa1dd5f64f2736186b7519bb7ae3d9f422e456f3e5df418cbd33b6f",
+    ".lake/build/lib/lean/AlgebraicTateCoordinatesR0143.olean": "33815c0804f7730ddf2a30e309de687df159f1a4bc2546f6f0c603d5b8c79337",
+    "Proof/CoordinateExactPolesR0143.lean": "b74e246b02324ada8eec36784a60cce01aab9c64cb2ee87dc9058029bdcc213f",
+    ".lake/build/lib/lean/CoordinateExactPolesR0143.olean": "2660890a53462c4424f7c84c4f2d6782cb57da054d31b872fe43a831504dacfa",
+    "Proof/AlgebraicModelCubicR0144.lean": "6c93ecdbec6702ff66268c8f893d2960405963ca6355193f03a15deb32a20285",
+    ".lake/build/lib/lean/AlgebraicModelCubicR0144.olean": "80dd50d3f8c4388eb1dc06050bcb6d4c2df928e2b1630dc560e15bae76fae9fc",
+    "Proof/GlobalNormalizedDifferentialR0145.lean": "6813a5dfd806ce2537334769a56d4e6a1594d7494575f4767e7fec7ca2c29c26",
+    ".lake/build/lib/lean/GlobalNormalizedDifferentialR0145.olean": "496791f9435cf037ca2d105a47c448a1a87292109d96d33cd868aaf9a70c0f59",
+    "Proof/SchemeDiscriminantExistenceR0244.lean": "16476a87ff5d4d5850732b1e2d2b17d85e46933154da97005454fa91d1c9b692",
+    ".lake/build/lib/lean/SchemeDiscriminantExistenceR0244.olean": "a8948acf8c5d79bb876488dd6f034c7dfa8947f073b3680cfb622d96592de549",
+    "Proof/SchemeDiscriminantNaturalityR0244.lean": "751779d8c328304193f8afa24298ff86f479319f3f020754d30e5620fd1dfd76",
+    ".lake/build/lib/lean/SchemeDiscriminantNaturalityR0244.olean": "4e762d555a01aa2cec2f1e87292e804cc3d9ae3347b04624cd3e51827043bc29",
+    "Proof/SchemeKatoUnitNaturalityR0250.lean": "b6b3d9193ff5127df9e8ee50f6fb8ca195ecd9150018c4a79e717e5d3ccdf835",
+    ".lake/build/lib/lean/SchemeKatoUnitNaturalityR0250.olean": "ea104c4c285520798340879c15f52e1437942f6e8d829447fdf666071ec17f92",
+    "Proof/SchemeKatoIntrinsicCharacterizationR0254.lean": "a794ce7fb2b1b0d293b164a50375796a2e7e604c5a10b23313f03a1a1712622a",
+    ".lake/build/lib/lean/SchemeKatoIntrinsicCharacterizationR0254.olean": "dcc1e86a8a0ac2fb152403887b58a6426ea90c1a3b76faffc1a82bf83ed6273a",
+    "Proof/FiniteEtaleNormFamilyR0251.lean": "cb6ab707a88bde4a3fb78e57838bf461e514d8990a15167f17209e9af6306c2d",
+    ".lake/build/lib/lean/FiniteEtaleNormFamilyR0251.olean": "af5acfb4d04f35f1911a8b20997c7b6060d76f446ac83f97f4e89c4df0f84692",
+    "Proof/UnaryPowerGeometricRealizationR0160.lean": "6b318e0186fa36161fac8d09eb3f3bf7803ff029c8b7bd12b15e9c03acec11fe",
+    ".lake/build/lib/lean/UnaryPowerGeometricRealizationR0160.olean": "982df43b2e864ca0b026d089ba74a9f0fa94c0e2a29e9433ab28b242bafe0aef",
+    "lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1"
+  }
+}

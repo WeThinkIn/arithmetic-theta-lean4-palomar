@@ -33,7 +33,6 @@ theorem augmentation_eq (ε : A →ₐ[K] K) (x : L ⊗[K] A) :
     augmentation K L A ε x =
       TensorProduct.rid K L (LinearMap.lTensor L ε.toLinearMap x) := by
   induction x with
-  | zero => simp
   | tmul l a => simp [augmentation, Algebra.smul_def, mul_comm]
   | add x y hx hy => simp_all
 

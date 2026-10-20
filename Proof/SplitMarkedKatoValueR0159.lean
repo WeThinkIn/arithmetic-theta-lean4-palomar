@@ -1,5 +1,8 @@
 module
 
+import all FullGammaEvaluationR0156
+import all LiteralSplitGeometricNormR0156
+
 public import CompletedMarkedSpecializationR0159
 public import MarkedKatoRegularityR0159
 public import GammaZeroLocusR0159

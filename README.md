@@ -23,11 +23,11 @@ integration endpoints. `docs/SourceObligations.json` preserves their original
 types and source accounts. `docs/Coverage.md` tracks their migration separately
 from independent Challenge coverage.
 
-Partial audit214 has checked46/103 original exact endpoint types and standard
+Partial audit242 has checked50/103 original exact endpoint types and standard
 axiom closures. The accepted-017 early-certificate subpackage separately passed
 local Comparator with con-ron, NanoDa and Lean default kernel using source-bound
-exports and a normal sandbox. It has not undergone official source-provenance
-preflight. See `docs/MigrationStatus.md` and `docs/PalomarPreflight.md`.
+exports and a normal sandbox. Its official source-provenance
+preflight is running; no official pass has been reported. See `docs/MigrationStatus.md` and `docs/PalomarPreflight.md`.
 
 ## Verification interface
 

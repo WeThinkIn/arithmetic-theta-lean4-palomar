@@ -94,7 +94,7 @@ def LogarithmicTaylor (M : Model k T) (s : baseScheme k ⟶ M.X)
       (hx : Origin k M s hs (IsLocalRing.closedPoint (LaurentSeries k)) ∈ U)
       (a : (genericScheme k M).presheaf.obj (Opposite.op U)),
       κ ((genericScheme k M).presheaf.germ U _ hx (frameDerivative k M δ U a)) =
-        (1 + PowerSeries.X) * PowerSeries.derivative (LaurentSeries k)
+        (1 + PowerSeries.X) * PowerSeries.derivative (R := LaurentSeries k)
           (κ ((genericScheme k M).presheaf.germ U _ hx a))
 
 /-- The canonical Hodge tensor associated to an actual initial class of 5g.

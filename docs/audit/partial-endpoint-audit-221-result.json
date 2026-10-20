@@ -1,0 +1,476 @@
+{
+  "timestamp_utc": "2026-10-20T16:05:22.871503+00:00",
+  "exit_code": 0,
+  "terminal_session": 37432,
+  "verified_count": 49,
+  "total_required": 103,
+  "remaining_count": 54,
+  "prior_verified_count": 46,
+  "new_ids": [
+    "accepted-083",
+    "accepted-086",
+    "accepted-098"
+  ],
+  "all_original_46_preserved": true,
+  "all_49_types_from_frozen_SourceObligations": true,
+  "joint_environment": true,
+  "axiom_checks": [
+    {
+      "id": "binary-orthogonal-example",
+      "declaration": "ArithmeticThetaFullSourceR0268.binary_orthogonal_example",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-000",
+      "declaration": "ArithmeticThetaElementary.rank_zero_coefficients",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-001",
+      "declaration": "ArithmeticThetaElementary.rank_zero_kernel",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-002",
+      "declaration": "ArithmeticThetaElementary.rank_zero_image",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-003",
+      "declaration": "ArithmeticThetaLattice.even_integral_gram_orthogonalization",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-004",
+      "declaration": "ArithmeticThetaDet80.actual_coefficient_matrix",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-005",
+      "declaration": "ArithmeticThetaDet80.actual_minor_determinant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-006",
+      "declaration": "ArithmeticThetaDet80.actual_theta_kernel_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-007",
+      "declaration": "ArithmeticThetaDurfee.formal_jacobi_triple_product",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-008",
+      "declaration": "ArithmeticThetaOrthogonalAlgorithm.computed_natural_data",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-009",
+      "declaration": "ArithmeticThetaHadamard.jacobi_formal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-010",
+      "declaration": "ArithmeticThetaBinary.all_positive_classes",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-011",
+      "declaration": "ArithmeticThetaBinary.similarity_distinct",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-012",
+      "declaration": "ArithmeticThetaBinary.ambient_realization",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-013",
+      "declaration": "ArithmeticThetaBinary.same_order_classes",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-014",
+      "declaration": "ArithmeticThetaRank16.no_similarity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-015",
+      "declaration": "ArithmeticThetaRank16.integral_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-016",
+      "declaration": "ArithmeticThetaRank16.two_column_kernel",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-017",
+      "declaration": "ArithmeticThetaEarlyAssembly.actual_earlier_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-018",
+      "declaration": "ArithmeticThetaTateSeries.basic_fourth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-023",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.rational_preimage_cosets",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-024",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.unary_parameter_identification",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-025",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.individual_coset_integral_product",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-026",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.source_orthogonal_factorization",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-027",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.computed_family_formal_unary_consumer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-058",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.shifted_integer_interval",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-059",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.rational_schur_completion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-060",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.computed_rational_ldl",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-061",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.recursive_ellipsoid_enumeration",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-062",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.ldl_theta_prefix",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-063",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.ldl_coefficient_matrix",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-077",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_even_unimodular",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-078",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_dual",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-079",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_theta_realization",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-088",
+      "declaration": "ArithmeticThetaDegreeAssembly.certified_theta_image_data",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-089",
+      "declaration": "ArithmeticThetaTateIdentities.general_annular_addition",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-090",
+      "declaration": "ArithmeticThetaElementary.norm_exponent_identities",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-091",
+      "declaration": "ArithmeticThetaElementary.norm_sign_exponent_even",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-092",
+      "declaration": "ArithmeticThetaLaurentNormR0064.powered_gamma_norm",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-050",
+      "declaration": "ArithmeticThetaFormalCoverR0210.arbitrary_formal_cover_constant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-019",
+      "declaration": "ArithmeticThetaAlgebraicCoordinatesR0143.algebraic_tate_coordinates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-020",
+      "declaration": "ArithmeticThetaAlgebraicCoordinatesR0143.coordinate_exact_poles",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-021",
+      "declaration": "ArithmeticThetaCubicModelR0144.algebraic_model_cubic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-022",
+      "declaration": "ArithmeticThetaCompactifiedDifferentialR0145.global_normalized_differential",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-080",
+      "declaration": "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_existence",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-081",
+      "declaration": "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_naturality",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-083",
+      "declaration": "ArithmeticThetaSchemeKatoUnitR0250.scheme_kato_unit_naturality",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-086",
+      "declaration": "ArithmeticThetaKatoCharacterizationR0254.scheme_kato_intrinsic_characterization",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "accepted-098",
+      "declaration": "ArithmeticThetaSchemeKatoNormR0251.finite_etale_norm_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "all_axioms_permitted": true,
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "bound_inputs_unchanged_after_check": true,
+  "command": "LEAN_NUM_THREADS=12 timeout 300s python3 ../tools/run.py lake env lean --root=../evidence ../evidence/PartialEndpointAudit221.lean",
+  "cwd": "/home/Palomar/workspace/arithmetic-theta/project",
+  "artifacts": {
+    "PartialEndpointAudit221.lean": "47dae09123627c3c4af4df7464553ffe459850cb4f228c8a12f498d82af30860",
+    "partial-endpoint-audit-selection-221.json": "493ed076085d989ff9bc121ef6a537a620a0375674959620e4debb5434909fbe",
+    "partial-endpoint-audit-bindings-221.json": "9b31aa7508c4af229eae2133db7b720e5e77225493bfda80df6a08fa9bc23ec2",
+    "partial-endpoint-audit-221.log": "84640581fde146f7a37a26b03343b33de7195fc70c83954dac879563707f6a88"
+  },
+  "scope": "Partial exact-original-type and transitive-axiom audit only; not full root completion or paper semantic verification."
+}

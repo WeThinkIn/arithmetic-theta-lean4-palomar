@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "targets": [
+    "EarlyCertificateChallenge",
+    "EarlyCertificateSolution"
+  ],
+  "source_bindings": {
+    "EarlyCertificateChallenge.lean": "800f0cd45e572e19c42df4146d2dab3bcc4ec3820705634ff937d10a9e9a0002",
+    "EarlyCertificateSolution.lean": "611ba7328412a0897eb8de48f003815fbc3a3b82d255f6cef2c9434aa0fb5919",
+    "comparator-early.json": "b773ca3535346dc8ad85aa24ec021a0d1b18f6f9de88fee9b1815d7a79516082",
+    "lakefile.toml": "82c3e96952cb3a33744d4a0a73efffc72ee0702b278fafa39151c8a541449519",
+    "lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1"
+  },
+  "toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "scope": "accepted017 only; local renamed-module build; official preflight still required"
+}

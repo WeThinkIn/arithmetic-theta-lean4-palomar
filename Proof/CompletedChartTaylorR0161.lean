@@ -2,6 +2,9 @@ module
 
 public import OriginInitialDefinitionsR0161
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Taylor expansion on the completed node, with the base parameter fixed. -/

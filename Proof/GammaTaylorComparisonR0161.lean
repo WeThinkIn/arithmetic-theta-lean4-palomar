@@ -4,6 +4,9 @@ public import FaithfulTaylorFieldR0161
 public import DiscriminantInitial
 public import LocalGammaProviderBridgeR0065
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 set_option autoImplicit false

@@ -3,6 +3,9 @@ module
 public import CompletedChartTaylorR0161
 public import CompletedSectionKernelsR0053
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Faithfulness at the actual identity section, and the uniquely determined

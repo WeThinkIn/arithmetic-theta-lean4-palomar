@@ -5,6 +5,8 @@ public import CompletedMarkedSpecializationR0159
 public import KatoAnnularDivisorR0152
 public import Mathlib.RingTheory.Flat.FaithfullyFlat.Algebra
 
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! The local comparison uses the actual Taylor arc and the pulled-back
