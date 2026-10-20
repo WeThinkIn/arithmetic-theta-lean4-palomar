@@ -1,0 +1,26 @@
+{
+  "base": "Frozen394 actual scheme Kato vocabulary, all source/objects tied by receipt and input hashes",
+  "new_definitions": "Exact source slices assembled without original project imports in Challenge; top TateExpansion uses explicit namespace maps to394 actual objects",
+  "namespace_maps": {
+    "ArithmeticThetaSchemeKatoUnitR0250": "ArithmeticThetaPalomarSchemeKato394",
+    "ArithmeticThetaArbitraryKatoUnitR0249": "ArithmeticThetaPalomarAffineKato394",
+    "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily": "ArithmeticThetaPalomarWeierstrass373.family",
+    "ArithmeticThetaSchemeKatoExpansionR0252.TateExpansion": "ArithmeticThetaPalomarSchemeTate422.TateExpansion"
+  },
+  "source_files": {
+    "NormFiniteDefinitionsR0063.lean": "d11945f36b24b9b6157e7aff46f1cdade48871b79808411315ec2e50ea794b86",
+    "LaurentNormDefinitionsR0064.lean": "0da5223de3129e8612c7023a4c3ce12dd75e58e6be1ba071daaf639c93024e1f",
+    "UnsplitExpansionDefinitionsR0158.lean": "ed5f7ccc11498692c1be10a307bc273043bfb906fe60979691ba116fa43e4df0",
+    "TateSeriesDefinitions.lean": "0c507106496fbc9f5b0fba585c1082ee9dbf2b9d0ba2a8ee03a5d89fbcad823a",
+    "CubicModelDefinitionsR0144.lean": "552a2674a581ccccad61183c32d5cacf557a4429fec259d7c2be991505ae6fe6",
+    "PeriodOneDiscriminantDefinitionsR0246.lean": "0ecab69981233a0beaa0f6d11787cfd51cf6c40d0455fb6a15088b741c609f68",
+    "LegendreComparisonDefinitionsR0177.lean": "65b7fbc51221ed2bc0f3ed707902afc2c0fcbd755a363b17020abcd34358191a",
+    "AnnularNormBridgeDefinitionsR0156.lean": "3bd558c39176675541e19bb9230910b8f571c91eafec3a90ed9d7e8cd93d80fb",
+    "RationalTateDiscriminantDefinitionsR0247.lean": "5cfece1721f4b2120fff78b9dbc147bbc0264b9a87f7f4a6fb39551363bf7066",
+    "PeriodOneNormDefinitionsR0248.lean": "4b6df5b77eaf6c7feb8c2219dbf5a3756218c6cda115d5c0707d6fde6109a4dd",
+    "SchemeKatoExpansionDefinitionsR0252.lean": "4133e5bdfa9c2f83abcef6b34c2a2edb3195b85cc18529efaacfe0cca2a6d019",
+    "SchemeKatoFullTateExpansionR0252.lean": "9c3cfc34bdcc0d13d5ae7a8a4bafefb541c7c0964d145c59ff827d80f1ff678f"
+  },
+  "original_type_recovery": "recover_original_084; original whole theorem equality checked by rfl",
+  "formatting": "Comment/blank removal and signature folding; independent word/string/punctuation stream equivalence verified"
+}

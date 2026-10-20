@@ -1,0 +1,55 @@
+version: v0.4
+project:
+  name: Complete scheme Kato unit and full Tate expansion
+  description: 'Complete original accepted084: unique same actual elliptic scheme
+    unit with full Kato normalization, Cartier divisor, every positive coprime determinant
+    norm and complete period-one Tate expansion after its actual pullback. Retains
+    every coefficient-field extension and actual pointed Cartesian test, the concrete
+    curve and both coordinates, faithful function-field evaluation and full Laurent
+    gamma products. Explicit gamma-limit existence support prevents vacuous conditional
+    expansion. Includes inherited083/086 targets, counted only once. See challenges/scheme-tate-unit/Scope.json.
+    No full-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Complete original accepted084: unique same actual elliptic scheme unit with
+    full Kato normalization, Cartier divisor, every positive coprime determinant norm
+    and complete period-one Tate expansion after its actual pullback. Retains every
+    coefficient-field extension and actual pointed Cartesian test, the concrete curve
+    and both coordinates, faithful function-field evaluation and full Laurent gamma
+    products. Explicit gamma-limit existence support prevents vacuous conditional
+    expansion. Includes inherited083/086 targets, counted only once. See challenges/scheme-tate-unit/Scope.json.
+    No full-paper completion claimed.'
+fidelity:
+  divergences: Original084 full type recovered through exact predicate equivalences;
+    no new assumption on the scheme base, no restriction of all coprime positive norms
+    to2/3, no truncation and no product equation in test data. The scope includes
+    inherited083/086 but does not claim other original endpoints.

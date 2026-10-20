@@ -1316,3 +1316,11 @@ roots = ["SchemeInitialChallenge"]
 [[lean_lib]]
 name = "SchemeInitialSolution"
 roots = ["SchemeInitialSolution"]
+
+[[lean_lib]]
+name = "SchemeTateUnitChallenge"
+roots = ["SchemeTateUnitChallenge"]
+
+[[lean_lib]]
+name = "SchemeTateUnitSolution"
+roots = ["SchemeTateUnitSolution"]

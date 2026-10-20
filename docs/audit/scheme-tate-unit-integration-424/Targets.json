@@ -1,0 +1,40 @@
+{
+  "targets": [
+    {
+      "name": "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+      "declaration_line": 466,
+      "hole_line": 467
+    },
+    {
+      "name": "ArithmeticThetaPalomarKatoSupport394.normalModelExists",
+      "declaration_line": 647,
+      "hole_line": 648
+    },
+    {
+      "name": "ArithmeticThetaPalomarKatoSupport394.schemeUnitExists",
+      "declaration_line": 649,
+      "hole_line": 650
+    },
+    {
+      "name": "ArithmeticThetaPalomarKato394.schemeUnitNaturality",
+      "declaration_line": 655,
+      "hole_line": 656
+    },
+    {
+      "name": "ArithmeticThetaPalomarKato394.schemeIntrinsicCharacterization",
+      "declaration_line": 657,
+      "hole_line": 658
+    },
+    {
+      "name": "ArithmeticThetaPalomarSchemeTate422.gammaPair",
+      "declaration_line": 858,
+      "hole_line": 859
+    },
+    {
+      "name": "ArithmeticThetaPalomarSchemeTate422.schemeKatoFullTateExpansion",
+      "declaration_line": 860,
+      "hole_line": 862
+    }
+  ],
+  "all_holes_selected_once": true
+}

@@ -1,0 +1,26 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-084"
+  ],
+  "inherited_original_endpoint_ids_not_counted_again": [
+    "accepted-083",
+    "accepted-086"
+  ],
+  "original_type_universe": "Type0 exactly as original084",
+  "retained": [
+    "unique SAME actual scheme unit",
+    "complete normal-model IsKatoUnit",
+    "actual Cartier divisor on all charts",
+    "all positive d coprime to c, actual norm families on all opens",
+    "all characteristic-zero field extensions and actual pointed Cartesian Tate tests",
+    "concrete period-one equation, structural scalar and both coordinates",
+    "constructed faithful actual function-field evaluation",
+    "actual C.map.appLE pullback and nonempty complement",
+    "entire uniform integer-coefficient Laurent gamma limits and full fValue product",
+    "explicit existence/uniqueness of both gamma limits at w and w^c"
+  ],
+  "target_count": 7,
+  "new_endpoint_count": 1,
+  "official_verified": false,
+  "full_paper_claimed": false
+}

@@ -1,0 +1,80 @@
+⚠ [12042/12049] Replayed CanonicalPeriodOneExpansionR0252
+warning: Proof/CanonicalPeriodOneExpansionR0252.lean:38:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: Proof/CanonicalPeriodOneExpansionR0252.lean:65:0: 'ArithmeticThetaSchemeKatoExpansionR0252.canonical_period_one_expansion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12043/12049] Replayed SchemeKatoFullTateExpansionR0252
+info: Proof/SchemeKatoFullTateExpansionR0252.lean:67:0: 'ArithmeticThetaSchemeKatoExpansionR0252.scheme_kato_full_tate_expansion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12045/12049] Replayed CartierUnitRatioExtensionR0254
+warning: Proof/CartierUnitRatioExtensionR0254.lean:167:7: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/CartierUnitRatioExtensionR0254.lean:176:0: 'ArithmeticThetaKatoCharacterizationR0254.cartier_unit_ratio_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12046/12049] Replayed GlobalUnitTwoThreeNormRigidityR0254
+warning: Proof/GlobalUnitTwoThreeNormRigidityR0254.lean:148:26: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [g, morphismRestrict]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Proof/GlobalUnitTwoThreeNormRigidityR0254.lean:206:7: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/GlobalUnitTwoThreeNormRigidityR0254.lean:225:0: 'ArithmeticThetaKatoCharacterizationR0254.global_unit_two_three_norm_rigidity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12047/12049] Replayed SchemeKatoIntrinsicCharacterizationR0254
+warning: Proof/SchemeKatoIntrinsicCharacterizationR0254.lean:71:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Proof/SchemeKatoIntrinsicCharacterizationR0254.lean:72:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: Proof/SchemeKatoIntrinsicCharacterizationR0254.lean:84:0: 'ArithmeticThetaKatoCharacterizationR0254.scheme_kato_intrinsic_characterization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12048/12049] Built SchemeTateUnitSolution (6.6s)
+warning: SchemeTateUnitSolution.lean:22:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [12049/12049] Built SchemeTateUnitChallenge (12s)
+warning: SchemeTateUnitChallenge.lean:466:8: declaration uses `sorry`
+warning: SchemeTateUnitChallenge.lean:647:8: declaration uses `sorry`
+warning: SchemeTateUnitChallenge.lean:649:8: declaration uses `sorry`
+warning: SchemeTateUnitChallenge.lean:655:8: declaration uses `sorry`
+warning: SchemeTateUnitChallenge.lean:657:8: declaration uses `sorry`
+warning: SchemeTateUnitChallenge.lean:858:8: declaration uses `sorry`
+warning: SchemeTateUnitChallenge.lean:860:8: declaration uses `sorry`
+Build completed successfully (12049 jobs).

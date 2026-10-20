@@ -1,0 +1,9 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : @ArithmeticThetaSchemeKatoExpansionR0252.scheme_kato_full_tate_expansion =
+  @ArithmeticThetaPalomarSchemeTate422.recover_original_084 := rfl
+#print axioms ArithmeticThetaPalomarSchemeTate422.recover_original_084
+#print axioms ArithmeticThetaPalomarSchemeTate422.expansion_iff
+#print axioms ArithmeticThetaPalomarSchemeTate422.gammaPair
