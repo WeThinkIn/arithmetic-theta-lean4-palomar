@@ -1,0 +1,58 @@
+version: v0.4
+project:
+  name: Complete component Hodge power degree
+  description: Full original031 over every original algebraically closed characteristic-zero
+    field and even L >= 3. For every actual component, canonical compact Hodge extension,
+    natural n (including zero), actual normal frame cover and nonzero global section
+    with its actual section divisor, the residue-weighted degree satisfies exactly
+    24*degree=n*2*L*#cusps and the upper bound n*#SL2. Canonical retains every actual
+    disk test, the specific Tate cubic, normalized differential and actual canonical
+    pointed differential pullback, with a unique extending generator. No arbitrary
+    line, scalar comparison, degree or expansion function replaces these objects.
+    The complete types and available bodies of these constructions are retained.
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: Full original031 over every original algebraically closed characteristic-zero
+    field and even L >= 3. For every actual component, canonical compact Hodge extension,
+    natural n (including zero), actual normal frame cover and nonzero global section
+    with its actual section divisor, the residue-weighted degree satisfies exactly
+    24*degree=n*2*L*#cusps and the upper bound n*#SL2. Canonical retains every actual
+    disk test, the specific Tate cubic, normalized differential and actual canonical
+    pointed differential pullback, with a unique extending generator. No arbitrary
+    line, scalar comparison, degree or expansion function replaces these objects.
+    The complete types and available bodies of these constructions are retained.
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

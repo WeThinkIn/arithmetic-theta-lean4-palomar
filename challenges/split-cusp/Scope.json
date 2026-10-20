@@ -1,0 +1,21 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-072"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-072"
+  ],
+  "universe": "Original k : Type characteristic-zero field, specified primitive L-th root, even L >= 3; no algebraic-closure hypothesis",
+  "target_count": 16,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Actual Legendre atlas, represented full marking and free sign quotient with full orbit/universal properties",
+    "Actual compatible locus and dense smooth proper projective compactification",
+    "Actual irreducibleComponent x with proved openness and actual boundary cusp subtype",
+    "Specified primitive L-th root in the original characteristic-zero field",
+    "Finite and nonempty actual cusps and exact 2*L*card(Cusps) <= card(SL2(ZMod L))"
+  ],
+  "limitations": "This endpoint uses the original supplied LevelData/Compactification; it does not separately construct them or claim a Hodge extension or official pass."
+}

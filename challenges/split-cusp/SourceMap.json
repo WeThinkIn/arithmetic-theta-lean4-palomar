@@ -1,0 +1,18 @@
+{
+  "basis": "Complete actual LevelData/Compactification and component cusp definitions from485; exact original split_component_cusp_bound type",
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean": "185168c780b13959acd99921e2b0b05e869ec0e0ff40c8ac2c8cd1940a42a904",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Solution.lean": "3e8969120511ea8d817d9a7b474d16e3aed9186ed33e082719b60df4f45950b4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/comparator.json": "17c6ca87ed4c1c0219e57df77802e8db7a7e1452b6979363c0469eaa8b21e612"
+  },
+  "semantic_definitions": 280,
+  "target_types": "All explicit target types/universes and standard axiom closures checked",
+  "namespace_map": {
+    "ArithmeticThetaCyclotomicModularityR0239.split_component_cusp_bound": "ArithmeticThetaPalomarComponent485.splitComponentCuspBound"
+  },
+  "bridges": [
+    "componentOpen_eq_original",
+    "Compiled rfl equality recover_original_072 = original split_component_cusp_bound"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "ids": [
+    "accepted-031"
+  ],
+  "target_count": 19,
+  "attempts": {
+    "Challenge": "05",
+    "Solution": "01",
+    "ChallengeAudit": "02",
+    "SolutionAudit": "01",
+    "DefinitionCompatibility": "03",
+    "OriginalEndpointAudit": "01",
+    "TargetTypeAudit": "02",
+    "TargetHoleAudit": "02"
+  },
+  "title": "Complete component Hodge power degree",
+  "universe": "Original universe-zero algebraically closed characteristic-zero field, even L >= 3, arbitrary n including zero and arbitrary frame-index type",
+  "basis": "Original actual LevelData/Compactification, literal Tate curve and differential pullback constructions, complete canonical boundary Hodge predicate, component/frame/actual-order/weighted-degree definitions",
+  "namespace_map": {
+    "ArithmeticThetaComponentDegreeR0184.component_hodge_power_degree": "ArithmeticThetaPalomarHodge495.componentHodgePowerDegree"
+  },
+  "bridges": [
+    "Compiled rfl equality recover_original_031 = original component_hodge_power_degree",
+    "All semantic declaration types and available bodies checked, including original pointedDifferentialIso and boundary diskGenericIso"
+  ],
+  "retained": [
+    "Actual compactification and irreducible component with proved integrality and local Noetherianity",
+    "Hodge line identified with actual open cotangent line; all genuine DiskTests and unique extending generator in Canonical",
+    "Specific Tate cubic from full literal annular sums; normalized dx/(2y) and canonical differential sheaf pullback",
+    "Every genuine nonzero global section of every n-th tensor power, including n=0",
+    "Every actual normal affine frame cover and finite-support divisor matching Scheme.ord at each point",
+    "Degree weighted by actual residue field degree for the same structural map",
+    "Exact equality 24*weightedDegree=n*2*L*#cusps and bound by n*#SL2"
+  ],
+  "limitations": "This endpoint takes the original LevelData, Compactification and canonical Extension as inputs. It proves the full degree assertion for these objects; it does not separately claim their construction, compact unary sections or official acceptance.",
+  "description": "Full original031 over every original algebraically closed characteristic-zero field and even L >= 3. For every actual component, canonical compact Hodge extension, natural n (including zero), actual normal frame cover and nonzero global section with its actual section divisor, the residue-weighted degree satisfies exactly 24*degree=n*2*L*#cusps and the upper bound n*#SL2. Canonical retains every actual disk test, the specific Tate cubic, normalized differential and actual canonical pointed differential pullback, with a unique extending generator. No arbitrary line, scalar comparison, degree or expansion function replaces these objects. The complete types and available bodies of these constructions are retained."
+}

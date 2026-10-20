@@ -1,0 +1,6 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarHodge495.recover_original_031 = ArithmeticThetaComponentDegreeR0184.component_hodge_power_degree := by rfl
+#print axioms ArithmeticThetaPalomarHodge495.recover_original_031

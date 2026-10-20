@@ -1428,3 +1428,19 @@ roots = ["UnaryGeometricChallenge"]
 [[lean_lib]]
 name = "UnaryGeometricSolution"
 roots = ["UnaryGeometricSolution"]
+
+[[lean_lib]]
+name = "ComponentHodgeDegreeChallenge"
+roots = ["ComponentHodgeDegreeChallenge"]
+
+[[lean_lib]]
+name = "ComponentHodgeDegreeSolution"
+roots = ["ComponentHodgeDegreeSolution"]
+
+[[lean_lib]]
+name = "SplitCuspChallenge"
+roots = ["SplitCuspChallenge"]
+
+[[lean_lib]]
+name = "SplitCuspSolution"
+roots = ["SplitCuspSolution"]

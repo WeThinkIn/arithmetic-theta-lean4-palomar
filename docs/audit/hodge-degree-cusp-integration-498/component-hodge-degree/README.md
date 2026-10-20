@@ -1,0 +1,7 @@
+# Complete component Hodge power degree
+
+Full original031 over every original algebraically closed characteristic-zero field and even L >= 3. For every actual component, canonical compact Hodge extension, natural n (including zero), actual normal frame cover and nonzero global section with its actual section divisor, the residue-weighted degree satisfies exactly 24*degree=n*2*L*#cusps and the upper bound n*#SL2. Canonical retains every actual disk test, the specific Tate cubic, normalized differential and actual canonical pointed differential pullback, with a unique extending generator. No arbitrary line, scalar comparison, degree or expansion function replaces these objects. The complete types and available bodies of these constructions are retained.
+
+Challenge has 877 lines and 19 explicit support/main targets. All 467 semantic types/available bodies match the Solution environment, and every literal proof hole is selected exactly once. The original theorem is recovered by compiled equality; target universes/types and all Solution declaration axiom closures pass. Actual root integration and official verification are separate steps. No whole-paper acceptance is claimed.
+
+This endpoint takes the original LevelData, Compactification and canonical Extension as inputs. It proves the full degree assertion for these objects; it does not separately claim their construction, compact unary sections or official acceptance.

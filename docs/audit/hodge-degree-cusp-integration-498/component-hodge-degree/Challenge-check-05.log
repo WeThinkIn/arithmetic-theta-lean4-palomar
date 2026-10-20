@@ -1,0 +1,27 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:25:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:27:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:29:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:36:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:37:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:38:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:41:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:65:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:68:9: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:80:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:87:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:113:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:120:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:121:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:541:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:590:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:804:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:821:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:823:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:874:8: warning: declaration uses `sorry`

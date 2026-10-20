@@ -1,0 +1,107 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:25:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:27:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:29:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:36:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:37:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:38:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:41:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:65:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:68:9: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:80:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:87:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:113:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:120:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:121:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:528:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:572:0: error: unexpected token '('; expected command
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:574:47: error(lean.unknownIdentifier): Unknown identifier `φ`
+
+Note: It is not possible to treat `φ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:574:54: error(lean.unknownIdentifier): Unknown identifier `gY.kaehler`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:574:67: error(lean.unknownIdentifier): Unknown identifier `gX.kaehler`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:575:49: error(lean.unknownIdentifier): Unknown identifier `φ`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:576:8: error(lean.unknownIdentifier): Unknown identifier `gY`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:576:11: error(lean.unknownIdentifier): Unknown identifier `gX`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:576:14: error(lean.unknownIdentifier): Unknown identifier `φ`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:576:16: error(lean.unknownIdentifier): Unknown identifier `hφ`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:577:62: error(lean.unknownIdentifier): Unknown identifier `φ`
+
+Note: It is not possible to treat `φ` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:577:64: error(lean.unknownIdentifier): Unknown identifier `gX`
+
+Note: It is not possible to treat `gX` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:577:67: error(lean.unknownIdentifier): Unknown identifier `gY`
+
+Note: It is not possible to treat `gY` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:577:148: error(lean.unknownIdentifier): Unknown identifier `gY`
+
+Note: It is not possible to treat `gY` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:577:161: error(lean.unknownIdentifier): Unknown identifier `differentialMap`
+
+Note: It is not possible to treat `differentialMap` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:595:10: error(lean.unknownIdentifier): Unknown identifier `differentialMap_isIso`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:594:200: error: unsolved goals
+X✝ Y✝ : Scheme
+A B : Type u
+inst✝³ : CommRing A
+inst✝² : CommRing B
+inst✝¹ : Algebra A B
+X Y : Scheme
+gY : Y ⟶ Spec ↧A
+gX : X ⟶ Spec ↧B
+φ : X ⟶ Y
+hc : IsPullback φ gX gY (Spec.map (CommRingCat.ofHom (algebraMap A B)))
+inst✝ : SmoothOfRelativeDimension 1 gY
+s : Spec ↧A ⟶ Y
+t : Spec ↧B ⟶ X
+hpt : t ≫ φ = Spec.map (CommRingCat.ofHom (algebraMap A B)) ≫ s
+⊢ (Scheme.Modules.pullback (Spec.map (CommRingCat.ofHom (algebraMap A B)))).obj
+      ((Scheme.Modules.pullback s).obj (Scheme.Hom.kaehler gY)) ≅
+    (Scheme.Modules.pullback t).obj (Scheme.Hom.kaehler gX)
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:613:20: error(lean.invalidField): Invalid field `schemeNsmul`: The environment does not contain `WeierstrassProjModel.RelativeGroupLaw.schemeNsmul`, so it is not possible to project the field `schemeNsmul` from an expression
+  G
+of type
+  WeierstrassProjModel.RelativeGroupLaw R (structureMap R W)
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:617:63: error: Application type mismatch: The argument
+  C.map
+has type
+  Curve R W ⟶ E.curve
+but is expected to have type
+  Spec ↧S ⟶ E.curve
+in the application
+  pointedDifferentialIso E.projection (structureMap R W) C.map
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:742:28: error(lean.invalidField): Invalid field `schemeNsmul`: The environment does not contain `WeierstrassProjModel.RelativeGroupLaw.schemeNsmul`, so it is not possible to project the field `schemeNsmul` from an expression
+  level.law
+of type
+  WeierstrassProjModel.RelativeGroupLaw (LaurentSeries k) (structureMap (LaurentSeries k) (TateCurve k L))
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:769:15: error(lean.unknownIdentifier): Unknown constant `AlgebraicGeometry.Scheme.Modules.IsInvertible`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:771:73: error(lean.unknownIdentifier): Unknown identifier `Extension`
+
+Note: It is not possible to treat `Extension` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:776:75: error(lean.unknownIdentifier): Unknown identifier `Extension`
+
+Note: It is not possible to treat `Extension` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:778:9: error: tactic execution is stuck, goal contains metavariables
+  ⊤ ≤ genericInclusion k ⁻¹ᵁ ?m.40
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:781:68: error(lean.unknownIdentifier): Unknown identifier `Extension`
+
+Note: It is not possible to treat `Extension` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:788:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:805:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:807:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:812:18: error(lean.unknownIdentifier): Unknown identifier `Extension`
+
+Note: It is not possible to treat `Extension` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:814:18: error(lean.unknownIdentifier): Unknown identifier `Extension`
+
+Note: It is not possible to treat `Extension` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:842:97: error: unknown universe level `v`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:844:106: error: unknown universe level `v`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean:859:245: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaBoundaryHodgeR0182.Extension`

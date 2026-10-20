@@ -1,0 +1,54 @@
+version: v0.4
+project:
+  name: Complete split-field component cusp bound
+  description: Full original072 for every characteristic-zero field carrying the specified
+    primitive L-th root, with L even and at least three. The actual cusps on every
+    actual irreducible component are finite and nonempty and satisfy 2*L*card(Cusps)
+    <= card(SL2(ZMod L)). The independent Challenge retains the original full level
+    data, Legendre atlas, sign quotient and its universal property, compatible locus
+    and compactification. No algebraic closure assumption is added. The actual component
+    open equals the original construction; full original theorem equality is compiled.
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: Full original072 for every characteristic-zero field carrying the specified
+    primitive L-th root, with L even and at least three. The actual cusps on every
+    actual irreducible component are finite and nonempty and satisfy 2*L*card(Cusps)
+    <= card(SL2(ZMod L)). The independent Challenge retains the original full level
+    data, Legendre atlas, sign quotient and its universal property, compatible locus
+    and compactification. No algebraic closure assumption is added. The actual component
+    open equals the original construction; full original theorem equality is compiled.
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

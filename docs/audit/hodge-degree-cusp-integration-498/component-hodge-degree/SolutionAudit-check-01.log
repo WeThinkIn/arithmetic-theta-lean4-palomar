@@ -1,0 +1,4 @@
+DECL ArithmeticThetaPalomarHodge495.recover_original_031 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarComponent485.componentIsOpen AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHodge495.componentHodgePowerDegree AXIOMS [propext, Classical.choice, Quot.sound]
+AUDIT checked=3 propagated_holes=0 project_imports=2887

@@ -1,0 +1,18 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/DefinitionTypeProbe.lean:7:0: error: Semantic type differs ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zSection
+Challenge: {C : Scheme} →
+  (k : Type u) →
+    [inst : Field k] →
+      (r : ℕ) →
+        (E : C ≅ ArithmeticThetaCompactifiedDifferentialR0145.projectiveCurve k r) →
+          ArithmeticThetaCompactifiedDifferentialR0145.ChartRing k r ≃+*
+            ↑(C.presheaf.obj
+                (Opposite.op
+                  (ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zOpen C inst E)))
+Solution: (k : Type u) →
+  [inst : Field k] →
+    (r : ℕ) →
+      {C : Scheme} →
+        (E : C ≅ ArithmeticThetaCompactifiedDifferentialR0145.projectiveCurve k r) →
+          ArithmeticThetaCompactifiedDifferentialR0145.ChartRing k r ≃+*
+            ↑(C.presheaf.obj
+                (Opposite.op (ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zOpen k r E)))

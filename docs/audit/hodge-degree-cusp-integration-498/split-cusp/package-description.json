@@ -1,0 +1,35 @@
+{
+  "ids": [
+    "accepted-072"
+  ],
+  "target_count": 16,
+  "attempts": {
+    "Challenge": "01",
+    "Solution": "01",
+    "ChallengeAudit": "01",
+    "SolutionAudit": "01",
+    "DefinitionCompatibility": "01",
+    "OriginalEndpointAudit": "01",
+    "TargetTypeAudit": "01",
+    "TargetHoleAudit": "01"
+  },
+  "title": "Complete split-field component cusp bound",
+  "universe": "Original k : Type characteristic-zero field, specified primitive L-th root, even L >= 3; no algebraic-closure hypothesis",
+  "basis": "Complete actual LevelData/Compactification and component cusp definitions from485; exact original split_component_cusp_bound type",
+  "namespace_map": {
+    "ArithmeticThetaCyclotomicModularityR0239.split_component_cusp_bound": "ArithmeticThetaPalomarComponent485.splitComponentCuspBound"
+  },
+  "bridges": [
+    "componentOpen_eq_original",
+    "Compiled rfl equality recover_original_072 = original split_component_cusp_bound"
+  ],
+  "retained": [
+    "Actual Legendre atlas, represented full marking and free sign quotient with full orbit/universal properties",
+    "Actual compatible locus and dense smooth proper projective compactification",
+    "Actual irreducibleComponent x with proved openness and actual boundary cusp subtype",
+    "Specified primitive L-th root in the original characteristic-zero field",
+    "Finite and nonempty actual cusps and exact 2*L*card(Cusps) <= card(SL2(ZMod L))"
+  ],
+  "limitations": "This endpoint uses the original supplied LevelData/Compactification; it does not separately construct them or claim a Hodge extension or official pass.",
+  "description": "Full original072 for every characteristic-zero field carrying the specified primitive L-th root, with L even and at least three. The actual cusps on every actual irreducible component are finite and nonempty and satisfy 2*L*card(Cusps) <= card(SL2(ZMod L)). The independent Challenge retains the original full level data, Legendre atlas, sign quotient and its universal property, compatible locus and compactification. No algebraic closure assumption is added. The actual component open equals the original construction; full original theorem equality is compiled."
+}

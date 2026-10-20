@@ -1,0 +1,35 @@
+{
+  "accepted_for_local_integration": true,
+  "basis": "Frozen complete495/496 source/type/axiom audits and497 root scope review; no official acceptance",
+  "packages": {
+    "component-hodge-degree": {
+      "bindings": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Challenge.lean": "724228304ab47c5ceb74285745d4ec61f30d57a038ca2e710ebcea819be18eae",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Solution.lean": "2b352b86b1bbe16b10bca9aef445980d09d69536fe672668c84cf9afeddc17b5",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Scope.json": "3437db84df887594243e0d1088fd02d6a13ffdbc3e0a7d78d9e4aa93d91166ec",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/SourceMap.json": "3eaab81ab83d7c21b6162b3fe424a4e80cbe652306464eed940a279a234bc8cf",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/receipt.json": "35d5549ffc5fef2058843abe9aa7572cedb35514c8a2193347a5c6d389903f78",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/comparator.json": "3f62f3f39b0f7d4c9b561349100f924e8ee82948ba602bc55158ae29667bd8c7",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-hodge-degree-package-495/Targets.json": "49b6520f773d02e4cafcf50e6fdd9011df29b7c8faf393f70370c235d57be05d"
+      },
+      "new_ids": [
+        "accepted-031"
+      ]
+    },
+    "split-cusp": {
+      "bindings": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/split-cusp-package-496/Challenge.lean": "0ee326ed20e24385df5ea03b04e20313ac060f3d16c6d4106e8eb28d03243cf3",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/split-cusp-package-496/Solution.lean": "847b1f51fd41701a885b07d4f403cdb0fb92fbc2f41cb2d4e87e8df08265e5c9",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/split-cusp-package-496/Scope.json": "a1365651acbf1119dad1c2db8f3fb350c5f24130384c3c040080c94ced2d6ba7",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/split-cusp-package-496/SourceMap.json": "09ab396489631d3e62dd82745627e124a84cfd5801c2579eff168f3024b87005",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/split-cusp-package-496/receipt.json": "97a77a38db61dc2716b9e60f576e5b36de3f55474d140be7ccd49cb124def7e7",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/split-cusp-package-496/comparator.json": "af20968bca94e5d85c2875d1cebfa9ce6c29ead7b881901523cdb64fdc98ebc3",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/split-cusp-package-496/Targets.json": "0ef0cd17cb0ef5b06359e003fde700988b8532cfcffcccb1428cfb7d80b1412a"
+      },
+      "new_ids": [
+        "accepted-072"
+      ]
+    }
+  },
+  "review_sha256": "8aa13990ae9b5b2cf9b7cd01dd5f4e4649d686eb932b87b40659047b354c09f4"
+}

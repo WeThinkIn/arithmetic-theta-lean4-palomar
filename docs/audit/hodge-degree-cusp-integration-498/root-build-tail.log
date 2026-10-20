@@ -1,0 +1,100 @@
+ Quot.sound]
+info: Proof/GeometricCanonicalHodgeDescentR0235.lean:1844:0: 'ArithmeticThetaBoundaryConstantsR0235.GeometricCanonicalHodgeDescent.CanonicalDescent.iso_descend' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: Proof/GeometricCanonicalHodgeDescentR0235.lean:1944:31: This simp argument is unused:
+  Iso.inv_hom_id_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Category.assoc, Iso.map_inv_hom_id_assoc, Iso.inv_hom_id, Category.comp_id]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Proof/GeometricCanonicalHodgeDescentR0235.lean:1963:0: 'ArithmeticThetaBoundaryConstantsR0235.GeometricCanonicalHodgeDescent.OpenAction.open_equivariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/GeometricCanonicalHodgeDescentR0235.lean:1964:0: 'ArithmeticThetaBoundaryConstantsR0235.GeometricCanonicalHodgeDescent.OpenAction.compact_equivariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/GeometricCanonicalHodgeDescentR0235.lean:2003:0: 'ArithmeticThetaBoundaryConstantsR0235.GeometricCanonicalHodgeDescent.FinalAssembly.final_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/GeometricCanonicalHodgeDescentR0235.lean:2022:0: 'ArithmeticThetaBoundaryConstantsR0235.geometric_canonical_hodge_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12179/12183] Replayed SplitCuspDegreeR0239
+info: Proof/SplitCuspDegreeR0239.lean:240:0: 'ArithmeticThetaCyclotomicModularityR0239.split_cusp_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Proof/SplitCuspDegreeR0239.lean:241:0: 'ArithmeticThetaCyclotomicModularityR0239.split_component_cusp_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12180/12183] Built ComponentHodgeDegreeSolution (2.7s)
+warning: ComponentHodgeDegreeSolution.lean:15:61: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ComponentHodgeDegreeSolution.lean:15:74: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ComponentHodgeDegreeSolution.lean:18:61: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ComponentHodgeDegreeSolution.lean:18:74: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [12181/12183] Built SplitCuspSolution (2.9s)
+⚠ [12182/12183] Built SplitCuspChallenge (9.2s)
+warning: SplitCuspChallenge.lean:25:14: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:27:8: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:29:6: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:36:6: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:37:6: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:38:6: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:41:14: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:65:6: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:68:9: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:80:8: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:87:8: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:113:8: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:120:8: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:121:8: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:458:8: declaration uses `sorry`
+warning: SplitCuspChallenge.lean:465:8: declaration uses `sorry`
+⚠ [12183/12183] Built ComponentHodgeDegreeChallenge (17s)
+warning: ComponentHodgeDegreeChallenge.lean:25:14: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:27:8: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:29:6: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:36:6: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:37:6: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:38:6: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:41:14: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:65:6: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:68:9: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:80:8: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:87:8: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:113:8: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:120:8: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:121:8: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:541:0: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ComponentHodgeDegreeChallenge.lean:590:8: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:804:8: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:821:8: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:823:8: declaration uses `sorry`
+warning: ComponentHodgeDegreeChallenge.lean:874:8: declaration uses `sorry`
+Build completed successfully (12183 jobs).

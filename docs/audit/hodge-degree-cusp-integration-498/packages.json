@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "component-hodge-degree",
+    "root": "ComponentHodgeDegree",
+    "source": "component-hodge-degree-package-495",
+    "ids": [
+      "accepted-031"
+    ],
+    "title": "Complete component Hodge power degree",
+    "description": "Full original031 over every original algebraically closed characteristic-zero field and even L >= 3. For every actual component, canonical compact Hodge extension, natural n (including zero), actual normal frame cover and nonzero global section with its actual section divisor, the residue-weighted degree satisfies exactly 24*degree=n*2*L*#cusps and the upper bound n*#SL2. Canonical retains every actual disk test, the specific Tate cubic, normalized differential and actual canonical pointed differential pullback, with a unique extending generator. No arbitrary line, scalar comparison, degree or expansion function replaces these objects. The complete types and available bodies of these constructions are retained."
+  },
+  {
+    "slug": "split-cusp",
+    "root": "SplitCusp",
+    "source": "split-cusp-package-496",
+    "ids": [
+      "accepted-072"
+    ],
+    "title": "Complete split-field component cusp bound",
+    "description": "Full original072 for every characteristic-zero field carrying the specified primitive L-th root, with L even and at least three. The actual cusps on every actual irreducible component are finite and nonempty and satisfy 2*L*card(Cusps) <= card(SL2(ZMod L)). The independent Challenge retains the original full level data, Legendre atlas, sign quotient and its universal property, compatible locus and compactification. No algebraic closure assumption is added. The actual component open equals the original construction; full original theorem equality is compiled."
+  }
+]
