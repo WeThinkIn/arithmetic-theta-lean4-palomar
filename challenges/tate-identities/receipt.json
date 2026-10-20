@@ -1,0 +1,63 @@
+{
+  "status": "local_comparator_passed",
+  "completed_utc": "2026-10-20T16:35:07.125031+00:00",
+  "compile_receipt_sha256": "72d89df65c11ddf7eba55c63419b275c68bd82b2eea2593adce1438fafa3b7fe",
+  "export_session": 95126,
+  "comparator_session": 67268,
+  "comparator": {
+    "command": [
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake",
+      "comparator",
+      "--config=/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/comparator-external.json",
+      "--challenge-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Challenge.ndjson",
+      "--solution-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Solution.ndjson"
+    ],
+    "cwd": "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/project",
+    "exit_code": 0,
+    "elapsed_seconds": 71.26,
+    "normal_sandbox": true,
+    "external_kernels": {
+      "nanoda": "bundled",
+      "con-ron": "bundled --jobs=2"
+    },
+    "budget_seconds": 600
+  },
+  "bindings_unchanged_after_comparator": true,
+  "tool_digests": {
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanexport": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/early-comparator-211/bubblewrap-0.12.0/build/bwrap": "dd7c08cfc4cd60028638f03c7995a4a2f26cd47f1e3723ad66a45379d42ccd03"
+  },
+  "covered_ids": [
+    "accepted-018",
+    "accepted-089"
+  ],
+  "official_preflight": false,
+  "official_submission": false,
+  "shared_lake_output_modified": false,
+  "limitation": "Local source/object/export hash binding and normal-sandbox independent kernels; not official isolated source-provenance audit.",
+  "artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/comparator.json": "11de01d79fd49fdb42f18658d671c4188c4815a76badf6e6db90de052a9543ab",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/compile-receipt.json": "72d89df65c11ddf7eba55c63419b275c68bd82b2eea2593adce1438fafa3b7fe",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Scope.json": "0f317f1584e544514983f60cf3d3898d95b5aa75fc05511347d37f8ff3191eb2",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Challenge-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/export-targets.json": "6ac289935f420bb5572128ffa2f3f74ce93381d4bd38e98cb0dcc80027b88647",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/comparator-external.json": "6737b30172eee7aab3e7044ed8533483b0be9044553d22b665ba01bef6000d8c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/export.py": "72827edac6d25348cf5f6c9d1b2ba0da9affd8a713f6bac134b46ef865c50dd5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Solution-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/comparator-modern-receipt.json": "840ff296ce1ac283aadc687b8203e6633f800e58a066ef90533b15690dfea959",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Challenge-check-01.log": "15bbe78738fb3340b67fedb92d27d452724dfe03cad59bd7a058a9110651c167",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/comparator-modern.log": "b5faa7cc26943220f722c01c559ec504843c553392c9207a2f50fdcd7da93b86",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/export-receipts.json": "272b1bba7fc016eda4e7f1707d87fb2d0c9350980e7c31d3ae00a218e6df91cd",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Solution.lean": "ad7dbf460b33edb7e69ea213ec6b10603fa5cb7659bcee347a59956f844de7d0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Challenge.lean": "62b6d707a3d0355a0c8e49729d404abda7ca6916f3a2db0eaddf8bf0c435a0fb",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Solution-check-01.log": "d737a6f9f8b29dd7c17c55e724ac22dda20a67a8328bad9ab1cd4209f57f91f9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/compare.py": "c0909a4342a58c060aaec3a2d2614282207883fbc7d8b3bc305dd370920959b6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/checkpoint.json": "5a50481bc8d06905fa2c6c0aa82daa3000717540ce63bad1b2612c3e42de044d"
+  },
+  "readme_sha256": "b21f902f487807948a0c117168ec8cd82a6097f4c305afd7d7e217f020dfbef1"
+}

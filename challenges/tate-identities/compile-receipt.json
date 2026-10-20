@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-10-20T16:32:28.936685+00:00",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Challenge.lean": "62b6d707a3d0355a0c8e49729d404abda7ca6916f3a2db0eaddf8bf0c435a0fb",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Solution.lean": "ad7dbf460b33edb7e69ea213ec6b10603fa5cb7659bcee347a59956f844de7d0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/comparator.json": "11de01d79fd49fdb42f18658d671c4188c4815a76badf6e6db90de052a9543ab",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/TateSeriesDefinitions.lean": "0c507106496fbc9f5b0fba585c1082ee9dbf2b9d0ba2a8ee03a5d89fbcad823a",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/FormalNormDefinitions.lean": "3af85ba69959e439d16aff1cb240cebd40bb2b7513d1e3ebf872e26b2176ce8e",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/UnaryThetaProduct.lean": "a6a29b6cbab815279b85fae75472d295defee7b7d64b8279bc904704ecff8b14",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/TateIdentityDefinitions.lean": "8344860b7a6accca038f0e4b79cc2d6f4b30dfcc92f1af1bf1d76631be0c192b",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/TateBasicFourthIdentity.lean": "946220cb62560a2d5e97cd249d29e3bef5e3b92eed8c46bf07462018197d6aff",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/TateGeneralAddition.lean": "ae9c48034591e83a150502af266aad879d3db781ab1c69724a2a2d30d93cdabf",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/TateBasicFourthIdentity.olean": "6a23bcc38faad6c5eb9af9d36d0f58b03c820e8bc644b4defb8be8d46f3c11ba",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/TateGeneralAddition.olean": "d7b37bd6a64f4a3a35162985957ede39b70e68e8999d801f5c09b06e78b33b71"
+  },
+  "threads": 12,
+  "max_compile_seconds": 300,
+  "challenge_lines": 123,
+  "challenge_bytes": 5713,
+  "status": "compiled",
+  "checks": [
+    {
+      "module": "Challenge",
+      "session": 51450,
+      "exit_code": 0
+    },
+    {
+      "module": "Solution",
+      "session": 80763,
+      "exit_code": 0
+    }
+  ],
+  "axioms": {
+    "ArithmeticThetaPalomarFormal261Tate.basic_fourth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Tate.general_annular_addition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "outputs": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Solution.olean": "e28cacb1140a0c34d3d9a4089083c72cf789bd13e77b23fc77a640ee34cbb2d0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Challenge.olean": "5ee53d3e676088a8d3c388fe54558d018fdc5eaf526297569805c7893fa69315",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Challenge-check-01.log": "15bbe78738fb3340b67fedb92d27d452724dfe03cad59bd7a058a9110651c167",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/tate/Solution-check-01.log": "d737a6f9f8b29dd7c17c55e724ac22dda20a67a8328bad9ab1cd4209f57f91f9"
+  }
+}

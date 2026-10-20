@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarFoundations269Elementary.rank_zero_coefficients",
+    "ArithmeticThetaPalomarFoundations269Elementary.rank_zero_kernel",
+    "ArithmeticThetaPalomarFoundations269Elementary.rank_zero_image",
+    "ArithmeticThetaPalomarFoundations269Elementary.norm_exponent_identities",
+    "ArithmeticThetaPalomarFoundations269Elementary.norm_sign_exponent_even"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

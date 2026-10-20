@@ -1,0 +1,9 @@
+'ArithmeticThetaPalomarFoundations269Orthogonal.even_integral_gram_orthogonalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarFoundations269Orthogonal.computed_natural_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarFoundations269Orthogonal.computed_orthogonalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,3380 @@
+{
+  "method": "Traverse exact endpoint TYPES, recursively inspect project constant types and available values. Module frontend hides proof bodies, represented as axiomInfo; these are NOT new mathematical axioms. Thus 323 is only the visible declaration closure; full proof closure is larger. Containing-file sizes are NOT a minimal source lower bound.",
+  "declarations": 323,
+  "modules": 28,
+  "theorem_boundaries": [],
+  "files": [
+    {
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeDiscriminantDefinitionsR0244.lean",
+      "declaration_count": 26,
+      "lines": 104,
+      "bytes": 4948,
+      "sha256": "a9379b233a60bfdd6c16feefeeb99c3bb168e0405971cbbddd7b9f9b3a8e01aa"
+    },
+    {
+      "module": "Definitions.Def_AlgebraicGeometry_ModulesPullbackLocalSection",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_AlgebraicGeometry_ModulesPullbackLocalSection.lean",
+      "declaration_count": 1,
+      "lines": 112,
+      "bytes": 5149,
+      "sha256": "ee6ed7aaa3ffa35bdca2948e40cbb46e6e597de4a193c503aca7134286446b3a"
+    },
+    {
+      "module": "SchemeHodgeDefinitionsR0205",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeHodgeDefinitionsR0205.lean",
+      "declaration_count": 5,
+      "lines": 138,
+      "bytes": 7600,
+      "sha256": "d735d6657d74a3ba2dda19c47fdd8dd1eca9501a0c0c8c98077b7445ec54a230"
+    },
+    {
+      "module": "PullbackUnit",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/PullbackUnit.lean",
+      "declaration_count": 4,
+      "lines": 28,
+      "bytes": 1075,
+      "sha256": "8a57a8bc16ac45f0cb57a844c09e37a12cfa4f315f55c7ea9e611ac8ae059e87"
+    },
+    {
+      "module": "Definitions.Def_AlgebraicGeometry_IdealSheafModule",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_AlgebraicGeometry_IdealSheafModule.lean",
+      "declaration_count": 6,
+      "lines": 48,
+      "bytes": 1402,
+      "sha256": "a91b4505c27dbe429605a83ec1131a128de8d7495de0a2a47c7dc412384b1aa2"
+    },
+    {
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_SheafOfModules_Monoidal.lean",
+      "declaration_count": 39,
+      "lines": 138,
+      "bytes": 6303,
+      "sha256": "abbf4f8b6a26cb49dc5a5609ef277ecb48112f0253e236b892626e78ed0f0f8e"
+    },
+    {
+      "module": "LocalWeierstrassDefinitionsR0203",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/LocalWeierstrassDefinitionsR0203.lean",
+      "declaration_count": 10,
+      "lines": 130,
+      "bytes": 6692,
+      "sha256": "203494e71b45777c9bf72d7f0ca64d62f487a1679a00571cf93c19eb5c44c3ab"
+    },
+    {
+      "module": "Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier.lean",
+      "declaration_count": 1,
+      "lines": 331,
+      "bytes": 12709,
+      "sha256": "2ebdcb5ef7c08933f7ac8e97292e940b247e225ecd2c58b80bf533466e0b50f9"
+    },
+    {
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeHodgePowerBaseChangeR0171.lean",
+      "declaration_count": 12,
+      "lines": 713,
+      "bytes": 38195,
+      "sha256": "249eb4987f0fe825abc170d015b364eaa09fff7f72ce6febf0efa3db6bba44bd"
+    },
+    {
+      "module": "PullbackTensor",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/PullbackTensor.lean",
+      "declaration_count": 28,
+      "lines": 824,
+      "bytes": 44778,
+      "sha256": "0196bfae5b9a93e3059565e01a98122b2d5ee60ba7ab8bdd5decbe0a399f3bc6"
+    },
+    {
+      "module": "ActualSheafTensor",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/ActualSheafTensor.lean",
+      "declaration_count": 9,
+      "lines": 112,
+      "bytes": 4835,
+      "sha256": "dc1546ce0410b553f76820c056d3bed1d8cb01b0d4725e38d319273626203adf"
+    },
+    {
+      "module": "TensorPowerDefinitions",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/TensorPowerDefinitions.lean",
+      "declaration_count": 6,
+      "lines": 48,
+      "bytes": 1923,
+      "sha256": "55d171f2d22d17321b1776302e51ee14c945e76a581dd54a26cc2dfaf20cc38f"
+    },
+    {
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeDiscriminantDefinitionsR0171.lean",
+      "declaration_count": 11,
+      "lines": 100,
+      "bytes": 4779,
+      "sha256": "50b66b2a3abeebaf6b381a726731cfec4328c499311b796c32a643c1c7eda48f"
+    },
+    {
+      "module": "RelativeKatoDefinitionsR0169",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeKatoDefinitionsR0169.lean",
+      "declaration_count": 14,
+      "lines": 91,
+      "bytes": 4238,
+      "sha256": "a28363c88ac1ad03dba89020f3afd143278e0a1ebcce5f200a472c6f9859716e"
+    },
+    {
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_WeierstrassCurve_ProjModel.lean",
+      "declaration_count": 24,
+      "lines": 349,
+      "bytes": 13978,
+      "sha256": "4be3030b2a165cb4835be6429f2af79db5e1bf34ac416cc645fcd8e94cdac0ec"
+    },
+    {
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra.lean",
+      "declaration_count": 22,
+      "lines": 633,
+      "bytes": 24379,
+      "sha256": "b57714e081d05d249943754008d4cfd0e33d1f03635266ec7c2899c954e3cc84"
+    },
+    {
+      "module": "AffineConormalHodgeNaturalityR0205",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/AffineConormalHodgeNaturalityR0205.lean",
+      "declaration_count": 1,
+      "lines": 132,
+      "bytes": 7171,
+      "sha256": "83ef6b4b63374be4beb8c8d6a85d842800ca63316dc5e01d7602b3b7cc368e0e"
+    },
+    {
+      "module": "RelativeWeierstrassPresentationR0174",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeWeierstrassPresentationR0174.lean",
+      "declaration_count": 6,
+      "lines": 6769,
+      "bytes": 361447,
+      "sha256": "c60a89adc146bf0ed711c0eb54ac330c31e308bc5e571433e7bcbb9a0260eed2"
+    },
+    {
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/CompactifiedDifferentialDefinitionsR0145.lean",
+      "declaration_count": 3,
+      "lines": 138,
+      "bytes": 6529,
+      "sha256": "7dfbf089d8f415817a414f18cf5f7f31b4c239fef9c9414259fe55f3e1c3429d"
+    },
+    {
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_AlgebraicGeometry_KaehlerModule.lean",
+      "declaration_count": 11,
+      "lines": 116,
+      "bytes": 5292,
+      "sha256": "ea8728d6c848647e59f11079747a8c9d5f49d336b8f5054b78cc78ebe640d2ee"
+    },
+    {
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_WeierstrassCurve_ProjModel_GroupLawVocabulary.lean",
+      "declaration_count": 16,
+      "lines": 2279,
+      "bytes": 90397,
+      "sha256": "31a252f5214318b27f534cace4710befdc9a3193d3e2d782bcd19921090e2356"
+    },
+    {
+      "module": "Definitions.Def_AlgebraicGeometry_RelativeGroupLaw",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_AlgebraicGeometry_RelativeGroupLaw.lean",
+      "declaration_count": 2,
+      "lines": 197,
+      "bytes": 8356,
+      "sha256": "515b73ff1c58b26e9242091a7030e6f124cb42dbde259fab19461a56042dde5a"
+    },
+    {
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/ArbitraryDiscriminantDefinitionsR0243.lean",
+      "declaration_count": 31,
+      "lines": 97,
+      "bytes": 4558,
+      "sha256": "cca3c46fb7f0a3ee069bb684f11821fac6c6206f0f51dff9e526ee7119cce4dc"
+    },
+    {
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/GeneralEllipticKatoDefinitionsR0168.lean",
+      "declaration_count": 13,
+      "lines": 78,
+      "bytes": 3357,
+      "sha256": "d4c5e79ee0b394f694e8f879236540a6f38ed82b96f0ab06c8e7553d68701d4b"
+    },
+    {
+      "module": "GlobalFamilyDiscriminantR0180",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/GlobalFamilyDiscriminantR0180.lean",
+      "declaration_count": 3,
+      "lines": 876,
+      "bytes": 45718,
+      "sha256": "5dd4bd4cb125cf9679f895e7d5125ff3e9fe7c92a28d2de313dd6315b89800b7"
+    },
+    {
+      "module": "RelativeKatoNaturalityDefinitionsR0170",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeKatoNaturalityDefinitionsR0170.lean",
+      "declaration_count": 5,
+      "lines": 85,
+      "bytes": 3988,
+      "sha256": "f3b3fe18444d1e8aeb0d0ee40b8ef8fc6b126d8de8d82e2125e5fcffa329ea32"
+    },
+    {
+      "module": "GeometricNormDefinitionsR0150",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/GeometricNormDefinitionsR0150.lean",
+      "declaration_count": 2,
+      "lines": 90,
+      "bytes": 3753,
+      "sha256": "1746f1c1aaaa5772188ddf3f14f68750a88e232aef5fde49e633906251c6010e"
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/P2M/Sol/S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.lean",
+      "declaration_count": 12,
+      "lines": 668,
+      "bytes": 36878,
+      "sha256": "f5dfdaab6bf28ccf32768fae3909423724f8d970dca45839bbe01998b83b8d6a"
+    }
+  ],
+  "containing_file_lines": 15424,
+  "containing_file_bytes": 760427,
+  "rows": [
+    {
+      "kind": "definition",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.pull",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_ModulesPullbackLocalSection",
+      "name": "AlgebraicGeometry.Scheme.Modules.pullbackLocalSection",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.powerIso",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.cotangentIso",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.cotangentIso._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "SchemeHodgeDefinitionsR0205",
+      "name": "ArithmeticThetaSchemeHodgeR0205.IdealCompatible",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackUnit",
+      "name": "ArithmeticThetaPullback.pullback_unit_iso",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackUnit",
+      "name": "ArithmeticThetaPullback.pullback_unit_iso._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackUnit",
+      "name": "ArithmeticThetaPullback.pullback_unit_iso._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackUnit",
+      "name": "ArithmeticThetaPullback.pullback_unit_iso._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_IdealSheafModule",
+      "name": "AlgebraicGeometry.Scheme.IdealSheafData.module\u03b9",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_IdealSheafModule",
+      "name": "AlgebraicGeometry.Scheme.IdealSheafData.module._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_IdealSheafModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.unitToPushforwardUnit",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_IdealSheafModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.unitToPushforwardUnit._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_IdealSheafModule",
+      "name": "AlgebraicGeometry.Scheme.IdealSheafData.module._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_26",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_15",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.presheafW_isMonoidal",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.presheafW",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.PMod",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.monoidalCategory._aux_13",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.sheafifyUnitIso",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.ringSheaf",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.sheafifyCounitIso",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.sheafifyCounitIso._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.sheafifyFunctor._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.sheafifyFunctor._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.sheafifyAdj",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.toPMod",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.sheafifyFunctor",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.instIsLocalizationPModRingSheafSheafifyFunctorPresheafW",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.monoidalCategory._aux_1",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_9",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_1",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_13",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.monoidalCategory._aux_11",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_11",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.monoidalCategory._aux_9",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_7",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.monoidalCategory._aux_7",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_5",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.monoidalCategory._aux_5",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_3",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.monoidalCategory._aux_3",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_25",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_24",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_23",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_22",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_21",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_20",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_19",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_18",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_17",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_IdealSheafModule",
+      "name": "AlgebraicGeometry.Scheme.IdealSheafData.module",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "LocalWeierstrassDefinitionsR0203",
+      "name": "ArithmeticThetaLocalWeierstrassR0203.Family.zero",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "LocalWeierstrassDefinitionsR0203",
+      "name": "ArithmeticThetaLocalWeierstrassR0203.Family.law",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "inductive",
+      "module": "LocalWeierstrassDefinitionsR0203",
+      "name": "ArithmeticThetaLocalWeierstrassR0203.Family",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "LocalWeierstrassDefinitionsR0203",
+      "name": "ArithmeticThetaLocalWeierstrassR0203.Family.p",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "LocalWeierstrassDefinitionsR0203",
+      "name": "ArithmeticThetaLocalWeierstrassR0203.Family.curve",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "inductive",
+      "module": "LocalWeierstrassDefinitionsR0203",
+      "name": "ArithmeticThetaLocalWeierstrassR0203.SchemeLaw",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "LocalWeierstrassDefinitionsR0203",
+      "name": "ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.one",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier",
+      "name": "NeronModelInfra.SchemeHomOver",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.Comparison.map",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "inductive",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.Comparison",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.Comparison.pointed",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "SchemeHodgeDefinitionsR0205",
+      "name": "ArithmeticThetaSchemeHodgeR0205.cotangentComparison",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeHodgeDefinitionsR0205",
+      "name": "ArithmeticThetaSchemeHodgeR0205.cotangentComparison._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.squarePullbackIso",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pullbackEqIso",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pullbackEqIso._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "SchemeHodgeDefinitionsR0205",
+      "name": "ArithmeticThetaSchemeHodgeR0205.Cotangent",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.tensorComparison",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.powerCongr",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.powerCongr._f",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.sheafTensorCongr",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.instMonoidalCategoryPresheafOfModules_pullbackTensor",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ActualSheafTensor",
+      "name": "ArithmeticThetaSheafTensor.tensorPresheaf",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ActualSheafTensor",
+      "name": "ArithmeticThetaSheafTensor.instMonoidalCategoryPresheafOfModules_actualSheafTensor",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.sheafTensorMap._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.sheafTensorMap._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.sheafTensorMap._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.sheafTensorMap._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "ActualSheafTensor",
+      "name": "ArithmeticThetaSheafTensor.sheafTensor",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ActualSheafTensor",
+      "name": "ArithmeticThetaSheafTensor.sheafTensor._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ActualSheafTensor",
+      "name": "ArithmeticThetaSheafTensor.sheafTensor._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ActualSheafTensor",
+      "name": "ArithmeticThetaSheafTensor.sheafTensor._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ActualSheafTensor",
+      "name": "ArithmeticThetaSheafTensor.sheafTensor._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.powerCongr.match_1",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "TensorPowerDefinitions",
+      "name": "ArithmeticThetaTensorPower.tensorPower",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "TensorPowerDefinitions",
+      "name": "ArithmeticThetaTensorPower.tensorPower._f",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "TensorPowerDefinitions",
+      "name": "ArithmeticThetaTensorPower.tensorPower.match_1",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.pullback_tensorPower_iso",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.pullback_tensorPower_iso._f",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.pullback_sheafTensor_iso",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.sheafificationTensorIso",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.sheafificationTensorIso._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPullbackTensorIso",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPullbackTensorMap_isIso",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPullbackTensorMap",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPushforwardTensorMap",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPushforwardTensorMap._proof_6",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPushforwardTensorMap._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPushforward",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPullback._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPushforwardTensorMap._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPushforwardTensorMap._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPushforwardTensorMap._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafAdjunction",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafAdjunction._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPullback",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPullback._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.pullback_sheafTensor_iso._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.pullback_tensorPower_iso.match_1",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.Power",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.pull._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.res",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.Sections",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.IsD2",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassValue",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassHodgeIso",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.structureMap",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelStrCR",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelStrCR._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmodule",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmodule._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmodule._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelStrCR._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelHomogeneousIdealCR",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.span_polynomial_isHomogeneousCR",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelHomogeneousIdealCR._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelHomogeneousIdealCR._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelStrCR._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.ProjModelRingCR",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelStrCR._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelGradingCR",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelCR._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebraOfHomogeneous",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebraOfHomogeneous._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.mk_mem_quotGradingSubmodule",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.gradedRingOfImages",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.decompositionOfImages",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.decompositionOfImages._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotDecompose",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.preDecompose_eq_zero_of_mem",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.preDecompose",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.preDecompose._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.pieceHom",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.pieceHom._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotDecompose._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.decompositionOfImages._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.gradedRingOfImages._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelCR._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.Curve",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelCR",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "AffineConormalHodgeNaturalityR0205",
+      "name": "ArithmeticThetaSchemeHodgeR0205.AffineConormalHodgeNaturality.differential_isIso",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "SchemeHodgeDefinitionsR0205",
+      "name": "ArithmeticThetaSchemeHodgeR0205.affineDifferential",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeWeierstrassPresentationR0174",
+      "name": "ArithmeticThetaCyclicPresentationR0174.RelativeWeierstrassPresentationR0174.Conormal.conormalMap",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeWeierstrassPresentationR0174",
+      "name": "ArithmeticThetaCyclicPresentationR0174.RelativeWeierstrassPresentationR0174.Conormal.conormalToPushforward",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeWeierstrassPresentationR0174",
+      "name": "ArithmeticThetaCyclicPresentationR0174.RelativeWeierstrassPresentationR0174.Conormal.conormalToPushforward._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeWeierstrassPresentationR0174",
+      "name": "ArithmeticThetaCyclicPresentationR0174.RelativeWeierstrassPresentationR0174.Conormal.conormalLocal",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeWeierstrassPresentationR0174",
+      "name": "ArithmeticThetaCyclicPresentationR0174.RelativeWeierstrassPresentationR0174.Conormal.conormalLocal._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "name": "ArithmeticThetaCompactifiedDifferentialR0145.relativeD",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "name": "ArithmeticThetaCompactifiedDifferentialR0145.relativeD._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.sectionsAlgebra",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.constToPresheaf",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.constToPresheaf._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.constToPresheaf._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "name": "ArithmeticThetaCompactifiedDifferentialR0145.relativeD._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.kaehlerToSections",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.kaehler._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.kaehler._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.kaehler._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.kaehler._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.kaehlerPresheaf",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.kaehler",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeWeierstrassPresentationR0174",
+      "name": "ArithmeticThetaCyclicPresentationR0174.RelativeWeierstrassPresentationR0174.Conormal.conormalLocal._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "LocalWeierstrassDefinitionsR0203",
+      "name": "ArithmeticThetaLocalWeierstrassR0203.Base",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.Hodge",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.origin",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kwZeroSect",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kwZeroSect._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_mk_X1_mem_one_CR",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kwYChartEval",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kwYChartEval._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kwYEvalRingHom._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kwYEvalRingHom",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kwYChartEval._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.origin._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.origin._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassHodgeIso._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_11",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_9",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_8",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_10",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_7",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.RelativeGroupLaw.mul",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "inductive",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.RelativeGroupLaw",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.schemeHomOverComp",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.schemeHomOverComp._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.Law",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_6",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.IsOriginLaw",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.RelativeGroupLaw.one",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_5",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.RelativeGroupLaw.inv",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "constructor",
+      "module": "LocalWeierstrassDefinitionsR0203",
+      "name": "ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.mk",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_AlgebraicGeometry_RelativeGroupLaw",
+      "name": "GoodReductionJacobian.schemeHomOverComp",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_RelativeGroupLaw",
+      "name": "GoodReductionJacobian.schemeHomOverComp._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "constructor",
+      "module": "LocalWeierstrassDefinitionsR0203",
+      "name": "ArithmeticThetaLocalWeierstrassR0203.Family.mk",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgePower",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.Base",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.Sections",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.IsD2",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.value",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.originLaw",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.law",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "inductive",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.equation",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.ring",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.commRing",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.genericLocallyNoetherian",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.domain",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.GenericCurve",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.Curve",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.genericIntegral",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.locallyNoetherian",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.integral",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.normal",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.noetherian",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "GlobalFamilyDiscriminantR0180",
+      "name": "ArithmeticThetaOpenHodgeR0180.GlobalFamilyDiscriminantR0180.localD",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GlobalFamilyDiscriminantR0180",
+      "name": "ArithmeticThetaOpenHodgeR0180.GlobalFamilyDiscriminantR0180.localD._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.RepresentsInitial",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.localPower",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.localDifferential",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "TensorPowerDefinitions",
+      "name": "ArithmeticThetaTensorPower.tensorPowerSection",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "TensorPowerDefinitions",
+      "name": "ArithmeticThetaTensorPower.tensorPowerSection._f",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ActualSheafTensor",
+      "name": "ArithmeticThetaSheafTensor.tensorSection",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ActualSheafTensor",
+      "name": "ArithmeticThetaSheafTensor.tensorUnitMap",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "TensorPowerDefinitions",
+      "name": "ArithmeticThetaTensorPower.tensorPowerSection.match_1",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.RepresentsInitial._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.IdentityChart",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeKatoNaturalityDefinitionsR0170",
+      "name": "ArithmeticThetaRelativeKatoNaturalityR0170.torsionIdeal",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.RelativeGroupLaw.schemeNsmul",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.RelativeGroupLaw.idPoint",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.RelativeGroupLaw.idPoint._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.RelativeGroupLaw.nsmul",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeKatoNaturalityDefinitionsR0170",
+      "name": "ArithmeticThetaRelativeKatoNaturalityR0170.identityIdeal",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.RepresentsInitial._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeKatoNaturalityDefinitionsR0170",
+      "name": "ArithmeticThetaRelativeKatoNaturalityR0170.Normalized",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.GenericComparison.field",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "inductive",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.GenericComparison",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeKatoNaturalityDefinitionsR0170",
+      "name": "ArithmeticThetaRelativeKatoNaturalityR0170.Normalized._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.GenericComparison.law",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.Law",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.structureMap",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "GeometricNormDefinitionsR0150",
+      "name": "ArithmeticThetaGeometricNormR0150.fieldNorm",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "GeometricNormDefinitionsR0150",
+      "name": "ArithmeticThetaGeometricNormR0150.IsFieldMap",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.HasKatoDivisor",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.katoOrder",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.originPoint",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.originPoint._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.origin",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.origin._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.origin._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.origin._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.HasKatoDivisor._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.IsRelativeKato",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.katoOrder",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.IsRelativeKato._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeKatoNaturalityDefinitionsR0170",
+      "name": "ArithmeticThetaRelativeKatoNaturalityR0170.Normalized._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GlobalFamilyDiscriminantR0180",
+      "name": "ArithmeticThetaOpenHodgeR0180.GlobalFamilyDiscriminantR0180.localD._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.IsFrame",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.comparison",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.scalar",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.rational",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "inductive",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.Comparison",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.NormalModel.elliptic",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.pull",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.comparisonPower",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.comparisonHodge",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.Comparison.pointed",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.Comparison.map",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.comparisonHodge._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.comparisonHodge._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.comparisonHodge._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.Comparison.cartesian",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pointedDifferentialIso",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pointedDifferentialIso._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pointedDifferentialIso._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.differentialMap",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.k1",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.k1pre",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.k1pre._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.k1app",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "definition",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.kdMap",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.fac",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "definition",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.adjY",
+      "theorem_boundary": false,
+      "value_available": true
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pointedDifferentialIso._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.pull._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    }
+  ],
+  "kind_counts": {
+    "definition": 168,
+    "axiom_or_hidden_body": 146,
+    "inductive": 7,
+    "constructor": 2
+  },
+  "hidden_generated_proof_boundaries": [
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.cotangentIso._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackUnit",
+      "name": "ArithmeticThetaPullback.pullback_unit_iso._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackUnit",
+      "name": "ArithmeticThetaPullback.pullback_unit_iso._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackUnit",
+      "name": "ArithmeticThetaPullback.pullback_unit_iso._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_IdealSheafModule",
+      "name": "AlgebraicGeometry.Scheme.IdealSheafData.module._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_IdealSheafModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.unitToPushforwardUnit._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_IdealSheafModule",
+      "name": "AlgebraicGeometry.Scheme.IdealSheafData.module._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_26",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.sheafifyCounitIso._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.sheafifyFunctor._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "SheafOfModules.sheafifyFunctor._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_25",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_24",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_23",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_22",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_21",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_20",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_19",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_18",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_SheafOfModules_Monoidal",
+      "name": "AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_17",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeHodgeDefinitionsR0205",
+      "name": "ArithmeticThetaSchemeHodgeR0205.cotangentComparison._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pullbackEqIso._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.sheafTensorMap._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.sheafTensorMap._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.sheafTensorMap._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.sheafTensorMap._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ActualSheafTensor",
+      "name": "ArithmeticThetaSheafTensor.sheafTensor._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ActualSheafTensor",
+      "name": "ArithmeticThetaSheafTensor.sheafTensor._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ActualSheafTensor",
+      "name": "ArithmeticThetaSheafTensor.sheafTensor._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ActualSheafTensor",
+      "name": "ArithmeticThetaSheafTensor.sheafTensor._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.sheafificationTensorIso._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPushforwardTensorMap._proof_6",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPushforwardTensorMap._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPullback._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPushforwardTensorMap._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPushforwardTensorMap._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPushforwardTensorMap._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafAdjunction._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.presheafPullback._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "PullbackTensor",
+      "name": "ArithmeticThetaPullback.pullback_sheafTensor_iso._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.pull._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelStrCR._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmodule._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmodule._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelStrCR._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelHomogeneousIdealCR._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelHomogeneousIdealCR._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelStrCR._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelStrCR._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelCR._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebraOfHomogeneous._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.decompositionOfImages._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.preDecompose._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.pieceHom._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.quotDecompose._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.decompositionOfImages._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra",
+      "name": "HomogeneousIdealQuotientGrading.gradedRingOfImages._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.projModelCR._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeWeierstrassPresentationR0174",
+      "name": "ArithmeticThetaCyclicPresentationR0174.RelativeWeierstrassPresentationR0174.Conormal.conormalToPushforward._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeWeierstrassPresentationR0174",
+      "name": "ArithmeticThetaCyclicPresentationR0174.RelativeWeierstrassPresentationR0174.Conormal.conormalLocal._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "name": "ArithmeticThetaCompactifiedDifferentialR0145.relativeD._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.constToPresheaf._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.constToPresheaf._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "name": "ArithmeticThetaCompactifiedDifferentialR0145.relativeD._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.kaehler._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.kaehler._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.kaehler._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_KaehlerModule",
+      "name": "AlgebraicGeometry.Scheme.Hom.kaehler._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeWeierstrassPresentationR0174",
+      "name": "ArithmeticThetaCyclicPresentationR0174.RelativeWeierstrassPresentationR0174.Conormal.conormalLocal._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kwZeroSect._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kwYChartEval._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kwYEvalRingHom._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kwYChartEval._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary",
+      "name": "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.origin._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.origin._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassHodgeIso._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_11",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_9",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_8",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_10",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_7",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.schemeHomOverComp._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_6",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_5",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "name": "ArithmeticThetaSchemeDiscriminantR0244.weierstrassFamily._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_AlgebraicGeometry_RelativeGroupLaw",
+      "name": "GoodReductionJacobian.schemeHomOverComp._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GlobalFamilyDiscriminantR0180",
+      "name": "ArithmeticThetaOpenHodgeR0180.GlobalFamilyDiscriminantR0180.localD._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.RepresentsInitial._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "Definitions.Def_WeierstrassCurve_ProjModel",
+      "name": "WeierstrassProjModel.RelativeGroupLaw.idPoint._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.RepresentsInitial._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeKatoNaturalityDefinitionsR0170",
+      "name": "ArithmeticThetaRelativeKatoNaturalityR0170.Normalized._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.originPoint._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.origin._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.origin._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.origin._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "name": "ArithmeticThetaGeneralEllipticKatoR0168.HasKatoDivisor._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeKatoDefinitionsR0169",
+      "name": "ArithmeticThetaRelativeKatoR0169.IsRelativeKato._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeKatoNaturalityDefinitionsR0170",
+      "name": "ArithmeticThetaRelativeKatoNaturalityR0170.Normalized._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "GlobalFamilyDiscriminantR0180",
+      "name": "ArithmeticThetaOpenHodgeR0180.GlobalFamilyDiscriminantR0180.localD._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.comparisonHodge._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.comparisonHodge._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.comparisonHodge._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pointedDifferentialIso._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pointedDifferentialIso._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.k1pre._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_4",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_3",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_2",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq",
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pointedDifferentialIso._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    },
+    {
+      "kind": "axiom_or_hidden_body",
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "name": "ArithmeticThetaArbitraryDiscriminantR0243.pull._proof_1",
+      "theorem_boundary": false,
+      "value_available": false
+    }
+  ]
+}

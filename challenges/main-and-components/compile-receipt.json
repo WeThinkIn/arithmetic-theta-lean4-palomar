@@ -1,0 +1,32 @@
+{
+  "checks": [
+    {
+      "module": "Challenge",
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Challenge.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Challenge.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.47
+    },
+    {
+      "module": "Solution",
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Solution.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Solution.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.82
+    }
+  ],
+  "lean_path": "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+  "lean_binary_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+}

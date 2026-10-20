@@ -1,0 +1,16 @@
+'ArithmeticThetaPalomarExamples258Det80.actual_coefficient_matrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarExamples258Det80.actual_minor_determinant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarExamples258Det80.actual_theta_kernel_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarExamples258Det80.all_positive_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarExamples258Det80.similarity_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarExamples258Det80.ambient_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarExamples258Det80.same_order_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarExamples258Det80.representation_finiteness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

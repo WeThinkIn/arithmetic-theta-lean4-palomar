@@ -1,0 +1,8 @@
+'ArithmeticThetaPalomarEtaleNorm259.finite_etale_norm_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarEtaleNorm259.sections_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarEtaleNorm259.restrict_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarEtaleNorm259.affineNorm_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarEtaleNorm259.affineFree_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarEtaleNorm259.isNormSection_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarEtaleNorm259.normFamily_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarEtaleNorm259.isNormFamily_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]

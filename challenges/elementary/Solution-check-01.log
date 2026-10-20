@@ -1,0 +1,15 @@
+'ArithmeticThetaPalomarFoundations269Elementary.rank_zero_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarFoundations269Elementary.rank_zero_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarFoundations269Elementary.rank_zero_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarFoundations269Elementary.norm_exponent_identities' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarFoundations269Elementary.norm_sign_exponent_even' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

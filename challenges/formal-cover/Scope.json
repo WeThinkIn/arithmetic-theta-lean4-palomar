@@ -1,0 +1,27 @@
+{
+  "source_obligation": {
+    "id": "accepted-050",
+    "declaration": "ArithmeticThetaFormalCoverR0210.arbitrary_formal_cover_constant",
+    "file": "Lean/FullSourceIntegrationR0268.lean",
+    "type": "∀ (k : Type u) [Field k] (X : AlgebraicGeometry.Scheme.{u}) (f : X ⟶ AlgebraicGeometry.Spec (CommRingCat.of (PowerSeries k))) [CharZero k] [AlgebraicGeometry.Flat f] [AlgebraicGeometry.IsProper f] [AlgebraicGeometry.Smooth (ArithmeticThetaFormalConstants.genericStructure k X f)] [AlgebraicGeometry.GeometricallyConnected (ArithmeticThetaFormalConstants.genericStructure k X f)], ∃ ρ : ArithmeticThetaFormalCoverR0210.Restrictions k X f, ∀ C : ArithmeticThetaFormalCoverR0210.Cover k X f, ArithmeticThetaFormalCoverR0210.ChartConditions k X f C → ∀ v : (∀ i, ArithmeticThetaFormalCoverR0210.Fractions k X f (C.opens i)), ArithmeticThetaFormalCoverR0210.RationalCompatible k X f ρ C v → ArithmeticThetaFormalCoverR0210.NoPole k X f C v → ∃! c : LaurentSeries k, ArithmeticThetaFormalCoverR0210.FractionConstant k X f C v c",
+    "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Original lemma constant lines 176–197, in the canonical inverse-limit presentation of an arbitrary finite affine formal cover: on a proper flat k[[t]] model with smooth geometrically connected generic fiber, compatible rational functions with no height-one poles on noetherian normal parameter-torsion-free formal chart domains come from one unique Laurent scalar through the actual structural maps. Construct the restriction system. Reuse normal_domain_height_one_intersection, proper_formal_functions_h0 and proper_model_global_constants. Semistability is not needed beyond source flatness. No cyclic/chart-algebraization hypothesis is added.",
+    "difficulty": "medium",
+    "depends_on": [
+      "binary-orthogonal-example",
+      "conservative-image-consumer"
+    ],
+    "universes": [
+      "u"
+    ]
+  },
+  "namespace": "ArithmeticThetaPalomarFormalCover275",
+  "covered_ids": [
+    "accepted-050"
+  ],
+  "pending": [],
+  "full_paper_claimed": false,
+  "structure_bridge_required": [
+    "Restrictions",
+    "Cover"
+  ]
+}

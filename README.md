@@ -23,7 +23,7 @@ integration endpoints. `docs/SourceObligations.json` preserves their original
 types and source accounts. `docs/Coverage.md` tracks their migration separately
 from independent Challenge coverage.
 
-Partial audit242 has checked50/103 original exact endpoint types and standard
+Joint partial audit 273 has checked 62/103 original exact endpoint types and standard
 axiom closures. The accepted-017 early-certificate subpackage separately passed
 local Comparator with con-ron, NanoDa and Lean default kernel using source-bound
 exports and a normal sandbox. Its official full mechanical
@@ -103,11 +103,11 @@ Original Lean code is licensed under Apache-2.0 by authorization of the project 
 The owner authorized public visibility, official mechanical preflight and subsequent
 submission on 2026-10-20. The repository is now public. The manually dispatched
 workflow in `.github/workflows/palomar-preflight.yml` calls the official pinned
-PalomarSubmission workflow with `mode: full` and `palomar-standard-v1`. Its selected
-configuration is still the finite-determination pilot; a pass would apply to that
-configuration only. Formal submission must follow a passing full mechanical report.
+PalomarSubmission workflow with `mode: full` and `palomar-standard-v1`. The workflow offers the pilot, early certificate, main-and-components and formal-cover
+configurations; each result applies only to its selected configuration. Formal submission must follow a passing full mechanical report.
 
-The latest joint migrated audit checks 44 of the 103 original exact endpoint
-types and standard axiom closures. The independent explicit-bound main statement
-is now drafted in `challenges/main-explicit`; its Solution bridges are still
-pending. No full-paper Palomar verification or registration is claimed.
+The latest joint migrated audit checks **62 of 103** original exact endpoint types and their standard axiom closures. The full GoalRoot build remains pending.
+
+The prepared `comparator-main-and-components.json` compares 43 targets: an explicit conservative full-series kernel bound, 39 complete prior endpoints and supporting results. Its Mathlib-only Challenge is 953 lines / 61,095 bytes. The main interface does not include the extra `FormalIdentity` field of original accepted-037; that original exact type separately passed audit 273. See `challenges/main-and-components/Scope.json`.
+
+`comparator-formal-cover.json` separately compares accepted-050. Both new configurations have scope-specific formalization metadata and require their own official full mechanical reports before intake. Geometry interfaces, including the independent scheme discriminant specification, remain unfinished. No full-paper Palomar verification or registration is claimed.

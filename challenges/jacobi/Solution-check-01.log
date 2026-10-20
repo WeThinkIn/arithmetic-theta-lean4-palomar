@@ -1,0 +1,7 @@
+'ArithmeticThetaPalomarFormal261Jacobi.formal_jacobi_triple_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarFormal261Jacobi.jacobi_formal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarFormal261Jacobi.normalized_partial_stable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

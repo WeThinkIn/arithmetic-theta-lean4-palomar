@@ -1,0 +1,44 @@
+{
+  "source_obligations": [
+    {
+      "id": "accepted-007",
+      "declaration": "ArithmeticThetaDurfee.formal_jacobi_triple_product",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "(PowerSeries.mk (fun e => PowerSeries.coeff e ((1 + PowerSeries.C (LaurentPolynomial.T 1)) * ∏ j ∈ Finset.range e, (1 - PowerSeries.X ^ (j + 1)) * (1 + PowerSeries.C (LaurentPolynomial.T 1) * PowerSeries.X ^ (j + 1)) * (1 + PowerSeries.C (LaurentPolynomial.T (-1)) * PowerSeries.X ^ (j + 1)) : PowerSeries (LaurentPolynomial ℤ)))) = PowerSeries.mk (fun d => ∑ k ∈ Finset.Icc (-(d : ℤ)) ((d : ℤ) + 1), if k * (k - 1) = 2 * (d : ℤ) then (LaurentPolynomial.T k : LaurentPolynomial ℤ) else 0)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. 原稿322–334完整形式Jacobi三重积恒等式：实际完整无限乘积（由已证系数稳定性定义）等于实际双边theta级数（每个系数由已证整数支持界的有限区间和定义）。闭合sum=product与精确归一化；尚不含z=t^a的有理指数专门化。",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-009",
+      "declaration": "ArithmeticThetaHadamard.jacobi_formal",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "ArithmeticThetaHadamard.a ^ 4 = ArithmeticThetaHadamard.b ^ 4 + ArithmeticThetaHadamard.c ^ 4",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 626–634: the complete formal identity a⁴=b⁴+c⁴ in integer formal power series for the actual three source unary series. It follows from the actual finite shell count identity and all three proved Cauchy-product bridges, without an externally supplied identity or finite-check hypothesis.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "support-normalized-product-stability",
+      "declaration": "ArithmeticThetaDurfee.normalized_partial_stable",
+      "type": "∀ (d N : ℕ), d ≤ N → PowerSeries.coeff d (ArithmeticThetaDurfee.normalizedFiniteProduct N) = PowerSeries.coeff d (ArithmeticThetaDurfee.normalizedFiniteProduct d)",
+      "source_statement": "Explicit coefficient stabilization of the normalized finite products at every coefficient and every sufficiently long truncation."
+    }
+  ],
+  "namespace": "ArithmeticThetaPalomarFormal261Jacobi",
+  "covered_ids": [
+    "accepted-007",
+    "accepted-009"
+  ],
+  "full_paper_claimed": false,
+  "definition_source_files": [
+    "HadamardJacobi.lean",
+    "FormalJacobiTripleProduct.lean"
+  ]
+}

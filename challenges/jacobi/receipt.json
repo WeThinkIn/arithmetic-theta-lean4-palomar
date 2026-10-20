@@ -1,0 +1,63 @@
+{
+  "status": "local_comparator_passed",
+  "completed_utc": "2026-10-20T16:35:06.844486+00:00",
+  "compile_receipt_sha256": "7e78f9697ff2b5d38d3fd04052a200a67e19b5af566814e7496b0162e35abc0b",
+  "export_session": 24373,
+  "comparator_session": 94664,
+  "comparator": {
+    "command": [
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake",
+      "comparator",
+      "--config=/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/comparator-external.json",
+      "--challenge-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Challenge.ndjson",
+      "--solution-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Solution.ndjson"
+    ],
+    "cwd": "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/project",
+    "exit_code": 0,
+    "elapsed_seconds": 27.75,
+    "normal_sandbox": true,
+    "external_kernels": {
+      "nanoda": "bundled",
+      "con-ron": "bundled --jobs=2"
+    },
+    "budget_seconds": 600
+  },
+  "bindings_unchanged_after_comparator": true,
+  "tool_digests": {
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanexport": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/early-comparator-211/bubblewrap-0.12.0/build/bwrap": "dd7c08cfc4cd60028638f03c7995a4a2f26cd47f1e3723ad66a45379d42ccd03"
+  },
+  "covered_ids": [
+    "accepted-007",
+    "accepted-009"
+  ],
+  "official_preflight": false,
+  "official_submission": false,
+  "shared_lake_output_modified": false,
+  "limitation": "Local source/object/export hash binding and normal-sandbox independent kernels; not official isolated source-provenance audit.",
+  "artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/comparator.json": "d92a683314878b4df533aeef53cd0875e5f0ebbaa618caae9be9c485b2866c3f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/compile-receipt.json": "7e78f9697ff2b5d38d3fd04052a200a67e19b5af566814e7496b0162e35abc0b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Scope.json": "e18598dba6ea53a87cfcea7f792a5303b32f0384012e256f349272806325ffaa",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Challenge-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/export-targets.json": "ba3eb31e8d5877a93fef7ef2af5fb903600c2226917ac5a08aa962b507f1b9a9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/comparator-external.json": "bd50adf184c5d98cdd5172291f366ba76c2073b57923ec01b7a74209f68febc2",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/export.py": "72827edac6d25348cf5f6c9d1b2ba0da9affd8a713f6bac134b46ef865c50dd5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Solution-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/comparator-modern-receipt.json": "8dbf1352a7f8892ba7ca1ad2c40a47f72748e792fb3f1d53b3dd24f8d02f8d53",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Challenge-check-01.log": "51ea69e5fb38c16b338db2f81025bb20db9ef4c6fe44038844323a84e198eeea",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/comparator-modern.log": "08315b09f8a9188bde5f17fd6b24e128ab3abae25f06262f69fe6782dafd3bee",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/export-receipts.json": "b6d729cdc822364ac6495b271ad4dcbb3042ed30b3c3ad52a82a856160ce3142",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Solution.lean": "85fee579fba6006ef9410281995821497be359490f28611c86407d443d27a796",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Challenge.lean": "bc2b061348e7d84d9e1b4128ccfcf4a89c9095ca379b88d54dbc1f55e16df954",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Solution-check-01.log": "40ba6b99b0dfa2d9b60662da4ffeebc39cc5fbe44540f5d3c8ace4a3456db984",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/compare.py": "c0909a4342a58c060aaec3a2d2614282207883fbc7d8b3bc305dd370920959b6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/checkpoint.json": "410c128ff833786e24dbf21d3c80b71d8a5b2eb46fb6e5fa90bedd7cd4549b6d"
+  },
+  "readme_sha256": "b21f902f487807948a0c117168ec8cd82a6097f4c305afd7d7e217f020dfbef1"
+}

@@ -1,0 +1,4 @@
+'ArithmeticThetaPalomarFormal261Tate.basic_fourth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarFormal261Tate.general_annular_addition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

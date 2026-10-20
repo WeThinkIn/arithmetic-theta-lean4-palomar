@@ -1,0 +1,91 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/algorithm-package-257/Solution.lean:225:2: error: Type mismatch
+  ArithmeticThetaLDLEnumerationR0229.computed_rational_ldl
+has type
+  ∀ (n : ℕ) (A : ArithmeticThetaLDLEnumerationR0229.QMatrix n),
+    Matrix.IsSymm A →
+      QuadraticMap.PosDef (Matrix.toQuadraticForm' A) →
+        (∀ (i : Fin n), 0 < (ArithmeticThetaLDLEnumerationR0229.ldl n A).1 i) ∧
+          (∀ (i : Fin n), (ArithmeticThetaLDLEnumerationR0229.ldl n A).2 i i = 1) ∧
+            (∀ (i j : Fin n), j < i → (ArithmeticThetaLDLEnumerationR0229.ldl n A).2 i j = 0) ∧
+              A =
+                Matrix.transpose (ArithmeticThetaLDLEnumerationR0229.ldl n A).2 *
+                    Matrix.diagonal (ArithmeticThetaLDLEnumerationR0229.ldl n A).1 *
+                  (ArithmeticThetaLDLEnumerationR0229.ldl n A).2
+but is expected to have type
+  ∀ (n : ℕ) (A : LDL.QMatrix n),
+    Matrix.IsSymm A →
+      QuadraticMap.PosDef (Matrix.toQuadraticForm' A) →
+        (∀ (i : Fin n), 0 < (LDL.ldl n A).1 i) ∧
+          (∀ (i : Fin n), (LDL.ldl n A).2 i i = 1) ∧
+            (∀ (i j : Fin n), j < i → (LDL.ldl n A).2 i j = 0) ∧
+              A = Matrix.transpose (LDL.ldl n A).2 * Matrix.diagonal (LDL.ldl n A).1 * (LDL.ldl n A).2
+/home/Palomar/workspace/arithmetic-theta/evidence/algorithm-package-257/Solution.lean:230:2: error: Type mismatch
+  ArithmeticThetaLDLEnumerationR0229.recursive_ellipsoid_enumeration
+has type
+  ∀ (n : ℕ) (A : ArithmeticThetaLDLEnumerationR0229.QMatrix n),
+    Matrix.IsSymm A →
+      QuadraticMap.PosDef (Matrix.toQuadraticForm' A) →
+        ∀ (B : ℚ) (x : Fin n → ℤ),
+          x ∈ ArithmeticThetaLDLEnumerationR0229.enumerate n A B ↔
+            (ArithmeticThetaLDLEnumerationR0229.energy A fun i => ↑(x i)) ≤ B
+but is expected to have type
+  ∀ (n : ℕ) (A : LDL.QMatrix n),
+    Matrix.IsSymm A →
+      QuadraticMap.PosDef (Matrix.toQuadraticForm' A) →
+        ∀ (B : ℚ) (x : Fin n → ℤ), x ∈ LDL.enumerate n A B ↔ (LDL.energy A fun i => ↑(x i)) ≤ B
+/home/Palomar/workspace/arithmetic-theta/evidence/algorithm-package-257/Solution.lean:235:2: error: Type mismatch
+  ArithmeticThetaLDLEnumerationR0229.ldl_theta_prefix
+has type
+  ∀ (n : ℕ) (A : Matrix (Fin n) (Fin n) ℤ),
+    ArithmeticThetaComputed.validGram A →
+      (∀ (m : ℕ), ArithmeticThetaLDLEnumerationR0229.shell A m = ArithmeticThetaEnumeration.shellVectors A m) ∧
+        ∀ (B : ℕ),
+          ArithmeticThetaLDLEnumerationR0229.coefficients A B = ArithmeticThetaEnumeration.coefficientsUpTo A B ∧
+            (ArithmeticThetaLDLEnumerationR0229.coefficients A B).length = B + 1 ∧
+              ∀ (a : Fin (B + 1)),
+                ↑((ArithmeticThetaLDLEnumerationR0229.coefficients A B).getD (↑a) 0) =
+                  (PowerSeries.coeff ↑a) (ArithmeticThetaComputed.theta A)
+but is expected to have type
+  ∀ (n : ℕ) (A : Matrix (Fin n) (Fin n) ℤ),
+    Computed.validGram A →
+      (∀ (m : ℕ), LDL.shell A m = Enumeration.shellVectors A m) ∧
+        ∀ (B : ℕ),
+          LDL.coefficients A B = Enumeration.coefficientsUpTo A B ∧
+            (LDL.coefficients A B).length = B + 1 ∧
+              ∀ (a : Fin (B + 1)), ↑((LDL.coefficients A B).getD (↑a) 0) = (PowerSeries.coeff ↑a) (Computed.theta A)
+/home/Palomar/workspace/arithmetic-theta/evidence/algorithm-package-257/Solution.lean:242:10: error: Application type mismatch: The argument
+  h.left
+has type
+  ArithmeticThetaLDLEnumerationR0229.coefficientMatrix A B = ArithmeticThetaComputed.coefficientMatrix A B
+but is expected to have type
+  LDL.coefficientMatrix A B = Computed.coefficientMatrix A B
+in the application
+  And.intro h.left
+/home/Palomar/workspace/arithmetic-theta/evidence/algorithm-package-257/Solution.lean:242:40: error: Application type mismatch: The argument
+  h.left
+has type
+  ArithmeticThetaLDLEnumerationR0229.coefficientMatrix A B = ArithmeticThetaComputed.coefficientMatrix A B
+but is expected to have type
+  LDL.coefficientMatrix A B = Computed.coefficientMatrix A B
+in the application
+  congrArg Elimination.run h.left
+'ArithmeticThetaPalomarAlgorithm257.shifted_integer_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarAlgorithm257.rational_schur_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarAlgorithm257.computed_rational_ldl' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarAlgorithm257.recursive_ellipsoid_enumeration' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarAlgorithm257.ldl_theta_prefix' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarAlgorithm257.ldl_coefficient_matrix' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

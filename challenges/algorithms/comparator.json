@@ -1,0 +1,17 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarAlgorithm257.shifted_integer_interval",
+    "ArithmeticThetaPalomarAlgorithm257.rational_schur_completion",
+    "ArithmeticThetaPalomarAlgorithm257.computed_rational_ldl",
+    "ArithmeticThetaPalomarAlgorithm257.recursive_ellipsoid_enumeration",
+    "ArithmeticThetaPalomarAlgorithm257.ldl_theta_prefix",
+    "ArithmeticThetaPalomarAlgorithm257.ldl_coefficient_matrix"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

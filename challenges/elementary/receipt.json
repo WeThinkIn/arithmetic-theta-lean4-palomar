@@ -1,0 +1,66 @@
+{
+  "status": "local_comparator_passed",
+  "completed_utc": "2026-10-20T16:39:29.485481+00:00",
+  "compile_receipt_sha256": "6760d12b0196137b79c99f97be979505e22e9dd98767b04d3c4ce50d4a928d9c",
+  "export_session": 78696,
+  "comparator_session": 34691,
+  "comparator": {
+    "command": [
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake",
+      "comparator",
+      "--config=/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/comparator-external.json",
+      "--challenge-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Challenge.ndjson",
+      "--solution-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Solution.ndjson"
+    ],
+    "cwd": "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/project",
+    "exit_code": 0,
+    "elapsed_seconds": 17.94,
+    "normal_sandbox": true,
+    "external_kernels": {
+      "nanoda": "bundled",
+      "con-ron": "bundled --jobs=2"
+    },
+    "budget_seconds": 600
+  },
+  "bindings_unchanged_after_comparator": true,
+  "tool_digests": {
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanexport": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/early-comparator-211/bubblewrap-0.12.0/build/bwrap": "dd7c08cfc4cd60028638f03c7995a4a2f26cd47f1e3723ad66a45379d42ccd03"
+  },
+  "covered_ids": [
+    "accepted-000",
+    "accepted-001",
+    "accepted-002",
+    "accepted-090",
+    "accepted-091"
+  ],
+  "official_preflight": false,
+  "official_submission": false,
+  "shared_lake_output_modified": false,
+  "limitation": "Local source/object/export hash binding and normal-sandbox independent kernels; not official isolated source-provenance audit.",
+  "artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/comparator.json": "3609ef11c18d288006f05dac278a2fa3df50840707304b167cad80e18477f75a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/compile-receipt.json": "6760d12b0196137b79c99f97be979505e22e9dd98767b04d3c4ce50d4a928d9c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Scope.json": "9e729294cb7e624a32f88308cd1a68615b42f66994e04faa2120623ae04889b3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Challenge-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/export-targets.json": "a73da9ea698053706bd1a3fa32f167bcb7e9d16c4da04441ccf96160d9befdc0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/comparator-external.json": "5e3df8959850d87abe2da6d640e981f8495df267b7e4f375cc8ddc536c88537e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/export.py": "72827edac6d25348cf5f6c9d1b2ba0da9affd8a713f6bac134b46ef865c50dd5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Solution-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/comparator-modern-receipt.json": "dd9f27dbdd948b3bd468f5b423fd1b84e50e55a9a76eb3b20a34b4ad400e4532",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Challenge-check-01.log": "08a506fe28217402c45e2b2aacfc5eec581e0ff7b5c093901b971b3f8d5e5784",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/comparator-modern.log": "2019a15a3b45396ae0588d45600cff8b5d75c1c03453680c4e48c6a353a16514",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/export-receipts.json": "deb189e2d666676101d8fffba73771dd42b23848f06ff6dcbb6383d185033cb9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Solution.lean": "c4b7dc9823008270576ec0b7c17c015dce7f67199c551c7ec7e503c21516329b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Challenge.lean": "ff4b76f6c0a223d658a3788fa70352a0aa8fdb383e804394795573073711d310",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Solution-check-01.log": "159cb34399738bdc77e5bd196d8609b16abe679315d9b5149a41fa2deac3180d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/compare.py": "c0909a4342a58c060aaec3a2d2614282207883fbc7d8b3bc305dd370920959b6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/checkpoint.json": "8d6bcecfb2bd49a1104b0ce821d440acb4f356c6245230b6015659bd11b49e05"
+  },
+  "readme_sha256": "a61f4129b8dfd9be1bd184137342923d8f1a187435c28c7274c3b2bfb2c44c8b"
+}

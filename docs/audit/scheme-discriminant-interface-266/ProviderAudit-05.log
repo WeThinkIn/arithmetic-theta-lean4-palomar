@@ -1,0 +1,10 @@
+'ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_existence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_naturality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaOpenHodgeR0180.GlobalFamilyDiscriminantR0180.local_discriminant_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaSchemeHodgeR0205.cartesian_identity_ideal' depends on axioms: [propext, Classical.choice, Quot.sound]

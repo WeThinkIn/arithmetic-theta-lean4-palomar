@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-10-20T16:36:49.865180+00:00",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Challenge.lean": "ff4b76f6c0a223d658a3788fa70352a0aa8fdb383e804394795573073711d310",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Solution.lean": "c4b7dc9823008270576ec0b7c17c015dce7f67199c551c7ec7e503c21516329b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/comparator.json": "3609ef11c18d288006f05dac278a2fa3df50840707304b167cad80e18477f75a",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/RankZero.lean": "cc4f6a9766708ed88ddeba65282b8423d4074e208ce9e16e2cfd8b0c7292570e",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/NormExponentAlgebra.lean": "889a2441bafabfd89e42a591e05c9b498177c6924c78c0f8b83b4b5d94e960a6",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/RankZero.olean": "538c12cbd111c25181c0c176c0a458a7d60c858a905235f91e3e3535b0995f6c",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/NormExponentAlgebra.olean": "66c8ad9939afea244489728ad4355d3e8219eba514f82ce040139e644e3c459c"
+  },
+  "threads": 12,
+  "max_compile_seconds": 300,
+  "challenge_lines": 35,
+  "challenge_bytes": 1507,
+  "status": "compiled",
+  "checks": [
+    {
+      "module": "Challenge",
+      "session": 65838,
+      "exit_code": 0
+    },
+    {
+      "module": "Solution",
+      "session": 20064,
+      "exit_code": 0
+    }
+  ],
+  "axioms": {
+    "ArithmeticThetaPalomarFoundations269Elementary.rank_zero_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.rank_zero_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.rank_zero_image": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.norm_exponent_identities": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.norm_sign_exponent_even": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "outputs": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Solution.olean": "ae4f7f48027a9737e049aa9db89ee768007e5c7a5af7530e38ef517c6f40ba0b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Challenge.olean": "2651945fe0bf19c22367defe5100167e0df687f31c950ee57bd2cf205ec94e0b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Challenge-check-01.log": "08a506fe28217402c45e2b2aacfc5eec581e0ff7b5c093901b971b3f8d5e5784",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/elementary/Solution-check-01.log": "159cb34399738bdc77e5bd196d8609b16abe679315d9b5149a41fa2deac3180d"
+  }
+}

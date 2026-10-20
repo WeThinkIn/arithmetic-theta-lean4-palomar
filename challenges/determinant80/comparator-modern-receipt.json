@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake",
+    "comparator",
+    "--config=/home/Palomar/workspace/arithmetic-theta/evidence/examples-package-258/determinant80/comparator-external.json",
+    "--challenge-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/examples-package-258/determinant80/Challenge.ndjson",
+    "--solution-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/examples-package-258/determinant80/Solution.ndjson"
+  ],
+  "cwd": "/home/Palomar/workspace/arithmetic-theta/evidence/examples-package-258/determinant80/project",
+  "exit_code": 0,
+  "elapsed_seconds": 38.46,
+  "normal_sandbox": true,
+  "external_kernels": {
+    "nanoda": "bundled",
+    "con-ron": "bundled --jobs=2"
+  },
+  "budget_seconds": 600
+}

@@ -1,0 +1,105 @@
+{
+  "source_obligations": [
+    {
+      "id": "accepted-004",
+      "declaration": "ArithmeticThetaDet80.actual_coefficient_matrix",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "((fun i j : Fin 3 => (Nat.card {v : ℤ × ℤ // (![v.1 ^ 2 + 20 * v.2 ^ 2, 3 * v.1 ^ 2 + 2 * v.1 * v.2 + 7 * v.2 ^ 2, 4 * v.1 ^ 2 + 5 * v.2 ^ 2] : Fin 3 → ℤ) j = (![0, 1, 3] : Fin 3 → ℤ) i} : ℤ)) : Matrix (Fin 3) (Fin 3) ℤ) = ![![1, 1, 1], ![2, 0, 0], ![0, 2, 0]]",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Main input lines 612–616 and appendix thm:kernel proof lines 227–234: the actual cardinalities of integer solutions of Q_j(x,y)=m at m=0,1,3 form the displayed matrix. This is not a theorem about a free matrix supplied as a hypothesis.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-005",
+      "declaration": "ArithmeticThetaDet80.actual_minor_determinant",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "Matrix.det ((fun i j : Fin 3 => (Nat.card {v : ℤ × ℤ // (![v.1 ^ 2 + 20 * v.2 ^ 2, 3 * v.1 ^ 2 + 2 * v.1 * v.2 + 7 * v.2 ^ 2, 4 * v.1 ^ 2 + 5 * v.2 ^ 2] : Fin 3 → ℤ) j = (![0, 1, 3] : Fin 3 → ℤ) i} : ℤ)) : Matrix (Fin 3) (Fin 3) ℤ) = 4",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Main input line 615 and appendix line 234: the determinant of the actual three-row representation-number matrix equals 4. The entries are still defined by solution cardinalities in this target; the preceding matrix theorem supplies the calculation.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-006",
+      "declaration": "ArithmeticThetaDet80.actual_theta_kernel_zero",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "LinearMap.ker (∑ j : Fin 3, (LinearMap.proj j : (Fin 3 → ℂ) →ₗ[ℂ] ℂ).smulRight (PowerSeries.mk (fun m : ℕ => (Nat.card {v : ℤ × ℤ // (![v.1 ^ 2 + 20 * v.2 ^ 2, 3 * v.1 ^ 2 + 2 * v.1 * v.2 + 7 * v.2 ^ 2, 4 * v.1 ^ 2 + 5 * v.2 ^ 2] : Fin 3 → ℤ) j = (m : ℤ)} : ℂ)) : PowerSeries ℂ)) = ⊥",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Main manuscript lines 612–618, and determinant-80 appendix coefficient matrix argument: The actual finite-sum theta linear map for those three forms has kernel equal to the zero submodule. The prerequisite actual integer coefficient matrix and representation finiteness are accepted supporting proofs, not hypotheses. This does not claim full order classification or modularity.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-010",
+      "declaration": "ArithmeticThetaBinary.all_positive_classes",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ a b c : ℤ, 0 < a → 4*a*c-b^2 = 80 → ArithmeticThetaBinary.gramContent a b c = 2 → ∃ (j : Fin 3) (U : Matrix (Fin 2) (Fin 2) ℤ), IsUnit U.det ∧ U.transpose * ArithmeticThetaBinary.gram a b c * U = ArithmeticThetaBinary.forms j",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source determinant-80 complete classification: arbitrary positive binary Gram input with determinant80 and Smith gcd2 is equivalent to one of the three actual displayed forms. Use accepted reduced-list classification and explicit sign change.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-011",
+      "declaration": "ArithmeticThetaBinary.similarity_distinct",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (i j : Fin 3), i ≠ j → ¬ ∃ (s : ℚ) (U : Matrix (Fin 2) (Fin 2) ℤ), 0 < s ∧ IsUnit U.det ∧ (U.map (Int.castRingHom ℚ)).transpose * (ArithmeticThetaBinary.forms i).map (Int.castRingHom ℚ) * U.map (Int.castRingHom ℚ) = s • (ArithmeticThetaBinary.forms j).map (Int.castRingHom ℚ)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source distinct normalized lattice similarity classes: prove absence of any positive rational scale and integral unimodular isometry between two different displayed forms.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-012",
+      "declaration": "ArithmeticThetaBinary.ambient_realization",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ j : Fin 3, (ArithmeticThetaBinary.embeddings j).det ≠ 0 ∧ (ArithmeticThetaBinary.embeddings j).transpose * (ArithmeticThetaBinary.forms 0).map (Int.castRingHom ℚ) * ArithmeticThetaBinary.embeddings j = (![1,3,1] : Fin 3 → ℚ) j • (ArithmeticThetaBinary.forms j).map (Int.castRingHom ℚ)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source explicit rational embeddings T1,T2,T3 into the fixed space: the second restriction is THREE times the normalized form; the correct scale is retained.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-013",
+      "declaration": "ArithmeticThetaBinary.same_order_classes",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ a b c : ℤ, 0 < a → 0 < 4*a*c-b^2 → ArithmeticThetaBinary.sameLocalSmith a b c → ∃! j : Fin 3, ∃ U : Matrix (Fin 2) (Fin 2) ℤ, IsUnit U.det ∧ U.transpose * ArithmeticThetaBinary.gram a b c * U = ArithmeticThetaBinary.forms j",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Complete determinant80 order example: every positive normalized even integral binary Gram with the actual all-prime local Smith data has a unique displayed integral class; together with positive-scale rigidity and ambient realization, these are exactly the three supplied rational-similarity classes.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "support-representation-finiteness",
+      "declaration": "ArithmeticThetaDet80.representation_finiteness",
+      "type": "∀ (j : Fin 3) (m : ℕ), Set.Finite {v : ℤ × ℤ |\n      (![v.1 ^ 2 + 20 * v.2 ^ 2,\n        3 * v.1 ^ 2 + 2 * v.1 * v.2 + 7 * v.2 ^ 2,\n        4 * v.1 ^ 2 + 5 * v.2 ^ 2] : Fin 3 → ℤ) j = (m : ℤ)}",
+      "source_statement": "Additional explicit finite-shell target for every j and every natural coefficient m; not a new claim of source endpoint coverage."
+    }
+  ],
+  "namespace": "ArithmeticThetaPalomarExamples258Det80",
+  "covered_ids": [
+    "accepted-004",
+    "accepted-005",
+    "accepted-006",
+    "accepted-010",
+    "accepted-011",
+    "accepted-012",
+    "accepted-013"
+  ],
+  "full_paper_claimed": false
+}

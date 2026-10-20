@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarFormal261Tate.basic_fourth",
+    "ArithmeticThetaPalomarFormal261Tate.general_annular_addition"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

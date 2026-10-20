@@ -1,0 +1,612 @@
+{
+  "status": "joint_sources_compiled_standard_axioms",
+  "completed_utc": "2026-10-20T16:44:33.792311+00:00",
+  "challenge_lines": 953,
+  "challenge_bytes": 61095,
+  "solution_lines": 1295,
+  "solution_bytes": 83386,
+  "theorem_target_count": 43,
+  "axiom_checked_declaration_count": 65,
+  "target_axioms": {
+    "ArithmeticThetaPalomarEarly205.earlierCertificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.rational_preimage_cosets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.unary_parameter_identification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.individual_coset_integral_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.source_orthogonal_factorization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.computed_family_formal_unary_consumer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarAlgorithm257.shifted_integer_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarAlgorithm257.rational_schur_completion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarAlgorithm257.computed_rational_ldl": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarAlgorithm257.recursive_ellipsoid_enumeration": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarAlgorithm257.ldl_theta_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarAlgorithm257.ldl_coefficient_matrix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Binary.binary_orthogonal_example": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.actual_coefficient_matrix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.actual_minor_determinant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.actual_theta_kernel_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.all_positive_classes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.similarity_distinct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.ambient_realization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.same_order_classes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.representation_finiteness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarRank16_260.no_similarity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarRank16_260.integral_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarRank16_260.two_column_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarRank16_260.general_dplus_even_unimodular": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarRank16_260.general_dplus_dual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarRank16_260.general_dplus_theta_realization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.finite_etale_norm_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Jacobi.formal_jacobi_triple_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Jacobi.jacobi_formal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Jacobi.normalized_partial_stable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Tate.basic_fourth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Tate.general_annular_addition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Norm.powered_gamma_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.rank_zero_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.rank_zero_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.rank_zero_image": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.norm_exponent_identities": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.norm_sign_exponent_even": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Orthogonal.even_integral_gram_orthogonalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Orthogonal.computed_natural_data": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Orthogonal.computed_orthogonalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.explicitFiniteDetermination": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "all_checked_axioms": {
+    "ArithmeticThetaPalomarEarly205.coefficientMatrix_eq_computed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEarly205.earlierCertificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.rational_preimage_cosets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.unary_parameter_identification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.individual_coset_integral_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.source_orthogonal_factorization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.computed_family_formal_unary_consumer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarAlgorithm257.shifted_integer_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarAlgorithm257.rational_schur_completion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarAlgorithm257.computed_rational_ldl": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarAlgorithm257.recursive_ellipsoid_enumeration": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarAlgorithm257.ldl_theta_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarAlgorithm257.ldl_coefficient_matrix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Binary.binary_orthogonal_example": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.actual_coefficient_matrix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.actual_minor_determinant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.actual_theta_kernel_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.all_positive_classes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.similarity_distinct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.ambient_realization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.same_order_classes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarExamples258Det80.representation_finiteness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarRank16_260.no_similarity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarRank16_260.integral_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarRank16_260.two_column_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarRank16_260.general_dplus_even_unimodular": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarRank16_260.general_dplus_dual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarRank16_260.general_dplus_theta_realization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.finite_etale_norm_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.sections_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.restrict_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.affineNorm_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.affineFree_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.isNormSection_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.normFamily_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.isNormFamily_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Jacobi.formal_jacobi_triple_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Jacobi.jacobi_formal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Jacobi.normalized_partial_stable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Tate.basic_fourth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Tate.general_annular_addition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Norm.powered_gamma_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.rank_zero_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.rank_zero_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.rank_zero_image": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.norm_exponent_identities": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Elementary.norm_sign_exponent_even": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Orthogonal.even_integral_gram_orthogonalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Orthogonal.computed_natural_data": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Orthogonal.computed_orthogonalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges198.thetaMap_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges198.Representatives_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges198.shell_finite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges198.coefficientMatrix_complex_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges198.fromOriginal_indexed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges198.to_fromOriginal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.commonN_computed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.level_computed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.exponent_computed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.commonN_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.cutoff_rational": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.prefix_map_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.matrix_zero_iff_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.coefficients_iff_of_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.explicitFiniteDetermination": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "scope": "39 prior full source endpoints plus one independent main arithmetic interface; not 40 original full exact types",
+  "main_scope_caveat": "accepted-037 positive-rank FormalIdentity conjunct is NOT in the main interface; exact original type separately root-audited, extra factorization evidence separately tracked.",
+  "original_input_source_bindings_unchanged": true,
+  "retained_source_lines_byte_identical": true,
+  "compile": {
+    "checks": [
+      {
+        "module": "Challenge",
+        "command": [
+          "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+          "-R",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274",
+          "-o",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Challenge.olean",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Challenge.lean"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 5.47
+      },
+      {
+        "module": "Solution",
+        "command": [
+          "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+          "-R",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274",
+          "-o",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Solution.olean",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Solution.lean"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 7.82
+      }
+    ],
+    "lean_path": "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+    "lean_binary_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+  },
+  "new_joint_comparator_run": false,
+  "new_exports_produced": false,
+  "official_preflight": false,
+  "official_submission": false,
+  "no_project_mutations": true,
+  "artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Solution.olean": "d1665b557d7edc172f4e24b6989639867fe04926a0a44356eca948517e93b237",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/comparator.json": "92db29ab01a4baa493cb9ae5b0ad145e34259bb6c7b157a860068432eed70170",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/compile-receipt.json": "c0d7c42000fed81d32e49ebd6350be13c401cb9b55b032fc4109e8972551d78e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/compile.py": "12a464b02852831ba9d269fc6cd4eb02056ec6933eba4f787c93a795b8d83244",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Scope.json": "5e000b20e8937082b86b22d8c4b000cfd19c2e5285dca9e4dd6629ab4722ad5e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/README.md": "6dd9f8a5094cccc41c9eb5fa8a84c58e3a95446f3ae9e350d8e74c2d899a836a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Challenge.olean": "1b8218fcff6bc7982bb02b055e819fceaec4bf234175d29be21772825987c47d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/assemble.py": "dbcb26eccd7efc11b93a417f46b2a0153f420f7bd4ef42657ff46f6561de2c8a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Challenge-check-01.log": "1823a8a17302be38a45f01f021f3324468d6a437169d646a17539452b5ea4d7d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/finalize.py": "20805ed7e32eef34a08b44ad678ac105c62253e621efa607e29257bb73a868c3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/SourceMap.json": "6171d0cc52bde6485edf4244e2a9a595a488b686731106fce4d81570cf51b447",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Solution.lean": "4b5a4f3c5924e1372f0d67cd5729bc48e37921fcf85365d96f9012ecc99e4fc6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Challenge.lean": "14e906596669a3fecb8afa5913c6e572cb201f9a018e8c5ff351bfcbfb6dd428",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/Solution-check-01.log": "758822ef9239d21bef8dfaa3bed65d054337ee624737f85a663bbefcc512d7a2",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/joint-package-274/checkpoint.json": "ef88a4ab3235cf86492fbee760f506b5f29fd0c732a20a02f9d2a5324fe088ae"
+  }
+}

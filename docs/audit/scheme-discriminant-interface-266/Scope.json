@@ -1,0 +1,32 @@
+[
+  {
+    "id": "accepted-080",
+    "declaration": "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_existence",
+    "file": "Lean/FullSourceIntegrationR0268.lean",
+    "type": "\u2200 (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (\u03c3 : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S), \u2203 d : ArithmeticThetaSchemeDiscriminantR0244.Sections E, ArithmeticThetaSchemeDiscriminantR0244.IsD2 k \u03c3 E d",
+    "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source d2, lines 359\u2013369: construct the canonical discriminant-square section on the actual 24th tensor power of the identity cotangent of EVERY smooth proper geometrically connected commutative one-dimensional group family over EVERY scheme over a characteristic-zero field. No chosen Weierstrass equation, Hodge trivialization, level marking, normality, reducedness, Noetherianity, finite type or quasi-compactness of the base is assumed. Its pullback through EVERY actual affine Weierstrass test, including nonreduced coefficient rings and nonflat maps, must be the accepted r0243 five-Kato-normalized section under the specified conormal derivative. Consume accepted scheme_local_weierstrass, r0243 existence/naturality and r0205 canonical ideal/conormal comparisons. Prove overlap compatibility, sheaf gluing and the all-test equation; an assumed atlas of normal domains, supplied section or equality on geometric points does not satisfy this obligation. The full exact Tate-expansion reconciliation remains a subsequent explicit source consumer.",
+    "difficulty": "medium",
+    "depends_on": [
+      "binary-orthogonal-example",
+      "conservative-image-consumer"
+    ],
+    "universes": [
+      "u"
+    ]
+  },
+  {
+    "id": "accepted-081",
+    "declaration": "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_naturality",
+    "file": "Lean/FullSourceIntegrationR0268.lean",
+    "type": "\u2200 (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (\u03c3 : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S), \u2200 (T : AlgebraicGeometry.Scheme.{u}) (\u03c4 : Quiver.Hom T (ArithmeticThetaLocalWeierstrassR0203.Base k)) (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (b : Quiver.Hom T S), CategoryTheory.CategoryStruct.comp b \u03c3 = \u03c4 \u2192 \u2200 (C : ArithmeticThetaSchemeDiscriminantR0244.Comparison E F b) (d : ArithmeticThetaSchemeDiscriminantR0244.Sections E) (e : ArithmeticThetaSchemeDiscriminantR0244.Sections F), ArithmeticThetaSchemeDiscriminantR0244.IsD2 k \u03c3 E d \u2192 ArithmeticThetaSchemeDiscriminantR0244.IsD2 k \u03c4 F e \u2192 ArithmeticThetaSchemeDiscriminantR0244.pull C d = e",
+    "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source d2, lines 366\u2013369: the constructed section commutes with EVERY base morphism of schemes over the same characteristic-zero field and EVERY actual pointed Cartesian comparison of elliptic families. Use the uniquely inclusion-compatible identity-ideal comparison already constructed in r0205, its induced cotangent map and literal tensor-power comparison. Retain arbitrary nonflat maps, nilpotent thickenings, empty schemes, identities and composites. Existence and frame uniqueness from this batch supply the actual normalized sections; no desired equality, scalar correction, Hodge frame or level structure is assumed. Compose affine tests and use accepted cotangent coherence and affine conormal naturality rather than reprove those providers. The result is normalization and descent, not final full-source completion.",
+    "difficulty": "medium",
+    "depends_on": [
+      "binary-orthogonal-example",
+      "conservative-image-consumer"
+    ],
+    "universes": [
+      "u"
+    ]
+  }
+]

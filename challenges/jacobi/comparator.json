@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarFormal261Jacobi.formal_jacobi_triple_product",
+    "ArithmeticThetaPalomarFormal261Jacobi.jacobi_formal",
+    "ArithmeticThetaPalomarFormal261Jacobi.normalized_partial_stable"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

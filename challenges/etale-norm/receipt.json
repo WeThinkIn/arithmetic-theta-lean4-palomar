@@ -1,0 +1,242 @@
+{
+  "status": "local_comparator_passed",
+  "completed_utc": "2026-10-20T16:32:55.667187+00:00",
+  "scope": [
+    "accepted-098"
+  ],
+  "challenge_lines": 51,
+  "challenge_bytes": 2058,
+  "solution_axioms": {
+    "ArithmeticThetaPalomarEtaleNorm259.finite_etale_norm_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.sections_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.restrict_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.affineNorm_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.affineFree_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.isNormSection_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.normFamily_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarEtaleNorm259.isNormFamily_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "bindings_unchanged_after_comparator": true,
+  "compile": {
+    "checks": [
+      {
+        "module": "Challenge",
+        "command": [
+          "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+          "-R",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259",
+          "-o",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Challenge.olean",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Challenge.lean"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 2.37
+      },
+      {
+        "module": "Solution",
+        "command": [
+          "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+          "-R",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259",
+          "-o",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Solution.olean",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Solution.lean"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 2.82
+      }
+    ],
+    "lean_path": "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+    "lean_binary_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+  },
+  "comparator": {
+    "command": [
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake",
+      "comparator",
+      "--config=/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/comparator-external.json",
+      "--challenge-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Challenge.ndjson",
+      "--solution-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Solution.ndjson"
+    ],
+    "cwd": "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/project",
+    "exit_code": 0,
+    "elapsed_seconds": 182.29,
+    "normal_sandbox": true,
+    "external_kernels": {
+      "nanoda": "bundled",
+      "con-ron": "bundled --jobs=2"
+    },
+    "budget_seconds": 600
+  },
+  "export_receipts": [
+    {
+      "module": "Challenge",
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanexport",
+        "Challenge",
+        "--",
+        "Quot",
+        "Quot.mk",
+        "Quot.lift",
+        "Quot.ind",
+        "ArithmeticThetaPalomarEtaleNorm259.finite_etale_norm_family",
+        "propext",
+        "Quot.sound",
+        "Classical.choice",
+        "Nat.add",
+        "Nat.sub",
+        "Nat.mul",
+        "Nat.pow",
+        "Nat.gcd",
+        "Nat.div",
+        "Nat.mod",
+        "Nat.beq",
+        "Nat.ble",
+        "Nat.land",
+        "Nat.lor",
+        "Nat.xor",
+        "Nat.shiftLeft",
+        "Nat.shiftRight",
+        "String.ofList",
+        "Char.ofNat",
+        "List",
+        "eagerReduce",
+        "Nat",
+        "String",
+        "String.mk",
+        "Char",
+        "optParam",
+        "autoParam",
+        "semiOutParam",
+        "outParam"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.17,
+      "source_sha256": "4bc3b34e4053d99527266892973edc7e5b4e6ffedf07e2f2c451cc69da6c8714",
+      "olean_sha256": "52e80a2a6f7cb35e32182efe73e39c2b4b924f950d9833211d68ed5b26fe226d",
+      "export_sha256": "c7c4f560a46606e21d211b7e2f4ae548ce834775a9b2676ceae4cf6179dca51e",
+      "export_bytes": 162731484,
+      "lean_path_prefix": "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259",
+      "leanexport_sha256": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954"
+    },
+    {
+      "module": "Solution",
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanexport",
+        "Solution",
+        "--",
+        "Quot",
+        "Quot.mk",
+        "Quot.lift",
+        "Quot.ind",
+        "ArithmeticThetaPalomarEtaleNorm259.finite_etale_norm_family",
+        "propext",
+        "Quot.sound",
+        "Classical.choice",
+        "Nat.add",
+        "Nat.sub",
+        "Nat.mul",
+        "Nat.pow",
+        "Nat.gcd",
+        "Nat.div",
+        "Nat.mod",
+        "Nat.beq",
+        "Nat.ble",
+        "Nat.land",
+        "Nat.lor",
+        "Nat.xor",
+        "Nat.shiftLeft",
+        "Nat.shiftRight",
+        "String.ofList",
+        "Char.ofNat",
+        "List",
+        "eagerReduce",
+        "Nat",
+        "String",
+        "String.mk",
+        "Char",
+        "optParam",
+        "autoParam",
+        "semiOutParam",
+        "outParam"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.59,
+      "source_sha256": "0e97a5e91ac95dd13efec75f535211ac38f909de9abade6d45b0d2fedde83fad",
+      "olean_sha256": "be3bcc279481a58104a1e11946e9190df95ef8432f290299929a08fca0bc1d3b",
+      "export_sha256": "31c736a1969eed042b84c718476d0466f12cff974bc39ea62fa33c7df035c74b",
+      "export_bytes": 376299731,
+      "lean_path_prefix": "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259",
+      "leanexport_sha256": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954"
+    }
+  ],
+  "tool_digests": {
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanexport": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/early-comparator-211/bubblewrap-0.12.0/build/bwrap": "dd7c08cfc4cd60028638f03c7995a4a2f26cd47f1e3723ad66a45379d42ccd03"
+  },
+  "source_and_artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/prepare.py": "66cd8417c3393dd960dc87e3e3922cc9b3368cd27fa1b3466840622aefb72566",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Solution.olean": "be3bcc279481a58104a1e11946e9190df95ef8432f290299929a08fca0bc1d3b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/comparator.json": "77419121d1f59d85e1541aae2358558e25162dc3b2a7e3aeaa6d9883f0845704",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/compile-receipt.json": "4773502b9b66d50a7a5ac840990b9a92cec5f4d61a1bde4ab90017a8b674014d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/compile.py": "12a464b02852831ba9d269fc6cd4eb02056ec6933eba4f787c93a795b8d83244",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Scope.json": "f68b225ed58aeff57ddf257129408a0d7fc357528cc350c79611ffd6a621b3c0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/README.md": "d76cc879ef78962d10a3638060ee9580aec2e1b9d087619756170f9aeef60470",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Challenge-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/ProofSummary.md": "838af968f11b6234979470b7b6e8a43fe5de42fd88703d71266b49a5a4c52236",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Challenge.olean": "52e80a2a6f7cb35e32182efe73e39c2b4b924f950d9833211d68ed5b26fe226d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/export-targets.json": "57da2209a42575729376c850840f2f3a9dc038906c22cb11e6e24e151797688b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/comparator-external.json": "e7fa66b4bda9a5bfd74474119ca7ca48b7c0da075307f3bb0f959c2119fe7acf",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/export.py": "392872921cd57126da7e0b7f8e5cf714de200ddb7fd1e80cb9a0bd99add4ba30",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Solution-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/comparator-modern-receipt.json": "1eca7dc0d48b746f4ee7fc9e928df6c059f018e2387ffdfd731469094589ec1d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Challenge-check-01.log": "8c4d1365c72bc562afa9e0c85dc0049b6b7e2934c6e9be994e1e06838f61e7b5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/comparator-modern.log": "814f583feebad92d9f0a1905f8e241780724d3122bc07641913eb4b30c703baa",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/finalize.py": "1aef14751acfde1c674296b23f0af1fb4522722e0ceaf7ac086a403b54211a51",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/export-receipts.json": "6343ebf6d0ecb4e20ea62328c683232bfbe90bb7432735f0bdc779177b359381",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Solution.lean": "0e97a5e91ac95dd13efec75f535211ac38f909de9abade6d45b0d2fedde83fad",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Challenge.lean": "4bc3b34e4053d99527266892973edc7e5b4e6ffedf07e2f2c451cc69da6c8714",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/Solution-check-01.log": "ba35c6e01b919057a53cec370ecd3a9ca28073ada40d15024d5095800fa1be62",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/compare.py": "cd5de0560a7d758feac4b57cebf4357fc772428e9ef45b1ea886895809455d4d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/etale-norm-package-259/checkpoint.json": "d94adf45ad5ef6b9fefd5942b3ac8ae9b76fdff33a8479d8fd824989963f744e"
+  },
+  "official_preflight": false,
+  "official_submission": false,
+  "limitation": "Local hash-bound source/object/export verification only; official isolated source-provenance audit remains pending. Full 13 requirements/103 endpoints remain unchanged; only accepted-098 covered here."
+}

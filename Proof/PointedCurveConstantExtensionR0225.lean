@@ -133,7 +133,6 @@ theorem points_over_model (X : Curve (Omega k)) (K : (FieldStage k)) [FiniteDime
     pullback.lift c (𝟙 _) (by simp)
   have hj : c' ≫ j = jΩ ≫ q1 := by
     apply pullback.hom_ext <;> simp [j, jΩ, q1, hbc, Category.id_comp]
-    exact (Category.id_comp c').symm
   let p : X.space ⟶ pullback f b := e.hom ≫ q2
   have hp1 : p ≫ pullback.fst f b = M.projection := by simp [p, q2, e, f, c, Category.assoc]
   have hp2 : p ≫ pullback.snd f b = X.map ≫ c' := by simp [p, q2, e, f, c, Category.assoc]
@@ -152,7 +151,6 @@ theorem points_over_model (X : Curve (Omega k)) (K : (FieldStage k)) [FiniteDime
   · change c' ≫ (j ≫ g0 i) = x i ≫ p
     rw [← Category.assoc, hj, Category.assoc, hc]
     simp [g, jΩ, p, Category.assoc, Category.id_comp]
-    exact Category.id_comp (x i ≫ e.hom ≫ q2)
 
 end ArithmeticThetaConstantExtensionR0225.PointedCurve
 

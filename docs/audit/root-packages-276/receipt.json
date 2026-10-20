@@ -1,0 +1,20 @@
+{
+  "status": "root_modules_compiled",
+  "build_exit_code": 0,
+  "source_hashes": {
+    "MainAndComponentsChallenge.lean": "14e906596669a3fecb8afa5913c6e572cb201f9a018e8c5ff351bfcbfb6dd428",
+    "MainAndComponentsSolution.lean": "4b5a4f3c5924e1372f0d67cd5729bc48e37921fcf85365d96f9012ecc99e4fc6",
+    "FormalCoverChallenge.lean": "69289c6a34df427890de847934d86af9c79922e311938feb80add9792ca66805",
+    "FormalCoverSolution.lean": "c9179e2fdae25ed15af684713cd63f1cdb3f12baf0148eedd61a8a14ff84f86d",
+    "comparator-main-and-components.json": "7f6c5e50fb3661d225a5078aaff768600de022192393d9c718f2e2dc8d3971f1",
+    "comparator-formal-cover.json": "ea9a16cd5719216c3a08b0a566516572a9a1614960a7d477712f5ab4601143ec",
+    "formalization-main-and-components.yaml": "23a9eab355ef540d9372511b42fbe62f4a3264e7881bc322c8b9593f2e8d4f1e",
+    "formalization-formal-cover.yaml": "3f87fa7e5b9891cabddab6e3acf74e0d9fdc724a99f44f241d1e3abcb942e473",
+    "lakefile.toml": "2556e31e095553d1e89a7adde54f462abea72302dd0809ae0cc847150c7bb073",
+    ".github/workflows/palomar-preflight.yml": "dd3432120699d45d8595384bd541283fbacd479e1bc8ab58438f7c6af7dac8ce"
+  },
+  "log_sha256": "75c4b0231fae7516f0940bca8b107ff30516843e463091b6ef86358ee034066c",
+  "official_mechanical_status": "pending",
+  "full_paper_status": "pending",
+  "checked_utc": "2026-10-20T16:49:40.800866+00:00"
+}

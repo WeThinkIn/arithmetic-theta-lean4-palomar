@@ -1,0 +1,18 @@
+{
+  "source_obligations": [
+    {
+      "id": "binary-orthogonal-example",
+      "declaration": "ArithmeticThetaFullSourceR0268.binary_orthogonal_example",
+      "file": "Lean/BinaryOrthogonalExampleR0268.lean",
+      "type": "ArithmeticThetaComputed.validGram ArithmeticThetaFullSourceR0268.binaryGram ∧ ArithmeticThetaFullSourceR0268.binaryBasis.det = 2 ∧ ArithmeticThetaOrthogonalConsumerR0127.OrthogonalData ArithmeticThetaFullSourceR0268.binaryGram ArithmeticThetaFullSourceR0268.binaryBasis ArithmeticThetaFullSourceR0268.binaryNorms ∧ ∃ t : Fin 2 → ArithmeticThetaOrthogonalConsumerR0127.preimageLattice ArithmeticThetaFullSourceR0268.binaryBasis, (∀ i, (t i).val = ArithmeticThetaFullSourceR0268.binaryRepresentatives i) ∧ Function.Bijective (fun i => ArithmeticThetaOrthogonalConsumerR0127.cosetClass ArithmeticThetaFullSourceR0268.binaryBasis (t i)) ∧ (∀ i j, ((ArithmeticThetaFullSourceR0268.binaryResidues i j : ℤ) : ℚ) = (ArithmeticThetaFullSourceR0268.binaryNorms j : ℚ) * (t i).val j) ∧ ArithmeticThetaOrthogonalConsumerR0127.thetaZ ArithmeticThetaFullSourceR0268.binaryGram = ArithmeticThetaOrthogonalConsumerR0127.cosetSeries ArithmeticThetaFullSourceR0268.binaryNorms (ArithmeticThetaFullSourceR0268.binaryRepresentatives 0) + ArithmeticThetaOrthogonalConsumerR0127.cosetSeries ArithmeticThetaFullSourceR0268.binaryNorms (ArithmeticThetaFullSourceR0268.binaryRepresentatives 1) ∧ (∀ (D : ℕ) (hD : D ≠ 0), 92 ∣ D → PowerSeries.expand D hD (ArithmeticThetaOrthogonalConsumerR0127.thetaZ ArithmeticThetaFullSourceR0268.binaryGram) = ArithmeticThetaOrthogonalConsumerR0127.scaledUnary 2 (D / 4) 0 * ArithmeticThetaOrthogonalConsumerR0127.scaledUnary 46 (D / 92) 0 + ArithmeticThetaOrthogonalConsumerR0127.scaledUnary 2 (D / 4) 1 * ArithmeticThetaOrthogonalConsumerR0127.scaledUnary 46 (D / 92) 23)",
+      "source_statement": "Source 144–150. Verify the specified A, B, norms 2 and 46, the TWO actual rational preimage cosets with representatives (0,0) and (1/2,1/2), integral residues (0,0)/(1,23), and the complete theta identity for every nonzero denominator D divisible by 92. The unexpanded integral coset identity is included; expansion is injective. Reuse the general accepted source_orthogonal_factorization. No finite-prefix or sample-only substitute.",
+      "difficulty": "hard",
+      "depends_on": []
+    }
+  ],
+  "namespace": "ArithmeticThetaPalomarExamples258Binary",
+  "covered_ids": [
+    "binary-orthogonal-example"
+  ],
+  "full_paper_claimed": false
+}

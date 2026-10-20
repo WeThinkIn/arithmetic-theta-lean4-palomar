@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake",
+    "comparator",
+    "--config=/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/comparator-external.json",
+    "--challenge-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Challenge.ndjson",
+    "--solution-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Solution.ndjson"
+  ],
+  "cwd": "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/project",
+  "exit_code": 0,
+  "elapsed_seconds": 37.51,
+  "normal_sandbox": true,
+  "external_kernels": {
+    "nanoda": "bundled",
+    "con-ron": "bundled --jobs=2"
+  },
+  "budget_seconds": 600
+}

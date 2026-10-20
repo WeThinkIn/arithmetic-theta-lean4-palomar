@@ -1,0 +1,90 @@
+{
+  "original_endpoints": [
+    {
+      "id": "accepted-014",
+      "declaration": "ArithmeticThetaRank16.no_similarity",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "\u00ac \u2203 (s : \u211a) (U : Matrix (Fin 16) (Fin 16) \u2124), 0 < s \u2227 IsUnit U.det \u2227 (U.map (Int.castRingHom \u211a)).transpose * (ArithmeticThetaRank16.sumGram).map (Int.castRingHom \u211a) * U.map (Int.castRingHom \u211a) = s \u2022 (ArithmeticThetaRank16.latticeGram 16).map (Int.castRingHom \u211a)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 622\u2013650: no similarity, using actual D_n^+ and explicit bases in the standard rational quadratic space.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-015",
+      "declaration": "ArithmeticThetaRank16.integral_identity",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "ArithmeticThetaRank16.sumTheta = ArithmeticThetaRank16.theta 16",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source full original integral theta identity after injective substitution, not a truncated identity.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-016",
+      "declaration": "ArithmeticThetaRank16.two_column_kernel",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "\u2200 v : Fin 2 \u2192 \u2102, (\u2211 i, v i \u2022 ArithmeticThetaRank16.columns i) = 0 \u2194 \u2203 t : \u2102, v = ![t, -t]",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source supplied two actual columns have complete complex kernel C(1,-1), with coefficientwise independence of the shared nonzero series. Distinctness/order remain a separate lattice task.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-077",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_even_unimodular",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "\u2200 n : \u2115, 8 \u2223 n \u2192 ArithmeticThetaComputed.validGram (ArithmeticThetaRank16.latticeGram n) \u2227 (ArithmeticThetaRank16.latticeGram n).det = 1 \u2227 (\u2200 v : Fin n \u2192 \u211a, v \u2208 ArithmeticThetaGeneralDPlusR0242.lattice n \u2194 ArithmeticThetaRank16.originalDPlus n v) \u2227 (\u2203 b : Module.Basis (Fin n) \u2124 (ArithmeticThetaGeneralDPlusR0242.lattice n), \u2200 (j i : Fin n), (b j).val i = ArithmeticThetaRank16.latticeBasis n i j) \u2227 (\u2200 v : Fin n \u2192 \u211a, ArithmeticThetaRank16.originalDPlus n v \u2192 \u2203 z : \u2124, (\u2211 i, v i ^ 2) / 2 = (z : \u211a))",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 620\u2013624: prove the asserted full-rank even unimodular lattice for every 8 dividing n: the actual integer span equals the source union, the displayed columns are an integral basis, the Gram matrix is symmetric, even and positive definite with determinant one, and every source vector has integral half-norm. Reuse accepted norm_divisible_eight for the doubled parity arithmetic. Rank zero is the zero lattice with empty basis and determinant one.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-078",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_dual",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "\u2200 n : \u2115, 8 \u2223 n \u2192 \u2200 v : Fin n \u2192 \u211a, ArithmeticThetaGeneralDPlusR0242.dualMember n v \u2194 v \u2208 ArithmeticThetaGeneralDPlusR0242.lattice n",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 620\u2013624: establish unimodularity in the intrinsic dual-lattice sense as well: a rational vector pairs integrally with every member of this very D_n^+ lattice if and only if it belongs to it. The bilinear pairing is the standard Euclidean dot product and the integral structure is the specified integer span; no unrelated scalar action or assumed self-duality is permitted.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-079",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_theta_realization",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "\u2200 n : \u2115, 8 \u2223 n \u2192 (\u2200 m : \u2115, \u2203 e : ArithmeticThetaGeneralDPlusR0242.OriginalShell n m \u2243 ArithmeticThetaRank16.NormShell n (8 * m), \u2200 v, ArithmeticThetaRank16.doubledRealization n (e v).val = v.val) \u2227 ArithmeticThetaGeneralDPlusR0242.originalTheta n = ArithmeticThetaRank16.theta n \u2227 ArithmeticThetaComputed.theta (ArithmeticThetaRank16.latticeGram n) = PowerSeries.map (Int.castRingHom \u2102) (ArithmeticThetaGeneralDPlusR0242.originalTheta n) \u2227 (0 < n \u2192 (2 : PowerSeries \u2124) * PowerSeries.expand 8 (by decide) (ArithmeticThetaGeneralDPlusR0242.originalTheta n) = ArithmeticThetaHadamard.a ^ n + ArithmeticThetaHadamard.b ^ n + ArithmeticThetaHadamard.c ^ n)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 620\u2013640 and 47\u201354: identify all finite norm shells of the source rational lattice with the accepted doubled shells, identify its complete integral theta series with the valid Gram input theta series, and transport the accepted full parity-selection identity to this actual lattice in every positive dimension divisible by eight. The shell and series identifications also include n=0; the parity formula retains its necessary positive-rank hypothesis. Reuse parity_selection and expand_actual rather than reproving Hadamard/Jacobi or the n=8,16 identity.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    }
+  ],
+  "namespace_replacements": {
+    "ArithmeticThetaRank16": "ArithmeticThetaPalomarRank16_260.Rank16",
+    "ArithmeticThetaGeneralDPlusR0242": "ArithmeticThetaPalomarRank16_260.GeneralDPlus",
+    "ArithmeticThetaComputed": "ArithmeticThetaPalomarRank16_260.Computed",
+    "ArithmeticThetaHadamard": "ArithmeticThetaPalomarRank16_260.Hadamard"
+  },
+  "original_providers": [
+    "Rank16Nonisometry",
+    "Rank16Theta",
+    "GeneralDPlusEvenUnimodularR0242",
+    "GeneralDPlusDualR0242",
+    "GeneralDPlusThetaRealizationR0242"
+  ],
+  "remaining_full_scope": "97 of 103 endpoints not part of this bounded package"
+}

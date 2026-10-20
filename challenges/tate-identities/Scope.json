@@ -1,0 +1,46 @@
+{
+  "source_obligations": [
+    {
+      "id": "accepted-018",
+      "declaration": "ArithmeticThetaTateSeries.basic_fourth",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ {k : Type u} [Field k] [CharZero k], ArithmeticThetaTateSeries.theta k ^ 4 = 4 * (ArithmeticThetaTateSeries.tateX 2 1 (1:k) - ArithmeticThetaTateSeries.tateX 2 0 (-1:k))",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Unchanged round-0013 target. Prove the manuscript’s full formal identity θ(t)^4=4(X(t;t²)−X(−1;t²)) for the literal unary theta and literal Tate sum.  Accepted Jacobi-product support may be reused only with its hypotheses and bridge stated explicitly.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "universes": [
+        "u"
+      ]
+    },
+    {
+      "id": "accepted-089",
+      "declaration": "ArithmeticThetaTateIdentities.general_annular_addition",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ {k : Type u} [Field k] [CharZero k], ∀ (d i j : ℕ) (a b : k), ArithmeticThetaTateSeries.Admissible d i a → ArithmeticThetaTateSeries.Admissible d j b → (ArithmeticThetaTateSeries.toLaurent k (ArithmeticThetaTateSeries.tateX d i (a : k)) - ArithmeticThetaTateSeries.toLaurent k (ArithmeticThetaTateSeries.tateX d j (b : k))) * (ArithmeticThetaTateIdentities.gammaLaurent d (i:ℤ) a)^2 * (ArithmeticThetaTateIdentities.gammaLaurent d (j:ℤ) b)^2 = -HahnSeries.single (j:ℤ) b * (ArithmeticThetaTateSeries.toLaurent k (PowerSeries.map (Int.castRingHom k) (ArithmeticThetaUnaryProduct.etaProduct d)))^4 * ArithmeticThetaTateIdentities.gammaLaurent d ((i:ℤ)-(j:ℤ)) (a/b) * ArithmeticThetaTateIdentities.gammaLaurent d ((i:ℤ)+(j:ℤ)) (a*b)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source equation tate-difference, 699–718: full multiplicative addition formula for the literal X and gamma series, cleared only of its gamma denominators. Both points range over all admissible fundamental annuli. The Laurent gamma definition handles i−j<0 and i+j≥d. Coincident/inverse points and coalesced two-torsion zeros remain included; no X identity, divisor comparison or nonzero difference is assumed.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "universes": [
+        "u"
+      ]
+    }
+  ],
+  "namespace": "ArithmeticThetaPalomarFormal261Tate",
+  "covered_ids": [
+    "accepted-018",
+    "accepted-089"
+  ],
+  "full_paper_claimed": false,
+  "definition_source_files": [
+    "TateSeriesDefinitions.lean",
+    "FormalNormDefinitions.lean",
+    "UnaryThetaProduct.lean",
+    "TateIdentityDefinitions.lean"
+  ]
+}

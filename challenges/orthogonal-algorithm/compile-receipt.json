@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-10-20T16:36:49.865924+00:00",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Challenge.lean": "7532ca2ecbebeee9d02de127554f9e1769ffacbb3f07c4847319511024002730",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Solution.lean": "a234f31bd5fc2e4c0ed1efce6a469c40804fa5706e6f1c93eb5c5b4351c253de",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/comparator.json": "85ab3911670c377ded84ad86527182a490cef9303d0a112046b018acf2f0ed93",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/OrthogonalAlgorithm.lean": "66b404a68f715982d40300553647c0cdf1adaeb4a94960f9e6f00469768ff1d3",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/IntegralGramOrthogonalization.lean": "2bd17c168c92814ba360c4ea7b2416621343d43c01755194461a12b3a1556a8f",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/ComputedOrthogonalization.lean": "aaf4905e1a3dddde35b6e7801742385b7b9b9368452f7cab1288b294f06c988c",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/IntegralGramOrthogonalization.olean": "f7f615845833c4e8d93c6bb0508f0cd4b1b7f61a8f7d6e747f2482bb62c7abdb",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/ComputedOrthogonalization.olean": "b4e220ffa00d391ffd3a6b95a5983b6e4fa264856e718501a587480627fce7d3"
+  },
+  "threads": 12,
+  "max_compile_seconds": 300,
+  "challenge_lines": 55,
+  "challenge_bytes": 2635,
+  "status": "compiled",
+  "checks": [
+    {
+      "module": "Challenge",
+      "session": 19886,
+      "exit_code": 0
+    },
+    {
+      "module": "Solution",
+      "session": 34817,
+      "exit_code": 0
+    }
+  ],
+  "axioms": {
+    "ArithmeticThetaPalomarFoundations269Orthogonal.even_integral_gram_orthogonalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Orthogonal.computed_natural_data": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFoundations269Orthogonal.computed_orthogonalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "outputs": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Solution.olean": "5b135d1752fa2ea92c6b2657c8836274cd1225dae61affb5062a457ef677154e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Challenge.olean": "be0c75c327517c53146f420899f9b9c99befee8dfc44b0858dea405339ca5e4e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Challenge-check-01.log": "1ece5f862c3b3e4131138f5ccc8b72cbad8c34bccc9b8953804efa8f954b4a87",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Solution-check-01.log": "a04969fbb64a5b44034771edaa11814655f67dd9c33eda34b2be8193a256e1ad"
+  }
+}

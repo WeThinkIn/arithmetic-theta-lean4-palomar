@@ -1,0 +1,90 @@
+{
+  "original_endpoints": [
+    {
+      "id": "accepted-058",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.shifted_integer_interval",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "\u2200 (c R : \u211a) (z : \u2124), z \u2208 ArithmeticThetaLDLEnumerationR0229.shiftedInterval c R \u2194 ((z : \u211a) - c)^2 \u2264 R",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source exact algorithms, lines 550\u2013557: exact integer endpoints for a rationally shifted square bound, using an integer square root and rational floor/ceiling. Prove the entire executable interval is exactly the set of integers satisfying the inequality. Includes negative and zero residual bounds, negative/nonintegral centres, singleton and empty intervals, and both signs. No real-square-root approximation or externally supplied bound.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-059",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.rational_schur_completion",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "\u2200 (n : \u2115) (A : ArithmeticThetaLDLEnumerationR0229.QMatrix (n+1)), A.IsSymm \u2192 A.toQuadraticForm'.PosDef \u2192 0 < A 0 0 \u2227 (ArithmeticThetaLDLEnumerationR0229.schur A).IsSymm \u2227 (ArithmeticThetaLDLEnumerationR0229.schur A).toQuadraticForm'.PosDef \u2227 \u2200 (z : \u211a) (y : Fin n \u2192 \u211a), ArithmeticThetaLDLEnumerationR0229.energy A (Fin.cons z y) = A 0 0 * (z + (\u2211 j : Fin n, A 0 j.succ * y j) / A 0 0)^2 + ArithmeticThetaLDLEnumerationR0229.energy (ArithmeticThetaLDLEnumerationR0229.schur A) y",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 550\u2013555: one exact rational completion-of-squares step for every symmetric positive-definite rational matrix; prove pivot positivity, symmetry and positive definiteness of the actual recursively computed Schur complement and the complete quadratic identity. The trailing zero-dimensional matrix is included. The factor 1/2 of the original integral Gram form is introduced by gramHalf, not lost in this rational statement.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-060",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.computed_rational_ldl",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "\u2200 (n : \u2115) (A : ArithmeticThetaLDLEnumerationR0229.QMatrix n), A.IsSymm \u2192 A.toQuadraticForm'.PosDef \u2192 (\u2200 i : Fin n, 0 < (ArithmeticThetaLDLEnumerationR0229.ldl n A).1 i) \u2227 (\u2200 i : Fin n, (ArithmeticThetaLDLEnumerationR0229.ldl n A).2 i i = 1) \u2227 (\u2200 i j : Fin n, j < i \u2192 (ArithmeticThetaLDLEnumerationR0229.ldl n A).2 i j = 0) \u2227 A = (ArithmeticThetaLDLEnumerationR0229.ldl n A).2.transpose * Matrix.diagonal (ArithmeticThetaLDLEnumerationR0229.ldl n A).1 * (ArithmeticThetaLDLEnumerationR0229.ldl n A).2",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 550\u2013554: the specific executable rational recursion supplies positive rational diagonal entries and an upper unitriangular U with A=U\u1d40 diag(d) U, equivalently the source LDL\u1d40 with L=U\u1d40. Prove correctness of these computed factors for arbitrary rank including zero. Do not replace them with an existential arbitrary diagonalization or the accepted denominator-cleared integral orthogonal basis.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-061",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.recursive_ellipsoid_enumeration",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "\u2200 (n : \u2115) (A : ArithmeticThetaLDLEnumerationR0229.QMatrix n), A.IsSymm \u2192 A.toQuadraticForm'.PosDef \u2192 \u2200 (B : \u211a) (x : Fin n \u2192 \u2124), x \u2208 ArithmeticThetaLDLEnumerationR0229.enumerate n A B \u2194 ArithmeticThetaLDLEnumerationR0229.energy A (fun i => (x i : \u211a)) \u2264 B",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 550\u2013557: prove soundness and completeness of the structurally recursive completion-of-squares enumerator, for all rational bounds and all positive-definite symmetric rational forms. Every recursive tail uses the actual Schur complement and every head uses the exact shifted integer interval. Finset output gives no duplicates; dimension recursion and finite ranges give termination. Include rank zero, negative/zero bounds and all signs. Do not replace this algorithm by the already accepted cofactor searchBox.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-062",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.ldl_theta_prefix",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "\u2200 (n : \u2115) (A : Matrix (Fin n) (Fin n) \u2124), ArithmeticThetaComputed.validGram A \u2192 (\u2200 m : \u2115, ArithmeticThetaLDLEnumerationR0229.shell A m = ArithmeticThetaEnumeration.shellVectors A m) \u2227 \u2200 B : \u2115, ArithmeticThetaLDLEnumerationR0229.coefficients A B = ArithmeticThetaEnumeration.coefficientsUpTo A B \u2227 (ArithmeticThetaLDLEnumerationR0229.coefficients A B).length = B + 1 \u2227 \u2200 a : Fin (B+1), ((ArithmeticThetaLDLEnumerationR0229.coefficients A B).getD a.val 0 : \u2102) = PowerSeries.coeff a.val (ArithmeticThetaComputed.theta A)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 48\u201355 and 550\u2013557: connect the new rational LDL enumeration to Q(x)=x\u1d40Ax/2 for every valid even integral Gram matrix. Prove equality of the actual shell finite sets and equality of all finite coefficient lists with the accepted cofactor enumerator, then the exact complete-theta coefficient formula. Reuse accepted shell_membership_exact and coefficient_prefix_exact; the new claim is correctness/equivalence of the NEW algorithm. Retain rank zero and B=0. No full-series relation is inferred merely from a prefix.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-063",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.ldl_coefficient_matrix",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "\u2200 (n h B : \u2115) (A : Fin h \u2192 Matrix (Fin n) (Fin n) \u2124), (\u2200 i, ArithmeticThetaComputed.validGram (A i)) \u2192 ArithmeticThetaLDLEnumerationR0229.coefficientMatrix A B = ArithmeticThetaComputed.coefficientMatrix A B \u2227 ArithmeticThetaElimination.run (ArithmeticThetaLDLEnumerationR0229.coefficientMatrix A B) = ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B) \u2227 (ArithmeticThetaComputed.prefixMap B).comp (ArithmeticThetaComputed.thetaMap A) = ((ArithmeticThetaLDLEnumerationR0229.coefficientMatrix A B).map (algebraMap \u211a \u2102)).mulVecLin",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 550\u2013572: identify the new exact coefficient matrix, hence the existing rational elimination state and actual theta truncation map. This is the new algorithm adapter needed to consume existing earlier certificates and sharp/conservative kernel theorems; reuse computed_prefix_map rather than reprove its linear algebra. All n,h,B are allowed, including empty families. It makes no claim that arbitrary deficient prefixes determine full relations.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    }
+  ],
+  "namespace_replacements": {
+    "ArithmeticThetaEnumeration": "ArithmeticThetaPalomarAlgorithm257.Enumeration",
+    "ArithmeticThetaElimination": "ArithmeticThetaPalomarAlgorithm257.Elimination",
+    "ArithmeticThetaComputed": "ArithmeticThetaPalomarAlgorithm257.Computed",
+    "ArithmeticThetaLDLEnumerationR0229": "ArithmeticThetaPalomarAlgorithm257.LDL"
+  },
+  "original_providers": [
+    "ShiftedIntegerIntervalR0229",
+    "RationalSchurCompletionR0229",
+    "ComputedRationalLDLR0229",
+    "RecursiveEllipsoidEnumerationR0229",
+    "LDLThetaPrefixR0229"
+  ],
+  "remaining_full_scope": "97 of 103 endpoints not part of this bounded package"
+}

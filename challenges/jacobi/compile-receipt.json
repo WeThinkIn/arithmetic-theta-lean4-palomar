@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-10-20T16:32:28.935426+00:00",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Challenge.lean": "bc2b061348e7d84d9e1b4128ccfcf4a89c9095ca379b88d54dbc1f55e16df954",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Solution.lean": "85fee579fba6006ef9410281995821497be359490f28611c86407d443d27a796",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/comparator.json": "d92a683314878b4df533aeef53cd0875e5f0ebbaa618caae9be9c485b2866c3f",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/HadamardJacobi.lean": "4a79acaa1d6e783ab7a822af63059b0da1869c5e5e4534ba87e236d53d9ca8fe",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/FormalJacobiTripleProduct.lean": "dc17fdbcc1c52dd581edd399607021f33a1436f2fe8f363e0792414444b4df94",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/FormalJacobiTripleProduct.olean": "e4a58335a646e481bdfdf8529b15126b6489e72db2fed0d78765762496eff7f6",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/HadamardJacobi.olean": "4c14fbf2569a33f284aaa577af955d0881069a949aac3b6002f58b56211d6c68"
+  },
+  "threads": 12,
+  "max_compile_seconds": 300,
+  "challenge_lines": 48,
+  "challenge_bytes": 2290,
+  "status": "compiled",
+  "checks": [
+    {
+      "module": "Challenge",
+      "session": 95862,
+      "exit_code": 0
+    },
+    {
+      "module": "Solution",
+      "session": 35276,
+      "exit_code": 0
+    }
+  ],
+  "axioms": {
+    "ArithmeticThetaPalomarFormal261Jacobi.formal_jacobi_triple_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Jacobi.jacobi_formal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormal261Jacobi.normalized_partial_stable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "outputs": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Solution.olean": "31d263748bfce4e660eaefd22686ba010adf3c324f4c057a25c0091de364d7a2",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Challenge.olean": "dbd6cbf2cbb42b42b94bacd13fe07100a91cbc8dc942633b716c0748933b5f7e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Challenge-check-01.log": "51ea69e5fb38c16b338db2f81025bb20db9ef4c6fe44038844323a84e198eeea",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-identities-package-261/jacobi/Solution-check-01.log": "40ba6b99b0dfa2d9b60662da4ffeebc39cc5fbe44540f5d3c8ace4a3456db984"
+  }
+}

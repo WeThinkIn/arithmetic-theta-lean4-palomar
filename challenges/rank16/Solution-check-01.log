@@ -1,0 +1,10 @@
+'ArithmeticThetaPalomarRank16_260.no_similarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarRank16_260.integral_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarRank16_260.two_column_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarRank16_260.general_dplus_even_unimodular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarRank16_260.general_dplus_dual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarRank16_260.general_dplus_theta_realization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

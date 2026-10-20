@@ -1,0 +1,17 @@
+[
+  {
+    "id": "accepted-098",
+    "declaration": "ArithmeticThetaSchemeKatoNormR0251.finite_etale_norm_family",
+    "file": "Lean/FullSourceIntegrationR0268.lean",
+    "type": "\u2200 (X Y : AlgebraicGeometry.Scheme.{u}) (f : Quiver.Hom X Y) [AlgebraicGeometry.IsFinite f] [AlgebraicGeometry.Etale f], \u2203! N : ArithmeticThetaSchemeKatoNormR0251.NormFamily f, ArithmeticThetaSchemeKatoNormR0251.IsNormFamily f N",
+    "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 153\u2013157 norm characterization: assemble the uniquely glued determinants into actual multiplicative section-ring maps on every open, prove restriction compatibility and uniqueness of the entire norm family. This is a sheaf-level operator construction on arbitrary schemes, not a function-field norm or a choice on geometric points. Consume finite_etale_norm_section and existing determinant multiplication laws. Retain all sections, including zero, and the empty/rank-zero cases. The final scheme Kato invariant must use this constructed family.",
+    "difficulty": "medium",
+    "depends_on": [
+      "binary-orthogonal-example",
+      "conservative-image-consumer"
+    ],
+    "universes": [
+      "u"
+    ]
+  }
+]

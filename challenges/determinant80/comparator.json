@@ -1,0 +1,19 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarExamples258Det80.actual_coefficient_matrix",
+    "ArithmeticThetaPalomarExamples258Det80.actual_minor_determinant",
+    "ArithmeticThetaPalomarExamples258Det80.actual_theta_kernel_zero",
+    "ArithmeticThetaPalomarExamples258Det80.all_positive_classes",
+    "ArithmeticThetaPalomarExamples258Det80.similarity_distinct",
+    "ArithmeticThetaPalomarExamples258Det80.ambient_realization",
+    "ArithmeticThetaPalomarExamples258Det80.same_order_classes",
+    "ArithmeticThetaPalomarExamples258Det80.representation_finiteness"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

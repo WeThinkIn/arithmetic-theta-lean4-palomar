@@ -1,0 +1,12 @@
+{
+  "challenge_module": "FormalCoverChallenge",
+  "solution_module": "FormalCoverSolution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarFormalCover275.arbitrary_formal_cover_constant"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

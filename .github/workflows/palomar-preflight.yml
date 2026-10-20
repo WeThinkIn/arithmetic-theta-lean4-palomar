@@ -4,13 +4,15 @@ on:
   workflow_dispatch:
     inputs:
       comparator_config_path:
-        description: 'Configuration: pilot or accepted-017 early certificate (neither is full-paper coverage)'
+        description: 'Scoped configuration for official mechanical verification'
         required: false
         default: comparator.json
         type: choice
         options:
           - comparator.json
           - comparator-early.json
+          - comparator-main-and-components.json
+          - comparator-formal-cover.json
 permissions:
   contents: read
 jobs:
@@ -30,12 +32,15 @@ jobs:
           with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
               print('id=' + secrets.token_hex(6), file=output)
               config = os.environ['COMPARATOR_CONFIG']
-              if config not in ('comparator.json', 'comparator-early.json'):
+              if config not in ('comparator.json', 'comparator-early.json', 'comparator-main-and-components.json', 'comparator-formal-cover.json'):
                   raise SystemExit('Unsupported comparator configuration')
               options = {
                   'comparator_config_path': config,
                   'authorization_relationship': 'I am a responsible author or maintainer',
               }
+              metadata_paths = {'comparator-main-and-components.json': 'formalization-main-and-components.yaml', 'comparator-formal-cover.json': 'formalization-formal-cover.yaml'}
+              if config in metadata_paths:
+                  options['formalization_metadata_path'] = metadata_paths[config]
               print('options=' + json.dumps(options), file=output)
           PY
   palomar-preflight:

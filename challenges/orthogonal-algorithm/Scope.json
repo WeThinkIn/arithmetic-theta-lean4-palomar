@@ -1,0 +1,40 @@
+{
+  "source_obligations": [
+    {
+      "id": "accepted-003",
+      "declaration": "ArithmeticThetaLattice.even_integral_gram_orthogonalization",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n : ℕ) (A : Matrix (Fin n) (Fin n) ℤ), A.IsSymm → (∀ i, Even (A i i)) → ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef → ∃ (B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℤ), B.det ≠ 0 ∧ (∀ i, 0 < m i ∧ Even (m i)) ∧ B.transpose * A * B = Matrix.diagonal m",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. 主稿 orthogonal-lemma 第 116–132 行的准确矩阵结论：对称、偶对角且 Q_A(x)=xᵀAx/2 正定的整数 A 存在非奇异整数 B，使 BᵀAB 对角化为正偶整数 m。包括整数性、正性、偶性和完整矩阵等式；尚不包括有限商/余类 theta 恒等式。",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-008",
+      "declaration": "ArithmeticThetaOrthogonalAlgorithm.computed_natural_data",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n : ℕ) (A : Matrix (Fin n) (Fin n) ℤ), A.IsSymm → (∀ i, Even (A i i)) → ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef → (∀ i, 0 < (ArithmeticThetaOrthogonalAlgorithm.naturalNorms A) i ∧ Even ((ArithmeticThetaOrthogonalAlgorithm.naturalNorms A) i) ∧ ((ArithmeticThetaOrthogonalAlgorithm.naturalNorms A) i : ℤ) = (ArithmeticThetaOrthogonalAlgorithm.norms A) i) ∧ ArithmeticThetaOrthogonalAlgorithm.indexValue A = ∏ i : Fin n, ((ArithmeticThetaOrthogonalAlgorithm.basisMatrix A) i i).toNat ∧ 0 < ArithmeticThetaOrthogonalAlgorithm.indexValue A",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 118–132 and effective-bound context: positive natural norms used by lcm and the exact positive determinant/index value are computed from the actual basis matrix. The index value equals the product of its positive triangular diagonal entries; identification with the quotient cardinality uses the separate finite-index theorem.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "support-computed-orthogonalization",
+      "declaration": "ArithmeticThetaOrthogonalAlgorithm.computed_orthogonalization",
+      "type": "∀ (n : ℕ) (A : Matrix (Fin n) (Fin n) ℤ), A.IsSymm → (∀ i, Even (A i i)) → ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef → 0 < (ArithmeticThetaOrthogonalAlgorithm.basisMatrix A).det ∧ (∀ i, 0 < ArithmeticThetaOrthogonalAlgorithm.norms A i ∧ Even (ArithmeticThetaOrthogonalAlgorithm.norms A i)) ∧ (ArithmeticThetaOrthogonalAlgorithm.basisMatrix A).transpose * A * ArithmeticThetaOrthogonalAlgorithm.basisMatrix A = Matrix.diagonal (ArithmeticThetaOrthogonalAlgorithm.norms A)",
+      "source_statement": "Additional exact supporting target for the actual deterministic integer basis algorithm, not only existential orthogonalization."
+    }
+  ],
+  "namespace": "ArithmeticThetaPalomarFoundations269Orthogonal",
+  "covered_ids": [
+    "accepted-003",
+    "accepted-008"
+  ],
+  "full_paper_claimed": false
+}

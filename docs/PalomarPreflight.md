@@ -28,3 +28,8 @@ Palomar requires a passing full reusable mechanical report for the exact source
 commit and Comparator configuration before formal intake. A pilot pass would
 cover only its stated pilot theorem. Permanent registry publication is a
 separate later action after the review is available.
+
+Two additional scoped configurations are prepared for official full preflight:
+`comparator-main-and-components.json` (43 targets, the main explicit bound and 39 complete prior endpoints) with `formalization-main-and-components.yaml`, and
+`comparator-formal-cover.json` (accepted-050) with `formalization-formal-cover.yaml`.
+All four root modules were genuinely rebuilt in Lake (build 276, exit 0); no isolated object was renamed. Their source bindings are in `docs/audit/root-packages-276/receipt.json`. Official checks and formal intake for these configurations remain pending.

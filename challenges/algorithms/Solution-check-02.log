@@ -1,0 +1,51 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/algorithm-package-257/Solution.lean:264:2: error: Type mismatch: After simplification, term
+  ArithmeticThetaLDLEnumerationR0229.recursive_ellipsoid_enumeration
+ has type
+  ∀ (n : ℕ) (A : ArithmeticThetaLDLEnumerationR0229.QMatrix n),
+    Matrix.IsSymm A →
+      QuadraticMap.PosDef (Matrix.toQuadraticForm' A) →
+        ∀ (B : ℚ) (x : Fin n → ℤ),
+          Iff (x ∈ ArithmeticThetaLDLEnumerationR0229.enumerate n A B)
+            ((ArithmeticThetaLDLEnumerationR0229.energy A fun i => ↑(x i)) ≤ B)
+but is expected to have type
+  ∀ (n : ℕ) (A : LDL.QMatrix n),
+    Matrix.IsSymm A →
+      QuadraticMap.PosDef (Matrix.toQuadraticForm' A) →
+        ∀ (B : ℚ) (x : Fin n → ℤ),
+          Iff (x ∈ ArithmeticThetaLDLEnumerationR0229.enumerate n A B) ((LDL.energy A fun i => ↑(x i)) ≤ B)
+/home/Palomar/workspace/arithmetic-theta/evidence/algorithm-package-257/Solution.lean:269:2: error: Type mismatch: After simplification, term
+  ArithmeticThetaLDLEnumerationR0229.ldl_theta_prefix
+ has type
+  ∀ (n : ℕ) (A : Matrix (Fin n) (Fin n) ℤ),
+    ArithmeticThetaComputed.validGram A →
+      And (∀ (m : ℕ), ArithmeticThetaLDLEnumerationR0229.shell A m = ArithmeticThetaEnumeration.shellVectors A m)
+        (∀ (B : ℕ),
+          ArithmeticThetaLDLEnumerationR0229.coefficients A B = ArithmeticThetaEnumeration.coefficientsUpTo A B ∧
+            (ArithmeticThetaLDLEnumerationR0229.coefficients A B).length = B + 1 ∧
+              ∀ (a : Fin (B + 1)),
+                ↑((ArithmeticThetaLDLEnumerationR0229.coefficients A B).getD (↑a) 0) =
+                  (PowerSeries.coeff ↑a) (ArithmeticThetaComputed.theta A))
+but is expected to have type
+  ∀ (n : ℕ) (A : Matrix (Fin n) (Fin n) ℤ),
+    Computed.validGram A →
+      And (∀ (m : ℕ), ArithmeticThetaLDLEnumerationR0229.shell A m = Enumeration.shellVectors A m)
+        (∀ (B : ℕ),
+          ArithmeticThetaLDLEnumerationR0229.coefficients A B = Enumeration.coefficientsUpTo A B ∧
+            (ArithmeticThetaLDLEnumerationR0229.coefficients A B).length = B + 1 ∧
+              ∀ (a : Fin (B + 1)),
+                ↑((ArithmeticThetaLDLEnumerationR0229.coefficients A B).getD (↑a) 0) =
+                  (PowerSeries.coeff ↑a) (Computed.theta A))
+'ArithmeticThetaPalomarAlgorithm257.shifted_integer_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarAlgorithm257.rational_schur_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarAlgorithm257.computed_rational_ldl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarAlgorithm257.recursive_ellipsoid_enumeration' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarAlgorithm257.ldl_theta_prefix' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarAlgorithm257.ldl_coefficient_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]

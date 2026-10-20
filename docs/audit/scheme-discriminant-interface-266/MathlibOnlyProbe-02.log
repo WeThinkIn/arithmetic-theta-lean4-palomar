@@ -1,0 +1,13 @@
+AlgebraicGeometry.Scheme.{u_1} : Type (u_1 + 1)
+AlgebraicGeometry.IsProper.{u} {X Y : AlgebraicGeometry.Scheme} (f : X ⟶ Y) : Prop
+AlgebraicGeometry.SmoothOfRelativeDimension.{u} (n : ℕ) {X Y : AlgebraicGeometry.Scheme} (f : X ⟶ Y) : Prop
+AlgebraicGeometry.GeometricallyConnected.{u_1} {X Y : AlgebraicGeometry.Scheme} (f : X ⟶ Y) : Prop
+AlgebraicGeometry.Scheme.Modules.pullback.{u} {X Y : AlgebraicGeometry.Scheme} (f : X ⟶ Y) :
+  CategoryTheory.Functor Y.Modules X.Modules
+/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/MathlibOnlyProbe.lean:9:7: error(lean.unknownIdentifier): Unknown identifier `NeronModelInfra.SchemeHomOver`
+/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/MathlibOnlyProbe.lean:10:7: error(lean.unknownIdentifier): Unknown constant `AlgebraicGeometry.Scheme.Hom.kaehler`
+/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/MathlibOnlyProbe.lean:11:7: error(lean.unknownIdentifier): Unknown identifier `WeierstrassProjModel.projModelCR`
+/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/MathlibOnlyProbe.lean:12:7: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaTensorPower.tensorPower`
+/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/MathlibOnlyProbe.lean:13:7: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaSchemeHodgeR0205.Cotangent`
+/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/MathlibOnlyProbe.lean:14:7: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaLocalWeierstrassR0203.Family`
+/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/MathlibOnlyProbe.lean:15:7: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaOpenHodgeR0180.GlobalFamilyDiscriminantR0180.localD`

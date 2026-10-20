@@ -1,0 +1,142 @@
+{
+  "created_utc": "2026-10-20T16:41:37.168785+00:00",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/FormalCoverDefinitionsR0210.lean": "c7b0cd94b31e1877471bfc358fbaf4df1063d674d0206a61702b50a796a06ee8",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/FormalConstantDefinitions.lean": "dab470a75efff72077265fdc7003d4e6665690e46d9db668e23362edaa6c43ae",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/GeometricPrerequisiteDefinitions.lean": "b833db103f99c77c68898e5600a00542e939e0587bbb8d8277ec8c8bec076ba1",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_AlgebraicGeometry_TwoAffineOpenCover.lean": "e665089812eceae58881ccbb4e9250eb5d7eb4c2f88485135f8dd5f8b41f39f6",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/ArbitraryFormalCoverConstantR0210.lean": "c0ff8f81f208c8476f9308967f858af3ded06a8099c14699914846dee727361a",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/ArbitraryFormalCoverConstantR0210.olean": "f3bb9cf1d0096846942359ebfba0a49d1ea3abea4d1c3fe59d35905fd89c9438"
+  },
+  "source_scope_frozen": true,
+  "attempt": 1,
+  "threads": 12,
+  "max_compile_seconds": 300,
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Challenge.lean": "69289c6a34df427890de847934d86af9c79922e311938feb80add9792ca66805",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Solution.lean": "c9179e2fdae25ed15af684713cd63f1cdb3f12baf0148eedd61a8a14ff84f86d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/comparator.json": "d7b30d727eaa11159b62d9f439baa439de98d43d6a0f315eb5197f9532e736da"
+  },
+  "axiom_targets": [
+    "ArithmeticThetaPalomarFormalCover275.Bridges.ideal_eq",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.structuralMap_eq",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.genericStructure_eq",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.formalRing_eq",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.ofSection_eq",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.genericScalar_eq",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.fractions_eq",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.restrictions_roundtrip",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.independent_restrictions_roundtrip",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.cover_roundtrip",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.original_cover_roundtrip",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.chartConditions_iff",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.rationalCompatible_iff",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.noPole_iff",
+    "ArithmeticThetaPalomarFormalCover275.Bridges.fractionConstant_iff",
+    "ArithmeticThetaPalomarFormalCover275.arbitrary_formal_cover_constant"
+  ],
+  "status": "compiled",
+  "checks": [
+    {
+      "module": "Challenge",
+      "session": 75387,
+      "exit_code": 0
+    },
+    {
+      "module": "Solution",
+      "session": 89692,
+      "exit_code": 0
+    }
+  ],
+  "axioms": {
+    "ArithmeticThetaPalomarFormalCover275.Bridges.ideal_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.structuralMap_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.genericStructure_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.formalRing_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.ofSection_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.genericScalar_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.fractions_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.restrictions_roundtrip": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.independent_restrictions_roundtrip": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.cover_roundtrip": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.original_cover_roundtrip": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.chartConditions_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.rationalCompatible_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.noPole_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.Bridges.fractionConstant_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarFormalCover275.arbitrary_formal_cover_constant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "outputs": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Solution.olean": "7307ff84f32d176425aff3a1d6c35d26e9aa7a408d8d333aace19f6ea306f7c6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Challenge.olean": "dc698a767c42144e789a2a1eceb235a91f4038a1cc66b34f8fbb0aac05dafd81",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Challenge-check-01.log": "ab4f54d717777621da69ab2c7c88e8ae60e5048cdb2966a3051c71260905ef93",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-package-275/Solution-check-01.log": "b8215836b3138a9e351bb01abca50d2d78872cf8e35eac4ea1299e9f457835c2"
+  }
+}

@@ -1233,3 +1233,19 @@ roots = ["EarlyCertificateChallenge"]
 [[lean_lib]]
 name = "EarlyCertificateSolution"
 roots = ["EarlyCertificateSolution"]
+
+[[lean_lib]]
+name = "MainAndComponentsChallenge"
+roots = ["MainAndComponentsChallenge"]
+
+[[lean_lib]]
+name = "MainAndComponentsSolution"
+roots = ["MainAndComponentsSolution"]
+
+[[lean_lib]]
+name = "FormalCoverChallenge"
+roots = ["FormalCoverChallenge"]
+
+[[lean_lib]]
+name = "FormalCoverSolution"
+roots = ["FormalCoverSolution"]

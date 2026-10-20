@@ -1,0 +1,70 @@
+{
+  "status": "independent_specification_pending",
+  "completed_utc": "2026-10-20T16:39:24.506450+00:00",
+  "scope": [
+    "accepted-080",
+    "accepted-081"
+  ],
+  "independent_challenge_created": false,
+  "independent_solution_created": false,
+  "comparator_passed": false,
+  "official_preflight": false,
+  "official_submission": false,
+  "visible_project_declarations": 323,
+  "containing_source_modules": 28,
+  "containing_source_lines": 15424,
+  "containing_source_bytes": 760427,
+  "size_caveat": "Containing-file sizes are not a minimal semantic closure lower bound; visible declaration traversal omits hidden proof bodies. No impossibility theorem is claimed.",
+  "original_provider_axioms": {
+    "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_existence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_naturality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaOpenHodgeR0180.GlobalFamilyDiscriminantR0180.local_discriminant_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaSchemeHodgeR0205.cartesian_identity_ideal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_bindings_unchanged": true,
+  "no_project_mutations": true,
+  "files": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/ClosureProbe-04.log": "d11d0c053c2f57a60684dc9dfdb50f0da2dd2944b6874b8a0ff23484567cc476",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/selected-source-inventory.json": "85bd8c96698e8245ad88961d121cca0b118c93b8f515a781da094913c3d44291",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/project-modules.txt": "fe254eab786b3d6f962b55e42b8b948020f4bd0089d4232848c77723898d499d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/probe-receipt-05.json": "7b9d933a49c342fc93a03dde9a408d90cf565a8ef38175626c43f48bd227e49f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/ProviderAudit.lean": "673ad24601ab804f1242f9b2ba42eac8198b358f855383ed43a509ea03d1d7d8",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/ClosureProbe-02-source.lean.txt": "31802a92c2a77def8883e71ad6cf226edb8ef84b2fee760c5d34a026501ec514",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/probe.py": "33c1ba7b0791b51a04c3deae5c39a5997207d41af6ef0b2d87f0f1f3774def79",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/closure-analysis.json": "5cfab83d137aa184ec61c709cacbca16c8e8180ac6beb900c0a7eb5c461ff1a3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/MathlibOnlyProbe-01.log": "7bb619a3f489350c091f4a3f3a118a357a289110a3c15bc72ddb02744f193ef8",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/MathlibOnlyProbe-02.log": "403a05e1f3dbfe6b551115dd8c10dadcb2715544ab8d90002654eb00f9a39592",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/Scope.json": "5fc224f468023af1f25cf2f759fd9a0158b9de346db9bc8a6e7e2745ea49e6da",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/MathlibOnlyProbe.lean": "deffc27c2ada80ab138781dd4a7f68b26ee7003632b46d7ee8eb848865c09502",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/probe-receipt.json": "fd7137bc5475f2085b9400e3ca33a002bad0063a8e1fd0029c30cdf4d131cd70",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/ClosureProbe-02.log": "991b7b0ab827412d5e5216dea3b58c530f62796cdda0469b3ad0f61e18d1aec4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/probe-01.py.txt": "8cb3ea4d4279e0a27d2cf778a8786b9f189574cf59529d569197e3fe5e1188f6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/ClosureProbe-01-source.lean.txt": "418559fb03c4fc45e55e607edbfe90679ec4714f7be9c2188830d2f79a17e16f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/prepare_probe.py": "60e1cb865c668281128cd355d28c00412852ad45a576b75f5fae2149a17f6b6b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/probe-receipt-02.json": "faaeada53a079c03b2a0baa8bf50233b2aad5840a33096c1a903eb3338646231",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/probe-receipt-03.json": "e2af8dbe1cfadab8567e6a8d02426df0ffe58086ac55c69b2588abb70a42e456",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/probe-receipt-04.json": "66ca82428c7e09f2a60d337558f3cc622d095bfec8c573fc50307f90f8a188cd",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/ClosureProbe.lean": "d7a629b2af42bfb7febc31182867018a3b6349ff617f4bb1eacda2cfc4db4969",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/Analysis.md": "7e04b6793f8d2c22362c802c199ba51a41d0ea206c660d8a7fe64f0bc701f6a9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/ProviderAudit-05.log": "6961ecfff9ab376852b2ce82b100a7d1b2030524a52235f6f2a86e85e06f072f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/checkpoint.json": "8320b38cac312fa21ddc20d1481a6c47a963074b94b27d354366961ceee0cdb0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/MathlibOnlyProbe-01-source.lean.txt": "9f9f19067ecbdcec4ff818cc4d7f8b511f17e4926fd0a85b9876275b38e3f865",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-discriminant-package-266/ClosureProbe-01.log": "83d624d3cad195c7ec3e861ad03c40c70ea74b4193c82e4698cf9be4e8187f31"
+  }
+}

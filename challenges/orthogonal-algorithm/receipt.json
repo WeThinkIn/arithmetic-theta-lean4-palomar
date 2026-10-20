@@ -1,0 +1,63 @@
+{
+  "status": "local_comparator_passed",
+  "completed_utc": "2026-10-20T16:39:29.674850+00:00",
+  "compile_receipt_sha256": "257dfb36d46b48586d743c2b5bef1150f5e00f808cb06a9a2ec143af27d71135",
+  "export_session": 54225,
+  "comparator_session": 79528,
+  "comparator": {
+    "command": [
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake",
+      "comparator",
+      "--config=/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/comparator-external.json",
+      "--challenge-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Challenge.ndjson",
+      "--solution-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Solution.ndjson"
+    ],
+    "cwd": "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/project",
+    "exit_code": 0,
+    "elapsed_seconds": 37.51,
+    "normal_sandbox": true,
+    "external_kernels": {
+      "nanoda": "bundled",
+      "con-ron": "bundled --jobs=2"
+    },
+    "budget_seconds": 600
+  },
+  "bindings_unchanged_after_comparator": true,
+  "tool_digests": {
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanexport": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/early-comparator-211/bubblewrap-0.12.0/build/bwrap": "dd7c08cfc4cd60028638f03c7995a4a2f26cd47f1e3723ad66a45379d42ccd03"
+  },
+  "covered_ids": [
+    "accepted-003",
+    "accepted-008"
+  ],
+  "official_preflight": false,
+  "official_submission": false,
+  "shared_lake_output_modified": false,
+  "limitation": "Local source/object/export hash binding and normal-sandbox independent kernels; not official isolated source-provenance audit.",
+  "artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/comparator.json": "85ab3911670c377ded84ad86527182a490cef9303d0a112046b018acf2f0ed93",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/compile-receipt.json": "257dfb36d46b48586d743c2b5bef1150f5e00f808cb06a9a2ec143af27d71135",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Scope.json": "5e04d0c7913263d185a469dccd000bc6e74a942f2d4b437ac8dac53c066d3619",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Challenge-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/export-targets.json": "b88dda5108e6868fe1980d9364e5403cbfdf679743c9c4ee8e4bccf2b23616c4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/comparator-external.json": "0d3345b7830f2cbeca541f369289ad0c9ce7c3f086eb2bc02b94b32c2bff3073",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/export.py": "72827edac6d25348cf5f6c9d1b2ba0da9affd8a713f6bac134b46ef865c50dd5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Solution-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/comparator-modern-receipt.json": "95410b806a0f25860ae8fd2048a3ea9c1c8d7af6bf8c75218451b6394ab8690e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Challenge-check-01.log": "1ece5f862c3b3e4131138f5ccc8b72cbad8c34bccc9b8953804efa8f954b4a87",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/comparator-modern.log": "fd52ad397bbe77ac0f9da8b0027e62f30e367c947891d8fa27d04e7d8bdec422",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/export-receipts.json": "d848049d703e5f1d64a07209098ba600254f308fe216ee1be245394c9837cb11",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Solution.lean": "a234f31bd5fc2e4c0ed1efce6a469c40804fa5706e6f1c93eb5c5b4351c253de",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Challenge.lean": "7532ca2ecbebeee9d02de127554f9e1769ffacbb3f07c4847319511024002730",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/Solution-check-01.log": "a04969fbb64a5b44034771edaa11814655f67dd9c33eda34b2be8193a256e1ad",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/compare.py": "c0909a4342a58c060aaec3a2d2614282207883fbc7d8b3bc305dd370920959b6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/arithmetic-foundations-package-269/orthogonal/checkpoint.json": "6f4bb9ee37d05644de431a1d281a38a755cdfcf340ae560207b9453eb705ceeb"
+  },
+  "readme_sha256": "a61f4129b8dfd9be1bd184137342923d8f1a187435c28c7274c3b2bfb2c44c8b"
+}

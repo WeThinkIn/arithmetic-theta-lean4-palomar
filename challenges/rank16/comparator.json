@@ -1,0 +1,17 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarRank16_260.no_similarity",
+    "ArithmeticThetaPalomarRank16_260.integral_identity",
+    "ArithmeticThetaPalomarRank16_260.two_column_kernel",
+    "ArithmeticThetaPalomarRank16_260.general_dplus_even_unimodular",
+    "ArithmeticThetaPalomarRank16_260.general_dplus_dual",
+    "ArithmeticThetaPalomarRank16_260.general_dplus_theta_realization"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

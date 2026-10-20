@@ -1,0 +1,52 @@
+version: v0.4
+project:
+  name: Explicit theta relation bound and arithmetic components
+  description: 'This entry compares 43 targets: the explicit conservative full-series
+    kernel bound and 39 complete prior endpoints plus supporting results. The main
+    interface retains the actual U.count, all larger cutoffs and rank zero, but does
+    not include the additional FormalIdentity field of the original accepted-037 type.
+    See challenges/main-and-components/Scope.json. The full 13-requirement, 103-endpoint
+    paper is not claimed as independently verified.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'This entry compares 43 targets: the explicit conservative full-series kernel
+    bound and 39 complete prior endpoints plus supporting results. The main interface
+    retains the actual U.count, all larger cutoffs and rank zero, but does not include
+    the additional FormalIdentity field of the original accepted-037 type. See challenges/main-and-components/Scope.json.
+    The full 13-requirement, 103-endpoint paper is not claimed as independently verified.'
+fidelity:
+  divergences: 'This entry compares 43 targets: the explicit conservative full-series
+    kernel bound and 39 complete prior endpoints plus supporting results. The main
+    interface retains the actual U.count, all larger cutoffs and rank zero, but does
+    not include the additional FormalIdentity field of the original accepted-037 type.
+    See challenges/main-and-components/Scope.json. The full 13-requirement, 103-endpoint
+    paper is not claimed as independently verified.'

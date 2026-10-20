@@ -1,0 +1,26 @@
+{
+  "source_obligations": [
+    {
+      "id": "accepted-092",
+      "declaration": "ArithmeticThetaLaurentNormR0064.powered_gamma_norm",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (K : Type) [Field K] [CharZero K] (c d : ℕ) (ζ : K), 1 < c → 0 < d → Nat.Coprime c d → IsPrimitiveRoot ζ d → ∀ (H : Fin d → Fin d → ArithmeticThetaLaurentNormR0064.Series K) (b : ArithmeticThetaLaurentNormR0064.Series K), (∀ i j : Fin d, ArithmeticThetaLaurentNormR0064.IsGamma (ArithmeticThetaLaurentNormR0064.Coeff K) d (c * i.val) (ArithmeticThetaLaurentNormR0064.a K ζ j.val c) (H i j)) → ArithmeticThetaLaurentNormR0064.IsGamma (ArithmeticThetaLaurentNormR0064.Coeff K) d 0 (ArithmeticThetaLaurentNormR0064.w K ^ (c * d)) b → (∏ i : Fin d, ∏ j : Fin d, H i j) = (-1 : ArithmeticThetaLaurentNormR0064.Series K) ^ (-ArithmeticThetaNormFiniteR0063.S c d) * ArithmeticThetaLaurentNormR0064.z K d ^ (-(c : ℤ) * ArithmeticThetaNormFiniteR0063.S c d) * ArithmeticThetaLaurentNormR0064.Q K d ^ (-ArithmeticThetaNormFiniteR0063.E c d) * b",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 279-289: use actual ci=dk_i+r_i, the proved residue permutation, literal gamma translation, and the transported unpowered norm to prove the powered product. The finite integer S and E are exactly the accepted sums. This is the missing gamma identity, not a hypothesis containing it.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    }
+  ],
+  "namespace": "ArithmeticThetaPalomarFormal261Norm",
+  "covered_ids": [
+    "accepted-092"
+  ],
+  "full_paper_claimed": false,
+  "definition_source_files": [
+    "NormQuotientDefinitionsR0062.lean",
+    "NormFiniteDefinitionsR0063.lean",
+    "LaurentNormDefinitionsR0064.lean"
+  ]
+}

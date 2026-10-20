@@ -1,0 +1,73 @@
+{
+  "source_obligations": [
+    {
+      "id": "accepted-000",
+      "declaration": "ArithmeticThetaElementary.rank_zero_coefficients",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (Q : (Fin 0 → ℤ) → ℕ), Q 0 = 0 → ∀ n : ℕ, Nat.card {x : Fin 0 → ℤ // Q x = n} = if n = 0 then 1 else 0",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Input section, lines 55–56: on the zero-dimensional lattice there is exactly one vector, of norm zero; therefore its theta coefficients are 1 at zero and 0 elsewhere. The hypothesis Q 0 = 0 is an actual property of any quadratic norm, not a substituted theta identity.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-001",
+      "declaration": "ArithmeticThetaElementary.rank_zero_kernel",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (h : ℕ) (c : Fin h → ℂ), (∑ i : Fin h, c i • (1 : PowerSeries ℂ)) = 0 ↔ (∑ i : Fin h, c i) = 0",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Input section, lines 55–56: when all theta series are 1, the kernel consists precisely of coefficient vectors with sum zero.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-002",
+      "declaration": "ArithmeticThetaElementary.rank_zero_image",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (h : ℕ), 0 < h → ∀ f : PowerSeries ℂ, (∃ c : Fin h → ℂ, (∑ i : Fin h, c i • (1 : PowerSeries ℂ)) = f) ↔ ∃ z : ℂ, f = PowerSeries.C z",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Input section, lines 55–56: for a nonempty rank-zero family the image is the one-dimensional constant-series space, spanned by 1. Together with 1 ≠ 0 this is the asserted image-basis description.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-090",
+      "declaration": "ArithmeticThetaElementary.norm_exponent_identities",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (c d : ℚ), (d - 1) * (-c * (c - 1) / 2) + c * ((c - 1) * (d - 1) / 2) = 0 ∧ (d ^ 2 - 1) * (c ^ 2 - 1) / 12 + (-c * (c - 1) / 2) * d * (d - 1) / 2 + ((c ^ 2 - 1) * (d - 1) * (2 * d - 1) / 12 - d * (c - 1) * (d - 1) / 4) = 0 ∧ (d ^ 2 - 1) * (-c * (c - 1) / 2) + (c - 1) * (d - 1) / 2 = (c - 1) * (d - 1) * (1 - c * (d + 1)) / 2",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Proposition norm proof, lines 294–302: after substituting p_c = −c(c−1)/2, K_c = c²−1 and the displayed formulas for S and E, the z and Q exponents vanish and the sign exponent has the stated expression. This leaf does not assert the product identity, residue permutation sums, or existence of Kato theta units.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    },
+    {
+      "id": "accepted-091",
+      "declaration": "ArithmeticThetaElementary.norm_sign_exponent_even",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (c d : ℤ), Odd c → Even ((c - 1) * (d - 1) * (1 - c * (d + 1)) / 2)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Proposition norm proof, lines 299–302: the remaining sign exponent is even. Odd c is sufficient; the source condition gcd(c,6)=1 implies it. Integer division agrees with the rational exponent since c−1 is even.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ]
+    }
+  ],
+  "namespace": "ArithmeticThetaPalomarFoundations269Elementary",
+  "covered_ids": [
+    "accepted-000",
+    "accepted-001",
+    "accepted-002",
+    "accepted-090",
+    "accepted-091"
+  ],
+  "full_paper_claimed": false
+}

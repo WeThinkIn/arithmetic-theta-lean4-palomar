@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarFoundations269Orthogonal.even_integral_gram_orthogonalization",
+    "ArithmeticThetaPalomarFoundations269Orthogonal.computed_natural_data",
+    "ArithmeticThetaPalomarFoundations269Orthogonal.computed_orthogonalization"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-10-20T16:27:57.651943+00:00",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/examples-package-258/binary/Challenge.lean": "a31b5e051caa474d6fa799102a4e22847c03f320c7d4a764f56f3d1b1150fb57",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/examples-package-258/binary/Solution.lean": "918707f90f01b25b27594e080e2e3ccc21f3030d112ea6063783df4fb3c2210c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/examples-package-258/binary/comparator.json": "460ee4b35bda4c99bde02fc1efc6057d404158d92f08194c9bf7bb874646b17d",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/OrthogonalConsumerDefinitionsR0127.lean": "7d0582388d04b3053b218d333c625bae330b1b11d385312db9058f477c2291ec",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/FullSourceDefinitionsR0268.lean": "9e6a5a4195105319ed1f4dc0c3e348bcd23426d3c13112694726c1f9dfb7a8b8",
+    "/home/Palomar/workspace/arithmetic-theta/project/challenges/main-explicit/bridges/MainIndependentDefinitions198.lean": "67659fd2ae2e0063cf3286e195e2ca53d251c7846c8cd881642b61d78d24321a",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/BinaryOrthogonalExampleR0268.lean": "55907b0396d475fb3a3d8314c0b057b2654f6192ac26649dd914e41d42a35958",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/BinaryOrthogonalExampleR0268.olean": "ac44366b9a1cb613aa2b2fb66ed1bd3199319767c5b9161196392222d856ff4a"
+  },
+  "threads": 12,
+  "max_compile_seconds": 300,
+  "challenge_lines": 70,
+  "challenge_bytes": 3367,
+  "status": "compiled",
+  "checks": [
+    {
+      "module": "Challenge",
+      "session": 12121,
+      "exit_code": 0
+    },
+    {
+      "module": "Solution",
+      "session": 31860,
+      "exit_code": 0
+    }
+  ],
+  "axioms": {
+    "ArithmeticThetaPalomarExamples258Binary.binary_orthogonal_example": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "outputs": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/examples-package-258/binary/Solution.olean": "9a8830ce729133ceb6586dfe2a20eef97679d4107bb7f3eba72254c5f7c22e69",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/examples-package-258/binary/Challenge.olean": "5b952e3d021c47b2254759cf6018e83177ad56b45d6a1e8f32b7180e3f2096d7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/examples-package-258/binary/Challenge-check-01.log": "de05cc1c4e27a54e3c59141fe6cf9b760ad15eb099aeeb343c4c8e1556d20c83",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/examples-package-258/binary/Solution-check-01.log": "3655c84d60df3d9273996f0c1b01df5d18f69a7b83ec47fdf49a2f83332a9194"
+  }
+}

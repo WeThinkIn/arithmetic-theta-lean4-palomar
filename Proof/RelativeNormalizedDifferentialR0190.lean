@@ -2,6 +2,10 @@ module
 
 public import GlobalFourTorsionDefinitionsR0190
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option synthInstance.maxHeartbeats 200000
+
 @[expose] public section
 
 /-! Construction of the relative Weierstrass differential. -/
