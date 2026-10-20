@@ -5,6 +5,9 @@ public import PositiveSectionsReductionR0134
 public import Mathlib.LinearAlgebra.FiniteDimensional.Basic
 public import Mathlib.RingTheory.AdicCompletion.Completeness
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Compatible bases for the genuine positive numerator section modules. -/

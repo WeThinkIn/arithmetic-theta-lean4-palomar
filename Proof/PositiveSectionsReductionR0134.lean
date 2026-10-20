@@ -3,6 +3,8 @@ module
 public import PositiveLineSectionsDefinitionsR0134
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Reduction of positive divisor numerators on the actual infinitesimal polygon.
 All auxiliary declarations are scoped to this module. -/

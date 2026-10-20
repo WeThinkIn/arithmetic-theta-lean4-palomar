@@ -4,6 +4,9 @@ public import ProjectiveEffectivityDefinitionsR0135
 public import Theorems.Thm_AlgebraicGeometry_Proj_fromOfGlobalSections_appLE_awayToSection_mk_mul_pow
 public import Mathlib.AlgebraicGeometry.ZariskisMainTheorem
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Local projective maps of the prescribed cubic numerator basis.

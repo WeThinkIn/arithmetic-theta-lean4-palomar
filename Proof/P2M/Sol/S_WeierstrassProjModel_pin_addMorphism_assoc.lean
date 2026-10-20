@@ -15,6 +15,10 @@ public import Theorems.Thm_WeierstrassProjModel_kw_a2_pin_map_mul_of_ne
 public import Theorems.Thm_WeierstrassProjModel_kw_ev_triple_projections_indep
 public import P2M.Util
 
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 namespace P2MW.S_WeierstrassProjModel_pin_addMorphism_assoc
 

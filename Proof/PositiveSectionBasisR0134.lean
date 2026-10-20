@@ -5,6 +5,8 @@ public import Mathlib.LinearAlgebra.Finsupp.SumProd
 public import Mathlib.LinearAlgebra.Basis.SMul
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Coordinate tools for the positive-section basis construction.
 All helpers are confined to this module's namespace. -/

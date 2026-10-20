@@ -2,6 +2,9 @@ module
 
 public import PositiveGlobalGenerationR0134
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Multiplication of positive divisor sections, by special-fiber generators and

@@ -3,6 +3,8 @@ module
 public import RatioRegularityDefinitionsR0067
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Constancy on the concrete completed cyclic node charts. -/
 set_option autoImplicit false

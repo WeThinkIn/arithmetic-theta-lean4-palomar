@@ -57,7 +57,7 @@ The exact original statements are in SourceObligations.json; this register track
 | accepted-047 | `ArithmeticThetaSharpKernelR0195.sharp_matrix_geometric_family` | pending | pending |
 | accepted-048 | `ArithmeticThetaSharpKernelR0195.sharp_geometric_cutoff` | pending | pending |
 | accepted-049 | `ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel` | pending | pending |
-| accepted-050 | `ArithmeticThetaFormalCoverR0210.arbitrary_formal_cover_constant` | pending | pending |
+| accepted-050 | `ArithmeticThetaFormalCoverR0210.arbitrary_formal_cover_constant` | exact type + standard axioms passed (partial audit 110) | pending |
 | accepted-051 | `ArithmeticThetaSchemeFourCharacterR0215.scheme_miller_phase` | pending | pending |
 | accepted-052 | `ArithmeticThetaSchemeFourCharacterR0215.scheme_alpha_character` | pending | pending |
 | accepted-053 | `ArithmeticThetaPhaseFreeKeyR0219.phase_free_key` | pending | pending |
@@ -109,4 +109,4 @@ The exact original statements are in SourceObligations.json; this register track
 | accepted-099 | `ArithmeticThetaMultiplierKeyR0217.even_point_theta_evaluation` | pending | pending |
 | accepted-100 | `ArithmeticThetaPhaseFreeKeyR0219.multiplier_fourth_trivialization` | pending | pending |
 
-Partial audit 03 checks 39 endpoint propositions in the migrated environment. It does not check the other 64 endpoints, a full GoalRoot import, independent Challenge semantics, or Comparator. The exact probe and hash-bound log are retained outside this publishable project under evidence/.
+Partial audit 110 rechecks 40 endpoint propositions in the migrated environment. It does not check the other 63 endpoints, a full GoalRoot import, independent Challenge semantics, or Comparator. The exact probe, hash-bound log and result are retained in docs/audit/; workspace copies are also retained under evidence/.

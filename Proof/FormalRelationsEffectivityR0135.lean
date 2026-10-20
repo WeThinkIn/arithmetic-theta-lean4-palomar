@@ -3,6 +3,9 @@ module
 public import FormalHomogeneousPresentationR0135
 public import Mathlib.RingTheory.Polynomial.Basic
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Exact reduction and homogeneous finite generation of the tagged relation ideal. -/
@@ -222,12 +225,12 @@ lemma relation_lift (h3 : 3 ≤ r) (hb : CompatibleBases k T a b)
     p ∈ Ideal.map (coefficientReduction k r n) (formalRelations k b) := by
   by_cases hd : d = 0
   · subst d
-    have heq : p = C (coeff 0 p) := by
+    have heq : p = C (p.coeff 0) := by
       exact (homogeneousComponent_eq_self hp).symm.trans (homogeneousComponent_zero p)
     have he := (homogeneous_relation_iff k b n 0 p hp).mp hz ⟨0, hr⟩
     rw [heq] at he
     simp only [eval₂Hom_C] at he
-    have hc : coeff 0 p = 0 := base_injective k n (he.trans (map_zero _).symm)
+    have hc : p.coeff 0 = 0 := base_injective k n (he.trans (map_zero _).symm)
     rw [heq, hc, map_zero]
     exact Ideal.zero_mem _
   · obtain ⟨q, hq, hred⟩ := homogeneous_lift k n d p hp

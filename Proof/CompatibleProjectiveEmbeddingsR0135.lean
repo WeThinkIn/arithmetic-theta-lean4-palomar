@@ -2,6 +2,9 @@ module
 
 public import SpecialFiberCubicEmbeddingR0135
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Compatible embeddings of every actual infinitesimal polygon. -/
