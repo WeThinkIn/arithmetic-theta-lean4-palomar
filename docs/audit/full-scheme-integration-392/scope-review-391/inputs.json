@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-20T19:55:40.958833+00:00",
+  "inputs": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Challenge.lean": "8f48731c3cfaa4368f5c88eb5b1e863968af359fce27363480fb012d3412de94",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Solution.lean": "8362c5e3ffc29802c6d0d361055307d300fc5b765abc3f7d51617af09fd1d2df",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/comparator.json": "715bb01bca8471e8b8c92ea831eee28956c369cba22951c27d18942aab6ca2dd",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Targets.json": "ab90b26cf9e6118d4abaf48580c6c9ebc5bc03d380a592e848b5d733e77714ad",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/OriginalEndpointAudit.lean": "ba4e8b11942bfcc7210cc30c89fff4821ce9f3c4961859884163d0c4e3fe7778",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Challenge-receipt-01.json": "ee83adab9ae8a5e4e552b7e13b01bab03bcbac4d1e46aedf549d596c0d23e396",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/ChallengeAudit-check-01.log": "9d272073ef7c2f07ef805919e32ae07933b5e2760c0bf0c0eead545b7c774c32",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/LocalWeierstrassDefinitionsR0203.lean": "203494e71b45777c9bf72d7f0ca64d62f487a1679a00571cf93c19eb5c44c3ab",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/ArbitraryDiscriminantDefinitionsR0243.lean": "cca3c46fb7f0a3ee069bb684f11821fac6c6206f0f51dff9e526ee7119cce4dc",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeDiscriminantDefinitionsR0244.lean": "a9379b233a60bfdd6c16feefeeb99c3bb168e0405971cbbddd7b9f9b3a8e01aa",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeDiscriminantExistenceR0244.lean": "16476a87ff5d4d5850732b1e2d2b17d85e46933154da97005454fa91d1c9b692",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeDiscriminantNaturalityR0244.lean": "751779d8c328304193f8afa24298ff86f479319f3f020754d30e5620fd1dfd76",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Solution-receipt-01.json": "8e8202cf7deb7d5bfc477faf1aaa96ffb9d74cfc543f3425540c15fca4195d51",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Solution-check-01.log": "df1c1a7719f13702457a9a363081c600ed83c4fede1256795fc186b0e7a0feb8",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Audit-receipt-01.json": "be213493d625abe5ec433e6b630002e577878b6651799424ec8da423e08fb222",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Audit-check-01.log": "ded5e193aff4a656fa4a830c4ee5b19f74d09f767a4374b72af6f1d2703603bd",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Audit.lean": "e4640181270eeae60ce1aeb7f24049a21a06508c52317dea2702ec78aee44d77",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/OriginalEndpointAudit-receipt-01.json": "2c605bece6ca77479058cca7764460a8e6a8358dc097d2ef5c4590c39d55ab9c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/OriginalEndpointAudit-check-01.log": "7767e344d21b94de7464a812c2e9e09e2cb4fb2dcb88401d146adcdba9a9a042",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/receipt.json": "52c7d8fcdd7303decaeddb14770acf5ccef8b2cc36835b206a7b31c92878fe23",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/ChallengeAudit.lean": "422df031650c179f2ca9aabf26355221138734b2016cb712224fcf261a984055",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/ChallengeAudit-receipt-01.json": "36e9670075ef1cee0059c942fb58c3ce8cb4aa86ffbb1481088ed603d330cd3d"
+  }
+}

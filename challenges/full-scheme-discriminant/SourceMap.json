@@ -1,0 +1,59 @@
+{
+  "shared_definition_fragments": {
+    "PowerDefinitions.lean.txt": "1daac37bfe355bd24541554952e72dff006f53afbb3bcdf9c3834639eeb67c85",
+    "AffineDefinitions.lean.txt": "fd2bea9c42e949538b1e502f1d0cae2977cb96b84aa98424dcc22b287fcf9cdb",
+    "AffineAfterExistence.lean.txt": "2876ebd2f71df4c8e4ffca086317fa56006df7c8fcfb824cba35f712f5021239",
+    "SchemeDefinitions.lean.txt": "2874b8d745cc779fa522aca03e493d1dce456b4dd86ce85f3a6b240974d7b5a3"
+  },
+  "shared_fragments_literal_identical_in_both_environments": true,
+  "actual_model_support_sha256": "c5508173f747c626c26ce17c7e25dffe8378deb515036231966fab70583d54c2",
+  "actual_model_record_fields_literal_copies": true,
+  "source_inputs_at_start": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/normal-initial-package-381/Challenge.lean": "b30b37f6ae066195d74bb6fb2aadc5af1cc8c3ba412124cdc905c42b72dd1fad",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/normal-initial-package-381/Solution.lean": "4956a8dba42431bd5f85120f9766dd6b265fc0a379703523e3ce08f8399a9956",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/canonical-scheme-power-383/Challenge.lean": "6cc659c30c8a928069afdace27236e9a95eb54c343c0e4bf7f6f81776d17bcaf",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/canonical-scheme-power-383/Solution.lean": "69c732206f437d298e73f069dc6ffdeeaf7611c1eb6b4e55314ce0d171517536",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/weierstrass-presentation-373/Challenge.lean": "35c46fc29231e3998020ef1ecf52e0f5daa5719cda67ec55ac5e359603432767",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/weierstrass-presentation-373/Solution.lean": "6343a335eb6500753a67544c69997dc1c2abf1b38f27e31b3ba8543f143b20bf",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/all-test-normalization-380/Bridge.lean": "cb596db7f35d6c54a90c96e70e2bfcb79b11c743b4e93cff961f75f62fc170ca",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/ArbitraryDiscriminantDefinitionsR0243.lean": "cca3c46fb7f0a3ee069bb684f11821fac6c6206f0f51dff9e526ee7119cce4dc",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeDiscriminantDefinitionsR0244.lean": "a9379b233a60bfdd6c16feefeeb99c3bb168e0405971cbbddd7b9f9b3a8e01aa",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/pointed-differential-comparison-387/Bridge.lean": "7de48eccd3c4adc91e82ae62cdefd962db22313917a71b3021b09e01816ddfcf"
+  },
+  "support_packages": [
+    357,
+    365,
+    373,
+    374,
+    378,
+    380,
+    381,
+    382,
+    383,
+    387
+  ],
+  "bridges": [
+    "WPowerCompatible iff original powerCongr",
+    "AffineLineCompatible iff original comparisonHodge",
+    "AffinePowerCompatible iff original comparisonPower",
+    "affinePull equals original pull",
+    "AffineSpecification iff original affine IsD2",
+    "schemePower equals original powerIso",
+    "wValue equals original weierstrassValue",
+    "pull equals original scheme pull",
+    "SchemeSpecification iff original scheme IsD2",
+    "recover_original_080 has exact original endpoint type",
+    "recover_original_081 has exact original endpoint type"
+  ],
+  "no_evidence_module_imports_in_final_sources": true,
+  "challenge_direct_imports": [
+    "Mathlib"
+  ],
+  "solution_direct_imports": [
+    "Mathlib",
+    "GlobalFamilyDiscriminantR0180",
+    "SchemeDiscriminantNaturalityR0244",
+    "NormalDiscriminantModelR0243",
+    "SchemeCotangentCoherenceR0205"
+  ]
+}

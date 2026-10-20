@@ -1,0 +1,19 @@
+{
+  "accepted_for_local_integration": true,
+  "accepted_ids": [
+    "accepted-080",
+    "accepted-081"
+  ],
+  "basis": "Final local compiler and all-declaration axiom checks; exact original-type reverse recovery; independent read-only source scope review391. Not official Comparator or semantic acceptance.",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Challenge.lean": "8f48731c3cfaa4368f5c88eb5b1e863968af359fce27363480fb012d3412de94",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Solution.lean": "8362c5e3ffc29802c6d0d361055307d300fc5b765abc3f7d51617af09fd1d2df",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Scope.json": "8887ed9b93a072fd80eccc20b3ee8fe6bdf9045cc8dfe0df56c086656cd9518a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/SourceMap.json": "b2299286d78d5a11bb37292aaf0d51a8a836b44d793c95217953a571946d95c9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/receipt.json": "52c7d8fcdd7303decaeddb14770acf5ccef8b2cc36835b206a7b31c92878fe23",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/README.md": "56785121c7f3392e3b1dd63da35908c99bbcc7e8d929f3342d187ab388962db6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/comparator.json": "715bb01bca8471e8b8c92ea831eee28956c369cba22951c27d18942aab6ca2dd",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-scope-review-391/Review.md": "2b13316511fb2eaabf1bcbbcf37bfe00fb750e28d108af37d46da786ea6a96d1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-scope-review-391/receipt.json": "23512c8ecc8eaa28f61c794d09cd6f4db80c6b4fcfb1c5ab338851c49caf6506"
+  }
+}

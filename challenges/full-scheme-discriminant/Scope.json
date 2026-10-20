@@ -1,0 +1,51 @@
+{
+  "status": "complete_independent_scheme_discriminant_local_candidate_checked",
+  "covered_original_endpoint_ids": [
+    "accepted-080",
+    "accepted-081"
+  ],
+  "coverage_kind": "complete independent specification; exact predicates iff originals; original endpoint types recovered in reverse",
+  "target_count": 10,
+  "theorem_names": [
+    "ArithmeticThetaPalomarNormalInitial381.initialTensorExistsUnique",
+    "ArithmeticThetaPalomarDifferential365.normalizedConormalHodge",
+    "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+    "ArithmeticThetaPalomarWeierstrass373.canonicalWeierstrassHodge",
+    "ArithmeticThetaPalomarSchemePower383.canonicalSchemePower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalWPower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalAffinePower",
+    "ArithmeticThetaPalomarFullScheme385.normal_test_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_naturality"
+  ],
+  "support_target_count": 8,
+  "endpoint_target_count": 2,
+  "full_paper_claimed": false,
+  "original_endpoint_recoveries": {
+    "accepted-080": "ArithmeticThetaPalomarFullScheme385.recover_original_080",
+    "accepted-081": "ArithmeticThetaPalomarFullScheme385.recover_original_081"
+  },
+  "scope_preserved": [
+    "all actual normal models with all original fields",
+    "nonvacuous full FiveSpecification initial terms with exact5/24",
+    "every arbitrary coefficient k-algebra including nonreduced",
+    "every actual affine Weierstrass test and actual pointed Cartesian comparison",
+    "actual identity conormal and genuine24th sheaf tensor",
+    "canonical maps fixed by actual ideal inclusion and universal relative derivatives",
+    "all local sections and all common subopens",
+    "existence uniqueness of every canonical map used by definitions",
+    "arbitrary scheme base changes with no flatness assumption",
+    "exact original naturality hypotheses and output"
+  ],
+  "not_claimed": [
+    "other101 original endpoints by this package alone",
+    "complete paper coverage",
+    "official mechanical pass",
+    "official semantic review or registration"
+  ],
+  "remaining_validation": [
+    "parent export integration and real Lake root build",
+    "official mechanical preflight for selected commit/config",
+    "official intake/review if selected"
+  ]
+}

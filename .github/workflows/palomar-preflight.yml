@@ -17,6 +17,7 @@ on:
           - comparator-sharp-adaptive-image.json
           - comparator-sharp-and-roots.json
           - comparator-sharp-and-coordinates.json
+          - comparator-full-scheme-discriminant.json
 permissions:
   contents: read
 jobs:
@@ -36,13 +37,13 @@ jobs:
           with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
               print('id=' + secrets.token_hex(6), file=output)
               config = os.environ['COMPARATOR_CONFIG']
-              if config not in ('comparator.json', 'comparator-early.json', 'comparator-main-and-components.json', 'comparator-formal-cover.json', 'comparator-main-complete.json', 'comparator-sharp-adaptive-image.json', 'comparator-sharp-and-roots.json', 'comparator-sharp-and-coordinates.json'):
+              if config not in ('comparator.json', 'comparator-early.json', 'comparator-main-and-components.json', 'comparator-formal-cover.json', 'comparator-main-complete.json', 'comparator-sharp-adaptive-image.json', 'comparator-sharp-and-roots.json', 'comparator-sharp-and-coordinates.json', 'comparator-full-scheme-discriminant.json'):
                   raise SystemExit('Unsupported comparator configuration')
               options = {
                   'comparator_config_path': config,
                   'authorization_relationship': 'I am a responsible author or maintainer',
               }
-              metadata_paths = {'comparator-main-and-components.json': 'submissions/main-and-components/formalization.yaml', 'comparator-formal-cover.json': 'submissions/formal-cover/formalization.yaml', 'comparator-main-complete.json': 'submissions/main-complete/formalization.yaml', 'comparator-sharp-adaptive-image.json': 'submissions/sharp-adaptive-image/formalization.yaml', 'comparator-sharp-and-roots.json': 'submissions/sharp-and-roots/formalization.yaml', 'comparator-sharp-and-coordinates.json': 'submissions/sharp-and-coordinates/formalization.yaml'}
+              metadata_paths = {'comparator-main-and-components.json': 'submissions/main-and-components/formalization.yaml', 'comparator-formal-cover.json': 'submissions/formal-cover/formalization.yaml', 'comparator-main-complete.json': 'submissions/main-complete/formalization.yaml', 'comparator-sharp-adaptive-image.json': 'submissions/sharp-adaptive-image/formalization.yaml', 'comparator-sharp-and-roots.json': 'submissions/sharp-and-roots/formalization.yaml', 'comparator-sharp-and-coordinates.json': 'submissions/sharp-and-coordinates/formalization.yaml', 'comparator-full-scheme-discriminant.json': 'submissions/full-scheme-discriminant/formalization.yaml'}
               if config in metadata_paths:
                   options['formalization_metadata_path'] = metadata_paths[config]
               print('options=' + json.dumps(options), file=output)

@@ -1284,3 +1284,11 @@ roots = ["SharpAndCoordinatesChallenge"]
 [[lean_lib]]
 name = "SharpAndCoordinatesSolution"
 roots = ["SharpAndCoordinatesSolution"]
+
+[[lean_lib]]
+name = "FullSchemeDiscriminantChallenge"
+roots = ["FullSchemeDiscriminantChallenge"]
+
+[[lean_lib]]
+name = "FullSchemeDiscriminantSolution"
+roots = ["FullSchemeDiscriminantSolution"]

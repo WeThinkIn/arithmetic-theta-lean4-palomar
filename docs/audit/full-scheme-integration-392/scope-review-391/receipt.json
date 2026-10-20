@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-20T19:57:49.383066+00:00",
+  "status": "pass: read-only scope review; no detected narrowing of accepted080/081 on bound source hashes",
+  "official_semantic_pass_claimed": false,
+  "new_compilations": 0,
+  "modified_project_or_385_files": false,
+  "scope": [
+    "accepted-080",
+    "accepted-081"
+  ],
+  "input_hashes_valid_at_freeze": true,
+  "challenge_sha256": "8f48731c3cfaa4368f5c88eb5b1e863968af359fce27363480fb012d3412de94",
+  "solution_sha256": "8362c5e3ffc29802c6d0d361055307d300fc5b765abc3f7d51617af09fd1d2df",
+  "comparator_sha256": "715bb01bca8471e8b8c92ea831eee28956c369cba22951c27d18942aab6ca2dd",
+  "package385_receipt_sha256": "52c7d8fcdd7303decaeddb14770acf5ccef8b2cc36835b206a7b31c92878fe23",
+  "files": {
+    "Review.md": "2b13316511fb2eaabf1bcbbcf37bfe00fb750e28d108af37d46da786ea6a96d1",
+    "inputs.json": "443a1afac6a3a41fae04b47679c935f2872bd4a5cc9a495a15c123e3d82130e9",
+    "checks.json": "451cc6d245b87c8e9003fd39f77a22553643b0387bae5a53204115f44772639d"
+  }
+}

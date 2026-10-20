@@ -1,0 +1,81 @@
+{
+  "created_utc": "2026-10-20T19:55:40.958833+00:00",
+  "copied_structure_checks": [
+    {
+      "file": "LocalWeierstrassDefinitionsR0203.lean",
+      "start_line": 77,
+      "end_line": 107,
+      "complete_fragment_present": true
+    },
+    {
+      "file": "ArbitraryDiscriminantDefinitionsR0243.lean",
+      "start_line": 26,
+      "end_line": 33,
+      "complete_fragment_present": true
+    },
+    {
+      "file": "ArbitraryDiscriminantDefinitionsR0243.lean",
+      "start_line": 62,
+      "end_line": 81,
+      "complete_fragment_present": true
+    },
+    {
+      "file": "SchemeDiscriminantDefinitionsR0244.lean",
+      "start_line": 33,
+      "end_line": 39,
+      "complete_fragment_present": true
+    }
+  ],
+  "challenge_holes": [
+    "ArithmeticThetaPalomarNormalInitial381.initialTensorExistsUnique",
+    "ArithmeticThetaPalomarDifferential365.normalizedConormalHodge",
+    "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+    "ArithmeticThetaPalomarWeierstrass373.canonicalWeierstrassHodge",
+    "ArithmeticThetaPalomarSchemePower383.canonicalSchemePower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalWPower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalAffinePower",
+    "ArithmeticThetaPalomarFullScheme385.normal_test_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_naturality"
+  ],
+  "comparator_targets": [
+    "ArithmeticThetaPalomarNormalInitial381.initialTensorExistsUnique",
+    "ArithmeticThetaPalomarDifferential365.normalizedConormalHodge",
+    "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+    "ArithmeticThetaPalomarWeierstrass373.canonicalWeierstrassHodge",
+    "ArithmeticThetaPalomarSchemePower383.canonicalSchemePower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalWPower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalAffinePower",
+    "ArithmeticThetaPalomarFullScheme385.normal_test_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_naturality"
+  ],
+  "all_holes_listed_exactly_once": true,
+  "solution_source_has_sorry_or_axiom": false,
+  "scope_original_ids": [
+    "accepted-080",
+    "accepted-081"
+  ],
+  "official_semantic_check": false,
+  "existing_compile_evidence": {
+    "Challenge": {
+      "exit_code": 0,
+      "elapsed_seconds": 9.78
+    },
+    "Solution": {
+      "exit_code": 0,
+      "elapsed_seconds": 187.9
+    },
+    "Audit": {
+      "exit_code": 0,
+      "elapsed_seconds": 2.72
+    },
+    "OriginalEndpointAudit": {
+      "exit_code": 0,
+      "elapsed_seconds": 2.62
+    }
+  },
+  "solution_audit_summary": "TOTAL385 checked=115 bad=0",
+  "root_or_official_comparator_run_by_reviewer": false,
+  "challenge_definition_axiom_checks": 23
+}

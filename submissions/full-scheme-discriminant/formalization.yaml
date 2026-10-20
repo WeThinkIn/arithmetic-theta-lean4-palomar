@@ -1,0 +1,56 @@
+version: v0.4
+project:
+  name: Canonical scheme discriminant square and arbitrary base-change naturality
+  description: 'Complete original accepted080 and081: canonical discriminant-square
+    section exists for every actual elliptic group family over every scheme over a
+    characteristic-zero field, with every affine Weierstrass test, and commutes with
+    every actual pointed Cartesian base change. Retains nonreduced rings, nonflat
+    maps, actual conormal and24th tensor powers, canonical derivative comparisons,
+    complete five-Kato normalization and existence of normal test models. Supporting
+    canonical constructions are also Comparator targets. See challenges/full-scheme-discriminant/Scope.json.
+    No full-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Complete original accepted080 and081: canonical discriminant-square section
+    exists for every actual elliptic group family over every scheme over a characteristic-zero
+    field, with every affine Weierstrass test, and commutes with every actual pointed
+    Cartesian base change. Retains nonreduced rings, nonflat maps, actual conormal
+    and24th tensor powers, canonical derivative comparisons, complete five-Kato normalization
+    and existence of normal test models. Supporting canonical constructions are also
+    Comparator targets. See challenges/full-scheme-discriminant/Scope.json. No full-paper
+    completion claimed.'
+fidelity:
+  divergences: Complete original080/081 conclusions recovered through proved equivalences
+    and equalities of canonical comparison maps. The other101 original endpoints are
+    outside this configuration; supporting targets do not add endpoint credit. No
+    normality, reducedness, flatness, chosen frame or level structure is added to
+    final statements.
