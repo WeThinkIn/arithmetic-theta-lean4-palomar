@@ -1,0 +1,7 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : @ArithmeticThetaUniversalEvaluationR0213.arbitrary_even_theta_rigidification = @ArithmeticThetaPalomarRigidification484.recover_original_094 := rfl
+#print axioms ArithmeticThetaPalomarRigidification484.recover_original_094
+#print axioms ArithmeticThetaPalomarRigidification484.thetaMap_eq_original

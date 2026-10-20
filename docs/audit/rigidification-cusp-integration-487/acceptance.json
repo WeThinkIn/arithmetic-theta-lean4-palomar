@@ -1,0 +1,35 @@
+{
+  "accepted_for_local_integration": true,
+  "basis": "Frozen complete484/485 source/type/axiom audits and486 root scope review; no official acceptance",
+  "packages": {
+    "arbitrary-rigidification": {
+      "bindings": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean": "b9f61960f30cf027da5a9d96da3993558af11177603f04849ae3ae25c7110f6a",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Solution.lean": "42dc716c70bb4ac6f2280887964e85da6e6ffff15c25bd29ebbc90032a14643b",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Scope.json": "2466c98695de1f7f768d4c4259034af9779d068033721e834e45d17f1952326a",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/SourceMap.json": "226a00400c337c3dcdd371c141cddf985faba76b78aba0492ff2b2323965fb38",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/receipt.json": "8191da01b0b88e6789d73d6f413fbecbbbe771236702107888b901bc9e911978",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/comparator.json": "0615c2b12724d2153312e30cba47ff6e17b6258b6982ea4696e590e5bca29bcb",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Targets.json": "99e40bd63829ddd25cbe872352a72494018fe163f66b97fedbdc07daeabc1ced"
+      },
+      "new_ids": [
+        "accepted-094"
+      ]
+    },
+    "component-cusp": {
+      "bindings": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean": "185168c780b13959acd99921e2b0b05e869ec0e0ff40c8ac2c8cd1940a42a904",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Solution.lean": "3e8969120511ea8d817d9a7b474d16e3aed9186ed33e082719b60df4f45950b4",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Scope.json": "0e19702d3f9eb60054a111b0c0dc84321eb2620db72e59927c2144bb8af89d72",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/SourceMap.json": "d0dac14e7d97d920845dfb2e3ab70fd27654e0feac21885c18e33eb3d8f1521a",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/receipt.json": "09101b7298b4cacb07538e563b3718a1edfe3b581b61d32d9f6c3a398958280e",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/comparator.json": "17c6ca87ed4c1c0219e57df77802e8db7a7e1452b6979363c0469eaa8b21e612",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Targets.json": "4b88a864263bd19c66babc9eaf443f5125c3726f41ec837d90c496dc3d82127c"
+      },
+      "new_ids": [
+        "accepted-029"
+      ]
+    }
+  },
+  "review_sha256": "574e37f40d42f3a4c91daab8efff742bfefa5d72bb9804fdae6c82d9aa0eaad8"
+}

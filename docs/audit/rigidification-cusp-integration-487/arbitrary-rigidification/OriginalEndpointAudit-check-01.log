@@ -1,0 +1,6 @@
+'ArithmeticThetaPalomarRigidification484.recover_original_094' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarRigidification484.thetaMap_eq_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

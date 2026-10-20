@@ -1,0 +1,21 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-094"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-094"
+  ],
+  "universe": "Original arbitrary universe u; every commutative rational algebra, including nonreduced and empty affine bases",
+  "target_count": 16,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Actual projective Weierstrass curve and its scheme-valued group law",
+    "Full level-four marking with exact torsion and avoidance predicates",
+    "Actual marked even point and its kernel ideal",
+    "Ideal invertibility by affine non-zero-divisor generators",
+    "Actual internal-Hom dual line, canonical curry section and exact zeroSchemeIdeal",
+    "Unique normalized identity rigidification"
+  ]
+}

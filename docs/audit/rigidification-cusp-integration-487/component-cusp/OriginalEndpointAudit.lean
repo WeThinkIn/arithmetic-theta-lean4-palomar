@@ -1,0 +1,7 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : @ArithmeticThetaComponentDegreeR0184.geometric_component_cusp_bound = @ArithmeticThetaPalomarComponent485.recover_original_029 := rfl
+#print axioms ArithmeticThetaPalomarComponent485.recover_original_029
+#print axioms ArithmeticThetaPalomarComponent485.componentOpen_eq_original

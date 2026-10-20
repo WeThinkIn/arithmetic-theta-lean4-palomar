@@ -1,0 +1,9 @@
+# Complete geometric component cusp bound
+
+Full original029 for every algebraically closed characteristic-zero field k : Type, every even L >= 3, every original compatible LevelData and its original compactification, and every point x on that compactification. The conclusion retains all four clauses: actual cusps are finite and nonempty, embed into signed primitive pairs, and satisfy the exact inequality 2*L*card(cusps) <= card(SL2(ZMod L)).
+
+The Challenge spells out the actual projective Weierstrass model, scheme-valued group laws, full marking and represented level scheme, Legendre atlas and its simultaneous-sign descent. The sign quotient retains finiteness, etaleness, degree two, actual orbit relation and categorical universal property. The compatible locus fixes both ordered two-marking sections and retains its represented equalizer and degree. Compactification retains the actual base map, dense open inclusion, properness, relative smooth dimension one, and a closed embedding over the base into projective space.
+
+The component is literally irreducibleComponent x, with its openness proved as a support target, and is proved equal to the original open component. Cusps are the actual points of that component lying outside the given open base. No abstract finite-set replacement or change of numerical constants is used. The theorem has the same original given LevelData/Compactification premises; it does not itself claim their existence or a compact Hodge extension.
+
+Challenge imports Mathlib only and has467lines, below hard limits;16 support/main proposition targets cover every literal hole once. Original029 is recovered by compiled theorem equality. Target universes/types/standard axioms and retained semantic definition bodies are audited. Local compilation and root integration are distinct from official full mechanical/semantic acceptance; no whole-paper completion is claimed.

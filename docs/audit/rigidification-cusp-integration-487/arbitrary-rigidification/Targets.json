@@ -1,0 +1,101 @@
+{
+  "targets": [
+    {
+      "end": 459,
+      "name": "WeierstrassProjModel.span_polynomial_isHomogeneousCR",
+      "start": 459,
+      "hole_line": 459
+    },
+    {
+      "end": 408,
+      "name": "HomogeneousIdealQuotientGrading.preDecompose_of_mem",
+      "start": 408,
+      "hole_line": 408
+    },
+    {
+      "end": 492,
+      "name": "WeierstrassProjModel.kwYEvalRingHom_comp_algebraMap",
+      "start": 492,
+      "hole_line": 492
+    },
+    {
+      "end": 437,
+      "name": "HomogeneousIdealQuotientGrading.mem_quotGradingSubmodule_iff",
+      "start": 437,
+      "hole_line": 437
+    },
+    {
+      "end": 413,
+      "name": "HomogeneousIdealQuotientGrading.quotDecompose_mk",
+      "start": 413,
+      "hole_line": 413
+    },
+    {
+      "end": 485,
+      "name": "WeierstrassProjModel.kwYEvalRingHom_mk_X1",
+      "start": 485,
+      "hole_line": 485
+    },
+    {
+      "end": 452,
+      "name": "ProjWeierstrassCubicPrime.isHomogeneous_polynomial",
+      "start": 452,
+      "hole_line": 452
+    },
+    {
+      "end": 440,
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedMonoid",
+      "start": 440,
+      "hole_line": 440
+    },
+    {
+      "end": 409,
+      "name": "HomogeneousIdealQuotientGrading.coeAddMonoidHom_preDecompose",
+      "start": 409,
+      "hole_line": 409
+    },
+    {
+      "end": 399,
+      "name": "HomogeneousIdealQuotientGrading.gradedMonoidOfImages",
+      "start": 399,
+      "hole_line": 399
+    },
+    {
+      "end": 410,
+      "name": "HomogeneousIdealQuotientGrading.preDecompose_eq_zero_of_mem",
+      "start": 410,
+      "hole_line": 410
+    },
+    {
+      "end": 397,
+      "name": "HomogeneousIdealQuotientGrading.pieceHom_coe",
+      "start": 397,
+      "hole_line": 397
+    },
+    {
+      "end": 401,
+      "name": "HomogeneousIdealQuotientGrading.coeAddMonoidHom_map_pieceHom",
+      "start": 401,
+      "hole_line": 401
+    },
+    {
+      "end": 493,
+      "name": "WeierstrassProjModel.kwYChartEval_section",
+      "start": 493,
+      "hole_line": 493
+    },
+    {
+      "end": 294,
+      "name": "SheafOfModules.presheafW_isMonoidal",
+      "start": 293,
+      "hole_line": 294
+    },
+    {
+      "end": 626,
+      "name": "ArithmeticThetaPalomarRigidification484.arbitraryEvenThetaRigidification",
+      "start": 625,
+      "hole_line": 626
+    }
+  ],
+  "every_literal_hole_selected_exactly_once": true
+}

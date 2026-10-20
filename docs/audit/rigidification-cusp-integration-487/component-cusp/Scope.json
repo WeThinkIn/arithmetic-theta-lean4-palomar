@@ -1,0 +1,22 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-029"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-029"
+  ],
+  "universe": "Original k : Type, algebraically closed characteristic-zero field; every even L >= 3",
+  "target_count": 16,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Actual projective Weierstrass model, full marking and represented level scheme",
+    "Actual Legendre atlas, free simultaneous-sign action, quotient with full orbit relation and universal property",
+    "Exact compatible two-marking locus and quotient",
+    "Actual dense open inclusion into smooth proper projective compactification with closed embedding",
+    "Actual irreducible component containing every supplied x",
+    "Actual boundary complement and cusp subtype",
+    "Finite and nonempty cusps, injection into signed primitive pairs, exact 2*L*card inequality against SL2(ZMod L)"
+  ]
+}

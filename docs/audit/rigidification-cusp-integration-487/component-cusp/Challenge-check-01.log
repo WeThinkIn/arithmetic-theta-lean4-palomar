@@ -1,0 +1,24 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:25:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:27:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:29:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:36:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:37:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:38:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:41:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:65:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:68:9: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:80:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:87:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:113:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:120:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:121:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:409:2: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  GradedRing (MvPolynomial.homogeneousSubmodule (Fin N) S)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:411:2: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  GradedRing (MvPolynomial.homogeneousSubmodule (Fin N) S)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:457:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/component-cusp-package-485/Challenge.lean:464:8: warning: declaration uses `sorry`

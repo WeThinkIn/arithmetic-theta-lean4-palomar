@@ -1,0 +1,28 @@
+DECL ArithmeticThetaPalomarDual465.Compatible._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarRigidification484.IsRigidification AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarRigidification484.evenPoint._proof_1 AXIOMS [propext]
+DECL ArithmeticThetaPalomarDual465.Compatible AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.compatible_iff_original AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarRigidification484.thetaLine AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.canonicalGlobalSectionsEquiv AXIOMS [propext, Classical.choice, Quot.sound]
+DECL _private.Solution.0.ArithmeticThetaPalomarRigidification484.arbitraryEvenThetaRigidification._simp_1_2 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarRigidification484.originGenerator AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.globalSectionsEquiv._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.globalSectionsEquiv AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.globalSectionsEquiv_eq_original AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarRigidification484.thetaMap_eq_original AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarRigidification484.isRigidification_iff AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarRigidification484.thetaMap AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarRigidification484.arbitraryEvenThetaRigidification AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarRigidification484.evenPoint AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarRigidification484.recover_original_094 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.evaluationSection_eq_original AXIOMS [propext, Classical.choice, Quot.sound]
+DECL _private.Solution.0.ArithmeticThetaPalomarRigidification484.recover_original_094._simp_1_2 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarRigidification484.thetaIdeal AXIOMS [propext, Classical.choice, Quot.sound]
+AUDIT checked=21 propagated_holes=0 project_imports=3018

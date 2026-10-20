@@ -1,0 +1,26 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Solution.lean:75:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  And (ArithmeticThetaThetaEvaluationR0212.thetaIdeal R W G M).IsInvertible
+    ((ArithmeticThetaThetaEvaluationR0212.thetaLine R W G M).IsInvertible ∧
+      Scheme.Modules.zeroSchemeIdeal (ArithmeticThetaThetaEvaluationR0212.thetaMap R W G M) =
+          ArithmeticThetaThetaEvaluationR0212.thetaIdeal R W G M ∧
+        ∃! e, ArithmeticThetaThetaEvaluationR0212.IsRigidification R W G M e)
+but is expected to have type
+  And (thetaIdeal R W G M).IsInvertible
+    ((thetaLine R W G M).IsInvertible ∧
+      Scheme.Modules.zeroSchemeIdeal (ArithmeticThetaThetaEvaluationR0212.thetaMap R W G M) = thetaIdeal R W G M ∧
+        ∃! e, ArithmeticThetaThetaEvaluationR0212.IsRigidification R W G M e)
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Solution.lean:80:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  And (thetaIdeal R W G M).IsInvertible
+    ((thetaLine R W G M).IsInvertible ∧
+      Scheme.Modules.zeroSchemeIdeal (ArithmeticThetaThetaEvaluationR0212.thetaMap R W G M) = thetaIdeal R W G M ∧
+        ∃! e, ArithmeticThetaThetaEvaluationR0212.IsRigidification R W G M e)
+but is expected to have type
+  And (ArithmeticThetaThetaEvaluationR0212.thetaIdeal R W G M).IsInvertible
+    ((ArithmeticThetaThetaEvaluationR0212.thetaLine R W G M).IsInvertible ∧
+      Scheme.Modules.zeroSchemeIdeal (ArithmeticThetaThetaEvaluationR0212.thetaMap R W G M) =
+          ArithmeticThetaThetaEvaluationR0212.thetaIdeal R W G M ∧
+        ∃! e, ArithmeticThetaThetaEvaluationR0212.IsRigidification R W G M e)

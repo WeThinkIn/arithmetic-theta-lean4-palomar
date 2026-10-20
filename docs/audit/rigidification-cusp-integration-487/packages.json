@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "arbitrary-rigidification",
+    "root": "ArbitraryRigidification",
+    "source": "arbitrary-rigidification-package-484",
+    "ids": [
+      "accepted-094"
+    ],
+    "title": "Complete arbitrary even-theta rigidification",
+    "description": "Full original094 at arbitrary universe u over every commutative rational algebra and original elliptic Weierstrass curve with full level-four marking: actual kernel ideal and dual line invertibility, exact zero-scheme ideal and unique canonical identity rigidification. No reducedness, Noetherianity or normality assumption."
+  },
+  {
+    "slug": "component-cusp",
+    "root": "ComponentCusp",
+    "source": "component-cusp-package-485",
+    "ids": [
+      "accepted-029"
+    ],
+    "title": "Complete geometric component cusp bound",
+    "description": "Full original029 for every original algebraically closed characteristic-zero field, even L >= 3, actual LevelData, smooth projective compactification and point x: finite nonempty actual cusps, embedding in signed primitive pairs and exact 2*L*card bound by SL2. Full atlas, quotient, compatibility, density and projectivity fields retained."
+  }
+]

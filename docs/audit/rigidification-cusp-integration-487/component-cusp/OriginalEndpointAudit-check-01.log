@@ -1,0 +1,4 @@
+'ArithmeticThetaPalomarComponent485.recover_original_029' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarComponent485.componentOpen_eq_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1404,3 +1404,19 @@ roots = ["KeyTateNormalizationChallenge"]
 [[lean_lib]]
 name = "KeyTateNormalizationSolution"
 roots = ["KeyTateNormalizationSolution"]
+
+[[lean_lib]]
+name = "ArbitraryRigidificationChallenge"
+roots = ["ArbitraryRigidificationChallenge"]
+
+[[lean_lib]]
+name = "ArbitraryRigidificationSolution"
+roots = ["ArbitraryRigidificationSolution"]
+
+[[lean_lib]]
+name = "ComponentCuspChallenge"
+roots = ["ComponentCuspChallenge"]
+
+[[lean_lib]]
+name = "ComponentCuspSolution"
+roots = ["ComponentCuspSolution"]

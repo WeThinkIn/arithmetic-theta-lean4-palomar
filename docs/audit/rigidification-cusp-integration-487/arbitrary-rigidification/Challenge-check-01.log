@@ -1,0 +1,22 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:293:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:313:8: warning: automatically included section variable(s) unused in theorem `SheafOfModules.tensorUnit_eq`:
+  [J.HasSheafCompose (forget₂ RingCat AddCommGrpCat)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [J.HasSheafCompose (forget₂ RingCat AddCommGrpCat)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:397:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:399:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:401:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:408:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:409:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:410:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:413:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:437:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:440:9: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:452:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:459:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:485:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:492:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:493:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/arbitrary-rigidification-package-484/Challenge.lean:625:8: warning: declaration uses `sorry`

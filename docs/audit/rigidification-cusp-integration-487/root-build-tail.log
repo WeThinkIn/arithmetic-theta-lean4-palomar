@@ -1,0 +1,100 @@
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: Proof/RelativePhaseMarkingInvarianceR0211.lean:265:0: 'ArithmeticThetaRelativeFourCharacterR0211.relative_phase_marking_invariance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [11944/11952] Replayed RelativeAlphaCharacterR0211
+info: Proof/RelativeAlphaCharacterR0211.lean:217:0: 'ArithmeticThetaRelativeFourCharacterR0211.RelativeAlphaCharacter.root_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/RelativeAlphaCharacterR0211.lean:218:0: 'ArithmeticThetaRelativeFourCharacterR0211.RelativeAlphaCharacter.coefficient_character' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/RelativeAlphaCharacterR0211.lean:219:0: 'ArithmeticThetaRelativeFourCharacterR0211.RelativeAlphaCharacter.section_character' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/RelativeAlphaCharacterR0211.lean:220:0: 'ArithmeticThetaRelativeFourCharacterR0211.relative_alpha_character' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [11947/11952] Replayed EvenThetaRigidificationR0212
+info: Proof/EvenThetaRigidificationR0212.lean:111:0: 'ArithmeticThetaThetaEvaluationR0212.even_theta_rigidification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [11948/11952] Replayed ArbitraryEvenThetaRigidificationR0213
+warning: Proof/ArbitraryEvenThetaRigidificationR0213.lean:28:0: automatically included section variable(s) unused in theorem `ArithmeticThetaUniversalEvaluationR0213.ArbitraryEvenThetaRigidification.thetaIdeal_invertible`:
+  [Algebra ℚ R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℚ R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: Proof/ArbitraryEvenThetaRigidificationR0213.lean:86:0: 'ArithmeticThetaUniversalEvaluationR0213.arbitrary_even_theta_rigidification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [11949/11952] Built ComponentCuspSolution (2.7s)
+warning: ComponentCuspSolution.lean:26:61: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ComponentCuspSolution.lean:26:74: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ComponentCuspSolution.lean:30:61: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ComponentCuspSolution.lean:30:74: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [11950/11952] Built ArbitraryRigidificationSolution (3.4s)
+⚠ [11951/11952] Built ComponentCuspChallenge (9.3s)
+warning: ComponentCuspChallenge.lean:25:14: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:27:8: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:29:6: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:36:6: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:37:6: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:38:6: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:41:14: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:65:6: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:68:9: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:80:8: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:87:8: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:113:8: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:120:8: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:121:8: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:458:8: declaration uses `sorry`
+warning: ComponentCuspChallenge.lean:465:8: declaration uses `sorry`
+⚠ [11952/11952] Built ArbitraryRigidificationChallenge (37s)
+warning: ArbitraryRigidificationChallenge.lean:293:8: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:313:8: automatically included section variable(s) unused in theorem `SheafOfModules.tensorUnit_eq`:
+  [J.HasSheafCompose (forget₂ RingCat AddCommGrpCat)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [J.HasSheafCompose (forget₂ RingCat AddCommGrpCat)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ArbitraryRigidificationChallenge.lean:397:14: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:399:8: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:401:6: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:408:6: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:409:6: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:410:6: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:413:14: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:437:6: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:440:9: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:452:8: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:459:8: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:485:8: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:492:8: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:493:8: declaration uses `sorry`
+warning: ArbitraryRigidificationChallenge.lean:625:8: declaration uses `sorry`
+Build completed successfully (11952 jobs).

@@ -1,0 +1,10 @@
+DECL ArithmeticThetaPalomarComponent485.Cusps AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarComponent485.Component AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarComponent485.geometricComponentCuspBound AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarComponent485.cuspSet AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarComponent485.componentIsOpen AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarComponent485.componentOpen_eq_original AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarComponent485.inclusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarComponent485.recover_original_029 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarComponent485.componentOpen AXIOMS [propext, Classical.choice, Quot.sound]
+AUDIT checked=9 propagated_holes=0 project_imports=2884
