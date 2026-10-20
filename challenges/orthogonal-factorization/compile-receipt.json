@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-10-20T16:24:10.433831+00:00",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Challenge.lean": "18a61a20dfade241a9122f3587c08ff133767a560a9ff1f0303616552d32ec06",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Solution.lean": "f4f33bae4436356967e76acadde280f7bb3d50d7e41396a812f38bb54f3fcc35",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/comparator.json": "bdb9bda051fe98618fe1f5bedd75a0c0aa69d39502c688821575ed215e894aa7",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/RationalPreimageCosetsR0127.olean": "22a150b3fb3817559f64542c6eefe111d029f4c6a304e2029a77dee910bde31c",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/UnaryParameterIdentificationR0127.olean": "4cd04332c002d972b07d48d8810d51b03234699d5d04b9a2f24f8b60882b5950",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/IndividualCosetIntegralProductR0127.olean": "eb02cd9f767aa856c0631a91cea69bd166c1dd6207b17882d526f999b06df81b",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/SourceOrthogonalFactorizationR0127.olean": "dd35cfe4ee2137669f453673d754a1a3cba578973eb3ec3fd16e72258b748c57",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/ComputedFamilyFormalUnaryConsumerR0127.olean": "ca284512f5580ad4314f334053bab7ccd279661cbbfb386b50e7b5f0bf7d94fa",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/RationalPreimageCosetsR0127.lean": "77cedc3a8f91302f9e14636d61e994a169e6229b2e3c52486133ab24fe5dee81",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/UnaryParameterIdentificationR0127.lean": "2de4792ad51f42475a78d11d15a03d9d27f9828e8eba2dee2ee8c70901e2347b",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/IndividualCosetIntegralProductR0127.lean": "3a995d6481af9ac6b269eba22e04817793f52ba61f59adc5122a871a00791320",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SourceOrthogonalFactorizationR0127.lean": "083dbebae946b29453af14a5f97655f3992ef2beff9dce63c431cfe77a6dcb35",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/ComputedFamilyFormalUnaryConsumerR0127.lean": "7406cafe4c03eb72942996487108b0c6af8fc964ef6ba2051ebc9b7cc22677ef",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/OrthogonalConsumerDefinitionsR0127.lean": "7d0582388d04b3053b218d333c625bae330b1b11d385312db9058f477c2291ec",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/FormalSchrodingerDefinitionsR0119.lean": "9a3487da21293f3b514fa94c664576ecb0b6cc6af48500a2154fd5ee7188a6d5",
+    "/home/Palomar/workspace/arithmetic-theta/project/challenges/main-explicit/bridges/MainIndependentDefinitions198.lean": "67659fd2ae2e0063cf3286e195e2ca53d251c7846c8cd881642b61d78d24321a"
+  },
+  "threads": 12,
+  "wall_seconds_per_probe": 300,
+  "no_project_mutations": true,
+  "challenge_lines": 126,
+  "challenge_bytes": 7514,
+  "status": "source_compile_passed",
+  "solution_axioms": {
+    "ArithmeticThetaPalomarOrthogonal254.rational_preimage_cosets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.unary_parameter_identification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.individual_coset_integral_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.source_orthogonal_factorization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarOrthogonal254.computed_family_formal_unary_consumer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "checks": [
+    {
+      "module": "Challenge",
+      "session": 14273,
+      "exit_code": 0
+    },
+    {
+      "module": "Solution",
+      "session": 55848,
+      "exit_code": 0
+    }
+  ],
+  "outputs": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Solution.olean": "a392e86bde92ea06c3063025184d0875f338e65bb878033e04e52020abbb3510",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Challenge.olean": "29c8c39fdccaa0389c058bab2ff467e77bec02350e7e3f2a9b0e06a74870ad62",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Challenge-check-01.log": "07cb12dbbb441a5e660d965b0cd9f1e828fbd39ee63ee7602d15f588db8bbf85",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Solution-check-01.log": "6ff0e49aac2f33a19a2b009af5ec856f1b08d8f0dfe5cb04368156edbcd2d3b1"
+  }
+}

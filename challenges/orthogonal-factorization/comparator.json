@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarOrthogonal254.rational_preimage_cosets",
+    "ArithmeticThetaPalomarOrthogonal254.unary_parameter_identification",
+    "ArithmeticThetaPalomarOrthogonal254.individual_coset_integral_product",
+    "ArithmeticThetaPalomarOrthogonal254.source_orthogonal_factorization",
+    "ArithmeticThetaPalomarOrthogonal254.computed_family_formal_unary_consumer"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

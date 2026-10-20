@@ -24,17 +24,17 @@ The exact original statements are in SourceObligations.json; this register track
 | accepted-014 | `ArithmeticThetaRank16.no_similarity` | exact type + standard axioms passed (partial audit 242) | pending |
 | accepted-015 | `ArithmeticThetaRank16.integral_identity` | exact type + standard axioms passed (partial audit 242) | pending |
 | accepted-016 | `ArithmeticThetaRank16.two_column_kernel` | exact type + standard axioms passed (partial audit 242) | pending |
-| accepted-017 | `ArithmeticThetaEarlyAssembly.actual_earlier_certificate` | exact type + standard axioms passed (partial audit 242) | pending |
+| accepted-017 | `ArithmeticThetaEarlyAssembly.actual_earlier_certificate` | exact type + standard axioms passed (partial audit 242) | official mechanical pass: comparator-early.json at 12f83ea; semantic review pending |
 | accepted-018 | `ArithmeticThetaTateSeries.basic_fourth` | exact type + standard axioms passed (partial audit 242) | pending |
 | accepted-019 | `ArithmeticThetaAlgebraicCoordinatesR0143.algebraic_tate_coordinates` | exact type + standard axioms passed (partial audit 242) | pending |
 | accepted-020 | `ArithmeticThetaAlgebraicCoordinatesR0143.coordinate_exact_poles` | exact type + standard axioms passed (partial audit 242) | pending |
 | accepted-021 | `ArithmeticThetaCubicModelR0144.algebraic_model_cubic` | exact type + standard axioms passed (partial audit 242) | pending |
 | accepted-022 | `ArithmeticThetaCompactifiedDifferentialR0145.global_normalized_differential` | exact type + standard axioms passed (partial audit 242) | pending |
-| accepted-023 | `ArithmeticThetaOrthogonalConsumerR0127.rational_preimage_cosets` | exact type + standard axioms passed (partial audit 242) | pending |
-| accepted-024 | `ArithmeticThetaOrthogonalConsumerR0127.unary_parameter_identification` | exact type + standard axioms passed (partial audit 242) | pending |
-| accepted-025 | `ArithmeticThetaOrthogonalConsumerR0127.individual_coset_integral_product` | exact type + standard axioms passed (partial audit 242) | pending |
-| accepted-026 | `ArithmeticThetaOrthogonalConsumerR0127.source_orthogonal_factorization` | exact type + standard axioms passed (partial audit 242) | pending |
-| accepted-027 | `ArithmeticThetaOrthogonalConsumerR0127.computed_family_formal_unary_consumer` | exact type + standard axioms passed (partial audit 242) | pending |
+| accepted-023 | `ArithmeticThetaOrthogonalConsumerR0127.rational_preimage_cosets` | exact type + standard axioms passed (partial audit 242) | independent Challenge + local three-kernel Comparator passed (package254); official preflight pending |
+| accepted-024 | `ArithmeticThetaOrthogonalConsumerR0127.unary_parameter_identification` | exact type + standard axioms passed (partial audit 242) | independent Challenge + local three-kernel Comparator passed (package254); official preflight pending |
+| accepted-025 | `ArithmeticThetaOrthogonalConsumerR0127.individual_coset_integral_product` | exact type + standard axioms passed (partial audit 242) | independent Challenge + local three-kernel Comparator passed (package254); official preflight pending |
+| accepted-026 | `ArithmeticThetaOrthogonalConsumerR0127.source_orthogonal_factorization` | exact type + standard axioms passed (partial audit 242) | independent Challenge + local three-kernel Comparator passed (package254); official preflight pending |
+| accepted-027 | `ArithmeticThetaOrthogonalConsumerR0127.computed_family_formal_unary_consumer` | exact type + standard axioms passed (partial audit 242) | independent Challenge + local three-kernel Comparator passed (package254); official preflight pending |
 | accepted-028 | `ArithmeticThetaCompactUnaryR0183.compact_unary_hodge_realization` | pending | pending |
 | accepted-029 | `ArithmeticThetaComponentDegreeR0184.geometric_component_cusp_bound` | pending | pending |
 | accepted-030 | `ArithmeticThetaComponentDegreeR0184.component_discriminant_divisor` | pending | pending |

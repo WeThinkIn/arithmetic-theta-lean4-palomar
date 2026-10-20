@@ -1,0 +1,69 @@
+{
+  "status": "local_comparator_passed",
+  "completed_utc": "2026-10-20T16:26:09.726033+00:00",
+  "compile_receipt": "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/compile-receipt.json",
+  "compile_receipt_sha256": "a328676653404c65eccc315d346dc700b5e1f057cdacff0683c1038ba09c4646",
+  "export_session": 67733,
+  "comparator_session": 97941,
+  "comparator": {
+    "command": [
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake",
+      "comparator",
+      "--config=/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/comparator-external.json",
+      "--challenge-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Challenge.ndjson",
+      "--solution-from-export=/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Solution.ndjson"
+    ],
+    "cwd": "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/project",
+    "exit_code": 0,
+    "elapsed_seconds": 48.27,
+    "normal_sandbox": true,
+    "external_kernels": {
+      "nanoda": "bundled",
+      "con-ron": "bundled --jobs=2"
+    },
+    "budget_seconds": 600
+  },
+  "bindings_unchanged_after_comparator": true,
+  "tool_digests": {
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanexport": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/early-comparator-211/bubblewrap-0.12.0/build/bwrap": "dd7c08cfc4cd60028638f03c7995a4a2f26cd47f1e3723ad66a45379d42ccd03"
+  },
+  "scope": [
+    "accepted-023",
+    "accepted-024",
+    "accepted-025",
+    "accepted-026",
+    "accepted-027"
+  ],
+  "pending": [
+    "binary-orthogonal-example"
+  ],
+  "official_preflight": false,
+  "official_submission": false,
+  "limitation": "Local hash-bound source/object/exports and normal-sandbox independent kernels; not official isolated source-provenance audit.",
+  "source_and_artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/comparator.json": "bdb9bda051fe98618fe1f5bedd75a0c0aa69d39502c688821575ed215e894aa7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/compile-receipt.json": "a328676653404c65eccc315d346dc700b5e1f057cdacff0683c1038ba09c4646",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Scope.json": "0a4fafb81f42ae83a2da4d7c7332211f6ec16199b0d78327741f472d803edbcd",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/README.md": "faf319c929cb2bdae911089b46ff344407e2aefe719094ad200e180337eb694e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Challenge-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/export-targets.json": "c439f63f01f611ff25ab01fc643c1fd6e4793490a4a72a5769f7d85c6341a2d6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/comparator-external.json": "ccb67efd4313780018933aa34ce2d117b78082e177ec33941625dc24292617c3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/export.py": "392872921cd57126da7e0b7f8e5cf714de200ddb7fd1e80cb9a0bd99add4ba30",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Solution-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/comparator-modern-receipt.json": "61b7789e177147c0ab5237311d848bca6493247059dad80f21e8105eccfdcfaa",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Challenge-check-01.log": "07cb12dbbb441a5e660d965b0cd9f1e828fbd39ee63ee7602d15f588db8bbf85",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/comparator-modern.log": "cfcaa7992170d2c8e503ce6599027d39d0a3c165e181f724cda620173822e04a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/export-receipts.json": "b4cde34a986a16a9dc003dbd7ee7313157f356bf05874bbd68e751dd2a52b033",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Solution.lean": "f4f33bae4436356967e76acadde280f7bb3d50d7e41396a812f38bb54f3fcc35",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Challenge.lean": "18a61a20dfade241a9122f3587c08ff133767a560a9ff1f0303616552d32ec06",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/Solution-check-01.log": "6ff0e49aac2f33a19a2b009af5ec856f1b08d8f0dfe5cb04368156edbcd2d3b1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/compare.py": "cd5de0560a7d758feac4b57cebf4357fc772428e9ef45b1ea886895809455d4d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/orthogonal-package-254/checkpoint.json": "c7a664bb776b8b9d746fad9ec29e87204f05c87a3962c541e966c89a76ce52ec"
+  }
+}

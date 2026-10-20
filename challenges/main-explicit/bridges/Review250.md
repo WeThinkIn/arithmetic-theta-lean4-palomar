@@ -1,0 +1,44 @@
+# Main Challenge bridge review, attempt 250
+
+The inspected Challenge agrees with the original conservative main kernel endpoint on the displayed cutoff, exponent, shell normalization and indexing data. No mathematical mismatch was found in these particular interfaces. This is an interface review plus eight checked arithmetic lemmas, not a proof of the complete Solution or of the geometric dependency chain.
+
+All project files were read only. New files and objects are isolated in this evidence directory. The main build may proceed independently.
+
+## Exact comparison and cautions
+
+- `challenges/main-explicit/Challenge.lean:18,23,127`: the quadratic norm is `(1/2 : Q) • A.toQuadraticForm'` and shells count all integer vectors. `ReadyBridges198` proves definitional theta equality and a substantive bridge from shell counts to executable enumerated matrix coefficients using `ComputedCoefficientMatrix.lean:10`. It is not legitimate to replace the latter with `rfl`.
+- `Challenge.lean:117,119,122`, `Proof/CompactUnaryDefinitionsR0183.lean:20` and `Proof/ConservativeKernelDefinitionsR0189.lean:29`: all use L=24*N^2, K=(1+12*N)^2-1 and cutoff=n*K^s*card(SL2(Z/LZ))/48. The power applies to the entire K, and s is `U.count`. There is no extra L factor in this conservative bound. The sharper bound containing `/48L` is a different endpoint and must not be substituted here.
+- `Challenge.lean:114` matches the actual product `Proof/GlobalizationDefinitions.lean:71`; group order is a theorem, not that definition. The original private rational cutoff proof is `Proof/ConservativeMatrixKernelR0189.lean:21`. Attempt 250 proves the same equality directly in the independent namespace, consuming the actual compiled `finite_full_level_count` at `Proof/FiniteFullLevelCount.lean:246`. Integer division is exact because group order=2*L*(signed primitive count), L=24*N^2, hence the numerator is divisible by 48. This part needs N>0, not the existence of a geometric family.
+- `Challenge.lean:103` and `Proof/LatticeGlobalSectionsDefinitionsR0188.lean:44` have identical representatives, centered residues, injective pair enumeration, occurrence and surjectivity requirements. The existing prefix copy was rechecked byte for byte against the current real module's arithmetic declaration slice. The two Indexing structures still require fieldwise conversion, not type equality.
+- `Proof/OrthogonalAlgorithm.lean:38` takes the lcm of an image finset whereas Challenge commonN takes the indexed lcm. These are mathematically equal but not merely the same displayed definition. New `commonN_computed` proves equality with `Finset.lcm_eq_lcm_image`; level and normExponent bridges follow. `ComputedBoundParameters` provides commonN positivity for valid Gram inputs, including empty-index cases.
+- `distinctNormCount` in `Proof/OrthogonalAlgorithm.lean:50` counts distinct m values. It is not s: `U.count` counts distinct occurring (m,nu) pairs. Attempt 250 does not identify these counts. Replacing s with distinctNormCount would alter the claim and is not a permissible bridge shortcut.
+- Geometric normalization uses `weight N = K/2` and `dExponent N = K/48` (`CompactUnaryDefinitionsR0183.lean:22`). Thus a unary K-th power lives in Hodge weight K/2. This agrees with the paper's half-weight theta convention; saying it lives in omega^K would be a different normalization. The main Challenge only specifies the arithmetic kernel and does not independently certify this sheaf identity. For arbitrary odd N, K need not be divisible by 48; that division must only be used with the geometric validity hypotheses. Positive rank with a nonempty valid even Gram family supplies an even positive common modulus. Rank zero is separately handled by B=0 in `Challenge.lean:142` and `ConservativeMatrixKernelR0189.lean:92`, so no geometric K/48 shortcut is needed there.
+- The full theta variable is original q. `LatticeGlobalSectionsDefinitionsR0188.lean:56` explicitly substitutes q=t^(24*N^2), and the original geometric cutoff proof is responsible for transporting the resulting order bound. No bridge should silently identify these two variables or multiply/divide the final cutoff by L.
+
+## Checks completed in this attempt
+
+`ArithmeticBridges250.lean` imports the exact independent definition prefix, existing checked arithmetic bridges, `ComputedBoundParameters`, and `FiniteFullLevelCount`. It has eight lemmas:
+
+1. `commonN_computed`: independent commonN equals the computed lcm.
+2. `level_computed`: independent L equals the computed level.
+3. `exponent_computed`: independent K equals computed normExponent.
+4. `commonN_pos`: positivity follows from actual valid Gram inputs.
+5. `cutoff_rational`: exact rational cutoff equality for any actual Indexing witness and positive commonN.
+6. `prefix_map_eq`: true shell matrix agrees with the coefficient prefix linear map.
+7. `matrix_zero_iff_coefficients`: zero matrix image iff all coefficients a<=B vanish, including row 0 and row B.
+8. `coefficients_iff_of_kernel`: transports an already proved kernel equality into the coefficient equivalence. Its kernel-equality argument is explicit; it is a bridge lemma, not a substitute for proving the global kernel theorem.
+
+All three isolated modules (`MainIndependentDefinitions198`, `ReadyBridges198`, `ArithmeticBridges250`) compiled with exit 0 in approximately 2.42s, 2.67s and 2.47s respectively, 12 threads, 300s cap each. All eight new axiom closures contain only propext, Classical.choice and Quot.sound. Existing ReadyBridges198 was also rechecked against actual built arithmetic imports. No original-prefix indexing clone or geometric module is imported by the new bridge. Full bindings, commands and logs are in `receipt.json` and `progress-01.jsonl`.
+
+## Exact remaining work for a full Solution
+
+1. Finish the real dependency build through `LatticeGlobalSectionsDefinitionsR0188`, `ConservativeKernelDefinitionsR0189` and `ConservativeMatrixKernelR0189`. At inspection, the first two objects were absent. Arithmetic bridge success does not discharge this build or its axiom audit.
+2. Replace `OriginalArithmeticPrefix198` import in a new integration copy of `IndexingBridges198` with the actual `LatticeGlobalSectionsDefinitionsR0188`, then compile against the real object. Never jointly import the original-prefix clone and the real module. Preserve `fromOriginal_count`, Indexed iff and both roundtrips.
+3. Check `level N = ArithmeticThetaCompactUnaryR0183.level N` and `exponent N = ArithmeticThetaCompactUnaryR0183.exponent N` by `rfl` against the real module. The equality to the already compiled algorithm namespace was checked here, but does not itself validate that geometric import.
+4. Prove `cutoff A (fromOriginal A U) = ArithmeticThetaConservativeKernelR0189.cutoff A U`. The current definitions predict `rfl` after elaboration: the Indexing conversion preserves count and commonN is definitionally equal. This must be compiled, not asserted from textual inspection.
+5. Consume actual `conservative_matrix_kernel n h hh A hA` (`Proof/ConservativeMatrixKernelR0189.lean:88`). It internally constructs the geometric family at lines103-104 and obtains the geometric vanishing theorem at lines109-110. Do not replace this dependency by a geometric existence hypothesis or an assumed kernel equality in the final target.
+6. Preserve the same returned B. For n=0, transport B=0. For n>0, destruct the original U/Indexed/FormalIdentity/cutoff/formula tuple, convert U fieldwise, transport Indexed and cutoff equality. FormalIdentity is extra evidence unused by this narrower Challenge; its omission is already explicit in SemanticMapping and does not certify the separate factorization package. The rational formula can be transported or obtained from the newly checked independent cutoff_rational plus commonN_pos.
+7. Transport the entire `forall B' >= B` kernel conclusion with `thetaMap_eq` and `coefficientMatrix_complex_eq`. Obtain the Challenge's coefficient iff for each B' by the new `coefficients_iff_of_kernel`, using that actual transported kernel result. No new analytic theorem is needed for this step.
+8. Transport the original rank-zero formula through thetaMap_eq and prepend actual shell_finite for each i,a. Assemble the exact independent target, print its axiom closure, run the private full integration and the local comparator. Official public preflight/submission remains the parent's separate workflow.
+
+The checked arithmetic bridges remove the exact-cutoff and prefix-coefficient equivalence from the speculative part of the plan. The outstanding mathematical assurance is concentrated in compiling and checking the real geometric-to-kernel dependency chain and then doing its exact type transport; it is not a missing arithmetic formula or a license to assume geometry.

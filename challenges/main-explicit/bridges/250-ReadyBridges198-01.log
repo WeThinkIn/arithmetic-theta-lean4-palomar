@@ -1,0 +1,6 @@
+'ArithmeticThetaPalomarMain172.Bridges198.thetaMap_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarMain172.Bridges198.Representatives_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarMain172.Bridges198.shell_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarMain172.Bridges198.coefficientMatrix_complex_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

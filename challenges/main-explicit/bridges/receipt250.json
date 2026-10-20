@@ -1,0 +1,119 @@
+{
+  "created_utc": "2026-10-20T16:20:33.682157+00:00",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/OrthogonalConsumerDefinitionsR0127.olean": "72c75d82855c93ce7e1734c208cb18f0e485a2061eb657bd7cf63cd8b5f3210c",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/ComputedCoefficientMatrix.olean": "d0ea5b85e52ab7c8f3e62500028d0309de0164d2573ac57b74607f777d0d0e8a",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/LatticeShellFinite.olean": "7d01e010939308cfb5b363e532ecb641bf590ad1e8987d0e9774842e84fc026a",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/GlobalizationDefinitions.olean": "2a54413b4fafbc359e5197ef07013db39f43294ff25a08c3f2dbe2845cb75cf3",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/ComputedBoundParameters.olean": "b5756cb938a60654575d1f15dac613517a3c9895dc8e1cf500310f5f53d16345",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/FiniteFullLevelCount.olean": "aea6f2585141e571610be53eb94ef0340f19049f2bae9063b4f7dffd087b494a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/ArithmeticBridges250.lean": "e48080c1eb8724cbd891496ce99da9b582ea26f6d3b0528aa1cd226c488055aa",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/ReadyBridges198.lean": "479da16b24b2b3a594bf5a2e511e97e311aaa00e2738fd0b6ccce3cc775ac5ff",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/MainIndependentDefinitions198.lean": "67659fd2ae2e0063cf3286e195e2ca53d251c7846c8cd881642b61d78d24321a",
+    "/home/Palomar/workspace/arithmetic-theta/project/challenges/main-explicit/Challenge.lean": "4f898bd8a5c1447669faa65db49e847399fe93a0f9829e889b258895b35983a3"
+  },
+  "threads": 12,
+  "per_module_wall_seconds": 300,
+  "no_project_mutations": true,
+  "status": "passed",
+  "completed_utc": "2026-10-20T16:22:04.155837+00:00",
+  "session": 94923,
+  "exit_code": 0,
+  "progress": [
+    {
+      "module": "MainIndependentDefinitions198",
+      "command": [
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/MainIndependentDefinitions198.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/MainIndependentDefinitions198.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.41704844776541
+    },
+    {
+      "module": "ReadyBridges198",
+      "command": [
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/ReadyBridges198.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/ReadyBridges198.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.6674264147877693
+    },
+    {
+      "module": "ArithmeticBridges250",
+      "command": [
+        "lean",
+        "--root=/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/ArithmeticBridges250.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/ArithmeticBridges250.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.4671401288360357
+    }
+  ],
+  "axioms": {
+    "ArithmeticThetaPalomarMain172.Bridges250.commonN_computed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.level_computed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.exponent_computed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.commonN_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.cutoff_rational": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.prefix_map_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.matrix_zero_iff_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaPalomarMain172.Bridges250.coefficients_iff_of_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "bindings_unchanged": true,
+  "independent_definitions_exact_challenge_prefix": true,
+  "indexing_prefix_exact_real_module_slice": true,
+  "full_solution_proved": false,
+  "final_geometric_dependencies_assumed": false,
+  "artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/ArithmeticBridges250-01.log": "251517e6dc1af30ad64744336e99f0eea3ec8344a4b52cdae904e8e0f6909090",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/run-01.py": "aed427919c64f608a04c153c3b0c3051cf99ddb32ffd9b33fdc47a29ac60f2d6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/ArithmeticBridges250.olean": "81179ba5e33a6cd9ff384db66b1dca3eddccd29cbdbaba6ed077f2578487334c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/MainIndependentDefinitions198.olean": "627e8f3727f346b57be27b4a9d5abfbea13ed9b75c0948e5cfc603e19fa0b026",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/ReadyBridges198.olean": "8780b1f4fa01cf85fcbef3ca37bab48b41d5bc4d087bad429ad1d690c5dc68e6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/MainIndependentDefinitions198-01.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/main-bridge-review-250/ReadyBridges198-01.log": "c09834d7ccc7d5a9e9d4c67e101e6f757fc531315dcc9bdbe37a80924c971482"
+  },
+  "review_sha256": "065499718abe95d6e013b6be1f8721baa68ed794a45ce46ce0aa05e06f947aad"
+}

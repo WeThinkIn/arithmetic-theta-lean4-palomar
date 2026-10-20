@@ -26,8 +26,9 @@ from independent Challenge coverage.
 Partial audit242 has checked50/103 original exact endpoint types and standard
 axiom closures. The accepted-017 early-certificate subpackage separately passed
 local Comparator with con-ron, NanoDa and Lean default kernel using source-bound
-exports and a normal sandbox. Its official source-provenance
-preflight is running; no official pass has been reported. See `docs/MigrationStatus.md` and `docs/PalomarPreflight.md`.
+exports and a normal sandbox. Its official full mechanical
+preflight also passed for commit `12f83ea` and `comparator-early.json`, including
+source provenance and all three kernels. This result covers accepted-017 only. See `docs/MigrationStatus.md` and `docs/PalomarPreflight.md`.
 
 ## Verification interface
 

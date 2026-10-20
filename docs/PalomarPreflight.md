@@ -14,7 +14,10 @@ full-paper coverage requires the remaining migration and independent interfaces.
 | Run | Source commit | Result |
 | --- | --- | --- |
 | [39450500400](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39450500400) | `8a0354835326074f74e8a0efc6ac116a8bf29cde` | Failed before Lean execution. The request identifier did not satisfy the official parser's exact twelve-character lowercase alphanumeric requirement. The report finalizer replaced this preparation error with a generic reporting diagnostic. |
-| [39451125672](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39451125672) | `fb7ebe8a1cb6f7cd8e3728aaa3d184d004723ba9` | In progress at this checkpoint. Request generation and immutable-source preparation passed. No mechanical pass claimed. |
+| [39451125672](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39451125672) | `fb7ebe8a1cb6f7cd8e3728aaa3d184d004723ba9` | Cancelled after its immutable source was superseded by verified compatibility fixes. No mechanical pass. |
+| [39455278417](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39455278417) | `12f83ea0c4570555a88349850507ff1d06f2c6dd` | **Official mechanical pass**, configuration `comparator-early.json`, accepted-017 only. Report status `pass`, stage `complete`, checked 2026-10-20T16:21:32Z. |
+
+The passing early-certificate report checked3929 committed Lean source files, accepted the Challenge's allowlisted Mathlib provenance with no untrusted source, built the Solution from source, and accepted it in con-ron, NanoDa and Lean default kernel. The report and download receipt are preserved under `docs/audit/official-early-preflight-256/`. This is one scoped mechanical result; no formal intake, semantic review, complete-paper pass or registration is claimed.
 
 The request-format repair uses a separate job to generate a twelve-character
 hexadecimal identifier. The original rejected input and corrected input were
