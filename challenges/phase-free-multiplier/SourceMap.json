@@ -1,0 +1,24 @@
+{
+  "base": "Frozen437 interface plus exact source definitions for even point, all scheme marked tests, frames and relative test comparisons",
+  "semantic_compatibility": "275 non-proof Challenge/Solution declarations have matching types and available bodies",
+  "namespace_maps": {},
+  "compiled_bridges": [
+    "recover_original_095",
+    "recover_original_097",
+    "recover_original_052"
+  ],
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/Challenge.uncompressed.lean.txt": "1edad481631f7a298de257e346460cf78af2ccc4b36378cf78454649113ea66b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/Solution.uncompressed.lean.txt": "a365bd1f5b3fc58b6ca041fd2c92d62f28520923481e1807ea0edcebc8b57fff",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_AlgebraicGeometry_RelativePicardFunctor.lean": "52c739b6f999ad2360f53a1f6c5ac0100c05c2357b6379740613a16e1fcb618a",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeDiscriminantDefinitionsR0171.lean": "50b66b2a3abeebaf6b381a726731cfec4328c499311b796c32a643c1c7eda48f",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeLevelDefinitionsR0204.lean": "c744f228bd4533e8dc7d8b2ce0324865be6d24dcad2a7e5c805cc612a7cea1cc",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/EvenMarkingTorsorDefinitionsR0216.lean": "5e05f920600752b640d5ac3289ac7d3b897cdd3cd81519027aeef5e2e7b68cbb",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/UniversalThetaEvaluationDefinitionsR0213.lean": "c1a8d58c9d80b8a29209d74274689aa97f6dcc529300b655caeb8ee0b0a18481",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/PhaseSwitchDefinitionsR0218.lean": "c9069737d605bb8e195748a19d79078b5c75a493d5bbb5f621b7453d528fc88e",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/PhaseFreeKeyDefinitionsR0219.lean": "802c9ef98a09a315294d7020bba250369c2a0084c09c1a25f6d9ca8a2f5b6d69",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/comparator.json": "0b877e68fbd7321f4073c9b608f4867561a3047b29dadb36b95c87bff500438f"
+  },
+  "original_type_recovery": "Whole original095/097 recovered at arbitrary universe u; equality of theorems compiled by rfl"
+}

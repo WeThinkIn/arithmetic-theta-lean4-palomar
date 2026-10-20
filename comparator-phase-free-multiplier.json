@@ -1,0 +1,20 @@
+{
+  "challenge_module": "PhaseFreeMultiplierChallenge",
+  "solution_module": "PhaseFreeMultiplierSolution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarGlobalFrame401.canonicalDifferentialMap",
+    "ArithmeticThetaPalomarGlobalFrame401.normalizedFrameExists",
+    "ArithmeticThetaPalomarGlobalFrame401.hodgeGeneratorFrame",
+    "ArithmeticThetaPalomarGlobalFrame401.normalizedFrameExistsUnique",
+    "ArithmeticThetaPalomarConormal436.canonicalConormalMap",
+    "ArithmeticThetaPalomarSchemeAlpha437.alphaExists",
+    "ArithmeticThetaPalomarSchemeAlpha437.schemeAlphaCharacter",
+    "ArithmeticThetaPalomarMultiplier450.phaseFreeMultiplier",
+    "ArithmeticThetaPalomarMultiplier450.phaseFreeMultiplierBaseChange"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

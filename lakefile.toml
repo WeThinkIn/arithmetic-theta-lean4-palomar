@@ -1356,3 +1356,11 @@ roots = ["TateAlphaChallenge"]
 [[lean_lib]]
 name = "TateAlphaSolution"
 roots = ["TateAlphaSolution"]
+
+[[lean_lib]]
+name = "PhaseFreeMultiplierChallenge"
+roots = ["PhaseFreeMultiplierChallenge"]
+
+[[lean_lib]]
+name = "PhaseFreeMultiplierSolution"
+roots = ["PhaseFreeMultiplierSolution"]

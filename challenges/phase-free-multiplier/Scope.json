@@ -1,0 +1,28 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-095",
+    "accepted-097",
+    "accepted-052"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-095",
+    "accepted-097"
+  ],
+  "universe": "Original arbitrary universe u",
+  "target_count": 9,
+  "retained": [
+    "Actual even two-torsion point on the actual scheme family",
+    "All scheme-valued MarkedTest objects with full level4 marking and pointed Cartesian multiplicative comparison",
+    "IsInvertible by actual local unit-sheaf trivializations",
+    "Frames generate on every subopen and are natural for every actual TestMap",
+    "Inverse character for every actual Miller phase and even-stabilizer marking change",
+    "Exact reversal law with original reversal matrix",
+    "Unique multiplier up to the unique frame-preserving actual sheaf isomorphism",
+    "Unique actual base-change isomorphism compatible on every relative marked test using canonical pullback composition",
+    "Inherited complete052 unchanged"
+  ],
+  "no_new_main_assumptions": true,
+  "new_endpoint_count": 2,
+  "official_verified": false,
+  "full_paper_claimed": false
+}

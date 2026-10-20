@@ -1,0 +1,19 @@
+{
+  "accepted_for_local_integration": true,
+  "new_ids": [
+    "accepted-095",
+    "accepted-097"
+  ],
+  "basis": "Complete frozen original095/097 interface, exact definition compatibility and root source/type review; no official acceptance",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-package-450/Challenge.lean": "6909300aaa1ff73133298a2c4917154147561f83d5e7478bf43e405217512fcb",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-package-450/Solution.lean": "94a3e2e259d92636dd329fd5f55e16966f4528c2c506a6bbc200f89ece87c46b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-package-450/Scope.json": "e480f3baa0babb8702243996f1187e3fe7bbb9349ff43cbd63977a5d0bfcb0be",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-package-450/SourceMap.json": "9b190d2a4fbe0057262f2a43af5ec2fe5ce919dd17d0174b07b56acd064f52ed",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-package-450/receipt.json": "90456a62b7c714882cce17e51527f34508b8cd3a54c10c84218e299cb4d03ed4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-package-450/README.md": "71d1f78d3d752f7c0038727d9e432112230319168221e051f602c6d76c3acc57",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-package-450/comparator.json": "9ba435bb67c0d109bd70a2fd066f30af2ebf5a8314cd76ebeb99f366ce60fcbb",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-scope-review-451/Review.md": "053fe7a54e5330e01c785886f9e0a1a838116234a02d4ae5350b337c2ab0785f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-multiplier-scope-review-451/receipt.json": "825fc1456e4a862c9d0d909bb32020161f78ebde252085d712ae3c57da66cedc"
+  }
+}

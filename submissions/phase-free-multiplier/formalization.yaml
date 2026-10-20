@@ -1,0 +1,55 @@
+version: v0.4
+project:
+  name: Complete phase-free multiplier and base change
+  description: 'Complete original accepted095 and097 at arbitrary universe u: actual
+    multiplier sheaf and frames on every actual marked Cartesian test, unique frame-preserving
+    comparison and full unique base-change isomorphism. Retains local invertibility,
+    every test-map naturality, inverse character for every actual Miller phase and
+    even-stabilizer change, and the exact reversal law. No global phase selected.
+    Nine support/main targets selected. Inherited052 not counted twice. See challenges/phase-free-multiplier/Scope.json;
+    no whole-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Complete original accepted095 and097 at arbitrary universe u: actual multiplier
+    sheaf and frames on every actual marked Cartesian test, unique frame-preserving
+    comparison and full unique base-change isomorphism. Retains local invertibility,
+    every test-map naturality, inverse character for every actual Miller phase and
+    even-stabilizer change, and the exact reversal law. No global phase selected.
+    Nine support/main targets selected. Inherited052 not counted twice. See challenges/phase-free-multiplier/Scope.json;
+    no whole-paper completion claimed.'
+fidelity:
+  divergences: Original095/097 full propositions and universe recovered with compiled
+    rfl theorem audits. Concrete source definitions retain all schemes, actual marked
+    Cartesian maps, frame predicates, character/reversal laws and literal canonical
+    pullback compositions. No new main assumption. Nine support/main targets selected;
+    inherited052 not counted twice. Later key, descent and fourth tensor trivialization
+    endpoints are separate.

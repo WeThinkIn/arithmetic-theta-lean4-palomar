@@ -1,0 +1,5 @@
+# Complete phase-free multiplier and base change
+
+Independent Mathlib-only Challenge retains full original095 and097 at arbitrary universe u. IsMultiplier requires an actual locally invertible sheaf, a frame on every full-marking test, naturality over every actual marked Cartesian map, inverse character for every actual Miller phase/even-stabilizer change and the exact reversal law. Multiplier existence and uniqueness up to the unique frame-preserving isomorphism are outputs. Base change has its full original universal compatibility on relative marked tests, using literal canonical pullback compositions.
+
+Nine support/main holes are selected exactly once. Solution declarations have only standard axioms. Full original095/097 statements are recovered with compiled rfl checks. All non-proof Challenge declarations have their types and available bodies compared in the Solution environment. Inherited052 is not counted twice. This does not claim the later key, alpha descent or fourth tensor trivialization endpoints. See receipt.json for measured checks. Local evidence is not official acceptance or whole-paper completion.

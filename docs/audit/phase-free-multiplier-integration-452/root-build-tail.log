@@ -1,0 +1,80 @@
+ Quot.sound]
+warning: Proof/PhaseFreeMultiplierR0219.lean:803:60: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/PhaseFreeMultiplierR0219.lean:816:0: 'ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [12179/12181] Replayed PhaseFreeMultiplierBaseChangeR0219
+info: Proof/PhaseFreeMultiplierBaseChangeR0219.lean:173:0: 'ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier_base_change' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12180/12181] Built PhaseFreeMultiplierChallenge (13s)
+warning: PhaseFreeMultiplierChallenge.lean:603:8: declaration uses `sorry`
+warning: PhaseFreeMultiplierChallenge.lean:634:8: declaration uses `sorry`
+warning: PhaseFreeMultiplierChallenge.lean:636:8: declaration uses `sorry`
+warning: PhaseFreeMultiplierChallenge.lean:638:8: declaration uses `sorry`
+warning: PhaseFreeMultiplierChallenge.lean:649:8: declaration uses `sorry`
+warning: PhaseFreeMultiplierChallenge.lean:727:8: declaration uses `sorry`
+warning: PhaseFreeMultiplierChallenge.lean:729:8: declaration uses `sorry`
+warning: PhaseFreeMultiplierChallenge.lean:839:8: declaration uses `sorry`
+warning: PhaseFreeMultiplierChallenge.lean:844:8: declaration uses `sorry`
+⚠ [12181/12181] Built PhaseFreeMultiplierSolution (27s)
+warning: PhaseFreeMultiplierSolution.lean:56:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: PhaseFreeMultiplierSolution.lean:248:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeMultiplierSolution.lean:254:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeMultiplierSolution.lean:262:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeMultiplierSolution.lean:265:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeMultiplierSolution.lean:270:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeMultiplierSolution.lean:270:574: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeMultiplierSolution.lean:273:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PhaseFreeMultiplierSolution.lean:273:574: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (12181 jobs).
