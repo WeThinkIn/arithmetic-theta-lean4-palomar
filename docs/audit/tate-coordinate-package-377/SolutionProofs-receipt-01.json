@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 2.6174897169694304,
+  "command": [
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+    "-j12",
+    "-R",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377",
+    "-o",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/SolutionProofs.olean",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/SolutionProofs.lean"
+  ],
+  "source_sha256": "b477f4b9668fd2f8f1b3d9aea21a051a1c17483293fcc16c686ce09b3db18e01"
+}

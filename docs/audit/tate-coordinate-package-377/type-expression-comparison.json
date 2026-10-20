@@ -1,0 +1,48 @@
+{
+  "method": "Lean reprStr Expr equality; normalize only generated instance binder module/hygiene IDs. For NormalizedFrame value map two auxiliary proof constants whose types and values were independently alpha-compared and whose types were checked Prop.",
+  "rows": [
+    {
+      "name": "ArithmeticThetaPalomarCoordinates377.algebraic_tate_coordinates",
+      "raw_type_equal": false,
+      "alpha_equal_type": true
+    },
+    {
+      "name": "ArithmeticThetaPalomarCoordinates377.coordinate_exact_poles",
+      "raw_type_equal": false,
+      "alpha_equal_type": true
+    },
+    {
+      "name": "ArithmeticThetaPalomarCoordinates377.algebraic_model_cubic",
+      "raw_type_equal": false,
+      "alpha_equal_type": true
+    },
+    {
+      "name": "ArithmeticThetaPalomarCoordinates377.global_normalized_differential",
+      "raw_type_equal": false,
+      "alpha_equal_type": true
+    },
+    {
+      "name": "ArithmeticThetaPalomarCoordinates377.NormalizedFrame",
+      "raw_type_equal": false,
+      "alpha_equal_type": true,
+      "value_equal_after_verified_auxiliary_proof_name_mapping": true
+    }
+  ],
+  "auxiliary_proofs": [
+    {
+      "challenge": "ArithmeticThetaInfinitesimalPolygonR0129.specA._proof_1",
+      "solution": "ArithmeticThetaPalomarCoordinates377.NormalizedFrame._proof_1",
+      "both_are_proofs": true,
+      "alpha_equal_types": true,
+      "alpha_equal_values": true
+    },
+    {
+      "challenge": "ArithmeticThetaInfinitesimalPolygonR0129.specR._proof_1",
+      "solution": "ArithmeticThetaPalomarCoordinates377.NormalizedFrame._proof_2",
+      "both_are_proofs": true,
+      "alpha_equal_types": true,
+      "alpha_equal_values": true
+    }
+  ],
+  "official_comparator_run": false
+}

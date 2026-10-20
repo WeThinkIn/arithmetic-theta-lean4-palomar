@@ -1,0 +1,26 @@
+def NormalizedFrame (k : Type u) [Field k] [CharZero k]
+    {r : ℕ} {hr : 0 < r} {T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr}
+    (h3 : 3 ≤ r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+    (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+    (s : ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k ⟶ M.X)
+    (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+      (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+    (d : ℕ) (e : ArithmeticThetaGenericEvaluationR0140.IdentityFrame k M s d) : Prop :=
+  ∀ (φ : ArithmeticThetaIdentitySectionsR0138.Dual k M s d) (n : ℕ),
+    let i := ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr
+    let f := (T.atlas n).chart i ≫ M.inclusion n
+    let P := (Scheme.Modules.pullback f).obj
+      (ArithmeticThetaIdentitySectionsR0138.powerModule k M s d)
+    let j := (Scheme.Modules.pullback f).map
+      (ArithmeticThetaPolygonCartierR0133.GlobalCartierIdealLineR0133.idealInclusion (s.ker^d)) ≫
+        ArithmeticThetaPolygonCartierR0133.unitPullback f
+    let q := (Scheme.Modules.pullback f).map φ ≫ ArithmeticThetaPolygonCartierR0133.unitPullback f
+    ∃ z : Γ(P, ⊤),
+      j.app ⊤ z = (Scheme.ΓSpecIso
+        (CommRingCat.of (ArithmeticThetaInfinitesimalPolygonR0129.A k n))).inv
+          (ArithmeticThetaIdentitySectionsR0138.equation k r n i ^ d) ∧
+      ArithmeticThetaInfinitesimalPolygonR0129.trunc (PowerSeries k) PowerSeries.X n
+        (ArithmeticThetaGenericEvaluationR0140.frameValue k M s d e φ) =
+        ArithmeticThetaPolygonCohomologyR0131.markedPoint k n 1
+          ((Scheme.ΓSpecIso (CommRingCat.of
+            (ArithmeticThetaInfinitesimalPolygonR0129.A k n))).hom (q.app ⊤ z))

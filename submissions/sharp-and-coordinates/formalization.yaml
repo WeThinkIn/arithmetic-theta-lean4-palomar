@@ -1,0 +1,52 @@
+version: v0.4
+project:
+  name: Sharp theta determination and algebraic Tate coordinates
+  description: 'Five complete original endpoints: accepted019 algebraic Tate coordinates,020
+    exact poles,021 algebraic model cubic,022 global normalized differential and049
+    sharp finite theta-kernel determination. Actual schemes, identity ideals, all
+    opens/thicknesses, normalized frames and full generic-curve differential retained.
+    The principal sharp conclusion includes every larger prefix and rank zero. See
+    challenges/sharp-and-coordinates/Scope.json. No full-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Five complete original endpoints: accepted019 algebraic Tate coordinates,020
+    exact poles,021 algebraic model cubic,022 global normalized differential and049
+    sharp finite theta-kernel determination. Actual schemes, identity ideals, all
+    opens/thicknesses, normalized frames and full generic-curve differential retained.
+    The principal sharp conclusion includes every larger prefix and rank zero. See
+    challenges/sharp-and-coordinates/Scope.json. No full-paper completion claimed.'
+fidelity:
+  divergences: Complete original019/020/021/022/049 conclusions retained. NormalizedFrame
+    is independently specified using actual ideal generators and proved equivalent
+    in both directions; the literal original020 type is recovered. Other98 endpoints
+    are outside this configuration.049 overlaps another configuration and is counted
+    once.

@@ -1,0 +1,34 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:252:22: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:266:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaInfinitesimalPolygonR0129.parameter_pow`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:539:5: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:540:5: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:542:5: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:566:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:581:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:587:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:593:8: warning: declaration uses `sorry`

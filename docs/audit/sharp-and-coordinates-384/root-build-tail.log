@@ -1,0 +1,80 @@
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SharpAndCoordinatesSolution.lean:85:7: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: SharpAndCoordinatesSolution.lean:91:0: 'ArithmeticThetaPalomarCoordinates377.algebraic_tate_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SharpAndCoordinatesSolution.lean:97:0: 'ArithmeticThetaPalomarCoordinates377.coordinate_exact_poles' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: SharpAndCoordinatesSolution.lean:99:67: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SharpAndCoordinatesSolution.lean:99:140: Variable name `he` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _he
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SharpAndCoordinatesSolution.lean:99:212: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SharpAndCoordinatesSolution.lean:99:353: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: SharpAndCoordinatesSolution.lean:101:0: 'ArithmeticThetaPalomarCoordinates377.algebraic_model_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SharpAndCoordinatesSolution.lean:111:0: 'ArithmeticThetaPalomarCoordinates377.global_normalized_differential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SharpAndCoordinatesSolution.lean:118:0: 'ArithmeticThetaPalomarCoordinates377.normalizedFrame_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SharpAndCoordinatesSolution.lean:119:0: 'ArithmeticThetaPalomarCoordinates377.original_coordinate_exact_poles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12038/12038] Built SharpAndCoordinatesChallenge (29s)
+warning: SharpAndCoordinatesChallenge.lean:253:22: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SharpAndCoordinatesChallenge.lean:267:0: automatically included section variable(s) unused in theorem `ArithmeticThetaInfinitesimalPolygonR0129.parameter_pow`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SharpAndCoordinatesChallenge.lean:540:5: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SharpAndCoordinatesChallenge.lean:541:5: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SharpAndCoordinatesChallenge.lean:543:5: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SharpAndCoordinatesChallenge.lean:567:8: declaration uses `sorry`
+warning: SharpAndCoordinatesChallenge.lean:582:8: declaration uses `sorry`
+warning: SharpAndCoordinatesChallenge.lean:588:8: declaration uses `sorry`
+warning: SharpAndCoordinatesChallenge.lean:594:8: declaration uses `sorry`
+warning: SharpAndCoordinatesChallenge.lean:658:8: declaration uses `sorry`
+Build completed successfully (12038 jobs).

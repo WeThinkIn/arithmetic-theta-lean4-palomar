@@ -1,0 +1,47 @@
+{
+  "status": "locally compiled and audited; ready for root integration",
+  "targets": [
+    {
+      "id": "accepted019",
+      "target": "algebraic_tate_coordinates",
+      "original": "ArithmeticThetaAlgebraicCoordinatesR0143.algebraic_tate_coordinates",
+      "scope": "Full original signature and predicates."
+    },
+    {
+      "id": "accepted020",
+      "target": "coordinate_exact_poles",
+      "original": "ArithmeticThetaAlgebraicCoordinatesR0143.coordinate_exact_poles",
+      "scope": "Full original statement with iff-equivalent actual chart generator normalization; literal original statement recovered by original_coordinate_exact_poles."
+    },
+    {
+      "id": "accepted021",
+      "target": "algebraic_model_cubic",
+      "original": "ArithmeticThetaCubicModelR0144.algebraic_model_cubic",
+      "scope": "Full original signature and predicates."
+    },
+    {
+      "id": "accepted022",
+      "target": "global_normalized_differential",
+      "original": "ArithmeticThetaCompactifiedDifferentialR0145.global_normalized_differential",
+      "scope": "Full original unique global relative Kaehler differential frame."
+    }
+  ],
+  "challenge_imports": [
+    "Mathlib"
+  ],
+  "solution_imports": [
+    "AlgebraicTateCoordinatesR0143",
+    "CoordinateExactPolesR0143",
+    "AlgebraicModelCubicR0144",
+    "GlobalNormalizedDifferentialR0145"
+  ],
+  "normalization_equivalence": "ArithmeticThetaPalomarCoordinates377.normalizedFrame_iff",
+  "reverse_original020": "ArithmeticThetaPalomarCoordinates377.original_coordinate_exact_poles",
+  "no_project_assumptions_added": true,
+  "export_kernel_or_official_comparator_run": false,
+  "not_claimed": [
+    "Entire paper or all source obligations completed by this package",
+    "Independent proof without original provider imports",
+    "Full recursive definition/proof closure equality established by five Expr probes"
+  ]
+}

@@ -1276,3 +1276,11 @@ roots = ["SharpAndRootsChallenge"]
 [[lean_lib]]
 name = "SharpAndRootsSolution"
 roots = ["SharpAndRootsSolution"]
+
+[[lean_lib]]
+name = "SharpAndCoordinatesChallenge"
+roots = ["SharpAndCoordinatesChallenge"]
+
+[[lean_lib]]
+name = "SharpAndCoordinatesSolution"
+roots = ["SharpAndCoordinatesSolution"]

@@ -1,0 +1,30 @@
+theorem normalizedFrame_iff (k : Type u) [Field k] [CharZero k]
+    {r : ℕ} {hr : 0 < r} {T : Tower k r hr}
+    (h3 : 3 ≤ r) (M : Model k T) (hM : IsModel k T M)
+    (s : baseScheme k ⟶ M.X) (hs : MarkedLift k M (zeroIndex r hr) 1 s)
+    (d : ℕ) (e : IdentityFrame k M s d) :
+    ArithmeticThetaPalomarCoordinates377.NormalizedFrame k h3 M hM s hs d e ↔
+      ArithmeticThetaGenericEvaluationR0140.NormalizedFrame k h3 M hM s hs d e := by
+  constructor
+  · intro he φ n
+    obtain ⟨z, hz, hv⟩ := he φ n
+    obtain ⟨z', hz', hv'⟩ := AlgebraizedThetaSaturationR0138.algebraicFormal_realizes
+      k h3 M hM s hs d φ n (zeroIndex r hr)
+    letI := NormalizedIdentityFrameR0140.algebraicChart_mono k h3 M hM s hs d n
+    have hzz : z = z' := GlobalCartierIdealLineR0133.mono_app_injective
+      (CanonicalCartierLineReductionR0133.pulledInclusion
+        (NormalizedIdentityFrameR0140.algebraicChart k M n)
+        (GlobalCartierIdealLineR0133.idealInclusion (s.ker ^ d))) ⊤
+      (hz.trans hz'.symm)
+    dsimp only [CanonicalCartierLineReductionR0133.pulledInclusion] at hv'
+    rw [hzz, hv'] at hv
+    exact hv.trans (congrArg (ArithmeticThetaPolygonCohomologyR0131.markedPoint k n 1)
+      ((Scheme.ΓSpecIso (CommRingCat.of (A k n))).commRingCatIsoToRingEquiv.apply_symm_apply _))
+  · intro he φ n
+    obtain ⟨z, hz, hv⟩ := AlgebraizedThetaSaturationR0138.algebraicFormal_realizes
+      k h3 M hM s hs d φ n (zeroIndex r hr)
+    refine ⟨z, hz, ?_⟩
+    dsimp only [CanonicalCartierLineReductionR0133.pulledInclusion] at hv
+    rw [he φ n, hv]
+    exact congrArg (ArithmeticThetaPolygonCohomologyR0131.markedPoint k n 1)
+      ((Scheme.ΓSpecIso (CommRingCat.of (A k n))).commRingCatIsoToRingEquiv.apply_symm_apply _).symm

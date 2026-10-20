@@ -1,0 +1,191 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:20:5: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:21:5: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:23:5: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:56:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:63:4: error: Type mismatch: After simplification, term
+  hv
+ has type
+  (trunc (PowerSeries k) PowerSeries.X n) (frameValue k M s d e φ) =
+    (ArithmeticThetaPolygonCohomologyR0131.markedPoint k n 1)
+      ((ConcreteCategory.hom (Scheme.ΓSpecIso ↧(A k n)).hom)
+        ((ConcreteCategory.hom (Scheme.ΓSpecIso ↧(A k n)).inv)
+          (↑(↑(AlgebraizedThetaSaturationR0138.algebraicFormal k h3 M hM s hs d φ) n) (zeroIndex r hr))))
+but is expected to have type
+  (trunc (PowerSeries k) PowerSeries.X n) (frameValue k M s d e φ) =
+    (ArithmeticThetaPolygonCohomologyR0131.markedPoint k n 1)
+      (↑(↑(AlgebraizedThetaSaturationR0138.algebraicFormal k h3 M hM s hs d φ) n) (zeroIndex r hr))
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  inv ↦ 34
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:70:16: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (ConcreteCategory.hom
+      (Scheme.Modules.Hom.app
+        (CanonicalCartierLineReductionR0133.pulledInclusion ((T.atlas n).chart (zeroIndex r hr) ≫ M.inclusion n) φ) ⊤))
+    z
+in the target expression
+  (ArithmeticThetaPolygonCohomologyR0131.markedPoint k n 1)
+      (↑(↑(AlgebraizedThetaSaturationR0138.algebraicFormal k h3 M hM s hs d φ) n) (zeroIndex r hr)) =
+    (ArithmeticThetaPolygonCohomologyR0131.markedPoint k n 1)
+      ((ConcreteCategory.hom (Scheme.ΓSpecIso ↧(A k n)).hom)
+        ((ConcreteCategory.hom
+            (Scheme.Modules.Hom.app
+              ((Scheme.Modules.pullback ((T.atlas n).chart (zeroIndex r hr) ≫ M.inclusion n)).map φ ≫
+                unitPullback ((T.atlas n).chart (zeroIndex r hr) ≫ M.inclusion n))
+              ⊤))
+          z))
+
+case mpr
+k : Type u
+inst✝¹ : Field k
+inst✝ : CharZero k
+r : ℕ
+hr : 0 < r
+T : Tower k r hr
+h3 : 3 ≤ r
+M : Model k T
+hM : IsModel k T M
+s : baseScheme k ⟶ M.X
+hs : MarkedLift k M (zeroIndex r hr) 1 s
+d : ℕ
+e : IdentityFrame k M s d
+he : ArithmeticThetaGenericEvaluationR0140.NormalizedFrame k h3 M hM s hs d e
+φ : Dual k M s d
+n : ℕ
+z : ↑Γ((Scheme.Modules.pullback ((T.atlas n).chart (zeroIndex r hr) ≫ M.inclusion n)).obj (powerModule k M s d), ⊤)
+hz :
+  (ConcreteCategory.hom
+        (Scheme.Modules.Hom.app
+          (CanonicalCartierLineReductionR0133.pulledInclusion ((T.atlas n).chart (zeroIndex r hr) ≫ M.inclusion n)
+            (GlobalCartierIdealLineR0133.idealInclusion (Scheme.Hom.ker s ^ d)))
+          ⊤))
+      z =
+    (ConcreteCategory.hom (Scheme.ΓSpecIso ↧(A k n)).inv) (equation k r n (zeroIndex r hr) ^ d)
+hv :
+  (ConcreteCategory.hom
+        (Scheme.Modules.Hom.app
+          (CanonicalCartierLineReductionR0133.pulledInclusion ((T.atlas n).chart (zeroIndex r hr) ≫ M.inclusion n) φ)
+          ⊤))
+      z =
+    (ConcreteCategory.hom (Scheme.ΓSpecIso ↧(A k n)).inv)
+      (↑(↑(AlgebraizedThetaSaturationR0138.algebraicFormal k h3 M hM s hs d φ) n) (zeroIndex r hr))
+⊢ (ArithmeticThetaPolygonCohomologyR0131.markedPoint k n 1)
+      (↑(↑(AlgebraizedThetaSaturationR0138.algebraicFormal k h3 M hM s hs d φ) n) (zeroIndex r hr)) =
+    (ArithmeticThetaPolygonCohomologyR0131.markedPoint k n 1)
+      ((ConcreteCategory.hom (Scheme.ΓSpecIso ↧(A k n)).hom)
+        ((ConcreteCategory.hom
+            (Scheme.Modules.Hom.app
+              ((Scheme.Modules.pullback ((T.atlas n).chart (zeroIndex r hr) ≫ M.inclusion n)).map φ ≫
+                unitPullback ((T.atlas n).chart (zeroIndex r hr) ≫ M.inclusion n))
+              ⊤))
+          z))
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    v N
+  has type
+    Sections k r N hr (T.overlap N) d
+  but is expected to have type
+    { v // Compatible k r N hr (T.overlap N) d v }
+  in the application
+    ↑(v N)
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:74:67: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:77:7: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:79:7: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaPalomarCoordinates377.algebraic_tate_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarCoordinates377.coordinate_exact_poles' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:93:67: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:93:140: warning: Variable name `he` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _he
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:93:212: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:93:353: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaPalomarCoordinates377.algebraic_model_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Solution.lean:104:2: error: Type mismatch
+  ArithmeticThetaCompactifiedDifferentialR0145.global_normalized_differential
+has type
+  ∀ (k : Type ?u.57) [inst : Field k] [inst_1 : CharZero k] (r : ℕ) (hr : 0 < r),
+    3 ≤ r →
+      ∀ (T : Tower k r hr),
+        Even r →
+          ∀ (M : Model k T),
+            IsModel k T M →
+              ∀ (s : baseScheme k ⟶ M.X),
+                MarkedLift k M (zeroIndex r hr) 1 s →
+                  ∀ (X : Dual k M s 2) (Y : Dual k M s 3),
+                    RealizesCoordinate k false M s X →
+                      RealizesCoordinate k true M s Y → ∃! e, IsGlobalDifferentialFrame k M s X Y e
+but is expected to have type
+  ∃! e, IsGlobalDifferentialFrame k M s X Y e
+'ArithmeticThetaPalomarCoordinates377.global_normalized_differential' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarCoordinates377.normalizedFrame_iff' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarCoordinates377.original_coordinate_exact_poles' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

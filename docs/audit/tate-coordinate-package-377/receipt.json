@@ -1,0 +1,108 @@
+{
+  "created_utc": "2026-10-20T19:45:56.259955+00:00",
+  "status": "pass: local build, axiom/source/type audits; no official claim",
+  "source": {
+    "Challenge.lean": {
+      "lines": 602,
+      "bytes": 36759,
+      "sha256": "f49f92a68d9b6ad25da01fbfcc42d0e29d35a4fa84a5e8638f975086d0337338"
+    },
+    "Solution.lean": {
+      "lines": 117,
+      "bytes": 9984,
+      "sha256": "0b3e49dbbee4c45807e160149836586dd0e5ed9b3194856a1a9ffec786d8677b"
+    }
+  },
+  "threads_per_compile": 12,
+  "compile_timeout_seconds": 600,
+  "runs": {
+    "Challenge": {
+      "receipt": "Challenge-receipt-03.json",
+      "elapsed_seconds": 23.09219436906278,
+      "exit_code": 0
+    },
+    "Solution": {
+      "receipt": "Solution-receipt-02.json",
+      "elapsed_seconds": 3.5186993181705475,
+      "exit_code": 0
+    },
+    "ChallengeAudit": {
+      "receipt": "ChallengeAudit-receipt-01.json",
+      "elapsed_seconds": 6.321996376849711,
+      "exit_code": 0
+    },
+    "SolutionAudit": {
+      "receipt": "SolutionAudit-receipt-01.json",
+      "elapsed_seconds": 3.919102697633207,
+      "exit_code": 0
+    },
+    "ChallengeTypes": {
+      "receipt": "ChallengeTypes-receipt-02.json",
+      "elapsed_seconds": 3.3682918990962207,
+      "exit_code": 0
+    },
+    "SolutionTypes": {
+      "receipt": "SolutionTypes-receipt-02.json",
+      "elapsed_seconds": 3.4182263459078968,
+      "exit_code": 0
+    },
+    "ChallengeProofs": {
+      "receipt": "ChallengeProofs-receipt-01.json",
+      "elapsed_seconds": 2.4170512151904404,
+      "exit_code": 0
+    },
+    "SolutionProofs": {
+      "receipt": "SolutionProofs-receipt-01.json",
+      "elapsed_seconds": 2.6174897169694304,
+      "exit_code": 0
+    }
+  },
+  "source_fragment_checks": 59,
+  "challenge_audited_declarations": 215,
+  "solution_audited_declarations": 9,
+  "intentional_challenge_holes": 4,
+  "project_imports_in_challenge": [],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "type_expression_comparison": "type-expression-comparison.json",
+  "bindings": {
+    "Challenge-01.lean.txt": "1c6845ce98ef62fe703bdd40c7761a5f8c33f7495c01489442c1a05400539760",
+    "Challenge-02.lean.txt": "0ca012830a65e2b91db5dd377673a3e7cbd83ee679e1e9d216ac2583533cbc11",
+    "Challenge-receipt-01.json": "3ae2dff7038127a18c380e85f843e58bee031b785d2d09f6330024d874b64952",
+    "Challenge-receipt-02.json": "8614f80459c7d3daeeb91bbc85e5db68b7148a770f9dbcfa321dd7928b21e759",
+    "Challenge-receipt-03.json": "63c43ff37bceeeeb6316fa74fcacd895ed228358ca2ae68f2c1b897c075ae59a",
+    "Challenge.lean": "f49f92a68d9b6ad25da01fbfcc42d0e29d35a4fa84a5e8638f975086d0337338",
+    "ChallengeAudit-receipt-01.json": "ec3d7d23c9fdf04180b30fbf66736ffdc6a158dfbf521163f4b96ad493ac1181",
+    "ChallengeAudit.lean": "acf584c91133b93f994265886f05563985b3f4eaab7b51335ac34b805341ebda",
+    "ChallengeProofs-receipt-01.json": "dbbe0bd95498022a1ec5a70d3222c378d1e60816c37022c2bce195ac977bc982",
+    "ChallengeProofs.lean": "48fe35e589727679935fe31251c6dd58b154818f85d47daafaa9a2c100ad07c0",
+    "ChallengeTypes-receipt-01.json": "3395a56954f89f851aa5cfc4cb953a0278a7af46d685ba8988412e2395cc4897",
+    "ChallengeTypes-receipt-02.json": "96ef5b9b590a4dbdbd055e1ff67e4a4d1a2e32d78cf9f0bbcc5d7cdc35652d65",
+    "ChallengeTypes.lean": "af4e5903893da0c0f30a4488691054401ca58f4a7f0f80ff0360bc60ca7d89c7",
+    "README.md": "4520350cce6c637d4c86b86b110449e58e38835260e0cc3637b7efd28d581a6a",
+    "Scope.json": "82862e5b0f06884c03d0c89742230a8d81537d9892d0379caac33bd378ddaf22",
+    "Solution-01.lean.txt": "52b2332b7952e2d23d33b9f8aa94fc68070c345957acaba18d262c3550a40db0",
+    "Solution-receipt-01.json": "916649913afe363f93d72e676e44adeba56780da14904f29142525e8c3595162",
+    "Solution-receipt-02.json": "1f201689e22b2cb98091c3d8361969fe424650fc518089cb05787ccb1d10453b",
+    "Solution.lean": "0b3e49dbbee4c45807e160149836586dd0e5ed9b3194856a1a9ffec786d8677b",
+    "SolutionAudit-receipt-01.json": "b830cb1c3c6baffebcc096d31354607965b44df432cabbdf539e643f74ded684",
+    "SolutionAudit.lean": "1bdac8d62a74dc252728c7e40b34a5e44c5d424043c5a7aec7f8710654a813a0",
+    "SolutionProofs-receipt-01.json": "0f63c84219cab71d6fadbfcab92475acaa47ef9c4c45258a28e212689ba74e1e",
+    "SolutionProofs.lean": "b477f4b9668fd2f8f1b3d9aea21a051a1c17483293fcc16c686ce09b3db18e01",
+    "SolutionTypes-receipt-01.json": "83ff9bdaa46562cb2db5578e07d902c421ff750271df8ae7991fffb1fbf51557",
+    "SolutionTypes-receipt-02.json": "241f4343ff55802e8831e686c5a2fa7ad79e9ec81bfc6bd033298209c374d608",
+    "SolutionTypes.lean": "d419e823692a95fc9e0146cab7fdf4990aa825ac27313b1781827d1e52521390",
+    "SourceMap.json": "fe6fe360fdbf84b8b65bf15e78a2375267eb21b073682052b4233c9c3dd0a839",
+    "assemble.py": "1205b67fbeaa8154d1b124166429440ab001f980a48ccd9e04fa613292631cad",
+    "checkpoint.json": "d316d568947be98842a765212eda5e44e9fee93e4a1f97dbbf8793867ba309ad",
+    "compile.py": "90d1befcbb2ce2d3a05f9883770e65bf135f40886cbf33a8ef00f06788018c8d",
+    "finalize.py": "106e343aaed96bfe96784d0f2e71ba607b82057a9da58c9a81de7450b84cd369",
+    "normalized-bridge.txt": "cdf81a13a4bb53806f668b661946cab702dc6dd3900f5b8f017bfa31443b0e6d",
+    "normalized-predicate.txt": "34ef4aefeb60da12f863fa743450df4abb742a6290775eadc2f934cc0857a8b1",
+    "solution.py": "85519c64e3a77e93c89f89c5e4b0955357802707a66ab3f9e0fa60bbc0b0ff1f",
+    "type-expression-comparison.json": "099e86179842298a4d697d40434eff2fa24d2c5e1fde79bc2b337e2bd62f3b3b"
+  }
+}

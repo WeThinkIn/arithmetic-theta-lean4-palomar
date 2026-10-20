@@ -1,0 +1,333 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:68:11: error: failed to synthesize
+  DistribMulAction (Node k) (Node k)
+(deterministic) timeout at `typeclass`, maximum number of heartbeats (20000) has been reached
+
+Note: Use `set_option synthInstance.maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:134:10: error: failed to synthesize
+  DistribMulAction (Node k) (Node k)
+(deterministic) timeout at `typeclass`, maximum number of heartbeats (20000) has been reached
+
+Note: Use `set_option synthInstance.maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:148:12: error: failed to synthesize
+  DistribMulAction (Node k) (Node k)
+(deterministic) timeout at `typeclass`, maximum number of heartbeats (20000) has been reached
+
+Note: Use `set_option synthInstance.maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:150:12: error: failed to synthesize
+  DistribMulAction (Node k) (Node k)
+(deterministic) timeout at `typeclass`, maximum number of heartbeats (20000) has been reached
+
+Note: Use `set_option synthInstance.maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:162:55: error(lean.unknownIdentifier): Unknown identifier `kdef`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:162:75: error: unexpected token ':'; expected command
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:165:4: error(lean.unknownIdentifier): Unknown identifier `Open`
+
+Note: It is not possible to treat `Open` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:168:121: error(lean.unknownIdentifier): Unknown identifier `Open`
+
+Note: It is not possible to treat `Open` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:168:140: error(lean.unknownIdentifier): Unknown identifier `Open`
+
+Note: It is not possible to treat `Open` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:170:4: error: unexpected token '('; expected command
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:190:32: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaIndexedOverlapsR0058.Open`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:191:34: error(lean.unknownIdentifier): Unknown identifier `RawOpen`
+
+Note: It is not possible to treat `RawOpen` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:192:49: error(lean.unknownIdentifier): Unknown identifier `RawOpen`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:194:41: error(lean.unknownIdentifier): Unknown identifier `RawOpen`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:194:72: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  Bool
+of sort `Type` in the application
+  openParameter k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:198:52: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:199:59: error(lean.unknownIdentifier): Unknown identifier `RawOpen`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:200:51: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  Bool
+of sort `Type` in the application
+  openParameter k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:201:18: error(lean.unknownIdentifier): Unknown identifier `RawOpen`
+
+Note: It is not possible to treat `RawOpen` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:201:38: error(lean.unknownIdentifier): Unknown identifier `RawOpen`
+
+Note: It is not possible to treat `RawOpen` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:202:47: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  ArithmeticThetaIndexedOverlapsR0058.adjacent k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:203:30: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:203:46: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:205:12: error(lean.unknownIdentifier): Unknown identifier `RawOpen`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:205:43: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  Bool
+of sort `Type` in the application
+  openParameter k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:211:44: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:214:29: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  specB k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:215:61: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  restriction k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:216:27: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:216:43: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:217:10: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  specB k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:221:46: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:221:62: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:228:2: error: stuck at solving universe constraint
+  max (?u.62 + 1) (?u.63 + 1) =?= max (?u.13 + 1) (?u.14 + 1)
+while trying to unify
+  sorryAx.{(max (?u.63 + 1) (?u.62 + 1)) + 1} (Unit → Type (max ?u.63 ?u.62)) true
+    (Function.const Lean.Name ()
+      `Challenge.216.25.216.51.25.51._sorry._@.Challenge.428436210._hygCtx._hyg.27) : Type (max ?u.63 ?u.62)
+with
+  sorryAx.{(max (?u.13 + 1) (?u.14 + 1)) + 1} (Unit → Type (max ?u.13 ?u.14)) true
+    (Function.const Lean.Name ()
+      `Challenge.221.44.221.70.44.70._sorry._@.Challenge.4127305876._hygCtx._hyg.42) : Type (max ?u.13 ?u.14)
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:239:11: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:239:27: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:239:44: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:239:60: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:240:9: error(lean.unknownIdentifier): Unknown identifier `Atlas`
+
+Note: It is not possible to treat `Atlas` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:240:32: error(lean.unknownIdentifier): Unknown identifier `Atlas`
+
+Note: It is not possible to treat `Atlas` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:244:19: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:244:35: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:245:33: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  IsAdjacent k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:246:15: error(lean.unknownIdentifier): Unknown identifier `Atlas`
+
+Note: It is not possible to treat `Atlas` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:261:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaInfinitesimalPolygonR0129.parameter_pow`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:298:11: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:298:27: error: Application type mismatch: The argument
+  k
+has type
+  Type u
+of sort `Type (u + 1)` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  B k
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:298:42: error(lean.unknownIdentifier): Unknown identifier `Atlas`
+
+Note: It is not possible to treat `Atlas` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:307:42: error(lean.unknownIdentifier): Unknown identifier `Tower`
+
+Note: It is not possible to treat `Tower` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:311:38: error(lean.unknownIdentifier): Unknown identifier `Tower`
+
+Note: It is not possible to treat `Tower` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:311:57: error(lean.unknownIdentifier): Unknown identifier `Model`
+
+Note: It is not possible to treat `Model` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:320:41: error(lean.unknownIdentifier): Unknown identifier `Tower`
+
+Note: It is not possible to treat `Tower` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:320:60: error(lean.unknownIdentifier): Unknown identifier `Model`
+
+Note: It is not possible to treat `Model` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:351:42: error(lean.unknownIdentifier): Unknown identifier `Tower`
+
+Note: It is not possible to treat `Tower` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:351:61: error(lean.unknownIdentifier): Unknown identifier `Model`
+
+Note: It is not possible to treat `Model` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:354:35: error(lean.unknownIdentifier): Unknown identifier `Tower`
+
+Note: It is not possible to treat `Tower` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:354:54: error(lean.unknownIdentifier): Unknown identifier `Model`
+
+Note: It is not possible to treat `Model` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:384:35: error(lean.unknownIdentifier): Unknown identifier `Tower`
+
+Note: It is not possible to treat `Tower` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:385:41: error(lean.unknownIdentifier): Unknown identifier `Model`
+
+Note: It is not possible to treat `Model` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:394:18: error: Type mismatch
+  (ConcreteCategory.hom (Scheme.ΓSpecIso ↧(A k n)).inv) (equation k r n i ^ degree odd)
+has type
+  ↑Γ(Spec ↧(A k n), ⊤)
+but is expected to have type
+  ↑Γ(SheafOfModules.unit (Scheme.ringCatSheaf ?m.20), ⊤)
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:396:18: error: Type mismatch
+  (ConcreteCategory.hom (Scheme.ΓSpecIso ↧(A k n)).inv) (numerator k odd r n i)
+has type
+  ↑Γ(Spec ↧(A k n), ⊤)
+but is expected to have type
+  ↑Γ(SheafOfModules.unit (Scheme.ringCatSheaf ?m.20), ⊤)
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:398:16: error(lean.unknownIdentifier): Unknown identifier `Model`
+
+Note: It is not possible to treat `Model` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:405:11: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaInfinitesimalPolygonR0129.Tower`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:406:11: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaProjectiveEffectivityR0135.Model`
+/home/Palomar/workspace/arithmetic-theta/evidence/tate-coordinate-package-377/Challenge.lean:413:8: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate`

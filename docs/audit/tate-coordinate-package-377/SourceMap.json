@@ -1,0 +1,905 @@
+{
+  "fragments": [
+    {
+      "module": "TateNodeChartDefinitions",
+      "start_offset": 502,
+      "end_offset": 1246,
+      "start_line": 17,
+      "end_line": 32,
+      "source_sha256": "9e880c0a5a6cf2366483253d646f4abc2e63aca200244211686797939ffa1a5e"
+    },
+    {
+      "module": "TateNodeChartDefinitions",
+      "start_offset": 1569,
+      "end_offset": 2297,
+      "start_line": 40,
+      "end_line": 55,
+      "source_sha256": "9e880c0a5a6cf2366483253d646f4abc2e63aca200244211686797939ffa1a5e"
+    },
+    {
+      "module": "TateNodeTorusCharts",
+      "start_offset": 283,
+      "end_offset": 6093,
+      "start_line": 14,
+      "end_line": 136,
+      "source_sha256": "536de167354ed91b3c53baa85fee04f4abc440cd8277232218d25a40b11570b8"
+    },
+    {
+      "module": "IndexedFormalOverlapDefinitionsR0058",
+      "start_offset": 657,
+      "end_offset": 713,
+      "start_line": 20,
+      "end_line": 20,
+      "source_sha256": "f75b106a63ff76a6e579a538de125bb4f0372a3290a3fb5b3516f93a9d71efd0"
+    },
+    {
+      "module": "IndexedFormalOverlapDefinitionsR0058",
+      "start_offset": 788,
+      "end_offset": 825,
+      "start_line": 22,
+      "end_line": 22,
+      "source_sha256": "f75b106a63ff76a6e579a538de125bb4f0372a3290a3fb5b3516f93a9d71efd0"
+    },
+    {
+      "module": "IndexedFormalOverlapDefinitionsR0058",
+      "start_offset": 826,
+      "end_offset": 947,
+      "start_line": 23,
+      "end_line": 24,
+      "source_sha256": "f75b106a63ff76a6e579a538de125bb4f0372a3290a3fb5b3516f93a9d71efd0"
+    },
+    {
+      "module": "IndexedFormalOverlapDefinitionsR0058",
+      "start_offset": 948,
+      "end_offset": 1023,
+      "start_line": 25,
+      "end_line": 26,
+      "source_sha256": "f75b106a63ff76a6e579a538de125bb4f0372a3290a3fb5b3516f93a9d71efd0"
+    },
+    {
+      "module": "IndexedFormalOverlapDefinitionsR0058",
+      "start_offset": 2479,
+      "end_offset": 2792,
+      "start_line": 52,
+      "end_line": 56,
+      "source_sha256": "f75b106a63ff76a6e579a538de125bb4f0372a3290a3fb5b3516f93a9d71efd0"
+    },
+    {
+      "module": "IndexedFormalOverlapDefinitionsR0058",
+      "start_offset": 2793,
+      "end_offset": 2978,
+      "start_line": 57,
+      "end_line": 59,
+      "source_sha256": "f75b106a63ff76a6e579a538de125bb4f0372a3290a3fb5b3516f93a9d71efd0"
+    },
+    {
+      "module": "InfinitesimalPolygonDefinitionsR0129",
+      "start_offset": 508,
+      "end_offset": 2386,
+      "start_line": 18,
+      "end_line": 56,
+      "source_sha256": "04e47246bbee815b337f466e7184f33df6b0b3757bb20f83382e30f829a1c152"
+    },
+    {
+      "module": "InfinitesimalPolygonDefinitionsR0129",
+      "start_offset": 3884,
+      "end_offset": 6737,
+      "start_line": 81,
+      "end_line": 135,
+      "source_sha256": "04e47246bbee815b337f466e7184f33df6b0b3757bb20f83382e30f829a1c152"
+    },
+    {
+      "module": "InfinitesimalPolygonProperR0129",
+      "start_offset": 2567,
+      "end_offset": 3011,
+      "start_line": 71,
+      "end_line": 82,
+      "source_sha256": "252f00e9882d9e9177c234f2d8053a6c861b4a553dc4a9f4d44ccbf6a330f7e1"
+    },
+    {
+      "module": "InfinitesimalPolygonProperR0129",
+      "start_offset": 4843,
+      "end_offset": 6053,
+      "start_line": 123,
+      "end_line": 144,
+      "source_sha256": "252f00e9882d9e9177c234f2d8053a6c861b4a553dc4a9f4d44ccbf6a330f7e1"
+    },
+    {
+      "module": "PolygonCohomologyDefinitionsR0131",
+      "start_offset": 1434,
+      "end_offset": 1555,
+      "start_line": 42,
+      "end_line": 44,
+      "source_sha256": "31615aee39df30b71e7e37fd064710d3a6cb1fd4d8fb4240a6a88d36ff2fa868"
+    },
+    {
+      "module": "PolygonCohomologyDefinitionsR0131",
+      "start_offset": 1556,
+      "end_offset": 1746,
+      "start_line": 45,
+      "end_line": 49,
+      "source_sha256": "31615aee39df30b71e7e37fd064710d3a6cb1fd4d8fb4240a6a88d36ff2fa868"
+    },
+    {
+      "module": "PolygonCohomologyDefinitionsR0131",
+      "start_offset": 1846,
+      "end_offset": 2056,
+      "start_line": 53,
+      "end_line": 57,
+      "source_sha256": "31615aee39df30b71e7e37fd064710d3a6cb1fd4d8fb4240a6a88d36ff2fa868"
+    },
+    {
+      "module": "ProjectiveEffectivityDefinitionsR0135",
+      "start_offset": 5390,
+      "end_offset": 5542,
+      "start_line": 116,
+      "end_line": 118,
+      "source_sha256": "3d637d6505098c6f8d9de710b94360932503385ec60b3a3692f7bcafc3ba47af"
+    },
+    {
+      "module": "ProjectiveEffectivityDefinitionsR0135",
+      "start_offset": 5958,
+      "end_offset": 6122,
+      "start_line": 126,
+      "end_line": 130,
+      "source_sha256": "3d637d6505098c6f8d9de710b94360932503385ec60b3a3692f7bcafc3ba47af"
+    },
+    {
+      "module": "ProjectiveEffectivityDefinitionsR0135",
+      "start_offset": 6123,
+      "end_offset": 6379,
+      "start_line": 131,
+      "end_line": 135,
+      "source_sha256": "3d637d6505098c6f8d9de710b94360932503385ec60b3a3692f7bcafc3ba47af"
+    },
+    {
+      "module": "AlgebraizedMarkedLineDefinitionsR0136",
+      "start_offset": 688,
+      "end_offset": 757,
+      "start_line": 22,
+      "end_line": 23,
+      "source_sha256": "e8341704689b56ea9261732b30af058f51c22c44f5bf512517ea0640580a0b87"
+    },
+    {
+      "module": "AlgebraizedMarkedLineDefinitionsR0136",
+      "start_offset": 758,
+      "end_offset": 1012,
+      "start_line": 24,
+      "end_line": 28,
+      "source_sha256": "e8341704689b56ea9261732b30af058f51c22c44f5bf512517ea0640580a0b87"
+    },
+    {
+      "module": "PolygonCartierDefinitionsR0133",
+      "start_offset": 4173,
+      "end_offset": 4433,
+      "start_line": 104,
+      "end_line": 109,
+      "source_sha256": "784596d8f05f1f329efa6e29a74f9d614c4197b0ad9df2d18f15c4ea0e4a86fa"
+    },
+    {
+      "module": "GlobalCartierIdealLineR0133",
+      "start_offset": 585,
+      "end_offset": 1218,
+      "start_line": 19,
+      "end_line": 33,
+      "source_sha256": "24ca5d0968c693f6798818b2978a2ae82452da2ae6e8dbec6626ca052cb74e80"
+    },
+    {
+      "module": "IdentityThetaSectionsDefinitionsR0138",
+      "start_offset": 1085,
+      "end_offset": 1139,
+      "start_line": 29,
+      "end_line": 30,
+      "source_sha256": "6a96789401023c8fdf2f42406e66f59687c726481d8aec3a8000a1a30950d3b0"
+    },
+    {
+      "module": "IdentityThetaSectionsDefinitionsR0138",
+      "start_offset": 1140,
+      "end_offset": 1362,
+      "start_line": 31,
+      "end_line": 34,
+      "source_sha256": "6a96789401023c8fdf2f42406e66f59687c726481d8aec3a8000a1a30950d3b0"
+    },
+    {
+      "module": "IdentityThetaSectionsDefinitionsR0138",
+      "start_offset": 4761,
+      "end_offset": 4939,
+      "start_line": 102,
+      "end_line": 105,
+      "source_sha256": "6a96789401023c8fdf2f42406e66f59687c726481d8aec3a8000a1a30950d3b0"
+    },
+    {
+      "module": "IdentityThetaSectionsDefinitionsR0138",
+      "start_offset": 4940,
+      "end_offset": 5122,
+      "start_line": 106,
+      "end_line": 109,
+      "source_sha256": "6a96789401023c8fdf2f42406e66f59687c726481d8aec3a8000a1a30950d3b0"
+    },
+    {
+      "module": "AlgebraicTateCoordinatesDefinitionsR0143",
+      "start_offset": 965,
+      "end_offset": 2283,
+      "start_line": 27,
+      "end_line": 59,
+      "source_sha256": "cbd3afb88c3c560466d75514f7e274d5fe6d92adf635676d1b9cd0e88c324c38"
+    },
+    {
+      "module": "AlgebraicTateCoordinatesDefinitionsR0143",
+      "start_offset": 2749,
+      "end_offset": 3437,
+      "start_line": 69,
+      "end_line": 82,
+      "source_sha256": "cbd3afb88c3c560466d75514f7e274d5fe6d92adf635676d1b9cd0e88c324c38"
+    },
+    {
+      "module": "AlgebraicTateCoordinatesDefinitionsR0143",
+      "start_offset": 3438,
+      "end_offset": 3602,
+      "start_line": 83,
+      "end_line": 86,
+      "source_sha256": "cbd3afb88c3c560466d75514f7e274d5fe6d92adf635676d1b9cd0e88c324c38"
+    },
+    {
+      "module": "ProjectiveEffectivityDefinitionsR0135",
+      "start_offset": 6380,
+      "end_offset": 6563,
+      "start_line": 136,
+      "end_line": 139,
+      "source_sha256": "3d637d6505098c6f8d9de710b94360932503385ec60b3a3692f7bcafc3ba47af"
+    },
+    {
+      "module": "ProjectiveEffectivityDefinitionsR0135",
+      "start_offset": 6564,
+      "end_offset": 6701,
+      "start_line": 140,
+      "end_line": 142,
+      "source_sha256": "3d637d6505098c6f8d9de710b94360932503385ec60b3a3692f7bcafc3ba47af"
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_offset": 1072,
+      "end_offset": 1151,
+      "start_line": 31,
+      "end_line": 32,
+      "source_sha256": "320987ccb5afc7b93db39ba3cb7e8f491c8bd5619f2206981543ec6abfd502ff"
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_offset": 1152,
+      "end_offset": 1253,
+      "start_line": 33,
+      "end_line": 35,
+      "source_sha256": "320987ccb5afc7b93db39ba3cb7e8f491c8bd5619f2206981543ec6abfd502ff"
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_offset": 1254,
+      "end_offset": 1434,
+      "start_line": 36,
+      "end_line": 39,
+      "source_sha256": "320987ccb5afc7b93db39ba3cb7e8f491c8bd5619f2206981543ec6abfd502ff"
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_offset": 1435,
+      "end_offset": 1617,
+      "start_line": 40,
+      "end_line": 43,
+      "source_sha256": "320987ccb5afc7b93db39ba3cb7e8f491c8bd5619f2206981543ec6abfd502ff"
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_offset": 1618,
+      "end_offset": 1831,
+      "start_line": 44,
+      "end_line": 48,
+      "source_sha256": "320987ccb5afc7b93db39ba3cb7e8f491c8bd5619f2206981543ec6abfd502ff"
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_offset": 2904,
+      "end_offset": 3111,
+      "start_line": 67,
+      "end_line": 70,
+      "source_sha256": "320987ccb5afc7b93db39ba3cb7e8f491c8bd5619f2206981543ec6abfd502ff"
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_offset": 3112,
+      "end_offset": 3435,
+      "start_line": 71,
+      "end_line": 75,
+      "source_sha256": "320987ccb5afc7b93db39ba3cb7e8f491c8bd5619f2206981543ec6abfd502ff"
+    },
+    {
+      "module": "TateSeriesDefinitions",
+      "start_offset": 520,
+      "end_offset": 606,
+      "start_line": 19,
+      "end_line": 21,
+      "source_sha256": "0c507106496fbc9f5b0fba585c1082ee9dbf2b9d0ba2a8ee03a5d89fbcad823a"
+    },
+    {
+      "module": "TateSeriesDefinitions",
+      "start_offset": 664,
+      "end_offset": 729,
+      "start_line": 23,
+      "end_line": 24,
+      "source_sha256": "0c507106496fbc9f5b0fba585c1082ee9dbf2b9d0ba2a8ee03a5d89fbcad823a"
+    },
+    {
+      "module": "TateSeriesDefinitions",
+      "start_offset": 947,
+      "end_offset": 1257,
+      "start_line": 29,
+      "end_line": 37,
+      "source_sha256": "0c507106496fbc9f5b0fba585c1082ee9dbf2b9d0ba2a8ee03a5d89fbcad823a"
+    },
+    {
+      "module": "TateSeriesDefinitions",
+      "start_offset": 1640,
+      "end_offset": 1755,
+      "start_line": 46,
+      "end_line": 47,
+      "source_sha256": "0c507106496fbc9f5b0fba585c1082ee9dbf2b9d0ba2a8ee03a5d89fbcad823a"
+    },
+    {
+      "module": "CubicModelDefinitionsR0144",
+      "start_offset": 1107,
+      "end_offset": 1299,
+      "start_line": 32,
+      "end_line": 35,
+      "source_sha256": "552a2674a581ccccad61183c32d5cacf557a4429fec259d7c2be991505ae6fe6"
+    },
+    {
+      "module": "CubicModelDefinitionsR0144",
+      "start_offset": 2700,
+      "end_offset": 2943,
+      "start_line": 67,
+      "end_line": 71,
+      "source_sha256": "552a2674a581ccccad61183c32d5cacf557a4429fec259d7c2be991505ae6fe6"
+    },
+    {
+      "module": "CubicModelDefinitionsR0144",
+      "start_offset": 3098,
+      "end_offset": 3738,
+      "start_line": 74,
+      "end_line": 85,
+      "source_sha256": "552a2674a581ccccad61183c32d5cacf557a4429fec259d7c2be991505ae6fe6"
+    },
+    {
+      "module": "Definitions/Def_AlgebraicGeometry_KaehlerModule",
+      "start_offset": 589,
+      "end_offset": 909,
+      "start_line": 24,
+      "end_line": 29,
+      "source_sha256": "ea8728d6c848647e59f11079747a8c9d5f49d336b8f5054b78cc78ebe640d2ee"
+    },
+    {
+      "module": "Definitions/Def_AlgebraicGeometry_KaehlerModule",
+      "start_offset": 910,
+      "end_offset": 1027,
+      "start_line": 30,
+      "end_line": 32,
+      "source_sha256": "ea8728d6c848647e59f11079747a8c9d5f49d336b8f5054b78cc78ebe640d2ee"
+    },
+    {
+      "module": "Definitions/Def_AlgebraicGeometry_KaehlerModule",
+      "start_offset": 1028,
+      "end_offset": 1170,
+      "start_line": 33,
+      "end_line": 35,
+      "source_sha256": "ea8728d6c848647e59f11079747a8c9d5f49d336b8f5054b78cc78ebe640d2ee"
+    },
+    {
+      "module": "Definitions/Def_AlgebraicGeometry_KaehlerModule",
+      "start_offset": 1171,
+      "end_offset": 1280,
+      "start_line": 36,
+      "end_line": 38,
+      "source_sha256": "ea8728d6c848647e59f11079747a8c9d5f49d336b8f5054b78cc78ebe640d2ee"
+    },
+    {
+      "module": "Definitions/Def_AlgebraicGeometry_KaehlerModule",
+      "start_offset": 1629,
+      "end_offset": 1874,
+      "start_line": 48,
+      "end_line": 52,
+      "source_sha256": "ea8728d6c848647e59f11079747a8c9d5f49d336b8f5054b78cc78ebe640d2ee"
+    },
+    {
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "start_offset": 4241,
+      "end_offset": 4599,
+      "start_line": 98,
+      "end_line": 104,
+      "source_sha256": "7dfbf089d8f415817a414f18cf5f7f31b4c239fef9c9414259fe55f3e1c3429d"
+    },
+    {
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "start_offset": 4677,
+      "end_offset": 5012,
+      "start_line": 106,
+      "end_line": 112,
+      "source_sha256": "7dfbf089d8f415817a414f18cf5f7f31b4c239fef9c9414259fe55f3e1c3429d"
+    },
+    {
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "start_offset": 5013,
+      "end_offset": 5224,
+      "start_line": 113,
+      "end_line": 117,
+      "source_sha256": "7dfbf089d8f415817a414f18cf5f7f31b4c239fef9c9414259fe55f3e1c3429d"
+    },
+    {
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "start_offset": 5377,
+      "end_offset": 6362,
+      "start_line": 120,
+      "end_line": 137,
+      "source_sha256": "7dfbf089d8f415817a414f18cf5f7f31b4c239fef9c9414259fe55f3e1c3429d"
+    },
+    {
+      "module": "AlgebraicTateCoordinatesR0143",
+      "start_offset": 855,
+      "end_offset": 1608,
+      "start_line": 24,
+      "end_line": 34,
+      "source_sha256": "853f6d7d0aa1dd5f64f2736186b7519bb7ae3d9f422e456f3e5df418cbd33b6f"
+    },
+    {
+      "module": "CoordinateExactPolesR0143",
+      "start_offset": 3792,
+      "end_offset": 4983,
+      "start_line": 89,
+      "end_line": 90,
+      "source_sha256": "b74e246b02324ada8eec36784a60cce01aab9c64cb2ee87dc9058029bdcc213f"
+    },
+    {
+      "module": "AlgebraicModelCubicR0144",
+      "start_offset": 23147,
+      "end_offset": 23968,
+      "start_line": 469,
+      "end_line": 470,
+      "source_sha256": "6c93ecdbec6702ff66268c8f893d2960405963ca6355193f03a15deb32a20285"
+    },
+    {
+      "module": "GlobalNormalizedDifferentialR0145",
+      "start_offset": 75774,
+      "end_offset": 76333,
+      "start_line": 1500,
+      "end_line": 1507,
+      "source_sha256": "6813a5dfd806ce2537334769a56d4e6a1594d7494575f4767e7fec7ca2c29c26"
+    }
+  ],
+  "lines": 602,
+  "bytes": 36759,
+  "target": "full019020021022 with compiled equivalent concrete normalization for020",
+  "transformations": [
+    "Remove comments/blank lines",
+    "Extract complete needed source declaration blocks with original namespaces",
+    "Include full actual Atlas and Tower constructor fields",
+    "Copy torus equivalence existence proof used by chosen definition, no assumed equivalence",
+    "Only target proof replaced by sorry",
+    "020 NormalizedFrame replaced by actual chart generator specification; Solution proves iff and recovers original endpoint",
+    "Four endpoint proof bodies alone replaced by sorry",
+    "Exactly four target proof holes; only020 normalization predicate replaced with compiled iff-equivalent concrete chart predicate"
+  ],
+  "fragment_checks": [
+    {
+      "module": "TateNodeChartDefinitions",
+      "start_line": 17,
+      "end_line": 32,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "TateNodeChartDefinitions",
+      "start_line": 40,
+      "end_line": 55,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "TateNodeTorusCharts",
+      "start_line": 14,
+      "end_line": 136,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "IndexedFormalOverlapDefinitionsR0058",
+      "start_line": 20,
+      "end_line": 20,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "IndexedFormalOverlapDefinitionsR0058",
+      "start_line": 22,
+      "end_line": 22,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "IndexedFormalOverlapDefinitionsR0058",
+      "start_line": 23,
+      "end_line": 24,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "IndexedFormalOverlapDefinitionsR0058",
+      "start_line": 25,
+      "end_line": 26,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "IndexedFormalOverlapDefinitionsR0058",
+      "start_line": 52,
+      "end_line": 56,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "IndexedFormalOverlapDefinitionsR0058",
+      "start_line": 57,
+      "end_line": 59,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "InfinitesimalPolygonDefinitionsR0129",
+      "start_line": 18,
+      "end_line": 56,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "InfinitesimalPolygonDefinitionsR0129",
+      "start_line": 81,
+      "end_line": 135,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "InfinitesimalPolygonProperR0129",
+      "start_line": 71,
+      "end_line": 82,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "InfinitesimalPolygonProperR0129",
+      "start_line": 123,
+      "end_line": 144,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "PolygonCohomologyDefinitionsR0131",
+      "start_line": 42,
+      "end_line": 44,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "PolygonCohomologyDefinitionsR0131",
+      "start_line": 45,
+      "end_line": 49,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "PolygonCohomologyDefinitionsR0131",
+      "start_line": 53,
+      "end_line": 57,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "ProjectiveEffectivityDefinitionsR0135",
+      "start_line": 116,
+      "end_line": 118,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "ProjectiveEffectivityDefinitionsR0135",
+      "start_line": 126,
+      "end_line": 130,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "ProjectiveEffectivityDefinitionsR0135",
+      "start_line": 131,
+      "end_line": 135,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "AlgebraizedMarkedLineDefinitionsR0136",
+      "start_line": 22,
+      "end_line": 23,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "AlgebraizedMarkedLineDefinitionsR0136",
+      "start_line": 24,
+      "end_line": 28,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "PolygonCartierDefinitionsR0133",
+      "start_line": 104,
+      "end_line": 109,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "GlobalCartierIdealLineR0133",
+      "start_line": 19,
+      "end_line": 33,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "IdentityThetaSectionsDefinitionsR0138",
+      "start_line": 29,
+      "end_line": 30,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "IdentityThetaSectionsDefinitionsR0138",
+      "start_line": 31,
+      "end_line": 34,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "IdentityThetaSectionsDefinitionsR0138",
+      "start_line": 102,
+      "end_line": 105,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "IdentityThetaSectionsDefinitionsR0138",
+      "start_line": 106,
+      "end_line": 109,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "AlgebraicTateCoordinatesDefinitionsR0143",
+      "start_line": 27,
+      "end_line": 59,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "AlgebraicTateCoordinatesDefinitionsR0143",
+      "start_line": 69,
+      "end_line": 82,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "AlgebraicTateCoordinatesDefinitionsR0143",
+      "start_line": 83,
+      "end_line": 86,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "ProjectiveEffectivityDefinitionsR0135",
+      "start_line": 136,
+      "end_line": 139,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "ProjectiveEffectivityDefinitionsR0135",
+      "start_line": 140,
+      "end_line": 142,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_line": 31,
+      "end_line": 32,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_line": 33,
+      "end_line": 35,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_line": 36,
+      "end_line": 39,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_line": 40,
+      "end_line": 43,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_line": 44,
+      "end_line": 48,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_line": 67,
+      "end_line": 70,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "start_line": 71,
+      "end_line": 75,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "TateSeriesDefinitions",
+      "start_line": 19,
+      "end_line": 21,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "TateSeriesDefinitions",
+      "start_line": 23,
+      "end_line": 24,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "TateSeriesDefinitions",
+      "start_line": 29,
+      "end_line": 37,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "TateSeriesDefinitions",
+      "start_line": 46,
+      "end_line": 47,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "CubicModelDefinitionsR0144",
+      "start_line": 32,
+      "end_line": 35,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "CubicModelDefinitionsR0144",
+      "start_line": 67,
+      "end_line": 71,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "CubicModelDefinitionsR0144",
+      "start_line": 74,
+      "end_line": 85,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "Definitions/Def_AlgebraicGeometry_KaehlerModule",
+      "start_line": 24,
+      "end_line": 29,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "Definitions/Def_AlgebraicGeometry_KaehlerModule",
+      "start_line": 30,
+      "end_line": 32,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "Definitions/Def_AlgebraicGeometry_KaehlerModule",
+      "start_line": 33,
+      "end_line": 35,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "Definitions/Def_AlgebraicGeometry_KaehlerModule",
+      "start_line": 36,
+      "end_line": 38,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "Definitions/Def_AlgebraicGeometry_KaehlerModule",
+      "start_line": 48,
+      "end_line": 52,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "start_line": 98,
+      "end_line": 104,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "start_line": 106,
+      "end_line": 112,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "start_line": 113,
+      "end_line": 117,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "start_line": 120,
+      "end_line": 137,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "AlgebraicTateCoordinatesR0143",
+      "start_line": 24,
+      "end_line": 34,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "CoordinateExactPolesR0143",
+      "start_line": 89,
+      "end_line": 90,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": true
+    },
+    {
+      "module": "AlgebraicModelCubicR0144",
+      "start_line": 469,
+      "end_line": 470,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    },
+    {
+      "module": "GlobalNormalizedDifferentialR0145",
+      "start_line": 1500,
+      "end_line": 1507,
+      "exact_normalized_fragment_present": true,
+      "only_020_predicate_namespace_translated": false
+    }
+  ],
+  "status": "all selected source fragments preserved after whitespace/comment removal; 020 normalization replaced by explicit compiled iff equivalent"
+}

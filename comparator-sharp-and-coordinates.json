@@ -1,0 +1,16 @@
+{
+  "challenge_module": "SharpAndCoordinatesChallenge",
+  "solution_module": "SharpAndCoordinatesSolution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarCoordinates377.algebraic_tate_coordinates",
+    "ArithmeticThetaPalomarCoordinates377.coordinate_exact_poles",
+    "ArithmeticThetaPalomarCoordinates377.algebraic_model_cubic",
+    "ArithmeticThetaPalomarCoordinates377.global_normalized_differential",
+    "ArithmeticThetaPalomarSharp360.sharpFiniteDetermination"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

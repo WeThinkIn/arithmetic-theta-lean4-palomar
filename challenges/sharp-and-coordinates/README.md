@@ -1,0 +1,9 @@
+# Sharp theta determination and algebraic Tate coordinates
+
+Five complete original endpoints are specified: accepted019 algebraic Tate coordinates, accepted020 exact coordinate poles, accepted021 algebraic model cubic, accepted022 global normalized differential, and accepted049 sharp finite theta-kernel determination. The first four add new independent interfaces;049 overlaps another configuration and is counted once. Packaging does not claim a new dependency between these conclusions.
+
+The Mathlib-only Challenge has670 lines/40226bytes; the Solution has228 lines/16633bytes. Coordinates retain the actual tower, atlas, proper model, marked section, identity ideals, every open and thickness, and the entire generic curve. NormalizedFrame uses actual finite-chart ideal generators; component377 proves equivalence in both directions and recovers the complete original020 type. The cubic and differential are actual sheaf equations. The sharp conclusion retains the exact cutoff, all larger prefixes, complex kernel and rank-zero formula. No geometric existence premise replaces a required construction.
+
+SourceMap.json binds all retained lines to components377/360. Separate Challenge/Solution compilation and the38-declaration Solution axiom audit passed; only standard Lean axioms occur. These are local checks, not official Comparator or semantic acceptance. After actual project root integration, the union of prepared independent specifications is54/103, leaving49; this does not mean54 official passes. Full original scope remains13 requirements/103 endpoints.
+
+Official dispatch is deferred while the existing resource experiment39482676946 is running. Older main39461299032 exhausted memory during Solution build. Warm-cache compilation does not establish feasibility of the official cold build or independent kernel replay. No ordinary intake or registration has occurred for this configuration.
