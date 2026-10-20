@@ -1,0 +1,28 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-052"
+  ],
+  "universe": "Original arbitrary universe u retained",
+  "target_count": 7,
+  "retained": [
+    "actual arbitrary elliptic scheme family and full level4 marking",
+    "same actual global Miller phase",
+    "actual cotangent sheaf as pullback of the kernel ideal",
+    "same inclusion-normalized ideal comparison and actual pointed-square pullback",
+    "canonical conormal map uniquely fixed on all ideal sections on all opens",
+    "canonical differential map uniquely fixed on every local universal derivative",
+    "actual Z-chart equation dx=(2y+a1*x+a3)delta",
+    "full affine root data with coordinate existence and unit coefficient",
+    "every matrix preserving the original even quadratic form",
+    "constructed changed actual full marking, unchanged phase, exact original characterExponent equality for every realizing section"
+  ],
+  "support_nonvacuity": [
+    "normalized differential frames exist",
+    "canonical conormal map exists uniquely",
+    "actual global realizing alpha exists uniquely"
+  ],
+  "no_new_main_assumptions": true,
+  "new_endpoint_count": 1,
+  "official_verified": false,
+  "full_paper_claimed": false
+}

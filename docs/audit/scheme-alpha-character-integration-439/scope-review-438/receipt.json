@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-20T21:33:25.242292+00:00",
+  "review_kind": "root source/type scope review, not separate model or official review",
+  "local_scope_review_passed": true,
+  "covered_original_endpoint_ids": [
+    "accepted-052"
+  ],
+  "mapped_original_statement_exact": true,
+  "universe_u_retained": true,
+  "no_added_main_assumptions": true,
+  "all_seven_holes_targeted": true,
+  "original_maps_and_predicates_compiled": true,
+  "official_pass": false,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/Challenge.lean": "b00c2e0e59846dead1e48a2e7dd4c3de654c921b4164457abb741e89f76a1957",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/Solution.lean": "d26d1166f25bb683c95493943af7db8fefb1570401caea717a447def33005032",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/receipt.json": "b65c0b81c10b7d3ab6597b1af070309b7bb6129ff0eadeebb9103d968bd3fcf5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/Scope.json": "d2d5d6dcec0b7b3ae102783c1a7ffaacfb507d80f985d73b400657e7ff844e92",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/SourceMap.json": "3dd00920aca17a9f5b026455cf9539d12309a637801badcffd4412f2ee49bb16",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/comparator.json": "0b877e68fbd7321f4073c9b608f4867561a3047b29dadb36b95c87bff500438f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/DefinitionCompatibility-check-01.log": "fb4f2a6aaaeab0e7fef4137935774b9d60f349f486ea22ebe40dcb11ffbff7ac",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/OriginalEndpointAudit-check-01.log": "fe32ea970441f20f5d4a2beb58a2353b10eef23b53e41c68fb5908eb2f157840"
+  },
+  "review_sha256": "1db9ae3d89269f42cd65141445a601957d05744f7adece93d1db874ed57d10b7"
+}

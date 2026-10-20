@@ -1,0 +1,57 @@
+version: v0.4
+project:
+  name: Complete scheme alpha character
+  description: 'Complete original accepted052 at arbitrary universe u: the exact even-stabilizer
+    character on the actual cotangent alpha for the same global Miller phase, constructing
+    every changed actual full level4 marking and retaining its phase. Independent
+    canonical differential and conormal maps are uniquely fixed by their local derivative
+    formulas, with compiled original-map identities and original RealizesAlpha equivalences.
+    Actual global alpha existence and normalized-frame support included. Empty and
+    nonreduced bases retained. See challenges/scheme-alpha-character/Scope.json; no
+    whole-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Complete original accepted052 at arbitrary universe u: the exact even-stabilizer
+    character on the actual cotangent alpha for the same global Miller phase, constructing
+    every changed actual full level4 marking and retaining its phase. Independent
+    canonical differential and conormal maps are uniquely fixed by their local derivative
+    formulas, with compiled original-map identities and original RealizesAlpha equivalences.
+    Actual global alpha existence and normalized-frame support included. Empty and
+    nonreduced bases retained. See challenges/scheme-alpha-character/Scope.json; no
+    whole-paper completion claimed.'
+fidelity:
+  divergences: Original052 full proposition and universe recovered through compiled
+    original-map identities and affine/global RealizesAlpha equivalences. No added
+    base assumption, arbitrary scalar, arbitrary line isomorphism or restricted matrix
+    family. All seven support/main targets selected. Challenge/Solution semantic compatibility
+    checked for199 declarations; this is separate from the original-equivalence proof.
+    Original051 is not counted again.

@@ -1,0 +1,35 @@
+{
+  "base": "Exact geometry/marking/Miller normalization definitions from433, excluding field-pairing-only definitions unused by052",
+  "canonical_maps": "401 canonical differential map and436 canonical conormal map uniquely characterized on actual local derivatives; all their proof obligations selected",
+  "semantic_compatibility": "199 non-proof declarations have definitionally equal Challenge/Solution types and available bodies; original-map identities and original RealizesAlpha iff are separately proved",
+  "namespace_maps": {
+    "ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha": "ArithmeticThetaPalomarSchemeAlpha437.RealizesAlpha",
+    "ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha": "ArithmeticThetaPalomarAffineAlpha437.RealizesAlpha",
+    "ArithmeticThetaSchemeHodgeR0205.Cotangent": "ArithmeticThetaPalomarSchemeAlpha437.Cotangent"
+  },
+  "compiled_bridges": [
+    "affineAlpha_iff",
+    "idealCompatible_iff",
+    "affineHodgeMap_eq",
+    "affineAlpha_eq",
+    "realizesAlpha_iff",
+    "recover_original_052"
+  ],
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/FourTorsionDefinitions.lean": "10cd3baa87d2baf0210753b7962c1f7ded94e4890d17a0f54fd4e6c52a9270ff",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeFourCharacterDefinitionsR0211.lean": "a7a12522b96aecb72f883ba85862bda44652ea2c565039505c57aec670957fa0",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeFourCharacterDefinitionsR0215.lean": "c3daaec330d6689ccadb5f2d190b3f3b50bbb9a02c83630994b1eeb77aa4cac3",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/PullbackTensorDefinitions.lean": "6de1014796d0917e8fcc78615aefe56689e92f1da3224d002efe4471f1458db1",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/OpenHodgeDescentDefinitionsR0180.lean": "5aa0de772477a2887268f62ebb92f9a0af2086c1d73ca2f02af3d9ac5a45cbb5",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/GlobalFourTorsionDefinitionsR0190.lean": "0b0f60b9582ece9bf02b549966fd083dff16d1f6713a860899c8ec29f27262b9",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/PullbackUnit.lean": "8a57a8bc16ac45f0cb57a844c09e37a12cfa4f315f55c7ea9e611ac8ae059e87",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeHodgePowerBaseChangeR0171.lean": "249eb4987f0fe825abc170d015b364eaa09fff7f72ce6febf0efa3db6bba44bd",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-miller-phase-package-433/Challenge.uncompressed.lean.txt": "cbfab5a9d9fdd8927f28ac18ff556a3154b452a80da1e790f2de92ec7044199a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/canonical-conormal-map-436/Challenge.lean": "681435ad895e85b3a365a5c6b86de3e1a32c84f41906cad39fa09d9c48c8add5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/canonical-conormal-map-436/Solution.lean": "f60f74b21462b297acf859f1513960772655a216e2fba7bacb95f209a000a4bf",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/global-normalized-frame-401/Challenge.lean": "6600ac074ea89a7cde8817639af24f49b62f5272a551f416c61533edc6d3022f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/global-normalized-frame-401/Solution.lean": "16e11be75e5505ba1bff4103b8e396bbbed3ecf2b5e75dd7f8049531caf2eb32",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874"
+  },
+  "original_type_recovery": "Whole original052 recovered by realizesAlpha_iff in both directions; original theorem equality compiled by rfl; original universe u retained"
+}

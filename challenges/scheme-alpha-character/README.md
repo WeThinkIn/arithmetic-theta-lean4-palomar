@@ -1,0 +1,5 @@
+# Complete scheme alpha character
+
+Independent Mathlib-only Challenge for complete original accepted-052 at arbitrary universe u. Retains the same global Miller phase, actual cotangent and ideal inclusion, canonical pointed pullback and conormal derivative, whole Z-chart differential normalization, and actual full-marking character for every even-stabilizer matrix. Independent uniqueness specifications determine both canonical maps; compiled identities recover the original maps. The global alphaExists support target prevents a vacuous premise. No reducedness, nonemptiness or normality is added to the main scheme statement.
+
+Challenge732lines, Solution257lines. All349 Challenge and85 Solution declarations were audited;16 propagated sorry closures originate from seven selected support/main targets. Solution has only standard axioms.199 non-proof declarations agree between Challenge and Solution; full original052 is recovered through separately proved affine/global predicate equivalences, with a compiled rfl original-theorem audit. This is local evidence, not official Palomar acceptance or full-paper completion.

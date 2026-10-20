@@ -1332,3 +1332,11 @@ roots = ["SchemeMillerPhaseChallenge"]
 [[lean_lib]]
 name = "SchemeMillerPhaseSolution"
 roots = ["SchemeMillerPhaseSolution"]
+
+[[lean_lib]]
+name = "SchemeAlphaCharacterChallenge"
+roots = ["SchemeAlphaCharacterChallenge"]
+
+[[lean_lib]]
+name = "SchemeAlphaCharacterSolution"
+roots = ["SchemeAlphaCharacterSolution"]

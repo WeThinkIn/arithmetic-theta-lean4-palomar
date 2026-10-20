@@ -1,0 +1,18 @@
+{
+  "accepted_for_local_integration": true,
+  "new_ids": [
+    "accepted-052"
+  ],
+  "basis": "Complete frozen original052 interface, exact definition compatibility and root source/type review; no official acceptance",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/Challenge.lean": "b00c2e0e59846dead1e48a2e7dd4c3de654c921b4164457abb741e89f76a1957",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/Solution.lean": "d26d1166f25bb683c95493943af7db8fefb1570401caea717a447def33005032",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/Scope.json": "d2d5d6dcec0b7b3ae102783c1a7ffaacfb507d80f985d73b400657e7ff844e92",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/SourceMap.json": "3dd00920aca17a9f5b026455cf9539d12309a637801badcffd4412f2ee49bb16",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/receipt.json": "b65c0b81c10b7d3ab6597b1af070309b7bb6129ff0eadeebb9103d968bd3fcf5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/README.md": "f97bfc1003bb41118f84ba546a3fc3fc48488d5463475632ce985af7b3ee718d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/comparator.json": "0b877e68fbd7321f4073c9b608f4867561a3047b29dadb36b95c87bff500438f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-scope-review-438/Review.md": "1db9ae3d89269f42cd65141445a601957d05744f7adece93d1db874ed57d10b7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-scope-review-438/receipt.json": "2e81d6946b36bca72b6f551f564b3b015048b16752e90c6e1611bca3cdcc7da9"
+  }
+}
