@@ -1,0 +1,45 @@
+{
+  "targets": [
+    {
+      "name": "ArithmeticThetaPalomarGlobalFrame401.canonicalDifferentialMap",
+      "declaration_line": 603,
+      "hole_line": 604
+    },
+    {
+      "name": "ArithmeticThetaPalomarGlobalFrame401.normalizedFrameExists",
+      "declaration_line": 634,
+      "hole_line": 635
+    },
+    {
+      "name": "ArithmeticThetaPalomarGlobalFrame401.hodgeGeneratorFrame",
+      "declaration_line": 636,
+      "hole_line": 637
+    },
+    {
+      "name": "ArithmeticThetaPalomarGlobalFrame401.normalizedFrameExistsUnique",
+      "declaration_line": 638,
+      "hole_line": 639
+    },
+    {
+      "name": "ArithmeticThetaPalomarConormal436.canonicalConormalMap",
+      "declaration_line": 649,
+      "hole_line": 650
+    },
+    {
+      "name": "ArithmeticThetaPalomarSchemeAlpha437.alphaExists",
+      "declaration_line": 727,
+      "hole_line": 728
+    },
+    {
+      "name": "ArithmeticThetaPalomarSchemeAlpha437.schemeAlphaCharacter",
+      "declaration_line": 729,
+      "hole_line": 731
+    },
+    {
+      "name": "ArithmeticThetaPalomarTateAlpha445.fourTorsionTateBehavior",
+      "declaration_line": 858,
+      "hole_line": 860
+    }
+  ],
+  "all_eight_holes_selected_once": true
+}

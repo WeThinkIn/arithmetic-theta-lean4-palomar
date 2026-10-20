@@ -1,0 +1,19 @@
+{
+  "challenge_module": "TateAlphaChallenge",
+  "solution_module": "TateAlphaSolution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarGlobalFrame401.canonicalDifferentialMap",
+    "ArithmeticThetaPalomarGlobalFrame401.normalizedFrameExists",
+    "ArithmeticThetaPalomarGlobalFrame401.hodgeGeneratorFrame",
+    "ArithmeticThetaPalomarGlobalFrame401.normalizedFrameExistsUnique",
+    "ArithmeticThetaPalomarConormal436.canonicalConormalMap",
+    "ArithmeticThetaPalomarSchemeAlpha437.alphaExists",
+    "ArithmeticThetaPalomarSchemeAlpha437.schemeAlphaCharacter",
+    "ArithmeticThetaPalomarTateAlpha445.fourTorsionTateBehavior"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

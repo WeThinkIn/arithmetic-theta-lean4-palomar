@@ -1,0 +1,31 @@
+{
+  "base": "Frozen437 interface plus extracted concrete TateSeries/root cubic/full marking/boundary normalization definitions",
+  "semantic_compatibility": "240 non-proof Challenge/Solution declarations have matching types and available bodies",
+  "namespace_maps": {
+    "ArithmeticThetaBoundaryHodgeR0182": "ArithmeticThetaPalomarBoundary445",
+    "ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha": "ArithmeticThetaPalomarAffineAlpha437.RealizesAlpha"
+  },
+  "compiled_bridges": [
+    "boundaryNormalized_iff",
+    "boundaryGenerator_eq",
+    "affineAlpha_iff",
+    "recover_original_040",
+    "recover_original_052"
+  ],
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/Challenge.uncompressed.lean.txt": "1edad481631f7a298de257e346460cf78af2ccc4b36378cf78454649113ea66b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/Solution.uncompressed.lean.txt": "a365bd1f5b3fc58b6ca041fd2c92d62f28520923481e1807ea0edcebc8b57fff",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/TateSeriesDefinitions.lean": "0c507106496fbc9f5b0fba585c1082ee9dbf2b9d0ba2a8ee03a5d89fbcad823a",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/CubicModelDefinitionsR0144.lean": "552a2674a581ccccad61183c32d5cacf557a4429fec259d7c2be991505ae6fe6",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/CompactifiedDifferentialDefinitionsR0145.lean": "7dfbf089d8f415817a414f18cf5f7f31b4c239fef9c9414259fe55f3e1c3429d",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/FullLevelCoverDefinitionsR0175.lean": "e1ba20c9519f5c097497a3db054fd8a22a1af77ec43825f98e2557b7e0d70a8b",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/TateCuspDefinitionsR0181.lean": "a026527a4d745ec30eb9fdd06e5257b656e2d6cd5075754b9f9d3eaf2178ab0b",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeDiscriminantDefinitionsR0171.lean": "50b66b2a3abeebaf6b381a726731cfec4328c499311b796c32a643c1c7eda48f",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/GlobalNormalizedDifferentialR0145.lean": "6813a5dfd806ce2537334769a56d4e6a1594d7494575f4767e7fec7ca2c29c26",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/BoundaryHodgeDefinitionsR0182.lean": "1f00712edcfe5de4487558b919673b870a76607cc452e0e5922b484da97de2df",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/GlobalFourTorsionDefinitionsR0190.lean": "0b0f60b9582ece9bf02b549966fd083dff16d1f6713a860899c8ec29f27262b9",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/comparator.json": "0b877e68fbd7321f4073c9b608f4867561a3047b29dadb36b95c87bff500438f"
+  },
+  "original_type_recovery": "Whole original040 recovered; equality of theorems compiled by rfl; exact boundary predicate/generator recovered by rfl"
+}

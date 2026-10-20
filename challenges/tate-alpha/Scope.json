@@ -1,0 +1,24 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-040",
+    "accepted-052"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-040"
+  ],
+  "universe": "Original040 k : Type; inherited052 arbitrary universe u",
+  "target_count": 8,
+  "retained": [
+    "Every positive L divisible by4",
+    "Actual level-dependent Tate cubic Q=t^L from literal Tate coordinate series",
+    "Actual full-level marking with every nonidentity combination checked",
+    "Original Z-chart normalized boundary differential frame",
+    "Every realizing alpha has a full power-series-unit expansion with order0 or L/4",
+    "Every primitive root and canonical full marking gives the exact signed full thetaAt^2 series identity",
+    "Inherited complete052 unchanged"
+  ],
+  "no_new_main_assumptions": true,
+  "new_endpoint_count": 1,
+  "official_verified": false,
+  "full_paper_claimed": false
+}

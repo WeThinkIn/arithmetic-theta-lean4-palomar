@@ -1,0 +1,80 @@
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/SchemeFourMarkingActionR0215.lean:163:0: 'ArithmeticThetaSchemeFourCharacterR0215.scheme_four_marking_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12062/12066] Replayed SchemeMillerPhaseR0215
+warning: Proof/SchemeMillerPhaseR0215.lean:333:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/SchemeMillerPhaseR0215.lean:348:0: 'ArithmeticThetaSchemeFourCharacterR0215.scheme_miller_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [12063/12066] Replayed SchemePhaseMarkingInvarianceR0215
+warning: Proof/SchemePhaseMarkingInvarianceR0215.lean:43:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Proof/SchemePhaseMarkingInvarianceR0215.lean:81:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/SchemePhaseMarkingInvarianceR0215.lean:88:0: 'ArithmeticThetaSchemeFourCharacterR0215.scheme_phase_marking_invariance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12064/12066] Replayed SchemeAlphaCharacterR0215
+warning: Proof/SchemeAlphaCharacterR0215.lean:53:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Proof/SchemeAlphaCharacterR0215.lean:116:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/SchemeAlphaCharacterR0215.lean:125:0: 'ArithmeticThetaSchemeFourCharacterR0215.scheme_alpha_character' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12065/12066] Built TateAlphaChallenge (14s)
+warning: TateAlphaChallenge.lean:603:8: declaration uses `sorry`
+warning: TateAlphaChallenge.lean:634:8: declaration uses `sorry`
+warning: TateAlphaChallenge.lean:636:8: declaration uses `sorry`
+warning: TateAlphaChallenge.lean:638:8: declaration uses `sorry`
+warning: TateAlphaChallenge.lean:649:8: declaration uses `sorry`
+warning: TateAlphaChallenge.lean:727:8: declaration uses `sorry`
+warning: TateAlphaChallenge.lean:729:8: declaration uses `sorry`
+warning: TateAlphaChallenge.lean:858:8: declaration uses `sorry`
+⚠ [12066/12066] Built TateAlphaSolution (65s)
+warning: TateAlphaSolution.lean:55:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TateAlphaSolution.lean:247:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TateAlphaSolution.lean:253:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (12066 jobs).

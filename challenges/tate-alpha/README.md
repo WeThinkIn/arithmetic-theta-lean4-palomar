@@ -1,0 +1,5 @@
+# Complete relative alpha Tate behavior
+
+Independent Mathlib-only Challenge retains full original040. For every positive L divisible by4, actual full-level marking on the actual Tate cubic Q=t^L and original normalized boundary differential, every realizing alpha has a full power-series-unit expansion with exact order0 or L/4. For every primitive root and canonical marking it is exactly the signed thetaAt^2 multiple of the actual Hodge generator. The literal infinite series and all nonidentity coordinate combinations are retained; no truncation or specialization to level4 is made.
+
+Eight support/main holes are explicitly selected, including the seven inherited437 targets. Solution declarations have only standard axioms. Boundary normalization/generator and original040 recovery have compiled rfl checks. See receipt.json for measured all-declaration and definition-body audit counts. Inherited052 is not counted twice. This is local evidence, not official Palomar acceptance or whole-paper completion.

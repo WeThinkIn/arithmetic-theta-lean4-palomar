@@ -1,0 +1,15 @@
+# Complete original040 scope review
+
+Review kind: root source/type review with compiled original-predicate equivalences and full original-theorem recovery; not an independent-model review or official semantic acceptance.
+
+Original040 is retained for k : Type with Field and CharZero, every positive L divisible by4, every actual TateLevel k L, every original-normalized boundary differential frame and every realizing alpha section. The input assumptions are exactly those of the original statement. The Challenge does not replace an arbitrary valid level by4, assume an expansion, or assume a canonical marking for its first conclusion.
+
+The actual Tate cubic has the original three rootSeries, using literal coefficientwise tateX at Q=t^L. tateX and tateY retain both annular tails, their coefficientwise finite approximants and the original correction/sign. The actual FullLevel fields and relative group law are inherited without changes. CanonicalMarking checks every nonidentity pair of residues through the original coordinatePoint and exact Tate coordinates. thetaAt is the original full coefficientwise substitution theta(t^(L/2)); no finite truncation is substituted.
+
+The boundary frame is an isomorphism with the actual relative Kaehler sheaf. Its normalization is the original equation on the actual whole Z-chart, via the actual chart-section equivalence. The independent differential and adjunction pullback definitions are definitionally equal to the original definitions: boundaryNormalized_iff and boundaryGenerator_eq compile by rfl. The inherited affineAlpha_iff recovers the original realization predicate, so the section is not an arbitrary abstract scalar.
+
+Both required conclusions remain intact. First, a unit in PowerSeries k and an exponent j=0 or L/4 are outputs, with an exact equality of the complete section expansion. Second, every primitive root and every actual canonical marking imply the exact signed thetaAt squared identity with the same normalized Hodge generator. Original040 is recovered with its full literal statement, and equality with the original theorem is compiled by rfl. Inherited052 is not counted twice.
+
+All eight holes are explicitly selected, seven inherited437 support/main targets plus full040. The Mathlib-only Challenge imports no project modules. Every Solution declaration is checked for standard axioms and absence of sorry. Every non-proof Challenge declaration has its type and available body compared in the Solution environment. This definition-body check supplements the original predicate and theorem recovery. The missing pullbackLocalSection in independent imports was replaced by the explicit existing adjunction pullSection; the compiled rfl bridge confirms equality. A missing Solution theorem import was added; no statement was changed.
+
+Local integration is supported after the actual root build. No official acceptance, independent-kernel acceptance, or full-paper completion is inferred. The full103-endpoint/13-requirement objective remains unchanged.

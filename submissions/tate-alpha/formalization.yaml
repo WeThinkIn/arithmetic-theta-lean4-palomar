@@ -1,0 +1,56 @@
+version: v0.4
+project:
+  name: Complete relative alpha Tate behavior
+  description: 'Complete original accepted040: for every positive L divisible by4,
+    actual full marking on the actual Tate cubic Q=t^L and original normalized boundary
+    differential, every realizing alpha has a full power-series-unit expansion with
+    exact order0 or L/4. Every primitive root and canonical marking give the exact
+    signed thetaAt squared identity. Literal full series, all nonidentity coordinate
+    combinations and original boundary generator retained. Eight support/main targets
+    selected. Inherited052 not counted twice. See challenges/tate-alpha/Scope.json;
+    no whole-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Complete original accepted040: for every positive L divisible by4, actual
+    full marking on the actual Tate cubic Q=t^L and original normalized boundary differential,
+    every realizing alpha has a full power-series-unit expansion with exact order0
+    or L/4. Every primitive root and canonical marking give the exact signed thetaAt
+    squared identity. Literal full series, all nonidentity coordinate combinations
+    and original boundary generator retained. Eight support/main targets selected.
+    Inherited052 not counted twice. See challenges/tate-alpha/Scope.json; no whole-paper
+    completion claimed.'
+fidelity:
+  divergences: Original040 full proposition recovered with compiled rfl theorem audit.
+    Boundary normalization and generator agree with originals by rfl; affine realization
+    predicate recovered by compiled iff. No truncated series, level4 restriction or
+    additional main assumption. Eight support/main targets selected; inherited052
+    not counted twice.

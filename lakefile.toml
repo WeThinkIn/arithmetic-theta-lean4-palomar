@@ -1348,3 +1348,11 @@ roots = ["RelativeAlphaChallenge"]
 [[lean_lib]]
 name = "RelativeAlphaSolution"
 roots = ["RelativeAlphaSolution"]
+
+[[lean_lib]]
+name = "TateAlphaChallenge"
+roots = ["TateAlphaChallenge"]
+
+[[lean_lib]]
+name = "TateAlphaSolution"
+roots = ["TateAlphaSolution"]

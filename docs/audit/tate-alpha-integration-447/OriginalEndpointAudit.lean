@@ -1,0 +1,18 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : @ArithmeticThetaSchemeFourCharacterR0215.scheme_alpha_character =
+  @ArithmeticThetaPalomarSchemeAlpha437.recover_original_052 := rfl
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.recover_original_052
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.realizesAlpha_iff
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.affineAlpha_iff
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.affineHodgeMap_eq
+#print axioms ArithmeticThetaPalomarConormal436.conormalMap_eq_original
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.alphaExists
+
+example : @ArithmeticThetaGlobalFourTorsionR0190.four_torsion_tate_behavior =
+  @ArithmeticThetaPalomarTateAlpha445.recover_original_040 := rfl
+#print axioms ArithmeticThetaPalomarTateAlpha445.recover_original_040
+#print axioms ArithmeticThetaPalomarTateAlpha445.boundaryNormalized_iff
+#print axioms ArithmeticThetaPalomarTateAlpha445.boundaryGenerator_eq
