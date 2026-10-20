@@ -1,0 +1,20 @@
+info: Proof/RatioUnaryRegularSectionsR0195.lean:342:0: 'ArithmeticThetaSharpKernelR0195.RatioUnaryRegularSectionsR0195.pulled_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/RatioUnaryRegularSectionsR0195.lean:410:0: 'ArithmeticThetaSharpKernelR0195.ratio_unary_regular_sections' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12106/12109] Replayed SharpMatrixGeometricFamilyR0195
+info: Proof/SharpMatrixGeometricFamilyR0195.lean:211:0: 'ArithmeticThetaSharpKernelR0195.sharp_matrix_geometric_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12107/12109] Replayed SharpGeometricCutoffR0195
+info: Proof/SharpGeometricCutoffR0195.lean:93:0: 'ArithmeticThetaSharpKernelR0195.sharp_geometric_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [12108/12109] Replayed SharpMatrixKernelR0195
+info: Proof/SharpMatrixKernelR0195.lean:47:0: 'ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [12109/12109] Replayed SharpAndRootsSolution
+info: SharpAndRootsSolution.lean:17:0: 'ArithmeticThetaPalomarAmbient355.ambient_prescribed_roots' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SharpAndRootsSolution.lean:21:0: 'ArithmeticThetaPalomarAmbient355.smooth_point_simultaneous_roots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (12109 jobs).

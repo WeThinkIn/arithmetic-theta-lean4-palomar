@@ -1,0 +1,78 @@
+{
+  "workflow_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39461299032",
+  "status": "error",
+  "stage": "resource-exhausted",
+  "last_active_stage": "solution-build",
+  "error_kind": "infrastructure/resource-exhausted",
+  "diagnostics": [
+    {
+      "code": "provider.resource_exhausted",
+      "explanation": "worker resource ceiling reached while running lake (exit 137, result oom-kill)",
+      "next_action": "Inspect the reported resource limit and build usage. If the workload repeatedly exceeds the worker's capacity, reduce its resource use or arrange sufficient capacity before retrying. Retry an unchanged commit only after addressing the reported condition. Normal submission cooldowns still apply.",
+      "owner": "provider",
+      "repairable": false,
+      "retryable": true,
+      "stage": "resource-exhausted",
+      "summary": "worker resource ceiling reached while running lake (exit 137, result oom-kill)"
+    }
+  ],
+  "profile": {
+    "id": "palomar-standard-v1",
+    "limits": {
+      "execution_budget_seconds": 19800,
+      "file_size_max_bytes": 1099511627776,
+      "job_timeout_minutes": 350,
+      "memory_high_percent": 95,
+      "memory_max_percent": 98,
+      "minimum_host_memory_bytes": 15032385536,
+      "minimum_workspace_free_bytes": 21474836480,
+      "open_files_max": 1048576,
+      "tasks_max": 32768
+    },
+    "observed_host": {
+      "architecture": "x86_64",
+      "effective_cpus": 4.0,
+      "memory_bytes": 16759308288,
+      "memory_high_bytes": 15921342873,
+      "memory_max_bytes": 16424122122,
+      "workspace_free_bytes": 114650767360
+    },
+    "runner": {
+      "architecture": "x86_64",
+      "label": "ubuntu-24.04",
+      "provider": "github-hosted"
+    },
+    "sha256": "94fcd7906a1b6c076c0036d742e1c5add8625e49bb474818ec8924576dbf0caa",
+    "trusted_tools": {
+      "bwrap_source_tag": "v0.12.0",
+      "toolchain_floor": "v4.35.0-rc2"
+    }
+  },
+  "solution_build_resource": [
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 28901138016000,
+      "deadline_fired": false,
+      "exec_main_code": "2",
+      "exec_main_status": "9",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 9
+      },
+      "memory_peak_bytes": 15824445440,
+      "phase": "solution-build:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "oom-kill"
+    }
+  ],
+  "source_commit": "2bd02cf8a38d686dc7a56012b1ca0291443816c9",
+  "original_report_path": "/home/Palomar/workspace/arithmetic-theta/evidence/official-older-main-result-362/mechanical-report-8427cc7ebd18/mechanical-report.json",
+  "original_report_sha256": "a21f2f7f192adc4d70937ebf9b07094f6094bfe9a9c125eb7e39a9cf0ef04be4"
+}

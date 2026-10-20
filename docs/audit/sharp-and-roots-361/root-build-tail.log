@@ -1,0 +1,80 @@
+ Classical.choice,
+ Quot.sound]
+info: Proof/HigherLevelProjectiveRatiosR0194.lean:580:0: 'ArithmeticThetaSharpCoverR0194.higher_level_projective_ratios' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12094/12109] Replayed EliminationReduction
+warning: Proof/EliminationReduction.lean:19:23: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Proof/EliminationReduction.lean:87:24: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Proof/EliminationReduction.lean:147:23: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Proof/EliminationReduction.lean:163:23: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Proof/EliminationReduction.lean:189:21: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [12095/12109] Replayed ComputedPivotCoordinates
+warning: Proof/ComputedPivotCoordinates.lean:45:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [12098/12109] Replayed ComputedNullspaceBasis
+warning: Proof/ComputedNullspaceBasis.lean:93:36: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+ℹ [12103/12109] Replayed DistinctNormSharpArithmeticR0195
+info: Proof/DistinctNormSharpArithmeticR0195.lean:107:0: 'ArithmeticThetaSharpKernelR0195.distinct_norm_sharp_arithmetic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12104/12109] Replayed RatioUnaryRegularSectionsR0195
+info: Proof/RatioUnaryRegularSectionsR0195.lean:113:0: 'ArithmeticThetaSharpKernelR0195.RatioUnaryRegularSectionsR0195.centered_rational_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/RatioUnaryRegularSectionsR0195.lean:201:0: 'ArithmeticThetaSharpKernelR0195.RatioUnaryRegularSectionsR0195.same_curve_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/RatioUnaryRegularSectionsR0195.lean:243:0: 'ArithmeticThetaSharpKernelR0195.RatioUnaryRegularSectionsR0195.local_pullback_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/RatioUnaryRegularSectionsR0195.lean:320:0: 'ArithmeticThetaSharpKernelR0195.RatioUnaryRegularSectionsR0195.puncture_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/RatioUnaryRegularSectionsR0195.lean:321:0: 'ArithmeticThetaSharpKernelR0195.RatioUnaryRegularSectionsR0195.ratioMultiple_of_puncture' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/RatioUnaryRegularSectionsR0195.lean:342:0: 'ArithmeticThetaSharpKernelR0195.RatioUnaryRegularSectionsR0195.pulled_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/RatioUnaryRegularSectionsR0195.lean:410:0: 'ArithmeticThetaSharpKernelR0195.ratio_unary_regular_sections' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12105/12109] Replayed SharpMatrixGeometricFamilyR0195
+info: Proof/SharpMatrixGeometricFamilyR0195.lean:211:0: 'ArithmeticThetaSharpKernelR0195.sharp_matrix_geometric_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12106/12109] Replayed SharpGeometricCutoffR0195
+info: Proof/SharpGeometricCutoffR0195.lean:93:0: 'ArithmeticThetaSharpKernelR0195.sharp_geometric_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [12107/12109] Replayed SharpMatrixKernelR0195
+info: Proof/SharpMatrixKernelR0195.lean:47:0: 'ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [12108/12109] Built SharpAndRootsSolution (3.5s)
+info: SharpAndRootsSolution.lean:17:0: 'ArithmeticThetaPalomarAmbient355.ambient_prescribed_roots' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SharpAndRootsSolution.lean:21:0: 'ArithmeticThetaPalomarAmbient355.smooth_point_simultaneous_roots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12109/12109] Built SharpAndRootsChallenge (34s)
+warning: SharpAndRootsChallenge.lean:916:8: declaration uses `sorry`
+warning: SharpAndRootsChallenge.lean:920:8: declaration uses `sorry`
+warning: SharpAndRootsChallenge.lean:978:8: declaration uses `sorry`
+Build completed successfully (12109 jobs).

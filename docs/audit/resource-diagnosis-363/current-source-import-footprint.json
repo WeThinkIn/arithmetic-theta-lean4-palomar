@@ -1,0 +1,182 @@
+[
+  {
+    "target": "MainAndComponentsSolution",
+    "current_source_snapshot_only": true,
+    "project_local_module_count": 3130,
+    "total_source_lines": 597657,
+    "total_source_bytes": 32620393,
+    "direct_Mathlib_importing_modules": 1701,
+    "largest_10_modules": [
+      {
+        "module": "ProperTowerAutomorphismEffectivityPreludeR0137",
+        "lines": 9113,
+        "bytes": 708336
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_residueTheoremK_of_isAlgClosed",
+        "lines": 8129,
+        "bytes": 583695
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosedPrelude",
+        "lines": 8486,
+        "bytes": 558802
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_functionFieldRiemannRoch_of_residueTheoremK_of_isAlgClosed",
+        "lines": 6265,
+        "bytes": 502573
+      },
+      {
+        "module": "RelativeWeierstrassPresentationR0174",
+        "lines": 6769,
+        "bytes": 361447
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed",
+        "lines": 4707,
+        "bytes": 304901
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_tateAgreement",
+        "lines": 4824,
+        "bytes": 264604
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_tateTraceCompat_of_isSeparable",
+        "lines": 4423,
+        "bytes": 261583
+      },
+      {
+        "module": "P2M.Sol.S_TateCurve_symAdd_sum_regional",
+        "lines": 3097,
+        "bytes": 222333
+      },
+      {
+        "module": "ProperFormalFunctions",
+        "lines": 3592,
+        "bytes": 215923
+      }
+    ]
+  },
+  {
+    "target": "CompleteMainAndComponentsSolution",
+    "current_source_snapshot_only": true,
+    "project_local_module_count": 3130,
+    "total_source_lines": 597695,
+    "total_source_bytes": 32623234,
+    "direct_Mathlib_importing_modules": 1701,
+    "largest_10_modules": [
+      {
+        "module": "ProperTowerAutomorphismEffectivityPreludeR0137",
+        "lines": 9113,
+        "bytes": 708336
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_residueTheoremK_of_isAlgClosed",
+        "lines": 8129,
+        "bytes": 583695
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosedPrelude",
+        "lines": 8486,
+        "bytes": 558802
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_functionFieldRiemannRoch_of_residueTheoremK_of_isAlgClosed",
+        "lines": 6265,
+        "bytes": 502573
+      },
+      {
+        "module": "RelativeWeierstrassPresentationR0174",
+        "lines": 6769,
+        "bytes": 361447
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed",
+        "lines": 4707,
+        "bytes": 304901
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_tateAgreement",
+        "lines": 4824,
+        "bytes": 264604
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_tateTraceCompat_of_isSeparable",
+        "lines": 4423,
+        "bytes": 261583
+      },
+      {
+        "module": "P2M.Sol.S_TateCurve_symAdd_sum_regional",
+        "lines": 3097,
+        "bytes": 222333
+      },
+      {
+        "module": "ProperFormalFunctions",
+        "lines": 3592,
+        "bytes": 215923
+      }
+    ]
+  },
+  {
+    "target": "SharpAdaptiveImageSolution",
+    "current_source_snapshot_only": true,
+    "project_local_module_count": 3123,
+    "total_source_lines": 603735,
+    "total_source_bytes": 33045478,
+    "direct_Mathlib_importing_modules": 1706,
+    "largest_10_modules": [
+      {
+        "module": "ProperTowerAutomorphismEffectivityPreludeR0137",
+        "lines": 9113,
+        "bytes": 708336
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_residueTheoremK_of_isAlgClosed",
+        "lines": 8129,
+        "bytes": 583695
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosedPrelude",
+        "lines": 8486,
+        "bytes": 558802
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_functionFieldRiemannRoch_of_residueTheoremK_of_isAlgClosed",
+        "lines": 6265,
+        "bytes": 502573
+      },
+      {
+        "module": "RelativeWeierstrassPresentationR0174",
+        "lines": 6769,
+        "bytes": 361447
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed",
+        "lines": 4707,
+        "bytes": 304901
+      },
+      {
+        "module": "FullLevelProjectiveRatiosR0194",
+        "lines": 5234,
+        "bytes": 287862
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_tateAgreement",
+        "lines": 4824,
+        "bytes": 264604
+      },
+      {
+        "module": "P2M.Sol.S_AlgebraicCurve_tateTraceCompat_of_isSeparable",
+        "lines": 4423,
+        "bytes": 261583
+      },
+      {
+        "module": "P2M.Sol.S_TateCurve_symAdd_sum_regional",
+        "lines": 3097,
+        "bytes": 222333
+      }
+    ]
+  }
+]

@@ -26,7 +26,7 @@ The other63 original endpoints remain outside that independent configuration. In
 
 The sharp/adaptive/image configuration `comparator-sharp-adaptive-image.json` adds seven disjoint endpoints: accepted-046/049/064/065/066/067/088. Its Mathlib-only Challenge has485 lines/31089bytes. Local standalone checks and the actual named root-pair build passed; all225 non-internal Solution declarations have standard axiom closures. It preserves the exact distinct-norm cutoff, full kernels for larger prefixes, actual first-stop algorithm, checked integral changes, full null/image/unique-coordinate results and singleton-zero behavior. Scope and evidence are under `challenges/sharp-adaptive-image/` and `docs/audit/sharp-adaptive-image-351/`. This new configuration still requires its own official full preflight before ordinary intake.
 
-Together, complete-main and sharp/adaptive/image specify47 distinct original endpoints; the separate formal-cover package adds accepted-050 for48. These are independent interface coverage counts, not48 official semantic approvals. The other55 endpoints still need complete independent interfaces. Original scope remains13 requirements/103 endpoints.
+Together, complete-main and sharp/adaptive/image specify47 distinct original endpoints; the separate formal-cover package adds accepted-050 for48. These are independent interface coverage counts, not48 official semantic approvals. The roots package described below adds two further endpoints. Original scope remains13 requirements/103 endpoints.
 
 Challenge `sorry` declarations specify the targets required by Comparator; they are not accepted as Solution proofs. The legacy default `comparator.json` selects only an earlier finite-determination pilot. Use the explicit configuration paths below to reproduce the intended scope.
 
@@ -36,11 +36,13 @@ Challenge `sorry` declarations specify the targets required by Comparator; they 
 | --- | --- | --- |
 | accepted-017 early certificate | `12f83ea` | Full mechanical preflight39455278417 passed. |
 | accepted-050 formal-cover constancy | `2bd02cf` | Full preflight39461300608 and submission verification39466419289 passed. Submission86n83vqdajt2 has a private semantic review available; not registered. |
-| Main and components, older interface | `2bd02cf` | Full preflight39461299032 running;39 complete endpoints plus supporting/main conclusions, omitting the original extra FormalIdentity field. |
+| Main and components, older interface | `2bd02cf` | Full preflight39461299032 ended with Solution-build memory exhaustion (exit137/oom-kill);39 complete endpoints plus supporting/main conclusions, omitting the original extra FormalIdentity field. |
+| Sharp/adaptive/image seven-endpoint package | `088eff2` | Full preflight39479248485 running. |
 | Stronger complete main and components | `35c8d4a` | Full preflight39469688913 running;40 complete endpoints including all accepted-037 outputs. No ordinary intake yet for this configuration. |
 
 The workflow uses the official pinned PalomarSubmission pipeline, `mode: full` and `palomar-standard-v1`. Each report applies only to its exact commit, configuration and metadata path. Later repository changes do not alter running checks. No full-paper Palomar pass is claimed. Private review content and credentials are not published here.
 
+- [Sharp/adaptive/image preflight39479248485](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39479248485)
 - [Complete-main preflight39469688913](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39469688913)
 - [Older main preflight39461299032](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39461299032)
 - [Formal-cover submission verification39466419289](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/39466419289)
@@ -79,3 +81,10 @@ The stronger Challenge/Solution root pair passed actual build314. Formal-cover p
 The proof source includes1199 original delivery modules and a dependency closure of2713 modules copied from the local fermats-last-theorem library. Original file hashes and migration evidence are recorded separately. Third-party copyright notices, licenses and attribution are retained under `docs/ThirdParty` and in source headers.
 
 Original Lean code is licensed under **Apache-2.0** by the owner's authorization. Mathlib and other dependencies retain their respective licenses. AI-assisted development is disclosed in the scope-specific `formalization.yaml` metadata; AI systems are not listed as human authors.
+
+The additional `comparator-sharp-and-roots.json` pairs the full accepted-049 principal sharp theta conclusion with complete accepted-056/057 actual ambient/smooth-point root constructions. Its990-line/66941-byte Mathlib-only Challenge retains all original fields and the actual canonical tensor comparison; all local checks and the actual named root build361 passed. It adds two distinct endpoint IDs, bringing prepared independent interface coverage to50/103 (the remaining53 still need interfaces). This is not50 official passes. Official preflight for this new package is the next controlled resource experiment; it has not been ordinary-submitted or registered.
+
+Official resource report362: older run39461299032 failed during `solution-build`, with15824445440bytes (~14.74GiB) recorded peak memory, `oom_kill:9` and `deadline_fired:false`. Challenge provenance was high/Mathlib-only. This is a failed mechanical attempt due to infrastructure resources, not a proof rejection. Preserve ongoing complete-main39469688913 and sharp/adaptive/image39479248485; do not retry unchanged resource conditions. See `docs/audit/official-older-main-362/`.
+
+
+Resource experiment364 sets package-level `weakLeanArgs = ["-j1"]`, confirmed in actual compiler arguments by isolated Lake probe363. This limits internal Lean threads per compiler, not simultaneous Lake compiler processes; unchanged theorem types, proof bodies, Comparator and kernel checks are retained. The official cold-build memory effect remains unverified. Larger Namespace runner availability was not established. See `docs/audit/resource-diagnosis-363/Analysis.md`.

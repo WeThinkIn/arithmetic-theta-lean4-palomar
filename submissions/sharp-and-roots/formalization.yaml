@@ -1,0 +1,53 @@
+version: v0.4
+project:
+  name: Sharp theta relation bound and actual prescribed ambient roots
+  description: 'Three complete original endpoints: accepted-049 exact sharp finite
+    theta-kernel determination for all larger prefixes and rank zero, accepted-056
+    actual prescribed ambient roots and accepted-057 smooth-point simultaneous roots.
+    Preserves every original model field, any given ambient field and roots, finite
+    initial constant field, actual valuation/center, completed local ring, geometric
+    root cover, full sections and canonical tensor comparison. No full-paper completion
+    is claimed. See challenges/sharp-and-roots/Scope.json.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Three complete original endpoints: accepted-049 exact sharp finite theta-kernel
+    determination for all larger prefixes and rank zero, accepted-056 actual prescribed
+    ambient roots and accepted-057 smooth-point simultaneous roots. Preserves every
+    original model field, any given ambient field and roots, finite initial constant
+    field, actual valuation/center, completed local ring, geometric root cover, full
+    sections and canonical tensor comparison. No full-paper completion is claimed.
+    See challenges/sharp-and-roots/Scope.json.'
+fidelity:
+  divergences: Complete original049/056/057 outputs retained. The other100 original
+    endpoints are outside this configuration; the covered049 overlaps another configuration
+    and is not counted twice. Actual canonical comparison proof is present in the
+    independent Challenge, with no added existence assumption.

@@ -1,6 +1,9 @@
 name = "ArithmeticThetaPalomar"
 version = "0.1.0"
 defaultTargets = ["ThetaProof"]
+# Bound per-compiler internal threads for official cold-build memory diagnosis.
+# This does not restrict Lake process concurrency or change proof checks.
+weakLeanArgs = ["-j1"]
 
 [[require]]
 name = "mathlib"
@@ -1265,3 +1268,11 @@ roots = ["SharpAdaptiveImageChallenge"]
 [[lean_lib]]
 name = "SharpAdaptiveImageSolution"
 roots = ["SharpAdaptiveImageSolution"]
+
+[[lean_lib]]
+name = "SharpAndRootsChallenge"
+roots = ["SharpAndRootsChallenge"]
+
+[[lean_lib]]
+name = "SharpAndRootsSolution"
+roots = ["SharpAndRootsSolution"]

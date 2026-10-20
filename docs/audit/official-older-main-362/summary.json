@@ -1,0 +1,55 @@
+{
+  "report_sha256": "a21f2f7f192adc4d70937ebf9b07094f6094bfe9a9c125eb7e39a9cf0ef04be4",
+  "workflow_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39461299032",
+  "source": {
+    "bytes": 47870709,
+    "commit": "2bd02cf8a38d686dc7a56012b1ca0291443816c9",
+    "repository": "WeThinkIn/arithmetic-theta-lean4-palomar",
+    "repository_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar",
+    "tree_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/tree/2bd02cf8a38d686dc7a56012b1ca0291443816c9"
+  },
+  "status": "error",
+  "error_kind": "infrastructure/resource-exhausted",
+  "last_active_stage": "solution-build",
+  "diagnostics": [
+    {
+      "code": "provider.resource_exhausted",
+      "explanation": "worker resource ceiling reached while running lake (exit 137, result oom-kill)",
+      "next_action": "Inspect the reported resource limit and build usage. If the workload repeatedly exceeds the worker's capacity, reduce its resource use or arrange sufficient capacity before retrying. Retry an unchanged commit only after addressing the reported condition. Normal submission cooldowns still apply.",
+      "owner": "provider",
+      "repairable": false,
+      "retryable": true,
+      "stage": "resource-exhausted",
+      "summary": "worker resource ceiling reached while running lake (exit 137, result oom-kill)"
+    }
+  ],
+  "solution_build_resources": {
+    "cpu_max_applied": false,
+    "cpu_usage_nanoseconds": 28901138016000,
+    "deadline_fired": false,
+    "exec_main_code": "2",
+    "exec_main_status": "9",
+    "memory_events": {
+      "oom": 0,
+      "oom_kill": 9
+    },
+    "memory_peak_bytes": 15824445440,
+    "phase": "solution-build:cgroup",
+    "pids_events_max": 0,
+    "rlimits_applied": {
+      "FSIZE": 1099511627776,
+      "NOFILE": 65536
+    },
+    "supervisor": "cgroup",
+    "supervisor_timeout": false,
+    "systemd_active_state": "failed",
+    "systemd_result": "oom-kill"
+  },
+  "peak_gib": 14.737663269042969,
+  "challenge_trust_level": "high",
+  "challenge_imports": [
+    "Mathlib"
+  ],
+  "execution_profile": "palomar-standard-v1",
+  "interpretation": "Official source/Challenge provenance accepted, but Solution build was killed for memory exhaustion before a full comparison. No theorem counterexample or kernel rejection is reported. Unchanged resource conditions must not be blindly retried."
+}

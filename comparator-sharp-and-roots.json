@@ -1,0 +1,14 @@
+{
+  "challenge_module": "SharpAndRootsChallenge",
+  "solution_module": "SharpAndRootsSolution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarAmbient355.ambient_prescribed_roots",
+    "ArithmeticThetaPalomarAmbient355.smooth_point_simultaneous_roots",
+    "ArithmeticThetaPalomarSharp360.sharpFiniteDetermination"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake",
+    "-v",
+    "build"
+  ],
+  "cwd": "/home/Palomar/workspace/arithmetic-theta/evidence/resource-diagnosis-363/tiny-lake",
+  "exit_code": 0,
+  "seconds": 0.5647775153629482,
+  "lake_runtime_threads_env": 2,
+  "compiler_threads_from_toml": "-j1",
+  "budget_seconds": 60
+}

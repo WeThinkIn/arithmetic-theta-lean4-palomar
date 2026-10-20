@@ -1,0 +1,415 @@
+{
+  "created_at_utc": "2026-10-20T19:19:24.622648+00:00",
+  "scope": "Read-only OOM resource diagnosis plus explicitly authorized tiny isolated Lake argv verification; no production project/workflow change, cancellation or dispatch",
+  "pipeline_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+  "lean_commit": "11acb17ec6b07a8f9e9173e6845197929540936b",
+  "failed_run": 39461299032,
+  "first_candidate": "package-top-level weakLeanArgs = [\"-j1\"]",
+  "candidate_cold_build_proven": false,
+  "namespace_runner_available_proven": false,
+  "repo_runner_count": 0,
+  "org_runner_groups_http": 404,
+  "solution_build_oom_kill": 9,
+  "deadline_fired": false,
+  "files": [
+    {
+      "path": "Analysis.md",
+      "sha256": "77bbe43cff29bcddebced5675a25fcc20251adb6e5216144355ab1c061137719",
+      "bytes": 12119
+    },
+    {
+      "path": "current-source-import-footprint.json",
+      "sha256": "e3a53599c6202d76cc1d83e32d725a438e5e2fb5574f868e6139be9c213a9313",
+      "bytes": 4968
+    },
+    {
+      "path": "failed-commit-lakefile.toml",
+      "sha256": "2556e31e095553d1e89a7adde54f462abea72302dd0809ae0cc847150c7bb073",
+      "bytes": 42101
+    },
+    {
+      "path": "failed-run-log-fetch.txt",
+      "sha256": "bde294368bfed77c2cddf8cec271d398aee9cdbab3b26e1059281bd33adb0120",
+      "bytes": 12
+    },
+    {
+      "path": "failed-run-log.txt",
+      "sha256": "fe0af0d431b5b514c237aa74c30f0c13648460ccce82a791af296ae4f07166dd",
+      "bytes": 136563
+    },
+    {
+      "path": "fetch-receipt.json",
+      "sha256": "53cf16108b9c1d630044580808a3a5da5dc0adfcefae4bab73b4590d531e24a2",
+      "bytes": 855
+    },
+    {
+      "path": "lean-runtime/src/runtime/object.cpp",
+      "sha256": "1a87b496a223cc005be129b45f6f27692f4ae4e7fe4fae0bcc32041001653f06",
+      "bytes": 103042
+    },
+    {
+      "path": "lean-runtime/src/runtime/thread.cpp",
+      "sha256": "da93387e057790e22afed42f1fea98a99d020af29a6fff28496137e6d089256b",
+      "bytes": 7384
+    },
+    {
+      "path": "lean-runtime/src/shell/lean.cpp",
+      "sha256": "b311e6363d689e7b6d2e717c53981c59c63104892dc1d0cb308d977d6c6d943a",
+      "bytes": 588
+    },
+    {
+      "path": "local-toolchain-source-bindings.json",
+      "sha256": "7a59e9309ee7101c8611e4c14069cc33c6d7f63999dec277cd0115e12d6439a6",
+      "bytes": 2135
+    },
+    {
+      "path": "org-runner-groups.txt",
+      "sha256": "eb1c71fdc2ed2ce49cf9efa2f2cade213778c276c4d7233a2b77f18a93df9d2c",
+      "bytes": 1418
+    },
+    {
+      "path": "owner-profile.txt",
+      "sha256": "6e99522ad4897f10ca3a3dfd8f8179a14cef2e098739438089cffee05b6bc32f",
+      "bytes": 2830
+    },
+    {
+      "path": "pipeline/.github/workflows/submission.yml",
+      "sha256": "a116f9a84bf5287e8ed9cda55b98d3023c3c4215fe084b61ce7988e9bc9dc2f0",
+      "bytes": 12402
+    },
+    {
+      "path": "pipeline/execution-profiles.json",
+      "sha256": "6a940ec74ac122f3989f2468d479982472d928764a57646cbcb81f0dbf6b5e7b",
+      "bytes": 594
+    },
+    {
+      "path": "pipeline/scripts/verification_profile.py",
+      "sha256": "5990b4da4074cabb79dfb5c9c8c4dc75d8d409553b3e023627ec3b485e2d26e4",
+      "bytes": 10971
+    },
+    {
+      "path": "pipeline/scripts/verify_submission.py",
+      "sha256": "c575759d82c506f181b3736a110950fd32931c08a1be454262027d6205f178a2",
+      "bytes": 267147
+    },
+    {
+      "path": "pipeline/verification-profile.json",
+      "sha256": "94fcd7906a1b6c076c0036d742e1c5add8625e49bb474818ec8924576dbf0caa",
+      "bytes": 703
+    },
+    {
+      "path": "repo-runners.txt",
+      "sha256": "1aea7ff54dab3181899feeea681b19e2478ccf07515bac47c44a6adccdddd816",
+      "bytes": 1404
+    },
+    {
+      "path": "resource-summary.json",
+      "sha256": "c5da95e6c1311aef9269712deeff314db5816489d4aeb1140bbc662fab63aa1f",
+      "bytes": 2902
+    },
+    {
+      "path": "runner-api-summary.json",
+      "sha256": "cfbfdd61697448cf31364c28f6f4bcab89d3a6b6d322a290f89d136127fdfcb3",
+      "bytes": 4777
+    },
+    {
+      "path": "tiny-lake/.lake/build/ir/LeafA.c",
+      "sha256": "6d92f0d577be70999153f8a63adfdc3b647df57b0f6c90c80fbe30a7d17d653c",
+      "bytes": 2297
+    },
+    {
+      "path": "tiny-lake/.lake/build/ir/LeafA.c.hash",
+      "sha256": "63f438653fc75200911cc0aa9638e81f97caf4fb3c2a7ae445cc5011d22c068d",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/ir/LeafA.setup.json",
+      "sha256": "a4cd3df42f49697885077fe825feb6042ee7b95bdcf0a0caa9c21fcffde2c83d",
+      "bytes": 135
+    },
+    {
+      "path": "tiny-lake/.lake/build/ir/LeafB.c",
+      "sha256": "bc08d0353ad6ac047f9d6d053bdd023da6cb8e5258940ee7f49cf3a8f91050e4",
+      "bytes": 2297
+    },
+    {
+      "path": "tiny-lake/.lake/build/ir/LeafB.c.hash",
+      "sha256": "050e4d4ee7358a03406435d71fb385d8d892f05c53440450381cfba9c36776ff",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/ir/LeafB.setup.json",
+      "sha256": "8171811c7850ff7e63f1e90296854123ee708386e6e1294a9f69386c1c3701cc",
+      "bytes": 135
+    },
+    {
+      "path": "tiny-lake/.lake/build/ir/Probe.c",
+      "sha256": "f54cba880b13936757fad2b3df9255c47167d21abf298efd07cb9f31d52751ae",
+      "bytes": 3089
+    },
+    {
+      "path": "tiny-lake/.lake/build/ir/Probe.c.hash",
+      "sha256": "6f402b4780b8b69aab75afa9494c0f0df98c1dfec7d019a0cf0bd947883348d6",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/ir/Probe.setup.json",
+      "sha256": "0596bf8799f5731becc53ccdb0163dcb1fcfe134eae07a208233d2dea699abd5",
+      "bytes": 1154
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafA.ilean",
+      "sha256": "a5582dae9af1b1f53f303f0fa53b0f00ae1f9e696e4f711c13c2c035e39ddaf0",
+      "bytes": 422
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafA.ilean.hash",
+      "sha256": "9fc398611553d46b7231cc8a433763de8d71659323c1c5e0bd79c1720be705b3",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafA.ir",
+      "sha256": "bebc2bbbd15dee47a87262515dcdf60f5ecf24316e7a46e19e6937c13839140e",
+      "bytes": 1256
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafA.ir.hash",
+      "sha256": "96ae54ca883a3bec3b92c097f8ecd522face8fb3e22ee34bbe134afe92522874",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafA.ir.sig",
+      "sha256": "bdfa8830d196729296373fc863afe6ff2d3b34d55a32c50a1931e7fa3c24bae5",
+      "bytes": 176
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafA.ir.sig.hash",
+      "sha256": "8e841e1f61351a78ce40edecf2628af3fd25c127d19254ba3d8b9efba9f28d02",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafA.olean",
+      "sha256": "6aee82a543c930c984e46df13206a58be1f521e78e78a3c4710c0984f7a33620",
+      "bytes": 3976
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafA.olean.hash",
+      "sha256": "cc2549da06be10b30c464b3a370b59a996a32b5acd4f1156a9a03f2188f418f2",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafA.olean.private",
+      "sha256": "13b6b0ce30b175b8722ed5ed091a22c1056caaad881447fb51d03fe54bac1b9f",
+      "bytes": 928
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafA.olean.private.hash",
+      "sha256": "4e11f308b5be0bfe83d7a83c752e00ab19659f22f5637ddf444dcd6f1562e281",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafA.olean.server",
+      "sha256": "11ee1cca75e4e5af37641049fb5762ede69cb9a4692512710277c2beac4f748d",
+      "bytes": 592
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafA.olean.server.hash",
+      "sha256": "5872915774c367383df2f200681272a0c0cb9a5592322c800aba84e5b52e10a0",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafA.trace",
+      "sha256": "78893249080146f4be366901dbb4eac7255fc89021745a31bc0a002d22652d7c",
+      "bytes": 1989
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafB.ilean",
+      "sha256": "ce716c96be9dcae46778bf70ffd57df583e5b4bd32db0804433befffcab4d27c",
+      "bytes": 422
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafB.ilean.hash",
+      "sha256": "7abb6d390275528795105f535ce67962082949fda90ba70baeb1adaa733996d4",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafB.ir",
+      "sha256": "c3df1748c52ff07167230fc112d933b866c29f4726258d9a04fdc46650d13ea7",
+      "bytes": 1256
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafB.ir.hash",
+      "sha256": "7b5b93c78b477115c7b9a3432361be7b357c7236ec67dbbc4683dbc083161870",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafB.ir.sig",
+      "sha256": "eb71994bcb0db92a16629f778b8f3ef559807d84452d81c2c932d411225138f0",
+      "bytes": 176
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafB.ir.sig.hash",
+      "sha256": "026e0f55436efafeafa65a301533a6e98442d41f53ba8adfc31a23612cdf4c27",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafB.olean",
+      "sha256": "98e8fc74ce604a20be151005d5bdae067a0b9ac3778675064fdbac4a508da8e8",
+      "bytes": 3976
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafB.olean.hash",
+      "sha256": "2731cfdb4cd075a2cbe420e637c91620fcb1bc1e4d5d1ee6fb938eb3e8252290",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafB.olean.private",
+      "sha256": "037530baf36948c363d83f14e755b7ce1aed7b8ffc72ddd50258076b04c17eb3",
+      "bytes": 928
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafB.olean.private.hash",
+      "sha256": "46b081896a1aacf1dbccba150c1ba249c5b7c2cea08c5fcd88f4bd0b5d463c81",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafB.olean.server",
+      "sha256": "1b3a6e5d7c7922d87bd28d3b6deb57461fa9a041495ea2738268e9579d645362",
+      "bytes": 592
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafB.olean.server.hash",
+      "sha256": "92620b37b3e219305d7b9879b341f18e92af155bc8d35ca9465ffa4a71ba8156",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/LeafB.trace",
+      "sha256": "847c8637e6796ae9f465e6288c7534514d3f33146b518c2d06c86c5b0672f5bb",
+      "bytes": 1989
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/Probe.ilean",
+      "sha256": "8b73fffab0d057b80fdc76ac9b28123ac3f7ab89bdc1bb632179556237a19622",
+      "bytes": 664
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/Probe.ilean.hash",
+      "sha256": "69510db2943220dc0da1d87079727470eaf0c2e325ca47e51ec0ad39264607ca",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/Probe.ir",
+      "sha256": "b2fe544fcf2b49c4ddaa2211eae984938d3c0edf064da1d4091d8b9cbef3b2d2",
+      "bytes": 1464
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/Probe.ir.hash",
+      "sha256": "2dfc163318380eb7afd15122ff39fd21a4498322d9fd7d69d8e4e031aa99d8ce",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/Probe.ir.sig",
+      "sha256": "97bb7b7b1998006f569e0f6ebd44aac427131f6f2fdc4430bfd013de653be088",
+      "bytes": 176
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/Probe.ir.sig.hash",
+      "sha256": "b8d87cd1f9570a4c23375d06ff74dc06b01f896d9a9437d85e0a0db20eb73a8d",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/Probe.olean",
+      "sha256": "204464c64edea98496c28abb4b826fdcce7d444626a7895b63fff30b5c6c2f9b",
+      "bytes": 4392
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/Probe.olean.hash",
+      "sha256": "9f40ee46e9375e434c513168a6e16c5791ba6d3d3d5ab957804d6c7754f80e08",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/Probe.olean.private",
+      "sha256": "161df9b8496f02921d5c1628cdbfc5fdb9deb0b75497c550eebd314ff2fff488",
+      "bytes": 1200
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/Probe.olean.private.hash",
+      "sha256": "d660bad3ef38d835c190c386f7940c0e65e9646ed5a98fdfe592cf3160786b6b",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/Probe.olean.server",
+      "sha256": "ac758f3d4255a67a73982d0b6d8558b55663373a21e7f1499e86043f720aff8c",
+      "bytes": 576
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/Probe.olean.server.hash",
+      "sha256": "291568bfa05cd5b681fd134120c7caf007cd9cbe03bec868f0e01b76ba7b1085",
+      "bytes": 16
+    },
+    {
+      "path": "tiny-lake/.lake/build/lib/lean/Probe.trace",
+      "sha256": "65e3fd752965f6c9b4d3983ece6aaa35a299af6b8ca489a48241f2fa76ca4934",
+      "bytes": 2196
+    },
+    {
+      "path": "tiny-lake/LeafA.lean",
+      "sha256": "0be1c18da7bd208d704501a6b74d903da048bf7a0b753a93203fbda5524eb710",
+      "bytes": 64
+    },
+    {
+      "path": "tiny-lake/LeafB.lean",
+      "sha256": "72ae0c2e70463e322debf093243431a70da05e7b6bf4e3dd1ec556ead1bd9af9",
+      "bytes": 64
+    },
+    {
+      "path": "tiny-lake/Probe.lean",
+      "sha256": "2075a4fb9c552c756bdaad904a9639b534b6ac34ab017d048c86b890d40c391d",
+      "bytes": 168
+    },
+    {
+      "path": "tiny-lake/lake-manifest.json",
+      "sha256": "f7c9472e1fb4ba94309b82e33ae08373820235b8cf1f4d10c71bd7bd20aed387",
+      "bytes": 148
+    },
+    {
+      "path": "tiny-lake/lakefile.toml",
+      "sha256": "087cdd3f4aa5917ab35d114d955f536367965fa0986d467689f6caf48deef487",
+      "bytes": 183
+    },
+    {
+      "path": "tiny-lake/lean-toolchain",
+      "sha256": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+      "bytes": 29
+    },
+    {
+      "path": "tiny-lake-argv.json",
+      "sha256": "8e8cbfdd27dae682d9c93a471e9e04086cd10363d438eddde111a38b588ad040",
+      "bytes": 377
+    },
+    {
+      "path": "tiny-lake-argv.log",
+      "sha256": "72f18b7438fdef2dd115ec8f71643cd2b1fa97e7d627eb1092900eb76082b0c8",
+      "bytes": 2713
+    },
+    {
+      "path": "tiny-lake-compiler-argv.json",
+      "sha256": "6046bc552190bcbab8c05da50998c1bf92a09aabd697d5d91fb58441c650cbee",
+      "bytes": 2698
+    }
+  ],
+  "tiny_lake_argv_check": {
+    "command": [
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lake",
+      "-v",
+      "build"
+    ],
+    "cwd": "/home/Palomar/workspace/arithmetic-theta/evidence/resource-diagnosis-363/tiny-lake",
+    "exit_code": 0,
+    "seconds": 0.5647775153629482,
+    "lake_runtime_threads_env": 2,
+    "compiler_threads_from_toml": "-j1",
+    "budget_seconds": 60
+  },
+  "all_three_probe_compilers_received_j1": true
+}
