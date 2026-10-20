@@ -7,6 +7,9 @@ public import Mathlib.RingTheory.AdicCompletion.AsTensorProduct
 public import Mathlib.RingTheory.Flat.TorsionFree
 
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! A common vertical denominator and faithful uniform completed theta charts. -/
 set_option autoImplicit false

@@ -3,6 +3,10 @@ module
 public import LocalGammaProviderBridgeR0065
 
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 set_option autoImplicit false
 noncomputable section

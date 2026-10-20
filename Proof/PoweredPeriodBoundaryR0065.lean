@@ -4,6 +4,11 @@ public import GenericRestrictionProvidersR0065
 public import GenericAdjacentProvidersR0065
 
 @[expose] public section
+set_option synthInstance.maxHeartbeats 200000
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Powered period translation in the actual completed coordinate open. -/
 set_option autoImplicit false

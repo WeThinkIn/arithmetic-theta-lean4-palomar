@@ -12,6 +12,9 @@ public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_isQuasicoherent_cok
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_isCoherent_coker
 
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 open AlgebraicGeometry CategoryTheory TopologicalSpace Opposite
 open scoped nonZeroDivisors
@@ -1222,7 +1225,7 @@ theorem placeDegree_eq_affine_residue_finrank (hU : IsAffineOpen U)
   haveI := hU.isLocalization_stalk x
   letI : Algebra k (X.residueField x.1) := (baseToResidue k f x.1).toAlgebra
   let e : (Γ(X,U) ⧸ (hU.primeIdealOf x).asIdeal) ≃+* X.residueField x.1 :=
-    IsLocalization.AtPrime.equivQuotMaximalIdeal (hU.primeIdealOf x).asIdeal (X.presheaf.stalk x.1)
+    (IsLocalization.AtPrime.equivQuotMaximalIdeal (hU.primeIdealOf x).asIdeal (X.presheaf.stalk x.1)).toRingEquiv
   let e' : (Γ(X,U) ⧸ (hU.primeIdealOf x).asIdeal) ≃ₐ[k] X.residueField x.1 :=
     { e with
       commutes' := fun a => evaluation_base_eq X k f U x a }
@@ -1372,7 +1375,11 @@ lemma finrank_eq_sum_weighted_localLength_int
     intro 𝔪 hm
     apply ne_top_of_le_ne_top (ENat.natCast_ne_top _) (b := (Module.finrank k H : ℕ∞))
     rw [heq]
-    exact Finset.single_le_sum (fun _ _ => (show (0 : ℕ∞) ≤ _ from bot_le)) hm
+    exact Finset.single_le_sum
+      (f := fun m : MaximalSpectrum S => (Module.finrank k (S ⧸ m.asIdeal) : ℕ∞) *
+        Module.length (Localization.AtPrime m.asIdeal)
+          (LocalizedModule m.asIdeal.primeCompl H))
+      (fun _ _ => bot_le) hm
   have h := congrArg ENat.toNat heq
   rw [ENat.toNat_sum hne] at h
   simp only [ENat.toNat_mul, ENat.toNat_natCast] at h

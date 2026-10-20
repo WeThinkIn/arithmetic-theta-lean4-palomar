@@ -3,6 +3,8 @@ module
 public import PolygonCohomologyDefinitionsR0131
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Smooth marked sections of the actual finite cyclic polygon. -/
 set_option autoImplicit false
@@ -82,8 +84,6 @@ lemma raw_base_smooth :
     Algebra.Smooth.of_equiv ae.symm
   have hf := RingHom.smooth_algebraMap.mpr ha
   convert hf using 1
-  exact (IsScalarTower.algebraMap_eq (PowerSeries k)
-    (ArithmeticThetaNodeCharts.Node k) (RawOpen k true)).symm
 
 lemma open_smooth (n : ℕ) : Smooth (rightLeg k n ≫ structureMap k n) := by
   let f : PowerSeries k →+* RawOpen k true :=

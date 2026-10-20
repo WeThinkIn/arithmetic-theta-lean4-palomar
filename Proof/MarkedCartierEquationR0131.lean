@@ -3,6 +3,8 @@ module
 public import PolygonCohomologyDefinitionsR0131
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! The marked equation on every finite nodal thickening. -/
 set_option autoImplicit false

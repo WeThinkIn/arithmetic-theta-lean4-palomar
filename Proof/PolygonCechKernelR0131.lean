@@ -3,6 +3,8 @@ module
 public import TruncatedLaurentPresentationR0131
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! Finite-stage constancy for the actual cyclic node atlas. -/
 set_option autoImplicit false

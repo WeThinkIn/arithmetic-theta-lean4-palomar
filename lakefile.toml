@@ -873,6 +873,7 @@ globs = [
   "RelativeCyclicQuotientExistenceR0173",
   "RelativeCyclicThetaSplittingR0256",
   "RelativeDiscriminantDefinitionsR0171",
+  "RelativeDoubledTorsionThetaLiftPreludeR0255",
   "RelativeDoubledTorsionThetaLiftR0255",
   "RelativeFourCharacterDefinitionsR0211",
   "RelativeFourTorsionRootR0190",

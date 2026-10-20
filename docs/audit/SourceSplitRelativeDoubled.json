@@ -1,0 +1,19 @@
+{
+  "original_sha256": "da57457ee6cab440bd86e2dd8ba86f3f378729aef5fc4b9090dac27ed57d1c70",
+  "cut_after_line": 8847,
+  "prefix_body_preserved_exactly": true,
+  "tail_body_preserved_exactly": true,
+  "files": {
+    "Proof/RelativeDoubledTorsionThetaLiftPreludeR0255.lean": 8849,
+    "Proof/RelativeDoubledTorsionThetaLiftR0255.lean": 8407
+  },
+  "scope_restore": [
+    "noncomputable section",
+    "universe u v",
+    "OModulePresheaf additive/module instances",
+    "open AlgebraicGeometry",
+    "autoImplicit false",
+    "maxErrors 15"
+  ],
+  "verification": "Pending original dependencies: twoTermComplex kerMapBaseChange, RelativeThetaLiftsDefinitionsR0255, GlobalLevelCyclicQuotientR0180. Split has not yet been compiled."
+}

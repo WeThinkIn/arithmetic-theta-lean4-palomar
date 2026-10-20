@@ -3,6 +3,8 @@ module
 public import TruncatedLaurentPresentationR0131
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! The residue and exactness of the explicit finite cyclic Cech complex. -/
 set_option autoImplicit false
