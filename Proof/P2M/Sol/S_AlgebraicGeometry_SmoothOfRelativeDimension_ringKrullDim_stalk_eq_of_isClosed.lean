@@ -21,6 +21,7 @@ namespace DimStalkAux
 
 open MvPolynomial
 
+set_option maxHeartbeats 2000000 in
 theorem height_eq_card_of_isMaximal (K : Type u) [Field K] :
     ∀ (ι : Type v) [Finite ι] (𝔪 : Ideal (MvPolynomial ι K)) [𝔪.IsMaximal], 𝔪.height = Nat.card ι := by
   intro ι _
@@ -49,6 +50,7 @@ theorem height_eq_card_of_isMaximal (K : Type u) [Field K] :
     set P : Ideal (Polynomial (MvPolynomial α K)) := 𝔪.map f with hP
     haveI : P.IsMaximal := Ideal.map_isMaximal_of_equiv f
     haveI : (P.under (MvPolynomial α K)).IsMaximal := Polynomial.isMaximal_comap_C_of_isJacobsonRing P
+    haveI : P.LiesOver (P.under (MvPolynomial α K)) := ⟨rfl⟩
     have h1 := Polynomial.height_eq_height_add_one (P.under (MvPolynomial α K)) P
     rw [ih (P.under (MvPolynomial α K))] at h1
     rw [← RingEquiv.height_map f 𝔪, ← hP, h1, Nat.card_eq_fintype_card (α := Option α), Fintype.card_option,

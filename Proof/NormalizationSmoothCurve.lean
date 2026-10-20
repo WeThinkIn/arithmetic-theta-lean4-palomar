@@ -4,6 +4,9 @@ public import SmoothNormalizedCurve
 public import NormalizationCurveDimension
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 open AlgebraicGeometry CategoryTheory TopologicalSpace
 open ArithmeticThetaNormalization ArithmeticThetaNormalizationField
@@ -85,6 +88,7 @@ theorem normalization_smooth_relative_curve :
       ((h ≫ f).appLE ⊤ V (by simp)).hom := by
     ext a
     simp [constantSectionsMap]
+    rfl
   rw [heq] at hc
   exact hc
 

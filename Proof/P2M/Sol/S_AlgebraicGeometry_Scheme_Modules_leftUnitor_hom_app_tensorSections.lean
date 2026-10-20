@@ -9,6 +9,8 @@ public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_leftUnitor_hom_app_tensorSections
 
 universe u
@@ -60,7 +62,6 @@ lemma unitTensorIso_hom_comp_leftUnitor_hom :
       (Modules.sheafify X).map (λ_ ((ι X).obj N)).hom ≫ (adj X).counit.app N := by
   dsimp only [unitTensorIso, Iso.trans_hom, Iso.symm_hom, Iso.app_hom, asIso_hom,
     MonoidalCategory.tensorIso_hom, Iso.symm_inv]
-  rw [MonoidalCategory.tensorIso_hom, Iso.app_hom, asIso_hom, Iso.symm_hom]
   rw [Functor.Monoidal.μIso_inv, Functor.Monoidal.εIso_inv, Functor.Monoidal.map_leftUnitor,
     MonoidalCategory.tensorHom_def]
   simp only [Category.assoc]

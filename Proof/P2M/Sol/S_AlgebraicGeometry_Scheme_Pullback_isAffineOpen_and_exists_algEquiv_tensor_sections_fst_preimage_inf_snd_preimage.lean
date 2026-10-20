@@ -76,7 +76,8 @@ theorem opensRange_chart :
   rw [Scheme.Hom.opensRange_comp_of_isIso]
   ext1
   simp only [Scheme.Hom.coe_opensRange, Opens.coe_inf, Scheme.Hom.coe_preimage]
-  rw [Scheme.Pullback.range_map, IsAffineOpen.range_fromSpec, IsAffineOpen.range_fromSpec]
+  rw [Scheme.Pullback.range_map]
+  erw [IsAffineOpen.range_fromSpec, IsAffineOpen.range_fromSpec]
 
 include hU hV in
 theorem isAffineOpen_inf : IsAffineOpen (pullback.fst f g ⁻¹ᵁ U ⊓ pullback.snd f g ⁻¹ᵁ V) := by

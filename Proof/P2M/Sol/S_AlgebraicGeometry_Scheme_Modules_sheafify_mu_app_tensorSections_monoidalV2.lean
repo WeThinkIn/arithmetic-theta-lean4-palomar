@@ -9,6 +9,8 @@ public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensorV2
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_sheafify_mu_app_tensorSections_monoidalV2
 
 universe u
@@ -89,7 +91,7 @@ theorem sheafify_μ_app_tensorSections (P Q : X.PresheafOfModules) {U : X.Opens}
       (x ⊗ₜ[Γ(X, U)] y)).trans
     (congrArg (((adj X).unit.app ((ι X).obj ((Modules.sheafify X).obj P) ⊗
         (ι X).obj ((Modules.sheafify X).obj Q))).app (op U))
-      (ModuleCat.MonoidalCategory.tensorHom_tmul (((adj X).unit.app P).app (op U))
+      (ModuleCat.MonoidalCategory.tensorHom_tmul (R := Γ(X, U)) (((adj X).unit.app P).app (op U))
         (((adj X).unit.app Q).app (op U)) x y))
   exact (congrArg (fun z => (Functor.LaxMonoidal.μ (Modules.sheafify X) P Q).val.app (op U)
     ((sheafifyTensorIso ((Modules.sheafify X).obj P) ((Modules.sheafify X).obj Q)).hom.val.app (op U) z))

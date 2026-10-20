@@ -8,6 +8,8 @@ public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensorV2
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_IsFrameOn_tensorSections_monoidalV2
 
 set_option autoImplicit false
@@ -77,7 +79,7 @@ lemma map_smul_tmul {W W' : X.Opens} (i : W' ⟶ W) (g : Γ(X, W)) (s : Γ(L, W)
     (L.val ⊗ M.val).map i.op (g • ((s : L.val.obj (op W)) ⊗ₜ[Γ(X, W)] (t : M.val.obj (op W)))) =
       X.presheaf.map i.op g • ((L.presheaf.map i.op s : L.val.obj (op W')) ⊗ₜ[Γ(X, W')]
         (M.presheaf.map i.op t : M.val.obj (op W'))) := by
-  erw [PresheafOfModules.map_smul, PresheafOfModules.Monoidal.tensorObj_map_tmul]
+  erw [PresheafOfModules.map_smul, PresheafOfModulesOfCommRing.Monoidal.tensorObj_map_tmul]
   rfl
 
 variable (L M) in

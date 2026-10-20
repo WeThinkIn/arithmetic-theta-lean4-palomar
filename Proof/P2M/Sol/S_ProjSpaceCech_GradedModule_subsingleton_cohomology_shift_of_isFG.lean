@@ -12,6 +12,10 @@ public import Theorems.Thm_ProjSpaceCech_GradedModule_Presentation_ker_isFG
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 namespace P2MW.S_ProjSpaceCech_GradedModule_subsingleton_cohomology_shift_of_isFG
 
 set_option autoImplicit false

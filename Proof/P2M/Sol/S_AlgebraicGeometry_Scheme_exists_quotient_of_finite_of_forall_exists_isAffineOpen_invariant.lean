@@ -656,7 +656,7 @@ theorem exists_prime_comap_eq [Finite G] (q : Ideal (invSubring act)) [q.IsPrime
     ∃ P : Ideal A, P.IsPrime ∧ P.comap (invSubring act).subtype = q := by
   haveI := algebra_isIntegral_invSubring act act_one act_mul
   obtain ⟨P, -, hP, hPq⟩ := Ideal.exists_ideal_over_prime_of_isIntegral q (⊥ : Ideal A)
-    (by rw [Ideal.comap_bot_of_injective _ Subtype.val_injective]; exact bot_le)
+    (by rw [Ideal.under, Ideal.comap_bot_of_injective _ Subtype.val_injective]; exact bot_le)
   exact ⟨P, hP, hPq⟩
 
 include act_one act_mul in

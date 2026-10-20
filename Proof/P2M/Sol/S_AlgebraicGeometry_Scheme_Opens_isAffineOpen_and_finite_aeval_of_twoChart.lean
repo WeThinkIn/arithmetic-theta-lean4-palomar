@@ -430,7 +430,7 @@ theorem Scheme.Opens.bcSection_eq (U : C.Opens) (f : Γ(C, U)) :
     Scheme.Opens.bcSection c ρ U f = ((pullback.fst c (Spec.map (CommRingCat.ofHom ρ))).app U).hom f := by
   have := congrArg (fun φ => φ.hom f)
     (Scheme.Opens.topIso_inv_resLE_appTop_topIso_hom (pullback.fst c (Spec.map (CommRingCat.ofHom ρ))) U)
-  simpa [Scheme.Opens.bcSection] using this
+  simpa only [Scheme.Opens.bcSection, CommRingCat.hom_comp, RingHom.comp_apply] using this
 
 end BaseChangeSquare
 

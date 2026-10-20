@@ -290,7 +290,6 @@ theorem exists_linearEquiv_ker_baseChange_cechDiff (𝒱 : X.TwoAffineOpenCover)
   rw [LinearEquiv.ofBijective_apply]
   change e0 ((1 : A') ⊗ₜ[A] (s0, s1)) = _
   rw [he0, hε0, hε1]
-  rfl
 
 set_option maxHeartbeats 3200000 in
 
@@ -355,8 +354,8 @@ theorem affine_core [IsAffine X] (F : X.Modules)
     have hL : ∀ x, (L₁ x : Γ(FA, ⊤)) = (L₂ x : Γ(FA, fA ⁻¹ᵁ ⊤)) := by
       intro x
       induction x using TensorProduct.induction_on with
-      | zero => simp only [map_zero]; rfl
-      | add x y hx hy => simp only [map_add]; rw [hx, hy]; rfl
+      | zero => simp only [map_zero]
+      | add x y hx hy => simp only [map_add]; rw [hx, hy]
       | tmul a' m => ?_
       have hk : (a' ⊗ₜ[A] m : A' ⊗[A] (ΓMod ((pushforward π).obj F))) = a' • ((1 : A') ⊗ₜ[A] m) := by
         rw [TensorProduct.smul_tmul', smul_eq_mul, mul_one]
@@ -367,11 +366,13 @@ theorem affine_core [IsAffine X] (F : X.Modules)
           (((pullbackPushforwardAdjunction fA).unit.app F).app ⊤).hom m := by
         simp only [L₂, LinearMap.coe_comp, LinearEquiv.coe_coe, Function.comp_apply]
         erw [LinearEquiv.baseChange_tmul]
+        change e ((1 : A') ⊗ₜ[A] gX m) = _
         rw [he]
         rfl
       have hLft : (L₁ ((1 : A') ⊗ₜ[A] m) : Γ(FA, ⊤)) =
           (((pullbackPushforwardAdjunction fA).unit.app F).app ⊤).hom m := by
         simp only [L₁, LinearMap.coe_comp, LinearEquiv.coe_coe, Function.comp_apply]
+        change gP (Γβ (σ ((1 : A') ⊗ₜ[A] m))) = _
         rw [hσ m]
         have h4 := unit_app_app_comp_baseChangeHom_app π ψ sA fA
           (Limits.pullback.condition (f := π) (g := ψ)) F ⊤
@@ -381,8 +382,6 @@ theorem affine_core [IsAffine X] (F : X.Modules)
         change Γβ _ = _
         rw [hΓβ]
         erw [h4m]
-
-        erw [CategoryTheory.comp_apply]
         erw [map_eq_resM]
         change resM FA (le_refl (⊤ : (Limits.pullback π ψ).Opens))
           ((((pullbackPushforwardAdjunction fA).unit.app F).app ⊤).hom m) = _
@@ -395,7 +394,8 @@ theorem affine_core [IsAffine X] (F : X.Modules)
       simp only [L₁, LinearMap.coe_comp, LinearEquiv.coe_coe, Function.comp_apply,
         LinearEquiv.apply_symm_apply] at hx
       rw [← hx, LinearEquiv.symm_apply_apply]
-      rfl
+      change Γβ x = Γβ (σ (σ.symm x))
+      rw [LinearEquiv.apply_symm_apply]
     have hbij : Function.Bijective Γβ := by
       have hfun : (Γβ : _ → _) = gP.symm ∘ L₂ ∘ σ.symm := funext hΓβ'
       rw [hfun]

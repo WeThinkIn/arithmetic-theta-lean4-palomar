@@ -6,6 +6,10 @@ public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_exists_forall_exist
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 namespace P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_isFG_hom_injective_saturated_familyFramesGradedModule
 
 set_option autoImplicit false
@@ -330,7 +334,7 @@ private def _root_.P2mFamFG.xAlg : MvPolynomial (Fin (r + 1)) (MvPolynomial (Fin
     Module.End (MvPolynomial (Fin ny) A) (Mf ι hθ).M :=
   haveI := Algebra.isMulCommutative_adjoin (MvPolynomial (Fin ny) A) (s := Set.range (Mf ι hθ).xMul)
     (by
-      rintro _ ⟨l, rfl⟩ _ ⟨l', rfl⟩
+      rintro _ ⟨l, rfl⟩ _ ⟨l', rfl⟩ _
       exact (Mf ι hθ).xMul_comm l l')
   (Algebra.adjoin (MvPolynomial (Fin ny) A) (Set.range (Mf ι hθ).xMul)).val.comp
     (MvPolynomial.aeval fun l =>
@@ -609,7 +613,6 @@ theorem sat_single_of_apply_eq_zero {k : ℕ} (hq : (G k).IsQuasicoherent) {n : 
   have hz : (fun j => frameUnit ι j l ^ N ⨳ g j) = fun _ => 0 := funext fun j => by
     rw [← Nat.sub_add_cancel (hN j), pow_add, mul_smul, he0 j, smul_zero]
   rw [map_zero, xMul_pow_single, hz, single_zero']
-  rfl
 
 theorem sat_single_congr {k : ℕ} (hq : (G k).IsQuasicoherent) {n : ℕ}
     {g g' : ∀ j : Fin (r + 1), (G k).obj (pullbackChart ι j)} (hg : FramesCompat ι (G k) n g) (hg' : FramesCompat ι (G k) n g')

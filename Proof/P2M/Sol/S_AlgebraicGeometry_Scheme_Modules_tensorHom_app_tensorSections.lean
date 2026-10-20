@@ -9,6 +9,8 @@ public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_tensorHom_app_tensorSections
 
 universe u
@@ -51,7 +53,6 @@ lemma sheafifyTensorIso_hom_naturality (f : L ⟶ L') (g : M ⟶ M') :
       (sheafifyTensorIso L M).hom ≫ (f ⊗ₘ g) := by
   dsimp only [sheafifyTensorIso, Iso.trans_hom, Iso.symm_hom, Iso.app_hom, asIso_hom,
     MonoidalCategory.tensorIso_hom]
-  simp only [MonoidalCategory.tensorIso_hom, Iso.app_hom, asIso_hom]
   rw [Functor.Monoidal.μIso_inv, Functor.Monoidal.μIso_inv, ← Category.assoc,
     ← Functor.OplaxMonoidal.δ_natural, Category.assoc, Category.assoc,
     MonoidalCategory.tensorHom_comp_tensorHom, MonoidalCategory.tensorHom_comp_tensorHom]

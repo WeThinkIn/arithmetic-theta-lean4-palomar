@@ -10,6 +10,7 @@ public import Theorems.Thm_NeronModelInfra_TopFormOrder_topFormMap_topFormMap
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq
@@ -477,6 +478,7 @@ lemma L₂_ιMulti {U U' : Y.Opens} (i : op U ⟶ op U') (m : Fin d → Γ(gY.ka
   funext k
   exact map_k1h gY gX φ hφ i (m k)
 
+set_option maxHeartbeats 2000000 in
 def kdAb : (T0.pre gY d).presheaf ⟶ ((Scheme.Modules.pushforward φ).obj (gX.topDifferentials d)).val.presheaf where
   app U := AddCommGrpCat.ofHom (kdfun gY gX φ hφ d U.unop)
   naturality {U U'} i := by

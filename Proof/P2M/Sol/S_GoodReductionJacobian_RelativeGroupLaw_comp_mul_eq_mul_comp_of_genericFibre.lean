@@ -26,8 +26,8 @@ theorem solution
     (φ : NeronModelInfra.SchemeHomOver t f)
     (hφ : ∀ {S : AlgebraicGeometry.Scheme.{u}} (s : S ⟶ AlgebraicGeometry.Spec (CommRingCat.of K))
         (x y : NeronModelInfra.SchemeHomOver (s ≫ NeronModelInfra.specGenericFibreInclusion R K) t),
-        (H.mul _ x y).1 ≫ φ.1 =
-          (G.mul _ ⟨x.1 ≫ φ.1, by rw [CategoryTheory.Category.assoc, φ.2, x.2]⟩
+        (H.mul (s ≫ NeronModelInfra.specGenericFibreInclusion R K) x y).1 ≫ φ.1 =
+          (G.mul (s ≫ NeronModelInfra.specGenericFibreInclusion R K) ⟨x.1 ≫ φ.1, by rw [CategoryTheory.Category.assoc, φ.2, x.2]⟩
             ⟨y.1 ≫ φ.1, by rw [CategoryTheory.Category.assoc, φ.2, y.2]⟩).1)
     {S : AlgebraicGeometry.Scheme.{u}} (s : S ⟶ AlgebraicGeometry.Spec (CommRingCat.of R))
     (x y : NeronModelInfra.SchemeHomOver s t) :

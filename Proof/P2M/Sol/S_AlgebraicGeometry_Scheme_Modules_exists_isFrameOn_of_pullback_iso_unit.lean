@@ -6,6 +6,8 @@ public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_exists_isFrameOn_of_pullback_iso_unit
 
 universe u

@@ -176,7 +176,7 @@ theorem heckeGenJ_comm (M : ShimuraCurveModel R ι 𝒮) (ℓ ℓ' : Nat.Primes)
 theorem isMulCommutative_adjoin_heckeGenJ (M : ShimuraCurveModel R ι 𝒮) :
     IsMulCommutative (Algebra.adjoin ℤ (Set.range M.heckeGenJ)) :=
   Algebra.isMulCommutative_adjoin ℤ (by
-    rintro _ ⟨ℓ, rfl⟩ _ ⟨ℓ', rfl⟩
+    rintro _ ⟨ℓ, rfl⟩ _ ⟨ℓ', rfl⟩ _
     exact M.heckeGenJ_comm ℓ ℓ')
 
 @[reducible] def commRingAdjoinJ (M : ShimuraCurveModel R ι 𝒮) :

@@ -131,9 +131,11 @@ theorem ηfun_smul (U : P.Opens) (c : Γ(P, U)) (f : Fin m → Fin (r + 1) → �
 
 theorem res_ηfun {U U' : P.Opens} (h : U ≤ U') (f : Fin m → Fin (r + 1) → Γ(P, U')) (l i a) :
     (twist q ι d).res h (ηfun ι q d m U' f l i a) = ηfun ι q d m U (fun l i => restrictFun h (f l i)) l i a := by
-  refine twistObj.ext (funext fun k => ?_)
-  simp only [twist_res_val, ηfun_apply, twistObj_sub_val, Pi.sub_apply, twistObj.smul_val, Xsec_val, map_sub,
-    map_mul, map_pow, restrictFun_restrictFun]
+  simp only [ηfun_apply, map_sub]
+  congr 1 <;> apply twistObj.ext <;> funext k
+  all_goals
+    change restrictFun _ ((restrictFun _ _ * _) : Γ(P, U' ⊓ pullbackChart ι k)) = _
+    simp only [map_mul, map_pow, restrictFun_restrictFun, Xsec_val, twistObj.smul_val]
 
 def η : Hom (Src q r m) (Tgt ι q d m) where
   app U :=

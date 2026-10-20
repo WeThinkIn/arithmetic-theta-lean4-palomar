@@ -6,6 +6,8 @@ public import Definitions.Def_SheafOfModules_Monoidal
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

@@ -3799,11 +3799,8 @@ theorem kwF4gRRTate_blockSum_of_integralBasisCompat
     finiteDimensional_range_tateCommDual_tateProj (w.restrict E) (M i i) hπvmem
 
   have hPconj : eD.conj pI = P := by
-    apply LinearMap.ext; intro x
-    simp only [heD, hpI, integralProdProj, hP, LinearEquiv.conj_apply, LinearMap.comp_apply,
-      LinearEquiv.coe_coe, LinearEquiv.symm_symm, LinearEquiv.apply_symm_apply,
-      LinearEquiv.symm_apply_apply]
-    simp only [LinearEquiv.apply_symm_apply]
+    change eD.conj (eD.symm.conj P) = P
+    exact LinearEquiv.conj_conj_symm eD P
   have hTCDconj : eD.conj (tateCommDual pI (lmulK w (algebraMap F W₀ g)) (lmulK w ghF))
       = tateCommDual P (matMulLin (w.restrict E) M') (scalarLin (w.restrict E) πv) := by
     rw [tateCommDual_conj, hPconj, heD, integralBasisEquivFunK_conj_lmulK_algebraMap,

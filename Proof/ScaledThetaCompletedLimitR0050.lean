@@ -3,6 +3,9 @@ module
 public import ScaledThetaExponentControlR0050
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! The scaled theta sum in the actual completed node, with its uniform cutoff. -/
 set_option autoImplicit false

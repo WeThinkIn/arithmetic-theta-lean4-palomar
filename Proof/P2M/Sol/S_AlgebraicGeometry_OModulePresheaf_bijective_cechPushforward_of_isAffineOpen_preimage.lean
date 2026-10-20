@@ -124,7 +124,6 @@ theorem modB_smul_def (O : ((pW p W) : Scheme.{u}).Opens) (b : Bch W) (x : G.obj
 theorem modB_smul_def' (O : ((pW p W) : Scheme.{u}).Opens) (b : Bch W) (x : G.obj ((pW p W).ι ''ᵁ O)) :
     b • x = (p.appLE (W : P.Opens) ((pW p W).ι ''ᵁ O) (Scheme.Opens.ι_image_le _ _)).hom b • x := by
   rw [modB_smul_def, algebraMap_qW_eq]
-  rfl
 
 theorem isScalarTower_modB (O : ((pW p W) : Scheme.{u}).Opens) :
     letI := Scheme.TwoAffineOpenCover.algebraOfHom (qW p W) O

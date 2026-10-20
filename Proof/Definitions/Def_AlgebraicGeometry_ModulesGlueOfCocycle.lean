@@ -4,6 +4,9 @@ public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 set_option autoImplicit false
 
@@ -106,7 +109,7 @@ noncomputable def twist (h : ∀ i, Γ(X, U i)ˣ) : UnitCocycle U where
 
 noncomputable def comap {X' : Scheme.{u}} (g : X' ⟶ X) : UnitCocycle (fun i => g ⁻¹ᵁ U i) where
   u i j := (g.app (U i ⊓ U j)).hom (c.u i j)
-  refl i := by rw [c.refl, map_one]; rfl
+  refl i := by rw [c.refl, map_one]
   cocycle i j k := by
     have nat : ∀ {A B : X.Opens} (hBA : B ≤ A) (s : Γ(X, A)),
         GlueOfCocycle.rO (X := X') (show g ⁻¹ᵁ B ≤ g ⁻¹ᵁ A from fun _ hx => hBA hx) ((g.app A).hom s) =

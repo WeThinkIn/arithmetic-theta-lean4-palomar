@@ -840,6 +840,10 @@ theorem range_stalk_eq_gluedPlaceOfPoint (ht : Transcendental K t) (x : closedPo
     (((gluedFunctionFieldEquiv K t).symm : (glued K t).functionField ≃+* L).toRingHom.comp
         (algebraMap ((glued K t).presheaf.stalk x.1) (glued K t).functionField)).range =
       (gluedPlaceOfPoint K t ht x).toValuationSubring.toSubring := by
+  haveI : IsOpenImmersion (Spec.map (CommRingCat.ofHom (incl₀ K t).toRingHom)) :=
+    isOpenImmersion_f₀ K t
+  haveI : IsOpenImmersion (Spec.map (CommRingCat.ofHom (inclInf K t).toRingHom)) :=
+    isOpenImmersion_fInf K t
   obtain ⟨x, hx⟩ := x
   by_cases h : x ∈ Set.range (ι₀ K t).base
   · obtain ⟨x₀, rfl⟩ := h
@@ -1099,6 +1103,10 @@ theorem hasLift_generic_centre (s : L) [FiniteDimensional K⟮s⟯ L]
 
 theorem hasLift_generic (hgen : S.i₁.base (closedPoint S.K) = genericPoint (glued K t)) :
     S.commSq.HasLift := by
+  haveI : IsOpenImmersion (Spec.map (CommRingCat.ofHom (incl₀ K t).toRingHom)) :=
+    isOpenImmersion_f₀ K t
+  haveI : IsOpenImmersion (Spec.map (CommRingCat.ofHom (inclInf K t).toRingHom)) :=
+    isOpenImmersion_fInf K t
   obtain ⟨φ, -, h₁⟩ := exists_eq_SpecMap_comp_fromSpecStalk K t S.i₁ hgen
   by_cases hO : pullbackVS K t S φ = ⊤
   · exact hasLift_generic_top K t S φ h₁ hO
@@ -1352,6 +1360,10 @@ theorem false_of_liftStruct_cross (S : ValuativeCommSq (gluedToBase K t))
     (h₁' : l₁.l.base (closedPoint S.R) ∉ Set.range (ιInf K t).base)
     (h₂ : l₂.l.base (closedPoint S.R) ∈ Set.range (ιInf K t).base)
     (h₂' : l₂.l.base (closedPoint S.R) ∉ Set.range (ι₀ K t).base) : False := by
+  haveI : IsOpenImmersion (Spec.map (CommRingCat.ofHom (incl₀ K t).toRingHom)) :=
+    isOpenImmersion_f₀ K t
+  haveI : IsOpenImmersion (Spec.map (CommRingCat.ofHom (inclInf K t).toRingHom)) :=
+    isOpenImmersion_fInf K t
 
   have H₁ := range_subset_of_closedPoint_mem K t l₁.l (ι₀ K t) h₁
   have H₂ := range_subset_of_closedPoint_mem K t l₂.l (ιInf K t) h₂
@@ -1679,6 +1691,10 @@ theorem val_f₁' (hη : genericPoint (glued K t) ∈ V₁ K t a) :
     (gluedFunctionFieldEquiv K t).symm
         ((glued K t).presheaf.germ (V₁ K t a) (genericPoint (glued K t)) hη (f₁' K t a)) =
       (t - algebraMap K L a)⁻¹ := by
+  haveI : IsOpenImmersion (Spec.map (CommRingCat.ofHom (incl₀ K t).toRingHom)) :=
+    isOpenImmersion_f₀ K t
+  haveI : IsOpenImmersion (Spec.map (CommRingCat.ofHom (inclInf K t).toRingHom)) :=
+    isOpenImmersion_fInf K t
   have hp := genericPoint_mem_U₁ K t a ha
   have h1 : (gluedFunctionFieldEquiv K t).symm
         ((glued K t).presheaf.germ (V₁ K t a) (genericPoint (glued K t)) hη (f₁' K t a)) =

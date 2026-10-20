@@ -4,6 +4,10 @@ public import Definitions.Def_AlgebraicCurve_CurveModelConstruction
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 namespace P2MW.S_AlgebraicCurve_CurveModel_isProper_smooth_places_affineCover_glued
 
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry IntermediateField AlgebraicCurve IsLocalRing
@@ -63,6 +67,10 @@ section Glued
 
 variable (K : Type u) [Field K] {L : Type u} [Field L] [Algebra K L] (t : L) [Fact (t ≠ 0)]
 
+private theorem finiteTypeAfterOpen {U X Y : Scheme.{u}}
+    (f : U ⟶ X) (g : X ⟶ Y) [IsOpenImmersion f]
+    [LocallyOfFiniteType g] : LocallyOfFiniteType (f ≫ g) := inferInstance
+
 private theorem locallyOfFiniteType_gluedToBase_of_isSeparable [FiniteDimensional K⟮t⟯ L]
     [Algebra.IsSeparable K⟮t⟯ L] : LocallyOfFiniteType (gluedToBase K t) := by
   have h₀' : LocallyOfFiniteType (ι₀ K t ≫ gluedToBase K t) := by
@@ -81,7 +89,8 @@ private theorem locallyOfFiniteType_gluedToBase_of_isSeparable [FiniteDimensiona
       erw [Category.assoc]
     erw [key]
     haveI := h₀'
-    exact inferInstanceAs (LocallyOfFiniteType (f₀ K t ≫ (ι₀ K t ≫ gluedToBase K t)))
+    exact @finiteTypeAfterOpen (XOverlap K t) (X₀ K t) (Spec (CommRingCat.of K))
+      (f₀ K t) (ι₀ K t ≫ gluedToBase K t) (isOpenImmersion_f₀ K t) h₀'
   · change LocallyOfFiniteType (ι₀ K t ≫ gluedToBase K t)
     exact h₀'
   · change LocallyOfFiniteType (ιInf K t ≫ gluedToBase K t)
@@ -147,6 +156,10 @@ private theorem hasLift_of_generic [FiniteDimensional K⟮t⟯ L]
     (S : ValuativeCommSq (gluedToBase K t))
     (hgen : S.i₁.base (IsLocalRing.closedPoint S.K) = genericPoint (glued K t)) :
     S.commSq.HasLift := by
+  haveI : IsOpenImmersion (Spec.map (CommRingCat.ofHom (incl₀ K t).toRingHom)) :=
+    isOpenImmersion_f₀ K t
+  haveI : IsOpenImmersion (Spec.map (CommRingCat.ofHom (inclInf K t).toRingHom)) :=
+    isOpenImmersion_fInf K t
   obtain ⟨φ, -, h₁⟩ := exists_eq_SpecMap_comp_fromSpecStalk K t S.i₁ hgen
   rcases (pullbackVS K t S φ).mem_or_inv_mem t with ht | ht
   · exact hasLift_generic_of_mem_pullbackVS K t S φ t (incl₀ K t) (fun a => coe_chartIncl K _ a)
@@ -402,7 +415,7 @@ private theorem rank_kaehler_chartRing_localization_away_eq_one' (hs : Transcend
     IsLocalization.localization_isScalarTower_of_submonoid_le (Localization.Away t) L
       (Submonoid.powers t) (nonZeroDivisors _) htnzd
   haveI : IsScalarTower K (Localization.Away t) L :=
-    IsScalarTower.of_algebraMap_eq fun a => by
+    IsScalarTower.of_algebraMap_eq (R := K) (S := Localization.Away t) (A := L) fun a => by
       rw [IsScalarTower.algebraMap_apply K (↥(chartRing K ({s} : Set L))) L,
         IsScalarTower.algebraMap_apply (↥(chartRing K ({s} : Set L))) (Localization.Away t) L,
         ← IsScalarTower.algebraMap_apply K (↥(chartRing K ({s} : Set L))) (Localization.Away t)]
@@ -574,8 +587,9 @@ private scoped instance locallyOfFiniteType_gluedToBase' : LocallyOfFiniteType (
       erw [Category.assoc]
     erw [key]
     haveI := h₀'
-    exact inferInstanceAs
-      (LocallyOfFiniteType (CurveModel.f₀ K t ≫ (CurveModel.ι₀ K t ≫ CurveModel.gluedToBase K t)))
+    exact @finiteTypeAfterOpen (CurveModel.XOverlap K t) (CurveModel.X₀ K t) (Spec (CommRingCat.of K))
+      (CurveModel.f₀ K t) (CurveModel.ι₀ K t ≫ CurveModel.gluedToBase K t)
+      (CurveModel.isOpenImmersion_f₀ K t) h₀'
   · change LocallyOfFiniteType (CurveModel.ι₀ K t ≫ CurveModel.gluedToBase K t)
     exact h₀'
   · change LocallyOfFiniteType (CurveModel.ιInf K t ≫ CurveModel.gluedToBase K t)
@@ -754,6 +768,10 @@ private theorem range_stalk_eq_gluedPlaceOfPoint' (ht : Transcendental K t) (x :
     (((CurveModel.gluedFunctionFieldEquiv K t).symm : (CurveModel.glued K t).functionField ≃+* L).toRingHom.comp
         (algebraMap ((CurveModel.glued K t).presheaf.stalk x.1) (CurveModel.glued K t).functionField)).range =
       (gluedPlaceOfPoint' K t ht x).toValuationSubring.toSubring := by
+  haveI : IsOpenImmersion (Spec.map (CommRingCat.ofHom (CurveModel.incl₀ K t).toRingHom)) :=
+    CurveModel.isOpenImmersion_f₀ K t
+  haveI : IsOpenImmersion (Spec.map (CommRingCat.ofHom (CurveModel.inclInf K t).toRingHom)) :=
+    CurveModel.isOpenImmersion_fInf K t
   obtain ⟨x, hx⟩ := x
   by_cases h : x ∈ Set.range (CurveModel.ι₀ K t).base
   · obtain ⟨x₀, rfl⟩ := h

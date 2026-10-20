@@ -4,9 +4,11 @@ public import PrincipalDivisorSupportR0116
 public import Mathlib.FieldTheory.IntermediateField.Adjoin.Basic
 public import Mathlib.FieldTheory.RatFunc.AsPolynomial
 public import Mathlib.RingTheory.Valuation.Discrete.Basic
+public import Mathlib.Algebra.FiniteSupport.Basic
 public import Mathlib.RingTheory.LocalRing.ResidueField.Basic
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
@@ -390,7 +392,8 @@ lemma pointValuation_discrete
     (hh : ArithmeticThetaMillerR0114.branchEquation k e h)
     (hE : ArithmeticThetaMillerR0114.IsInfinityEmbedding k e h E)
     (P : (Curve k e).Point) : (pointValuation k e T E P).IsRankOneDiscrete := by
-  have := pointValuation_valueGroup_nontrivial k e T h E hh hE P
+  haveI : Nontrivial (pointValuation k e T E P).valueGroup :=
+    pointValuation_valueGroup_nontrivial k e T h E hh hE P
   infer_instance
 
 lemma pointValuation_localRing_dvr
@@ -398,7 +401,8 @@ lemma pointValuation_localRing_dvr
     (hE : ArithmeticThetaMillerR0114.IsInfinityEmbedding k e h E)
     (P : (Curve k e).Point) :
     IsDiscreteValuationRing (pointValuation k e T E P).valuationSubring := by
-  have := pointValuation_valueGroup_nontrivial k e T h E hh hE P
+  haveI : Nontrivial (pointValuation k e T E P).valueGroup :=
+    pointValuation_valueGroup_nontrivial k e T h E hh hE P
   infer_instance
 
 lemma pointValuation_localRing_mem_iff (P : (Curve k e).Point) (f : FF k e) :
@@ -1316,7 +1320,7 @@ lemma vertical_degree_zero [IsAlgClosed k] (he : Function.Injective e) (a : k) :
     apply hP
     simp only [Set.mem_singleton_iff] at hn
     simp [hn]
-  have hs := finsum_sub_distrib (h1.add h2) h0
+  have hs := finsum_sub_distrib (Function.HasFiniteSupport.add h1 h2) h0
   simp only [Pi.add_apply] at hs
   rw [hs, finsum_add_distrib h1 h2]
   have hd (q : (Curve k e).Point) (n : ℤ) : (∑ᶠ P, if P = q then n else 0) = n := by
@@ -1645,12 +1649,13 @@ def factoredBaseSymbol (c : k) (zeros poles : Multiset k) (a : k) (x : Option k)
   constantBaseSymbol k c a x * multisetBaseSymbol k zeros a x / multisetBaseSymbol k poles a x
 lemma finite_factoredBaseSymbol (c : k) (zeros poles : Multiset k) (a : k) :
     Function.HasFiniteMulSupport (factoredBaseSymbol k c zeros poles a) := by
-  exact ((finite_constantBaseSymbol k c a).mul (finite_multisetBaseSymbol k zeros a)).div
+  exact Function.HasFiniteMulSupport.div (Function.HasFiniteMulSupport.mul
+    (finite_constantBaseSymbol k c a) (finite_multisetBaseSymbol k zeros a))
     (finite_multisetBaseSymbol k poles a)
 lemma factoredBaseSymbol_product (c : k) (hc : c ≠ 0) (zeros poles : Multiset k) (a : k) :
     (∏ᶠ x, factoredBaseSymbol k c zeros poles a x) = 1 := by
   unfold factoredBaseSymbol
-  have hd := finprod_div_distrib ((finite_constantBaseSymbol k c a).mul (finite_multisetBaseSymbol k zeros a))
+  have hd := finprod_div_distrib (Function.HasFiniteMulSupport.mul (finite_constantBaseSymbol k c a) (finite_multisetBaseSymbol k zeros a))
       (finite_multisetBaseSymbol k poles a)
   simp only [Pi.mul_apply] at hd
   rw [hd,

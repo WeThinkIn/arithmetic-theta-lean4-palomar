@@ -5,6 +5,9 @@ public import Theorems.Thm_Ideal_height_add_ringKrullDim_quotient_eq_ringKrullDi
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 namespace P2MW.S_Ideal_natCast_le_ringKrullDim_quotient_of_mem_minimalPrimes_map_of_algebraicIndependent
 
 set_option autoImplicit false
@@ -92,8 +95,8 @@ theorem exists_ringKrullDim_eq_natCast (A : Type*) [CommRing A]
       ((PrimeSpectrum.asIdeal_le_asIdeal _ _).mpr hlt.le) ⟨hy2, hy1⟩
       (Algebra.IsIntegral.isIntegral y)
   have h2 : ringKrullDim (MvPolynomial (Fin s) k) = s := by
-    rw [MvPolynomial.ringKrullDim_of_isNoetherianRing, ringKrullDim_eq_zero_of_field, zero_add,
-      Nat.card_eq_fintype_card, Fintype.card_fin]
+    rw [MvPolynomial.ringKrullDim_of_isNoetherianRing, ringKrullDim_eq_zero_of_field, zero_add]
+    simp [ENat.card_eq_coe_fintype_card]
   rw [h2] at h1
   exact exists_nat_eq (ringKrullDim_nonneg_of_nontrivial) h1
 
@@ -253,7 +256,8 @@ theorem ringKrullDim_localization_add_le
     ringKrullDim_localization_le (Submonoid.powers (algebraMap R C r))
   have h3 : ringKrullDim (MvPolynomial (Fin d) (Localization.Away r)) =
       ringKrullDim (Localization.Away r) + d := by
-    rw [MvPolynomial.ringKrullDim_of_isNoetherianRing, Nat.card_eq_fintype_card, Fintype.card_fin]
+    rw [MvPolynomial.ringKrullDim_of_isNoetherianRing]
+    simp [ENat.card_eq_coe_fintype_card]
   calc ringKrullDim (Localization.Away r) + d
       = ringKrullDim (MvPolynomial (Fin d) (Localization.Away r)) := h3.symm
     _ ≤ ringKrullDim (Localization.Away (algebraMap R C r)) := h1

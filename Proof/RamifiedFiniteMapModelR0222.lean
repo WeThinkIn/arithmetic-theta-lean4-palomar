@@ -3,6 +3,7 @@ module
 public import FiniteEtaleMapFiniteModelR0221
 public import Mathlib.LinearAlgebra.Dimension.Localization
 public import Mathlib.RingTheory.Flat.TorsionFree
+import all Mathlib.AlgebraicGeometry.Morphisms.FlatRank
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false
@@ -82,7 +83,7 @@ theorem finrank_affine_pullback {X S T : Scheme} [IsIntegral S] [IsIntegral T]
     ⟨(S.affineOpenCover.covers (g t)).choose⟩
   have : IsIntegral (Spec (S.affineOpenCover.X (S.affineOpenCover.idx (g t)))) :=
     isIntegral_of_isOpenImmersion i
-  change affineRank _ _ = _
+  change affineRank (pullback.snd f i) _ = _
   trans affineRank (pullback.snd (pullback.snd f g) (u ≫ pullback.snd _ _)) z
   · exact (affineRank_pullback (pullback.snd f i) _ _ (u ≫ pullback.fst i g)
       (IsPullback.map_fst_comp_fst_snd_comp_fst f g i u) _ z hyl).symm

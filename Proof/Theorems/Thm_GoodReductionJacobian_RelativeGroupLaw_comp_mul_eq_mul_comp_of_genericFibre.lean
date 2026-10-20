@@ -6,6 +6,9 @@ public import P2M.Util
 public import P2M.Sol.S_GoodReductionJacobian_RelativeGroupLaw_comp_mul_eq_mul_comp_of_genericFibre
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 universe u
 
@@ -20,8 +23,8 @@ theorem GoodReductionJacobian.RelativeGroupLaw.comp_mul_eq_mul_comp_of_genericFi
     (φ : NeronModelInfra.SchemeHomOver t f)
     (hφ : ∀ {S : AlgebraicGeometry.Scheme.{u}} (s : S ⟶ AlgebraicGeometry.Spec (CommRingCat.of K))
         (x y : NeronModelInfra.SchemeHomOver (s ≫ NeronModelInfra.specGenericFibreInclusion R K) t),
-        (H.mul _ x y).1 ≫ φ.1 =
-          (G.mul _ ⟨x.1 ≫ φ.1, by rw [CategoryTheory.Category.assoc, φ.2, x.2]⟩
+        (H.mul (s ≫ NeronModelInfra.specGenericFibreInclusion R K) x y).1 ≫ φ.1 =
+          (G.mul (s ≫ NeronModelInfra.specGenericFibreInclusion R K) ⟨x.1 ≫ φ.1, by rw [CategoryTheory.Category.assoc, φ.2, x.2]⟩
             ⟨y.1 ≫ φ.1, by rw [CategoryTheory.Category.assoc, φ.2, y.2]⟩).1)
     {S : AlgebraicGeometry.Scheme.{u}} (s : S ⟶ AlgebraicGeometry.Spec (CommRingCat.of R))
     (x y : NeronModelInfra.SchemeHomOver s t) :

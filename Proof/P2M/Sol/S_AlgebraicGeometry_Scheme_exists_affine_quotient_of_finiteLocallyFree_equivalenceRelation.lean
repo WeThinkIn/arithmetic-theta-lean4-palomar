@@ -5,6 +5,9 @@ public import Theorems.Thm_RingHom_isPushout_eqLocus_of_finiteLocallyFree_equiva
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_exists_affine_quotient_of_finiteLocallyFree_equivalenceRelation
 
 set_option autoImplicit false
