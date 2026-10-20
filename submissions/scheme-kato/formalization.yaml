@@ -1,0 +1,56 @@
+version: v0.4
+project:
+  name: Scheme Kato unit naturality and intrinsic norm characterization
+  description: 'Complete original accepted083 and086: Kato unit naturality for every
+    actual pointed Cartesian base change, and intrinsic characterization by the actual
+    Cartier divisor and multiplication2and3 norm invariance. Preserves arbitrary schemes,
+    nonreduced coefficient rings, nonflat maps, actual torsion complements, all normal-model/affine
+    tests, full determinant-normalized multiplicative norm families on all opens,
+    and restriction compatibility. Includes actual geometry, normal-model existence
+    and scheme-unit existence support targets. See challenges/scheme-kato/Scope.json.
+    No full-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Complete original accepted083 and086: Kato unit naturality for every actual
+    pointed Cartesian base change, and intrinsic characterization by the actual Cartier
+    divisor and multiplication2and3 norm invariance. Preserves arbitrary schemes,
+    nonreduced coefficient rings, nonflat maps, actual torsion complements, all normal-model/affine
+    tests, full determinant-normalized multiplicative norm families on all opens,
+    and restriction compatibility. Includes actual geometry, normal-model existence
+    and scheme-unit existence support targets. See challenges/scheme-kato/Scope.json.
+    No full-paper completion claimed.'
+fidelity:
+  divergences: Complete original083/086 conclusions recovered through exact predicate
+    equivalences and reverse original-type checks. The other101 original endpoints
+    are outside this configuration. Norm families are constructed existentially, with
+    the scalar structure induced by the actual scheme map; no arbitrary norm operator,
+    geometric-point-only test, flatness, domain or reducedness premise is added.

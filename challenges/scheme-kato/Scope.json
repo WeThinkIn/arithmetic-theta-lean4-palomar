@@ -1,0 +1,47 @@
+{
+  "status": "complete_independent_scheme_kato083086_local_candidate_checked",
+  "covered_original_endpoint_ids": [
+    "accepted-083",
+    "accepted-086"
+  ],
+  "target_count": 5,
+  "support_target_count": 3,
+  "endpoint_target_count": 2,
+  "theorem_names": [
+    "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+    "ArithmeticThetaPalomarKatoSupport394.normalModelExists",
+    "ArithmeticThetaPalomarKatoSupport394.schemeUnitExists",
+    "ArithmeticThetaPalomarKato394.schemeUnitNaturality",
+    "ArithmeticThetaPalomarKato394.schemeIntrinsicCharacterization"
+  ],
+  "original_endpoint_recoveries": {
+    "accepted-083": "ArithmeticThetaPalomarKato394.recover_original_083",
+    "accepted-086": "ArithmeticThetaPalomarKato394.recover_original_086"
+  },
+  "scope_preserved": [
+    "arbitrary c>1 coprime6",
+    "all actual normal models and every original model field",
+    "nonempty actual normal-source complement witness",
+    "normalized rational function and unit representative with exact germ equality",
+    "specific pointed Cartesian map and constructed complement inclusion",
+    "every affine test over arbitrary coefficient k-algebras",
+    "actual family multiplication, actual identity/torsion ideals and complement units",
+    "full Cartier local equations with correcting units on whole affine charts",
+    "existential actual multiplicative NormFamily on every open",
+    "all free-affine determinant normalization with f.app scalar action",
+    "all-open restriction compatibility",
+    "constructed norm-domain inclusion and full two/three fixed equations",
+    "arbitrary scheme/nonflat base changes and exact pullback equality"
+  ],
+  "full_paper_claimed": false,
+  "not_claimed": [
+    "other101 original endpoints by this package alone",
+    "additional original credit for support target schemeUnitExists",
+    "official mechanical or semantic pass",
+    "registration"
+  ],
+  "remaining_validation": [
+    "parent real Lake root integration",
+    "scope review and selected official preflight/intake"
+  ]
+}

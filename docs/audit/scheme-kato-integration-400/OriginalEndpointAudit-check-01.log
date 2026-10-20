@@ -1,0 +1,2 @@
+'ArithmeticThetaPalomarKato394.recover_original_083' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarKato394.recover_original_086' depends on axioms: [propext, Classical.choice, Quot.sound]

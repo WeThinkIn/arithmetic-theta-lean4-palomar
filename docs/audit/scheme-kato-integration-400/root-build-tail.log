@@ -1,0 +1,80 @@
+ Quot.sound]
+ℹ [11492/11505] Replayed SchemeKatoCartierDivisorR0250
+info: Proof/SchemeKatoCartierDivisorR0250.lean:156:0: 'ArithmeticThetaSchemeKatoUnitR0250.scheme_kato_cartier_divisor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [11495/11505] Replayed FiniteEtaleNormSectionR0251
+warning: Proof/FiniteEtaleNormSectionR0251.lean:43:35: Variable name `hy` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hy
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [11497/11505] Replayed ArbitraryKatoNormR0251
+info: Proof/ArbitraryKatoNormR0251.lean:130:0: 'ArithmeticThetaSchemeKatoNormR0251.arbitrary_kato_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [11498/11505] Replayed FiniteEtaleNormFamilyR0251
+info: Proof/FiniteEtaleNormFamilyR0251.lean:79:0: 'ArithmeticThetaSchemeKatoNormR0251.finite_etale_norm_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [11499/11505] Replayed SchemeKatoNormR0251
+info: Proof/SchemeKatoNormR0251.lean:125:0: 'ArithmeticThetaSchemeKatoNormR0251.scheme_kato_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [11501/11505] Replayed CartierUnitRatioExtensionR0254
+warning: Proof/CartierUnitRatioExtensionR0254.lean:167:7: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/CartierUnitRatioExtensionR0254.lean:176:0: 'ArithmeticThetaKatoCharacterizationR0254.cartier_unit_ratio_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [11502/11505] Replayed GlobalUnitTwoThreeNormRigidityR0254
+warning: Proof/GlobalUnitTwoThreeNormRigidityR0254.lean:148:26: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [g, morphismRestrict]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Proof/GlobalUnitTwoThreeNormRigidityR0254.lean:206:7: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Proof/GlobalUnitTwoThreeNormRigidityR0254.lean:225:0: 'ArithmeticThetaKatoCharacterizationR0254.global_unit_two_three_norm_rigidity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [11503/11505] Replayed SchemeKatoIntrinsicCharacterizationR0254
+warning: Proof/SchemeKatoIntrinsicCharacterizationR0254.lean:71:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Proof/SchemeKatoIntrinsicCharacterizationR0254.lean:72:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: Proof/SchemeKatoIntrinsicCharacterizationR0254.lean:84:0: 'ArithmeticThetaKatoCharacterizationR0254.scheme_kato_intrinsic_characterization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [11504/11505] Built SchemeKatoSolution (5.6s)
+warning: SchemeKatoSolution.lean:22:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [11505/11505] Built SchemeKatoChallenge (10s)
+warning: SchemeKatoChallenge.lean:546:8: declaration uses `sorry`
+warning: SchemeKatoChallenge.lean:795:8: declaration uses `sorry`
+warning: SchemeKatoChallenge.lean:799:8: declaration uses `sorry`
+warning: SchemeKatoChallenge.lean:808:8: declaration uses `sorry`
+warning: SchemeKatoChallenge.lean:819:8: declaration uses `sorry`
+Build completed successfully (11505 jobs).

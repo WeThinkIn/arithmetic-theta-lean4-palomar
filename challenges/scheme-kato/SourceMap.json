@@ -1,0 +1,38 @@
+{
+  "inputs": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/normal-kato-vocabulary-378/Challenge.lean": "a19e0049e465e1bd45b24a55a47d7d87e166cd404b27ddd03df629bea554ce6f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/ModelSupport.lean.txt": "c5508173f747c626c26ce17c7e25dffe8378deb515036231966fab70583d54c2",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/canonical-scheme-power-383/Challenge.lean": "6cc659c30c8a928069afdace27236e9a95eb54c343c0e4bf7f6f81776d17bcaf",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/weierstrass-presentation-373/Solution.lean": "6343a335eb6500753a67544c69997dc1c2abf1b38f27e31b3ba8543f143b20bf",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/ArbitraryKatoUnitDefinitionsR0249.lean": "cf311ad7c7a46bfeb248c24e3562b06fc8d2ac53bea6ecefdb1381196c704250",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeKatoUnitDefinitionsR0250.lean": "3e38489b2852023f1a26069379df95ba02c3ad94ea27125920050aaff3b05585",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeKatoNormDefinitionsR0251.lean": "d490f8341c636cbb52accf359d77f9fd1b86cee9bf0e4849bb919d6aac23830a",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeKatoUnitNaturalityR0250.lean": "b6b3d9193ff5127df9e8ee50f6fb8ca195ecd9150018c4a79e717e5d3ccdf835",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeKatoIntrinsicCharacterizationR0254.lean": "a794ce7fb2b1b0d293b164a50375796a2e7e604c5a10b23313f03a1a1712622a",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/GeometricNormDefinitionsR0150.lean": "1746f1c1aaaa5772188ddf3f14f68750a88e232aef5fde49e633906251c6010e",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/PolygonCartierDefinitionsR0133.lean": "784596d8f05f1f329efa6e29a74f9d614c4197b0ad9df2d18f15c4ea0e4a86fa"
+  },
+  "shared_definition_sha256": "2aa28e37da9e095e75b594f8999375bd50aa62a3042dbd4fba722d5c6030eb99",
+  "shared_definitions_literal_identical": true,
+  "normalization_generalized_from_five_to_arbitrary_c_without_weakening": true,
+  "actual_support_names_preserved": true,
+  "exact_iff_bridges": [
+    "normalized_iff",
+    "affine_FromModel_iff",
+    "affine_IsKatoUnit_iff",
+    "scheme_iff",
+    "cartier_iff",
+    "normFamily_iff",
+    "normInvariant_iff"
+  ],
+  "independent_norm_scalar_action": "letI := (f.app U).hom.toAlgebra; Algebra.norm",
+  "challenge_direct_imports": [
+    "Mathlib"
+  ],
+  "solution_direct_imports": [
+    "Mathlib",
+    "SchemeKatoUnitNaturalityR0250",
+    "SchemeKatoIntrinsicCharacterizationR0254"
+  ],
+  "no_evidence_module_imports": true
+}

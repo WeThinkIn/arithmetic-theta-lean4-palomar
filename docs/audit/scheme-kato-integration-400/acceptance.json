@@ -1,0 +1,19 @@
+{
+  "accepted_for_local_integration": true,
+  "accepted_ids": [
+    "accepted-083",
+    "accepted-086"
+  ],
+  "basis": "Final local checks394 and independent read-only scope review398; exact original-type reverse recovery. Not official Comparator or semantic acceptance.",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-package-394/Challenge.lean": "6bef41d62c31f5f64a74753e64aa0e7fd291c8a83ad356553aa3222f06f6e5f2",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-package-394/Solution.lean": "3ce616a85b7c6c2bcab73609ff7135abe1b9c0c61b6f37d5aa192515261cdadf",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-package-394/Scope.json": "e36322940bb22d8e6a727f15615868e68540f91a126435d7afa6292f37f5e880",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-package-394/SourceMap.json": "695e03f1e4f4ced1d4bd377ae612404f7519add2e412804d423c78f60c1e7319",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-package-394/receipt.json": "059e19d0ccd78a49ceb5a61468ca570d449980054ca60370b3c176aa9e0d8c8c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-package-394/README.md": "a3a54a88dd6e84f193fb1986ced877ecf198c463ab07ba17fcb23433d317a41d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-package-394/comparator.json": "bc48735a71f65259c56903f38f978e0f371f9099a76ee4ac6b3ce355bcc49a4a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-scope-review-398/Review.md": "b6672afeaf86ed9a7af9f73140ec920c422919e478868e1067ba85bf9613f3c9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-scope-review-398/receipt.json": "91552715896dcbddacab8669ffac01832b350d233b61251e801ed757a9e6856c"
+  }
+}

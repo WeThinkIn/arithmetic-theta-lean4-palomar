@@ -1,0 +1,15 @@
+{
+  "targets": [
+    "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+    "ArithmeticThetaPalomarKatoSupport394.normalModelExists",
+    "ArithmeticThetaPalomarKatoSupport394.schemeUnitExists",
+    "ArithmeticThetaPalomarKato394.schemeUnitNaturality",
+    "ArithmeticThetaPalomarKato394.schemeIntrinsicCharacterization"
+  ],
+  "support_target_count": 3,
+  "endpoint_target_count": 2,
+  "original_endpoint_recoveries": {
+    "accepted-083": "ArithmeticThetaPalomarKato394.recover_original_083",
+    "accepted-086": "ArithmeticThetaPalomarKato394.recover_original_086"
+  }
+}

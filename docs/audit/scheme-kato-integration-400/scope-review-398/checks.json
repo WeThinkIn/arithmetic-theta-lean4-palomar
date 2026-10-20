@@ -1,0 +1,109 @@
+{
+  "full_source_fragment_checks": [
+    {
+      "file": "/home/Palomar/workspace/arithmetic-theta/project/Proof/ArbitraryKatoUnitDefinitionsR0249.lean",
+      "start_line": 25,
+      "end_line": 60,
+      "exact_after_namespace_translation": true,
+      "translations": []
+    },
+    {
+      "file": "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeKatoUnitDefinitionsR0250.lean",
+      "start_line": 23,
+      "end_line": 74,
+      "exact_after_namespace_translation": true,
+      "translations": [
+        [
+          "ArithmeticThetaArbitraryKatoUnitR0249",
+          "ArithmeticThetaPalomarAffineKato394"
+        ],
+        [
+          "weierstrassFamily R W G hG",
+          "ArithmeticThetaPalomarWeierstrass373.family R W G hG"
+        ]
+      ]
+    },
+    {
+      "file": "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeKatoNormDefinitionsR0251.lean",
+      "start_line": 20,
+      "end_line": 62,
+      "exact_after_namespace_translation": true,
+      "translations": [
+        [
+          "ArithmeticThetaArbitraryKatoUnitR0249",
+          "ArithmeticThetaPalomarAffineKato394"
+        ]
+      ]
+    },
+    {
+      "file": "/home/Palomar/workspace/arithmetic-theta/project/Proof/GeometricNormDefinitionsR0150.lean",
+      "start_line": 44,
+      "end_line": 55,
+      "exact_after_namespace_translation": true,
+      "translations": []
+    },
+    {
+      "file": "/home/Palomar/workspace/arithmetic-theta/project/Proof/LocalWeierstrassDefinitionsR0203.lean",
+      "start_line": 77,
+      "end_line": 107,
+      "exact_after_namespace_translation": true,
+      "translations": []
+    },
+    {
+      "file": "/home/Palomar/workspace/arithmetic-theta/project/Proof/ArbitraryDiscriminantDefinitionsR0243.lean",
+      "start_line": 62,
+      "end_line": 81,
+      "exact_after_namespace_translation": true,
+      "translations": []
+    },
+    {
+      "file": "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeDiscriminantDefinitionsR0244.lean",
+      "start_line": 33,
+      "end_line": 39,
+      "exact_after_namespace_translation": true,
+      "translations": []
+    }
+  ],
+  "challenge_solution_shared_literal_equal": true,
+  "shared_definition_sha256": "2aa28e37da9e095e75b594f8999375bd50aa62a3042dbd4fba722d5c6030eb99",
+  "holes": [
+    "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+    "ArithmeticThetaPalomarKatoSupport394.normalModelExists",
+    "ArithmeticThetaPalomarKatoSupport394.schemeUnitExists",
+    "ArithmeticThetaPalomarKato394.schemeUnitNaturality",
+    "ArithmeticThetaPalomarKato394.schemeIntrinsicCharacterization"
+  ],
+  "comparator_targets": [
+    "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+    "ArithmeticThetaPalomarKatoSupport394.normalModelExists",
+    "ArithmeticThetaPalomarKatoSupport394.schemeUnitExists",
+    "ArithmeticThetaPalomarKato394.schemeUnitNaturality",
+    "ArithmeticThetaPalomarKato394.schemeIntrinsicCharacterization"
+  ],
+  "all_holes_covered": true,
+  "solution_has_sorry_admit_axiom": false,
+  "existing_builds": {
+    "Challenge": {
+      "exit_code": 0,
+      "elapsed_seconds": 7.42
+    },
+    "Solution": {
+      "exit_code": 0,
+      "elapsed_seconds": 3.92
+    },
+    "Audit": {
+      "exit_code": 0,
+      "elapsed_seconds": 2.82
+    },
+    "ChallengeAudit": {
+      "exit_code": 0,
+      "elapsed_seconds": 5.17
+    },
+    "OriginalEndpointAudit": {
+      "exit_code": 0,
+      "elapsed_seconds": 2.87
+    }
+  },
+  "new_compiles": 0,
+  "official_verification": false
+}

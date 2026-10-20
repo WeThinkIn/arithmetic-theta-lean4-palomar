@@ -1292,3 +1292,11 @@ roots = ["FullSchemeDiscriminantChallenge"]
 [[lean_lib]]
 name = "FullSchemeDiscriminantSolution"
 roots = ["FullSchemeDiscriminantSolution"]
+
+[[lean_lib]]
+name = "SchemeKatoChallenge"
+roots = ["SchemeKatoChallenge"]
+
+[[lean_lib]]
+name = "SchemeKatoSolution"
+roots = ["SchemeKatoSolution"]

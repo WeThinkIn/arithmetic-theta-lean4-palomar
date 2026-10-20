@@ -1,0 +1,16 @@
+{
+  "challenge_module": "SchemeKatoChallenge",
+  "solution_module": "SchemeKatoSolution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+    "ArithmeticThetaPalomarKatoSupport394.normalModelExists",
+    "ArithmeticThetaPalomarKatoSupport394.schemeUnitExists",
+    "ArithmeticThetaPalomarKato394.schemeUnitNaturality",
+    "ArithmeticThetaPalomarKato394.schemeIntrinsicCharacterization"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}
