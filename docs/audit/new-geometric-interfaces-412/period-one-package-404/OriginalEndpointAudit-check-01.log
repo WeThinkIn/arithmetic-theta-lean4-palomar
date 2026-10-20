@@ -1,0 +1,3 @@
+'ArithmeticThetaPalomarPeriod404.recover_original_082' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarPeriod404.fullScheme_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarPeriod404.expansions_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]

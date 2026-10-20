@@ -1,0 +1,31 @@
+{
+  "accepted_for_local_integration": true,
+  "accepted_ids": [
+    "accepted-082",
+    "accepted-085"
+  ],
+  "basis": "Final local checks, exact original type recovery and frozen source scope reviews; official verification remains pending.",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/Challenge.lean": "98500683f55610c675b455e507dcb7973c58c60aae84d2762defca16b60eb972",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/Solution.lean": "13058eec680d35654d78b5d2056b54a27a635249a063aad1dd3d370d62864c5e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/Scope.json": "2ce514960aa740ce4c1b67f08a9b4dd44b4dcb188caf0fa75ee9e5acd9c3ae9d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/SourceMap.json": "2894364bed3116bb5b3be5bf542b687a6e08c12c13349a8385e8ec0652c88a99",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/receipt.json": "d18d49844d05add3efa2fafc92aa4e4026b5c40087ee00f0b1d5934215acf86c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/README.md": "9dd29a2a9aa00489d2e65e28a51c07f050f789859633b75b693694d01357f0d3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/comparator.json": "0c47e3a068af2690572c29bbc4098fcf7a5b229acd6c4f7344e35fc570f8f18a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/Targets.json": "ba0972d1121a85afafed516da19ef143ca5c607b6e70fc0374fe28977f4db90e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-scope-review-409/Review.md": "b5c4ae7c9334e79ec8cf7ec64f753319c98ab99ea4f8c036bec45851388ef8ff",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-scope-review-409/receipt.json": "f42ccc87b412bbf7d50b7c83e479771239e7a4e07ed5b9c987a2ed141c15428a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/Challenge.lean": "b0d16b5fabaa2602763a64f71205c99009f4b7e4f6d5ab3448cec75d92b5efb3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/Solution.lean": "8039e57a87ab1b6ba2892f3e9bc6eb025d6a81d539661977043fdc168c3ec282",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/Scope.json": "31c085df9e09dadde45bfaed25dd80a12157e72eb14adb251183e76064ef881a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/SourceMap.json": "a51c96084a35afa1e0889647fc88a4fe70d5bcc5fe06e217bf8ae7c1557ba5e5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/receipt.json": "43587e3180416ab36e41de873cdc9de0a100bad1b04d7eb6642bfeadf2ff2bd6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/README.md": "652984229aaa8e79e72a57ef22cc03340daac0e1a25b38073980a2094098322a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/comparator.json": "517bb6cf16cfa9c533bdec0ef89f1044b15096b083ab227a1734c5d4b0566a4e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/Targets.json": "be14902fb8c0450899945e67ff42d71e4f7dd927ec323b6e8a039c3a4aeacaff",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-scope-review-411/Review.md": "28f61e68a7f487786445455cbdcf89ff7c0bb2b734a0ef3df69aa10d781570a6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-scope-review-411/receipt.json": "8aa273fe2d8e080aab5d5bdab24a646c1b9873f9dcf050e320b4fc5a777ae0e7"
+  },
+  "prospective_workflow_parses": true
+}

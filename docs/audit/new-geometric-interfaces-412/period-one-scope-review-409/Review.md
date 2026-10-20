@@ -1,0 +1,34 @@
+# 409 independent source scope review of 404
+
+Status: PASS for complete accepted-082 source scope on the frozen 404 candidate. Final local compile and audit receipts were inspected and bound below. This review does not claim official Palomar acceptance.
+
+The reviewed 404 definitions preserve the complete accepted-082 statement from project/docs/SourceObligations.json. The endpoint is an existentially unique single section d, and its four conjuncts refer to that same d: full scheme D2 specification; a nowhere-vanishing frame of the actual 24th tensor power; all actual period-one Tate tests over all rational coefficient rings; and actual pullback naturality to any D2 section e. The outer scheme quantification remains Type 0, as in original accepted-082. There is no conversion to a field-only target or restriction to reduced/normal target schemes.
+
+## Actual semantic objects
+
+1. `HasTateExpansions` quantifies `(A : Type) [CommRing A] [Algebra ℚ A] (V : TateTest A σ E)`. Hence nilpotents and zero divisors are allowed. No IsDomain, reducedness, Noetherian, flatness or field assumption is added to A. The stronger normality conditions in `NormalModel` concern the original normal test source and remain internal to the exact affine specification; they do not restrict A.
+2. `TateTest` retains ellipticity, actual law/origin compatibility, actual base map and rational-base equation, pointed Cartesian comparison, actual global differential frame and coordinate normalization. It has no discriminant section, asserted expansion, or postulated equality field. `testToOriginal` and `testFromOriginal` copy every field and convert normalization through its proven equivalence. Both roundtrip lemmas are present.
+3. `periodOneCurve` is concrete: `rootSeries k 4` uses the specified tateX/partialX construction; the three elementary symmetric polynomials define ramified coefficients; coefficient extraction selects every coefficient 4*n; a1=a3=0 and a2/a4/a6 are the corresponding embedded power series. `equation R` is this rational model transported by actual coefficientwise HahnSeries.map to LaurentSeries R. It is not a free curve parameter or an assumed inverse to ramification.
+4. `productSeries R` retains the entire formal `X^2 * P^48`, with P defined by the coefficientwise Euler product, mapped from ℚ to R and embedded into LaurentSeries. FullExpansion is an equality of actual global sections with the tensor power of the actual Hodge generator. It does not assert only an order, leading coefficient, or finite truncation.
+5. `CurveFrame` is an isomorphism from the unit sheaf on the whole actual projective curve to its relative Kaehler sheaf. `NormalizedFrame` is the equation dx=(2y+a1*x+a3)δ on the actual Z chart, with actual xOverZ/yOverZ, scalar map, relative universal derivation, and canonically characterized differentialMap. hodgeGenerator pulls back the resulting global section along the origin. The all-functions compatibility support theorem proves existence and uniqueness of differentialMap; the definition is not an arbitrary assumed linear map.
+6. `value` uses the actual scheme comparison pull followed by the normalized Weierstrass-to-Hodge power map. `value_eq_original`, `expansions_iff_original`, and `fullScheme_iff_original` explicitly retain these transports. The endpoint's naturality conjunct quantifies all pointed Cartesian comparisons and every target D2 section e, with no flatness condition. `recover_original_082` recovers the complete original four-conjunct proposition from the new endpoint.
+7. `rationalFullExpansion` supplies existence of a normalized global frame and a unique D2/frame section d whose expansion holds for every normalized frame δ'. This closes the potential normalization-vacuity concern. Explicit equationElliptic is present and included as an additional compared support theorem.
+
+## Proof boundaries and compression
+
+StaticReview.json enumerates all 14 Challenge sorry declarations. This list matches comparator.json theorem_names and Targets.json exactly, including canonicalDifferentialMap, equationElliptic, rationalFullExpansion and the final endpoint. Solution has no sorry/admit/axiom declaration. The complete local declaration axiom audit inspected 188 declarations and reported bad=0; allowed closures are propext, Classical.choice and Quot.sound.
+
+Frozen Challenge/Solution compact forms independently match their uncompressed forms after comment removal under word/string/punctuation stream comparison. Word boundaries are retained, so the check is stronger than simply deleting all whitespace. This is a source formatting check, not a substitute for Lean elaboration or official Comparator. Final source hashes and comparator manifest were rechecked after owner source freeze.
+
+No source or generated file under 404 or project was modified, and no compilation/export/kernel process was run by reviewer409. All reviewer outputs are confined to this directory. Main-paper completion and official Palomar acceptance are outside this source-scope review.
+
+## Frozen terminal evidence
+
+- Challenge: 920 lines / 62,223 bytes, SHA256 `98500683f55610c675b455e507dcb7973c58c60aae84d2762defca16b60eb972`; final compile PASS 12.04s.
+- Solution: 830 lines / 64,302 bytes, SHA256 `13058eec680d35654d78b5d2056b54a27a635249a063aad1dd3d370d62864c5e`; final compile PASS 233.16s.
+- Comparator manifest SHA256 `0c47e3a068af2690572c29bbc4098fcf7a5b229acd6c4f7344e35fc570f8f18a`, 14 targets (13 support plus 1 original endpoint).
+- Solution axiom audit PASS 3.37s: 188 local declarations, zero disallowed axiom closures. The audit follows all collected axiom dependencies of these roots; it is not an independent kernel reimplementation.
+- OriginalEndpointAudit PASS 3.32s: rfl equality between the original endpoint theorem and recovered endpoint is accepted, certifying the original full proposition type by elaboration and proof irrelevance. The fullSpec and Tate-expansion iff bridges also have only standard axioms.
+- ChallengeAudit PASS 5.17s: 39 selected semantic definitions report standard axioms; the Challenge import closure contains no original project module, 11,291 imported modules total. Choice-based definitions whose values use support theorem proofs are legitimate boundaries and all 14 such proof tasks are configured for comparison.
+
+`receipt.json` binds the final package receipt, SourceMap, Scope, exact original SourceObligations and original source endpoint, candidate sources/uncompressed sources/config, all audit source/objects/logs/terminal receipts, and original input hashes. No independently rerun compile was performed. Root integration, official Comparator execution, export/kernel/resource checks and semantic intake remain separate work. This review covers accepted-082; inherited 080/081 interfaces are not newly counted, and the other source requirements are not claimed complete by 404.

@@ -1,0 +1,8 @@
+'ArithmeticThetaPalomarSchemeInitial406.recover_original_085' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarSchemeInitial406.schemeInitial_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarSchemeInitial406.identityChartCover_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarSchemeInitial406.schemeFiveInitialCharacterization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

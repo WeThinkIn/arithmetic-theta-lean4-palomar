@@ -1,0 +1,25 @@
+{
+  "challenge_module": "PeriodOneChallenge",
+  "solution_module": "PeriodOneSolution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarNormalInitial381.initialTensorExistsUnique",
+    "ArithmeticThetaPalomarDifferential365.normalizedConormalHodge",
+    "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+    "ArithmeticThetaPalomarWeierstrass373.canonicalWeierstrassHodge",
+    "ArithmeticThetaPalomarSchemePower383.canonicalSchemePower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalWPower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalAffinePower",
+    "ArithmeticThetaPalomarFullScheme385.normal_test_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_naturality",
+    "ArithmeticThetaPalomarGlobalFrame401.canonicalDifferentialMap",
+    "ArithmeticThetaPalomarPeriod404.equationElliptic",
+    "ArithmeticThetaPalomarPeriod404.rationalFullExpansion",
+    "ArithmeticThetaPalomarPeriod404.schemePeriodOneDiscriminant"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

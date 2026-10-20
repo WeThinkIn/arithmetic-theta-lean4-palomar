@@ -1,0 +1,23 @@
+{
+  "targets": [
+    "ArithmeticThetaPalomarNormalInitial381.initialTensorExistsUnique",
+    "ArithmeticThetaPalomarDifferential365.normalizedConormalHodge",
+    "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+    "ArithmeticThetaPalomarWeierstrass373.canonicalWeierstrassHodge",
+    "ArithmeticThetaPalomarSchemePower383.canonicalSchemePower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalWPower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalAffinePower",
+    "ArithmeticThetaPalomarFullScheme385.normal_test_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_naturality",
+    "ArithmeticThetaPalomarKatoSupport394.normalModelExists",
+    "ArithmeticThetaPalomarKatoSupport394.schemeUnitExists",
+    "ArithmeticThetaPalomarSchemeInitial406.identityChartCoverExists",
+    "ArithmeticThetaPalomarSchemeInitial406.schemeFiveInitialCharacterization"
+  ],
+  "support_target_count": 13,
+  "endpoint_target_count": 1,
+  "original_endpoint_recoveries": {
+    "accepted-085": "ArithmeticThetaPalomarSchemeInitial406.recover_original_085"
+  }
+}

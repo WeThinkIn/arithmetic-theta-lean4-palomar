@@ -1,0 +1,52 @@
+version: v0.4
+project:
+  name: Canonical period-one Tate discriminant and full expansion
+  description: 'Complete original accepted082: unique actual scheme discriminant-square
+    section, its global frame property, full period-one Tate expansions on every actual
+    test over every rational coefficient algebra, and naturality for every pointed
+    Cartesian base change. Retains the concrete coefficient-extracted period-one curve,
+    full Euler product, normalized whole-curve differential and actual tensor maps.
+    See challenges/period-one/Scope.json. No full-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Complete original accepted082: unique actual scheme discriminant-square
+    section, its global frame property, full period-one Tate expansions on every actual
+    test over every rational coefficient algebra, and naturality for every pointed
+    Cartesian base change. Retains the concrete coefficient-extracted period-one curve,
+    full Euler product, normalized whole-curve differential and actual tensor maps.
+    See challenges/period-one/Scope.json. No full-paper completion claimed.'
+fidelity:
+  divergences: Complete original accepted082 output retained through exact independent
+    predicate/map bridges and reverse original-type recovery. Supporting targets are
+    explicitly listed and do not create additional endpoint credit. Other original
+    endpoints are outside this claimed scope; no new domain, reducedness, flatness,
+    frame or expansion assumption is added.

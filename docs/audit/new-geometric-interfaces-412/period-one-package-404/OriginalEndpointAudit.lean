@@ -1,0 +1,9 @@
+module
+public import Solution
+set_option maxRecDepth 4096
+set_option backward.isDefEq.respectTransparency false
+example : @ArithmeticThetaRationalTateR0247.scheme_period_one_discriminant =
+    @ArithmeticThetaPalomarPeriod404.recover_original_082 := rfl
+#print axioms ArithmeticThetaPalomarPeriod404.recover_original_082
+#print axioms ArithmeticThetaPalomarPeriod404.fullScheme_iff_original
+#print axioms ArithmeticThetaPalomarPeriod404.expansions_iff_original

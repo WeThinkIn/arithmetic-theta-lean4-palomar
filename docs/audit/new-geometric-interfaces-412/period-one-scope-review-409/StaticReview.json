@@ -1,0 +1,95 @@
+{
+  "Challenge": {
+    "source_sha256": "98500683f55610c675b455e507dcb7973c58c60aae84d2762defca16b60eb972",
+    "uncompressed_sha256": "0b2dff0f0f625943bc87753d87c9f3da93408997638a1bd7dbe014f999bcbb5d",
+    "lexical_word_string_symbol_stream_equal": true,
+    "tokens": 15903,
+    "lines": 920,
+    "bytes": 62223
+  },
+  "Solution": {
+    "source_sha256": "13058eec680d35654d78b5d2056b54a27a635249a063aad1dd3d370d62864c5e",
+    "uncompressed_sha256": "6044be98e2976c8c85b40e3dfac0f366dac2658f419624a1e8c2647dd322f515",
+    "lexical_word_string_symbol_stream_equal": true,
+    "tokens": 15168,
+    "lines": 830,
+    "bytes": 64302
+  },
+  "challenge_holes": [
+    {
+      "name": "ArithmeticThetaPalomarNormalInitial381.initialTensorExistsUnique",
+      "declaration_line": 524,
+      "hole_line": 525
+    },
+    {
+      "name": "ArithmeticThetaPalomarDifferential365.normalizedConormalHodge",
+      "declaration_line": 574,
+      "hole_line": 575
+    },
+    {
+      "name": "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+      "declaration_line": 580,
+      "hole_line": 581
+    },
+    {
+      "name": "ArithmeticThetaPalomarWeierstrass373.canonicalWeierstrassHodge",
+      "declaration_line": 604,
+      "hole_line": 605
+    },
+    {
+      "name": "ArithmeticThetaPalomarSchemePower383.canonicalSchemePower",
+      "declaration_line": 651,
+      "hole_line": 652
+    },
+    {
+      "name": "ArithmeticThetaPalomarFullScheme385.canonicalWPower",
+      "declaration_line": 704,
+      "hole_line": 705
+    },
+    {
+      "name": "ArithmeticThetaPalomarFullScheme385.canonicalAffinePower",
+      "declaration_line": 718,
+      "hole_line": 719
+    },
+    {
+      "name": "ArithmeticThetaPalomarFullScheme385.normal_test_exists",
+      "declaration_line": 729,
+      "hole_line": 730
+    },
+    {
+      "name": "ArithmeticThetaPalomarFullScheme385.scheme_exists",
+      "declaration_line": 749,
+      "hole_line": 750
+    },
+    {
+      "name": "ArithmeticThetaPalomarFullScheme385.scheme_naturality",
+      "declaration_line": 751,
+      "hole_line": 752
+    },
+    {
+      "name": "ArithmeticThetaPalomarGlobalFrame401.canonicalDifferentialMap",
+      "declaration_line": 782,
+      "hole_line": 783
+    },
+    {
+      "name": "ArithmeticThetaPalomarPeriod404.equationElliptic",
+      "declaration_line": 908,
+      "hole_line": 909
+    },
+    {
+      "name": "ArithmeticThetaPalomarPeriod404.rationalFullExpansion",
+      "declaration_line": 910,
+      "hole_line": 911
+    },
+    {
+      "name": "ArithmeticThetaPalomarPeriod404.schemePeriodOneDiscriminant",
+      "declaration_line": 918,
+      "hole_line": 919
+    }
+  ],
+  "scope": "Static source review only; tokenizer compares word/string/punctuation streams, not a replacement for Lean parser/type-check or Palomar Comparator.",
+  "all_challenge_holes_in_comparator": true,
+  "target_count": 14,
+  "comparator_sha256": "0c47e3a068af2690572c29bbc4098fcf7a5b229acd6c4f7344e35fc570f8f18a",
+  "solution_has_no_sorry_admit_axiom_declarations": true
+}

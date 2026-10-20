@@ -1,0 +1,33 @@
+{
+  "source": "project/Proof/KatoInitialDefinitionsR0253.lean",
+  "source_sha256": "16cf0fa6729010760481f6fdf7de30664c7832bd9ac81e8e0d334c8ce157632d",
+  "start_line": 14,
+  "end_line": 100,
+  "complete_namespace_retained_after_concrete_vocabulary_translation": true,
+  "retained_definitions": [
+    "AffineIdentityChart",
+    "AffineInitial",
+    "equation",
+    "IdentityChart",
+    "conormalPower",
+    "IdentityChartCover",
+    "SchemeInitial"
+  ],
+  "translations": [
+    "Original Kato normalization and scheme unit vocabulary to exact394 definitions.",
+    "Original SchemeDiscriminant sections/power to actual385 sections/power.",
+    "Original ideal.module/module\u03b9 to actual kernel idealModule/inclusion from357.",
+    "Original pullbackLocalSection to concrete365 pullback adjunction unit.",
+    "Original localPower/HodgePower to exact381 definitions, res to385 sheaf restriction."
+  ],
+  "choice_provider_replacements": "Only full385 SchemeSpecification replaces original IsD2; explicit iff bridge applied both directions.",
+  "whitespace_only_compaction_verified": true,
+  "all_385_support_targets_preserved": true,
+  "all_394_frommodel_and_schemektounit_definitions_preserved": true,
+  "new_nonvacuity_targets": [
+    "identityChartCoverExists",
+    "schemeUnitExists",
+    "normalModelExists"
+  ],
+  "no_new_predicate_hypotheses": true
+}

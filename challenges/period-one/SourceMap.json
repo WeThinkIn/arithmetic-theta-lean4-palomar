@@ -1,0 +1,53 @@
+{
+  "inputs": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Challenge.lean": "8f48731c3cfaa4368f5c88eb5b1e863968af359fce27363480fb012d3412de94",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/full-scheme-discriminant-385/Solution.lean": "8362c5e3ffc29802c6d0d361055307d300fc5b765abc3f7d51617af09fd1d2df",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/global-normalized-frame-401/Challenge.lean": "6600ac074ea89a7cde8817639af24f49b62f5272a551f416c61533edc6d3022f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/global-normalized-frame-401/Solution.lean": "16e11be75e5505ba1bff4103b8e396bbbed3ecf2b5e75dd7f8049531caf2eb32",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-frontier-395/Review.md": "a95b2a3e45a0028ea8415f5f671ba57ee0531af9ee5073cbda970810bfa9cf9a",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/TateSeriesDefinitions.lean": "0c507106496fbc9f5b0fba585c1082ee9dbf2b9d0ba2a8ee03a5d89fbcad823a",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/CubicModelDefinitionsR0144.lean": "552a2674a581ccccad61183c32d5cacf557a4429fec259d7c2be991505ae6fe6",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/PeriodOneDiscriminantDefinitionsR0246.lean": "0ecab69981233a0beaa0f6d11787cfd51cf6c40d0455fb6a15088b741c609f68",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/RationalTateDiscriminantDefinitionsR0247.lean": "5cfece1721f4b2120fff78b9dbc147bbc0264b9a87f7f4a6fb39551363bf7066",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/RationalTateDiscriminantR0247.lean": "e6d0438499937b661c1b72c829920706eaaf095a1a6c21ccab0345072543cc2b",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemePeriodOneDiscriminantR0247.lean": "69a4f6018f8ba641470d9f3e6f60e6249b5ad42ebdf3dd1f1e439d0a29d39bd0",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/DiscriminantDefinitions.lean": "6d981bc627bd4b4e7d34c2e48401f0b030292091b43df4b76aa1a7bbe0073ab7"
+  },
+  "literal_series_support_sha256": "1150f919c44b659331a86f06f0d658315111562f4a15fd6159b18982ae8906d3",
+  "tate_definitions_sha256": "2843ac57b885223faceef543aa00a15c7713c1a3b9c9899a46040f45e64b0855",
+  "endpoint_predicate_sha256": "a1fc2843d55559953a33d85621b8c016d6e38103f4eddf82d7b1543af56cabaf",
+  "formatting_proof": {
+    "method": "remove comments/blank lines and join declaration signature continuation lines",
+    "nonwhitespace_noncomment_stream_identical": true
+  },
+  "source_uncompressed_sha256": {
+    "Challenge.uncompressed.lean.txt": "0b2dff0f0f625943bc87753d87c9f3da93408997638a1bd7dbe014f999bcbb5d",
+    "Solution.uncompressed.lean.txt": "6044be98e2976c8c85b40e3dfac0f366dac2658f419624a1e8c2647dd322f515"
+  },
+  "bridges": [
+    "equation_eq_original",
+    "productSeries_eq_original",
+    "normalized_iff_original",
+    "fullExpansion_iff_original",
+    "testToOriginal",
+    "testFromOriginal",
+    "test_roundtrip",
+    "original_roundtrip",
+    "value_eq_original",
+    "expansions_iff_original",
+    "fullScheme_iff_original",
+    "recover_original_082"
+  ],
+  "challenge_direct_imports": [
+    "Mathlib"
+  ],
+  "solution_direct_imports": [
+    "Mathlib",
+    "GlobalFamilyDiscriminantR0180",
+    "SchemeDiscriminantNaturalityR0244",
+    "NormalDiscriminantModelR0243",
+    "SchemeCotangentCoherenceR0205",
+    "SchemePeriodOneDiscriminantR0247"
+  ],
+  "no_evidence_module_imports": true
+}

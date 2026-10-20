@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+    "-R",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404",
+    "-o",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/Challenge.olean",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/Challenge.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 12.04,
+  "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404:/home/Palomar/workspace/arithmetic-theta/evidence/kato-normalization-frontier-374:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+  "source_sha256": "98500683f55610c675b455e507dcb7973c58c60aae84d2762defca16b60eb972",
+  "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+}

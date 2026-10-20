@@ -1300,3 +1300,19 @@ roots = ["SchemeKatoChallenge"]
 [[lean_lib]]
 name = "SchemeKatoSolution"
 roots = ["SchemeKatoSolution"]
+
+[[lean_lib]]
+name = "PeriodOneChallenge"
+roots = ["PeriodOneChallenge"]
+
+[[lean_lib]]
+name = "PeriodOneSolution"
+roots = ["PeriodOneSolution"]
+
+[[lean_lib]]
+name = "SchemeInitialChallenge"
+roots = ["SchemeInitialChallenge"]
+
+[[lean_lib]]
+name = "SchemeInitialSolution"
+roots = ["SchemeInitialSolution"]

@@ -1,0 +1,10 @@
+module
+public import Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : @ArithmeticThetaKatoInitialR0253.scheme_five_kato_initial_characterization =
+    @ArithmeticThetaPalomarSchemeInitial406.recover_original_085 := rfl
+#print axioms ArithmeticThetaPalomarSchemeInitial406.recover_original_085
+#print axioms ArithmeticThetaPalomarSchemeInitial406.schemeInitial_iff
+#print axioms ArithmeticThetaPalomarSchemeInitial406.identityChartCover_iff
+#print axioms ArithmeticThetaPalomarSchemeInitial406.schemeFiveInitialCharacterization

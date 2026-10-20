@@ -1,0 +1,52 @@
+version: v0.4
+project:
+  name: Intrinsic five-Kato initial coefficient of the scheme discriminant
+  description: 'Complete original accepted085: over every characteristic-zero scheme
+    and actual elliptic family, for every actual normalized five-Kato unit and every24th
+    cotangent-power section, the full scheme discriminant specification is equivalent
+    to the exact local initial formula on every actual identity ideal chart. Retains
+    factor5, exponent24, units on the entire affine chart, and actual conormal classes.
+    See challenges/scheme-initial/Scope.json. No full-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Complete original accepted085: over every characteristic-zero scheme and
+    actual elliptic family, for every actual normalized five-Kato unit and every24th
+    cotangent-power section, the full scheme discriminant specification is equivalent
+    to the exact local initial formula on every actual identity ideal chart. Retains
+    factor5, exponent24, units on the entire affine chart, and actual conormal classes.
+    See challenges/scheme-initial/Scope.json. No full-paper completion claimed.'
+fidelity:
+  divergences: Complete original accepted085 output retained through exact independent
+    predicate/map bridges and reverse original-type recovery. Supporting targets are
+    explicitly listed and do not create additional endpoint credit. Other original
+    endpoints are outside this claimed scope; no new domain, reducedness, flatness,
+    frame or expansion assumption is added.

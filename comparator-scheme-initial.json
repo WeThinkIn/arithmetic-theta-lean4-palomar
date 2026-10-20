@@ -1,0 +1,25 @@
+{
+  "challenge_module": "SchemeInitialChallenge",
+  "solution_module": "SchemeInitialSolution",
+  "theorem_names": [
+    "ArithmeticThetaPalomarNormalInitial381.initialTensorExistsUnique",
+    "ArithmeticThetaPalomarDifferential365.normalizedConormalHodge",
+    "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+    "ArithmeticThetaPalomarWeierstrass373.canonicalWeierstrassHodge",
+    "ArithmeticThetaPalomarSchemePower383.canonicalSchemePower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalWPower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalAffinePower",
+    "ArithmeticThetaPalomarFullScheme385.normal_test_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_naturality",
+    "ArithmeticThetaPalomarKatoSupport394.normalModelExists",
+    "ArithmeticThetaPalomarKatoSupport394.schemeUnitExists",
+    "ArithmeticThetaPalomarSchemeInitial406.identityChartCoverExists",
+    "ArithmeticThetaPalomarSchemeInitial406.schemeFiveInitialCharacterization"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

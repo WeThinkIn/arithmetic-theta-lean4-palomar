@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-20T20:18:14.646152+00:00",
+  "local_scope_review_passed": true,
+  "source_scope_ids": [
+    "accepted-085"
+  ],
+  "mathematical_scope_weakening_found": false,
+  "target_count": 14,
+  "formatting_character_stream_equal": true,
+  "source_imports_and_axiom_checks_passed": true,
+  "original_type_recovery_passed": true,
+  "official_semantic_pass": false,
+  "new_compiles": 0,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/Challenge.lean": "b0d16b5fabaa2602763a64f71205c99009f4b7e4f6d5ab3448cec75d92b5efb3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/Solution.lean": "8039e57a87ab1b6ba2892f3e9bc6eb025d6a81d539661977043fdc168c3ec282",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/receipt.json": "43587e3180416ab36e41de873cdc9de0a100bad1b04d7eb6642bfeadf2ff2bd6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/Scope.json": "31c085df9e09dadde45bfaed25dd80a12157e72eb14adb251183e76064ef881a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/SourceMap.json": "a51c96084a35afa1e0889647fc88a4fe70d5bcc5fe06e217bf8ae7c1557ba5e5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/Targets.json": "be14902fb8c0450899945e67ff42d71e4f7dd927ec323b6e8a039c3a4aeacaff",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/comparator.json": "517bb6cf16cfa9c533bdec0ef89f1044b15096b083ab227a1734c5d4b0566a4e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/OriginalEndpointAudit.lean": "97fa063b464dd909c912727570e38ea56f5a4afb32c7d48e9278a4f3f16e6981",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/KatoInitialDefinitionsR0253.lean": "16cf0fa6729010760481f6fdf7de30664c7832bd9ac81e8e0d334c8ce157632d"
+  },
+  "review_sha256": "28f61e68a7f487786445455cbdcf89ff7c0bb2b734a0ef3df69aa10d781570a6"
+}

@@ -1,0 +1,117 @@
+{
+  "created_utc": "2026-10-20T20:17:36.502422+00:00",
+  "status": "complete local candidate: full accepted085 with reverse original type and exact initial interfaces",
+  "original_ids": [
+    "accepted-085"
+  ],
+  "stats": {
+    "Challenge.lean": {
+      "lines": 717,
+      "bytes": 61001,
+      "sha256": "b0d16b5fabaa2602763a64f71205c99009f4b7e4f6d5ab3448cec75d92b5efb3"
+    },
+    "Solution.lean": {
+      "lines": 1124,
+      "bytes": 64063,
+      "sha256": "8039e57a87ab1b6ba2892f3e9bc6eb025d6a81d539661977043fdc168c3ec282"
+    }
+  },
+  "targets": [
+    "ArithmeticThetaPalomarNormalInitial381.initialTensorExistsUnique",
+    "ArithmeticThetaPalomarDifferential365.normalizedConormalHodge",
+    "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
+    "ArithmeticThetaPalomarWeierstrass373.canonicalWeierstrassHodge",
+    "ArithmeticThetaPalomarSchemePower383.canonicalSchemePower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalWPower",
+    "ArithmeticThetaPalomarFullScheme385.canonicalAffinePower",
+    "ArithmeticThetaPalomarFullScheme385.normal_test_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_exists",
+    "ArithmeticThetaPalomarFullScheme385.scheme_naturality",
+    "ArithmeticThetaPalomarKatoSupport394.normalModelExists",
+    "ArithmeticThetaPalomarKatoSupport394.schemeUnitExists",
+    "ArithmeticThetaPalomarSchemeInitial406.identityChartCoverExists",
+    "ArithmeticThetaPalomarSchemeInitial406.schemeFiveInitialCharacterization"
+  ],
+  "target_count": 14,
+  "support_count": 13,
+  "runs": {
+    "Challenge": {
+      "receipt": "Challenge-receipt-02.json",
+      "elapsed_seconds": 10.17671069689095,
+      "exit_code": 0
+    },
+    "Solution": {
+      "receipt": "Solution-receipt-01.json",
+      "elapsed_seconds": 187.79578804271296,
+      "exit_code": 0
+    },
+    "ChallengeAudit": {
+      "receipt": "ChallengeAudit-receipt-03.json",
+      "elapsed_seconds": 6.321883341763169,
+      "exit_code": 0
+    },
+    "SolutionAudit": {
+      "receipt": "SolutionAudit-receipt-01.json",
+      "elapsed_seconds": 7.573689233977348,
+      "exit_code": 0
+    },
+    "OriginalEndpointAudit": {
+      "receipt": "OriginalEndpointAudit-receipt-01.json",
+      "elapsed_seconds": 3.0179132288321853,
+      "exit_code": 0
+    }
+  },
+  "threads_per_compile": 12,
+  "timeout_seconds": 600,
+  "challenge_audited_declarations": 443,
+  "challenge_source_holes": 14,
+  "challenge_declarations_with_transitive_sorry": 35,
+  "challenge_project_import_count": 0,
+  "solution_audited_declarations": 187,
+  "solution_bad_axioms": 0,
+  "original_endpoint_type_audit_passed": true,
+  "official_export_kernel_run": false,
+  "bindings": {
+    "Challenge-attempt01.lean.txt": "5a3fa9923d5084deecf800bb143808373e495b7bd18dc59795230278b2961749",
+    "Challenge-check-01.log": "bf121bba2ee0e4fa3339d81342fd6e3b80cf8996c80ad9556346e0c3ad220815",
+    "Challenge-check-02.log": "e677ceab9f179d551e337508ccc04e2a3634a1fbe5f712b2e50eaa25cf798039",
+    "Challenge-driver01.log": "30610ac1241a1ed721574a77757538edd68422de69183fea0ba71c25e17717b0",
+    "Challenge-driver02.log": "d61501229a8c4155c27c881d5fea3453338ae4f59d2b632455dc64790a567610",
+    "Challenge-receipt-01.json": "3402f69071db47cd12dd12fc7cc4109376763ad266ad5f044d4aba9aa6786e62",
+    "Challenge-receipt-02.json": "965ae5763509a8448b1298fadda2c46d5e9694f89a9635ab27f95fe74cfa0e33",
+    "Challenge.lean": "b0d16b5fabaa2602763a64f71205c99009f4b7e4f6d5ab3448cec75d92b5efb3",
+    "Challenge.uncompressed.lean.txt": "9b8defefb05104cafeeb024e45cb2a48955ca1b86da18687d9ce9abb81f86b16",
+    "ChallengeAudit-check-01.log": "96effb736b590c709dfc4a4f24488ea829f5b66376e44df431e506693802fd27",
+    "ChallengeAudit-check-02.log": "d9db396b2cd22a4a9e761ef2f0228f5a5891fe38b97dda562081afa015967258",
+    "ChallengeAudit-check-03.log": "1a9542399aacb27daf0dd6521b117d7180c87950f510f3d22e9c0ff5cdd8e6d2",
+    "ChallengeAudit-driver01.log": "a4ec0c1275b878c8c50512022a21a63b6705e35dae8fe05a0297d12768b3f609",
+    "ChallengeAudit-driver02.log": "09fe58cef12a9ce083c5a248fa617b57652f060cfd2c44e7470235f1e62309a7",
+    "ChallengeAudit-driver03.log": "7941cf9ce0de048db5b4547b81053d69f4e560b0496ff2c6eb9969dd02f6a203",
+    "ChallengeAudit-receipt-01.json": "02c974c19ef07b8c04a46ed1839d62221d0c17129aa142bdafa34435e7198e99",
+    "ChallengeAudit-receipt-02.json": "3de3b66f9b6d11d6111715e70bf3d20b3c16001e97da06322ed842e721f04749",
+    "ChallengeAudit-receipt-03.json": "072a1f53a377c57a4dd2c3e8f718d1c5e72e33e8088e23c20e1af4d8337cd149",
+    "ChallengeAudit.lean": "2277cbb49096631bff434b34fdb231e7363e9158a636d0a8347af282f523a97f",
+    "OriginalEndpointAudit-check-01.log": "3dfb17726451fd65efc1aa0ee58b2047555939c9a7fcc0343e5fc5cbb9da9906",
+    "OriginalEndpointAudit-driver01.log": "c9854108f638d4884b9993ae844c8c1774918c645b49ab5c514f25405e3d0872",
+    "OriginalEndpointAudit-receipt-01.json": "8d9330c18b08c6bb91325cb6cfc1e1f4ba572abcf566cf3e17fec9255ba74195",
+    "OriginalEndpointAudit.lean": "97fa063b464dd909c912727570e38ea56f5a4afb32c7d48e9278a4f3f16e6981",
+    "README.md": "652984229aaa8e79e72a57ef22cc03340daac0e1a25b38073980a2094098322a",
+    "Scope.json": "31c085df9e09dadde45bfaed25dd80a12157e72eb14adb251183e76064ef881a",
+    "Solution-check-01.log": "213ea6d140f99f4d0aa690ba39ff5a4d5db719302096ac0962779fda30ff50a9",
+    "Solution-driver01.log": "5315b028d597e3a6d868166c36206e56816f78f19abc12524fcdf035e8c8dd64",
+    "Solution-receipt-01.json": "d32a39790d783b5e6e39421b8aab8b1f520040b9896a97ff277cb80d6a57053a",
+    "Solution.lean": "8039e57a87ab1b6ba2892f3e9bc6eb025d6a81d539661977043fdc168c3ec282",
+    "Solution.uncompressed.lean.txt": "8039e57a87ab1b6ba2892f3e9bc6eb025d6a81d539661977043fdc168c3ec282",
+    "SolutionAudit-check-01.log": "091064ba95187059cba0b2ba6eff43d8dd2f4438b241f4da605c55c4c1e509b7",
+    "SolutionAudit-driver01.log": "cfd804df399c95db6a25886d829cba21653d560ae94370f37b2a22baa3b623a0",
+    "SolutionAudit-receipt-01.json": "05358c69b21200e01438959fee1a5ffbbd13e289db56801400d108c179be7c22",
+    "SolutionAudit.lean": "c9f1b11d19f89edbc9ec168100b4420778ec05773ce69cc2f82108051d623428",
+    "SourceMap.json": "a51c96084a35afa1e0889647fc88a4fe70d5bcc5fe06e217bf8ae7c1557ba5e5",
+    "Targets.json": "be14902fb8c0450899945e67ff42d71e4f7dd927ec323b6e8a039c3a4aeacaff",
+    "assemble.py": "59c86ace88c0e164b63de99ecf3530892a72f65bddd846f2ef45b5c5f8a144c2",
+    "checkpoint.json": "74a8ea380f041d6cda69bf0e15713acdce4ac343b6c6b16b1659ca6741fc54d7",
+    "comparator.json": "517bb6cf16cfa9c533bdec0ef89f1044b15096b083ab227a1734c5d4b0566a4e",
+    "compile.py": "90d1befcbb2ce2d3a05f9883770e65bf135f40886cbf33a8ef00f06788018c8d",
+    "finalize.py": "d4eaabe6e5d262377541a28e175254c969ee74c3481fe956ddaf5e02d9125a24"
+  }
+}

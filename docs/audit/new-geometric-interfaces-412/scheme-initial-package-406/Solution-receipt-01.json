@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 187.79578804271296,
+  "command": [
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+    "-j12",
+    "-R",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406",
+    "-o",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/Solution.olean",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-initial-package-406/Solution.lean"
+  ],
+  "source_sha256": "8039e57a87ab1b6ba2892f3e9bc6eb025d6a81d539661977043fdc168c3ec282"
+}
