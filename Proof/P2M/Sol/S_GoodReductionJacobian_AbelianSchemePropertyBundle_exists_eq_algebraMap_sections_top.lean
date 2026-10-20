@@ -7,6 +7,9 @@ public import Definitions.Def_AlgebraicGeometry_OModulePresheafEulerChar
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_GoodReductionJacobian_AbelianSchemePropertyBundle_exists_eq_algebraMap_sections_top
 attribute [-simp] RegularLocalRingQuotientAscent.dualNumberFst_apply
 

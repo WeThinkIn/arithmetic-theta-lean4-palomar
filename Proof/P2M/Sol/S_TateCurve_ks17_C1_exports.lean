@@ -22,6 +22,10 @@ public import Theorems.Thm_TateCurve_equation_pointX_pointY_of_defectCoeff_eq_ze
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 namespace P2MW.S_TateCurve_ks17_C1_exports
 
 open scoped NNReal

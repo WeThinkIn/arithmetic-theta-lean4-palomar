@@ -6,6 +6,9 @@ public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_d_zero_eq_zero_iff_
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_OModulePresheaf_bijective_cechPushforward_of_isAffineOpen_preimage
 
 set_option autoImplicit false

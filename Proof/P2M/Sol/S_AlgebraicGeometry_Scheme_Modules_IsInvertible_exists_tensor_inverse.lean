@@ -11,6 +11,8 @@ public import Definitions.Def_AlgebraicGeometry_ModulesPullbackMonoidal
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_tensor_inverse
 
 set_option autoImplicit false

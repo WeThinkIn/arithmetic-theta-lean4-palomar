@@ -23,7 +23,7 @@ variable {A : Type u} [CommRing A] {X : Scheme.{u}}
 lemma restrict_kaehlerPresheaf (f : X ⟶ Spec (CommRingCat.of A)) (U : X.Opens) :
     (Scheme.Modules.restrictPresheaf U).obj f.kaehlerPresheaf =
       (U.ι ≫ f).kaehlerPresheaf := by
-  change PresheafOfModules.DifferentialsConstruction.relativeDifferentials'
+  change PresheafOfModulesOfCommRing.DifferentialsConstruction.relativeDifferentials'
     (whiskerLeft U.ι.opensFunctor.op f.constToPresheaf) = _
   congr 1
   ext V

@@ -10,6 +10,7 @@ public import Mathlib.RingTheory.Localization.FractionRing
 public import Mathlib.Tactic.FieldSimp
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
@@ -34,7 +35,7 @@ theorem isMaximal_of_isPrime {P : Ideal W.CoordinateRing} (hP : P ≠ ⊥) [P.Is
     hP (Ideal.eq_bot_of_comap_eq_bot h)
   haveI : (P.comap (algebraMap K[X] W.CoordinateRing)).IsMaximal :=
     IsPrime.to_maximal_ideal hc
-  exact Ideal.isMaximal_of_isIntegral_of_isMaximal_comap (R := K[X]) P inferInstance
+  exact Ideal.isMaximal_of_isIntegral_of_isMaximal_under (R := K[X]) P inferInstance
 
 theorem exists_comap_eq_span [IsAlgClosed K] {P : Ideal W.CoordinateRing} (hP : P ≠ ⊥)
     [P.IsPrime] :
@@ -116,9 +117,10 @@ theorem exists_eq_XYIdeal [IsAlgClosed K] {P : Ideal W.CoordinateRing} (hP : P �
       · intro q
         change algebraMap K[X] L q = _
         rw [hθ]
-        simp only [RingHom.coe_comp, Function.comp_apply, coe_evalRingHom, eval_C]
-        rfl
-      · simp only [RingHom.coe_comp, Function.comp_apply, coe_evalRingHom, eval_X, eval_C]
+        change (algebraMap K L) (q.eval a) = (algebraMap K L) ((C q).evalEval a b)
+        rw [evalEval_C]
+      · change π (mk W Y) = (algebraMap K L) ((Y : K[X][Y]).evalEval a b)
+        rw [evalEval_X]
         exact hb.symm
     have h0 : (π.comp (mk W)) W.polynomial = 0 := by
       rw [RingHom.comp_apply, AdjoinRoot.mk_self, map_zero]

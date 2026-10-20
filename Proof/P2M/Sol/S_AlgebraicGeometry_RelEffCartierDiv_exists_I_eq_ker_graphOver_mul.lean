@@ -11,6 +11,8 @@ public import Theorems.Thm_Module_finitePresentation_of_rankAtStalk_eq
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_RelEffCartierDiv_exists_I_eq_ker_graphOver_mul
 
 set_option autoImplicit false

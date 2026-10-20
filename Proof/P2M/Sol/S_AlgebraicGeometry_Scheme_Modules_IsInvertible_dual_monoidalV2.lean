@@ -8,6 +8,9 @@ public import Definitions.Def_AlgebraicGeometry_ModulesPullbackMonoidalV2
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_dual_monoidalV2
 
 section LinkageInlined_5b3a613b

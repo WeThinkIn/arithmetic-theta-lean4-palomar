@@ -14,6 +14,9 @@ public import Definitions.Def_JacJ1_ChartAlgebra
 public import Definitions.Def_AlgebraicCurve_CurveModelSmooth
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option maxHeartbeats 2000000
 set_option backward.isDefEq.respectTransparency false
 
 set_option autoImplicit false
@@ -137,11 +140,46 @@ section Glue
 
 variable [Fact (t ≠ 0)]
 
-def glued : Scheme.{u} := pushout (f₀ K t) (fInf K t)
+private theorem smoothAfterOpen {U X Y : Scheme.{u}}
+    (f : U ⟶ X) (g : X ⟶ Y) [IsOpenImmersion f]
+    [SmoothOfRelativeDimension 1 g] : SmoothOfRelativeDimension (0 + 1) (f ≫ g) :=
+  inferInstance
 
-def ι₀ : X₀ K t ⟶ glued K t := pushout.inl (f₀ K t) (fInf K t)
+private theorem finiteTypeAfterOpen {U X Y : Scheme.{u}}
+    (f : U ⟶ X) (g : X ⟶ Y) [IsOpenImmersion f]
+    [LocallyOfFiniteType g] : LocallyOfFiniteType (f ≫ g) := inferInstance
 
-def ιInf : XInf K t ⟶ glued K t := pushout.inr (f₀ K t) (fInf K t)
+private theorem openImmersionComp {U X Y : Scheme.{u}}
+    (f : U ⟶ X) (g : X ⟶ Y) [IsOpenImmersion f] [IsOpenImmersion g] :
+    IsOpenImmersion (f ≫ g) := inferInstance
+
+private theorem spanOpenOfOpenImmersions {U X Y : Scheme.{u}}
+    (f : U ⟶ X) (g : U ⟶ Y) [IsOpenImmersion f] [IsOpenImmersion g] :
+    ∀ {i j : WalkingSpan} (h : i ⟶ j), IsOpenImmersion ((span f g).map h) :=
+  fun {_ _} _ => inferInstance
+
+instance spanChartsOpen :
+    ∀ {i j : WalkingSpan} (h : i ⟶ j),
+      IsOpenImmersion ((span (f₀ K t) (fInf K t)).map h) :=
+  @spanOpenOfOpenImmersions (XOverlap K t) (X₀ K t) (XInf K t)
+    (f₀ K t) (fInf K t) (isOpenImmersion_f₀ K t) (isOpenImmersion_fInf K t)
+
+private theorem hasPushoutOfOpenImmersions {U X Y : Scheme.{u}}
+    (f : U ⟶ X) (g : U ⟶ Y) [IsOpenImmersion f] [IsOpenImmersion g] :
+    HasPushout f g := inferInstance
+
+instance hasPushoutCharts : HasPushout (f₀ K t) (fInf K t) :=
+  @hasPushoutOfOpenImmersions (XOverlap K t) (X₀ K t) (XInf K t)
+    (f₀ K t) (fInf K t) (isOpenImmersion_f₀ K t) (isOpenImmersion_fInf K t)
+
+def glued : Scheme.{u} := pushout (X := XOverlap K t) (Y := X₀ K t)
+  (Z := XInf K t) (f₀ K t) (fInf K t)
+
+def ι₀ : X₀ K t ⟶ glued K t :=
+  pushout.inl (X := XOverlap K t) (Y := X₀ K t) (Z := XInf K t) (f₀ K t) (fInf K t)
+
+def ιInf : XInf K t ⟶ glued K t :=
+  pushout.inr (X := XOverlap K t) (Y := X₀ K t) (Z := XInf K t) (f₀ K t) (fInf K t)
 
 @[reassoc]
 theorem glue_condition : f₀ K t ≫ ι₀ K t = fInf K t ≫ ιInf K t := pushout.condition
@@ -200,8 +238,8 @@ theorem smoothOfRelativeDimension_one_gluedToBase_of_charts
       erw [Category.assoc]
     erw [key]
     haveI := h₀'
-    exact inferInstanceAs
-      (SmoothOfRelativeDimension (0 + 1) (f₀ K t ≫ (ι₀ K t ≫ gluedToBase K t)))
+    exact @smoothAfterOpen (XOverlap K t) (X₀ K t) (Spec (CommRingCat.of K))
+      (f₀ K t) (ι₀ K t ≫ gluedToBase K t) (isOpenImmersion_f₀ K t) h₀'
   · change SmoothOfRelativeDimension 1 (ι₀ K t ≫ gluedToBase K t)
     exact h₀'
   · change SmoothOfRelativeDimension 1 (ιInf K t ≫ gluedToBase K t)
@@ -298,7 +336,8 @@ omit [CharZero K] [FiniteDimensional K⟮t⟯ L] [FiniteDimensional K⟮t⁻¹�
 theorem ιU_eq' : ιU K t = fInf K t ≫ ιInf K t := glue_condition K t
 
 instance isOpenImmersion_ιU : IsOpenImmersion (ιU K t) :=
-  inferInstanceAs (IsOpenImmersion (f₀ K t ≫ ι₀ K t))
+  @openImmersionComp (XOverlap K t) (X₀ K t) (glued K t)
+    (f₀ K t) (ι₀ K t) (isOpenImmersion_f₀ K t) (isOpenImmersion_ι₀ K t)
 
 omit [CharZero K] [FiniteDimensional K⟮t⟯ L] [FiniteDimensional K⟮t⁻¹⟯ L] in
 
@@ -405,7 +444,8 @@ instance locallyOfFiniteType_gluedToBase : LocallyOfFiniteType (gluedToBase K t)
       erw [Category.assoc]
     erw [key]
     haveI := h₀'
-    exact inferInstanceAs (LocallyOfFiniteType (f₀ K t ≫ (ι₀ K t ≫ gluedToBase K t)))
+    exact @finiteTypeAfterOpen (XOverlap K t) (X₀ K t) (Spec (CommRingCat.of K))
+      (f₀ K t) (ι₀ K t ≫ gluedToBase K t) (isOpenImmersion_f₀ K t) h₀'
   · change LocallyOfFiniteType (ι₀ K t ≫ gluedToBase K t)
     exact h₀'
   · change LocallyOfFiniteType (ιInf K t ≫ gluedToBase K t)
@@ -914,7 +954,6 @@ theorem fromSpecStalk_comp {X : Scheme.{u}} {A : CommRingCat.{u}} (f : X ⟶ Spe
     X.fromSpecStalk x ≫ f =
       Spec.map (StructureSheaf.toStalk A (f.base x) ≫ f.stalkMap x) := by
   rw [Spec.map_comp, ← Scheme.SpecMap_stalkMap_fromSpecStalk, Spec.fromSpecStalk_eq']
-  rfl
 
 end SpecLemmas
 

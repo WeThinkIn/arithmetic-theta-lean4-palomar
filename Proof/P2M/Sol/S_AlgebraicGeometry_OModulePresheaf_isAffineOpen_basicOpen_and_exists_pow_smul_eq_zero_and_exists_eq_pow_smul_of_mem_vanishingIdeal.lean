@@ -6,6 +6,8 @@ public import Definitions.Def_AlgebraicGeometry_OModulePresheafCechPushforward
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_OModulePresheaf_isAffineOpen_basicOpen_and_exists_pow_smul_eq_zero_and_exists_eq_pow_smul_of_mem_vanishingIdeal
 
 set_option autoImplicit false

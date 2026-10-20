@@ -6,6 +6,9 @@ public import Theorems.Thm_AlgebraicGeometry_bijective_appTop_of_universallyClos
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_bijective_app_of_isProper_of_flat_of_geometricallyReduced_of_geometricallyConnected_of_isLocallyNoetherian
 attribute [-instance] AdicCompletion.instIsLocalRingMaximalIdeal
 

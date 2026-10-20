@@ -4,6 +4,7 @@ public import Mathlib
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
 set_option backward.privateInPublic true
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
@@ -1746,7 +1747,7 @@ theorem L4c_setOf_isMaximal_finite [IsLocalRing C] [Algebra.IsIntegral C A] :
   haveI : q.IsMaximal := hq
   have hcontract : ∀ (I : Ideal A) [I.IsMaximal], I.comap (algebraMap C A) = IsLocalRing.maximalIdeal C :=
     fun I _ => IsLocalRing.eq_maximalIdeal
-      (Ideal.isMaximal_comap_of_isIntegral_of_isMaximal (R := C) I)
+      (Ideal.isMaximal_under_of_isIntegral_of_isMaximal (R := C) I)
   obtain ⟨𝔯, h𝔯p, h𝔯s, h𝔯t⟩ := L4b_exists_prime_of_comap_eq_of_isMaximal (t := t) hgen hequiv hinv r hr
     q₀ q ((hcontract q₀).trans (hcontract q).symm)
   refine ⟨⟨𝔯, h𝔯p⟩, ?_, h𝔯t⟩
@@ -2072,8 +2073,9 @@ theorem L5_exists_basis_of_isLocalRing [Infinite (IsLocalRing.ResidueField C)]
   have hℳ : ∀ 𝔪 ∈ ℳ, (IsLocalRing.maximalIdeal C).map (algebraMap C A) ≤ 𝔪 := by
     intro 𝔪 h𝔪
     haveI := hℳmax 𝔪 h𝔪
-    rw [Ideal.map_le_iff_le_comap,
-      IsLocalRing.eq_maximalIdeal (Ideal.isMaximal_comap_of_isIntegral_of_isMaximal (R := C) 𝔪)]
+    rw [Ideal.map_le_iff_le_comap]
+    exact (IsLocalRing.eq_maximalIdeal
+      (Ideal.isMaximal_under_of_isIntegral_of_isMaximal (R := C) 𝔪)).ge
 
   obtain ⟨x, hx⟩ := exists_forall_linearIndependent (t := t) hgen hinv r hr ℳ hℳmax hℳ r le_rfl
   have hspan : ∀ 𝔪 ∈ ℳ, Submodule.span (A ⧸ 𝔪) (Set.range fun j => Tfib t 𝔪 hinv (x j)) = ⊤ := by

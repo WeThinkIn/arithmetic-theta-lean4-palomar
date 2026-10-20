@@ -9,6 +9,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_Hom_mono_iff_injecti
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_IdealSheafData_mono_whiskerLeft_moduleIota
 
 set_option autoImplicit false

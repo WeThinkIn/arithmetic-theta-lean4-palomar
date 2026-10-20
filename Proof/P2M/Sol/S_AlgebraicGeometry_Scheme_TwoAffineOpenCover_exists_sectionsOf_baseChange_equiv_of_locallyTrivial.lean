@@ -7,6 +7,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_linearEquiv_s
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_TwoAffineOpenCover_exists_sectionsOf_baseChange_equiv_of_locallyTrivial
 attribute [-simp] AlgebraicGeometry.tilde.functorCompPullbackSpecIso_app
 

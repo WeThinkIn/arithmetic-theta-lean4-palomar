@@ -3,6 +3,9 @@ module
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCoverH1BaseChange
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 set_option autoImplicit false
 

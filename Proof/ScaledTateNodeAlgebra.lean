@@ -3,6 +3,9 @@ module
 public import ScaledTateNodeBridgeDefinitions
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 
 /-! Normal forms and algebraic properties of the scaled node. -/
 set_option autoImplicit false

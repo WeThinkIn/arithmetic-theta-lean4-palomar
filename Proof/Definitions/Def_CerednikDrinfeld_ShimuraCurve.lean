@@ -9,6 +9,9 @@ public import Definitions.Def_CerednikDrinfeld_TwoPlaceTorsionDatum
 public import Definitions.Def_Compat_Mathlib430
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 set_option autoImplicit false
 

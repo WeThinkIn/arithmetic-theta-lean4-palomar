@@ -10,6 +10,9 @@ public import Definitions.Def_WeierstrassCurve_DrinfeldTransportPin
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_WeierstrassCurve_DrinfeldGlobal_ringHom_originChartRing_ext
 
 set_option autoImplicit false

@@ -5,6 +5,8 @@ public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCover
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 set_option backward.isDefEq.respectTransparency false
 namespace P2MW.S_AlgebraicGeometry_Scheme_Pullback_isAffineOpen_and_exists_algEquiv_tensor_sections_fst_preimage_inf_snd_preimage
 

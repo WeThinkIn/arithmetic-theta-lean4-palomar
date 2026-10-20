@@ -7,6 +7,9 @@ public import Theorems.Thm_ProjSpaceCech_Twist_d_sq
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_ProjSpaceCech_GradedModule_nonempty_HEquiv_FD
 
 set_option autoImplicit false
@@ -299,7 +302,6 @@ theorem GradedModule.twistToGradSec_surjective (I : Finset (Fin (n + 1))) :
       refine Finset.sum_congr rfl fun e _ => ?_
       rw [MvPolynomial.monomial_eq, Finsupp.prod_fintype _ _ (fun _ => pow_zero _),
         MvPolynomial.C_mul']
-      rfl
     rw [hmdecomp, map_sum]
     refine Submodule.sum_mem _ fun e _ => ?_
     rw [map_smul]

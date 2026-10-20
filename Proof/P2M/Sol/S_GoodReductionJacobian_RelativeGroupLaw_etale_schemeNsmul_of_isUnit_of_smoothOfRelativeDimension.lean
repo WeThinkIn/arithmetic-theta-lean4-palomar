@@ -6,6 +6,9 @@ public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_formallyUnrami
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_GoodReductionJacobian_RelativeGroupLaw_etale_schemeNsmul_of_isUnit_of_smoothOfRelativeDimension
 
 set_option autoImplicit false

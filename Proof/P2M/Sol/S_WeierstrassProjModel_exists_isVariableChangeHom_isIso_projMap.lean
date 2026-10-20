@@ -7,6 +7,8 @@ public import Definitions.Def_WeierstrassCurve_DrinfeldTransportPin
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_WeierstrassProjModel_exists_isVariableChangeHom_isIso_projMap
 
 set_option autoImplicit false

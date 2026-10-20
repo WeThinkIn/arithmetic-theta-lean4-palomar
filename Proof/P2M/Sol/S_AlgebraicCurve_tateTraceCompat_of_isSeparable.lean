@@ -17,6 +17,10 @@ public import Definitions.Def_AlgebraicCurve_TateResidueCurrency
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 attribute [-ext] IsDedekindDomain.HeightOneSpectrum.adicCompletion.ext
 namespace P2MW.S_AlgebraicCurve_tateTraceCompat_of_isSeparable
 
@@ -3799,7 +3803,7 @@ theorem kwF4gRRTate_blockSum_of_integralBasisCompat
     simp only [heD, hpI, integralProdProj, hP, LinearEquiv.conj_apply, LinearMap.comp_apply,
       LinearEquiv.coe_coe, LinearEquiv.symm_symm, LinearEquiv.apply_symm_apply,
       LinearEquiv.symm_apply_apply]
-    rfl
+    simp only [LinearEquiv.apply_symm_apply]
   have hTCDconj : eD.conj (tateCommDual pI (lmulK w (algebraMap F W₀ g)) (lmulK w ghF))
       = tateCommDual P (matMulLin (w.restrict E) M') (scalarLin (w.restrict E) πv) := by
     rw [tateCommDual_conj, hPconj, heD, integralBasisEquivFunK_conj_lmulK_algebraMap,

@@ -6,6 +6,8 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_finite_sections_of_l
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 set_option backward.isDefEq.respectTransparency false
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_rankAtStalk_sections_eq_one_of_locallyTrivial
 
@@ -189,11 +191,6 @@ variable {X : Scheme.{u}} (M : X.Modules) (U : X.affineOpens) (f : Γ(X, U.1))
 theorem ψ_add {W : X.Opens} (hWV : W ≤ V) (m m' : Γ(M, W)) :
     ψ M V e hWV (m + m') = ψ M V e hWV m + ψ M V e hWV m' := by
   simp only [ψ, rM, rO, eApp, map_add]
-  first
-    | rfl
-    | (erw [AddMonoidHom.map_add, RingHom.map_add])
-    | (erw [map_add, map_add])
-    | (rw [AddMonoidHom.map_add] <;> erw [map_add])
 
 noncomputable def gψ : Γ(M, U.1) →ₗ[Γ(X, U.1)] Γ(X, X.basicOpen f) where
   toFun m := ψ M V e hfV (rM M (X.basicOpen_le f) m)

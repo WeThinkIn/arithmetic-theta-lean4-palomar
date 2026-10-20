@@ -8,6 +8,9 @@ public import Theorems.Thm_GoodReductionJacobian_AbelianSchemePropertyBundle_geo
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_GoodReductionJacobian_AbelianSchemePropertyBundle_baseChange_of_field
 attribute [-simp] RegularLocalRingQuotientAscent.dualNumberFst_apply
 

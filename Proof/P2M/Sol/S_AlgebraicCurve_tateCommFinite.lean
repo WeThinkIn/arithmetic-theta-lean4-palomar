@@ -18,6 +18,9 @@ public import Definitions.Def_AlgebraicCurve_PlacesOverDVR
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 attribute [-ext] IsDedekindDomain.HeightOneSpectrum.adicCompletion.ext
 namespace P2MW.S_AlgebraicCurve_tateCommFinite
 

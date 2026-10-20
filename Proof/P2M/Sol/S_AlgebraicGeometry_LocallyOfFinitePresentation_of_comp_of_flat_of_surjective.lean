@@ -5,6 +5,9 @@ public import Theorems.Thm_Algebra_FinitePresentation_of_faithfullyFlat_of_finit
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_LocallyOfFinitePresentation_of_comp_of_flat_of_surjective
 
 set_option autoImplicit false

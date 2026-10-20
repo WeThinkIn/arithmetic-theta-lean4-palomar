@@ -7,6 +7,9 @@ public import Theorems.Thm_ProjSpaceCech_Twist_subsingleton_cohomology_of_lt
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_ProjSpaceCech_Twist_subsingleton_cohomology_of_neg_le
 
 set_option autoImplicit false

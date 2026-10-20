@@ -8,6 +8,9 @@ public import Theorems.Thm_AlgebraicCurve_isClosed_singleton_of_ne_genericPoint
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_Opens_finite_preimage_singleton_toSpecPolynomial
 
 set_option autoImplicit false

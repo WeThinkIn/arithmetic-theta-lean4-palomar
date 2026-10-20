@@ -7,6 +7,8 @@ public import Mathlib.RingTheory.Valuation.Discrete.Basic
 public import Mathlib.RingTheory.LocalRing.ResidueField.Basic
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 /-! General signed tame-symbol reciprocity on the actual split cubic,
 proved by quadratic reduction and explicit geometric fiber comparison. -/

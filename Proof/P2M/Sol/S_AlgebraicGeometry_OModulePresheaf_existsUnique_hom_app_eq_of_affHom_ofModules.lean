@@ -7,6 +7,10 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_eq_of_forall_map_hom
 public import P2M.Util
 
 @[expose] public section
+set_option backward.privateInPublic true
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_OModulePresheaf_existsUnique_hom_app_eq_of_affHom_ofModules
 
 set_option autoImplicit false
@@ -65,10 +69,9 @@ theorem αAb_smul (U : X.Opens) (r : Γ(X, U)) (m : Γ(M, U)) :
     αAb_app_affine, αAb_app_affine]
   exact Φ.app_smul i.1 _ _
 
-private noncomputable def _root_.ExtAff.hom : M ⟶ N :=
+private noncomputable def hom : M ⟶ N :=
   ⟨PresheafOfModules.homMk (αAb Φ) (fun U r m => by obtain ⟨U⟩ := U; exact αAb_smul Φ U r m)⟩
 
-p2m_export "ExtAff" "hom"
 theorem hom_app_affine (U : X.affineOpens) (s : Γ(M, U.1)) : (hom Φ).app U.1 s = Φ.app U s :=
   αAb_app_affine Φ U s
 

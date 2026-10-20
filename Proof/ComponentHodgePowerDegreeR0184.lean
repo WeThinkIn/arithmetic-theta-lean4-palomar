@@ -18,7 +18,7 @@ open ArithmeticThetaLineRoot ArithmeticThetaNormalizedSections
 open ArithmeticThetaSectionOrder ArithmeticThetaCurveDegree ArithmeticThetaDegreeAssembly
 
 local instance (Y : Scheme) : MonoidalCategory Y.PresheafOfModules :=
-  PresheafOfModules.monoidalCategory (R := Y.presheaf)
+  PresheafOfModulesOfCommRing.monoidalCategory (R := Y.presheaf)
 
 /-- The counit identifies the sheafification of an actual sheaf with itself. -/
 def sheafCounit (Y : Scheme) (M : Y.Modules) :

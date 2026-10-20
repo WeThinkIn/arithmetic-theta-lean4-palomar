@@ -7,6 +7,9 @@ public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_eq_zero_of_forall_r
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_OModulePresheaf_eq_zero_of_d_eq_zero_of_forall_mem_pow_smul_of_isProper
 
 set_option autoImplicit false

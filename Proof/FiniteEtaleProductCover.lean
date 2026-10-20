@@ -1,8 +1,10 @@
 module
 
 public import FiniteEtaleSelectedComponent
+import all Mathlib.AlgebraicGeometry.Morphisms.FlatRank
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
@@ -289,9 +291,7 @@ theorem finite_etale_product_cover :
             · intro i
               simpa [v, ← Category.assoc] using hg'.2 i.castSucc)
           apply pullback.hom_ext
-          · simpa [g] using hglast.trans
-              (pullback.lift_fst (f := qlast) (g := q₀)
-                (a (Fin.last s)) g₀ _).symm
+          · simpa [g] using hglast
           · rw [heq]
             simpa [g] using (pullback.lift_snd (f := qlast) (g := q₀)
               (a (Fin.last s)) g₀ _).symm

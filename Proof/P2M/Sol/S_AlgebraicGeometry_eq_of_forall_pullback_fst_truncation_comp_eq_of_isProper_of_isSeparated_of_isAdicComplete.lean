@@ -6,6 +6,9 @@ public import Theorems.Thm_AlgebraicGeometry_IdealSheafData_eq_bot_of_forall_le_
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_eq_of_forall_pullback_fst_truncation_comp_eq_of_isProper_of_isSeparated_of_isAdicComplete
 
 set_option autoImplicit false

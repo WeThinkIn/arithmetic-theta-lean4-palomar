@@ -125,7 +125,7 @@ def localizedMaximalEquiv : p.primesOver S ≃ MaximalSpectrum B where
       rw [← Ideal.over_def _ (IsLocalRing.maximalIdeal A)]
       infer_instance
     exact ⟨Q.val.map (algebraMap S B),
-      Ideal.isMaximal_of_isIntegral_of_isMaximal_comap (R := A) _ inferInstance⟩
+      Ideal.isMaximal_of_isIntegral_of_isMaximal_under (R := A) _ inferInstance⟩
   invFun m := by
     haveI : m.asIdeal.IsMaximal := m.isMaximal
     have hm : m.asIdeal.LiesOver (IsLocalRing.maximalIdeal A) := by
@@ -143,7 +143,7 @@ def localizedMaximalEquiv : p.primesOver S ≃ MaximalSpectrum B where
       rw [← Ideal.over_def Q.val p]
       infer_instance
     haveI : Q.val.IsMaximal :=
-      Ideal.isMaximal_of_isIntegral_of_isMaximal_comap (R := R) _ inferInstance
+      Ideal.isMaximal_of_isIntegral_of_isMaximal_under (R := R) _ inferInstance
     exact IsLocalization.AtPrime.under_map_of_isMaximal S p B Q.val
   right_inv m := by
     apply MaximalSpectrum.ext

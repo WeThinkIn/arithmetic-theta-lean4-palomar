@@ -3,6 +3,8 @@ module
 public import NormalizedSectionDefinitions
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 open AlgebraicGeometry CategoryTheory Opposite MonoidalCategory
 open ArithmeticThetaLineRoot ArithmeticThetaSheafTensor ArithmeticThetaTensorPower
@@ -16,7 +18,7 @@ set_option maxHeartbeats 800000
 namespace ArithmeticThetaNormalizedSections
 
 local instance (X : Scheme.{u}) : MonoidalCategory X.PresheafOfModules :=
-  PresheafOfModules.monoidalCategory (R := X.presheaf)
+  PresheafOfModulesOfCommRing.monoidalCategory (R := X.presheaf)
 
 /-- The canonical pullback comparison preserves every pure tensor on an arbitrary open. -/
 theorem pullback_sheafTensor_local_section (X Y : Scheme.{u}) (p : X ⟶ Y)

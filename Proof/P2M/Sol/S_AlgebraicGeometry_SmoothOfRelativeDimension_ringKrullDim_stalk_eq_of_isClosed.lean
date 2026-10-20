@@ -5,6 +5,9 @@ public import Theorems.Thm_AlgebraicGeometry_SmoothOfRelativeDimension_topologic
 public import P2M.Util
 
 @[expose] public section
+set_option synthInstance.maxHeartbeats 400000
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 set_option backward.isDefEq.respectTransparency false
 namespace P2MW.S_AlgebraicGeometry_SmoothOfRelativeDimension_ringKrullDim_stalk_eq_of_isClosed
 

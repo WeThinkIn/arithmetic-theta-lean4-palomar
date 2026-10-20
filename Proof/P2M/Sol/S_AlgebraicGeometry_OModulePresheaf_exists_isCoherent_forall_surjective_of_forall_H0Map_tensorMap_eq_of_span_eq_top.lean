@@ -14,6 +14,8 @@ public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_internalHom_d_zero_
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 set_option backward.isDefEq.respectTransparency false
 namespace P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_isCoherent_forall_surjective_of_forall_H0Map_tensorMap_eq_of_span_eq_top
 

@@ -20,7 +20,7 @@ set_option maxHeartbeats 600000
 namespace ArithmeticThetaCoverComparison
 
 local instance (X : Scheme.{u}) : MonoidalCategory X.PresheafOfModules :=
-  PresheafOfModules.monoidalCategory (R := X.presheaf)
+  PresheafOfModulesOfCommRing.monoidalCategory (R := X.presheaf)
 
 lemma sheafTensorMap_id (X : Scheme.{u}) (H J : X.Modules) :
     sheafTensorMap X (𝟙 H) (𝟙 J) = 𝟙 (sheafTensor X H J) := by

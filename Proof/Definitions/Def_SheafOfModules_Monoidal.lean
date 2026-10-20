@@ -5,6 +5,8 @@ public import Definitions.Def_PresheafOfModules_InternalHom
 public import Theorems.Thm_PresheafOfModules_isMonoidal_inverseImage_W_toPresheaf
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 set_option autoImplicit false
 
@@ -93,7 +95,7 @@ namespace AlgebraicGeometry
 
 variable (X : Scheme.{u})
 
-instance Scheme.PresheafOfModules.monoidalCategory : MonoidalCategory X.PresheafOfModules :=
+instance Scheme.PresheafOfModulesOfCommRing.monoidalCategory : MonoidalCategory X.PresheafOfModules :=
   inferInstanceAs (MonoidalCategory (_root_.PresheafOfModules.{u} (X.sheaf.obj ⋙ forget₂ CommRingCat RingCat)))
 instance Scheme.PresheafOfModules.symmetricCategory : SymmetricCategory X.PresheafOfModules :=
   inferInstanceAs (SymmetricCategory (_root_.PresheafOfModules.{u} (X.sheaf.obj ⋙ forget₂ CommRingCat RingCat)))

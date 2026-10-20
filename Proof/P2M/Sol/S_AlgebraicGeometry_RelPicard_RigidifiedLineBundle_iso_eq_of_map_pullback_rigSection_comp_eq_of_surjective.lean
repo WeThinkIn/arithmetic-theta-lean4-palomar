@@ -7,6 +7,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_existsU
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_iso_eq_of_map_pullback_rigSection_comp_eq_of_surjective
 
 set_option autoImplicit false

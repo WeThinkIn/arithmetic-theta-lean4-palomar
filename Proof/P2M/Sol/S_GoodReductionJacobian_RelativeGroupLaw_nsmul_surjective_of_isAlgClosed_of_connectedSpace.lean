@@ -6,6 +6,9 @@ public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_formallyUnrami
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_GoodReductionJacobian_RelativeGroupLaw_nsmul_surjective_of_isAlgClosed_of_connectedSpace
 
 set_option autoImplicit false

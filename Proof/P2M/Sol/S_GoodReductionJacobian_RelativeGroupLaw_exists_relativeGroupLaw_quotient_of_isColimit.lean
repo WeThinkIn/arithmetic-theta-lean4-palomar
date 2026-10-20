@@ -7,6 +7,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_quotient_baseChange_of_finit
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 set_option backward.isDefEq.respectTransparency false
 namespace P2MW.S_GoodReductionJacobian_RelativeGroupLaw_exists_relativeGroupLaw_quotient_of_isColimit
 
@@ -321,7 +324,7 @@ variable {R : Type u} [CommRing R] {J : Scheme.{u}} {f : J ⟶ Spec (CommRingCat
 theorem orbit_subset (hAF : ∀ S : Finset J, ∃ U : J.Opens, IsAffineOpen U ∧ ∀ x ∈ S, x ∈ U) (x : J) :
     ∃ U : J.Opens, IsAffineOpen U ∧ ∀ r : ↑(pullback (ι ≫ f) f), (pullback.snd (ι ≫ f) f) r = x → (L.action ι) r ∈ U := by
   classical
-  have hfin : ((pullback.snd (ι ≫ f) f) ⁻¹' {x}).Finite := IsFinite.finite_preimage_singleton _ x
+  have hfin : ((pullback.snd (ι ≫ f) f) ⁻¹' {x}).Finite := Scheme.Hom.finite_preimage_singleton _ x
   obtain ⟨U, hU, hmem⟩ := hAF (hfin.image (L.action ι)).toFinset
   refine ⟨U, hU, fun r hr => hmem _ ?_⟩
   rw [Set.Finite.mem_toFinset]

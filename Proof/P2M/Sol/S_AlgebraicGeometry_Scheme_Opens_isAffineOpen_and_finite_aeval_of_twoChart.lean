@@ -8,6 +8,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Opens_finite_preimage_single
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_Opens_isAffineOpen_and_finite_aeval_of_twoChart
 
 set_option autoImplicit false

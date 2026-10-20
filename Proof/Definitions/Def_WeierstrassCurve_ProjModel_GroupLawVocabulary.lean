@@ -24,6 +24,9 @@ public import Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Point
 public import Definitions.Def_WeierstrassCurve_ProjModel_AddFormulas
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 set_option Elab.async false
 

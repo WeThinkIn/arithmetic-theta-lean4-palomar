@@ -7,6 +7,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_toDesce
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_DescentCharacter_existsUnique_iso_mapIso_eq_of_hasValue_one
 
 set_option autoImplicit false

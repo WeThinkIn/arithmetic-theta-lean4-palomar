@@ -6,6 +6,9 @@ public import Theorems.Thm_Module_Flat_exists_fg_subalgebra_flat_tensorProduct
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_Algebra_FinitePresentation_of_faithfullyFlat_of_finitePresentation
 
 set_option autoImplicit false

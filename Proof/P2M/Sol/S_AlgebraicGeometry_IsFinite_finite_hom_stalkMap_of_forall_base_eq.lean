@@ -5,6 +5,8 @@ public import Theorems.Thm_RingHom_Finite_finite_localRingHom_of_forall_comap_eq
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_IsFinite_finite_hom_stalkMap_of_forall_base_eq
 
 set_option autoImplicit false

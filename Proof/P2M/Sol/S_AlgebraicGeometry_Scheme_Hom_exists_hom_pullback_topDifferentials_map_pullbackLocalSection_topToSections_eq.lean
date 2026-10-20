@@ -10,6 +10,8 @@ public import Theorems.Thm_NeronModelInfra_TopFormOrder_topFormMap_topFormMap
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq
 
 set_option autoImplicit false
@@ -329,7 +331,7 @@ omit hφ in
 lemma kp_map_dK {C : Type u} [CommRing C] {Z : Scheme.{u}} (g : Z ⟶ Spec (CommRingCat.of C))
     {V V' : Z.Opens} (i : op V ⟶ op V') (b : Γ(Z, V)) :
     g.kaehlerPresheaf.map i (dK g V b) = dK g V' (Z.presheaf.map i b) :=
-  PresheafOfModules.DifferentialsConstruction.relativeDifferentials'_map_d g.constToPresheaf i b
+  PresheafOfModulesOfCommRing.DifferentialsConstruction.relativeDifferentials'_map_d g.constToPresheaf i b
 
 omit hφ in
 

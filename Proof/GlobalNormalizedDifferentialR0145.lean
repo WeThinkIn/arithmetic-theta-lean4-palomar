@@ -151,7 +151,7 @@ lemma relativeD_restrict {V : C.Opens} (hVU : V ≤ U) (a : Γ(C, U)) :
     f hVU (KaehlerDifferential.D F Γ(C, U) a)
   refine hn.trans ?_
   apply congrArg (f.kaehlerToSections V)
-  exact PresheafOfModules.DifferentialsConstruction.relativeDifferentials'_map_d
+  exact PresheafOfModulesOfCommRing.DifferentialsConstruction.relativeDifferentials'_map_d
     f.constToPresheaf (homOfLE hVU).op a
 
 lemma relativeD_normalization_restrict {V : C.Opens} (hVU : V ≤ U)

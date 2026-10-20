@@ -9,6 +9,9 @@ public import Theorems.Thm_AlgebraicGeometry_bijective_app_of_bijective_appTop_m
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_bijective_app_of_isProper_of_flat_of_forall_bijective_appTop_fiberToSpecResidueField_of_isLocallyNoetherian
 attribute [-instance] AdicCompletion.instIsLocalRingMaximalIdeal
 

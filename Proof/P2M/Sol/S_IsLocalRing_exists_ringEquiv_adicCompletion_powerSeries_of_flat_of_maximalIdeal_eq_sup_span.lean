@@ -5,6 +5,9 @@ public import Theorems.Thm_IsLocalRing_comap_map_adicCompletion_eq
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_IsLocalRing_exists_ringEquiv_adicCompletion_powerSeries_of_flat_of_maximalIdeal_eq_sup_span
 
 set_option autoImplicit false
@@ -418,7 +421,7 @@ namespace COMP
 
 theorem smul_injective_of_flat {R M : Type*} [CommRing R] [IsDomain R] [AddCommGroup M] [Module R M] [Module.Flat R M]
     {r : R} (hr : r ≠ 0) : Function.Injective (fun m : M => r • m) :=
-  (Module.Flat.isTorsionFree (R := R) (M := M)).isSMulRegular (isRegular_of_ne_zero hr)
+  (Module.Flat.isTorsionFree (R := R) (M := M)).isSMulRegular (IsRegular.of_ne_zero hr)
 end COMP
 
 open TensorProduct in

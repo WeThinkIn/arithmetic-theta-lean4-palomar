@@ -5,6 +5,9 @@ public import Mathlib.LinearAlgebra.Dimension.Localization
 public import Mathlib.RingTheory.Flat.TorsionFree
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.privateInPublic true
 
 /-! Descent of a finite, possibly ramified map between the given curve models. -/
 set_option autoImplicit false

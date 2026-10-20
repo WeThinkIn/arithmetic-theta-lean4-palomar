@@ -5,6 +5,9 @@ public import Definitions.Def_WeierstrassCurve_ProjModel
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 set_option backward.privateInPublic true
 namespace P2MW.S_WeierstrassProjModel_exists_fromZeroRingHom_eq_of_awayMap_eq
 
@@ -48,6 +51,7 @@ theorem X_pow_mul_divMonomial_eq {m n : ℕ} {a b : MvPolynomial (Fin 2) R}
         · simpa using hle 0
         · simp
       rw [← h1, h, h2]
+      rfl
   have := a.divMonomial_add_modMonomial (Finsupp.single 0 n)
   rwa [hmod, add_zero, ← MvPolynomial.X_pow_eq_monomial] at this
 

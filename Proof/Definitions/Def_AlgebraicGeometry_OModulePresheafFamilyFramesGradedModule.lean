@@ -5,6 +5,9 @@ public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 public import Definitions.Def_AlgebraicGeometry_ProjTwistDatum
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 set_option autoImplicit false
 
@@ -302,7 +305,7 @@ open scoped IsMulCommutative in
 
 def polyEnd (hθ : YComm G θ) : MvPolynomial (Fin s) A →ₐ[A] Module.End A (FamilyFrames ι G) :=
   haveI := Algebra.isMulCommutative_adjoin A (s := Set.range (yEnd ι G θ))
-    (by rintro _ ⟨m, rfl⟩ _ ⟨m', rfl⟩; exact yEnd_mul_comm hθ m m')
+    (by rintro _ ⟨m, rfl⟩ _ ⟨m', rfl⟩ _; exact yEnd_mul_comm (ι := ι) hθ m m')
   (Algebra.adjoin A (Set.range (yEnd ι G θ))).val.comp
     (MvPolynomial.aeval fun m =>
       (⟨yEnd ι G θ m, Algebra.subset_adjoin ⟨m, rfl⟩⟩ : Algebra.adjoin A (Set.range (yEnd ι G θ))))
@@ -411,7 +414,7 @@ theorem X_smul (hθ : YComm G θ) (m : Fin s) (f : (familyFramesGradedModule ι 
 
 theorem C_smul (hθ : YComm G θ) (a : A) (f : (familyFramesGradedModule ι G θ hθ).M) :
     (MvPolynomial.C a : MvPolynomial (Fin s) A) • f = a • f := by
-  rw [smul_def, polyEnd_C]; rfl
+  rw [smul_def, polyEnd_C]
 
 theorem base_smul_apply (hθ : YComm G θ) (a : A) (f : (familyFramesGradedModule ι G θ hθ).M) (e : ℤ) (k : ℕ) (j : Fin (r + 1)) :
     (a • f) e k j = a • f e k j := rfl

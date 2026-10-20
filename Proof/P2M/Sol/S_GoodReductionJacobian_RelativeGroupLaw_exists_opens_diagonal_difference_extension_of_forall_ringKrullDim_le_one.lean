@@ -15,6 +15,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_RationalMap_exists_specializ
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_GoodReductionJacobian_RelativeGroupLaw_exists_opens_diagonal_difference_extension_of_forall_ringKrullDim_le_one
 attribute [-simp] RegularLocalRingQuotientAscent.dualNumberFst_apply
 

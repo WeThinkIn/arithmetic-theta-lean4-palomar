@@ -9,6 +9,9 @@ public import Theorems.Thm_AlgebraicGeometry_Smooth_isDomain_and_isIntegrallyClo
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_exists_comp_eq_of_isOpenImmersion_of_abelianSchemePropertyBundle
 attribute [-instance] instTopologicallyFGOfFiniteType
 attribute [-simp] RegularLocalRingQuotientAscent.dualNumberFst_apply

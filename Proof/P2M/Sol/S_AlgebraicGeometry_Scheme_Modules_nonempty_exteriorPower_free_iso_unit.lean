@@ -5,6 +5,7 @@ public import Definitions.Def_AlgebraicGeometry_ModulesDet
 public import P2M.Util
 
 @[expose] public section
+set_option maxHeartbeats 2000000
 set_option backward.privateInPublic true
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
@@ -277,7 +278,7 @@ noncomputable def piPowBicone :
       change (Pi.single j.down a : Fin n → X.presheaf.obj V) j.down = a
       simp
     · rw [dif_neg h]
-      have h' : j'.down ≠ j.down := fun e => h (ULift.ext _ _ e.symm)
+      have h' : j'.down ≠ j.down := fun e => h (ULift.ext e.symm)
       change (Pi.single j.down a : Fin n → X.presheaf.obj V) j'.down = (0 : X.presheaf.obj V)
       simp [h']
 

@@ -3,6 +3,7 @@ module
 public import Mathlib
 
 @[expose] public section
+set_option backward.privateInPublic true
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
@@ -19,8 +20,6 @@ private theorem six_dvd_c_mul_square_sub_one (c : ℕ) (hc : 1 < c) :
   norm_num [Nat.descFactorial] at h
   have hc1 : 1 ≤ c := by omega
   have hone : 1 ≤ c ^ 2 := by nlinarith
-  have hsub : c + 1 - 2 = c - 1 := by omega
-  rw [hsub] at h
   have hpoly : c ^ 2 - 1 = (c - 1) * (c + 1) := by
     apply Nat.cast_injective (R := Int)
     push_cast [Nat.cast_sub hone, Nat.cast_sub hc1]

@@ -6,6 +6,8 @@ public import Definitions.Def_SheafOfModules_Monoidal
 public import Definitions.Def_AlgebraicGeometry_ModulesTensorPow
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
@@ -116,7 +118,7 @@ lemma map_tensorSections {V : X.Opens} (i : V ⟶ U) (s : Γ(L, U)) (t : Γ(M, U
   rw [tensorSections_def, tensorSections_def]
   have h := PresheafOfModules.naturality_apply (tensorSectionsHom L M) i.op
     ((s : L.val.obj (op U)) ⊗ₜ[Γ(X, U)] (t : M.val.obj (op U)))
-  erw [PresheafOfModules.Monoidal.tensorObj_map_tmul] at h
+  erw [PresheafOfModulesOfCommRing.Monoidal.tensorObj_map_tmul] at h
   exact h.symm
 
 lemma map_homOfLE_tensorSections {V : X.Opens} (h : V ≤ U) (s : Γ(L, U)) (t : Γ(M, U)) :

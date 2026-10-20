@@ -3,6 +3,8 @@ module
 public import TateSeriesSubstitution
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.privateInPublic true
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
@@ -127,6 +129,8 @@ theorem marked_cusp_terms :
       simp
     norm_num [xTerm, monomial, PowerSeries.coeff_C_mul, PowerSeries.coeff_mul,
       PowerSeries.constantCoeff_inv, PowerSeries.coeff_mul_X_pow', hc2]
+    change (4 : k)⁻¹ = 1 / 4
+    simp only [one_div]
   have bp : PowerSeries.coeff 2 (tateX 4 2 (1:k)) = 2 := by
     simp only [tateX, PowerSeries.coeff_mk]
     rw [partialX]

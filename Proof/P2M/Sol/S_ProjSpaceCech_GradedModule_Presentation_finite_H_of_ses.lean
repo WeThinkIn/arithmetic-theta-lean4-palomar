@@ -7,6 +7,9 @@ public import Theorems.Thm_ProjSpaceCech_GradedModule_d_sq
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_ProjSpaceCech_GradedModule_Presentation_finite_H_of_ses
 
 set_option autoImplicit false

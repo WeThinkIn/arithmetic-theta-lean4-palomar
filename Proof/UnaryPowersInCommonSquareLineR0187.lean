@@ -29,7 +29,7 @@ open ArithmeticThetaNormalizedSections ArithmeticThetaCompactUnaryR0183
 open ArithmeticThetaOpenHodgeR0180.GlobalFamilyDiscriminantR0180
 
 local instance (Y : Scheme) : MonoidalCategory Y.PresheafOfModules :=
-  PresheafOfModules.monoidalCategory (R := Y.presheaf)
+  PresheafOfModulesOfCommRing.monoidalCategory (R := Y.presheaf)
 
 lemma counit_section (Y : Scheme) (M : Y.Modules) (U : Y.Opens) (s : Γ(M,U)) :
     (sheafCounit Y M).hom.val.app (op U)

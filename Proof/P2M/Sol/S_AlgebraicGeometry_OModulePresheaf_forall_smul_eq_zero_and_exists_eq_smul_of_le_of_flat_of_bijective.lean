@@ -9,6 +9,9 @@ public import Theorems.Thm_IsBaseChange_exists_linearEquiv_tensor_of_algEquiv_te
 public import P2M.Util
 
 @[expose] public section
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 namespace P2MW.S_AlgebraicGeometry_OModulePresheaf_forall_smul_eq_zero_and_exists_eq_smul_of_le_of_flat_of_bijective
 
 set_option autoImplicit false
