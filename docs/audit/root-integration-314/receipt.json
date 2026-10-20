@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "source_sha256": {
+    "CompleteMainAndComponentsChallenge.lean": "06e857fa318f3b1a929b0a08f5a97a161cb6caed0fe024134f14b213e11dabb7",
+    "CompleteMainAndComponentsSolution.lean": "f8eda508cd65e914543c2f3c8d8d9ec97df044d392256c490ec03a5034eb1e12",
+    "comparator-main-complete.json": "709dc4e057b254f3ee26c66440be40318d3b7d9d74e16d28da33b3529824bf0d",
+    "submissions/main-complete/formalization.yaml": "ade16ce77dbe0263f42e798d192e5a31ffd4749debd245e67a610496522933ed",
+    "Proof/RelativeDoubledTorsionThetaLiftPreludeR0255.lean": "70b3457d415c80395acf955c1ef17c2dbae88f11725254e243605365e17a4f84",
+    "Proof/FPQCStackCriterionOverR0198.lean": "3d70a643718336407672846607094687720b42b835355324c0eb343c339c2306",
+    "lakefile.toml": "77444c40009bbb5753acb1561c6092b09fd77b191895e6127ccbae57a123bc5c",
+    ".github/workflows/palomar-preflight.yml": "c0daacdb87299cf0a770fd6aa0fbb1a72fbbcfa232c2364f2a1d122ab3a83eb2"
+  },
+  "log_sha256": "731ce2feac15e7bd003a2ce3db053383c97f536ea6d0621c4d7a199f682153a5",
+  "complete_main_scope": "40 complete original endpoints,43 theorem targets",
+  "official_result_for_complete_main": "pending"
+}

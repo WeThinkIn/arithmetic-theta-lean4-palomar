@@ -23,7 +23,7 @@ integration endpoints. `docs/SourceObligations.json` preserves their original
 types and source accounts. `docs/Coverage.md` tracks their migration separately
 from independent Challenge coverage.
 
-Joint partial audit 294 has checked 74/103 original exact endpoint types and standard
+Joint partial audit 316 has checked 99/103 original exact endpoint types and standard
 axiom closures. The accepted-017 early-certificate subpackage separately passed
 local Comparator with con-ron, NanoDa and Lean default kernel using source-bound
 exports and a normal sandbox. Its official full mechanical
@@ -111,8 +111,21 @@ workflow in `.github/workflows/palomar-preflight.yml` calls the official pinned
 PalomarSubmission workflow with `mode: full` and `palomar-standard-v1`. The workflow offers the pilot, early certificate, main-and-components and formal-cover
 configurations; each result applies only to its selected configuration. Formal submission must follow a passing full mechanical report.
 
-The latest joint migrated audit checks **74 of 103** original exact endpoint types and their standard axiom closures. The full GoalRoot build remains pending.
+The latest joint migrated audit checks **99 of 103** original exact endpoint types and their standard axiom closures. The full GoalRoot build remains pending.
 
-The prepared `comparator-main-and-components.json` compares 43 targets: an explicit conservative full-series kernel bound, 39 complete prior endpoints and supporting results. Its Mathlib-only Challenge is 953 lines / 61,095 bytes. The main interface does not include the extra `FormalIdentity` field of original accepted-037; that original exact type separately passed audit 294. See `challenges/main-and-components/Scope.json`.
+The prepared `comparator-main-and-components.json` compares 43 targets: an explicit conservative full-series kernel bound, 39 complete prior endpoints and supporting results. Its Mathlib-only Challenge is 953 lines / 61,095 bytes. The main interface does not include the extra `FormalIdentity` field of original accepted-037; that original exact type separately passed audit 316. See `challenges/main-and-components/Scope.json`.
 
 `comparator-formal-cover.json` separately compares accepted-050. Both new configurations have scope-specific formalization metadata and require their own official full mechanical reports before intake. Geometry interfaces, including the independent scheme discriminant specification, remain unfinished. No full-paper Palomar verification or registration is claimed.
+
+## Stronger complete main interface
+
+`comparator-main-complete.json` selects the separately compiled 969-line Challenge
+in `CompleteMainAndComponentsChallenge.lean`. It covers 40 complete prior endpoints
+with 43 targets, including the same-U FormalIdentity output of accepted-037.
+All four relevant root modules and the two recent compatibility repairs passed
+actual Lake integration314. This stronger configuration requires its own official
+report; the older main-and-components report cannot validate the added output.
+
+The accepted-050 formal-cover entry completed ordinary intake as `86n83vqdajt2`.
+Its Palomar verification run39466419289 succeeded and it is awaiting semantic
+review. No permanent registration or full-paper pass is claimed.

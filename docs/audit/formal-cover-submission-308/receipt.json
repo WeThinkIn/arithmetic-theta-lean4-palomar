@@ -1,0 +1,17 @@
+{
+  "submission_id": "86n83vqdajt2",
+  "repository": "WeThinkIn/arithmetic-theta-lean4-palomar",
+  "commit": "2bd02cf8a38d686dc7a56012b1ca0291443816c9",
+  "config": "comparator-formal-cover.json",
+  "metadata": "submissions/formal-cover/formalization.yaml",
+  "scope": "accepted-050 only",
+  "identity_verified": true,
+  "cleanup_pending": false,
+  "vpn_stopped": true,
+  "semantic_review": "pending",
+  "registration": "not performed",
+  "status": "awaiting-review",
+  "official_run_id": 39466419289,
+  "official_run_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/39466419289",
+  "official_verification_conclusion": "success"
+}

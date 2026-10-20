@@ -39,3 +39,9 @@ After correcting the required metadata basename, scoped official full runs were 
 - Formal cover: https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39461300608
 
 Both passed the initial intake preparation. Their terminal mechanical results remain pending. The earlier ced6305 attempts stopped before Lean with a metadata filename error, archived in docs/audit/official-intake-format-282. No statement or proof was changed to correct that format.
+
+Formal-cover official run39461300608 completed with mechanical status pass, stage complete, high-trust Mathlib-only provenance and all three kernels accepting. The exact result binds2bd02cf, comparator-formal-cover.json and submissions/formal-cover/formalization.yaml. Report and receipt: docs/audit/official-formal-cover-306/. This covers accepted-050 only. Ordinary intake is being initiated; no semantic result or registration is yet claimed.
+
+Ordinary intake for accepted-050 succeeded with submission ID `86n83vqdajt2`. The responsible-maintainer GitHub tag/gist proof completed and both temporary artifacts were removed. The submitted revision remains2bd02cf with comparator-formal-cover.json and submissions/formal-cover/formalization.yaml. This initiates official verification/review; it does not claim a semantic pass or permanent registration. Credentials remain outside Git.
+
+Submission86n83vqdajt2 subsequently passed Palomar's own verification run39466419289 and entered awaiting-review. This is an official verification success for accepted-050; the semantic review has not yet been returned, and no permanent registration has occurred.

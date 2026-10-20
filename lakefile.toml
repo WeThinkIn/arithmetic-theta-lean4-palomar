@@ -1249,3 +1249,11 @@ roots = ["FormalCoverChallenge"]
 [[lean_lib]]
 name = "FormalCoverSolution"
 roots = ["FormalCoverSolution"]
+
+[[lean_lib]]
+name = "CompleteMainAndComponentsChallenge"
+roots = ["CompleteMainAndComponentsChallenge"]
+
+[[lean_lib]]
+name = "CompleteMainAndComponentsSolution"
+roots = ["CompleteMainAndComponentsSolution"]

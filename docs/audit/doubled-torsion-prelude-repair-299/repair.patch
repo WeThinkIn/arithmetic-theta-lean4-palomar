@@ -1,0 +1,82 @@
+--- a/Proof/RelativeDoubledTorsionThetaLiftPreludeR0255.lean
++++ b/Proof/RelativeDoubledTorsionThetaLiftPreludeR0255.lean
+@@ -4155,7 +4155,7 @@
+ 
+ variable {X Y : Scheme.{u}} (h : X ⟶ Y) (𝒲 : X.OrderedAffineCover) (𝒦 : Y.OrderedAffineCover) (lam : 𝒲.ι → 𝒦.ι)
+ 
+-private def sortIdx {n : ℕ} (s : 𝒲.Idx n) (hinj : Function.Injective (lam ∘ s.1)) : 𝒦.Idx n :=
++public def sortIdx {n : ℕ} (s : 𝒲.Idx n) (hinj : Function.Injective (lam ∘ s.1)) : 𝒦.Idx n :=
+   ⟨(lam ∘ s.1) ∘ (Tuple.sort (lam ∘ s.1)),
+     (Tuple.monotone_sort (lam ∘ s.1)).strictMono_of_injective (hinj.comp (Tuple.sort (lam ∘ s.1)).injective)⟩
+ 
+@@ -4163,7 +4163,7 @@
+     (𝒲.sortIdx 𝒦 lam s hinj).1 = (lam ∘ s.1) ∘ (Tuple.sort (lam ∘ s.1)) :=
+   rfl
+ 
+-private theorem inter_le_preimage_inter_sortIdx (hlam : ∀ w, 𝒲.U w ≤ h ⁻¹ᵁ 𝒦.U (lam w))
++public theorem inter_le_preimage_inter_sortIdx (hlam : ∀ w, 𝒲.U w ≤ h ⁻¹ᵁ 𝒦.U (lam w))
+     {n : ℕ} (s : 𝒲.Idx n) (hinj : Function.Injective (lam ∘ s.1)) :
+     𝒲.inter s ≤ h ⁻¹ᵁ 𝒦.inter (𝒲.sortIdx 𝒦 lam s hinj) := by
+   change 𝒲.inter s ≤ h ⁻¹ᵁ (⨅ j, 𝒦.U ((𝒲.sortIdx 𝒦 lam s hinj).1 j))
+@@ -4226,29 +4226,29 @@
+ 
+ variable {Y : Scheme.{u}}
+ 
+-private def unitAutSection (W : Y.Opens)
++public def unitAutSection (W : Y.Opens)
+     (e : SheafOfModules.unit (W : Scheme.{u}).ringCatSheaf ≅ SheafOfModules.unit (W : Scheme.{u}).ringCatSheaf) :
+     Γ(Y, W) :=
+   W.topIso.hom ((e.hom.val.app (op ⊤)).hom (1 : (W : Scheme.{u}).presheaf.obj (op ⊤)))
+ 
+-private abbrev CechTrivialisation (𝒱 : Y.OrderedAffineCover) (𝓜 : Y.Modules) : Type u :=
++public abbrev CechTrivialisation (𝒱 : Y.OrderedAffineCover) (𝓜 : Y.Modules) : Type u :=
+   ∀ a : 𝒱.ι, (Scheme.Modules.pullback (𝒱.U a).ι).obj 𝓜 ≅ SheafOfModules.unit ((𝒱.U a : Scheme.{u})).ringCatSheaf
+ 
+ namespace CechTrivialisation
+ 
+ variable {𝒱 : Y.OrderedAffineCover} {𝓜 : Y.Modules}
+ 
+-private def restrict (τ : CechTrivialisation 𝒱 𝓜) {a : 𝒱.ι} {W : Y.Opens} (h : W ≤ 𝒱.U a) :
++public def restrict (τ : CechTrivialisation 𝒱 𝓜) {a : 𝒱.ι} {W : Y.Opens} (h : W ≤ 𝒱.U a) :
+     (Scheme.Modules.pullback W.ι).obj 𝓜 ≅ SheafOfModules.unit ((W : Scheme.{u})).ringCatSheaf :=
+   ((Scheme.Modules.pullbackCongr (Y.homOfLE_ι h)).app 𝓜).symm ≪≫
+     ((Scheme.Modules.pullbackComp (Y.homOfLE h) (𝒱.U a).ι).app 𝓜).symm ≪≫
+     (Scheme.Modules.pullback (Y.homOfLE h)).mapIso (τ a) ≪≫
+     Scheme.Modules.pullbackUnitIso (Y.homOfLE h)
+ 
+-private def transition (τ : CechTrivialisation 𝒱 𝓜) (s : 𝒱.Idx 1) : Γ(Y, 𝒱.inter s) :=
++public def transition (τ : CechTrivialisation 𝒱 𝓜) (s : 𝒱.Idx 1) : Γ(Y, 𝒱.inter s) :=
+   unitAutSection (𝒱.inter s) ((τ.restrict (𝒱.inter_le s 0)).symm ≪≫ τ.restrict (𝒱.inter_le s 1))
+ 
+-private def comap (τ : CechTrivialisation 𝒱 𝓜) {Y' : Scheme.{u}} (h : Y' ⟶ Y) [IsAffineHom h] :
++public def comap (τ : CechTrivialisation 𝒱 𝓜) {Y' : Scheme.{u}} (h : Y' ⟶ Y) [IsAffineHom h] :
+     CechTrivialisation (𝒱.comap h) ((Scheme.Modules.pullback h).obj 𝓜) := fun a =>
+   ((Scheme.Modules.pullbackComp (h ⁻¹ᵁ 𝒱.U a).ι h).app 𝓜) ≪≫
+     ((Scheme.Modules.pullbackCongr (morphismRestrict_ι h (𝒱.U a)).symm).app 𝓜) ≪≫
+@@ -4269,7 +4269,7 @@
+ variable {X : Scheme.{u}} (f : X ⟶ Spec (CommRingCat.of B₁))
+ variable {Xk : Scheme.{u}} (fk : Xk ⟶ Spec (CommRingCat.of k)) (i : Xk ⟶ X)
+ 
+-private def IsFibreReading (U : X.Opens) (W : Xk.Opens) (hW : W ≤ i ⁻¹ᵁ U) (δ : Γ(X, U))
++public def IsFibreReading (U : X.Opens) (W : Xk.Opens) (hW : W ≤ i ⁻¹ᵁ U) (δ : Γ(X, U))
+     (w : Module.Dual k V →ₗ[k] (OModulePresheaf.unit fk).obj W) : Prop :=
+   letI := algebraOfHom f U
+   ∃ (n : ℕ) (v : Fin n → V) (s : Fin n → Γ(X, U)),
+@@ -4281,7 +4281,7 @@
+ variable {X₀ : Scheme.{u}} (g : X₀ ⟶ X) [IsAffineHom g] [IsAffineHom i]
+ variable (𝒰 : X.OrderedAffineCover)
+ 
+-private def IsPicObstructionCocycle (𝓛₀ : X₀.Modules)
++public def IsPicObstructionCocycle (𝓛₀ : X₀.Modules)
+     (c : Module.Dual k V →ₗ[k] (OModulePresheaf.unit fk).cochain (𝒰.comap i) 2) : Prop :=
+   ∃ (τ : Scheme.Modules.CechTrivialisation (𝒰.comap g) 𝓛₀)
+     (u u' : ∀ s : 𝒰.Idx 1, Γ(X, 𝒰.inter s)),
+@@ -4295,7 +4295,7 @@
+             (X.presheaf.map (homOfLE (𝒰.inter_le_inter_face r 1)).op).hom (u' (𝒰.face r 1)) - 1)
+         ((LinearMap.proj r).comp c)
+ 
+-private def IsPicDeformationCocycle (M : X.Modules)
++public def IsPicDeformationCocycle (M : X.Modules)
+     (φ₀ : (Scheme.Modules.pullback g).obj M ≅ SheafOfModules.unit X₀.ringCatSheaf)
+     (w : Module.Dual k V →ₗ[k] (OModulePresheaf.unit fk).cochain (𝒰.comap i) 1) : Prop :=
+   ∃ (τ : Scheme.Modules.CechTrivialisation 𝒰 M) (e e' : ∀ a : 𝒰.ι, Γ(X, 𝒰.U a)),

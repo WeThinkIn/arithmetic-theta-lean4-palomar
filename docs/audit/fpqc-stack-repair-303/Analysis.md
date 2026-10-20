@@ -1,0 +1,11 @@
+# Isolated fpqc stack repair 303
+
+The original root297 failure begins at line465, where fullyFaithfulToDescentData requires a covering proof for an unresolved topology metavariable. Mathlib declares its topology J implicitly; the expected goal therefore contains `Sieve.ofArrows ... ∈ ?m.75 V` before the tactic proof can discharge it using J.pullback_stable. Pinning `(J := J)` at the four calls selects exactly the topology already present in the local section, with the existing prestack instance and covering hypothesis.
+
+The subsequent `compare J` errors are cascades from the failed definition, not a collision with an unrelated compare or a need to change its arguments. The isolated prefix probe prints the successfully elaborated local compare type with explicit J, implicit IsPrestack J instance, covering proof and the original Lift arguments. There is no need for a section inclusion change, renaming, changed mathematical premise or altered proof direction.
+
+minimal.patch contains exactly four additions of `(J := J)` at original lines464,476,483,490. Every declaration signature and all other source bytes are unchanged. The original full proof still derives the stack condition on the actual rootTopology B from OpenDescent F and SingletonDescent F.
+
+The prefix probe compiled in15.58seconds. The complete repaired file compiled in23.49seconds, exit0, with only three existing letI style warnings. A separate importer audit compiled in3.07seconds; it checks the repaired compare chain, liftDescentData and both datum isomorphisms, local effectivity, and final fpqc_stack_criterion_over. It also applies the final theorem at its exact original explicit type. All printed dependencies use only propext, Classical.choice and Quot.sound; no sorryAx occurs.
+
+All compilations use the pinned Lean4.35.0-rc2 environment,12 threads and a300-second finite budget, reusing the existing dependency objects. The importer prepends this isolated directory to LEAN_PATH to ensure it uses the repaired local object. project and original delivery are unchanged. No shared Lake writer, new export, Comparator run, official workflow or network operation was performed. Parent owns integration and any rebuild of the actual root.

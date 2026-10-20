@@ -461,7 +461,7 @@ variable (J : GrothendieckTopology (Over B)) [F.IsPrestack J] (hR : R ∈ J T)
 /-- Full faithfulness gives the unique comparison between two effective
 objects inducing the same restricted datum. -/
 def compare (L K : Lift F R q D) : L.obj ≅ K.obj :=
-  (F.fullyFaithfulToDescentData (family (R.pullback q))
+  (F.fullyFaithfulToDescentData (J := J) (family (R.pullback q))
     (by simpa [family, Sieve.ofArrows_category'] using J.pullback_stable q hR)).preimageIso
       (L.trivialization ≪≫ K.trivialization.symm)
 
@@ -473,21 +473,21 @@ lemma map_compare_hom (L K : Lift F R q D) :
 
 @[simp]
 lemma compare_self (L : Lift F R q D) : (compare J hR L L).hom = 𝟙 L.obj := by
-  apply (F.fullyFaithfulToDescentData (family (R.pullback q))
+  apply (F.fullyFaithfulToDescentData (J := J) (family (R.pullback q))
     (by simpa [family, Sieve.ofArrows_category'] using J.pullback_stable q hR)).map_injective
   simp [map_compare_hom]
 
 @[reassoc]
 lemma compare_comp (L K N : Lift F R q D) :
     (compare J hR L K).hom ≫ (compare J hR K N).hom = (compare J hR L N).hom := by
-  apply (F.fullyFaithfulToDescentData (family (R.pullback q))
+  apply (F.fullyFaithfulToDescentData (J := J) (family (R.pullback q))
     (by simpa [family, Sieve.ofArrows_category'] using J.pullback_stable q hR)).map_injective
   simp [map_compare_hom]
 
 lemma eq_compare (L K : Lift F R q D) (φ : L.obj ⟶ K.obj)
     (hφ : (F.toDescentData (family (R.pullback q))).map φ ≫ K.trivialization.hom =
       L.trivialization.hom) : φ = (compare J hR L K).hom := by
-  apply (F.fullyFaithfulToDescentData (family (R.pullback q))
+  apply (F.fullyFaithfulToDescentData (J := J) (family (R.pullback q))
     (by simpa [family, Sieve.ofArrows_category'] using J.pullback_stable q hR)).map_injective
   rw [map_compare_hom, ← cancel_mono K.trivialization.hom]
   simpa using hφ

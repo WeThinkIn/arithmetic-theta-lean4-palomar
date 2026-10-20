@@ -1,0 +1,263 @@
+{
+  "source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeDoubledTorsionThetaLiftPreludeR0255.lean",
+  "before_sha256": "c3b7a14f95f5193a2c41cf0e7d250da199b63e8bdab43fa567bc1659441706e0",
+  "candidate_sha256": "70b3457d415c80395acf955c1ef17c2dbae88f11725254e243605365e17a4f84",
+  "visibility_changes": [
+    "unitAutSection",
+    "CechTrivialisation",
+    "restrict",
+    "transition",
+    "comap",
+    "IsFibreReading",
+    "IsPicObstructionCocycle",
+    "IsPicDeformationCocycle",
+    "sortIdx",
+    "inter_le_preimage_inter_sortIdx"
+  ],
+  "command": [
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+    "-j12",
+    "-o",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/doubled-torsion-prelude-repair-299/RelativeDoubledTorsionThetaLiftPreludeR0255.olean",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/doubled-torsion-prelude-repair-299/RelativeDoubledTorsionThetaLiftPreludeR0255.lean"
+  ],
+  "lean_path": "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean",
+  "threads": 12,
+  "budget_seconds": 600,
+  "observation_interval_seconds": 60,
+  "diagnosis": "Private local Cech and SmallExtension interfaces are publicly re-exported by p2m_export and used in public theorem types; expose only the eight mutually dependent definition interfaces.",
+  "attempt": 2,
+  "exit_code": 0,
+  "seconds": 150.20893651992083,
+  "created_at_utc": "2026-10-20T17:32:15.178286+00:00",
+  "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "original_project_source_unchanged": true,
+  "only_visibility_modifiers_changed": true,
+  "all_154_direct_dependency_artifacts_unchanged": true,
+  "audit": {
+    "method": "Direct target-module ModuleData.constNames traversal; import all preserves private declarations; skip userName.isInternalDetail; Lean.collectAxioms for each name",
+    "explicit_declarations_checked": 714,
+    "unexpected_axioms": 0,
+    "exit_code": 0,
+    "seconds": 2.96791346790269,
+    "source": "AxiomAuditDirect.lean",
+    "log": "check-axioms-direct.log"
+  },
+  "original_printed_axiom_closures": 17,
+  "no_sorry_admit_axiom_commands": true,
+  "files": [
+    {
+      "path": "Analysis.md",
+      "sha256": "6368435c9c2f7c9ed40f5031cd08429855206959558a09933e4ce4c7a8fa020f",
+      "bytes": 3679
+    },
+    {
+      "path": "AxiomAudit.lean",
+      "sha256": "39ebc1f0b0d17f474531f7843ff6d406c1157aabd0eba6b67a5f9e72383d67c9",
+      "bytes": 873
+    },
+    {
+      "path": "AxiomAuditDirect.ir",
+      "sha256": "6f6b8ed1464b0ee24c8834036754e3e8eff9ab3c9bd9ab61ba69c727c2ea9783",
+      "bytes": 100048
+    },
+    {
+      "path": "AxiomAuditDirect.ir.sig",
+      "sha256": "85a1c986d384f783db0654bad18f01ccde64d4551b6681912c007690424ccd3b",
+      "bytes": 176
+    },
+    {
+      "path": "AxiomAuditDirect.lean",
+      "sha256": "167d27890a0f187cc82e128fc0d3733e0daa313710165e69704288064bc77437",
+      "bytes": 954
+    },
+    {
+      "path": "AxiomAuditDirect.olean",
+      "sha256": "f9e19939627c12e5c616b7b7870c8ada5075acb02f5e4332bd524d207ff6ed70",
+      "bytes": 104816
+    },
+    {
+      "path": "AxiomAuditDirect.olean.private",
+      "sha256": "d7a0ed418b0b980d33ad9c2c20069541e5ea077639c10e20d382308ccd473da0",
+      "bytes": 263152
+    },
+    {
+      "path": "AxiomAuditDirect.olean.server",
+      "sha256": "1142b83dc379214e80a27286d1cf518cfc0813796a7cecf4f982896b011da9be",
+      "bytes": 688
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftPreludeR0255.ir",
+      "sha256": "a1e738c1132ece3a0c0cfdc74947d24aae2f926745648ccf86b1c2efdc085d8a",
+      "bytes": 65232
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftPreludeR0255.ir.sig",
+      "sha256": "0d2beae00362a48e25715ef37a85b6c292231de49590104f23ab313a826550f8",
+      "bytes": 176
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftPreludeR0255.lean",
+      "sha256": "70b3457d415c80395acf955c1ef17c2dbae88f11725254e243605365e17a4f84",
+      "bytes": 503441
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftPreludeR0255.olean",
+      "sha256": "190da95efeaae26029973059572571f3a6ade681ef642849a25660f1a12a0eba",
+      "bytes": 3098032
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftPreludeR0255.olean.private",
+      "sha256": "3294f87c7c15b140888b3ae89824c1f5dab643f0214dc2bd2d114e9b1d4d4085",
+      "bytes": 13600384
+    },
+    {
+      "path": "RelativeDoubledTorsionThetaLiftPreludeR0255.olean.server",
+      "sha256": "adb6bfb46943fa8ee96594f0299965caf12a7344cccb417db41ae7ffc9e0e8dd",
+      "bytes": 203384
+    },
+    {
+      "path": "axiom-closures.json",
+      "sha256": "0750df47a054d8e312cb65218b07c71454a03b1a687e185cc7d4b961200ec2e3",
+      "bytes": 197758
+    },
+    {
+      "path": "candidate-01.lean",
+      "sha256": "ef65e9179c90fa68ec0c5b682c27b424eee1c1059fe8a2cf888ec0d387659eee",
+      "bytes": 503443
+    },
+    {
+      "path": "check-01.log",
+      "sha256": "f79a4f8885c154d485de15909f01a3229136e1ed351dc975da5b44952452d8fd",
+      "bytes": 80959
+    },
+    {
+      "path": "check-02.log",
+      "sha256": "40d364baf85ffe71b106552645452cbf640bd923f2e8d8f2fdd976beaaa31672",
+      "bytes": 70167
+    },
+    {
+      "path": "check-axioms-direct.log",
+      "sha256": "a29173d0b31e8151cc7419ddedbda359e4707a3181162f4d55719c391e4ddbb7",
+      "bytes": 152601
+    },
+    {
+      "path": "check-axioms.log",
+      "sha256": "82c4d973ac587496002e1c1c25feb9996f8dd01cf999b8de8da5627f0bedc821",
+      "bytes": 500
+    },
+    {
+      "path": "check-axioms02.log",
+      "sha256": "e6e6461b6c34dbc197b46b83f2bd26341ccc866e0eaa59359dadabb598a1d558",
+      "bytes": 3499
+    },
+    {
+      "path": "check-axioms03.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checkpoint-01.json",
+      "sha256": "5189a856d1f19129868ca4a60760af042b22cc998a8519508bba5cf07be73da2",
+      "bytes": 2150
+    },
+    {
+      "path": "checkpoint-02.json",
+      "sha256": "4465615be521c88fc6c9f4ae5f73482c06efdc02ecb9d99d510fda4736e9a64e",
+      "bytes": 2220
+    },
+    {
+      "path": "checkpoint-axioms-direct.json",
+      "sha256": "a937a60fa6278062d26e283beff28afe18498b3197a81834db6955986eb2ec82",
+      "bytes": 2181
+    },
+    {
+      "path": "checkpoint-axioms.json",
+      "sha256": "d615035f59f709e9bed0abba63c2025decfd0a32a6c3b03779c39cad5107f589",
+      "bytes": 2169
+    },
+    {
+      "path": "dependency-bindings.json",
+      "sha256": "5d7c2961ae63d5d26a24ca17add5deef281dda62b01919fecdd0ecb5b52cc73d",
+      "bytes": 56638
+    },
+    {
+      "path": "repair.patch",
+      "sha256": "b263b265497de4a9b278af91fce1415dff8730f22b1e98a932a54cfcb00c8769",
+      "bytes": 4992
+    },
+    {
+      "path": "result-01.json",
+      "sha256": "10ce1e1bbaeb25ddc2fd9b62d38664067d2c4fddc4a5f935f627c4e4ee19a301",
+      "bytes": 54
+    },
+    {
+      "path": "result-02.json",
+      "sha256": "23765b3f63ca7219220c99b9361469ea3997894af86649b796eafeaa23964817",
+      "bytes": 54
+    },
+    {
+      "path": "result-axioms-direct.json",
+      "sha256": "efe1a7fce9599ab70e4a29b176f70248c432af762d89bfa7c9051cd81fdbd685",
+      "bytes": 52
+    },
+    {
+      "path": "result-axioms.json",
+      "sha256": "deb25cd872833b89f47fd648acc1c1a91958747d777098eba57aad1cf8908e2e",
+      "bytes": 52
+    },
+    {
+      "path": "result-axioms02.json",
+      "sha256": "0ae35b6ea65cd0cc622d1f6ea083eac49188a7b68f92249ee01e8bd56a3c13c4",
+      "bytes": 54
+    },
+    {
+      "path": "result-axioms03.json",
+      "sha256": "7bb8ef5849c0e84b7472db171981ead1c93de1f135475229a8bc7db4f7894211",
+      "bytes": 55
+    },
+    {
+      "path": "root297-diagnostics.txt",
+      "sha256": "1e7fe9e9233b5bb54134c7f7dabe592ee9ad5aa314aee43855add3a5cae8aa88",
+      "bytes": 25823
+    },
+    {
+      "path": "run-01.py",
+      "sha256": "d38ef165aec55162c26d4fef5a670ea63a6a00384f04d7d265c01f537659f476",
+      "bytes": 580
+    },
+    {
+      "path": "run-02.py",
+      "sha256": "36feedb02a204bf04e63e9cac33035d8f1a519a87d544a6f14660ef433cdb814",
+      "bytes": 580
+    },
+    {
+      "path": "run-axioms-direct.py",
+      "sha256": "517e897929f3820d590e54e5dfe47d995b07c86f76c8ac050d8114ff87e921cb",
+      "bytes": 613
+    },
+    {
+      "path": "run-axioms.py",
+      "sha256": "d6e4b8b7bdd2ca1497b94abb34bf3828bc21d15101ff146707585aa13052287a",
+      "bytes": 592
+    },
+    {
+      "path": "run-axioms02.py",
+      "sha256": "f6f191090c417cb3d756ccdffe32948e2282bc2efab81eb52858cb89dcbab2a8",
+      "bytes": 596
+    },
+    {
+      "path": "run-axioms03.py",
+      "sha256": "f89a3de18fca41618b5407e3ae9c41a64b79a5517e0f08a86d6741b5793654d8",
+      "bytes": 596
+    }
+  ],
+  "scope": "Isolated full module compile plus target-module transitive axiom closure checks. Parent owns actual project target integration; not official Palomar validation.",
+  "prior_failures": [
+    "result-01.json: initial eight visibility changes revealed further sortIdx interfaces at line7988; fixed without changing types or bodies.",
+    "result-axioms.json and result-axioms02.json: evidence-only metaprogram elaboration errors.",
+    "result-axioms03.json: broad environment scan reached 180-second budget; replaced by direct module-name-table audit."
+  ]
+}

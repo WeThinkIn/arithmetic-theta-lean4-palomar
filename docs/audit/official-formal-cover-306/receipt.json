@@ -1,0 +1,10 @@
+{
+  "run_id": 39461300608,
+  "source_commit": "2bd02cf8a38d686dc7a56012b1ca0291443816c9",
+  "config": "comparator-formal-cover.json",
+  "metadata": "submissions/formal-cover/formalization.yaml",
+  "report_sha256": "89812f25374fe0661957a49b8d98f61c6c670cfd1ffa1466d8e4e58be8a99546",
+  "scope": "accepted-050 only",
+  "semantic_review": "pending",
+  "registration": "not performed"
+}
