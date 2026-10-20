@@ -1,0 +1,10 @@
+Running con-ron kernel on solution
+bwrap: Unknown option --clearenv
+con-ron kernel rejected the solution
+Running nanoda kernel on solution
+bwrap: Unknown option --clearenv
+nanoda kernel rejected the solution
+Running Lean default kernel on solution
+bwrap: Unknown option --clearenv
+error: con-ron exited with 1
+Lean default kernel rejected the solution

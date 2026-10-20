@@ -1,0 +1,129 @@
+../evidence/ramified-basechange-203/RamifiedGenericBaseChangeR0155.lean:672:8: warning: Variable name `β` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _β
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/ramified-basechange-203/RamifiedGenericBaseChangeR0155.lean:1324:5: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/ramified-basechange-203/RamifiedGenericBaseChangeR0155.lean:1329:5: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/ramified-basechange-203/RamifiedGenericBaseChangeR0155.lean:1331:5: warning: Variable name `hMb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hMb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/ramified-basechange-203/RamifiedGenericBaseChangeR0155.lean:1333:5: warning: Variable name `hρ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hρ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/ramified-basechange-203/RamifiedGenericBaseChangeR0155.lean:1336:5: warning: Variable name `hχ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hχ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/ramified-basechange-203/RamifiedGenericBaseChangeR0155.lean:1339:5: warning: Variable name `hχb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hχb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/ramified-basechange-203/RamifiedGenericBaseChangeR0155.lean:1342:5: warning: Variable name `hF` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hF
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/ramified-basechange-203/RamifiedGenericBaseChangeR0155.lean:1344:5: warning: Variable name `hell` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hell
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.base_cartesian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.lift_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.lift_cartesian_over_models' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.comparison_proper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.target_iff_comparison_isIso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.lift_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.smoothMap_cartesian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.smoothMap_nodeMap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.nodeMap_x_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.nodeMap_preimage_x' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.formal_cartesian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.model_reduction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.completedSmoothChart_cartesian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.exists_generic_test' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.stage_smooth_cartesian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.stage_comparison_smooth_cartesian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.smoothReduction_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.completedSmoothChart_dominant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.chartRamification_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.lift_dominant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.comparison_dominant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.generic_section_of_field_test' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.iso_of_dominant_field_test' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.RamifiedGenericBaseChange.comparison_isIso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaRamifiedPeriodR0155.ramified_generic_base_change' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

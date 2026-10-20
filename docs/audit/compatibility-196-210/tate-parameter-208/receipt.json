@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "source_sha256": "c565da57ef92025855a061a1b9f170830f2b4ffbe3f60a18e8e674a2c7a67b49",
+  "fixed_sha256": "c23f6b9c2471d55eb1d5726c2ccd5a7483d9fe90d650863c131d5d2cddc4df58",
+  "log_sha256": "bb53a695c4a9b53735d9a60c380aba5eb113fabe1947ba49e8e933c7174d2dad",
+  "change": "Parenthesize actual singleton span expression",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

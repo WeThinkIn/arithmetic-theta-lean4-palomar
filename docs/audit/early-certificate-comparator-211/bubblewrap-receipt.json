@@ -1,0 +1,16 @@
+{
+  "timestamp_utc": "2026-10-20T15:58:31.138102+00:00",
+  "version": "0.12.0",
+  "official_pipeline_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+  "tarball_sha256": "9760d007363e3abba7c747489910f9f82d9fca53ba3bd3282e396fa3c97a3314",
+  "matches_official_pinned_sha256": true,
+  "binary_path": "/home/Palomar/workspace/arithmetic-theta/evidence/early-comparator-211/bubblewrap-0.12.0/build/bwrap",
+  "binary_sha256": "dd7c08cfc4cd60028638f03c7995a4a2f26cd47f1e3723ad66a45379d42ccd03",
+  "binary_mode": "0o755",
+  "build_exit_code": 0,
+  "smoke_test_command": "bubblewrap-0.12.0/build/bwrap --clearenv --ro-bind / / --unshare-user -- /bin/true",
+  "smoke_test_exit_code": 0,
+  "system_files_modified": false,
+  "setuid": false,
+  "official_install_script_sha256": "c290df6cebdf1cb26edb69ed4164d9551062bfeb65243b93d1d1d3b77eac0a35"
+}

@@ -1,0 +1,4 @@
+'ArithmeticThetaPalomarMain172.Bridges198.fromOriginal_indexed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarMain172.Bridges198.to_fromOriginal' depends on axioms: [propext, Classical.choice, Quot.sound]

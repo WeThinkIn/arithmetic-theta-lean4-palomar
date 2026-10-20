@@ -2,6 +2,9 @@ module
 
 public import CompletedChartRamificationR0154
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! The ramified morphism of the specified infinitesimal polygon towers. -/
@@ -18,7 +21,7 @@ open CategoryTheory AlgebraicGeometry ArithmeticThetaInfinitesimalPolygonR0129
 open ArithmeticThetaKatoAnnularR0152
 variable (k : Type u) [Field k] [CharZero k]
 
-private lemma power_stable {S : Type u} [CommRing S] (t : S)
+lemma power_stable {S : Type u} [CommRing S] (t : S)
     (f : S →+* S) (d : ℕ) (hd : 0 < d) (ht : f t = t^d) (n : ℕ) :
     (Ideal.span {t})^n ≤ Ideal.comap f ((Ideal.span {t})^n) := by
   apply Ideal.map_le_iff_le_comap.mp
@@ -81,7 +84,7 @@ lemma chart_parameter : ρ (ArithmeticThetaAnnularTorsionPrereqR0053.tau k) =
   exact h
 
 include hρ in
-private lemma reduction_kernel_le (n : ℕ) :
+lemma reduction_kernel_le (n : ℕ) :
     RingHom.ker (ArithmeticThetaKatoAnnularR0152.reduction k n) ≤ RingHom.ker ((ArithmeticThetaKatoAnnularR0152.reduction k n).comp ρ) := by
   rw [← RingHom.comap_ker, CompletedChartFieldMaps.reduction_kernel]
   exact power_stable _ ρ d hd (chart_parameter k ρ hρ) (n+1)

@@ -5,6 +5,9 @@ public import Theorems.Thm_WeierstrassProjModel_isOriginChartSection_kwZeroSect_
 public import Theorems.Thm_WeierstrassCurve_DrinfeldGlobal_ker_eq_span_of_originChartRing
 public import Theorems.Thm_WeierstrassCurve_DrinfeldGlobal_originChart_rel
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Global affine coordinates of the three nonidentity two-torsion sections. -/

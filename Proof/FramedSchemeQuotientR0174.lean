@@ -9,6 +9,9 @@ public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_exists_quotien
 public import Theorems.Thm_AlgebraicGeometry_exists_isAffineOpen_forall_mem_of_isImmersion_proj
 public import CyclicPresentationDefinitionsR0174
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Construction of the cyclic scheme quotient and its Hodge frame.

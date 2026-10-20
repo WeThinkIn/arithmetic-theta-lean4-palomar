@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "original_sha256": "c1ff7b75896a9694fcf679f7ca33422087ccda383160a95a7b28f2818d57be0c",
+  "fixed_sha256": "0b9e08abe087d5cfc4763eade37251cf077030e2b651fff6f5e1c69f580aa27b",
+  "changes": [
+    "Expose four original definitions in their module-specific namespace",
+    "Disable instanceSearchTypes transparency compatibility switch, justified by observed timeout in attempt199"
+  ],
+  "mathematical_types_and_proof_bodies_unchanged": true,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "log_sha256": "7a764f5232cf4e5902fd7bd70b8e041a5f617caaf91cfdfb19706c728756487f"
+}

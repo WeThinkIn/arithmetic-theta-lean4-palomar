@@ -6,8 +6,8 @@ This repository prepares an independent Palomar verification of the full
 arithmetic theta formalization accompanying `paper/Paper.pdf`. The
 GitHub repository is `WeThinkIn/arithmetic-theta-lean4-palomar`.
 
-**Status: migration in progress. No successful full port, Comparator verification,
-Palomar review, or registration is claimed.** The original Lean 4.33.1 audit and
+**Status: migration in progress. No successful full port, full-paper Comparator
+verification, Palomar review, or registration is claimed.** The original Lean 4.33.1 audit and
 the new Lean 4.35.0-rc2 verification are distinct evidence.
 
 For a nonempty finite family of positive-definite even integral Gram matrices,
@@ -22,6 +22,12 @@ The complete target retains all thirteen source requirements and all 103 frozen
 integration endpoints. `docs/SourceObligations.json` preserves their original
 types and source accounts. `docs/Coverage.md` tracks their migration separately
 from independent Challenge coverage.
+
+Partial audit214 has checked46/103 original exact endpoint types and standard
+axiom closures. The accepted-017 early-certificate subpackage separately passed
+local Comparator with con-ron, NanoDa and Lean default kernel using source-bound
+exports and a normal sandbox. It has not undergone official source-provenance
+preflight. See `docs/MigrationStatus.md` and `docs/PalomarPreflight.md`.
 
 ## Verification interface
 

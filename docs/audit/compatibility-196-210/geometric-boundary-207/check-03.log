@@ -1,0 +1,84 @@
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.killed_point_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.full_marking_descends' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.level_cover_points_rational' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.classifying_map_descends' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.sections_cover_specialization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.proper_flat_coverage' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.exists_canonical_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.boundary_fraction_field_lift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.boundary_residue_bijective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.boundary_rational_section' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.boundary_local_trait' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.boundary_parameter_no_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.integral_of_legendre_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.legendre_integral_elements' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.integral_legendre_parameter_units' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.integral_legendre_parameter_lift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.integral_j_parameter_lift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.boundary_j_not_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.every_boundary_has_j_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.pointed_coefficient_comparison_of_j_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.classifying_map_descends_of_j_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.tate_j_fiber_geometric_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.tate_j_fiber_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+../evidence/geometric-boundary-207/EveryGeometricBoundaryTateDiskR0181.lean:1485:67: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/geometric-boundary-207/EveryGeometricBoundaryTateDiskR0181.lean:1486:7: warning: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaTateCuspsR0181.every_geometric_boundary_tate_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

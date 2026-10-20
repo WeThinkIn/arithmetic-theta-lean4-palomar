@@ -21,12 +21,12 @@ section Completion
 variable {R S : Type*} [CommRing R] [CommRing S]
 variable (I : Ideal R) (J : Ideal S) (f : R →+* S) (h : I ≤ J.comap f)
 
-private def stage (m : ℕ) : AdicCompletion I R →+* S ⧸ J ^ m :=
+def stage (m : ℕ) : AdicCompletion I R →+* S ⧸ J ^ m :=
   (Ideal.quotientMap (J ^ m) f
     ((Ideal.pow_right_mono h m).trans (Ideal.le_comap_pow _ m))).comp
     (AdicCompletion.evalₐ I m).toRingHom
 
-private lemma stage_compat {m n : ℕ} (hmn : m ≤ n) :
+lemma stage_compat {m n : ℕ} (hmn : m ≤ n) :
     (Ideal.Quotient.factorPow J hmn).comp (stage I J f h n) = stage I J f h m := by
   apply RingHom.ext
   intro z
@@ -50,7 +50,7 @@ private lemma stage_compat {m n : ℕ} (hmn : m ≤ n) :
     simpa only [smul_eq_mul, Ideal.mul_top, neg_sub] using neg_mem ha] at hh
   exact hh
 
-private def extend [IsAdicComplete J S] : AdicCompletion I R →+* S :=
+def extend [IsAdicComplete J S] : AdicCompletion I R →+* S :=
   IsAdicComplete.liftRingHom J (stage I J f h) (stage_compat I J f h)
 
 private lemma extend_of [IsAdicComplete J S] (r : R) :
@@ -72,7 +72,7 @@ private lemma coordinate_ne_zero : coordinate k a n ≠ 0 := by
       (IsFractionRing.injective (LaurentPolynomial k) (Coeff k)).ne
         (LaurentPolynomial.isUnit_T (1 : ℤ) (R := k)).ne_zero
 
-private def nodeEvaluation : Node k 1 →+* PowerSeries (Coeff k) :=
+def nodeEvaluation : Node k 1 →+* PowerSeries (Coeff k) :=
   Ideal.Quotient.lift (relationIdeal k 1)
     (MvPolynomial.eval₂Hom (PowerSeries.map (coefficientMap k))
       (fun i => if i = (0 : Fin 2) then PowerSeries.C (coordinate k a n)
@@ -98,12 +98,12 @@ private lemma nodeEvaluation_t : nodeEvaluation k a n (t k 1) = PowerSeries.X :=
   rw [t, nodeEvaluation_base]
   simp [parameter]
 
-private def targetIdeal : Ideal (PowerSeries (Coeff k)) := Ideal.span {PowerSeries.X}
-private instance targetComplete : IsAdicComplete (targetIdeal k) (PowerSeries (Coeff k)) := by
+def targetIdeal : Ideal (PowerSeries (Coeff k)) := Ideal.span {PowerSeries.X}
+instance targetComplete : IsAdicComplete (targetIdeal k) (PowerSeries (Coeff k)) := by
   unfold targetIdeal
   infer_instance
 
-private lemma nodeEvaluation_cont : nodeIdeal k 1 ≤ (targetIdeal k).comap (nodeEvaluation k a n) := by
+lemma nodeEvaluation_cont : nodeIdeal k 1 ≤ (targetIdeal k).comap (nodeEvaluation k a n) := by
   rw [nodeIdeal, Ideal.span_singleton_le_iff_mem]
   change nodeEvaluation k a n (t k 1) ∈ targetIdeal k
   rw [nodeEvaluation_t]
@@ -163,7 +163,7 @@ lemma coordinate_transcendental (hn : 0 < n) : Transcendental k (coordinate k a 
 open ArithmeticThetaAnnularGeometry.AlgebraicNodeSupport.CrossingResolutionR1
 open ArithmeticThetaAnnularGeometry.CompletedNodeSupport
 
-private def residueScalar : Resid (parameter k 1) →+* k :=
+def residueScalar : Resid (parameter k 1) →+* k :=
   Ideal.Quotient.lift _ PowerSeries.constantCoeff (by
     change Ideal.span {parameter k 1} ≤ RingHom.ker _
     rw [Ideal.span_singleton_le_iff_mem]
@@ -177,7 +177,7 @@ private lemma residueScalar_injective : Function.Injective (residueScalar k) := 
   apply Ideal.Quotient.eq_zero_iff_mem.mpr
   simpa [parameter, Ideal.mem_span_singleton, PowerSeries.X_dvd_iff] using hb
 
-private def branchEvaluation : Polynomial (Resid (parameter k 1)) →+* Coeff k :=
+def branchEvaluation : Polynomial (Resid (parameter k 1)) →+* Coeff k :=
   (Polynomial.eval₂RingHom (coefficientMap k) (coordinate k a n)).comp
     (Polynomial.mapRingHom (residueScalar k))
 
@@ -190,19 +190,19 @@ private lemma branchEvaluation_injective (hn : 0 < n) :
     simpa only [Polynomial.aeval_def, ← coefficientMap_eq, Polynomial.coe_eval₂RingHom] using hpq
   exact h.comp (Polynomial.map_injective (residueScalar k) (residueScalar_injective k))
 
-private def nodeBranch : Node k 1 →+* Polynomial (Resid (parameter k 1)) :=
+def nodeBranch : Node k 1 →+* Polynomial (Resid (parameter k 1)) :=
   (branchX (parameter k 1)).toRingHom
 
 private lemma nodeBranch_kernel : RingHom.ker (nodeBranch k) = Ideal.span {y k 1} :=
   ker_branchX _
 
-private lemma nodeBranch_cont : nodeIdeal k 1 ≤ RingHom.ker (nodeBranch k) := by
+lemma nodeBranch_cont : nodeIdeal k 1 ≤ RingHom.ker (nodeBranch k) := by
   rw [nodeBranch_kernel, nodeIdeal, Ideal.span_singleton_le_iff_mem]
   have hxy : x k 1 * y k 1 = t k 1 := xy_eq (parameter k 1)
   rw [← hxy]
   exact Ideal.mul_mem_left _ _ (Ideal.mem_span_singleton_self _)
 
-private def completedBranch : Chart k →+* Polynomial (Resid (parameter k 1)) :=
+def completedBranch : Chart k →+* Polynomial (Resid (parameter k 1)) :=
   residueExtension (nodeIdeal k 1) (nodeBranch k) (nodeBranch_cont k)
 
 private lemma completedBranch_kernel :

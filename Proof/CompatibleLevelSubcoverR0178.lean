@@ -23,7 +23,7 @@ open Representability
 variable (k : Type u) [Field k] [CharZero k] (L : ℕ)
   (A : LegendreAtlas k L) (B : TwoMarking k L A)
 
-private lemma half_killed (heven : Even L)
+lemma half_killed (heven : Even L)
     (z : SchemeHomOver A.level.projection (structureMap (LegendreRing k) (legendre k)))
     (hz : A.law.nsmul _ L z = A.law.one _) :
     A.law.nsmul _ 2 (A.law.nsmul _ (L / 2) z) = A.law.one _ := by
@@ -172,7 +172,7 @@ section Counting
 open CoverGeometryR0175
 variable {E : Type u} [AddCommGroup E]
 
-private lemma torsion_killed (n : ℕ) (x : Submodule.torsionBy ℤ E (n : ℤ)) :
+lemma torsion_killed (n : ℕ) (x : Submodule.torsionBy ℤ E (n : ℤ)) :
     n • x = 0 := by
   simpa only [Nat.cast_smul_eq_nsmul] using Submodule.smul_torsionBy (n : ℤ) x
 

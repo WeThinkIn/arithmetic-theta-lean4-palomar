@@ -1,0 +1,57 @@
+{
+  "timestamp_utc": "2026-10-20T15:50:29.321464+00:00",
+  "scope": "accepted-017 independent early certificate subpackage only",
+  "checks": [
+    {
+      "module": "Challenge",
+      "exit_code": 0,
+      "seconds": 2.42,
+      "source_sha256": "800f0cd45e572e19c42df4146d2dab3bcc4ec3820705634ff937d10a9e9a0002"
+    },
+    {
+      "module": "Solution",
+      "exit_code": 0,
+      "seconds": 2.42,
+      "source_sha256": "611ba7328412a0897eb8de48f003815fbc3a3b82d255f6cef2c9434aa0fb5919"
+    }
+  ],
+  "command": "LEAN_NUM_THREADS=8 python3 ../tools/run.py lake env python3 ../evidence/early-certificate-205/run.py",
+  "cwd": "/home/Palomar/workspace/arithmetic-theta/project",
+  "challenge_and_solution_target_signatures_identical": true,
+  "target_signature_sha256": "d6529c0da1e6c31bc174b42143f15dcd15fe437a0825e7d3dbf7d34d049e3b14",
+  "challenge_status": "typechecked specification with one sorry target",
+  "solution_status": "fully compiled proof with no sorry/admit/new axioms",
+  "solution_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "artifact_bindings": {
+    "Challenge.lean": "800f0cd45e572e19c42df4146d2dab3bcc4ec3820705634ff937d10a9e9a0002",
+    "Challenge.log": "2f57ea9c3a3f1dff860b5d4af4b2ae2482051e72c1a9d27dc20813f09e57d8eb",
+    "EndpointMapping.json": "b986c603f2fadbe54ea56ad09a8912062d48dbc2ef0eacbe042e5fc48fffa7da",
+    "README.md": "cc30ffee94999c95c337e3ecd6d5e8fe8f142050c5de1dc3bed353b9c3ae9a3e",
+    "Solution.lean": "611ba7328412a0897eb8de48f003815fbc3a3b82d255f6cef2c9434aa0fb5919",
+    "Solution.log": "6fbf1b2954904835e6cc941c4bc373b26c87cf6b89dae1b0e875741831be4353",
+    "checks.json": "d638abd7a0b07732a41fda0b306864ce9a3c5cf095489555b0b32abf76f10eaa",
+    "comparator.json": "14e028cf232dbc79607034c7546ffe692257986ea8e6b3cbb96911fc808c8847",
+    "run.py": "42454ee903d1c912cf28f9b428802f310971456af20b2e6e8d6838dddfacc5e3"
+  },
+  "input_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/ActualEarlierCertificate.lean": "7e19fa653bbf938dc93e244ea7b8c66ee9872a500f974066a3e7895d34d23c77",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/ComputedCoefficientMatrix.lean": "3100d657bf2340a9afef8b8c405828a3d6e887f72275db7fdf79de4378947986",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/LatticeShellFinite.lean": "f88c08b06bceb1daa0985f424145f251b6f78be2fd6a4425f950b60561b27c76",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/RequirementCoverage.json": "90cea80c2f363f89593b5c4689b82968a24b156cdddd9077f041716e4f706dc3",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/VerificationPlan.md": "d163cc2396d7fa006f153a7576c65773140334a50f6ee099305a848aa45cbbbb",
+    "/home/Palomar/workspace/arithmetic-theta/project/paper/Paper.tex": "fea6c6986d303293abc441b29ac432a8aa977edef12fe2fd8407fae1b66b05f8",
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/ActualEarlierCertificate.olean": "f9ecb000a95f61de292a837877453a219a74e03cbb23c835f1258b6e7c7d1df4",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/ComputedCoefficientMatrix.olean": "d0ea5b85e52ab7c8f3e62500028d0309de0164d2573ac57b74607f777d0d0e8a",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/LatticeShellFinite.olean": "7d01e010939308cfb5b363e532ecb641bf590ad1e8987d0e9774842e84fc026a"
+  },
+  "comparator": "not run",
+  "official_preflight": "not run",
+  "official_submission": "not run"
+}

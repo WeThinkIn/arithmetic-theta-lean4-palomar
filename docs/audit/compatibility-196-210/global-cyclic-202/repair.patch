@@ -1,0 +1,12 @@
+--- Proof/GlobalLevelCyclicQuotientR0180.lean	2026-10-20 19:38:00.655425408 +0800
++++ ../evidence/global-cyclic-202/GlobalLevelCyclicQuotientR0180.lean	2026-10-20 23:44:24.371039489 +0800
+@@ -1148,7 +1148,8 @@
+     Pointed C.ring (chartFamily C)
+       (baseChangeFamily (Q.family F hn P) (baseMap S C.ring C.comparison.scalar)) := by
+   let b := baseMap S C.ring C.comparison.scalar
+-  let q := pullback.lift (C.comparison.map ≫ Q.map) (structureMap C.ring C.equation)
++  let q := pullback.lift (f := Q.structureMap) (g := b)
++    (C.comparison.map ≫ Q.map) (structureMap C.ring C.equation)
+     (by rw [Category.assoc, Q.over_eq]; exact C.comparison.cartesian.w)
+   refine ⟨q, pullback.lift_snd _ _ _, ?_⟩
+   apply pullback.hom_ext

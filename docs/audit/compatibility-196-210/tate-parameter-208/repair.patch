@@ -1,0 +1,13 @@
+--- original
++++ fixed
+@@ -283,8 +283,8 @@
+     have hI : IsLocalRing.maximalIdeal
+         (AdicCompletion (IsLocalRing.maximalIdeal (CuspStalk k L D X d))
+           (CuspStalk k L D X d)) =
+-        Ideal.span {AdicCompletion.of (IsLocalRing.maximalIdeal (CuspStalk k L D X d))
+-          (CuspStalk k L D X d) π} := by
++        Ideal.span {(AdicCompletion.of (IsLocalRing.maximalIdeal (CuspStalk k L D X d))
++          (CuspStalk k L D X d) π)} := by
+       rw [AdicCompletion.maximalIdeal_eq_map_of_fg
+         (IsLocalRing.maximalIdeal (CuspStalk k L D X d)).fg_of_isNoetherianRing,
+         hπ.maximalIdeal_eq, Ideal.map_span, Set.image_singleton]

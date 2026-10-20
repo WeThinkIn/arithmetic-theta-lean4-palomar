@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-10-20T16:01:23.343167+00:00",
+  "scope": "Local hash-bound export verification of accepted-017 subpackage only",
+  "result": "accepted",
+  "comparator_exit_code": 0,
+  "elapsed_seconds": 182.44,
+  "normal_sandbox": true,
+  "sandbox_bypass_used": false,
+  "kernel_results": {
+    "con-ron": "accepted 59459 declarations, default --verified, --jobs=2",
+    "nanoda": "accepted",
+    "Lean default": "accepted"
+  },
+  "source_object_export_binding": "recorded; original 205 source compile hashes match; no changes after export",
+  "official_source_provenance_audit": "not performed",
+  "official_preflight": "not performed",
+  "official_submission": "not performed",
+  "builds": "bubblewrap only; no Lake or Mathlib target build",
+  "artifact_bindings": {
+    "README.md": "01527c66d253d4d219d425740cbff15467fb2b7d86f5d7060d8d781c9ef259a9",
+    "comparator-modern.log": "c69e4c7b313a00a20b2be130ae72f5ff33adf6246ece76fc10a1c6f9dd7358f9",
+    "comparator-modern-receipt.json": "0806d472c3b892fb74b7dad40e780ca4f48792c6941ea7dc8947d69f2a1a97e0",
+    "comparator.log": "eab7d3b5b5bcc735085143dc30f181638810ebe104804ea81de063793a91c4de",
+    "comparator-receipt.json": "e384cb9e8c0b75e4c32dc592bb2febe1a14c335a9d16adf404f3b09b07e970ba",
+    "export-receipts.json": "70eb31ce7e0de61130c2b5e33871b82eb20d991fb562300a016a2c6c7f638208",
+    "export-targets.json": "4adf1eb132bf19d58c7415cec7b2ef58e188b60a752e429632eb6bada6d820ec",
+    "source-export-binding.json": "8df819246e9e134a95dad52263409b0725a1ea45b02858923785627393b8351a",
+    "comparator-external.json": "a3c1678cd4500684527176b2f2ba8dd98f8ae52a045e217cb73cff037e13c7fa",
+    "bubblewrap-receipt.json": "f75645e470feb16a66a31788471f6eec6c364bceae3b5a86a39400654827b75e",
+    "tool-digests.json": "81f657f311d924ae8df3ce0dc7782428641208ea1d3d3f01e32515f3cae12c68",
+    "Challenge.ndjson": "dff20d702336cc191a5c130ebe9c892f7d84440e5bffa12aefead7f03b4f6c33",
+    "Solution.ndjson": "384dcfb2ca19d04ae8c5be785dcfce0fce271bc09a8bf16764538961d87061c4",
+    "export.py": "b7c3aaf60fb1a8e05697d33fb34bd8ffb417d5f1a4a04756dd4d182fd65577c9",
+    "compare.py": "d2464689199178204dd44a3f7da880aa2563ed7fed8aedab3f995304bc2eea5b",
+    "compare-modern.py": "613a21ebae126bb4ec1bd032d4e326d044dd8f6a77d7b5b192c251f0cd4b7f76"
+  },
+  "all_owned_processes_terminal": true,
+  "vpn": "Network phase completion notified parent; parent owns shutdown"
+}

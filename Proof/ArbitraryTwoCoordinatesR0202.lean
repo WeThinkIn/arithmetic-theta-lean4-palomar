@@ -8,6 +8,9 @@ public import Theorems.Thm_WeierstrassProjModel_exists_isCoefficientHom
 public import Theorems.Thm_WeierstrassCurve_DrinfeldGlobal_isPullback_projMap_of_isCoefficientHom
 public import Theorems.Thm_WeierstrassCurve_DrinfeldGlobal_exists_zChartIota_comp_projMap_eq_specMap_comp_zChartIota
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Arbitrary affine two-torsion coordinates. The chart reflection calculation

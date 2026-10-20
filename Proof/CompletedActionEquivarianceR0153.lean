@@ -3,6 +3,9 @@ module
 public import CompletedScalingExtensionR0153
 public import MarkedFieldActionR0153
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 set_option autoImplicit false

@@ -45,7 +45,6 @@ lemma chart_fixed (P : LocalPresentation k B σ E) :
   rw [he] at H
   dsimp only [chartComparison] at H
   convert H using 1
-  rfl
 
 lemma preimage_le : multiplication E d ⁻¹ᵁ complement E c ≤ complement E c := by
   intro x hx

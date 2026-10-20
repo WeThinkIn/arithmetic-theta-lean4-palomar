@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-10-20T15:44:52.508784+00:00",
+  "original_source_sha256": "915e022ddfb331704507949de4b495359d51c5cf640bb38f7222630ad7a9b9ac",
+  "fixed_source_sha256": "1a2e0bf7f2237ea31e59c326be18ebba36a11497cc52e195b00774c530a9f5b9",
+  "fixed_source": "/home/Palomar/workspace/arithmetic-theta/evidence/global-cyclic-202/GlobalLevelCyclicQuotientR0180.lean",
+  "log_sha256": "075731247e71489a111542022f0951d0f298eaa5b25e4c9ccdde86aaceec84c6",
+  "exit_code": 0,
+  "session": 42988,
+  "only_change": "Explicit pullback.lift f := Q.structureMap and g := b in restrictedArrow; all signatures and other proof bodies unchanged.",
+  "root_cause": "Unconstrained pullback.lift target maps left metavariables before local q was used; the two downstream mismatch/rewrite errors were cascades.",
+  "command": "LEAN_NUM_THREADS=8 timeout 300s python3 ../tools/run.py lake env lean --root=../evidence/global-cyclic-202 ../evidence/global-cyclic-202/GlobalLevelCyclicQuotientR0180.lean",
+  "cwd": "/home/Palomar/workspace/arithmetic-theta/project",
+  "key_endpoint_axioms": {
+    "ArithmeticThetaOpenHodgeR0180.GlobalLevelCyclicQuotientR0180.local_quotient_gluing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaOpenHodgeR0180.GlobalLevelCyclicQuotientR0180.glued_scheme_quotient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaOpenHodgeR0180.global_level_cyclic_quotient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/EllipticFamilyWeierstrassAtlasR0180.olean": "df2c44d39a728a19178bdd2629259ad7c64db4502e514625be341827dd3339bd",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/Theorems/Thm_GoodReductionJacobian_RelativeGroupLaw_exists_quotient_abelianSchemePropertyBundle_of_finiteFlat_subgroup_of_affineOrbit_of_commRing.olean": "c5f9fc97b18b02caf86f27bb8a4e10ce88cc2f86ad7402366d3d1335017cb4ae"
+  }
+}

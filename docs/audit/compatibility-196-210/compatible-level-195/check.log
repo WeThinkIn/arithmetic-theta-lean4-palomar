@@ -1,0 +1,3 @@
+'ArithmeticThetaCompatibleLevelR0178.compatible_level_subcover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

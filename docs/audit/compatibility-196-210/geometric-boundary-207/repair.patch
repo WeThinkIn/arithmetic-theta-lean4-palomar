@@ -1,0 +1,11 @@
+--- Proof/EveryGeometricBoundaryTateDiskR0181.lean	2026-10-20 19:38:00.615424160 +0800
++++ ../evidence/geometric-boundary-207/EveryGeometricBoundaryTateDiskR0181.lean	2026-10-20 23:52:38.226531708 +0800
+@@ -380,6 +380,8 @@
+         X.space.fromSpecStalk x ≫ X.projection := by
+   rintro ⟨a, ha, hak⟩
+   let R := X.space.presheaf.stalk x
++  letI : ValuationRing R :=
++    of_isDiscreteValuationRing (X.space.presheaf.stalk x)
+   let K := FractionRing R
+   let g : Base K ⟶ Spec R := Spec.map (CommRingCat.ofHom (algebraMap R K))
+   let f := X.space.fromSpecStalk x

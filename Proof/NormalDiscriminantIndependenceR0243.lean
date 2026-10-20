@@ -3,6 +3,9 @@ module
 public import ArbitraryDiscriminantDefinitionsR0243
 public import Theorems.Thm_WeierstrassProjModel_exists_variableChange_smul_eq_and_projMap_eq_inv_of_iso_of_kwZeroSect_comp_eq_of_isArtinianRing
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Normal-model independence over arbitrary rational coefficient rings.
@@ -581,7 +584,7 @@ def evaluation {R S : Type u} [CommRing R] [CommRing S]
 /-- Specialization is defined for arbitrary target rings, including nilpotents. -/
 def specialize {R S : Type u} [CommRing R] [CommRing S]
     (ι : R →+* S) (C : WeierstrassCurve.VariableChange S) : Ring R →+* S :=
-  IsLocalization.Away.lift (MvPolynomial.X (0 : Fin 4)) (by
+  IsLocalization.Away.lift (g := evaluation ι C) (MvPolynomial.X (0 : Fin 4)) (by
     change IsUnit (evaluation ι C (MvPolynomial.X 0))
     simp [evaluation])
 
@@ -697,7 +700,7 @@ theorem normal_coefficients (k : Type u) [Field k] [CharZero k] :
 equations over nonreduced and non-Noetherian target rings. -/
 def classifying {k R : Type u} [CommRing k] [CommRing R]
     (ι : k →+* R) (W : WeierstrassCurve R) [W.IsElliptic] : Ring k →+* R :=
-  IsLocalization.Away.lift (polynomialEquation k).Δ (by
+  IsLocalization.Away.lift (g := evaluation ι W) (polynomialEquation k).Δ (by
     change IsUnit (evaluation ι W (polynomialEquation k).Δ)
     rw [evaluation_discriminant]
     exact W.isUnit_Δ)
@@ -2937,10 +2940,10 @@ open MvPolynomial in
 
 theorem mem_span_of_X_one_mul_mem {T : Type u} [CommRing T] (V : WeierstrassCurve.Projective T)
     (p : MvPolynomial (Fin 2) T)
-    (hp : X 1 * p ∈ Ideal.span {MvPolynomial.aeval
-        (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial}) :
-    p ∈ Ideal.span {MvPolynomial.aeval
-        (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial} := by
+    (hp : X 1 * p ∈ Ideal.span {(MvPolynomial.aeval
+        (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial)}) :
+    p ∈ Ideal.span {(MvPolynomial.aeval
+        (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial)} := by
   classical
   set F : MvPolynomial (Fin 2) T := MvPolynomial.aeval
         (![MvPolynomial.X 0, 1, MvPolynomial.X 1] : Fin 3 → MvPolynomial (Fin 2) T) V.polynomial with hF

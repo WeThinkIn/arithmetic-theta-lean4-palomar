@@ -1,0 +1,29 @@
+{
+  "timestamp_utc": "2026-10-20T15:40:13.232050+00:00",
+  "original_source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/RamifiedPolygonTowerR0154.lean",
+  "original_source_sha256": "28d032da4beb95dbeaef1323ef65fdc1e0323264700f4a7d0020dc7278281704",
+  "fixed_source": "/home/Palomar/workspace/arithmetic-theta/evidence/ramified-polygon-196/RamifiedPolygonTowerR0154.lean",
+  "fixed_source_sha256": "9f743487c7cd0689539362968de6ca17481965f7ccf7aeba50be58535c80cd27",
+  "log_sha256": "336b0b60bf34053e928ba4f29fc016518ef7cf67296c448da9ce7fdd517e72cc",
+  "exit_code": 0,
+  "terminal_session": 61453,
+  "command": "LEAN_NUM_THREADS=8 timeout 300s python3 ../tools/run.py lake env lean --root=../evidence/ramified-polygon-196 ../evidence/ramified-polygon-196/RamifiedPolygonTowerR0154.lean",
+  "cwd": "/home/Palomar/workspace/arithmetic-theta/project",
+  "only_changes": [
+    "power_stable: private lemma -> lemma",
+    "reduction_kernel_le: private lemma -> lemma"
+  ],
+  "all_remaining_source_bytes_unchanged": true,
+  "final_endpoint": "ArithmeticThetaRamifiedPeriodR0154.ramified_polygon_tower",
+  "final_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "dependencies": {
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/CompletedChartRamificationR0154.olean": "a01fc7821bbf4321bb7d82f2e8c98b39b5b7207b532497668814994a93ac3da3"
+  },
+  "scope": "Isolated module check; parent owns integration/root audit"
+}

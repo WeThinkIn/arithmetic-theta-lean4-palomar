@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "source_sha256": "2f85377b5bd70d34ddb7aab27ca325c0ed68bacd5f477b9784cbcc930e543f34",
+  "fixed_sha256": "58e8cbd606ad8795f78cd7e8d57c32b83de483be2b8c89768d8ccb17778def95",
+  "log_sha256": "772a721bcabf728c323bcfb0eff739f116d8a4f5baa2deafaf49515fad822e52",
+  "change": "Expose module-local definitions and direct proof dependencies used by public declarations",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

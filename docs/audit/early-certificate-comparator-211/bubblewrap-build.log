@@ -1,0 +1,8 @@
+ninja: Entering directory `bubblewrap-0.12.0/build'
+[1/7] Compiling C object bwrap.p/chroot_realpath.c.o
+[2/7] Compiling C object bwrap.p/safe_openat.c.o
+[3/7] Compiling C object bwrap.p/network.c.o
+[4/7] Compiling C object bwrap.p/bind-mount.c.o
+[5/7] Compiling C object bwrap.p/utils.c.o
+[6/7] Compiling C object bwrap.p/bubblewrap.c.o
+[7/7] Linking target bwrap

@@ -1148,7 +1148,8 @@ abbrev restrictedArrow (hn : 0 < n) (Q : SchemeQuotient F P) :
     Pointed C.ring (chartFamily C)
       (baseChangeFamily (Q.family F hn P) (baseMap S C.ring C.comparison.scalar)) := by
   let b := baseMap S C.ring C.comparison.scalar
-  let q := pullback.lift (C.comparison.map ≫ Q.map) (structureMap C.ring C.equation)
+  let q := pullback.lift (f := Q.structureMap) (g := b)
+    (C.comparison.map ≫ Q.map) (structureMap C.ring C.equation)
     (by rw [Category.assoc, Q.over_eq]; exact C.comparison.cartesian.w)
   refine ⟨q, pullback.lift_snd _ _ _, ?_⟩
   apply pullback.hom_ext

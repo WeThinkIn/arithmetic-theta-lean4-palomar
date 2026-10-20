@@ -1,0 +1,15 @@
+../evidence/global-cyclic-202/GlobalLevelCyclicQuotientR0180.lean:255:11: warning: `CategoryTheory.Limits.Sigma.ι_desc` has been deprecated: Use `CategoryTheory.Limits.Sigma.ι_comp_desc` instead
+
+Hint: Replace the deprecated name:
+  Sigma.ι_c̲o̲m̲p̲_̲desc
+../evidence/global-cyclic-202/GlobalLevelCyclicQuotientR0180.lean:292:40: warning: `CategoryTheory.Limits.Sigma.ι_desc_assoc` has been deprecated: Use `CategoryTheory.Limits.Sigma.ι_comp_desc_assoc` instead
+
+Hint: Replace the deprecated name:
+  Sigma.ι_c̲o̲m̲p̲_̲desc_assoc
+'ArithmeticThetaOpenHodgeR0180.GlobalLevelCyclicQuotientR0180.local_quotient_gluing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaOpenHodgeR0180.GlobalLevelCyclicQuotientR0180.glued_scheme_quotient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaOpenHodgeR0180.global_level_cyclic_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]

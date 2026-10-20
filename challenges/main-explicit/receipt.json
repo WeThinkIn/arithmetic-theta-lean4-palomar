@@ -30,5 +30,12 @@
   "only_import": "Mathlib",
   "threads": 8,
   "official_preflight": "not run; private repository stage",
-  "solution_status": "not implemented by this worker; bridge checklist supplied"
+  "solution_status": "not implemented by this worker; bridge checklist supplied",
+  "artifact_bindings": {
+    "Challenge.lean": "4f898bd8a5c1447669faa65db49e847399fe93a0f9829e889b258895b35983a3",
+    "SemanticMapping.md": "35ac10917a69148fc61ab9d43b95da89f45887a89991ce4f81a84f41d889edec",
+    "ScopeLedger.json": "1b831bbcfe8222a98ef32d890a1bfe32f3218f1ddcefb557b6f76a9ddec870f8",
+    "challenge-typecheck.log": "6ae2e6a3cfe6aa94ff14080d165d326670b654ae2ace8d36e4c2de21c3f2897a"
+  },
+  "artifact_binding_note": "All artifact paths existed when this receipt was finalized; no self-hash."
 }

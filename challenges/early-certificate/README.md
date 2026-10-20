@@ -1,0 +1,15 @@
+# Earlier certificate: independent Challenge and proved Solution
+
+This is one subpackage of the Algorithms/examples group in the eight-package verification plan. It compares accepted-017, not the whole group or the whole paper. The original 13 requirements and 103 endpoints remain required.
+
+Challenge.lean imports only Mathlib and defines valid integral Gram matrices, the actual integer-shell theta series, the complex theta linear map and the rational matrix of actual shell counts at all rows 0 through B. Its earlierCertificate target first requires shell finiteness and then states all three original certificate clauses. Its single sorry is the required unproved challenge target, not a completed proof.
+
+Solution.lean imports ActualEarlierCertificate and LatticeShellFinite, reproduces the identical mathematical definitions and target signature, and proves the target without sorry/admit/new axioms. coefficientMatrix_eq_computed first proves equality OVER Q between actual shell counts and the executable enumeration matrix using computed_coefficient_matrix. This is not assumed or treated as definitional equality; it is necessary to transfer both the Q matrix rank and the complex extended kernel. Finite shells follow from exact_shell_finite. The three certificate clauses then follow from actual_earlier_certificate.
+
+For every n,h,B (including zero), the full theta kernel is contained in the prefix kernel. Full column rank of the Q matrix implies that the full kernel is zero. A complex subspace W certifies the full kernel only when every c in W is already proved to give a full-series relation AND dim_C W=h-rank_Q M_B. This requires real complete-series relations, not just observed rank stability or matching prefixes. No geometric provider, nonempty-family condition, explicit cutoff, or externally asserted bound is added as a premise.
+
+The paper reference is the Earlier certificates lemma in paper/Paper.tex around lines 705–715; original requirement mapping identifies source lines 561–572. The precise original declaration/type and exclusions are preserved in EndpointMapping.json.
+
+Both modules were independently compiled with Lean 4.35.0-rc2, 8 threads per process and a 300-second per-process budget. Challenge exited 0 with the expected sorry warning; Solution exited 0 and both its matrix bridge and main theorem have transitive axioms only propext, Classical.choice, Quot.sound. See checks.json, Challenge.log, Solution.log and receipt.json. Successful Challenge compilation is only a specification typecheck.
+
+comparator.json supplies the proposed module/declaration mapping with only the three permitted standard axioms. Comparator and official Palomar preflight/submission have NOT been run for this subpackage. When integrating, make this folder a module root/configuration with the migrated proof library available to Solution, while ensuring the Challenge only imports Mathlib. Challenge and Solution intentionally declare the same comparison namespace separately and must not be jointly imported into one ordinary Lean module.

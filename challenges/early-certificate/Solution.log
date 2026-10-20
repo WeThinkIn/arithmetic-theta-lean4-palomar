@@ -1,0 +1,4 @@
+'ArithmeticThetaPalomarEarly205.coefficientMatrix_eq_computed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarEarly205.earlierCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,14 @@
+[
+  {
+    "module": "Challenge",
+    "exit_code": 0,
+    "seconds": 2.42,
+    "source_sha256": "800f0cd45e572e19c42df4146d2dab3bcc4ec3820705634ff937d10a9e9a0002"
+  },
+  {
+    "module": "Solution",
+    "exit_code": 0,
+    "seconds": 2.42,
+    "source_sha256": "611ba7328412a0897eb8de48f003815fbc3a3b82d255f6cef2c9434aa0fb5919"
+  }
+]

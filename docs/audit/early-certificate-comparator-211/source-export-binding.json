@@ -1,0 +1,7 @@
+{
+  "matches_previously_passed_source_checks": true,
+  "sources_and_oleans_unchanged_after_export": true,
+  "source_check_receipt": "/home/Palomar/workspace/arithmetic-theta/evidence/early-certificate-205/checks.json",
+  "export_receipt": "/home/Palomar/workspace/arithmetic-theta/evidence/early-comparator-211/export-receipts.json",
+  "limitation": "Local source/object/export hash binding and recorded compilation only; this does not reproduce official isolated source provenance audit."
+}

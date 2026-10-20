@@ -2,6 +2,9 @@ module
 
 public import SplitNormDefinitionsR0153
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Completed scaling, constructed from the accepted compatible finite-stage maps. -/

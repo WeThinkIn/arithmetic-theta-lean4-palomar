@@ -72,6 +72,9 @@ public import Theorems.Thm_AlgebraicGeometry_SmoothOfRelativeDimension_of_comp_o
 public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_exists_quotient_abelianSchemePropertyBundle_of_finiteFlat_subgroup
 public import Theorems.Thm_AlgebraicGeometry_exists_isAffineOpen_forall_mem_of_isImmersion_proj
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! General origin-section prerequisites for the frozen relative presentation.

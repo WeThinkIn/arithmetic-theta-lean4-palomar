@@ -380,6 +380,8 @@ lemma boundary_parameter_no_extension
         X.space.fromSpecStalk x ≫ X.projection := by
   rintro ⟨a, ha, hak⟩
   let R := X.space.presheaf.stalk x
+  letI : ValuationRing R :=
+    of_isDiscreteValuationRing (X.space.presheaf.stalk x)
   let K := FractionRing R
   let g : Base K ⟶ Spec R := Spec.map (CommRingCat.ofHom (algebraMap R K))
   let f := X.space.fromSpecStalk x

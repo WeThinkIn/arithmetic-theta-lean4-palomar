@@ -1,0 +1,128 @@
+../evidence/tate-parameter-208/TateCompletedLocalParameterR0181.lean:23:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.diskGerm_eq`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../evidence/tate-parameter-208/TateCompletedLocalParameterR0181.lean:77:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.cuspStalk_dvr`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../evidence/tate-parameter-208/TateCompletedLocalParameterR0181.lean:87:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.localMap_filtered`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../evidence/tate-parameter-208/TateCompletedLocalParameterR0181.lean:102:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.localMap_scalarToStalk`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../evidence/tate-parameter-208/TateCompletedLocalParameterR0181.lean:216:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.approximate_mod_pow`:
+  [IsLocalRing A]
+  [IsDomain B]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsLocalRing A] [IsDomain B] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../evidence/tate-parameter-208/TateCompletedLocalParameterR0181.lean:301:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hz] at hf
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+../evidence/tate-parameter-208/TateCompletedLocalParameterR0181.lean:298:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.irreducible_of_order_one`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+../evidence/tate-parameter-208/TateCompletedLocalParameterR0181.lean:389:6: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+../evidence/tate-parameter-208/TateCompletedLocalParameterR0181.lean:403:4: warning: `PowerSeries.order_zero_of_unit` has been deprecated: Use `PowerSeries.order_zero_of_isUnit` instead
+
+Hint: Replace the deprecated name:
+  PowerSeries.order_zero_of_u̵i̲s̲U̲nit
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.completedMap_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.localMap_residue_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.isCompletedParameter_of_uniformizer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.isCompletedParameter_iff_uniformizer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.isCompletedParameter_of_order_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.parameterCandidate_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.isCompletedParameter_of_candidate_fraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.chartX_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.marked_coordinate_descends' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.marked_x_function' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.coordinate_ratio_of_pointed_iso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.combination_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.markedX_presentation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.classified_coordinate_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.localMap_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.open_ratio_fraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.isCompletedParameter_of_open_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.full_level_generates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.literal_torsion_point' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaTateCuspsR0181.CompletedLocalParameter.candidate_open_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+../evidence/tate-parameter-208/TateCompletedLocalParameterR0181.lean:1274:51: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../evidence/tate-parameter-208/TateCompletedLocalParameterR0181.lean:1274:64: warning: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticThetaTateCuspsR0181.tate_completed_local_parameter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

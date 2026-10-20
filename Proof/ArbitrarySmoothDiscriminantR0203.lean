@@ -2,6 +2,9 @@ module
 
 public import RelativeWeierstrassPresentationR0174
 
+set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+
 @[expose] public section
 
 /-! Formal smoothness of the affine coordinate algebra detects the discriminant

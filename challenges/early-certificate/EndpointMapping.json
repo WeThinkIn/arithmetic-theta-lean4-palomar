@@ -1,0 +1,33 @@
+{
+  "original_endpoint": {
+    "id": "accepted-017",
+    "declaration": "ArithmeticThetaEarlyAssembly.actual_earlier_certificate",
+    "file": "Lean/FullSourceIntegrationR0268.lean",
+    "type": "∀ (n h B : ℕ) (A : Fin h → Matrix (Fin n) (Fin n) ℤ), (∀ i, ArithmeticThetaComputed.validGram (A i)) → LinearMap.ker (ArithmeticThetaComputed.thetaMap A) ≤ LinearMap.ker (((ArithmeticThetaComputed.coefficientMatrix A B).map (algebraMap ℚ ℂ)).mulVecLin) ∧ ((ArithmeticThetaComputed.coefficientMatrix A B).rank = h → LinearMap.ker (ArithmeticThetaComputed.thetaMap A) = ⊥) ∧ (∀ W : Submodule ℂ (Fin h → ℂ), (∀ c ∈ W, ArithmeticThetaComputed.thetaMap A c = 0) → Module.finrank ℂ W = h - (ArithmeticThetaComputed.coefficientMatrix A B).rank → W = LinearMap.ker (ArithmeticThetaComputed.thetaMap A) ∧ LinearMap.ker (ArithmeticThetaComputed.thetaMap A) = LinearMap.ker (((ArithmeticThetaComputed.coefficientMatrix A B).map (algebraMap ℚ ℂ)).mulVecLin))",
+    "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. inputs/arithmetic-theta-kernel/arithmetic_theta_kernel.tex:561–572, Lemma early: assemble all three clauses for the executable coefficientMatrix and actual thetaMap. The W full-series relation and dimension hypotheses are precisely the source certificate hypotheses, not a geometric-cutoff assumption. Reuse computed_prefix_map, computed_full_rank_certificate, rational_matrix_nullity, and the generic dimension sandwich.",
+    "difficulty": "medium",
+    "depends_on": [
+      "binary-orthogonal-example",
+      "conservative-image-consumer"
+    ]
+  },
+  "compared_declaration": "ArithmeticThetaPalomarEarly205.earlierCertificate",
+  "challenge_extra_conclusion": "Finite all actual integer shells, proved in Solution using exact_shell_finite.",
+  "unchanged_quantifiers": "all n,h,B : Nat; h=0 and n=0 included; no nonempty or cutoff assumption",
+  "original_three_clauses": "full kernel included in prefix kernel; full column rank implies full kernel bottom; actual full-series relation subspace W plus exact dimension implies W=full kernel=prefix kernel",
+  "actual_matrix_bridge": "coefficientMatrix_eq_computed proves equality over Q from computed_coefficient_matrix enumeration correctness; rank and complex scalar extension are transported along this equality",
+  "coverage": "Algorithms/examples packaging group, accepted-017 subpackage only",
+  "not_covered": [
+    "exact LDL and recursive enumeration specification",
+    "basis-change certificate construction",
+    "universal capped doubling termination",
+    "singleton specialized stop theorem",
+    "rational nullspace/pivot/coordinate algorithm outputs",
+    "determinant-80 and rank-16 examples",
+    "main explicit conservative or sharper bound",
+    "full geometric proof route"
+  ],
+  "original_requirement_count": 13,
+  "original_endpoint_count": 103,
+  "no_requirement_removed": true
+}

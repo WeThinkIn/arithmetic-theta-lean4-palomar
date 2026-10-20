@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "log": "check.log",
+  "sha256": "56b899ee30a1f60452019ecc028a78cf0b5ea9f857a504709a0f8f92752dea38",
+  "change": "Expose two module-namespaced proved helpers used by public definitions; mathematical signatures and proof bodies unchanged",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

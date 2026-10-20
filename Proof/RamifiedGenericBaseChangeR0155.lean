@@ -11,6 +11,7 @@ set_option linter.unusedSectionVars false
 set_option linter.style.haveILetI false
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 noncomputable section
 universe u
 namespace ArithmeticThetaRamifiedPeriodR0155
@@ -32,7 +33,7 @@ private lemma laurent_hom_ext {R S : Type*} [CommRing R] [CommRing S]
     simpa [LaurentPolynomial.algebraMap_eq_toLaurent] using hC a
   · simpa [LaurentPolynomial.algebraMap_eq_toLaurent] using hT
 
-private def laurentUnit (R : Type*) [CommRing R] : (LaurentPolynomial R)ˣ :=
+def laurentUnit (R : Type*) [CommRing R] : (LaurentPolynomial R)ˣ :=
   (LaurentPolynomial.isUnit_T 1).unit
 
 private lemma laurentUnit_val (R : Type*) [CommRing R] :
@@ -40,7 +41,7 @@ private lemma laurentUnit_val (R : Type*) [CommRing R] :
   (LaurentPolynomial.isUnit_T 1).unit_spec
 
 /-- Coefficient extension on Laurent polynomials, fixing the variable. -/
-private def laurentMap {R S : Type*} [CommRing R] [CommRing S] (φ : R →+* S) :
+def laurentMap {R S : Type*} [CommRing R] [CommRing S] (φ : R →+* S) :
     LaurentPolynomial R →+* LaurentPolynomial S :=
   LaurentPolynomial.eval₂ (LaurentPolynomial.C.comp φ) (laurentUnit S)
 
@@ -278,7 +279,7 @@ lemma lift_chart
 section SmoothCharts
 open ArithmeticThetaPolygonCohomologyR0131
 
-private def smoothPresentation (n : ℕ) : B k n true ≃+* LaurentPolynomial (R k n) :=
+def smoothPresentation (n : ℕ) : B k n true ≃+* LaurentPolynomial (R k n) :=
   Classical.choose (truncated_laurent_presentation k n)
 
 private lemma smoothPresentation_spec (n : ℕ) :
@@ -869,7 +870,7 @@ instance smoothRing_complete : IsAdicComplete (smoothIdeal k) (SmoothRing k) := 
   rw [he] at h
   exact h
 
-private def smoothReductionEquiv (n : ℕ) : HatB k n true ≃+* B k n true :=
+def smoothReductionEquiv (n : ℕ) : HatB k n true ≃+* B k n true :=
   Classical.choose (Classical.choose_spec (finite_stage_completion_comparison k n)) true
 
 private lemma smoothReductionEquiv_spec (n : ℕ) :

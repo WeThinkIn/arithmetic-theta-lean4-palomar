@@ -1,0 +1,79 @@
+{
+  "timestamp_utc": "2026-10-20T15:43:15.011889+00:00",
+  "scope": "Independent mathematical definition bridges; not full Solution",
+  "writes": "evidence/main-definition-bridges-198 only",
+  "threads": 8,
+  "per_module_timeout_seconds": 300,
+  "commands": [
+    "LEAN_NUM_THREADS=8 python3 ../tools/run.py lake env python3 ../evidence/main-definition-bridges-198/run.py",
+    "LEAN_NUM_THREADS=8 python3 ../tools/run.py lake env python3 ../evidence/main-definition-bridges-198/run-indexing.py"
+  ],
+  "cwd": "/home/Palomar/workspace/arithmetic-theta/project",
+  "all_modules_exit_code": 0,
+  "receipts": [
+    {
+      "module": "MainIndependentDefinitions198",
+      "exit_code": 0,
+      "seconds": 2.52,
+      "sha256": "67659fd2ae2e0063cf3286e195e2ca53d251c7846c8cd881642b61d78d24321a"
+    },
+    {
+      "module": "ReadyBridges198",
+      "exit_code": 0,
+      "seconds": 2.77,
+      "sha256": "479da16b24b2b3a594bf5a2e511e97e311aaa00e2738fd0b6ccce3cc775ac5ff"
+    },
+    {
+      "module": "OriginalArithmeticPrefix198",
+      "exit_code": 0,
+      "seconds": 2.37,
+      "sha256": "7d31e95eba375f5386f91fe8f92a61493c1476648fbfa87cf31c04f5808b448e"
+    },
+    {
+      "module": "IndexingBridges198",
+      "exit_code": 0,
+      "seconds": 2.32,
+      "sha256": "cf5e01091e441625581b606322bd74900059e36643c2dc4b77e9b32db081700f"
+    }
+  ],
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/challenges/main-explicit/Challenge.lean": "4f898bd8a5c1447669faa65db49e847399fe93a0f9829e889b258895b35983a3",
+    "/home/Palomar/workspace/arithmetic-theta/project/challenges/main-explicit/SemanticMapping.md": "35ac10917a69148fc61ab9d43b95da89f45887a89991ce4f81a84f41d889edec",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/LatticeGlobalSectionsDefinitionsR0188.lean": "9b5618267dda03d1209826d911b31b337ae2a5bda072b296eba2c02528c85878",
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/OrthogonalConsumerDefinitionsR0127.olean": "72c75d82855c93ce7e1734c208cb18f0e485a2061eb657bd7cf63cd8b5f3210c",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/ComputedCoefficientMatrix.olean": "d0ea5b85e52ab7c8f3e62500028d0309de0164d2573ac57b74607f777d0d0e8a",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/LatticeShellFinite.olean": "7d01e010939308cfb5b363e532ecb641bf590ad1e8987d0e9774842e84fc026a",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/GlobalizationDefinitions.olean": "2a54413b4fafbc359e5197ef07013db39f43294ff25a08c3f2dbe2845cb75cf3"
+  },
+  "artifact_bindings": {
+    "IndexingBridges198.lean": "cf5e01091e441625581b606322bd74900059e36643c2dc4b77e9b32db081700f",
+    "IndexingBridges198.log": "0cdd719de3fe7b6a84056c09d2a76c01c5c684e70bfa779a39a1c24c54f98853",
+    "MainIndependentDefinitions198.lean": "67659fd2ae2e0063cf3286e195e2ca53d251c7846c8cd881642b61d78d24321a",
+    "MainIndependentDefinitions198.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "OriginalArithmeticPrefix198.lean": "7d31e95eba375f5386f91fe8f92a61493c1476648fbfa87cf31c04f5808b448e",
+    "OriginalArithmeticPrefix198.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ReadyBridges198.lean": "479da16b24b2b3a594bf5a2e511e97e311aaa00e2738fd0b6ccce3cc775ac5ff",
+    "ReadyBridges198.log": "c09834d7ccc7d5a9e9d4c67e101e6f757fc531315dcc9bdbe37a80924c971482",
+    "progress.jsonl": "2a38ba02a3a59aff90beeff43b7263cd2ed41d40b2160fb99ea3e513f92bc738",
+    "run-indexing.py": "488669a56bcad8e11434c48da4918de4ce5cc7561f41bded42b5492f926f8e81",
+    "run.py": "9d5a37424e10b17e2b2bf4260dbbd5bb6d3e65181e36961e5dd30f0ecdb89bde",
+    "README.md": "47c5ef9017355ca3a56aeebd8178d3a035a94bb5ed0fd5469460ab01fe447967"
+  },
+  "independent_definitions_exact_challenge_prefix": true,
+  "original_indexing_exact_source_prefix": true,
+  "original_indexing_prefix_sha256": "f01855ed529af10b1123bcc4af02d33d184e53670646fc9b239d72176dbc8b0b",
+  "no_sorry_admit_axiom_declarations": true,
+  "checked_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "limitations": [
+    "ReadyBridges198 uses compiled original modules and is a fully checked bridge set.",
+    "IndexingBridges198 uses an exact extracted original arithmetic prefix; original LatticeGlobalSectionsDefinitionsR0188 full module was not compiled/available at check time.",
+    "No accepted-037 or full explicitFiniteDetermination proof is imported or assumed.",
+    "No Comparator, official preflight or Palomar submission run."
+  ]
+}

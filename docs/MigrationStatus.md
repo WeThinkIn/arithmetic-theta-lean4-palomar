@@ -1,24 +1,20 @@
-# Migration checkpoint — 2026-10-20
+# Migration checkpoint — 2026-10-21 (Asia/Shanghai)
 
-This is a work-in-progress repository snapshot, not a successful full build or Palomar submission.
+This is an active migration snapshot, not a successful full build or Palomar submission.
 
 - Human author and responsible maintainer: Jue Ding. Original Lean code: Apache-2.0; third-party notices are retained.
-- Original scope: 13 requirements and 103 exact endpoint types.
-- Original source closure: 1,199 delivery modules plus 2,713 local-library modules. Three sources have now been split to meet the per-file line limit; no Proof file exceeds 10,000 lines. The latest relative doubled-torsion split (8,849/8,407 lines) still awaits compilation after its original upstream dependencies are built, and is not a verified port yet. The proper-tower automorphism split (9,113/2,008 lines) passed both modules in root117. The rational-function residue theorem split passed standalone checks for its 8,486-line Prelude and 4,707-line main file, with original outer compiler options restored. Both modules and their downstream theorem wrapper also passed in the subsequent full-root build; the complete GoalRoot is still pending.
-- Lean: 4.35.0-rc2. Mathlib: 065356127b1dc0016f66b7283ce0ce2c4055aa55.
-- 40 of 103 original exact endpoint types passed a partial Lean and axiom audit. This is not a semantic review of the paper or a Comparator result. The other 63 endpoints remain pending.
-- Latest completed broad build (root117) exited 1: 26 newly built modules and 4 diagnosed failures. All 4 subsequently passed standalone checks after repairs. Those fixes passed root122, which built 5 modules and found one further synthesis failure. Root123 built 2 more modules. Root124 is continuing the geometry integration. Proper-tower automorphism effectivity (both split modules), identity-stage section realization, and effective-Cartier algebraization now pass Lake. Partial audit 110 jointly rechecks 40 exact endpoints. Counts of built modules are not counts of mathematical claims verified.
-- Full GoalRoot build, Solution bridge, full-scope Challenge packages, Comparator, official preflight and Palomar review remain pending. The current comparator.json covers only the pilot finite-determination statement.
-- Original delivery files were checked against the preserved SHA-256 baseline; all 1,207 files were unchanged.
+- The repository is public following the owner’s explicit authorization to publish it, run official preflight and submit when ready. The earlier temporary-private instruction has been superseded.
+- Original scope: 13 requirements and 103 exact endpoint types. The original delivery and its dependency closure remain in scope.
+- Lean4.35.0-rc2 and Mathlib065356127b1dc0016f66b7283ce0ce2c4055aa55 are pinned.
+- Partial audit214 jointly checks46/103 original exact endpoint types and standard axiom closures. The remaining57 endpoints are pending. This is migration evidence, not full semantic coverage.
+- Root197 built39 new modules; root206 built37; root215 built14. Each root ended with remaining migration errors. These counts describe successful module builds, not percentages of mathematics completed. Current targeted integration proceeds on the scheme Kato characterization branch while the independent coefficient-map branch is repaired.
+- New checked modules include ramified polygon towers and generic base change, compatible level subcovers and cyclic quotients, faithful annular evaluation, geometric boundary Tate disks, completed local parameters, normal discriminant independence and actual scheme discriminant existence/naturality.
+- Independent main-explicit Challenge definitions have20 checked implementation bridges. Its Indexing conversions additionally passed against an exact extracted arithmetic prefix; they still require rechecking against the full original geometric module before final Solution integration.
+- The accepted-017 early-certificate subpackage has a proved independent Solution. Local Comparator on hash-bound exports passed statement/definition matching, axiom checks, con-ron(--verified,--jobs=2), NanoDa and Lean default kernel in a normal bubblewrap0.12.0 sandbox, exit0. This is not an official source-provenance audit or complete Algorithms/examples coverage.
+- Official full preflight run39450500400 failed before Lean due the caller’s invalid request identifier. The identifier was repaired. Run39451125672 at fb7ebe8 is executing the pilot comparator.json; no official pass is claimed. See PalomarPreflight.md and the linked run for its terminal result.
+- Full GoalRoot, the main/pilot Solution, full-scope Comparator configurations and official formal intake remain incomplete. No registration has occurred.
+- All1207 original delivery files were rechecked against their preserved SHA-256 baseline and remain unchanged.
 
-The original Lean 4.33.1 delivery and the new Lean port are distinct artifacts. Compatibility edits preserve the intended statements but must pass the Lean kernel in the target environment. Lean compatibility options do not substitute for checking proof terms.
+The original Lean4.33.1 audit and the migrated Lean4.35 checks are distinct artifacts. Compatibility changes preserve the original mathematical statements; compiler options are not substitutes for kernel validation. The exact scope is in SourceObligations.json and Coverage.md.
 
-Reproduction: install the toolchain in lean-toolchain, fetch the pinned dependencies with Lake, obtain the matching Mathlib cache, then run `lake build +GoalRoot`. The full build currently reports migration errors. See Coverage.md and SourceObligations.json for the retained obligations.
-
-## Private development phase
-
-The owner requested private visibility and authorized continued commits and builds in this private repository. Keep it private until the owner explicitly requests publication. PalomarSubmission commit `d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44` requires a public source repository for its official reusable preflight and intake. Local builds and audits continue; they are not official Palomar preflight results. Official preflight and submission are deferred until local preparation is complete and the owner authorizes publication.
-
-## Local CPU scheduling
-
-The isolated workspace runner now sizes LEAN_NUM_THREADS to the available CPU affinity (96 logical CPUs on the current 48-core host). Callers can override it. A single Lake build schedules the dependency graph; independent diagnostic checks can run concurrently without writing build artifacts. Narrow dependency chains still limit usable parallelism.
+The isolated runner uses up to96 logical CPUs on the48-core host, with one Lake writer. Independent checks use bounded thread counts. Real dependency chains limit parallelism.

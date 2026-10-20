@@ -1,0 +1,72 @@
+{
+  "timestamp_utc": "2026-10-20T15:53:10.719073+00:00",
+  "source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/EveryGeometricBoundaryTateDiskR0181.lean",
+  "original_source_sha256": "587293e4257b988089d1461c3ba01d8cb91801f0f08c5873967e4e50f4bacaf0",
+  "fixed_source": "/home/Palomar/workspace/arithmetic-theta/evidence/geometric-boundary-207/EveryGeometricBoundaryTateDiskR0181.lean",
+  "fixed_source_sha256": "9425b0724ecafa08dba71adffd2eaddfdcd7cecf255761f2756edce5cf8736e3",
+  "only_change": "Provide ValuationRing R explicitly from existing IsDiscreteValuationRing of the same original stalk in boundary_parameter_no_extension.",
+  "other_source_bytes_unchanged": true,
+  "exit_code": 0,
+  "terminal_session": 91796,
+  "command": "LEAN_NUM_THREADS=8 timeout 300s python3 ../tools/run.py lake env lean --root=../evidence/geometric-boundary-207 ../evidence/geometric-boundary-207/EveryGeometricBoundaryTateDiskR0181.lean",
+  "cwd": "/home/Palomar/workspace/arithmetic-theta/project",
+  "axiom_checks": {
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.killed_point_coordinates": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.full_marking_descends": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.level_cover_points_rational": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.classifying_map_descends": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.sections_cover_specialization": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.proper_flat_coverage": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.exists_canonical_disk": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.boundary_fraction_field_lift": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.boundary_residue_bijective": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.boundary_rational_section": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.boundary_local_trait": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.boundary_parameter_no_extension": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.integral_of_legendre_equation": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.legendre_integral_elements": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.integral_legendre_parameter_units": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.integral_legendre_parameter_lift": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.integral_j_parameter_lift": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.boundary_j_not_integral": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.every_boundary_has_j_pole": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.pointed_coefficient_comparison_of_j_eq": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.classifying_map_descends_of_j_eq": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.tate_j_fiber_geometric_descent": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.EveryGeometricBoundaryTateDisk.tate_j_fiber_descent": "propext, Classical.choice, Quot.sound",
+    "ArithmeticThetaTateCuspsR0181.every_geometric_boundary_tate_disk": "propext, Classical.choice, Quot.sound"
+  },
+  "attempts": [
+    {
+      "source": "attempt-01.lean",
+      "log": "check-01.log",
+      "exit_code": 1
+    },
+    {
+      "source": "attempt-02.lean",
+      "log": "check-02.log",
+      "exit_code": 1
+    },
+    {
+      "source": "EveryGeometricBoundaryTateDiskR0181.lean",
+      "log": "check-03.log",
+      "exit_code": 0
+    }
+  ],
+  "artifact_bindings": {
+    "EveryGeometricBoundaryTateDiskR0181.lean": "9425b0724ecafa08dba71adffd2eaddfdcd7cecf255761f2756edce5cf8736e3",
+    "attempt-01.lean": "7c348fe596bb09087963e0938dfc19855b231a0ded5ae492f4866f4196576e8e",
+    "attempt-02.lean": "de101969741456b86365e77235508fba6926ebb3244c9486f6c7cfa6e6d98909",
+    "check-01.log": "984147ee51df940baa774ab31d1a073d9011c335fc910548d9818eecd3d61a8e",
+    "check-02.log": "93e96f8ab1ea0fd0ed0e2d8d025d7831fff2a11fcd33b56741142038a0928aaa",
+    "check-03.log": "e44c820064bcc891863d19b653ba923e71c58d8b02daee8a18d3a79b4651330e",
+    "repair.patch": "cf09f2059f919e6ceea26f05c00be555061d404e8ab34a91751c69c93928c5ba"
+  },
+  "environment_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/TateCuspDiskExtensionR0181.olean": "4bf14287f76787fc9b2a55faf4129424e0ef0f510929627b3e801cf6f704b097",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/TateFullLevelMarkingR0181.olean": "317cf03f62cacd95c1558e1af5b7156d98da12ba69c41e789656ef0d36fe18cb"
+  },
+  "no_main_source_write": true
+}
