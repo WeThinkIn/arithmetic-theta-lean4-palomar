@@ -1,0 +1,199 @@
+{
+  "source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/TateInvariantComponentRatiosR0265.lean",
+  "before_sha256": "8419a95c7452d1440c3040b5bf115bf8fe00c8313eec1b444e16e23520879a3d",
+  "candidate_sha256": "3c16ceaf8f3338d14b54448365fe853ccf67fcbe2d841d1071653acf0faaccd0",
+  "budget_seconds_per_compile": 600,
+  "threads": 12,
+  "observation_interval_seconds": 60,
+  "compiler": "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+  "wrapper": "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+  "lean_path": "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean",
+  "diagnosis": "Direct import all GenericThetaBasisR0140 loads the existing elementary private proof in the public dependent basis type; all original proof bodies and theorem types remain byte-identical.",
+  "created_at_utc": "2026-10-20T18:33:49.587986+00:00",
+  "compile": {
+    "exit_code": 0,
+    "seconds": 65.24592095892876,
+    "command": [
+      "python3",
+      "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+      "-j12",
+      "-o",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/tate-invariant-component-ratios-repair-340/TateInvariantComponentRatiosR0265.olean",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/tate-invariant-component-ratios-repair-340/TateInvariantComponentRatiosR0265.lean"
+    ]
+  },
+  "audit": {
+    "exit_code": 0,
+    "seconds": 3.0680159949697554,
+    "command": [
+      "python3",
+      "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+      "-j12",
+      "-o",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/tate-invariant-component-ratios-repair-340/Audit.olean",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/tate-invariant-component-ratios-repair-340/Audit.lean"
+    ]
+  },
+  "failed_experiments": [
+    {
+      "exit_code": 1,
+      "seconds": 64.14306286210194,
+      "command": [
+        "python3",
+        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-j12",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/tate-invariant-component-ratios-repair-340/TateInvariantComponentRatiosR0265.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/tate-invariant-component-ratios-repair-340/TateInvariantComponentRatiosR0265.lean"
+      ]
+    }
+  ],
+  "declarations_audited": 17,
+  "unexpected_axioms": 0,
+  "only_direct_import_all_added": true,
+  "all_original_proof_bodies_and_statements_unchanged": true,
+  "project_source_unchanged": true,
+  "dependency_object_count": 10,
+  "dependency_object_hashes_unchanged": true,
+  "exact_type_checks": [
+    "model_fixed original statement",
+    "tate_invariant_component_ratios literal original statement"
+  ],
+  "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "scope": "Isolated full module compile, all non-internal module axiom closures, exact helper/final type checks. Parent integration pending. Not official Palomar validation.",
+  "files": [
+    {
+      "path": "Analysis.md",
+      "sha256": "cf2c853a985db61609390435fa00af2af34f48df4441ca997859044bd3e8a4b9",
+      "bytes": 2852
+    },
+    {
+      "path": "Audit.ir",
+      "sha256": "f62136c4405d627e01d764656d2594e9d373684c1345800a377a7d24e656574e",
+      "bytes": 100032
+    },
+    {
+      "path": "Audit.ir.sig",
+      "sha256": "ae933e683f4f42e1614d22b9d9e256b83e87e063bbd9109cb58d441bf6f93ce1",
+      "bytes": 176
+    },
+    {
+      "path": "Audit.lean",
+      "sha256": "c2589d608a2eb5b3704672237c9f3d59907053a698ed1ad8ebecf2914f5700d1",
+      "bytes": 4210
+    },
+    {
+      "path": "Audit.olean",
+      "sha256": "e2f42e37ced0393a5294aa05a3e82d1656bded3a1c620b0e38b59c382ed6d0ff",
+      "bytes": 105000
+    },
+    {
+      "path": "Audit.olean.private",
+      "sha256": "a84bd5623b41de56d6e87a1e31474057e1188bac602549c85a6fe137d45a4f40",
+      "bytes": 263784
+    },
+    {
+      "path": "Audit.olean.server",
+      "sha256": "9db4bdaacd511686b12b8d609a89e3763c62552e8e38d5ab9388060ff0d56438",
+      "bytes": 688
+    },
+    {
+      "path": "Original.lean.txt",
+      "sha256": "8419a95c7452d1440c3040b5bf115bf8fe00c8313eec1b444e16e23520879a3d",
+      "bytes": 17142
+    },
+    {
+      "path": "TateInvariantComponentRatiosR0265.ir",
+      "sha256": "c44571b6e2b145d5983939f286c7041d23e86ec52af435459d4651b9ca2fcf4a",
+      "bytes": 1832
+    },
+    {
+      "path": "TateInvariantComponentRatiosR0265.ir.sig",
+      "sha256": "e3200ed6e9e37901164257d1287049acc17eb5d38afc22024b72c35ddf6df22d",
+      "bytes": 176
+    },
+    {
+      "path": "TateInvariantComponentRatiosR0265.lean",
+      "sha256": "3c16ceaf8f3338d14b54448365fe853ccf67fcbe2d841d1071653acf0faaccd0",
+      "bytes": 17176
+    },
+    {
+      "path": "TateInvariantComponentRatiosR0265.olean",
+      "sha256": "c2c316650cf61cdbc5d09851204c7584e67ff6b29b3da204d694a5def7c5ea69",
+      "bytes": 177760
+    },
+    {
+      "path": "TateInvariantComponentRatiosR0265.olean.private",
+      "sha256": "e513c2a93438d2c8adfb5db7691c3d0a01f307069e0ed44c70c473f0b7fc0287",
+      "bytes": 755072
+    },
+    {
+      "path": "TateInvariantComponentRatiosR0265.olean.server",
+      "sha256": "2ece060de19b2ed79bb20a0014062e1a1f367e6c4f8753bc70527e6dfe3cbac0",
+      "bytes": 4784
+    },
+    {
+      "path": "Variant01-choice.lean.txt",
+      "sha256": "39dd52e38e671f52b0411b159e89f76c4bd663ca3cb9db74c5d988e4224ddb13",
+      "bytes": 17169
+    },
+    {
+      "path": "audit-01.json",
+      "sha256": "8160ad12ae07849141516eebe0148f0d77742b6b5bf81aa9dde76393957bf73f",
+      "bytes": 505
+    },
+    {
+      "path": "audit-01.log",
+      "sha256": "4fcf755be2d14943cc72a63ca9c4fed2338b68405a1b96362ce2b379c0ecde98",
+      "bytes": 2250
+    },
+    {
+      "path": "axiom-closures.json",
+      "sha256": "c7c0b22bcfabdb5b74acbf0a8d5897f7cabf012b197eff4f9236f586b02456f7",
+      "bytes": 3300
+    },
+    {
+      "path": "checkpoint.json",
+      "sha256": "59c70968c133fcf226009a0ad2ab1866166d5ccbe435bcb85f44ad27e08887d0",
+      "bytes": 1625
+    },
+    {
+      "path": "compile-01.json",
+      "sha256": "9af364b48a406cf99b871407c0b9533438022156cdec1aadb775b48884dca32c",
+      "bytes": 560
+    },
+    {
+      "path": "compile-01.log",
+      "sha256": "ead43fe91d6fe6c772c526064e947a4b24062b39268cd45542a92c4cf4a3f522",
+      "bytes": 795
+    },
+    {
+      "path": "compile-02.json",
+      "sha256": "d39be48312f177ccaa1fac27f217f7290a9b6c24e85f161ec9c83d07d00ade0a",
+      "bytes": 560
+    },
+    {
+      "path": "compile-02.log",
+      "sha256": "45166906f8734a171058f68205cc63adba7b65171f9a3fbfe6efbba54b4be26e",
+      "bytes": 419
+    },
+    {
+      "path": "dependency-bindings.json",
+      "sha256": "ad2b1f1251b5a817b25e10527187ae55cf508d131cc085a74abc635179c6ccae",
+      "bytes": 2153
+    },
+    {
+      "path": "repair.patch",
+      "sha256": "002313aceece53e7f16e13d199be4dced23dd80d5516449f0a4c180002ab6715",
+      "bytes": 300
+    },
+    {
+      "path": "run.py",
+      "sha256": "0e882efe29af3b9ee02d55e374415b686a61ae2fdfdb3ee64d76475e47a6e50d",
+      "bytes": 740
+    }
+  ]
+}

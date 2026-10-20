@@ -1,0 +1,9 @@
+--- a/Proof/TateInvariantComponentRatiosR0265.lean
++++ b/Proof/TateInvariantComponentRatiosR0265.lean
+@@ -1,5 +1,6 @@
+ module
+ 
++import all GenericThetaBasisR0140
+ public import InvariantRatioDefinitionsR0265
+ public import TateSchemeSectionEvaluationR0263
+ public import SchemeSchrodingerOrbitR0261

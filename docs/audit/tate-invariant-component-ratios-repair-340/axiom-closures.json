@@ -1,0 +1,138 @@
+[
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.ratios_of_generator",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.scalar_basis",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.shift_basis",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.model_fixed",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.field_hom_ext",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.frameValue_injective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.tate_invariant_component_ratios",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.component_ratios",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.field_isIso",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.bottom_sections",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.field_open",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.shift_pow_basis",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.action_top",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.frameValue_smul",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.value_evaluation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.frameValue",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaInvariantRatiosR0265.TateInvariantComponentRatios.fixed_top_span",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+]

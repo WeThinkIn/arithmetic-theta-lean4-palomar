@@ -1,0 +1,226 @@
+[
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.arbitrary_origin_generator",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.epi_counit_at_open_chart",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.pullbackComp_inv_section",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.section_iso_at_baseChange",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.pullbackId_inv_section",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.chartHodgePowerFrame",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.noetherian_origin_surjective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.identity_counit_epi",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.noetherian_twisted_origin_surjective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.framed_conormal_trivial",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.unitPowerIso",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.framed_origin_comap",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.framed_originPowerComparison",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.pullbackCongr_inv_section",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.chartFamily",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.chart_theta_generator",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.pullbackId_section",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.evaluation_top",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.epi_of_surjective_top_of_frame",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.exists_section_iso_at",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.evaluation_epi_of_generator",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.noetherian_origin_generator",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.evaluation_epi_of_frame",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.epi_map_of_natIso",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.epi_counit_at_generator",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.scheme_theta_identity_evaluation",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.restriction_surjective_iso",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "ArithmeticThetaSchemeSchrodingerR0261.SchemeThetaIdentityEvaluation.arbitrary_twisted_origin_generator",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+]

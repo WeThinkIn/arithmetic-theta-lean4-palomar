@@ -241,14 +241,14 @@ def toGeo (hL : 3 ≤ L) (heven : Even L)
   l := x.left.down.as
   t := x.right.down.as
   arrow := rootArrow P (evaluationHomEquiv P hL heven r j
-    x.right.down.as x.left.down.as (inv x.hom))
+    x.right.down.as x.left.down.as (inv (C := (group L S.left).Objects) x.hom))
 
 def fromGeo (hL : 3 ≤ L) (heven : Even L)
     (j : AnchoredMap C Y (object P p H)) (r : AnchoredMap C T (object P b R))
     {S : Over (Base k)} (d : Geo P p H b R S) : TestFiber j.map r.map S where
   left := point d.l
   right := point d.t
-  hom := inv ((evaluationHomEquiv P hL heven r j d.t d.l).symm (rootArrowInv P d.arrow))
+  hom := inv (C := (group L S.left).Objects) ((evaluationHomEquiv P hL heven r j d.t d.l).symm (rootArrowInv P d.arrow))
 
 lemma from_to (hL : 3 ≤ L) (heven : Even L)
     (j : AnchoredMap C Y (object P p H)) (r : AnchoredMap C T (object P b R))
@@ -317,7 +317,7 @@ instance fiberDiscrete (j : AnchoredMap C Y (object P p H))
     (r : AnchoredMap C T (object P b R)) (S : Over (Base k)) :
     IsDiscrete (TestFiber j.map r.map S) where
   subsingleton x y := ⟨fun f g => by
-    apply CommaMorphism.ext <;> apply ULift.ext <;> apply Subsingleton.elim⟩
+    apply CommaMorphism.ext <;> exact congrArg Discrete.Hom.mk rfl⟩
   eq_of_hom := by
     intro x y f
     have hl : x.left = y.left := by apply ULift.ext; exact Discrete.ext (Discrete.eq_of_hom f.left)
@@ -326,8 +326,8 @@ instance fiberDiscrete (j : AnchoredMap C Y (object P p H))
     obtain ⟨l',t',h'⟩ := y
     dsimp at hl ht
     subst l'; subst t'
-    have hfl : f.left = 𝟙 l := by apply ULift.ext; apply Subsingleton.elim
-    have hft : f.right = 𝟙 t := by apply ULift.ext; apply Subsingleton.elim
+    have hfl : f.left = 𝟙 l := by exact congrArg Discrete.Hom.mk rfl
+    have hft : f.right = 𝟙 t := by exact congrArg Discrete.Hom.mk rfl
     have hh := f.w
     rw [hfl, hft, CategoryTheory.Functor.map_id, CategoryTheory.Functor.map_id, Category.id_comp, Category.comp_id] at hh
     cases hh
@@ -465,7 +465,7 @@ lemma toGeo_line (hL : 3 ≤ L) (heven : Even L)
       ((lineForget (group L S.left)).mapIso (asIso x.hom)).symm ≪≫
       lineComponent P j S x.left.down.as := by
   apply Iso.ext
-  exact evaluationHomEquiv_line P hL heven r j x.right.down.as x.left.down.as (inv x.hom)
+  exact evaluationHomEquiv_line P hL heven r j x.right.down.as x.left.down.as (inv (C := (group L S.left).Objects) x.hom)
 
 lemma toGeo_inv (hL : 3 ≤ L) (heven : Even L)
     (j : AnchoredMap C Y (object P p H)) (r : AnchoredMap C T (object P b R))

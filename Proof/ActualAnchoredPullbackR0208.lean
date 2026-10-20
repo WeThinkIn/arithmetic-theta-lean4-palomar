@@ -56,8 +56,7 @@ lemma yonedaHom_natural {S T : Over (Base k)} (a : T ⟶ S) (f : S ⟶ Y) :
   have hp : (pointId (a ≫ f)).hom ≫
       ((representable Y).mapComp f.op.toLoc a.op.toLoc).hom.toNatTrans.app
         (point (𝟙 Y)) = (precompose Y a).map (pointId f).hom := by
-    apply ULift.ext
-    apply Subsingleton.elim
+    exact congrArg Discrete.Hom.mk rfl
   have hn := ((j.map.naturality a.op.toLoc).hom.toNatTrans).naturality (pointId f).hom
   dsimp only [yonedaHom]
   rw [Category.assoc]

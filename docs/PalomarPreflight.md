@@ -10,7 +10,7 @@ The reusable workflow is pinned to
 with `mode: full` and `execution_profile: palomar-standard-v1`.
 The current root `comparator.json` checks the finite-determination pilot only.
 The 13 original requirements and 103 exact endpoints remain in scope;
-full-paper coverage requires the remaining migration and independent interfaces.
+complete GoalRoot migration and103 original endpoint checks now pass; full-paper independent coverage still requires the remaining Challenge interfaces.
 
 | Run | Source commit | Result |
 | --- | --- | --- |
@@ -54,3 +54,5 @@ at `35c8d4a1ed4ad19ac879a31a912ab5fcd707f558`, with
 Its 43 targets cover40 complete original endpoints, including the same-B/same-U
 FormalIdentity field of accepted-037. This full official preflight is running;
 it has not yet passed and has not been submitted through ordinary intake.
+
+The later repository migration checkpoint passed full GoalRoot build342 and all103 original exact endpoint/standard-axiom checks in audit343. These local results do not change the commits or results of the running official checks. See MigrationStatus.md and audit/full-root-build-342/.

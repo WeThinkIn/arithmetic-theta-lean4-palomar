@@ -314,7 +314,7 @@ def chartFamily {S : Scheme.{u}} (E : Family S) (C : SchemeLocal.FramedChart E) 
   dimension := C.Q.smooth_dimension_one
   connected := MorphismProperty.of_isPullback (P := @GeometricallyConnected) C.cartesian E.connected
 
-private def unitPowerIso (X : Scheme.{u}) : (m : ℕ) → (𝟙_ X.Modules).tensorPow m ≅ 𝟙_ X.Modules
+public def unitPowerIso (X : Scheme.{u}) : (m : ℕ) → (𝟙_ X.Modules).tensorPow m ≅ 𝟙_ X.Modules
   | 0 => Iso.refl _
   | m + 1 => ((unitPowerIso X m) ⊗ᵢ Iso.refl _) ≪≫ ρ_ _
 

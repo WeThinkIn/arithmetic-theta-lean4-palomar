@@ -1,0 +1,122 @@
+{
+  "status": "isolated_full_file_and_import_audit_passed",
+  "completed_utc": "2026-10-20T18:21:44.802222+00:00",
+  "original_source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/ActualAnchoredPullbackR0208.lean",
+  "original_sha256": "e3cf4e221986f079f7838c7e0d0b688580828b572ad7c5cff32389a74022d39c",
+  "original_source_unchanged": true,
+  "repaired_source_sha256": "22d6f60ebc50ce83147ad5e2e0f8cb7ee06b9e0e64562e07da6a987a4d27fd30",
+  "change": "Replace one arrow-equality ULift.ext/Subsingleton.elim block with congrArg Discrete.Hom.mk rfl",
+  "original_changed_lines": [
+    59,
+    60
+  ],
+  "declaration_signatures_preserved": true,
+  "exact_final_type_application_checked": true,
+  "axioms": {
+    "ArithmeticThetaActualLevelR0208.ActualAnchoredPullbackProof.pointId": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualAnchoredPullbackProof.component": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualAnchoredPullbackProof.yonedaHom": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualAnchoredPullbackProof.component_hom": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualAnchoredPullbackProof.yonedaHom_natural": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualAnchoredPullbackProof.component_natural": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualAnchoredPullbackProof.component_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.actual_anchored_pullback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_checked_declaration_count": 8,
+  "compilations": [
+    {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/ActualAnchoredPullbackR0208.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/ActualAnchoredPullbackR0208.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 18.29,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "22d6f60ebc50ce83147ad5e2e0f8cb7ee06b9e0e64562e07da6a987a4d27fd30",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/Audit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.12,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "e99551db69ef5b290818546b6f3c126ac57ab0b42b2f4d72b319ce1bd3120e2e",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    }
+  ],
+  "dependency_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/ActualLevelDefinitionsR0208.lean": "b57c50f79874bdbde9f88041b81b0addea519503b567cfc7b46527d71adea115",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/ActualLevelDefinitionsR0208.olean": "397b5ed04c354b9821ead2a9a796308f5ab01776e2d5f04eb6d6b293f0850a4b",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/Mathlib/CategoryTheory/Discrete/Basic.lean": "21f2ad5d04a86e443ed8f3735b06cfb8b4a5fe97e8dca5c9023074b2dcb28cd3",
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1"
+  },
+  "no_project_mutations": true,
+  "artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/ActualAnchoredPullbackR0208.ir.sig": "d7b1f73f09fb15578c5c28d76f2fdda56e526c81a47e905a91acf11032294246",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/Audit.olean.private": "3fae08995b8867bcbe29ea42784daa49489c4c3adeb150da36ad164db3c5b342",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/Audit.olean": "5b2c8522102d051bc4d19d9f5ce017078870ea5f932f11aa24355e7c58b1fc56",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/Audit-check-01.log": "37f064405fa06ebb6041f0bf3fb00feb3eaab8ac86437dcf0cb5d04b9ecd03d7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/compile.py": "e369949c6251c5a9368c8f3e40379ff0c621c3ca6fbe59735a887dce9e67058c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/Audit-receipt-01.json": "5078b7df49bfe01c1b56aa964a1372be826759f20d8dd5ac310ab24f793fd6c3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/minimal.patch": "becf64863183c91769ee00e38f198b6927ca5d43e58fbfe569891fabf00d0555",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/Audit.ir": "9b7b43729541139017a830adeb1e6dd58615cd5733e69d04c1b1e686bbef3da7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/ActualAnchoredPullbackR0208.ir": "69ac8264748994b1d2ce26c9081fcbcdbabf56415e03d106c7c80ea2d253c50f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/ActualAnchoredPullbackR0208.olean.private": "d5670b34d424a07601dd74cfb192d2521589077e9e8e597dc547acd0a44c4398",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/finalize.py": "0a087c20178a67d492f7162da3a82fc2f5187e0cbad398ec3c4d36bae6c19e49",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/Original.lean.txt": "e3cf4e221986f079f7838c7e0d0b688580828b572ad7c5cff32389a74022d39c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/Audit.olean.server": "d488516f1f37f2fc35dcfd9055d61a31cd7a9af2faca8e65d99fc7d79a24ffe6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/ActualAnchoredPullbackR0208.lean": "22d6f60ebc50ce83147ad5e2e0f8cb7ee06b9e0e64562e07da6a987a4d27fd30",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/ActualAnchoredPullbackR0208-check-01.log": "98a811eed8a849f427f73b6fbc721f2721bce1ca0af499a15c499567c31aeb0b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/ActualAnchoredPullbackR0208-receipt-01.json": "c7f4a49e2319fbad5ba00566b875cc6aa4e5cfcce23ab1603787057d5546d3af",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/ActualAnchoredPullbackR0208.olean.server": "ae2a0707d0bd3b433e1396186bfc7b4cdea13a78cf2da8c286bea0b8d6529bf7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/Audit.ir.sig": "ae933e683f4f42e1614d22b9d9e256b83e87e063bbd9109cb58d441bf6f93ce1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/ActualAnchoredPullbackR0208.olean": "776605aa1e7d24663e7fc302115ff0288e3e9640fc8b66bc80afce2bc6254c97",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/Audit.lean": "e99551db69ef5b290818546b6f3c126ac57ab0b42b2f4d72b319ce1bd3120e2e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/Analysis.md": "acf59093684daec35a2303de824a1139099de93af29ea0d7adbd096543153753",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/checkpoint.json": "8e10af590f1000baa8b7df3d56a084952f9aafe3de4ab6c518ccd4649da32323"
+  }
+}

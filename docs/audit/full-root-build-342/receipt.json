@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+    "lake",
+    "build",
+    "+GoalRoot"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 165.26,
+  "source_hashes_unchanged": true,
+  "scope": "Entire GoalRoot import and dependency closure; not full-paper independent Palomar comparison",
+  "log_sha256": "fdb3089aa6cace3a78b419e8cad0447f82506453a364f5359262ee3fcfc72956",
+  "source_bindings_sha256": "7da5a2dd6f19a4a67d0f1cdd6528facfcd26e8f325e65fa542bc05f2b0f78576",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "lake_manifest_sha256": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1"
+}

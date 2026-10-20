@@ -1,0 +1,11 @@
+# Isolated actual categorical root fiber repair 338
+
+This module directly imports the isolated checked337 provider. The original source was compiled first, with the unchanged project dependency environment and337 object first on LEAN_PATH. It failed in100.59seconds. The complete log establishes two causes: three sites with incorrect ULift.ext use on actual Discrete.Hom arrows (320,329,330), plus three inverse-arrow calls unable to synthesize IsIso through Cat-wrapped fiber types (244,251,468). The latter diagnostics use `error(lean.synthInstanceFailed)`; an early status scan limited to `error:` overlooked them, and this was explicitly corrected before finalization.
+
+The first repair changed only the three arrow-equality sites to `exact congrArg Discrete.Hom.mk rfl`, retaining CommaMorphism.ext and both correct object-equality uses of ULift.ext at323/324. Its failed compile is preserved (102.32seconds): all ULift errors disappeared, while the pre-existing IsIso failures remained.
+
+The final repair additionally supplies `(C := (group L S.left).Objects)` to exactly the three failing inv calls. This reuses the existing actual GroupoidData.Objects instance, as in checked323; no inverse is postulated or replaced by an unrelated map. The inverse directions, source/target objects, comparison maps and all original declaration signatures are unchanged. All remaining source bytes are unchanged.
+
+The final complete file compiled with exit0 in103.39seconds. The independent importer Audit checks all50 explicit declarations, including root-arrow equivalences, geometric lifts, the discrete comma fiber, full categorical equivalence and naturality, the actual presentation and original final theorem. It also applies actual_categorical_root_fiber at the exact copied original signature. Final compile/audit details, standard-axiom closures, and bindings are in receipt.json; the failed attempts are retained separately and are not counted as passes.
+
+Each compilation uses Lean4.35.0-rc2,12 threads and a300-second budget. No shared project or .lake mutation, export, Comparator or official workflow was performed. The final check verifies the original project source, isolated337 provider source/object/receipt and other bound dependencies unchanged. Parent owns integration of337/338 and any shared root build.

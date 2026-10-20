@@ -1,0 +1,173 @@
+{
+  "source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/SchemeThetaIdentityEvaluationR0261.lean",
+  "before_sha256": "21aaf4d6720cd9e98d1f7764df677ec6a08328cb2a636a9a53a42b495145dd05",
+  "candidate_sha256": "e985394cc780e86908be10ffd8e189151d19af4c03f1ae814f7485661831b787",
+  "budget_seconds_per_compile": 600,
+  "threads": 12,
+  "observation_interval_seconds": 60,
+  "compiler": "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+  "wrapper": "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+  "lean_path": "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean",
+  "diagnosis": "Same-module private recursive unitPowerIso is consumed by exposed public chartHodgePowerFrame; publish precisely this actual tensor-unit isomorphism, preserving recursion and all types.",
+  "created_at_utc": "2026-10-20T18:20:13.586880+00:00",
+  "compile": {
+    "exit_code": 0,
+    "seconds": 6.322423348203301,
+    "command": [
+      "python3",
+      "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+      "-j12",
+      "-o",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/theta-identity-evaluation-repair-335/SchemeThetaIdentityEvaluationR0261.olean",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/theta-identity-evaluation-repair-335/SchemeThetaIdentityEvaluationR0261.lean"
+    ]
+  },
+  "audit": {
+    "exit_code": 0,
+    "seconds": 2.9176470930688083,
+    "command": [
+      "python3",
+      "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+      "-j12",
+      "-o",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/theta-identity-evaluation-repair-335/Audit.olean",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/theta-identity-evaluation-repair-335/Audit.lean"
+    ]
+  },
+  "declarations_audited": 28,
+  "unexpected_axioms": 0,
+  "provider_same_module": true,
+  "only_unitPowerIso_visibility_changed": true,
+  "project_source_unchanged": true,
+  "six_dependency_object_hashes_unchanged": true,
+  "exact_type_checks": [
+    "unitPowerIso",
+    "chartHodgePowerFrame",
+    "scheme_theta_identity_evaluation literal original type"
+  ],
+  "defining_equations_checked_by_rfl": [
+    "unitPowerIso zero",
+    "unitPowerIso successor"
+  ],
+  "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "files": [
+    {
+      "path": "Analysis.md",
+      "sha256": "17ee3b16a219710a1d4452110a59f8fe371ec22aed0d0c0a768cf2934ad45455",
+      "bytes": 2144
+    },
+    {
+      "path": "Audit.ir",
+      "sha256": "6dd9ca417a255da01d04895f854af646d4b2bacfe24c7e96958d04fb52b0a91f",
+      "bytes": 100032
+    },
+    {
+      "path": "Audit.ir.sig",
+      "sha256": "ae933e683f4f42e1614d22b9d9e256b83e87e063bbd9109cb58d441bf6f93ce1",
+      "bytes": 176
+    },
+    {
+      "path": "Audit.lean",
+      "sha256": "3bb5af6e894c1142520c57d706b8d35ff082d41bf0f83efe2bf1a315acb8d5bd",
+      "bytes": 2197
+    },
+    {
+      "path": "Audit.olean",
+      "sha256": "b2aef746cf7067948643fe4630605e35ff675d5aa8ee563f716af9e1dfb3529a",
+      "bytes": 104784
+    },
+    {
+      "path": "Audit.olean.private",
+      "sha256": "71897dc0692c45d1a5fecd765ee5abe630876c8521100411a0fde4b2338bf764",
+      "bytes": 263792
+    },
+    {
+      "path": "Audit.olean.server",
+      "sha256": "0da9f7bf4557adb1e358971a069cf4a35759070a6f18c23eb2477e0840341a41",
+      "bytes": 1704
+    },
+    {
+      "path": "Original.lean.txt",
+      "sha256": "21aaf4d6720cd9e98d1f7764df677ec6a08328cb2a636a9a53a42b495145dd05",
+      "bytes": 24652
+    },
+    {
+      "path": "SchemeThetaIdentityEvaluationR0261.ir",
+      "sha256": "ecd11b3f89b4ba3e5254a181fdbda22a7663c7e974e86d2d52187b1e59b13d48",
+      "bytes": 7376
+    },
+    {
+      "path": "SchemeThetaIdentityEvaluationR0261.ir.sig",
+      "sha256": "92700d785c30fbe0a51f6e9248ba4c4529a2ecf70b22a0b30ba045d7628ec220",
+      "bytes": 176
+    },
+    {
+      "path": "SchemeThetaIdentityEvaluationR0261.lean",
+      "sha256": "e985394cc780e86908be10ffd8e189151d19af4c03f1ae814f7485661831b787",
+      "bytes": 24651
+    },
+    {
+      "path": "SchemeThetaIdentityEvaluationR0261.olean",
+      "sha256": "f95c1ea927161ce6ecd7cfe32e51cfa1f99a7f4a71f409ea37c15d118bc7fdc1",
+      "bytes": 202064
+    },
+    {
+      "path": "SchemeThetaIdentityEvaluationR0261.olean.private",
+      "sha256": "f2f736517e8844317efb6bfdfeee8d817fad058623d63bd3cfe8a829e4ff950c",
+      "bytes": 447272
+    },
+    {
+      "path": "SchemeThetaIdentityEvaluationR0261.olean.server",
+      "sha256": "5ec32e25e5699311d76db35234420aa4d6a5303162c9a2e69592ed4747854d18",
+      "bytes": 12680
+    },
+    {
+      "path": "audit-01.json",
+      "sha256": "91f758746eac6f5a4f6289ee46ed1447c0c38a484e166e370a503929d664a769",
+      "bytes": 493
+    },
+    {
+      "path": "audit-01.log",
+      "sha256": "3e720b64cf80a53d017c40263cf67f86af8878095c7e882402f8896cb2ccd359",
+      "bytes": 4441
+    },
+    {
+      "path": "axiom-closures.json",
+      "sha256": "5c5b4e69e7bb56dac3dd586ddc9f71358e1c7782438ebaa98193225814117f12",
+      "bytes": 5780
+    },
+    {
+      "path": "checkpoint.json",
+      "sha256": "065bcf27b04a7f688fb6835a5efe9e548e0a1a5ca0c2b7c88c438580df0458e7",
+      "bytes": 1624
+    },
+    {
+      "path": "compile-01.json",
+      "sha256": "329bbabbdd98e425b1a99552250270cf5523cf344d323bbdb812aaf4ad54c826",
+      "bytes": 550
+    },
+    {
+      "path": "compile-01.log",
+      "sha256": "93906a8617f06d578494bb233ebefe6b70cf7b2abdfb7a48240891a28586cd82",
+      "bytes": 2149
+    },
+    {
+      "path": "dependency-bindings.json",
+      "sha256": "d02befb98056eccc54d2c48fc185291698bacaee31daa5cafd0afd96f3cfef85",
+      "bytes": 1527
+    },
+    {
+      "path": "repair.patch",
+      "sha256": "6125f3b35e576b2311cfccbc17107f09785242623b44e6e71d773c98ece22246",
+      "bytes": 575
+    },
+    {
+      "path": "run.py",
+      "sha256": "0e882efe29af3b9ee02d55e374415b686a61ae2fdfdb3ee64d76475e47a6e50d",
+      "bytes": 740
+    }
+  ],
+  "scope": "Isolated full same-module provider and consumer compilation with all named module axiom closures and exact endpoint checks. Parent integration pending; not official Palomar validation."
+}

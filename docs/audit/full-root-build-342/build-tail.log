@@ -1,0 +1,30 @@
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Proof/GlobalArithmeticProjectiveRatiosR0266.lean:137:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Proof/GlobalArithmeticProjectiveRatiosR0266.lean:207:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: Proof/GlobalArithmeticProjectiveRatiosR0266.lean:245:0: 'ArithmeticThetaGlobalProjectiveRatiosR0266.global_arithmetic_projective_ratios' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [12843/12845] Built JointSourceIntegrationR0267 (2.6s)
+✔ [12844/12845] Built FullSourceIntegrationR0268 (2.6s)
+✔ [12845/12845] Built GoalRoot (2.6s)
+Build completed successfully (12845 jobs).

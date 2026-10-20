@@ -1,0 +1,362 @@
+{
+  "status": "isolated_full_file_and_import_audit_passed",
+  "completed_utc": "2026-10-20T18:28:29.291859+00:00",
+  "original_source": "/home/Palomar/workspace/arithmetic-theta/project/Proof/ActualCategoricalRootFiberR0208.lean",
+  "original_sha256": "56108b37d180ce2c24c32c5c149ba11c93d28770ec30686567d70057c3a4e3eb",
+  "original_source_unchanged": true,
+  "repaired_source_sha256": "6ad29e76942f84c1725d637a1b7872b307b3a50a3a167d2fae846aa4a7777ebc",
+  "change": "Replace three arrow-equality ULift.ext proofs by congrArg Discrete.Hom.mk rfl and pin existing actual groupoid on three inv calls; preserve two object-equality ULift.ext sites",
+  "original_changed_lines": [
+    244,
+    251,
+    320,
+    329,
+    330,
+    468
+  ],
+  "preserved_object_ext_lines": [
+    323,
+    324
+  ],
+  "declaration_signatures_preserved": true,
+  "exact_final_type_application_checked": true,
+  "original_source_diagnostic_compilation": {
+    "command": [
+      "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+      "-R",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338",
+      "-o",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208.olean",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208.lean"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 100.59,
+    "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338:/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+    "source_sha256": "56108b37d180ce2c24c32c5c149ba11c93d28770ec30686567d70057c3a4e3eb",
+    "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+  },
+  "axioms": {
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.object_classifier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.evaluation_classifier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.fiber_triangle": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.rootPoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.pullComparison": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.evaluationIso": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.evaluationHomEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.RootArrow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.rootArrow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.rootArrowInv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.rootArrow_left_inv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.rootArrow_right_inv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.rootArrowEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.rootArrow_line": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.Geo": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.Geo.lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.Geo.compatible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.Geo.lift_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.geoOfLift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.toGeo": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.fromGeo": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.from_to": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.to_from": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.space": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.toLevel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.toTest": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.geoPoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.geoPoint_lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.geoPoint_bijective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.fiberDiscrete": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.objectEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.equivalence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.lineComponent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.evaluationIso_line": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.evaluationHomEquiv_line": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.underlying": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.underlying_naturality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.lineComponent_hom": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.lineComponent_natural": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.lineComponent_iso_natural": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.toGeo_line": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.toGeo_inv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.toGeo_pull": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.equivalence_obj": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.equivalence_natural_obj": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.discreteNatIso": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.equivalence_natural": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.presentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.ActualCategoricalRootFiberProof.usesFiber": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticThetaActualLevelR0208.actual_categorical_root_fiber": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_checked_declaration_count": 50,
+  "compilations": [
+    {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 103.39,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338:/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "6ad29e76942f84c1725d637a1b7872b307b3a50a3a167d2fae846aa4a7777ebc",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/Audit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.32,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338:/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "d75f6fc8fdc960b5787c51d05fe64c130b0b2fcbc7406aae8488f1b527073d29",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    }
+  ],
+  "dependency_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/ActualAnchoredPullbackR0208.lean": "22d6f60ebc50ce83147ad5e2e0f8cb7ee06b9e0e64562e07da6a987a4d27fd30",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/ActualAnchoredPullbackR0208.olean": "776605aa1e7d24663e7fc302115ff0288e3e9640fc8b66bc80afce2bc6254c97",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-anchored-pullback-repair-337/receipt.json": "7f7872cef97104571f1ef98b2f130176d70bebf32edf1e31d97005e71c46d269",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/Mathlib/CategoryTheory/Discrete/Basic.lean": "21f2ad5d04a86e443ed8f3735b06cfb8b4a5fe97e8dca5c9023074b2dcb28cd3",
+    "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+    "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1"
+  },
+  "reuses_isolated337_provider": true,
+  "no_project_mutations": true,
+  "artifacts": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/Audit.olean.private": "2c9f12a92594a581d98ea1e9710754d24f8f064ff6816c74f1aa934f1970f3ef",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/Audit.olean": "31fd5025da3e62a6ba8617ec1add9c64f20787029354dc656e48ae8d3cd5dcf6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/Audit-check-01.log": "81bbf3b956afa7d23544cab0e0e814d460883a96d86613c48b0ad98588eb9ee0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208-check-03-repaired.log": "c78c96e8c03b60ab065b7e1a412a2805da07b75a6876c3666aad84c439145e6d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/compile.py": "ffe5474bd97324273840d0219ed0be860b644b90cf244437ef31a0d4b55fb86b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208.ir.sig": "eeef45807c1fcb630234519e6ff01cf3cac5b500216995c5a1b20cbce1c4a46c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208.ir": "5bc6f191144e9d1b2fe99d2395e3c920b8765d8e3f38b48d0488c64bda139d53",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208-receipt-01-original.json": "8e5120c90e5e1f3e1aa000e988c14a7962909c27f68960572047aa689bfab84c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/Audit-receipt-01.json": "1d3f8fa1c4bb7649b838d5ae87232cab4939327579b92ce9fb687d341a7f5335",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/minimal.patch": "298d4f799eeaf7908de7c38813a03efc54c7ed9da30c747fb49956d33770c9e9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/Audit.ir": "ac6daa26e6f80cc7b1a61a7cd5dd1a12d86f485a4126893d010aff16281cd2a6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208-receipt-02-repaired.json": "d7c454de49779bb2c0f2fd9c1adff761c2bce2d72b52aabbf4111d7584cf72c4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208-receipt-03-repaired.json": "97f47c449c5297941d5304d49ed4d26ddf2c51b53949d309e82e420937045bd2",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208.olean.private": "768fc172e922cfe3428b666e6d7f8d5711d9ed50ea792c39c5d7721b4810fbcc",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208-check-02-repaired.log": "e94a3e80afee07c648bec04a47db69f2b9a67173fb77bbfc40d07390752828ac",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/finalize.py": "07ef49a3fea583306c77045dcd4d7f36f8477fef00f109898f925d7ef1e77dad",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/Original.lean.txt": "56108b37d180ce2c24c32c5c149ba11c93d28770ec30686567d70057c3a4e3eb",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/Audit.olean.server": "d488516f1f37f2fc35dcfd9055d61a31cd7a9af2faca8e65d99fc7d79a24ffe6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208.lean": "6ad29e76942f84c1725d637a1b7872b307b3a50a3a167d2fae846aa4a7777ebc",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208.olean": "4f7be274e3702440bd2d650df12343c688a9aade5f1a187fd9bb6f7de65d0adf",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/Audit.ir.sig": "ae933e683f4f42e1614d22b9d9e256b83e87e063bbd9109cb58d441bf6f93ce1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208.olean.server": "90b0a2f4ca671d4c027bd4997b7c58fb091118f2ef499676dd3792b54e3481c2",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/Audit.lean": "d75f6fc8fdc960b5787c51d05fe64c130b0b2fcbc7406aae8488f1b527073d29",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/Analysis.md": "82fff50bf3c4ed2315deeeca1dbd56a42be98123fd4aff7521bd1269bb303e56",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/ActualCategoricalRootFiberR0208-check-01-original.log": "703219b1eea81d6e2bedf4decc8b025646a1ac78a4b94b5e9b0c7ac1f4149202",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/Attempt02.lean.txt": "eea39c6f48fae29dd8f5ff221f2287f79dadaf56ce474ba62605882644b020fb",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/actual-categorical-root-fiber-repair-338/checkpoint.json": "de01347aa3461327c5710d15ea36acdfe486307e36eeba3c5f4c85d7ecdd36a7"
+  }
+}

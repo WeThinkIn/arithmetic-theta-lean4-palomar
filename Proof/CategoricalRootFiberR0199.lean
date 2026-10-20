@@ -149,13 +149,13 @@ lemma geoPoint_bijective (hF : Represents F) (S : Over B) :
     exact he
 
 instance pointsDiscrete (S Z : Over B) : IsDiscrete (Points S Z) where
-  subsingleton _ _ := ⟨fun f g => by apply ULift.ext; apply Subsingleton.elim⟩
+  subsingleton _ _ := ⟨fun f g => by exact congrArg Discrete.Hom.mk rfl⟩
   eq_of_hom f := by apply ULift.ext; exact Discrete.ext (Discrete.eq_of_hom f)
 
 instance fiberDiscrete (j : ClassifiedMap P Y H) (r : ClassifiedMap P T R)
     (S : Over B) : IsDiscrete (TestFiber j.map r.map S) where
   subsingleton x y := ⟨fun f g => by
-    apply CommaMorphism.ext <;> apply ULift.ext <;> apply Subsingleton.elim⟩
+    apply CommaMorphism.ext <;> exact congrArg Discrete.Hom.mk rfl⟩
   eq_of_hom := by
     intro x y f
     have hl : x.left = y.left := by apply ULift.ext; exact Discrete.ext (Discrete.eq_of_hom f.left)
@@ -164,8 +164,8 @@ instance fiberDiscrete (j : ClassifiedMap P Y H) (r : ClassifiedMap P T R)
     obtain ⟨l',t',h'⟩ := y
     dsimp at hl ht
     subst l'; subst t'
-    have hfl : f.left = 𝟙 l := by apply ULift.ext; apply Subsingleton.elim
-    have hft : f.right = 𝟙 t := by apply ULift.ext; apply Subsingleton.elim
+    have hfl : f.left = 𝟙 l := by exact congrArg Discrete.Hom.mk rfl
+    have hft : f.right = 𝟙 t := by exact congrArg Discrete.Hom.mk rfl
     have hh := f.w
     rw [hfl, hft, CategoryTheory.Functor.map_id, CategoryTheory.Functor.map_id, Category.id_comp, Category.comp_id] at hh
     cases hh
@@ -304,7 +304,7 @@ def presentation (j : ClassifiedMap P Y H) (r : ClassifiedMap P T R)
   natural S S' a := ⟨NatIso.ofComponents (fun x => eqToIso (by
       obtain ⟨⟨f⟩⟩ := x
       exact equivalence_natural_obj F j r cj cr hF a f))
-    (by intro x y f; apply CommaMorphism.ext <;> apply ULift.ext <;> apply Subsingleton.elim)⟩
+    (by intro x y f; apply CommaMorphism.ext <;> exact congrArg Discrete.Hom.mk rfl)⟩
 
 lemma usesFiber (j : ClassifiedMap P Y H) (r : ClassifiedMap P T R)
     (cj : TautologicalComparison j) (cr : TautologicalComparison r)
