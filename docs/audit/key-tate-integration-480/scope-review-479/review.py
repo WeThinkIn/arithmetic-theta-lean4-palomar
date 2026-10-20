@@ -1,0 +1,22 @@
+from pathlib import Path
+import datetime,hashlib,json
+p=Path(__file__).resolve().parent;w=p.parent.parent;s=w/'evidence/key-tate-package-478';sha=lambda f:hashlib.sha256(f.read_bytes()).hexdigest()
+r=json.loads((s/'receipt.json').read_text());assert all(sha(s/n)==h for n,h in r['bindings'].items());assert r['full_original_theorem_equality_audit_passed'] and r['all_holes_selected_exactly_once']
+review='''# Full original055 source/type scope review
+
+Root source/type review, not separate-model or official semantic acceptance. Original055 is recovered by compiled rfl theorem equality. It retains the original k : Type universe zero (the source does not quantify arbitrary u), characteristic zero, every positive N divisible by four, and every supplied full TateLevel. No specialization to N=4 or a particular marking occurs.
+
+TateTest is the original structure, copied independently into the Mathlib-only Challenge and imported from the implementation in Solution. Its fields retain the actual reduction of both quarter-level points, base/curve comparison, Cartesian square, zero section, multiplication equations for all test schemes and marked-point equations. No expansion is assumed in these fields.
+
+The independent ideal comparison is uniquely determined by the actual inclusion compatibility. The Hodge map is the canonical conormal derivative on that ideal comparison. A support theorem proves this specified map is an isomorphism; it does not permit choosing an unrelated isomorphism. Both the ideal and Hodge comparisons have compiled equality bridges to the original SchemeAlphaSection constructions.
+
+productAt performs the same two pullbacks on the actual product line. Each binary tensor comparison is uniquely fixed on all local pure tensors and has a compiled equality to the original pullback_sheafTensor_iso followed by sheafTensorCongr. The first transport uses the supplied cotangent comparison; the second uses the canonical Hodge comparison on the actual TateTest. The multiplier remains the actual twice-pulled sheaf, with the actual supplied frame.
+
+The conclusion concerns the same supplied key kappa and original evaluation square. It asserts that productFrame is a frame and gives full Laurent equality, with a power-series unit times order zero or N/4, and exactly theta(t^(N/2)) squared for every canonical marking. No finite prefix replacement, changed scalar factor, or arbitrary compactification extension is claimed. Original assumptions IsMultiplier, Descends, rigidification, IsKey and CotangentCompatible are retained through explicit equality/iff bridges; no desired conclusion is an additional hypothesis.
+
+The final Challenge has982lines/86950bytes and34 selected support/main proposition targets. It imports no project modules and fits hard1000line/100KiB limits, though above the preferred smaller review surface. Constructor-aware pruning removed only unrelated naturality data and conclusions; the remaining lexical tokens were preserved through line joining. A failed formatting attempt merged letI layout and was rejected by Lean; the corrected final04 compile and semantic-body audit validate the retained elaboration. Every literal hole is selected exactly once. All target universes/types, all retained semantic types/available bodies and full Solution standard-axiom closures are checked. Actual root build is still needed before coverage credit. Official preflight and semantic review are pending.
+'''
+(p/'Review.md').write_text(review)
+files=[s/n for n in ['Challenge.lean','Solution.lean','receipt.json','Scope.json','SourceMap.json','comparator.json','Targets.json','TargetTypeAudit-check-01.log','DefinitionCompatibility-check-01.log','OriginalEndpointAudit-check-01.log']]
+out={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'review_kind':'root source/type review, not separate-model or official review','local_scope_review_passed':True,'new_original_endpoint_ids':['accepted-055'],'mapped_original_statement_exact':True,'original_universe_retained':True,'no_added_main_assumptions':True,'all_34_holes_targeted_once':True,'all_target_types_and_universes_compared':True,'original_statement_recovery_compiled':True,'official_pass':False,'bindings':{str(f):sha(f) for f in files},'review_sha256':sha(p/'Review.md')}
+(p/'receipt.json').write_text(json.dumps(out,indent=2)+'\n');print('Frozen complete055 source/type scope review; root build still required.')

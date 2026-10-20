@@ -1,0 +1,943 @@
+DECL ArithmeticThetaKeyTateR0220.TateTest.mul_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.map AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurry'_curry' AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible.exists_trivialization AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.curry'._proof_4 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL _private.Challenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_1 AXIOMS [propext]
+DECL ArithmeticThetaPalomarDifferential365.idealModule._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.elliptic AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKey466.pushforwardLine AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.curry'._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.gradedRingOfImages AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.one AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_18 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.span_polynomial_isHomogeneousCR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.restrict._proof_5 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.coordinatePoint AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarAlphaDescent459.tensorComparison._proof_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.curry'._proof_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmodule AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_17 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_5 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.connected AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarPullback437.pullbackEqIso AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.y AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.Compatible._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.curry'._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelStrCR.eq_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.multiple._sunfold AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.idealModule._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.inv AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.ring AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.instMonoidalClosed AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.mul_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.preDecompose_of_mem AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarAffineHodge478.idealComparison AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.PiFamily AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurryApp._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.differentialSection AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_7 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.curryFamily._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGlobalFourTorsionR0190.quarterPoint AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.noConfusionType AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.uncurryApp._proof_4 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGlobalFourTorsionR0190.Labels AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._proof_6 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.elliptic AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomFunctor._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreComparisonR0177.SplitCubic AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kw_mk_X1_mem_one_CR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.tensorSections AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.mul_natural AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.presheaf_obj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_19 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.p AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.PMod AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_5 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mul_one AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.rational AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomFunctor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_11 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL _private.Challenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_2 AXIOMS [propext]
+DECL WeierstrassProjModel.RelativeGroupLaw.inv AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.avoids AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.IsNatural AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomMap AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.IdealSheafData.invModuleSection AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.x_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.gradedRingOfImages._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBoundary445.hodgeGenerator AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.differentialMap AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.res AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._proof_3 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.tensorIsoSheafify AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelHomogeneousIdealCR._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.pullSection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.chartScalar AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarIdentity357.Compatible._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_19 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.IsOriginLaw AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYEvalRingHom_comp_algebraMap AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_22 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.decompositionOfImages._proof_2 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKey466.IsRigidification AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.IsMultiplier AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.characteristic AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreComparisonR0177.ChartRing AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.partialX AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.preDecompose AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.x_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurry' AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.tensorSectionsHom AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKeyTate478.productFrame AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_7 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.kaehlerPresheaf AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.naturalFamilies AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._aux_10 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.sectionsAlgebra AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zOpen AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaRelativeFourCharacterR0211.RelativeGeometricPhase.numerator AXIOMS [propext]
+DECL WeierstrassProjModel.kwYChartEval._proof_1 AXIOMS [propext]
+DECL WeierstrassProjModel.RelativeGroupLaw.mul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYChartEval._proof_4 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.pieceHom._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotDecompose._proof_1 AXIOMS [propext, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.yOverZ._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap AXIOMS [propext, Classical.choice, Quot.sound]
+DECL _private.Challenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_3 AXIOMS [propext, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.multiple.match_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_20 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.ReducesFour AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarSchemeAlpha437.affineHodgeMap._proof_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarBinaryTensor458.pullSection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_9 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateCurve AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.reduces AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarAffineHodge478.hodgeIsIso AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKey466.originGenerator AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.level AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.congr_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSheafTensor.sheafTensor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPowerSection._f AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra._proof_1 AXIOMS [propext, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarAffineHodge478.hodgeIso._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.neg_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreComparisonR0177.completedCubic AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyCounitIso AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_20 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.instFaithfulRingSheafPModToPMod AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.killed_x AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFourTorsion.reduceTwo AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.mk.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.coord_mem AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarSchemeAlpha437.affineAlpha AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.relativeD AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mul_assoc AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYEvalRingHom AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPower._f AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.curry'_app_val AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.equation AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Base AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarAffineHodge478.idealIso AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmodule._proof_2 AXIOMS [propext, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.mk.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.mem_quotGradingSubmodule_iff AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_21 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.cartesian AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.triangle AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.kaehler._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKey466.thetaIdeal AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.Compatible AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_22 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSheafTensor.tensorPresheaf AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarAlphaDescent459.tensorComparison AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.dimension AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_15 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.kaehler._proof_4 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelStrCR._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.comparison AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.marked AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.y AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.tateX AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.postcomp._proof_4 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.postcomp._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._aux_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.one_mul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelStrCR._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.NormalizedFrame._proof_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.AllDerivationsCompatible AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaUniversalEvaluationR0213.evenPoint AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalClosed AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPower.match_1 AXIOMS []
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_3 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.commRing AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.schemeHomOverComp AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFourTorsion.PreservesEven AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zLeg_open AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.affine AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zLeg AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_15 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.tensorIhomAdj._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.curve AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_24 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKeyTate478.productAt._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotDecompose_mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.testPull AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarIdentity357.CotangentCompatible AXIOMS [propext, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.schemeHomOverComp AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.zero_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_13 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instSMulCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_9 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.tateY AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYEvalRingHom_mk_X1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_20 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_26 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel._sizeOf_inst AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.tensorIhomAdj._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKeyTate478.phaseFreeKeyTateNormalization AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarBinaryTensor458.canonicalBinaryTensor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKeyTate478.productAt._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_25 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_21 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.monomial AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.comparison AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseSwitchR0218.reversal AXIOMS [propext, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.cartesian AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.hodgeGenerator AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelCR._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_5 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.mk.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyAdj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_21 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyCounitIso._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_8 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelStrCR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYEvalRingHom._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.Multiplicative AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_9 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.relativeD._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYEvalRingHom._proof_4 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarAffineHodge478.idealIso._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.zChartι AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.canonicalGlobalSectionsEquiv AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBoundary445.Normalized._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGlobalFourTorsionR0190.twoLabel AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_23 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKey466.evaluation AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFourTorsion.characterExponent AXIOMS [propext, Quot.sound]
+DECL PresheafOfModules.InternalHom.map_id_apply AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBoundary445.Normalized AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPullback.pullbackGlobalSection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarIdentity357.cotangentComparison._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarAlphaDescent459.Descends AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarIdentity357.cotangentComparison AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.zChartι._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.y_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKey466.evaluation._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarAlphaDescent459.Descends._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.MarkedCartesian AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.mk.sizeOf_spec AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.sheafifyFunctor._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.law AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL NeronModelInfra.SchemeHomOver AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._aux_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.curryFamily AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.ProjModelRingCR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarIdentity357.pullbackEqIso AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_13 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ProjWeierstrassCubicPrime.isHomogeneous_polynomial AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurryApp AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_24 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.base AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_16 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.canonicalDifferentialMap AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.kwYChartEval._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPower._sunfold AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedMonoid AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.curry'_uncurry' AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._aux_12 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarPullback437.pullback_unit_iso AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_11 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_18 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYChartEval._proof_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.partialY AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarPullback437.squarePullbackIso AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.commutes AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKeyTate478.Expansion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSheafTensor.tensorSection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.scalar AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomMap._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeFourCharacterR0211.RelativeGeometricPhase.denominator AXIOMS [propext]
+DECL SheafOfModules.monoidalCategory._proof_18 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBoundary445.hodgeGenerator._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeFourCharacterR0211.Coordinates AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarConormal436.conormalMap AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.IsFrame AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPowerSection._sunfold AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.naturalFamilies_ext_iff AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.presheaf._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelGradingCR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarIdentity357.idealInclusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwZeroSect._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.killed_x AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.constToPresheaf._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.differentialMap._proof_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zSection AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.presheafW_isMonoidal AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.kaehler AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeFourCharacterR0211.RelativeGeometricPhase.tangentNumerator AXIOMS []
+DECL PresheafOfModules.InternalHom.postcomp AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreComparisonR0177.chartInclusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomMap._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurryApp_tmul AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_17 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.NormalizedFrame AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.xOverZ._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.constToPresheaf._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_23 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYChartEval._proof_5 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.presheaf._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwZeroSect._proof_1 AXIOMS [propext]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_6 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.IsFrame AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.nsmul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomFunctor._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKeyTate478.tateMultiplierFrame AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.x AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPowerSection._unsafe_rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.zero AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._proof_5 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaGlobalFourTorsionR0190.thetaAt AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.mk.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.ringSheaf AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.IdealSheafData.module._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.coord._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyUnitIso AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.curryFamily._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGlobalFourTorsionR0190.RootData AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.globalSectionsEquiv._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.mul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.toPMod AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_6 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomObj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBinaryTensor458.Compatible AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.multiple._unsafe_rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomObj._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurryApp._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomObj_map_val AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_19 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.curryFamily._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKey466.evaluationSection AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.coeAddMonoidHom_preDecompose AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.uncurryApp._proof_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.globalSectionsEquiv AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.idealModule AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBoundary445.Normalized._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.normalizedFrameExists AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.Curve AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.hodgeGeneratorFrame AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarSchemeAlpha437.RealizesAlpha AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKey466.thetaLine AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.curryFamily_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_18 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.CurveFrame AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarAlphaDescent459.productLine AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKey466.evaluationSquare AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.noConfusionType AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarConormal436.conormalMap._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBoundary445.Normalized._proof_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.curry' AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.multiple AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.MillerPhase AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.normalizedFrameExistsUnique AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.mul_assoc AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurry'_app_tmul AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelCR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.preDecompose_apply_apply AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.originLaw AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelCR._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.relativeD._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarAffineAlpha437.RealizesAlpha AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarIdentity357.cotangent AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_15 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.idealInclusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._proof_8 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest._sizeOf_inst AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.mk._flat_ctor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.mk._flat_ctor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.idealInclusion._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_15 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL HomogeneousIdealQuotientGrading.gradedMonoidOfImages AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelHomogeneousIdealCR_toIdeal AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.Cartesian AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.restrict._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.Hodge AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.remark AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.mul_one AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFourTorsion.PreservesEven._proof_1 AXIOMS [propext]
+DECL WeierstrassProjModel.schemeHomOverComp._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.sub_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.smul_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKeyTate478.productAt AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.killed_y AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_4 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mul_natural AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.mk_mem_quotGradingSubmodule AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.zero_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSheafTensor.instMonoidalCategoryPresheafOfModules_actualSheafTensor AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.curve AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.restrict._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instSMulCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_17 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKey466.thetaMap AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.tensorIhomAdj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.noConfusionType AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKeyTate478.tateProduct AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zLeg._proof_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_7 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.noConfusionType AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.chartRingEquiv AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.mk.sizeOf_spec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.mk.sizeOf_spec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.restrict AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel._sizeOf_inst AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.projectiveCurve AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarConormal436.canonicalConormalMap AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_20 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.originLaw AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._proof_7 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.killed AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.yTerm AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_9 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest._sizeOf_inst AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarPullback437.pullback_unit_iso._proof_4 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.naturalFamilies_ext AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.mul_comm AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_25 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarPullback437.pullback_unit_iso._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_26 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarKey466.IsKey AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.base AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelStrCR._proof_4 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.proper AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.sheafify AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.postcomp._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.tensorIsoSheafify AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.kaehler._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.decompositionOfImages AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebraOfHomogeneous AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.marking AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._aux_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_5 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelStrCR._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.NormalizedFrame._proof_2 AXIOMS [propext]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.postcomp._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.map AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.zero_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.kaehler._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.family AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarPullback437.pullbackEqIso._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwZeroSect AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.ChartRing AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.xOverZ AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomObj_obj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.ZChartRing AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreComparisonR0177.HasCoordinates AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.ChartRing AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra._proof_2 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.constToPresheaf AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_14 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_16 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.structureMap AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.dual AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.xTerm AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_22 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.presheaf AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmodule._proof_1 AXIOMS []
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra._proof_3 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarIdentity357.idealModule AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPowerSection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.mk._flat_ctor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.tensorObj_map_tmul' AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.marking AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.IdealSheafData.invModule AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.preDecompose_eq_zero_of_mem AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSheafTensor.tensorUnitMap AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.marking AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.Law AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPower AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.law AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.pullbackUnitIso AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.naturalFamilies._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.Puncture AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_24 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarSchemeAlpha437.alphaExists AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.preDecompose._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurry'._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYChartEval AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.x AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.instFullRingSheafPModToPMod AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFourTorsion.Mat4 AXIOMS []
+DECL ArithmeticThetaKeyTateR0220.TateTest.cartesian AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_13 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.familyMap AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL HomogeneousIdealQuotientGrading.pieceHom AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.comparison AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarSchemeAlpha437.AffineIdealCompatible AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.naturalFamilies._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.avoids AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.root AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.schemeHomOverComp_coe AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.unitToPushforwardUnit AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBoundary445.CurveFrame AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.inv_mul_cancel AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.presheafW AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.add_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.theta AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.mk.sizeOf_spec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.naturalFamilies._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.affineScalar AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurry'._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.CanonicalMarking AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKey466.inverseSquare AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.origin AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.sheafify._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.instIsLocalizationPModRingSheafSheafifyFunctorPresheafW AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.law AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalClosed._aux_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.point AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.one_mul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.Family.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebraOfHomogeneous._proof_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.opensMapFinal AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_21 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_5 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_7 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL HomogeneousIdealQuotientGrading.decompositionOfImages._proof_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.base AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarAffineHodge478.hodgeIso AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.avoids AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarKeyTate478.tateMultiplier AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalClosed AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.pieceHom_coe AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPower._unsafe_rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarIdentity357.Compatible AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCubicModelR0144.rootSeries AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_23 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarIdentity357.Compatible._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.TestMap._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelHomogeneousIdealCR._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarSchemeAlpha437.Cotangent AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.preDecompose_apply AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_17 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelHomogeneousIdealCR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.coeAddMonoidHom_map_pieceHom AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarGlobalFrame401.chartInclusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarConormal436.Normalized AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.chartInclusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._proof_4 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.one AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.Base AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLocalWeierstrassR0203.SchemeLaw.inv_mul_cancel AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGlobalFourTorsionR0190.completedY AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPowerSection.match_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.postcomp._proof_5 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_7 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.multiple._f AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarPullback437.pullback_unit_iso._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_22 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest._sizeOf_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarPullback437.pullback_unit_iso._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.Frames AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYChartEval_section AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeLevelR0204.FullLevel.killed_y AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.IdealSheafData.module AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.coord AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.AffineTest.mk._flat_ctor AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_3 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zLeg._proof_2 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.restrict._proof_4 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.IdealSheafData.moduleι AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDifferential365.kaehlerToSections AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_11 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_2 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zLeg._proof_3 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.instSMulCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_2 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarSchemeAlpha437.affineHodgeMap AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSchemeFourCharacterR0215.Changes AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.Hodge AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.Base AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPhaseFreeKeyR0219.MarkedTest AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_19 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.y_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.restrict._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaKeyTateR0220.TateTest.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotDecompose AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.yOverZ AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+AUDIT checked=738 propagated_holes=360 project_imports=0

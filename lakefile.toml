@@ -1396,3 +1396,11 @@ roots = ["EvenPointEvaluationChallenge"]
 [[lean_lib]]
 name = "EvenPointEvaluationSolution"
 roots = ["EvenPointEvaluationSolution"]
+
+[[lean_lib]]
+name = "KeyTateNormalizationChallenge"
+roots = ["KeyTateNormalizationChallenge"]
+
+[[lean_lib]]
+name = "KeyTateNormalizationSolution"
+roots = ["KeyTateNormalizationSolution"]

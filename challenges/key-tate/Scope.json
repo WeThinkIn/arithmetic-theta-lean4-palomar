@@ -1,0 +1,22 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-055"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-055"
+  ],
+  "universe": "Original k : Type, universe zero; every positive N divisible by four",
+  "target_count": 34,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Full original TateLevel and full N marking with explicit reduction fixing both quarter-level points",
+    "Every actual TateTest with Cartesian, zero, multiplication and marking equations",
+    "Actual conormal-to-Hodge derivative on the canonical inclusion-compatible identity ideal comparison",
+    "Both actual tensor pullbacks and the actual multiplier sheaf/frame",
+    "The same supplied key and identity evaluation square",
+    "Frame conclusion and full Laurent equality with integral order zero or N/4",
+    "Every canonical marking has precisely the specified theta(t^(N/2)) squared coefficient"
+  ]
+}

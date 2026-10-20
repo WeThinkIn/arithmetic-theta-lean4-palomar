@@ -1,0 +1,52 @@
+version: v0.4
+project:
+  name: Complete phase-free key Tate normalization
+  description: 'Full original055 for every characteristic-zero field k : Type and
+    positive N divisible by four: actual full Tate marking and level-four reduction,
+    every actual Tate test, same supplied key/evaluation square, both tensor pullbacks,
+    canonical conormal-to-Hodge comparison, actual multiplier sheaf/frame and full
+    Laurent normalization. Retains order zero-or-N/4 and exact canonical theta-square
+    coefficient.34 support/main targets; no whole-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Full original055 for every characteristic-zero field k : Type and positive
+    N divisible by four: actual full Tate marking and level-four reduction, every
+    actual Tate test, same supplied key/evaluation square, both tensor pullbacks,
+    canonical conormal-to-Hodge comparison, actual multiplier sheaf/frame and full
+    Laurent normalization. Retains order zero-or-N/4 and exact canonical theta-square
+    coefficient.34 support/main targets; no whole-paper completion claimed.'
+fidelity:
+  divergences: Full original055 type recovered by compiled rfl theorem equality. Original
+    TateTest retained; canonical inclusion-compatible ideal, conormal-to-Hodge and
+    both tensor comparisons proved equal to original constructions. No new main assumption
+    or Laurent truncation.34 target types/universes and all retained semantic definitions
+    checked. Challenge982lines/86950bytes.

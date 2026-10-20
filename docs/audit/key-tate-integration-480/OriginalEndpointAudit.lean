@@ -1,0 +1,8 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : @ArithmeticThetaKeyTateR0220.phase_free_key_tate_normalization = @ArithmeticThetaPalomarKeyTate478.recover_original_055 := rfl
+#print axioms ArithmeticThetaPalomarKeyTate478.recover_original_055
+#print axioms ArithmeticThetaPalomarAffineHodge478.hodgeIso_eq_original
+#print axioms ArithmeticThetaPalomarKeyTate478.productAt_eq_original

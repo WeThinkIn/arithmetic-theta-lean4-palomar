@@ -1,0 +1,19 @@
+{
+  "accepted_for_local_integration": true,
+  "new_ids": [
+    "accepted-055"
+  ],
+  "basis": "Complete frozen478 source/type/axiom checks and479 root scope review; no official acceptance",
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean": "6402eea3bb047e1518f908f1c9829ce906b1be40468a8e496ee354197a0d5390",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean": "60921de37eedfe785f610242b920f5667875bedce48518e424eea2c5060e2b75",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Scope.json": "96bbb6310ba52e4302b99205192b636c82c6cfe4e97157d96d283e13167388a1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/SourceMap.json": "1b7cd42d6419efec608f6a87b2d2d15f9e84042e7fdf3423e4dda8dcd8f9a10d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/receipt.json": "14ff8fe5884a826910e690a024dd1c98520a9a3d8414909c7fd89922dc9354a4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/README.md": "cc50c346f4085da95fe1952c6a1c7607221ea84ed043c58f2496b93aa21b3bf5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/comparator.json": "867cffd2f987bd8a3ffd3e8aea34931a047b64dc65355193c621ba92413c333d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Targets.json": "ec766519a15da527c5b6818628263b1e60f1b4e9550928e5b7d94579c4c13b82",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-scope-review-479/Review.md": "4c5d35d3c447e1b3c3ac0e4aca5215db418f4c0b9ccb1944e5a291883df27e78",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-scope-review-479/receipt.json": "8453b8d488bbdd0f89f2ddd1cf43b1c768d25bfb56da418bd0f55d17466cc3ae"
+  }
+}

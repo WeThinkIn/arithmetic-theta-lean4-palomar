@@ -1,0 +1,9 @@
+# Complete phase-free key Tate normalization
+
+This interface covers full original055, for the original characteristic-zero field k : Type and every positive N divisible by four. It retains the supplied full Tate N marking, its level-four reduction fixing both quarter-level points, all Cartesian/zero/multiplication/marking equations of each actual Tate test, the same supplied key and its actual identity evaluation square, both tensor pullbacks, and the actual pulled multiplier sheaf and frame.
+
+The conormal-to-Hodge isomorphism is fixed by the unique inclusion-compatible identity-ideal comparison and the canonical conormal derivative. The tensor comparison is fixed on every local pure tensor. Both comparisons are proved equal to the original constructions; no arbitrary isomorphism or scalar substitute is introduced. The conclusion retains the frame assertion, full Laurent-series equality, integral order zero or N/4, and the exact canonical theta(t^(N/2)) squared coefficient for every canonical marking. This endpoint does not assert arbitrary compactification extension.
+
+Challenge imports Mathlib only. It has982lines/86950bytes and34 explicit support/main proposition targets, each selected once. Solution has632lines/68368bytes. Actual structure definitions are retained; support proofs are proved in Solution. The initial1216line surface was reduced by constructor-aware removal of unrelated naturality data/conclusions and token-preserving line joining. No definition body, main hypothesis or original conclusion was weakened. Original055 is recovered by compiled theorem equality. The scripts audit target universes/types, retained semantic definition bodies and standard axiom closures.
+
+These are local checks. Actual root integration and official full mechanical/semantic verification are separately tracked; no whole-paper acceptance is claimed.

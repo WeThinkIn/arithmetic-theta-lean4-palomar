@@ -1,0 +1,77 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:24:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:26:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:28:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:34:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:35:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:36:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:38:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:62:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:64:9: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:73:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:80:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:102:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:106:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:107:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:303:168: error: unexpected token 'end'; expected term
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:313:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:335:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:336:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:337:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:344:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:395:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:470:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:507:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:524:13: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:588:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:672:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:676:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:688:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:690:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:691:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:734:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:739:246: error: unexpected token 'instance'; expected term
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:740:244: error: unexpected token 'instance'; expected term
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:773:64: error: Type mismatch
+  kernel.ι (Hom.unitToPushforwardUnit I.subschemeι)
+has type
+  kernel (Hom.unitToPushforwardUnit I.subschemeι) ⟶ SheafOfModules.unit X.ringCatSheaf
+but is expected to have type
+  I.module ⟶ 𝟙_ X.Modules
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  getColimitCocone ↦ 2
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:782:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:809:95: error: Application type mismatch: The argument
+  (Scheme.Modules.pullbackUnitIso E.zero).inv
+has type
+  SheafOfModules.unit S.ringCatSheaf ⟶ (Scheme.Modules.pullback E.zero).obj (SheafOfModules.unit E.curve.ringCatSheaf)
+but is expected to have type
+  𝟙_ S.Modules ⟶ (Scheme.Modules.pullback E.zero).obj (𝟙_ E.curve.Modules)
+in the application
+  CategoryStruct.comp (Scheme.Modules.pullbackUnitIso E.zero).inv
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:906:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:909:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:978:750: error: Application type mismatch: The argument
+  e
+has type
+  (Scheme.Modules.pullback E.zero).obj (ArithmeticThetaPalomarKey466.thetaLine E P) ≅ SheafOfModules.unit S.ringCatSheaf
+but is expected to have type
+  (Scheme.Modules.pullback E.zero).obj (ArithmeticThetaPalomarKey466.thetaLine E P) ≅ 𝟙_ S.Modules
+in the application
+  ArithmeticThetaPalomarKey466.IsRigidification E P e
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:978:928: error: Application type mismatch: The argument
+  e
+has type
+  (Scheme.Modules.pullback E.zero).obj (ArithmeticThetaPalomarKey466.thetaLine E P) ≅ SheafOfModules.unit S.ringCatSheaf
+but is expected to have type
+  (Scheme.Modules.pullback E.zero).obj (ArithmeticThetaPalomarKey466.thetaLine E P) ≅ 𝟙_ S.Modules
+in the application
+  ArithmeticThetaPalomarKey466.IsKey E P L e
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Challenge.lean:978:1833: error: Application type mismatch: The argument
+  e
+has type
+  (Scheme.Modules.pullback E.zero).obj (ArithmeticThetaPalomarKey466.thetaLine E P) ≅ SheafOfModules.unit S.ringCatSheaf
+but is expected to have type
+  (Scheme.Modules.pullback E.zero).obj (ArithmeticThetaPalomarKey466.thetaLine E P) ≅ 𝟙_ S.Modules
+in the application
+  ArithmeticThetaPalomarKey466.evaluationSquare E P e

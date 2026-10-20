@@ -1,0 +1,3 @@
+'ArithmeticThetaPalomarKeyTate478.recover_original_055' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarAffineHodge478.hodgeIso_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarKeyTate478.productAt_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]

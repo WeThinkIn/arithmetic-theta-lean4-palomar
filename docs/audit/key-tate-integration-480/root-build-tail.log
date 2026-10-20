@@ -1,0 +1,80 @@
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: KeyTateNormalizationSolution.lean:503:153: This simp argument is unused:
+  productComparison_eq_original
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, alphaNatural_iff,
+    evaluationSquareCompatible_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: KeyTateNormalizationSolution.lean:505:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: KeyTateNormalizationSolution.lean:508:40: This simp argument is unused:
+  ArithmeticThetaPalomarAlphaDescent459.descends_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isKey_iff, alphaNatural_iff, evaluationSquareCompatible_iff, productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: KeyTateNormalizationSolution.lean:508:103: This simp argument is unused:
+  alphaNatural_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, evaluationSquareCompatible_iff,
+    productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: KeyTateNormalizationSolution.lean:508:121: This simp argument is unused:
+  evaluationSquareCompatible_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, alphaNatural_iff,
+    productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: KeyTateNormalizationSolution.lean:508:153: This simp argument is unused:
+  productComparison_eq_original
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, alphaNatural_iff,
+    evaluationSquareCompatible_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: KeyTateNormalizationSolution.lean:510:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: KeyTateNormalizationSolution.lean:513:40: This simp argument is unused:
+  ArithmeticThetaPalomarAlphaDescent459.descends_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isKey_iff, alphaNatural_iff, evaluationSquareCompatible_iff, productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: KeyTateNormalizationSolution.lean:513:185: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: KeyTateNormalizationSolution.lean:515:74: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: KeyTateNormalizationSolution.lean:518:40: This simp argument is unused:
+  ArithmeticThetaPalomarAlphaDescent459.descends_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isKey_iff, alphaNatural_iff, evaluationSquareCompatible_iff, productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: KeyTateNormalizationSolution.lean:518:185: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Build completed successfully (12198 jobs).

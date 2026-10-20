@@ -1,0 +1,202 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:60:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:252:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:258:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:266:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:269:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:274:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:274:574: warning: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:277:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:277:574: warning: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:383:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:388:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:500:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:503:40: warning: This simp argument is unused:
+  ArithmeticThetaPalomarAlphaDescent459.descends_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isKey_iff, alphaNatural_iff, evaluationSquareCompatible_iff, productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:503:103: warning: This simp argument is unused:
+  alphaNatural_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, evaluationSquareCompatible_iff,
+    productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:503:121: warning: This simp argument is unused:
+  evaluationSquareCompatible_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, alphaNatural_iff,
+    productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:503:153: warning: This simp argument is unused:
+  productComparison_eq_original
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, alphaNatural_iff,
+    evaluationSquareCompatible_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:505:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:508:40: warning: This simp argument is unused:
+  ArithmeticThetaPalomarAlphaDescent459.descends_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isKey_iff, alphaNatural_iff, evaluationSquareCompatible_iff, productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:508:103: warning: This simp argument is unused:
+  alphaNatural_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, evaluationSquareCompatible_iff,
+    productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:508:121: warning: This simp argument is unused:
+  evaluationSquareCompatible_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, alphaNatural_iff,
+    productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:508:153: warning: This simp argument is unused:
+  productComparison_eq_original
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, alphaNatural_iff,
+    evaluationSquareCompatible_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:510:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:513:40: warning: This simp argument is unused:
+  ArithmeticThetaPalomarAlphaDescent459.descends_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isKey_iff, alphaNatural_iff, evaluationSquareCompatible_iff, productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:513:185: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:515:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:518:40: warning: This simp argument is unused:
+  ArithmeticThetaPalomarAlphaDescent459.descends_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isKey_iff, alphaNatural_iff, evaluationSquareCompatible_iff, productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:518:185: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:658:221: error: Application type mismatch: The argument
+  B
+has type
+  TateTest k N T A.family A.marking
+but is expected to have type
+  ArithmeticThetaKeyTateR0220.TateTest k N T A.family A.marking
+in the application
+  ArithmeticThetaKeyTateR0220.productAt k N T E P L A B
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:666:242: error: Application type mismatch: The argument
+  B
+has type
+  TateTest k N T A.family A.marking
+but is expected to have type
+  ArithmeticThetaKeyTateR0220.TateTest k N T A.family A.marking
+in the application
+  ArithmeticThetaKeyTateR0220.phase_free_key_tate_normalization k N hN h4 T S E P L m hm β
+    ((ArithmeticThetaPalomarAlphaDescent459.descends_iff E P L m β).mp hβ) e he κ
+    ((ArithmeticThetaPalomarKey466.isKey_iff E P L e β κ).mp hκ) A B
+/home/Palomar/workspace/arithmetic-theta/evidence/key-tate-package-478/Solution.lean:672:245: error: Application type mismatch: The argument
+  B
+has type
+  ArithmeticThetaKeyTateR0220.TateTest k N T A.family A.marking
+but is expected to have type
+  TateTest k N T A.family A.marking
+in the application
+  phaseFreeKeyTateNormalization k N hN h4 T S E P L m hm β
+    ((ArithmeticThetaPalomarAlphaDescent459.descends_iff E P L m β).mpr hβ) e he κ
+    ((ArithmeticThetaPalomarKey466.isKey_iff E P L e β κ).mpr hκ) A B

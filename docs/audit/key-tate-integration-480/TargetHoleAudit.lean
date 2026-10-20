@@ -1,0 +1,11 @@
+module
+import all Challenge
+import Lean
+open Lean Elab Command
+run_cmd do
+  let targets : List Name := [``ArithmeticThetaPalomarGlobalFrame401.canonicalDifferentialMap, ``ArithmeticThetaPalomarGlobalFrame401.normalizedFrameExists, ``ArithmeticThetaPalomarGlobalFrame401.hodgeGeneratorFrame, ``ArithmeticThetaPalomarGlobalFrame401.normalizedFrameExistsUnique, ``ArithmeticThetaPalomarConormal436.canonicalConormalMap, ``ArithmeticThetaPalomarSchemeAlpha437.alphaExists, ``ArithmeticThetaPalomarBinaryTensor458.canonicalBinaryTensor, ``SheafOfModules.presheafW_isMonoidal, ``ArithmeticThetaPalomarDual465.canonicalGlobalSectionsEquiv, ``PresheafOfModules.uncurry'_curry', ``WeierstrassProjModel.span_polynomial_isHomogeneousCR, ``HomogeneousIdealQuotientGrading.preDecompose_of_mem, ``WeierstrassProjModel.kwYEvalRingHom_comp_algebraMap, ``HomogeneousIdealQuotientGrading.mem_quotGradingSubmodule_iff, ``HomogeneousIdealQuotientGrading.quotDecompose_mk, ``WeierstrassProjModel.kwYEvalRingHom_mk_X1, ``PresheafOfModules.InternalHom.map_id_apply, ``ProjWeierstrassCubicPrime.isHomogeneous_polynomial, ``HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedMonoid, ``PresheafOfModules.curry'_uncurry', ``PresheafOfModules.uncurryApp_tmul, ``PresheafOfModules.ihomObj_map_val, ``HomogeneousIdealQuotientGrading.coeAddMonoidHom_preDecompose, ``PresheafOfModules.uncurry'_app_tmul, ``HomogeneousIdealQuotientGrading.gradedMonoidOfImages, ``PresheafOfModules.InternalHom.naturalFamilies_ext, ``PresheafOfModules.tensorObj_map_tmul', ``HomogeneousIdealQuotientGrading.preDecompose_eq_zero_of_mem, ``HomogeneousIdealQuotientGrading.pieceHom_coe, ``HomogeneousIdealQuotientGrading.coeAddMonoidHom_map_pieceHom, ``WeierstrassProjModel.kwYChartEval_section, ``ArithmeticThetaPalomarAffineHodge478.idealComparison, ``ArithmeticThetaPalomarAffineHodge478.hodgeIsIso, ``ArithmeticThetaPalomarKeyTate478.phaseFreeKeyTateNormalization]
+  let mut rows : Array Json := #[]
+  for name in targets do
+    let some r ← findDeclarationRanges? name | throwError "Missing target range {name}"
+    rows := rows.push (Json.mkObj [("name",toJson name.toString),("start",toJson r.range.pos.line),("end",toJson r.range.endPos.line)])
+  logInfo (Json.compress (toJson rows))
