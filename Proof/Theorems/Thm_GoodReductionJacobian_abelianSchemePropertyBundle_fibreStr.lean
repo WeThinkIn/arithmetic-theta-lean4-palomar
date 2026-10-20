@@ -1,0 +1,18 @@
+module
+
+public import Mathlib
+public import Definitions.Def_JacJ1Iface
+public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawFibre
+public import Definitions.Def_AlgebraicGeometry_SchemeFibreEndo
+public import P2M.Util
+public import P2M.Sol.S_GoodReductionJacobian_abelianSchemePropertyBundle_fibreStr
+
+@[expose] public section
+
+open CategoryTheory CategoryTheory.Limits AlgebraicGeometry NeronModelInfra GoodReductionJacobian
+
+universe u
+theorem GoodReductionJacobian.abelianSchemePropertyBundle_fibreStr
+    {R : Type u} [CommRing R] {A : Scheme.{u}} {f : A ⟶ Spec (CommRingCat.of R)}
+    (hA : AbelianSchemePropertyBundle R f) (s : (Spec (CommRingCat.of R) : Scheme.{u})) :
+    AbelianSchemePropertyBundle (RelativeGroupLaw.baseResidueField s) (RelativeGroupLaw.fibreStr f s) := by p2m_exact_reverting @_root_.P2MW.S_GoodReductionJacobian_abelianSchemePropertyBundle_fibreStr.solution

@@ -1,0 +1,95 @@
+module
+
+public import ActualEarlierCertificate
+public import AdaptiveUniversalSolverR0230
+public import AlgebraicModelCubicR0144
+public import AlgebraicTateCoordinatesR0143
+public import AmbientPrescribedRootsR0228
+public import ArbitraryFormalCoverConstantR0210
+public import ArithmeticCommonUnaryFamilyR0238
+public import ArithmeticGeometricFamilyExistenceR0189
+public import CheckedBasisChangeRelationsR0230
+public import CommonHalfHodgeCoverR0185
+public import CompactAlphaCanonicalHalfLineR0192
+public import CompactFullLevelAlphaR0190
+public import CompactUnaryHodgeRealizationR0183
+public import ComponentDiscriminantDivisorR0184
+public import ComponentHodgePowerDegreeR0184
+public import ComputedFamilyFormalUnaryConsumerR0127
+public import ComputedOrthogonalization
+public import ComputedRationalLDLR0229
+public import ConservativeMatrixKernelR0189
+public import CoordinateExactPolesR0143
+public import CyclotomicExtendedModularityR0241
+public import CyclotomicMatrixModularityR0239
+public import Det80CoefficientMinor
+public import Det80CompleteClassification
+public import Det80LocalRealization
+public import Det80OrderClassification
+public import Det80Similarity
+public import Det80ThetaIndependence
+public import DiscriminantTateRootR0185
+public import DiscriminantTwistUnitR0185
+public import DistinctNormSharpArithmeticR0195
+public import FieldCompactDiscriminantR0236
+public import FieldCompactUnaryR0236
+public import FormalJacobiTripleProduct
+public import FourTorsionTateBehaviorR0190
+public import GeneralDPlusDualR0242
+public import GeneralDPlusEvenUnimodularR0242
+public import GeneralDPlusThetaRealizationR0242
+public import GeometricComponentCuspBoundR0184
+public import GeometricFamilyConservativeCutoffR0189
+public import GlobalArithmeticProjectiveRatiosR0266
+public import GlobalNormalizedDifferentialR0145
+public import HadamardJacobi
+public import IndividualCosetIntegralProductR0127
+public import IntegralGramOrthogonalization
+public import IsogenyAlphaAllCuspOrdersR0193
+public import IsogenyAlphaDesignatedExpansionR0193
+public import IsogenyCanonicalHalfLineR0193
+public import LDLThetaPrefixR0229
+public import PhaseFreeKeyNaturalityR0219
+public import PhaseFreeKeyR0219
+public import PhaseFreeKeyTateNormalizationR0220
+public import Rank16Nonisometry
+public import Rank16Theta
+public import RankZero
+public import RationalPreimageCosetsR0127
+public import RationalSchurCompletionR0229
+public import RecursiveEllipsoidEnumerationR0229
+public import RelativeAlphaNaturalityR0190
+public import RelativeFourTorsionRootR0190
+public import SchemeAlphaCharacterR0215
+public import SchemeDiscriminantExistenceR0244
+public import SchemeDiscriminantNaturalityR0244
+public import SchemeFiveKatoInitialCharacterizationR0253
+public import SchemeKatoFullTateExpansionR0252
+public import SchemeKatoIntrinsicCharacterizationR0254
+public import SchemeKatoUnitNaturalityR0250
+public import SchemeMillerPhaseR0215
+public import SchemePeriodOneDiscriminantR0247
+public import SharpGeometricCutoffR0195
+public import SharpMatrixGeometricFamilyR0195
+public import SharpMatrixKernelR0195
+public import ShiftedIntegerIntervalR0229
+public import SmoothPointSimultaneousRootsR0228
+public import SourceOrthogonalFactorizationR0127
+public import SplitCuspDegreeR0239
+public import SplitDiscriminantDivisorR0239
+public import SplitSquareCoverDegreeR0239
+public import TateBasicFourthIdentity
+public import UnaryParameterIdentificationR0127
+public import ProperCoherentFormalSections
+
+@[expose] public section
+
+/-! Joint import recovery for round 0267.
+
+All source endpoint modules in the frozen FullSourceImportsR0267 inventory
+are imported together with the recovered coherent formal-sections provider.
+The existing theorem declarations and proofs are reused without aliases or
+additional assumptions. Exact types and axiom closures are checked independently
+against the frozen worker contract in this common environment.
+This integration does not certify full coverage of the original source.
+-/

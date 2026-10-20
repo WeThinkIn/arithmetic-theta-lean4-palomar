@@ -1,0 +1,1193 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=28mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,url}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Z}{\mathbb Z}\newcommand{\Q}{\mathbb Q}
+\newcommand{\C}{\mathbb C}\newcommand{\OO}{\mathcal O}
+\DeclareMathOperator{\ord}{ord}\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\rank}{rank}\DeclareMathOperator{\divisor}{div}
+\DeclareMathOperator{\lcm}{lcm}
+\title{Arithmetic determination of relations among lattice theta series\\
+\large A formal Tate and finite-cover construction}
+\author{Exploratory Proof Agent: Codex mathematical construction}
+\date{22 September 2026}
+\begin{document}\maketitle
+\begin{abstract}
+We describe an effective arithmetic reduction of relations among a finite family
+of positive-definite integral lattice theta series to exact linear algebra.
+An integral orthogonal sublattice expresses each series as a finite sum of
+products of unary residue theta series. A formal product and norm calculation
+identifies a common power of every unary factor with a section obtained from
+Kato's algebraic theta unit and its initial term at the zero section. Normalization in a
+common Kummer extension then produces regular sections of one line bundle,
+and a divisor-degree argument supplies an explicit finite coefficient bound.
+No Poisson summation, complex theta transformation, analytic valence formula,
+or analytic Sturm bound enters the construction. We also prove exact stopping
+criteria that often avoid the very large general bound, and give independent
+examples with zero and nonzero theta kernels. An additional torsion-level
+normalization, using exact projective theta ratios and four-torsion
+coordinates, replaces the initial $K^s$ cover factor by a common
+$2^{r-1}$ cover and yields a much smaller explicit coefficient bound.
+
+The constructed sections are modular forms of weight $n/2$ in the
+standard arithmetic sense on a common finite level of the algebraic
+metaplectic moduli stack. We construct that level as an actual finite
+etale moduli cover, identify the tautological half-Hodge line, prove
+regularity at every cusp, and compute all prescribed Tate expansions.
+Thus pivot columns give a modular-form basis of the theta image with
+exact rational coordinates. No complex uniformization or analytic
+comparison is used in these proofs. The finite level is not asserted
+to be congruence, and no prescribed classical theta multiplier is claimed.
+\end{abstract}
+
+\section{Input and the finite-coefficient theorem}
+Let $h\geq1$ and let $A_1,\ldots,A_h$ be symmetric positive-definite integral $n\times n$
+matrices with even diagonal and $n>0$, and put
+\[
+ Q_i(x)=\tfrac12x^tA_ix,\qquad
+ \theta_i(q)=\sum_{x\in\Z^n}q^{Q_i(x)}.
+\]
+Positive definiteness makes these series well-defined in $\Z[[q]]$.
+For $n=0$ all input theta series are $1$, so the kernel is simply
+$\{c:\sum_i c_i=0\}$ and the image basis is $\{1\}$.
+The requested order problem is a special case: take the supplied complete
+list of normalized representatives. The argument does not need an
+unjustified implication from local elementary divisors to global class
+completeness. Where representatives are supplied, their completeness remains
+the stated input hypothesis.
+
+For each $i$, the construction in Section~\ref{orthogonal} gives an integral
+matrix $B_i$ of nonzero determinant such that
+$B_i^tA_iB_i=\diag(m_{i1},\ldots,m_{in})$, with positive even $m_{ij}$.
+Let $\mathcal U$ be the finite collection of distinct unary pairs $(m,\nu)$
+occurring in the resulting coset decompositions, with $\nu$ taken modulo $m$.
+Set
+\begin{align*}
+ N&=\lcm_{i,j}m_{ij},& L&=24N^2,& K&=(1+12N)^2-1,\\
+ s&=|\mathcal U|,& I(L)&=L^3\prod_{p\mid L}(1-p^{-2}),&
+ B_*&=\frac{nK^s I(L)}{48}.
+\end{align*}
+The integer $B_*$ is deliberately conservative.
+Theorem~\ref{sharper-bound} proves the substantially smaller bound
+$B_\dagger=\lfloor n2^{r-1}I(L)/(48L)\rfloor$, where $r$ counts
+the distinct diagonal norms $m_{ij}$. The revised implementation uses
+this latter bound; the first construction is retained as an independent
+arithmetic route and for comparison.
+
+\begin{theorem}[Arithmetic finite-coefficient determination]\label{main}
+Using the algebraic Tate uniformization and algebraic theta-unit theorems
+specified in Section~\ref{tate}, the construction below gives
+\[
+ \ker_{\C}\bigl(c\longmapsto\textstyle\sum_i c_i\theta_i\bigr)
+ =\ker_{\C} M_{B_*},\qquad
+ M_B=\bigl([q^a]\theta_i\bigr)_{0\leq a\leq B,\,1\leq i\leq h}.
+\]
+In particular the kernel is the complex span of an effectively computable
+rational basis. Pivot columns give a basis of the formal theta image and
+exact rational coordinates for every theta series in that basis.
+The same series are the exact Tate expansions of standard arithmetic
+modular forms of weight $n/2$ on one common finite metaplectic level,
+regular at every cusp. Consequently the pivot theta series form a
+linearly independent basis of modular forms for the image. The actual
+level and its half-Hodge line are established in
+Corollary~\ref{arithmetic-modularity}.
+\end{theorem}
+
+We use the standard arithmetic definition of half-integral-weight
+modular forms. On a finite representable etale level of the algebraic
+metaplectic moduli problem, such a form is a section of a tensor power
+of its tautological half-Hodge line, regular also at the cusps of the
+compactification. The metaplectic object and its finite-level meaning
+are specified in \cite[Definition 3.1.1 and Remark 3.1.2]{candelori}.
+We give the test-object description and verify the finite-level map in
+Corollary~\ref{arithmetic-modularity}, so the word ``modular'' does not
+mean an arbitrary line bundle endowed with a formal expansion.
+This permits the usual noncongruence finite-level scope; it does not
+claim a specified Shimura congruence level or multiplier. All proofs
+below take place in arithmetic moduli and formal completions. The
+relation to analytic terminology is discussed separately in
+Section~\ref{scope} and is not used in the construction.
+
+\section{An orthogonal sublattice and unary factors}\label{orthogonal}
+\begin{lemma}\label{orthogonal-lemma}
+For an even integral positive-definite matrix $A$, there is an integral
+$B$ with nonzero determinant and $B^tAB=\diag(m_1,\ldots,m_n)$, where
+each $m_j$ is positive and even. For
+$H=B^{-1}\Z^n/\Z^n$, choose representatives $t$. Then
+$\nu_j=m_jt_j$ is integral, and
+\[
+ \theta_A(q)=\sum_{t\in H}\prod_{j=1}^n U_{m_j,\nu_j}(q),\qquad
+ U_{m,\nu}(q)=\sum_{r\equiv\nu\, (m)}q^{r^2/(2m)}.
+\]
+All terms of each product have integral total exponent.
+\end{lemma}
+\begin{proof}
+Rational Gram--Schmidt produces an orthogonal basis over $\Q$. Clearing
+denominators of its columns produces $B$. Its diagonal norms are even
+because its columns are integral vectors in the even lattice. The index of
+$B\Z^n$ in $\Z^n$ is $|\det B|$.
+
+If $x=Bt\in\Z^n$, then
+$\diag(m_j)t=B^tAx\in\Z^n$. Hence $m_jt_j\in\Z$.
+The coset of $x$ consists precisely of $B(t+k)$ for $k\in\Z^n$, and
+\[
+ Q(B(t+k))=\sum_j\frac{m_j}{2}(t_j+k_j)^2.
+\]
+Putting $r_j=m_j(t_j+k_j)$ gives the asserted product. Since $B(t+k)$
+is integral, its total exponent is integral. Each bounded exponent involves
+only finitely many vectors, so all regroupings are formal and legitimate.
+\end{proof}
+
+For example, for $A=\left(\begin{smallmatrix}2&1\\1&12\end{smallmatrix}\right)$,
+take $B=\left(\begin{smallmatrix}1&-1\\0&2\end{smallmatrix}\right)$.
+Then $B^tAB=\diag(2,46)$ and
+\[
+ \theta_{x^2+xy+6y^2}=U_{2,0}U_{46,0}+U_{2,1}U_{46,23}.
+\]
+This reduction works without a parity restriction on the rank.
+
+\section{Formal products and algebraic theta units}\label{tate}
+We use Kato's algebraic existence and norm characterization
+\cite[Proposition 1.3(1)]{kato}: for $c>1$ prime to $6$ there is a
+base-change compatible rational function ${}_c\vartheta_E$ with divisor
+$c^2[0]-[E[c]]$, invariant under the norm for multiplication by every
+$d$ prime to $c$. Its algebraic construction uses divisors and Picard
+functoriality; see also the modern statement in
+\cite[Theorem 4.1.1]{klz}. Kato's original complex proof of the product formula is
+\emph{not} used here.
+
+For the formal quotient we use the actual positive Tate datum
+$R=k[[Q]]$, with $k$ of characteristic zero, the torus $\mathbb G_m$,
+and the period lattice $Q^{\Z}$. Its polarization is the symmetric
+pairing $(Q^r,Q^s)\mapsto Q^{rs}$; for $r\ne0$, $Q^{r^2}$ lies in
+the ideal of definition. Thus the completeness, normality and positive
+polarization hypotheses of Mumford's construction
+\cite[Theorem 3.10, Corollary 4.9, Theorem 4.10]{mumford} are satisfied.
+We use the explicit annular model and proper algebraization of
+\cite[Corollary 2.2.4 and Section 2.5]{conrad}. Its generic fiber is a
+geometrically connected elliptic curve, with torsion and multiplication
+represented by $z^d=Q^i$ and $z\mapsto z^d$. No assertion about an
+unspecified period datum over an arbitrary discrete valuation ring is needed.
+
+\begin{lemma}[Constant comparison on a proper formal model]\label{constant}
+Let $R=k[[t]]$ have characteristic zero and let $\mathcal E/R$ be a
+proper semistable model with geometrically connected smooth generic
+fiber. Choose a finite affine formal covering
+$\widehat{\mathcal E}=\bigcup_\alpha\operatorname{Spf}(A_\alpha)$
+by noetherian normal domains $A_\alpha$ that are $t$-torsion-free.
+Suppose compatible elements
+$u_\alpha\in\operatorname{Frac}(A_\alpha[1/t])$ have no pole at any
+height-one prime of $A_\alpha[1/t]$. Then they are the restrictions
+of a constant in $k((t))$.
+\end{lemma}
+\begin{proof}
+The height-one intersection criterion for a noetherian normal domain
+implies $u_\alpha\in A_\alpha[1/t]$. Choose $b_\alpha\geq0$ with
+$t^{b_\alpha}u_\alpha\in A_\alpha$. The covering is finite, so a
+single $b=\max_\alpha b_\alpha$ works on all charts. Compatibility
+then gives a global regular function on $\widehat{\mathcal E}$.
+The theorem on formal functions identifies this with an element of
+$H^0(\mathcal E,\mathcal O_{\mathcal E})$: this module is finite over
+the complete ring $R$, hence is already complete. Its restriction to
+the proper geometrically connected smooth generic fiber is constant.
+Dividing by $t^b$ proves the assertion.
+\end{proof}
+
+
+Define
+\[
+ \gamma_Q(z)=\prod_{r\geq0}(1-Q^rz)\prod_{r\geq1}(1-Q^rz^{-1}),
+ \qquad \gamma_Q(Qz)=-z^{-1}\gamma_Q(z).
+\]
+For $K_c=c^2-1$ and $p_c=-c(c-1)/2$, put
+\[
+ f_c(z)=Q^{K_c/12}(-z)^{p_c}
+              \frac{\gamma_Q(z)^{c^2}}{\gamma_Q(z^c)}.
+\]
+
+We explain why this lemma applies to the comparison used below.
+For the fixed integer $c>1$, after a finite scalar extension containing
+$\mu_c$ and the ramified extension $Q=t^r$, $r=2c$, use the actual
+$r$-gon Tate model of \cite[Section 2.5]{conrad}. Its finitely many
+annular charts have rings
+\[
+ A_j=k[[t]]\langle x_j,y_j\rangle/(x_jy_j-t),\qquad 0\leq j<r.
+\]
+On the infinite chain before taking the period quotient, the
+multiplicative coordinate is $z=t^jx_j$, so
+$z^{-1}=t^{-j-1}y_j$. The quotient identifies the last overlap by
+$z\mapsto Qz$. These rings are normal; if necessary refine the cover
+by completions of algebraic affine charts of the same proper model.
+
+On the $j$th chart the two products in $\gamma_Q(z)$ are
+\[
+ \prod_{\ell\geq0}(1-t^{r\ell+j}x_j),\qquad
+ \prod_{\ell\geq1}(1-t^{r\ell-j-1}y_j).
+\]
+Every exponent is nonnegative. Apart from $1-x_j$ when $j=0$ and
+$1-y_j$ when $j=r-1$, all factors form a unit of $A_j$.
+For $\gamma_Q(z^c)$ the corresponding exponents are
+$r\ell+cj$ and $E=r\ell-c(j+1)$. Only finitely many $E$ are nonpositive.
+Since $c\mid r$, a negative $E$ satisfies $E\leq-c$, and
+\[
+ 1-t^Ey_j^c=-t^Ey_j^c(1-t^{-E-c}x_j^c).
+\]
+The monomial is a unit after inverting $t$; the last factor is a unit
+of $A_j$ unless $E=-c$, when it is $1-x_j^c$.
+The case $E=0$ gives $1-y_j^c$. All infinite remainders are units.
+Consequently $\gamma_Q(z^c)\in A_j[1/t]$, and $f_c$ lies in its
+fraction field. Its only horizontal divisor factors are the simple
+linear factors of $1-x_j^c$ or $1-y_j^c$ and the indicated factors
+of $\gamma_Q(z)$.
+
+Indeed the $c$-torsion representatives are
+$z=\zeta_c^b t^{ra/c}$, $0\leq a,b<c$. Since $c\mid r$, these extend
+to smooth sections of the $r$-gon; the factors just listed are their
+local equations. Hence the horizontal divisor of $f_c$ is exactly
+$c^2[0]-[E_Q[c]]$. Kato's algebraic function has the same divisor.
+On the same normal algebraic model its other divisor components are
+vertical. After passing to the compatible formal charts and inverting
+$t$, no vertical component remains; units remain units, and the split
+smooth torsion sections retain their displayed local equations.
+Thus the ratio of Kato's function and $f_c$ has order zero at every
+height-one prime of every $A_j[1/t]$.
+
+Both functions are invariant under $z\mapsto Qz$, so their local
+ratios agree under the actual quotient overlap maps. Lemma~\ref{constant}
+therefore makes their ratio a constant over the finite extended
+coefficient field. The norm computations for $d=2,3$ force this
+constant to satisfy $u^3=u^8=1$, hence $u=1$. The resulting identity
+holds already over the original coefficient field. The auxiliary
+extension $Q=t^{2c}$ is only used in this comparison proof and does
+not enlarge the later modular level or its degree bound.
+
+\begin{proposition}[A formal norm calculation]\label{norm}
+If $c>1$ and $(c,6)=1$, then $f_c$ is the full Tate expansion of
+${}_c\vartheta_{E_Q}$.
+\end{proposition}
+\begin{proof}
+The translation identity for $\gamma$ proves periodicity of $f_c$.
+Its divisor is $c^2[0]-[E[c]]$. Let $(d,c)=1$. The $d^2$ preimages of $z$
+are $z_{ij}=\zeta_d^jQ^{i/d}z^{1/d}$ for $0\leq i,j<d$.
+The finite identity $\prod_j(1-\zeta_d^jw)=1-w^d$ yields
+\[
+ \prod_{i,j}\gamma_Q(z_{ij})=\gamma_Q(z).
+\]
+Write $ci=dk_i+r_i$ with $0\leq r_i<d$, and set
+\begin{align*}
+ S&=\sum_i k_i=\frac{(c-1)(d-1)}2,\\
+ E&=\sum_i\left(r_i k_i+\frac d2 k_i(k_i-1)\right)
+ =\frac{(c^2-1)(d-1)(2d-1)}{12}
+       -\frac{d(c-1)(d-1)}4.
+\end{align*}
+The latter equality follows by expanding $r_i=ci-dk_i$ and using that
+the $r_i$ permute $0,\ldots,d-1$. Translation gives
+\[
+ \prod_{i,j}\gamma_Q(z_{ij}^{c})
+ =(-1)^{-S}z^{-cS}Q^{-E}\gamma_Q(z^c).
+\]
+Also $\prod_{i,j}(-z_{ij})=(-1)^{d^2}z^dQ^{d(d-1)/2}$.
+The norm ratio therefore has possible factors with exponents
+\[
+ (d^2-1)p_c+S,\quad (d-1)p_c+cS,\quad
+ (d^2-1)K_c/12+p_c d(d-1)/2+E.
+\]
+The last two are zero. The first is
+$(c-1)(d-1)(1-c(d+1))/2$, an even integer: check $d$ odd and even
+separately. Thus $\operatorname{Norm}_{[d]}f_c=f_c$.
+
+The ratio of Kato's function to $f_c$ has no divisor and is a constant
+$u$ by Lemma~\ref{constant}. Norm invariance gives $u^{d^2}=u$.
+Taking $d=2,3$ gives $u^3=u^8=1$, whence $u=1$.
+\end{proof}
+
+Let $B_2(T)=T^2-T+1/6$ and define the formal Siegel product
+\[
+ g_{a,b}(Q)=-Q^{B_2(a)/2}e^{\pi i b(a-1)}
+                         \gamma_Q(Q^a e^{2\pi i b}),\quad 0\leq a<1.
+\]
+The roots of unity in this notation are algebraic constants. Put
+$\eta(Q)=Q^{1/24}\prod_{r\geq1}(1-Q^r)$.
+The formal Jacobi triple product gives, for $-m/2\leq\nu<m/2$,
+\[
+ U_{m,\nu}(q)=-e^{-\pi i(a-1)/2}\eta(q^m)g_{a,1/2}(q^m),
+ \qquad a=\nu/m+1/2.
+\]
+The leading exponent is fixed by
+$1/24+B_2(a)/2=(a-1/2)^2/2$; there is no unspecified formal unit.
+For completeness, an arithmetic proof of the triple product is as follows.
+Write $(x;t)_r=\prod_{0\leq j<r}(1-xt^j)$. Euler coefficient recursions give
+\[
+ (-z;t)_\infty=\sum_{r\geq0}\frac{t^{r(r-1)/2}z^r}{(t;t)_r}.
+\]
+The product $F(z)=(-z;t)_\infty(-t/z;t)_\infty(t;t)_\infty$ satisfies
+$F(tz)=z^{-1}F(z)$. If $F=\sum a_rz^r$, then
+$a_r=a_0t^{r(r-1)/2}$. Its constant coefficient is
+$(t;t)_\infty\sum_{r\geq0}t^{r^2}/(t;t)_r^2=1$: the sum is the
+partition generating function, decomposed by the size of its Durfee square.
+This proves the product identity coefficientwise, with normalization $a_0=1$.
+Substitution $t=Q,z=Q^a$ gives the stated unary identity; bounded exponents
+still involve finitely many terms, including when $a=0$.
+
+Take $c=1+12N$ and $K=c^2-1$. Evaluating Proposition~\ref{norm} at
+$z=Q^ae^{2\pi ib}$, with $Na,Nb\in\Z$ and
+$(a,b)\notin\Z^2$, gives
+${}_c\vartheta(P_{a,b})=g_{a,b}^K$.
+Indeed the difference of phase exponents is
+\[
+ (c-1)(a-c/2)+(c-1)b[1-(c-1)a]
+ =12A-6Nc+12B-144AB\in2\Z,
+\]
+where $a=A/N,b=B/N$. Since $24N\mid K$, the remaining triple-product
+phase also vanishes. Consequently
+\begin{equation}\label{power}
+ U_{m,\nu}(q)^K=\mathcal D_2(q^m)^{K/48}
+       {}_c\vartheta_{E_{q^m}}(P_{\nu/m+1/2,\,1/2}).
+\end{equation}
+
+Here $\mathcal D_2(Q)=Q^2\prod_{r\geq1}(1-Q^r)^{48}$.
+The exponent $K/48$ is integral: $K=24N(1+6N)$ and $N$ is even,
+because it is the least common multiple of a nonempty family of positive
+even integers $m_{ij}$. The torsion points actually used above have
+$b=1/2$ and are therefore nonzero.
+Thus \eqref{power} is a purely formal product identity so far.
+
+\begin{lemma}[An algebraic discriminant square from a theta unit]\label{d2}
+On the moduli of elliptic curves in characteristic zero there is a
+canonical nowhere-vanishing section $D_2$ of $\omega^{24}$ with exact
+Tate expansion $\mathcal D_2(Q)\,(dz/z)^{24}$.
+\end{lemma}
+\begin{proof}
+For $c=5$, Kato's function has a zero of order $24$ along the identity
+section and no other zero or pole in a neighborhood of it. If $\mathcal I$
+is the ideal of the identity, then
+$\mathcal I^{24}/\mathcal I^{25}\simeq\omega^{24}$.
+Define $D_2=5\operatorname{in}_0({}_5\vartheta)$ under this canonical
+identification. The exact divisor makes this initial term everywhere
+nonzero, and base-change compatibility makes it canonical.
+
+Put $z=1+t$ and $P=\prod_{r\geq1}(1-Q^r)$. Then
+$\gamma_Q(1+t)=-tP^2+O(t^2)$ and
+$\gamma_Q((1+t)^5)=-5tP^2+O(t^2)$.
+Proposition~\ref{norm}, for which $K_5=24$ and $p_5=-10$, gives
+\[
+ {}_5\vartheta(1+t)=\tfrac15 Q^2P^{48}t^{24}+O(t^{25}).
+\]
+The class of $t$ is $dz/z$ at the identity. Multiplying the initial term
+by $5$ proves the full expansion, including its constant factor.
+\end{proof}
+
+\section{Algebraic sections and every cusp}
+Work over a number field containing the required roots of unity and take
+a geometric component $X$ of the full-level modular curve $X(L)$,
+$L=24N^2$, containing the designated Tate cusp. The ambient fine moduli
+scheme is smooth and projective in characteristic zero: see
+\cite[Theorems 4.1.1 and 4.2.1(2), Lemma 4.2.4]{conrad}.
+The selected geometric component and cusp descend to a finite number
+field extension. Its completed cusp rings have $q=t^L$
+\cite[Lemma 4.1.7 and (4.2.1)]{conrad}. The Hodge line on the
+compactification is the invariant cotangent line at the identity of the
+smooth locus of the universal generalized elliptic curve. Its cusp frame
+is $d\log z$.
+Its universal source elliptic curve has a designated cyclic
+isogeny $\phi_m:E\to E_m$ of degree $m$, with target $N$-torsion
+sections. At the designated cusp this is
+$E_q\to E_{q^m}$, $z\mapsto z^m$
+\cite[Example 2.5.1]{conrad}.
+The level suffices because $mN\mid L$. More explicitly, a target point
+$P=\zeta_N^B q^{mA/N}$, with integer coordinates $A,B$, has source lift
+$\widetilde P=\zeta_{mN}^B q^{A/N}$, an $mN$-torsion point.
+These integers are distinct from the rational characteristics $a,b$ used
+in the formal product identities.
+The chosen full-level structure supplies this lift and the kernel
+$\mu_m$ of the quotient isogeny; consequently the selected target
+$N$-torsion sections exist on this algebraic modular curve.
+
+Let $\omega$ be the Hodge line of the source. In \eqref{power}, replace
+the formal $\mathcal D_2$ by the algebraic $D_2$ of Lemma~\ref{d2},
+pull back the target section and multiply by $m^{-K/2}$. This normalization is
+essential: $\phi_m^*(dz'/z')=m\,dz/z$ at the designated cusp.
+It defines a section $F_{m,\nu}$ of $\omega^{K/2}$ whose full expansion
+in the source Tate differential is exactly $U_{m,\nu}^K$.
+
+For clarity, the calculation at each cusp is an independent base
+change of the same global algebraic theta unit. If $Q_x$ is the target
+Tate period at a cusp $x$, Proposition~\ref{norm} is applied there with
+its formal variable $Q$ replaced by $Q_x$. Base-change naturality of
+Kato's function and of the initial-term construction of $D_2$ puts both
+factors of the target section in this same completed field. No formula
+identifying the completed parameters at two different cusps is used.
+
+At another cusp the same nonzero torsion point has Tate coordinates
+$(a',b')$ with $0\leq a'<1$. If $a'=0$, then $b'\notin\Z$.
+Thus the leading coefficient of its Siegel product is nonzero, and
+the order of the target section is
+\[
+ K/24+K B_2(a')/2=K(a'-1/2)^2/2\geq0.
+\]
+To justify the local Hodge comparison, write the intersection of the
+cyclic kernel with the torus as $\mu_e$, $e\mid m$. Quotienting by
+$\mu_e$ gives $z\mapsto z^e$; the remaining component quotient enlarges
+the period lattice and is the identity on torus coordinates. These are
+actual formal Tate maps \cite[Section 2.5]{conrad}, after a finite
+parameter extension if necessary. Their differential factor is the
+nonzero constant $e$ in characteristic zero. Pullback multiplies valuations by positive
+ramification indices and does not add a pole from the Hodge comparison.
+Hence $F_{m,\nu}$ is regular at every cusp. It is nonzero and nowhere
+vanishing on the open modular curve: $D_2$ is a unit there, and the
+nonzero $N$-torsion point is not $c$-torsion.
+
+For the full level problem with a fixed Weil pairing, finite
+level-structure counting gives at most $I(L)/(2L)$ cusps, each of width
+$L$. Primitive pairs modulo $L$, up to simultaneous sign, give this
+count; equivalently divide the $I(L)$ symplectic markings by the cusp
+stabilizer of order $2L$. The cusps of the selected component form a
+subset of this finite set. Let $C$ denote their reduced divisor.
+Naturality of $D_2$ and its exact Tate product prove
+\[
+ \divisor(D_2)=2LC,\qquad
+ 24\deg\omega=2L\deg C\leq I(L).
+\]
+Only this upper bound is needed. We do not consume the proof of
+geometric connectedness of the entire fixed-pairing modular curve in
+\cite[Theorem 4.2.1(1)]{conrad}, which uses complex connectedness.
+
+\section{A common root line and an effective jet bound}
+Set $D=(L/12)C$ and $M=\omega\otimes\OO_X(-D)$. Since $24\mid L$,
+$D/2$ is an integral divisor. Write $1_D$ for the canonical rational
+section of $\OO_X(D)$, whose divisor is $D$. Then
+\[
+ d_M=D_2/1_D^{24}\in H^0(X,M^{24})
+\]
+is nowhere zero. The line-bundle root torsor
+\[
+ T=\{v\in M:v^{24}=d_M\}\longrightarrow X
+\]
+is finite etale of degree $24$: locally its equation is $z^{24}=a$
+with $a$ a unit, and its derivative $24z^{23}$ is invertible.
+On $T$, put $\varepsilon=v\,1_D$. It has divisor the pullback of $D$,
+so it supplies an isomorphism
+\[
+ H_T=\OO_T(p^*D/2),\qquad
+ H_T^2\simeq p^*\omega,\qquad 1_{H_T}^2\longmapsto\varepsilon.
+\]
+The equality of the two divisors makes this a regular isomorphism at
+every point, not just a rational comparison.
+
+Here the common Tate frame can be specified explicitly. Write
+$q=t^L$, $E(t)=\prod_{r\geq1}(1-t^{Lr})$ and $\delta=d\log z$.
+The regular frames $e_D=t^{-L/12}1_D$ and $e_M=\delta/e_D$ satisfy
+$d_M=E(t)^{48}e_M^{24}$. Choose the actual formal root
+$v=E(t)^2e_M$ and the geometric component $X_0$ containing this branch.
+The map $p_0:X_0\to X$ has degree at most $24$ and is unramified
+at the selected cusp. For $H=H_T|_{X_0}$ the frame
+\[
+ h_T=E(t)^{-1}t^{-L/24}1_H
+\]
+satisfies $h_T^2=\delta$. This construction avoids any parity
+assumption on the degree of an individual component's Hodge line,
+and uses no analytic connectedness theorem or eta transformation law.
+
+\begin{lemma}[Simultaneous global roots]\label{roots}
+Let $X$ be a smooth projective curve in characteristic zero, $H$ a line
+bundle and $F_1,\ldots,F_s$ nonzero sections of $H^K$.
+Specify roots of these sections in one completed algebraic closure at a
+point, using the same local frame. There exists a finite map $\pi:Y\to X$
+of smooth projective curves of degree at most $K^s$, on which these roots
+are regular sections of $\pi^*H$ with the specified expansions.
+\end{lemma}
+\begin{proof}
+Choose a rational section $h$ of $H$ and write $F_j=f_jh^K$.
+In the specified completed algebraic closure choose roots $r_j^K=f_j$
+and normalize $X$ in the field generated by all $r_j$. This is one field
+component, not an arbitrary collection of independently chosen components.
+We perform this construction over the algebraic closure of the constant
+field and keep the component containing the prescribed Tate embedding.
+Thus $Y$ is geometrically connected. Its degree is at most $K^s$; all
+finitely many chosen algebraic data can subsequently descend to a finite
+constant extension. The rational sections $s_j=r_j\pi^*h$
+satisfy $s_j^K=\pi^*F_j$. At every point $y$,
+$K\ord_y(s_j)=\ord_y(\pi^*F_j)\geq0$, proving regularity.
+The completed embedding gives the requested expansions.
+\end{proof}
+
+Apply Lemma~\ref{roots} over $X_0$ to the pulled-back sections
+$p_0^*F_j$ and the just constructed common frame $h_T$.
+Prescribe $r_j=U_j(h_T/h)$ simultaneously. All these roots belong to
+the same Tate completion: $2m\mid L$ implies $U_j(t^L)\in\overline\Q[[t]]$. Therefore $s_j=U_jh_T$ at this cusp.
+Every product of $n$ unary factors lies in the same line
+$\mathcal L=(\pi^*H)^n$. By Lemma~\ref{orthogonal-lemma}, the theta
+series are the expansions of genuine sections $\sigma_i$ of this line,
+in the common frame $h_T^n$.
+
+For the composite map $Y\to X_0\to X$ the degree is at most $24K^s$.
+Consequently
+\[
+ \deg\mathcal L\leq\frac n2\,24K^s\deg\omega
+       \leq\frac{nK^sI(L)}2.
+\]
+At the chosen cusp, $w=\ord_y(q)\geq L$. Since $L\geq24$ and
+$B_*=nK^sI(L)/48$, a linear combination vanishing through $q^{B_*}$
+has section order at least
+\[
+ w(B_*+1)\geq L(B_*+1)
+ >\frac{nK^sI(L)}2\geq\deg\mathcal L.
+\]
+A nonzero global section of a line bundle on a smooth proper curve has
+zero divisor of degree equal to the degree of that line. The section must
+therefore be zero. Expanding in the common frame proves that the full
+formal linear combination is zero. This proves Theorem~\ref{main}.
+
+Notice that the numerical bound needs only $n,N,s$ and the finite group
+order $I(L)$. The kernel algorithm need not compute the root torsor,
+factor a Kummer extension, find its optimal degree, or enumerate cusp
+inertia cycles in order to use this sufficient bound.
+
+\section{Exact algorithms and practical stopping certificates}
+Each coefficient up to a given $B$ is computable by exact ellipsoid
+enumeration. A rational $LDL^t$ decomposition supplies positive rational
+diagonal entries and permits recursive completion of squares. At each
+stage integer interval endpoints are obtained with integer square roots
+and exact rational inequalities. The search is finite, enumerates every
+vector with $Q(x)\leq B$, and counts both signs without approximation.
+Exact Gaussian elimination over $\Q$ then computes $\ker M_B$, pivot
+columns and the coordinates of all columns. Base extension to $\C$
+preserves the matrix rank and kernel dimension.
+
+\begin{lemma}[Earlier certificates]\label{early}
+For every $B\geq0$, $\ker\Theta\subseteq\ker M_B$.
+If $M_B$ has full column rank, the complete theta kernel is zero.
+More generally, if a space $W$ of rigorously established full-series
+relations has dimension $h-\rank M_B$, then
+$W=\ker\Theta=\ker M_B$.
+\end{lemma}
+\begin{proof}
+Truncation of a full relation proves the inclusion. In the second case
+$W\subseteq\ker\Theta\subseteq\ker M_B$ and the two outer spaces have
+the same dimension.
+\end{proof}
+
+In particular, a singleton theta family has complete kernel zero already
+at $B=0$, since its constant term is $1$. This assertion is independent of
+modularity. An integral basis-change certificate
+$P^tAP=A'$, $\det P=\pm1$, proves a full-series relation by a norm-preserving
+bijection; merely matching a finite prefix proves no such relation.
+
+The companion implementation \texttt{exact-engine/theta\_exact.py} returns
+full kernel and coordinate claims only when these stopping certificates
+justify them. Deficient truncations without sufficient full-series
+certificates remain explicitly unresolved. The companion \texttt{solve\_universal.py} derives the bound internally
+and computes prefixes at $0,1,2,4,\ldots$, capped at $B_\dagger$. It stops at
+an earlier certificate when available; otherwise it computes through
+$B_\dagger$ and applies Theorem~\ref{sharper-bound}. This is a terminating algorithm
+on every valid finite input and accepts no externally asserted bound.
+Its default command only inspects the bound; \texttt{--complete} executes
+the algorithm without an attempt budget. The symbolic bound and actual
+completed coefficient enumeration are recorded separately. The theorem
+proves termination, not practical tractability of every input.
+
+\section{Two arithmetic examples}
+\subsection{A complete order with three independent classes}
+In $(\Q^2,X^2+20Y^2)$, use bases
+\[
+ T_1=I,\qquad T_2=\begin{pmatrix}3&1\\0&1\end{pmatrix},\qquad
+ T_3=\diag(2,1/2).
+\]
+Their normalized forms are
+$x^2+20y^2$, $3x^2+2xy+7y^2$, and $4x^2+5y^2$.
+The unnormalized restriction for $T_2$ is \emph{three times} the second
+form; thus no false unscaled rational isometry is asserted.
+All normalized Gram matrices have Smith factors $(2,40)$.
+
+For a reduced form $ax^2+bxy+cy^2$ with Gram determinant $80$,
+$|b|\leq a\leq c$ implies $3a^2\leq80$, hence $a\leq5$.
+Enumerating these finitely many possibilities and imposing the Smith
+condition leaves $(1,0,20),(3,\pm2,7),(4,0,5)$. The two signs are
+integrally equivalent. The minima $1,3,4$ distinguish the three classes,
+and all three have been realized in the fixed rational space. Their
+coefficient rows at $0,1,3$ form
+\[
+ \begin{pmatrix}1&1&1\\2&0&0\\0&2&0\end{pmatrix},
+ \qquad\det=4.
+\]
+The full kernel is zero. The companion appendix proves the completeness,
+content normalization and rational-similarity assertions in detail.
+
+\subsection{A full nonzero relation between distinct classes}
+Let $D_n=\{x\in\Z^n:\sum x_i\equiv0\pmod2\}$ and
+$D_n^+=D_n\cup((1/2,\ldots,1/2)+D_n)$ for $8\mid n$.
+These are even unimodular lattices. Write
+\[
+ a=\sum_{r\in\Z}u^{4r^2},\quad
+ b=\sum_{r\in\Z}(-1)^ru^{4r^2},\quad
+ c=\sum_{r\in\Z}u^{(2r+1)^2}.
+\]
+The four-dimensional Hadamard matrix divided by $2$ bijects integral
+vectors of odd coordinate sum with one parity half of the half-integral
+vectors, preserving norm. Reflection in one coordinate exchanges the
+two half-integral parity halves. Consequently $a^4=b^4+c^4$ as a
+formal identity. Parity selection gives the norm series of $D_n^+$ as
+$(a^n+b^n+c^n)/2$.
+The polynomial identity
+\[
+ \left(\frac{X^2+Y^2+Z^2}{2}\right)^2
+       =\frac{X^4+Y^4+Z^4}{2}\quad(X=Y+Z)
+\]
+then proves $\theta_{D_8^+\perp D_8^+}=\theta_{D_{16}^+}$ coefficientwise.
+Substitution $q=u^8$ is injective, so this is the original integral
+theta identity, not a finite check.
+
+The root nonorthogonality graph of the orthogonal sum is disconnected,
+whereas that of $D_{16}^+$ is connected. The two lattices are not
+isometric. Since their determinants are both $1$, any lattice similarity
+would have positive scale $s$ satisfying $s^{16}=1$, hence would be an
+isometry. They are distinct rational-similarity classes in the same
+order. For these two supplied columns the full kernel is exactly
+$\C(1,-1)$. No unproved classification of the entire rank-sixteen order
+is required for this example.
+
+\section{Arithmetic normalization on torsion-level moduli}\label{refinement}
+The following refinements give full formal expansions on specified
+arithmetic level structures. In particular they remove a common-unit
+ambiguity in a projective theta comparison. The comparison of the resulting
+half-weight lines is kept separate from these identities.
+
+\subsection{A theta fourth power from two-torsion coordinates}
+Write $P(Q)=\prod_{r\geq1}(1-Q^r)$. In the standard Tate Weierstrass
+model with invariant differential $\delta=dz/z$, the $x$-coordinate is
+\[
+ X(z;Q)=\sum_{r\in\Z}\frac{Q^rz}{(1-Q^rz)^2}
+       -2\sum_{r\geq1}\frac{rQ^r}{1-Q^r}.
+\]
+For negative indices the summands are rewritten using
+$v/(1-v)^2=v^{-1}/(1-v^{-1})^2$; the resulting expressions are formal
+on each Tate annulus. To verify that these are actual algebraic coordinates,
+use the proper polygon model of \cite[Section 2.5]{conrad}, after a finite
+parameter extension. On its annular charts the displayed inversion rewrites
+all negative-index terms with nonnegative parameter order. Away from the
+identity all denominators are units; at the identity only the indicated
+double pole remains. Thus $X$ is a section of
+$\OO(2[0])$ on the formal model. If a further chart refinement introduces
+vertical denominators, a single parameter power clears them, since the
+cover is finite. Proper formal functions for this invertible sheaf
+algebraize that section, just as in Lemma~\ref{constant}.
+
+Periodicity follows by shifting the summation index, and
+$X(z^{-1})=X(z)$. The function $Y=\tfrac12z\,\partial X/\partial z$
+similarly algebraizes with a triple pole at the identity and is odd under
+inversion. The degree-two function $X$ gives the quotient by inversion,
+so $Y^2$ is a cubic in $X$. Its leading coefficient is one by the Laurent
+terms $X(1+s)=s^{-2}+O(s^{-1})$ and
+$Y(1+s)=-s^{-3}+O(s^{-2})$. Its three roots are the $X$-coordinates
+of the nonzero two-torsion points. This proves
+$Y^2=\prod_j(X-e_j)$ and $dX/(2Y)=dz/z$ on the actual algebraic
+Tate curve, rather than assuming that an arbitrary periodic formal
+expression is rational.
+
+\begin{lemma}[Exact basic theta normalization]\label{basic-fourth}
+For $\vartheta(q)=\sum_{r\in\Z}q^{r^2}$ one has the full formal identity
+\[
+ \vartheta(q)^4=4\bigl(X(q;q^2)-X(-1;q^2)\bigr).
+\]
+\end{lemma}
+\begin{proof}
+First the multiplicative addition formula is
+\begin{equation}\label{tate-difference}
+ X(z;Q)-X(w;Q)
+ =\frac{-wP(Q)^4\gamma_Q(z/w)\gamma_Q(zw)}
+        {\gamma_Q(z)^2\gamma_Q(w)^2}.
+\end{equation}
+For generic $w$, both sides are periodic in $z$, have zero divisor
+$[w]+[w^{-1}]$ and pole divisor $2[1]$. Their quotient is constant by
+Lemma~\ref{constant}, applied to a proper Tate model after a finite
+extension splitting the points. The local horizontal factors of each
+$\gamma$ are its indicated simple zeros; the remaining products are
+units, as in the proof of Proposition~\ref{norm}. The same comparison
+may be made with $w$ indeterminate and then specialized as a rational
+identity. At $z=1+s$, use
+$\gamma_Q(1+s)=-sP(Q)^2+O(s^2)$ and
+$\gamma_Q(w^{-1})=-w^{-1}\gamma_Q(w)$. The right side has leading term
+$s^{-2}$, equal to that of $X(1+s)-X(w)$, so the constant is one.
+Specialization to nonzero two-torsion is valid; the two simple zeros
+then coalesce to a double zero.
+
+Set $Q=q^2,z=q,w=-1$, and abbreviate
+\[
+ A=\prod_{r\geq1}(1-q^{2r-1}),\quad
+ B=\prod_{r\geq1}(1+q^{2r-1}),\quad
+ C=\prod_{r\geq1}(1+q^{2r}).
+\]
+Then $\gamma_{q^2}(q)=A^2$, $\gamma_{q^2}(-q)=B^2$ and
+$\gamma_{q^2}(-1)=2C^2$. The Euler identity
+\[
+ \prod_{r\geq1}(1-T^{2r-1})\prod_{r\geq1}(1+T^r)=1
+\]
+gives $ABC=1$. Thus \eqref{tate-difference} becomes
+\[
+ 4(X(q;q^2)-X(-1;q^2))
+   =P(q^2)^4 B^4/(A^4C^4)=P(q^2)^4B^8.
+\]
+The formal triple product already proved gives
+$\vartheta(q)=P(q^2)B^2$, proving the identity in all degrees.
+\end{proof}
+
+\begin{proposition}[A square root supplied by four-torsion]\label{level-four-root}
+On a characteristic-zero elliptic curve with labelled nonzero two-torsion
+$P_j=(e_j,0)$, write
+\[
+ Y^2=(X-e_1)(X-e_2)(X-e_3),\qquad\delta=dX/(2Y).
+\]
+Choose a four-torsion section $R$ with $2R=P_2$. Then
+\[
+ g=\frac{(X(R)-e_1)^2-(e_1-e_2)(e_1-e_3)}{2Y(R)},
+ \qquad \alpha=2g\delta
+\]
+defines a weight-one section on this arithmetic level structure, and
+$\alpha^2=4(e_2-e_1)\delta^2$. At the Tate marking
+$Q=q^2$, $P_1:z=-1$, $P_2:z=q$, $R:z=q^{1/2}$, its expansion is
+\[
+ \alpha=\vartheta(q)^2\delta.
+\]
+\end{proposition}
+\begin{proof}
+Put $u=X-e_1$, $a=e_1-e_2$, $b=e_1-e_3$. The tangent-and-chord law
+on $Y^2=u^3+(a+b)u^2+ab u$ gives
+\[
+ X(2R)-e_1=\frac{(u(R)^2-ab)^2}{4Y(R)^2}.
+\]
+Since $2R=P_2$, this proves $g^2=e_2-e_1$. The denominator is nonzero
+because $R$ has exact order four. Under a Weierstrass coordinate change
+$g$ has weight one; hence $2g\delta$ is intrinsic. At the specified
+Tate marking, $X(R)=q^{1/2}+O(q)$,
+$Y(R)=\tfrac12q^{1/2}+O(q)$, $e_1=-1/4+O(q^2)$ and
+$e_2=2q+O(q^2)$, so $g=1/2+O(q^{1/2})$.
+Lemma~\ref{basic-fourth} identifies its square, and the leading sign
+selects exactly $\vartheta(q)^2$.
+\end{proof}
+
+At a full-level cusp, the nonzero two-torsion representatives are
+$-1,Q^{1/2},-Q^{1/2}$, in some order. The difference of the last two
+$X$-coordinates has $Q$-order $1/2$; either difference involving the
+first has order zero. Thus $\alpha$ extends at every cusp, with
+$Q$-order zero or $1/4$, and it is nowhere zero on the open curve.
+On a full level $M$ divisible by eight, $Q=t^M$, so
+$\divisor(\alpha)=2D$ for an integral effective cusp divisor $D$.
+Consequently $H=\OO(D)$, $s=1_D$ and $s^2\mapsto\alpha$ give a
+specific algebraic square root $H^2\simeq\omega$. Its prescribed Tate
+frame is $h=\vartheta(q)^{-1}s$, with $h^2=\delta$ and
+$s=\vartheta(q)h$. Here $q=Q^{1/2}$ on the specified cusp.
+
+For $\vartheta(q^d)$, pull this construction back along the cyclic
+isogeny $E_q\to E_{q^{2d}}$, $z\mapsto z^{2d}$. The target Hodge
+section must be multiplied by $(2d)^{-1}$, since the target differential
+pulls back to $2d\,d\log z$. A full source level divisible by $2dM$
+supplies the required target torsion lifts. This produces a normalized
+half-weight section for each $d$, but does not yet assert that all such
+half-weight lines have been identified on one torsion level.
+
+\subsection{The exact finite theta-multiplier character}
+The remaining fourth-root phase of Proposition~\ref{level-four-root}
+can also be computed arithmetically. This identifies the basic
+multiplier, without asserting compatibility for different isogenies.
+
+\begin{proposition}[A full-four-level character]\label{four-character}
+Let $b=(R_1,R_2)$ be an ordered full-four basis, $P_i=2R_i$,
+$P_3=P_1+P_2$, and $\zeta=e_4(R_1,R_2)$. For the right action on bases
+of the subgroup
+\[
+ G=\{g\in\mathrm{SL}_2(\Z/4):g\bmod2\text{ preserves }xy\},
+\]
+the section $\alpha$ of Proposition~\ref{level-four-root} satisfies
+$\alpha(bg)=\chi(g)\alpha(b)$, where
+\[
+ \chi(S)=\zeta^{-1},\qquad\chi(T^2)=1,\qquad
+ S=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad
+ T^2=\begin{pmatrix}1&2\\0&1\end{pmatrix}.
+\]
+This is exactly the genus-one even discriminant character
+$\lambda$ of \cite[Section 2.2]{candelori-key}, with these Weil-pairing
+and ordered-basis conventions.
+\end{proposition}
+\begin{proof}
+Translate $e_1$ to zero and write
+$Y^2=X(X+a)(X+b)$, $v=X(R_1)$, $u=X(R_2)$ and $y_i=Y(R_i)$.
+The duplication conditions imply
+\[
+ v^2=ab,\qquad u^2+2au+ab=0,\qquad
+ y_1^2=v(v+a)(v+b),\quad y_2^2=u(u+a)(u+b).
+\]
+Our root is $g_{12}=-a(u+b)/y_2$. Under $S$ the ordered basis becomes
+$(R_2,-R_1)$, and direct substitution into its defining formula gives
+\[
+ g_{12}(bS)=-a(v+b)/y_1,\qquad
+ \chi(S)=\frac{(v+b)y_2}{(u+b)y_1}.
+\]
+To fix this fourth-root phase, use normalized Miller functions.
+If $\ell_i$ is the tangent linear function at $R_i$, then
+\[
+ \divisor(\ell_i)=2[R_i]+[P_i]-3[0],\qquad
+ f_i=\ell_i^2/(X-e_i),\quad\divisor(f_i)=4[R_i]-4[0].
+\]
+At the identity, in parameter $-X/Y$, $f_i$ has leading coefficient
+one. Algebraic Weil reciprocity, applied after moving the supports
+and then taking the limit at the identity, gives
+$e_4(R_1,R_2)=f_1(R_2)/f_2(R_1)$; the general normalization sign is
+$(-1)^4=1$. The tangents pass through $P_i$, so
+\[
+ \ell_1(R_2)=y_2-y_1u/v,\qquad
+ \ell_2(R_1)=y_1-y_2(v+a)/(u+a).
+\]
+For $t=y_1/y_2$, substitution yields
+\[
+ e_4(R_1,R_2)
+ =\frac{(v+a)(u+a)^2(v-tu)^2}
+ {uv^2((u+a)t-v-a)^2}
+ =\frac{(u+b)t}{v+b}=\chi(S)^{-1}.
+\]
+For explicit verification, after clearing denominators the middle
+identity reads
+\[
+ (v+a)(v+b)(u+a)^2(v-tu)^2
+ -uv^2(u+b)t((u+a)t-v-a)^2=0.
+\]
+It follows by substituting $v^2=ab$, $u^2=-2au-ab$ and
+$t^2u(u+a)(u+b)=v(v+a)(v+b)$. The denominators do not vanish on
+the full-four-level moduli problem: the distinct halves have order
+four and the tangent divisors avoid the evaluation points.
+This proves $\chi(S)=\zeta^{-1}$.
+
+Adding $P_1$ sends $u$ to $ab/u$ and $y_2$ to $-ab y_2/u^2$;
+the formula $(u^2-ab)/(2y_2)$ is unchanged. Hence $\chi(T^2)=1$.
+The mod-two kernel in $G$ consists of $I+2A$ with
+$\operatorname{tr}(A)=0$ and has order eight. It is generated by
+$S^2=-I$, $T^2$ and $ST^2S^{-1}$; the remaining mod-two image is
+$\{I,S\}$. Thus $|G|=16$ and $S,T^2$ generate it. The computed
+ratios, independent of the curve, multiply under successive changes
+of marking, and therefore define the claimed full character.
+The defining values of $\lambda$ in the cited source are
+$\lambda(S)=-1$, $\lambda(T^2)=0$ in additive $\Z/4$ notation.
+They agree with the values above under $j\mapsto\zeta^j$.
+\end{proof}
+
+This also fixes the descent direction. The theta multiplier line
+$M_\Theta$ uses the torsor of isomorphisms from $E[4]$ to the standard
+module, whereas our ordered basis is an isomorphism in the opposite
+direction. Its level frame consequently satisfies
+$m_{bg}=\lambda(g)^{-1}m_b$. Therefore
+\[
+ \alpha(b)\otimes m_b\in\omega\otimes M_\Theta
+\]
+is independent of the full-four marking and descends to the moduli
+problem with the even characteristic $P_3$.
+For the rigidified line $\Theta=\OO(P_3)$, let $J=\pi_*\Theta$.
+Its identity-evaluation section $e\in J^{-1}$ is nowhere zero on
+the open moduli problem, because $P_3$ is disjoint from the identity.
+Thus the rule
+\[
+ J^{-2}\xrightarrow{\ \sim\ }\omega\otimes M_\Theta,
+ \qquad e^2\longmapsto\alpha(b)\otimes m_b
+\]
+is an explicit algebraic key-formula isomorphism for this genus-one
+even characteristic. Its full Tate normalization is fixed by
+Proposition~\ref{level-four-root}; no claim that all units on an open
+modular curve are constant has been used.
+
+\subsection{Projective theta values without an unknown formal unit}
+\begin{proposition}[Exact projective unary ratios]\label{projective-ratios}
+For every positive even $m$ there are algebraic rational functions
+$R_{m,\nu}$ on an arithmetic full $2m$-level curve, with a specified
+compatible theta marking, such that their complete Tate expansions are
+\[
+ R_{m,\nu}(q)=\frac{U_{m,\nu}(q)}{U_{m,0}(q)},
+ \qquad U_{m,0}(q)=\vartheta(q^{m/2}).
+\]
+\end{proposition}
+\begin{proof}
+Use the rigidified totally symmetric degree-$m$ line
+$\mathcal L_m=\OO_E(m[0])\otimes\omega_E^m$.
+The algebraic full-level domination of symmetric theta structures in
+\cite[Remark 2.6.5]{candelori} supplies the structure on full level $2m$.
+The algebraic Schr\"odinger comparison
+\cite[Theorems 4.1.1 and 4.1.3]{candelori} identifies
+$\pi_*\mathcal L_m$ with the standard $m$-dimensional representation
+tensored with one line. Evaluation at the identity therefore has
+components $s_{m,\nu}$ in a common line. Their quotients are rational
+functions, independent of the trivialization of that line.
+
+Here is the complete formal normalization, including relative phases.
+On the Tate multiplicative cover the section equation is
+\[
+ f(qz)=q^{-m/2}z^{-m}f(z).
+\]
+Indeed $z^{-m/2}\gamma_q(z)^m$ has this multiplier and divisor $m[0]$;
+the rigidification changes only the common base frame. On full $2m$
+level choose the symmetric theta marking with operators
+\[
+ (Af)(z)=f(\zeta_m z),\qquad
+ (Bf)(z)=q^{1/(2m)}z f(q^{1/m}z).
+\]
+They satisfy $A^m=B^m=1$, $AB=\zeta_m BA$, and inversion conjugates
+each to its inverse. The extra root $q^{1/(2m)}$ belongs to the specified
+full level, not to an independently chosen completion extension.
+To justify this marking globally, the theta structure supplied by
+\cite[Remark 2.6.5]{candelori} induces the prescribed full $m$-level
+structure. Its difference from the displayed symmetric lifts, which
+have the same underlying level, belongs to $K(m)[2]$ by
+\cite[Lemma 2.5.3]{candelori}. On full level this is a constant finite
+group. On the chosen connected Tate branch the difference is therefore
+one constant element; composing with that same global theta-group
+automorphism aligns the lifts. This correction changes only finite
+signs and adds neither a parameter-dependent factor nor a new cover.
+
+The exact eigenbasis is
+\[
+ \vartheta_{m,\nu}(z)=\sum_{r\equiv\nu\, (m)}q^{r^2/(2m)}z^r.
+\]
+The positive quadratic exponent makes each Laurent sum convergent
+in the formal sense on every annulus: substituting $z=t^jx$ leaves
+parameter orders tending quadratically to infinity in both directions.
+The prescribed automorphy glues these as formal sections of the actual
+line $\mathcal L_m$. A finite cover bounds any vertical denominators;
+proper formal functions for that line then algebraize the sections.
+The generic section space has dimension $m$ by Riemann--Roch on the
+elliptic curve. Thus these are actual section vectors, not only
+solutions in an unspecified Laurent space.
+Its $A$-eigenvalue is $\zeta_m^\nu$, and
+$B\vartheta_{m,\nu}=\vartheta_{m,\nu+1}$ without an extra factor.
+For any section $\sum a_rz^r$, its equation implies
+$a_{r+m}=q^{r+m/2}a_r$. Thus each $A$-eigenspace is one-dimensional.
+An intertwiner sends the standard basis to
+$b_\nu\vartheta_{m,\nu}$; the $B$ action forces all $b_\nu$ to be
+one and the same nonzero scalar. Evaluating at $z=1$ and dividing by
+the zeroth component cancels this scalar and the rigidification frame.
+The denominator is not identically zero, since $U_{m,0}$ has constant
+term one. This proves the asserted rational function and every
+coefficient of its expansion. No half-Hodge comparison has been used.
+\end{proof}
+
+These two constructions reduce an arithmetic half-weight comparison to
+basic theta lines: formally,
+$U_{m,\nu}=R_{m,\nu}\vartheta(q^{m/2})$.
+Once a candidate section has been put in a specified half-Hodge line,
+its regularity need not be guessed from its rational-function factors.
+Its $K$th power equals $F_{m,\nu}$ by the injection of the function
+field into the designated Tate completion, since both complete
+expansions agree. Thus its order at every point is nonnegative by the
+already proved regularity of $F_{m,\nu}$.
+
+\subsection{A common arithmetic line and a smaller coefficient bound}
+The torsion-level constructions above give a much smaller common cover
+than adjoining every $K$th root separately. This observation closes the
+common-line construction for the arithmetic coefficient theorem; it does
+not identify the resulting finite cover as a congruence cover.
+
+\begin{theorem}[A smaller arithmetic finite-coefficient bound]\label{sharper-bound}
+Let $r$ be the number of distinct positive even integers $m_{ij}$ in the
+orthogonal decompositions, and retain $N,L$ as above. Then one may replace
+$B_*$ in Theorem~\ref{main} by
+\[
+ B_\dagger=
+ \left\lfloor\frac{n\,2^{r-1}I(L)}{48L}\right\rfloor.
+\]
+The proof uses the arithmetic level constructions of this section and
+none of the complex comparison in Section~\ref{scope}.
+\end{theorem}
+\begin{proof}
+For each distinct $m$, the full source level $L=24N^2$ supplies the cyclic
+$m$-isogeny $\phi_m:E\to E_m$ and a full-four marking on its target:
+$4m\mid L$. At the distinguished cusp the target period is $q^m$.
+Pull back the section $\alpha$ of Proposition~\ref{level-four-root}
+and divide by $m$, using the Hodge pullback isomorphism. Call the
+resulting source weight-one section $a_m$. Its exact expansion is
+\[
+ a_m=\vartheta(q^{m/2})^2\delta=U_{m,0}(q)^2\delta.
+\]
+This normalization fixes the full series and its sign simultaneously.
+
+At an arbitrary source cusp write $q_x=t^L$. If the toric part of the
+cyclic kernel is $\mu_e$, the residual component part has order
+$b=m/e$. The target period satisfies
+$Q_x^b=\zeta q_x^e$, so
+\[
+ \ord_t(Q_x)=Le^2/m.
+\]
+The Hodge map there is multiplication by $e$; the factor $e/m$ is a
+nonzero constant and introduces no zero or pole. The earlier
+four-torsion calculation shows that $a_m$ has order either zero or
+$Le^2/(4m)$. Since $8m\mid L$, both possibilities are even integers.
+It has no interior zero, since the two distinct two-torsion coordinates
+never coincide. Hence $\divisor(a_m)=2D_m$ for an effective integral
+cusp divisor $D_m$ on $X$. Set
+\[
+ H_m=\OO_X(D_m),\qquad e_m=1_{D_m},\qquad
+ H_m^2\xrightarrow{\sim}\omega,\quad e_m^2\longmapsto a_m.
+\]
+The equality of divisors proves that this is an everywhere invertible
+line-bundle map, including the boundary.
+
+Fix one value $m_0$ and write $H_0=H_{m_0}$. For each of the other
+$r-1$ values, $T_m=H_m\otimes H_0^{-1}$ has a specified trivialization
+$T_m^2\simeq\OO_X$. Its unit-frame torsor is therefore finite etale
+of degree two over the entire compact curve. Form their fiber product
+and choose the component with the following common Tate branch:
+\[
+ t_m=\frac{U_{m_0,0}(q)}{U_{m,0}(q)}\,
+             \frac{e_m}{e_{m_0}},\qquad t_m^2=1.
+\]
+All these series have constant term one, and both displayed sections
+are nonvanishing at the distinguished cusp. Thus the branch already
+exists over its completed local ring. This gives a finite etale map
+$p:Y\to X$ of degree at most $2^{r-1}$, unramified at that cusp.
+For $r=1$ take $Y=X$.
+
+Dividing $p^*e_m$ by the tautological frame $t_m$ gives a section
+$s_{m,0}$ of the common line $p^*H_0$. With
+$h_0=U_{m_0,0}^{-1}e_{m_0}$, one has $h_0^2=\delta$ and
+$s_{m,0}=U_{m,0}h_0$ at the selected cusp. Define the rational section
+\[
+ s_{m,\nu}=p^*R_{m,\nu}\,s_{m,0}.
+\]
+Proposition~\ref{projective-ratios} gives its exact expansion
+$U_{m,\nu}h_0$. Under $(p^*H_0)^K\simeq p^*\omega^{K/2}$ its
+$K$th power consequently equals $p^*F_{m,\nu}$: their full
+expansions agree, and the function field injects into the cusp
+completion. Since the latter is regular everywhere,
+$K\ord_y(s_{m,\nu})\geq0$ at every point $y$, so $s_{m,\nu}$ is
+regular. This also handles possible poles in the rational factors $R$.
+
+The original coset expressions now give all $\theta_i$ as sections of
+one line $\mathcal L=(p^*H_0)^n$, with a single common Tate frame
+$h_0^n$. Using $24\deg\omega\leq I(L)$ yields
+\[
+ \deg\mathcal L=\frac n2\deg(p)\deg\omega
+       \leq\frac{n\,2^{r-1}I(L)}{48}.
+\]
+The selected cusp still has $\ord(q)=L$. A nonzero section cannot
+vanish to order $L(B_\dagger+1)$, since this exceeds the displayed
+degree bound by the definition of the floor. Thus vanishing of the
+coefficients through $B_\dagger$ forces the complete section, and
+therefore its formal theta series, to vanish. Base change to $\C$
+gives the same statement for all complex linear combinations.
+\end{proof}
+
+The new bound replaces the factor $K^s$ by $2^{r-1}/L$. Its numerical
+advantage is independent of the early stopping certificates of
+Lemma~\ref{early}: those certificates can still finish long
+before even $B_\dagger$. Neither the compact etale torsors used here
+nor their characters have been asserted to descend to a principal
+congruence level merely because they are finite.
+
+\subsection{Arithmetic modularity and the image basis}
+\begin{corollary}[Modularity on a standard finite metaplectic level]
+\label{arithmetic-modularity}
+The sections constructed in Theorem~\ref{sharper-bound} are standard
+arithmetic modular forms of weight $n/2$ at a common finite metaplectic
+level. Their complete Tate expansions are the input $\theta_i$.
+Pivot columns of $M_{B_\dagger}$ give a linearly independent
+modular-form basis of their image, and exact rational elimination gives
+the coordinates of every $\theta_i$ in that basis.
+\end{corollary}
+\begin{proof}
+Let $X^\circ$ be the open full-level curve and
+$\mathcal X_{1/2}=\sqrt[2]{\omega/X^\circ}$ the algebraic metaplectic
+stack of \cite[Definition 3.1.1]{candelori}. Its object over a test
+scheme $T$ is a level-marked elliptic curve, a line $R$, and a specified
+isomorphism $R^2\simeq\omega_T$. Denote its tautological line by
+$\lambda$. The actual isomorphism
+$H^2\simeq p^*\omega$, with $H=p^*H_0$, defines
+\[
+ j:Y^\circ\longrightarrow\mathcal X_{1/2},\qquad j^*\lambda=H.
+\]
+This is a genuine finite metaplectic level: for a test object
+$(T,R,R^2\simeq\omega_T)$, the fiber product
+$Y^\circ\times_{\mathcal X_{1/2}}T$ is the torsor
+\[
+ \operatorname{Isom}_{\mathrm{sq}}(R,H)
+       \longrightarrow Y^\circ\times_{X^\circ}T
+\]
+of isomorphisms compatible with the two specified square maps.
+It is a representable finite etale $\mu_2$-torsor. Since $p$ is finite
+etale, $j$ is representable finite etale, of degree $2\deg p$.
+Thus both the level and its weight line arise from the pre-existing
+metaplectic moduli functor.
+
+The same square isomorphism holds on the entire compact curve $Y$.
+The sections of $H^n$ are regular at every cusp by the proof of
+Theorem~\ref{sharper-bound}, and their expansions in the common
+nonvanishing frame $h_0^n$ are exactly $\theta_i(q)$. Hence these are
+modular forms of weight $n/2$ in the arithmetic definition, with
+holomorphy at the boundary, not merely sections on the open curve.
+Their linear relations coincide with their formal-series relations
+by injectivity at the chosen cusp. Theorem~\ref{sharper-bound} and
+rational elimination now give the asserted basis and coordinates.
+\end{proof}
+
+\section{Scope of the arithmetic modular-form conclusion}\label{scope}
+The modular-form assertion just proved uses the existing algebraic
+metaplectic definition and an explicitly constructed finite level.
+Its proof contains no appeal to complex realization of a cover,
+upper-half-plane simple connectivity, analytic theta transformation,
+or comparison of an analytic Fourier frame with a formal Tate frame.
+Every required frame and every coefficient was instead constructed
+inside one algebraic formal completion.
+
+The conventional description of such objects by functions on the
+upper half-plane belongs to the general comparison between arithmetic
+and analytic definitions of modular forms. That comparison is not an
+input to our coefficient theorem, our construction of the modular
+forms, or the identification of their prescribed formal expansions.
+In particular we do not present the comparison theorem itself as an
+arithmetic theorem proved here. An analytic reformulation would use
+that separate general dictionary; none is needed for the original
+formal-series task formulated with arithmetic modular forms.
+
+The finite frame level $Y$ may be noncongruence. Its finiteness and
+etaleness do not imply domination by a principal congruence level,
+and we have made no such assertion. Likewise, the specific Shimura
+half-form lines in \cite[Definitions 3.4.1 and 3.4.4]{candelori}
+include additional theta-multiplier data. We do not claim that the
+common level has a prescribed Shimura multiplier. These distinctions
+do not restrict the input family or the determination of all its
+formal relations: the input question specifies neither a congruence
+group nor a particular multiplier.
+
+All computations accompanying this manuscript distinguish full-series
+proofs from finite experiments. External PDFs, page locations, checksums,
+and hypotheses are retained in \texttt{external\_sources/manifest.json}.
+The prior reviewed manuscript and historical proof records are preserved;
+no PASS label or finite test is used as a mathematical proof.
+Lean formalization is deferred.
+
+\begin{thebibliography}{9}
+\bibitem{conrad} B. Conrad, \emph{Arithmetic moduli of generalized elliptic
+curves}, Journal of the Institute of Mathematics of Jussieu
+\textbf{6} (2007), 209--278. Sections 2.5 and 4.
+\url{https://math.stanford.edu/~conrad/papers/genmoduli.pdf}.
+\bibitem{kato} K. Kato, \emph{$p$-adic Hodge theory and values of zeta
+functions of modular forms}, Ast\'erisque \textbf{295} (2004), 117--290.
+Proposition 1.3 and Sections 1.4--1.10.
+\url{https://numdam.org/item/AST_2004__295__117_0.pdf}.
+\bibitem{mumford} D. Mumford, \emph{An analytic construction of degenerating
+abelian varieties over complete rings}, Compositio Mathematica
+\textbf{24} (1972), 239--272.
+\url{https://numdam.org/item/CM_1972__24_3_239_0.pdf}.
+\bibitem{klz} G. Kings, D. Loeffler and S. L. Zerbes,
+\emph{Rankin--Eisenstein classes and explicit reciprocity laws},
+arXiv:1503.02888, Theorem 4.1.1.
+\url{https://arxiv.org/abs/1503.02888}.
+\bibitem{candelori} L. Candelori, \emph{The transformation laws of algebraic
+theta functions}, arXiv:1609.04486.
+Remark 2.6.5 and Theorems 4.1.1, 4.1.3 supply the algebraic
+full-level and projective comparison used in Section~\ref{refinement}.
+The analytic comparison of Section 4.4 is not used in that section.
+\url{https://arxiv.org/abs/1609.04486}.
+\bibitem{candelori-key} L. Candelori, \emph{The algebraic functional
+ equation of Riemann's theta function}, arXiv:1512.04415v3.
+Section 2.2 fixes the genus-one even discriminant character.
+\url{https://arxiv.org/abs/1512.04415}.
+\end{thebibliography}
+\end{document}

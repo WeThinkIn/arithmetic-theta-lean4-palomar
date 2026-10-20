@@ -1,0 +1,18 @@
+module
+
+public import Mathlib
+public import Definitions.Def_AlgebraicCurve_DivisorClassGroup
+public import Definitions.Def_AlgebraicCurve_Repartitions
+public import Definitions.Def_AlgebraicCurve_IsCurveOver
+public import Definitions.Def_AlgebraicCurve_AdelicIndex
+public import P2M.Util
+public import P2M.Sol.S_AlgebraicCurve_RiemannGenusReachedAt_eq_of_ge
+
+@[expose] public section
+
+namespace AlgebraicCurve
+theorem RiemannGenusReachedAt.eq_of_ge {K F : Type*} [Field K] [Field F] [Algebra K F] [IsCurveOver K F] [Nonempty (Place K F)] [FiniteDimensional K ↥(LSpace (0 : Divisor K F))]
+    {γ : ℤ} {D₀ : Divisor K F} (h : RiemannGenusReachedAt γ D₀)
+    {D : Divisor K F} (hD : D₀ ≤ D) :
+    Divisor.degree D - ell D = γ - 1 := by p2m_exact_reverting @_root_.P2MW.S_AlgebraicCurve_RiemannGenusReachedAt_eq_of_ge.solution
+end AlgebraicCurve

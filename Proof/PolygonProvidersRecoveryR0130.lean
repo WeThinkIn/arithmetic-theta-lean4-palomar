@@ -1,0 +1,9 @@
+module
+
+public import FiniteStageCompletionComparisonR0129
+public import FiniteStageAdjacentR0129
+public import InfinitesimalPolygonAtlasR0129
+public import InfinitesimalPolygonProperR0129
+public import InfinitesimalPolygonFlatR0129
+
+@[expose] public section

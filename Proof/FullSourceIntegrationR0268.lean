@@ -1,0 +1,108 @@
+module
+
+public import ActualEarlierCertificate
+public import AdaptiveUniversalSolverR0230
+public import AlgebraicModelCubicR0144
+public import AlgebraicTateCoordinatesR0143
+public import AmbientPrescribedRootsR0228
+public import ArbitraryEvenThetaRigidificationR0213
+public import ArbitraryFormalCoverConstantR0210
+public import ArithmeticCommonUnaryFamilyR0238
+public import ArithmeticGeometricFamilyExistenceR0189
+public import BinaryOrthogonalExampleR0268
+public import CheckedBasisChangeRelationsR0230
+public import CommonHalfHodgeCoverR0185
+public import CompactAlphaCanonicalHalfLineR0192
+public import CompactFullLevelAlphaR0190
+public import CompactUnaryHodgeRealizationR0183
+public import ComponentDiscriminantDivisorR0184
+public import ComponentHodgePowerDegreeR0184
+public import ComputedFamilyFormalUnaryConsumerR0127
+public import ComputedOrthogonalization
+public import ComputedRationalLDLR0229
+public import ConservativeImageConsumerR0268
+public import ConservativeMatrixKernelR0189
+public import CoordinateExactPolesR0143
+public import CyclotomicExtendedModularityR0241
+public import CyclotomicMatrixModularityR0239
+public import Det80CoefficientMinor
+public import Det80CompleteClassification
+public import Det80LocalRealization
+public import Det80OrderClassification
+public import Det80Similarity
+public import Det80ThetaIndependence
+public import DiscriminantTateRootR0185
+public import DiscriminantTwistUnitR0185
+public import DistinctNormSharpArithmeticR0195
+public import EarlyCertificateAssembly
+public import EvenPointThetaEvaluationR0217
+public import FieldCompactDiscriminantR0236
+public import FieldCompactUnaryR0236
+public import FiniteEtaleNormFamilyR0251
+public import FormalJacobiTripleProduct
+public import FourTorsionTateBehaviorR0190
+public import GeneralDPlusDualR0242
+public import GeneralDPlusEvenUnimodularR0242
+public import GeneralDPlusThetaRealizationR0242
+public import GeometricComponentCuspBoundR0184
+public import GeometricFamilyConservativeCutoffR0189
+public import GlobalArithmeticProjectiveRatiosR0266
+public import GlobalNormalizedDifferentialR0145
+public import HadamardJacobi
+public import IndividualCosetIntegralProductR0127
+public import IntegralGramOrthogonalization
+public import IsogenyAlphaAllCuspOrdersR0193
+public import IsogenyAlphaDesignatedExpansionR0193
+public import IsogenyCanonicalHalfLineR0193
+public import JointSourceIntegrationR0267
+public import LDLThetaPrefixR0229
+public import LaurentPoweredNormR0064
+public import MultiplierFourthTrivializationR0219
+public import NormExponentAlgebra
+public import PhaseFreeAlphaDescentR0219
+public import PhaseFreeKeyNaturalityR0219
+public import PhaseFreeKeyR0219
+public import PhaseFreeKeyTateNormalizationR0220
+public import PhaseFreeMultiplierBaseChangeR0219
+public import PhaseFreeMultiplierR0219
+public import Rank16Nonisometry
+public import Rank16Theta
+public import RankZero
+public import RationalPreimageCosetsR0127
+public import RationalSchurCompletionR0229
+public import RecursiveEllipsoidEnumerationR0229
+public import RelativeAlphaNaturalityR0190
+public import RelativeFourTorsionRootR0190
+public import SchemeAlphaCharacterR0215
+public import SchemeDiscriminantExistenceR0244
+public import SchemeDiscriminantNaturalityR0244
+public import SchemeFiveKatoInitialCharacterizationR0253
+public import SchemeKatoFullTateExpansionR0252
+public import SchemeKatoIntrinsicCharacterizationR0254
+public import SchemeKatoUnitNaturalityR0250
+public import SchemeMillerPhaseR0215
+public import SchemePeriodOneDiscriminantR0247
+public import SharpGeometricCutoffR0195
+public import SharpMatrixGeometricFamilyR0195
+public import SharpMatrixKernelR0195
+public import ShiftedIntegerIntervalR0229
+public import SmoothPointSimultaneousRootsR0228
+public import SourceOrthogonalFactorizationR0127
+public import SplitCuspDegreeR0239
+public import SplitDiscriminantDivisorR0239
+public import SplitSquareCoverDegreeR0239
+public import TateBasicFourthIdentity
+public import TateGeneralAddition
+public import UnaryParameterIdentificationR0127
+public import UnaryPowerGeometricRealizationR0160
+
+@[expose] public section
+
+/-! Full-source endpoint integration, round 0268.
+
+The 101 accepted endpoints retain their original declarations and proofs.
+The two new prerequisite modules are imported in this same environment.
+No aliases, replacement assumptions, or duplicate declarations are introduced.
+The independent delivery audit checks every frozen exact type and axiom closure.
+The coherent formal-sections provider is the recovered round-0267 source.
+-/

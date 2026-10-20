@@ -1,0 +1,11 @@
+module
+
+public import Definitions.Def_TateCurve_PointSeries
+public import P2M.Util
+public import P2M.Sol.S_TateCurve_pointY_inv
+
+@[expose] public section
+
+open TateCurve
+open scoped NNReal
+theorem TateCurve.pointY_inv {K : Type*} [NontriviallyNormedField K] [IsUltrametricDist K] [CompleteSpace K] {q u : K} (hq0 : q ≠ 0) (hq : ‖q‖₊ < 1) (hu0 : u ≠ 0) (hu : ∀ n : ℤ, q ^ n * u ≠ 1) : pointY q u⁻¹ = -pointY q u - pointX q u := by p2m_exact_reverting @_root_.P2MW.S_TateCurve_pointY_inv.solution

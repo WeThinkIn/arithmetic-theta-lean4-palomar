@@ -1,0 +1,519 @@
+{
+  "selected": [
+    {
+      "id": "binary-orthogonal-example",
+      "declaration": "ArithmeticThetaFullSourceR0268.binary_orthogonal_example",
+      "file": "Lean/BinaryOrthogonalExampleR0268.lean",
+      "type": "ArithmeticThetaComputed.validGram ArithmeticThetaFullSourceR0268.binaryGram ∧ ArithmeticThetaFullSourceR0268.binaryBasis.det = 2 ∧ ArithmeticThetaOrthogonalConsumerR0127.OrthogonalData ArithmeticThetaFullSourceR0268.binaryGram ArithmeticThetaFullSourceR0268.binaryBasis ArithmeticThetaFullSourceR0268.binaryNorms ∧ ∃ t : Fin 2 → ArithmeticThetaOrthogonalConsumerR0127.preimageLattice ArithmeticThetaFullSourceR0268.binaryBasis, (∀ i, (t i).val = ArithmeticThetaFullSourceR0268.binaryRepresentatives i) ∧ Function.Bijective (fun i => ArithmeticThetaOrthogonalConsumerR0127.cosetClass ArithmeticThetaFullSourceR0268.binaryBasis (t i)) ∧ (∀ i j, ((ArithmeticThetaFullSourceR0268.binaryResidues i j : ℤ) : ℚ) = (ArithmeticThetaFullSourceR0268.binaryNorms j : ℚ) * (t i).val j) ∧ ArithmeticThetaOrthogonalConsumerR0127.thetaZ ArithmeticThetaFullSourceR0268.binaryGram = ArithmeticThetaOrthogonalConsumerR0127.cosetSeries ArithmeticThetaFullSourceR0268.binaryNorms (ArithmeticThetaFullSourceR0268.binaryRepresentatives 0) + ArithmeticThetaOrthogonalConsumerR0127.cosetSeries ArithmeticThetaFullSourceR0268.binaryNorms (ArithmeticThetaFullSourceR0268.binaryRepresentatives 1) ∧ (∀ (D : ℕ) (hD : D ≠ 0), 92 ∣ D → PowerSeries.expand D hD (ArithmeticThetaOrthogonalConsumerR0127.thetaZ ArithmeticThetaFullSourceR0268.binaryGram) = ArithmeticThetaOrthogonalConsumerR0127.scaledUnary 2 (D / 4) 0 * ArithmeticThetaOrthogonalConsumerR0127.scaledUnary 46 (D / 92) 0 + ArithmeticThetaOrthogonalConsumerR0127.scaledUnary 2 (D / 4) 1 * ArithmeticThetaOrthogonalConsumerR0127.scaledUnary 46 (D / 92) 23)",
+      "source_statement": "Source 144–150. Verify the specified A, B, norms 2 and 46, the TWO actual rational preimage cosets with representatives (0,0) and (1/2,1/2), integral residues (0,0)/(1,23), and the complete theta identity for every nonzero denominator D divisible by 92. The unexpanded integral coset identity is included; expansion is injective. Reuse the general accepted source_orthogonal_factorization. No finite-prefix or sample-only substitute.",
+      "difficulty": "hard",
+      "depends_on": [],
+      "audit_import": "BinaryOrthogonalExampleR0268"
+    },
+    {
+      "id": "accepted-000",
+      "declaration": "ArithmeticThetaElementary.rank_zero_coefficients",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (Q : (Fin 0 → ℤ) → ℕ), Q 0 = 0 → ∀ n : ℕ, Nat.card {x : Fin 0 → ℤ // Q x = n} = if n = 0 then 1 else 0",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Input section, lines 55–56: on the zero-dimensional lattice there is exactly one vector, of norm zero; therefore its theta coefficients are 1 at zero and 0 elsewhere. The hypothesis Q 0 = 0 is an actual property of any quadratic norm, not a substituted theta identity.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "RankZero"
+    },
+    {
+      "id": "accepted-001",
+      "declaration": "ArithmeticThetaElementary.rank_zero_kernel",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (h : ℕ) (c : Fin h → ℂ), (∑ i : Fin h, c i • (1 : PowerSeries ℂ)) = 0 ↔ (∑ i : Fin h, c i) = 0",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Input section, lines 55–56: when all theta series are 1, the kernel consists precisely of coefficient vectors with sum zero.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "RankZero"
+    },
+    {
+      "id": "accepted-002",
+      "declaration": "ArithmeticThetaElementary.rank_zero_image",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (h : ℕ), 0 < h → ∀ f : PowerSeries ℂ, (∃ c : Fin h → ℂ, (∑ i : Fin h, c i • (1 : PowerSeries ℂ)) = f) ↔ ∃ z : ℂ, f = PowerSeries.C z",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Input section, lines 55–56: for a nonempty rank-zero family the image is the one-dimensional constant-series space, spanned by 1. Together with 1 ≠ 0 this is the asserted image-basis description.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "RankZero"
+    },
+    {
+      "id": "accepted-003",
+      "declaration": "ArithmeticThetaLattice.even_integral_gram_orthogonalization",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n : ℕ) (A : Matrix (Fin n) (Fin n) ℤ), A.IsSymm → (∀ i, Even (A i i)) → ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef → ∃ (B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℤ), B.det ≠ 0 ∧ (∀ i, 0 < m i ∧ Even (m i)) ∧ B.transpose * A * B = Matrix.diagonal m",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. 主稿 orthogonal-lemma 第 116–132 行的准确矩阵结论：对称、偶对角且 Q_A(x)=xᵀAx/2 正定的整数 A 存在非奇异整数 B，使 BᵀAB 对角化为正偶整数 m。包括整数性、正性、偶性和完整矩阵等式；尚不包括有限商/余类 theta 恒等式。",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "IntegralGramOrthogonalization"
+    },
+    {
+      "id": "accepted-004",
+      "declaration": "ArithmeticThetaDet80.actual_coefficient_matrix",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "((fun i j : Fin 3 => (Nat.card {v : ℤ × ℤ // (![v.1 ^ 2 + 20 * v.2 ^ 2, 3 * v.1 ^ 2 + 2 * v.1 * v.2 + 7 * v.2 ^ 2, 4 * v.1 ^ 2 + 5 * v.2 ^ 2] : Fin 3 → ℤ) j = (![0, 1, 3] : Fin 3 → ℤ) i} : ℤ)) : Matrix (Fin 3) (Fin 3) ℤ) = ![![1, 1, 1], ![2, 0, 0], ![0, 2, 0]]",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Main input lines 612–616 and appendix thm:kernel proof lines 227–234: the actual cardinalities of integer solutions of Q_j(x,y)=m at m=0,1,3 form the displayed matrix. This is not a theorem about a free matrix supplied as a hypothesis.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "Det80CoefficientMinor"
+    },
+    {
+      "id": "accepted-005",
+      "declaration": "ArithmeticThetaDet80.actual_minor_determinant",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "Matrix.det ((fun i j : Fin 3 => (Nat.card {v : ℤ × ℤ // (![v.1 ^ 2 + 20 * v.2 ^ 2, 3 * v.1 ^ 2 + 2 * v.1 * v.2 + 7 * v.2 ^ 2, 4 * v.1 ^ 2 + 5 * v.2 ^ 2] : Fin 3 → ℤ) j = (![0, 1, 3] : Fin 3 → ℤ) i} : ℤ)) : Matrix (Fin 3) (Fin 3) ℤ) = 4",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Main input line 615 and appendix line 234: the determinant of the actual three-row representation-number matrix equals 4. The entries are still defined by solution cardinalities in this target; the preceding matrix theorem supplies the calculation.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "Det80CoefficientMinor"
+    },
+    {
+      "id": "accepted-006",
+      "declaration": "ArithmeticThetaDet80.actual_theta_kernel_zero",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "LinearMap.ker (∑ j : Fin 3, (LinearMap.proj j : (Fin 3 → ℂ) →ₗ[ℂ] ℂ).smulRight (PowerSeries.mk (fun m : ℕ => (Nat.card {v : ℤ × ℤ // (![v.1 ^ 2 + 20 * v.2 ^ 2, 3 * v.1 ^ 2 + 2 * v.1 * v.2 + 7 * v.2 ^ 2, 4 * v.1 ^ 2 + 5 * v.2 ^ 2] : Fin 3 → ℤ) j = (m : ℤ)} : ℂ)) : PowerSeries ℂ)) = ⊥",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Main manuscript lines 612–618, and determinant-80 appendix coefficient matrix argument: The actual finite-sum theta linear map for those three forms has kernel equal to the zero submodule. The prerequisite actual integer coefficient matrix and representation finiteness are accepted supporting proofs, not hypotheses. This does not claim full order classification or modularity.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "Det80ThetaIndependence"
+    },
+    {
+      "id": "accepted-007",
+      "declaration": "ArithmeticThetaDurfee.formal_jacobi_triple_product",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "(PowerSeries.mk (fun e => PowerSeries.coeff e ((1 + PowerSeries.C (LaurentPolynomial.T 1)) * ∏ j ∈ Finset.range e, (1 - PowerSeries.X ^ (j + 1)) * (1 + PowerSeries.C (LaurentPolynomial.T 1) * PowerSeries.X ^ (j + 1)) * (1 + PowerSeries.C (LaurentPolynomial.T (-1)) * PowerSeries.X ^ (j + 1)) : PowerSeries (LaurentPolynomial ℤ)))) = PowerSeries.mk (fun d => ∑ k ∈ Finset.Icc (-(d : ℤ)) ((d : ℤ) + 1), if k * (k - 1) = 2 * (d : ℤ) then (LaurentPolynomial.T k : LaurentPolynomial ℤ) else 0)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. 原稿322–334完整形式Jacobi三重积恒等式：实际完整无限乘积（由已证系数稳定性定义）等于实际双边theta级数（每个系数由已证整数支持界的有限区间和定义）。闭合sum=product与精确归一化；尚不含z=t^a的有理指数专门化。",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "FormalJacobiTripleProduct"
+    },
+    {
+      "id": "accepted-008",
+      "declaration": "ArithmeticThetaOrthogonalAlgorithm.computed_natural_data",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n : ℕ) (A : Matrix (Fin n) (Fin n) ℤ), A.IsSymm → (∀ i, Even (A i i)) → ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef → (∀ i, 0 < (ArithmeticThetaOrthogonalAlgorithm.naturalNorms A) i ∧ Even ((ArithmeticThetaOrthogonalAlgorithm.naturalNorms A) i) ∧ ((ArithmeticThetaOrthogonalAlgorithm.naturalNorms A) i : ℤ) = (ArithmeticThetaOrthogonalAlgorithm.norms A) i) ∧ ArithmeticThetaOrthogonalAlgorithm.indexValue A = ∏ i : Fin n, ((ArithmeticThetaOrthogonalAlgorithm.basisMatrix A) i i).toNat ∧ 0 < ArithmeticThetaOrthogonalAlgorithm.indexValue A",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 118–132 and effective-bound context: positive natural norms used by lcm and the exact positive determinant/index value are computed from the actual basis matrix. The index value equals the product of its positive triangular diagonal entries; identification with the quotient cardinality uses the separate finite-index theorem.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "ComputedOrthogonalization"
+    },
+    {
+      "id": "accepted-009",
+      "declaration": "ArithmeticThetaHadamard.jacobi_formal",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "ArithmeticThetaHadamard.a ^ 4 = ArithmeticThetaHadamard.b ^ 4 + ArithmeticThetaHadamard.c ^ 4",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 626–634: the complete formal identity a⁴=b⁴+c⁴ in integer formal power series for the actual three source unary series. It follows from the actual finite shell count identity and all three proved Cauchy-product bridges, without an externally supplied identity or finite-check hypothesis.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "HadamardJacobi"
+    },
+    {
+      "id": "accepted-010",
+      "declaration": "ArithmeticThetaBinary.all_positive_classes",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ a b c : ℤ, 0 < a → 4*a*c-b^2 = 80 → ArithmeticThetaBinary.gramContent a b c = 2 → ∃ (j : Fin 3) (U : Matrix (Fin 2) (Fin 2) ℤ), IsUnit U.det ∧ U.transpose * ArithmeticThetaBinary.gram a b c * U = ArithmeticThetaBinary.forms j",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source determinant-80 complete classification: arbitrary positive binary Gram input with determinant80 and Smith gcd2 is equivalent to one of the three actual displayed forms. Use accepted reduced-list classification and explicit sign change.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "Det80CompleteClassification"
+    },
+    {
+      "id": "accepted-011",
+      "declaration": "ArithmeticThetaBinary.similarity_distinct",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (i j : Fin 3), i ≠ j → ¬ ∃ (s : ℚ) (U : Matrix (Fin 2) (Fin 2) ℤ), 0 < s ∧ IsUnit U.det ∧ (U.map (Int.castRingHom ℚ)).transpose * (ArithmeticThetaBinary.forms i).map (Int.castRingHom ℚ) * U.map (Int.castRingHom ℚ) = s • (ArithmeticThetaBinary.forms j).map (Int.castRingHom ℚ)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source distinct normalized lattice similarity classes: prove absence of any positive rational scale and integral unimodular isometry between two different displayed forms.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "Det80Similarity"
+    },
+    {
+      "id": "accepted-012",
+      "declaration": "ArithmeticThetaBinary.ambient_realization",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ j : Fin 3, (ArithmeticThetaBinary.embeddings j).det ≠ 0 ∧ (ArithmeticThetaBinary.embeddings j).transpose * (ArithmeticThetaBinary.forms 0).map (Int.castRingHom ℚ) * ArithmeticThetaBinary.embeddings j = (![1,3,1] : Fin 3 → ℚ) j • (ArithmeticThetaBinary.forms j).map (Int.castRingHom ℚ)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source explicit rational embeddings T1,T2,T3 into the fixed space: the second restriction is THREE times the normalized form; the correct scale is retained.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "Det80LocalRealization"
+    },
+    {
+      "id": "accepted-013",
+      "declaration": "ArithmeticThetaBinary.same_order_classes",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ a b c : ℤ, 0 < a → 0 < 4*a*c-b^2 → ArithmeticThetaBinary.sameLocalSmith a b c → ∃! j : Fin 3, ∃ U : Matrix (Fin 2) (Fin 2) ℤ, IsUnit U.det ∧ U.transpose * ArithmeticThetaBinary.gram a b c * U = ArithmeticThetaBinary.forms j",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Complete determinant80 order example: every positive normalized even integral binary Gram with the actual all-prime local Smith data has a unique displayed integral class; together with positive-scale rigidity and ambient realization, these are exactly the three supplied rational-similarity classes.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "Det80OrderClassification"
+    },
+    {
+      "id": "accepted-014",
+      "declaration": "ArithmeticThetaRank16.no_similarity",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "¬ ∃ (s : ℚ) (U : Matrix (Fin 16) (Fin 16) ℤ), 0 < s ∧ IsUnit U.det ∧ (U.map (Int.castRingHom ℚ)).transpose * (ArithmeticThetaRank16.sumGram).map (Int.castRingHom ℚ) * U.map (Int.castRingHom ℚ) = s • (ArithmeticThetaRank16.latticeGram 16).map (Int.castRingHom ℚ)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 622–650: no similarity, using actual D_n^+ and explicit bases in the standard rational quadratic space.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "Rank16Nonisometry"
+    },
+    {
+      "id": "accepted-015",
+      "declaration": "ArithmeticThetaRank16.integral_identity",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "ArithmeticThetaRank16.sumTheta = ArithmeticThetaRank16.theta 16",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source full original integral theta identity after injective substitution, not a truncated identity.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "Rank16Theta"
+    },
+    {
+      "id": "accepted-016",
+      "declaration": "ArithmeticThetaRank16.two_column_kernel",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ v : Fin 2 → ℂ, (∑ i, v i • ArithmeticThetaRank16.columns i) = 0 ↔ ∃ t : ℂ, v = ![t, -t]",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source supplied two actual columns have complete complex kernel C(1,-1), with coefficientwise independence of the shared nonzero series. Distinctness/order remain a separate lattice task.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "Rank16Theta"
+    },
+    {
+      "id": "accepted-017",
+      "declaration": "ArithmeticThetaEarlyAssembly.actual_earlier_certificate",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n h B : ℕ) (A : Fin h → Matrix (Fin n) (Fin n) ℤ), (∀ i, ArithmeticThetaComputed.validGram (A i)) → LinearMap.ker (ArithmeticThetaComputed.thetaMap A) ≤ LinearMap.ker (((ArithmeticThetaComputed.coefficientMatrix A B).map (algebraMap ℚ ℂ)).mulVecLin) ∧ ((ArithmeticThetaComputed.coefficientMatrix A B).rank = h → LinearMap.ker (ArithmeticThetaComputed.thetaMap A) = ⊥) ∧ (∀ W : Submodule ℂ (Fin h → ℂ), (∀ c ∈ W, ArithmeticThetaComputed.thetaMap A c = 0) → Module.finrank ℂ W = h - (ArithmeticThetaComputed.coefficientMatrix A B).rank → W = LinearMap.ker (ArithmeticThetaComputed.thetaMap A) ∧ LinearMap.ker (ArithmeticThetaComputed.thetaMap A) = LinearMap.ker (((ArithmeticThetaComputed.coefficientMatrix A B).map (algebraMap ℚ ℂ)).mulVecLin))",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. inputs/arithmetic-theta-kernel/arithmetic_theta_kernel.tex:561–572, Lemma early: assemble all three clauses for the executable coefficientMatrix and actual thetaMap. The W full-series relation and dimension hypotheses are precisely the source certificate hypotheses, not a geometric-cutoff assumption. Reuse computed_prefix_map, computed_full_rank_certificate, rational_matrix_nullity, and the generic dimension sandwich.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "ActualEarlierCertificate"
+    },
+    {
+      "id": "accepted-018",
+      "declaration": "ArithmeticThetaTateSeries.basic_fourth",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ {k : Type u} [Field k] [CharZero k], ArithmeticThetaTateSeries.theta k ^ 4 = 4 * (ArithmeticThetaTateSeries.tateX 2 1 (1:k) - ArithmeticThetaTateSeries.tateX 2 0 (-1:k))",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Unchanged round-0013 target. Prove the manuscript’s full formal identity θ(t)^4=4(X(t;t²)−X(−1;t²)) for the literal unary theta and literal Tate sum.  Accepted Jacobi-product support may be reused only with its hypotheses and bridge stated explicitly.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "universes": [
+        "u"
+      ],
+      "audit_import": "TateBasicFourthIdentity"
+    },
+    {
+      "id": "accepted-023",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.rational_preimage_cosets",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n : ℕ) (B : Matrix (Fin n) (Fin n) ℤ), B.det ≠ 0 → ∃ E : ArithmeticThetaOrthogonalConsumerR0127.RationalCosets B ≃+ ((Fin n → ℤ) ⧸ LinearMap.range (Matrix.mulVecLin B)), (∀ (t : ArithmeticThetaOrthogonalConsumerR0127.preimageLattice B) (x : Fin n → ℤ), (B.map (Int.castRingHom ℚ)).mulVec t.val = ArithmeticThetaOrthogonalConsumerR0127.castVec n x → E (ArithmeticThetaOrthogonalConsumerR0127.cosetClass B t) = (LinearMap.range (Matrix.mulVecLin B)).mkQ x) ∧ Finite (ArithmeticThetaOrthogonalConsumerR0127.RationalCosets B) ∧ Nat.card (ArithmeticThetaOrthogonalConsumerR0127.RationalCosets B) = B.det.natAbs ∧ ∃ t : Fin B.det.natAbs → ArithmeticThetaOrthogonalConsumerR0127.preimageLattice B, ArithmeticThetaOrthogonalConsumerR0127.Representatives B t",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 119–138: identify the actual rational preimage quotient H=B⁻¹ℤⁿ/ℤⁿ with the accepted integral image quotient via t↦Bt, including the specified map on every representative, finiteness, determinant cardinality and existence of rational representatives. The rational lattice and its integral period subgroup are actual additive subgroups. Reuse finite_quotient_index and representatives_bijection; do not reprove Smith/index arithmetic. All n including zero and either determinant sign are covered.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "RationalPreimageCosetsR0127"
+    },
+    {
+      "id": "accepted-024",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.unary_parameter_identification",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (k : Type u) [Field k] [CharZero k] (m : ℕ) [NeZero m] (w : ℕ) (hw : w ≠ 0) (ν : ℤ) (a : Fin m), Int.ModEq (m : ℤ) ν (a.val : ℤ) → PowerSeries.map (Int.castRingHom k) (ArithmeticThetaOrthogonalConsumerR0127.scaledUnary m w ν) = PowerSeries.expand w hw (ArithmeticThetaSchrodingerR0119.unary k m a)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 122–128 and 900–905: identify the entire old weighted unary shell series with the downstream literal formal theta residue series after its exact parameter substitution. Here w=D/(2m), so t_m=s^w and q=s^D. Covers arbitrary integer residue representatives, both signs, every coefficient, and all positive m (hence the positive even source case); no finite-prefix or assumed identity. Reuse unary_shell_finite and the definitions, and do not reprove formal theta convergence or Schrodinger rigidity.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "universes": [
+        "u"
+      ],
+      "audit_import": "UnaryParameterIdentificationR0127"
+    },
+    {
+      "id": "accepted-025",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.individual_coset_integral_product",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n : ℕ) (A B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ), ArithmeticThetaComputed.validGram A → ArithmeticThetaOrthogonalConsumerR0127.OrthogonalData A B m → ∀ (t : ArithmeticThetaOrthogonalConsumerR0127.preimageLattice B) (ν : Fin n → ℤ), (∀ j, (ν j : ℚ) = (m j : ℚ) * t.val j) → (∀ r : Fin n → ℤ, (∀ j, Int.ModEq (m j : ℤ) (r j) (ν j)) → ∃ a : ℕ, (∑ j : Fin n, (r j : ℚ)^2 / (2 * (m j : ℚ))) = (a : ℚ)) ∧ (∀ (D : ℕ) (hD : D ≠ 0), (∀ j, 2 * m j ∣ D) → PowerSeries.expand D hD (ArithmeticThetaOrthogonalConsumerR0127.cosetSeries m t.val) = ∏ j : Fin n, ArithmeticThetaOrthogonalConsumerR0127.scaledUnary (m j) (D / (2 * m j)) (ν j))",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 125–146: prove that EACH actual rational coset product descends to its complete integral-exponent affine norm series, and all its allowed tuple exponents are nonnegative integers. Reuse total_exponent_integrality, orthogonal_residue_formula, cosetShellEquiv and unary_product_coefficients by identifying x=Bt; these are accepted providers, not new targets. The new conclusion is a single-coset full power-series identity in source t coordinates, not just the accepted sum over integral quotient representatives.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "IndividualCosetIntegralProductR0127"
+    },
+    {
+      "id": "accepted-026",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.source_orthogonal_factorization",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n : ℕ) (A B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ), ArithmeticThetaComputed.validGram A → ArithmeticThetaOrthogonalConsumerR0127.OrthogonalData A B m → ∀ t : Fin B.det.natAbs → ArithmeticThetaOrthogonalConsumerR0127.preimageLattice B, ArithmeticThetaOrthogonalConsumerR0127.Representatives B t → ∃ ν : Fin B.det.natAbs → Fin n → ℤ, (∀ i j, (ν i j : ℚ) = (m j : ℚ) * (t i).val j) ∧ ArithmeticThetaOrthogonalConsumerR0127.thetaZ A = ∑ i : Fin B.det.natAbs, ArithmeticThetaOrthogonalConsumerR0127.cosetSeries m (t i).val ∧ (∀ (D : ℕ) (hD : D ≠ 0), (∀ j, 2 * m j ∣ D) → PowerSeries.expand D hD (ArithmeticThetaOrthogonalConsumerR0127.thetaZ A) = ∑ i : Fin B.det.natAbs, ∏ j : Fin n, ArithmeticThetaOrthogonalConsumerR0127.scaledUnary (m j) (D / (2 * m j)) (ν i j))",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source orthogonal-lemma, 116–146: for every valid even positive Gram matrix, every actual orthogonal sublattice and ANY complete choice of representatives of H=B⁻¹ℤⁿ/ℤⁿ, construct the integral residues m_j t_j and prove the complete unscaled coset theta identity and exact unary product identity after every positive common-denominator substitution. OrthogonalData contains only the source sublattice hypotheses; Representatives only means bijective enumeration of the actual quotient. Reuse accepted full_theta_factorization rather than duplicate its integral quotient proof. Unscaled equality is retained, and positive-denominator injectivity makes the fractional-power expression faithful.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "SourceOrthogonalFactorizationR0127"
+    },
+    {
+      "id": "accepted-027",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.computed_family_formal_unary_consumer",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n h : ℕ) (A : Fin h → Matrix (Fin n) (Fin n) ℤ), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ (D : ℕ) (hD : D ≠ 0), (∀ (i : Fin h) (j : Fin n), 2 * (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j) ∣ D) → ∃ (t : (i : Fin h) → Fin (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)).det.natAbs → ArithmeticThetaOrthogonalConsumerR0127.preimageLattice (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i))) (ν : (i : Fin h) → Fin (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)).det.natAbs → (j : Fin n) → Fin (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j)) (hw : ∀ (i : Fin h) (j : Fin n), D / (2 * (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j)) ≠ 0), (∀ i, ArithmeticThetaOrthogonalConsumerR0127.Representatives (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)) (t i)) ∧ (∀ (i : Fin h) (a : Fin (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)).det.natAbs) (j : Fin n), ∃ z : ℤ, ((ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j) : ℚ) * (t i a).val j = ((ν i a j).val : ℚ) + ((ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j) : ℚ) * (z : ℚ)) ∧ (∀ c : Fin h → ℂ, PowerSeries.expand D hD (ArithmeticThetaComputed.thetaMap A c) = ∑ i : Fin h, c i • (∑ a : Fin (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)).det.natAbs, ∏ j : Fin n, PowerSeries.expand (D / (2 * (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j))) (hw i j) (ArithmeticThetaSchrodingerR0119.unary ℂ (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j) (ν i a j))))",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 47–74, 116–146 and 1034–1067: connect the actual executable orthogonalization of every matrix in an arbitrary finite family to exactly the downstream formal unary series, on one common parameter, for ALL complex linear combinations. Supply the rational quotient representatives, normalized Fin m residues and positive substitution exponents; the sole denominator premise is the source common-denominator choice, already constructible by common_exponent_denominator on the flattened positive norm family. Reuse computed_orthogonalization AND its accepted computed_natural_data supporting theorem, and the actual thetaMap definition. Do not reprove natural casts or earlier certificates. This proves the arithmetic-to-formal unary consumer for any rank and deficient coefficient-family rank; it does not assert a finite cutoff, global theta section or arithmetic modularity.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "ComputedFamilyFormalUnaryConsumerR0127"
+    },
+    {
+      "id": "accepted-058",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.shifted_integer_interval",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (c R : ℚ) (z : ℤ), z ∈ ArithmeticThetaLDLEnumerationR0229.shiftedInterval c R ↔ ((z : ℚ) - c)^2 ≤ R",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source exact algorithms, lines 550–557: exact integer endpoints for a rationally shifted square bound, using an integer square root and rational floor/ceiling. Prove the entire executable interval is exactly the set of integers satisfying the inequality. Includes negative and zero residual bounds, negative/nonintegral centres, singleton and empty intervals, and both signs. No real-square-root approximation or externally supplied bound.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "ShiftedIntegerIntervalR0229"
+    },
+    {
+      "id": "accepted-059",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.rational_schur_completion",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n : ℕ) (A : ArithmeticThetaLDLEnumerationR0229.QMatrix (n+1)), A.IsSymm → A.toQuadraticForm'.PosDef → 0 < A 0 0 ∧ (ArithmeticThetaLDLEnumerationR0229.schur A).IsSymm ∧ (ArithmeticThetaLDLEnumerationR0229.schur A).toQuadraticForm'.PosDef ∧ ∀ (z : ℚ) (y : Fin n → ℚ), ArithmeticThetaLDLEnumerationR0229.energy A (Fin.cons z y) = A 0 0 * (z + (∑ j : Fin n, A 0 j.succ * y j) / A 0 0)^2 + ArithmeticThetaLDLEnumerationR0229.energy (ArithmeticThetaLDLEnumerationR0229.schur A) y",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 550–555: one exact rational completion-of-squares step for every symmetric positive-definite rational matrix; prove pivot positivity, symmetry and positive definiteness of the actual recursively computed Schur complement and the complete quadratic identity. The trailing zero-dimensional matrix is included. The factor 1/2 of the original integral Gram form is introduced by gramHalf, not lost in this rational statement.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "RationalSchurCompletionR0229"
+    },
+    {
+      "id": "accepted-060",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.computed_rational_ldl",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n : ℕ) (A : ArithmeticThetaLDLEnumerationR0229.QMatrix n), A.IsSymm → A.toQuadraticForm'.PosDef → (∀ i : Fin n, 0 < (ArithmeticThetaLDLEnumerationR0229.ldl n A).1 i) ∧ (∀ i : Fin n, (ArithmeticThetaLDLEnumerationR0229.ldl n A).2 i i = 1) ∧ (∀ i j : Fin n, j < i → (ArithmeticThetaLDLEnumerationR0229.ldl n A).2 i j = 0) ∧ A = (ArithmeticThetaLDLEnumerationR0229.ldl n A).2.transpose * Matrix.diagonal (ArithmeticThetaLDLEnumerationR0229.ldl n A).1 * (ArithmeticThetaLDLEnumerationR0229.ldl n A).2",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 550–554: the specific executable rational recursion supplies positive rational diagonal entries and an upper unitriangular U with A=Uᵀ diag(d) U, equivalently the source LDLᵀ with L=Uᵀ. Prove correctness of these computed factors for arbitrary rank including zero. Do not replace them with an existential arbitrary diagonalization or the accepted denominator-cleared integral orthogonal basis.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "ComputedRationalLDLR0229"
+    },
+    {
+      "id": "accepted-061",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.recursive_ellipsoid_enumeration",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n : ℕ) (A : ArithmeticThetaLDLEnumerationR0229.QMatrix n), A.IsSymm → A.toQuadraticForm'.PosDef → ∀ (B : ℚ) (x : Fin n → ℤ), x ∈ ArithmeticThetaLDLEnumerationR0229.enumerate n A B ↔ ArithmeticThetaLDLEnumerationR0229.energy A (fun i => (x i : ℚ)) ≤ B",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 550–557: prove soundness and completeness of the structurally recursive completion-of-squares enumerator, for all rational bounds and all positive-definite symmetric rational forms. Every recursive tail uses the actual Schur complement and every head uses the exact shifted integer interval. Finset output gives no duplicates; dimension recursion and finite ranges give termination. Include rank zero, negative/zero bounds and all signs. Do not replace this algorithm by the already accepted cofactor searchBox.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "RecursiveEllipsoidEnumerationR0229"
+    },
+    {
+      "id": "accepted-062",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.ldl_theta_prefix",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n : ℕ) (A : Matrix (Fin n) (Fin n) ℤ), ArithmeticThetaComputed.validGram A → (∀ m : ℕ, ArithmeticThetaLDLEnumerationR0229.shell A m = ArithmeticThetaEnumeration.shellVectors A m) ∧ ∀ B : ℕ, ArithmeticThetaLDLEnumerationR0229.coefficients A B = ArithmeticThetaEnumeration.coefficientsUpTo A B ∧ (ArithmeticThetaLDLEnumerationR0229.coefficients A B).length = B + 1 ∧ ∀ a : Fin (B+1), ((ArithmeticThetaLDLEnumerationR0229.coefficients A B).getD a.val 0 : ℂ) = PowerSeries.coeff a.val (ArithmeticThetaComputed.theta A)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 48–55 and 550–557: connect the new rational LDL enumeration to Q(x)=xᵀAx/2 for every valid even integral Gram matrix. Prove equality of the actual shell finite sets and equality of all finite coefficient lists with the accepted cofactor enumerator, then the exact complete-theta coefficient formula. Reuse accepted shell_membership_exact and coefficient_prefix_exact; the new claim is correctness/equivalence of the NEW algorithm. Retain rank zero and B=0. No full-series relation is inferred merely from a prefix.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "LDLThetaPrefixR0229"
+    },
+    {
+      "id": "accepted-063",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.ldl_coefficient_matrix",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n h B : ℕ) (A : Fin h → Matrix (Fin n) (Fin n) ℤ), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ArithmeticThetaLDLEnumerationR0229.coefficientMatrix A B = ArithmeticThetaComputed.coefficientMatrix A B ∧ ArithmeticThetaElimination.run (ArithmeticThetaLDLEnumerationR0229.coefficientMatrix A B) = ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B) ∧ (ArithmeticThetaComputed.prefixMap B).comp (ArithmeticThetaComputed.thetaMap A) = ((ArithmeticThetaLDLEnumerationR0229.coefficientMatrix A B).map (algebraMap ℚ ℂ)).mulVecLin",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 550–572: identify the new exact coefficient matrix, hence the existing rational elimination state and actual theta truncation map. This is the new algorithm adapter needed to consume existing earlier certificates and sharp/conservative kernel theorems; reuse computed_prefix_map rather than reprove its linear algebra. All n,h,B are allowed, including empty families. It makes no claim that arbitrary deficient prefixes determine full relations.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "LDLThetaPrefixR0229"
+    },
+    {
+      "id": "accepted-077",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_even_unimodular",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ n : ℕ, 8 ∣ n → ArithmeticThetaComputed.validGram (ArithmeticThetaRank16.latticeGram n) ∧ (ArithmeticThetaRank16.latticeGram n).det = 1 ∧ (∀ v : Fin n → ℚ, v ∈ ArithmeticThetaGeneralDPlusR0242.lattice n ↔ ArithmeticThetaRank16.originalDPlus n v) ∧ (∃ b : Module.Basis (Fin n) ℤ (ArithmeticThetaGeneralDPlusR0242.lattice n), ∀ (j i : Fin n), (b j).val i = ArithmeticThetaRank16.latticeBasis n i j) ∧ (∀ v : Fin n → ℚ, ArithmeticThetaRank16.originalDPlus n v → ∃ z : ℤ, (∑ i, v i ^ 2) / 2 = (z : ℚ))",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 620–624: prove the asserted full-rank even unimodular lattice for every 8 dividing n: the actual integer span equals the source union, the displayed columns are an integral basis, the Gram matrix is symmetric, even and positive definite with determinant one, and every source vector has integral half-norm. Reuse accepted norm_divisible_eight for the doubled parity arithmetic. Rank zero is the zero lattice with empty basis and determinant one.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "GeneralDPlusEvenUnimodularR0242"
+    },
+    {
+      "id": "accepted-078",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_dual",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ n : ℕ, 8 ∣ n → ∀ v : Fin n → ℚ, ArithmeticThetaGeneralDPlusR0242.dualMember n v ↔ v ∈ ArithmeticThetaGeneralDPlusR0242.lattice n",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 620–624: establish unimodularity in the intrinsic dual-lattice sense as well: a rational vector pairs integrally with every member of this very D_n^+ lattice if and only if it belongs to it. The bilinear pairing is the standard Euclidean dot product and the integral structure is the specified integer span; no unrelated scalar action or assumed self-duality is permitted.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "GeneralDPlusDualR0242"
+    },
+    {
+      "id": "accepted-079",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_theta_realization",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ n : ℕ, 8 ∣ n → (∀ m : ℕ, ∃ e : ArithmeticThetaGeneralDPlusR0242.OriginalShell n m ≃ ArithmeticThetaRank16.NormShell n (8 * m), ∀ v, ArithmeticThetaRank16.doubledRealization n (e v).val = v.val) ∧ ArithmeticThetaGeneralDPlusR0242.originalTheta n = ArithmeticThetaRank16.theta n ∧ ArithmeticThetaComputed.theta (ArithmeticThetaRank16.latticeGram n) = PowerSeries.map (Int.castRingHom ℂ) (ArithmeticThetaGeneralDPlusR0242.originalTheta n) ∧ (0 < n → (2 : PowerSeries ℤ) * PowerSeries.expand 8 (by decide) (ArithmeticThetaGeneralDPlusR0242.originalTheta n) = ArithmeticThetaHadamard.a ^ n + ArithmeticThetaHadamard.b ^ n + ArithmeticThetaHadamard.c ^ n)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 620–640 and 47–54: identify all finite norm shells of the source rational lattice with the accepted doubled shells, identify its complete integral theta series with the valid Gram input theta series, and transport the accepted full parity-selection identity to this actual lattice in every positive dimension divisible by eight. The shell and series identifications also include n=0; the parity formula retains its necessary positive-rank hypothesis. Reuse parity_selection and expand_actual rather than reproving Hadamard/Jacobi or the n=8,16 identity.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "GeneralDPlusThetaRealizationR0242"
+    },
+    {
+      "id": "accepted-088",
+      "declaration": "ArithmeticThetaDegreeAssembly.certified_theta_image_data",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (n h B : ℕ) (A : Fin h → Matrix (Fin n) (Fin n) ℤ), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ W : Submodule ℂ (Fin h → ℂ), W ≤ LinearMap.ker (ArithmeticThetaComputed.thetaMap A) → Module.finrank ℂ W = h - (ArithmeticThetaComputed.coefficientMatrix A B).rank → (LinearIndependent ℂ (fun t : Fin (ArithmeticThetaElimination.freeColumns (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B))).length => fun j => ((ArithmeticThetaElimination.nullBasis (ArithmeticThetaComputed.coefficientMatrix A B) t j : ℚ) : ℂ)) ∧ Submodule.span ℂ (Set.range (fun t : Fin (ArithmeticThetaElimination.freeColumns (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B))).length => fun j => ((ArithmeticThetaElimination.nullBasis (ArithmeticThetaComputed.coefficientMatrix A B) t j : ℚ) : ℂ))) = LinearMap.ker (ArithmeticThetaComputed.thetaMap A)) ∧ (LinearIndependent ℂ (fun t : Fin (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B)).pivots.length => ArithmeticThetaComputed.theta (A (ArithmeticThetaComputed.selectedIndex A B t))) ∧ Submodule.span ℂ (Set.range (fun t : Fin (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B)).pivots.length => ArithmeticThetaComputed.theta (A (ArithmeticThetaComputed.selectedIndex A B t)))) = LinearMap.range (ArithmeticThetaComputed.thetaMap A)) ∧ ∀ j : Fin h, ArithmeticThetaComputed.theta (A j) = ∑ t : Fin (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B)).pivots.length, ((ArithmeticThetaElimination.columnCoordinates (ArithmeticThetaComputed.coefficientMatrix A B) j t : ℚ) : ℂ) • ArithmeticThetaComputed.theta (A (ArithmeticThetaComputed.selectedIndex A B t)) ∧ ∀ c : Fin (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B)).pivots.length → ℚ, ArithmeticThetaComputed.theta (A j) = ∑ t, ((c t : ℚ) : ℂ) • ArithmeticThetaComputed.theta (A (ArithmeticThetaComputed.selectedIndex A B t)) → c = ArithmeticThetaElimination.columnCoordinates (ArithmeticThetaComputed.coefficientMatrix A B) j",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source 89–91,550–578: once the actual early certificate is justified, the computed rational null vectors give the entire complex theta kernel, the computed pivot theta series form an independent basis of the full formal image, and the computed rational coordinates reconstruct every whole series uniquely. Promote finite-prefix coordinate equalities to full-series equalities using the newly derived actual kernel equality. This does not assert modularity or arbitrary-bound success.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "EarlyCertificateAssembly"
+    },
+    {
+      "id": "accepted-089",
+      "declaration": "ArithmeticThetaTateIdentities.general_annular_addition",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ {k : Type u} [Field k] [CharZero k], ∀ (d i j : ℕ) (a b : k), ArithmeticThetaTateSeries.Admissible d i a → ArithmeticThetaTateSeries.Admissible d j b → (ArithmeticThetaTateSeries.toLaurent k (ArithmeticThetaTateSeries.tateX d i (a : k)) - ArithmeticThetaTateSeries.toLaurent k (ArithmeticThetaTateSeries.tateX d j (b : k))) * (ArithmeticThetaTateIdentities.gammaLaurent d (i:ℤ) a)^2 * (ArithmeticThetaTateIdentities.gammaLaurent d (j:ℤ) b)^2 = -HahnSeries.single (j:ℤ) b * (ArithmeticThetaTateSeries.toLaurent k (PowerSeries.map (Int.castRingHom k) (ArithmeticThetaUnaryProduct.etaProduct d)))^4 * ArithmeticThetaTateIdentities.gammaLaurent d ((i:ℤ)-(j:ℤ)) (a/b) * ArithmeticThetaTateIdentities.gammaLaurent d ((i:ℤ)+(j:ℤ)) (a*b)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source equation tate-difference, 699–718: full multiplicative addition formula for the literal X and gamma series, cleared only of its gamma denominators. Both points range over all admissible fundamental annuli. The Laurent gamma definition handles i−j<0 and i+j≥d. Coincident/inverse points and coalesced two-torsion zeros remain included; no X identity, divisor comparison or nonzero difference is assumed.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "universes": [
+        "u"
+      ],
+      "audit_import": "TateGeneralAddition"
+    },
+    {
+      "id": "accepted-090",
+      "declaration": "ArithmeticThetaElementary.norm_exponent_identities",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (c d : ℚ), (d - 1) * (-c * (c - 1) / 2) + c * ((c - 1) * (d - 1) / 2) = 0 ∧ (d ^ 2 - 1) * (c ^ 2 - 1) / 12 + (-c * (c - 1) / 2) * d * (d - 1) / 2 + ((c ^ 2 - 1) * (d - 1) * (2 * d - 1) / 12 - d * (c - 1) * (d - 1) / 4) = 0 ∧ (d ^ 2 - 1) * (-c * (c - 1) / 2) + (c - 1) * (d - 1) / 2 = (c - 1) * (d - 1) * (1 - c * (d + 1)) / 2",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Proposition norm proof, lines 294–302: after substituting p_c = −c(c−1)/2, K_c = c²−1 and the displayed formulas for S and E, the z and Q exponents vanish and the sign exponent has the stated expression. This leaf does not assert the product identity, residue permutation sums, or existence of Kato theta units.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "NormExponentAlgebra"
+    },
+    {
+      "id": "accepted-091",
+      "declaration": "ArithmeticThetaElementary.norm_sign_exponent_even",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (c d : ℤ), Odd c → Even ((c - 1) * (d - 1) * (1 - c * (d + 1)) / 2)",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Proposition norm proof, lines 299–302: the remaining sign exponent is even. Odd c is sufficient; the source condition gcd(c,6)=1 implies it. Integer division agrees with the rational exponent since c−1 is even.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "NormExponentAlgebra"
+    },
+    {
+      "id": "accepted-092",
+      "declaration": "ArithmeticThetaLaurentNormR0064.powered_gamma_norm",
+      "file": "Lean/FullSourceIntegrationR0268.lean",
+      "type": "∀ (K : Type) [Field K] [CharZero K] (c d : ℕ) (ζ : K), 1 < c → 0 < d → Nat.Coprime c d → IsPrimitiveRoot ζ d → ∀ (H : Fin d → Fin d → ArithmeticThetaLaurentNormR0064.Series K) (b : ArithmeticThetaLaurentNormR0064.Series K), (∀ i j : Fin d, ArithmeticThetaLaurentNormR0064.IsGamma (ArithmeticThetaLaurentNormR0064.Coeff K) d (c * i.val) (ArithmeticThetaLaurentNormR0064.a K ζ j.val c) (H i j)) → ArithmeticThetaLaurentNormR0064.IsGamma (ArithmeticThetaLaurentNormR0064.Coeff K) d 0 (ArithmeticThetaLaurentNormR0064.w K ^ (c * d)) b → (∏ i : Fin d, ∏ j : Fin d, H i j) = (-1 : ArithmeticThetaLaurentNormR0064.Series K) ^ (-ArithmeticThetaNormFiniteR0063.S c d) * ArithmeticThetaLaurentNormR0064.z K d ^ (-(c : ℤ) * ArithmeticThetaNormFiniteR0063.S c d) * ArithmeticThetaLaurentNormR0064.Q K d ^ (-ArithmeticThetaNormFiniteR0063.E c d) * b",
+      "source_statement": "REUSE accepted declaration unchanged, with its full existing proof closure; import and audit it in the final joint environment. Source lines 279-289: use actual ci=dk_i+r_i, the proved residue permutation, literal gamma translation, and the transported unpowered norm to prove the powered product. The finite integer S and E are exactly the accepted sums. This is the missing gamma identity, not a hypothesis containing it.",
+      "difficulty": "medium",
+      "depends_on": [
+        "binary-orthogonal-example",
+        "conservative-image-consumer"
+      ],
+      "audit_import": "LaurentPoweredNormR0064"
+    }
+  ],
+  "total_required": 103,
+  "partial": true
+}

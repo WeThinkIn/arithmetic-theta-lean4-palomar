@@ -1,0 +1,135 @@
+{
+  "scope": "all thirteen original source requirements; no reduction",
+  "requirements": [
+    {
+      "requirement": "main",
+      "original_source_span": "main (47–114, 517–549)",
+      "original_endpoint_mapping": "000–002 handle rank zero; 035 constructs actual conservative common geometry from valid matrices; 036 is the degree/jet consumer; 037 supplies the exact integral B_* and full complex kernel at every larger cutoff. 075 constructs cyclotomic modular sections; 076 retains one family/solver output and every coefficient extension. 088 is the exact rational null/pivot/coordinate consumer.",
+      "original_final_task_account": "conservative-image-consumer supplies the literal conservative-bound formal and modular image consequences without an externally supplied W or cutoff. Final mapping connects the same integral shell counts to these sections.",
+      "new_toolchain_verification": "pending",
+      "independent_challenge": "pending",
+      "comparator": "not-run",
+      "palomar_review": "not-submitted"
+    },
+    {
+      "requirement": "orthogonal-lemma",
+      "original_source_span": "orthogonal-lemma (115–152)",
+      "original_endpoint_mapping": "003,008 construct integral nondegenerate diagonalization and positive even natural norms. 023 identifies B^-1 Z^n/Z^n and its determinant index; 024–027 supply integral residues/exponents, full coset products and literal unary identification, including arbitrary odd rank.",
+      "original_final_task_account": "binary-orthogonal-example supplies the displayed A/B, all two cosets and exact whole-series identity.",
+      "new_toolchain_verification": "pending",
+      "independent_challenge": "pending",
+      "comparator": "not-run",
+      "palomar_review": "not-submitted"
+    },
+    {
+      "requirement": "constant",
+      "original_source_span": "constant (176–199)",
+      "original_endpoint_mapping": "050 is the arbitrary finite affine FORMAL-cover theorem, with actual proper/flat model, smooth geometrically connected generic fiber, normal noetherian parameter-torsion-free completed chart domains, compatible fractions and height-one no-pole conditions. Round-267 recovery makes this chain jointly importable with the modern arithmetic providers.",
+      "original_final_task_account": "Reuse unchanged declaration and recovered support; do not replace arbitrary formal covers by the special cyclic chart case.",
+      "new_toolchain_verification": "pending",
+      "independent_challenge": "pending",
+      "comparator": "not-run",
+      "palomar_review": "not-submitted"
+    },
+    {
+      "requirement": "norm",
+      "original_source_span": "norm (154–358)",
+      "original_endpoint_mapping": "084 constructs the actual algebraic Kato unit, Cartier divisor, all positive coprime multiplication norms and complete Tate expansion; 083 supplies base-change naturality; 086 characterizes the same function intrinsically by divisor and norms 2,3. 090–092 retain the displayed norm exponent/sign and full gamma identities. 093 constructs actual unary power values with model/group/function witnesses. 098 supplies the determinant norm on actual finite-etale maps.",
+      "original_final_task_account": "Joint exact-type/axiom audit and complete mathematical exposition; no unproved norm normalization premise.",
+      "new_toolchain_verification": "pending",
+      "independent_challenge": "pending",
+      "comparator": "not-run",
+      "palomar_review": "not-submitted"
+    },
+    {
+      "requirement": "d2",
+      "original_source_span": "d2 (359–383)",
+      "original_endpoint_mapping": "080–082 construct the canonical discriminant, its naturality and period-one full expansion over rational coefficient rings/scheme tests; 085 identifies it with five times the actual initial term of the five-Kato unit.",
+      "original_final_task_account": "Final mapping must retain the canonical conormal tensor, the factor 5 and the entire Q^2 product(1-Q^r)^48 expansion.",
+      "new_toolchain_verification": "pending",
+      "independent_challenge": "pending",
+      "comparator": "not-run",
+      "palomar_review": "not-submitted"
+    },
+    {
+      "requirement": "roots",
+      "original_source_span": "roots (459–516)",
+      "original_endpoint_mapping": "032–034 construct the discriminant twist, actual E(t)^2 root and common half-Hodge cover with specified disk frame. 056–057 retain arbitrary ambient prescribed roots, the generated field (not separate arbitrary components), degree n^s, regular sections, smooth/projective geometry, actual completion and finite constants.",
+      "original_final_task_account": "Reuse the supplied branch and ambient embedding; no independent chosen roots or finite-field substitute.",
+      "new_toolchain_verification": "pending",
+      "independent_challenge": "pending",
+      "comparator": "not-run",
+      "palomar_review": "not-submitted"
+    },
+    {
+      "requirement": "early",
+      "original_source_span": "early (550–592)",
+      "original_endpoint_mapping": "017 proves all three certificates independently of geometry. 058–063 provide exact shifted integer intervals, rational Schur/LDL, complete recursive enumeration and actual coefficient matrix. 064 proves basis-change full relations; 065–067 prove terminating capped doubling, correctness, unresolved behavior and singleton cutoff zero. 088 identifies rational nullspace/pivots/coordinates for the actual full-series certificate.",
+      "original_final_task_account": "Final paper distinguishes symbolic bound inspection from completed enumeration and theorem termination from practical tractability.",
+      "new_toolchain_verification": "pending",
+      "independent_challenge": "pending",
+      "comparator": "not-run",
+      "palomar_review": "not-submitted"
+    },
+    {
+      "requirement": "basic-fourth",
+      "original_source_span": "basic-fourth (659–737)",
+      "original_endpoint_mapping": "018 is the complete theta^4 identity; 019–022 algebraize actual X/Y with their exact poles, split cubic and specified normalized differential; 089 supplies the general annular multiplicative addition identity. 007 supplies the full formal Jacobi normalization.",
+      "original_final_task_account": "Preserve the actual-coordinate bridge and the generic addition identity, not merely the special numeric identity or a finite prefix.",
+      "new_toolchain_verification": "pending",
+      "independent_challenge": "pending",
+      "comparator": "not-run",
+      "palomar_review": "not-submitted"
+    },
+    {
+      "requirement": "level-four-root",
+      "original_source_span": "level-four-root (738–791)",
+      "original_endpoint_mapping": "038–041 give the four-torsion expression, nonzero denominator, actual intrinsic section, specified-frame signed Tate expansion and all-cusp orders; 042 constructs the canonical half-line; 043–045 retain the cyclic-isogeny Hodge factor, designated expansion and all-cusp even orders.",
+      "original_final_task_account": "No new normalization or comparison with an arbitrary frame; reuse exact accepted predicates.",
+      "new_toolchain_verification": "pending",
+      "independent_challenge": "pending",
+      "comparator": "not-run",
+      "palomar_review": "not-submitted"
+    },
+    {
+      "requirement": "four-character",
+      "original_source_span": "four-character (792–898)",
+      "original_endpoint_mapping": "051–052 compute the actual Miller phase and right-action character. 095–097 construct the inverse-character multiplier and descended tensor and prove base change, without presupposing a phase. 053–055 construct/naturalize/normalize the actual key isomorphism. 094 is a local rigidification provider; the global identity-evaluation provider is in the accepted key dependency closure and is separately recorded in ScopeReview.",
+      "original_final_task_account": "Final exposition must retain Weil-pairing convention, inverse torsor direction, nonvanishing evaluation and the actual provider chain.",
+      "new_toolchain_verification": "pending",
+      "independent_challenge": "pending",
+      "comparator": "not-run",
+      "palomar_review": "not-submitted"
+    },
+    {
+      "requirement": "projective-ratios",
+      "original_source_span": "projective-ratios (899–981)",
+      "original_endpoint_mapping": "087 constructs the arithmetic full-level family, original-base sign-aligned lifts, common invariant evaluation line, rational component quotients on a nonempty open and complete unary ratios along the SAME canonical marked Cartesian disk. Accepted r0265/r0266 supporting definitions explicitly relate the components and scalar map.",
+      "original_final_task_account": "No r0264 conjunction or renamed ExactValues is proposed. Use the new global theorem unchanged.",
+      "new_toolchain_verification": "pending",
+      "independent_challenge": "pending",
+      "comparator": "not-run",
+      "palomar_review": "not-submitted"
+    },
+    {
+      "requirement": "sharper-bound",
+      "original_source_span": "sharper-bound (982–1083)",
+      "original_endpoint_mapping": "046–049 retain distinct norm count r separately from distinct unary pair count s, the 2^(r-1) cover, r=1 identity case, actual common theta sections, floor cutoff and all complex kernels. 071,074–075 supply the arithmetic common family and its degree/image consequences over Q(zeta_L).",
+      "original_final_task_account": "Final integration preserves this independent arithmetic route and both numerical bounds.",
+      "new_toolchain_verification": "pending",
+      "independent_challenge": "pending",
+      "comparator": "not-run",
+      "palomar_review": "not-submitted"
+    },
+    {
+      "requirement": "arithmetic-modularity",
+      "original_source_span": "arithmetic-modularity (1084–1193)",
+      "original_endpoint_mapping": "068–071 are actual arithmetic compact sections/common cover; 072–075 give the cyclotomic degree and matrix-image theorem. 076 uses the pre-existing elliptic-family/metaplectic stack, genuine representable finite-etale test fibers, the same compact square line, full completed expansion and every extension field.",
+      "original_final_task_account": "Final required paper plus same-root audit and coverage review; no analytic dictionary/congruence/multiplier assertion is added.",
+      "new_toolchain_verification": "pending",
+      "independent_challenge": "pending",
+      "comparator": "not-run",
+      "palomar_review": "not-submitted"
+    }
+  ]
+}

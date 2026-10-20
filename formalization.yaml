@@ -1,0 +1,40 @@
+version: v0.4
+project:
+  name: Arithmetic determination of relations among lattice theta series
+  description: >-
+    Arithmetic constructions for finite families of positive-definite even integral
+    lattice theta series, with complete relation kernels, image bases, rational
+    coordinates, explicit coefficient bounds, and certified stopping criteria.
+    This workspace is undergoing a full-scope Lean version and module-system port;
+    Palomar verification has not yet completed.
+  license: "Apache-2.0"
+  authors: ["Jue Ding"]
+  responsible_maintainers: ["Jue Ding"]
+classification:
+  arxiv: [math.NT, math.AG]
+sources:
+  - title: Arithmetic determination of relations among lattice theta series
+    type: paper
+    location: paper/Paper.pdf
+    relationship: formalizes
+  - title: Original arithmetic theta kernel task
+    type: paper
+    location: paper/OriginalTask.tex
+    relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: Original Lean proof development and independent Palomar adaptation workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions are recorded here.
+review:
+  status: agent-reviewed
+  notes: >-
+    The original Lean 4.33.1 delivery has a current exact-type and axiom audit.
+    The Lean 4.35.0-rc2 port and Palomar review are pending.
+status:
+  scope: >-
+    All thirteen original source requirements and all 103 frozen integration
+    obligations are retained. Current migration status is recorded in docs/Coverage.md.
+fidelity:
+  divergences: No intended mathematical scope changes; port compilation and Challenge bridges remain to be verified.
