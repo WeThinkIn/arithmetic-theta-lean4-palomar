@@ -6,6 +6,8 @@ This public repository prepares independent Palomar verification of the arithmet
 
 **The complete GoalRoot migration build and all103 original exact endpoint type/axiom checks have passed. Full-paper independent Palomar verification and permanent registration remain incomplete.** The original Lean4.33.1 delivery and this Lean4.35.0-rc2 port are distinct artifacts.
 
+Current integrated independent interface coverage is **70/103**, with33 pending; these are local interface checks, not70 official passes. [Actual dual/evaluation support465](docs/audit/actual-dual-evaluation-465/Review.md) now passes compilation, definition and axiom audits. The [full key/naturality candidate466](docs/audit/phase-free-key-candidate-466/Review.md) recovers original053/054 exactly, but its1375-line Challenge exceeds the official1000-line cap and has not been installed or submitted. It adds no integrated endpoint credit.
+
 For a nonempty finite family of positive-definite even integral Gram matrices, the development constructs finite coefficient bounds that determine all complex linear relations among the actual lattice theta series. It also constructs rational relation bases, pivot image bases and unique rational coordinates, and proves the arithmetic geometric constructions and exact algorithms used to obtain these conclusions. Rank zero, dependent families, full infinite series and the original arithmetic examples remain in scope.
 
 ## Migration validation
@@ -37,7 +39,7 @@ Challenge `sorry` declarations specify the targets required by Comparator; they 
 | accepted-017 early certificate | `12f83ea` | Full mechanical preflight39455278417 passed. |
 | accepted-050 formal-cover constancy | `2bd02cf` | Full preflight39461300608 and submission verification39466419289 passed. Submission86n83vqdajt2 has a private semantic review available; not registered. |
 | Main and components, older interface | `2bd02cf` | Full preflight39461299032 ended with Solution-build memory exhaustion (exit137/oom-kill);39 complete endpoints plus supporting/main conclusions, omitting the original extra FormalIdentity field. |
-| Sharp/adaptive/image seven-endpoint package | `088eff2` | Full preflight39479248485 running. |
+| Sharp/adaptive/image seven-endpoint package | `088eff2` | Full preflight39479248485 failed at Solution build with exit137/oom-kill; official report453 records resource exhaustion, with no kernel verdict. |
 | Sharp and actual ambient roots | `b706aea` | Full preflight39482676946 running; controlled per-compiler thread-limit experiment. |
 | Sharp and algebraic coordinates | current sources | Local build/audit384 passed; official dispatch pending. |
 | Complete scheme discriminant | current sources | Local exact-type/axiom checks385 and root build392 passed; official preflight pending. |

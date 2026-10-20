@@ -1,0 +1,268 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:59:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:251:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:257:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:265:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:268:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:273:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:273:574: warning: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:276:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:276:574: warning: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:382:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:387:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:477:200: error: unsolved goals
+S : Scheme
+E : Family S
+P : EvenPoint E
+e : (Scheme.Modules.pullback E.zero).obj (thetaLine E P) ≅ 𝟙_ S.Modules
+⊢ tensorPowerSection S (pushforwardLine E P).dual 2 ⊤ (ArithmeticThetaMultiplierKeyR0217.evaluationSection E P e) =
+    tensorPowerSection S (ArithmeticThetaMultiplierKeyR0217.pushforwardLine E P).dual 2 ⊤
+      (ArithmeticThetaMultiplierKeyR0217.evaluationSection E P e)
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:480:257: error: unsolved goals
+S : Scheme
+E : Family S
+P : EvenPoint E
+L : S.Modules
+e : (Scheme.Modules.pullback E.zero).obj (thetaLine E P) ≅ 𝟙_ S.Modules
+β : ↑Γ(productLine E L, ⊤)
+κ : inverseSquare E P ≅ productLine E L
+⊢ (ConcreteCategory.hom (Scheme.Modules.Hom.app κ.hom ⊤)) (ArithmeticThetaMultiplierKeyR0217.evaluationSquare E P e) =
+      β ↔
+    (ConcreteCategory.hom (Scheme.Modules.Hom.app κ.hom ⊤)) (ArithmeticThetaMultiplierKeyR0217.evaluationSquare E P e) =
+      β
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:488:326: error: unsolved goals
+S : Scheme
+E : Family S
+T : Scheme
+F : Family T
+b : T ⟶ S
+L : S.Modules
+K : T.Modules
+c : (Scheme.Modules.pullback b).obj (cotangent E) ≅ cotangent F
+v : (Scheme.Modules.pullback b).obj L ≅ K
+β : ↑Γ(productLine E L, ⊤)
+γ : ↑Γ(productLine F K, ⊤)
+⊢ (ConcreteCategory.hom
+          (Scheme.Modules.Hom.app (ArithmeticThetaMultiplierKeyR0217.productComparison E F b L K c v).hom ⊤))
+        (pullbackGlobalSection b (productLine E L) β) =
+      γ ↔
+    (ConcreteCategory.hom
+          (Scheme.Modules.Hom.app (ArithmeticThetaMultiplierKeyR0217.productComparison E F b L K c v).hom ⊤))
+        (pullbackGlobalSection b (ArithmeticThetaMultiplierKeyR0217.productLine E L) β) =
+      γ
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:491:402: error: unsolved goals
+S : Scheme
+E : Family S
+P : EvenPoint E
+T : Scheme
+F : Family T
+Q : EvenPoint F
+b : T ⟶ S
+eS : (Scheme.Modules.pullback E.zero).obj (thetaLine E P) ≅ 𝟙_ S.Modules
+eT : (Scheme.Modules.pullback F.zero).obj (thetaLine F Q) ≅ 𝟙_ T.Modules
+j : (Scheme.Modules.pullback b).obj (inverseSquare E P) ≅ inverseSquare F Q
+⊢ (ConcreteCategory.hom (Scheme.Modules.Hom.app j.hom ⊤))
+        (pullbackGlobalSection b (inverseSquare E P) (ArithmeticThetaMultiplierKeyR0217.evaluationSquare E P eS)) =
+      ArithmeticThetaMultiplierKeyR0217.evaluationSquare F Q eT ↔
+    (ConcreteCategory.hom (Scheme.Modules.Hom.app j.hom ⊤))
+        (pullbackGlobalSection b (ArithmeticThetaMultiplierKeyR0217.inverseSquare E P)
+          (ArithmeticThetaMultiplierKeyR0217.evaluationSquare E P eS)) =
+      ArithmeticThetaMultiplierKeyR0217.evaluationSquare F Q eT
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:498:24: error: `simp` made no progress
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:495:930: error: unsolved goals
+case e'_2
+k : Type u
+inst✝¹ : Field k
+inst✝ : CharZero k
+S : Scheme
+σ : S ⟶ Base k
+E : Family S
+P : EvenPoint E
+L : S.Modules
+m : ArithmeticThetaPhaseFreeKeyR0219.Frames E P L
+hm : ArithmeticThetaPhaseFreeKeyR0219.IsMultiplier E P L m
+β : ↑Γ(productLine E L, ⊤)
+hβ : Descends E P L m β
+e : (Scheme.Modules.pullback E.zero).obj (thetaLine E P) ≅ SheafOfModules.unit S.ringCatSheaf
+he : IsRigidification E P e
+h : ∃! κ, ArithmeticThetaMultiplierKeyR0217.IsKey E P L e β κ
+e_1✝ :
+  (inverseSquare E P ≅ productLine E L) =
+    (ArithmeticThetaMultiplierKeyR0217.inverseSquare E P ≅ ArithmeticThetaMultiplierKeyR0217.productLine E L)
+⊢ (fun κ => ArithmeticThetaMultiplierKeyR0217.IsKey E P L e β κ) = fun κ =>
+    ArithmeticThetaMultiplierKeyR0217.IsKey E P L e β κ
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:498:35: warning: This simp argument is unused:
+  ArithmeticThetaPalomarAlphaDescent459.descends_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isKey_iff, alphaNatural_iff, evaluationSquareCompatible_iff, productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:498:98: warning: This simp argument is unused:
+  alphaNatural_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, evaluationSquareCompatible_iff,
+    productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:498:116: warning: This simp argument is unused:
+  evaluationSquareCompatible_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, alphaNatural_iff,
+    productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:498:148: warning: This simp argument is unused:
+  productComparison_eq_original
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, alphaNatural_iff,
+    evaluationSquareCompatible_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:503:24: error: `simp` made no progress
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:500:937: error: unsolved goals
+case e'_2
+k : Type u
+inst✝¹ : Field k
+inst✝ : CharZero k
+S : Scheme
+σ : S ⟶ Base k
+E : Family S
+P : EvenPoint E
+L : S.Modules
+m : ArithmeticThetaPhaseFreeKeyR0219.Frames E P L
+hm : ArithmeticThetaPhaseFreeKeyR0219.IsMultiplier E P L m
+β : ↑Γ(ArithmeticThetaMultiplierKeyR0217.productLine E L, ⊤)
+hβ : ArithmeticThetaPhaseFreeKeyR0219.Descends E P L m β
+e :
+  (Scheme.Modules.pullback E.zero).obj (ArithmeticThetaMultiplierKeyR0217.thetaLine E P) ≅
+    SheafOfModules.unit S.ringCatSheaf
+he : ArithmeticThetaMultiplierKeyR0217.IsRigidification E P e
+h : ∃! κ, IsKey E P L e β κ
+e_1✝ :
+  (ArithmeticThetaMultiplierKeyR0217.inverseSquare E P ≅ ArithmeticThetaMultiplierKeyR0217.productLine E L) =
+    (inverseSquare E P ≅ productLine E L)
+⊢ (fun κ => ArithmeticThetaMultiplierKeyR0217.IsKey E P L e β κ) = fun κ =>
+    ArithmeticThetaMultiplierKeyR0217.IsKey E P L e β κ
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:503:35: warning: This simp argument is unused:
+  ArithmeticThetaPalomarAlphaDescent459.descends_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isKey_iff, alphaNatural_iff, evaluationSquareCompatible_iff, productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:503:98: warning: This simp argument is unused:
+  alphaNatural_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, evaluationSquareCompatible_iff,
+    productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:503:116: warning: This simp argument is unused:
+  evaluationSquareCompatible_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, alphaNatural_iff,
+    productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:503:148: warning: This simp argument is unused:
+  productComparison_eq_original
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaPalomarAlphaDescent459.descends_iff, isKey_iff, alphaNatural_iff,
+    evaluationSquareCompatible_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:505:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:508:35: warning: This simp argument is unused:
+  ArithmeticThetaPalomarAlphaDescent459.descends_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isKey_iff, alphaNatural_iff, evaluationSquareCompatible_iff, productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:508:179: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:510:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:513:35: warning: This simp argument is unused:
+  ArithmeticThetaPalomarAlphaDescent459.descends_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isKey_iff, alphaNatural_iff, evaluationSquareCompatible_iff, productComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Solution.lean:513:179: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`

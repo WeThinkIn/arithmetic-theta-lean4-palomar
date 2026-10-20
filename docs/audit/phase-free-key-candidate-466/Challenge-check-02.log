@@ -1,0 +1,21 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:603:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:634:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:636:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:638:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:649:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:727:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:729:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:839:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:844:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:870:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:915:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:1209:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:1229:8: warning: automatically included section variable(s) unused in theorem `SheafOfModules.tensorUnit_eq`:
+  [J.HasSheafCompose (forget₂ RingCat AddCommGrpCat)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [J.HasSheafCompose (forget₂ RingCat AddCommGrpCat)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:1305:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:1369:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/Challenge.lean:1372:8: warning: declaration uses `sorry`

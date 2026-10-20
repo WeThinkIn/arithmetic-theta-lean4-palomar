@@ -1,0 +1,9 @@
+DECL ArithmeticThetaPalomarDual465.Compatible._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.Compatible AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.compatible_iff_original AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.canonicalGlobalSectionsEquiv AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.globalSectionsEquiv._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.globalSectionsEquiv AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.globalSectionsEquiv_eq_original AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.evaluationSection_eq_original AXIOMS [propext, Classical.choice, Quot.sound]
+AUDIT checked=8 propagated_holes=0 project_imports=18

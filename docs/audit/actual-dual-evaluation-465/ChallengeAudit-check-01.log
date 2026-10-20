@@ -1,0 +1,445 @@
+DECL PresheafOfModules.uncurry'_curry' AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.curry'._proof_4 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModules.symmetricCategory._aux_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.curry'._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_18 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.symmetricCategory._proof_6 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.restrict._proof_5 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.curry'._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_17 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_5 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_17 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarDual465.Compatible._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.curry'._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.tensor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.instMonoidalClosed AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.PiFamily AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurryApp._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_7 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.curryFamily._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.symmetricCategory._proof_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurryApp._proof_4 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._proof_6 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.ihomFunctor._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.tensorSections AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.presheaf_obj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_19 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.PMod AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_5 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_19 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.ihomFunctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.IdealSheafData.module._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_11 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_4 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.IsNatural AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomMap AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.IdealSheafData.invModuleSection AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_5 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._proof_3 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.tensorIsoSheafify AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.symmetricCategory._proof_6 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_19 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_22 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.sheafify._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModules.symmetricCategory._proof_4 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.sheafify._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModules.symmetricCategory AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurry' AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.tensorSectionsHom AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_7 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.naturalFamilies AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._aux_10 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModules.monoidalClosed._aux_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.symmetricCategory._proof_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_20 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_9 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_20 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.congr_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_25 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.symmetricCategory AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.restrict_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.neg_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyCounitIso AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_20 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.instFaithfulRingSheafPModToPMod AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.curry'_app_val AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_21 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.Compatible AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_22 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_7 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_15 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomFunctor_obj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_22 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.postcomp._proof_4 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.postcomp._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._aux_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalClosed AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_3 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_15 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.tensorIhomAdj._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_24 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModules.symmetricCategory._proof_6 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_24 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_13 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.symmetricCategory._aux_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instSMulCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModules.monoidalClosed AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_9 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.postcomp_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_20 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_26 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.tensorIhomAdj._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_9 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_8 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_25 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_21 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_5 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.sheafifyAdj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_21 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyCounitIso._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_8 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_9 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_21 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarDual465.canonicalGlobalSectionsEquiv AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_13 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_23 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_10 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.map_id_apply AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_23 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.sheafifyFunctor._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._aux_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_16 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.curryFamily AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_13 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_14 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.uncurryApp AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_24 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.symmetricCategory._aux_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_11 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_16 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.symmetricCategory._proof_4 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.naturality AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.curry'_uncurry' AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._aux_12 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_11 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_18 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomMap._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_18 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomMap_app_val AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_18 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.naturalFamilies_ext_iff AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.presheaf._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._aux_12 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.symmetricCategory._proof_5 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.presheafW_isMonoidal AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.postcomp AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._aux_10 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.ihomMap._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurryApp_tmul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_17 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_23 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.presheaf._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_6 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.ihomFunctor._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_2 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._proof_5 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_3 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.ringSheaf AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.tensorUnit_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.IdealSheafData.module._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyUnitIso AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.curryFamily._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.globalSectionsEquiv._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.toPMod AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_6 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.symmetricCategory._proof_4 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomObj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomObj._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurryApp._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomObj_map_val AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.symmetricCategory AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_19 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.curryFamily._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurryApp._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarDual465.globalSectionsEquiv AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_6 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.sheafifyFunctor._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.symmetricCategory._proof_5 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.curryFamily_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_18 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.curry' AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurry'_app_tmul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.symmetricCategory._proof_7 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._proof_15 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._proof_8 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_15 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_15 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.restrict._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.sub_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.smul_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.zero_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_4 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.restrict._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instSMulCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_17 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.tensorIhomAdj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_7 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.restrict AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_20 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._proof_7 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_9 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.naturalFamilies_ext AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_25 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_26 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.sheafify AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.postcomp._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.tensorIsoSheafify AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._aux_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_5 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.postcomp._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomObj_obj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.symmetricCategory._proof_7 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_14 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_16 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.dual AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._aux_3 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_22 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.presheaf AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.tensorObj_map_tmul' AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.IdealSheafData.invModule AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModules.symmetricCategory._proof_5 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.naturalFamilies._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_24 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._aux_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurry'._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.instFullRingSheafPModToPMod AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._aux_13 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.naturalFamilies._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.unitToPushforwardUnit AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.presheafW AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.add_app AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.unitToPushforwardUnit._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.naturalFamilies._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.uncurry'._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.presheaf_map_apply AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.sheafify._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.instIsLocalizationPModRingSheafSheafifyFunctorPresheafW AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalClosed._aux_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_12 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_21 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_5 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_7 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModules.symmetricCategory._proof_3 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.monoidalClosed AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModulesOfCommRing.monoidalCategory._proof_23 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_17 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeRingCatCompCommRingCatForget₂RingHomCarrierCarrierAbPresheaf._proof_4 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.postcomp._proof_5 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_7 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.ihomFunctor_map AXIOMS [propext, Classical.choice, Quot.sound]
+DECL SheafOfModules.sheafifyFunctor_monoidal._proof_22 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._aux_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL SheafOfModules.tensorUnit_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.IdealSheafData.module AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_3 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.restrict._proof_4 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.IdealSheafData.moduleι AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL SheafOfModules.monoidalCategory._aux_11 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.instModuleCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_2 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL PresheafOfModules.InternalHom.instSMulCarrierObjOppositeCommRingCatSubtypePiFamilyMemAddSubgroupNaturalFamilies._proof_2 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.PresheafOfModules.symmetricCategory._proof_7 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.monoidalCategory._proof_19 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL PresheafOfModules.InternalHom.restrict._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+AUDIT checked=266 propagated_holes=111 project_imports=0

@@ -1,0 +1,5 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/actual-dual-evaluation-465/OriginalBridgeAudit.lean:7:0: error: Missing declaration AlgebraicGeometry.instMonoidalPresheafOfModulesModulesSheafify._proof_1
+'ArithmeticThetaPalomarDual465.globalSectionsEquiv_eq_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarDual465.evaluationSection_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,12 @@
+{
+  "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_PresheafOfModules_InternalHom.lean": "508522e14c357524b69e218ea4c5192cb7d00484fa64daf25a1007aa324b40b0",
+  "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_SheafOfModules_Monoidal.lean": "abbf4f8b6a26cb49dc5a5609ef277ecb48112f0253e236b892626e78ed0f0f8e",
+  "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_AlgebraicGeometry_ModulesSectionsTensor.lean": "0c61c84de2219ebddd7d6cfe527235be7c407fd6c7d4a1eea7b76c524b659734",
+  "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_AlgebraicGeometry_IdealSheafModule.lean": "a91b4505c27dbe429605a83ec1131a128de8d7495de0a2a47c7dc412384b1aa2",
+  "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_AlgebraicGeometry_ModulesSectionZeroScheme.lean": "b3e2e8c6ce065570f8968104a3a639fc1c1cbdda48f5125f548ddc82411d4158",
+  "/home/Palomar/workspace/arithmetic-theta/project/Proof/Definitions/Def_AlgebraicGeometry_ModulesIhomSections.lean": "ebd4e723bdbed9811bbd64e371411112a5f5287ca9de42c29330995b6d2802d5",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/canonical-binary-tensor-458/compile.py": "254522f5893174a01b5e1c12326654b57a8d4d45c08bc55f606a19fdfcf3cc31",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/canonical-binary-tensor-458/ChallengeAudit.lean": "976f936257e99462a74f5e961e88b47c7ef0f5439e37f6ebf73b3d0f1e185e53",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/canonical-binary-tensor-458/SolutionAudit.lean": "4367fd47dc769fe63d46d53575b8be457ec7685980a0d4ec9a08bbe5d20aaeb1",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/canonical-binary-tensor-458/DefinitionCompatibility.lean": "feb4fe11410713af933436abc812cdaa70e9add87d5c9f3f95ce2e58b8fe1d26"
+}

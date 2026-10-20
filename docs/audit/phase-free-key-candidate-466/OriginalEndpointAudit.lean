@@ -1,0 +1,38 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : @ArithmeticThetaSchemeFourCharacterR0215.scheme_alpha_character =
+  @ArithmeticThetaPalomarSchemeAlpha437.recover_original_052 := rfl
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.recover_original_052
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.realizesAlpha_iff
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.affineAlpha_iff
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.affineHodgeMap_eq
+#print axioms ArithmeticThetaPalomarConormal436.conormalMap_eq_original
+#print axioms ArithmeticThetaPalomarSchemeAlpha437.alphaExists
+
+example : @ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier =
+  @ArithmeticThetaPalomarMultiplier450.recover_original_095 := rfl
+example : @ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier_base_change =
+  @ArithmeticThetaPalomarMultiplier450.recover_original_097 := rfl
+#print axioms ArithmeticThetaPalomarMultiplier450.recover_original_095
+#print axioms ArithmeticThetaPalomarMultiplier450.recover_original_097
+
+example : @ArithmeticThetaPhaseFreeKeyR0219.phase_free_alpha_descent =
+  @ArithmeticThetaPalomarAlphaDescent459.recover_original_096 := rfl
+#print axioms ArithmeticThetaPalomarAlphaDescent459.recover_original_096
+#print axioms ArithmeticThetaPalomarAlphaDescent459.descends_iff
+#print axioms ArithmeticThetaPalomarAlphaDescent459.cotangentCompatible_iff
+#print axioms ArithmeticThetaPalomarAlphaDescent459.tensorComparison_eq_original
+
+example : @ArithmeticThetaPhaseFreeKeyR0219.phase_free_key =
+  @ArithmeticThetaPalomarKey466.recover_original_053 := rfl
+example : @ArithmeticThetaPhaseFreeKeyR0219.phase_free_key_naturality =
+  @ArithmeticThetaPalomarKey466.recover_original_054 := rfl
+#print axioms ArithmeticThetaPalomarKey466.recover_original_053
+#print axioms ArithmeticThetaPalomarKey466.recover_original_054
+#print axioms ArithmeticThetaPalomarKey466.evaluationSection_eq_original
+#print axioms ArithmeticThetaPalomarKey466.evaluationSquare_eq_original
+#print axioms ArithmeticThetaPalomarKey466.isKey_iff
+#print axioms ArithmeticThetaPalomarKey466.productComparison_eq_original
+#print axioms ArithmeticThetaPalomarKey466.evaluationSquareCompatible_iff

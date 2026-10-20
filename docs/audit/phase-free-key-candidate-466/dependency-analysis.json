@@ -1,0 +1,6 @@
+{
+  "module_declarations": 776,
+  "type_and_body_closure_declarations": 478,
+  "unused_range_lines_outside_needed_ranges": 145,
+  "caveat": "This is an observed source-range upper bound on direct removal, not a proved minimum. Elaborator instances/simp attributes and surrounding syntax can require additional retention; no pruning applied."
+}

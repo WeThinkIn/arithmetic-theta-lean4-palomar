@@ -1,0 +1,5 @@
+NAMED_CHALLENGE_DECLARATION_TYPES_AND_STANDARD_SOLUTION_CLOSURES 121
+'ArithmeticThetaPalomarDual465.globalSectionsEquiv_eq_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarDual465.evaluationSection_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]

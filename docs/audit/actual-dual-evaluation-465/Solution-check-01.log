@@ -1,0 +1,6 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/actual-dual-evaluation-465/Solution.lean:33:17: error(lean.invalidField): Invalid field `unop`: The environment does not contain `TopologicalSpace.Opens.unop`, so it is not possible to project the field `unop` from an expression
+  U
+of type `TopologicalSpace.Opens ↥X`
+/home/Palomar/workspace/arithmetic-theta/evidence/actual-dual-evaluation-465/Solution.lean:33:39: error(lean.invalidField): Invalid field `unop`: The environment does not contain `TopologicalSpace.Opens.unop`, so it is not possible to project the field `unop` from an expression
+  U
+of type `TopologicalSpace.Opens ↥X`
