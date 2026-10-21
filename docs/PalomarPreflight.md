@@ -64,3 +64,7 @@ FormalIdentity field of accepted-037. This full official preflight is running;
 it has not yet passed and has not been submitted through ordinary intake.
 
 The later repository migration checkpoint passed full GoalRoot build342 and all103 original exact endpoint/standard-axiom checks in audit343. These local results do not change the commits or results of the running official checks. See MigrationStatus.md and audit/full-root-build-342/.
+
+## Official split-discriminant result (21 October 2026)
+
+[Run 39552053781](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39552053781) at `2c85e9b` ended with Solution-build memory exhaustion (`exit 137`, `oom-kill`). No official comparator or independent-kernel pass is inferred. The [report and assessment](audit/official-split-discriminant-result-581/Review.md) distinguish this result from the complete local three-kernel acceptance. Resource diagnosis is in progress; no unchanged retry has been dispatched.
