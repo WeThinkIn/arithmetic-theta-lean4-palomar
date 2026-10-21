@@ -4,7 +4,7 @@
 
 Human author and responsible maintainer: **Jue Ding**.
 
-The accompanying paper and the original arithmetic theta Lean 4 formalization were first publicly released by **Jue Ding** as part of this project. This repository publishes the manuscript, the formal proof development, and its reproducible verification environment. The manuscript records its authors and contributors; third-party mathematical libraries retain their own authorship and attribution.
+The accompanying paper and the original arithmetic theta Lean 4 formalization were first publicly released by **Jue Ding** as part of this project. This repository presents the research manuscript, the complete formal proof development, and a reproducible verification environment. The manuscript records its authors and contributors; third-party mathematical libraries retain their own authorship and attribution.
 
 **The complete formalization has passed local Lean verification for all 13 source requirements, represented by 103 exact theorem endpoints.** The original delivery was verified with Lean **4.33.1**. The Palomar-compatible edition published here has also passed the complete `GoalRoot` build and all 103 original endpoint type and axiom checks with Lean **4.35.0-rc2**. Independent Palomar verification is in progress.
 
@@ -20,7 +20,7 @@ $$
 \Theta_A(c)=\sum_{i=1}^{h}c_i\theta_{A_i}.
 $$
 
-The formalization constructs an explicit finite coefficient bound $B$ such that, for every $B'\geq B$,
+Here the theta series are interpreted as complete formal power series. The formalization constructs an explicit finite coefficient bound $B$ such that, for every $B'\geq B$,
 
 $$
 \ker(\Theta_A)=\ker\bigl(M_{B'}(A)\otimes_{\mathbb Q}\mathbb C\bigr),
@@ -79,14 +79,16 @@ The repository selects its compiler through [`lean-toolchain`](lean-toolchain), 
 
 The Palomar edition preserves the original **13 requirements and 103 theorem endpoints** while adapting the development to the pinned verification toolchain. The original delivery is retained separately; compatibility changes belong to this edition.
 
-The adaptations comprise four connected parts:
+The resulting edition incorporates the following compatibility and engineering work:
 
-1. **Compiler and library migration.** The sources were migrated from Lean 4.33.1 to Lean 4.35.0-rc2 and the pinned Mathlib revision above. Changes include module headers, explicit declaration exposure, private-declaration visibility, updated library interfaces, and explicit parameters where elaboration or instance inference changed. The complete root build and exact endpoint audits validate the integrated port.
-2. **Reproducible dependency packaging.** The local library closure required by the original proofs is included under `Proof/Definitions`, `Proof/Theorems`, and `Proof/P2M`. Source provenance, upstream licenses, and retained attribution are documented in [`docs/ThirdParty`](docs/ThirdParty/README.md).
-3. **Independent theorem interfaces.** Scoped Challenge/Solution pairs expose mathematical specifications for comparison with the implementation. Their configurations record the selected targets and permitted axioms; supporting audits check target types, universes, proof dependencies, and recovery of the original endpoints. Challenge proof holes serve as verification targets and are not accepted Solution proofs.
-4. **Build and kernel-checking efficiency.** Per-compiler threading is bounded with `weakLeanArgs = ["-j1"]`, while Lake can schedule independent compilation work in parallel. Proof factoring reduces expensive kernel reductions, and removal of unused imports reduces the dependency closures of scoped verification packages. These optimizations retain the mathematical statements and are checked against the original types and exported interfaces.
+| Area | Adaptation in the published edition | Verification basis |
+| --- | --- | --- |
+| Compiler and Mathlib compatibility | Migration from Lean 4.33.1 to 4.35.0-rc2, with the pinned Mathlib revision above; updated module headers, declaration exposure, private-declaration visibility, library interfaces, and explicit parameters where elaboration changed | Complete `GoalRoot` build and exact checks of all 103 original endpoint types and their axiom dependencies |
+| Dependency packaging | Required local library sources included under `Proof/Definitions`, `Proof/Theorems`, and `Proof/P2M`, with a locked dependency graph | Recorded [source provenance, licenses, and attribution](docs/ThirdParty/README.md) |
+| Independent verification interfaces | Scoped Challenge/Solution pairs and explicit comparator configurations specifying mathematical targets and permitted axioms | Package-specific checks of statement types, universes, proof dependencies, original-endpoint recovery, and exported interfaces |
+| Compilation and kernel efficiency | Bounded internal compiler threading, parallel scheduling of independent compilation tasks, factored proofs, and smaller dependency closures through unused-import removal | [Proof-preservation and memory measurements](docs/audit/node-reduction-memory-555/Review.md), together with [export-preserving dependency checks](docs/audit/split-import-pruning-561/Review.md) |
 
-For example, the optimized node-completion proof reduced measured peak memory for its isolated compilation from approximately **6.48 GiB to 3.65 GiB** under the same pinned dependencies. Import pruning removed **45 project modules** from each of the two split verification package closures while preserving their target exports byte-for-byte. These are measured local engineering results; official end-to-end verification has its own resource and acceptance gates. See the [proof optimization audit](docs/audit/node-reduction-memory-555/Review.md) and [dependency-pruning audit](docs/audit/split-import-pruning-561/Review.md).
+The mathematical specification remains fixed throughout this adaptation: the original hypotheses, quantified conclusions, and complete-series statements are preserved. Challenge proof holes designate the propositions submitted for independent verification; the corresponding Solution proofs must satisfy the configured axiom checks. Lake uses `weakLeanArgs = ["-j1"]` to limit internal compiler threading while retaining parallel scheduling across independent modules.
 
 ## Independent Palomar verification
 
@@ -94,7 +96,7 @@ For example, the optimized node-completion proof reduced measured peak memory fo
 
 The repository provides [scoped verification packages](challenges/), explicit `comparator-*.json` configurations, and an [official preflight workflow](.github/workflows/palomar-preflight.yml). Each official result applies to its selected scope and immutable source revision. The [workflow runs](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/workflows/palomar-preflight.yml) and [verification records](docs/PalomarPreflight.md) provide the detailed evidence.
 
-The main-and-components configuration covers a substantial part of the development; additional configurations cover geometric, arithmetic, and algorithmic results. A single scoped comparator invocation does not verify the entire manuscript. Consult the package's scope description and [`docs/Coverage.md`](docs/Coverage.md) when selecting an independent check.
+The main-and-components configuration and the geometric, arithmetic, and algorithmic configurations organize independent verification by mathematical scope. Their scope descriptions and [`docs/Coverage.md`](docs/Coverage.md) identify the original endpoints covered by each package. Whole-paper acceptance requires the complete collection of relevant checks and review.
 
 ## Reproduce the formal proof
 
