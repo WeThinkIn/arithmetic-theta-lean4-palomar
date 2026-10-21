@@ -1,0 +1,30 @@
+{
+  "repository": "WeThinkIn/arithmetic-theta-lean4-palomar",
+  "commit": "6a97e8c438a7a74abddbcae944b9a914b6a3003c",
+  "workflow": "Palomar official mechanical preflight",
+  "dispatched_utc": "2026-10-21T00:23:03Z",
+  "runs": [
+    {
+      "configuration": "comparator-compact-unary.json",
+      "run_id": 39520978526,
+      "url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39520978526",
+      "status_at_last_poll": "in_progress",
+      "stage_at_last_poll": "Run lake comparator and challenge provenance audit"
+    },
+    {
+      "configuration": "comparator-split-discriminant.json",
+      "run_id": 39520978779,
+      "url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39520978779",
+      "status_at_last_poll": "in_progress",
+      "stage_at_last_poll": "Run lake comparator and challenge provenance audit"
+    },
+    {
+      "configuration": "comparator-split-square-degree.json",
+      "run_id": 39520978317,
+      "url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39520978317",
+      "status_at_last_poll": "in_progress",
+      "stage_at_last_poll": "Run lake comparator and challenge provenance audit"
+    }
+  ],
+  "interpretation": "Request and profile jobs succeeded. Official comparator results and any ordinary intake decision are pending; in_progress is not an official pass."
+}
