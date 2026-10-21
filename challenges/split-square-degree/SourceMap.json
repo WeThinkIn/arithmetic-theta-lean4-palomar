@@ -36,5 +36,17 @@
     "diagnostic_checked_constants": 37503,
     "mismatches": 0,
     "audit": "docs/audit/split-exact-comparison-558/split-square-degree"
+  },
+  "solution_pruning": {
+    "source": "/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/square/Solution.lean",
+    "sha256": "6e12f186cb616618402177cdf629f4ba973cca2a1a6cc0c8e5e2eaeb616d60c2",
+    "project_imports_before": 3298,
+    "project_imports_after": 3253,
+    "removed_imports": [
+      "ArithmeticCommonUnaryFamilyR0238",
+      "SchemeDiscriminantExistenceR0244"
+    ],
+    "unchanged_challenge_and_targets": true,
+    "isolated_exact_gate": "docs/audit/split-import-pruning-561/split-square-degree/precheck.json"
   }
 }

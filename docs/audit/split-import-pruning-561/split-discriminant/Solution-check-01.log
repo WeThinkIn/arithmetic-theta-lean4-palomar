@@ -1,0 +1,36 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/discriminant/Solution.lean:160:97: warning: Variable name `hζ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hζ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/discriminant/Solution.lean:160:124: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/discriminant/Solution.lean:160:137: warning: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/discriminant/Solution.lean:162:84: warning: Variable name `hζ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hζ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/discriminant/Solution.lean:162:111: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/discriminant/Solution.lean:162:124: warning: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

@@ -1,0 +1,1 @@
+'ArithmeticThetaPalomarSplit516.splitSquareCoverDegree' depends on axioms: [propext, Classical.choice, Quot.sound]

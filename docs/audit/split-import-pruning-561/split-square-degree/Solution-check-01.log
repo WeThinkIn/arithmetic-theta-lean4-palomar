@@ -1,0 +1,12 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/square/Solution.lean:68:86: warning: Variable name `hζ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hζ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/square/Solution.lean:70:84: warning: Variable name `hζ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hζ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

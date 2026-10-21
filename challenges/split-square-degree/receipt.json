@@ -1,17 +1,17 @@
 {
-  "utc": "2026-10-21T05:37:12.914980+00:00",
-  "status": "Actual named roots built and exact exported structure/axiom gate passed; official verification pending",
+  "utc": "2026-10-21T05:47:21.330722+00:00",
+  "status": "Pruned actual named roots build successfully; Solution export byte-identical to previously strict-checked export; official verification pending",
   "source": "split-square-exact-repair-556",
   "original_endpoints": [
     "accepted-074"
   ],
   "bindings": {
     "Challenge.lean": "d0b893eb69c8cd53423d4b212db7d807ea1a313ae1868af8c046909ba36e53d1",
-    "Solution.lean": "24f100c0c589c184aa51cc76d32acb498c6f6c344552d3ca277124d80a12e5da",
+    "Solution.lean": "6e12f186cb616618402177cdf629f4ba973cca2a1a6cc0c8e5e2eaeb616d60c2",
     "Scope.json": "04fe7266bab2f53a2ad4957b6807c2c3cd6ef08cdcb520be23b5fb2072e35805",
-    "SourceMap.json": "adbc19246b477cc481510b17a50153e4381e85521e3d215f9d0ef5bf1724ebc5",
+    "SourceMap.json": "50f610343ad3856d2c9394a3ccd2bcad5659cfc2d9f762b713f4850c5868d4ed",
     "Targets.json": "36c563ff10dd9a16f0bdbca0b58d42f5faa6fe96b044611322e2eaccb7805c2e",
-    "README.md": "37281985363cdf9a77561082c7a228b9ecf4c7f8468e7840343a33a472f2d8e2"
+    "README.md": "a16b18def2d3b251a916f529a4e898e3a1239de5c60bb6809da9e7d7f62c1573"
   },
   "exact_precheck": {
     "structural": "ok: ()",
@@ -24,5 +24,7 @@
   },
   "official_acceptance": false,
   "full_paper_acceptance": false,
-  "named_root_precheck": "docs/audit/split-exact-comparison-558/split-square-degree-precheck.json"
+  "previous_named_root_precheck": "docs/audit/split-exact-comparison-558/split-square-degree-precheck.json",
+  "solution_pruning": "docs/audit/split-import-pruning-561/split-square-degree/precheck.json",
+  "named_root_precheck": "docs/audit/split-import-pruning-561/split-square-degree-root-equivalence.json"
 }

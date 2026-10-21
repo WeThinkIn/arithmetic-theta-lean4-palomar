@@ -1,0 +1,14 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 96.7343042162247,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-exact-repair-557/Challenge-01.ndjson": "7ff44dcb1f2475a343a552366d71d15a1a759e64fc366b16316b6a227bb5396c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/discriminant/Solution-01.ndjson": "629e3389ccc18467980611b3801490839f0c996b74f0e86e3d92b81b4620850f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/discriminant/comparator.json": "afaa454fbdb597f8b35d68b59dc44f9812af193d4bf70bb64d04dd6a84561d7c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck": "e65b6dda0565d21be49be5a8a5112eb90ebb0c8bf5c3c5af8ed19281afd5554b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/discriminant/Solution.lean": "fa44247b562eb0ef7c88a62d76fb6677e7b3d6c5affa846e07a0a00f3774b342",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/discriminant/Challenge.lean": "27f82c25e7f30f2860f438996a95844433beca0760ae2c2ffc4ec18c56b77f00"
+  },
+  "inputs_unchanged": true,
+  "limitation": "Strict structure/axioms only; no kernel or official verdict"
+}

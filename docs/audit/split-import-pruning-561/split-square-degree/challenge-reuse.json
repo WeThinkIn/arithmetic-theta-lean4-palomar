@@ -1,0 +1,7 @@
+{
+  "unchanged_source": "/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean",
+  "source_sha256": "d0b893eb69c8cd53423d4b212db7d807ea1a313ae1868af8c046909ba36e53d1",
+  "export_receipt": "/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge-export-01.json",
+  "olean_sha256": "37f216118b151315e2d54ba5c11a6c0426589fbe4ead18db2687bb95f7043780",
+  "reuse_reason": "Only Solution imports and unused Solution declarations were removed."
+}

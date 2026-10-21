@@ -33,5 +33,17 @@
     "diagnostic_checked_constants": 41402,
     "mismatches": 0,
     "audit": "docs/audit/split-exact-comparison-558/split-discriminant"
+  },
+  "solution_pruning": {
+    "source": "/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/discriminant/Solution.lean",
+    "sha256": "fa44247b562eb0ef7c88a62d76fb6677e7b3d6c5affa846e07a0a00f3774b342",
+    "project_imports_before": 3295,
+    "project_imports_after": 3250,
+    "removed_imports": [
+      "ArithmeticCommonUnaryFamilyR0238",
+      "SchemeDiscriminantExistenceR0244"
+    ],
+    "unchanged_challenge_and_targets": true,
+    "isolated_exact_gate": "docs/audit/split-import-pruning-561/split-discriminant/precheck.json"
   }
 }

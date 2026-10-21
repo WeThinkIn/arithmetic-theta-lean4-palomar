@@ -1,0 +1,7 @@
+{
+  "unchanged_source": "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-exact-repair-557/Challenge.lean",
+  "source_sha256": "27f82c25e7f30f2860f438996a95844433beca0760ae2c2ffc4ec18c56b77f00",
+  "export_receipt": "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-exact-repair-557/Challenge-export-01.json",
+  "olean_sha256": "0eba5f3baba5437609023eee143927b986032095f6e94c1b1aa61ba579abe33b",
+  "reuse_reason": "Only Solution imports and unused Solution declarations were removed."
+}

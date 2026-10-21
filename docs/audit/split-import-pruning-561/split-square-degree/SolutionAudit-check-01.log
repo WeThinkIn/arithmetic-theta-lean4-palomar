@@ -1,0 +1,11 @@
+DECL P458.Compatible AXIOMS [propext, Classical.choice, Quot.sound]
+DECL P458.compatible_iff_original AXIOMS [propext, Classical.choice, Quot.sound]
+DECL P458.canonicalBinaryTensor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL P458.pullSection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL P485.componentIsOpen AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarSplit516.splitSquareCoverDegree AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarSplit516.recover_original_074 AXIOMS [propext, Classical.choice, Quot.sound]
+AUDIT checked=7 propagated_holes=0 project_imports=3253
+/home/Palomar/workspace/arithmetic-theta/evidence/split-solution-import-pruning-560/square/SolutionAudit.lean:10:933: warning: `WeierstrassProjModel.kw_lrComul_tensorProj._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`

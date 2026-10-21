@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-21T05:50:51.158080+00:00",
+  "exit_code": 0,
+  "scope": "Unchanged Challenge/config and byte-identical actual named Solution export; reuse prior unmodified compareAt/checkAxioms verdict without redundant re-execution",
+  "solution_export_sha256": "6230a5f7686519249c48e7cf70ca369f9397833595fdb3d3066fbafd339bb73d",
+  "prior_gate": "/home/Palomar/workspace/arithmetic-theta/evidence/split-exact-integration-558/split-discriminant-precheck.json",
+  "prior_gate_sha256": "cfe83e901906b03a4778f8acc28261cd6bcde4e0b4311d0736fb9bdcfb47d909",
+  "current_source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/comparator-split-discriminant.json": "853721108fb9e5d4e60e69c5e7db3e72c556579f8865a692726746e666ad8514",
+    "/home/Palomar/workspace/arithmetic-theta/project/SplitDiscriminantChallenge.lean": "27f82c25e7f30f2860f438996a95844433beca0760ae2c2ffc4ec18c56b77f00",
+    "/home/Palomar/workspace/arithmetic-theta/project/SplitDiscriminantSolution.lean": "fa44247b562eb0ef7c88a62d76fb6677e7b3d6c5affa846e07a0a00f3774b342"
+  },
+  "official_verified": false,
+  "kernel_verdict": false
+}

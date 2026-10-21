@@ -1,5 +1,7 @@
 # Arithmetic determination of relations among lattice theta series
 
+Checkpoint561 additionally removes unused imports and Solution declarations from both split packages. Each imports45 fewer project modules; original targets and actual target exports remain unchanged. See [validation](docs/audit/split-import-pruning-561/Review.md). Official full preflights of this version are the next gate.
+
 Latest verification checkpoint (558): full original split discriminant 073 and square-cover degree 074 now pass local exact exported dependency comparison and standard axiom checks, including their actual named repository roots. Original recovery and all five audits pass. Official verification is still pending; these results are not whole-paper acceptance. See [repair and scope evidence](docs/audit/split-exact-comparison-558/Review.md).
 
 Human author and responsible maintainer: **Jue Ding**.

@@ -1,0 +1,9 @@
+{
+  "summary": {
+    "schema_version": 1,
+    "module_required": true,
+    "maximum_lines": 10000,
+    "files_checked": 4422
+  },
+  "issues": []
+}
