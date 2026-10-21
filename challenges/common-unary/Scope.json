@@ -1,0 +1,24 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-071"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-071"
+  ],
+  "universe": "Original arbitrary characteristic-zero field, positive even N, arbitrary nonempty finite family of positive even divisors of N and centered residues; every original canonical marked disk and original canonical geometry assumptions",
+  "target_count": 39,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "No extra provider assumptions. Full original Canonical and all-extension GeometricallyCanonical retained.",
+    "Constructs actual canonical half-lines with bounded-pole O(E), specified canonical section, invertibility, actual alpha square and full normalized branch.",
+    "Constructs actual integral finite flat surjective smooth proper etale cover with positive degree at every point bounded by 2^s, an isomorphism when s=0.",
+    "Constructs actual same-disk frame, dominant puncture map and full square to specified extending Hodge generator.",
+    "Constructs nonzero basic and regular unary sections, actual all-open pure tensor power law, full prescribed unary series and actual rational-ratio expansion plus section multiple equations.",
+    "Original record fields, auxiliary proposition targets, and original theorem recovery retained. Lexical notation and a command expanding to ordinary named scope endings reduce source size without new mathematical definitions."
+  ],
+  "limitations": "Local exact exported dependency comparison and five audits passed. Actual named root build/export, independent kernel replay, and official verification are separate gates.",
+  "local_exact_exported_comparison": true,
+  "local_axiom_closure": true
+}

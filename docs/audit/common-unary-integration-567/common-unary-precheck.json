@@ -1,0 +1,23 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 88.52243188209832,
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck",
+    "/home/Palomar/workspace/arithmetic-theta/project/comparator-common-unary.json",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/primitives.json",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-integration-567/CommonUnaryChallenge-01.ndjson",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-integration-567/CommonUnarySolution-01.ndjson"
+  ],
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/comparator-common-unary.json": "346658bd5e87765d3b8bee8cc43d4f1495214f8a2790dd95e6c242d2befa8774",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-integration-567/CommonUnaryChallenge-01.ndjson": "d1f36351f0f807a7e31da2915beac4725115262200c6aa7f8de781e26b1285be",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-integration-567/CommonUnarySolution-01.ndjson": "ee336a9967b6a246eb49a0f1535eb71f4ad49194161ca52069c2781bf06bd62c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck": "e65b6dda0565d21be49be5a8a5112eb90ebb0c8bf5c3c5af8ed19281afd5554b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck.lean": "7e3e995b3ae356f6475263381a48565db0ba0e351f39127543bc384ec04c6850",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/primitives.json": "b217301595ce9113efe50a2c83df27b48613cc3834d2f0f8421d612e14ed5ca1",
+    "/home/Palomar/workspace/arithmetic-theta/project/CommonUnaryChallenge.lean": "1a8de139ba84c23bd439e746617eda051e409d10e4495363ae1571d2a39d46f2",
+    "/home/Palomar/workspace/arithmetic-theta/project/CommonUnarySolution.lean": "54fcbbe25ab7d4ff749f3d8423359c279a0c1bfd5d83ac3f80291f5f88c32ad6"
+  },
+  "inputs_unchanged": true,
+  "scope": "Actual root exports, trusted compareAt/checkAxioms. No kernel verdict."
+}

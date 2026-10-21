@@ -1,5 +1,8 @@
 # Complete-scope migration and verification register
 
+Current locally integrated independent interface coverage: **99/103**, with four original endpoints pending. This counts prepared interfaces with local checks, not official passes. [Current scope and bindings](audit/common-unary-integration-567/coverage.json).
+
+
 All 103 frozen endpoints remain in scope. A Palomar registration is not yet available.
 The exact original statements are in SourceObligations.json; this register tracks port and Challenge work separately.
 
@@ -78,7 +81,7 @@ The exact original statements are in SourceObligations.json; this register track
 | accepted-068 | `ArithmeticThetaArithmeticSectionsR0236.field_compact_discriminant` | exact type + standard axioms passed (joint audit 343) | complete independent arbitrary-field compact discriminant realization522; full original type recovered, target/semantic/axiom checks and actual two-root build524 passed; official verification pending |
 | accepted-069 | `ArithmeticThetaArithmeticSectionsR0236.field_compact_unary` | exact type + standard axioms passed (joint audit 343) | complete independent arbitrary-field compact unary realization519; full original type recovered, target/semantic/axiom checks and actual two-root build521 passed; official verification pending |
 | accepted-070 | `ArithmeticThetaArithmeticSectionsR0236.field_unary_compact_naturality` | exact type + standard axioms passed (joint audit 343) | complete independent full compact unary coefficient naturality525; full original type recovered, target/semantic/axiom checks and actual two-root build527 passed; official verification pending |
-| accepted-071 | `ArithmeticThetaArithmeticCommonCoverR0238.arithmetic_common_unary_family` | exact type + standard axioms passed (joint audit 343) | pending |
+| accepted-071 | `ArithmeticThetaArithmeticCommonCoverR0238.arithmetic_common_unary_family` | exact type + standard axioms passed (joint audit 343) | complete original interface; five audits, exact exported comparison and actual named root build/export pass; official verification pending |
 | accepted-072 | `ArithmeticThetaCyclotomicModularityR0239.split_component_cusp_bound` | exact type + standard axioms passed (joint audit 343) | complete independent split-field component cusp bound496; full original type recovered, target/semantic/axiom checks and actual four-root build498 passed; official verification pending |
 | accepted-073 | `ArithmeticThetaCyclotomicModularityR0239.split_component_discriminant_divisor` | exact type + standard axioms passed (joint audit 343) | complete independent split-field component discriminant divisor515; full original type recovered, target/semantic/axiom checks and actual six-root build518 passed; official verification pending |
 | accepted-074 | `ArithmeticThetaCyclotomicModularityR0239.split_square_cover_degree` | exact type + standard axioms passed (joint audit 343) | complete independent split-field square-cover degree516; full original type recovered, target/semantic/axiom checks and actual six-root build518 passed; official verification pending |

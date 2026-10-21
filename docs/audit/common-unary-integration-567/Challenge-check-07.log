@@ -1,0 +1,188 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:35:213: warning: `WeierstrassProjModel.projModelHomogeneousIdealCR._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:40:261: warning: `WeierstrassProjModel.kw_lrComul_tensorProj._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:93:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:95:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:97:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:100:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:101:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:102:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:104:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:125:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:127:9: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:134:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:139:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:152:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:152:8: warning: `kw_lrComul_tensorProj._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:153:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:153:8: warning: `kw_lrChart_aux._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:154:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:154:8: warning: `kw_lrChart_aux._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:155:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:155:8: warning: `kw_lrSixU_toE._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:156:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:156:8: warning: `kw_lrAdd_comulHom._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:157:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:157:8: warning: `kw_lrAdd_comulHom._proof_3` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:158:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:158:8: warning: `kw_lrAddNegDiag_negSubstGen._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:159:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:159:8: warning: `kwYEvalRingHom._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:160:6: warning: `kw_lrComul_tensorProj._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:169:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:172:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:173:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:185:652: warning: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:198:652: warning: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:209:135: warning: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:232:187: warning: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:310:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:310:8: warning: `T0.unitD._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:311:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:311:8: warning: `T0.unitD._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:312:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:312:8: warning: `T0.unitD._proof_3` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:313:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:313:8: warning: `T0.unitD._proof_4` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:314:6: warning: `T0.unitD._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:366:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:491:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:581:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:581:8: warning: `IsD2._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:593:315: warning: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:593:402: warning: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:648:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:662:197: warning: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:702:185: warning: Variable name `hf` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hf
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:731:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:733:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:733:8: warning: `compactComponent._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:735:66: warning: `compactComponent._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:741:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:743:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:748:64: warning: Variable name `hVU` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hVU
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:762:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:764:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:774:110: warning: Variable name `hV` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hV
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:786:10: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:787:10: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:809:6: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:814:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:828:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:832:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-compact-interface-566/Challenge.lean:929:8: warning: declaration uses `sorry`

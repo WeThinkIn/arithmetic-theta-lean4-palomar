@@ -1,0 +1,4 @@
+'P534.arithmeticCommonUnary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P534.commonUnary_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P534.regularUnary_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P534.unaryPowers_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]

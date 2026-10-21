@@ -1,0 +1,17 @@
+{
+  "scope": "full original accepted-071",
+  "source_bindings": {
+    "Challenge.lean": "1a8de139ba84c23bd439e746617eda051e409d10e4495363ae1571d2a39d46f2",
+    "Solution.lean": "54fcbbe25ab7d4ff749f3d8423359c279a0c1bfd5d83ac3f80291f5f88c32ad6",
+    "comparator.json": "889004f6a36dfc51fe85865a3d50fb29f0b823ac7b5225e597f426c080d7881f",
+    "OriginalEndpointAudit.lean": "2bc95406065b2bde24dd3cedd2d63a3bc32cdee4cf22783717d270b86b8b6eed"
+  },
+  "challenge_lines": 929,
+  "challenge_bytes": 102159,
+  "target_count": 39,
+  "strict_comparison": "pass",
+  "axioms": "standard only",
+  "original_recovery": "pass",
+  "official_verified": false,
+  "root_integration": "pass; both actual named root exports pass unmodified strict comparison and axiom gate together"
+}

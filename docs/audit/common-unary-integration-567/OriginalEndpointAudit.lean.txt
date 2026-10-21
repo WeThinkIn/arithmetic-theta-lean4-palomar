@@ -1,0 +1,9 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : P534.recover_original_071 = ArithmeticThetaArithmeticCommonCoverR0238.arithmetic_common_unary_family := by rfl
+#print axioms P534.arithmeticCommonUnary
+#print axioms P534.commonUnary_iff_original
+#print axioms P534.regularUnary_iff_original
+#print axioms P534.unaryPowers_iff_original

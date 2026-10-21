@@ -1,0 +1,13 @@
+{
+  "time_utc": "2026-10-21T06:40:02.394429+00:00",
+  "passed": true,
+  "scope": "Both actual named root exports pass unmodified compareAt/checkAxioms together. No independent kernel verdict.",
+  "exports": {
+    "Challenge": "d1f36351f0f807a7e31da2915beac4725115262200c6aa7f8de781e26b1285be",
+    "Solution": "ee336a9967b6a246eb49a0f1535eb71f4ad49194161ca52069c2781bf06bd62c"
+  },
+  "gate_sha256": "660516b118ce23b96a1e8004b7cd9d73897c318689408fde2a9c431bd229d666",
+  "configuration_sha256": "346658bd5e87765d3b8bee8cc43d4f1495214f8a2790dd95e6c242d2befa8774",
+  "kernel_verified": false,
+  "official_verified": false
+}

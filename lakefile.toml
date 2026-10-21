@@ -1564,3 +1564,11 @@ roots = ["ConservativeMatrixGeometryChallenge"]
 [[lean_lib]]
 name = "ConservativeMatrixGeometrySolution"
 roots = ["ConservativeMatrixGeometrySolution"]
+
+[[lean_lib]]
+name = "CommonUnaryChallenge"
+roots = ["CommonUnaryChallenge"]
+
+[[lean_lib]]
+name = "CommonUnarySolution"
+roots = ["CommonUnarySolution"]

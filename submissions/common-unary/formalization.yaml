@@ -1,0 +1,51 @@
+version: v0.4
+project:
+  name: Arithmetic common unary cover and full expansions
+  description: 'Full original accepted-071: arithmetic common unary cover over arbitrary
+    characteristic-zero fields, with all original canonical geometry assumptions and
+    actual finite cover, canonical half-line, square-compatible disk frame, nonzero
+    sections, complete unary expansions and rational-ratio laws.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Challenge imports Mathlib and the pinned Lean compiler module for local cache
+    isolation; no project proof imports. Actual exported dependency structure and
+    standard axiom closure pass local unmodified Lake comparison. Exact original endpoint
+    recovery passes. Official mechanical and semantic review remain pending.
+status:
+  scope: 'Full original accepted-071: arithmetic common unary cover over arbitrary
+    characteristic-zero fields, with all original canonical geometry assumptions and
+    actual finite cover, canonical half-line, square-compatible disk frame, nonzero
+    sections, complete unary expansions and rational-ratio laws.'
+fidelity:
+  divergences: Original mathematical data, quantifiers and main conclusion retained;
+    original endpoint recovered by compiled equality. Explicit auxiliary proposition
+    targets and cache isolation stabilize exact exported declarations. Lexical notation
+    shortens repeated syntax without new mathematical definitions. No definition holes
+    or new main assumptions. Local strict comparison and five audits pass; official
+    acceptance pending.
