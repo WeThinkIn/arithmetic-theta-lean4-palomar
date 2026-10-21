@@ -1,0 +1,100 @@
+⚠ [12133/12138] Replayed SchemeDiscriminantDefinitionsR0244
+warning: Proof/SchemeDiscriminantDefinitionsR0244.lean:68:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [12134/12138] Replayed SchemeDiscriminantExistenceR0244
+warning: Proof/SchemeDiscriminantExistenceR0244.lean:423:0: automatically included section variable(s) unused in theorem `ArithmeticThetaSchemeDiscriminantR0244.SchemeDiscriminantExistence.chart_preimage`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Proof/SchemeDiscriminantExistenceR0244.lean:491:0: automatically included section variable(s) unused in theorem `ArithmeticThetaSchemeDiscriminantR0244.SchemeDiscriminantExistence.factor_chart`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: Proof/SchemeDiscriminantExistenceR0244.lean:636:0: 'ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_existence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [12135/12138] Built ConservativeMatrixGeometrySolution (12s)
+⚠ [12136/12138] Built ConservativeMatrixGeometryChallenge (21s)
+warning: ConservativeMatrixGeometryChallenge.lean:24:14: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:26:8: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:28:6: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:34:6: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:35:6: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:36:6: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:38:14: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:62:6: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:64:9: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:73:8: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:80:8: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:102:8: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:106:8: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:107:8: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:431:0: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ConservativeMatrixGeometryChallenge.lean:469:8: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:633:8: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:648:8: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:650:8: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:720:8: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:818:118: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ConservativeMatrixGeometryChallenge.lean:896:8: declaration uses `sorry`
+warning: ConservativeMatrixGeometryChallenge.lean:899:8: declaration uses `sorry`
+✔ [12137/12138] Built SharpMatrixGeometrySolution (23s)
+⚠ [12138/12138] Built SharpMatrixGeometryChallenge (25s)
+warning: SharpMatrixGeometryChallenge.lean:24:14: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:26:8: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:28:6: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:34:6: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:35:6: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:36:6: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:38:14: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:62:6: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:64:9: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:73:8: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:80:8: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:102:8: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:106:8: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:107:8: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:431:0: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SharpMatrixGeometryChallenge.lean:469:8: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:633:8: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:648:8: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:650:8: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:748:8: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:854:118: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SharpMatrixGeometryChallenge.lean:897:8: declaration uses `sorry`
+warning: SharpMatrixGeometryChallenge.lean:900:8: declaration uses `sorry`
+Build completed successfully (12138 jobs).

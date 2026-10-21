@@ -1,0 +1,60 @@
+version: v0.4
+project:
+  name: Complete arbitrary finite Gram-family sharp geometry and cutoff
+  description: Complete original047/048. For EVERY nonempty finite family of positive-rank
+    valid integral Gram matrices, constructs actual arithmetic indexing and formal
+    identity, full level model/compactification/canonical Hodge extension/Tate disk,
+    then the actual etale common square-line cover with degree2^(distinctNormCount-1),
+    square-compatible disk frame, nonzero unary sections and coset tensor-polynomial
+    matrix sections with COMPLETE theta expansion for every scalar combination. All
+    degree predicates use actual Scheme.ord and residue-field weights in every normal
+    frame. The original exact sharp cutoff consumer is retained. All mathematical
+    objects are preserved by bidirectional frame/geometry transports; only tensor
+    maps proved equal to the originals are renamed.
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: Complete original047/048. For EVERY nonempty finite family of positive-rank
+    valid integral Gram matrices, constructs actual arithmetic indexing and formal
+    identity, full level model/compactification/canonical Hodge extension/Tate disk,
+    then the actual etale common square-line cover with degree2^(distinctNormCount-1),
+    square-compatible disk frame, nonzero unary sections and coset tensor-polynomial
+    matrix sections with COMPLETE theta expansion for every scalar combination. All
+    degree predicates use actual Scheme.ord and residue-field weights in every normal
+    frame. The original exact sharp cutoff consumer is retained. All mathematical
+    objects are preserved by bidirectional frame/geometry transports; only tensor
+    maps proved equal to the originals are renamed.
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

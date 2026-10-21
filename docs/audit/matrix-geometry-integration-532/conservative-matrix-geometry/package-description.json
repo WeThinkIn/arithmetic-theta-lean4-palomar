@@ -1,0 +1,41 @@
+{
+  "ids": [
+    "accepted-035",
+    "accepted-036"
+  ],
+  "target_count": 21,
+  "attempts": {
+    "Challenge": "01",
+    "Solution": "01",
+    "ChallengeAudit": "01",
+    "SolutionAudit": "01",
+    "DefinitionCompatibility": "01",
+    "OriginalEndpointAudit": "01",
+    "TargetTypeAudit": "01",
+    "TargetHoleAudit": "01"
+  },
+  "title": "Complete arbitrary finite Gram-family conservative geometry and cutoff",
+  "universe": "Original arbitrary positive n,h and every finite family of valid integral Gram matrices; original complex coefficient field and all original indexing/geometry in the cutoff consumer",
+  "basis": "Full original035036; full actual canonical boundary Hodge/component/degree definitions; literal original arithmetic indexing/theta, cusp half-divisor line and RootCover definitions; canonical tensor maps proved equal to original",
+  "namespace_map": {
+    "ArithmeticThetaConservativeKernelR0189.arithmetic_geometric_family_existence": "ArithmeticThetaPalomarConservative530.arithmeticGeometricFamilyExistence",
+    "ArithmeticThetaConservativeKernelR0189.geometric_family_conservative_cutoff": "ArithmeticThetaPalomarConservative530.geometricFamilyConservativeCutoff"
+  },
+  "bridges": [
+    "Compiled equalities of recover_original_035/recover_original_036 to both complete original theorems",
+    "squareOnDisk_eq_original and pullbackPowerSection_eq_original identify all actual tensor comparisons",
+    "geometric_iff_original rewrites only those equal maps, preserving every original existential object, predicate and full expansion"
+  ],
+  "retained": [
+    "035 assumes ONLY positive dimensions and EVERY arbitrary finite valid integral Gram family; Indexing/Indexed/FormalIdentity and ALL level/compactification/Hodge/canonical disk data are existential outputs",
+    "Actual orthogonalization, rational preimage coset representatives, distinct norm/residue indexing and full thetaMap formal identity",
+    "Actual cusp half-divisor line and nonzero section, matching L/24 at every cusp and0 elsewhere in EVERY normal affine frame using Scheme.ord",
+    "Actual integral finite flat surjective smooth proper cover with positive finrank bounded by24*(exponent N)^indexCount at EVERY point",
+    "ALL normal affine frame covers and actual Scheme.ord/residue-field-weighted degree equation and bound",
+    "Actual square map, same disk lift and dominant puncture, common frame squaring to the specified extending normalized Hodge generator",
+    "Nonzero unary sections with COMPLETE literal unary series, actual coset tensor-polynomial matrix sections and COMPLETE theta expansion for EVERY complex scalar combination",
+    "036 retains EXACT natural-division cutoff n*(exponent N)^indexCount*cardSL2/48, all coefficients through that cutoff and FULL theta series zero"
+  ],
+  "limitations": "035 constructs the entire stated complex geometric realization from arbitrary finite valid Gram families.036 is the original conservative cutoff consumer for supplied valid indexing and geometric realization. These endpoints do not finish the remaining arithmetic cyclotomic/extended modularity or final-consumer interfaces. Official verification and semantic review are separate.",
+  "description": "Complete original035/036. For EVERY nonempty finite family of positive-rank valid integral Gram matrices, constructs actual arithmetic indexing/formal identity and ALL level model, compactification, canonical Hodge extension and Tate disk data, then an actual cusp half-divisor line, finite flat cover with degree24*(exponent N)^indexCount, square-compatible common frame, nonzero unary sections and coset tensor-polynomial matrix sections with COMPLETE theta expansion for every scalar combination. The actual cusp divisor and residue-field weighted degrees are specified in every normal frame. The EXACT original conservative cutoff consumer is retained. Only canonical tensor comparisons proved equal to the originals are renamed; compiled equivalence recovers the whole existential geometric predicate."
+}

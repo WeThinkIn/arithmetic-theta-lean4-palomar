@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "sharp-matrix-geometry",
+    "root": "SharpMatrixGeometry",
+    "source": "sharp-matrix-geometry-package-529",
+    "ids": [
+      "accepted-047",
+      "accepted-048"
+    ],
+    "title": "Complete arbitrary finite Gram-family sharp geometry and cutoff",
+    "description": "Complete original047/048. For EVERY nonempty finite family of positive-rank valid integral Gram matrices, constructs actual arithmetic indexing and formal identity, full level model/compactification/canonical Hodge extension/Tate disk, then the actual etale common square-line cover with degree2^(distinctNormCount-1), square-compatible disk frame, nonzero unary sections and coset tensor-polynomial matrix sections with COMPLETE theta expansion for every scalar combination. All degree predicates use actual Scheme.ord and residue-field weights in every normal frame. The original exact sharp cutoff consumer is retained. All mathematical objects are preserved by bidirectional frame/geometry transports; only tensor maps proved equal to the originals are renamed."
+  },
+  {
+    "slug": "conservative-matrix-geometry",
+    "root": "ConservativeMatrixGeometry",
+    "source": "conservative-matrix-geometry-package-530",
+    "ids": [
+      "accepted-035",
+      "accepted-036"
+    ],
+    "title": "Complete arbitrary finite Gram-family conservative geometry and cutoff",
+    "description": "Complete original035/036. For EVERY nonempty finite family of positive-rank valid integral Gram matrices, constructs actual arithmetic indexing/formal identity and ALL level model, compactification, canonical Hodge extension and Tate disk data, then an actual cusp half-divisor line, finite flat cover with degree24*(exponent N)^indexCount, square-compatible common frame, nonzero unary sections and coset tensor-polynomial matrix sections with COMPLETE theta expansion for every scalar combination. The actual cusp divisor and residue-field weighted degrees are specified in every normal frame. The EXACT original conservative cutoff consumer is retained. Only canonical tensor comparisons proved equal to the originals are renamed; compiled equivalence recovers the whole existential geometric predicate."
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-035",
+    "accepted-036"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-035",
+    "accepted-036"
+  ],
+  "universe": "Original arbitrary positive n,h and every finite family of valid integral Gram matrices; original complex coefficient field and all original indexing/geometry in the cutoff consumer",
+  "target_count": 21,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "035 assumes ONLY positive dimensions and EVERY arbitrary finite valid integral Gram family; Indexing/Indexed/FormalIdentity and ALL level/compactification/Hodge/canonical disk data are existential outputs",
+    "Actual orthogonalization, rational preimage coset representatives, distinct norm/residue indexing and full thetaMap formal identity",
+    "Actual cusp half-divisor line and nonzero section, matching L/24 at every cusp and0 elsewhere in EVERY normal affine frame using Scheme.ord",
+    "Actual integral finite flat surjective smooth proper cover with positive finrank bounded by24*(exponent N)^indexCount at EVERY point",
+    "ALL normal affine frame covers and actual Scheme.ord/residue-field-weighted degree equation and bound",
+    "Actual square map, same disk lift and dominant puncture, common frame squaring to the specified extending normalized Hodge generator",
+    "Nonzero unary sections with COMPLETE literal unary series, actual coset tensor-polynomial matrix sections and COMPLETE theta expansion for EVERY complex scalar combination",
+    "036 retains EXACT natural-division cutoff n*(exponent N)^indexCount*cardSL2/48, all coefficients through that cutoff and FULL theta series zero"
+  ],
+  "limitations": "035 constructs the entire stated complex geometric realization from arbitrary finite valid Gram families.036 is the original conservative cutoff consumer for supplied valid indexing and geometric realization. These endpoints do not finish the remaining arithmetic cyclotomic/extended modularity or final-consumer interfaces. Official verification and semantic review are separate."
+}

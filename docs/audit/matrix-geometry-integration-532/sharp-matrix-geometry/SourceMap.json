@@ -1,0 +1,40 @@
+{
+  "basis": "Full original047048; full actual canonical boundary Hodge/component/degree definitions from516; literal original orthogonal algorithm/indexing/theta definitions; canonical tensor comparisons from519 with equality bridges",
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-square-degree-package-516/Challenge.lean": "b949f1f97024aaf79e13b2614c307c9ff18333048b048e5948b8ad2ba2cd34f9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Solution.lean": "ce25032df3653712b4ea5185d0292a7214bcddffab2e1b08d58969d0679259fd",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean": "53f5c89ecba85c0ece55e69968a18234850f130ec1cf39ad92746ca5f5dcdb3a",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/TensorPowerDefinitions.lean": "55d171f2d22d17321b1776302e51ee14c945e76a581dd54a26cc2dfaf20cc38f",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/CommonHalfHodgeDefinitionsR0185.lean": "2166c58a5e19cbbb3395d6aab68fff8b42dd04023c773b84a90186705b9b5de0",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/OpenHodgeDescentDefinitionsR0180.lean": "5aa0de772477a2887268f62ebb92f9a0af2086c1d73ca2f02af3d9ac5a45cbb5",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SimultaneousUnaryRootsDefinitionsR0187.lean": "9dc82f4f7598c84377141bee6e6b44b12dd3c4f2cbe8aba6bb6f65186297a941",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/IntegrationDefinitions.lean": "7f41fe1650d9bfcdcdd45ab980d5747db7283ee5d1f225feee83c42db085a0fa",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/OrthogonalAlgorithm.lean": "66b404a68f715982d40300553647c0cdf1adaeb4a94960f9e6f00469768ff1d3",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/OrthogonalConsumerDefinitionsR0127.lean": "7d0582388d04b3053b218d333c625bae330b1b11d385312db9058f477c2291ec",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/LatticeGlobalSectionsDefinitionsR0188.lean": "9b5618267dda03d1209826d911b31b337ae2a5bda072b296eba2c02528c85878",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SharpKernelDefinitionsR0195.lean": "7d3846d8659d3738becdf94eb876048f752f3ba9928f34f1504f5ea9a8dad46d",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SectionOrderDefinitions.lean": "d56929c8ee5757844e38bfab36492d82704a6b3cc21bd6f174546f6d2b39df6c",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/SquareLineComparisonDefinitionsR0192.lean": "6d0ef591c33d083105e6883c695576e50e9884cb23c6c516668a8d04b51acc98",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/NormalizedSectionDefinitions.lean": "e66b5822838b283e66209e957df4f5c330128f302ae7128a5bf8c3d2caa2501c",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/assemble.py": "c842db92af778e392376b5e4e8309c027e5e2af00ecf770c7e8442924c71705c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-square-degree-package-516/comparator.json": "24d3a3d029e5f45c5e6f54229176d710105a9f40405c05db86f6f26afda40426",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/ChallengeAudit.lean": "cf301e8a9684f8febfc3693cafb3a795cdc830239acd749635eb59032b7582a5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/SolutionAudit.lean": "5514236a2eb335671deea81e0c469320a3223958be4c5efd5537099f263c11da",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/DefinitionCompatibility.lean": "d0af872e8b34affa2bfb0b22dc6eeff20b67826eb899ee58a7b7028cea2185b0",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/TargetTypeAudit.lean": "36646081068f55401b394e931419cf687a032ab8656dbc464d7fda727e412117",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/TargetHoleAudit.lean": "35d5c0ed9d308c9c189c408cbb39272e928d4668842f162686f2bba63e2b3508"
+  },
+  "semantic_definitions": 597,
+  "target_types": "All explicit target types/universes and standard axiom closures checked",
+  "namespace_map": {
+    "ArithmeticThetaSharpKernelR0195.sharp_matrix_geometric_family": "ArithmeticThetaPalomarSharp529.sharpMatrixGeometricFamily",
+    "ArithmeticThetaSharpKernelR0195.sharp_geometric_cutoff": "ArithmeticThetaPalomarSharp529.sharpGeometricCutoff"
+  },
+  "bridges": [
+    "Compiled equalities of recover_original_047/recover_original_048 to both complete original theorems",
+    "squarePull_eq_original, squareOnDisk_eq_original and pullbackPowerSection_eq_original identify all actual tensor-comparison maps",
+    "frameToOriginal/frameOfOriginal retain identical disk, triangle, dominant map, frame, generator and normalization, rewriting only the proved-equal square equation",
+    "geometric_iff_original explicitly transports the full existential witness tuple in both directions, preserving identical square line, cover, degree, unary sections and matrix sections"
+  ]
+}

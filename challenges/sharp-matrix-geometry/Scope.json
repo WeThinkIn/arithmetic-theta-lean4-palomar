@@ -1,0 +1,25 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-047",
+    "accepted-048"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-047",
+    "accepted-048"
+  ],
+  "universe": "Original arbitrary positive n,h and every finite family of valid integral Gram matrices; original complex coefficient field and all original indexing/geometry in the cutoff consumer",
+  "target_count": 21,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "047 assumes ONLY positive dimensions and EVERY arbitrary finite valid integral Gram family; Indexing/Indexed/FormalIdentity and ALL level/compactification/Hodge/canonical disk data are existential outputs",
+    "Actual orthogonalization algorithm, actual rational preimage coset representatives, distinct norm/residue indexing and full thetaMap formal identity are exposed",
+    "Actual integral finite flat surjective smooth proper cover with positive finrank bounded by2^(distinctNormCount-1) at EVERY point, etale map and isomorphism when distinctNormCount=1",
+    "Actual invertible square line and complete ALL-frame Scheme.ord/residue-field-weighted degree equation and bound",
+    "Actual common disk frame whose square is the specified extending normalized Hodge generator; actual dominant puncture map and same commuting triangle",
+    "Nonzero unary sections with COMPLETE literal unary series on the same disk; actual coset tensor-polynomial matrix sections; COMPLETE theta expansion for EVERY complex scalar combination",
+    "048 retains EXACT natural-division cutoff n*2^(normCount-1)*cardSL2/(48*level), all coefficients through that cutoff, and conclusion that the FULL theta series is zero"
+  ],
+  "limitations": "047 constructs the entire stated complex geometric realization from arbitrary finite valid Gram families.048 is the original cutoff consumer for supplied valid indexing and geometric realization. These endpoints do not separately finish the arithmetic cyclotomic modularity, extended action or remaining final-consumer interfaces. Official verification and semantic review are separate."
+}

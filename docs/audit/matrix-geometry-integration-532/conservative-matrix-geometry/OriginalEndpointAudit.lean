@@ -1,0 +1,9 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarConservative530.recover_original_035 = ArithmeticThetaConservativeKernelR0189.arithmetic_geometric_family_existence := by rfl
+example : ArithmeticThetaPalomarConservative530.recover_original_036 = ArithmeticThetaConservativeKernelR0189.geometric_family_conservative_cutoff := by rfl
+#print axioms ArithmeticThetaPalomarConservative530.arithmeticGeometricFamilyExistence
+#print axioms ArithmeticThetaPalomarConservative530.geometricFamilyConservativeCutoff
+#print axioms ArithmeticThetaPalomarConservative530.geometric_iff_original

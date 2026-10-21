@@ -1,0 +1,37 @@
+{
+  "accepted_for_local_integration": true,
+  "basis": "Frozen complete529530 source/type/axiom audits and531 root scope review; no official acceptance",
+  "packages": {
+    "sharp-matrix-geometry": {
+      "bindings": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/Challenge.lean": "5ae76b851a97714b54f9d7ea15dc1a72c42a98d7d159763c770ae938f068b030",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/Solution.lean": "1da043e505b73e91bd2069a7e23dc5614b48b6e5638a4ad690b4d0531fd352a0",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/Scope.json": "5f332acca9977b9da7f9c0099ae8c3c1e2edc3a08a2eaffb84b750056db47238",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/SourceMap.json": "7ea0a82d964105bc1090f54772d2c14a8fb0ca0e4b0e095fe7bffe0bb2af8a11",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/receipt.json": "a7906dc1432573b08b9caf040cc1a3fab7fcad332806e2e989e0d590e4b3dbd5",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/comparator.json": "5cce5104332d61db76f0d77b187e1a3d5bbdd4d8541edbc174800ed8ca1b0b69",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/Targets.json": "2730dd96db5d11b8d81f7714e400d2566c09e2ec0c56bb9a1754ca71a2857714"
+      },
+      "new_ids": [
+        "accepted-047",
+        "accepted-048"
+      ]
+    },
+    "conservative-matrix-geometry": {
+      "bindings": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/conservative-matrix-geometry-package-530/Challenge.lean": "f5350bad2e77ba4b196cde47cd8a141a2e8c78c4538b281ec04c5bb92c1ab3fc",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/conservative-matrix-geometry-package-530/Solution.lean": "44b41ac213e20867df66fcc077a50747986d2a270f589ca06565ec341c0e577e",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/conservative-matrix-geometry-package-530/Scope.json": "b25b70a063e4ea440f6eaed5af06ce3d99fcfbb9a2ea7db43f1665f8f1eceac7",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/conservative-matrix-geometry-package-530/SourceMap.json": "c1c171c58fd597c8170bfadf9972a0b34cb7857f065d846319b835bdfbf190eb",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/conservative-matrix-geometry-package-530/receipt.json": "57aa1191df9065455980591da88856014abb77cdf0ed97e25bbc04f5c5eaf5b1",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/conservative-matrix-geometry-package-530/comparator.json": "1c7bd807c58e9e44fa864a98f8542f64a5a6311057154bd2c7ec11ecc64c4f42",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/conservative-matrix-geometry-package-530/Targets.json": "52e0393e4ef5eb4d672bec81f4b04dfc2c047a2849860ca3dcd6dd9d5a49d25d"
+      },
+      "new_ids": [
+        "accepted-035",
+        "accepted-036"
+      ]
+    }
+  },
+  "review_sha256": "4af0fc8bf6294689283c9b63e2c7d075968821bb6e4f60caf54fd894c9fc0346"
+}

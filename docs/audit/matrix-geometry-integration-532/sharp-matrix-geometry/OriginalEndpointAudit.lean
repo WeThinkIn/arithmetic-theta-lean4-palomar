@@ -1,0 +1,9 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarSharp529.recover_original_047 = ArithmeticThetaSharpKernelR0195.sharp_matrix_geometric_family := by rfl
+example : ArithmeticThetaPalomarSharp529.recover_original_048 = ArithmeticThetaSharpKernelR0195.sharp_geometric_cutoff := by rfl
+#print axioms ArithmeticThetaPalomarSharp529.sharpMatrixGeometricFamily
+#print axioms ArithmeticThetaPalomarSharp529.sharpGeometricCutoff
+#print axioms ArithmeticThetaPalomarSharp529.geometric_iff_original

@@ -1,0 +1,23 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/Solution.lean:100:3: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaPullback.ArithmeticThetaPalomarHalf505.powerComparison`
+/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/Solution.lean:123:71: error(lean.unknownIdentifier): Unknown identifier `normCount`
+/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/Solution.lean:124:21: error(lean.unknownIdentifier): Unknown identifier `normCount`
+/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/Solution.lean:125:42: error(lean.unknownIdentifier): Unknown identifier `normCount`
+/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/Solution.lean:126:37: error(lean.unknownIdentifier): Unknown identifier `normCount`
+/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/Solution.lean:146:225: error: unsolved goals
+Y X : Scheme
+p : Y ⟶ X
+H : X.Modules
+n : ℕ
+F : ↑Γ(tensorPower X H n, ⊤)
+⊢ sorry =
+    (ConcreteCategory.hom (Scheme.Modules.Hom.app (pullback_tensorPower_iso Y X p H n).hom (p ⁻¹ᵁ ⊤)))
+      (pullbackGlobalSection p (tensorPower X H n) F)
+/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/Solution.lean:147:13: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/Solution.lean:147:91: warning: This simp argument is unused:
+  ArithmeticThetaPalomarHalf505.powerComparison_eq_original
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [pullbackPowerSection, ArithmeticThetaNormalizedSections.pullbackPowerSection]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/sharp-matrix-geometry-package-529/Solution.lean:170:8: warning: declaration uses `sorry`

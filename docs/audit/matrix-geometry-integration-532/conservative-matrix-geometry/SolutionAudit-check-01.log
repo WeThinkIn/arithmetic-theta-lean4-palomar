@@ -1,0 +1,61 @@
+DECL ArithmeticThetaPalomarHalf505.powerComparison._f AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarConservative530.pullbackPowerSection.eq_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarConservative530.squareOnDisk_eq_original AXIOMS [propext, Classical.choice, Quot.sound]
+DECL _private.Solution.0.ArithmeticThetaPalomarConservative530.arithmeticGeometricFamilyExistence._simp_1_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarConservative530.recover_original_036 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarConservative530.GeometricFamily.eq_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL _private.Solution.0.ArithmeticThetaPalomarHalf505.powerComparison.match_1.eq_1 AXIOMS []
+DECL _private.Solution.0.ArithmeticThetaPullback.pullback_tensorPower_iso.match_1.eq_1 AXIOMS []
+DECL ArithmeticThetaPalomarConservative530.GeometricFamily AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBinaryTensor458.pullSection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPullback.pullback_tensorPower_iso.eq_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarConservative530.squareOnDisk.congr_simp AXIOMS [propext, Classical.choice, Quot.sound]
+DECL _private.Solution.0.ArithmeticThetaPalomarConservative530.recover_original_036._simp_1_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL _private.Solution.0.ArithmeticThetaPalomarConservative530.recover_original_035._simp_1_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLatticeSectionsR0188.GeometricFamily.eq_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.binary AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.binary_eq_original AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBinaryTensor458.canonicalBinaryTensor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarConservative530.squareOnDisk.eq_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarConservative530.geometricFamilyConservativeCutoff AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarConservative530.squareOnDisk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.powerComparison.match_1 AXIOMS []
+DECL ArithmeticThetaPalomarConservative530.pullbackPowerSection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.powerComparison AXIOMS [propext, Classical.choice, Quot.sound]
+DECL _private.Solution.0.ArithmeticThetaPalomarConservative530.geometricFamilyConservativeCutoff._simp_1_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarBinaryTensor458.Compatible AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBinaryTensor458.compatible_iff_original AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.powerComparison.eq_def AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarConservative530.recover_original_035 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.powerComparison._unsafe_rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPullback.pullback_tensorPower_iso.eq_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarConservative530.geometric_iff_original AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.binary._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarComponent485.componentIsOpen AXIOMS [propext, Classical.choice, Quot.sound]
+DECL _private.Solution.0.ArithmeticThetaPalomarHalf505.powerComparison.match_1.splitter AXIOMS []
+DECL _private.Solution.0.ArithmeticThetaPullback.pullback_tensorPower_iso.match_1.splitter AXIOMS []
+DECL _private.Solution.0.ArithmeticThetaPalomarHalf505.powerComparison.match_1.eq_2 AXIOMS []
+DECL ArithmeticThetaPalomarHalf505.powerComparison_eq_original AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.powerComparison._sunfold AXIOMS [propext, Classical.choice, Quot.sound]
+DECL _private.Solution.0.ArithmeticThetaPullback.pullback_tensorPower_iso.match_1.eq_2 AXIOMS []
+DECL ArithmeticThetaSimultaneousUnaryR0187.squareOnDisk.congr_simp AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPullback.pullback_tensorPower_iso.eq_def AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarConservative530.pullbackPowerSection_eq_original AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarConservative530.arithmeticGeometricFamilyExistence AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.powerComparison.eq_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.powerComparison.eq_1 AXIOMS [propext, Classical.choice, Quot.sound]
+AUDIT checked=46 propagated_holes=0 project_imports=3067

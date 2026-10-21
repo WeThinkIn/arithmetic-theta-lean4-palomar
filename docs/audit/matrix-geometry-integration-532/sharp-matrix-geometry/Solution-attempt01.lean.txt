@@ -1,0 +1,190 @@
+module
+public import SharpMatrixGeometricFamilyR0195
+public import SharpGeometricCutoffR0195
+public import SchemeDiscriminantExistenceR0244
+@[expose] public section
+set_option autoImplicit false
+set_option backward.isDefEq.respectTransparency false
+set_option maxRecDepth 8192
+set_option maxHeartbeats 16000000
+noncomputable section
+universe u v
+open CategoryTheory CategoryTheory.Limits AlgebraicGeometry Opposite TopologicalSpace MonoidalCategory
+namespace ArithmeticThetaPalomarBinaryTensor458
+open ArithmeticThetaSheafTensor
+def pullSection {X Y : Scheme.{u}} (f : X ⟶ Y) {H : Y.Modules} {U : Y.Opens} (s : Γ(H,U)) : Γ((Scheme.Modules.pullback f).obj H, f ⁻¹ᵁ U) :=
+  ((Scheme.Modules.pullbackPushforwardAdjunction f).unit.app H).app U s
+def Compatible {X Y : Scheme.{u}} (f : X ⟶ Y) (H K : Y.Modules) (M N : X.Modules) (e : (Scheme.Modules.pullback f).obj H ≅ M) (d : (Scheme.Modules.pullback f).obj K ≅ N) (q : (Scheme.Modules.pullback f).obj (sheafTensor Y H K) ≅ sheafTensor X M N) : Prop :=
+  ∀ (U : Y.Opens) (s : Γ(H,U)) (t : Γ(K,U)),
+    q.hom.app (f ⁻¹ᵁ U) (pullSection f (tensorSection Y H K U s t)) =
+      tensorSection X M N (f ⁻¹ᵁ U)
+        (e.hom.app (f ⁻¹ᵁ U) (pullSection f s)) (d.hom.app (f ⁻¹ᵁ U) (pullSection f t))
+theorem canonicalBinaryTensor {X Y : Scheme.{u}} (f : X ⟶ Y) (H K : Y.Modules) (M N : X.Modules) (e : (Scheme.Modules.pullback f).obj H ≅ M) (d : (Scheme.Modules.pullback f).obj K ≅ N) : ∃! q : (Scheme.Modules.pullback f).obj (sheafTensor Y H K) ≅ sheafTensor X M N, Compatible f H K M N e d q := by
+  let q := ArithmeticThetaPullback.pullback_sheafTensor_iso X Y f H K ≪≫
+    ArithmeticThetaPullback.sheafTensorCongr X e d
+  have hq : Compatible f H K M N e d q := by
+    intro U s t
+    change (ArithmeticThetaPullback.sheafTensorCongr X e d).hom.app _
+      ((ArithmeticThetaPullback.pullback_sheafTensor_iso X Y f H K).hom.app _
+        (pullSection f (tensorSection Y H K U s t))) = _
+    rw [show pullSection f (tensorSection Y H K U s t) =
+      Scheme.Modules.pullbackLocalSection f (tensorSection Y H K U s t) from rfl]
+    rw [ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pullback_sheafTensor_local_section,
+      ArithmeticThetaPullback.sheafTensorCongr_section]
+    rfl
+  refine ⟨q, hq, ?_⟩
+  intro q' hq'
+  apply Iso.ext
+  apply ((Scheme.Modules.pullbackPushforwardAdjunction f).homEquiv _ _).injective
+  apply ArithmeticThetaSheafTensor.tensor_hom_ext
+  apply PresheafOfModules.hom_ext
+  intro U
+  apply ModuleCat.MonoidalCategory.tensor_ext
+  intro s t
+  change q'.hom.app (f ⁻¹ᵁ U.unop) (pullSection f (tensorSection Y H K U.unop s t)) =
+    q.hom.app (f ⁻¹ᵁ U.unop) (pullSection f (tensorSection Y H K U.unop s t))
+  exact (hq' U.unop s t).trans (hq U.unop s t).symm
+theorem compatible_iff_original {X Y : Scheme.{u}} (f : X ⟶ Y) (H K : Y.Modules) (M N : X.Modules) (e : (Scheme.Modules.pullback f).obj H ≅ M) (d : (Scheme.Modules.pullback f).obj K ≅ N) (q : (Scheme.Modules.pullback f).obj (sheafTensor Y H K) ≅ sheafTensor X M N) : Compatible f H K M N e d q ↔ q = ArithmeticThetaPullback.pullback_sheafTensor_iso X Y f H K ≪≫ ArithmeticThetaPullback.sheafTensorCongr X e d := by
+  have h : Compatible f H K M N e d (ArithmeticThetaPullback.pullback_sheafTensor_iso X Y f H K ≪≫
+      ArithmeticThetaPullback.sheafTensorCongr X e d) := by
+    intro U s t
+    change (ArithmeticThetaPullback.sheafTensorCongr X e d).hom.app _
+      ((ArithmeticThetaPullback.pullback_sheafTensor_iso X Y f H K).hom.app _
+        (Scheme.Modules.pullbackLocalSection f (tensorSection Y H K U s t))) = _
+    rw [ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pullback_sheafTensor_local_section,
+      ArithmeticThetaPullback.sheafTensorCongr_section]
+    rfl
+  constructor
+  · intro hq
+    exact (canonicalBinaryTensor f H K M N e d).unique hq h
+  · rintro rfl
+    exact h
+end ArithmeticThetaPalomarBinaryTensor458
+namespace ArithmeticThetaPalomarHalf505
+open ArithmeticThetaSheafTensor ArithmeticThetaTensorPower
+def binary {X Y : Scheme.{u}} (f : X ⟶ Y) (H K : Y.Modules) : (Scheme.Modules.pullback f).obj (sheafTensor Y H K) ≅ sheafTensor X ((Scheme.Modules.pullback f).obj H) ((Scheme.Modules.pullback f).obj K) :=
+  Classical.choose (ArithmeticThetaPalomarBinaryTensor458.canonicalBinaryTensor f H K _ _ (Iso.refl _) (Iso.refl _)).exists
+end ArithmeticThetaPalomarHalf505
+namespace ArithmeticThetaPalomarHalf505
+open ArithmeticThetaTensorPower
+def powerComparison (X Y : Scheme.{u}) (f : X ⟶ Y) (H : Y.Modules) : (n : ℕ) → (Scheme.Modules.pullback f).obj (tensorPower Y H n) ≅ tensorPower X ((Scheme.Modules.pullback f).obj H) n | 0 => ArithmeticThetaPullback.pullback_unit_iso X Y f | n+1 => binary f (tensorPower Y H n) H ≪≫ ArithmeticThetaPullback.sheafTensorCongr X (powerComparison X Y f H n) (Iso.refl _)
+end ArithmeticThetaPalomarHalf505
+namespace ArithmeticThetaPalomarComponent485
+open ArithmeticThetaLevelCompactificationR0179
+theorem componentIsOpen (k : Type) [Field k] [CharZero k] (L : ℕ) (D : LevelData k L) (X : Compactification k L D) (x : X.space) : IsOpen (irreducibleComponent x) := by
+  exact (ArithmeticThetaBoundaryHodgeR0182.CompactHodgeLatticeExtensionR0182.compactComponent k L D X x).isOpen
+end ArithmeticThetaPalomarComponent485
+namespace ArithmeticThetaPalomarHalf505
+theorem binary_eq_original {X Y : Scheme.{u}} (f : X ⟶ Y) (H K : Y.Modules) : binary f H K = ArithmeticThetaPullback.pullback_sheafTensor_iso X Y f H K := by
+  have h := Classical.choose_spec (ArithmeticThetaPalomarBinaryTensor458.canonicalBinaryTensor f H K _ _ (Iso.refl _) (Iso.refl _)).exists
+  have hq : ArithmeticThetaPalomarBinaryTensor458.Compatible f H K _ _ (Iso.refl _) (Iso.refl _) (ArithmeticThetaPullback.pullback_sheafTensor_iso X Y f H K) := by
+    intro U s t
+    change (ArithmeticThetaPullback.pullback_sheafTensor_iso X Y f H K).hom.app _ (Scheme.Modules.pullbackLocalSection f (ArithmeticThetaSheafTensor.tensorSection Y H K U s t)) = _
+    rw [ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pullback_sheafTensor_local_section]
+    rfl
+  exact (ArithmeticThetaPalomarBinaryTensor458.canonicalBinaryTensor f H K _ _ (Iso.refl _) (Iso.refl _)).unique h hq
+theorem powerComparison_eq_original (X Y : Scheme.{u}) (f : X ⟶ Y) (H : Y.Modules) (n : ℕ) : powerComparison X Y f H n = ArithmeticThetaPullback.pullback_tensorPower_iso X Y f H n := by
+  induction n with
+  | zero => rfl
+  | succ n ih => simp only [powerComparison, ArithmeticThetaPullback.pullback_tensorPower_iso, binary_eq_original, ih]
+end ArithmeticThetaPalomarHalf505
+namespace ArithmeticThetaPalomarSharp529
+open ArithmeticThetaLevelCompactificationR0179 ArithmeticThetaBoundaryHodgeR0182 ArithmeticThetaComponentDegreeR0184 ArithmeticThetaTateCuspsR0181 ArithmeticThetaSquareLinesR0192 ArithmeticThetaSharpCoverR0194 ArithmeticThetaTensorPower ArithmeticThetaPullback ArithmeticThetaSimultaneousUnaryR0187 ArithmeticThetaNormalizedSections ArithmeticThetaLatticeSectionsR0188 ArithmeticThetaCompactUnaryR0183 ArithmeticThetaCommonHalfHodgeR0185
+def squarePull {Z Y : Scheme} {W : Z.Modules} (f : Y ⟶ Z) (A : SquareLine Z W) : tensorPower Y ((Scheme.Modules.pullback f).obj A.line) 2 ≅ (Scheme.Modules.pullback f).obj W :=
+  (ArithmeticThetaPalomarHalf505.powerComparison Y Z f A.line 2).symm ≪≫
+    (Scheme.Modules.pullback f).mapIso A.square
+def squareOnDisk (k : Type) [Field k] {B X : Scheme} (p : B ⟶ X) (J : B.Modules) (H : X.Modules) (β : tensorPower B J 2 ≅ (Scheme.Modules.pullback p).obj H) (f : Disk k ⟶ B) (d : Disk k ⟶ X) (hf : f ≫ p = d) : tensorPower (Disk k) ((Scheme.Modules.pullback f).obj J) 2 ≅ (Scheme.Modules.pullback d).obj H :=
+  (ArithmeticThetaPalomarHalf505.powerComparison (Disk k) B f J 2).symm ≪≫
+    (Scheme.Modules.pullback f).mapIso β ≪≫ along f p d hf H
+def pullbackPowerSection {Y X : Scheme.{u}} (p : Y ⟶ X) (H : X.Modules) (n : ℕ) (F : Γ(tensorPower X H n, ⊤)) : Γ(tensorPower Y ((Scheme.Modules.pullback p).obj H) n, ⊤) :=
+  (ArithmeticThetaPullback.ArithmeticThetaPalomarHalf505.powerComparison Y X p H n).hom.app (p ⁻¹ᵁ (⊤ : X.Opens))
+    (ArithmeticThetaPullback.pullbackGlobalSection p (tensorPower X H n) F)
+end ArithmeticThetaPalomarSharp529
+namespace ArithmeticThetaPalomarSharp529
+open ArithmeticThetaLevelCompactificationR0179 ArithmeticThetaBoundaryHodgeR0182 ArithmeticThetaComponentDegreeR0184 ArithmeticThetaTateCuspsR0181 ArithmeticThetaSquareLinesR0192 ArithmeticThetaSharpCoverR0194 ArithmeticThetaTensorPower ArithmeticThetaPullback ArithmeticThetaSimultaneousUnaryR0187 ArithmeticThetaNormalizedSections ArithmeticThetaLatticeSectionsR0188 ArithmeticThetaCompactUnaryR0183 ArithmeticThetaCommonHalfHodgeR0185
+structure CoverFrame (k : Type) [Field k] [CharZero k] (N : ℕ) {D : LevelData k (level N)} {X : Compactification k (level N) D} (H : Extension k (level N) D X) (V : DiskTest k (level N) D X) (J : SquareLine (Component k (level N) D X (V.disk (closedPoint k))) (hodge k (level N) D X (V.disk (closedPoint k)) H)) (b : ℕ) (C : RootCover k (Component k (level N) D X (V.disk (closedPoint k))) (projection k (level N) D X (V.disk (closedPoint k))) b) where
+  disk : Disk k ⟶ C.space
+  triangle : disk ≫ (C.map ≫ inclusion k (level N) D X (V.disk (closedPoint k))) = V.disk
+  dominant : IsDominant (genericInclusion k ≫ disk)
+  frame : Sections (Disk k) ((Scheme.Modules.pullback disk).obj ((Scheme.Modules.pullback C.map).obj J.line))
+  isFrame : ArithmeticThetaRelativeDiscriminantR0171.IsFrame _ ⊤ frame
+  generator : Sections (Disk k) ((Scheme.Modules.pullback V.disk).obj H.line)
+  extendsGenerator : ExtendsGenerator k (level N) H V generator
+  square_eq : (squareOnDisk k (C.map ≫ inclusion k (level N) D X (V.disk (closedPoint k)))
+    ((Scheme.Modules.pullback C.map).obj J.line) H.line
+    (squarePull C.map J ≪≫ (Scheme.Modules.pullbackComp C.map
+      (inclusion k (level N) D X (V.disk (closedPoint k)))).app H.line)
+    disk V.disk triangle).hom.app ⊤ (tensorPowerSection _ _ 2 ⊤ frame) = generator
+def GeometricFamily {n h : ℕ} (A : Matrices n h) (U : Indexing A) {D : LevelData ℂ (level (commonN A))} {X : Compactification ℂ (level (commonN A)) D} (H : Extension ℂ (level (commonN A)) D X) (V : DiskTest ℂ (level (commonN A)) D X) : Prop :=
+  let N := commonN A
+  let L := level N
+  let x := V.disk (closedPoint ℂ)
+  ∃ J : SquareLine (Component ℂ L D X x) (hodge ℂ L D X x H),
+    ∃ C : RootCover ℂ (Component ℂ L D X x) (projection ℂ L D X x) (2^(normCount A-1)),
+      Etale C.map ∧ (normCount A = 1 → IsIso C.map) ∧
+      SquareCoverDegree ℂ L D X H x J (2^(normCount A-1)) n C ∧
+      ∃ F : CoverFrame ℂ N H V J (2^(normCount A-1)) C,
+        ∃ (t : Fin U.count → Sections C.space ((Scheme.Modules.pullback C.map).obj J.line))
+          (σ : Fin h → Sections C.space (tensorPower C.space ((Scheme.Modules.pullback C.map).obj J.line) n)),
+          (∀ j, t j ≠ 0 ∧ pullbackGlobalSection F.disk ((Scheme.Modules.pullback C.map).obj J.line) (t j) =
+            ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries ℂ) (unarySeries ℂ N (U.pair j).1 (U.pair j).2) • F.frame) ∧
+          (∀ i, σ i = ∑ a : Cosets A i, tensorProductSection C.space ((Scheme.Modules.pullback C.map).obj J.line)
+            n ⊤ (fun j => t (U.index i a j))) ∧
+          ∀ c : Fin h → ℂ,
+            pullbackPowerSection F.disk ((Scheme.Modules.pullback C.map).obj J.line) n
+              (∑ i : Fin h, baseScalar ℂ (C.map ≫ projection ℂ L D X x) (c i) • σ i) =
+                ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries ℂ) (expanded A c) •
+                  tensorPowerSection (Disk ℂ) ((Scheme.Modules.pullback F.disk).obj
+                    ((Scheme.Modules.pullback C.map).obj J.line)) n ⊤ F.frame
+end ArithmeticThetaPalomarSharp529
+namespace ArithmeticThetaPalomarSharp529
+open ArithmeticThetaLevelCompactificationR0179 ArithmeticThetaBoundaryHodgeR0182 ArithmeticThetaComponentDegreeR0184 ArithmeticThetaTateCuspsR0181 ArithmeticThetaSquareLinesR0192 ArithmeticThetaSharpCoverR0194 ArithmeticThetaTensorPower ArithmeticThetaPullback ArithmeticThetaSimultaneousUnaryR0187 ArithmeticThetaNormalizedSections ArithmeticThetaLatticeSectionsR0188 ArithmeticThetaCompactUnaryR0183 ArithmeticThetaCommonHalfHodgeR0185
+theorem squarePull_eq_original {Z Y : Scheme} {W : Z.Modules} (f : Y ⟶ Z) (A : SquareLine Z W) : squarePull f A = ArithmeticThetaSquareLinesR0192.squarePull f A := by
+  simp only [squarePull, ArithmeticThetaSquareLinesR0192.squarePull, ArithmeticThetaPalomarHalf505.powerComparison_eq_original]
+theorem squareOnDisk_eq_original (k : Type) [Field k] {B X : Scheme} (p : B ⟶ X) (J : B.Modules) (H : X.Modules) (β : tensorPower B J 2 ≅ (Scheme.Modules.pullback p).obj H) (f : Disk k ⟶ B) (d : Disk k ⟶ X) (hf : f ≫ p = d) : squareOnDisk k p J H β f d hf = ArithmeticThetaSimultaneousUnaryR0187.squareOnDisk k p J H β f d hf := by
+  simp only [squareOnDisk, ArithmeticThetaSimultaneousUnaryR0187.squareOnDisk, ArithmeticThetaPalomarHalf505.powerComparison_eq_original]
+theorem pullbackPowerSection_eq_original {Y X : Scheme.{u}} (p : Y ⟶ X) (H : X.Modules) (n : ℕ) (F : Γ(tensorPower X H n, ⊤)) : pullbackPowerSection p H n F = ArithmeticThetaNormalizedSections.pullbackPowerSection p H n F := by
+  simp only [pullbackPowerSection, ArithmeticThetaNormalizedSections.pullbackPowerSection, ArithmeticThetaPalomarHalf505.powerComparison_eq_original]
+variable (k : Type) [Field k] [CharZero k] (N : ℕ) {D : LevelData k (level N)} {X : Compactification k (level N) D} (H : Extension k (level N) D X) (V : DiskTest k (level N) D X) (J : SquareLine (Component k (level N) D X (V.disk (closedPoint k))) (hodge k (level N) D X (V.disk (closedPoint k)) H)) (b : ℕ) (C : RootCover k (Component k (level N) D X (V.disk (closedPoint k))) (projection k (level N) D X (V.disk (closedPoint k))) b)
+def frameToOriginal (F : CoverFrame k N H V J b C) : ArithmeticThetaSharpKernelR0195.CoverFrame k N H V J b C where
+  disk := F.disk
+  triangle := F.triangle
+  dominant := F.dominant
+  frame := F.frame
+  isFrame := F.isFrame
+  generator := F.generator
+  extendsGenerator := F.extendsGenerator
+  square_eq := by simpa only [squareOnDisk_eq_original, squarePull_eq_original] using F.square_eq
+def frameOfOriginal (F : ArithmeticThetaSharpKernelR0195.CoverFrame k N H V J b C) : CoverFrame k N H V J b C where
+  disk := F.disk
+  triangle := F.triangle
+  dominant := F.dominant
+  frame := F.frame
+  isFrame := F.isFrame
+  generator := F.generator
+  extendsGenerator := F.extendsGenerator
+  square_eq := by simpa only [squareOnDisk_eq_original, squarePull_eq_original] using F.square_eq
+end ArithmeticThetaPalomarSharp529
+namespace ArithmeticThetaPalomarSharp529
+open ArithmeticThetaLevelCompactificationR0179 ArithmeticThetaBoundaryHodgeR0182 ArithmeticThetaComponentDegreeR0184 ArithmeticThetaTateCuspsR0181 ArithmeticThetaSquareLinesR0192 ArithmeticThetaSharpCoverR0194 ArithmeticThetaTensorPower ArithmeticThetaPullback ArithmeticThetaSimultaneousUnaryR0187 ArithmeticThetaNormalizedSections ArithmeticThetaLatticeSectionsR0188 ArithmeticThetaCompactUnaryR0183 ArithmeticThetaCommonHalfHodgeR0185
+theorem geometric_iff_original {n h : ℕ} (A : Matrices n h) (U : Indexing A) {D : LevelData ℂ (level (commonN A))} {X : Compactification ℂ (level (commonN A)) D} (H : Extension ℂ (level (commonN A)) D X) (V : DiskTest ℂ (level (commonN A)) D X) : GeometricFamily A U H V ↔ ArithmeticThetaSharpKernelR0195.GeometricFamily A U H V := by
+  constructor
+  · rintro ⟨J,C,het,hiso,hdeg,F,t,σ,ht,hσ,hexp⟩
+    refine ⟨J,C,het,hiso,hdeg,frameToOriginal ℂ _ H V J _ C F,t,σ,ht,hσ,?_⟩
+    simpa only [frameToOriginal, pullbackPowerSection_eq_original] using hexp
+  · rintro ⟨J,C,het,hiso,hdeg,F,t,σ,ht,hσ,hexp⟩
+    refine ⟨J,C,het,hiso,hdeg,frameOfOriginal ℂ _ H V J _ C F,t,σ,ht,hσ,?_⟩
+    simpa only [frameOfOriginal, pullbackPowerSection_eq_original] using hexp
+end ArithmeticThetaPalomarSharp529
+namespace ArithmeticThetaPalomarSharp529
+theorem sharpMatrixGeometricFamily : ∀ (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∃ U : ArithmeticThetaLatticeSectionsR0188.Indexing A, ArithmeticThetaLatticeSectionsR0188.Indexed A U ∧ ArithmeticThetaLatticeSectionsR0188.FormalIdentity A U ∧ ∃ (D : ArithmeticThetaLevelCompactificationR0179.LevelData ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A))) (X : ArithmeticThetaLevelCompactificationR0179.Compactification ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X) (V : ArithmeticThetaBoundaryHodgeR0182.DiskTest ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X), ArithmeticThetaBoundaryHodgeR0182.Canonical ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) H ∧ ArithmeticThetaPalomarSharp529.GeometricFamily A U H V := by
+  simpa only [geometric_iff_original] using ArithmeticThetaSharpKernelR0195.sharp_matrix_geometric_family
+theorem recover_original_047 : ∀ (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∃ U : ArithmeticThetaLatticeSectionsR0188.Indexing A, ArithmeticThetaLatticeSectionsR0188.Indexed A U ∧ ArithmeticThetaLatticeSectionsR0188.FormalIdentity A U ∧ ∃ (D : ArithmeticThetaLevelCompactificationR0179.LevelData ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A))) (X : ArithmeticThetaLevelCompactificationR0179.Compactification ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X) (V : ArithmeticThetaBoundaryHodgeR0182.DiskTest ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X), ArithmeticThetaBoundaryHodgeR0182.Canonical ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) H ∧ ArithmeticThetaSharpKernelR0195.GeometricFamily A U H V := by
+  simpa only [geometric_iff_original] using sharpMatrixGeometricFamily
+end ArithmeticThetaPalomarSharp529
+namespace ArithmeticThetaPalomarSharp529
+theorem sharpGeometricCutoff : ∀ (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ (U : ArithmeticThetaLatticeSectionsR0188.Indexing A), ArithmeticThetaLatticeSectionsR0188.Indexed A U → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A))) (X : ArithmeticThetaLevelCompactificationR0179.Compactification ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X) (V : ArithmeticThetaBoundaryHodgeR0182.DiskTest ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X), ArithmeticThetaPalomarSharp529.GeometricFamily A U H V → ∀ c : Fin h → ℂ, ArithmeticThetaSectionOrder.VanishesThrough (ArithmeticThetaComputed.thetaMap A c) (ArithmeticThetaSharpKernelR0195.cutoff A) → ArithmeticThetaComputed.thetaMap A c = 0 := by
+  simpa only [geometric_iff_original] using ArithmeticThetaSharpKernelR0195.sharp_geometric_cutoff
+theorem recover_original_048 : ∀ (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ (U : ArithmeticThetaLatticeSectionsR0188.Indexing A), ArithmeticThetaLatticeSectionsR0188.Indexed A U → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A))) (X : ArithmeticThetaLevelCompactificationR0179.Compactification ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X) (V : ArithmeticThetaBoundaryHodgeR0182.DiskTest ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X), ArithmeticThetaSharpKernelR0195.GeometricFamily A U H V → ∀ c : Fin h → ℂ, ArithmeticThetaSectionOrder.VanishesThrough (ArithmeticThetaComputed.thetaMap A c) (ArithmeticThetaSharpKernelR0195.cutoff A) → ArithmeticThetaComputed.thetaMap A c = 0 := by
+  simpa only [geometric_iff_original] using sharpGeometricCutoff
+end ArithmeticThetaPalomarSharp529

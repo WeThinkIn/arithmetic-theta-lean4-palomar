@@ -1,0 +1,3 @@
+'ArithmeticThetaPalomarSharp529.sharpMatrixGeometricFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarSharp529.sharpGeometricCutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarSharp529.geometric_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]

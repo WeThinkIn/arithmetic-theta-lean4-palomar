@@ -1548,3 +1548,19 @@ roots = ["FieldUnaryNaturalityChallenge"]
 [[lean_lib]]
 name = "FieldUnaryNaturalitySolution"
 roots = ["FieldUnaryNaturalitySolution"]
+
+[[lean_lib]]
+name = "SharpMatrixGeometryChallenge"
+roots = ["SharpMatrixGeometryChallenge"]
+
+[[lean_lib]]
+name = "SharpMatrixGeometrySolution"
+roots = ["SharpMatrixGeometrySolution"]
+
+[[lean_lib]]
+name = "ConservativeMatrixGeometryChallenge"
+roots = ["ConservativeMatrixGeometryChallenge"]
+
+[[lean_lib]]
+name = "ConservativeMatrixGeometrySolution"
+roots = ["ConservativeMatrixGeometrySolution"]

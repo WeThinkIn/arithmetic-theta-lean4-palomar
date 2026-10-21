@@ -1,0 +1,9 @@
+'ArithmeticThetaPalomarConservative530.arithmeticGeometricFamilyExistence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarConservative530.geometricFamilyConservativeCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarConservative530.geometric_iff_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
