@@ -1,0 +1,5 @@
+'ArithmeticThetaPalomarUnary514.compactUnaryHodgeRealization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarUnary514.toOriginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarUnary514.ofOriginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarUnary514.realizes_toOriginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarUnary514.realizes_ofOriginal' depends on axioms: [propext, Classical.choice, Quot.sound]

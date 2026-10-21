@@ -1,0 +1,12 @@
+{
+  "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/Challenge.lean": "072d75abb0091874f4b7ac15403ab536ed4b73c06555515c4904966903dc3bc1",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/Solution.lean": "caeb594b7888129e9022829bc60a9ce5abeb80c882ee70c5c499feb2d250895e",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/comparator.json": "88ec5b99c2fbfb8b9e56b2c7ad7d1e111a872ce3eb30b4b863d49afede8a16b7",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/ChallengeAudit.lean": "aa1d84cce3507a02ae784a3c32896ab438ada990f7a0578212288a53e97bf2b1",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/SolutionAudit.lean": "eadfe77f29de5296bc029c615d5ff072d73aa96055624bb04eaa6426c1351120",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/TargetHoleAudit.lean": "49a76c2f3b705b80444eedb0836d5dd64499af4666c84e0d198d40b987b8aec1",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/TargetTypeAudit.lean": "bba1a269379bd5bae52b506c1231dcb0d27db04565c61e5cd4fdbb75c9eb5c21",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/DefinitionCompatibility.lean": "ace1d11cdf66663ce409e9e1af1c701aa8e866a98c3eeafb31d20f6c5bb71429",
+  "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/OriginalEndpointAudit.lean": "3a95b547c799a6215dbda13f77269f613b73aaf402e98332f46b9df2df6c2516"
+}

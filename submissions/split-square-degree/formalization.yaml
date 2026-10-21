@@ -1,0 +1,56 @@
+version: v0.4
+project:
+  name: Complete split-field square-cover degree
+  description: 'Full original074: over any characteristic-zero field containing the
+    specified primitive Lth root, the actual square root of the component Hodge line
+    satisfies the complete degree formula on every original finite flat cover. It
+    establishes the geometric chart and invertibility conditions and normal frame
+    existence, then quantifies over ALL actual normal frames, nonzero sections and
+    their actual Scheme.ord divisors. The exact residue-field weighted degree equation
+    and bound are retained, including exponent0 and the actual generic finrank. No
+    algebraic-closure assumption, divisor provider or surrogate degree is introduced.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Full original074: over any characteristic-zero field containing the specified
+    primitive Lth root, the actual square root of the component Hodge line satisfies
+    the complete degree formula on every original finite flat cover. It establishes
+    the geometric chart and invertibility conditions and normal frame existence, then
+    quantifies over ALL actual normal frames, nonzero sections and their actual Scheme.ord
+    divisors. The exact residue-field weighted degree equation and bound are retained,
+    including exponent0 and the actual generic finrank. No algebraic-closure assumption,
+    divisor provider or surrogate degree is introduced.'
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

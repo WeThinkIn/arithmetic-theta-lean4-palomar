@@ -1,0 +1,54 @@
+version: v0.4
+project:
+  name: Complete split-field component discriminant divisor
+  description: Full original073 over every characteristic-zero field with its supplied
+    primitive Lth root. From the actual canonical compact Hodge geometry and intrinsic
+    compact D2, proves nonzero restriction on every actual component and the exact
+    finite-support divisor:2L at every cusp and0 everywhere else, in EVERY original
+    normal affine frame. All intrinsic Kato/initial-term and canonical tensor comparison
+    definitions from509 remain intact. No algebraic closure, divisor, local expansion
+    or new provider premise is added.
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: Full original073 over every characteristic-zero field with its supplied primitive
+    Lth root. From the actual canonical compact Hodge geometry and intrinsic compact
+    D2, proves nonzero restriction on every actual component and the exact finite-support
+    divisor:2L at every cusp and0 everywhere else, in EVERY original normal affine
+    frame. All intrinsic Kato/initial-term and canonical tensor comparison definitions
+    from509 remain intact. No algebraic closure, divisor, local expansion or new provider
+    premise is added.
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

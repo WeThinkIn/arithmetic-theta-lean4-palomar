@@ -1,0 +1,22 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-028"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-028"
+  ],
+  "universe": "Original algebraically closed characteristic-zero k : Type, positive even m,N with m dividing N, every normalized residue nu",
+  "target_count": 17,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Original actual LevelData/Compactification and Canonical Hodge extension",
+    "Full original pointed cyclic quotient with universal kernel/quotient property, actual marked lifts and actual Hodge map",
+    "Full intrinsic IsD2/IsKatoValue/IsNormalizedPower; no boundary integrality or global section supplied in OpenPower",
+    "Constructs the specified a,b indices, actual open normalized power data and UNIQUE genuine compact global section of the SAME Hodge line power",
+    "Correct actual restriction and generating open section, plus nonzero integral disk coefficient at EVERY DiskTest",
+    "Every canonical marking and every specified extending Hodge generator satisfies the COMPLETE unary series power equation; no finite prefix"
+  ],
+  "limitations": "Canonical level geometry and its Hodge extension are supplied exactly as in original028. This constructs its actual compact unary section over algebraically closed characteristic-zero fields; arbitrary-field descent and matrix-family assembly are separate endpoints. Not an official verification result."
+}

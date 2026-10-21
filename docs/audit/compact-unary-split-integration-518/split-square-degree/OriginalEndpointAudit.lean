@@ -1,0 +1,5 @@
+module
+import all Solution
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarSplit516.recover_original_074 = ArithmeticThetaCyclotomicModularityR0239.split_square_cover_degree := by rfl
+#print axioms ArithmeticThetaPalomarSplit516.recover_original_074

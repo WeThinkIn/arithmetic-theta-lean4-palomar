@@ -1,0 +1,35 @@
+{
+  "ids": [
+    "accepted-074"
+  ],
+  "target_count": 19,
+  "attempts": {
+    "Challenge": "01",
+    "Solution": "01",
+    "ChallengeAudit": "01",
+    "SolutionAudit": "01",
+    "DefinitionCompatibility": "01",
+    "OriginalEndpointAudit": "01",
+    "TargetTypeAudit": "01",
+    "TargetHoleAudit": "01"
+  },
+  "title": "Complete split-field square-cover degree",
+  "universe": "Original arbitrary characteristic-zero field k : Type with a specified primitive Lth root, even L at least3, every actual component, supplied actual square line and finite flat cover, every exponent including0",
+  "basis": "Full actual canonical Hodge and component definitions495, literal SquareLine/RootCover/SquareCoverDegree and actual residue-field weightedDegree",
+  "namespace_map": {
+    "ArithmeticThetaCyclotomicModularityR0239.split_square_cover_degree": "ArithmeticThetaPalomarSplit516.splitSquareCoverDegree"
+  },
+  "bridges": [
+    "Compiled equality of recover_original_074 to full original endpoint074; all semantic definitions copied literally"
+  ],
+  "retained": [
+    "Actual full compatible level geometry and canonical boundary Hodge line",
+    "Actual square line with specified invertibility and square isomorphism to SAME component Hodge line",
+    "Actual integral finite flat surjective cover, smooth proper composite and pointwise positive finrank bounded by b",
+    "Constructs local Noetherianity, one-dimensional charts, normality, actual pullback-line invertibility and existence of normal frame covers",
+    "Every normal frame cover, every nonzero actual tensor-power section, every finite-support divisor matching its actual Scheme.ord",
+    "Exact24*residue-field-weightedDegree=n*generic-finrank*L*number-of-cusps and48*weightedDegree<=n*b*cardSL2; no algebraic closure and no n>0 premise"
+  ],
+  "description": "Full original074: over any characteristic-zero field containing the specified primitive Lth root, the actual square root of the component Hodge line satisfies the complete degree formula on every original finite flat cover. It establishes the geometric chart and invertibility conditions and normal frame existence, then quantifies over ALL actual normal frames, nonzero sections and their actual Scheme.ord divisors. The exact residue-field weighted degree equation and bound are retained, including exponent0 and the actual generic finrank. No algebraic-closure assumption, divisor provider or surrogate degree is introduced.",
+  "limitations": "The actual square line and finite flat cover are supplied exactly as in the original endpoint. This proves their full geometric degree properties; their existence and matrix-family assembly are separate endpoints. Not official verification."
+}

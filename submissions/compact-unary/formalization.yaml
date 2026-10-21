@@ -1,0 +1,58 @@
+version: v0.4
+project:
+  name: Complete actual compact unary Hodge realization
+  description: 'Full original028: for positive even m,N with m dividing N and every
+    normalized residue, constructs the prescribed indices a,b, actual normalized open
+    unary data and the UNIQUE regular global section of the original compact Hodge
+    line power. It retains the actual open restriction, open frame, nonzero integral
+    coefficient on EVERY marked disk, and COMPLETE unary^(exponent N) expansion on
+    every canonical marking with the same extending normalized Hodge generator. Actual
+    quotient/kernel maps, point evaluation, intrinsic discriminant, normalization
+    and full series are exposed. Bidirectional transports preserve all actual objects
+    and recover the full original theorem.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Full original028: for positive even m,N with m dividing N and every normalized
+    residue, constructs the prescribed indices a,b, actual normalized open unary data
+    and the UNIQUE regular global section of the original compact Hodge line power.
+    It retains the actual open restriction, open frame, nonzero integral coefficient
+    on EVERY marked disk, and COMPLETE unary^(exponent N) expansion on every canonical
+    marking with the same extending normalized Hodge generator. Actual quotient/kernel
+    maps, point evaluation, intrinsic discriminant, normalization and full series
+    are exposed. Bidirectional transports preserve all actual objects and recover
+    the full original theorem.'
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

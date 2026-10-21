@@ -1,0 +1,22 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-074"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-074"
+  ],
+  "universe": "Original arbitrary characteristic-zero field k : Type with a specified primitive Lth root, even L at least3, every actual component, supplied actual square line and finite flat cover, every exponent including0",
+  "target_count": 19,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Actual full compatible level geometry and canonical boundary Hodge line",
+    "Actual square line with specified invertibility and square isomorphism to SAME component Hodge line",
+    "Actual integral finite flat surjective cover, smooth proper composite and pointwise positive finrank bounded by b",
+    "Constructs local Noetherianity, one-dimensional charts, normality, actual pullback-line invertibility and existence of normal frame covers",
+    "Every normal frame cover, every nonzero actual tensor-power section, every finite-support divisor matching its actual Scheme.ord",
+    "Exact24*residue-field-weightedDegree=n*generic-finrank*L*number-of-cusps and48*weightedDegree<=n*b*cardSL2; no algebraic closure and no n>0 premise"
+  ],
+  "limitations": "The actual square line and finite flat cover are supplied exactly as in the original endpoint. This proves their full geometric degree properties; their existence and matrix-family assembly are separate endpoints. Not official verification."
+}

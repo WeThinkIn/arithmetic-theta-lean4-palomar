@@ -1,0 +1,129 @@
+{
+  "utc": "2026-10-21T00:16:32.623780+00:00",
+  "review_kind": "root source/type review; not separate-model or official",
+  "local_scope_review_passed": true,
+  "new_original_endpoint_ids": [
+    "accepted-028",
+    "accepted-073",
+    "accepted-074"
+  ],
+  "no_added_main_assumptions": true,
+  "original_statement_recovery_compiled": true,
+  "official_pass": false,
+  "stats": {
+    "compact-unary-package-514": {
+      "stats": {
+        "Challenge": {
+          "lines": 905,
+          "bytes": 81396,
+          "sha256": "4956e1557191d6211af08dfd2cee09e7451ecfec4d61e321991708bd6d26be4e"
+        },
+        "Solution": {
+          "lines": 211,
+          "bytes": 20337,
+          "sha256": "2b6a35952c40e81cc4f4f5cfafc22f0fd0a0ef5375aec7eb2f374101885b77b9"
+        }
+      },
+      "audit_counts": {
+        "Challenge": {
+          "declarations": 852,
+          "propagated_holes": 515,
+          "project_imports": 0
+        },
+        "Solution": {
+          "declarations": 99,
+          "propagated_holes": 0,
+          "project_imports": 2862
+        }
+      },
+      "semantic_declarations_compatible": 553,
+      "new_ids": [
+        "accepted-028"
+      ]
+    },
+    "split-discriminant-package-515": {
+      "stats": {
+        "Challenge": {
+          "lines": 874,
+          "bytes": 76896,
+          "sha256": "5d4ee9b0f34dd03418b76e95d17a405d545599e4ad28fcdede66bed6262b5ac7"
+        },
+        "Solution": {
+          "lines": 157,
+          "bytes": 17061,
+          "sha256": "8a15cfb97bdb9fa83c3ccfce5a02762d7492efd4c147df789c1cf2ae2816ec52"
+        }
+      },
+      "audit_counts": {
+        "Challenge": {
+          "declarations": 820,
+          "propagated_holes": 493,
+          "project_imports": 0
+        },
+        "Solution": {
+          "declarations": 62,
+          "propagated_holes": 0,
+          "project_imports": 3276
+        }
+      },
+      "semantic_declarations_compatible": 531,
+      "new_ids": [
+        "accepted-073"
+      ]
+    },
+    "split-square-degree-package-516": {
+      "stats": {
+        "Challenge": {
+          "lines": 925,
+          "bytes": 64081,
+          "sha256": "b949f1f97024aaf79e13b2614c307c9ff18333048b048e5948b8ad2ba2cd34f9"
+        },
+        "Solution": {
+          "lines": 17,
+          "bytes": 2475,
+          "sha256": "fb5d02e1cc0a135748b3626c47c96d66570fbf47d2b7a26ee33c14c51205b79f"
+        }
+      },
+      "audit_counts": {
+        "Challenge": {
+          "declarations": 779,
+          "propagated_holes": 431,
+          "project_imports": 0
+        },
+        "Solution": {
+          "declarations": 3,
+          "propagated_holes": 0,
+          "project_imports": 3253
+        }
+      },
+      "semantic_declarations_compatible": 498,
+      "new_ids": [
+        "accepted-074"
+      ]
+    }
+  },
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Challenge.lean": "4956e1557191d6211af08dfd2cee09e7451ecfec4d61e321991708bd6d26be4e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean": "2b6a35952c40e81cc4f4f5cfafc22f0fd0a0ef5375aec7eb2f374101885b77b9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/receipt.json": "8cf07c7eaeb7b4b0300626aa469fe3f5ab44ab3455592d57a78ed1e13408dad5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Scope.json": "0b84af8d993fdac1ee3cfbe8c0ea390eb4cf6f172ad1b71e512d812de495e558",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/SourceMap.json": "6ef66bdb2945f56984d5822d186a3238fa04003cf56acf2dfc4f79321bfb3f97",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/comparator.json": "e204a1ac81e6dc02a5a4e26f68ead2feed2d887225301fd91876681afdadfd42",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Targets.json": "b921cab89ad89b2cbc35d143cba1e908bd46e316b56104a6693fb123f8b61118",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-package-515/Challenge.lean": "5d4ee9b0f34dd03418b76e95d17a405d545599e4ad28fcdede66bed6262b5ac7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-package-515/Solution.lean": "8a15cfb97bdb9fa83c3ccfce5a02762d7492efd4c147df789c1cf2ae2816ec52",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-package-515/receipt.json": "b9e621663fa203c5a771a660d721cd279cdb720d417a2c9aa66fed9c73cc3982",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-package-515/Scope.json": "480df711e72c82b9f3695e799e660f92d0b048a5f96b1ab2cbfc3e67bfc3cf2c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-package-515/SourceMap.json": "9a7cfa2730ec4e987a2282ac12d45619f18dd8ecf3a4ed22d2c3e938ef6696ac",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-package-515/comparator.json": "4ecab3a42e68219e168b420ad74500cac9fd46aeb08d6b2d5f84d4e6aa7747bb",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-package-515/Targets.json": "1172b8526008baed9f989375dd849851cbe42367444a4961bf7ea17a82d85c00",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-square-degree-package-516/Challenge.lean": "b949f1f97024aaf79e13b2614c307c9ff18333048b048e5948b8ad2ba2cd34f9",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-square-degree-package-516/Solution.lean": "fb5d02e1cc0a135748b3626c47c96d66570fbf47d2b7a26ee33c14c51205b79f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-square-degree-package-516/receipt.json": "70c5067bcf351b58c961164c785628fb220d6a953e19c73fb0455f0e461cba07",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-square-degree-package-516/Scope.json": "dd7343f68e8ff171cb8b434abc09ae29ca14d2849c94eac0ab4c68631110a501",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-square-degree-package-516/SourceMap.json": "32479d8ed34808c26e04b66cdeb9642aad2fdcfc039c92fd7266ec1899cd4cd8",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-square-degree-package-516/comparator.json": "24d3a3d029e5f45c5e6f54229176d710105a9f40405c05db86f6f26afda40426",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-square-degree-package-516/Targets.json": "6a9c930b7231bc1c92417629b8cc6fb4a7a8e3adac2a7d5fc54ae66cbef63824"
+  },
+  "review_sha256": "a30d4cca731d6c0ec0488e40da4680fddfe6818c801524f03c4630faa596e673"
+}

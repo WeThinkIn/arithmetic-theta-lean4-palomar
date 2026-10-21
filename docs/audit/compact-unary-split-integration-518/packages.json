@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "compact-unary",
+    "root": "CompactUnary",
+    "source": "compact-unary-package-514",
+    "ids": [
+      "accepted-028"
+    ],
+    "title": "Complete actual compact unary Hodge realization",
+    "description": "Full original028: for positive even m,N with m dividing N and every normalized residue, constructs the prescribed indices a,b, actual normalized open unary data and the UNIQUE regular global section of the original compact Hodge line power. It retains the actual open restriction, open frame, nonzero integral coefficient on EVERY marked disk, and COMPLETE unary^(exponent N) expansion on every canonical marking with the same extending normalized Hodge generator. Actual quotient/kernel maps, point evaluation, intrinsic discriminant, normalization and full series are exposed. Bidirectional transports preserve all actual objects and recover the full original theorem."
+  },
+  {
+    "slug": "split-discriminant",
+    "root": "SplitDiscriminant",
+    "source": "split-discriminant-package-515",
+    "ids": [
+      "accepted-073"
+    ],
+    "title": "Complete split-field component discriminant divisor",
+    "description": "Full original073 over every characteristic-zero field with its supplied primitive Lth root. From the actual canonical compact Hodge geometry and intrinsic compact D2, proves nonzero restriction on every actual component and the exact finite-support divisor:2L at every cusp and0 everywhere else, in EVERY original normal affine frame. All intrinsic Kato/initial-term and canonical tensor comparison definitions from509 remain intact. No algebraic closure, divisor, local expansion or new provider premise is added."
+  },
+  {
+    "slug": "split-square-degree",
+    "root": "SplitSquareDegree",
+    "source": "split-square-degree-package-516",
+    "ids": [
+      "accepted-074"
+    ],
+    "title": "Complete split-field square-cover degree",
+    "description": "Full original074: over any characteristic-zero field containing the specified primitive Lth root, the actual square root of the component Hodge line satisfies the complete degree formula on every original finite flat cover. It establishes the geometric chart and invertibility conditions and normal frame existence, then quantifies over ALL actual normal frames, nonzero sections and their actual Scheme.ord divisors. The exact residue-field weighted degree equation and bound are retained, including exponent0 and the actual generic finrank. No algebraic-closure assumption, divisor provider or surrogate degree is introduced."
+  }
+]

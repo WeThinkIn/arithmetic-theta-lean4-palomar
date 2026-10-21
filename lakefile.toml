@@ -1500,3 +1500,27 @@ roots = ["CommonHalfHodgeChallenge"]
 [[lean_lib]]
 name = "CommonHalfHodgeSolution"
 roots = ["CommonHalfHodgeSolution"]
+
+[[lean_lib]]
+name = "CompactUnaryChallenge"
+roots = ["CompactUnaryChallenge"]
+
+[[lean_lib]]
+name = "CompactUnarySolution"
+roots = ["CompactUnarySolution"]
+
+[[lean_lib]]
+name = "SplitDiscriminantChallenge"
+roots = ["SplitDiscriminantChallenge"]
+
+[[lean_lib]]
+name = "SplitDiscriminantSolution"
+roots = ["SplitDiscriminantSolution"]
+
+[[lean_lib]]
+name = "SplitSquareDegreeChallenge"
+roots = ["SplitSquareDegreeChallenge"]
+
+[[lean_lib]]
+name = "SplitSquareDegreeSolution"
+roots = ["SplitSquareDegreeSolution"]

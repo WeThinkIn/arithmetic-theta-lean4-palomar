@@ -1,0 +1,4 @@
+DECL ArithmeticThetaPalomarSplit516.splitSquareCoverDegree AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarSplit516.recover_original_074 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarComponent485.componentIsOpen AXIOMS [propext, Classical.choice, Quot.sound]
+AUDIT checked=3 propagated_holes=0 project_imports=3253

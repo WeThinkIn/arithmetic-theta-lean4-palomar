@@ -1,0 +1,225 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:132:81: error: unknown namespace `ArithmeticThetaComponentDegreeR0184`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:133:56: error(lean.unknownIdentifier): Unknown identifier `LevelData`
+
+Note: It is not possible to treat `LevelData` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:133:76: error(lean.unknownIdentifier): Unknown identifier `Compactification`
+
+Note: It is not possible to treat `Compactification` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:134:18: error(lean.unknownIdentifier): Unknown identifier `Extension`
+
+Note: It is not possible to treat `Extension` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:134:50: error: overloaded, errors 
+  134:52 Unknown identifier `tensorPower`
+  
+  Note: It is not possible to treat `tensorPower` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+  
+  134:52 Unknown identifier `tensorPower`
+  
+  Note: It is not possible to treat `tensorPower` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:134:88: error: overloaded, errors 
+  134:90 Unknown identifier `power`
+  
+  Note: It is not possible to treat `power` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+  
+  134:90 Unknown identifier `power`
+  
+  Note: It is not possible to treat `power` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:135:82: error: Application type mismatch: The argument
+  k
+has type
+  Type
+but is expected to have type
+  CategoryTheory.ConnectedComponents ?m.4
+in the application
+  inclusion k
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:136:21: error(lean.unknownIdentifier): Unknown identifier `Extension`
+
+Note: It is not possible to treat `Extension` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:136:45: error: overloaded, errors 
+  136:47 Unknown identifier `tensorPower`
+  
+  Note: It is not possible to treat `tensorPower` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+  
+  136:47 Unknown identifier `tensorPower`
+  
+  Note: It is not possible to treat `tensorPower` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:147:350: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaComponentDegreeR0184.IsCompactD2`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:148:42: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaComponentDegreeR0184.IsCompactD2`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:148:13: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:148:13: warning: This simp argument is unused:
+  ComponentDegree.IsCompactD2
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaComponentDegreeR0184.IsCompactD2, isD2_iff_original, BoundaryHodge.restrictPower,
+    ArithmeticThetaBoundaryHodgeR0182.restrictPower, BoundaryHodge.pullToOpen,
+    ArithmeticThetaBoundaryHodgeR0182.pullToOpen, tensorComparison_eq_original,
+    ArithmeticThetaPalomarHalf505.powerComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:148:91: warning: This simp argument is unused:
+  isD2_iff_original
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ComponentDegree.IsCompactD2, ArithmeticThetaComponentDegreeR0184.IsCompactD2,
+    BoundaryHodge.restrictPower, ArithmeticThetaBoundaryHodgeR0182.restrictPower, BoundaryHodge.pullToOpen,
+    ArithmeticThetaBoundaryHodgeR0182.pullToOpen, tensorComparison_eq_original,
+    ArithmeticThetaPalomarHalf505.powerComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:148:110: warning: This simp argument is unused:
+  BoundaryHodge.restrictPower
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ComponentDegree.IsCompactD2, ArithmeticThetaComponentDegreeR0184.IsCompactD2, isD2_iff_original,
+    ArithmeticThetaBoundaryHodgeR0182.restrictPower, BoundaryHodge.pullToOpen,
+    ArithmeticThetaBoundaryHodgeR0182.pullToOpen, tensorComparison_eq_original,
+    ArithmeticThetaPalomarHalf505.powerComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:148:139: warning: This simp argument is unused:
+  ArithmeticThetaBoundaryHodgeR0182.restrictPower
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ComponentDegree.IsCompactD2, ArithmeticThetaComponentDegreeR0184.IsCompactD2, isD2_iff_original,
+    BoundaryHodge.restrictPower, BoundaryHodge.pullToOpen, ArithmeticThetaBoundaryHodgeR0182.pullToOpen,
+    tensorComparison_eq_original, ArithmeticThetaPalomarHalf505.powerComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:148:188: warning: This simp argument is unused:
+  BoundaryHodge.pullToOpen
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ComponentDegree.IsCompactD2, ArithmeticThetaComponentDegreeR0184.IsCompactD2, isD2_iff_original,
+    BoundaryHodge.restrictPower, ArithmeticThetaBoundaryHodgeR0182.restrictPower,
+    ArithmeticThetaBoundaryHodgeR0182.pullToOpen, tensorComparison_eq_original,
+    ArithmeticThetaPalomarHalf505.powerComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:148:214: warning: This simp argument is unused:
+  ArithmeticThetaBoundaryHodgeR0182.pullToOpen
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ComponentDegree.IsCompactD2, ArithmeticThetaComponentDegreeR0184.IsCompactD2, isD2_iff_original,
+    BoundaryHodge.restrictPower, ArithmeticThetaBoundaryHodgeR0182.restrictPower, BoundaryHodge.pullToOpen,
+    tensorComparison_eq_original, ArithmeticThetaPalomarHalf505.powerComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:148:260: warning: This simp argument is unused:
+  tensorComparison_eq_original
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ComponentDegree.IsCompactD2, ArithmeticThetaComponentDegreeR0184.IsCompactD2, isD2_iff_original,
+    BoundaryHodge.restrictPower, ArithmeticThetaBoundaryHodgeR0182.restrictPower, BoundaryHodge.pullToOpen,
+    ArithmeticThetaBoundaryHodgeR0182.pullToOpen, ArithmeticThetaPalomarHalf505.powerComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:148:290: warning: This simp argument is unused:
+  ArithmeticThetaPalomarHalf505.powerComparison_eq_original
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ComponentDegree.IsCompactD2, ArithmeticThetaComponentDegreeR0184.IsCompactD2, isD2_iff_original,
+    BoundaryHodge.restrictPower, ArithmeticThetaBoundaryHodgeR0182.restrictPower, BoundaryHodge.pullToOpen,
+    ArithmeticThetaBoundaryHodgeR0182.pullToOpen, tensorComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:149:370: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaComponentDegreeR0184.restrict`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:150:39: error(lean.unknownIdentifier): Unknown identifier `ArithmeticThetaComponentDegreeR0184.restrict`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:150:13: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:150:13: warning: This simp argument is unused:
+  ComponentDegree.restrict
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ArithmeticThetaComponentDegreeR0184.restrict, NormalizedSections.pullbackPowerSection,
+    ArithmeticThetaNormalizedSections.pullbackPowerSection, ArithmeticThetaPalomarHalf505.powerComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:150:85: warning: This simp argument is unused:
+  NormalizedSections.pullbackPowerSection
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ComponentDegree.restrict, ArithmeticThetaComponentDegreeR0184.restrict,
+    ArithmeticThetaNormalizedSections.pullbackPowerSection, ArithmeticThetaPalomarHalf505.powerComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:150:126: warning: This simp argument is unused:
+  ArithmeticThetaNormalizedSections.pullbackPowerSection
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ComponentDegree.restrict, ArithmeticThetaComponentDegreeR0184.restrict,
+    NormalizedSections.pullbackPowerSection, ArithmeticThetaPalomarHalf505.powerComparison_eq_original]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:150:182: warning: This simp argument is unused:
+  ArithmeticThetaPalomarHalf505.powerComparison_eq_original
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ComponentDegree.restrict, ArithmeticThetaComponentDegreeR0184.restrict,
+    NormalizedSections.pullbackPowerSection, ArithmeticThetaNormalizedSections.pullbackPowerSection]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:211:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaPalomarUnary514.diskCoefficient_iff_original`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:220:63: warning: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:220:76: warning: Variable name `hmeven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hmeven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:220:94: warning: Variable name `hN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:220:107: warning: Variable name `hNeven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hNeven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:220:125: warning: Variable name `hmN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hmN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:226:63: warning: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:226:76: warning: Variable name `hmeven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hmeven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:226:94: warning: Variable name `hN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:226:107: warning: Variable name `hNeven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hNeven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/compact-unary-package-514/Solution.lean:226:125: warning: Variable name `hmN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hmN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

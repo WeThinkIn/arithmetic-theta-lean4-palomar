@@ -1,0 +1,28 @@
+{
+  "basis": "Original complete compact unary definitions and main endpoint028; full actual canonical boundary Hodge geometry and intrinsic normalized Kato from509, canonical tensor comparison505, literal full unary series489",
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/Challenge.lean": "072d75abb0091874f4b7ac15403ab536ed4b73c06555515c4904966903dc3bc1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/Solution.lean": "caeb594b7888129e9022829bc60a9ce5abeb80c882ee70c5c499feb2d250895e",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/FullLevelCoverDefinitionsR0175.lean": "e1ba20c9519f5c097497a3db054fd8a22a1af77ec43825f98e2557b7e0d70a8b",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/RelativeKatoNaturalityDefinitionsR0170.lean": "f3b3fe18444d1e8aeb0d0ee40b8ef8fc6b126d8de8d82e2125e5fcffa329ea32",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/OpenHodgeDescentDefinitionsR0180.lean": "5aa0de772477a2887268f62ebb92f9a0af2086c1d73ca2f02af3d9ac5a45cbb5",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/TateCuspDefinitionsR0181.lean": "a026527a4d745ec30eb9fdd06e5257b656e2d6cd5075754b9f9d3eaf2178ab0b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-package-489/Challenge.lean": "0d457a4e655baeab737ea9507d50c4b451f403ad610414824d01860be220ad35",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/UnaryKatoPowerDefinitionsR0160.lean": "a1f8740920d6698658e5a2b26ff93349e9255084d56bb0d45352b71b56bc24c6",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/BoundaryHodgeDefinitionsR0182.lean": "1f00712edcfe5de4487558b919673b870a76607cc452e0e5922b484da97de2df",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/CompactUnaryDefinitionsR0183.lean": "109aa0f196fb71ce524dd471f639d6599bac95c6dd7bae36547f5d7394d850ec",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/assemble.py": "c842db92af778e392376b5e4e8309c027e5e2af00ecf770c7e8442924c71705c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/comparator.json": "88ec5b99c2fbfb8b9e56b2c7ad7d1e111a872ce3eb30b4b863d49afede8a16b7"
+  },
+  "semantic_definitions": 553,
+  "target_types": "All explicit target types/universes and standard axiom closures checked",
+  "namespace_map": {
+    "ArithmeticThetaCompactUnaryR0183.compact_unary_hodge_realization": "ArithmeticThetaPalomarUnary514.compactUnaryHodgeRealization"
+  },
+  "bridges": [
+    "Compiled equality of recover_original_028 to the full original theorem",
+    "Explicit toOriginal/ofOriginal retain the identical quotient, discriminant, value, evaluation law, open section and normalization; only intrinsic IsD2 proof transported through proved equivalence",
+    "diskCoefficient_iff_original and both realizes_toOriginal/realizes_ofOriginal recover all original realization clauses using proved-equal canonical tensor comparisons"
+  ]
+}

@@ -1,0 +1,10 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarUnary514.recover_original_028 = ArithmeticThetaCompactUnaryR0183.compact_unary_hodge_realization := by rfl
+#print axioms ArithmeticThetaPalomarUnary514.compactUnaryHodgeRealization
+#print axioms ArithmeticThetaPalomarUnary514.toOriginal
+#print axioms ArithmeticThetaPalomarUnary514.ofOriginal
+#print axioms ArithmeticThetaPalomarUnary514.realizes_toOriginal
+#print axioms ArithmeticThetaPalomarUnary514.realizes_ofOriginal

@@ -1,0 +1,100 @@
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: CompactUnarySolution.lean:206:107: Variable name `hNeven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hNeven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: CompactUnarySolution.lean:206:125: Variable name `hmN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hmN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [12213/12215] Built SplitSquareDegreeChallenge (17s)
+warning: SplitSquareDegreeChallenge.lean:25:14: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:27:8: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:29:6: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:36:6: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:37:6: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:38:6: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:41:14: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:65:6: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:68:9: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:80:8: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:87:8: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:113:8: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:120:8: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:121:8: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:541:0: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SplitSquareDegreeChallenge.lean:590:8: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:804:8: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:821:8: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:823:8: declaration uses `sorry`
+warning: SplitSquareDegreeChallenge.lean:923:8: declaration uses `sorry`
+⚠ [12214/12215] Built SplitDiscriminantChallenge (21s)
+warning: SplitDiscriminantChallenge.lean:24:14: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:26:8: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:28:6: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:34:6: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:35:6: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:36:6: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:38:14: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:62:6: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:64:9: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:73:8: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:80:8: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:102:8: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:106:8: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:107:8: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:466:0: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SplitDiscriminantChallenge.lean:504:8: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:669:8: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:684:8: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:686:8: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:733:8: declaration uses `sorry`
+warning: SplitDiscriminantChallenge.lean:872:8: declaration uses `sorry`
+⚠ [12215/12215] Built CompactUnaryChallenge (23s)
+warning: CompactUnaryChallenge.lean:24:14: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:26:8: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:28:6: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:34:6: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:35:6: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:36:6: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:38:14: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:62:6: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:64:9: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:73:8: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:80:8: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:102:8: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:106:8: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:107:8: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:462:0: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CompactUnaryChallenge.lean:500:8: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:676:8: declaration uses `sorry`
+warning: CompactUnaryChallenge.lean:904:8: declaration uses `sorry`
+Build completed successfully (12215 jobs).
