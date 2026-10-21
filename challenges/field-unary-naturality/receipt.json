@@ -1,0 +1,202 @@
+{
+  "utc": "2026-10-21T01:53:22.676628+00:00",
+  "status": "Complete compact unary naturality under coefficient embeddings independent local interface checked",
+  "new_ids": [
+    "accepted-070"
+  ],
+  "checks": {
+    "Challenge": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/Challenge.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/Challenge.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 16.94,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "ec607c7bf6aee57bab02d60009c17d7485b96f758b3cbfef179487bc6d2e67b2",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "Solution": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/Solution.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/Solution.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 19.49,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "4a3005928abbd3b8dcde556272332406c7b91058fd3e99393cfd043c649f2fc2",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "ChallengeAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/ChallengeAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/ChallengeAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 22.09,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "29ce1e769d67cd5a11f9c4faf488cba353353d85942eb110be6b2c924088f341",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "SolutionAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/SolutionAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/SolutionAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 32.75,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "ae4b94747a6b100bcd1fd4ecb304982605f37b80f8e062accd7ce05e091cd139",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "DefinitionCompatibility": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/DefinitionCompatibility.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/DefinitionCompatibility.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.37,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "cf8dd0a4da48a05340ebb9b7e4863d34dd9465ad103167b4d3c84ce1060ecb98",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "OriginalEndpointAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/OriginalEndpointAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/OriginalEndpointAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.07,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "a1c96cd0d4cce638511d54b33060d8519114d8362b26ced59bafc821fdd771a5",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "TargetTypeAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/TargetTypeAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/TargetTypeAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.22,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "036d5836e2d10d0483f53bc2a3cb0a492df08d1bd084f5b04670e2cfe945a6f2",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    },
+    "TargetHoleAudit": {
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+        "-R",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/TargetHoleAudit.olean",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/TargetHoleAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.37,
+      "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+      "source_sha256": "66902221006c34846a87cc4f854d268348bb8f48e149e54676a9cf5980d7e81b",
+      "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+    }
+  },
+  "audit_counts": {
+    "Challenge": {
+      "declarations": 998,
+      "propagated_holes": 560,
+      "project_imports": 0
+    },
+    "Solution": {
+      "declarations": 172,
+      "propagated_holes": 0,
+      "project_imports": 3279
+    }
+  },
+  "target_types_checked": 18,
+  "semantic_declarations_compatible": 652,
+  "all_holes_selected_exactly_once": true,
+  "full_original_theorem_equality_audit_passed": true,
+  "no_new_main_assumptions": true,
+  "stats": {
+    "Challenge": {
+      "lines": 990,
+      "bytes": 97808,
+      "sha256": "ec607c7bf6aee57bab02d60009c17d7485b96f758b3cbfef179487bc6d2e67b2"
+    },
+    "Solution": {
+      "lines": 386,
+      "bytes": 40572,
+      "sha256": "4a3005928abbd3b8dcde556272332406c7b91058fd3e99393cfd043c649f2fc2"
+    }
+  },
+  "official_pass": false,
+  "actual_root_build_pending": true,
+  "bindings": {
+    "DefinitionCompatibility-check-01.log": "618790c27af38ec1e03b088d6eb6202a88529036a14c17302968b09034fe893c",
+    "OriginalEndpointAudit.lean": "a1c96cd0d4cce638511d54b33060d8519114d8362b26ced59bafc821fdd771a5",
+    "comparator.json": "8cefc5984ec332befc75e6269cc7795c29c4b9cc4596757632061d591f20f9b4",
+    "TargetHoleAudit-check-01.log": "09f7e5c1e4432c801fbf17da992f4e566acd404eb50b812f0ffc20ceb097ec9a",
+    "TargetHoleAudit-receipt-01.json": "6d277db7de82891d2e439330f39b28927d3452e8651b24ac92adea1a72c94dd8",
+    "compile.py": "254522f5893174a01b5e1c12326654b57a8d4d45c08bc55f606a19fdfcf3cc31",
+    "DefinitionCompatibility-receipt-01.json": "8be8e98de7a0c3e76f332c64c45db2bfae275c6d9f70d3042e204915a0a44997",
+    "Challenge-before-packing.lean.txt": "001d7559c63b99459a3941c6de87a4d39ae98c29380bcacc7edf789ab735aef7",
+    "Scope.json": "fec6401642974fbe6fb060202440d61f7311431978f7e8aa661b8cfb5916d520",
+    "README.md": "f94f7d193e5d041ee3f5c6f8d2705d12cd702a20ef5b157722d5cce890a5fb44",
+    "pack_fields.py": "2434b2f895f9a77d249945e4523867dd2233a95fef9a725318063bb31c1c1fb8",
+    "OriginalEndpointAudit-check-01.log": "7c17a4e3a1bb46c977dba635312accc3e0f8499fa48c45ab77c3a632cd673ce0",
+    "packing.json": "8acca304a451a30aa6d96a7c36198907421c0eefa1a133bc5ca64b449367dde9",
+    "TargetHoleAudit.lean": "66902221006c34846a87cc4f854d268348bb8f48e149e54676a9cf5980d7e81b",
+    "SolutionAudit-check-01.log": "fa90c6ece2e6dc3056ffd79f85b9789e9fab3b837a0da6cbc286f046139db058",
+    "package-description.json": "ed1fdae740c8922b915ffbbb3a09b29d7315c83e4be12bcbd4f871b35ddee7ba",
+    "Solution.uncompressed.lean.txt": "84f9e10b1db31f5b38d231b61643c234e61980a35079bf6a78f676211bcd716d",
+    "TargetTypeAudit.lean": "036d5836e2d10d0483f53bc2a3cb0a492df08d1bd084f5b04670e2cfe945a6f2",
+    "compact.py": "8bf1860b5c5de7c4a9d591840a72fa35ba57ce3ccd70150b519d7d83281caed9",
+    "assemble.py": "f0fa8d84bfd8d3427119827c5c11b0d3b4358bb028b42fa7a707996b7600546e",
+    "input-bindings.json": "8dd145a31606bcf395707aa1931139a665adf04390be3384e784b9d563b02f83",
+    "SolutionAudit-receipt-01.json": "38574b81aabef1f460a6aad3eef8089e671b76202fb2a82a4fbbec8e3db8ae71",
+    "Challenge-check-01.log": "07296bb8dff570ec4e6e22c18ac5e961d24a2b1bfbe419d504cfc00c6551e060",
+    "Solution-receipt-01.json": "dacbf08b3f3bd9053ed6aa7a378976410de1ff70900703f092283ff63b5f43ac",
+    "ChallengeAudit-check-01.log": "f9e9fafcbeccb11ccfcea55d32602dde5919a4031d4f988bcf0edc8af469b708",
+    "OriginalEndpointAudit-receipt-01.json": "1fb24b49d61009703877cac27cbb745ee19dd17700b75776190a9a2494096053",
+    "finalize.py": "94f0a18c8237a8c7d71942d18437d7722dee875e537ab2651991ebe1edcfda72",
+    "SourceMap.json": "5ff0238d1c760869e47747a1488ec8b5d116b30b7a55f8071fdd83048ddbde5e",
+    "TargetTypeAudit-receipt-01.json": "661fc964dd577108813ffea97008b0ca1e1d680f916c56db33ca10b053cd469f",
+    "DefinitionCompatibility.lean": "cf8dd0a4da48a05340ebb9b7e4863d34dd9465ad103167b4d3c84ce1060ecb98",
+    "SolutionAudit.lean": "ae4b94747a6b100bcd1fd4ecb304982605f37b80f8e062accd7ce05e091cd139",
+    "Challenge.uncompressed.lean.txt": "6dd410ddcdb19fd04a3d3abf82bd04b7b1db41f659c260d9a8fb4fcf55779795",
+    "Solution.lean": "4a3005928abbd3b8dcde556272332406c7b91058fd3e99393cfd043c649f2fc2",
+    "ChallengeAudit.lean": "29ce1e769d67cd5a11f9c4faf488cba353353d85942eb110be6b2c924088f341",
+    "Targets.json": "c778c1685f73e19e3fc666ae297b94566b9cc13801184ee7a0ae39920ac92cc1",
+    "Challenge.lean": "ec607c7bf6aee57bab02d60009c17d7485b96f758b3cbfef179487bc6d2e67b2",
+    "TargetTypeAudit-check-01.log": "ce688054712082bd40f191974f9521294b423d3e1a176203a81c5f1fdfd9397a",
+    "Challenge-receipt-01.json": "3a6e13cf55d989389caa7dc19460fcacada150ac74df0ef2b954134fb2772bd9",
+    "Solution-check-01.log": "028546ee7ff6bae165bd01e99e16eed96b2deff4728625833d473aa557f9cfdf",
+    "ChallengeAudit-receipt-01.json": "bfddc7c0c9996bc3144e4bcbbcf54e6d9b219d1359ee269b3a6e1b6aa793c71f"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+    "-R",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525",
+    "-o",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/Solution.olean",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/Solution.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 19.49,
+  "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+  "source_sha256": "4a3005928abbd3b8dcde556272332406c7b91058fd3e99393cfd043c649f2fc2",
+  "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+}

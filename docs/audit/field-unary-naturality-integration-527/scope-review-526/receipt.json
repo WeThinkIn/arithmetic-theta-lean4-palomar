@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-21T01:53:22.699458+00:00",
+  "review_kind": "root source/type review; not separate-model or official",
+  "local_scope_review_passed": true,
+  "new_original_endpoint_ids": [
+    "accepted-070"
+  ],
+  "no_added_main_assumptions": true,
+  "original_statement_recovery_compiled": true,
+  "official_pass": false,
+  "stats": {
+    "field-unary-naturality-package-525": {
+      "stats": {
+        "Challenge": {
+          "lines": 990,
+          "bytes": 97808,
+          "sha256": "ec607c7bf6aee57bab02d60009c17d7485b96f758b3cbfef179487bc6d2e67b2"
+        },
+        "Solution": {
+          "lines": 386,
+          "bytes": 40572,
+          "sha256": "4a3005928abbd3b8dcde556272332406c7b91058fd3e99393cfd043c649f2fc2"
+        }
+      },
+      "audit_counts": {
+        "Challenge": {
+          "declarations": 998,
+          "propagated_holes": 560,
+          "project_imports": 0
+        },
+        "Solution": {
+          "declarations": 172,
+          "propagated_holes": 0,
+          "project_imports": 3279
+        }
+      },
+      "semantic_declarations_compatible": 652,
+      "new_ids": [
+        "accepted-070"
+      ]
+    }
+  },
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/Challenge.lean": "ec607c7bf6aee57bab02d60009c17d7485b96f758b3cbfef179487bc6d2e67b2",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/Solution.lean": "4a3005928abbd3b8dcde556272332406c7b91058fd3e99393cfd043c649f2fc2",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/receipt.json": "58ce2ea3f630ac8c83e63d006db8bf4ed12851c6634e8e1da8829e82c0192401",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/Scope.json": "fec6401642974fbe6fb060202440d61f7311431978f7e8aa661b8cfb5916d520",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/SourceMap.json": "5ff0238d1c760869e47747a1488ec8b5d116b30b7a55f8071fdd83048ddbde5e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/comparator.json": "8cefc5984ec332befc75e6269cc7795c29c4b9cc4596757632061d591f20f9b4",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-naturality-package-525/Targets.json": "c778c1685f73e19e3fc666ae297b94566b9cc13801184ee7a0ae39920ac92cc1"
+  },
+  "review_sha256": "25b0278e752ba58c54cb98109d78f96a1a78103fa7574146f81044fc71a6731e"
+}

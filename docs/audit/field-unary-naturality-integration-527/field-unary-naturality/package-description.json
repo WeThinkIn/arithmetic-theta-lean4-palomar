@@ -1,0 +1,39 @@
+{
+  "ids": [
+    "accepted-070"
+  ],
+  "target_count": 18,
+  "attempts": {
+    "Challenge": "01",
+    "Solution": "01",
+    "ChallengeAudit": "01",
+    "SolutionAudit": "01",
+    "DefinitionCompatibility": "01",
+    "OriginalEndpointAudit": "01",
+    "TargetTypeAudit": "01",
+    "TargetHoleAudit": "01"
+  },
+  "title": "Complete compact unary naturality under coefficient embeddings",
+  "universe": "Original arbitrary characteristic-zero fields k,l : Type, every field embedding and all original positive/even/divisibility and nonzero marking conditions",
+  "basis": "Full original070, frozen519 full canonical geometry and OpenPower, actual original CoefficientMap and powerTransport with proven-equal normalized comparison maps",
+  "namespace_map": {
+    "ArithmeticThetaArithmeticSectionsR0236.field_unary_compact_naturality": "ArithmeticThetaPalomarNaturality525.fieldUnaryCompactNaturality"
+  },
+  "bridges": [
+    "Compiled equality of recover_original_070 to the full original theorem",
+    "CoefficientMap.toOriginal/ofOriginal retain identical openMap, compactMap, classifies, extendsOpen and hodgeMap, rewriting only the proven-equivalent normalized predicate",
+    "OpenPower.toOriginal/ofOriginal retain identical actual quotient, discriminant, value, evaluation, section and normalization, rewriting only proven-equivalent intrinsic D2",
+    "compactCompatible_iff_original and powerTransport_eq_original preserve the same actual comparison and section transport",
+    "Original restriction and pull-to-open definitions recovered using proven-equal canonical tensor maps; original geometric-canonical predicates recovered by519 equivalence"
+  ],
+  "retained": [
+    "Every embedding between arbitrary characteristic-zero fields; no algebraic closure or fixed-field restriction",
+    "Full actual coefficient-model comparison with classifying map, same compact map, same normalized Hodge map and open-extension equation",
+    "Both original Canonical and GeometricallyCanonical premises retain all algebraically closed extensions and actual normalized comparisons",
+    "EVERY pair of actual OpenPower choices for the given nonzero marked index, and EVERY compact section pair with the specified actual open restrictions",
+    "Constructs an actual compact Hodge isomorphism compatible with the same prescribed open Hodge map",
+    "FULL equality of transported global sections at the original tensor exponent, not just coefficient, valuation or finite-prefix equality"
+  ],
+  "limitations": "This endpoint proves naturality of supplied actual compact sections with the original specified open restrictions and compatible geometry. It does not separately construct those input sections, coefficient-model data or the entire matrix family. Official verification is separate.",
+  "description": "Full original070: for EVERY embedding of characteristic-zero coefficient fields and EVERY pair of actual normalized unary OpenPower choices and compact sections with their original open restrictions, constructs an actual compact Hodge isomorphism extending the SAME prescribed normalized open comparison and proves exact equality of the transported global sections. The complete classifier, identity-ideal conormal normalization, all-extension geometric canonicity, actual pullback maps and original exponent are retained. Bidirectional record transports preserve identical mathematical objects and only rewrite proven-equivalent predicates; the full original theorem is recovered by compilation."
+}

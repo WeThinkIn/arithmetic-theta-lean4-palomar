@@ -1,0 +1,58 @@
+version: v0.4
+project:
+  name: Complete compact unary naturality under coefficient embeddings
+  description: 'Full original070: for EVERY embedding of characteristic-zero coefficient
+    fields and EVERY pair of actual normalized unary OpenPower choices and compact
+    sections with their original open restrictions, constructs an actual compact Hodge
+    isomorphism extending the SAME prescribed normalized open comparison and proves
+    exact equality of the transported global sections. The complete classifier, identity-ideal
+    conormal normalization, all-extension geometric canonicity, actual pullback maps
+    and original exponent are retained. Bidirectional record transports preserve identical
+    mathematical objects and only rewrite proven-equivalent predicates; the full original
+    theorem is recovered by compilation.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Full original070: for EVERY embedding of characteristic-zero coefficient
+    fields and EVERY pair of actual normalized unary OpenPower choices and compact
+    sections with their original open restrictions, constructs an actual compact Hodge
+    isomorphism extending the SAME prescribed normalized open comparison and proves
+    exact equality of the transported global sections. The complete classifier, identity-ideal
+    conormal normalization, all-extension geometric canonicity, actual pullback maps
+    and original exponent are retained. Bidirectional record transports preserve identical
+    mathematical objects and only rewrite proven-equivalent predicates; the full original
+    theorem is recovered by compilation.'
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

@@ -1,0 +1,22 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-070"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-070"
+  ],
+  "universe": "Original arbitrary characteristic-zero fields k,l : Type, every field embedding and all original positive/even/divisibility and nonzero marking conditions",
+  "target_count": 18,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Every embedding between arbitrary characteristic-zero fields; no algebraic closure or fixed-field restriction",
+    "Full actual coefficient-model comparison with classifying map, same compact map, same normalized Hodge map and open-extension equation",
+    "Both original Canonical and GeometricallyCanonical premises retain all algebraically closed extensions and actual normalized comparisons",
+    "EVERY pair of actual OpenPower choices for the given nonzero marked index, and EVERY compact section pair with the specified actual open restrictions",
+    "Constructs an actual compact Hodge isomorphism compatible with the same prescribed open Hodge map",
+    "FULL equality of transported global sections at the original tensor exponent, not just coefficient, valuation or finite-prefix equality"
+  ],
+  "limitations": "This endpoint proves naturality of supplied actual compact sections with the original specified open restrictions and compatible geometry. It does not separately construct those input sections, coefficient-model data or the entire matrix family. Official verification is separate."
+}

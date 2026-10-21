@@ -1,0 +1,100 @@
+ Classical.choice,
+ Quot.sound]
+info: Proof/NormalDiscriminantIndependenceR0243.lean:4006:0: 'ArithmeticThetaArbitraryDiscriminantR0243.NormalDiscriminantIndependence.value_eq_localD' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/NormalDiscriminantIndependenceR0243.lean:4007:0: 'ArithmeticThetaArbitraryDiscriminantR0243.NormalDiscriminantIndependence.independence_normal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/NormalDiscriminantIndependenceR0243.lean:4008:0: 'ArithmeticThetaArbitraryDiscriminantR0243.NormalDiscriminantIndependence.independence_subsingleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12206/12211] Replayed ArbitraryWeierstrassDiscriminantR0243
+info: Proof/ArbitraryWeierstrassDiscriminantR0243.lean:85:0: 'ArithmeticThetaArbitraryDiscriminantR0243.arbitrary_weierstrass_discriminant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/ArbitraryWeierstrassDiscriminantR0243.lean:86:0: 'ArithmeticThetaArbitraryDiscriminantR0243.ArbitraryWeierstrassDiscriminant.identityModel_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/ArbitraryWeierstrassDiscriminantR0243.lean:87:0: 'ArithmeticThetaArbitraryDiscriminantR0243.ArbitraryWeierstrassDiscriminant.eq_localD' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/ArbitraryWeierstrassDiscriminantR0243.lean:88:0: 'ArithmeticThetaArbitraryDiscriminantR0243.ArbitraryWeierstrassDiscriminant.represents_initial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [12207/12211] Replayed ArbitraryDiscriminantNaturalityR0243
+info: Proof/ArbitraryDiscriminantNaturalityR0243.lean:62:0: 'ArithmeticThetaArbitraryDiscriminantR0243.ArbitraryDiscriminantNaturality.composeModel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/ArbitraryDiscriminantNaturalityR0243.lean:63:0: 'ArithmeticThetaArbitraryDiscriminantR0243.ArbitraryDiscriminantNaturality.value_composeModel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Proof/ArbitraryDiscriminantNaturalityR0243.lean:64:0: 'ArithmeticThetaArbitraryDiscriminantR0243.arbitrary_discriminant_naturality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12208/12211] Replayed SchemeDiscriminantDefinitionsR0244
+warning: Proof/SchemeDiscriminantDefinitionsR0244.lean:68:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [12209/12211] Replayed SchemeDiscriminantExistenceR0244
+warning: Proof/SchemeDiscriminantExistenceR0244.lean:423:0: automatically included section variable(s) unused in theorem `ArithmeticThetaSchemeDiscriminantR0244.SchemeDiscriminantExistence.chart_preimage`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Proof/SchemeDiscriminantExistenceR0244.lean:491:0: automatically included section variable(s) unused in theorem `ArithmeticThetaSchemeDiscriminantR0244.SchemeDiscriminantExistence.factor_chart`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: Proof/SchemeDiscriminantExistenceR0244.lean:636:0: 'ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_existence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [12210/12211] Built FieldUnaryNaturalitySolution (22s)
+warning: FieldUnaryNaturalitySolution.lean:305:5: Variable name `hf` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hf
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [12211/12211] Built FieldUnaryNaturalityChallenge (25s)
+warning: FieldUnaryNaturalityChallenge.lean:24:14: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:26:8: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:28:6: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:34:6: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:35:6: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:36:6: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:38:14: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:62:6: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:64:9: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:73:8: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:80:8: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:102:8: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:106:8: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:107:8: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:427:0: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: FieldUnaryNaturalityChallenge.lean:465:8: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:640:8: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:865:8: declaration uses `sorry`
+warning: FieldUnaryNaturalityChallenge.lean:967:296: Variable name `hf` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hf
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: FieldUnaryNaturalityChallenge.lean:989:8: declaration uses `sorry`
+Build completed successfully (12211 jobs).

@@ -1540,3 +1540,11 @@ roots = ["FieldDiscriminantChallenge"]
 [[lean_lib]]
 name = "FieldDiscriminantSolution"
 roots = ["FieldDiscriminantSolution"]
+
+[[lean_lib]]
+name = "FieldUnaryNaturalityChallenge"
+roots = ["FieldUnaryNaturalityChallenge"]
+
+[[lean_lib]]
+name = "FieldUnaryNaturalitySolution"
+roots = ["FieldUnaryNaturalitySolution"]

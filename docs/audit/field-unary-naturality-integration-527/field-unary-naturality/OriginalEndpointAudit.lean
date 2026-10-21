@@ -1,0 +1,8 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarNaturality525.recover_original_070 = ArithmeticThetaArithmeticSectionsR0236.field_unary_compact_naturality := by rfl
+#print axioms ArithmeticThetaPalomarNaturality525.fieldUnaryCompactNaturality
+#print axioms ArithmeticThetaPalomarNaturality525.powerTransport_eq_original
+#print axioms ArithmeticThetaPalomarField519.geometric_iff_original

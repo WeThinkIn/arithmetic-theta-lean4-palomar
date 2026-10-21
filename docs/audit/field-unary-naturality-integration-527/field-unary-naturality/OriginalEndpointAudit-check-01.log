@@ -1,0 +1,7 @@
+'ArithmeticThetaPalomarNaturality525.fieldUnaryCompactNaturality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarNaturality525.powerTransport_eq_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticThetaPalomarField519.geometric_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]

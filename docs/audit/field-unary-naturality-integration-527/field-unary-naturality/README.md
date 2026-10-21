@@ -1,0 +1,7 @@
+# Complete compact unary naturality under coefficient embeddings
+
+Full original070: for EVERY embedding of characteristic-zero coefficient fields and EVERY pair of actual normalized unary OpenPower choices and compact sections with their original open restrictions, constructs an actual compact Hodge isomorphism extending the SAME prescribed normalized open comparison and proves exact equality of the transported global sections. The complete classifier, identity-ideal conormal normalization, all-extension geometric canonicity, actual pullback maps and original exponent are retained. Bidirectional record transports preserve identical mathematical objects and only rewrite proven-equivalent predicates; the full original theorem is recovered by compilation.
+
+Challenge has 990 lines and 18 explicit support/main targets. All 652 semantic types/available bodies match the Solution environment, and every literal proof hole is selected exactly once. The original theorem is recovered by compiled equality; target universes/types and all Solution declaration axiom closures pass. Actual root integration and official verification are separate steps. No whole-paper acceptance is claimed.
+
+This endpoint proves naturality of supplied actual compact sections with the original specified open restrictions and compatible geometry. It does not separately construct those input sections, coefficient-model data or the entire matrix family. Official verification is separate.
