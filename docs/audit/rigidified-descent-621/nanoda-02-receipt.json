@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "seconds": 44.57857062993571,
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/rigidified-descent-proof-621/nanoda-02.json"
+  ],
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/rigidified-descent-proof-621/candidate-02.ndjson": "bb315bebd8cbed756831becb871fc8aad35866abb31d80e8ac3da486fed67480",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/rigidified-descent-proof-621/nanoda-02.json": "5f8193ba50a6b1e1922936fd39c6be498bafcf5299668afd8fcb0c4078642974"
+  },
+  "unchanged": true,
+  "scope": "Optimized asm_b and export dependency closure only; not CommonUnary whole interface or official acceptance"
+}

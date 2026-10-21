@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "seconds": 818.0436043562368,
+    "peak_rss_bytes": 10662248448,
+    "asm_b_kernel_seconds": 455.036799
+  },
+  "candidate": {
+    "seconds": 383.6030364506878,
+    "peak_rss_bytes": 6070689792,
+    "generic_helper_kernel_seconds": 36.503269,
+    "original_target_kernel_seconds": 0.00478
+  },
+  "time_reduction_percent": 53.10726293709417,
+  "rss_reduction_percent": 43.06369972893732,
+  "exact_original_named_declarations": 297,
+  "exact_definition_bodies": 87,
+  "scope": "Local module compile and exact audits only; export replay and integration pending"
+}

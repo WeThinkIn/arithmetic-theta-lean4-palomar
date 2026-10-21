@@ -1,0 +1,6 @@
+{
+  "module": "P2M.Sol.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections",
+  "target": "P2MW.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.AlgebraicGeometry.RelPicard.DescentAux.asm_b",
+  "original_path": "/home/Palomar/workspace/arithmetic-theta/project/Proof/P2M/Sol/S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.lean",
+  "original_sha256": "651dd4f693d9edd515f0fcec2f09c597974103a386f90f4f577b111abe4768a1"
+}

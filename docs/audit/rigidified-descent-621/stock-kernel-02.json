@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 591.6504369797185,
+  "peak_rss_bytes": 3489943552,
+  "stop_reason": null,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/rigidified-descent-proof-621/candidate-02.ndjson": "bb315bebd8cbed756831becb871fc8aad35866abb31d80e8ac3da486fed67480",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29"
+  },
+  "bindings_unchanged": true,
+  "scope": "Pinned unmodified stock Lean checker on exported optimized asm_b and full dependency closure; not whole CommonUnary export or official acceptance"
+}

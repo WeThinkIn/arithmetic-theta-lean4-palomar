@@ -1,0 +1,5 @@
+{
+  "valid": false,
+  "reason": "Incorrect target namespace P2M.Sol instead of P2MW. Exporter emitted PANIC but exited0 and exported only primitives. Any stock-kernel acceptance of candidate-01.ndjson does not validate asm_b.",
+  "correct_target": "P2MW.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.AlgebraicGeometry.RelPicard.DescentAux.asm_b"
+}

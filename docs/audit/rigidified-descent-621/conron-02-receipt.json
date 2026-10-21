@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "seconds": 51.43287932407111,
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/con-ron",
+    "--verified",
+    "--jobs=2",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/rigidified-descent-proof-621/candidate-02.ndjson"
+  ],
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/rigidified-descent-proof-621/candidate-02.ndjson": "bb315bebd8cbed756831becb871fc8aad35866abb31d80e8ac3da486fed67480"
+  },
+  "unchanged": true,
+  "scope": "Optimized asm_b and export dependency closure only; not CommonUnary whole interface or official acceptance"
+}

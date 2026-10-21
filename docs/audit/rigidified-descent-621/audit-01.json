@@ -1,0 +1,18 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 2.467423135880381,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/rigidified-descent-proof-621/candidate/P2M/Sol/S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.lean": "c93f1c9551b4f7d0fd86253bff415a1fc4529221008f5d1952971a4e4b314aad",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/rigidified-descent-proof-621/candidate/Audit.lean": "db9c65efeaf4092d1acc37bfb764f2695a85b494af648d58baa7daf212983682",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/P2M/Sol/S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.lean": "651dd4f693d9edd515f0fcec2f09c597974103a386f90f4f577b111abe4768a1",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/P2M/Sol/S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.olean": "1dfe093686c9600c92293ffa3c67d39159c145feae900decf8c8733e3a4a2c68",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/P2M/Sol/S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.olean.server": "974e0ccefadc6c8c56443ff905fe70fe5284b20ce02ab13291d2bef071260e64",
+    "/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean/P2M/Sol/S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.olean.private": "44fac00901dc8b66655fa6cecaef58d4349e1d2888e24b5b5692fd094f19172f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/rigidified-descent-proof-621/candidate/P2M/Sol/S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.olean": "2811b508a0a03aabe7332fa086865183127b7d9ea91362a372526e7fce19249f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/rigidified-descent-proof-621/candidate/P2M/Sol/S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.olean.server": "d533e48e9e60619cf668645f251376e35f37bee4433f86af2f1dd7f55814fc4e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/rigidified-descent-proof-621/candidate/P2M/Sol/S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.olean.private": "e4eab57156e2ea234599c64f696268341dea3e6a2390d638a813c57fb951b83c"
+  },
+  "unchanged": true,
+  "log_sha256": "8ac1f432e46afabc33d9723105f440e0f4d54337b46e3e207b8b5e08a011cc9c",
+  "scope": "Original named declaration types/universes, definition bodies and standard axiom dependencies; not export replay or official verification"
+}

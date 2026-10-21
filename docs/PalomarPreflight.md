@@ -83,3 +83,7 @@ The later repository migration checkpoint passed full GoalRoot build342 and all1
 ## Official common-unary result (21 October 2026)
 
 [Run 39557005985](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39557005985) at `77c9bff` exhausted memory during Solution build (`exit 137`, `oom-kill`, recorded peak 15,876,751,360 bytes). The [mechanical report and assessment](audit/official-common-unary-result-601/Review.md) do not establish any official comparator or kernel acceptance. The subsequent local stock Lean replay also terminated with a system-confirmed OOM kill; con-ron and NanoDa accepted the same solution export. The local cold-build diagnostic failed as well. [Terminal diagnostic evidence](audit/terminal-resource-analysis-611/Review.md) separates these results from the official failure; import reduction and targeted proof profiling are in progress. No unchanged retry has been dispatched.
+
+## Local rigidified-descent optimization (21 October 2026)
+
+An isolated proof refactor preserves the original theorem and reduces measured module peakRSS by43.06%. Its targeted export passes the pinned stock Lean checker, con-ron and NanoDa; see [the scoped result and receipts](audit/rigidified-descent-621/Review.md). The full affected dependency rebuild and103endpoint audits are in progress. This is not a complete common-unary, official preflight or whole-paper verdict, and public proof sources have not yet incorporated the candidate.
