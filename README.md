@@ -4,7 +4,7 @@
 
 Human author and responsible maintainer: **Jue Ding**.
 
-The accompanying paper and the original arithmetic theta Lean 4 formalization were first publicly released by **Jue Ding** as part of this project. This repository presents the research manuscript, the complete formal proof development, and a reproducible verification environment. The manuscript records its authors and contributors; third-party mathematical libraries retain their own authorship and attribution.
+This repository presents the research manuscript, the complete Lean 4 formalization, and a reproducible verification environment for the arithmetic determination of relations among lattice theta series. **Jue Ding first publicly released both the accompanying paper and the original Lean 4 code as part of this project.** The manuscript records the full author and contributor list; third-party mathematical libraries retain their own authorship and attribution.
 
 **The complete formalization has passed local Lean verification for all 13 source requirements, represented by 103 exact theorem endpoints.** The original delivery was verified with Lean **4.33.1**. The Palomar-compatible edition published here has also passed the complete `GoalRoot` build and all 103 original endpoint type and axiom checks with Lean **4.35.0-rc2**. Independent Palomar verification is in progress.
 
@@ -38,11 +38,23 @@ The development also constructs and verifies:
 
 The proof proceeds through integral orthogonal sublattices and actual rational preimage cosets, formal unary theta products, algebraic Tate geometry and normalized Kato units, compact Hodge sections, and finite covers. Divisor degrees and finite jets yield the coefficient bounds; exact linear algebra then recovers the full kernel and image. The arithmetic construction includes actual global sections and their complete formal expansions.
 
-The joint proof entry point is [`Proof/GoalRoot.lean`](Proof/GoalRoot.lean). The final source integration is [`Proof/FullSourceIntegrationR0268.lean`](Proof/FullSourceIntegrationR0268.lean). In particular, [`ArithmeticThetaFullSourceR0268.conservative_image_consumer`](Proof/ConservativeImageConsumerR0268.lean) assembles the conservative bound, full kernel and image, unique coordinates, and the associated compact cyclotomic modular family. The exact statements, hypotheses, and source correspondence of all 103 endpoints are recorded in [`docs/SourceObligations.json`](docs/SourceObligations.json).
+### Principal formal theorems
+
+The following declarations provide entry points to the principal results. Each linked module contains the complete quantified statement and its Lean proof.
+
+| Result | Lean declaration and source |
+| --- | --- |
+| Conservative bound, complete kernel and image, unique reconstruction coordinates, and compact cyclotomic modular family | [`ArithmeticThetaFullSourceR0268.conservative_image_consumer`](Proof/ConservativeImageConsumerR0268.lean) |
+| Sharp coefficient bound determining the full complex relation kernel, including rank zero | [`ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel`](Proof/SharpMatrixKernelR0195.lean) |
+| Actual finite metaplectic level and section image over the prescribed cyclotomic field | [`ArithmeticThetaCyclotomicModularityR0239.cyclotomic_matrix_modularity`](Proof/CyclotomicMatrixModularityR0239.lean) |
+| Modularity, solver output, and complete expansions under coefficient-field extension | [`ArithmeticThetaExtendedMetaplecticR0241.cyclotomic_extended_modularity`](Proof/CyclotomicExtendedModularityR0241.lean) |
+| Adaptive solver correctness, termination, and first-certified stopping on its schedule | [`ArithmeticThetaAdaptiveSolverR0230.adaptive_universal_solver`](Proof/AdaptiveUniversalSolverR0230.lean) |
+
+The joint proof entry point is [`Proof/GoalRoot.lean`](Proof/GoalRoot.lean), with final integration in [`Proof/FullSourceIntegrationR0268.lean`](Proof/FullSourceIntegrationR0268.lean). The [formal specification](docs/SourceObligations.json) records the exact statements, hypotheses, and source correspondence of all **103 endpoints**, and the [requirement map](docs/RequirementCoverage.json) relates them to the **13 original requirements**.
 
 ## Local formal verification
 
-The completed local verification covers the combined proof environment and the original theorem statements:
+**Local verification is complete for the specified formal development.** The verified results are:
 
 | Verification result | Outcome |
 | --- | --- |
@@ -59,9 +71,7 @@ Classical.choice
 Quot.sound
 ```
 
-The audited theorem proofs have no `sorryAx` dependency and introduce no additional mathematical axioms. The exact-type audit checks the original quantified statements; the axiom audit checks their transitive proof dependencies. The published evidence includes the [complete root-build receipt](docs/audit/full-root-build-342/), the [integrated rebuild and proof audit](docs/audit/proof-kernel-regression-repair-430/), and the [103-endpoint audit result](docs/audit/partial-endpoint-audit-431-result.json).
-
-These results establish local formal verification of the specified Lean statements. Palomar supplies a separate independent verification and review process, including assessment of their correspondence with the manuscript.
+The audited theorem proofs have no `sorryAx` dependency and introduce no additional mathematical axioms. The exact-type audit checks the original quantified statements; the axiom audit checks their transitive proof dependencies. Evidence is provided by the [complete root-build receipt](docs/audit/full-root-build-342/receipt.json), the [integrated rebuild and proof audit](docs/audit/proof-kernel-regression-repair-430/), and the [103-endpoint audit result](docs/audit/partial-endpoint-audit-431-result.json).
 
 ### Verified toolchains and dependencies
 
@@ -77,26 +87,24 @@ The repository selects its compiler through [`lean-toolchain`](lean-toolchain), 
 
 ## Adaptation for Palomar
 
-The Palomar edition preserves the original **13 requirements and 103 theorem endpoints** while adapting the development to the pinned verification toolchain. The original delivery is retained separately; compatibility changes belong to this edition.
+The Palomar edition ports the locally verified development from **Lean 4.33.1 to Lean 4.35.0-rc2**, together with the corresponding pinned Mathlib revision. It preserves the original **13 requirements and 103 theorem endpoints**, including their hypotheses, universe parameters, quantified conclusions, and complete-series interpretation.
 
 The resulting edition incorporates the following compatibility and engineering work:
 
 | Area | Adaptation in the published edition | Verification basis |
 | --- | --- | --- |
-| Compiler and Mathlib compatibility | Migration from Lean 4.33.1 to 4.35.0-rc2, with the pinned Mathlib revision above; updated module headers, declaration exposure, private-declaration visibility, library interfaces, and explicit parameters where elaboration changed | Complete `GoalRoot` build and exact checks of all 103 original endpoint types and their axiom dependencies |
+| Compiler and Mathlib compatibility | Updated module headers, declaration exposure, private-declaration visibility, library interfaces, and explicit parameters where elaboration changed | Complete `GoalRoot` build and exact checks of all 103 original endpoint types and their axiom dependencies |
 | Dependency packaging | Required local library sources included under `Proof/Definitions`, `Proof/Theorems`, and `Proof/P2M`, with a locked dependency graph | Recorded [source provenance, licenses, and attribution](docs/ThirdParty/README.md) |
 | Independent verification interfaces | Scoped Challenge/Solution pairs and explicit comparator configurations specifying mathematical targets and permitted axioms | Package-specific checks of statement types, universes, proof dependencies, original-endpoint recovery, and exported interfaces |
-| Compilation and kernel efficiency | Bounded internal compiler threading, parallel scheduling of independent compilation tasks, factored proofs, and smaller dependency closures through unused-import removal | [Proof-preservation and memory measurements](docs/audit/node-reduction-memory-555/Review.md), together with [export-preserving dependency checks](docs/audit/split-import-pruning-561/Review.md) |
+| Compilation and kernel efficiency | Bounded internal compiler threading with parallel scheduling across independent modules; factored completion proofs; removal of unused imports from verification packages | [Proof-preservation and memory measurements](docs/audit/node-reduction-memory-555/Review.md), together with [export-preserving dependency checks](docs/audit/split-import-pruning-561/Review.md) |
 
-The mathematical specification remains fixed throughout this adaptation: the original hypotheses, quantified conclusions, and complete-series statements are preserved. Challenge proof holes designate the propositions submitted for independent verification; the corresponding Solution proofs must satisfy the configured axiom checks. Lake uses `weakLeanArgs = ["-j1"]` to limit internal compiler threading while retaining parallel scheduling across independent modules.
+These engineering changes retain the original mathematical specification. In the independent verification interfaces, Challenge proof holes identify the propositions to be checked; the corresponding Solution supplies the proofs subject to the configured axiom checks. The complete local development and its verification evidence remain available alongside these interfaces.
 
 ## Independent Palomar verification
 
-**Whole-paper Palomar verification and registration remain in progress.** The completed local proof verification above is distinct from official mechanical preflight, independent kernel replay, semantic review, and registry acceptance.
+**Whole-paper Palomar verification and registration are in progress.** Palomar adds official mechanical preflight, independent kernel replay, semantic review of the correspondence with the manuscript, and registry acceptance to the completed local Lean verification.
 
-The repository provides [scoped verification packages](challenges/), explicit `comparator-*.json` configurations, and an [official preflight workflow](.github/workflows/palomar-preflight.yml). Each official result applies to its selected scope and immutable source revision. The [workflow runs](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/workflows/palomar-preflight.yml) and [verification records](docs/PalomarPreflight.md) provide the detailed evidence.
-
-The main-and-components configuration and the geometric, arithmetic, and algorithmic configurations organize independent verification by mathematical scope. Their scope descriptions and [`docs/Coverage.md`](docs/Coverage.md) identify the original endpoints covered by each package. Whole-paper acceptance requires the complete collection of relevant checks and review.
+The repository provides [scoped verification packages](challenges/), named `comparator-*.json` configurations, and an [official preflight workflow](.github/workflows/palomar-preflight.yml). Each official result applies to its selected mathematical scope and immutable source revision. The [coverage map](docs/Coverage.md), [verification records](docs/PalomarPreflight.md), and [official workflow runs](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/workflows/palomar-preflight.yml) document those scopes and their results.
 
 ## Reproduce the formal proof
 
@@ -153,7 +161,7 @@ The modularity statements use the arithmetic geometric formulation specified in 
 
 ## Attribution and citation
 
-The paper and original formalization were first published by **Jue Ding**, who maintains this public release. Please cite the accompanying manuscript using its recorded author list and title:
+For the mathematical result, cite the accompanying manuscript using its recorded author list and title:
 
 > *Arithmetic determination of relations among lattice theta series: A formal Tate and finite-cover construction with Lean verification.* See [the manuscript](paper/Paper.pdf) for authorship and version information.
 
