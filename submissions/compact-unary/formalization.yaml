@@ -38,8 +38,10 @@ automation:
     are recorded here.
 review:
   status: agent-reviewed
-  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
-    Official mechanical and semantic review are pending for this configuration.
+  notes: Challenge imports Mathlib and a pinned Lean compiler module for local cache
+    isolation. Full exported dependency structure and standard axiom closure pass
+    local unmodified Lake comparison. Original028 is recovered exactly. Official mechanical
+    and semantic verification of this repaired version remain pending.
 status:
   scope: 'Full original028: for positive even m,N with m dividing N and every normalized
     residue, constructs the prescribed indices a,b, actual normalized open unary data
@@ -51,8 +53,10 @@ status:
     are exposed. Bidirectional transports preserve all actual objects and recover
     the full original theorem.'
 fidelity:
-  divergences: Full original endpoint type and universe recovered by compiled theorem
-    equality. Actual mathematical definitions retained with explicit original-construction
-    equality bridges.All explicit support/main targets, all semantic types/available
-    bodies and standard axioms checked. No new main assumption. Official verification
-    pending.
+  divergences: Original mathematical definitions and main target retained. Local compiler
+    proof/matcher caches are isolated between extracted source fragments; thirteen
+    original auxiliary propositions are explicit theorem targets, with their actual
+    original Solution proofs. Local lexical notation spells repeated explicit typeclass
+    expressions; it adds no mathematical provider. No definition holes. Exact exported
+    comparison and axiom closure pass locally; independent kernel and official checks
+    remain separate.

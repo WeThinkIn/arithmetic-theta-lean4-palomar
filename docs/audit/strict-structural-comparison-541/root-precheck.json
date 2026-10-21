@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck",
+    "/home/Palomar/workspace/arithmetic-theta/project/comparator-compact-unary.json",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/primitives.json",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/structural-gate-checkpoint-541/CompactUnaryChallenge-01.ndjson",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/structural-gate-checkpoint-541/CompactUnarySolution-01.ndjson"
+  ],
+  "exit_code": 0,
+  "seconds": 78.31089153606445,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/comparator-compact-unary.json": "a037eb4e5846918e6aea93a0b6b2afa3a6009e536a1c8fa5a59ca6623f66ee45",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/structural-gate-checkpoint-541/CompactUnaryChallenge-01.ndjson": "5b6ef61ec9ac8fad94d5fd6b69114cbf4a8481daa43c0fb7760066192b30cac5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/structural-gate-checkpoint-541/CompactUnarySolution-01.ndjson": "845055f765d357030a6483199f857f03a9af753f94a42a0108ec53ba2f14aa01",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck": "e65b6dda0565d21be49be5a8a5112eb90ebb0c8bf5c3c5af8ed19281afd5554b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck.lean": "7e3e995b3ae356f6475263381a48565db0ba0e351f39127543bc384ec04c6850",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/primitives.json": "b217301595ce9113efe50a2c83df27b48613cc3834d2f0f8421d612e14ed5ca1",
+    "/home/Palomar/workspace/arithmetic-theta/project/CompactUnaryChallenge.lean": "7d9e8ca00d2076e0dc6721480a7f7ddd231296376424a5d29c8fdc0f89733ba9",
+    "/home/Palomar/workspace/arithmetic-theta/project/CompactUnarySolution.lean": "2b6a35952c40e81cc4f4f5cfafc22f0fd0a0ef5375aec7eb2f374101885b77b9"
+  },
+  "inputs_unchanged": true,
+  "scope": "Named repository modules; unmodified Lake.Check.compareAt and checkAxioms; no kernel verdict."
+}

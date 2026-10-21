@@ -6,7 +6,7 @@
     "accepted-028"
   ],
   "universe": "Original algebraically closed characteristic-zero k : Type, positive even m,N with m dividing N, every normalized residue nu",
-  "target_count": 17,
+  "target_count": 30,
   "no_added_main_assumptions": true,
   "official_verified": false,
   "full_paper_claimed": false,
@@ -18,5 +18,8 @@
     "Correct actual restriction and generating open section, plus nonzero integral disk coefficient at EVERY DiskTest",
     "Every canonical marking and every specified extending Hodge generator satisfies the COMPLETE unary series power equation; no finite prefix"
   ],
-  "limitations": "Canonical level geometry and its Hodge extension are supplied exactly as in original028. This constructs its actual compact unary section over algebraically closed characteristic-zero fields; arbitrary-field descent and matrix-family assembly are separate endpoints. Not an official verification result."
+  "limitations": "Canonical level geometry and its Hodge extension are supplied exactly as in original028. This constructs its actual compact unary section over algebraically closed characteristic-zero fields; arbitrary-field descent and matrix-family assembly are separate endpoints. Not an official verification result.",
+  "local_exact_exported_comparison": true,
+  "local_axiom_closure": true,
+  "structural_repair": "Pinned compiler proof/matcher caches are reset between source fragments; thirteen original auxiliary propositions are explicit theorem targets. Mathematical data definitions and the original main theorem are preserved. No definition holes."
 }

@@ -42,9 +42,14 @@ Challenge `sorry` declarations specify the targets required by Comparator; they 
 | Sharp/adaptive/image seven-endpoint package | `088eff2` | Full preflight39479248485 failed at Solution build with exit137/oom-kill; official report453 records resource exhaustion, with no kernel verdict. |
 | Sharp and actual ambient roots | `b706aea` | Full preflight39482676946 failed in Solution build with exit137/oom-kill despite per-compiler-j1; official report493 records six OOM kills, with no kernel verdict. |
 | Sharp and algebraic coordinates | current sources | Local build/audit384 passed; official dispatch pending. |
+| Compact unary, original accepted-028 | `6a97e8c` | Full preflight39520978526 passed Solution cold build/export, then failed exact comparison on `ArithmeticThetaBoundaryHodgeR0182.Normalized`. Local repair541 passes exact structural/axiom precheck; new official verification pending. |
+| Split discriminant, original accepted-073 | `6a97e8c` | Full preflight39520978779 failed Solution cold build with OOM/exit137. No kernel verdict. |
+| Split square degree, original accepted-074 | `6a97e8c` | Full preflight39520978317 still running at checkpoint541 observation. |
 | Complete scheme discriminant | current sources | Local exact-type/axiom checks385 and root build392 passed; official preflight pending. |
 | Scheme Kato naturality/characterization | current sources | Local exact-type/axiom checks394 and root build400 passed; official preflight pending. |
 | Stronger complete main and components | `35c8d4a` | Full preflight39469688913 passed Solution build/export, then exhausted wall-clock budget at comparator; official report500 gives no final kernel verdict.40 complete endpoints including all accepted-037 outputs; no ordinary intake for this configuration. |
+
+Latest structural/resource findings (checkpoint541): compact-unary preflight39520978526 passed cold build/export but failed exact constant comparison; split-discriminant39520978779 failed cold build with OOM/exit137. A repaired compact-unary Challenge now passes the local unmodified exported comparison and axiom gate and the actual named root build. Full kernel/official verification of that repair remains pending. See [evidence and scope](docs/audit/strict-structural-comparison-541/Review.md). Earlier definitional-equality/interface audits alone do not establish official structural compatibility.
 
 The workflow uses the official pinned PalomarSubmission pipeline, `mode: full` and `palomar-standard-v1`. Each report applies only to its exact commit, configuration and metadata path. Later repository changes do not alter running checks. No full-paper Palomar pass is claimed. Private review content and credentials are not published here.
 

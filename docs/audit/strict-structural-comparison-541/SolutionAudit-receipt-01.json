@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+    "-R",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/explicit-proof-types-540",
+    "-o",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/explicit-proof-types-540/SolutionAudit.olean",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/explicit-proof-types-540/SolutionAudit.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 27.1,
+  "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/explicit-proof-types-540:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+  "source_sha256": "2dbe2c53514b497f2e1e7ede1852b66c38f8335c5ec2f976e9e8bb6cc9015c14",
+  "source_unchanged": true,
+  "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+}
