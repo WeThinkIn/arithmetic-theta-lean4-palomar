@@ -1,0 +1,59 @@
+{
+  "status": "error",
+  "last_active_stage": "solution-build",
+  "error_kind": "infrastructure/resource-exhausted",
+  "errors": [
+    "worker resource ceiling reached while running lake (exit 137, result oom-kill)"
+  ],
+  "retryable": true,
+  "workflow_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39552048056",
+  "source": {
+    "bytes": 220551410,
+    "commit": "2c85e9b977f3d8e91570235a68534c945d69ff28",
+    "repository": "WeThinkIn/arithmetic-theta-lean4-palomar",
+    "repository_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar",
+    "tree_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/tree/2c85e9b977f3d8e91570235a68534c945d69ff28"
+  },
+  "execution_profile": "palomar-standard-v1",
+  "diagnostics": [
+    {
+      "code": "provider.resource_exhausted",
+      "explanation": "worker resource ceiling reached while running lake (exit 137, result oom-kill)",
+      "next_action": "Inspect the reported resource limit and build usage. If the workload repeatedly exceeds the worker's capacity, reduce its resource use or arrange sufficient capacity before retrying. Retry an unchanged commit only after addressing the reported condition. Normal submission cooldowns still apply.",
+      "owner": "provider",
+      "repairable": false,
+      "retryable": true,
+      "stage": "resource-exhausted",
+      "summary": "worker resource ceiling reached while running lake (exit 137, result oom-kill)"
+    }
+  ],
+  "resource_usage": [
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 50678791306000,
+      "deadline_fired": false,
+      "exec_main_code": "2",
+      "exec_main_status": "9",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 7
+      },
+      "memory_peak_bytes": 15828697088,
+      "phase": "solution-build:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "oom-kill"
+    }
+  ],
+  "solution": {
+    "module": "SplitSquareDegreeSolution",
+    "path": "SplitSquareDegreeSolution.lean",
+    "sha256": "6e12f186cb616618402177cdf629f4ba973cca2a1a6cc0c8e5e2eaeb616d60c2"
+  }
+}
