@@ -1524,3 +1524,11 @@ roots = ["SplitSquareDegreeChallenge"]
 [[lean_lib]]
 name = "SplitSquareDegreeSolution"
 roots = ["SplitSquareDegreeSolution"]
+
+[[lean_lib]]
+name = "FieldUnaryChallenge"
+roots = ["FieldUnaryChallenge"]
+
+[[lean_lib]]
+name = "FieldUnarySolution"
+roots = ["FieldUnarySolution"]

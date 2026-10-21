@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-21T01:42:01.307377+00:00",
+  "review_kind": "root source/type review; not separate-model or official",
+  "local_scope_review_passed": true,
+  "new_original_endpoint_ids": [
+    "accepted-069"
+  ],
+  "no_added_main_assumptions": true,
+  "original_statement_recovery_compiled": true,
+  "official_pass": false,
+  "stats": {
+    "field-unary-package-519": {
+      "stats": {
+        "Challenge": {
+          "lines": 984,
+          "bytes": 96709,
+          "sha256": "53f5c89ecba85c0ece55e69968a18234850f130ec1cf39ad92746ca5f5dcdb3a"
+        },
+        "Solution": {
+          "lines": 363,
+          "bytes": 34577,
+          "sha256": "ce25032df3653712b4ea5185d0292a7214bcddffab2e1b08d58969d0679259fd"
+        }
+      },
+      "audit_counts": {
+        "Challenge": {
+          "declarations": 978,
+          "propagated_holes": 542,
+          "project_imports": 0
+        },
+        "Solution": {
+          "declarations": 156,
+          "propagated_holes": 0,
+          "project_imports": 3279
+        }
+      },
+      "semantic_declarations_compatible": 638,
+      "new_ids": [
+        "accepted-069"
+      ]
+    }
+  },
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean": "53f5c89ecba85c0ece55e69968a18234850f130ec1cf39ad92746ca5f5dcdb3a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Solution.lean": "ce25032df3653712b4ea5185d0292a7214bcddffab2e1b08d58969d0679259fd",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/receipt.json": "e6c79db0daaa0010a9e780c586550abe19f0de4fe41a4f20f7af73b7ec80c700",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Scope.json": "e86f8bb179dc29067a60ad7b900f5c9e5e0d7ca8c4792438e7f01d012555b981",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/SourceMap.json": "d6f5b80bfa315121d09ee980c31202c94125aeee5ac8a3f941917ef9ed317f16",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/comparator.json": "23c2fd662bfd2afcbfa981c762e79465c2b4450eb8cd3da008146b994d59ee4f",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Targets.json": "1302002dab85fe8f22f876f924888fa2702644b8dbf0284d8c0848d1671413c2"
+  },
+  "review_sha256": "917c0754776869cd29e2eb4e5fd62296b39af47a013678e305ace80d87deea20"
+}

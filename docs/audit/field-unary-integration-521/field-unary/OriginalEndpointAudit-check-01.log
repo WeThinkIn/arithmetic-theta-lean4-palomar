@@ -1,0 +1,4 @@
+'ArithmeticThetaPalomarField519.fieldCompactUnary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarField519.classifierHodge_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarField519.hodgeCompatible_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarField519.geometric_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]

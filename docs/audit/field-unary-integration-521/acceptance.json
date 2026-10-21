@@ -1,0 +1,21 @@
+{
+  "accepted_for_local_integration": true,
+  "basis": "Frozen complete519 source/type/axiom audits and520 root scope review; no official acceptance",
+  "packages": {
+    "field-unary": {
+      "bindings": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean": "53f5c89ecba85c0ece55e69968a18234850f130ec1cf39ad92746ca5f5dcdb3a",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Solution.lean": "ce25032df3653712b4ea5185d0292a7214bcddffab2e1b08d58969d0679259fd",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Scope.json": "e86f8bb179dc29067a60ad7b900f5c9e5e0d7ca8c4792438e7f01d012555b981",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/SourceMap.json": "d6f5b80bfa315121d09ee980c31202c94125aeee5ac8a3f941917ef9ed317f16",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/receipt.json": "e6c79db0daaa0010a9e780c586550abe19f0de4fe41a4f20f7af73b7ec80c700",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/comparator.json": "23c2fd662bfd2afcbfa981c762e79465c2b4450eb8cd3da008146b994d59ee4f",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Targets.json": "1302002dab85fe8f22f876f924888fa2702644b8dbf0284d8c0848d1671413c2"
+      },
+      "new_ids": [
+        "accepted-069"
+      ]
+    }
+  },
+  "review_sha256": "7e94559f22b1779dc98a7e0668284dee02c6f12ba6f60a59af67610b9e2a4f96"
+}

@@ -1,0 +1,9 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarField519.recover_original_069 = ArithmeticThetaArithmeticSectionsR0236.field_compact_unary := by rfl
+#print axioms ArithmeticThetaPalomarField519.fieldCompactUnary
+#print axioms ArithmeticThetaPalomarField519.classifierHodge_iff_original
+#print axioms ArithmeticThetaPalomarField519.hodgeCompatible_iff_original
+#print axioms ArithmeticThetaPalomarField519.geometric_iff_original

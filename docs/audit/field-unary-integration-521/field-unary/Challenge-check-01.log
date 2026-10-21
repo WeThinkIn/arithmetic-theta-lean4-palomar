@@ -1,0 +1,74 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:24:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:26:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:28:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:34:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:35:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:36:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:38:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:62:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:64:9: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:73:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:80:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:102:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:106:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:107:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:462:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:500:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:676:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:929:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:999:112: error(lean.invalidField): Invalid field `module`: The environment does not contain `AlgebraicGeometry.Scheme.IdealSheafData.module`, so it is not possible to project the field `module` from an expression
+  Scheme.Hom.ker E.zero
+of type `E.curve.IdealSheafData`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:1000:141: error(lean.invalidField): Invalid field `module`: The environment does not contain `AlgebraicGeometry.Scheme.IdealSheafData.module`, so it is not possible to project the field `module` from an expression
+  Scheme.Hom.ker E.zero
+of type `E.curve.IdealSheafData`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:1000:161: error(lean.invalidField): Invalid field `module`: The environment does not contain `AlgebraicGeometry.Scheme.IdealSheafData.module`, so it is not possible to project the field `module` from an expression
+  Scheme.Hom.ker F.zero
+of type `F.curve.IdealSheafData`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:1000:198: error(lean.invalidField): Invalid field `moduleι`: The environment does not contain `AlgebraicGeometry.Scheme.IdealSheafData.moduleι`, so it is not possible to project the field `moduleι` from an expression
+  Scheme.Hom.ker F.zero
+of type `F.curve.IdealSheafData`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:1000:251: error(lean.invalidField): Invalid field `moduleι`: The environment does not contain `AlgebraicGeometry.Scheme.IdealSheafData.moduleι`, so it is not possible to project the field `moduleι` from an expression
+  Scheme.Hom.ker E.zero
+of type `E.curve.IdealSheafData`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:1001:188: error(lean.invalidField): Invalid field `module`: The environment does not contain `AlgebraicGeometry.Scheme.IdealSheafData.module`, so it is not possible to project the field `module` from an expression
+  Scheme.Hom.ker E.zero
+of type `E.curve.IdealSheafData`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:1001:208: error(lean.invalidField): Invalid field `module`: The environment does not contain `AlgebraicGeometry.Scheme.IdealSheafData.module`, so it is not possible to project the field `module` from an expression
+  Scheme.Hom.ker F.zero
+of type `F.curve.IdealSheafData`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:1001:336: error(lean.invalidField): Invalid field `module`: The environment does not contain `AlgebraicGeometry.Scheme.IdealSheafData.module`, so it is not possible to project the field `module` from an expression
+  Scheme.Hom.ker E.zero
+of type `E.curve.IdealSheafData`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:1002:4: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:1003:142: error: Type mismatch
+  ArithmeticThetaPalomarConormal436.conormalMap E.p E.zero
+has type
+  (Scheme.Modules.pullback E.zero).obj (ArithmeticThetaPalomarDifferential365.idealModule (Scheme.Hom.ker E.zero)) ⟶
+    (Scheme.Modules.pullback E.zero).obj (ArithmeticThetaPalomarDifferential365.kaehler E.p)
+but is expected to have type
+  Cotangent E ⟶ (Scheme.Modules.pullback E.zero).obj (Scheme.Hom.kaehler E.p)
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  getLimitCone ↦ 3
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:1011:352: error(lean.invalidField): Invalid field `module`: The environment does not contain `AlgebraicGeometry.Scheme.IdealSheafData.module`, so it is not possible to project the field `module` from an expression
+  Scheme.Hom.ker (universalFamily k L A).zero
+of type
+  (universalFamily k L A).curve.IdealSheafData
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:1011:372: error(lean.invalidField): Invalid field `module`: The environment does not contain `AlgebraicGeometry.Scheme.IdealSheafData.module`, so it is not possible to project the field `module` from an expression
+  Scheme.Hom.ker E.zero
+of type `E.curve.IdealSheafData`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:1031:296: warning: Variable name `hf` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hf
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Challenge.lean:1035:8: warning: declaration uses `sorry`

@@ -1,0 +1,41 @@
+{
+  "ids": [
+    "accepted-069"
+  ],
+  "target_count": 18,
+  "attempts": {
+    "Challenge": "05",
+    "Solution": "04",
+    "ChallengeAudit": "01",
+    "SolutionAudit": "01",
+    "DefinitionCompatibility": "01",
+    "OriginalEndpointAudit": "01",
+    "TargetTypeAudit": "01",
+    "TargetHoleAudit": "01"
+  },
+  "title": "Complete arbitrary-field compact unary Hodge realization",
+  "universe": "Original arbitrary characteristic-zero field k : Type, positive even m,N with m dividing N, every normalized residue nu; original Canonical and GeometricallyCanonical inputs",
+  "basis": "Full compact unary interface514, actual all-scheme families and full classifiers, original every-algebraically-closed-extension geometric canonical predicate, canonical all-open conormal derivative436",
+  "namespace_map": {
+    "ArithmeticThetaArithmeticSectionsR0236.field_compact_unary": "ArithmeticThetaPalomarField519.fieldCompactUnary"
+  },
+  "bridges": [
+    "Compiled equality of recover_original_069 to the full original theorem",
+    "Explicit toOriginal/ofOriginal retain the identical quotient, discriminant, value, evaluation law, open section and normalization; only intrinsic IsD2 proof transported through proved equivalence",
+    "diskCoefficient_iff_original and both realizes_toOriginal/realizes_ofOriginal recover all original realization clauses using proved-equal canonical tensor comparisons",
+    "classifierHodge_iff_original, hodgeCompatible_iff_original and geometric_iff_original identify the full original geometric-canonical premise"
+  ],
+  "retained": [
+    "Original actual LevelData/Compactification and Canonical Hodge extension",
+    "Full original pointed cyclic quotient with universal kernel/quotient property, actual marked lifts and actual Hodge map",
+    "Full intrinsic IsD2/IsKatoValue/IsNormalizedPower; no boundary integrality or global section supplied in OpenPower",
+    "Constructs the specified a,b indices, actual open normalized power data and UNIQUE genuine compact global section of the SAME Hodge line power",
+    "Correct actual restriction and generating open section, plus nonzero integral disk coefficient at EVERY DiskTest",
+    "Every canonical marking and every specified extending Hodge generator satisfies the COMPLETE unary series power equation; no finite prefix",
+    "Original GeometricallyCanonical tests EVERY algebraically closed coefficient extension and EVERY actual coefficient comparison, with uniqueness of the compact isomorphism extending the specified open Hodge map",
+    "Full arbitrary-scheme SchemeLaw/Family and all-point group-compatible full-level classifier, not a pointwise or affine-only surrogate",
+    "ClassifierHodge fixed by inclusion-compatible identity ideal map and universal conormal derivative on EVERY ideal section of EVERY open"
+  ],
+  "limitations": "The actual compatible level geometry and Hodge extension with original Canonical and GeometricallyCanonical conditions remain supplied inputs. This proves actual unary section descent over arbitrary characteristic-zero fields; it does not separately construct those inputs or complete matrix-family assembly. Official verification is separate.",
+  "description": "Full original069 over arbitrary characteristic-zero fields. Constructs the prescribed indices and actual open normalized unary data, then the UNIQUE genuine compact global section with correct open restriction, open frame, nonzero coefficient at EVERY disk and COMPLETE unary power for EVERY canonical marking and specified normalized generator. The supplied GeometricallyCanonical predicate retains EVERY algebraically closed coefficient extension, actual full classifiers on arbitrary schemes, normalized conormal derivatives and the UNIQUE comparison of actual compact Hodge lines extending the specified open map. Only proven-equal conormal/tensor maps are renamed; compiled equivalences recover all predicates and the complete original theorem."
+}

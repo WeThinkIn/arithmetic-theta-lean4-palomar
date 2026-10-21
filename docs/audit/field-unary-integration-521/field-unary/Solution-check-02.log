@@ -1,0 +1,86 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Solution.lean:191:0: warning: automatically included section variable(s) unused in theorem `ArithmeticThetaPalomarUnary514.diskCoefficient_iff_original`:
+  [CharZero k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Solution.lean:335:5: warning: Variable name `hf` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hf
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Solution.lean:343:719: error: unsolved goals
+k : Type u
+inst✝¹ : Field k
+inst✝ : CharZero k
+L : ℕ
+A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L
+B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A
+C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B
+Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C
+S : Scheme
+E : ArithmeticThetaLocalWeierstrassR0203.Family S
+b : S ⟶ ArithmeticThetaLocalWeierstrassR0203.Base Q.quotient.ring
+f : E.curve ⟶ A.descent.family.curve
+e : (Scheme.Modules.pullback b).obj (Hodge.ModularHodge k L A B C Q) ≅ Hodge.Cotangent E
+⊢ (∃ (h : E.zero ≫ f = (b ≫ Q.inclusion) ≫ (Hodge.universalFamily k L A).zero),
+      ∃ i,
+        Hodge.IdealCompatible (Hodge.universalFamily k L A) E f i ∧
+          (Scheme.Modules.pullback b).map
+                ((Scheme.Modules.pullback Q.inclusion).map
+                  (ArithmeticThetaCyclicPresentationR0174.RelativeWeierstrassPresentationR0174.Conormal.conormalMap
+                    (Hodge.universalFamily k L A).p (Hodge.universalFamily k L A).zero)) ≫
+              e.hom =
+            ((Scheme.Modules.pullbackComp b Q.inclusion).app (Hodge.Cotangent (Hodge.universalFamily k L A))).hom ≫
+              (Hodge.cotangentComparison (Hodge.universalFamily k L A) E (b ≫ Q.inclusion) f ⋯ i).hom) ↔
+    ∃ (h : E.zero ≫ f = (b ≫ Q.inclusion) ≫ (ArithmeticThetaSchemeHodgeR0205.universalFamily k L A).zero),
+      ∃ i,
+        ArithmeticThetaSchemeHodgeR0205.IdealCompatible (ArithmeticThetaSchemeHodgeR0205.universalFamily k L A) E f i ∧
+          (Scheme.Modules.pullback b).map
+                ((Scheme.Modules.pullback Q.inclusion).map
+                  (ArithmeticThetaCyclicPresentationR0174.RelativeWeierstrassPresentationR0174.Conormal.conormalMap
+                    (ArithmeticThetaSchemeHodgeR0205.universalFamily k L A).p
+                    (ArithmeticThetaSchemeHodgeR0205.universalFamily k L A).zero)) ≫
+              e.hom =
+            ((Scheme.Modules.pullbackComp b Q.inclusion).app
+                  (ArithmeticThetaSchemeHodgeR0205.Cotangent
+                    (ArithmeticThetaSchemeHodgeR0205.universalFamily k L A))).hom ≫
+              (ArithmeticThetaSchemeHodgeR0205.cotangentComparison
+                  (ArithmeticThetaSchemeHodgeR0205.universalFamily k L A) E (b ≫ Q.inclusion) f ⋯ i).hom
+/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-package-519/Solution.lean:347:368: error: unsolved goals
+k : Type
+inst✝¹ : Field k
+inst✝ : CharZero k
+L : ℕ
+D : ArithmeticThetaLevelCompactificationR0179.LevelData k L
+X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D
+H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X
+⊢ (∀ (l : Type) [inst : Field l] [inst_1 : CharZero l] [IsAlgClosed l] (ι : k →+* l)
+      (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L)
+      (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E)
+      (f :
+        ArithmeticThetaLevelCompactificationR0179.OpenBase l L E ⟶
+          ArithmeticThetaLevelCompactificationR0179.OpenBase k L D)
+      (F : Y.space ⟶ X.space),
+      Level.RespectsClassifiers ι D E f →
+        ∀ (hF : Level.Extends ι D E X Y f F) (e : (Scheme.Modules.pullback f).obj (Level.weight D) ≅ Level.weight E),
+          ArithmeticThetaLevelConstantsR0234.HodgeCompatible ι D E f e →
+            ∀ (J : ArithmeticThetaBoundaryHodgeR0182.Extension l L E Y),
+              ArithmeticThetaBoundaryHodgeR0182.Canonical l L J → ∃! a, Boundary.CompactCompatible ι f F hF e H J a) ↔
+    ∀ (l : Type) [inst : Field l] [inst_1 : CharZero l] [IsAlgClosed l] (ι : k →+* l)
+      (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L)
+      (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E)
+      (f :
+        ArithmeticThetaLevelCompactificationR0179.OpenBase l L E ⟶
+          ArithmeticThetaLevelCompactificationR0179.OpenBase k L D)
+      (F : Y.space ⟶ X.space),
+      ArithmeticThetaLevelConstantsR0234.RespectsClassifiers ι D E f →
+        ∀ (hF : ArithmeticThetaLevelConstantsR0234.Extends ι D E X Y f F)
+          (e :
+            (Scheme.Modules.pullback f).obj (ArithmeticThetaLevelConstantsR0234.weight D) ≅
+              ArithmeticThetaLevelConstantsR0234.weight E),
+          ArithmeticThetaLevelConstantsR0234.HodgeCompatible ι D E f e →
+            ∀ (J : ArithmeticThetaBoundaryHodgeR0182.Extension l L E Y),
+              ArithmeticThetaBoundaryHodgeR0182.Canonical l L J →
+                ∃! a, ArithmeticThetaBoundaryConstantsR0235.CompactCompatible ι f F hF e H J a

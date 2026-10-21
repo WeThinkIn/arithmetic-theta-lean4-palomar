@@ -1,0 +1,25 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-069"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-069"
+  ],
+  "universe": "Original arbitrary characteristic-zero field k : Type, positive even m,N with m dividing N, every normalized residue nu; original Canonical and GeometricallyCanonical inputs",
+  "target_count": 18,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Original actual LevelData/Compactification and Canonical Hodge extension",
+    "Full original pointed cyclic quotient with universal kernel/quotient property, actual marked lifts and actual Hodge map",
+    "Full intrinsic IsD2/IsKatoValue/IsNormalizedPower; no boundary integrality or global section supplied in OpenPower",
+    "Constructs the specified a,b indices, actual open normalized power data and UNIQUE genuine compact global section of the SAME Hodge line power",
+    "Correct actual restriction and generating open section, plus nonzero integral disk coefficient at EVERY DiskTest",
+    "Every canonical marking and every specified extending Hodge generator satisfies the COMPLETE unary series power equation; no finite prefix",
+    "Original GeometricallyCanonical tests EVERY algebraically closed coefficient extension and EVERY actual coefficient comparison, with uniqueness of the compact isomorphism extending the specified open Hodge map",
+    "Full arbitrary-scheme SchemeLaw/Family and all-point group-compatible full-level classifier, not a pointwise or affine-only surrogate",
+    "ClassifierHodge fixed by inclusion-compatible identity ideal map and universal conormal derivative on EVERY ideal section of EVERY open"
+  ],
+  "limitations": "The actual compatible level geometry and Hodge extension with original Canonical and GeometricallyCanonical conditions remain supplied inputs. This proves actual unary section descent over arbitrary characteristic-zero fields; it does not separately construct those inputs or complete matrix-family assembly. Official verification is separate."
+}
