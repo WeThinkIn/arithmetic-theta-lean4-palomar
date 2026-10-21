@@ -1,0 +1,3 @@
+'ArithmeticThetaPalomarFieldD2_522.fieldCompactDiscriminant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarFieldD2_522.realizes_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarField519.geometric_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]

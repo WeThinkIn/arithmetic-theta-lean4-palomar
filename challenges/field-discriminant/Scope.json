@@ -1,0 +1,22 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-068"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-068"
+  ],
+  "universe": "Original arbitrary characteristic-zero field k : Type, every even L>=3, original Canonical and GeometricallyCanonical inputs",
+  "target_count": 18,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Original arbitrary characteristic-zero field and even L>=3, with actual LevelData, Compactification and canonical Hodge extension",
+    "Every algebraically closed coefficient extension and full all-scheme classifier/identity-ideal normalized Hodge comparison, with unique compact isomorphism extending the specified open map",
+    "Intrinsic open D2 defined through every normal rational affine Weierstrass test, normalized Kato determinant norms and full initial tensor; no boundary or expansion premise",
+    "UNIQUE genuine compact global section of the SAME Hodge line to the24th power, restricting to the supplied intrinsic open D2",
+    "For EVERY actual DiskTest and EVERY specified extending normalized Hodge generator, the COMPLETE literal discriminant series is the actual section coefficient",
+    "The full coefficient sequence is zero below2L and EXACTLY one at2L; literal Euler product P, not a finite prefix or an unspecified unit"
+  ],
+  "limitations": "Actual compatible level geometry and Hodge extension with original Canonical and GeometricallyCanonical conditions remain supplied inputs. This endpoint constructs the unique discriminant section and full normalized expansions over arbitrary characteristic-zero fields; it does not separately construct the geometry or complete matrix-family assembly. Official verification is separate."
+}

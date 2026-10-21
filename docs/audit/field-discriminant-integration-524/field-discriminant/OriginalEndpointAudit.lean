@@ -1,0 +1,8 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarFieldD2_522.recover_original_068 = ArithmeticThetaArithmeticSectionsR0236.field_compact_discriminant := by rfl
+#print axioms ArithmeticThetaPalomarFieldD2_522.fieldCompactDiscriminant
+#print axioms ArithmeticThetaPalomarFieldD2_522.realizes_iff_original
+#print axioms ArithmeticThetaPalomarField519.geometric_iff_original

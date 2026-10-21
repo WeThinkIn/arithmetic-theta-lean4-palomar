@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-21T01:46:37.401468+00:00",
+  "review_kind": "root source/type review; not separate-model or official",
+  "local_scope_review_passed": true,
+  "new_original_endpoint_ids": [
+    "accepted-068"
+  ],
+  "no_added_main_assumptions": true,
+  "original_statement_recovery_compiled": true,
+  "official_pass": false,
+  "stats": {
+    "field-discriminant-package-522": {
+      "stats": {
+        "Challenge": {
+          "lines": 982,
+          "bytes": 95717,
+          "sha256": "e14088c6c27138d1a70217787d7d89aeead0c0e2fc4d0f076f44f535d5d1c675"
+        },
+        "Solution": {
+          "lines": 318,
+          "bytes": 29995,
+          "sha256": "2cd102734300055b861f7b4691c40b06a993902975a81ebe2c7ff10dd98ed8a7"
+        }
+      },
+      "audit_counts": {
+        "Challenge": {
+          "declarations": 959,
+          "propagated_holes": 519,
+          "project_imports": 0
+        },
+        "Solution": {
+          "declarations": 128,
+          "propagated_holes": 0,
+          "project_imports": 3278
+        }
+      },
+      "semantic_declarations_compatible": 625,
+      "new_ids": [
+        "accepted-068"
+      ]
+    }
+  },
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-discriminant-package-522/Challenge.lean": "e14088c6c27138d1a70217787d7d89aeead0c0e2fc4d0f076f44f535d5d1c675",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-discriminant-package-522/Solution.lean": "2cd102734300055b861f7b4691c40b06a993902975a81ebe2c7ff10dd98ed8a7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-discriminant-package-522/receipt.json": "f1f3869ff29554b196d35d18759dabb1518be3ae769f0e22b7706ce36960dba1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-discriminant-package-522/Scope.json": "e58c2883fa9e5d0c2144fb5104b35eb502dfa5c8b709c081d17bf23636a5e392",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-discriminant-package-522/SourceMap.json": "17e7dad84ab6877c580b6a4be8851ee25a328222bc47804f020635a55eba5533",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-discriminant-package-522/comparator.json": "f79911004119e1d3776ffe0d9c438af0d8ad0d1cc747f4787773e66934234988",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/field-discriminant-package-522/Targets.json": "a759dee80bd8978a4ffdaf8cce5548444a704edc9b661262d3c1171e028a0bd3"
+  },
+  "review_sha256": "6bfcea33c4628c305cd10ee163020383a62baace234df7f2c3cade3717dad4e8"
+}
