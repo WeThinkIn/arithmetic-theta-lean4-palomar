@@ -1,0 +1,74 @@
+{
+  "time_utc": "2026-10-21T07:20:30.970338+00:00",
+  "kind": "local-stock-three-kernel-comparator",
+  "results": [
+    {
+      "scope": "split-discriminant",
+      "original_endpoint": "accepted-073",
+      "exit_code": 0,
+      "elapsed_seconds": 4286.0749591230415,
+      "kernel_acceptance": {
+        "con-ron": true,
+        "NanoDa": true,
+        "Lean_default": true
+      },
+      "source_commit": "2c85e9b977f3d8e91570235a68534c945d69ff28",
+      "current_source_bindings": {
+        "SplitDiscriminantChallenge.lean": "27f82c25e7f30f2860f438996a95844433beca0760ae2c2ffc4ec18c56b77f00",
+        "SplitDiscriminantSolution.lean": "fa44247b562eb0ef7c88a62d76fb6677e7b3d6c5affa846e07a0a00f3774b342",
+        "Proof/TateNodeRestrictedPresentation.lean": "58e3ed295a8a84eeeea04539964d64bf36e708d07bff7ca53c5043a4e6ef5ab0",
+        "lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+        "lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1"
+      },
+      "mathematical_configuration_equals_current": true,
+      "local_execution_override": {
+        "nanoda": [
+          "nanoda_bin"
+        ],
+        "con-ron": [
+          "con-ron",
+          "--jobs=2"
+        ]
+      },
+      "export_bindings_rechecked": true,
+      "receipt_sha256": "fa92abbe12175f18a8d26265e6b6f95a3db6df0c6139c3eb6079af7812ec81b7",
+      "log_sha256": "6cadf8d011f039af51ff49bd0b06bb392b788e4ff453bd319eccd12e17e8673a"
+    },
+    {
+      "scope": "split-square-degree",
+      "original_endpoint": "accepted-074",
+      "exit_code": 0,
+      "elapsed_seconds": 4478.526136876084,
+      "kernel_acceptance": {
+        "con-ron": true,
+        "NanoDa": true,
+        "Lean_default": true
+      },
+      "source_commit": "2c85e9b977f3d8e91570235a68534c945d69ff28",
+      "current_source_bindings": {
+        "SplitSquareDegreeChallenge.lean": "d0b893eb69c8cd53423d4b212db7d807ea1a313ae1868af8c046909ba36e53d1",
+        "SplitSquareDegreeSolution.lean": "6e12f186cb616618402177cdf629f4ba973cca2a1a6cc0c8e5e2eaeb616d60c2",
+        "Proof/TateNodeRestrictedPresentation.lean": "58e3ed295a8a84eeeea04539964d64bf36e708d07bff7ca53c5043a4e6ef5ab0",
+        "lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+        "lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1"
+      },
+      "mathematical_configuration_equals_current": true,
+      "local_execution_override": {
+        "nanoda": [
+          "nanoda_bin"
+        ],
+        "con-ron": [
+          "con-ron",
+          "--jobs=2"
+        ]
+      },
+      "export_bindings_rechecked": true,
+      "receipt_sha256": "5979be91b3f815fcf0df241cecae3dfb6bdf2e7f42344b5727ddd81258aabba3",
+      "log_sha256": "bc4a94f0ddcc79e1b2d86ddc10c0d26a5a9a244008b2d52cd827ff5a15ad9379"
+    }
+  ],
+  "official_mechanical_pass": false,
+  "whole_paper_acceptance": false,
+  "scope_preserved": "13 original requirements / 103 original theorem endpoints; these results cover accepted-073 and accepted-074 only",
+  "limitation": "Uses frozen real named-root exports. Official cold build, official preflight, semantic review and registry acceptance are separate. No official retry is triggered by this publication."
+}

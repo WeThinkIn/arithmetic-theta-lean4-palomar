@@ -12,6 +12,14 @@ The current root `comparator.json` checks the finite-determination pilot only.
 The 13 original requirements and 103 exact endpoints remain in scope;
 complete GoalRoot migration and103 original endpoint checks now pass; full-paper independent coverage still requires the remaining Challenge interfaces.
 
+The complete split-discriminant (accepted-073) and split-square-degree
+(accepted-074) interfaces have also passed the **local stock comparator with all
+three kernels**: con-ron, NanoDa, and Lean default. The terminal receipts,
+unchanged export hashes, and source bindings are recorded in
+[`audit/split-stock-kernels-574/Review.md`](audit/split-stock-kernels-574/Review.md).
+These local results supplement the official record; official preflight,
+whole-paper semantic review, and registration remain separate gates.
+
 | Run | Source commit | Result |
 | --- | --- | --- |
 | [39450500400](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39450500400) | `8a0354835326074f74e8a0efc6ac116a8bf29cde` | Failed before Lean execution. The request identifier did not satisfy the official parser's exact twelve-character lowercase alphanumeric requirement. The report finalizer replaced this preparation error with a generic reporting diagnostic. |

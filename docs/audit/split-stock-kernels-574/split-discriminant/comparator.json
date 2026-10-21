@@ -1,0 +1,53 @@
+{
+  "challenge_module": "SplitDiscriminantChallenge",
+  "solution_module": "SplitDiscriminantSolution",
+  "theorem_names": [
+    "WeierstrassProjModel.span_polynomial_isHomogeneousCR",
+    "HomogeneousIdealQuotientGrading.preDecompose_of_mem",
+    "WeierstrassProjModel.kwYEvalRingHom_comp_algebraMap",
+    "HomogeneousIdealQuotientGrading.mem_quotGradingSubmodule_iff",
+    "HomogeneousIdealQuotientGrading.quotDecompose_mk",
+    "WeierstrassProjModel.kwYEvalRingHom_mk_X1",
+    "ProjWeierstrassCubicPrime.isHomogeneous_polynomial",
+    "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedMonoid",
+    "HomogeneousIdealQuotientGrading.coeAddMonoidHom_preDecompose",
+    "HomogeneousIdealQuotientGrading.gradedMonoidOfImages",
+    "HomogeneousIdealQuotientGrading.preDecompose_eq_zero_of_mem",
+    "HomogeneousIdealQuotientGrading.pieceHom_coe",
+    "HomogeneousIdealQuotientGrading.coeAddMonoidHom_map_pieceHom",
+    "WeierstrassProjModel.kwYChartEval_section",
+    "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.differentialMap_isIso",
+    "P458.canonicalBinaryTensor",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_1",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_2",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_3",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_4",
+    "P485.componentIsOpen",
+    "ArithmeticThetaComponentDegreeR0184.componentIntegral",
+    "ArithmeticThetaComponentDegreeR0184.componentLocallyNoetherian",
+    "ArithmeticThetaBoundaryHodgeR0182.CompactHodgeLatticeExtensionR0182.compactComponent._proof_1",
+    "ArithmeticThetaPalomarSplit515.splitComponentDiscriminantDivisor"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "external_kernels": {
+    "nanoda": [
+      "nanoda_bin"
+    ],
+    "con-ron": [
+      "con-ron",
+      "--jobs=2"
+    ]
+  }
+}

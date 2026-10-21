@@ -1,0 +1,25 @@
+{
+  "command": [
+    "python3",
+    "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "lake",
+    "comparator",
+    "--config",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-stock-kernels-564/split-square-degree/comparator.json",
+    "--challenge-from-export",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-exact-integration-558/SplitSquareDegreeChallenge-01.ndjson",
+    "--solution-from-export",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-pruned-integration-561/SplitSquareDegreeSolution-01.ndjson"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 4478.526136876084,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-exact-integration-558/SplitSquareDegreeChallenge-01.ndjson": "7744976d868bf827da74e1fb452d46eb93c8a91a0346cacfdc53f087d71edc79",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-pruned-integration-561/SplitSquareDegreeSolution-01.ndjson": "f8db844882373105420e34d8c1da9e799e08adafbaff73c23568dc439380bf7c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-stock-kernels-564/split-square-degree/comparator.json": "2f029b146e895ccb413510e9a00025ddc413a666d3bea593478051f09ac1c178"
+  },
+  "bindings_unchanged": true,
+  "limitation": "Local stock comparator, con-ron/NanoDa/Lean default; official run and semantic registry review remain separate"
+}
