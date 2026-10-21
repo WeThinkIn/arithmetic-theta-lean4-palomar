@@ -1,6 +1,8 @@
-import Lake.Check.Compare
-import Lake.Check.Axioms
-import Lean
+module
+public import Lake.Check.Compare
+public import Lake.Check.Axioms
+public import Lean
+public section
 open Lean
 set_option maxRecDepth 16000
 

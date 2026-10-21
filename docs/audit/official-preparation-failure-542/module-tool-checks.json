@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Inspect",
+    "exit_code": 0,
+    "seconds": 0.5114501821808517,
+    "sha256": "b43e0590f00dd05f38abf4d7854442641587197e728303e8521d2bacb3381877"
+  },
+  {
+    "name": "Precheck",
+    "exit_code": 0,
+    "seconds": 0.41808101814240217,
+    "sha256": "2fcc225d47f2905df84ba22df30aca4f60145327c06141ad484345c8b555d732"
+  },
+  {
+    "name": "Server",
+    "exit_code": 0,
+    "seconds": 0.529737610835582,
+    "sha256": "21cf474b7ba2468a1439c60ef03365faa299dd1260918d5bc2bf037e2f7eb1bf"
+  }
+]

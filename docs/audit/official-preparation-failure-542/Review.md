@@ -1,0 +1,7 @@
+# Preparation failure and module repair
+
+Official full preflight [39540986405](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39540986405), at immutable e14c847853b4c7e954b13bb8c4ce0d909c704c10, failed source preparation. Its three diagnostics identify the diagnostic tools Inspect.lean, Precheck.lean and Server.lean in audit541: they lacked the required module header. No mathematical build or kernel result was produced by this run.
+
+These three tools now use the module system, public imports and public declarations. All three revised sources compile in isolation. The unmodified source_requirements.py from the pinned official pipeline d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44 scans all 4422 project Lean files with zero issues. No mathematical Challenge, Solution, comparator configuration, original delivery or proof source was changed by this repair. The audit541 runtime receipts retain the hashes of the original executed tools; the module port is a subsequent source change, not a claim that those binaries were rerun from the ported sources.
+
+A new official full preflight is required. The preparation result does not establish all later gates. Locally the existing audit541 comparator has accepted the Solution through con-ron and NanoDa; the Lean default kernel remains running at this checkpoint. Local interface coverage stays 98/103 and does not count official passes.

@@ -1,0 +1,116 @@
+{
+  "checked_at": "2026-10-21T03:53:28Z",
+  "diagnostics": [
+    {
+      "code": "source.module_required",
+      "explanation": "docs/audit/strict-structural-comparison-541/Inspect.lean must begin with the module header keyword (ordinary comments may precede it)",
+      "location": {
+        "line": 1,
+        "path": "docs/audit/strict-structural-comparison-541/Inspect.lean"
+      },
+      "next_action": "Port the Lean source to the module system, including public declarations/imports and exposed definitions as needed; rebuild, commit, and submit the new commit.",
+      "owner": "submitter",
+      "repairable": false,
+      "retryable": false,
+      "stage": "source-requirements",
+      "summary": "docs/audit/strict-structural-comparison-541/Inspect.lean must begin with the module header keyword (ordinary comments may precede it)"
+    },
+    {
+      "code": "source.module_required",
+      "explanation": "docs/audit/strict-structural-comparison-541/Precheck.lean must begin with the module header keyword (ordinary comments may precede it)",
+      "location": {
+        "line": 1,
+        "path": "docs/audit/strict-structural-comparison-541/Precheck.lean"
+      },
+      "next_action": "Port the Lean source to the module system, including public declarations/imports and exposed definitions as needed; rebuild, commit, and submit the new commit.",
+      "owner": "submitter",
+      "repairable": false,
+      "retryable": false,
+      "stage": "source-requirements",
+      "summary": "docs/audit/strict-structural-comparison-541/Precheck.lean must begin with the module header keyword (ordinary comments may precede it)"
+    },
+    {
+      "code": "source.module_required",
+      "explanation": "docs/audit/strict-structural-comparison-541/Server.lean must begin with the module header keyword (ordinary comments may precede it)",
+      "location": {
+        "line": 1,
+        "path": "docs/audit/strict-structural-comparison-541/Server.lean"
+      },
+      "next_action": "Port the Lean source to the module system, including public declarations/imports and exposed definitions as needed; rebuild, commit, and submit the new commit.",
+      "owner": "submitter",
+      "repairable": false,
+      "retryable": false,
+      "stage": "source-requirements",
+      "summary": "docs/audit/strict-structural-comparison-541/Server.lean must begin with the module header keyword (ordinary comments may precede it)"
+    }
+  ],
+  "diagnostics_schema_version": 1,
+  "errors": [
+    "docs/audit/strict-structural-comparison-541/Inspect.lean must begin with the module header keyword (ordinary comments may precede it)",
+    "docs/audit/strict-structural-comparison-541/Precheck.lean must begin with the module header keyword (ordinary comments may precede it)",
+    "docs/audit/strict-structural-comparison-541/Server.lean must begin with the module header keyword (ordinary comments may precede it)"
+  ],
+  "existing_id": null,
+  "formalization_profile_version": 4,
+  "license": {
+    "declared_identifier": "Apache-2.0",
+    "detected_identifier": "Apache-2.0",
+    "path": "LICENSE",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+  },
+  "phase": "preparation",
+  "schema_version": 1,
+  "source": {
+    "bytes": 219708334,
+    "commit": "e14c847853b4c7e954b13bb8c4ce0d909c704c10",
+    "repository": "WeThinkIn/arithmetic-theta-lean4-palomar",
+    "repository_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar",
+    "tree_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/tree/e14c847853b4c7e954b13bb8c4ce0d909c704c10"
+  },
+  "source_requirements": {
+    "files_checked": 4422,
+    "maximum_lines": 10000,
+    "module_required": true,
+    "schema_version": 1
+  },
+  "stage": "preflight",
+  "status": "fail",
+  "submission": {
+    "authorization": {
+      "relationship": "maintainer"
+    },
+    "requested_paths": {
+      "comparator_config_path": "comparator-compact-unary.json",
+      "formalization_metadata_path": "submissions/compact-unary/formalization.yaml",
+      "project_path": ""
+    },
+    "submission_id": "219a56ade35c"
+  },
+  "verification_profile": {
+    "id": "palomar-standard-v1",
+    "limits": {
+      "execution_budget_seconds": 19800,
+      "file_size_max_bytes": 1099511627776,
+      "job_timeout_minutes": 350,
+      "memory_high_percent": 95,
+      "memory_max_percent": 98,
+      "minimum_host_memory_bytes": 15032385536,
+      "minimum_workspace_free_bytes": 21474836480,
+      "open_files_max": 1048576,
+      "tasks_max": 32768
+    },
+    "runner": {
+      "architecture": "x86_64",
+      "label": "ubuntu-24.04",
+      "provider": "github-hosted"
+    },
+    "sha256": "94fcd7906a1b6c076c0036d742e1c5add8625e49bb474818ec8924576dbf0caa",
+    "trusted_tools": {
+      "bwrap_source_tag": "v0.12.0",
+      "toolchain_floor": "v4.35.0-rc2"
+    }
+  },
+  "warnings": [],
+  "workflow_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39540986405",
+  "execution_profile": "palomar-standard-v1"
+}
