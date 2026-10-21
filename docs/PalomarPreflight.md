@@ -47,7 +47,7 @@ After correcting the required metadata basename, scoped official full runs were 
 - Main and components: https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39461299032
 - Formal cover: https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39461300608
 
-Both passed the initial intake preparation. The main-and-components terminal result remains pending; formal-cover subsequently passed as recorded below. The earlier ced6305 attempts stopped before Lean with a metadata filename error, archived in docs/audit/official-intake-format-282. No statement or proof was changed to correct that format.
+Both passed the initial intake preparation. Main-and-components subsequently ended with Solution-build memory exhaustion, as recorded in the [terminal report](audit/official-older-main-362/summary.json); formal-cover passed as recorded below. The earlier ced6305 attempts stopped before Lean with a metadata filename error, archived in docs/audit/official-intake-format-282. No statement or proof was changed to correct that format.
 
 Formal-cover official run39461300608 completed with mechanical status pass, stage complete, high-trust Mathlib-only provenance and all three kernels accepting. The exact result binds2bd02cf, comparator-formal-cover.json and submissions/formal-cover/formalization.yaml. Report and receipt: docs/audit/official-formal-cover-306/. This covers accepted-050 only. Ordinary intake subsequently succeeded as recorded below; no semantic result or registration is yet claimed.
 
@@ -60,10 +60,13 @@ The stronger complete-main configuration was dispatched as
 at `35c8d4a1ed4ad19ac879a31a912ab5fcd707f558`, with
 `comparator-main-complete.json` and `submissions/main-complete/formalization.yaml`.
 Its 43 targets cover40 complete original endpoints, including the same-B/same-U
-FormalIdentity field of accepted-037. This full official preflight is running;
-it has not yet passed and has not been submitted through ordinary intake.
+FormalIdentity field of accepted-037. This run completed its Solution build and
+export successfully, then exhausted the execution time budget in the comparator.
+The [terminal report](audit/official-complete-main-result-500/Review.md) provides no
+completed per-kernel verdict. It has not passed the full official preflight or
+been submitted through ordinary intake.
 
-The later repository migration checkpoint passed full GoalRoot build342 and all103 original exact endpoint/standard-axiom checks in audit343. These local results do not change the commits or results of the running official checks. See MigrationStatus.md and audit/full-root-build-342/.
+The later repository migration checkpoint passed full GoalRoot build342 and all103 original exact endpoint/standard-axiom checks in audit343. These local results do not change the immutable source revisions or the terminal outcomes of the official checks. See MigrationStatus.md and audit/full-root-build-342/.
 
 ## Official split-discriminant result (21 October 2026)
 
