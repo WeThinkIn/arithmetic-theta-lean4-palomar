@@ -1,0 +1,7 @@
+# Complete common half-Hodge cover and prescribed disk branch
+
+Full original034: constructs the specified disk factorization through its actual geometric component, actual cusp half-divisor line, and an integral smooth proper finite-etale surjective cover of positive degree at most24. The same cover carries a square isomorphism to the original Hodge line whose canonical squared section has24th power equal to the same D2. It constructs a disk lift and, for every extending normalized Hodge generator, an actual frame with canonical cusp section=complete Euler(t^L)*t^(L/24)*frame and square mapping to that same generator. All geometric properties, degree bounds, actual maps and branch equations remain explicit constructor fields. Bidirectional compiled transports recover the full original cover/branch predicate with the SAME scheme, map and square isomorphism.
+
+Challenge has 927 lines and 20 explicit support/main targets. All 572 semantic types/available bodies match the Solution environment, and every literal proof hole is selected exactly once. The original theorem is recovered by compiled equality; target universes/types and all Solution declaration axiom closures pass. Actual root integration and official verification are separate steps. No whole-paper acceptance is claimed.
+
+Original geometry, canonical Hodge extension and compact intrinsic D2 are inputs as in the original theorem. The full common cover and branch are constructed outputs; simultaneous unary roots, matrix-family assembly and official acceptance are not claimed.

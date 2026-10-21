@@ -1,0 +1,14 @@
+{
+  "/home/Palomar/workspace/arithmetic-theta/project/ComponentDiscriminantChallenge.lean": "072d75abb0091874f4b7ac15403ab536ed4b73c06555515c4904966903dc3bc1",
+  "/home/Palomar/workspace/arithmetic-theta/project/ComponentDiscriminantSolution.lean": "caeb594b7888129e9022829bc60a9ce5abeb80c882ee70c5c499feb2d250895e",
+  "/home/Palomar/workspace/arithmetic-theta/project/DiscriminantTwistRootChallenge.lean": "45c121a624759dfbe0825c12fc024eee97577fbbfe42ba7486b9696dbd742cd7",
+  "/home/Palomar/workspace/arithmetic-theta/project/DiscriminantTwistRootSolution.lean": "13c385f268d1102edd06cab55344eba396bec20602093a4d4f0b1609948c0443",
+  "/home/Palomar/workspace/arithmetic-theta/project/CommonHalfHodgeChallenge.lean": "e54bcb4b3afa0b9cb39a16195139db8683612d3b66904d24d69b24360f5d2d52",
+  "/home/Palomar/workspace/arithmetic-theta/project/CommonHalfHodgeSolution.lean": "febfe6d1f87007194fc417d441e4caf62149f2d76803a1f98f669da33c417606",
+  "/home/Palomar/workspace/arithmetic-theta/project/lakefile.toml": "575f746e984ba9f98b50f4286450c92b50f73fd779eb1dec4e0bb053357eebb5",
+  "/home/Palomar/workspace/arithmetic-theta/project/lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+  "/home/Palomar/workspace/arithmetic-theta/project/lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1",
+  "/home/Palomar/workspace/arithmetic-theta/project/comparator-component-discriminant.json": "8bf553b260a4ab117ebb80f4688053b09291b422dc1777b912dc9747bccbd52d",
+  "/home/Palomar/workspace/arithmetic-theta/project/comparator-discriminant-twist-root.json": "540920592f204db8aaada60a502cee6e008e359c2881559f4fb8f7b41d2cdb54",
+  "/home/Palomar/workspace/arithmetic-theta/project/comparator-common-half-hodge.json": "e2b5355b267a3f97db7e90ad71664c4bfab7c0e5aff56cc8aaad5357466f1a04"
+}

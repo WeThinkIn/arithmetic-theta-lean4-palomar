@@ -1,0 +1,50 @@
+{
+  "accepted_for_local_integration": true,
+  "basis": "Frozen complete509/510/511 source/type/axiom audits and512 root scope review; no official acceptance",
+  "packages": {
+    "component-discriminant": {
+      "bindings": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/Challenge.lean": "072d75abb0091874f4b7ac15403ab536ed4b73c06555515c4904966903dc3bc1",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/Solution.lean": "caeb594b7888129e9022829bc60a9ce5abeb80c882ee70c5c499feb2d250895e",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/Scope.json": "ce53cd4713dc83bfaf791a0a3c4a6840b2a0dcdb0405a6ae5ca726fc6bc0e88c",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/SourceMap.json": "249294027df508f441d679aa8d0571fa4b912a5d43fcf4b97c2330c9e38e654d",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/receipt.json": "042dfecff584c84574968a9b1ba48b8158ef4b8c4aad778562de453e1b774abe",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/comparator.json": "88ec5b99c2fbfb8b9e56b2c7ad7d1e111a872ce3eb30b4b863d49afede8a16b7",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/Targets.json": "138d74ebd4dde566d21bb9f4fcb7640ba614344d34ce297ed0f366c4090e75e8"
+      },
+      "new_ids": [
+        "accepted-030"
+      ]
+    },
+    "discriminant-twist-root": {
+      "bindings": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/discriminant-twist-root-package-510/Challenge.lean": "45c121a624759dfbe0825c12fc024eee97577fbbfe42ba7486b9696dbd742cd7",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/discriminant-twist-root-package-510/Solution.lean": "13c385f268d1102edd06cab55344eba396bec20602093a4d4f0b1609948c0443",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/discriminant-twist-root-package-510/Scope.json": "fa2da7a925b1ef8eadd0f23f1b91c02f09e11e4f2f436660d04e6f8ca2abcfb5",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/discriminant-twist-root-package-510/SourceMap.json": "01f39986f468b5f4395fc690a31f138ffdafd706412be2404126c8412e507f35",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/discriminant-twist-root-package-510/receipt.json": "c1c1f31988987c4ee6ffd55dc9eedd1edd2789e36609a9cdbe9b6f22b68e2d74",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/discriminant-twist-root-package-510/comparator.json": "c5f78b0ee7c497be8d05091969625bb5f76681b24de55c79c3e5a233ae0d2994",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/discriminant-twist-root-package-510/Targets.json": "001beaac12fc400aee9dee97601d2eca5bafc711a3275359cf462a9e17ede4cc"
+      },
+      "new_ids": [
+        "accepted-032",
+        "accepted-033"
+      ]
+    },
+    "common-half-hodge": {
+      "bindings": {
+        "/home/Palomar/workspace/arithmetic-theta/evidence/common-half-hodge-package-511/Challenge.lean": "e54bcb4b3afa0b9cb39a16195139db8683612d3b66904d24d69b24360f5d2d52",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/common-half-hodge-package-511/Solution.lean": "febfe6d1f87007194fc417d441e4caf62149f2d76803a1f98f669da33c417606",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/common-half-hodge-package-511/Scope.json": "3e916a74255535e3d7bdfe1203ca61f38e4c8e412747d67a35cb886ff03674c8",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/common-half-hodge-package-511/SourceMap.json": "489c58275d975a9112691bba7893fd67eae226a2390e9df94a98b54231550155",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/common-half-hodge-package-511/receipt.json": "de7d73b936a58c927bc72c860c10b4f12193f4f023e261d2b581214b08413bd9",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/common-half-hodge-package-511/comparator.json": "caf3a0f79745d0618195f3eb5367f9062c87a25b6480936f9ba95fa8f8090eb0",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/common-half-hodge-package-511/Targets.json": "2fece95c27a5f5554f509359ebbec9c3b7b87fb7f5be9e5bab9877ae1003ffef"
+      },
+      "new_ids": [
+        "accepted-034"
+      ]
+    }
+  },
+  "review_sha256": "6918ab9f9fbd95b4d4f0c89ae5ac9204768c736f99eefa7767c48d0a18715107"
+}

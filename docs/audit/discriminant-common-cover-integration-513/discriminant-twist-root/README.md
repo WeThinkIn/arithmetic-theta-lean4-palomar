@@ -1,0 +1,7 @@
+# Complete discriminant twist unit and designated Tate root
+
+Full original032/033: from the original canonical compact geometry, intrinsic D2 and actual cusp half-divisor line, constructs the actual twist, multiplication isomorphism and generating24th-power section with the D2 factorization in every actual local frame. For every such valid twist and every original disk factorization, constructs the UNIQUE actual twist frame whose24th power equals the same pulled-back unit and whose product with the square of the canonical cusp section is exactly Euler(t^L)^2*t^(L/12) times the specified normalized Hodge generator. The Euler series is the full product. Actual tensor frames, all-frame divisor tests and every canonical pullback map are retained or proved equal to the original; no root/expansion provider is supplied.
+
+Challenge has 963 lines and 22 explicit support/main targets. All 583 semantic types/available bodies match the Solution environment, and every literal proof hole is selected exactly once. The original theorem is recovered by compiled equality; target universes/types and all Solution declaration axiom closures pass. Actual root integration and official verification are separate steps. No whole-paper acceptance is claimed.
+
+Geometry, intrinsic compact D2 and cusp half-line are supplied as in the original statements.032 constructs the twist and unit;033 uses any valid supplied twist to construct its unique complete prescribed root. Neither assumes that root or claims official acceptance.

@@ -1,0 +1,11 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarTwist510.recover_original_032 = ArithmeticThetaCommonHalfHodgeR0185.discriminant_twist_unit := by rfl
+#print axioms ArithmeticThetaPalomarTwist510.recover_original_032
+example : ArithmeticThetaPalomarTwist510.recover_original_033 = ArithmeticThetaCommonHalfHodgeR0185.discriminant_tate_root := by rfl
+#print axioms ArithmeticThetaPalomarTwist510.recover_original_033
+#print axioms ArithmeticThetaPalomarTwist510.isTwist_iff_original
+#print axioms ArithmeticThetaPalomarTwist510.isTateRoot_iff_original
+#print axioms ArithmeticThetaPalomarTwist510.pullMultiply_eq_original

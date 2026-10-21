@@ -1,0 +1,1332 @@
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.powerComparison._f AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.sectionsAlgebra AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible.exists_trivialization AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.killed_x AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL _private.Challenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_1 AXIOMS [propext]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.k1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarD2_509.OpenHodge.pullSection AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.proper AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.kaehlerPresheaf AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.gradedRingOfImages AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.span_polynomial_isHomogeneousCR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.mk.inj AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaDiscriminant.partialEuler AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.law AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.etale AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.diskGenericIso._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmodule AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.localPower AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.law AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.k1pre._proof_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelStrCR.eq_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.over_eq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarD2_509.OpenHodge.powerComparison AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.inclusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.squarePullbackIso AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.Classifies AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.quotient AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.section_ AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.noConfusionType AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPullback.pullback_unit_iso._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.originPoint._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.preDecompose_of_mem AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.kdMap AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.parameter AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreRing AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaProjectiveEffectivityR0135.projectiveStructure._proof_2 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPullback.pullback_unit_iso._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.level AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.noConfusionType AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.recOn AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaProjectiveEffectivityR0135.projectiveStructure._proof_3 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.elliptic AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreComparisonR0177.SplitCubic AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.mul_one AXIOMS [propext, Classical.choice, Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kw_mk_X1_mem_one_CR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.space AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.proper AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pointedDifferentialIso AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.differentialMap AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.smooth AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.ring AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.line AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaComponentDegreeR0184.Cusps AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pointedDifferentialIso._proof_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.cartesian AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison._sizeOf_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mul_one AXIOMS [propext, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.fac_apply AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification._sizeOf_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.noConfusionType AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL _private.Challenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_2 AXIOMS [propext]
+DECL GoodReductionJacobian.RelativeGroupLaw.inv AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPullback.sheafTensorCongr AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.inv AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.action_level AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.adjY AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.idPoint AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.openTestIso AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarD2_509.OpenHodge.pullSection._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.powerCongr._sunfold AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL HomogeneousIdealQuotientGrading.gradedRingOfImages._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCount.SignedPrimitivePair AXIOMS [propext, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.scalar AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.res AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.CommonHalfHodge AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelHomogeneousIdealCR._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.right_fst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.idPoint AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaComponentDegreeR0184.componentIntegral AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.mk.sizeOf_spec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.represents AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.IsOriginLaw AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.HasKatoDivisor._proof_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.map AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYEvalRingHom_comp_algebraMap AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.fac AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.HasKatoDivisor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.openImmersion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL HomogeneousIdealQuotientGrading.decompositionOfImages._proof_2 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarD2_509.BoundaryHodge.pullToOpen AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarD2_509.BoundaryHodge.pullToOpen._proof_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaComponentDegreeR0184.componentLocallyNoetherian AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.levelDegree AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreComparisonR0177.ChartRing AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaComponentDegreeR0184.inclusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.mk.injEq AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.map_unit1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgePower AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.level AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.partialX AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.preDecompose AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.powerCongr._unsafe_rec AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.k1app AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.smooth AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.openImmersion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HasBranch AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.mul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.over_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zOpen AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaProjectiveEffectivityR0135.projectiveSpace._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYChartEval._proof_1 AXIOMS [propext]
+DECL WeierstrassProjModel.RelativeGroupLaw.mul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.closedPoint AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.hodgeGenerator._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYChartEval._proof_4 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.right_snd AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.pieceHom._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.proper AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.space AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotDecompose._proof_1 AXIOMS [propext, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.yOverZ._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.baseMap AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.projection AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL _private.Challenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_3 AXIOMS [propext, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.kaehler._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateCurve AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBinaryTensor458.pullSection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarD2_509.NormalizedSections.pullbackPowerSection AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.mk.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.schemeNsmul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.kaehler._proof_4 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CanonicalTwo AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.mk._flat_ctor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGeometricNormR0150.fieldNorm AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.mk.injEq AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.left_snd AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.TwoMarking AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSheafTensor.sheafTensor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.schemeNsmul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.comparison AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPowerSection._f AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.line AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.mk._flat_ctor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra._proof_1 AXIOMS [propext, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.y_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.finite AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient._sizeOf_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.mul_assoc AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreComparisonR0177.completedCubic AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.katoOrder AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.killed_x AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.katoOrder AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarD2_509.HodgeBaseChange.tensorComparison AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.mk.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.coord_mem AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.mk.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mul_assoc AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYEvalRingHom AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPower._f AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.genericInclusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.mk._flat_ctor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.commRing AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmodule._proof_2 AXIOMS [propext, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.mem_quotGradingSubmodule_iff AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.rec AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.IsCuspHalfLine AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSheafTensor.tensorPresheaf AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.diskGenericIso AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover._sizeOf_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleAt AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.recOn AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelStrCR._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.mk.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.mk._flat_ctor AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLineRoot.instNonemptyCarrierCarrierCommRingCatToSchemeOpensOfIsIntegral AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.y AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.square AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.tateX AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.mk._flat_ctor AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.commonHalfHodgeCover AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.one_mul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.connected AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelStrCR._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.space AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.one_mul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPower.match_1 AXIOMS []
+DECL GoodReductionJacobian.RelativeGroupLaw.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.k1pre AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.schemeHomOverComp AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Normalized._proof_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.dK AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zLeg_open AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zLeg AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.field AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaNormalizedSections.sectionCoordinate._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.RepresentsInitial AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.x AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.coverCurve AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.curve AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.legendreBaseMap AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover._sizeOf_inst AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.binary AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotDecompose_mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.relativeD._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.boundary AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Normalized._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.schemeHomOverComp AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaNormalizedSections.sectionCoordinate._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.φ_naturality_apply AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.inclusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.quotient AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaSectionOrder.localOrder AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarD2_509.BoundaryHodge.restrictPower._proof_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.mk.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.mk._flat_ctor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.pullSquare AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.mk.sizeOf_spec AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaNormalizedSections.sectionCoordinate._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.relativeD._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGeometricNormR0150.IsFieldMap AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.tateY AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYEvalRingHom_mk_X1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaNormalizedSections.sectionCoordinate AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel._sizeOf_inst AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Normalized AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Normalized._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBinaryTensor458.canonicalBinaryTensor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.relativeD AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.Represents AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.projection AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.openPower AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.monomial AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction._sizeOf_inst AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.mk.sizeOf_spec AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.universal AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.x_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.base AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.opens AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelCR._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension._sizeOf_inst AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.mk._flat_ctor AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.mk.sizeOf_spec AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.projection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.normal AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.mk.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.sign_eq AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.mk.sizeOf_spec AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.map AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.mk.sizeOf_spec AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.projModelStrCR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYEvalRingHom._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.kwYEvalRingHom._proof_4 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.mk.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData._sizeOf_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.localDifferential AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.zChartι AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.smooth AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.noConfusionType AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.descent AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarD2_509.OpenHodge.IsD2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.differential AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPullback.pullbackGlobalSection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.zChartι._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.cartesian AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.law AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.mk.sizeOf_spec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL NeronModelInfra.SchemeHomOver AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.quotient AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.kaehler._proof_3 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.killed_y AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.ProjModelRingCR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.coverToCurve AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ProjWeierstrassCubicPrime.isHomogeneous_polynomial AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.kaehler._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.free AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.integral AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.covers AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.mk.injEq AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.compatible AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.originPoint AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.euler AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYChartEval._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPower._sunfold AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.IsParameter AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.Represents AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.square AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedMonoid AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoNaturalityR0170.Normalized AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.onOpen AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pullbackEqIso AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.kwYChartEval._proof_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.left_fst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.etale AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.partialY AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyRigid AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.invariant AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSheafTensor.tensorSection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.projectiveStructure AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.Extends AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.scalar AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.sign AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.openHodge AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.invariant AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison._sizeOf_inst AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.IsFrame AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPowerSection._sunfold AXIOMS [propext, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.idPoint._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.coverToLevel AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.commutative AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.ctorIdx AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.ExtendsGenerator AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelGradingCR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas._sizeOf_inst AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.kwZeroSect._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.multiplication_eq AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.x_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.mk.sizeOf_spec AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification._sizeOf_inst AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.relation AXIOMS [propext, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zSection AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.map AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreComparisonR0177.chartInclusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.kaehlerToSections AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.q AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.xOverZ._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYChartEval._proof_5 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.finite AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.y AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwZeroSect._proof_1 AXIOMS [propext]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.dense AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.nsmul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.powerComparison AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.noConfusionType AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.closedImmersion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.originLaw AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaComponentDegreeR0184.hodge AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.origin_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaComponentDegreeR0184.componentOpen AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarD2_509.ComponentDegree.IsCompactD2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.mk._flat_ctor AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.x AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPowerSection._unsafe_rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pointedDifferentialIso._proof_2 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaDiscriminant.P AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.law AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.dimension AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.toTest AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.power AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pointedDifferentialIso._proof_3 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.noConfusionType AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.coverSection AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.originLaw AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.nsmul AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.coord._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.disk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.noConfusionType AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaProjectiveEffectivityR0135.projectiveStructure AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarBinaryTensor458.Compatible AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.map AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.kp_map_dK AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaProjectiveEffectivityR0135.projectiveStructure._proof_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.closedImmersion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaComponentDegreeR0184.projection AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPullback.pullback_unit_iso._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.mk.sizeOf_spec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPullback.pullback_unit_iso._proof_4 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPullback.pullback_unit_iso AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.y_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.discriminant AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.coeAddMonoidHom_preDecompose AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoNaturalityR0170.torsionIdeal AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaComponentDegreeR0184.cuspSet AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.Curve AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.origin_eq AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine._sizeOf_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.Curve AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.casesOn AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.CompactHodgeLatticeExtensionR0182.compactComponent AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.ExtendsGenerator._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.equiv AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme._sizeOf_inst AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.surjective AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.avoids AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.classifies AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPullback.instMonoidalCategoryPresheafOfModules_pullbackTensor AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.IsCommutative AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelCR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.mk AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.preDecompose_apply_apply AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.originLaw AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelCR._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.mk.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSectionOrder.MatchesSectionOrder AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.over_eq AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.noConfusionType AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.powerComparison._unsafe_rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.along AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.surjective AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.mk.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.mk._flat_ctor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.mk._flat_ctor AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.gradedMonoidOfImages AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelHomogeneousIdealCR_toIdeal AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.coverCurve._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.nsmul_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.map AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest._sizeOf_inst AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.schemeHomOverComp._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.marking AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarD2_509.BoundaryHodge.restrictPower AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.killed_y AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mul_natural AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.mk_mem_quotGradingSubmodule AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSheafTensor.instMonoidalCategoryPresheafOfModules_actualSheafTensor AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.mul_natural AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.binary._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarComponent485.componentIsOpen AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarD2_509.ComponentDegree.restrict AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test._sizeOf_inst AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Canonical AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.RepresentsInitial._proof_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.noConfusionType AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.over_eq AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.mk.injEq AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.normalized AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.atlas AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.constToPresheaf._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.noConfusionType AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.pullbackLocalSection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.comparison AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zLeg._proof_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.constToPresheaf AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.chartRingEquiv AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.mk.sizeOf_spec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.canonical AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.IsRelativeKato AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoNaturalityR0170.Normalized._proof_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.casesOn AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.mk.sizeOf_spec AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel._sizeOf_inst AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.projectiveCurve AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData._sizeOf_inst AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.origin_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoNaturalityR0170.identityIdeal AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.noConfusionType AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.pullbackEqIso._proof_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarHalf505.powerComparison._sunfold AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.noConfusionType AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.yTerm AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.degree AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelStrCR._proof_4 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.nonempty AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.decompositionOfImages AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebraOfHomogeneous AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelStrCR._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.etale AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.field_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.IdentityChart AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.mk.sizeOf_spec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.level AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.action_curve AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.Law AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwZeroSect AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.k1app_dK AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.ChartRing AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.xOverZ AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.ZChartRing AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.mk.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.mk._flat_ctor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreComparisonR0177.HasCoordinates AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.structureMap AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra._proof_2 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.algebra AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.structureMap AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.noConfusionType AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateSeries.xTerm AXIOMS [propext, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmodule._proof_1 AXIOMS []
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra._proof_3 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPowerSection AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.mk._flat_ctor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.closedImmersion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.marking AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.legendre AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.degree AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.noConfusionType AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL HomogeneousIdealQuotientGrading.preDecompose_eq_zero_of_mem AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaSheafTensor.tensorUnitMap AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.Law AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.noConfusionType AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPower AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.closedPoint._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.extends_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.mk.injEq AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.origin._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.Puncture AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.testIso._proof_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.preDecompose._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.two AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaProjectiveEffectivityR0135.projectiveSpace AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.nsmul_eq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.kwYChartEval AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.origin._proof_3 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test._sizeOf_inst AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.testIso._proof_2 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.mk.sizeOf_spec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.hodgeGenerator AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateSeries.partialX._proof_1 AXIOMS [propext]
+DECL HomogeneousIdealQuotientGrading.pieceHom AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.smooth AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.mk.injEq AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.mk.sizeOf_spec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.closedPoint._proof_2 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.sign_square AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.testIso._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient._sizeOf_inst AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.mk.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.testIso._proof_4 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.root AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.affine AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.schemeHomOverComp_coe AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.mk.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.inv_mul_cancel AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.inclusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.openStructure AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.mk.sizeOf_spec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.powerCongr._f AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.testIso AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.mk.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaNormalizedSections.sectionCoefficient AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.origin AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.sign AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.zero AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.ctorIdx AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaGeneralEllipticKatoR0168.origin._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.surjective AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent._sizeOf_inst AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.inv_mul_cancel AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.origin AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.mk.sizeOf_spec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignAction.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.diskHodgeIso AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.mk._flat_ctor AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaComponentDegreeR0184.power AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.mk.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebraOfHomogeneous._proof_1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.mk.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.noConfusionType AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.diskStructure AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedAlgebra AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.family AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.decompositionOfImages._proof_1 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.hodge AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.FullLevel.avoids AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.powerCongr AXIOMS [propext, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.pieceHom_coe AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPower._unsafe_rec AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.mk.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.rank AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover._sizeOf_inst AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCubicModelR0144.rootSeries AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.SignQuotient.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.recOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelHomogeneousIdealCR._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericCurve AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaPalomarCommon511.HalfCover.ctorIdx AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.preDecompose_apply AXIOMS [propext, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.one AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Extension.invertible AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.projModelHomogeneousIdealCR AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCount.PrimitivePair AXIOMS [propext, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.CurveFrame AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.coeAddMonoidHom_map_pieceHom AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.cover AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.chartInclusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.one AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaTensorPower.tensorPowerSection.match_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.noConfusionType AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.casesOn AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.frame AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.mk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.cartesian AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaComponentDegreeR0184.Component AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.action AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.coverSection._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.DiskTest.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaOpenHodgeR0180.Test.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.EllipticFamily.curve AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.mk.inj AXIOMS [propext, Classical.choice, Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.mk._flat_ctor AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.mk.sizeOf_spec AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.mk._flat_ctor AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.differentialMap_isIso AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.kwYChartEval_section AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.mk._flat_ctor AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.Disk AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.mk._flat_ctor AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.coord AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.cartesian AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaTateCuspsR0181.TateLevel.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zLeg._proof_2 AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL WeierstrassProjModel.RelativeGroupLaw.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.LevelData.rec AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine.ctorIdx AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.mk.inj AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.embedding AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible.recOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaDiscriminant.euler AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.kaehler AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompactifiedDifferentialR0145.GlobalNormalizedDifferential.zLeg._proof_3 AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme._sizeOf_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.represents AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.mk.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.rigid AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.finite AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient.sign_free AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL GoodReductionJacobian.RelativeGroupLaw.noConfusion AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyDescent.mk.inj AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.NormalFrameCover AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCompatibleLevelR0178.CompatibleCover.openImmersion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.GenericComparison.noConfusion AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.Hodge AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeDiscriminantR0171.Base AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.naturality AXIOMS [propext, Classical.choice, Quot.sound]
+DECL AlgebraicGeometry.Scheme.Hom.constToPresheaf._proof_1 AXIOMS [propext, Classical.choice, Quot.sound]
+DECL P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.kp_hom_ext AXIOMS [propext,
+ Classical.choice,
+ Quot.sound]
+DECL AlgebraicGeometry.Scheme.Modules.IsInvertible AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaRelativeKatoR0169.IsRelativeKato._proof_1 AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.LegendreAtlas.noConfusion AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLineRoot.LocalFrame.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaFullLevelCoverR0175.LevelScheme.space AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaBoundaryHodgeR0182.Test.mk AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaCommonHalfHodgeR0185.DivisorLine._sizeOf_inst AXIOMS [propext, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLegendreAtlasR0176.FamilyLevel.casesOn AXIOMS [propext, Classical.choice, Quot.sound]
+DECL WeierstrassCurve.DrinfeldGlobal.yOverZ AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.Compactification.embedding_over AXIOMS [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+DECL ArithmeticThetaLevelCompactificationR0179.OpenBase AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+DECL HomogeneousIdealQuotientGrading.quotDecompose AXIOMS [propext, sorryAx, Classical.choice, Quot.sound]
+AUDIT checked=875 propagated_holes=524 project_imports=0

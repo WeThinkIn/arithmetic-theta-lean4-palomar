@@ -1,0 +1,9 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarCommon511.recover_original_034 = ArithmeticThetaCommonHalfHodgeR0185.common_half_hodge_cover := by rfl
+#print axioms ArithmeticThetaPalomarCommon511.recover_original_034
+#print axioms ArithmeticThetaPalomarCommon511.toOriginal
+#print axioms ArithmeticThetaPalomarCommon511.ofOriginal
+#print axioms ArithmeticThetaPalomarCommon511.common_iff_original

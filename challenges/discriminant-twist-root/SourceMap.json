@@ -1,0 +1,28 @@
+{
+  "basis": "Full original IsCompactD2 and actual tensor comparisons from509; actual local tensor frames and CommonHalfHodge Twist/IsCuspHalfLine; literal complete Euler product",
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/Challenge.lean": "072d75abb0091874f4b7ac15403ab536ed4b73c06555515c4904966903dc3bc1",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/Solution.lean": "caeb594b7888129e9022829bc60a9ce5abeb80c882ee70c5c499feb2d250895e",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/LocalFrameBridge.lean": "68e1c71b283ba68ff97e95031fe9d48110e2e5276317ea3d318d120b52706a28",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/LocalTensorFrame.lean": "1f289a082158ec81583f9ea47b53d6493dd412d82814f226dc6c9b1d89bbaabb",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/TensorPowerDefinitions.lean": "55d171f2d22d17321b1776302e51ee14c945e76a581dd54a26cc2dfaf20cc38f",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/GlobalizationDefinitions.lean": "6fff96c6215c3ecdc06b728724029a2f16b897a389dd099d5c27c6fa13e339f0",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/DiscriminantDefinitions.lean": "6d981bc627bd4b4e7d34c2e48401f0b030292091b43df4b76aa1a7bbe0073ab7",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/CommonHalfHodgeDefinitionsR0185.lean": "2166c58a5e19cbbb3395d6aab68fff8b42dd04023c773b84a90186705b9b5de0",
+    "/home/Palomar/workspace/arithmetic-theta/project/Proof/OpenHodgeDescentDefinitionsR0180.lean": "5aa0de772477a2887268f62ebb92f9a0af2086c1d73ca2f02af3d9ac5a45cbb5",
+    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/assemble.py": "c842db92af778e392376b5e4e8309c027e5e2af00ecf770c7e8442924c71705c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/comparator.json": "88ec5b99c2fbfb8b9e56b2c7ad7d1e111a872ce3eb30b4b863d49afede8a16b7"
+  },
+  "semantic_definitions": 583,
+  "target_types": "All explicit target types/universes and standard axiom closures checked",
+  "namespace_map": {
+    "ArithmeticThetaCommonHalfHodgeR0185.discriminant_twist_unit": "ArithmeticThetaPalomarTwist510.discriminantTwistUnit",
+    "ArithmeticThetaCommonHalfHodgeR0185.discriminant_tate_root": "ArithmeticThetaPalomarTwist510.discriminantTateRoot"
+  },
+  "bridges": [
+    "Compiled equality of full recover_original_032/033 to original theorems",
+    "isTwist_iff_original and isTateRoot_iff_original retain all original clauses",
+    "pullMultiply_eq_original and inherited compactD2/tensor/restriction bridges identify every actual original map"
+  ]
+}

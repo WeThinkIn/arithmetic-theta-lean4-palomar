@@ -1,0 +1,23 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-030"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-030"
+  ],
+  "universe": "Original k : Type algebraically closed characteristic-zero field, even L at least3, every actual component",
+  "target_count": 20,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Original actual LevelData/Compactification/canonical Hodge Extension and every component",
+    "Full original IsCompactD2: restriction equality to intrinsic open D2, with no divisor or full expansion assumed",
+    "Intrinsic IsD2 tests every original normal rational affine Weierstrass family against actual normalized5-Kato function and full RepresentsInitial",
+    "Normalized retains codimension-one Scheme.ord, all positive coprime determinant norms and every actual Cartesian GenericComparison with induced field map",
+    "RepresentsInitial uses actual identity/torsion ideals, local unit quotient of5g, actual local differential and tensor power on every affine identity chart",
+    "Constructs nonzero actual component restriction and finite-support divisor with Scheme.ord equality in every original normal affine frame",
+    "Exact divisor coefficient2L at every cusp and0 away from cusps, including generic point"
+  ],
+  "limitations": "Original geometric data, canonical Hodge extension and compact intrinsic D2 are supplied as in the original endpoint. This proves their actual component divisor; it does not construct those supplied inputs, a twist/common cover or official acceptance."
+}

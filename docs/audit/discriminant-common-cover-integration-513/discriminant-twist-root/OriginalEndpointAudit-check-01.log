@@ -1,0 +1,5 @@
+'ArithmeticThetaPalomarTwist510.recover_original_032' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarTwist510.recover_original_033' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarTwist510.isTwist_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarTwist510.isTateRoot_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarTwist510.pullMultiply_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]

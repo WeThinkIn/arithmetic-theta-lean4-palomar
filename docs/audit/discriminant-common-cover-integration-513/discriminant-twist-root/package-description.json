@@ -1,0 +1,40 @@
+{
+  "ids": [
+    "accepted-032",
+    "accepted-033"
+  ],
+  "target_count": 22,
+  "title": "Complete discriminant twist unit and designated Tate root",
+  "universe": "Original k : Type algebraically closed characteristic-zero field; every positive L divisible by24",
+  "basis": "Full original IsCompactD2 and actual tensor comparisons from509; actual local tensor frames and CommonHalfHodge Twist/IsCuspHalfLine; literal complete Euler product",
+  "namespace_map": {
+    "ArithmeticThetaCommonHalfHodgeR0185.discriminant_twist_unit": "ArithmeticThetaPalomarTwist510.discriminantTwistUnit",
+    "ArithmeticThetaCommonHalfHodgeR0185.discriminant_tate_root": "ArithmeticThetaPalomarTwist510.discriminantTateRoot"
+  },
+  "bridges": [
+    "Compiled equality of full recover_original_032/033 to original theorems",
+    "isTwist_iff_original and isTateRoot_iff_original retain all original clauses",
+    "pullMultiply_eq_original and inherited compactD2/tensor/restriction bridges identify every actual original map"
+  ],
+  "retained": [
+    "Original actual component, canonical Hodge extension, intrinsic compact D2 and actual cusp half-divisor line",
+    "Constructs Twist line, actual multiplication isomorphism line tensor A^2 isomorphic to the same Hodge line, and a generating24th-power section",
+    "IsTwist tests the D2 factorization in every actual local frame with actual tensorPowerFrame and sectionCoordinate",
+    "IsCuspHalfLine tests actual divisor in every normal frame, including zero off cusps and coefficient L/24 at cusps",
+    "Unique actual pulled-back twist section is a frame on the entire original disk and its24th power is the pullback of the same twisted unit",
+    "For every extending specified Hodge generator, its product with1_A squared equals the full Euler(t^L)^2 times t^(L/12) times that same generator",
+    "Actual sheaf tensor/trivialization, local differential, canonical pullback and complete Euler product preserved"
+  ],
+  "limitations": "Geometry, intrinsic compact D2 and cusp half-line are supplied as in the original statements.032 constructs the twist and unit;033 uses any valid supplied twist to construct its unique complete prescribed root. Neither assumes that root or claims official acceptance.",
+  "description": "Full original032/033: from the original canonical compact geometry, intrinsic D2 and actual cusp half-divisor line, constructs the actual twist, multiplication isomorphism and generating24th-power section with the D2 factorization in every actual local frame. For every such valid twist and every original disk factorization, constructs the UNIQUE actual twist frame whose24th power equals the same pulled-back unit and whose product with the square of the canonical cusp section is exactly Euler(t^L)^2*t^(L/12) times the specified normalized Hodge generator. The Euler series is the full product. Actual tensor frames, all-frame divisor tests and every canonical pullback map are retained or proved equal to the original; no root/expansion provider is supplied.",
+  "attempts": {
+    "Challenge": "01",
+    "Solution": "01",
+    "ChallengeAudit": "01",
+    "SolutionAudit": "01",
+    "DefinitionCompatibility": "01",
+    "OriginalEndpointAudit": "01",
+    "TargetTypeAudit": "01",
+    "TargetHoleAudit": "01"
+  }
+}

@@ -1,0 +1,58 @@
+version: v0.4
+project:
+  name: Complete actual component discriminant divisor
+  description: 'Full original030: the same actual compact intrinsic D2 section restricts
+    nontrivially to every actual component and has finite-support section divisor
+    exactly2L times the reduced cusp divisor, zero everywhere else. The conclusion
+    holds in every original normal affine frame using actual Scheme.ord. IsCompactD2
+    only asserts the correct open restriction to the intrinsic D2; its full all-test
+    normal affine normalized5-Kato and initial-term conditions are visible. Generic
+    normalization uses actual Cartier identity/torsion ideals, multiplication maps
+    and determinant norms. Actual tensor pullbacks and restrictions are proved equal
+    to original constructions. No divisor or expansion is added as a premise.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Full original030: the same actual compact intrinsic D2 section restricts
+    nontrivially to every actual component and has finite-support section divisor
+    exactly2L times the reduced cusp divisor, zero everywhere else. The conclusion
+    holds in every original normal affine frame using actual Scheme.ord. IsCompactD2
+    only asserts the correct open restriction to the intrinsic D2; its full all-test
+    normal affine normalized5-Kato and initial-term conditions are visible. Generic
+    normalization uses actual Cartier identity/torsion ideals, multiplication maps
+    and determinant norms. Actual tensor pullbacks and restrictions are proved equal
+    to original constructions. No divisor or expansion is added as a premise.'
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

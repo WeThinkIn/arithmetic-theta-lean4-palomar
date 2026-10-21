@@ -1,0 +1,61 @@
+version: v0.4
+project:
+  name: Complete common half-Hodge cover and prescribed disk branch
+  description: 'Full original034: constructs the specified disk factorization through
+    its actual geometric component, actual cusp half-divisor line, and an integral
+    smooth proper finite-etale surjective cover of positive degree at most24. The
+    same cover carries a square isomorphism to the original Hodge line whose canonical
+    squared section has24th power equal to the same D2. It constructs a disk lift
+    and, for every extending normalized Hodge generator, an actual frame with canonical
+    cusp section=complete Euler(t^L)*t^(L/24)*frame and square mapping to that same
+    generator. All geometric properties, degree bounds, actual maps and branch equations
+    remain explicit constructor fields. Bidirectional compiled transports recover
+    the full original cover/branch predicate with the SAME scheme, map and square
+    isomorphism.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Paper.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+    Official mechanical and semantic review are pending for this configuration.
+status:
+  scope: 'Full original034: constructs the specified disk factorization through its
+    actual geometric component, actual cusp half-divisor line, and an integral smooth
+    proper finite-etale surjective cover of positive degree at most24. The same cover
+    carries a square isomorphism to the original Hodge line whose canonical squared
+    section has24th power equal to the same D2. It constructs a disk lift and, for
+    every extending normalized Hodge generator, an actual frame with canonical cusp
+    section=complete Euler(t^L)*t^(L/24)*frame and square mapping to that same generator.
+    All geometric properties, degree bounds, actual maps and branch equations remain
+    explicit constructor fields. Bidirectional compiled transports recover the full
+    original cover/branch predicate with the SAME scheme, map and square isomorphism.'
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

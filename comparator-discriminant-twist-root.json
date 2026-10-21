@@ -1,0 +1,33 @@
+{
+  "challenge_module": "DiscriminantTwistRootChallenge",
+  "solution_module": "DiscriminantTwistRootSolution",
+  "theorem_names": [
+    "WeierstrassProjModel.span_polynomial_isHomogeneousCR",
+    "HomogeneousIdealQuotientGrading.preDecompose_of_mem",
+    "WeierstrassProjModel.kwYEvalRingHom_comp_algebraMap",
+    "HomogeneousIdealQuotientGrading.mem_quotGradingSubmodule_iff",
+    "HomogeneousIdealQuotientGrading.quotDecompose_mk",
+    "WeierstrassProjModel.kwYEvalRingHom_mk_X1",
+    "ProjWeierstrassCubicPrime.isHomogeneous_polynomial",
+    "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedMonoid",
+    "HomogeneousIdealQuotientGrading.coeAddMonoidHom_preDecompose",
+    "HomogeneousIdealQuotientGrading.gradedMonoidOfImages",
+    "HomogeneousIdealQuotientGrading.preDecompose_eq_zero_of_mem",
+    "HomogeneousIdealQuotientGrading.pieceHom_coe",
+    "HomogeneousIdealQuotientGrading.coeAddMonoidHom_map_pieceHom",
+    "WeierstrassProjModel.kwYChartEval_section",
+    "ArithmeticThetaPalomarComponent485.componentIsOpen",
+    "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.differentialMap_isIso",
+    "ArithmeticThetaComponentDegreeR0184.componentIntegral",
+    "ArithmeticThetaComponentDegreeR0184.componentLocallyNoetherian",
+    "ArithmeticThetaPalomarBinaryTensor458.canonicalBinaryTensor",
+    "ArithmeticThetaSheafTensor.localTensorTrivializationHom_isIso",
+    "ArithmeticThetaPalomarTwist510.discriminantTwistUnit",
+    "ArithmeticThetaPalomarTwist510.discriminantTateRoot"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

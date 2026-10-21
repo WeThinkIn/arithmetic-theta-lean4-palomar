@@ -1476,3 +1476,27 @@ roots = ["IsogenyHalfLineChallenge"]
 [[lean_lib]]
 name = "IsogenyHalfLineSolution"
 roots = ["IsogenyHalfLineSolution"]
+
+[[lean_lib]]
+name = "ComponentDiscriminantChallenge"
+roots = ["ComponentDiscriminantChallenge"]
+
+[[lean_lib]]
+name = "ComponentDiscriminantSolution"
+roots = ["ComponentDiscriminantSolution"]
+
+[[lean_lib]]
+name = "DiscriminantTwistRootChallenge"
+roots = ["DiscriminantTwistRootChallenge"]
+
+[[lean_lib]]
+name = "DiscriminantTwistRootSolution"
+roots = ["DiscriminantTwistRootSolution"]
+
+[[lean_lib]]
+name = "CommonHalfHodgeChallenge"
+roots = ["CommonHalfHodgeChallenge"]
+
+[[lean_lib]]
+name = "CommonHalfHodgeSolution"
+roots = ["CommonHalfHodgeSolution"]

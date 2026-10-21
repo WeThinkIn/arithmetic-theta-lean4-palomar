@@ -1,0 +1,24 @@
+{
+  "covered_original_endpoint_ids": [
+    "accepted-034"
+  ],
+  "new_original_endpoint_ids": [
+    "accepted-034"
+  ],
+  "universe": "Original k : Type algebraically closed characteristic-zero field; every positive L divisible by24",
+  "target_count": 20,
+  "no_added_main_assumptions": true,
+  "official_verified": false,
+  "full_paper_claimed": false,
+  "retained": [
+    "Only original supplied LevelData/Compactification/canonical Hodge and intrinsic compact D2; no root or cover premise",
+    "Constructs factor of the actual specified disk through its actual geometric component",
+    "Constructs cusp half-divisor line with actual all-frame divisor L/24 at cusps and0 elsewhere",
+    "Constructs actual integral smooth proper finite-etale surjective cover; degree is positive and at most24 at every point",
+    "Constructs actual square isomorphism of pulled-back cusp line with the SAME pulled-back Hodge line; canonical squared section has24th power SAME pulled-back D2",
+    "Constructs disk lift to that cover and for EVERY specified extending Hodge generator constructs a frame on the original component disk",
+    "Canonical section equals complete Euler(t^L)*t^(L/24) times that frame; its square maps to SAME Hodge generator through that VERY cover square map",
+    "No degree-parity premise, arbitrary cover/provider or leading-coefficient substitute"
+  ],
+  "limitations": "Original geometry, canonical Hodge extension and compact intrinsic D2 are inputs as in the original theorem. The full common cover and branch are constructed outputs; simultaneous unary roots, matrix-family assembly and official acceptance are not claimed."
+}

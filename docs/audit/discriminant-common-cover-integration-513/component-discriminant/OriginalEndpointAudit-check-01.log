@@ -1,0 +1,4 @@
+'ArithmeticThetaPalomarD2_509.recover_original_030' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarD2_509.compactD2_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarD2_509.tensorComparison_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarD2_509.restrict_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+'ArithmeticThetaPalomarCommon511.recover_original_034' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarCommon511.toOriginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarCommon511.ofOriginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticThetaPalomarCommon511.common_iff_original' depends on axioms: [propext, Classical.choice, Quot.sound]

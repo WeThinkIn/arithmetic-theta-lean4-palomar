@@ -1,0 +1,7 @@
+# Complete actual component discriminant divisor
+
+Full original030: the same actual compact intrinsic D2 section restricts nontrivially to every actual component and has finite-support section divisor exactly2L times the reduced cusp divisor, zero everywhere else. The conclusion holds in every original normal affine frame using actual Scheme.ord. IsCompactD2 only asserts the correct open restriction to the intrinsic D2; its full all-test normal affine normalized5-Kato and initial-term conditions are visible. Generic normalization uses actual Cartier identity/torsion ideals, multiplication maps and determinant norms. Actual tensor pullbacks and restrictions are proved equal to original constructions. No divisor or expansion is added as a premise.
+
+Challenge has 873 lines and 20 explicit support/main targets. All 531 semantic types/available bodies match the Solution environment, and every literal proof hole is selected exactly once. The original theorem is recovered by compiled equality; target universes/types and all Solution declaration axiom closures pass. Actual root integration and official verification are separate steps. No whole-paper acceptance is claimed.
+
+Original geometric data, canonical Hodge extension and compact intrinsic D2 are supplied as in the original endpoint. This proves their actual component divisor; it does not construct those supplied inputs, a twist/common cover or official acceptance.

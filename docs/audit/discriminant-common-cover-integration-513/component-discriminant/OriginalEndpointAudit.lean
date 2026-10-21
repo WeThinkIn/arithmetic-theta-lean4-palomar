@@ -1,0 +1,9 @@
+module
+import all Solution
+set_option maxRecDepth 8192
+set_option backward.isDefEq.respectTransparency false
+example : ArithmeticThetaPalomarD2_509.recover_original_030 = ArithmeticThetaComponentDegreeR0184.component_discriminant_divisor := by rfl
+#print axioms ArithmeticThetaPalomarD2_509.recover_original_030
+#print axioms ArithmeticThetaPalomarD2_509.compactD2_iff_original
+#print axioms ArithmeticThetaPalomarD2_509.tensorComparison_eq_original
+#print axioms ArithmeticThetaPalomarD2_509.restrict_eq_original

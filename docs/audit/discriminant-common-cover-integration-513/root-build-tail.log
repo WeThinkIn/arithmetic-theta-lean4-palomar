@@ -1,0 +1,100 @@
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ComponentDiscriminantSolution.lean:157:74: Variable name `heven` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _heven
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [11941/11945] Built DiscriminantTwistRootSolution (6.3s)
+⚠ [11942/11945] Built ComponentDiscriminantChallenge (21s)
+warning: ComponentDiscriminantChallenge.lean:24:14: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:26:8: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:28:6: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:34:6: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:35:6: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:36:6: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:38:14: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:62:6: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:64:9: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:73:8: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:80:8: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:102:8: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:106:8: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:107:8: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:466:0: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ComponentDiscriminantChallenge.lean:504:8: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:669:8: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:684:8: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:686:8: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:733:8: declaration uses `sorry`
+warning: ComponentDiscriminantChallenge.lean:872:8: declaration uses `sorry`
+✔ [11943/11945] Built CommonHalfHodgeSolution (21s)
+⚠ [11944/11945] Built CommonHalfHodgeChallenge (22s)
+warning: CommonHalfHodgeChallenge.lean:24:14: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:26:8: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:28:6: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:34:6: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:35:6: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:36:6: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:38:14: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:62:6: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:64:9: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:73:8: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:80:8: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:102:8: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:106:8: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:107:8: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:466:0: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CommonHalfHodgeChallenge.lean:504:8: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:669:8: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:684:8: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:686:8: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:733:8: declaration uses `sorry`
+warning: CommonHalfHodgeChallenge.lean:926:8: declaration uses `sorry`
+⚠ [11945/11945] Built DiscriminantTwistRootChallenge (24s)
+warning: DiscriminantTwistRootChallenge.lean:24:14: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:26:8: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:28:6: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:34:6: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:35:6: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:36:6: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:38:14: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:62:6: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:64:9: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:73:8: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:80:8: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:102:8: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:106:8: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:107:8: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:466:0: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DiscriminantTwistRootChallenge.lean:504:8: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:669:8: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:684:8: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:686:8: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:733:8: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:904:8: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:959:8: declaration uses `sorry`
+warning: DiscriminantTwistRootChallenge.lean:962:8: declaration uses `sorry`
+Build completed successfully (11945 jobs).

@@ -1,0 +1,33 @@
+[
+  {
+    "slug": "component-discriminant",
+    "root": "ComponentDiscriminant",
+    "source": "component-discriminant-package-509",
+    "ids": [
+      "accepted-030"
+    ],
+    "title": "Complete actual component discriminant divisor",
+    "description": "Full original030: the same actual compact intrinsic D2 section restricts nontrivially to every actual component and has finite-support section divisor exactly2L times the reduced cusp divisor, zero everywhere else. The conclusion holds in every original normal affine frame using actual Scheme.ord. IsCompactD2 only asserts the correct open restriction to the intrinsic D2; its full all-test normal affine normalized5-Kato and initial-term conditions are visible. Generic normalization uses actual Cartier identity/torsion ideals, multiplication maps and determinant norms. Actual tensor pullbacks and restrictions are proved equal to original constructions. No divisor or expansion is added as a premise."
+  },
+  {
+    "slug": "discriminant-twist-root",
+    "root": "DiscriminantTwistRoot",
+    "source": "discriminant-twist-root-package-510",
+    "ids": [
+      "accepted-032",
+      "accepted-033"
+    ],
+    "title": "Complete discriminant twist unit and designated Tate root",
+    "description": "Full original032/033: from the original canonical compact geometry, intrinsic D2 and actual cusp half-divisor line, constructs the actual twist, multiplication isomorphism and generating24th-power section with the D2 factorization in every actual local frame. For every such valid twist and every original disk factorization, constructs the UNIQUE actual twist frame whose24th power equals the same pulled-back unit and whose product with the square of the canonical cusp section is exactly Euler(t^L)^2*t^(L/12) times the specified normalized Hodge generator. The Euler series is the full product. Actual tensor frames, all-frame divisor tests and every canonical pullback map are retained or proved equal to the original; no root/expansion provider is supplied."
+  },
+  {
+    "slug": "common-half-hodge",
+    "root": "CommonHalfHodge",
+    "source": "common-half-hodge-package-511",
+    "ids": [
+      "accepted-034"
+    ],
+    "title": "Complete common half-Hodge cover and prescribed disk branch",
+    "description": "Full original034: constructs the specified disk factorization through its actual geometric component, actual cusp half-divisor line, and an integral smooth proper finite-etale surjective cover of positive degree at most24. The same cover carries a square isomorphism to the original Hodge line whose canonical squared section has24th power equal to the same D2. It constructs a disk lift and, for every extending normalized Hodge generator, an actual frame with canonical cusp section=complete Euler(t^L)*t^(L/24)*frame and square mapping to that same generator. All geometric properties, degree bounds, actual maps and branch equations remain explicit constructor fields. Bidirectional compiled transports recover the full original cover/branch predicate with the SAME scheme, map and square isomorphism."
+  }
+]
