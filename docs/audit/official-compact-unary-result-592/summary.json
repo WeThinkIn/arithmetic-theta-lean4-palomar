@@ -1,0 +1,66 @@
+{
+  "status": "error",
+  "last_active_stage": "comparator",
+  "error_kind": "infrastructure/resource-exhausted",
+  "errors": [
+    "worker resource ceiling reached while running lake (exit 137, result oom-kill)"
+  ],
+  "retryable": true,
+  "workflow_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39541709031",
+  "source": {
+    "bytes": 219715967,
+    "commit": "effce98775aa7da461e6a3b7b7992e8352e95293",
+    "repository": "WeThinkIn/arithmetic-theta-lean4-palomar",
+    "repository_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar",
+    "tree_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/tree/effce98775aa7da461e6a3b7b7992e8352e95293"
+  },
+  "execution_profile": "palomar-standard-v1",
+  "resource_usage": [
+    {
+      "elapsed_seconds": 11434.859,
+      "max_rss_kib": 13404172,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "solution-build",
+      "returncode": 0,
+      "system_cpu_seconds": 2922.217,
+      "user_cpu_seconds": 39153.583,
+      "workspace_disk_peak_bytes": 17118171136
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 7601827088000,
+      "deadline_fired": false,
+      "exec_main_code": "2",
+      "exec_main_status": "9",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 7
+      },
+      "memory_peak_bytes": 16058015744,
+      "phase": "comparator:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "oom-kill"
+    }
+  ],
+  "diagnostics": [
+    {
+      "code": "provider.resource_exhausted",
+      "explanation": "worker resource ceiling reached while running lake (exit 137, result oom-kill)",
+      "next_action": "Inspect the reported resource limit and build usage. If the workload repeatedly exceeds the worker's capacity, reduce its resource use or arrange sufficient capacity before retrying. Retry an unchanged commit only after addressing the reported condition. Normal submission cooldowns still apply.",
+      "owner": "provider",
+      "repairable": false,
+      "retryable": true,
+      "stage": "resource-exhausted",
+      "summary": "worker resource ceiling reached while running lake (exit 137, result oom-kill)"
+    }
+  ],
+  "comparator_log_tail": "h `_` to silence this warning:\n  [apply] _hNeven\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nwarning: CompactUnarySolution.lean:200:125: Variable name `hmN` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hmN\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nwarning: CompactUnarySolution.lean:206:63: Variable name `hm` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hm\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nwarning: CompactUnarySolution.lean:206:76: Variable name `hmeven` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hmeven\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nwarning: CompactUnarySolution.lean:206:94: Variable name `hN` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hN\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nwarning: CompactUnarySolution.lean:206:107: Variable name `hNeven` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hNeven\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nwarning: CompactUnarySolution.lean:206:125: Variable name `hmN` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hmN\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nBuild completed successfully (11794 jobs)."
+}

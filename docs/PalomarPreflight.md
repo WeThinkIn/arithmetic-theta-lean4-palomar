@@ -68,3 +68,8 @@ The later repository migration checkpoint passed full GoalRoot build342 and all1
 ## Official split-discriminant result (21 October 2026)
 
 [Run 39552053781](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39552053781) at `2c85e9b` ended with Solution-build memory exhaustion (`exit 137`, `oom-kill`). No official comparator or independent-kernel pass is inferred. The [report and assessment](audit/official-split-discriminant-result-581/Review.md) distinguish this result from the complete local three-kernel acceptance. Resource diagnosis is in progress; no unchanged retry has been dispatched.
+
+
+## Official compact-unary result (21 October 2026)
+
+[Run 39541709031](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39541709031) at `effce987` completed its Solution build successfully, then exhausted memory in the comparator stage (`exit 137`, `oom-kill`). The report does not isolate the comparator substage or establish any independent-kernel pass. The [authoritative report and assessment](audit/official-compact-unary-result-592/Review.md) distinguish this result from the separate Solution-build failure 581. No unchanged retry has been dispatched; current proof-replay resource diagnosis is separate from this older source revision.
