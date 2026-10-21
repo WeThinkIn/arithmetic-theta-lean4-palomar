@@ -78,3 +78,8 @@ The later repository migration checkpoint passed full GoalRoot build342 and all1
 ## Official split-square-degree result (21 October 2026)
 
 [Run 39552048056](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39552048056) at `2c85e9b` exhausted memory during Solution build (`exit 137`, `oom-kill`, recorded peak 15,828,697,088 bytes). The [authoritative report and assessment](audit/official-split-square-result-596/Review.md) distinguish the failed official cold build from the completed local three-kernel verification. No official comparator or kernel pass is inferred, and no unchanged retry has been dispatched.
+
+
+## Official common-unary result (21 October 2026)
+
+[Run 39557005985](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39557005985) at `77c9bff` exhausted memory during Solution build (`exit 137`, `oom-kill`, recorded peak 15,876,751,360 bytes). The [mechanical report and assessment](audit/official-common-unary-result-601/Review.md) do not establish any official comparator or kernel acceptance. Local stock Lean replay and cold-build diagnosis continue; no unchanged retry has been dispatched.
