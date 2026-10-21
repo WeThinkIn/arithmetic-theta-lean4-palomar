@@ -1,0 +1,107 @@
+{
+  "utc": "2026-10-21T12:34:21.230897+00:00",
+  "stock568": {
+    "exit_code": 1,
+    "lean_default_exit": 137,
+    "conron_pass": true,
+    "nanoda_pass": true,
+    "system_oom_kill_confirmed": true
+  },
+  "diagnostic593": {
+    "exit_code": -15,
+    "elapsed_seconds": 6437.661850842182,
+    "peak_rss_bytes": 17383059456,
+    "stop_reason": "diagnostic RSS cap16GiB",
+    "bindings": {
+      "/home/Palomar/workspace/arithmetic-theta/evidence/kernel-replay-profile-559/ReplayProfile.lean": "4c1f04081244f1cfeacd2731e75dbac4ed9362b8f8499378164450fccdc9bb83",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/kernel-replay-profile-559/ReplayProfile": "1f7578d49e9a2a339d0a76935d5000b120c07f1b6c0a2f3b779a218a3145e0f9",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/common-unary-integration-567/CommonUnarySolution-01.ndjson": "ee336a9967b6a246eb49a0f1535eb71f4ad49194161ca52069c2781bf06bd62c"
+    },
+    "bindings_unchanged": true,
+    "limitation": "Instrumented diagnostic, not stock or official verification."
+  },
+  "diagnostic_completed_declarations": 146373,
+  "diagnostic_last_started": "[P2MW.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.AlgebraicGeometry.RelPicard.DescentAux.asm_b]",
+  "diagnostic_top_completed": [
+    {
+      "milliseconds": 312127,
+      "declaration": "[ArithmeticThetaOpenHodgeR0180.GlobalFamilyDiscriminantR0180.comparison_refinement]"
+    },
+    {
+      "milliseconds": 214384,
+      "declaration": "[ArithmeticThetaIdentitySectionsR0138.IdentityStageSectionRealizationR0138.localDual_adjacent]"
+    },
+    {
+      "milliseconds": 195131,
+      "declaration": "[P2MW.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.AlgebraicGeometry.RelPicard.DescentAux.map_rawHom_comp_legIso]"
+    },
+    {
+      "milliseconds": 147250,
+      "declaration": "[P2MW.S_Module_FaithfullyFlat_exists_submodule_isBaseChange_of_cocycle.S17C1.square]"
+    },
+    {
+      "milliseconds": 136995,
+      "declaration": "[ArithmeticThetaBoundaryConstantsR0235.ClassifiedTateDiskTransfer.test_derivative]"
+    },
+    {
+      "milliseconds": 120643,
+      "declaration": "[ArithmeticThetaBoundaryConstantsR0235.ClassifiedTateDiskTransfer.cotangent_transfer]"
+    },
+    {
+      "milliseconds": 119115,
+      "declaration": "[ArithmeticThetaBoundaryHodgeR0182.OpenUnaryDesignatedExpansionR0182.NormalizedSection.test_formula]"
+    },
+    {
+      "milliseconds": 100720,
+      "declaration": "[P2MW.S_AlgebraicGeometry_Scheme_Modules_toDescentData_essSurj_of_openCover.AlgebraicGeometry.Scheme.Modules.ObjGlue.gluedIso_comm]"
+    },
+    {
+      "milliseconds": 98730,
+      "declaration": "[ArithmeticThetaBoundaryHodgeR0182.OpenDiscriminantFullTateExpansionR0182.pointed_iso_section]"
+    },
+    {
+      "milliseconds": 95628,
+      "declaration": "[P2MW.S_Module_FaithfullyFlat_exists_submodule_isBaseChange_of_cocycle.S17C1.sq_rhs]"
+    },
+    {
+      "milliseconds": 71071,
+      "declaration": "[P2MW.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.AlgebraicGeometry.RelPicard.DescentAux.isIso_rawHom]"
+    },
+    {
+      "milliseconds": 65769,
+      "declaration": "[_private.KatoAnnularOverlapR0152.0.ArithmeticThetaKatoAnnularR0152.KatoAnnularOverlap.rational_overlap]"
+    },
+    {
+      "milliseconds": 61740,
+      "declaration": "[P2MW.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_iso_toDescentData_of_isAffine_of_isAffineHom_of_flat_of_surjective.AlgebraicGeometry.Scheme.Modules.ddHom_toDescentData]"
+    },
+    {
+      "milliseconds": 59404,
+      "declaration": "[P2MW.S_AlgebraicGeometry_Scheme_Modules_toDescentData_essSurj_of_openCover.AlgebraicGeometry.Scheme.Modules.ObjGlue.commZ\u2080]"
+    },
+    {
+      "milliseconds": 59399,
+      "declaration": "[P2MW.S_AlgebraicGeometry_Scheme_Modules_toDescentData_essSurj_of_openCover.AlgebraicGeometry.Scheme.Modules.ObjGlue.ofObj_pullHom]"
+    }
+  ],
+  "cold582": {
+    "state": {
+      "Result": "exit-code",
+      "ExecMainStatus": "1",
+      "ControlGroup": "",
+      "MemoryCurrent": "[not set]",
+      "ActiveState": "failed",
+      "SubState": "failed"
+    },
+    "elapsed_seconds": 8941.78,
+    "peak_observed_cgroup_bytes": 15032385536,
+    "failed_targets": [
+      "P2M.Sol.S_WeierstrassCurve_ellipticNet_four",
+      "OpenUnaryDesignatedExpansionR0182"
+    ],
+    "observed_errors": [
+      "Lean exit137",
+      "non UTF-8 process output"
+    ]
+  }
+}
