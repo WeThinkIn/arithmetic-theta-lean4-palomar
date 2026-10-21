@@ -1,6 +1,16 @@
 {
   "basis": "Full actual boundary Hodge/component definitions495, actual generic Kato/determinant norm definitions385 and original normalized Kato/initial-term predicates; canonical tensor comparison505",
-  "source_bindings": {
+  "target_types": "All explicit target types/universes and standard axiom closures checked",
+  "namespace_map": {
+    "ArithmeticThetaCyclotomicModularityR0239.split_component_discriminant_divisor": "ArithmeticThetaPalomarSplit515.splitComponentDiscriminantDivisor"
+  },
+  "bridges": [
+    "Compiled equality of recover_original_073 to the full original theorem",
+    "isD2_iff_original and compactD2_iff_original identify the full all-test intrinsic and compact predicates",
+    "tensorComparison_eq_original and restrict_eq_original identify every actual tensor comparison and component section restriction"
+  ],
+  "previous_semantic_definition_count": 531,
+  "previous_source_bindings": {
     "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
     "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/Challenge.lean": "072d75abb0091874f4b7ac15403ab536ed4b73c06555515c4904966903dc3bc1",
     "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/Solution.lean": "caeb594b7888129e9022829bc60a9ce5abeb80c882ee70c5c499feb2d250895e",
@@ -12,14 +22,16 @@
     "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/DefinitionCompatibility.lean": "ace1d11cdf66663ce409e9e1af1c701aa8e866a98c3eeafb31d20f6c5bb71429",
     "/home/Palomar/workspace/arithmetic-theta/evidence/component-discriminant-package-509/OriginalEndpointAudit.lean": "3a95b547c799a6215dbda13f77269f613b73aaf402e98332f46b9df2df6c2516"
   },
-  "semantic_definitions": 531,
-  "target_types": "All explicit target types/universes and standard axiom closures checked",
-  "namespace_map": {
-    "ArithmeticThetaCyclotomicModularityR0239.split_component_discriminant_divisor": "ArithmeticThetaPalomarSplit515.splitComponentDiscriminantDivisor"
+  "source_bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-exact-repair-557/Challenge.lean": "27f82c25e7f30f2860f438996a95844433beca0760ae2c2ffc4ec18c56b77f00",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-exact-repair-557/Solution.lean": "f5955e7fdb7a57ba457c464895ca1cc2feecad27cdb903c9a2a56fe4104bd531",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-exact-repair-557/comparator.json": "afaa454fbdb597f8b35d68b59dc44f9812af193d4bf70bb64d04dd6a84561d7c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-discriminant-exact-repair-557/OriginalEndpointAudit.lean": "735176f12a52b37f8b4e1ef068123af64303017533186d4a4d330bf9ed588631"
   },
-  "bridges": [
-    "Compiled equality of recover_original_073 to the full original theorem",
-    "isD2_iff_original and compactD2_iff_original identify the full all-test intrinsic and compact predicates",
-    "tensorComparison_eq_original and restrict_eq_original identify every actual tensor comparison and component section restriction"
-  ]
+  "exact_exported_dependency_comparison": {
+    "checked_by": "Unmodified Lake.Check.compareAt and Lake.Check.checkAxioms",
+    "diagnostic_checked_constants": 41402,
+    "mismatches": 0,
+    "audit": "docs/audit/split-exact-comparison-558/split-discriminant"
+  }
 }

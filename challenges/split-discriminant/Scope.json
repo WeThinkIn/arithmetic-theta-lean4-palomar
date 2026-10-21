@@ -6,7 +6,7 @@
     "accepted-073"
   ],
   "universe": "Original arbitrary characteristic-zero field k : Type with a specified primitive Lth root, even L at least3; no algebraic-closure premise",
-  "target_count": 20,
+  "target_count": 33,
   "no_added_main_assumptions": true,
   "official_verified": false,
   "full_paper_claimed": false,
@@ -19,5 +19,8 @@
     "Constructs nonzero actual component restriction and finite-support divisor with Scheme.ord equality in every original normal affine frame",
     "Exact divisor coefficient2L at every cusp and0 away from cusps, including generic point"
   ],
-  "limitations": "The geometric data, canonical Hodge extension and intrinsic compact D2 are inputs as in the original theorem. This endpoint proves their actual divisor over a split field; it does not construct those inputs or claim official acceptance."
+  "limitations": "The geometric data, canonical Hodge extension and intrinsic compact D2 are inputs as in the original theorem. This endpoint proves their actual divisor over a split field; it does not construct those inputs or claim official acceptance.",
+  "local_exact_exported_comparison": true,
+  "local_axiom_closure": true,
+  "structural_repair": "Compiler proof and matcher caches are isolated between source fragments. Original auxiliary propositions are explicit targets with their actual original Solution proofs; no definition holes or added main assumptions."
 }

@@ -1,5 +1,7 @@
 # Arithmetic determination of relations among lattice theta series
 
+Latest verification checkpoint (558): full original split discriminant 073 and square-cover degree 074 now pass local exact exported dependency comparison and standard axiom checks, including their actual named repository roots. Original recovery and all five audits pass. Official verification is still pending; these results are not whole-paper acceptance. See [repair and scope evidence](docs/audit/split-exact-comparison-558/Review.md).
+
 Human author and responsible maintainer: **Jue Ding**.
 
 This public repository prepares independent Palomar verification of the arithmetic theta formalization accompanying `paper/Paper.pdf`.

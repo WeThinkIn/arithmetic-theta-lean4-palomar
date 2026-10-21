@@ -1,0 +1,4 @@
+module
+import all Solution
+example : ArithmeticThetaPalomarSplit515.recover_original_073 = ArithmeticThetaCyclotomicModularityR0239.split_component_discriminant_divisor := by rfl
+#print axioms ArithmeticThetaPalomarSplit515.splitComponentDiscriminantDivisor

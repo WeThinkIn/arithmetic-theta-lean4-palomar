@@ -1,119 +1,204 @@
 {
   "targets": [
     {
-      "end": 87,
+      "end": 133,
       "name": "WeierstrassProjModel.span_polynomial_isHomogeneousCR",
-      "start": 87,
-      "hole_line": 87
+      "start": 133,
+      "hole_line": 133
     },
     {
-      "end": 36,
+      "end": 94,
       "name": "HomogeneousIdealQuotientGrading.preDecompose_of_mem",
-      "start": 36,
-      "hole_line": 36
+      "start": 94,
+      "hole_line": 94
     },
     {
-      "end": 120,
+      "end": 169,
       "name": "WeierstrassProjModel.kwYEvalRingHom_comp_algebraMap",
-      "start": 120,
-      "hole_line": 120
+      "start": 169,
+      "hole_line": 169
     },
     {
-      "end": 65,
+      "end": 119,
       "name": "HomogeneousIdealQuotientGrading.mem_quotGradingSubmodule_iff",
-      "start": 65,
-      "hole_line": 65
+      "start": 119,
+      "hole_line": 119
     },
     {
-      "end": 41,
+      "end": 98,
       "name": "HomogeneousIdealQuotientGrading.quotDecompose_mk",
-      "start": 41,
-      "hole_line": 41
+      "start": 98,
+      "hole_line": 98
     },
     {
-      "end": 113,
+      "end": 166,
       "name": "WeierstrassProjModel.kwYEvalRingHom_mk_X1",
-      "start": 113,
-      "hole_line": 113
+      "start": 166,
+      "hole_line": 166
     },
     {
-      "end": 80,
+      "end": 128,
       "name": "ProjWeierstrassCubicPrime.isHomogeneous_polynomial",
-      "start": 80,
-      "hole_line": 80
-    },
-    {
-      "end": 68,
-      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedMonoid",
-      "start": 68,
-      "hole_line": 68
-    },
-    {
-      "end": 37,
-      "name": "HomogeneousIdealQuotientGrading.coeAddMonoidHom_preDecompose",
-      "start": 37,
-      "hole_line": 37
-    },
-    {
-      "end": 27,
-      "name": "HomogeneousIdealQuotientGrading.gradedMonoidOfImages",
-      "start": 27,
-      "hole_line": 27
-    },
-    {
-      "end": 38,
-      "name": "HomogeneousIdealQuotientGrading.preDecompose_eq_zero_of_mem",
-      "start": 38,
-      "hole_line": 38
-    },
-    {
-      "end": 25,
-      "name": "HomogeneousIdealQuotientGrading.pieceHom_coe",
-      "start": 25,
-      "hole_line": 25
-    },
-    {
-      "end": 29,
-      "name": "HomogeneousIdealQuotientGrading.coeAddMonoidHom_map_pieceHom",
-      "start": 29,
-      "hole_line": 29
+      "start": 128,
+      "hole_line": 128
     },
     {
       "end": 121,
-      "name": "WeierstrassProjModel.kwYChartEval_section",
+      "name": "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedMonoid",
       "start": 121,
       "hole_line": 121
     },
     {
-      "end": 804,
-      "name": "ArithmeticThetaPalomarComponent485.componentIsOpen",
-      "start": 804,
-      "hole_line": 804
+      "end": 95,
+      "name": "HomogeneousIdealQuotientGrading.coeAddMonoidHom_preDecompose",
+      "start": 95,
+      "hole_line": 95
     },
     {
-      "end": 591,
+      "end": 86,
+      "name": "HomogeneousIdealQuotientGrading.gradedMonoidOfImages",
+      "start": 86,
+      "hole_line": 86
+    },
+    {
+      "end": 96,
+      "name": "HomogeneousIdealQuotientGrading.preDecompose_eq_zero_of_mem",
+      "start": 96,
+      "hole_line": 96
+    },
+    {
+      "end": 84,
+      "name": "HomogeneousIdealQuotientGrading.pieceHom_coe",
+      "start": 84,
+      "hole_line": 84
+    },
+    {
+      "end": 88,
+      "name": "HomogeneousIdealQuotientGrading.coeAddMonoidHom_map_pieceHom",
+      "start": 88,
+      "hole_line": 88
+    },
+    {
+      "end": 170,
+      "name": "WeierstrassProjModel.kwYChartEval_section",
+      "start": 170,
+      "hole_line": 170
+    },
+    {
+      "end": 373,
       "name": "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.differentialMap_isIso",
-      "start": 590,
-      "hole_line": 591
+      "start": 373,
+      "hole_line": 373
     },
     {
-      "end": 821,
+      "end": 499,
+      "name": "P458.canonicalBinaryTensor",
+      "start": 499,
+      "hole_line": 499
+    },
+    {
+      "end": 146,
+      "name": "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+      "start": 146,
+      "hole_line": 146
+    },
+    {
+      "end": 147,
+      "name": "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+      "start": 147,
+      "hole_line": 147
+    },
+    {
+      "end": 148,
+      "name": "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+      "start": 148,
+      "hole_line": 148
+    },
+    {
+      "end": 149,
+      "name": "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+      "start": 149,
+      "hole_line": 149
+    },
+    {
+      "end": 150,
+      "name": "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+      "start": 150,
+      "hole_line": 150
+    },
+    {
+      "end": 151,
+      "name": "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+      "start": 151,
+      "hole_line": 151
+    },
+    {
+      "end": 152,
+      "name": "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+      "start": 152,
+      "hole_line": 152
+    },
+    {
+      "end": 153,
+      "name": "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+      "start": 153,
+      "hole_line": 153
+    },
+    {
+      "end": 310,
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_1",
+      "start": 310,
+      "hole_line": 310
+    },
+    {
+      "end": 311,
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_2",
+      "start": 311,
+      "hole_line": 311
+    },
+    {
+      "end": 312,
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_3",
+      "start": 312,
+      "hole_line": 312
+    },
+    {
+      "end": 313,
+      "name": "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_4",
+      "start": 313,
+      "hole_line": 313
+    },
+    {
+      "end": 587,
+      "name": "P485.componentIsOpen",
+      "start": 587,
+      "hole_line": 587
+    },
+    {
+      "end": 600,
       "name": "ArithmeticThetaComponentDegreeR0184.componentIntegral",
-      "start": 821,
-      "hole_line": 821
+      "start": 600,
+      "hole_line": 600
     },
     {
-      "end": 823,
+      "end": 602,
       "name": "ArithmeticThetaComponentDegreeR0184.componentLocallyNoetherian",
-      "start": 823,
-      "hole_line": 823
+      "start": 602,
+      "hole_line": 602
     },
     {
-      "end": 924,
+      "end": 589,
+      "name": "ArithmeticThetaBoundaryHodgeR0182.CompactHodgeLatticeExtensionR0182.compactComponent._proof_1",
+      "start": 589,
+      "hole_line": 589
+    },
+    {
+      "end": 668,
       "name": "ArithmeticThetaPalomarSplit516.splitSquareCoverDegree",
-      "start": 923,
-      "hole_line": 924
+      "start": 667,
+      "hole_line": 668
     }
   ],
-  "every_literal_hole_selected_exactly_once": true
+  "literal_holes": 33,
+  "every_hole_selected_once": true
 }

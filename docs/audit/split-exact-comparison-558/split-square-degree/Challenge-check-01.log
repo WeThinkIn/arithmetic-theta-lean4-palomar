@@ -1,0 +1,113 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:25:213: warning: `WeierstrassProjModel.projModelHomogeneousIdealCR._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:30:261: warning: `WeierstrassProjModel.kw_lrComul_tensorProj._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:84:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:86:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:88:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:94:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:95:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:96:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:98:14: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:119:6: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:121:9: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:128:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:133:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:146:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:146:8: warning: `kw_lrComul_tensorProj._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:147:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:147:8: warning: `kw_lrChart_aux._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:148:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:148:8: warning: `kw_lrChart_aux._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:149:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:149:8: warning: `kw_lrSixU_toE._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:150:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:150:8: warning: `kw_lrAdd_comulHom._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:151:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:151:8: warning: `kw_lrAdd_comulHom._proof_3` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:152:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:152:8: warning: `kw_lrAddNegDiag_negSubstGen._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:153:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:153:8: warning: `kwYEvalRingHom._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:155:14: warning: `kw_lrComul_tensorProj._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:166:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:169:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:170:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:184:652: warning: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:197:652: warning: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:310:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:310:8: warning: `T0.unitD._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:311:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:311:8: warning: `T0.unitD._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:312:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:312:8: warning: `T0.unitD._proof_3` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:313:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:313:8: warning: `T0.unitD._proof_4` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:315:14: warning: `T0.unitD._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:339:0: warning: automatically included section variable(s) unused in theorem `P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.unit1_apply`:
+  [CommRing A]
+  [Algebra A B]
+  hφ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CommRing A] [Algebra A B] hφ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:373:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:499:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:587:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:589:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:589:8: warning: `compactComponent._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:594:71: warning: `compactComponent._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:600:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:602:8: warning: declaration uses `sorry`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:608:81: warning: Variable name `hVU` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hVU
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/split-square-exact-repair-556/Challenge.lean:667:8: warning: declaration uses `sorry`

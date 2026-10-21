@@ -1,0 +1,4 @@
+{"structural": "ok: ()",
+ "limitation": "No kernel verdict",
+ "diagnostic": {"mismatches": [], "checked": 37503},
+ "axioms": "ok: ()"}

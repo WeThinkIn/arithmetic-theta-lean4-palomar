@@ -1,0 +1,23 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 93.42825526604429,
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck",
+    "/home/Palomar/workspace/arithmetic-theta/project/comparator-split-square-degree.json",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/primitives.json",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-exact-integration-558/SplitSquareDegreeChallenge-01.ndjson",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-exact-integration-558/SplitSquareDegreeSolution-01.ndjson"
+  ],
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/comparator-split-square-degree.json": "8d2e3c93b3f0bd45db44b75fa3f49c06f9137877e6a80a4eeb1a0b167f83196c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-exact-integration-558/SplitSquareDegreeChallenge-01.ndjson": "7744976d868bf827da74e1fb452d46eb93c8a91a0346cacfdc53f087d71edc79",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/split-exact-integration-558/SplitSquareDegreeSolution-01.ndjson": "f8db844882373105420e34d8c1da9e799e08adafbaff73c23568dc439380bf7c",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck": "e65b6dda0565d21be49be5a8a5112eb90ebb0c8bf5c3c5af8ed19281afd5554b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck.lean": "7e3e995b3ae356f6475263381a48565db0ba0e351f39127543bc384ec04c6850",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/primitives.json": "b217301595ce9113efe50a2c83df27b48613cc3834d2f0f8421d612e14ed5ca1",
+    "/home/Palomar/workspace/arithmetic-theta/project/SplitSquareDegreeChallenge.lean": "d0b893eb69c8cd53423d4b212db7d807ea1a313ae1868af8c046909ba36e53d1",
+    "/home/Palomar/workspace/arithmetic-theta/project/SplitSquareDegreeSolution.lean": "24f100c0c589c184aa51cc76d32acb498c6f6c344552d3ca277124d80a12e5da"
+  },
+  "inputs_unchanged": true,
+  "scope": "Actual root exports, trusted compareAt/checkAxioms. No kernel verdict."
+}

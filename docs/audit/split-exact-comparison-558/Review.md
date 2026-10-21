@@ -1,0 +1,9 @@
+# Exact comparison repair for full original endpoints 073 and 074
+
+Both independent Challenges preserve the original geometry, quantified fields, frames and conclusions. Five local audits pass, including compiled equality recovering each original theorem. Actual isolated exports pass unmodified `Lake.Check.compareAt` and `Lake.Check.checkAxioms`, with zero diagnostic mismatches. Each package contains 33 proposition targets and every literal Challenge proof hole is selected exactly once; no definition holes are permitted.
+
+The repair isolates the pinned compiler auxiliary-proof and matcher caches between extracted fragments and uses explicit original auxiliary propositions. Local lexical notation reduces source size without introducing mathematical providers. The complete discriminant divisor and exact square-cover degree equation/bound are retained. Source snapshots, export hashes and audit receipts are attached. Prior package receipts are historical records, not evidence for these new sources.
+
+The separately published general completion lemma reduces measured single-module peak RSS by 43.64% while preserving all 25 audited original declaration types and universes. It does not establish that official 16 GiB cold builds now fit. The earlier official split runs failed during solution build with OOM exit 137, before any kernel verdict.
+
+Actual four-root build passed in 62.49 seconds. Both named Challenge/Solution exports pass the unmodified comparison and axiom gate with unchanged input bindings. The pinned official source checker reports 4422 Lean files and zero issues, and all 1207 original delivery files are unchanged. Independent kernels and official verification remain pending for these repaired packages. Local interface coverage remains 98/103 original endpoints across the unchanged 13 requirements; it is not an official pass count. Full-paper acceptance is not claimed.
