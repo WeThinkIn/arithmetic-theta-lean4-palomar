@@ -5,8 +5,9 @@ project:
     Arithmetic constructions for finite families of positive-definite even integral
     lattice theta series, with complete relation kernels, image bases, rational
     coordinates, explicit coefficient bounds, and certified stopping criteria.
-    This workspace is undergoing a full-scope Lean version and module-system port;
-    Palomar verification has not yet completed.
+    The original Lean 4.33.1 delivery and the Lean 4.35.0-rc2 edition have passed
+    complete local verification of the specified development. Whole-paper
+    independent Palomar verification and registration remain in progress.
   license: "Apache-2.0"
   authors: ["Jue Ding"]
   responsible_maintainers: ["Jue Ding"]
@@ -30,11 +31,21 @@ automation:
 review:
   status: agent-reviewed
   notes: >-
-    The original Lean 4.33.1 delivery has a current exact-type and axiom audit.
-    The Lean 4.35.0-rc2 port and Palomar review are pending.
+    The original Lean 4.33.1 delivery has passed its exact-type and axiom audit.
+    The Lean 4.35.0-rc2 edition has passed the complete GoalRoot build and all
+    103 original endpoint type and standard-axiom checks. These local results
+    are distinct from official preflight, whole-paper semantic review and
+    registry acceptance, which remain incomplete. Scope-specific official
+    outcomes are recorded in docs/PalomarPreflight.md.
 status:
   scope: >-
     All thirteen original source requirements and all 103 frozen integration
-    obligations are retained. Current migration status is recorded in docs/Coverage.md.
+    obligations are retained. Local independent interface coverage and the
+    remaining scope are recorded in docs/Coverage.md; interface coverage is
+    not a count of official passes.
 fidelity:
-  divergences: No intended mathematical scope changes; port compilation and Challenge bridges remain to be verified.
+  divergences: >-
+    The published port preserves all 103 original endpoint statements, including
+    their hypotheses, universe parameters and full conclusions. Independent
+    Challenge/Solution coverage and whole-paper Palomar acceptance remain
+    separate, incomplete verification tasks.
