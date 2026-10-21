@@ -8,7 +8,7 @@ This repository presents the research manuscript, the complete Lean 4 formalizat
 
 **The complete formalization has passed local Lean verification for all 13 source requirements, represented by 103 exact theorem endpoints.** The original delivery was verified with Lean **4.33.1**. The Palomar-compatible edition published here has also passed the complete `GoalRoot` build and all 103 original endpoint type and axiom checks with Lean **4.35.0-rc2**. Independent Palomar verification is in progress.
 
-[Paper (PDF)](paper/Paper.pdf) · [Paper (LaTeX)](paper/Paper.tex) · [Original mathematical specification](paper/OriginalTask.tex) · [Formal theorem specification](docs/SourceObligations.json)
+[Paper (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20A%20formal%20Tate%20and%20finite-cover%20construction%20with%20Lean%20verification.pdf) · [Original mathematical specification](paper/OriginalTask.tex) · [Formal theorem specification](docs/SourceObligations.json)
 
 ## Main mathematical result
 
@@ -142,8 +142,7 @@ The selected statements and scope are documented in [`challenges/main-and-compon
 
 | Path | Contents |
 | --- | --- |
-| [`paper/Paper.pdf`](paper/Paper.pdf) | Accompanying research manuscript |
-| [`paper/Paper.tex`](paper/Paper.tex) | Manuscript source |
+| [Research manuscript (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20A%20formal%20Tate%20and%20finite-cover%20construction%20with%20Lean%20verification.pdf) | Accompanying research manuscript |
 | [`paper/OriginalTask.tex`](paper/OriginalTask.tex) | Original mathematical specification |
 | [`Proof/`](Proof/) | Formal proof modules and required local library sources |
 | [`Proof/GoalRoot.lean`](Proof/GoalRoot.lean) | Joint import of the complete delivered proof closure |
@@ -163,7 +162,7 @@ The modularity statements use the arithmetic geometric formulation specified in 
 
 For the mathematical result, cite the accompanying manuscript using its recorded author list and title:
 
-> *Arithmetic determination of relations among lattice theta series: A formal Tate and finite-cover construction with Lean verification.* See [the manuscript](paper/Paper.pdf) for authorship and version information.
+> *Arithmetic determination of relations among lattice theta series: A formal Tate and finite-cover construction with Lean verification.* See [the manuscript](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20A%20formal%20Tate%20and%20finite-cover%20construction%20with%20Lean%20verification.pdf) for authorship and version information.
 
 For the Lean formalization, cite this repository together with the exact Git commit used for verification:
 
