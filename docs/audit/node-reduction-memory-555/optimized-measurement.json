@@ -1,0 +1,20 @@
+{
+  "mode": "optimized",
+  "exit_code": 0,
+  "elapsed_seconds": 14.08,
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+    "-j1",
+    "-R",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/node-reduction-generic-repair-554",
+    "-o",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/node-reduction-generic-repair-554/optimized/TateNodeRestrictedPresentation.olean",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/node-reduction-generic-repair-554/TateNodeRestrictedPresentation.lean"
+  ],
+  "source_sha256": "58e3ed295a8a84eeeea04539964d64bf36e708d07bff7ca53c5043a4e6ef5ab0",
+  "source_unchanged": true,
+  "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "lean_path": "/home/Palomar/workspace/arithmetic-theta/evidence/node-reduction-generic-repair-554:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Cli/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/batteries/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/Qq/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/aesop/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/importGraph/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/plausible/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/packages/mathlib/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/project/.lake/build/lib/lean:/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/lib/lean",
+  "limitation": "Isolated diagnostic using warm pinned imports, not a cold full build or official pass.",
+  "max_rss_bytes": 3919552512
+}

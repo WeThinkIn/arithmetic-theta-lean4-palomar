@@ -1,0 +1,10 @@
+{
+  "result": {
+    "schema_version": 1,
+    "module_required": true,
+    "maximum_lines": 10000,
+    "files_checked": 4422
+  },
+  "issues": [],
+  "official_script_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44"
+}

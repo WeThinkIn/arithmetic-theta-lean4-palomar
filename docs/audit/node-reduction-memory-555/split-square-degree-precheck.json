@@ -1,0 +1,23 @@
+{
+  "exit_code": 1,
+  "elapsed_seconds": 64.8454760517925,
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck",
+    "/home/Palomar/workspace/arithmetic-theta/project/comparator-split-square-degree.json",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/primitives.json",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/node-reduction-integration-555/SplitSquareDegreeChallenge-01.ndjson",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/node-reduction-integration-555/SplitSquareDegreeSolution-01.ndjson"
+  ],
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/project/comparator-split-square-degree.json": "910d124831f5e8a7ebb02b4d4686747beac957995b22a7b7aaaeca2e77f5960b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/node-reduction-integration-555/SplitSquareDegreeChallenge-01.ndjson": "e4d79ce0212d41c7ebc8674116264d619eb8595793de4c36abe605a167012e0b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/node-reduction-integration-555/SplitSquareDegreeSolution-01.ndjson": "0c9869fc9823217f76c808d63adb52ea99853902db36561df1be8cf0df60627a",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck": "e65b6dda0565d21be49be5a8a5112eb90ebb0c8bf5c3c5af8ed19281afd5554b",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck.lean": "7e3e995b3ae356f6475263381a48565db0ba0e351f39127543bc384ec04c6850",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/primitives.json": "b217301595ce9113efe50a2c83df27b48613cc3834d2f0f8421d612e14ed5ca1",
+    "/home/Palomar/workspace/arithmetic-theta/project/SplitSquareDegreeChallenge.lean": "b949f1f97024aaf79e13b2614c307c9ff18333048b048e5948b8ad2ba2cd34f9",
+    "/home/Palomar/workspace/arithmetic-theta/project/SplitSquareDegreeSolution.lean": "fb5d02e1cc0a135748b3626c47c96d66570fbf47d2b7a26ee33c14c51205b79f"
+  },
+  "inputs_unchanged": true,
+  "scope": "Actual root exports, trusted compareAt/checkAxioms. No kernel verdict."
+}

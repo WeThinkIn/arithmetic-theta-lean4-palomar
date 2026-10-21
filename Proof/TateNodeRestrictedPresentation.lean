@@ -46,6 +46,26 @@ lemma completionReduction_mk (hI : I.FG) (n : ℕ) (z : AdicCompletion I R) :
 
 end General
 
+private theorem completion_finite_reductions_general {R : Type u} [CommRing R]
+    (I : Ideal R) (hI : I.FG) (J : Ideal (AdicCompletion I R))
+    (hJ : J = I.map (algebraMap R (AdicCompletion I R))) (n : ℕ) :
+    ∃! e : (AdicCompletion I R ⧸ J ^ n) ≃+* (R ⧸ I ^ n),
+      ∀ a : R, e (Ideal.Quotient.mk (J ^ n) (algebraMap R (AdicCompletion I R) a)) =
+        Ideal.Quotient.mk (I ^ n) a := by
+  let e := (Ideal.quotEquivOfEq (congrArg (fun K => K ^ n) hJ)).trans
+    (completionReduction I hI n)
+  have he (a : R) : e (Ideal.Quotient.mk _ (algebraMap R (AdicCompletion I R) a)) =
+      Ideal.Quotient.mk (I ^ n) a := by
+    simp [e, completionReduction_mk, AdicCompletion.algebraMap_apply, AdicCompletion.evalₐ_of]
+  refine ⟨e, he, ?_⟩
+  intro e' he'
+  apply RingEquiv.ext
+  intro z
+  obtain ⟨a, ha⟩ := Ideal.Quotient.mk_surjective (e z)
+  have hz : Ideal.Quotient.mk _ (algebraMap R (AdicCompletion I R) a) = z :=
+    e.injective ((he a).trans ha)
+  rw [← hz, he', he]
+
 /-- The entire tower of finite reductions, including its zero-ring level. -/
 theorem node_completion_finite_reductions :
     ∀ (k : Type u) [Field k] [CharZero k], ∀ n : ℕ,
@@ -54,24 +74,10 @@ theorem node_completion_finite_reductions :
         ∀ a : Node k, e (Ideal.Quotient.mk ((completedIdeal k) ^ n)
           (toCompleted k a)) = Ideal.Quotient.mk ((nodeIdeal k) ^ n) a := by
   intro k _ _ n
-  have := (node_noetherian_finite_type k).1
-  have hid : completedIdeal k = (nodeIdeal k).map (toCompleted k) := by
-    simp [completedIdeal, nodeIdeal, Ideal.map_span, Set.image_singleton]
-  let e := (Ideal.quotEquivOfEq (congrArg (fun J => J ^ n) hid)).trans
-    (completionReduction (nodeIdeal k) (IsNoetherian.noetherian _) n)
-  have he (a : Node k) : e (Ideal.Quotient.mk _ (toCompleted k a)) =
-      Ideal.Quotient.mk ((nodeIdeal k) ^ n) a := by
-    simp [e, completionReduction_mk, toCompleted, AdicCompletion.algebraMap_apply,
-      AdicCompletion.evalₐ_of]
-  refine ⟨e, he, ?_⟩
-  intro e' he'
-  apply RingEquiv.ext
-  intro z
-  obtain ⟨a, ha⟩ := Ideal.Quotient.mk_surjective (e z)
-  have hz : Ideal.Quotient.mk _ (toCompleted k a) = z :=
-    e.injective ((he a).trans ha)
-  rw [← hz, he', he]
-
+  apply completion_finite_reductions_general (nodeIdeal k) (Submodule.fg_span_singleton _)
+    (completedIdeal k) _ n
+  simpa [toCompleted] using (show completedIdeal k = (nodeIdeal k).map (toCompleted k) from by
+    simp [completedIdeal, nodeIdeal, Ideal.map_span, Set.image_singleton])
 
 /-! Change of base ideal on every module quotient and on the inverse limit. -/
 section ChangeBase

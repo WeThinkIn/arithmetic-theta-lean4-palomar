@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-21T05:16:53.240532+00:00",
+  "baseline": {
+    "elapsed_seconds": 69.95,
+    "max_rss_bytes": 6954680320
+  },
+  "generic_repair": {
+    "elapsed_seconds": 14.08,
+    "max_rss_bytes": 3919552512
+  },
+  "rss_reduction_fraction": 0.4364151432340746,
+  "exact_original_named_declarations": 25,
+  "standard_axioms_only": true,
+  "scope": "Same original theorem and all25nameddeclarationtypes; proof implementation changed",
+  "official_oom_resolved": false
+}

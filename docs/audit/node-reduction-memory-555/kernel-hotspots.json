@@ -1,0 +1,334 @@
+[
+  {
+    "seconds": 54.778663,
+    "declaration": "ArithmeticThetaNodeCharts.node_completion_finite_reductions"
+  },
+  {
+    "seconds": 0.183321,
+    "declaration": "ArithmeticThetaNodeCharts.presentationEquiv_polynomial"
+  },
+  {
+    "seconds": 0.156706,
+    "declaration": "ArithmeticThetaNodeCharts.completion_subtype_range"
+  },
+  {
+    "seconds": 0.079422,
+    "declaration": "ArithmeticThetaNodeCharts.completion_quotient_kernel"
+  },
+  {
+    "seconds": 0.049377,
+    "declaration": "ArithmeticThetaNodeCharts.node_restricted_presentation"
+  },
+  {
+    "seconds": 0.044229,
+    "declaration": "ArithmeticThetaNodeCharts.completionMap._proof_2"
+  },
+  {
+    "seconds": 0.040196,
+    "declaration": "ArithmeticThetaNodeCharts.baseCompletion"
+  },
+  {
+    "seconds": 0.037204,
+    "declaration": "ArithmeticThetaNodeCharts.completion_eval_kernel"
+  },
+  {
+    "seconds": 0.036247,
+    "declaration": "ArithmeticThetaNodeCharts.presentationEquiv"
+  },
+  {
+    "seconds": 0.032841,
+    "declaration": "ArithmeticThetaNodeCharts.baseCompletion._proof_3"
+  },
+  {
+    "seconds": 0.029845,
+    "declaration": "ArithmeticThetaNodeCharts.completionMap._proof_1"
+  },
+  {
+    "seconds": 0.02512,
+    "declaration": "ArithmeticThetaNodeCharts.completionMap_of"
+  },
+  {
+    "seconds": 0.024419,
+    "declaration": "ArithmeticThetaNodeCharts.baseCompletion._proof_2"
+  },
+  {
+    "seconds": 0.024125,
+    "declaration": "ArithmeticThetaNodeCharts.completionMap._proof_4"
+  },
+  {
+    "seconds": 0.023123,
+    "declaration": "ArithmeticThetaNodeCharts.baseCompletion._proof_4"
+  },
+  {
+    "seconds": 0.023099,
+    "declaration": "ArithmeticThetaNodeCharts.baseCompletion._proof_6"
+  },
+  {
+    "seconds": 0.022896,
+    "declaration": "ArithmeticThetaNodeCharts.baseCompletion._proof_5"
+  },
+  {
+    "seconds": 0.021812,
+    "declaration": "ArithmeticThetaNodeCharts.completionMap"
+  },
+  {
+    "seconds": 0.021354,
+    "declaration": "ArithmeticThetaNodeCharts.completionMap._proof_3"
+  },
+  {
+    "seconds": 0.020978,
+    "declaration": "ArithmeticThetaNodeCharts.completionQuotientEquiv_mk"
+  },
+  {
+    "seconds": 0.020679,
+    "declaration": "ArithmeticThetaNodeCharts.completion_endomorphism_eq_id"
+  },
+  {
+    "seconds": 0.020243,
+    "declaration": "ArithmeticThetaNodeCharts.baseCompletion._proof_1"
+  },
+  {
+    "seconds": 0.019416,
+    "declaration": "ArithmeticThetaNodeCharts.restrictedRelationIdeal_map"
+  },
+  {
+    "seconds": 0.017615,
+    "declaration": "ArithmeticThetaNodeCharts.baseQuotient_transition"
+  },
+  {
+    "seconds": 0.016868,
+    "declaration": "ArithmeticThetaNodeCharts.completion_base_mk"
+  },
+  {
+    "seconds": 0.015982,
+    "declaration": "ArithmeticThetaNodeCharts.baseCompletion_of"
+  },
+  {
+    "seconds": 0.014328,
+    "declaration": "ArithmeticThetaNodeCharts.completionQuotientEquiv"
+  },
+  {
+    "seconds": 0.013197,
+    "declaration": "ArithmeticThetaNodeCharts.completionMap_surjective"
+  },
+  {
+    "seconds": 0.011275,
+    "declaration": "ArithmeticThetaNodeCharts.completionReduction"
+  },
+  {
+    "seconds": 0.008657,
+    "declaration": "ArithmeticThetaNodeCharts.presentationEquiv._proof_3"
+  },
+  {
+    "seconds": 0.008647,
+    "declaration": "ArithmeticThetaNodeCharts.presentationEquiv._proof_2"
+  },
+  {
+    "seconds": 0.008112,
+    "declaration": "ArithmeticThetaNodeCharts.presentationEquiv._proof_1"
+  },
+  {
+    "seconds": 0.007328,
+    "declaration": "ArithmeticThetaNodeCharts.baseQuotient_mk"
+  },
+  {
+    "seconds": 0.006874,
+    "declaration": "ArithmeticThetaNodeCharts.completion_base_mk._proof_2"
+  },
+  {
+    "seconds": 0.006655,
+    "declaration": "ArithmeticThetaNodeCharts.baseQuotient"
+  },
+  {
+    "seconds": 0.005806,
+    "declaration": "ArithmeticThetaNodeCharts.baseQuotient._proof_1"
+  },
+  {
+    "seconds": 0.005759,
+    "declaration": "ArithmeticThetaNodeCharts.completionReduction_mk"
+  },
+  {
+    "seconds": 0.004194,
+    "declaration": "ArithmeticThetaNodeCharts.polynomialIdeal_map"
+  },
+  {
+    "seconds": 0.003778,
+    "declaration": "ArithmeticThetaNodeCharts.completionReduction._proof_6"
+  },
+  {
+    "seconds": 0.002994,
+    "declaration": "ArithmeticThetaNodeCharts.completionQuotientEquiv._proof_5"
+  },
+  {
+    "seconds": 0.002708,
+    "declaration": "ArithmeticThetaNodeCharts.completionMap._proof_6"
+  },
+  {
+    "seconds": 0.002244,
+    "declaration": "ArithmeticThetaNodeCharts.completionReduction._proof_5"
+  },
+  {
+    "seconds": 0.002131,
+    "declaration": "ArithmeticThetaNodeCharts.completionReduction._proof_4"
+  },
+  {
+    "seconds": 0.001889,
+    "declaration": "ArithmeticThetaNodeCharts.completionReduction._proof_3"
+  },
+  {
+    "seconds": 0.001725,
+    "declaration": "ArithmeticThetaNodeCharts.completionCongrIdeal_of"
+  },
+  {
+    "seconds": 0.001707,
+    "declaration": "ArithmeticThetaNodeCharts.presentationEquiv._proof_4"
+  },
+  {
+    "seconds": 0.001644,
+    "declaration": "ArithmeticThetaNodeCharts.completionQuotientEquiv._proof_4"
+  },
+  {
+    "seconds": 0.001621,
+    "declaration": "ArithmeticThetaNodeCharts.completionQuotientEquiv._proof_3"
+  },
+  {
+    "seconds": 0.001281,
+    "declaration": "ArithmeticThetaNodeCharts.completionQuotientEquiv._proof_1"
+  },
+  {
+    "seconds": 0.001267,
+    "declaration": "ArithmeticThetaNodeCharts.baseQuotient._proof_5"
+  },
+  {
+    "seconds": 0.001265,
+    "declaration": "ArithmeticThetaNodeCharts.baseQuotient._proof_4"
+  },
+  {
+    "seconds": 0.001146,
+    "declaration": "_private.TateNodeRestrictedPresentation.0.ArithmeticThetaNodeCharts.completion_base_mk._simp_1"
+  },
+  {
+    "seconds": 0.000933,
+    "declaration": "_private.TateNodeRestrictedPresentation.0.ArithmeticThetaNodeCharts.completion_quotient_kernel._simp_1_1"
+  },
+  {
+    "seconds": 0.000814,
+    "declaration": "ArithmeticThetaNodeCharts.completionMap._proof_5"
+  },
+  {
+    "seconds": 0.000692,
+    "declaration": "ArithmeticThetaNodeCharts.completionCongrIdeal"
+  },
+  {
+    "seconds": 0.000659,
+    "declaration": "ArithmeticThetaNodeCharts.completionQuotientEquiv._proof_2"
+  },
+  {
+    "seconds": 0.000658,
+    "declaration": "ArithmeticThetaNodeCharts.completionReduction._proof_1"
+  },
+  {
+    "seconds": 0.000637,
+    "declaration": "ArithmeticThetaNodeCharts.baseCompletion._proof_7"
+  },
+  {
+    "seconds": 0.000552,
+    "declaration": "ArithmeticThetaNodeCharts.baseCompletion._proof_9"
+  },
+  {
+    "seconds": 0.000545,
+    "declaration": "ArithmeticThetaNodeCharts.baseCompletion._proof_10"
+  },
+  {
+    "seconds": 0.000519,
+    "declaration": "ArithmeticThetaNodeCharts.baseCompletion._proof_8"
+  },
+  {
+    "seconds": 0.000437,
+    "declaration": "_private.TateNodeRestrictedPresentation.0.ArithmeticThetaNodeCharts.completion_eval_kernel._simp_1_1"
+  },
+  {
+    "seconds": 0.000309,
+    "declaration": "ArithmeticThetaNodeCharts.baseQuotient._proof_2"
+  },
+  {
+    "seconds": 0.000215,
+    "declaration": "_private.TateNodeRestrictedPresentation.0.ArithmeticThetaNodeCharts.completion_endomorphism_eq_id._simp_1_1"
+  },
+  {
+    "seconds": 0.0002,
+    "declaration": "ArithmeticThetaNodeCharts.baseQuotient._proof_3"
+  },
+  {
+    "seconds": 0.000108,
+    "declaration": "ArithmeticThetaNodeCharts.completionReduction._proof_2"
+  },
+  {
+    "seconds": 9.5e-05,
+    "declaration": "ArithmeticThetaNodeCharts.baseQuotient._proof_6"
+  },
+  {
+    "seconds": 7.8e-05,
+    "declaration": "ArithmeticThetaNodeCharts.baseQuotient._proof_7"
+  },
+  {
+    "seconds": 5.9e-05,
+    "declaration": "ArithmeticThetaNodeCharts.completionReduction.eq_1"
+  },
+  {
+    "seconds": 4.8e-05,
+    "declaration": "ArithmeticThetaNodeCharts.completionQuotientEquiv.eq_1"
+  },
+  {
+    "seconds": 4.5e-05,
+    "declaration": "ArithmeticThetaNodeCharts.completionQuotientEquiv.congr_simp"
+  },
+  {
+    "seconds": 4.2e-05,
+    "declaration": "ArithmeticThetaNodeCharts.completionReduction.congr_simp"
+  },
+  {
+    "seconds": 3.3e-05,
+    "declaration": "ArithmeticThetaNodeCharts.completionCongrIdeal.congr_simp"
+  },
+  {
+    "seconds": 2.9e-05,
+    "declaration": "ArithmeticThetaNodeCharts.completedIdeal.eq_1"
+  },
+  {
+    "seconds": 2.9e-05,
+    "declaration": "ArithmeticThetaNodeCharts.completedIdeal.eq_1"
+  },
+  {
+    "seconds": 2.5e-05,
+    "declaration": "ArithmeticThetaNodeCharts.polynomialIdeal.eq_1"
+  },
+  {
+    "seconds": 2.1e-05,
+    "declaration": "ArithmeticThetaNodeCharts.toRestricted.eq_1"
+  },
+  {
+    "seconds": 1.8e-05,
+    "declaration": "ArithmeticThetaNodeCharts.toCompleted.eq_1"
+  },
+  {
+    "seconds": 1.8e-05,
+    "declaration": "ArithmeticThetaNodeCharts.restrictedRelationIdeal.eq_1"
+  },
+  {
+    "seconds": 1.6e-05,
+    "declaration": "ArithmeticThetaNodeCharts.relationIdeal.eq_1"
+  },
+  {
+    "seconds": 1.5e-05,
+    "declaration": "ArithmeticThetaNodeCharts.nodeIdeal.eq_1"
+  },
+  {
+    "seconds": 1.5e-05,
+    "declaration": "ArithmeticThetaNodeCharts.nodeIdeal.eq_1"
+  },
+  {
+    "seconds": 1.5e-05,
+    "declaration": "ArithmeticThetaNodeCharts.nodeIdeal.eq_1"
+  }
+]
