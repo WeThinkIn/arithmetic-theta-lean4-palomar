@@ -8,7 +8,7 @@
     "accepted-048"
   ],
   "universe": "Original arbitrary positive n,h and every finite family of valid integral Gram matrices; original complex coefficient field and all original indexing/geometry in the cutoff consumer",
-  "target_count": 21,
+  "target_count": 34,
   "no_added_main_assumptions": true,
   "official_verified": false,
   "full_paper_claimed": false,
@@ -21,5 +21,26 @@
     "Nonzero unary sections with COMPLETE literal unary series on the same disk; actual coset tensor-polynomial matrix sections; COMPLETE theta expansion for EVERY complex scalar combination",
     "048 retains EXACT natural-division cutoff n*2^(normCount-1)*cardSL2/(48*level), all coefficients through that cutoff, and conclusion that the FULL theta series is zero"
   ],
-  "limitations": "047 constructs the entire stated complex geometric realization from arbitrary finite valid Gram families.048 is the original cutoff consumer for supplied valid indexing and geometric realization. These endpoints do not separately finish the arithmetic cyclotomic modularity, extended action or remaining final-consumer interfaces. Official verification and semantic review are separate."
+  "limitations": "047 constructs the entire stated complex geometric realization from arbitrary finite valid Gram families.048 is the original cutoff consumer for supplied valid indexing and geometric realization. These endpoints do not separately finish the arithmetic cyclotomic modularity, extended action or remaining final-consumer interfaces. Official verification and semantic review are separate.",
+  "explicit_original_helper_obligations": [
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+    "ArithmeticThetaBoundaryHodgeR0182.CompactHodgeLatticeExtensionR0182.compactComponent._proof_1",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_2",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_3",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_1",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_4"
+  ],
+  "local_complete_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "remaining_validation": [
+    "Fresh full official preflight for the exact published revision",
+    "Ordinary intake and semantic review"
+  ]
 }
