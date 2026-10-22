@@ -15,6 +15,14 @@ name = "ThetaProof"
 srcDir = "Proof"
 roots = ["GoalRoot"]
 globs = [
+  "ArithmeticRecoveryBase",
+  "ArithmeticRecoveryBridge",
+  "ArithmeticRecoveryConormalBridge",
+  "ArithmeticRecoveryLevelBridge669",
+  "ArithmeticRecoveryPullbackBridge",
+  "ArithmeticRecoveryRemainingBridges",
+  "ArithmeticRecoveryTensorBridge",
+  "ArithmeticRecoveryZeroBridge",
   "ConsumerFactorBridge",
   "ExtensionFactorBridge",
   "FactorBridge",

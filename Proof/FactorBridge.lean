@@ -1,5 +1,5 @@
 module
-public import Solution
+public import ArithmeticRecoveryBase
 public import CompactActualMetaplecticLevelR0209
 import Lean
 @[expose] public section

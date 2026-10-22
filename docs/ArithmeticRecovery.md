@@ -11,6 +11,13 @@ of any one component is not verification of the complete original endpoint or
 the whole paper. Original statement recovery, component provenance, official
 mechanical checks and whole-paper semantic review remain distinct obligations.
 
+The recovery dependency closure uses dedicated `ArithmeticRecovery*` modules.
+`FactorBridge` imports `ArithmeticRecoveryBase`, which supplies the recovery
+providers through their explicit module names. The repository-level `Solution`
+module remains the finite-determination interface. These distinct module paths
+preserve the recovery declaration namespaces and avoid resolving a provider
+through an unrelated interface with the same module name.
+
 Rebuild the recovery roots with
 `lake build +FactorBridge +SquareFactorBridge +ConsumerFactorBridge`.
 
