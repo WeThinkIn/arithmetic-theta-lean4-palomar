@@ -6,7 +6,7 @@
     "accepted-041"
   ],
   "universe": "Original k : Type algebraically closed characteristic-zero field, all positive L with 8 dividing L",
-  "target_count": 16,
+  "target_count": 28,
   "no_added_main_assumptions": true,
   "official_verified": false,
   "full_paper_claimed": false,
@@ -19,5 +19,25 @@
     "Complete theta(t^(L/2))^2 expansion on every canonical marking at the same disk and same generator",
     "Actual Tate cubic, all differential sheaf/pullback definitions and full LevelData/Compactification constructors"
   ],
-  "limitations": "The original LevelData, Compactification and canonical Hodge Extension are inputs. This endpoint constructs the unique compact alpha section for them; it does not separately construct those inputs or the half-divisor line, unary-family modularity or official acceptance."
+  "limitations": "The original LevelData, Compactification and canonical Hodge Extension are inputs. This endpoint constructs the unique compact alpha section for them; it does not separately construct those inputs or the half-divisor line, unary-family modularity or official acceptance.",
+  "explicit_original_helper_obligations": [
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_2",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_3",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_1",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_4"
+  ],
+  "local_complete_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "remaining_validation": [
+    "Fresh full official preflight for the exact published revision",
+    "Ordinary intake and semantic review"
+  ]
 }
