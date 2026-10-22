@@ -4,15 +4,23 @@
     "accepted-083",
     "accepted-086"
   ],
-  "target_count": 5,
-  "support_target_count": 3,
+  "target_count": 13,
+  "support_target_count": 11,
   "endpoint_target_count": 2,
   "theorem_names": [
     "ArithmeticThetaPalomarWeierstrass373.projectiveGeometry",
     "ArithmeticThetaPalomarKatoSupport394.normalModelExists",
     "ArithmeticThetaPalomarKatoSupport394.schemeUnitExists",
     "ArithmeticThetaPalomarKato394.schemeUnitNaturality",
-    "ArithmeticThetaPalomarKato394.schemeIntrinsicCharacterization"
+    "ArithmeticThetaPalomarKato394.schemeIntrinsicCharacterization",
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2"
   ],
   "original_endpoint_recoveries": {
     "accepted-083": "ArithmeticThetaPalomarKato394.recover_original_083",
@@ -41,7 +49,17 @@
     "registration"
   ],
   "remaining_validation": [
-    "parent real Lake root integration",
-    "scope review and selected official preflight/intake"
+    "Fresh official full preflight for this exact revision",
+    "Ordinary intake and semantic review"
+  ],
+  "explicit_original_helper_obligations": [
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2"
   ]
 }

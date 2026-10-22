@@ -27,12 +27,30 @@
   ],
   "independent_norm_scalar_action": "letI := (f.app U).hom.toAlgebra; Algebra.norm",
   "challenge_direct_imports": [
-    "Mathlib"
+    "Mathlib",
+    "Lean.Meta.Match.Match"
   ],
   "solution_direct_imports": [
     "Mathlib",
     "SchemeKatoUnitNaturalityR0250",
     "SchemeKatoIntrinsicCharacterizationR0254"
   ],
-  "no_evidence_module_imports": true
+  "no_evidence_module_imports": true,
+  "elaboration_alignment": {
+    "explicit_original_helper_obligations": [
+      "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+      "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+      "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+      "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+      "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+      "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+      "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+      "WeierstrassProjModel.kw_lrChart_aux._proof_2"
+    ],
+    "helper_source_module": "Proof/Definitions/Def_WeierstrassCurve_ProjModel_GroupLawVocabulary.lean",
+    "helper_source_sha256": "4f7a521b2bc48967c5f3d863486e6c8405761855bd9a6b3da059050233c68c9a",
+    "new_axioms": false,
+    "original_targets_preserved": true,
+    "method": "Original helper theorem types are explicit obligations; Solution supplies their original proofs. Cache resets follow source module boundaries; the origin-point instance matches Solution."
+  }
 }

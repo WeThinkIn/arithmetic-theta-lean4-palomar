@@ -37,7 +37,8 @@ automation:
     are recorded here.
 review:
   status: agent-reviewed
-  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
+  notes: Independent Mathlib-based Challenge and implementation bridge compiled locally;
+    Lean elaboration cache controls reproduce the original helper references.
     Official mechanical and semantic review are pending for this configuration.
 status:
   scope: 'Complete original accepted083 and086: Kato unit naturality for every actual
