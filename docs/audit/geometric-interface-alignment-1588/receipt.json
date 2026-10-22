@@ -1,0 +1,38 @@
+{
+  "local_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "original_endpoint_ids": [
+    "accepted-028"
+  ],
+  "original_targets_retained": 30,
+  "additional_original_helper_obligations": [],
+  "configured_targets": 30,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_sha256": "46beb6c0ffd8fe990ba376441f3bdcc8c91a12ae869e7244312535bcff49eeb4",
+  "challenge_bytes": 101181,
+  "challenge_lines": 990,
+  "configuration_sha256": "a037eb4e5846918e6aea93a0b6b2afa3a6009e536a1c8fa5a59ca6623f66ee45",
+  "solution_sha256": "2b6a35952c40e81cc4f4f5cfafc22f0fd0a0ef5375aec7eb2f374101885b77b9",
+  "strict_receipt_sha256": "24f29c9082d7c2fb714afede09726af96b9a972577b6123b4625777213fee772",
+  "strict_verifier_sha256": "e65b6dda0565d21be49be5a8a5112eb90ebb0c8bf5c3c5af8ed19281afd5554b",
+  "primitives_sha256": "b217301595ce9113efe50a2c83df27b48613cc3834d2f0f8421d612e14ed5ca1",
+  "exports": {
+    "challenge": {
+      "bytes": 303519081,
+      "sha256": "99661ab6b7ddf1a8ce5d7c4ddb386e07ab6a05779982fefb9705f43e9ccd4b1e"
+    },
+    "solution": {
+      "bytes": 2475871650,
+      "sha256": "f00e341d1342b3c3d72bbcf25f902b16d01745de885f9d70e9d3804750cf2acf"
+    }
+  },
+  "markers": [
+    "TRUSTED_STRUCTURAL_COMPARISON_PASS",
+    "TRUSTED_AXIOM_CLOSURE_PASS"
+  ],
+  "limitation": "Local complete target-closure structural comparison and standard-axiom closure. Official independent-kernel acceptance and whole-paper semantic review remain separate."
+}

@@ -45,5 +45,16 @@
       "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_4"
     ],
     "source": "docs/audit/strict-structural-comparison-541"
+  },
+  "current_interface_validation": {
+    "challenge_direct_imports": [
+      "Mathlib",
+      "Lean.Meta.Match.Match"
+    ],
+    "original_targets_preserved": true,
+    "additional_original_helper_obligations": [],
+    "permitted_axioms_unchanged": true,
+    "source_definitions_and_solution_proofs_preserved": true,
+    "strict_receipt": "docs/audit/geometric-interface-alignment-1588/receipt.json"
   }
 }

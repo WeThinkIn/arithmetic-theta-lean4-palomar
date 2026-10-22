@@ -21,7 +21,8 @@ classification:
 sources:
 - title: Arithmetic determination of relations among lattice theta series
   type: paper
-  location: paper/Arithmetic determination of relations among lattice theta series - Exact Tate normalization and common finite covers.pdf
+  location: paper/Arithmetic determination of relations among lattice theta series
+    - Exact Tate normalization and common finite covers.pdf
   relationship: formalizes
 - title: Original arithmetic theta kernel task
   type: paper
@@ -37,8 +38,10 @@ automation:
     are recorded here.
 review:
   status: agent-reviewed
-  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
-    Official mechanical and semantic review are pending for this configuration.
+  notes: Independent Mathlib-based Challenge with Lean elaboration support and unchanged
+    Solution. Complete local strict target-dependency and standard-axiom comparison
+    passed. Fresh official mechanical and semantic review remain pending for this
+    revision.
 status:
   scope: 'Complete original accepted080 and081: canonical discriminant-square section
     exists for every actual elliptic group family over every scheme over a characteristic-zero

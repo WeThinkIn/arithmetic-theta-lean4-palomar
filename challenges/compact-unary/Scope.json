@@ -21,5 +21,11 @@
   "limitations": "Canonical level geometry and its Hodge extension are supplied exactly as in original028. This constructs its actual compact unary section over algebraically closed characteristic-zero fields; arbitrary-field descent and matrix-family assembly are separate endpoints. Not an official verification result.",
   "local_exact_exported_comparison": true,
   "local_axiom_closure": true,
-  "structural_repair": "Pinned compiler proof/matcher caches are reset between source fragments; thirteen original auxiliary propositions are explicit theorem targets. Mathematical data definitions and the original main theorem are preserved. No definition holes."
+  "structural_repair": "Pinned compiler proof/matcher caches are reset between source fragments; thirteen original auxiliary propositions are explicit theorem targets. Mathematical data definitions and the original main theorem are preserved. No definition holes.",
+  "local_complete_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "remaining_validation": [
+    "Fresh full official preflight for the exact published revision",
+    "Ordinary intake and semantic review"
+  ]
 }

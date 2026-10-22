@@ -791,7 +791,10 @@ def structureMap (W : WeierstrassCurve F) : Curve F W ⟶ Spec (CommRingCat.of F
 def origin (W : WeierstrassCurve F) : Spec (CommRingCat.of F) ⟶ Curve F W := (WeierstrassProjModel.kwZeroSect F W).val
 abbrev Law (W : WeierstrassCurve F) := WeierstrassProjModel.RelativeGroupLaw F (structureMap F W)
 def IsOriginLaw (W : WeierstrassCurve F) (G : Law F W) : Prop := (∀ {V : Scheme.{u}} (t : V ⟶ Spec (CommRingCat.of F)), (G.one t).val = t ≫ origin F W) ∧ (∀ {V : Scheme.{u}} (t : V ⟶ Spec (CommRingCat.of F)) (x y : SchemeHomOver t (structureMap F W)), G.mul t x y = G.mul t y x)
+section
+attribute [local instance 2000] HenselianLocalRing.toIsLocalRing
 def originPoint (W : WeierstrassCurve F) : Curve F W := origin F W (IsLocalRing.closedPoint F)
+end
 def katoOrder (W : WeierstrassCurve F) (G : Law F W) (c : ℕ) (x : Curve F W) : ℤ := by
   classical
   exact (if x = originPoint F W then (c : ℤ)^2 else 0) - (if G.schemeNsmul c x = originPoint F W then 1 else 0)

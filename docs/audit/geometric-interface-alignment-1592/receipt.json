@@ -1,0 +1,52 @@
+{
+  "local_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "original_endpoint_ids": [
+    "accepted-052",
+    "accepted-053",
+    "accepted-054",
+    "accepted-095",
+    "accepted-096",
+    "accepted-097"
+  ],
+  "original_targets_retained": 37,
+  "additional_original_helper_obligations": [
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2"
+  ],
+  "configured_targets": 45,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_sha256": "5e1a02bc092b510ef2c54d7e50f31ca5f52822d34022bf834d74d891558b518d",
+  "challenge_bytes": 99430,
+  "challenge_lines": 1000,
+  "configuration_sha256": "34fe3c8b4cd391c3ef6b1e27cea84840966f80be7f3b0720330b6ef3166ad439",
+  "solution_sha256": "91c9ebc25ddc3ae54215d44c6a7d0a5c7380d207d09a3fdfef95ba8870df6a32",
+  "strict_receipt_sha256": "df6fff803bc17e4ac4a205c594a6b8497f2e32bfb47f818cb8f509b79c76a9b2",
+  "strict_verifier_sha256": "e65b6dda0565d21be49be5a8a5112eb90ebb0c8bf5c3c5af8ed19281afd5554b",
+  "primitives_sha256": "b217301595ce9113efe50a2c83df27b48613cc3834d2f0f8421d612e14ed5ca1",
+  "exports": {
+    "challenge": {
+      "bytes": 285199610,
+      "sha256": "de4761925b0cedec21e1c70bd6672028aa94a476a392ee7e09b0dfc4b5891667"
+    },
+    "solution": {
+      "bytes": 1937613482,
+      "sha256": "9fdd67d7e2ebc0f461c236bb80af1e5f26cde56e95d7bd4fa833d6f0afb31749"
+    }
+  },
+  "markers": [
+    "TRUSTED_STRUCTURAL_COMPARISON_PASS",
+    "TRUSTED_AXIOM_CLOSURE_PASS"
+  ],
+  "limitation": "Local complete target-closure structural comparison and standard-axiom closure. Official independent-kernel acceptance and whole-paper semantic review remain separate."
+}

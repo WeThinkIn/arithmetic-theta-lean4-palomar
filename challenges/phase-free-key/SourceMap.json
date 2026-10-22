@@ -8,10 +8,10 @@
     "/home/Palomar/workspace/arithmetic-theta/evidence/phase-free-key-package-466/DependencyProbe-check-01.log": "21923fd888bf677bb550dc8788f3a3776af6c93e49d90939b948fce24fc4a142",
     "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874"
   },
-  "transformation": "Remove declarations outside the needed key closure while retaining original nonvacuity/existence supports; replace22 Proposition proof bodies with37 total explicitly compared targets; whitespace-only joining elsewhere",
+  "transformation": "Preserve all 37 original obligations and add 8 original Weierstrass support obligations; restore omitted original definitions and module elaboration context; use source-equivalent layout within mandatory bounds.",
   "transformation_details": "transformation.json",
-  "semantic_definitions": "380 non-Proposition types and available bodies definitionally equal to Solution; no unspecified semantic definition_names",
-  "target_types": "All37 types/universes compared explicitly to original/Solution declarations with standard axiom closure",
+  "semantic_definitions": "Complete exported target dependency closure passes strict structural comparison with the unchanged Solution; no unspecified semantic definition_names.",
+  "target_types": "All 45 configured target types/universes and standard axiom closure pass complete local strict comparison.",
   "full_original_recovery": "Original053054 theorem equality proved by rfl; inherited052095096097 also recovered",
   "bridges": [
     "globalSectionsEquiv_eq_original",
@@ -24,5 +24,30 @@
     "recover_original_053",
     "recover_original_054"
   ],
-  "prototype_source": "docs/audit/phase-free-key-candidate-466/Challenge.uncompressed.lean.txt"
+  "prototype_source": "docs/audit/phase-free-key-candidate-466/Challenge.uncompressed.lean.txt",
+  "current_interface_validation": {
+    "challenge_direct_imports": [
+      "Mathlib",
+      "Lean.Meta.Match.Match"
+    ],
+    "original_targets_preserved": true,
+    "additional_original_helper_obligations": [
+      "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+      "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+      "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+      "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+      "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+      "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+      "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+      "WeierstrassProjModel.kw_lrChart_aux._proof_2"
+    ],
+    "permitted_axioms_unchanged": true,
+    "source_definitions_and_solution_proofs_preserved": true,
+    "strict_receipt": "docs/audit/geometric-interface-alignment-1592/receipt.json"
+  },
+  "historical_transformation": {
+    "transformation": "Remove declarations outside the needed key closure while retaining original nonvacuity/existence supports; replace22 Proposition proof bodies with37 total explicitly compared targets; whitespace-only joining elsewhere",
+    "semantic_definitions": "380 non-Proposition types and available bodies definitionally equal to Solution; no unspecified semantic definition_names",
+    "target_types": "All37 types/universes compared explicitly to original/Solution declarations with standard axiom closure"
+  }
 }

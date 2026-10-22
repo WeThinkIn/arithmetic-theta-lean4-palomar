@@ -1,5 +1,6 @@
 module
 public import Mathlib
+import all Lean.Meta.Match.Match
 @[expose] public section
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
@@ -292,6 +293,42 @@ def projModelStrCR (V : WeierstrassCurve.Projective R) :
   Proj.toSpecZero (projModelGradingCR V) ≫
     Spec.map (CommRingCat.ofHom (algebraMap R ((projModelGradingCR V) 0)))
 end Carrier
+set_option hygiene false
+set_option quotPrecheck false
+local notation "gh1567_0" => (@HomogeneousIdeal.toIdeal.{0, u_1, u_1} Nat (@Submodule.{u_1, u_1} R (@MvPolynomial.{0, u_1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) R (@CommRing.toCommSemiring.{u_1} R inst)) (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)) (@AddMonoidAlgebra.instAddCommMonoid.{u_1, 0} R (@Finsupp.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))) (@AddMonoidAlgebra.instModule.{u_1, u_1, 0} R R (@Finsupp.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)) (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)) (@Semiring.toModule.{u_1} R (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))))) (@MvPolynomial.{0, u_1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) R (@CommRing.toCommSemiring.{u_1} R inst)) (@AddMonoidAlgebra.semiring.{u_1, 0} R (@Finsupp.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)) (@Finsupp.instAddMonoid.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) Nat Nat.instAddMonoid)) (@Submodule.setLike.{u_1, u_1} R (@MvPolynomial.{0, u_1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) R (@CommRing.toCommSemiring.{u_1} R inst)) (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)) (@AddMonoidAlgebra.instAddCommMonoid.{u_1, 0} R (@Finsupp.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))) (@AddMonoidAlgebra.instModule.{u_1, u_1, 0} R R (@Finsupp.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)) (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)) (@Semiring.toModule.{u_1} R (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))))) (@WeierstrassProjModel.projModelHomogeneousIdealCR._proof_1.{u_1} R inst) (@MvPolynomial.homogeneousSubmodule.{0, u_1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) R (@CommRing.toCommSemiring.{u_1} R inst)) instDecidableEqNat Nat.instAddMonoid (@MvPolynomial.gradedAlgebra.{0, u_1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) R (@CommRing.toCommSemiring.{u_1} R inst)) (@WeierstrassProjModel.projModelHomogeneousIdealCR.{u_1} R inst (@WeierstrassCurve.toProjective.{u_1} R W)))
+local notation "gh1567_1" => (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+local notation "gh1567_2" => (@MvPolynomial.{0, u_1} gh1567_1 R (@CommRing.toCommSemiring.{u_1} R inst))
+local notation "gh1567_3" => (@Submodule.Quotient.module'.{u_1, u_1, u_1} gh1567_2 gh1567_2 (@AddMonoidAlgebra.ring.{u_1, 0} R (@Finsupp.{0, 0} gh1567_1 Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) (@CommRing.toRing.{u_1} R inst) (@Finsupp.instAddMonoid.{0, 0} gh1567_1 Nat Nat.instAddMonoid)) (@AddMonoidAlgebra.addCommGroup.{u_1, 0} R (@Finsupp.{0, 0} gh1567_1 Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) (@CommRing.toRing.{u_1} R inst)) (@Semiring.toModule.{u_1} gh1567_2 (@AddMonoidAlgebra.semiring.{u_1, 0} R (@Finsupp.{0, 0} gh1567_1 Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)) (@Finsupp.instAddMonoid.{0, 0} gh1567_1 Nat Nat.instAddMonoid))) R (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)) (@Algebra.toSMul.{u_1, u_1} R gh1567_2 (@CommRing.toCommSemiring.{u_1} R inst) (@AddMonoidAlgebra.semiring.{u_1, 0} R (@Finsupp.{0, 0} gh1567_1 Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)) (@Finsupp.instAddMonoid.{0, 0} gh1567_1 Nat Nat.instAddMonoid)) (@AddMonoidAlgebra.algebra.{u_1, u_1, 0} R R (@Finsupp.{0, 0} gh1567_1 Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) (@CommRing.toCommSemiring.{u_1} R inst) (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)) (@Algebra.id.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)) (@Finsupp.instAddMonoid.{0, 0} gh1567_1 Nat Nat.instAddMonoid))) (@MvPolynomial.instModuleSelf.{0, u_1} gh1567_1 R inst) (@WeierstrassProjModel.kw_lrComul_tensorProj._proof_1.{u_1} R inst) gh1567_0)
+local notation "gh1567_4" => (@Finsupp.{0, 0} gh1567_1 Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+local notation "gh1567_5" => (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))
+local notation "gh1567_6" => (@Submodule.Quotient.addCommGroup.{u_1, u_1} gh1567_2 gh1567_2 (@CommRing.toRing.{u_1} gh1567_2 (@AddMonoidAlgebra.commRing.{u_1, 0} R gh1567_4 inst (@Finsupp.instAddCommMonoid.{0, 0} gh1567_1 Nat Nat.instAddCommMonoid))) (@Ring.toAddCommGroup.{u_1} gh1567_2 (@CommRing.toRing.{u_1} gh1567_2 (@AddMonoidAlgebra.commRing.{u_1, 0} R gh1567_4 inst (@Finsupp.instAddCommMonoid.{0, 0} gh1567_1 Nat Nat.instAddCommMonoid)))) (@Semiring.toModule.{u_1} gh1567_2 (@Ring.toSemiring.{u_1} gh1567_2 (@CommRing.toRing.{u_1} gh1567_2 (@AddMonoidAlgebra.commRing.{u_1, 0} R gh1567_4 inst (@Finsupp.instAddCommMonoid.{0, 0} gh1567_1 Nat Nat.instAddCommMonoid))))) gh1567_0)
+local notation "gh1567_7" => (@AddMonoidAlgebra.ring.{u_1, 0} R gh1567_4 (@CommRing.toRing.{u_1} R inst) (@Finsupp.instAddMonoid.{0, 0} gh1567_1 Nat Nat.instAddMonoid))
+local notation "gh1567_8" => (@WeierstrassProjModel.ProjModelRingCR.{u_1} R inst (@WeierstrassCurve.toProjective.{u_1} R W))
+local notation "gh1567_9" => (@AddMonoidAlgebra.semiring.{u_1, 0} R gh1567_4 gh1567_5 (@Finsupp.instAddMonoid.{0, 0} gh1567_1 Nat Nat.instAddMonoid))
+local notation "gh1567_10" => (@Submodule.Quotient.addCommGroup.{u_1, u_1} gh1567_2 gh1567_2 gh1567_7 (@AddMonoidAlgebra.addCommGroup.{u_1, 0} R gh1567_4 (@CommRing.toRing.{u_1} R inst)) (@Semiring.toModule.{u_1} gh1567_2 gh1567_9) gh1567_0)
+local notation "gh1567_11" => (@AddMonoidAlgebra.instModule.{u_1, u_1, 0} R R gh1567_4 gh1567_5 gh1567_5 (@Semiring.toModule.{u_1} R gh1567_5))
+local notation "gh1567_12" => (@Algebra.toSMul.{u_1, u_1} R gh1567_2 (@CommRing.toCommSemiring.{u_1} R inst) gh1567_9 (@AddMonoidAlgebra.algebra.{u_1, u_1, 0} R R gh1567_4 (@CommRing.toCommSemiring.{u_1} R inst) gh1567_5 (@Algebra.id.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)) (@Finsupp.instAddMonoid.{0, 0} gh1567_1 Nat Nat.instAddMonoid)))
+local notation "gh1567_13" => (@OfNat.ofNat.{u_1} R (nat_lit 0) (@Zero.toOfNat0.{u_1} R (@MulZeroClass.toZero.{u_1} R (@instMulZeroClassOfSemiring.{u_1} R gh1567_5))))
+local notation "gh1567_14" => (@AddMonoidAlgebra.instAddCommMonoid.{u_1, 0} R gh1567_4 gh1567_5)
+local notation "gh1567_15" => (@Ring.toSemiring.{u_1} gh1567_2 gh1567_7)
+local notation "gh1567_16" => (@Ring.toSemiring.{u_1} R (@CommRing.toRing.{u_1} R inst))
+set_option quotPrecheck true
+set_option hygiene true
+theorem _root_.WeierstrassProjModel.kw_lrSixU_toE._proof_1 : @LT.lt.{0} Nat (@Preorder.toLT.{0} Nat (@PartialOrder.toPreorder.{0} Nat Nat.instPartialOrder)) (@OfNat.ofNat.{0} Nat (nat_lit 0) (@Zero.toOfNat0.{0} Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))) (@OfNat.ofNat.{0} Nat (nat_lit 1) (@One.toOfNat1.{0} Nat Nat.instOne)) := by sorry
+theorem _root_.WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1 : @NeZero.{0} Nat (@Zero.ofOfNat0.{0} Nat (instOfNatNat (nat_lit 0))) (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) := by sorry
+theorem _root_.WeierstrassProjModel.kw_lrComul_tensorProj._proof_1.{u_1} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R], @IsScalarTower.{u_1, u_1, u_1} R gh1567_2 gh1567_2 gh1567_12 (@instSMulOfMul.{u_1} gh1567_2 (@Distrib.toMul.{u_1} gh1567_2 (@instDistribOfSemiring.{u_1} gh1567_2 gh1567_9))) gh1567_12 := by sorry
+theorem _root_.WeierstrassProjModel.kw_lrAdd_comulHom._proof_2.{u_1} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R], @AddSubmonoidClass.{u_1, u_1} (@Submodule.{u_1, u_1} R gh1567_2 gh1567_5 gh1567_14 gh1567_11) gh1567_2 (@AddMonoid.toAddZeroClass.{u_1} gh1567_2 (@AddCommMonoid.toAddMonoid.{u_1} gh1567_2 gh1567_14)) (@Submodule.setLike.{u_1, u_1} R gh1567_2 gh1567_5 gh1567_14 gh1567_11) := by sorry
+theorem _root_.WeierstrassProjModel.kwYEvalRingHom._proof_2.{u_1} : ∀ (R : Type u_1) [inst : CommRing.{u_1} R] (W : WeierstrassCurve.{u_1} R) (a : @MvPolynomial.{0, u_1} gh1567_1 R (@CommRing.toCommSemiring.{u_1} R inst)) (ha : @Membership.mem.{u_1, u_1} gh1567_2 (@Ideal.{u_1} gh1567_2 gh1567_15) (@SetLike.instMembership.{u_1, u_1} (@Ideal.{u_1} gh1567_2 gh1567_15) gh1567_2 (@Submodule.setLike.{u_1, u_1} gh1567_2 gh1567_2 gh1567_15 (@Semiring.toAddCommMonoid.{u_1} gh1567_2 gh1567_15) (@Semiring.toModule.{u_1} gh1567_2 gh1567_15))) gh1567_0 a), @Eq.{u_1 + 1} R (@DFunLike.coe.{u_1 + 1, u_1 + 1, u_1 + 1} (@RingHom.{u_1, u_1} gh1567_2 R (@Semiring.toNonAssocSemiring.{u_1} gh1567_2 gh1567_15) (@Semiring.toNonAssocSemiring.{u_1} R gh1567_5)) gh1567_2 (fun (x : @MvPolynomial.{0, u_1} gh1567_1 R (@CommRing.toCommSemiring.{u_1} R inst)) => R) (@RingHom.instFunLike.{u_1, u_1} gh1567_2 R (@Semiring.toNonAssocSemiring.{u_1} gh1567_2 gh1567_15) (@Semiring.toNonAssocSemiring.{u_1} R gh1567_5)) (@MvPolynomial.eval.{u_1, 0} R gh1567_1 (@CommRing.toCommSemiring.{u_1} R inst) (@Matrix.vecCons.{u_1} R (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) gh1567_13 (@Matrix.vecCons.{u_1} R (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (@OfNat.ofNat.{u_1} R (nat_lit 1) (@One.toOfNat1.{u_1} R (@AddMonoidWithOne.toOne.{u_1} R (@AddGroupWithOne.toAddMonoidWithOne.{u_1} R (@Ring.toAddGroupWithOne.{u_1} R (@CommRing.toRing.{u_1} R inst)))))) (@Matrix.vecCons.{u_1} R (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) gh1567_13 (@Matrix.vecEmpty.{u_1} R))))) a) gh1567_13 := by sorry
+theorem _root_.WeierstrassProjModel.kw_lrChart_aux._proof_1.{u_1} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] (W : WeierstrassCurve.{u_1} R), @AddSubgroupClass.{u_1, u_1} (@Submodule.{u_1, u_1} R gh1567_8 gh1567_16 (@AddCommGroup.toAddCommMonoid.{u_1} gh1567_8 gh1567_10) gh1567_3) gh1567_8 (@AddGroup.toSubNegMonoid.{u_1} gh1567_8 (@AddCommGroup.toAddGroup.{u_1} gh1567_8 gh1567_10)) (@Submodule.setLike.{u_1, u_1} R gh1567_8 gh1567_16 (@AddCommGroup.toAddCommMonoid.{u_1} gh1567_8 gh1567_10) gh1567_3) := by sorry
+theorem _root_.WeierstrassProjModel.kw_lrAdd_comulHom._proof_3.{u_1} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] (W : WeierstrassCurve.{u_1} R), @Ideal.IsTwoSided.{u_1} gh1567_2 (@CommSemiring.toSemiring.{u_1} gh1567_2 (@CommRing.toCommSemiring.{u_1} gh1567_2 (@AddMonoidAlgebra.commRing.{u_1, 0} R gh1567_4 inst (@Finsupp.instAddCommMonoid.{0, 0} gh1567_1 Nat Nat.instAddCommMonoid)))) (@HomogeneousIdeal.toIdeal.{0, u_1, u_1} Nat (@Submodule.{u_1, u_1} R gh1567_2 gh1567_5 gh1567_14 gh1567_11) gh1567_2 gh1567_9 (@Submodule.setLike.{u_1, u_1} R gh1567_2 gh1567_5 gh1567_14 gh1567_11) (@WeierstrassProjModel.kw_lrAdd_comulHom._proof_2.{u_1} R inst) (@MvPolynomial.homogeneousSubmodule.{0, u_1} gh1567_1 R (@CommRing.toCommSemiring.{u_1} R inst)) instDecidableEqNat Nat.instAddMonoid (@MvPolynomial.gradedAlgebra.{0, u_1} gh1567_1 R (@CommRing.toCommSemiring.{u_1} R inst)) (@WeierstrassProjModel.projModelHomogeneousIdealCR.{u_1} R inst (@WeierstrassCurve.toProjective.{u_1} R W))) := by sorry
+theorem _root_.WeierstrassProjModel.kw_lrChart_aux._proof_2.{u_1} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] (W : WeierstrassCurve.{u_1} R), @AddSubgroupClass.{u_1, u_1} (@Submodule.{u_1, u_1} R gh1567_8 gh1567_16 (@AddCommGroup.toAddCommMonoid.{u_1} gh1567_8 gh1567_6) gh1567_3) gh1567_8 (@AddGroup.toSubNegMonoid.{u_1} gh1567_8 (@AddCommGroup.toAddGroup.{u_1} gh1567_8 gh1567_6)) (@Submodule.setLike.{u_1, u_1} R gh1567_8 gh1567_16 (@AddCommGroup.toAddCommMonoid.{u_1} gh1567_8 gh1567_6) gh1567_3) := by sorry
+run_cmd do
+  for n in [`WeierstrassProjModel.kw_lrSixU_toE._proof_1,`WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1,`WeierstrassProjModel.kw_lrComul_tensorProj._proof_1,`WeierstrassProjModel.kw_lrAdd_comulHom._proof_2,`WeierstrassProjModel.kwYEvalRingHom._proof_2,`WeierstrassProjModel.kw_lrChart_aux._proof_1,`WeierstrassProjModel.kw_lrAdd_comulHom._proof_3,`WeierstrassProjModel.kw_lrChart_aux._proof_2] do
+    let env ← Lean.getEnv
+    let some ci := env.find? n | throwError "Missing support obligation {n}"
+    let key : Lean.Meta.AuxLemmaKey := { type := ci.type, isPrivate := false, defeq := false }
+    Lean.modifyEnv fun env => Lean.Meta.auxLemmasExt.modifyState env fun s =>
+      { s with lemmas := s.lemmas.insert key (ci.name, ci.levelParams) }
 variable (R : Type u) [CommRing R]
 section ZeroSection
 variable (W : WeierstrassCurve R)
@@ -387,6 +424,7 @@ structure RelativeGroupLaw (R : Type u) [CommRing R] {A : Scheme.{u}}
     schemeHomOverComp ψ hψ (mul t x y) =
       mul t' (schemeHomOverComp ψ hψ x) (schemeHomOverComp ψ hψ y)
 end WeierstrassProjModel
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace ArithmeticThetaRelativeKatoR0169
 open NeronModelInfra
 variable (R : Type u) [CommRing R]
@@ -441,8 +479,11 @@ def IsOriginLaw (W : WeierstrassCurve F) (G : Law F W) : Prop :=
     (G.one t).val = t ≫ origin F W) ∧
   (∀ {V : Scheme.{u}} (t : V ⟶ Spec (CommRingCat.of F))
     (x y : SchemeHomOver t (structureMap F W)), G.mul t x y = G.mul t y x)
+section
+attribute [local instance 2000] HenselianLocalRing.toIsLocalRing
 def originPoint (W : WeierstrassCurve F) : Curve F W :=
   origin F W (IsLocalRing.closedPoint F)
+end
 def katoOrder (W : WeierstrassCurve F) (G : Law F W) (c : ℕ)
     (x : Curve F W) : ℤ := by
   classical
@@ -461,6 +502,7 @@ def IsKatoFunction (W : WeierstrassCurve F) (G : Law F W) (c : ℕ)
         ArithmeticThetaGeometricNormR0150.IsFieldMap (G.schemeNsmul d) φ →
           ArithmeticThetaGeometricNormR0150.fieldNorm φ g = g
 end ArithmeticThetaGeneralEllipticKatoR0168
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace ArithmeticThetaRelativeKatoR0169
 variable (R : Type u) [CommRing R] [IsDomain R]
 abbrev GenericCurve (W : WeierstrassCurve R) : Scheme.{u} :=
@@ -500,57 +542,48 @@ def IsRelativeKato (c : ℕ) (g : (Curve R W).functionField) : Prop :=
 end ArithmeticThetaRelativeKatoR0169
 open MonoidalCategory
 namespace ArithmeticThetaSheafTensor
-
 variable (X : Scheme.{u})
-
-local instance : MonoidalCategory X.PresheafOfModules :=
+local instance instMonoidalCategoryPresheafOfModules_actualSheafTensor : MonoidalCategory X.PresheafOfModules :=
   PresheafOfModulesOfCommRing.monoidalCategory (R := X.presheaf)
-
 def tensorPresheaf (H K : X.Modules) : X.PresheafOfModules := H.val ⊗ K.val
-
 /-- The actual sheafification of the actual categorical tensor of module presheaves. -/
 def sheafTensor (H K : X.Modules) : X.Modules :=
   (PresheafOfModules.sheafification (𝟙 X.ringCatSheaf.obj)).obj (tensorPresheaf X H K)
-
 def tensorUnitMap (H K : X.Modules) : tensorPresheaf X H K ⟶ (sheafTensor X H K).val :=
   (PresheafOfModules.sheafificationAdjunction (𝟙 X.ringCatSheaf.obj)).unit.app _
-
 def tensorSection (H K : X.Modules) (U : X.Opens) (s : Γ(H, U)) (t : Γ(K, U)) :
     Γ(sheafTensor X H K, U) :=
   (tensorUnitMap X H K).app (op U) (s ⊗ₜ[Γ(X, U)] t)
-
 end ArithmeticThetaSheafTensor
-
 namespace ArithmeticThetaTensorPower
 open ArithmeticThetaSheafTensor
-/-- Iterated genuine sheaf tensor, starting with the structure sheaf.
-The exponent-one identification is the accepted genuine left unit isomorphism. -/
+/-- Iterated genuine sheaf tensor, starting with the structure sheaf. The exponent-one identification is the accepted genuine left unit isomorphism. -/
 def tensorPower (X : Scheme.{u}) (H : X.Modules) : ℕ → X.Modules
   | 0 => SheafOfModules.unit X.ringCatSheaf
   | n + 1 => sheafTensor X (tensorPower X H n) H
-
 /-- Actual tensor power of a section; it does not refer to a chosen local frame. -/
 def tensorPowerSection (X : Scheme.{u}) (H : X.Modules) :
     (n : ℕ) → (U : X.Opens) → Γ(H, U) → Γ(tensorPower X H n, U)
   | 0, U, _ => (1 : Γ(X, U))
   | n + 1, U, s => tensorSection X (tensorPower X H n) H U
       (tensorPowerSection X H n U s) s
-
 /-- Ordered product of n possibly different sections in one actual tensor power. -/
 def tensorProductSection (X : Scheme.{u}) (H : X.Modules) :
     (n : ℕ) → (U : X.Opens) → (Fin n → Γ(H, U)) → Γ(tensorPower X H n, U)
   | 0, U, _ => (1 : Γ(X, U))
   | n + 1, U, s => tensorSection X (tensorPower X H n) H U
       (tensorProductSection X H n U (fun i => s i.castSucc)) (s (Fin.last n))
-
 end ArithmeticThetaTensorPower
-
+theorem ArithmeticThetaFiveNormalization374.FiveNormalized._proof_1.{u_1} : ∀ (R : Type u_1) [inst : CommRing.{u_1} R] (W : WeierstrassCurve.{u_1} R) [AlgebraicGeometry.IsIntegral.{u_1} (@ArithmeticThetaRelativeKatoR0169.Curve.{u_1} R inst W)], @IrreducibleSpace.{u_1} (TopCat.carrier.{u_1} (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (AlgebraicGeometry.LocallyRingedSpace.toSheafedSpace.{u_1} (AlgebraicGeometry.Scheme.toLocallyRingedSpace.{u_1} (@ArithmeticThetaRelativeKatoR0169.Curve.{u_1} R inst W)))))) (@AlgebraicGeometry.SheafedSpace.instTopologicalSpaceCarrierCarrier.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (AlgebraicGeometry.LocallyRingedSpace.toSheafedSpace.{u_1} (AlgebraicGeometry.Scheme.toLocallyRingedSpace.{u_1} (@ArithmeticThetaRelativeKatoR0169.Curve.{u_1} R inst W)))) := fun (R : Type u_1) [inst : CommRing.{u_1} R] (W : WeierstrassCurve.{u_1} R) [inst_1 : AlgebraicGeometry.IsIntegral.{u_1} (@ArithmeticThetaRelativeKatoR0169.Curve.{u_1} R inst W)] => @AlgebraicGeometry.irreducibleSpace_of_isIntegral.{u_1} (@ArithmeticThetaRelativeKatoR0169.Curve.{u_1} R inst W) inst_1
+theorem ArithmeticThetaFiveNormalization374.FiveNormalized._proof_2.{u_1} : ∀ (R : Type u_1) [inst : CommRing.{u_1} R] [inst_1 : @IsDomain.{u_1} R (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))] (W : WeierstrassCurve.{u_1} R) [AlgebraicGeometry.IsIntegral.{u_1} (@ArithmeticThetaRelativeKatoR0169.GenericCurve.{u_1} R inst inst_1 W)], @IrreducibleSpace.{u_1} (TopCat.carrier.{u_1} (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (AlgebraicGeometry.LocallyRingedSpace.toSheafedSpace.{u_1} (AlgebraicGeometry.Scheme.toLocallyRingedSpace.{u_1} (@ArithmeticThetaRelativeKatoR0169.GenericCurve.{u_1} R inst inst_1 W)))))) (@AlgebraicGeometry.SheafedSpace.instTopologicalSpaceCarrierCarrier.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (AlgebraicGeometry.LocallyRingedSpace.toSheafedSpace.{u_1} (AlgebraicGeometry.Scheme.toLocallyRingedSpace.{u_1} (@ArithmeticThetaRelativeKatoR0169.GenericCurve.{u_1} R inst inst_1 W)))) := fun (R : Type u_1) [inst : CommRing.{u_1} R] [inst_1 : @IsDomain.{u_1} R (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))] (W : WeierstrassCurve.{u_1} R) [inst_2 : AlgebraicGeometry.IsIntegral.{u_1} (@ArithmeticThetaRelativeKatoR0169.GenericCurve.{u_1} R inst inst_1 W)] => @AlgebraicGeometry.irreducibleSpace_of_isIntegral.{u_1} (@ArithmeticThetaRelativeKatoR0169.GenericCurve.{u_1} R inst inst_1 W) inst_2
+theorem ArithmeticThetaFiveNormalization374.FiveInitial._proof_1 : Nat.AtLeastTwo (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4))) (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) := @Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4))) (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
 namespace ArithmeticThetaPalomarNormalKato378
 open ArithmeticThetaRelativeKatoR0169
 variable (R : Type u) [CommRing R] [IsDomain R]
     (W : WeierstrassCurve R) (G : Law R W)
     [IsIntegral (Curve R W)] [IsLocallyNoetherian (Curve R W)]
     [IsIntegral (GenericCurve R W)] [IsLocallyNoetherian (GenericCurve R W)]
+run_cmd do for n in [`ArithmeticThetaFiveNormalization374.FiveNormalized._proof_1, `ArithmeticThetaFiveNormalization374.FiveNormalized._proof_2, `ArithmeticThetaFiveNormalization374.FiveInitial._proof_1] do let ci ← Lean.getConstInfo n; let key : Lean.Meta.AuxLemmaKey := { type := ci.type, isPrivate := false, defeq := false }; Lean.modifyEnv fun env => Lean.Meta.auxLemmasExt.modifyState env fun st => { st with lemmas := st.lemmas.insert key (ci.name, ci.levelParams) }
 /-- Actual relative divisor/norm normalization and the condition for EVERY actual generic comparison. -/
 def FiveNormalized (g : (Curve R W).functionField) : Prop :=
   IsRelativeKato R W G 5 g ∧
@@ -558,6 +591,7 @@ def FiveNormalized (g : (Curve R W).functionField) : Prop :=
     ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction (FractionRing R)
       (W.map (algebraMap R (FractionRing R))) C.law 5 (C.field g)
 end ArithmeticThetaPalomarNormalKato378
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace ArithmeticThetaPalomarDifferential365
 abbrev Base (R : Type u) [CommRing R] := Spec (CommRingCat.of R)
 def pullSection {X Y : Scheme.{u}} (f : X ⟶ Y) {M : Y.Modules} {U : Y.Opens}
@@ -612,16 +646,13 @@ variable (R : Type u) [CommRing R] [IsDomain R]
     [IsIntegral (Curve R W)] [IsLocallyNoetherian (Curve R W)]
     [IsIntegral (GenericCurve R W)] [IsLocallyNoetherian (GenericCurve R W)]
     (G : Law R W) (hG : IsOriginLaw R W G)
-
 /-- The frame condition on every subopen of the actual 24th Hodge tensor. -/
 def FiveFrame (d : Γ(HodgePower R W 24, ⊤)) : Prop :=
   ∀ (V : (Base R).Opens) (h : V ≤ ⊤),
     Function.Bijective (fun a : (Base R).presheaf.obj (Opposite.op V) =>
       a • (HodgePower R W 24).presheaf.map (homOfLE h).op d)
-
-/-- Literal scalar 5 and exponent 24 in the real function field and sheaf.
-The identity ideal, torsion ideal, origin evaluation and differential tensor
-are retained; epsilon is a unit on the whole actual affine chart. -/
+run_cmd do for n in [`ArithmeticThetaFiveNormalization374.FiveNormalized._proof_1, `ArithmeticThetaFiveNormalization374.FiveNormalized._proof_2, `ArithmeticThetaFiveNormalization374.FiveInitial._proof_1] do let ci ← Lean.getConstInfo n; let key : Lean.Meta.AuxLemmaKey := { type := ci.type, isPrivate := false, defeq := false }; Lean.modifyEnv fun env => Lean.Meta.auxLemmasExt.modifyState env fun st => { st with lemmas := st.lemmas.insert key (ci.name, ci.levelParams) }
+/-- Literal scalar 5 and exponent 24 in the real function field and sheaf. The identity ideal, torsion ideal, origin evaluation and differential tensor are retained; epsilon is a unit on the whole actual affine chart. -/
 def FiveInitial (g : (Curve R W).functionField)
     (d : Γ(HodgePower R W 24, ⊤)) : Prop :=
   ∀ (U : (Curve R W).affineOpens) [Nonempty U.1]
@@ -634,19 +665,18 @@ def FiveInitial (g : (Curve R W).functionField)
         (Curve R W).germToFunctionField U.1 ((ε : _) * a^24) ∧
       (HodgePower R W 24).presheaf.map (homOfLE le_top).op d =
         (origin R W).app U.1 (ε : _) • localPower R W 24 U.1 a
-
-/-- Existence is part of the specification, preventing an empty normalized
-function class from making its local equations vacuous. -/
+run_cmd do for n in [`ArithmeticThetaFiveNormalization374.FiveNormalized._proof_1, `ArithmeticThetaFiveNormalization374.FiveNormalized._proof_2, `ArithmeticThetaFiveNormalization374.FiveInitial._proof_1] do let ci ← Lean.getConstInfo n; let key : Lean.Meta.AuxLemmaKey := { type := ci.type, isPrivate := false, defeq := false }; Lean.modifyEnv fun env => Lean.Meta.auxLemmasExt.modifyState env fun st => { st with lemmas := st.lemmas.insert key (ci.name, ci.levelParams) }
+/-- Existence is part of the specification, preventing an empty normalized function class from making its local equations vacuous. -/
 def FiveSpecification (d : Γ(HodgePower R W 24, ⊤)) : Prop :=
   ∃ g : (Curve R W).functionField,
     ArithmeticThetaPalomarNormalKato378.FiveNormalized R W G g ∧ FiveFrame R W d ∧ FiveInitial R W G g d
-
 include hG
 theorem initialTensorExistsUnique :
     ∃! d : Γ(HodgePower R W 24, ⊤), FiveSpecification R W G d := by
   sorry
 end ArithmeticThetaPalomarNormalInitial381
 open NeronModelInfra
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace GoodReductionJacobian
 def schemeHomOverComp {B T' T A : Scheme.{u}} {t : T ⟶ B} {t' : T' ⟶ B} {f : A ⟶ B}
     (ψ : T' ⟶ T) (hψ : ψ ≫ t = t') (x : SchemeHomOver t f) : SchemeHomOver t' f :=
@@ -671,7 +701,6 @@ structure SchemeLaw {S X : Scheme.{u}} (p : X ⟶ S) where
     GoodReductionJacobian.schemeHomOverComp ψ hψ (mul t x y) =
       mul t' (GoodReductionJacobian.schemeHomOverComp ψ hψ x)
         (GoodReductionJacobian.schemeHomOverComp ψ hψ y)
-
 /-- A smooth proper one-dimensional commutative group scheme with connected fibres. -/
 structure Family (S : Scheme.{u}) where
   curve : Scheme.{u}
@@ -680,12 +709,10 @@ structure Family (S : Scheme.{u}) where
   proper : IsProper p
   dimension : SmoothOfRelativeDimension 1 p
   connected : GeometricallyConnected p
-
 def Family.zero {S : Scheme.{u}} (E : Family S) : S ⟶ E.curve :=
   (E.law.one (𝟙 S)).val
-
 end ArithmeticThetaLocalWeierstrassR0203
-
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace ArithmeticThetaPalomarDifferential365
 open ArithmeticThetaLocalWeierstrassR0203
 /-- Kernel of restriction to the actual closed subscheme. -/
@@ -696,7 +723,6 @@ def idealInclusion {X : Scheme.{u}} (I : X.IdealSheafData) :
   kernel.ι (SheafOfModules.unitToPushforwardObjUnit I.subschemeι.toRingCatSheafHom)
 def cotangent {S : Scheme.{u}} (E : Family S) : S.Modules :=
   (Scheme.Modules.pullback E.zero).obj (idealModule E.zero.ker)
-
 /-- Pull back the actual relative differential sheaf along the actual identity. -/
 def hodge {R : Type u} [CommRing R] (E : Family (Base R)) : (Base R).Modules :=
   (Scheme.Modules.pullback E.zero).obj (kaehler E.p)
@@ -769,7 +795,6 @@ def Compatible {S T : Scheme.{u}} (E : Family S) (F : Family T)
 /-- The genuine identity conormal; no arbitrary line bundle is substituted. -/
 def cotangent {S : Scheme.{u}} (E : Family S) : S.Modules :=
   (Scheme.Modules.pullback E.zero).obj (idealModule E.zero.ker)
-
 def pullbackEqIso {X Y : Scheme.{u}} {f g : X ⟶ Y} (h : f = g) (M : Y.Modules) :
     (Scheme.Modules.pullback f).obj M ≅ (Scheme.Modules.pullback g).obj M :=
   eqToIso (by cases h; rfl)
@@ -834,7 +859,6 @@ structure Comparison (R S : Type u) [CommRing R] [CommRing S]
   cartesian : IsPullback map (structureMap S V) (structureMap R W)
     (Spec.map (CommRingCat.ofHom ι))
   pointed : origin S V ≫ map = Spec.map (CommRingCat.ofHom ι) ≫ origin R W
-
 structure NormalModel (R : Type u) [CommRing R] [Algebra ℚ R]
     (W : WeierstrassCurve R) where
   ring : Type u
@@ -853,11 +877,9 @@ structure NormalModel (R : Type u) [CommRing R] [Algebra ℚ R]
   originLaw : IsOriginLaw ring equation law
   scalar : ring →ₐ[ℚ] R
   comparison : Comparison ring R equation W scalar.toRingHom
-
 attribute [instance] NormalModel.commRing NormalModel.domain NormalModel.noetherian
   NormalModel.normal NormalModel.rational NormalModel.elliptic NormalModel.integral
   NormalModel.locallyNoetherian NormalModel.genericIntegral NormalModel.genericLocallyNoetherian
-
 end ArithmeticThetaArbitraryDiscriminantR0243
 namespace ArithmeticThetaSchemeDiscriminantR0244
 open ArithmeticThetaLocalWeierstrassR0203
@@ -866,7 +888,6 @@ structure Comparison {S T : Scheme.{u}} (E : Family S) (F : Family T)
   map : F.curve ⟶ E.curve
   cartesian : IsPullback map F.p E.p b
   pointed : F.zero ≫ map = b ≫ E.zero
-
 end ArithmeticThetaSchemeDiscriminantR0244
 namespace ArithmeticThetaPalomarFullScheme385
 open ArithmeticThetaLocalWeierstrassR0203 ArithmeticThetaRelativeKatoR0169
