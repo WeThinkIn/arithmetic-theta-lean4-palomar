@@ -15,6 +15,12 @@ name = "ThetaProof"
 srcDir = "Proof"
 roots = ["GoalRoot"]
 globs = [
+  "ConsumerFactorBridge",
+  "ExtensionFactorBridge",
+  "FactorBridge",
+  "LevelFactorBridge",
+  "OutputFactorBridge",
+  "SquareFactorBridge",
   "ActualLiftsRecovery",
   "AlternationRecovery",
   "AlternationRecovery3",
@@ -1696,3 +1702,63 @@ roots = ["ArithmeticThetaProjectiveFieldnormalChallenge", "ArithmeticThetaProjec
 name = "ArithmeticThetaProjectiveRatiogenerator"
 srcDir = "."
 roots = ["ArithmeticThetaProjectiveRatiogeneratorChallenge", "ArithmeticThetaProjectiveRatiogeneratorSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaArithmeticMatrix"
+srcDir = "."
+roots = ["ArithmeticThetaArithmeticMatrixChallenge", "ArithmeticThetaArithmeticMatrixSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaArithmeticCompact"
+srcDir = "."
+roots = ["ArithmeticThetaArithmeticCompactChallenge", "ArithmeticThetaArithmeticCompactSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaArithmeticConsumer"
+srcDir = "."
+roots = ["ArithmeticThetaArithmeticConsumerChallenge", "ArithmeticThetaArithmeticConsumerSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaArithmeticTransfer"
+srcDir = "."
+roots = ["ArithmeticThetaArithmeticTransferChallenge", "ArithmeticThetaArithmeticTransferSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaArithmeticStandard"
+srcDir = "."
+roots = ["ArithmeticThetaArithmeticStandardChallenge", "ArithmeticThetaArithmeticStandardSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaArithmeticInterior"
+srcDir = "."
+roots = ["ArithmeticThetaArithmeticInteriorChallenge", "ArithmeticThetaArithmeticInteriorSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaArithmeticClassifier"
+srcDir = "."
+roots = ["ArithmeticThetaArithmeticClassifierChallenge", "ArithmeticThetaArithmeticClassifierSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaArithmeticArrow"
+srcDir = "."
+roots = ["ArithmeticThetaArithmeticArrowChallenge", "ArithmeticThetaArithmeticArrowSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaArithmeticDisk"
+srcDir = "."
+roots = ["ArithmeticThetaArithmeticDiskChallenge", "ArithmeticThetaArithmeticDiskSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaArithmeticSolver"
+srcDir = "."
+roots = ["ArithmeticThetaArithmeticSolverChallenge", "ArithmeticThetaArithmeticSolverSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaArithmeticOutput"
+srcDir = "."
+roots = ["ArithmeticThetaArithmeticOutputChallenge", "ArithmeticThetaArithmeticOutputSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaArithmeticTriangle"
+srcDir = "."
+roots = ["ArithmeticThetaArithmeticTriangleChallenge", "ArithmeticThetaArithmeticTriangleSolution"]

@@ -1,0 +1,16 @@
+{
+  "scope": "This entry verifies compatibility of square comparisons under field extension, including the explicitly selected supporting declarations. The complete cyclotomic modularity, extended modularity and conservative image-consumer endpoints are recovered separately by FactorBridge, SquareFactorBridge and ConsumerFactorBridge. This configuration alone does not select all three original endpoints or all103 endpoints.",
+  "theorem_names": [
+    "PalomarTensor688.normalized_iff_original",
+    "PalomarSquare918.square_triangle"
+  ],
+  "definition_names": [
+    "ArithmeticThetaPullback.pullback_sheafTensor_iso"
+  ],
+  "supporting_original_ids": [
+    "accepted-075",
+    "accepted-076",
+    "conservative-image-consumer"
+  ],
+  "standalone_full_endpoint_selected": false
+}

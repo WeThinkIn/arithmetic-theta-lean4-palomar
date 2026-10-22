@@ -1,0 +1,13 @@
+{
+  "scope": "This entry verifies conservative cutoff with complete kernel and image data, including the explicitly selected supporting declarations. The complete cyclotomic modularity, extended modularity and conservative image-consumer endpoints are recovered separately by FactorBridge, SquareFactorBridge and ConsumerFactorBridge. This configuration alone does not select all three original endpoints or all103 endpoints.",
+  "theorem_names": [
+    "PalomarConsumer897.consumer_core"
+  ],
+  "definition_names": [],
+  "supporting_original_ids": [
+    "accepted-075",
+    "accepted-076",
+    "conservative-image-consumer"
+  ],
+  "standalone_full_endpoint_selected": false
+}

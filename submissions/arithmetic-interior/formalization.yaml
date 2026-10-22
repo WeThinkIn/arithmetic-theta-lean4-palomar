@@ -1,0 +1,52 @@
+version: v0.4
+project:
+  name: Transport of interior geometric data under field extension
+  description: This entry verifies transport of interior geometric data under field
+    extension, including the explicitly selected supporting declarations. The complete
+    cyclotomic modularity, extended modularity and conservative image-consumer endpoints
+    are recovered separately by FactorBridge, SquareFactorBridge and ConsumerFactorBridge.
+    This configuration alone does not select all three original endpoints or all103
+    endpoints.
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series
+    - A formal Tate and finite-cover construction with Lean verification.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: The source component has local exact statement/data audits, strict comparison
+    and linked kernel evidence. Fresh candidate compilation and official verification
+    remain separate checks.
+status:
+  scope: This entry verifies transport of interior geometric data under field extension,
+    including the explicitly selected supporting declarations. The complete cyclotomic
+    modularity, extended modularity and conservative image-consumer endpoints are
+    recovered separately by FactorBridge, SquareFactorBridge and ConsumerFactorBridge.
+    This configuration alone does not select all three original endpoints or all103
+    endpoints.
+fidelity:
+  divergences: Selected statements and data are copied byte-identically from the audited
+    component. Full original endpoints are reconstructed separately, preserving the
+    same geometric witnesses and all field extensions.

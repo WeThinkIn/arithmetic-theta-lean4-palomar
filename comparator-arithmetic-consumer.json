@@ -1,0 +1,13 @@
+{
+  "challenge_module": "ArithmeticThetaArithmeticConsumerChallenge",
+  "solution_module": "ArithmeticThetaArithmeticConsumerSolution",
+  "theorem_names": [
+    "PalomarConsumer897.consumer_core"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "definition_names": []
+}

@@ -1,0 +1,47 @@
+{
+  "challenge_module": "ArithmeticThetaArithmeticClassifierChallenge",
+  "solution_module": "ArithmeticThetaArithmeticClassifierSolution",
+  "theorem_names": [
+    "ArithmeticThetaMetaplecticComparisonR0206.FiberEquivalenceProof.model_exists",
+    "ArithmeticThetaMetaplecticComparisonR0206.actual_metaplectic_groupoid",
+    "HomogeneousIdealQuotientGrading.coeAddMonoidHom_preDecompose",
+    "HomogeneousIdealQuotientGrading.gradedMonoidOfImages",
+    "HomogeneousIdealQuotientGrading.mem_quotGradingSubmodule_iff",
+    "HomogeneousIdealQuotientGrading.mk_mem_quotGradingSubmodule",
+    "HomogeneousIdealQuotientGrading.preDecompose_eq_zero_of_mem",
+    "HomogeneousIdealQuotientGrading.preDecompose_of_mem",
+    "HomogeneousIdealQuotientGrading.quotDecompose_mk",
+    "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedMonoid",
+    "SheafOfModules.instIsLocalizationPModRingSheafSheafifyFunctorPresheafW",
+    "SheafOfModules.presheafW_isMonoidal",
+    "WeierstrassCurve.DrinfeldGlobal.coord_mem",
+    "WeierstrassProjModel.kwYChartEval_section",
+    "WeierstrassProjModel.kwYEvalRingHom_mk_X1",
+    "WeierstrassProjModel.kw_mk_X1_mem_one_CR",
+    "WeierstrassProjModel.span_polynomial_isHomogeneousCR",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "PalomarConormal673.normalized_iff_original",
+    "PalomarPullback678.selected_pull_unique_normalized",
+    "PalomarTensor688.normalized_iff_original",
+    "PalomarZero694.normalized_iff_original",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_1",
+    "PalomarLevel911.classifier_transport"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "definition_names": [
+    "ArithmeticThetaCyclicPresentationR0174.RelativeWeierstrassPresentationR0174.Conormal.conormalMap",
+    "ArithmeticThetaMetaplecticStackR0207.pull",
+    "ArithmeticThetaPullback.pullback_sheafTensor_iso",
+    "WeierstrassProjModel.kwYEvalRingHom"
+  ]
+}

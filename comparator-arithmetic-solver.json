@@ -1,0 +1,13 @@
+{
+  "challenge_module": "ArithmeticThetaArithmeticSolverChallenge",
+  "solution_module": "ArithmeticThetaArithmeticSolverSolution",
+  "theorem_names": [
+    "PalomarOutput913.solver_certificates"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "definition_names": []
+}
