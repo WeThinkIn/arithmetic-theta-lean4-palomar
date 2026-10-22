@@ -6,7 +6,7 @@ Human author and responsible maintainer: **Jue Ding**.
 
 This repository presents the research manuscript, the complete Lean 4 formalization, and a reproducible verification environment for the arithmetic determination of relations among lattice theta series. **Jue Ding first publicly released both the accompanying paper and the original Lean 4 code as part of this project.** The manuscript records the full author and contributor list; third-party mathematical libraries retain their own authorship and attribution.
 
-**The complete formalization has passed local Lean verification for all 13 source requirements, represented by 103 exact theorem endpoints.** The original delivery was verified with Lean **4.33.1**. The Palomar-compatible edition published here has also passed the complete `GoalRoot` build and all 103 original endpoint type and axiom checks with Lean **4.35.0-rc2**. Independent Palomar verification is in progress.
+**The complete formalization has passed local Lean verification for all 13 source requirements, represented by 103 exact theorem endpoints.** The original delivery was verified with Lean **4.33.1**. The Palomar-compatible edition published here has also passed the complete `GoalRoot` build and all 103 original endpoint type and axiom checks with Lean **4.35.0-rc2**. The [main-result Palomar official mechanical preflight](docs/audit/official-main-complete-1477/Review.md) has passed for 40 original endpoints, with stock Lean, NanoDa, and Conron acceptance. Whole-paper semantic review and registration remain in progress.
 
 [Paper (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20A%20formal%20Tate%20and%20finite-cover%20construction%20with%20Lean%20verification.pdf) · [Original mathematical specification](paper/OriginalTask.tex) · [Formal theorem specification](docs/SourceObligations.json)
 
@@ -101,6 +101,8 @@ The resulting edition incorporates the following compatibility and engineering w
 These engineering changes retain the original mathematical specification. In the independent verification interfaces, Challenge proof holes identify the propositions to be checked; the corresponding Solution supplies the proofs subject to the configured axiom checks. The complete local development and its verification evidence remain available alongside these interfaces.
 
 ## Independent Palomar verification
+
+**The main-result official mechanical preflight has passed.** Its 43 selected targets cover 40 original endpoints at commit `57c6842d63e4860c7978dbc32307380415bcce1c`; stock Lean, NanoDa, and Conron accepted the solution, and the Challenge received high-trust provenance. Together with the separately verified formal-cover endpoint, the recorded official mechanical results cover **41 distinct original endpoints** at their respective revisions. The [official report and precise scope](docs/audit/official-main-complete-1477/Review.md) provide the verification evidence.
 
 **Whole-paper Palomar verification and registration are in progress.** Palomar adds official mechanical preflight, independent kernel replay, semantic review of the correspondence with the manuscript, and registry acceptance to the completed local Lean verification.
 

@@ -1,11 +1,30 @@
 # Official Palomar preflight record
 
+## Current main-result outcome
+
+The official complete-main preflight [39709205904](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39709205904)
+**passed** at `57c6842d63e4860c7978dbc32307380415bcce1c`. Stock Lean,
+NanoDa and Conron accepted the solution; the Mathlib-only Challenge has
+high-trust provenance. Its43selected targets cover40original complete
+endpoints. [Report, checksum and exact scope](audit/official-main-complete-1477/Review.md).
+
+Ordinary submission `q0fcj6z7esrd` was successfully authenticated for that exact
+revision and configuration. Service verification is
+[39738618013](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/39738618013).
+Whole-paper semantic acceptance and permanent registration are not established.
+The current reusable workflow is pinned to
+`PalomarRegistry/PalomarSubmission@7a08c1da8e0558d330b9b3c244896c175d373303`.
+
+The historical runs below retain their original results and pipeline revisions.
+Their older failures do not describe the newer successful run above.
+
+
 The repository is public following explicit authorization from its responsible
 maintainer. Its original code is licensed under Apache-2.0. The accepted-050 scoped entry has been formally submitted and passed official
 mechanical verification; semantic review is available privately. This record does not claim
 complete verification of the paper.
 
-The reusable workflow is pinned to
+The earlier reusable workflow recorded below was pinned to
 `PalomarRegistry/PalomarSubmission@d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44`,
 with `mode: full` and `execution_profile: palomar-standard-v1`.
 The current root `comparator.json` checks the finite-determination pilot only.
