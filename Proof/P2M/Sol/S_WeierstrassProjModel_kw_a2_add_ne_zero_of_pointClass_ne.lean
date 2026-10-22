@@ -4,6 +4,7 @@ public import Definitions.Def_WeierstrassCurve_ProjModel
 public import Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Point
 public import P2M.Util
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 namespace P2MW.S_WeierstrassProjModel_kw_a2_add_ne_zero_of_pointClass_ne

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_IsIntegral_isIntegrallyClosed_sections_of_forall_isIntegrallyClosed_stalk
 

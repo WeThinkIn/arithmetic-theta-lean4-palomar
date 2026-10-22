@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic
+public import Mathlib.AlgebraicGeometry.Morphisms.Finite
+public import Mathlib.AlgebraicGeometry.Morphisms.Immersion
 public import Theorems.Thm_HomogeneousIdeal_exists_homogeneous_pos_mem_forall_notMem
 public import P2M.Util
 

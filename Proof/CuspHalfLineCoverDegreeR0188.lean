@@ -1,6 +1,7 @@
 module
 
 public import LatticeGlobalSectionsDefinitionsR0188
+public import ComponentHodgePowerDegreeR0184
 
 @[expose] public section
 

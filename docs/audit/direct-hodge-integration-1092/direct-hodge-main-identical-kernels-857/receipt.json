@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "results": {
+    "stock-lean": {
+      "exit_code": 0,
+      "seconds": 4162.534236141946,
+      "peak_rss_bytes": 13619277824,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+        "--silent",
+        "--from-export",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/explicit-congruence-complete-main-773/CompleteMainAndComponentsSolution-01.ndjson"
+      ]
+    },
+    "conron": {
+      "exit_code": 0,
+      "seconds": 609.7042422359809,
+      "peak_rss_bytes": 9912061952,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/con-ron",
+        "--verified",
+        "--jobs=2",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/explicit-congruence-complete-main-773/CompleteMainAndComponentsSolution-01.ndjson"
+      ]
+    },
+    "nanoda": {
+      "exit_code": 0,
+      "seconds": 837.9273235192522,
+      "peak_rss_bytes": 3313917952,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/explicit-congruence-main-kernels-774/nanoda.json"
+      ]
+    }
+  },
+  "positive_kernel_markers": true,
+  "bindings_unchanged": true,
+  "strict_comparison_receipt": "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-main-kernels-850/strict-precheck-receipt.json",
+  "kernel_replay_reused_from": "/home/Palomar/workspace/arithmetic-theta/evidence/explicit-congruence-main-kernels-774/receipt.json",
+  "kernel_replay_receipt_sha256": "6797836918b98c52a023e9d37960618eacda9fd61f5ca1b64f8c60d6802aa361",
+  "identical_solution_export_sha256": "d4880bbd748e40e87477c4908917ae94da98d4d20618122fe2ef6167aaa5b9c1",
+  "identical_challenge_export_sha256": "1304a267606de25a09131c43dc3b08790bd2ed3a5e5a33a553b76edb4698ac8a",
+  "scope": "Full CompleteMain on831; fresh strict comparison and exact-byte reuse of unchanged three-kernel replay. Official whole-paper review and registration remain separate."
+}

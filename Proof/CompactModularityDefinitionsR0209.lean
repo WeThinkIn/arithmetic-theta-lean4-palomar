@@ -2,6 +2,7 @@ module
 
 public import StandardActualMetaplecticLevelR0208
 public import SharpExactImageDataR0195
+public import ActualLevelDefinitionsR0208
 
 @[expose] public section
 

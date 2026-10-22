@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_cocycle_of_forall_mapIso_eq_of_split
 

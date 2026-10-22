@@ -33,6 +33,9 @@ public import Theorems.Thm_AlgebraicCurve_Divisor_evalFun_single_sub_single
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

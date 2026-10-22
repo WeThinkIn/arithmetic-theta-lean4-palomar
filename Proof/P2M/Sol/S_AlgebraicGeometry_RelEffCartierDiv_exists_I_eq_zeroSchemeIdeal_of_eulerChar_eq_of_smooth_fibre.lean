@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionZeroScheme
 public import Definitions.Def_AlgebraicGeometry_RelEffCartierDiv
 public import Definitions.Def_AlgebraicGeometry_TwoChartCechSectionsOf

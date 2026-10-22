@@ -3,6 +3,8 @@ module
 public import CoherentTautologicalLineR0207
 public import ActualFamilyFPQCDescentR0207
 public import ActualFamilyOpenDescentR0207
+public import CoherentMetaplecticPullbackR0207
+public import FPQCStackCriterionOverR0198
 
 @[expose] public section
 

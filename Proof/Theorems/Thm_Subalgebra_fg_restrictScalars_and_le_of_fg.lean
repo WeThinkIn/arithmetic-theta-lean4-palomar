@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Subalgebra_fg_restrictScalars_and_le_of_fg
 

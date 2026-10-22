@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_SheafOfModules_Monoidal
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_forall_exists_basis_map_eq_of_forall_isAffineOpen

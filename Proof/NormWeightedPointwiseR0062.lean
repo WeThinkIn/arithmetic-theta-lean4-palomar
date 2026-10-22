@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ENatToNat
 public import NormQuotientDefinitionsR0062
 
 @[expose] public section

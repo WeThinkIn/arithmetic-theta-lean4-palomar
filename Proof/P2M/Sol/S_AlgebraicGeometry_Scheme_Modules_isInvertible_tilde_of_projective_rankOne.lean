@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ModulesLocallyFreeOfRank
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isLocallyFreeOfRank_one_iff_isInvertible

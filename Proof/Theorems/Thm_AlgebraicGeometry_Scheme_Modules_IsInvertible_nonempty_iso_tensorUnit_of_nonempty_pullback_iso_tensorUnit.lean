@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_RepresentsRelSubPic
 public import Definitions.Def_CerednikDrinfeld_QMFineModuli
 public import Definitions.Def_AlgebraicGeometry_PolarisedAbelianScheme
 public import Definitions.Def_AlgebraicGeometry_PolarisationRosati

@@ -2,6 +2,8 @@ module
 
 public import ThetaEvaluationDefinitionsR0212
 public import Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_IsInvertible_zeroSchemeIdeal_invModuleSection
+public import Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_comap_eq_top_and_nonempty_module_iso_and_nonempty_invModule_iso_of_disjoint_range_support
+public import RelativeWeierstrassPresentationR0174
 
 @[expose] public section
 

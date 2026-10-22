@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_IsLocalRing_exists_mem_maximalIdeal_notMem_sq_forall_minimalPrimes_notMem
 

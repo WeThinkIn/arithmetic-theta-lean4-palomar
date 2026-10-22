@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.AdicCompletion.AsTensorProduct
 public import Definitions.Def_AdicCompletionLocalRing
 public import Theorems.Thm_AdicCompletion_isNoetherianRing_of_isNoetherianRing
 public import Theorems.Thm_AlgebraicGeometry_bijective_appTop_of_isProper_of_flat_of_isAdicComplete

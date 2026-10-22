@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_isAffine_of_isClosedImmersion_of_ker_mul_ker_eq_bot
 

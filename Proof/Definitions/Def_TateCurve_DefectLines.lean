@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Std.Tactic.BVDecide.Normalize.Prop
 public import Definitions.Def_TateCurve_Defect
 public import Definitions.Def_NumberTheory_DivisorConvolution
 public import Theorems.Thm_TateCurve_defectCoeff_one

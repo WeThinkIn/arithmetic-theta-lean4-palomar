@@ -2,6 +2,7 @@ module
 
 public import PullbackUnit
 public import PullbackTensorDefinitions
+public import TensorPowerDefinitions
 
 @[expose] public section
 

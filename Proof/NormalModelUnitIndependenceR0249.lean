@@ -1,6 +1,7 @@
 module
 
 public import ArbitraryKatoUnitDefinitionsR0249
+public import NormalDiscriminantIndependenceR0243
 
 @[expose] public section
 

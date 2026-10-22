@@ -1,6 +1,7 @@
 module
 
 public import TautologicalSquarePullbackR0199
+public import RelativeRootTestFiberR0196
 
 @[expose] public section
 

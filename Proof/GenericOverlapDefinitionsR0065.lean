@@ -4,6 +4,8 @@ public import CorrectedGammaInteriorOverlapR0061
 public import CorrectedGammaPeriodBoundaryR0061
 public import LocalNormFactorizationR0054
 public import LaurentGammaExistenceR0064
+public import LocalNormDefinitionsR0054
+public import CorrectedGammaDataExistsR0061
 
 @[expose] public section
 

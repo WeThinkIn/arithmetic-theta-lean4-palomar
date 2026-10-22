@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawBaseChange
 public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_baseChange_schemeNsmul_comp_fst_and_eq_pullback_map
 public import P2M.Util

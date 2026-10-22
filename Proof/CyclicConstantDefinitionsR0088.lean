@@ -2,6 +2,7 @@ module
 
 public import LocalComparisonFamilyR0067
 public import ChartScalarExtensionProofR0076
+public import RatioRegularityDefinitionsR0067
 
 @[expose] public section
 

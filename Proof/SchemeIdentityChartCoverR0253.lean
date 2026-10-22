@@ -1,6 +1,7 @@
 module
 
 public import KatoInitialDefinitionsR0253
+public import SchemeMultiplicationDegreeR0250
 
 @[expose] public section
 

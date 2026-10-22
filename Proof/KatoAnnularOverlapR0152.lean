@@ -2,6 +2,8 @@ module
 
 public import CompletedModelChartMapsR0152
 public import CompletedChartFieldMapsR0152
+public import KatoAnnularDefinitionsR0152
+public import RatioRegularityDefinitionsR0067
 
 @[expose] public section
 

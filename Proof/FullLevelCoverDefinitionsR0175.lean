@@ -2,6 +2,7 @@ module
 
 public import CyclicQuotientArbitraryBaseChangeR0173
 public import CyclicQuotientTorsionKatoValueR0173
+public import RelativeDiscriminantDefinitionsR0171
 
 @[expose] public section
 

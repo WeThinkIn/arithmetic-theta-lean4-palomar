@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafEulerChar
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_OModulePresheaf_cechFinrank_unit_zero_eq_one_of_bijective

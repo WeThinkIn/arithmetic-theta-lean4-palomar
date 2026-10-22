@@ -1,6 +1,10 @@
 module
 
-public import Mathlib
+public import Definitions.Def_ModularCurve_CanonicalDivisor
+public import Definitions.Def_AlgebraicCurve_PlacesOf
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.PicardGroup
 public import Definitions.Def_AlgebraicCurve_KaehlerToFunctionField
 public import Definitions.Def_AlgebraicCurve_RegularDifferentials
 public import P2M.Util

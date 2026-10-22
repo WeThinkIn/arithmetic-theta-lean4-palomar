@@ -6,6 +6,7 @@ public import CartesianIdentityIdealR0205
 public import SchemeCotangentCoherenceR0205
 public import AffineConormalHodgeNaturalityR0205
 public import Theorems.Thm_AlgebraicGeometry_GeometricallyIrreducible_geometricallyConnected
+public import ArbitraryDiscriminantDefinitionsR0243
 
 @[expose] public section
 

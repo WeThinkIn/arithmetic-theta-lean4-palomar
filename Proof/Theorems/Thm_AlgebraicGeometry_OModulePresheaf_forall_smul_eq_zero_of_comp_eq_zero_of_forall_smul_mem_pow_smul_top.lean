@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafIdealFiltration
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_OModulePresheaf_forall_smul_eq_zero_of_comp_eq_zero_of_forall_smul_mem_pow_smul_top

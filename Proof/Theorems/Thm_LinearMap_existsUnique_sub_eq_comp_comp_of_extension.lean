@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_LinearMap_existsUnique_sub_eq_comp_comp_of_extension
 

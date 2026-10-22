@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.PicardGroup
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafTensorMap
 public import Definitions.Def_AlgebraicGeometry_ProjTwistDatum
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafConstructions

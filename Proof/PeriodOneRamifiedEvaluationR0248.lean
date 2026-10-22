@@ -2,6 +2,7 @@ module
 
 public import PeriodOneFunctionFieldEvaluationR0248
 public import RamifiedCubicKatoEvaluationR0248
+public import PeriodOneChartEvaluationR0248
 
 @[expose] public section
 

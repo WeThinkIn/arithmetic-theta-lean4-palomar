@@ -3,8 +3,12 @@ module
 public import OriginHodgeComparisonR0163
 public import HodgeTensorSectionsR0163
 public import OriginLogarithmicTaylorR0163
+public import ActualDiscriminantCotangentTensorR0162
 
 @[expose] public section
+
+-- Preserve the original elaborated instance path after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 
 /-! The intrinsic discriminant section of the actual generic Hodge line. -/
 set_option autoImplicit false

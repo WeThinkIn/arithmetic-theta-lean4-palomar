@@ -1,6 +1,12 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.TotallySplit
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.RingTheory.PicardGroup
+public import Mathlib.Algebra.Module.StablyFree.Basic
 public import Theorems.Thm_AlgebraicGeometry_Scheme_exists_ringAut_galois_sections_of_free_of_quotient
 public import P2M.Util
 

@@ -3,6 +3,9 @@ module
 public import IndexedAdjacentCoordinatesR0058
 public import TateNodeCompletion
 public import CompletedCoordinateRestrictionsR0058
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.OpenImmersion
+public import Mathlib.Tactic.Monotonicity.Lemmas
 
 @[expose] public section
 

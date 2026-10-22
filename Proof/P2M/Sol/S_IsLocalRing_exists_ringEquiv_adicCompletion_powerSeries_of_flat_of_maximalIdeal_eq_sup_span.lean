@@ -1,6 +1,14 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.AdicCompletion.RingHom
+public import Mathlib.RingTheory.AdicCompletion.Noetherian
+public import Mathlib.RingTheory.AdicCompletion.Completeness
+public import Mathlib.RingTheory.PowerSeries.Ideal
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.RingTheory.PicardGroup
+public import Mathlib.Tactic.ENatToNat
+public import Mathlib.Topology.Sheaves.Presheaf
 public import Theorems.Thm_IsLocalRing_comap_map_adicCompletion_eq
 public import P2M.Util
 

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Algebra_FormallySmooth_of_maximalIdeal_eq_span_of_perfectField
 

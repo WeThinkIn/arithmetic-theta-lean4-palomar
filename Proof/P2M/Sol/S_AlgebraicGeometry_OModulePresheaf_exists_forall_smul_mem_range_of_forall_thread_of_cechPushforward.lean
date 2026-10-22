@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.AlgebraicGeometry.Morphisms.Proper
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafIdealFiltration
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafCechPushforward

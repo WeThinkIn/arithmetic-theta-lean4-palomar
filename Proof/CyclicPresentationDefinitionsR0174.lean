@@ -3,6 +3,7 @@ module
 public import SplitCyclicKernelR0173
 public import PointedRelativeGroupHomR0173
 public import Definitions.Def_JacJ1Iface
+public import RelativeCyclicQuotientDefinitionsR0173
 
 @[expose] public section
 

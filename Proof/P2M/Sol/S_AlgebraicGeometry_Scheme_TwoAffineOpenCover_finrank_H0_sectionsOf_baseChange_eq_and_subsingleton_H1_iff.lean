@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.SimpleRing.Principal
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCover
 public import Definitions.Def_AlgebraicGeometry_TwoChartCechSectionsOf
 public import Theorems.Thm_AlgebraicGeometry_Scheme_TwoAffineOpenCover_exists_sectionsOf_baseChange_equiv_of_locallyTrivial

@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
+public import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic
+public import Mathlib.Tactic.ENatToNat
 public import Definitions.Def_AlgebraicGeometry_GradedOAlgebraSectionRing
 
 @[expose] public section

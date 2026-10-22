@@ -1,6 +1,7 @@
 module
 
 public import RelativeKatoExistenceR0169
+public import RelativeKatoDefinitionsR0169
 
 @[expose] public section
 

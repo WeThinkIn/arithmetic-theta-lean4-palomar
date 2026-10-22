@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.AlgebraicGeometry.Morphisms.Proper
+public import Mathlib.Tactic.Monotonicity.Lemmas
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 public import P2M.Util
 

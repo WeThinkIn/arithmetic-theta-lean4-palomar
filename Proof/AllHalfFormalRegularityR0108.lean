@@ -1,6 +1,7 @@
 module
 
 public import SubstitutedTorsionDifferencesR0108
+public import FourTorsionRoot
 
 @[expose] public section
 

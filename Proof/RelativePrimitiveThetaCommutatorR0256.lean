@@ -9,6 +9,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_zeroSch
 public import Theorems.Thm_AlgebraicGeometry_RelEffCartierDiv_card_le_of_subset_support
 public import RelativeThetaRelationsDefinitionsR0256
 public import Definitions.Def_AlgebraicGeometry_ThetaGroupLaw
+public import Definitions.Def_AlgebraicGeometry_ThetaGroup
+public import RelativeMidpointSymmetricThetaLiftR0255
+public import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
 
 @[expose] public section
 

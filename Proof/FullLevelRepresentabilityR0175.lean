@@ -1,6 +1,7 @@
 module
 
 public import FullLevelCoverDefinitionsR0175
+public import RelativeMultiplicationDegreeR0169
 
 @[expose] public section
 

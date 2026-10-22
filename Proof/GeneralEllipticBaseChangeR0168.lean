@@ -3,6 +3,7 @@ module
 public import GeneralEllipticKatoDefinitionsR0168
 public import Theorems.Thm_WeierstrassProjModel_projModel_isPullback_baseChange_ring
 public import Theorems.Thm_WeierstrassProjModel_RelativeGroupLaw_exists_relativeGroupLaw_comp_eq_of_isPullback
+public import ActualGenericGroupLawR0146
 
 @[expose] public section
 

@@ -1,6 +1,20 @@
 module
 
 public import ScaledTateNodeBridgeDefinitions
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.TotallySplit
+public import Mathlib.RingTheory.PowerSeries.Ideal
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.RingTheory.PiTensorProduct
+public import Mathlib.Order.Interval.Finset.Box
+public import Mathlib.Algebra.Order.Ring.Star
+public import Mathlib.Data.Int.Star
+public import Mathlib.Algebra.AffineMonoid.UniqueSums
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

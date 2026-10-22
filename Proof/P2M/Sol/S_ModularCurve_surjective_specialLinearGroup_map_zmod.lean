@@ -5,6 +5,13 @@ public import Mathlib.Data.ZMod.Basic
 public import Mathlib.NumberTheory.ModularForms.CongruenceSubgroups
 public import Mathlib.Data.Int.GCD
 public import P2M.Util
+public import Mathlib.Topology.Algebra.InfiniteSum.Order
+public import Mathlib.Data.EReal.Operations
+public import Mathlib.Topology.MetricSpace.Bounded
+public import Mathlib.Analysis.Normed.Group.Basic
+public import Mathlib.Tactic.Positivity.Finset
+public import Mathlib.Tactic.LinearCombination
+public import Mathlib.Algebra.BigOperators.Associated
 
 @[expose] public section
 namespace P2MW.S_ModularCurve_surjective_specialLinearGroup_map_zmod

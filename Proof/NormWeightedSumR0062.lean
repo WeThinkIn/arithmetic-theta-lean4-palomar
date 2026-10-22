@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
 public import NormResiduePermutationR0062
 public import NormWeightedPointwiseR0062
 

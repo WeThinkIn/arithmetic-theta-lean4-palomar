@@ -5,6 +5,8 @@ public import CompatibleProjectiveEmbeddingsR0135
 public import Mathlib.RingTheory.Flat.TorsionFree
 public import Definitions.Def_AlgebraicGeometry_HomogeneousIdealQuotientGradingInfra
 public import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Functor
+public import Theorems.Thm_AlgebraicGeometry_Proj_fromOfGlobalSections_appLE_awayToSection_mk_mul_pow
+public import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Proper
 
 @[expose] public section
 

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_LinearMap_exists_forall_sub_mem_pow_smul_top_and_mkQ_comp_eq_of_compatible
 public import P2M.Util
 

@@ -1,6 +1,8 @@
 module
 
 public import RelativeThetaLiftsDefinitionsR0255
+public import GlobalUnitTwoThreeNormRigidityR0254
+public import FullLevelProjectiveRatiosR0194
 
 @[expose] public section
 

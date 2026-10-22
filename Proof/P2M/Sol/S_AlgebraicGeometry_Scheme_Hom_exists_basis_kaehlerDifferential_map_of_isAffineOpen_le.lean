@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.Etale
 public import Definitions.Def_AlgebraicGeometry_KaehlerModule
 public import P2M.Util
 

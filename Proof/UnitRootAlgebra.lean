@@ -1,6 +1,10 @@
 module
 
 public import GeometricPrerequisiteDefinitions
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.Etale.StandardEtale
 
 @[expose] public section
 

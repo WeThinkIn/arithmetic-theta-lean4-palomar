@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_RelEffCartierDivSum
 public import Theorems.Thm_AlgebraicGeometry_RelEffCartierDiv_exists_I_eq_prodKerGraph
 public import Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_comap_mul

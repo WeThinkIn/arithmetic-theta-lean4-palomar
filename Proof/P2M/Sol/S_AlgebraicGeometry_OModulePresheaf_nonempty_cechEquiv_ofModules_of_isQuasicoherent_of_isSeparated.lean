@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_OrderedAffineCoverCech
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafOfModules
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_nonempty_cechEquiv_ofModules_of_orderEmbedding_of_forall_lt

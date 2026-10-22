@@ -1,6 +1,7 @@
 module
 
 public import SectionOrderInvariance
+public import Mathlib.RingTheory.Coalgebra.CoassocSimps
 
 @[expose] public section
 open AlgebraicGeometry CategoryTheory Opposite TopologicalSpace

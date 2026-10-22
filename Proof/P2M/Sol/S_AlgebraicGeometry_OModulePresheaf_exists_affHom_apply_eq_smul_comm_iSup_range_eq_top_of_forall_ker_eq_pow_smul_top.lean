@@ -1,10 +1,13 @@
 module
 
-public import Mathlib
+public import Mathlib.Order.CompletePartialOrder
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] CompletePartialOrder.toSupSet
 namespace P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_affHom_apply_eq_smul_comm_iSup_range_eq_top_of_forall_ker_eq_pow_smul_top
 
 set_option autoImplicit false

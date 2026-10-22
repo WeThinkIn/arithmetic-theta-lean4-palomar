@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.Proper
+public import Mathlib.AlgebraicGeometry.QuasiAffine
+public import Mathlib.AlgebraicGeometry.Noetherian
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafCechPushforward
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_d_zero_eq_zero_iff_existsUnique_of_isQuasicoherent
 public import P2M.Util

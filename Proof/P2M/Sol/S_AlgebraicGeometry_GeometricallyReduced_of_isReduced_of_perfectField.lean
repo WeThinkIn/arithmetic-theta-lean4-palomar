@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.Geometrically.Reduced
 public import Theorems.Thm_Algebra_TensorProduct_isReduced_of_perfectField_of_isReduced
 public import P2M.Util
 

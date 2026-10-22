@@ -1,6 +1,8 @@
 module
 
 public import LocalMarkedPairR0133
+public import PolygonCompatibleMarkingsR0131
+public import PolygonSmoothMarkedSectionsR0131
 
 @[expose] public section
 

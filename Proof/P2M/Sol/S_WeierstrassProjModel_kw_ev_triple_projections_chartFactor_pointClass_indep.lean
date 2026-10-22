@@ -1,4 +1,5 @@
 module
+public import Mathlib
 
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import Definitions.Def_WeierstrassCurve_ProjModel_AddFormulas

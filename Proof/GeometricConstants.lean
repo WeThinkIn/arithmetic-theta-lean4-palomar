@@ -3,6 +3,7 @@ module
 public import ConstantDescent
 public import Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure
 public import Mathlib.AlgebraicGeometry.Geometrically.Integral
+public import ProperFunctions
 
 @[expose] public section
 

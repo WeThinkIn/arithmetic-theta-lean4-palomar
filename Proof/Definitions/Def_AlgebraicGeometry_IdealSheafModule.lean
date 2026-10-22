@@ -2,6 +2,7 @@ module
 
 public import Definitions.Def_SheafOfModules_Monoidal
 public import Definitions.Def_AlgebraicGeometry_RelEffCartierDiv
+public import Mathlib.Algebra.Category.ModuleCat.Sheaf.PullbackFree
 
 @[expose] public section
 

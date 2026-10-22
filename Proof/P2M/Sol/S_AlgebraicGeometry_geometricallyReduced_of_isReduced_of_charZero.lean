@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_AlgebraicGeometry_geometricallyReduced_pullback_snd_specMap_of_isReduced_of_charZero
 public import P2M.Util
 

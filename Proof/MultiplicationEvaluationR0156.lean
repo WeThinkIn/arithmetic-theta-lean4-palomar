@@ -1,6 +1,9 @@
 module
 
 public import FaithfulAnnularEvaluationR0156
+public import CompletedMarkedChartIdealR0152
+public import GeometricNormDefinitionsR0150
+public import MultiplicationDifferentialR0148
 
 @[expose] public section
 

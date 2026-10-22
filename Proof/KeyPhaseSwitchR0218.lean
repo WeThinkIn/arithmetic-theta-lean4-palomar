@@ -1,6 +1,10 @@
 module
 
 public import MultiplierPhaseSwitchR0218
+public import EvenCoverPhaseSwitchR0218
+public import MultiplierBaseChangeR0217
+public import AlphaTensorDescentR0217
+public import EvenPointThetaEvaluationR0217
 
 @[expose] public section
 

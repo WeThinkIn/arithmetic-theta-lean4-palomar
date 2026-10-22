@@ -4,6 +4,9 @@ public import RelativeHorizontalOrdersR0169
 public import RelativeVerticalOrdersR0169
 public import Theorems.Thm_IsIntegrallyClosed_exists_algebraMap_eq_of_forall_height_eq_one
 public import Theorems.Thm_AlgebraicGeometry_IsIntegral_isIntegrallyClosed_sections_of_forall_isIntegrallyClosed_stalk
+public import GeneralKatoBaseChangeR0168
+public import GeneralKatoExistenceR0168
+public import NormalOrderCriterion
 
 @[expose] public section
 

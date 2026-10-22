@@ -2,6 +2,11 @@ module
 
 public import RationalOrthogonalBasis
 public import MatrixDenominator
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.Data.Rat.Star
+public import Mathlib.Algebra.Ring.IsFormallyReal
+public import Mathlib.Algebra.Order.Ring.Star
 
 @[expose] public section
 

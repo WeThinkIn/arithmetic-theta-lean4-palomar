@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_FormallyUnramified_of_forall_pullback_snd_localization_atPrime
 

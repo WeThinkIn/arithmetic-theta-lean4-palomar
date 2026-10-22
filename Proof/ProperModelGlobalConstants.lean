@@ -3,6 +3,7 @@ module
 public import FormalConstantDefinitions
 public import SmoothGeometricallyConnectedIntegral
 public import GenericFiberRestriction
+public import GeometricConstants
 
 @[expose] public section
 

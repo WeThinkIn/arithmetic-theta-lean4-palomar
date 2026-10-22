@@ -1,6 +1,8 @@
 module
 
 public import OrderedTwoSignRigidityR0178
+public import MarkedLegendreAtlasLocalCoverageR0177
+public import FullLevelAutomorphismRigidityR0176
 
 @[expose] public section
 

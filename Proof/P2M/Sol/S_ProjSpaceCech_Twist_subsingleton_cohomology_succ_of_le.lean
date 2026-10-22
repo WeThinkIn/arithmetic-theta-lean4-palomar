@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.Tactic.ENatToNat
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCechTwist
 public import P2M.Util
 

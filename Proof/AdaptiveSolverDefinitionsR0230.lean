@@ -6,6 +6,9 @@ public import LDLThetaPrefixR0229
 public import ComputedBoundParameters
 public import ComputedEarlyCertificate
 public import ThetaBasisChange
+public import LDLEnumerationDefinitionsR0229
+public import IntegrationDefinitions
+public import OrthogonalAlgorithm
 
 @[expose] public section
 

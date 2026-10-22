@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.CategoryTheory.Sites.Descent.DescentData
+public import Mathlib.CategoryTheory.ExtremalEpi
+public import Mathlib.CategoryTheory.EffectiveEpi.Comp
 public import Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Definitions.Def_AlgebraicGeometry_ModulesTildePullback

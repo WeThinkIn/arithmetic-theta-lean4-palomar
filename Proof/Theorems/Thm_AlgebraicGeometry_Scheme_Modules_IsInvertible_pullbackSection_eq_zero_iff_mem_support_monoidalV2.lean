@@ -6,6 +6,9 @@ public import P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_pullbackSe
 
 @[expose] public section
 
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
+
 set_option autoImplicit false
 
 universe u

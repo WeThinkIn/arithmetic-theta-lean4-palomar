@@ -1,6 +1,7 @@
 module
 
 public import Definitions.Def_CerednikDrinfeld_QMCoarseModuli
+public import Definitions.Def_CerednikDrinfeld_QMModuli
 
 @[expose] public section
 

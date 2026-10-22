@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Algebra.Polynomial.Basis
 public import Definitions.Def_Mathlib_RingTheory_RegularLocalRingFlatLocalAscent
 public import Definitions.Def_Mathlib_RingTheory_SmoothFieldFiberRegularStalksStandardSmoothReduction
 

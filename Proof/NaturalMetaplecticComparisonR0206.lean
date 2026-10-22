@@ -2,6 +2,7 @@ module
 
 public import ActualMetaplecticPullbackR0206
 public import MetaplecticFiberEquivalenceR0206
+public import SchemeHodgeUniversalR0205
 
 @[expose] public section
 

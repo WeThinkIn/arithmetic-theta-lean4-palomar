@@ -2,6 +2,8 @@ module
 
 public import SchemeDiscriminantNaturalityR0244
 public import OpenDiscriminantFullTateExpansionR0182
+public import SchemeDiscriminantDefinitionsR0244
+public import BoundaryHodgeDefinitionsR0182
 
 @[expose] public section
 

@@ -1,6 +1,8 @@
 module
 
 public import ScalarExtensionSectionImageR0240
+public import AdaptiveUniversalSolverR0230
+public import CyclotomicMatrixModularityR0239
 
 @[expose] public section
 

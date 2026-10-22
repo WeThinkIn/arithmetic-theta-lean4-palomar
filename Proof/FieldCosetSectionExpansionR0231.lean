@@ -1,6 +1,7 @@
 module
 
 public import ArithmeticFieldDefinitionsR0231
+public import MatrixFamilyGlobalSectionsR0188
 
 @[expose] public section
 

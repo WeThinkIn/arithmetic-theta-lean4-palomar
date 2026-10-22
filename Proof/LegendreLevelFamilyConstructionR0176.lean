@@ -5,6 +5,7 @@ public import FullLevelAutomorphismRigidityR0176
 public import FullLevelFreeSignR0176
 public import AffineFreeSignQuotientR0176
 public import FullMarkingSignDescentR0176
+public import Mathlib.CategoryTheory.Sites.Hypercover.Subcanonical
 
 @[expose] public section
 

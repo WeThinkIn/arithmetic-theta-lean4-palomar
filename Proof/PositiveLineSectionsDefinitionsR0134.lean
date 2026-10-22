@@ -3,6 +3,7 @@ module
 public import CanonicalCartierLineReductionR0133
 public import AffineMarkedComplementR0133
 public import SplitFiniteMarkedDivisorR0133
+public import GlobalCartierIdealLineR0133
 
 @[expose] public section
 

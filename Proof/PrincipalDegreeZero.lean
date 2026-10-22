@@ -10,6 +10,9 @@ public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_eulerChar_eq_add_of
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_isQuasicoherent_unit
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_isQuasicoherent_coker
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_isCoherent_coker
+public import P2M.Sol.S_Module_finite_and_finrank_eq_sum_length_localizedModule_of_forall_subsingleton
+public import Mathlib.Data.ENat.BigOperators
+public import Mathlib.Algebra.Module.StablyFree.Basic
 
 @[expose] public section
 set_option backward.privateInPublic true

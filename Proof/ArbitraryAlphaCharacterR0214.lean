@@ -3,6 +3,7 @@ module
 public import ArbitraryAlphaNaturalityR0214
 public import ArbitraryPhaseMarkingInvarianceR0214
 public import RelativeAlphaCharacterR0211
+public import ArbitraryNormalizedFrameUniquenessR0214
 
 @[expose] public section
 

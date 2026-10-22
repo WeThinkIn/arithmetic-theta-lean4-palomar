@@ -5,6 +5,10 @@ public import ComputedFamilyFormalUnaryConsumerR0127
 public import FinitePullbackSectionDegree
 public import TensorProductLaws
 public import PullbackTensorSections
+public import OrthogonalConsumerDefinitionsR0127
+public import IntegrationDefinitions
+public import OrthogonalAlgorithm
+public import SimultaneousUnaryRootsDefinitionsR0187
 
 @[expose] public section
 

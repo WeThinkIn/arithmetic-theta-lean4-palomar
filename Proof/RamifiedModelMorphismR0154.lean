@@ -1,6 +1,7 @@
 module
 
 public import RamifiedPolygonTowerR0154
+public import RamifiedMonomialBasisR0096
 
 @[expose] public section
 

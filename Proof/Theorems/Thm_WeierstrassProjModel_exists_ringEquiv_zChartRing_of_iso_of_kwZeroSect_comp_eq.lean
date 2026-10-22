@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Definitions.Def_FormalGroup_NSeries
+public import Definitions.Def_WeierstrassCurve_FormalGroupLaw
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import Definitions.Def_WeierstrassCurve_DrinfeldBasisGlobal
 public import Definitions.Def_WeierstrassCurve_PointChart

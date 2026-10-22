@@ -4,6 +4,8 @@ public import ActualKatoAnnularComparisonR0152
 public import AlgebraizedActionLawsR0137
 public import MarkedPointAdditionR0146
 public import ActualSplitTorsionKernelR0152
+public import KatoAnnularDefinitionsR0152
+public import GeometricNormDefinitionsR0150
 
 @[expose] public section
 

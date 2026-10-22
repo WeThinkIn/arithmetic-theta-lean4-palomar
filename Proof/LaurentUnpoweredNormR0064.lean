@@ -1,6 +1,8 @@
 module
 
 public import LaurentGammaExistenceR0064
+public import LaurentNormDefinitionsR0064
+public import FormalNormProduct
 
 @[expose] public section
 

@@ -1,6 +1,7 @@
 module
 
 public import RelativeGenericComparisonR0169
+public import KatoDivisorFieldBaseChangeR0151
 
 @[expose] public section
 

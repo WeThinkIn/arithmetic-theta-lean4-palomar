@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.FieldTheory.RatFunc.IntermediateField
 public import Definitions.Def_AlgebraicCurve_IsCurveOver
 public import Definitions.Def_AlgebraicCurve_CanonicalDivisor
 public import Definitions.Def_AlgebraicCurve_RegularDifferentials

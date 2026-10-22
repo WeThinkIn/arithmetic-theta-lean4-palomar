@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ENatToNat
 public import Definitions.Def_AlgebraicGeometry_DoubleComplex
 public import P2M.Util
 

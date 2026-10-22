@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
 public import Theorems.Thm_Algebra_FinitePresentation_of_faithfullyFlat_of_finitePresentation
 public import P2M.Util
 

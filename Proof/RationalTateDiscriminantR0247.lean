@@ -2,6 +2,7 @@ module
 
 public import RationalTatePresentationR0247
 public import RationalCoordinateHodgeR0247
+public import PeriodOneDiscriminantR0246
 
 @[expose] public section
 

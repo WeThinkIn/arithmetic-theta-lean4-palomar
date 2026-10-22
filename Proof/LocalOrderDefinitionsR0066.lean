@@ -4,6 +4,7 @@ public import LocalFRationalCompatibilityR0065
 public import ChartLaurentSpecializationR0065
 public import Mathlib.RingTheory.Ideal.Height
 public import Mathlib.RingTheory.DiscreteValuationRing.Basic
+public import GenericOverlapDefinitionsR0065
 
 @[expose] public section
 

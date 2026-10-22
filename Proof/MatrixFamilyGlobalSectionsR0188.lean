@@ -2,6 +2,7 @@ module
 
 public import IndexedFullUnaryFactorizationR0188
 public import CuspHalfLineCoverDegreeR0188
+public import SimultaneousUnaryCommonCoverR0187
 
 @[expose] public section
 

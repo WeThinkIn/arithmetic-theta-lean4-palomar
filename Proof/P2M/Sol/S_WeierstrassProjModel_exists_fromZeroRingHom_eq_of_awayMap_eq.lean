@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ENatToNat
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import P2M.Util
 

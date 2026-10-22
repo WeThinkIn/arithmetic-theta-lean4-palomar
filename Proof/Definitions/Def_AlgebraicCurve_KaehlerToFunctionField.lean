@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicCurve_CurveModel
 public import Definitions.Def_AlgebraicCurve_PlacesOf
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCoverKaehler
 

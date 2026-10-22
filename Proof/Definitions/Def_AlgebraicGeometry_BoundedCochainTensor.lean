@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_OrderedAffineCoverCech
 public import Definitions.Def_AlgebraicGeometry_DoubleComplex
 public import Definitions.Def_AlgebraicGeometry_BiCech

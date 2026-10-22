@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_mem_of_isSeparated_of_forall_smoothProperCurve_opens_mem
 

@@ -1,6 +1,12 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.AlgebraicGeometry.Morphisms.Proper
+public import Mathlib.AlgebraicGeometry.Morphisms.UniversallyInjective
+public import Mathlib.AlgebraicGeometry.QuasiAffine
+public import Mathlib.Tactic.ENatToNat
+public import Std.Tactic.BVDecide.Normalize.Prop
 public import FunctionOrders
 public import SmoothPrerequisites
 public import CurveDegreeDefinitions

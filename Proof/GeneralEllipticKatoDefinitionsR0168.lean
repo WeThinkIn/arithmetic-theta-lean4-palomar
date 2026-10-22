@@ -2,6 +2,7 @@ module
 
 public import ActualKatoFunctionExistenceR0151
 public import ActualKatoFieldBaseChangeR0151
+public import GeometricNormDefinitionsR0150
 
 @[expose] public section
 

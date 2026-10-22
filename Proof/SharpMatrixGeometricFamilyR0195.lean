@@ -3,6 +3,9 @@ module
 public import DistinctNormSharpArithmeticR0195
 public import RatioUnaryRegularSectionsR0195
 public import LegendreLevelFamilyConstructionR0176
+public import SquareHalfHodgeCoverDegreeR0194
+public import CommonBasicUnaryCoverR0194
+public import MatrixFamilyGlobalSectionsR0188
 
 @[expose] public section
 

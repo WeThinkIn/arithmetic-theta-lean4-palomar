@@ -2,6 +2,8 @@ module
 
 public import PhaseFreeKeyDefinitionsR0219
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Hom_finrank_comp_of_finrank_eq_const
+public import PhaseCoverR0218
+public import EvenCoverTorsorR0216
 
 @[expose] public section
 

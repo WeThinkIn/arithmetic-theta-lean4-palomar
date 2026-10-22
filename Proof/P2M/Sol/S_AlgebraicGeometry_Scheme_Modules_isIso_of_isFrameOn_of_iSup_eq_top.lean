@@ -1,10 +1,13 @@
 module
 
-public import Mathlib
+public import Mathlib.Order.CompletePartialOrder
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] CompletePartialOrder.toSupSet
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_isIso_of_isFrameOn_of_iSup_eq_top
 
 set_option autoImplicit false

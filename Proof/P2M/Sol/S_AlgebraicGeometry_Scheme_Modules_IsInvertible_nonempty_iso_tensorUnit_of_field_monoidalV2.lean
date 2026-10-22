@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Definitions.Def_SheafOfModules_Monoidal
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.SimpleRing.Principal
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Definitions.Def_SheafOfModules_MonoidalV2
 public import P2M.Util

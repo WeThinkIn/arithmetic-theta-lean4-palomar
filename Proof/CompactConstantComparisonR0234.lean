@@ -1,6 +1,8 @@
 module
 
 public import LevelConstantsDefinitionsR0234
+public import CompactifiedLevelForgettingR0179
+public import Theorems.Thm_AlgebraicGeometry_isOpenImmersion_of_locallyQuasiFinite_of_isIntegrallyClosed_stalk_of_denseRange
 
 @[expose] public section
 

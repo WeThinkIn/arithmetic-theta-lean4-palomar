@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_comp_section_comp_eq_of_isClosedMap_of_surjective_app
 

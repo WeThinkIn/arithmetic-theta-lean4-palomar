@@ -16,11 +16,16 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_eq_of_forall_map_hom
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsFrameOn_of_iSup
 
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_bijective_pullbackLocalSection_opensInclusion_and_isFrameOn_iff
+public import P2M.Sol.S_WeierstrassCurve_DrinfeldGlobal_exists_ringHom_originChartRing_eq
+public import ProjectiveCubicChartR0145
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 @[expose] public section
+
+-- Preserve the original elaborated instance path after import reduction.
+attribute [local instance 1001] MvPolynomial.instModuleSelf
 
 set_option autoImplicit false
 set_option linter.style.haveILetI false

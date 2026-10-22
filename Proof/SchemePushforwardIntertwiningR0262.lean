@@ -2,6 +2,8 @@ module
 
 public import SchemeThetaNaturalityDefinitionsR0262
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isIso_baseChangeHom_iff_of_isPullback
+public import SchemeThetaActionRelationsR0261
+public import SchemeThetaPushforwardBaseChangeR0261
 
 @[expose] public section
 

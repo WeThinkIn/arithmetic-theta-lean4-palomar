@@ -1,0 +1,43 @@
+{
+  "ready": true,
+  "utc": "2026-10-22T02:00:38.027208+00:00",
+  "bound_files_checked": 50983,
+  "candidate_files_checked": 3950,
+  "source_modules": 3915,
+  "receipt_hashes": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-full-audit-832/receipt.json": "8e2b8b33e88b46bd566828e9995524150c1469e6f706286bbdaec8d81cea7cb6",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-common-kernels-849/receipt.json": "f3d4f0a177147ae50613c577619ba63610b85474e0e5e1d3f53c6cffbed7a686",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-main-identical-kernels-857/receipt.json": "09421fa07d568bb859f2c6629e86f42de676bbf9a916d21c567e2bfebeb54eb5",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/maintainer-conron-replays-860/receipt.json": "750a38894efd06c5f8d4006be51007c900fecb1f57ee046057dac0e73ca95bc7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-disk-resume-1033/receipt.json": "e8ef726daa63e1d12d7b3271b64be54ef90b4216a6752cebfe2de591b24dee20"
+  },
+  "archive_verification": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/terminal-main-export-archive-1031/completed-solutions.tar.zst": {
+      "sha256": "efcc0e793ba7bf337c4b2e05717e068ac2d61ee883b5f6d0a868a74868d40491",
+      "full_decompression_verified": true,
+      "files": {
+        "evidence/explicit-congruence-complete-main-773/CompleteMainAndComponentsSolution-01.ndjson": {
+          "sha256": "d4880bbd748e40e87477c4908917ae94da98d4d20618122fe2ef6167aaa5b9c1",
+          "bytes": 2800158768
+        },
+        "evidence/direct-hodge-complete-main-848/CompleteMainAndComponentsSolution-01.ndjson": {
+          "sha256": "d4880bbd748e40e87477c4908917ae94da98d4d20618122fe2ef6167aaa5b9c1",
+          "bytes": 2800158768
+        }
+      }
+    },
+    "/home/Palomar/workspace/arithmetic-theta/evidence/terminal-projective-export-archive-929/completed-solutions.tar.zst": {
+      "sha256": "59400a0a762d4272a91ec1f98a178981ba0672eefe064b445de63648be5461bf",
+      "full_decompression_verified": true,
+      "files": {
+        "evidence/global-projective-strict-comparison-784/Solution-01.ndjson": {
+          "sha256": "7d33971686b3315a773915e428f7341584fbc98c2294075d7348375c1f8395bc",
+          "bytes": 2516273593
+        }
+      }
+    }
+  },
+  "candidate_bindings_sha256": "59f92b8c4064816d29be2db3a5484e0bc03e4d79f8e05e0c389ff796738595a3",
+  "policy_sha256": "91016204371d67d9cf6a25f6f9dc02e07bc1abab78867d633da507fd8bbedcf0",
+  "scope": "Ready to publish audited optimization and request official evaluation. Stagedcached build only; previous cold gate remains failed. No full-paper Palomar acceptance or registration."
+}

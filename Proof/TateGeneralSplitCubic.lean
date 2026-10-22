@@ -5,6 +5,7 @@ public import TateCoeffXTerm
 public import TateSeriesStabilization
 public import Definitions.Def_LaurentSeries_XAdic
 public import Theorems.Thm_TateCurve_equation_pointX_pointY
+public import TateLegacySeriesStabilization
 
 @[expose] public section
 

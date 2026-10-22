@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.MvPolynomial.Ideal
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import Definitions.Def_WeierstrassCurve_DrinfeldBasisGlobal
 public import Definitions.Def_WeierstrassCurve_DrinfeldTransportPin

@@ -1,11 +1,14 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_NeronModelEndomorphismExtension
 public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
 public import P2M.Util
 public import P2M.Sol.S_GoodReductionJacobian_RelativeGroupLaw_eq_of_mem_irreducibleComponents_of_apply_closedPoint_mem
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 attribute [-simp] GoodReductionJacobian.RelativeGroupLaw.nsmul_zero GoodReductionJacobian.RelativeGroupLaw.mem_torsionSubset GoodReductionJacobian.RelativeGroupLaw.nsmul_succ NeronModelInfra.NeronModelPropertyBundle.endExtensionEquiv_symm_restrict NeronModelInfra.schemeHomOverComp_id_left NeronModelInfra.schemeHomOverComp_id_right NeronModelInfra.schemeHomOverId_coe NeronModelInfra.NeronModelPropertyBundle.endExtensionEquiv_apply NeronModelInfra.NeronModelPropertyBundle.restrict_endExtensionEquiv_symm NeronModelInfra.schemeHomOverComp_coe
 
 set_option autoImplicit false

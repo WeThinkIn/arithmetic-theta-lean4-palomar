@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ENatToNat
+public import Mathlib.Algebra.Category.ModuleCat.Differentials.Presheaf
+public import Mathlib.CategoryTheory.Monoidal.Mon
 public import Definitions.Def_PresheafOfModules_ExteriorPower
 public import Definitions.Def_AlgebraicGeometry_ModulesDet
 

@@ -2,6 +2,7 @@ module
 
 public import AlgebraizedMarkedLineDefinitionsR0136
 public import Mathlib.AlgebraicGeometry.Stalk
+public import CompatibleFormalSectionBasisR0134
 
 @[expose] public section
 

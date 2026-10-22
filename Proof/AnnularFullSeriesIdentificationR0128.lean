@@ -2,6 +2,10 @@ module
 
 public import ThetaLimitRecoveryRootR0128
 public import AnnularThetaGluingDefinitionsR0128
+public import ThetaAnnularConvergenceR0119
+public import ScaledThetaLimitExactSpecializationR0050
+public import Mathlib.Topology.Connected.Separation
+public import Mathlib.Data.Nat.Cast.SetInterval
 
 @[expose] public section
 

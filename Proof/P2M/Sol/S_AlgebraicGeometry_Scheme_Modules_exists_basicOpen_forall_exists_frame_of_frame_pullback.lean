@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.SimpleRing.Principal
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_frame_of_frame_pullback
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_basicOpen_forall_exists_frame

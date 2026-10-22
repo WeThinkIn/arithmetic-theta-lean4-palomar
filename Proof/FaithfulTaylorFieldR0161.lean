@@ -2,6 +2,7 @@ module
 
 public import CompletedChartTaylorR0161
 public import CompletedSectionKernelsR0053
+public import OriginInitialDefinitionsR0161
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

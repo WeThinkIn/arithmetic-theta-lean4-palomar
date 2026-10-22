@@ -1,6 +1,7 @@
 module
 
 public import MarkingCharacterDefinitionsR0115
+public import SplitCubicGeometry
 
 @[expose] public section
 set_option backward.privateInPublic true

@@ -3,6 +3,7 @@ module
 public import UnaryKatoPowerDefinitionsR0160
 public import CompletedModelChartMapsR0152
 public import UnsplitKatoFullExpansionR0158
+public import KatoAnnularDefinitionsR0152
 
 @[expose] public section
 

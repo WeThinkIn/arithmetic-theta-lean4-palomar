@@ -2,6 +2,8 @@ module
 
 public import EvenThetaRigidificationR0212
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_iso_invModule_zeroSchemeIdeal
+public import RelativeFourCharacterDefinitionsR0211
+public import FullLevelBaseChangeR0175
 
 @[expose] public section
 

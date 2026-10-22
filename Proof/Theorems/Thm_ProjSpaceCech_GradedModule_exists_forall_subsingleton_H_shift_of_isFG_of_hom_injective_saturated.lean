@@ -1,6 +1,6 @@
 module
+public import Mathlib.AlgebraicGeometry.Scheme
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCechGradedModule
 public import P2M.Util
 public import P2M.Sol.S_ProjSpaceCech_GradedModule_exists_forall_subsingleton_H_shift_of_isFG_of_hom_injective_saturated

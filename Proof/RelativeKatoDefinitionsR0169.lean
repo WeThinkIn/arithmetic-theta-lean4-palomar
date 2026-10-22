@@ -2,6 +2,7 @@ module
 
 public import GeneralKatoBaseChangeR0168
 public import GeneralKatoUnitLocusR0168
+public import GeneralEllipticKatoDefinitionsR0168
 
 @[expose] public section
 

@@ -2,6 +2,8 @@ module
 
 public import Rank16Definitions
 public import Rank16LatticeDefinitions
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.PowerSeries.Basic
 
 @[expose] public section
 

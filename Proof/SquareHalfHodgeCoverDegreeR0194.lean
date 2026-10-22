@@ -1,6 +1,7 @@
 module
 
 public import SharpCoverRatiosDefinitionsR0194
+public import ComponentHodgePowerDegreeR0184
 
 @[expose] public section
 

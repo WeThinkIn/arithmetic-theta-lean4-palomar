@@ -2,6 +2,7 @@ module
 
 public import Theorems.Thm_WeierstrassCurve_card_torsion_of_isAlgClosed
 public import P2M.Util
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 namespace P2MW.S_WeierstrassCurve_sum_eq_zero_of_forall_mem_iff_smul_eq_zero

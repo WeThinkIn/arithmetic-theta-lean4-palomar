@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.CategoryTheory.Sites.Descent.DescentDataPrime
 public import Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Definitions.Def_AlgebraicGeometry_RelPicardAlgEquivZeroCut
@@ -763,6 +763,44 @@ lemma isoMk_comm
   exact map_comp_rawHom_eq (πS R' t) (πS R' t) hH0 A₁ A₂ ι'.hom ι'.hom hι' hι'
 
 set_option maxHeartbeats 16000000 in
+private theorem asm_b_of_rig_data621
+    (hH0 : ∀ (A : Type u) [CommRing A] [Algebra R A],
+      letI := Scheme.TwoAffineOpenCover.algebraOfHom
+        (Limits.pullback.snd c (Scheme.TwoAffineOpenCover.specMap R A)) ⊤
+      Function.Bijective (algebraMap A Γ(Limits.pullback c (Scheme.TwoAffineOpenCover.specMap R A), ⊤)))
+    (A₁ A₂ : RigData c ε t)
+    (ι' : (A₁.pb (πS R' t)).L ≅ (A₂.pb (πS R' t)).L)
+    (hι' : RigData.Compat (A₁.pb (πS R' t)) (A₂.pb (πS R' t)) ι'.hom) :
+    Nonempty (A₁.L ≅ A₂.L) := by
+  have comm := isoMk_comm c ε R' t hH0 A₁ A₂ ι' hι'
+  let D₁ := ((DescentData'.fromDescentDataFunctor (MOD)
+          (sq c R' t) (sq₃ c R' t)).obj
+        (((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).obj A₁.L))
+  let D₂ := ((DescentData'.fromDescentDataFunctor (MOD)
+          (sq c R' t) (sq₃ c R' t)).obj
+        (((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).obj A₂.L))
+  let e' : D₁ ≅ D₂ := DescentData'.isoMk (fun _ => ι') (fun i₁ i₂ => comm i₁ i₂)
+  let E := DescentData'.descentDataEquivalence (MOD)
+    (sq c R' t) (sq₃ c R' t)
+  let ξ : ((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).obj A₁.L ≅
+      ((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).obj A₂.L :=
+    (E.counitIso.app _).symm ≪≫ E.functor.mapIso e' ≪≫ E.counitIso.app _
+
+  have hbij := fun (L₁ L₂ : RigData c ε t) =>
+    AlgebraicGeometry.Scheme.Modules.IsInvertible.toDescentData_map_bijective_of_isAffineHom_of_flat_of_surjective
+      (baseChangeSnd c (πS R' t)) L₁.L L₂.L L₁.isInvertible L₂.isInvertible
+  obtain ⟨ι₀, hι₀⟩ := (hbij A₁ A₂).2 ξ.hom
+  obtain ⟨κ₀, hκ₀⟩ := (hbij A₂ A₁).2 ξ.inv
+  refine ⟨⟨ι₀, κ₀, (hbij A₁ A₁).1 ?_, (hbij A₂ A₂).1 ?_⟩⟩
+  · refine (((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).map_comp ι₀ κ₀).trans ?_
+    rw [hι₀, hκ₀, Iso.hom_inv_id]
+    exact (((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).map_id _).symm
+  · refine (((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).map_comp κ₀ ι₀).trans ?_
+    rw [hι₀, hκ₀, Iso.inv_hom_id]
+    exact (((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).map_id _).symm
+
+
+set_option maxHeartbeats 16000000 in
 theorem asm_b
     (hH0 : ∀ (A : Type u) [CommRing A] [Algebra R A],
       letI := Scheme.TwoAffineOpenCover.algebraOfHom
@@ -777,32 +815,7 @@ theorem asm_b
 
   obtain ⟨ι', hι'⟩ := RigData.exists_compat_iso (A₁.pb (πS R' t)) (A₂.pb (πS R' t)) h
 
-  have comm := isoMk_comm c ε R' t hH0 A₁ A₂ ι' hι'
-  let D₁ := ((DescentData'.fromDescentDataFunctor (MOD)
-          (sq c R' t) (sq₃ c R' t)).obj
-        (((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).obj M₁.L))
-  let D₂ := ((DescentData'.fromDescentDataFunctor (MOD)
-          (sq c R' t) (sq₃ c R' t)).obj
-        (((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).obj M₂.L))
-  let e' : D₁ ≅ D₂ := DescentData'.isoMk (fun _ => ι') (fun i₁ i₂ => comm i₁ i₂)
-  let E := DescentData'.descentDataEquivalence (MOD)
-    (sq c R' t) (sq₃ c R' t)
-  let ξ : ((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).obj M₁.L ≅
-      ((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).obj M₂.L :=
-    (E.counitIso.app _).symm ≪≫ E.functor.mapIso e' ≪≫ E.counitIso.app _
-
-  have hbij := fun (L₁ L₂ : RigidifiedLineBundle c ε t) =>
-    AlgebraicGeometry.Scheme.Modules.IsInvertible.toDescentData_map_bijective_of_isAffineHom_of_flat_of_surjective
-      (baseChangeSnd c (πS R' t)) L₁.L L₂.L L₁.isInvertible L₂.isInvertible
-  obtain ⟨ι₀, hι₀⟩ := (hbij M₁ M₂).2 ξ.hom
-  obtain ⟨κ₀, hκ₀⟩ := (hbij M₂ M₁).2 ξ.inv
-  refine ⟨⟨ι₀, κ₀, (hbij M₁ M₁).1 ?_, (hbij M₂ M₂).1 ?_⟩⟩
-  · refine (((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).map_comp ι₀ κ₀).trans ?_
-    rw [hι₀, hκ₀, Iso.hom_inv_id]
-    exact (((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).map_id _).symm
-  · refine (((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).map_comp κ₀ ι₀).trans ?_
-    rw [hι₀, hκ₀, Iso.inv_hom_id]
-    exact (((MOD).toDescentData (fun _ : Unit => baseChangeSnd c (πS R' t))).map_id _).symm
+  exact asm_b_of_rig_data621 c ε R' t hH0 A₁ A₂ ι' hι'
 
 end asm_b
 p2m_reactivate "P2MW.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.AlgebraicGeometry P2MW.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.AlgebraicGeometry.RelPicard P2MW.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.AlgebraicGeometry.RelPicard.DescentAux P2MW.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections.AlgebraicGeometry.RelPicard.DescentAux.RigData"

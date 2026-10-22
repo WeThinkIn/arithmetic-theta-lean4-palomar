@@ -1,6 +1,8 @@
 module
 
 public import SchemeTateDiscriminantDefinitionsR0245
+public import ArbitraryWeierstrassDiscriminantR0243
+public import OpenDiscriminantFullTateExpansionR0182
 
 @[expose] public section
 

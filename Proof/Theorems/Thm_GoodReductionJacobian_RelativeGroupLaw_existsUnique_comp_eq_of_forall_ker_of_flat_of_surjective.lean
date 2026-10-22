@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
 public import P2M.Util
 public import P2M.Sol.S_GoodReductionJacobian_RelativeGroupLaw_existsUnique_comp_eq_of_forall_ker_of_flat_of_surjective

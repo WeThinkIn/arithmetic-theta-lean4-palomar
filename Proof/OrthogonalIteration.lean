@@ -1,6 +1,7 @@
 module
 
 public import OrthogonalPrimitives
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 namespace ArithmeticThetaOrthogonalAlgorithm

@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.Tactic.ENatToNat
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_existsUnique_iso_forall_pullback_mapIso_eq_of_iSup_eq_top
 public import P2M.Util

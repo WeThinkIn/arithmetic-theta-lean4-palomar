@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_NeronModelInfra_TopFormOrder
 public import P2M.Util
 

@@ -1,6 +1,12 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.NoetherNormalization
+public import Mathlib.RingTheory.KrullDimension.Polynomial
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
+public import Mathlib.AlgebraicGeometry.Birational.RationalMap
 public import Definitions.Def_AlgebraicCurve_CurveModel
 public import Theorems.Thm_AlgebraicCurve_CurveModel_nonempty_of_perfectField
 public import Theorems.Thm_RingHom_finiteDimensional_adjoin_range_of_finite_of_forall_mem_range

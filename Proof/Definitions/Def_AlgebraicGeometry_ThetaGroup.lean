@@ -1,6 +1,10 @@
 module
 
-public import Mathlib
+public import Mathlib.CategoryTheory.Bicategory.Grothendieck
+public import Mathlib.CategoryTheory.ExtremalEpi
+public import Mathlib.AlgebraicGeometry.Sites.Fpqc
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
+public import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant
 public import Definitions.Def_AlgebraicGeometry_RiemannForm
 
 @[expose] public section

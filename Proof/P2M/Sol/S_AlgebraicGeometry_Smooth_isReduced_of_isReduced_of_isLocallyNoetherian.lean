@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Geometrically.Reduced
 public import Theorems.Thm_AlgebraicGeometry_isReduced_of_smooth_of_field
 public import P2M.Util
 

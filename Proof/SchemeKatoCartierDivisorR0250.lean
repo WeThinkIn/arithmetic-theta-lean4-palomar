@@ -2,6 +2,7 @@ module
 
 public import SchemeKatoUnitExistenceR0250
 public import SchemeMultiplicationDegreeR0250
+public import ArbitraryKatoCartierDivisorR0249
 
 @[expose] public section
 

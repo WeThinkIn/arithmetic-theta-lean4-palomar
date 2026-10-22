@@ -1,6 +1,12 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.TensorProduct.IsBaseChangeHom
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
+public import Mathlib.RingTheory.PicardGroup
+public import Mathlib.Tactic.Monotonicity.Lemmas
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 public import Definitions.Def_LinearMap_ExtPushout
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_IsQuasicoherent_exists_linearEquiv_tensorProduct_apply_one_tmul_eq_res

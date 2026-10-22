@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_AlgebraicGeometry_exists_eq_pullback_snd_comp_of_isProper
 public import P2M.Util
 

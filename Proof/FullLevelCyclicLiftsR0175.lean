@@ -1,6 +1,8 @@
 module
 
 public import FullLevelCoverDefinitionsR0175
+public import RelativeCyclicQuotientDefinitionsR0173
+public import RelativeKatoFiberSpecializationR0170
 
 @[expose] public section
 

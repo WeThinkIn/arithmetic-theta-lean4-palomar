@@ -1,6 +1,7 @@
 module
 
 public import ExtendedMetaplecticDefinitionsR0241
+public import ScalarExtensionGeometryR0240
 
 @[expose] public section
 

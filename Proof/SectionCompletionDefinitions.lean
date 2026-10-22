@@ -6,6 +6,8 @@ public import GenericLineCoefficients
 public import SchemeExpansionOrder
 public import CuspOrder
 public import Mathlib.RingTheory.AdicCompletion.Algebra
+public import NormalizedSectionDefinitions
+public import Mathlib.AlgebraicGeometry.OrderOfVanishing
 
 @[expose] public section
 

@@ -3,6 +3,7 @@ module
 public import PairingBilinearityR0118
 public import MarkingPairingIdentificationR0118
 import all MovedSupportMillerPairingR0116
+public import GeneratorSMillerPhaseR0115
 
 @[expose] public section
 

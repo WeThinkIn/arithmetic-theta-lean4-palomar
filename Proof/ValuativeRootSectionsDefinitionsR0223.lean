@@ -1,6 +1,7 @@
 module
 
 public import SimultaneousDiskRootSectionsR0187
+public import SimultaneousUnaryRootsDefinitionsR0187
 
 @[expose] public section
 

@@ -8,8 +8,14 @@ public import Theorems.Thm_WeierstrassCurve_Affine_weilPairing0_map_algHom
 public import P2M.Sol.S_WeierstrassCurve_Affine_weilPairing0_toPoint_variableChange
 public import Theorems.Thm_WeierstrassProjModel_exists_variableChange_smul_eq_and_projMap_eq_inv_of_iso_of_kwZeroSect_comp_eq_of_isArtinianRing
 public import P2M.Sol.S_WeierstrassCurve_Affine_weilPairing0_toPoint_eq_of_baseChange_eq
+public import P2M.Sol.S_WeierstrassCurve_Affine_isPrimitiveRoot_weilPairing0_toPoint_of_isLevelPStructure
+public import MarkingCuspProjectionR0102
+public import AllCuspNormalizedPowerIntegralityR0183
 
 @[expose] public section
+
+-- Preserve original field inference without overriding specialized local-ring instances.
+attribute [local instance 999] HenselianLocalRing.toIsLocalRing
 
 /-! Geometric prerequisites for the component cusp bound. -/
 set_option autoImplicit false

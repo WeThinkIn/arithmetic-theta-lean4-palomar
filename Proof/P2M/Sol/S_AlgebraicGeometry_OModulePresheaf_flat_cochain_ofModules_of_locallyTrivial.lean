@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.Finite
 public import Definitions.Def_AlgebraicGeometry_OrderedAffineCoverCech
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafOfModules
 public import Theorems.Thm_AlgebraicGeometry_Scheme_TwoAffineOpenCover_flat_sections_of_flat

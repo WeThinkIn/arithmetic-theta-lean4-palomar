@@ -1,7 +1,6 @@
 module
 
 public import GlobalizationDefinitions
-public import Mathlib
 
 @[expose] public section
 noncomputable section

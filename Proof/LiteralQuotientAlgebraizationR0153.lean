@@ -1,6 +1,10 @@
 module
 
 public import ActualKatoAnnularComparisonR0152
+public import KatoAnnularDivisorR0152
+public import KatoAnnularOverlapR0152
+public import LocalThetaRatioConstantR0088
+public import ActualKatoFunctionExistenceR0151
 
 @[expose] public section
 

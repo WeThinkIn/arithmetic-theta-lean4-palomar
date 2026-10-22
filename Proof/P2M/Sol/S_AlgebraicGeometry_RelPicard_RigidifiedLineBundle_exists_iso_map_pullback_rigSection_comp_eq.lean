@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.WittVector.IsPoly
 public import Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import P2M.Util

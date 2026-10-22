@@ -14,6 +14,10 @@ public import Mathlib.LinearAlgebra.Dimension.Constructions
 public import Mathlib.LinearAlgebra.Dimension.StrongRankCondition
 public import Theorems.Thm_AlgebraicCurve_isCurveOver_of_transcendental
 public import P2M.Util
+public import Mathlib.RingTheory.TotallySplit
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
+public import Mathlib.Algebra.Lie.OfAssociative
 
 @[expose] public section
 namespace P2MW.S_AlgebraicCurve_isCurveOver_of_isIntegral_of_smoothOfRelativeDimension_one

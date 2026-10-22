@@ -2,6 +2,8 @@ module
 
 public import SchemeFourCharacterDefinitionsR0215
 public import RelativeMarkingActionR0211
+public import UniversalThetaEvaluationDefinitionsR0213
+public import ArbitraryAlphaCharacterR0214
 
 @[expose] public section
 

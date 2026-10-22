@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 public import Definitions.Def_PresheafOfModules_InternalHom
 public import Theorems.Thm_PresheafOfModules_isMonoidal_inverseImage_W_toPresheaf
 public import Definitions.Def_SheafOfModules_MonoidalV2

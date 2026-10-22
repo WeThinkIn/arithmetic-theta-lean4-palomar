@@ -1,6 +1,8 @@
 module
 
 public import RelativeDiscriminantDefinitionsR0171
+public import RelativeKatoCartierRatioR0170
+public import RelativeTorsionCartierR0170
 
 @[expose] public section
 

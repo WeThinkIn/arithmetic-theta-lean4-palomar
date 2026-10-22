@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_JacJ1Iface
 public import Theorems.Thm_AlgebraicGeometry_isIntegral_of_isLocallyNoetherian_of_connectedSpace_of_forall_isDomain_stalk
 public import Theorems.Thm_AlgebraicGeometry_Smooth_isRegularLocalRing_stalk
@@ -11,6 +10,9 @@ public import Theorems.Thm_AlgebraicGeometry_GeometricallyConnected_descendsAlon
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 set_option backward.isDefEq.respectTransparency false
 namespace P2MW.S_GoodReductionJacobian_AbelianSchemePropertyBundle_geometricallyIntegral
 attribute [-simp] RegularLocalRingQuotientAscent.dualNumberFst_apply

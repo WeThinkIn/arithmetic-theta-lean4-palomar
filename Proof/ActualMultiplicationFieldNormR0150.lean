@@ -1,6 +1,7 @@
 module
 
 public import FiniteEtaleLocalNormR0150
+public import MultiplicationFiniteEtaleDegreeR0148
 
 @[expose] public section
 

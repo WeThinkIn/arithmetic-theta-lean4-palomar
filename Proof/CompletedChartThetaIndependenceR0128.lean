@@ -2,6 +2,7 @@ module
 
 public import AnnularFullSeriesIdentificationR0128
 public import Mathlib.LinearAlgebra.LinearIndependent.Basic
+public import Mathlib.Data.Rat.Star
 
 @[expose] public section
 set_option backward.privateInPublic true

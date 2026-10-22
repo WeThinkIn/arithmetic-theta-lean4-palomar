@@ -1,6 +1,7 @@
 module
 
 public import ModelSymmetriesDefinitionsR0137
+public import PolygonThickeningRecoveryR0130
 
 @[expose] public section
 

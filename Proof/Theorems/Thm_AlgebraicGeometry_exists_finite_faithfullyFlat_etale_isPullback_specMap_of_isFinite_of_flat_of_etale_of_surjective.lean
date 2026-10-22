@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_exists_finite_faithfullyFlat_etale_isPullback_specMap_of_isFinite_of_flat_of_etale_of_surjective
 

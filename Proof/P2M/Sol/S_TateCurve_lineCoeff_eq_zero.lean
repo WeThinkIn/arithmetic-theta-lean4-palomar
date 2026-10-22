@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Mathlib.NumberTheory.Padics.PadicNumbers
 public import Definitions.Def_TateCurve_QShift
 public import Theorems.Thm_TateCurve_defect_qExpansion

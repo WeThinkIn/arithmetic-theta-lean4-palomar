@@ -2,6 +2,7 @@ module
 
 public import CyclicNoPoleConstantR0088
 public import LaurentScalarGraphR0088
+public import LocalComparisonFamilyR0067
 
 @[expose] public section
 

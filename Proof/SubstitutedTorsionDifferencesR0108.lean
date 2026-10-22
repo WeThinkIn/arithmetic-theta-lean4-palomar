@@ -1,6 +1,8 @@
 module
 
 public import AllCuspHalfDefinitionsR0108
+public import TateMarkedCuspOrders
+public import TateSeriesCuspTerms
 
 @[expose] public section
 

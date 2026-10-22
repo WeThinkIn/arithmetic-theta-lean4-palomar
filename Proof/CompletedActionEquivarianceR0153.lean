@@ -2,6 +2,8 @@ module
 
 public import CompletedScalingExtensionR0153
 public import MarkedFieldActionR0153
+public import CompletedChartFieldMapsR0152
+public import CompletedModelChartMapsR0152
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

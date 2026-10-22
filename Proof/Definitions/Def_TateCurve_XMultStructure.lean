@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
 public import Definitions.Def_TateCurve_QShift
 public import Theorems.Thm_TateCurve_pointX_inv
 public import Theorems.Thm_TateCurve_pointX_q_mul

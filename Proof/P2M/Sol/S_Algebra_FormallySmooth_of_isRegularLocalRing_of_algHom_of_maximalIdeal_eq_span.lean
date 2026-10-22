@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 
 public import Definitions.Def_Mathlib_RingTheory_RegularLocalRingQuotientRegular
 public import Theorems.Thm_Algebra_FormallySmooth_of_isRegularLocalRing_of_surjective_algebraMap_residueField

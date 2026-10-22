@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
 public import Definitions.Def_AlgebraicGeometry_PolarisationRosati
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCover

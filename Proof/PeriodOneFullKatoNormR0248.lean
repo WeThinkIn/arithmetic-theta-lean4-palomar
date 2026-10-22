@@ -1,6 +1,10 @@
 module
 
 public import PeriodOneRamifiedEvaluationR0248
+public import RamifiedCubicKatoEvaluationR0248
+public import PeriodOneFunctionFieldEvaluationR0248
+public import PeriodOneNormalizedFrameR0246
+public import PeriodOneGeometricComparisonR0246
 
 @[expose] public section
 

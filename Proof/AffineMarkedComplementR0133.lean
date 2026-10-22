@@ -3,6 +3,9 @@ module
 public import GlobalMarkedIdealChartsR0133
 public import Theorems.Thm_AlgebraicGeometry_isAffine_of_isClosedImmersion_of_surjective
 public import Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_isReduced_subscheme_vanishingIdeal_and_le_ker
+public import PolygonThickeningRecoveryR0130
+public import FiniteStageAdjacentR0129
+public import Mathlib.AlgebraicGeometry.Artinian
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

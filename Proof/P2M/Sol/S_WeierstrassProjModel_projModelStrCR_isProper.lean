@@ -5,6 +5,8 @@ public import Mathlib.AlgebraicGeometry.Morphisms.Proper
 public import Mathlib.RingTheory.FiniteType
 public import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Proper
 public import P2M.Util
+public import Mathlib.RingTheory.TotallySplit
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 namespace P2MW.S_WeierstrassProjModel_projModelStrCR_isProper

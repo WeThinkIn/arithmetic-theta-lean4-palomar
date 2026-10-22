@@ -4,6 +4,8 @@ public import PhaseFreeKeyNaturalityR0219
 public import MultiplierFourthTrivializationR0219
 public import FourTorsionTateBehaviorR0190
 public import TateFullLevelMarkingR0181
+public import PhaseFreeKeyDefinitionsR0219
+public import SchemeAlphaSectionR0215
 
 @[expose] public section
 

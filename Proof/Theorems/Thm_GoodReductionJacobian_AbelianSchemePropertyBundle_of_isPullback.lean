@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_JacJ1Iface
 public import P2M.Util
 public import P2M.Sol.S_GoodReductionJacobian_AbelianSchemePropertyBundle_of_isPullback

@@ -2,6 +2,7 @@ module
 
 public import CompatibleLevelDefinitionsR0178
 public import Mathlib.AlgebraicGeometry.Sites.Fpqc
+public import EllipticSignDescentR0176
 
 @[expose] public section
 

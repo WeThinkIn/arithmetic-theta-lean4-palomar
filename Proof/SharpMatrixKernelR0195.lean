@@ -2,6 +2,7 @@ module
 
 public import SharpMatrixGeometricFamilyR0195
 public import SharpGeometricCutoffR0195
+public import ConservativeMatrixKernelR0189
 
 @[expose] public section
 

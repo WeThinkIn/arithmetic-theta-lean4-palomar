@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "scope": "common-unary",
+      "process": {
+        "exit_code": 0,
+        "seconds": 636.1190839759074,
+        "peak_rss_bytes": 9895608320,
+        "stop_reason": null,
+        "command": [
+          "/home/Palomar/workspace/arithmetic-theta/evidence/official-pipeline-refresh-858/trusted-checker-update-02/con-ron",
+          "--verified",
+          "--jobs=2",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-common-unary-847/CommonUnarySolution-01.ndjson"
+        ]
+      },
+      "outcome": {
+        "name": "con-ron",
+        "status": "accepted",
+        "reason": "complete",
+        "exit_code": 0,
+        "detail": "con-ron: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)\ncon-ron: accepted 150698 declarations (--verified)"
+      }
+    },
+    {
+      "scope": "complete-main",
+      "process": {
+        "exit_code": 0,
+        "seconds": 591.1123876660131,
+        "peak_rss_bytes": 9881493504,
+        "stop_reason": null,
+        "command": [
+          "/home/Palomar/workspace/arithmetic-theta/evidence/official-pipeline-refresh-858/trusted-checker-update-02/con-ron",
+          "--verified",
+          "--jobs=2",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-complete-main-848/CompleteMainAndComponentsSolution-01.ndjson"
+        ]
+      },
+      "outcome": {
+        "name": "con-ron",
+        "status": "accepted",
+        "reason": "complete",
+        "exit_code": 0,
+        "detail": "con-ron: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)\ncon-ron: accepted 158728 declarations (--verified)"
+      }
+    },
+    {
+      "scope": "full087",
+      "process": {
+        "exit_code": 0,
+        "seconds": 540.0713629182428,
+        "peak_rss_bytes": 9233244160,
+        "stop_reason": null,
+        "command": [
+          "/home/Palomar/workspace/arithmetic-theta/evidence/official-pipeline-refresh-858/trusted-checker-update-02/con-ron",
+          "--verified",
+          "--jobs=2",
+          "/home/Palomar/workspace/arithmetic-theta/evidence/global-projective-strict-comparison-784/Solution-01.ndjson"
+        ]
+      },
+      "outcome": {
+        "name": "con-ron",
+        "status": "accepted",
+        "reason": "complete",
+        "exit_code": 0,
+        "detail": "con-ron: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)\ncon-ron: accepted 140740 declarations (--verified)"
+      }
+    }
+  ],
+  "bindings_unchanged": true,
+  "checker_provenance": {
+    "kind": "maintainer-pinned-release",
+    "source_toolchain": "leanprover/lean4:v4.35.0-rc2",
+    "release_tag": "v4.36.0-rc1",
+    "release_commit": "c9afcddf514a6772bd4d649f7cfc04eff0b9f15e",
+    "archive_sha256": "26b3cea1a006ad419215520b8668dcd3f6a9eeba1a123756563a739f9c6274b2",
+    "binary_sha256": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+    "archive_url": "https://github.com/leanprover/lean4/releases/download/v4.36.0-rc1/lean-4.36.0-rc1-linux.tar.zst"
+  },
+  "scope": "Updated official maintainer-selected con-ron on exact full exports; does not replace mandatory stock Lean/NanoDa or official whole-paper semantic review"
+}

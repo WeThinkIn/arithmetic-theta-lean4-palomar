@@ -1,6 +1,9 @@
 module
 
 public import FormalSchrodingerDefinitionsR0119
+public import UnaryThetaProducts
+public import Mathlib.Topology.Algebra.InfiniteSum.Nonarchimedean
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 

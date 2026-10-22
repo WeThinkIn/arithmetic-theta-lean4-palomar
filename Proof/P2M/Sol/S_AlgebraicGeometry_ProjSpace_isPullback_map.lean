@@ -3,6 +3,7 @@ module
 public import Definitions.Def_AlgebraicGeometry_ProjSpace
 public import Mathlib.RingTheory.TensorProduct.MvPolynomial
 public import P2M.Util
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

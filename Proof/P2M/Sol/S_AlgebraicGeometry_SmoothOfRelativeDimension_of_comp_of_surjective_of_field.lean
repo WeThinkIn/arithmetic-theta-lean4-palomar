@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_AlgebraicGeometry_Smooth_of_comp_of_smooth_of_surjective
 public import Theorems.Thm_AlgebraicGeometry_SmoothOfRelativeDimension_of_comp_of_smoothOfRelativeDimension_of_surjective
 public import P2M.Util

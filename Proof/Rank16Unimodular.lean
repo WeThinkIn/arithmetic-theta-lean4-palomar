@@ -3,6 +3,7 @@ module
 public import Rank16Basis
 public import Rank16Definitions
 public import Rank16LatticeDefinitions
+public import Mathlib.Tactic.Polynomial.Basic
 
 @[expose] public section
 

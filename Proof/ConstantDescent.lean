@@ -1,6 +1,10 @@
 module
 
 public import FaithfullyFlatSections
+public import ProperFunctionsDefinitions
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.SimpleRing.Principal
 
 @[expose] public section
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry

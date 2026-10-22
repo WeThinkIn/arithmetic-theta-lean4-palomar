@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
+public import Mathlib.AlgebraicGeometry.Morphisms.Smooth
 public import Theorems.Thm_isRegularLocalRing_localization_atPrime_of_isStandardSmooth
 public import P2M.Util
 

@@ -1,0 +1,38 @@
+{
+  "public_metadata_commit": "6e5bbb824c096cf7117cb2f8ca9a21ae5735ad71",
+  "combined_setup_sha256": "bcd2c2e50769d755707a2c52977f3070c97ca2cb6054613ec578f8bbe5909b3a",
+  "combined_audit_sha256": "8e2b8b33e88b46bd566828e9995524150c1469e6f706286bbdaec8d81cea7cb6",
+  "target": "CommonUnarySolution",
+  "cpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "project_build_cache_empty": true,
+  "dependency_cache_shared": true,
+  "memory_max_bytes": 15032385536,
+  "runtime_max_seconds": 19800,
+  "command": [
+    "systemd-run",
+    "--unit=palomar-direct-hodge-cold-839.service",
+    "--property=Type=exec",
+    "--property=WorkingDirectory=/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-cold-build-839/project",
+    "--property=MemoryMax=14G",
+    "--property=RuntimeMaxSec=19800",
+    "--property=StandardOutput=append:/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-cold-build-839/build.log",
+    "--property=StandardError=append:/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-cold-build-839/build.log",
+    "--setenv=LEAN4_AGENT_CPU_AFFINITY=0,1,2,3",
+    "--setenv=LEAN4_AGENT_LEAN_THREAD_BUDGET=4",
+    "--setenv=LEAN_NUM_THREADS=4",
+    "/usr/bin/python3",
+    "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "--",
+    "lake",
+    "build",
+    "+CommonUnarySolution"
+  ],
+  "scope": "Local cold Lake Solution build including C/setup generation; not official capacity equivalence"
+}

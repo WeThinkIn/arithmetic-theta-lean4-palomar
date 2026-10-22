@@ -3,6 +3,8 @@ module
 import all GenericThetaBasisR0140
 
 public import GenericLiftScalarComparisonR0142
+public import GeometricIntertwinerRigidityR0141
+public import GeometricThetaRelationsR0141
 
 @[expose] public section
 

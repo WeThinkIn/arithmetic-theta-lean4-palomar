@@ -1,6 +1,7 @@
 module
 
 public import ComponentCurveFramesR0184
+public import ComponentDegreeDefinitionsR0184
 
 @[expose] public section
 

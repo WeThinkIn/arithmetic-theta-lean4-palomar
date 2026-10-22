@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Std.Tactic.BVDecide.Normalize.Prop
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import Definitions.Def_WeierstrassCurve_DrinfeldBasisGlobal
 public import Definitions.Def_WeierstrassCurve_SectionAtOrigin

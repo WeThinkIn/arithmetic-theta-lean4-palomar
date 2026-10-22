@@ -1,6 +1,9 @@
 module
 
 public import HodgeFourTorsionDefinitionsR0147
+public import ActualInverseComparisonR0146
+public import GlobalNormalizedDifferentialR0145
+public import AlgebraizedAnnularActionsR0137
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

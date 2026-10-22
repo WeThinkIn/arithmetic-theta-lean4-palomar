@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 public import Definitions.Def_AlgebraicGeometry_ModulesGlueOfCocycle
 public import Definitions.Def_AlgebraicGeometry_ModulesPullbackLocalSection

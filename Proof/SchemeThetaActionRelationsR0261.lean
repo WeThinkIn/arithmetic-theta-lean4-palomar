@@ -1,6 +1,7 @@
 module
 
 public import SchemeThetaPushforwardActionR0261
+public import SchemeCyclicThetaSplittingR0259
 
 @[expose] public section
 

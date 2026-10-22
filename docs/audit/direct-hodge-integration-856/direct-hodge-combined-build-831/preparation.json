@@ -1,0 +1,20 @@
+{
+  "changed_modules": [
+    "IsogenyAlphaAllCuspOrdersR0193"
+  ],
+  "affected_closure_modules": 192,
+  "reusable_modules": 3723,
+  "candidate_sha256": "471fbb3b5e7455f18229b5f82f1248ea28a668c31b8c8ada9207f95513f831a3",
+  "original_module_audit": {
+    "passed": true,
+    "exit_code": 0,
+    "seconds": 5.161493425257504,
+    "counts": [
+      78,
+      0
+    ],
+    "bindings_unchanged": true,
+    "scope": "Original complete module named types/universes/data bodies and standard axioms; modified proof checked by compiler. Full dependent rebuild and independent kernels remain required."
+  },
+  "scope": "Full3915 module closure with all769 repairs and825 audited direct hodge proof; isolated build, no public integration or official acceptance"
+}

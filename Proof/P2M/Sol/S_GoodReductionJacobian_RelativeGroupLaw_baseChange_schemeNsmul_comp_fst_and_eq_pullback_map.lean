@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawKernel
 public import Definitions.Def_JacJ1Iface
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawBaseChange
 public import P2M.Util

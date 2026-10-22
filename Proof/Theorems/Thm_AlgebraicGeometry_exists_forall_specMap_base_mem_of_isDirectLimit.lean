@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_Mathlib_Algebra_IsDirectLimit
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_exists_forall_specMap_base_mem_of_isDirectLimit

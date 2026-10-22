@@ -2,6 +2,8 @@ module
 
 public import ScopedCuspDefinitionsR0102
 public import Mathlib.RingTheory.Coprime.Lemmas
+public import Mathlib.Algebra.Order.Ring.Star
+public import Mathlib.Data.Int.Star
 
 @[expose] public section
 

@@ -1,6 +1,7 @@
 module
 
 public import ActualAnchoredPullbackR0208
+public import CategoricalRootFiberR0199
 
 @[expose] public section
 

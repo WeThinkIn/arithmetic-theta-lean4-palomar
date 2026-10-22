@@ -1,6 +1,7 @@
 module
 
 public import LatticeGlobalSectionsDefinitionsR0188
+public import ComputedFamilyFormalUnaryConsumerR0127
 
 @[expose] public section
 

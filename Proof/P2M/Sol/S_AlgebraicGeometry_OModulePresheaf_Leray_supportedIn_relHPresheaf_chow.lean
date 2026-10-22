@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.QuasiAffine
+public import Mathlib.AlgebraicGeometry.Noetherian
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCover
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafLerayBicomplex
 public import Theorems.Thm_AlgebraicGeometry_Scheme_OrderedAffineCoverOf_ker_d_succ_le_range_d_of_isAffineOpen

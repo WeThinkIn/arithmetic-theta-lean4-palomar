@@ -1,6 +1,9 @@
 module
 
 public import NormalizationSmoothCurve
+public import SmoothCurveDimension
+public import SmoothNormality
+public import NormalizationFinite
 
 @[expose] public section
 

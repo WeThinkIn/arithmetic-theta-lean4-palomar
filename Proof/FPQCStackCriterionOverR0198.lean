@@ -1,6 +1,8 @@
 module
 
 public import RootStackDefinitionsR0198
+public import Mathlib.Topology.Order.Hom.Esakia
+public import Mathlib.CategoryTheory.Sites.Descent.Precoverage
 
 @[expose] public section
 

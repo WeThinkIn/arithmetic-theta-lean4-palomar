@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.CategoryTheory.Shift.Basic
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import Definitions.Def_WeierstrassCurve_ProjModel_AddFormulas
 public import Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary

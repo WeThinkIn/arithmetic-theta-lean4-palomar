@@ -2,6 +2,11 @@ module
 
 public import AnnularTorsionPrerequisiteDefinitionsR0053
 public import Mathlib.FieldTheory.KummerExtension
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.Tactic.ENatToNat
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 

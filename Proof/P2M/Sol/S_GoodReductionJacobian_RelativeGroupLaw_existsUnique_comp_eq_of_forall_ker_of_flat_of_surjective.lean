@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
 public import Theorems.Thm_AlgebraicGeometry_exists_isMonHom_comp_eq_of_forall_comp_eq_one_of_flat_of_surjective
 public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_exists_grpObj_eq

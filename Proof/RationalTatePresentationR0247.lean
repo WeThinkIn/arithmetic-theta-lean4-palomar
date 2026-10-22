@@ -1,6 +1,7 @@
 module
 
 public import RationalTateDiscriminantDefinitionsR0247
+public import PeriodOneGeometricComparisonR0246
 
 @[expose] public section
 

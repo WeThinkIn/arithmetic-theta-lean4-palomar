@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafTensorMap
 public import Definitions.Def_AlgebraicGeometry_ProjTwistDatum
 public import P2M.Util

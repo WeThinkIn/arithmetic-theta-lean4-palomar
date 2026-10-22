@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_JacJ1Iface
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawFibre
 public import Definitions.Def_AlgebraicGeometry_SchemeFibreEndo

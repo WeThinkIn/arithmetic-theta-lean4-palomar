@@ -2,6 +2,10 @@ module
 
 public import FormalNormProduct
 public import NormScalarCorrectionR0063
+public import NormFiniteDefinitionsR0063
+public import Mathlib.RingTheory.LaurentSeries
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.Algebra.AffineMonoid.UniqueSums
 
 @[expose] public section
 

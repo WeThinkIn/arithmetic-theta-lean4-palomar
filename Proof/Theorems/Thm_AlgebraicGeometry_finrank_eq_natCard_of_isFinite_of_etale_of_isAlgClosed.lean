@@ -1,10 +1,12 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_finrank_eq_natCard_of_isFinite_of_etale_of_isAlgClosed
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 
 set_option autoImplicit false
 

@@ -1,6 +1,7 @@
 module
 
 public import NormalizedSectionDefinitions
+public import PullbackTensorSections
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

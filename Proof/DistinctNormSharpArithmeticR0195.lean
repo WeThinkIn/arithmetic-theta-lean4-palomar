@@ -1,6 +1,8 @@
 module
 
 public import SharpKernelDefinitionsR0195
+public import IndexedFullUnaryFactorizationR0188
+public import FiniteFullLevelCount
 
 @[expose] public section
 

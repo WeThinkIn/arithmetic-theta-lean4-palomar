@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_finrank_eq_natCard_sections_of_isFinite_of_isReduced_of_isAlgClosed
 

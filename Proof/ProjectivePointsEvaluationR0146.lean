@@ -2,6 +2,7 @@ module
 
 public import MarkedGroupLawDefinitionsR0146
 public import P2M.Sol.S_WeierstrassProjModel_exists_isPointsEval_apply_eq_some_of_eq_comp_zChartInclusion_of_isDomain
+public import CompactifiedCoordinateIsomorphismR0145
 
 @[expose] public section
 

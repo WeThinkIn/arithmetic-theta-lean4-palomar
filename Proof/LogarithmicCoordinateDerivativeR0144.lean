@@ -1,6 +1,7 @@
 module
 
 public import CubicModelDefinitionsR0144
+public import TateXNumeratorSystemR0143
 
 @[expose] public section
 

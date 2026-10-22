@@ -8,8 +8,15 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Hom_quasiFiniteAt_of_isPullb
 public import Theorems.Thm_AlgebraicGeometry_isFinite_and_flat_and_surjective_of_locallyQuasiFinite_of_smoothOfRelativeDimension
 public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_existsUnique_comp_eq_of_forall_ker_of_flat_of_surjective
 public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_schemeNsmul_comp_eq_comp_schemeNsmul_of_hom
+public import OpenLevelNormalizedHodgePowerR0180
+public import Theorems.Thm_AlgebraicGeometry_Scheme_Hom_finrank_comp_of_finrank_eq_const
+public import Theorems.Thm_AlgebraicGeometry_isOpenImmersion_and_isClosedImmersion_of_comp_eq_id
+public import PointedHodgeFunctorialityR0172
 
 @[expose] public section
+
+-- Restore the original field instance choice while retaining specialized local-ring instances.
+attribute [local instance 999] HenselianLocalRing.toIsLocalRing
 
 /-! Supporting comparisons for the designated unary expansion. -/
 set_option autoImplicit false

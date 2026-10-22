@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.RegularLocalRing.Defs
 public import Definitions.Def_Submodule_LocalBox
 public import Definitions.Def_QuaternionAlgebra_Order
 

@@ -2,6 +2,7 @@ module
 
 public import SectionCompletionDefinitions
 public import SectionOrderInvariance
+public import GenericLineCoefficients
 
 @[expose] public section
 

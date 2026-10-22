@@ -1,6 +1,9 @@
 module
 
 public import RootDescentDefinitionsR0197
+public import RootTestPullbackCoherenceR0196
+public import P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_toDescentData_map_bijective_of_isAffineHom_of_flat_of_surjective
+public import CompactDiscriminantSectionR0182
 
 @[expose] public section
 

@@ -2,6 +2,10 @@ module
 
 public import TateAlgebraicNodeRegular
 public import TateAnnularGeometryDefinitions
+public import TateNodeCompletion
+public import Mathlib.RingTheory.KrullDimension.Regular
+public import Mathlib.RingTheory.AdicCompletion.LocalRing
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 

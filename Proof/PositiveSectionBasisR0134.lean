@@ -3,6 +3,8 @@ module
 public import PositiveLineSectionsDefinitionsR0134
 public import Mathlib.LinearAlgebra.Finsupp.SumProd
 public import Mathlib.LinearAlgebra.Basis.SMul
+public import PolygonCechObstructionR0131
+public import PolygonCechKernelR0131
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

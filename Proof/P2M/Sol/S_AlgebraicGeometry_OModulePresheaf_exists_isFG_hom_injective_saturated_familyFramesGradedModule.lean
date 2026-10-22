@@ -1,11 +1,14 @@
 module
 
-public import Mathlib
+public import Mathlib.Order.CompletePartialOrder
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafFamilyFramesGradedModule
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_exists_forall_exists_res_eq_frameUnit_pow_smul_res_and_span_eq_top
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] CompletePartialOrder.toSupSet
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

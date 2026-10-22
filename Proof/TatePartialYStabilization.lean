@@ -1,6 +1,8 @@
 module
 
 public import TateCoeffYTerm
+public import Mathlib.Algebra.Order.Ring.Star
+public import Mathlib.Data.Int.Star
 
 @[expose] public section
 open scoped BigOperators

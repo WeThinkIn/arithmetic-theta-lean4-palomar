@@ -13,6 +13,8 @@ public import Mathlib.Algebra.MvPolynomial.PDeriv
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Basic
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 public import P2M.Util
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

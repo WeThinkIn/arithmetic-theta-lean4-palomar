@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Ideal_exists_ne_zero_and_forall_isMaximal_radical_map_isPrime
 

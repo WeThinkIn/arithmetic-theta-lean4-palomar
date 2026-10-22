@@ -4,6 +4,9 @@ public import ActualInverseComparisonR0146
 public import SplitMarkedTorsionCompletenessR0146
 public import FourTorsionRoot
 public import FourTorsionCovariance
+public import FourTorsionDefinitions
+public import MarkedGroupLawDefinitionsR0146
+public import ActualSheafTensor
 
 @[expose] public section
 

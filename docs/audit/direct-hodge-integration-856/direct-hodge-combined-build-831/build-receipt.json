@@ -1,0 +1,11 @@
+{
+  "finished_at": "2026-10-21T21:05:57.088858+00:00",
+  "elapsed_seconds": 2408.027738150209,
+  "success": true,
+  "completed": 3915,
+  "total": 3915,
+  "failed": {},
+  "remaining": 0,
+  "sources_unchanged": true,
+  "limitation": "Full selected project olean/ilean compilation only; exact original endpoint/data/axiom audits and official Lake cold-build capacity remain separate."
+}

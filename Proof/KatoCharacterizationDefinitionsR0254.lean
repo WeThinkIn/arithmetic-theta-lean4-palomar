@@ -2,6 +2,7 @@ module
 
 public import SchemeKatoNormR0251
 public import SchemeKatoUnitUniquenessR0250
+public import SchemeKatoUnitDefinitionsR0250
 
 @[expose] public section
 

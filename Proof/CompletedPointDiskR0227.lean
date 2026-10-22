@@ -2,6 +2,8 @@ module
 
 public import AmbientCompletedRootsDefinitionsR0227
 public import Theorems.Thm_AlgebraicGeometry_SmoothOfRelativeDimension_isDiscreteValuationRing_stalk_of_isClosed
+public import Theorems.Thm_AlgebraicGeometry_exists_adicCompletion_stalk_ringEquiv_powerSeries_of_smoothOfRelativeDimension_one
+public import CompletionUniformizer
 
 @[expose] public section
 

@@ -2,6 +2,7 @@ module
 
 public import AlgebraizedMarkedLineDefinitionsR0136
 public import Theorems.Thm_AlgebraicGeometry_SchemeHomOver_apply_closedPoint_mem_smoothLocus_of_isRegularLocalRing_stalk
+public import AlgebraizedGenericSmoothnessR0135
 
 @[expose] public section
 

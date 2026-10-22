@@ -2,6 +2,8 @@ module
 
 public import LocalIdealOrderR0116
 public import TranslationCompositionR0116
+public import MillerInfinityNormalizationR0114
+public import HalfMillerPrincipalIdealR0114
 
 @[expose] public section
 

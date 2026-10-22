@@ -2,6 +2,7 @@ module
 
 public import Definitions.Def_AlgebraicGeometry_RelativeGroupLawGrpObj
 public import P2M.Util
+public import Mathlib.AlgebraicGeometry.Group.Smooth
 
 @[expose] public section
 namespace P2MW.S_GoodReductionJacobian_RelativeGroupLaw_smooth_of_geometricallyReduced_of_locallyOfFiniteType

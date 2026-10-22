@@ -1,6 +1,7 @@
 module
 
 public import UnmarkedTateDiscriminantR0245
+public import SchemeDiscriminantNaturalityR0244
 
 @[expose] public section
 

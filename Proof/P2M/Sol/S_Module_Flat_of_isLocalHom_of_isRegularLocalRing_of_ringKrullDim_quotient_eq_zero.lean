@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_Patching_SystemTypes
 public import Definitions.Def_Mathlib_RingTheory_RegularLocalRingFlatLocalAscent
 public import Theorems.Thm_IsRegularLocalRing_depth_self_eq_ringKrullDim

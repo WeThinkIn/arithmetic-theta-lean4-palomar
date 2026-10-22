@@ -3,6 +3,7 @@ module
 public import Mathlib.AlgebraicGeometry.AffineScheme
 public import Definitions.Def_AlgebraicGeometry_OrderedAffineCoverCech
 public import P2M.Util
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 namespace P2MW.S_AlgebraicGeometry_OModulePresheaf_d_comp_d

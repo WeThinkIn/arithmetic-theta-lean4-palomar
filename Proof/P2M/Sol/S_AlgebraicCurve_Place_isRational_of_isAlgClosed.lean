@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicCurve_PlaceEvaluation
 public import Definitions.Def_AlgebraicCurve_DivisorPushPull
 public import Theorems.Thm_AlgebraicCurve_RationalFunctionField_deg_eq_one_of_isAlgClosed

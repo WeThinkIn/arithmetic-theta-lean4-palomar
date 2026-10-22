@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.CategoryTheory.Monoidal.Mon
 public import Definitions.Def_AlgebraicGeometry_ModulesTildePullback
 public import P2M.Util
 

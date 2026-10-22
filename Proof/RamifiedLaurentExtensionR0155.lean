@@ -1,6 +1,8 @@
 module
 
 public import RamifiedPeriodRecoveryDefinitionsR0155
+public import RamifiedPeriodDefinitionsR0154
+public import RamifiedMonomialBasisR0096
 
 @[expose] public section
 

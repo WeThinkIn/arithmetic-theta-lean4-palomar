@@ -3,6 +3,7 @@ module
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Mathlib.CategoryTheory.Sites.LocallyBijective
 public import P2M.Util
+public import Mathlib.Order.CompletePartialOrder
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

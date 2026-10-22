@@ -1,6 +1,8 @@
 module
 
 public import CoefficientCompletedMapsR0157
+public import CoefficientNormDescentDefinitionsR0157
+public import AnnularNormBridgeDefinitionsR0156
 
 @[expose] public section
 

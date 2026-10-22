@@ -2,6 +2,7 @@ module
 
 public import ArbitraryCompatibleLocalCoverageR0202
 public import ArbitraryClassifyingUniquenessR0202
+public import NormalAffineClassifyingConstructionR0178
 
 @[expose] public section
 

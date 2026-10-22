@@ -2,6 +2,8 @@ module
 
 public import FormalCoverAlgebraizationR0210
 public import FormalCoverDenominatorClearingR0210
+public import ProperModelGlobalConstants
+public import NormalDomainIntersection
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

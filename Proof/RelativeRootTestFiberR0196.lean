@@ -1,6 +1,7 @@
 module
 
 public import RootTestPullbackCoherenceR0196
+public import SquareIsometryInterfaceAdapterR0192
 
 @[expose] public section
 

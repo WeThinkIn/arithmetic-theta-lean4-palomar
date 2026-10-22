@@ -2,6 +2,7 @@ module
 
 public import SquareLineComparisonDefinitionsR0192
 public import ComponentDiscriminantDivisorR0184
+public import CompactFullLevelAlphaR0190
 
 @[expose] public section
 

@@ -1,4 +1,5 @@
 module
+public import Mathlib
 
 public import Mathlib
 public import Definitions.Def_AlgebraicCurve_DivisorClassGroup

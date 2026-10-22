@@ -1,6 +1,7 @@
 module
 
 public import SectionEquationOrderR0066
+public import LocalNormFactorizationR0054
 
 @[expose] public section
 

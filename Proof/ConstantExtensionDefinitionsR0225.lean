@@ -1,6 +1,7 @@
 module
 
 public import PrescribedProjectiveRootFiniteModelR0224
+public import PrescribedRootModelsDefinitionsR0224
 
 @[expose] public section
 

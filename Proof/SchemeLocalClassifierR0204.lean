@@ -1,6 +1,8 @@
 module
 
 public import CartesianFullMarkingR0204
+public import ArbitraryAffineClassificationR0202
+public import SchemeLocalWeierstrassR0203
 
 @[expose] public section
 

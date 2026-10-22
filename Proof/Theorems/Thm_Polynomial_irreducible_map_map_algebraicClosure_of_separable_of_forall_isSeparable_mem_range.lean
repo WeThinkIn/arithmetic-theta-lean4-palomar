@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Polynomial_irreducible_map_map_algebraicClosure_of_separable_of_forall_isSeparable_mem_range
 

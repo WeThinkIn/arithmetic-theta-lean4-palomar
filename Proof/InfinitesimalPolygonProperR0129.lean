@@ -3,6 +3,7 @@ module
 public import InfinitesimalPolygonAtlasR0129
 public import Mathlib.AlgebraicGeometry.ValuativeCriterion
 public import Mathlib.AlgebraicGeometry.Noetherian
+public import Mathlib.AlgebraicGeometry.QuasiAffine
 
 @[expose] public section
 

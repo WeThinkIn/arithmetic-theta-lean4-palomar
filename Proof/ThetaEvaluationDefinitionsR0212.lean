@@ -3,6 +3,7 @@ module
 public import RelativeAlphaCharacterR0211
 public import Definitions.Def_AlgebraicGeometry_ModulesIhomSectionsV2
 public import Definitions.Def_AlgebraicGeometry_ModulesBaseChangeHom
+public import GlobalFourTorsionDefinitionsR0190
 
 @[expose] public section
 

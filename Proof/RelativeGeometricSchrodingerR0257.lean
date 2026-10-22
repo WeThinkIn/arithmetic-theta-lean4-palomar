@@ -2,6 +2,7 @@ module
 
 public import RelativeThetaSectionsCohomologyR0257
 public import RelativeSchrodingerModuleR0257
+public import RelativeCyclicThetaSplittingR0256
 
 @[expose] public section
 

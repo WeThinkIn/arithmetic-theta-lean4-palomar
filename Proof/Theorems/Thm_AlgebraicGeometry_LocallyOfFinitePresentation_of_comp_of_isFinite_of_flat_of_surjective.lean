@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_LocallyOfFinitePresentation_of_comp_of_isFinite_of_flat_of_surjective
 

@@ -7,6 +7,9 @@ public import Theorems.Thm_WeierstrassProjModel_kw_a2_checks_addXYZ_crossXZ
 public import Theorems.Thm_WeierstrassProjModel_kw_a2_checks_crossYZ
 public import Mathlib.RingTheory.MvPolynomial.WeightedHomogeneous
 public import P2M.Util
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Point
 
 @[expose] public section
 set_option backward.privateInPublic true

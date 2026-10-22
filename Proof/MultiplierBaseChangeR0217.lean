@@ -2,6 +2,7 @@ module
 
 public import InverseCharacterMultiplierR0217
 public import EvenCoverBaseChangeR0216
+public import P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_pullbackComp_pullbackCongr_pasteSquares_app
 
 @[expose] public section
 

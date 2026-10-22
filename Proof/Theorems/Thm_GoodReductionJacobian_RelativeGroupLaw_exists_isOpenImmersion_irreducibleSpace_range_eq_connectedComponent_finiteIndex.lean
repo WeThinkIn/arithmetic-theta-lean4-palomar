@@ -1,12 +1,14 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
 public import Definitions.Def_AlgebraicGeometry_NeronModelEndomorphismExtension
 public import P2M.Util
 public import P2M.Sol.S_GoodReductionJacobian_RelativeGroupLaw_exists_isOpenImmersion_irreducibleSpace_range_eq_connectedComponent_finiteIndex
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 attribute [-simp] GoodReductionJacobian.RelativeGroupLaw.nsmul_zero GoodReductionJacobian.RelativeGroupLaw.mem_torsionSubset GoodReductionJacobian.RelativeGroupLaw.nsmul_succ
 
 set_option autoImplicit false

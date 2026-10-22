@@ -1,6 +1,10 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Scheme
+
+public import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
+public import Mathlib.RingTheory.TotallySplit
+public import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation
 public import Definitions.Def_Mathlib_Algebra_IsDirectLimit
 public import P2M.Util
 

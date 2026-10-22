@@ -5,6 +5,9 @@ public import GeometricNormOrdersR0150
 
 @[expose] public section
 
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
+
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
 set_option linter.style.haveILetI false

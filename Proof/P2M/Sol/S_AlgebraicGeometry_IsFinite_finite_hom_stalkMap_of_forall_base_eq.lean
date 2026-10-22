@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.Morphisms.Finite
 public import Theorems.Thm_RingHom_Finite_finite_localRingHom_of_forall_comap_eq
 public import P2M.Util
 

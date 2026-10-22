@@ -2,6 +2,9 @@ module
 
 public import CompletedAffineAlgebraization
 public import CompletedCommonDenominator
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.AdicCompletion.Completeness
+public import Mathlib.RingTheory.PowerSeries.Ideal
 
 @[expose] public section
 

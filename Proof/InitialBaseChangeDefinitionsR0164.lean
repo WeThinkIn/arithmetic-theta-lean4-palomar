@@ -3,6 +3,7 @@ module
 public import ActualDiscriminantCotangentTensorR0162
 public import InitialTensorNaturalityR0162
 public import Mathlib.RingTheory.Kaehler.TensorProduct
+public import ConormalInitialDefinitionsR0162
 
 @[expose] public section
 

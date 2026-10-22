@@ -1,8 +1,12 @@
 module
 
 public import RamifiedRootsConstantExtensionR0225
+public import PrescribedProjectiveRootFiniteModelR0224
 
 @[expose] public section
+
+-- Preserve original field inference without overriding specialized local-ring instances.
+attribute [local instance 999] HenselianLocalRing.toIsLocalRing
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

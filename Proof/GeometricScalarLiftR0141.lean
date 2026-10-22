@@ -3,6 +3,8 @@ module
 import all GenericThetaBasisR0140
 
 public import GeometricThetaLiftsDefinitionsR0141
+public import TowerScalarTranslationR0137
+public import GenericThetaBasisR0140
 
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 

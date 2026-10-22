@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.AlgebraicGeometry.Morphisms.Proper
+public import Mathlib.AlgebraicGeometry.Morphisms.Immersion
+public import Mathlib.Tactic.Monotonicity.Lemmas
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafConstructions
 public import P2M.Util
 

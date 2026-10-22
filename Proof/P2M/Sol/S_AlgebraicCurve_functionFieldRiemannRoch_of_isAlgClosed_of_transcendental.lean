@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicCurve_PlaceEvaluation
+public import Definitions.Def_ModularCurve_CharLFrobeniusGeomLevel
+public import Mathlib.FieldTheory.RatFunc.IntermediateField
 public import Definitions.Def_AlgebraicCurve_RiemannRochRows
 public import Theorems.Thm_AlgebraicCurve_exists_separating_transcendental_of_perfectField
 public import Theorems.Thm_AlgebraicCurve_isCurveOver_of_transcendental

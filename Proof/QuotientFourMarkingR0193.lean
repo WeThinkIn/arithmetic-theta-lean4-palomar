@@ -1,6 +1,7 @@
 module
 
 public import IsogenyHalfLinesDefinitionsR0193
+public import OpenLevelNormalizedHodgePowerR0180
 
 @[expose] public section
 

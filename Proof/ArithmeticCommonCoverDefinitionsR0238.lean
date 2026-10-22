@@ -4,6 +4,7 @@ public import FieldIsogenyCanonicalHalfLineR0237
 public import FieldCompactUnaryR0236
 public import CommonBasicUnaryCoverR0194
 public import RatioUnaryRegularSectionsR0195
+public import SharpKernelDefinitionsR0195
 
 @[expose] public section
 

@@ -2,6 +2,7 @@ module
 
 public import AlgebraicBranchValuationR0226
 public import AlgebraicBranchEquationR0226
+public import PrescribedRootsFiniteConstantExtensionR0225
 
 @[expose] public section
 

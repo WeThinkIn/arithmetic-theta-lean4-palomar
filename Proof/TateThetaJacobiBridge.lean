@@ -3,6 +3,7 @@ module
 public import TateSeriesDefinitions
 public import UnaryThetaProduct
 public import FormalNormDefinitions
+public import Mathlib.Algebra.BigOperators.Group.Finset.Interval
 
 @[expose] public section
 

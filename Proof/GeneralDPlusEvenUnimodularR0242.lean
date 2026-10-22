@@ -3,6 +3,10 @@ module
 public import GeneralDPlusDefinitionsR0242
 public import GeneralDPlusBasisMetricR0242
 public import GeneralDPlusCoordinatesR0242
+public import Rank16Unimodular
+public import Rank16Theta
+public import IntegrationDefinitions
+public import Mathlib.LinearAlgebra.Matrix.PosDef
 
 @[expose] public section
 

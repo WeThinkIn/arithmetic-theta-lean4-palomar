@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Order.CompletePartialOrder
 public import Theorems.Thm_Algebra_exists_ne_zero_algebraicIndependent_forall_isIntegral_pow_smul_of_finiteType
 public import Theorems.Thm_Polynomial_irreducible_map_map_algebraicClosure_of_separable_of_forall_isSeparable_mem_range
 public import P2M.Util

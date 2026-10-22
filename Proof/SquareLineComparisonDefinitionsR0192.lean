@@ -5,6 +5,9 @@ public import SquareIsomorphismTorsor
 public import SimultaneousSquareLineComparison
 public import FiniteEtaleSelectedComponent
 public import FiniteEtaleFormalDiskLift
+public import GlobalFourTorsionDefinitionsR0190
+public import SimultaneousUnaryRootsDefinitionsR0187
+public import EffectiveDivisorLine
 
 @[expose] public section
 

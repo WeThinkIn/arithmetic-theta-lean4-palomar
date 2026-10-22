@@ -3,6 +3,7 @@ module
 public import SchemeHodgeUniversalR0205
 public import RootModuliPseudofunctorR0198
 public import Mathlib.CategoryTheory.Sigma.Basic
+public import SchemeHodgeDefinitionsR0205
 
 @[expose] public section
 

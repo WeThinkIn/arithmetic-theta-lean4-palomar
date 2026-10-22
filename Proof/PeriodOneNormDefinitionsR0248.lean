@@ -3,6 +3,8 @@ module
 public import RationalTateDiscriminantDefinitionsR0247
 public import UnsplitKatoFullExpansionR0158
 public import GeneralKatoBaseChangeR0168
+public import UnsplitExpansionDefinitionsR0158
+public import AnnularNormBridgeDefinitionsR0156
 
 @[expose] public section
 

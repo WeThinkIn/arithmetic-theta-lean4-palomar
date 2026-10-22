@@ -2,6 +2,7 @@ module
 
 public import InitialBaseChangeDefinitionsR0164
 public import Mathlib.RingTheory.Ideal.CotangentBaseChange
+public import InitialTensorNaturalityR0162
 
 @[expose] public section
 

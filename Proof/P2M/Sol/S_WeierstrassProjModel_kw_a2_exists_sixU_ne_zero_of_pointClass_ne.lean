@@ -7,6 +7,8 @@ public import Theorems.Thm_WeierstrassProjModel_kw_a2_productMap_sixU_inl_eq_neg
 public import Theorems.Thm_WeierstrassProjModel_kw_a2_add_ne_zero_of_pointClass_ne
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Point
 public import P2M.Util
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
 
 @[expose] public section
 namespace P2MW.S_WeierstrassProjModel_kw_a2_exists_sixU_ne_zero_of_pointClass_ne

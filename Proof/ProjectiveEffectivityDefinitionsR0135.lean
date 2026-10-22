@@ -10,6 +10,8 @@ public import Mathlib.RingTheory.MvPolynomial.Homogeneous
 public import Mathlib.AlgebraicGeometry.Geometrically.Connected
 public import Mathlib.AlgebraicGeometry.Morphisms.Smooth
 public import Mathlib.RingTheory.LaurentSeries
+public import PositiveLineSectionsDefinitionsR0134
+public import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic
 
 @[expose] public section
 

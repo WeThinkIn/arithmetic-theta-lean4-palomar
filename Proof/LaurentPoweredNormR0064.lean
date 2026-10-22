@@ -3,6 +3,9 @@ module
 public import LaurentGammaTranslationR0064
 public import LaurentGammaNonzeroR0064
 public import LaurentUnpoweredNormR0064
+public import LaurentGammaExistenceR0064
+public import NormResiduePermutationR0062
+public import Mathlib.Algebra.AffineMonoid.Basic
 
 @[expose] public section
 

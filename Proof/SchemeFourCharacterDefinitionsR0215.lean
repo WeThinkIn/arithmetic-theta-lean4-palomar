@@ -6,6 +6,8 @@ public import SchemeThetaEvaluationNaturalityR0213
 public import CartesianIdentityIdealR0205
 public import SchemeCotangentCoherenceR0205
 public import AffineConormalHodgeNaturalityR0205
+public import ArbitraryFourCharacterDefinitionsR0214
+public import SchemeHodgeDefinitionsR0205
 
 @[expose] public section
 

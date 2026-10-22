@@ -1,6 +1,8 @@
 module
 
 public import FunctionFieldTranslationsR0116
+public import MillerReciprocityDefinitionsR0116
+public import InfinityFunctionFieldR0114
 
 @[expose] public section
 

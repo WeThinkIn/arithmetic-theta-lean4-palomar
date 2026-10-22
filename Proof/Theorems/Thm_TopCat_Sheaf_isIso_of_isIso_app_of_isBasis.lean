@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_TopCat_Sheaf_isIso_of_isIso_app_of_isBasis
 

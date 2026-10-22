@@ -2,6 +2,9 @@ module
 
 public import ScaledCompletedSplitLawsR0051
 public import SplitNormalDescentR0051
+public import ScaledAdditiveCompletionExtensionR0051
+public import ScaledRingCompletionExtensionR0051
+public import ScaledAlgebraicSplitR0051
 
 @[expose] public section
 

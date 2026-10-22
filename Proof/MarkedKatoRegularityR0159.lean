@@ -1,6 +1,7 @@
 module
 
 public import RationalValueTransportR0159
+public import ActualKatoDivisorPrincipalR0151
 
 @[expose] public section
 

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_exists_fg_subalgebra_opens_preimage_eq_of_isCompact
 

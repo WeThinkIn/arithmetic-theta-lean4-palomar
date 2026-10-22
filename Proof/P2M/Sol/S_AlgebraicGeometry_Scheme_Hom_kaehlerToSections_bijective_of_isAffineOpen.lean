@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Topology.Sheaves.LocallySurjective
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.AlgebraicGeometry.AffineScheme
 public import Definitions.Def_PresheafOfModules_ExteriorPower
 public import Definitions.Def_AlgebraicGeometry_ModulesDet
 public import Definitions.Def_AlgebraicGeometry_KaehlerModule

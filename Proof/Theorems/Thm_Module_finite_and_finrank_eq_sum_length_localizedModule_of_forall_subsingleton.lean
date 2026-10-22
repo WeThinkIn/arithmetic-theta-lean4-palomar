@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Module_finite_and_finrank_eq_sum_length_localizedModule_of_forall_subsingleton
 

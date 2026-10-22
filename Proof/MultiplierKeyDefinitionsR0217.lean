@@ -4,6 +4,7 @@ public import EvenCoverTorsorR0216
 public import EvenCoverBaseChangeR0216
 public import EvenCoverRightActionR0216
 public import SchemeThetaEvaluationNaturalityR0213
+public import EvenMarkingTorsorDefinitionsR0216
 
 @[expose] public section
 

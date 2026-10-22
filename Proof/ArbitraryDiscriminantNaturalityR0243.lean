@@ -1,6 +1,8 @@
 module
 
 public import ArbitraryWeierstrassDiscriminantR0243
+public import NormalDiscriminantIndependenceR0243
+public import NormalDiscriminantModelR0243
 
 @[expose] public section
 

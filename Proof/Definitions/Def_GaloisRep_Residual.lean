@@ -8,6 +8,7 @@ public import Mathlib.LinearAlgebra.Determinant
 public import Mathlib.LinearAlgebra.TensorProduct.Tower
 public import Mathlib.LinearAlgebra.Dimension.Constructions
 public import Mathlib.FieldTheory.Finiteness
+public import Definitions.Def_FLTPrelim_Ramification
 
 @[expose] public section
 

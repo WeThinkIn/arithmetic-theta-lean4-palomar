@@ -2,6 +2,8 @@ module
 
 public import ScaledTateNodeCompletion
 public import TateCompletedNodeNormal
+public import ScaledTateNodeBridgeDefinitions
+public import TateNodeChartDefinitions
 
 @[expose] public section
 

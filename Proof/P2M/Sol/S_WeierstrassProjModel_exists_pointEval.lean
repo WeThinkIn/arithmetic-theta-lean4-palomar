@@ -6,6 +6,8 @@ public import Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Basic
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Point
 public import P2M.Util
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
 
 @[expose] public section
 namespace P2MW.S_WeierstrassProjModel_exists_pointEval

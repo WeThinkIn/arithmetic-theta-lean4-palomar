@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_Ideal_exists_mem_and_mem_and_radical_span_singleton_isPrime
 public import P2M.Util
 

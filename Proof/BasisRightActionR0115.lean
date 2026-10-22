@@ -2,6 +2,7 @@ module
 
 public import MarkingCharacterDefinitionsR0115
 public import Mathlib.LinearAlgebra.Matrix.Adjugate
+public import IndependentHalvesFourBasisR0114
 
 @[expose] public section
 

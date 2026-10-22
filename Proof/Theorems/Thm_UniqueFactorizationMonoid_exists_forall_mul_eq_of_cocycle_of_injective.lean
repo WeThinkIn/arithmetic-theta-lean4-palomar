@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_UniqueFactorizationMonoid_exists_forall_mul_eq_of_cocycle_of_injective
 

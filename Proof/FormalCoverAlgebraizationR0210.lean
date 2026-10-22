@@ -1,6 +1,11 @@
 module
 
 public import FormalOpenRestrictionsR0210
+public import FormalCoverDefinitionsR0210
+public import ProperFormalFunctions
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.AdicCompletion.Completeness
+public import Mathlib.RingTheory.PowerSeries.Ideal
 
 @[expose] public section
 

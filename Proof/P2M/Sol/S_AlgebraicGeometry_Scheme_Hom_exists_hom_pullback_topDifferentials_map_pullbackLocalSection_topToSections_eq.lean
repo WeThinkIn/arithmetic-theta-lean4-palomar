@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.AffineScheme
 public import Definitions.Def_PresheafOfModules_ExteriorPower
 public import Definitions.Def_AlgebraicGeometry_ModulesDet
 public import Definitions.Def_AlgebraicGeometry_KaehlerModule
@@ -10,6 +10,9 @@ public import Theorems.Thm_NeronModelInfra_TopFormOrder_topFormMap_topFormMap
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] CategoryTheory.instHasWeakSheafifyOfHasSheafify
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

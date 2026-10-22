@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.Order.CompletePartialOrder
+public import Std.Tactic.BVDecide.Normalize.Prop
 public import Theorems.Thm_Module_Flat_exists_ne_zero_flat_localization_tensorProduct
 public import Theorems.Thm_Module_flat_of_comap_maximalIdeal_rTensor_injective
 public import P2M.Util

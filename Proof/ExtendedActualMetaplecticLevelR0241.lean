@@ -3,6 +3,7 @@ module
 public import ExtendedClassifierCartesianR0241
 public import ExtendedInteriorGeometryR0241
 public import ExtendedCompactSquareR0241
+public import StandardActualMetaplecticLevelR0208
 
 @[expose] public section
 

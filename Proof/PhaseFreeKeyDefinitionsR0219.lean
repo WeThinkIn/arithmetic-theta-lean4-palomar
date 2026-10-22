@@ -2,6 +2,8 @@ module
 
 public import KeyPhaseSwitchR0218
 public import PhaseCoverR0218
+public import PhaseSwitchDefinitionsR0218
+public import MultiplierKeyDefinitionsR0217
 
 @[expose] public section
 

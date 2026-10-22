@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.CategoryTheory.Localization.Monoidal.Functor
 public import Definitions.Def_PresheafOfModules_InternalHom
 public import Theorems.Thm_PresheafOfModules_isMonoidal_inverseImage_W_toPresheaf
 public import Definitions.Def_SheafOfModules_Monoidal

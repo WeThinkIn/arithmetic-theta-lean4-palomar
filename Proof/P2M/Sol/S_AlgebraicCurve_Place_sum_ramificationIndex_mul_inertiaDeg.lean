@@ -12,6 +12,7 @@ public import Theorems.Thm_AlgebraicCurve_Place_mem_iff_ord_nonneg
 public import Theorems.Thm_AlgebraicCurve_Place_exists_ord_pos
 public import Theorems.Thm_AlgebraicCurve_Place_ord_eq_zero_iff_adicValuation_eq_one
 public import P2M.Util
+public import Definitions.Def_ModularCurve_CharLFrobeniusGeomLevel
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

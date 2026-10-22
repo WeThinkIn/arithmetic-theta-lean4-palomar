@@ -13,6 +13,9 @@ public import Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Basic
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 public import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic
 public import Mathlib.AlgebraicGeometry.Pullbacks
+public import Mathlib.CategoryTheory.ExtremalEpi
+public import Mathlib.AlgebraicGeometry.Sites.Fpqc
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
 
 @[expose] public section
 

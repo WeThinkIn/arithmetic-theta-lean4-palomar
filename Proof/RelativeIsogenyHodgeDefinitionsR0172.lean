@@ -1,6 +1,7 @@
 module
 
 public import RelativeInitialSectionNaturalityR0171
+public import RelativeHodgePowerBaseChangeR0171
 
 @[expose] public section
 

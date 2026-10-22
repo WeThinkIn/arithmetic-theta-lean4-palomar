@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.FiniteType
 public import Definitions.Def_AlgebraicGeometry_ModulesLocallyFreeOfRank
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCover
 public import Definitions.Def_AlgebraicGeometry_ModulesPushforwardRestrict

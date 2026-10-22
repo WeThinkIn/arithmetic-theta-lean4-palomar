@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.GroupTheory.Nilpotent
 public import Definitions.Def_ModularCurve_KatzLevelP
 public import Theorems.Thm_ModularCurve_indepElt_eq_zero_iff_mem_zmultiples
 public import Theorems.Thm_WeierstrassCurve_Affine_Point_nsmul_some_eq_zero_iff_eval_prePsi

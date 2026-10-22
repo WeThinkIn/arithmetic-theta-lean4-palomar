@@ -6,6 +6,9 @@ public import FieldCommonBasicUnaryCoverR0238
 public import FieldRatioUnaryRegularSectionsR0238
 public import GeometricCanonicalHodgeDescentR0235
 public import SplitSquareCoverDegreeR0239
+public import FieldCosetSectionExpansionR0231
+public import CompactActualMetaplecticLevelR0209
+public import SharpMatrixGeometricFamilyR0195
 
 @[expose] public section
 

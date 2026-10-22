@@ -3,6 +3,7 @@ module
 public import ScaledTateNodeAlgebra
 public import ScaledTateNodeCompletion
 public import ScaledTateCompletionSpecializationUniqueR0049
+public import ScaledTateCompletionSpecializationExistsR0049
 
 @[expose] public section
 

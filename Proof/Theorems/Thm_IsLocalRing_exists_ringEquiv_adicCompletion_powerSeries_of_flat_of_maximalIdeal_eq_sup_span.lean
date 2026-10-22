@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_IsLocalRing_exists_ringEquiv_adicCompletion_powerSeries_of_flat_of_maximalIdeal_eq_sup_span
 

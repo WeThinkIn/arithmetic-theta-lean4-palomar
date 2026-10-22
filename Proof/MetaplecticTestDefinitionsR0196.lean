@@ -2,6 +2,8 @@ module
 
 public import SharpMatrixGeometricFamilyR0195
 public import SquareIsometryInterfaceAdapterR0192
+public import SharpKernelDefinitionsR0195
+public import CoverComparisonDefinitions
 
 @[expose] public section
 

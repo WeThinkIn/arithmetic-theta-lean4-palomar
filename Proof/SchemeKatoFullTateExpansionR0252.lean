@@ -1,6 +1,9 @@
 module
 
 public import CanonicalPeriodOneExpansionR0252
+public import SchemeKatoNormR0251
+public import SchemeKatoCartierDivisorR0250
+public import SchemeKatoUnitUniquenessR0250
 
 @[expose] public section
 

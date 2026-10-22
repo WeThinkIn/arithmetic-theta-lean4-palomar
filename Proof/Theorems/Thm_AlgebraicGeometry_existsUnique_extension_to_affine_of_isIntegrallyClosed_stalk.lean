@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_existsUnique_extension_to_affine_of_isIntegrallyClosed_stalk
 

@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Scheme
 public import Definitions.Def_Mathlib_Algebra_IsDirectLimit
 public import P2M.Util
 

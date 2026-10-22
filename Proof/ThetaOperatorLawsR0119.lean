@@ -1,6 +1,11 @@
 module
 
 public import FormalSchrodingerDefinitionsR0119
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 

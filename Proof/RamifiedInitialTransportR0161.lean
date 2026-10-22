@@ -1,6 +1,8 @@
 module
 
 public import OriginInitialDefinitionsR0161
+public import DiscriminantInitial
+public import Mathlib.RingTheory.PowerSeries.Expand
 
 @[expose] public section
 

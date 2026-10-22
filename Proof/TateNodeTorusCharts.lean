@@ -1,6 +1,10 @@
 module
 
 public import TateNodeChartDefinitions
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 

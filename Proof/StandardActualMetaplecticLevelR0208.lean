@@ -1,6 +1,7 @@
 module
 
 public import FiniteEtaleActualLevelR0208
+public import ActualMetaplecticFPQCStackR0207
 
 @[expose] public section
 

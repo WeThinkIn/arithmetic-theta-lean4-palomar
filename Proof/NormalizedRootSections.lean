@@ -3,6 +3,7 @@ module
 public import OneChartRegularRoot
 public import PullbackLineFrames
 public import NormalizedPowerCoefficients
+public import KummerCover
 
 @[expose] public section
 

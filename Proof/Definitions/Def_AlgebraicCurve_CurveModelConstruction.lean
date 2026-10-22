@@ -12,6 +12,7 @@ public import Mathlib.FieldTheory.RatFunc.AsPolynomial
 public import Definitions.Def_AlgebraicCurve_CurveModel
 public import Definitions.Def_JacJ1_ChartAlgebra
 public import Definitions.Def_AlgebraicCurve_CurveModelSmooth
+public import Mathlib.AlgebraicGeometry.Morphisms.Etale
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

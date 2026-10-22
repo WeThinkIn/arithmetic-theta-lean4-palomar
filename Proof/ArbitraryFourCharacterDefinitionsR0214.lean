@@ -3,6 +3,7 @@ module
 public import RelativeAlphaCharacterR0211
 public import RelativePhaseBaseChangeR0211
 public import ArbitraryAffineClassificationR0202
+public import RelativeGeometricPhaseR0211
 
 @[expose] public section
 

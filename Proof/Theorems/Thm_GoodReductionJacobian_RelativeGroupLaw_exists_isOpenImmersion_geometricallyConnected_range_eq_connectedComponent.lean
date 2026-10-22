@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawBaseChange
 public import Definitions.Def_AlgebraicGeometry_NeronModelEndomorphismExtension
@@ -8,6 +7,9 @@ public import P2M.Util
 public import P2M.Sol.S_GoodReductionJacobian_RelativeGroupLaw_exists_isOpenImmersion_geometricallyConnected_range_eq_connectedComponent
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 
 set_option autoImplicit false
 

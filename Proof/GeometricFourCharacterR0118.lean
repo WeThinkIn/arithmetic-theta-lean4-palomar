@@ -2,6 +2,7 @@ module
 
 public import PairingAlternatingPerfectR0118
 public import PairingFieldNaturalityR0118
+public import FullMarkingCharacterR0115
 
 @[expose] public section
 

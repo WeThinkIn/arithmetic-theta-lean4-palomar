@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.RingHom.StandardSmooth
 public import Theorems.Thm_Algebra_IsStandardSmooth_exists_isStandardSmoothOfRelativeDimension_of_field
 public import Theorems.Thm_isRegularLocalRing_localization_atPrime_mvPolynomial
 public import Theorems.Thm_isRegularLocalRing_localization_atPrime_of_etale_of_comap

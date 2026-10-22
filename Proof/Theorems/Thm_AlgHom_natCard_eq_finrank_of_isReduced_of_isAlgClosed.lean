@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgHom_natCard_eq_finrank_of_isReduced_of_isAlgClosed
 

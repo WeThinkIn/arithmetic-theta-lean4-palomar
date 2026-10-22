@@ -3,6 +3,8 @@ module
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary
 public import P2M.Util
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
 
 @[expose] public section
 namespace P2MW.S_WeierstrassProjModel_kw_a2_map_one

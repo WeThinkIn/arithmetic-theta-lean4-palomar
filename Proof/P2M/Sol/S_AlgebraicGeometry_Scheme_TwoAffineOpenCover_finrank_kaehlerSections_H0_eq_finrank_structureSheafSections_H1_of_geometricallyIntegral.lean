@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCoverKaehler
 public import Definitions.Def_AlgebraicGeometry_TwoChartCech
 public import Definitions.Def_AlgebraicGeometry_SmoothProperCurveBase

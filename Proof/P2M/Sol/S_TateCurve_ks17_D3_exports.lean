@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_TateCurve_XMultIdentities
 public import Definitions.Def_TateCurve_KeystoneVocab
 public import Theorems.Thm_TateCurve_ks17_C2_exports

@@ -2,6 +2,10 @@ module
 
 public import TateNodeNormalForm
 public import TateNodeTorusCharts
+public import Mathlib.RingTheory.RegularLocalRing.Polynomial
+public import Mathlib.RingTheory.PowerSeries.Ideal
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.GroupTheory.MonoidLocalization.UniqueFactorization
 
 @[expose] public section
 

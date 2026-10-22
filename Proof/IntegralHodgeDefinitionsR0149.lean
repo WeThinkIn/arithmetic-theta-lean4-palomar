@@ -4,6 +4,7 @@ public import ActualFourTorsionHodgeRootR0147
 public import MultiplicationFiniteEtaleDegreeR0148
 public import TateMarkedRootIdentity
 public import AllHalfFormalRegularityR0108
+public import HodgeFourTorsionDefinitionsR0147
 
 @[expose] public section
 

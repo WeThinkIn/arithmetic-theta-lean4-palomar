@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_not_isDomain_stalk_of_mem_irreducibleComponents_of_ne
 

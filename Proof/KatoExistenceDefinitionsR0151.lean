@@ -3,6 +3,7 @@ module
 public import ActualNormalizedKatoUniquenessR0150
 public import CoprimeTorsionDivisorNormR0150
 public import GeometricNormBaseChangeR0150
+public import GeometricNormDefinitionsR0150
 
 @[expose] public section
 

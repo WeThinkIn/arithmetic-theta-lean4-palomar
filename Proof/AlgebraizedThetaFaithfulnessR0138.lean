@@ -1,6 +1,7 @@
 module
 
 public import AlgebraizedThetaSectionsR0138
+public import CompletedChartThetaIndependenceR0128
 
 @[expose] public section
 

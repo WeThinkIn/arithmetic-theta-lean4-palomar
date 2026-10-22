@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Definitions.Def_AlgebraicGeometry_RelPicardThetaBundle
 public import Definitions.Def_AlgebraicCurve_RelCartier

@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Definitions.Def_TateCurve_XMultStructure
+public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 public import Definitions.Def_TateCurve_XMultIdentities
 
 @[expose] public section

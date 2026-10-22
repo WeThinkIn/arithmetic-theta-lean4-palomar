@@ -1,8 +1,15 @@
 module
 
 public import HodgeInitialDefinitionsR0163
+public import NormalizedIntegralHodgeFrameR0149
+public import ActualOriginAugmentedTaylorR0162
+public import CartierGradedTensorR0162
+public import AugmentedConormalR0162
 
 @[expose] public section
+
+-- Preserve the original elaborated instance path after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 
 /-! The differential fiber of the actual identity stalk and the Hodge fiber. -/
 set_option autoImplicit false

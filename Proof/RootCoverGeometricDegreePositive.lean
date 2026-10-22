@@ -2,6 +2,7 @@ module
 
 public import RootCoverFlat
 public import SmoothNormality
+public import Mathlib.AlgebraicGeometry.Morphisms.FlatRank
 
 @[expose] public section
 

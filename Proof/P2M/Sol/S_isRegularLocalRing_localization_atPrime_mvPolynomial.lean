@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_Mathlib_RingTheory_KmfloorsFiberPolynomialRegularAscent
 public import P2M.Util
 

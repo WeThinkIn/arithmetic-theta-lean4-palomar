@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.AlgebraicGeometry.AffineTransitionLimit
+public import Std.Tactic.BVDecide.Normalize.Prop
 public import Definitions.Def_AlgebraicGeometry_SubalgebraStages
 public import Theorems.Thm_AlgebraicGeometry_SubalgebraStages_nonempty_isLimit_cone
 public import P2M.Util

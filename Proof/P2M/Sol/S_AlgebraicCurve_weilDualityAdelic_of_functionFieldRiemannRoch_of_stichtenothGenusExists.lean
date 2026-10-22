@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicCurve_AdelicIndex
 public import Definitions.Def_AlgebraicCurve_RiemannRochRows
 public import Theorems.Thm_AlgebraicCurve_indexOfSpecialty_eq_of_genusReached

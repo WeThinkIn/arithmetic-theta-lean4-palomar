@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AdjoinRoot_etale_and_finite_X_pow_sub_C_of_isUnit
 

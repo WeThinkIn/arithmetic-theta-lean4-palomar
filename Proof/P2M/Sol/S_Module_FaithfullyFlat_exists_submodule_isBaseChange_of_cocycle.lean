@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.PiTensorProduct
 public import Definitions.Def_Algebra_DescentCofaces
 public import Theorems.Thm_Module_Invertible_of_invertible_tensorProduct_of_faithfullyFlat
 public import P2M.Util

@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Geometrically.Connected
+public import Mathlib.AlgebraicGeometry.Geometrically.Integral
 public import Theorems.Thm_AlgebraicGeometry_isIntegral_of_isLocallyNoetherian_of_connectedSpace_of_forall_isDomain_stalk
 public import Theorems.Thm_AlgebraicGeometry_Smooth_isRegularLocalRing_stalk
 public import Theorems.Thm_IsRegularLocalRing_isDomain

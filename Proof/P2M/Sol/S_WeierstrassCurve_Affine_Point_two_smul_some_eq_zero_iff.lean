@@ -4,6 +4,7 @@ public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 public import Mathlib.AlgebraicGeometry.EllipticCurve.DivisionPolynomial.Basic
 public import Mathlib.Tactic.LinearCombination
 public import P2M.Util
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 namespace P2MW.S_WeierstrassCurve_Affine_Point_two_smul_some_eq_zero_iff

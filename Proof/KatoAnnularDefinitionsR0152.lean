@@ -5,6 +5,8 @@ public import ActualKatoFieldBaseChangeR0151
 public import LocalThetaRatioConstantR0088
 public import FiniteStageCompletionComparisonR0129
 public import MarkedExactTorsionR0146
+public import LocalOrderDefinitionsR0066
+public import HodgeFourTorsionDefinitionsR0147
 
 @[expose] public section
 

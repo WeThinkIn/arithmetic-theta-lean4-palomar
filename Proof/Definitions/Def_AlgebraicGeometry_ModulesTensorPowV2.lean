@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_SheafOfModules_Monoidal
 public import Definitions.Def_SheafOfModules_MonoidalV2
 
 @[expose] public section

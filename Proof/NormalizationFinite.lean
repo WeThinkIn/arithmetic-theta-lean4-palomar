@@ -1,6 +1,8 @@
 module
 
 public import NormalizationField
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.AlgebraicGeometry.Morphisms.Proper
 
 @[expose] public section
 

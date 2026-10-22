@@ -5,6 +5,8 @@ public import MetaplecticFiberEquivalenceR0206
 public import SmoothProjectiveLevelCompletionR0179
 public import CompactifiedLevelForgettingR0179
 public import FullLevelBaseChangeR0175
+public import SchemeHodgeDefinitionsR0205
+public import LevelCompactificationDefinitionsR0179
 
 @[expose] public section
 

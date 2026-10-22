@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ControlGroup": "",
+    "MemoryCurrent": "[not set]",
+    "ActiveState": "inactive",
+    "SubState": "dead"
+  },
+  "seconds": 761.2779937512241,
+  "target_stage_passed": true,
+  "sources_unchanged": true,
+  "stopped_for_disk": false,
+  "peak_observed_cgroup_bytes": 7982936064,
+  "prior_seconds": 10568.75925101852,
+  "combined_seconds": 11330.0372470906,
+  "single_uninterrupted_cold_build": false,
+  "prior_receipt_sha256": "d9752bade9f3f3a8005085f293b32fe2182dd24540f86172365d0796803bbfad",
+  "scope": "Staged resume after839/964disk interruptions and902MEMCG OOM. Failed module first, then CommonUnary, unchanged4CPU/14GiB and total19800s budget. Not an uninterrupted cold pass; official preflight separate",
+  "limitation": "Larger host and shared external cache mappings differ from official runner; a local pass is not an official pass"
+}

@@ -1,6 +1,7 @@
 module
 
 public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
+public import Mathlib.AlgebraicGeometry.Group.Abelian
 
 @[expose] public section
 

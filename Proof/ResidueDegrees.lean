@@ -1,6 +1,12 @@
 module
 
 public import CurveDegreeDefinitions
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.AlgebraicGeometry.Morphisms.Proper
+public import Mathlib.AlgebraicGeometry.QuasiAffine
+public import Mathlib.RingTheory.PicardGroup
 
 @[expose] public section
 

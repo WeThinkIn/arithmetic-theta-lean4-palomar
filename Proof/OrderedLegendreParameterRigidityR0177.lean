@@ -4,6 +4,7 @@ public import LegendreComparisonDefinitionsR0177
 public import Theorems.Thm_WeierstrassProjModel_exists_isCoefficientHom
 public import Theorems.Thm_WeierstrassCurve_DrinfeldGlobal_isPullback_projMap_of_isCoefficientHom
 public import Theorems.Thm_WeierstrassCurve_DrinfeldGlobal_exists_originChartInclusion_comp_projMap_eq_of_isCoefficientHom
+public import ActualScalarTranslationR0146
 
 @[expose] public section
 

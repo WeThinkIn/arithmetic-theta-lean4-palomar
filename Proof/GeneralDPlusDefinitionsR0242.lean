@@ -6,6 +6,8 @@ public import Rank16Coordinates
 public import Rank16Unimodular
 public import GramThetaShells
 public import IntegrationDefinitions
+public import Rank16LatticeDefinitions
+public import Mathlib.RingTheory.PowerSeries.Basic
 
 @[expose] public section
 

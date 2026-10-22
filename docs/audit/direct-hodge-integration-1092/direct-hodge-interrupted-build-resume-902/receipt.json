@@ -1,0 +1,21 @@
+{
+  "passed": false,
+  "state": {
+    "Result": "exit-code",
+    "ExecMainStatus": "1",
+    "ControlGroup": "",
+    "MemoryCurrent": "[not set]",
+    "ActiveState": "failed",
+    "SubState": "failed"
+  },
+  "seconds": 3185.902639917098,
+  "sources_unchanged": true,
+  "stopped_for_disk": false,
+  "peak_observed_cgroup_bytes": 15031709696,
+  "prior_seconds": 5481.0379102583975,
+  "combined_seconds": 8666.940551862586,
+  "single_uninterrupted_cold_build": false,
+  "prior_receipt_sha256": "c8362aa0d957b1f3caaa01db3075a4337ce5fc0a41ec5ef58835668ca4b64d60",
+  "scope": "Resumed CommonUnary Solution build after839disk guard, with unchanged4CPU/14GiB and combined19800second budget. Not an uninterrupted cold pass; full comparator and official preflight separate",
+  "limitation": "Larger host and shared external cache mappings differ from official runner; a local pass is not an official pass"
+}

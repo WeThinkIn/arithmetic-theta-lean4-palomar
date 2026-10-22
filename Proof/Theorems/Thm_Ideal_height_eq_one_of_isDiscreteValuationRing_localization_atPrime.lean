@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Ideal_height_eq_one_of_isDiscreteValuationRing_localization_atPrime
 

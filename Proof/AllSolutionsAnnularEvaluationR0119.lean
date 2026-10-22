@@ -2,6 +2,8 @@ module
 
 public import ThetaRecurrenceBasisR0119
 public import ThetaAnnularConvergenceR0119
+public import Mathlib.Topology.UniformSpace.Uniformizable
+public import Mathlib.Topology.Connected.Separation
 
 @[expose] public section
 

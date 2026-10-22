@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Order.CompletePartialOrder
 public import Definitions.Def_Mathlib_Algebra_IsDirectLimit
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCover
 public import Theorems.Thm_AlgebraicGeometry_exists_algEquiv_sections_pullback_fst_preimage_tensor_of_isAffineOpen

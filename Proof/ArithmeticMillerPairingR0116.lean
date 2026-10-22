@@ -2,6 +2,7 @@ module
 
 public import MovedSupportMillerPairingR0116
 public import Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure
+public import FieldExtensionNaturalityR0115
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

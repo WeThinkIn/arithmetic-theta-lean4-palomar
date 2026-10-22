@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
 public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawKernel
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawBaseChange
@@ -11,6 +11,9 @@ public import Theorems.Thm_AlgebraicGeometry_GeometricallyIrreducible_geometrica
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

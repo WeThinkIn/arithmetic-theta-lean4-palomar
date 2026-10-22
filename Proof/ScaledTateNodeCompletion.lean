@@ -6,6 +6,7 @@ public import Mathlib.RingTheory.AdicCompletion.Completeness
 public import Mathlib.RingTheory.MvPowerSeries.Equiv
 public import Mathlib.RingTheory.Finiteness.Basic
 public import Mathlib.Tactic
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 

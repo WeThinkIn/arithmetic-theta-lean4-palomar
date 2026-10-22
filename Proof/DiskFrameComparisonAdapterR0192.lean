@@ -1,6 +1,8 @@
 module
 
 public import SquareLineComparisonDefinitionsR0192
+public import SimultaneousSquareLineComparison
+public import DiscriminantTwistUnitR0185
 
 @[expose] public section
 

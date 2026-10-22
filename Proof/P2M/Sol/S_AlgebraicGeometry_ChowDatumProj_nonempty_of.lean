@@ -10,6 +10,9 @@ public import Mathlib.AlgebraicGeometry.RationalMap
 public import Mathlib.AlgebraicGeometry.Morphisms.Proper
 public import Mathlib.RingTheory.TensorProduct.Basic
 public import P2M.Util
+public import Mathlib.Basic.NNReal.Defs
+public import Mathlib.Combinatorics.Matroid.Init
+public import Mathlib.Data.Nat.Totient
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

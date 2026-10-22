@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_LinearMap_exists_forall_exists_finAppend_mkQ_sub_mkQ_mem_pow_smul_top
 

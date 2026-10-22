@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
+public import Mathlib.AlgebraicGeometry.Noetherian
 public import Definitions.Def_AlgebraicCurve_RelCartier
 public import Theorems.Thm_IsRegularLocalRing_isPrincipal_of_isPrime_of_height_eq_one_of_ringKrullDim_le_two
 public import Theorems.Thm_IsRegularLocalRing_isDomain

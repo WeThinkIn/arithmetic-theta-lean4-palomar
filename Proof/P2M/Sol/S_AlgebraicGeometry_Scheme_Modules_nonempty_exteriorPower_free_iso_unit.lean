@@ -1,6 +1,10 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.LinearAlgebra.ExteriorPower.Basis
+public import Mathlib.Tactic.ENatToNat
+public import Mathlib.Algebra.Category.ModuleCat.Sheaf.Free
 public import Definitions.Def_AlgebraicGeometry_ModulesDet
 public import P2M.Util
 

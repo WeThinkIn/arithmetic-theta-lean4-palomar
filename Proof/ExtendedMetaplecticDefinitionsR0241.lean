@@ -1,6 +1,7 @@
 module
 
 public import AdaptiveScalarExtensionImageR0240
+public import ScalarExtensionDefinitionsR0240
 
 @[expose] public section
 

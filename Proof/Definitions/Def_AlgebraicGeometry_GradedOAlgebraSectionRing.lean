@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_ModulesPullbackMonoidal
+public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
+public import Mathlib.RingTheory.GradedAlgebra.Basic
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensorV2
 public import Definitions.Def_AlgebraicGeometry_ModulesPullbackMonoidalV2
 

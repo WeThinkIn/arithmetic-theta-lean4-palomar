@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_TateCurve_QSeries
 
 @[expose] public section

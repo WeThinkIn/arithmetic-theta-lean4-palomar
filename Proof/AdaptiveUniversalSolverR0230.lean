@@ -4,6 +4,7 @@ public import ComputedSharpCutoffR0230
 public import CappedDoublingScheduleR0230
 public import ExecutableRelationCertificateR0230
 public import CheckedBasisChangeRelationsR0230
+public import SharpExactImageDataR0195
 
 @[expose] public section
 

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_IsLocalRing_uniqueFactorizationMonoid_of_isPrincipalIdealRing_quotient
 

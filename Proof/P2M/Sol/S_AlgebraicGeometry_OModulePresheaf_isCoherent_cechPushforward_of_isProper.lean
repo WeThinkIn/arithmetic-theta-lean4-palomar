@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafCechPushforward
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_cechFinite_of_isProper
 public import P2M.Util

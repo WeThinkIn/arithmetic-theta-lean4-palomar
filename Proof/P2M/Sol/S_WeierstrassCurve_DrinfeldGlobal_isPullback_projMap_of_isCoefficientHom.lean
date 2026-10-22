@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_WeierstrassCurve_DrinfeldTransportPin
 public import Definitions.Def_WeierstrassCurve_DrinfeldLevelFunctor
 public import Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary
 public import Theorems.Thm_WeierstrassProjModel_kw_bc_awayIsPushout_Y_univ

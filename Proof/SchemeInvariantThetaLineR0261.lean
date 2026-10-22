@@ -2,6 +2,7 @@ module
 
 public import SchemeThetaPushforwardBaseChangeR0261
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isInvertible_tilde_of_projective_rankOne
+public import RelativeSchrodingerModuleR0257
 
 @[expose] public section
 

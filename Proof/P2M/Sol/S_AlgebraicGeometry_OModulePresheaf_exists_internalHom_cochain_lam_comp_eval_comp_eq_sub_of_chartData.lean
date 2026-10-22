@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.Proper
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafInternalHom
 public import Theorems.Thm_LinearMap_exists_forall_sub_eq_comp_comp_and_sub_mem_pow_smul_top_of_comp_eq_of_comp_eq

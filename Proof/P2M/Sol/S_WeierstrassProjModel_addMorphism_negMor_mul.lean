@@ -17,6 +17,9 @@ public import Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Point
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 namespace P2MW.S_WeierstrassProjModel_addMorphism_negMor_mul
 
 set_option Elab.async false

@@ -4,6 +4,9 @@ public import PeriodOneChartEvaluationR0248
 
 @[expose] public section
 
+-- Preserve original field inference without overriding specialized local-ring instances.
+attribute [local instance 999] HenselianLocalRing.toIsLocalRing
+
 /-! Extension of the literal affine evaluation to the projective function field. -/
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

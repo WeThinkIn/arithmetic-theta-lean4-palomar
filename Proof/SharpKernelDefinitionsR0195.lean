@@ -5,6 +5,8 @@ public import SquareHalfHodgeCoverDegreeR0194
 public import HigherLevelProjectiveRatiosR0194
 public import ConservativeMatrixKernelR0189
 public import EarlyCertificateAssembly
+public import SharpCoverRatiosDefinitionsR0194
+public import LatticeGlobalSectionsDefinitionsR0188
 
 @[expose] public section
 

@@ -3,6 +3,8 @@ module
 public import FullLevelProjectiveRatiosR0194
 public import NoetherianPositiveCohomologyR0203
 public import GlobalUnitTwoThreeNormRigidityR0254
+public import LegendreLevelAtlasDefinitionsR0176
+public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawTranslate
 
 @[expose] public section
 

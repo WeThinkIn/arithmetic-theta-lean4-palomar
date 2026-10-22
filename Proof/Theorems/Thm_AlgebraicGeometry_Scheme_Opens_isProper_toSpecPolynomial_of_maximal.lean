@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_Scheme_Opens_isProper_toSpecPolynomial_of_maximal
 

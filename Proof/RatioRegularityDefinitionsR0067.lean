@@ -2,6 +2,10 @@ module
 
 public import LocalFDivisorR0066
 public import NormalDomainIntersection
+public import LocalOrderDefinitionsR0066
+public import GenericAdjacentProvidersR0065
+public import GenericRestrictionProvidersR0065
+public import GenericOpenFaithfulnessR0065
 
 @[expose] public section
 

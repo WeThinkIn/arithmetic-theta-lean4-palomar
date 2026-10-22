@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
+public import Mathlib.CategoryTheory.ExtremalEpi
+public import Mathlib.CategoryTheory.EffectiveEpi.Comp
 public import Definitions.Def_SheafOfModules_MonoidalV2
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensorV2
 public import P2M.Util

@@ -2,6 +2,8 @@ module
 
 public import SelectedRootFieldR0228
 public import AcceptedRootProvidersR0228
+public import AmbientBranchValuesR0227
+public import AlgebraicBranchFiniteModelR0226
 
 @[expose] public section
 

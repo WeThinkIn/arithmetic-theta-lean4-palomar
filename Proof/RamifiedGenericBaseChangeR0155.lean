@@ -2,6 +2,8 @@ module
 
 public import RamifiedLaurentExtensionR0155
 public import RamifiedAcceptedLeavesR0155
+public import RamifiedMarkedSectionsR0154
+public import CompletedChartRamificationR0154
 
 @[expose] public section
 

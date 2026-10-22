@@ -6,6 +6,9 @@ public import Mathlib.RingTheory.Localization.Away.Basic
 public import Definitions.Def_AlgebraicGeometry_OrderedAffineCoverCech
 public import Definitions.Def_AlgebraicGeometry_OrderedAffineCoverOf
 public import P2M.Util
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

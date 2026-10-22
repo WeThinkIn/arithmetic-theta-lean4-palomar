@@ -1,6 +1,8 @@
 module
 
 public import ArithmeticInvariantRatioRealizationR0265
+public import InvariantRatioDefinitionsR0265
+public import SchemeFullLevelUniversalR0204
 
 @[expose] public section
 

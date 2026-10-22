@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_IsFinite_finite_hom_stalkMap_of_forall_base_eq
 

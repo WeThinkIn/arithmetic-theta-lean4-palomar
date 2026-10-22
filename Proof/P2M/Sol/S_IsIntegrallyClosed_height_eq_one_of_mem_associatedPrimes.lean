@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_IsIntegrallyClosed_isDiscreteValuationRing_localization_of_mem_associatedPrimes
 public import Theorems.Thm_Ideal_height_eq_one_of_isDiscreteValuationRing_localization_atPrime
 public import P2M.Util

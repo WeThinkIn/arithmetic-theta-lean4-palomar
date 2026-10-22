@@ -20,6 +20,9 @@ public import Theorems.Thm_WeierstrassProjModel_kw_ev_genericPoint_not_two_torsi
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 namespace P2MW.S_WeierstrassProjModel_pin_addMorphism_negMor_mul
 
 set_option autoImplicit false

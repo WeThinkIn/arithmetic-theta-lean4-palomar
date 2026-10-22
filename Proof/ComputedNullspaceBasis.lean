@@ -1,6 +1,9 @@
 module
 
 public import EliminationReduction
+public import Mathlib.Data.Rat.Star
+public import Mathlib.Algebra.Order.Ring.Star
+public import Std.Tactic.BVDecide.Normalize.Bool
 
 @[expose] public section
 

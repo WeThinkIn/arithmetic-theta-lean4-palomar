@@ -2,6 +2,8 @@ module
 
 public import GlobalLiteralTateMarkingR0263
 public import SchemeGeometricThetaNaturalityR0262
+public import TateSchemeMarkingDefinitionsR0263
+public import SchemeThetaNaturalityDefinitionsR0262
 
 @[expose] public section
 

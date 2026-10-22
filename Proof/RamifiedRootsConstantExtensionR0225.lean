@@ -4,6 +4,7 @@ public import PointedCurveConstantExtensionR0225
 public import FiniteMapConstantExtensionR0225
 public import LineConstantExtensionR0225
 public import PowerSectionsConstantExtensionR0225
+public import RootEquationCartesianReflectionR0222
 
 @[expose] public section
 

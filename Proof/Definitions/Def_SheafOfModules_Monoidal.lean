@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.CategoryTheory.Localization.Monoidal.Braided
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
 public import Definitions.Def_PresheafOfModules_InternalHom
 public import Theorems.Thm_PresheafOfModules_isMonoidal_inverseImage_W_toPresheaf
 

@@ -1,6 +1,10 @@
 module
 
-public import Mathlib
+public import Mathlib.CategoryTheory.ExtremalEpi
+public import Mathlib.AlgebraicGeometry.Sites.Fpqc
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
+public import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant
+public import Mathlib.Algebra.Group.MinimalAxioms
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawBaseChange
 public import Theorems.Thm_AlgebraicGeometry_exists_fg_subalgebra_hom_pullback_of_hom_pullback_of_locallyOfFinitePresentation
 public import Theorems.Thm_AlgebraicGeometry_exists_fg_subalgebra_pullback_fst_comp_eq_of_locallyOfFiniteType

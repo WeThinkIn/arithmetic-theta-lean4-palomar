@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_MumfordTruncation
 public import Definitions.Def_AlgebraicGeometry_TwoChartCechSectionsOf
 public import Definitions.Def_AlgebraicGeometry_ModulesBaseChangeHom
 public import Definitions.Def_AlgebraicGeometry_ModulesTildePullback

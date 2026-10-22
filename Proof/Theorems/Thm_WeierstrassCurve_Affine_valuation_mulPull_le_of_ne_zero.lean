@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_FLTPrelim_GaloisRep
 public import Definitions.Def_EllipticCurve_FunctionFieldPullback
 public import P2M.Util
 public import P2M.Sol.S_WeierstrassCurve_Affine_valuation_mulPull_le_of_ne_zero

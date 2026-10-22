@@ -2,6 +2,7 @@ module
 
 public import Definitions.Def_ModularCurve_JqCoeff
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass
+public import Mathlib.RingTheory.LaurentSeries
 
 @[expose] public section
 

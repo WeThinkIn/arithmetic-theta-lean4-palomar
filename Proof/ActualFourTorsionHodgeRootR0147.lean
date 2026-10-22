@@ -2,6 +2,7 @@ module
 
 public import MarkedCoordinateChartR0147
 public import ProjectivePointsEvaluationR0146
+public import FourTorsionRoot
 
 @[expose] public section
 

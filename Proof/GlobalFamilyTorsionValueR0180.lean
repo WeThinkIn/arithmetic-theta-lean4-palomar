@@ -1,6 +1,7 @@
 module
 
 public import EllipticFamilyWeierstrassAtlasR0180
+public import RelativeTorsionValueNaturalityR0170
 
 @[expose] public section
 

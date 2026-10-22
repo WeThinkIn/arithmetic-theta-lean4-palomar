@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.CategoryTheory.ExtremalEpi
+public import Mathlib.CategoryTheory.EffectiveEpi.Comp
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCover
 public import Theorems.Thm_AlgebraicGeometry_IsPullback_exists_iso_Spec_quotient_comp_morphismRestrict_eq
 public import P2M.Util

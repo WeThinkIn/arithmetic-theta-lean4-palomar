@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicCurve_KaehlerToFunctionField
 public import Definitions.Def_AlgebraicCurve_RegularDifferentials
 public import P2M.Util

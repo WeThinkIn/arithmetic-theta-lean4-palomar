@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawKernel
 public import P2M.Util
 public import P2M.Sol.S_GoodReductionJacobian_RelativeGroupLaw_nsmul_surjective_of_isAlgClosed_of_connectedSpace

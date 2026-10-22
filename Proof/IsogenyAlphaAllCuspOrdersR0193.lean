@@ -1,6 +1,10 @@
 module
 
 public import OpenIsogenyAlphaR0193
+public import IsogenyHalfLinesDefinitionsR0193
+public import FourTorsionTateBehaviorR0190
+public import OpenFullLevelAlphaR0190
+public import AllCuspNormalizedPowerIntegralityR0183
 
 @[expose] public section
 
@@ -542,12 +546,10 @@ lemma hodge_pullback_test {S : Type} [CommRing S]
       E.projection T.projection (structureMap K W) (structureMap K Wt)
       u v hu hv (zero E) (zero T) (origin K W) (origin K Wt) huo hvo
       f.map f.over_eq f.zero_eq ψ hψ hψo hψmap
-    dsimp only [comparison, familyHodgeMap, cubicHodgeMap, PeriodDifferential.pointMap, Cs, Ct] at hn ⊢
     exact hn
   have ht := HodgeTransport.square_section (baseMap S K ρ) _ _ _ _
     (familyHodgeMap f) (cubicHodgeMap W Wt ψ hψ hψo) (comparison Ct) (comparison Cs) hcomm a
-  dsimp only [Cs, Ct, Base, Hodge, alphaPull, transportSection, cubicHodgeApply, cubicHodgeMap] at ht ⊢
-  with_reducible exact ht
+  exact ht
 
 
 end AlphaTransport

@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.NoetherNormalization
+public import Mathlib.RingTheory.SimpleRing.Principal
 public import Theorems.Thm_Ideal_height_eq_height_under_of_isIntegrallyClosed_of_isIntegral
 public import P2M.Util
 

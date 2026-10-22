@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
 public import Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_existsUnique_app_eq_smul

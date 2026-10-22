@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCechTwist
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCechGradedModule
 public import Theorems.Thm_ProjSpaceCech_GradedModule_Presentation_finite_H_of_ses

@@ -1,6 +1,7 @@
 module
 
 public import RecursiveEllipsoidEnumerationR0229
+public import ComputedCoefficientMatrix
 
 @[expose] public section
 

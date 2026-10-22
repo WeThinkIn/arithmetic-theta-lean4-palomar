@@ -3,6 +3,8 @@ module
 public import CompactifiedCoordinateIsomorphismR0145
 public import GlobalNormalizedDifferentialR0145
 public import GeometricThetaLiftsDefinitionsR0141
+public import CompactifiedDifferentialDefinitionsR0145
+public import GenericAffineCubicIsomorphismR0144
 
 @[expose] public section
 

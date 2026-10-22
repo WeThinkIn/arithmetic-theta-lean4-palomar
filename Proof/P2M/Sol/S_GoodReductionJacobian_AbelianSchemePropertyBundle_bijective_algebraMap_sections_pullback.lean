@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_JacJ1Iface
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCover
 public import Theorems.Thm_AlgebraicGeometry_bijective_appTop_of_isProper_of_flat_of_locallyOfFinitePresentation_of_isLocalRing

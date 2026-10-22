@@ -3,6 +3,7 @@ module
 public import CompactAlphaCanonicalHalfLineR0192
 public import DiskFrameComparisonAdapterR0192
 public import SquareIsometryInterfaceAdapterR0192
+public import SquareLineComparisonDefinitionsR0192
 
 @[expose] public section
 

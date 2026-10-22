@@ -2,6 +2,7 @@ module
 
 public import SplitMarkedKatoValueR0159
 public import RationalValueFieldDescentR0159
+public import GammaBaseChangeNaturalityR0158
 
 @[expose] public section
 

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_geometricallyIntegral_of_smooth_of_geometricallyConnected
 

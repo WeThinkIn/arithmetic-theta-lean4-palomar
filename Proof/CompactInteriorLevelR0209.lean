@@ -1,6 +1,7 @@
 module
 
 public import CompactModularityDefinitionsR0209
+public import FiniteEtaleSelectedComponent
 
 @[expose] public section
 

@@ -1,6 +1,7 @@
 module
 
 public import AlgebraicBranchDefinitionsR0226
+public import ValuedExtensionPrescribedRootsR0223
 
 @[expose] public section
 

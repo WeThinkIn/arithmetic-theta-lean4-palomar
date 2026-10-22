@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_DescentAction
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_DescentAction_effective_of_isPullback_of_flat_surjective

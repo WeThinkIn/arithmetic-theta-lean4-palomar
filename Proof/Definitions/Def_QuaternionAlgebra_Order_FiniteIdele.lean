@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.GroupTheory.DoubleCoset
+public import Mathlib.Algebra.Quaternion
 public import Definitions.Def_Submodule_FiniteAdeleBox
 public import Definitions.Def_QuaternionAlgebra_Order
 

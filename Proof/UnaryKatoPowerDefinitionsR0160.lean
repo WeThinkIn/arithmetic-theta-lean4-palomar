@@ -9,6 +9,9 @@ public import CompatibleProjectiveEmbeddingsR0135
 public import CompatibleFormalSectionBasisR0134
 public import MarkedSectionAlgebraizationR0136
 public import ActualGenericGroupLawR0146
+public import DiscriminantDefinitions
+public import MarkedKatoValueDefinitionsR0159
+public import KatoExistenceDefinitionsR0151
 
 @[expose] public section
 

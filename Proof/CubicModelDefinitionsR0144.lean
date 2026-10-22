@@ -6,6 +6,8 @@ public import CoordinateMarkedEvaluationR0143
 public import CoordinateGeometricInversionR0143
 public import IdentityPositiveSectionsRankR0138
 public import TateGeneralSplitCubic
+public import AlgebraicTateCoordinatesDefinitionsR0143
+public import TateSeriesDefinitions
 
 @[expose] public section
 

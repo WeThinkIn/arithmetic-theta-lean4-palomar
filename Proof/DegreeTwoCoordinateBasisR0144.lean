@@ -1,6 +1,8 @@
 module
 
 public import CubicModelDefinitionsR0144
+public import CoordinateExactPolesR0143
+public import TateXNumeratorSystemR0143
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

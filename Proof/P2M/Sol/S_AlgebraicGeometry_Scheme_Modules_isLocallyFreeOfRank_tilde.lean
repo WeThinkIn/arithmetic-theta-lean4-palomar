@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.Spectrum.Prime.FreeLocus
+public import Mathlib.Algebra.Category.ModuleCat.Sheaf.PullbackFree
 public import Definitions.Def_AlgebraicGeometry_ModulesLocallyFreeOfRank
 public import Definitions.Def_AlgebraicGeometry_ModulesTildePullback
 public import P2M.Util

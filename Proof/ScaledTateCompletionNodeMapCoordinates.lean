@@ -1,6 +1,7 @@
 module
 
 public import ScaledTateCompletionExtensionDefinitions
+public import Mathlib.RingTheory.WittVector.IsPoly
 
 @[expose] public section
 

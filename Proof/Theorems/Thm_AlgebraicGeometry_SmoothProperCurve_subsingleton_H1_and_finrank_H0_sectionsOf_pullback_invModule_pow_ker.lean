@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_SmoothProperCurveFiniteMapData
 public import Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier
 public import Definitions.Def_AlgebraicGeometry_TwoChartCechSectionsOf
 public import Definitions.Def_AlgebraicGeometry_IdealSheafModule

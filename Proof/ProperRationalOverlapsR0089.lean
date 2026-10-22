@@ -1,6 +1,7 @@
 module
 
 public import ProperNoPoleDefinitionsR0089
+public import Mathlib.Tactic.Polynomial.Basic
 
 @[expose] public section
 

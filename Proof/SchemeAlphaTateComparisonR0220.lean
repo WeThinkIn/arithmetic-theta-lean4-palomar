@@ -1,6 +1,7 @@
 module
 
 public import AlphaLevelReductionR0220
+public import FourTorsionTateBehaviorR0190
 
 @[expose] public section
 

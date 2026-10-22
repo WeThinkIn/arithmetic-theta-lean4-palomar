@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_TateCurve_XMultStructure
 public import Definitions.Def_TateCurve_TateParameter
 public import Definitions.Def_WeierstrassCurve_AddFormula

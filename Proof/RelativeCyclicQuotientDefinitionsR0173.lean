@@ -4,6 +4,7 @@ public import RelativeMultiplicationHodgeWeightR0172
 public import EtaleHodgePullbackIsomorphismR0172
 public import PointedHodgeBaseChangeR0172
 public import AlgebraizedSplitMarkedDivisorR0136
+public import RelativeIsogenyHodgeDefinitionsR0172
 
 @[expose] public section
 

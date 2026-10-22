@@ -1,6 +1,7 @@
 module
 
 public import CanonicalKatoFieldAgreementR0252
+public import PeriodOneFullKatoNormR0248
 
 @[expose] public section
 

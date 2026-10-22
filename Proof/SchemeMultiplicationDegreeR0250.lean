@@ -1,6 +1,8 @@
 module
 
 public import SchemeTorsionCartesianR0250
+public import SchemeDiscriminantExistenceR0244
+public import NormalModelUnitSpecializationR0249
 
 @[expose] public section
 

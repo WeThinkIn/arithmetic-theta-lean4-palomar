@@ -2,6 +2,9 @@ module
 
 public import ValidGramFieldFormalIdentityR0232
 public import RecoveredFieldConsumersR0232
+public import FieldCosetSectionExpansionR0231
+public import CompactActualMetaplecticLevelR0209
+public import SharpMatrixGeometricFamilyR0195
 
 @[expose] public section
 

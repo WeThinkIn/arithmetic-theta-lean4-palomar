@@ -6,6 +6,8 @@ public import Theorems.Thm_WeierstrassCurve_Affine_Point_exists_zsmul_some_eq_so
 public import Theorems.Thm_WeierstrassCurve_Affine_Point_smul_some_eq_zero_iff
 public import Theorems.Thm_WeierstrassCurve_Affine_evalEval_psi_sq
 public import P2M.Util
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.SimpleRing.Principal
 
 @[expose] public section
 namespace P2MW.S_WeierstrassCurve_Affine_valuation_mulPull_le_of_ne_zero

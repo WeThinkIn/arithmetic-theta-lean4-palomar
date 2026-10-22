@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
 public import Definitions.Def_PresheafOfModules_ExteriorPower
 public import Definitions.Def_AlgebraicGeometry_ModulesDet
@@ -11,6 +10,9 @@ public import Theorems.Thm_NeronModelInfra_TopFormOrder_topFormMap_topFormMap
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 namespace P2MW.S_GoodReductionJacobian_RelativeGroupLaw_topFormMap_mul_eq_of_forall_topFormMap_appLE_mul_eq
 
 set_option autoImplicit false

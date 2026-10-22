@@ -5,6 +5,7 @@ public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_cechFinite_iff_of_c
 public import Mathlib.AlgebraicGeometry.Morphisms.ClosedImmersion
 public import Mathlib.RingTheory.Finiteness.Basic
 public import P2M.Util
+public import Mathlib.Order.CompletePartialOrder
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

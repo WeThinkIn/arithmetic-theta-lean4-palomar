@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCover
 public import P2M.Util

@@ -7,6 +7,8 @@ public import Mathlib.RingTheory.LocalProperties.Submodule
 public import Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_exists_comap_eq_of_openCover
 public import Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_ideal_comap_of_le
 public import P2M.Util
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.Tactic.Monotonicity.Lemmas
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

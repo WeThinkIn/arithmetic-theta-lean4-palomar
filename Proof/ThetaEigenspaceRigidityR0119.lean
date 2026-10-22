@@ -2,6 +2,8 @@ module
 
 public import ThetaRecurrenceBasisR0119
 public import ThetaOperatorLawsR0119
+public import Mathlib.RingTheory.Etale.Weakly
+public import Mathlib.RingTheory.TotallySplit
 
 @[expose] public section
 

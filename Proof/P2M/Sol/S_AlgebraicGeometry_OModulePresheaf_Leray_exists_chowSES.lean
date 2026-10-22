@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCover
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafLerayBicomplex
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafConstructions

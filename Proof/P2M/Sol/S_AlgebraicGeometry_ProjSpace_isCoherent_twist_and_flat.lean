@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.Etale.Weakly
+public import Mathlib.RingTheory.TotallySplit
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.RingTheory.PicardGroup
 public import Definitions.Def_AlgebraicGeometry_ProjTwistDatum
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafSectionsLinearRes
 public import Theorems.Thm_AlgebraicGeometry_ProjSpace_isQuasicoherent_twist

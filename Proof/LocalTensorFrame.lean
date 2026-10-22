@@ -1,6 +1,7 @@
 module
 
 public import ActualSheafTensor
+public import LocalFrameBridge
 
 @[expose] public section
 

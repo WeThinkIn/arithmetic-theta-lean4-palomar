@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_NeronModelInfra_TopFormOrder
 public import P2M.Util
 public import P2M.Sol.S_NeronModelInfra_TopFormOrder_topFormMap_topFormMap

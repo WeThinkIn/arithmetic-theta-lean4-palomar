@@ -3,6 +3,8 @@ module
 public import RelativeNormalizedThetaInversionR0255
 public import RelativeDoubledTorsionThetaLiftR0255
 public import RelativeMidpointSymmetricThetaLiftR0255
+public import RelativeThetaLiftsDefinitionsR0255
+public import P2M.Sol.S_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso
 
 @[expose] public section
 

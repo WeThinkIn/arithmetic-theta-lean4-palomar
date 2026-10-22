@@ -2,6 +2,8 @@ module
 
 public import SchemeLocalWeierstrassR0203
 public import ArbitraryAffineClassificationR0202
+public import LocalWeierstrassDefinitionsR0203
+public import CompatibleLevelDefinitionsR0178
 
 @[expose] public section
 

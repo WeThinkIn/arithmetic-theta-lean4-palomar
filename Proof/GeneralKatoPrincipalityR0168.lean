@@ -3,6 +3,7 @@ module
 public import GeneralEllipticKatoDefinitionsR0168
 public import ProjectivePointsEvaluationR0146
 public import Theorems.Thm_WeierstrassProjModel_projModelStrCR_smoothOfRelativeDimension_one
+public import ActualKatoDivisorPrincipalR0151
 
 @[expose] public section
 

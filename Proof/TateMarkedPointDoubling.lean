@@ -4,6 +4,7 @@ public import TateGeneralSplitCubic
 public import TateMarkedCuspOrders
 public import SplitCubicGeometry
 public import Theorems.Thm_TateCurve_symAdd_sum_regional
+public import TateSeriesCuspTerms
 
 @[expose] public section
 

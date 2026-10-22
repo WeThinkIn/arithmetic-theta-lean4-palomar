@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_not_isAffine_of_isProper_of_smoothOfRelativeDimension_one
 

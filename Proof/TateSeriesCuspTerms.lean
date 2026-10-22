@@ -1,6 +1,9 @@
 module
 
 public import TateSeriesSubstitution
+public import TateLegacySeriesSubstitution
+public import Mathlib.Algebra.Order.Ring.Star
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

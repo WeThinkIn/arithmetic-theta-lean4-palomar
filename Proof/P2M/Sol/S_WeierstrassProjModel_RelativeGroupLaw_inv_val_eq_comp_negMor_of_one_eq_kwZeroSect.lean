@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Algebra.Group.MinimalAxioms
 public import Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary
 public import Definitions.Def_WeierstrassCurve_DrinfeldBasisGlobal
 public import Theorems.Thm_WeierstrassProjModel_exists_thirdLaw_nineCoverage_of_isElliptic_of_isDomain

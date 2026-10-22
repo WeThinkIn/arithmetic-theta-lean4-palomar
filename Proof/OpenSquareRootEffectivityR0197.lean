@@ -1,6 +1,9 @@
 module
 
 public import RootDescentDefinitionsR0197
+public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_toDescentData_essSurj_of_openCover
+public import RootTestPullbackCoherenceR0196
+public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_toDescentData_map_bijective_of_openCover
 
 @[expose] public section
 

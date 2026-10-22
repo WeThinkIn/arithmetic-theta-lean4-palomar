@@ -2,6 +2,7 @@ module
 
 public import RationalTateDiscriminantDefinitionsR0247
 public import RationalNormalizedFrameR0247
+public import RelativeAlphaNaturalityR0190
 
 @[expose] public section
 

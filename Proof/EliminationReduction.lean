@@ -1,6 +1,7 @@
 module
 
 public import EliminationPrimitives
+public import Mathlib.LinearAlgebra.Matrix.Echelon.Pivot
 
 @[expose] public section
 

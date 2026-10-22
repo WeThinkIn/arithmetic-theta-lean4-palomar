@@ -7,6 +7,8 @@ public import SignedDivisorTensor
 public import GlobalRootTorsor
 public import FiniteEtaleSelectedComponent
 public import FiniteEtaleFormalDiskLift
+public import ComponentDegreeDefinitionsR0184
+public import GlobalizationDefinitions
 
 @[expose] public section
 

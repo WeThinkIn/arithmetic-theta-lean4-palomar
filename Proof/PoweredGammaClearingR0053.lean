@@ -1,6 +1,8 @@
 module
 
 public import AnnularTorsionPrerequisiteDefinitionsR0053
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

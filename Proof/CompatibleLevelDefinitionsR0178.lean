@@ -2,6 +2,7 @@ module
 
 public import MarkedLegendreAtlasLocalCoverageR0177
 public import OrderedLegendreParameterRigidityR0177
+public import LegendreComparisonDefinitionsR0177
 
 @[expose] public section
 

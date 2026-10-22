@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.QuasiAffine
 public import Definitions.Def_JacJ1Iface
 public import Theorems.Thm_GoodReductionJacobian_AbelianSchemePropertyBundle_geometricallyIntegral
 public import Theorems.Thm_GoodReductionJacobian_AbelianSchemePropertyBundle_of_isPullback

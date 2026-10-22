@@ -13,6 +13,7 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_finite_of_isClosed_of_generi
 public import Theorems.Thm_AlgebraicGeometry_isOpenImmersion_of_locallyQuasiFinite_of_isIntegrallyClosed_stalk_of_denseRange
 public import Theorems.Thm_AlgebraicGeometry_ChowDatum_nonempty
 public import Theorems.Thm_AlgebraicGeometry_ChowDatumProj_nonempty_of
+public import LegendreFamilyGeometryR0176
 
 @[expose] public section
 

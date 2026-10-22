@@ -3,6 +3,7 @@ module
 public import RelativeKatoDefinitionsR0169
 public import Mathlib.AlgebraicGeometry.Morphisms.Preimmersion
 public import Mathlib.AlgebraicGeometry.Morphisms.Flat
+public import GeneralEllipticBaseChangeR0168
 
 @[expose] public section
 

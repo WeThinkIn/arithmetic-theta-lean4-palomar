@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_Mathlib_Algebra_IsDirectLimit
 public import P2M.Util
 public import P2M.Sol.S_Algebra_exists_algHom_tensorProduct_map_eq_of_finitePresentation_of_isDirectLimit

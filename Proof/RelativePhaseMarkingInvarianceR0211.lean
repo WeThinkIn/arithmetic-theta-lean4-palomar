@@ -3,6 +3,8 @@ module
 public import RelativeGeometricPhaseR0211
 public import RelativeMarkingActionR0211
 public import Theorems.Thm_WeierstrassCurve_Affine_Point_vcInvFun_add
+public import RelativeSplitFiberBasisR0211
+public import GeometricFourCharacterR0118
 
 @[expose] public section
 

@@ -6,6 +6,8 @@ public import GeometricInversionLiftR0141
 public import GeometricThetaRelationsR0141
 public import GeometricBasisProjectiveValuesR0141
 public import AlgebraizedGeometricConnectednessR0135
+public import GeometricThetaLiftsDefinitionsR0141
+public import GenericThetaBasisR0140
 
 @[expose] public section
 

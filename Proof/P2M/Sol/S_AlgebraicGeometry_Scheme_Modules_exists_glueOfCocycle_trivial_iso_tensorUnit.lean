@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 public import Definitions.Def_AlgebraicGeometry_ModulesGlueOfCocycle
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_iso_glueOfCocycle_app_eq_glueFrame

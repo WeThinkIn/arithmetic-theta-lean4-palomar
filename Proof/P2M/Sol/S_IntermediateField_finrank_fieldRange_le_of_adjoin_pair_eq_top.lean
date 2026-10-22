@@ -4,6 +4,8 @@ public import Mathlib.FieldTheory.Galois.Basic
 public import Mathlib.FieldTheory.IntermediateField.Adjoin.Basic
 public import Mathlib.FieldTheory.IntermediateField.Algebraic
 public import P2M.Util
+public import Mathlib.Combinatorics.Matroid.Init
+public import Mathlib.Data.Nat.Totient
 
 @[expose] public section
 namespace P2MW.S_IntermediateField_finrank_fieldRange_le_of_adjoin_pair_eq_top

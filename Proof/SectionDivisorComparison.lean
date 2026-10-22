@@ -1,6 +1,9 @@
 module
 
 public import SectionRatios
+public import DivisorDegreeLaws
+public import SectionDegreeBound
+public import SectionDivisor
 
 @[expose] public section
 

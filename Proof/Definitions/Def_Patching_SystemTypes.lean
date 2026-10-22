@@ -9,6 +9,7 @@ public import Mathlib.Algebra.Module.Torsion.Basic
 public import Mathlib.LinearAlgebra.Dimension.Finrank
 public import Mathlib.Order.Filter.Ultrafilter.Defs
 public import Mathlib.Data.ENat.Lattice
+public import Mathlib.LinearAlgebra.Dimension.Basic
 
 @[expose] public section
 

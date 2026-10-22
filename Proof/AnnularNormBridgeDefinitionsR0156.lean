@@ -4,6 +4,8 @@ public import RamifiedFunctionFieldExpansionR0155
 public import RamifiedKatoBaseChangeR0155
 public import LaurentFormalFNormR0064
 public import LaurentFormalFPeriodicityR0064
+public import KatoAnnularDefinitionsR0152
+public import LaurentNormDefinitionsR0064
 
 @[expose] public section
 

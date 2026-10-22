@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 public import Definitions.Def_AlgebraicGeometry_ModulesPullbackLocalSection
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_bijective_unit_app_of_le_opensRange

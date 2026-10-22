@@ -1,6 +1,9 @@
 module
 
 public import CompatibleLevelDefinitionsR0178
+public import OrderedLegendreParameterRigidityR0177
+public import StandardLegendreTwoMarkingR0177
+public import FullLevelFreeSignR0176
 
 @[expose] public section
 

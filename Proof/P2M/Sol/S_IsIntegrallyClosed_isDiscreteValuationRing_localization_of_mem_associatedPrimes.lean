@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_IsIntegrallyClosed_isDiscreteValuationRing_of_maximalIdeal_mem_associatedPrimes
 public import P2M.Util
 

@@ -2,6 +2,7 @@ module
 
 public import RationalMorphismOpenR0266
 public import LegendreLevelFamilyConstructionR0176
+public import ArithmeticInvariantRatioRealizationR0265
 
 @[expose] public section
 

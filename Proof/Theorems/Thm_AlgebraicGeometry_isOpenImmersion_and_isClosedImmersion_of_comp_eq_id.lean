@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_isOpenImmersion_and_isClosedImmersion_of_comp_eq_id
 

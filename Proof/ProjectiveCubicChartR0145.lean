@@ -2,6 +2,7 @@ module
 
 public import CompactifiedDifferentialDefinitionsR0145
 public import Theorems.Thm_WeierstrassProjModel_exists_zChartAway_equiv_coordinateRing
+public import GenericAffineCubicIsomorphismR0144
 
 @[expose] public section
 

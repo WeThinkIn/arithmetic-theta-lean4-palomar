@@ -4,6 +4,7 @@ public import FullGammaEvaluationR0156
 public import EvaluationScalingR0156
 public import MultiplicationEvaluationR0156
 public import CompletedNormProductR0153
+public import LaurentFormalFNormR0064
 
 @[expose] public section
 

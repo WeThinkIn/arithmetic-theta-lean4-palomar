@@ -2,6 +2,7 @@ module
 
 public import GenericRestrictionProvidersR0065
 public import GenericAdjacentProvidersR0065
+public import GenericOverlapDefinitionsR0065
 
 @[expose] public section
 set_option synthInstance.maxHeartbeats 200000

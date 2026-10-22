@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier
 
 public import Theorems.Thm_Algebra_FormallySmooth_of_isRegularLocalRing_of_algHom_of_maximalIdeal_eq_span

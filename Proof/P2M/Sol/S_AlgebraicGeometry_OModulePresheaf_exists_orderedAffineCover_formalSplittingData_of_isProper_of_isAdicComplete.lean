@@ -1,6 +1,10 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
+public import Mathlib.AlgebraicGeometry.QuasiAffine
+public import Mathlib.Tactic.Monotonicity.Lemmas
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCover
 public import Theorems.Thm_LinearMap_exists_lifts_comp_eq_forall_comp_eq_comp_subtype_sub_mem_pow_smul_top

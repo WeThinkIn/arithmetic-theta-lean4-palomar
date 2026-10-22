@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafTensor
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafFamilyFramesGradedModule
 public import P2M.Util

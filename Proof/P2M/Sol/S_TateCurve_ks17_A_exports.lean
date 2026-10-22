@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Topology.UniformSpace.Uniformizable
 public import Definitions.Def_TateCurve_XMultIdentities
 public import Definitions.Def_TateCurve_DefectLines
 public import Definitions.Def_NumberTheory_DivisorConvolution

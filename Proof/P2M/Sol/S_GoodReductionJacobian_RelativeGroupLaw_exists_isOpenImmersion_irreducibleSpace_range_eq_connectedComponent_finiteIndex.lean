@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.AlgClosed.Basic
+public import Mathlib.AlgebraicGeometry.QuasiAffine
 public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawKernel
 public import Definitions.Def_AlgebraicGeometry_NeronModelEndomorphismExtension
@@ -10,6 +11,9 @@ public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_eq_of_mem_irre
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

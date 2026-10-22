@@ -3,6 +3,11 @@ module
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafConstructions
 public import Mathlib.AlgebraicGeometry.Morphisms.Proper
 public import P2M.Util
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.AlgebraicGeometry.QuasiAffine
+public import Mathlib.RingTheory.Localization.Free
+public import Mathlib.RingTheory.PicardGroup
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

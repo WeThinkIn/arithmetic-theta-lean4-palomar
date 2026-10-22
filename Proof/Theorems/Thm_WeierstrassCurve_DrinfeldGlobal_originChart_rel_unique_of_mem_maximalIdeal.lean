@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_WeierstrassCurve_DrinfeldGlobal_originChart_rel_unique_of_mem_maximalIdeal
 

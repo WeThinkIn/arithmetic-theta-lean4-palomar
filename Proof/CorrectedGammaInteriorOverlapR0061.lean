@@ -1,6 +1,7 @@
 module
 
 public import CorrectedGammaDataUniqueR0061
+public import CorrectedGammaDefinitionsR0061
 
 @[expose] public section
 set_option synthInstance.maxHeartbeats 200000

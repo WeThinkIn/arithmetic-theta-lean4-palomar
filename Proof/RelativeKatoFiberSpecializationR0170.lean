@@ -2,6 +2,7 @@ module
 
 public import RelativeKatoCartierRatioR0170
 public import Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_ideal_comap_of_le
+public import RelativeTorsionCartierR0170
 
 @[expose] public section
 

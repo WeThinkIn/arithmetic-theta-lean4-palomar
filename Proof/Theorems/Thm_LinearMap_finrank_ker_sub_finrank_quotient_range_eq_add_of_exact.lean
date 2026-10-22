@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_LinearMap_finrank_ker_sub_finrank_quotient_range_eq_add_of_exact
 

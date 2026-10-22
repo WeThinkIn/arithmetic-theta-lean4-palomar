@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.Coalgebra.CoassocSimps
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_AffHom_exists_isQuasicoherent_surjective_ker_eq_range
 public import P2M.Util

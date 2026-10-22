@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
 
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 

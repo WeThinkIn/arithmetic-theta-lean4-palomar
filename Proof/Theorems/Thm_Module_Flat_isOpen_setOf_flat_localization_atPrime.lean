@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Module_Flat_isOpen_setOf_flat_localization_atPrime
 

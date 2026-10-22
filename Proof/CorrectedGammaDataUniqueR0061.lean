@@ -1,6 +1,7 @@
 module
 
 public import CorrectedGammaDataExistsR0061
+public import CorrectedGammaDefinitionsR0061
 
 @[expose] public section
 

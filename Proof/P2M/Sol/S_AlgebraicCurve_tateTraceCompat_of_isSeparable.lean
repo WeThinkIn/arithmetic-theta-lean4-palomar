@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.Analysis.Normed.Unbundled.SpectralNorm
+public import Mathlib.Algebra.Lie.OfAssociative
+public import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero
+public import Mathlib.RingTheory.Coalgebra.CoassocSimps
 public import Definitions.Def_AlgebraicCurve_DivisorClassGroup
 public import Definitions.Def_AlgebraicCurve_RatFuncPlaces
 public import Definitions.Def_AlgebraicCurve_IsCurveOver
@@ -17,6 +20,9 @@ public import Definitions.Def_AlgebraicCurve_TateResidueCurrency
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] SubsemiringClass.toAddSubmonoidClass
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

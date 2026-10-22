@@ -4,6 +4,9 @@ public import AlgebraicBranchResidueR0226
 
 @[expose] public section
 
+-- Preserve original field inference without overriding specialized local-ring instances.
+attribute [local instance 999] HenselianLocalRing.toIsLocalRing
+
 /-! A valuation extension and rational closed centre for the original formal disk. -/
 set_option autoImplicit false
 set_option maxRecDepth 4096

@@ -1,8 +1,14 @@
 module
 
 public import BoundaryHodgeDefinitionsR0182
+public import GeometricDiscriminantHodgeR0163
+public import TateFullLevelMarkingR0181
+public import GlobalFamilyDiscriminantR0180
 
 @[expose] public section
+
+-- Preserve the original elaborated instance path after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 
 set_option autoImplicit false
 set_option linter.style.haveILetI false

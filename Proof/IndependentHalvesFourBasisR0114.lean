@@ -2,6 +2,7 @@ module
 
 public import MillerGeometryDefinitionsR0114
 public import Mathlib.Tactic.FinCases
+public import FourTorsionRoot
 
 @[expose] public section
 

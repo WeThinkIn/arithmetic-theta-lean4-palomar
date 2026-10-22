@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_IsLocalizedModule_existsUnique_forall_eq_of_span_range_eq_top
 

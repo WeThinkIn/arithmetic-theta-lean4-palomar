@@ -3,6 +3,7 @@ module
 public import FourTorsionDefinitions
 public import Mathlib.Tactic.FieldSimp
 public import Mathlib.Tactic.LinearCombination
+public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Formula
 
 @[expose] public section
 

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AdicCompletion_map_ker_subtype_injective_and_range_eq_ker_map
 

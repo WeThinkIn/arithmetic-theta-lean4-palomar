@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.Unramified.LocalStructure
+public import Std.Tactic.BVDecide.Normalize.Prop
 public import Theorems.Thm_Algebra_injective_liftBaseChange_h1CotangentMap_of_span_eq_top_of_forall_exists_isWeaklyRegular
 public import P2M.Util
 

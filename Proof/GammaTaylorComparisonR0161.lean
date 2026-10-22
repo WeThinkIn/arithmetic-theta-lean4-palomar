@@ -3,6 +3,9 @@ module
 public import FaithfulTaylorFieldR0161
 public import DiscriminantInitial
 public import LocalGammaProviderBridgeR0065
+public import OriginInitialDefinitionsR0161
+public import CompletedChartFieldMapsR0152
+public import Mathlib.RingTheory.PowerSeries.Expand
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

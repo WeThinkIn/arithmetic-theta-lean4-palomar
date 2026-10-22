@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_AdicCompletion_exists_linearMap_forall_val_apply_eq_mk_apply
 public import Theorems.Thm_AdicCompletion_bijective_of_forall_val_apply_eq_mk_apply
 public import P2M.Util

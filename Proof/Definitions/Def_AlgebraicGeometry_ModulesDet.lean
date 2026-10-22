@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
 public import Definitions.Def_PresheafOfModules_ExteriorPower
 
 @[expose] public section

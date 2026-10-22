@@ -8,6 +8,8 @@ public import ArbitraryThetaEvaluationBaseChangeR0213
 
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_Hom_isIso_of_forall_exists_isIso_pullback_map
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isIso_baseChangeHom_of_isOpenImmersion
+public import ThetaEvaluationBaseChangeR0212
+public import SchemeLocalClassifierR0204
 
 @[expose] public section
 

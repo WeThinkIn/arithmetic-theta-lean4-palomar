@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import NormQuotientDefinitionsR0062
 
 @[expose] public section

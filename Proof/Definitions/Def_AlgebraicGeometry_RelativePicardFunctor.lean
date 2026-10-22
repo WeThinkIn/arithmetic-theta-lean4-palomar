@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
+public import Mathlib.Algebra.Category.ModuleCat.Sheaf.PullbackFree
 public import Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier
 
 @[expose] public section

@@ -3,6 +3,8 @@ module
 public import FullLevelProjectiveRatiosR0194
 public import CompactifiedLevelForgettingR0179
 public import RamifiedLaurentExtensionR0155
+public import TateBridgesSeriesSubstitution
+public import LegendreLevelFamilyConstructionR0176
 
 @[expose] public section
 

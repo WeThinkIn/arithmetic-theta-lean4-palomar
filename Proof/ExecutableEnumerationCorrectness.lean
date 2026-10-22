@@ -2,6 +2,7 @@ module
 
 public import CofactorSearchBounds
 public import ComputableIntegerBoxes
+public import EnumerationAlgorithm
 
 @[expose] public section
 

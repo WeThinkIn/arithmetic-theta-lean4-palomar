@@ -1,6 +1,8 @@
 module
 
 public import ScaledTateCompletionSpecializationExistsR0049
+public import ScaledTateCompletionTargetIdealSeparated
+public import ScaledTateNodeCompletion
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

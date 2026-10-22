@@ -1,6 +1,9 @@
 module
 
 public import GeneralKatoExistenceR0168
+public import GeneralEllipticKatoDefinitionsR0168
+public import Theorems.Thm_AlgebraicGeometry_Scheme_Opens_range_algebraMap_functionField_eq_iInf
+public import MultiplicationDifferentialR0148
 
 @[expose] public section
 

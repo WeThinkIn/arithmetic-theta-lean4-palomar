@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.Algebra.Category.ModuleCat.Sheaf.PullbackFree
 public import Definitions.Def_AlgebraicGeometry_ModulesLocallyFreeOfRank
 public import P2M.Util
 

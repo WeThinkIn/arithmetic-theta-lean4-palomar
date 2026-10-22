@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.TotallySplit
+public import Mathlib.RingTheory.Smooth.Fiber
 
 public import Definitions.Def_Mathlib_RingTheory_RegularLocalRingQuotientRegular
 public import Theorems.Thm_IsRegularLocalRing_isDomain

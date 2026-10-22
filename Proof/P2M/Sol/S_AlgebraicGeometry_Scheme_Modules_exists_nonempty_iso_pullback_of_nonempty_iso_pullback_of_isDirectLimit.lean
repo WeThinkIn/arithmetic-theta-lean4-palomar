@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_Mathlib_Algebra_IsDirectLimit
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor

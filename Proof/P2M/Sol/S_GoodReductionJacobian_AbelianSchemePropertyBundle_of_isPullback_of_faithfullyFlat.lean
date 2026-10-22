@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.LocalFlatDescent
 public import Definitions.Def_JacJ1Iface
 public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
 public import Theorems.Thm_AlgebraicGeometry_IsProper_descendsAlong_surjective_inf_flat_inf_quasiCompact

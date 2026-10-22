@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicCurve_CurveModel
 public import Theorems.Thm_AlgebraicCurve_isAffineOpen_of_maximal_domain
 public import Theorems.Thm_AlgebraicCurve_exists_transcendental_mem_range_stalk_iff_ne

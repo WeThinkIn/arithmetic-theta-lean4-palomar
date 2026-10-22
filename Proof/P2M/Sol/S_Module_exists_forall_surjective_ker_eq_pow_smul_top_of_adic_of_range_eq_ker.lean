@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_Module_existsUnique_compatible_lift_of_range_eq_ker_of_ker_le_pow_smul
 public import Theorems.Thm_AdicCompletion_map_ker_subtype_injective_and_range_eq_ker_map
 public import Theorems.Thm_Module_exists_submodule_pi_forall_surjective_ker_eq_pow_smul_top_of_adic_system

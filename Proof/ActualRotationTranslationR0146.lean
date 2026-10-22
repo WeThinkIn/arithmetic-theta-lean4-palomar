@@ -2,6 +2,8 @@ module
 
 public import ActualGenericGroupLawR0146
 public import MarkedSectionAlgebraizationR0136
+public import P2M.Sol.S_AlgebraicGeometry_exists_eq_snd_comp_of_comp_eq_const_of_isProper
+public import MarkedGroupLawDefinitionsR0146
 
 @[expose] public section
 

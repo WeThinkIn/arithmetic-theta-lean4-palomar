@@ -4,6 +4,7 @@ public import SchemeKatoUnitNaturalityR0250
 public import SchemeKatoCartierDivisorR0250
 public import SchemeMultiplicationDegreeR0250
 public import GeometricNormBaseChangeR0150
+public import ArbitraryKatoUnitDefinitionsR0249
 
 @[expose] public section
 

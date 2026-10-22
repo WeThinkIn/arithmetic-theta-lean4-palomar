@@ -4,6 +4,7 @@ public import Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary
 public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
 public import Definitions.Def_AlgebraicGeometry_RelativeGroupLawGrpObj
 public import P2M.Util
+public import Definitions.Def_WeierstrassCurve_ProjModel
 
 @[expose] public section
 namespace P2MW.S_WeierstrassProjModel_RelativeGroupLaw_exists_grpObj_eq

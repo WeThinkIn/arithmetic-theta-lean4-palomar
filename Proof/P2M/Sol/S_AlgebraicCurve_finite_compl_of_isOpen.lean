@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_AlgebraicCurve_isClosed_singleton_of_ne_genericPoint
 public import P2M.Util
 

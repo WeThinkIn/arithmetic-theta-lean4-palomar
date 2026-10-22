@@ -2,6 +2,8 @@ module
 
 public import GeneratorSMillerPhaseR0115
 public import GeneratorT2RootR0115
+public import BasisRightActionR0115
+public import LevelFourFiniteCharacter
 
 @[expose] public section
 

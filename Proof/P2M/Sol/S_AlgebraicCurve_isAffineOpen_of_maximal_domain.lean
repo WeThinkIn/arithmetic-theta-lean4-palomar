@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.ZariskisMainTheorem
 public import Definitions.Def_AlgebraicCurve_CurveModel
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Opens_isProper_toSpecPolynomial_of_maximal
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Opens_finite_preimage_singleton_toSpecPolynomial

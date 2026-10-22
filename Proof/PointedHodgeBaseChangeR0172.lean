@@ -1,6 +1,7 @@
 module
 
 public import PointedHodgeFunctorialityR0172
+public import RelativeInitialSectionNaturalityR0171
 
 @[expose] public section
 

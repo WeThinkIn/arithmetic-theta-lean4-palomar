@@ -3,6 +3,7 @@ module
 public import ActualMetaplecticFPQCStackR0207
 public import CategoricalRootFiberR0199
 public import RootClassifyingMapR0199
+public import ActualFamilyFPQCDescentR0207
 
 @[expose] public section
 

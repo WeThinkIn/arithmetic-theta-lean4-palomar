@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicCurve_AdelicIndex
 public import Definitions.Def_AlgebraicCurve_PlaceEvaluation
 public import Theorems.Thm_AlgebraicCurve_Place_mem_of_ord_nonneg

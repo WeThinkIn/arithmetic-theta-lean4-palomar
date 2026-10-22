@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
+public import Mathlib.AlgebraicGeometry.Morphisms.FlatRank
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
 public import Theorems.Thm_AlgHom_natCard_eq_finrank_of_isReduced_of_isAlgClosed
 public import P2M.Util
 

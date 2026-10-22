@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import P2M.Util
 public import P2M.Sol.S_WeierstrassProjModel_RelativeGroupLaw_exists_iso_comp_eq_and_comp_hom_eq_mul

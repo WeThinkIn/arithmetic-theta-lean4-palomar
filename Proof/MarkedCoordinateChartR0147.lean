@@ -1,6 +1,8 @@
 module
 
 public import HodgeFourTorsionDefinitionsR0147
+public import MarkedExactTorsionR0146
+public import ActualInverseComparisonR0146
 
 @[expose] public section
 set_option autoImplicit false

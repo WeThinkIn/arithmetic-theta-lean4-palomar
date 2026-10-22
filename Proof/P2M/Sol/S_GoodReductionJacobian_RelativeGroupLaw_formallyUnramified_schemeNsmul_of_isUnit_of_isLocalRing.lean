@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawKernel
 public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_formallyUnramified_schemeNsmul_of_forall_sqZero
 public import P2M.Util

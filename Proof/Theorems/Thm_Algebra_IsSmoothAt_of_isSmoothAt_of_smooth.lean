@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Algebra_IsSmoothAt_of_isSmoothAt_of_smooth
 

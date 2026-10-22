@@ -2,6 +2,8 @@ module
 
 public import ProperRationalOverlapsR0089
 public import ProperFractionScalarsR0089
+public import LocalizedRingFamilyConstant
+public import NormalDomainIntersection
 
 @[expose] public section
 

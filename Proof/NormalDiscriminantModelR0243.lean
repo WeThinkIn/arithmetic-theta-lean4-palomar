@@ -6,6 +6,7 @@ public import Theorems.Thm_WeierstrassProjModel_exists_relativeGroupLaw_isCommut
 public import Theorems.Thm_WeierstrassProjModel_projModel_pullback_iso_baseChange
 public import Theorems.Thm_WeierstrassProjModel_kw_hgi_geometricallyIntegral_of_baseChangeIso
 public import Theorems.Thm_WeierstrassProjModel_projModelStrCR_isProper
+public import Mathlib.Algebra.Field.ULift
 
 @[expose] public section
 

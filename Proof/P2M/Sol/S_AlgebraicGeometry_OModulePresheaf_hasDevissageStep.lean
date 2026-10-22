@@ -6,6 +6,9 @@ public import Mathlib.RingTheory.Localization.Away.Basic
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafConstructions
 public import Theorems.Thm_AlgebraicGeometry_Scheme_isIntegral_subscheme_vanishingIdeal
 public import P2M.Util
+public import Mathlib.SetTheory.ZFC.PSet
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.Tactic.Monotonicity.Lemmas
 
 @[expose] public section
 namespace P2MW.S_AlgebraicGeometry_OModulePresheaf_hasDevissageStep

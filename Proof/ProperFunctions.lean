@@ -1,6 +1,7 @@
 module
 
 public import ProperFunctionsDefinitions
+public import Mathlib.AlgebraicGeometry.Morphisms.Proper
 
 @[expose] public section
 

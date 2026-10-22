@@ -1,6 +1,8 @@
 module
 
 public import SectionDivisor
+public import SectionOrderDefinitions
+public import EffectiveDivisorBounds
 
 @[expose] public section
 

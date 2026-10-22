@@ -1,6 +1,7 @@
 module
 
 public import LaurentNormDefinitionsR0064
+public import FormalNormProduct
 
 @[expose] public section
 

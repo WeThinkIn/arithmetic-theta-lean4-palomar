@@ -1,6 +1,8 @@
 module
 
 public import PeriodOneNormDefinitionsR0248
+public import OpenDiscriminantFullTateExpansionR0182
+public import UnsplitKatoFullExpansionR0158
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

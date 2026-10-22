@@ -1,6 +1,7 @@
 module
 
 public import TensorPowerLaws
+public import TensorPowerDefinitions
 
 @[expose] public section
 

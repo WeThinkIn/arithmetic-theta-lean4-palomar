@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_RingHom_Finite_finite_localRingHom_of_forall_comap_eq
 

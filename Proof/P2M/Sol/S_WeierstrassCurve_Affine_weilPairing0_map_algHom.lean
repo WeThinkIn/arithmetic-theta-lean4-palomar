@@ -5,7 +5,6 @@ public import Theorems.Thm_WeierstrassCurve_Affine_map_transEquiv_eq_transEquiv_
 public import Theorems.Thm_WeierstrassCurve_Affine_exists_map_weilFun_eq_mul_weilFun_map_of_algHom
 public import Theorems.Thm_WeierstrassCurve_Affine_exists_transEquiv_weilFun_eq
 public import Theorems.Thm_WeierstrassCurve_Affine_weilFun_ne_zero
-public import Mathlib
 public import Definitions.Def_EllipticCurve_WeilPairingFun
 public import P2M.Util
 

@@ -2,6 +2,8 @@ module
 
 public import SchemeKatoNormR0251
 public import PeriodOneFullKatoNormR0248
+public import PeriodOneNormDefinitionsR0248
+public import SchemeKatoUnitDefinitionsR0250
 
 @[expose] public section
 

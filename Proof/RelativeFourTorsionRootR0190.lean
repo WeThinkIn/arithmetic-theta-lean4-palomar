@@ -2,6 +2,8 @@ module
 
 public import GlobalFourTorsionDefinitionsR0190
 public import FullLevelDivisorReductionR0177
+public import TwoTorsionSplitCubicR0177
+public import TwoTorsionAffineCoordinatesR0177
 
 @[expose] public section
 

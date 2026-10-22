@@ -1,6 +1,7 @@
 module
 
 public import CorrectedGammaDefinitionsR0061
+public import ScaledGammaUnitProductR0050
 
 @[expose] public section
 

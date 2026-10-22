@@ -3,8 +3,16 @@ module
 public import SimultaneousUnaryRootsDefinitionsR0187
 public import Theorems.Thm_AlgebraicGeometry_Smooth_exists_smoothOfRelativeDimension_of_preconnectedSpace
 public import Theorems.Thm_AlgebraicGeometry_topologicalKrullDim_preimage_eq_of_isFinite_of_surjective
+public import RootCoverGeometricDegreePositive
+public import RootCoverGeometricDegree
+public import NormalizationPrescribedBranch
+public import SmoothRootSections
+public import CommonHalfHodgeCoverR0185
 
 @[expose] public section
+
+-- Preserve original field inference without overriding specialized local-ring instances.
+attribute [local instance 999] HenselianLocalRing.toIsLocalRing
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

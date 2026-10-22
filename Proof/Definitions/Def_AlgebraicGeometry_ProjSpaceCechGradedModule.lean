@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
+public import Mathlib.Order.Interval.Finset.Box
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCechTwist
 
 @[expose] public section

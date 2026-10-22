@@ -4,6 +4,8 @@ public import ScaledAlgebraicSplitR0051
 public import ScaledRingCompletionExtensionR0051
 public import ScaledAdditiveCompletionExtensionR0051
 public import TateNodeRestrictedPresentation
+public import ScaledNormalRecoveryDefinitionsR0051
+public import ScaledTateNodeCompletion
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

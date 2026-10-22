@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.Morphisms.Smooth
 public import Theorems.Thm_Algebra_FormallySmooth_of_maximalIdeal_eq_span_of_perfectField
 public import Theorems.Thm_IsRegularLocalRing_isDomain
 public import P2M.Util

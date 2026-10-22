@@ -3,6 +3,7 @@ module
 public import TateSchemeScalarLiftR0263
 public import TateSchemeShiftLiftR0263
 public import TateSchemeSectionEvaluationR0263
+public import SchemePrimitiveThetaCommutatorR0259
 
 @[expose] public section
 

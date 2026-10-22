@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCechTwist
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCechGradedModule
 public import Theorems.Thm_ProjSpaceCech_Twist_subsingleton_cohomology_of_neg_le

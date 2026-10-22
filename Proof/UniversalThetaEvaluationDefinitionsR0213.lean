@@ -2,6 +2,7 @@ module
 
 public import ThetaEvaluationBaseChangeR0212
 public import SchemeFullLevelUniversalR0204
+public import SchemeLevelDefinitionsR0204
 
 @[expose] public section
 

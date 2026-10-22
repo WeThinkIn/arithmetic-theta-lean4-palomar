@@ -2,6 +2,8 @@ module
 
 public import CyclotomicMatrixModularityR0239
 public import AdaptiveUniversalSolverR0230
+public import AdaptiveSolverDefinitionsR0230
+public import FieldImageDefinitionsR0233
 
 @[expose] public section
 

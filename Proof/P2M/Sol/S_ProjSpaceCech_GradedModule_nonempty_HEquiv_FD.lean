@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.Algebra.Order.Ring.Star
+public import Mathlib.Data.Int.Star
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCechTwist
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCechGradedModule
 public import Theorems.Thm_ProjSpaceCech_Twist_d_sq

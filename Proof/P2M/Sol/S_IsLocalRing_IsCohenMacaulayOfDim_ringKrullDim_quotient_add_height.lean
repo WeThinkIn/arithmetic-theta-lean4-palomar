@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.Ideal.AssociatedPrime.Localization
 public import Definitions.Def_Patching_CohenMacaulayOfDim
 public import Theorems.Thm_Module_depth_le_ringKrullDim_quotient_of_mem_associatedPrimes
 public import Theorems.Thm_Module_depth_quotSMulTop_succ_eq

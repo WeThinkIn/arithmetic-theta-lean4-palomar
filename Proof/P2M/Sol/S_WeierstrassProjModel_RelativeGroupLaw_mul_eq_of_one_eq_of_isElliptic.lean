@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_WeierstrassCurve_DrinfeldLevelFunctor
 public import Theorems.Thm_WeierstrassProjModel_eq_snd_comp_of_comp_eq_const_of_isElliptic
 public import P2M.Util

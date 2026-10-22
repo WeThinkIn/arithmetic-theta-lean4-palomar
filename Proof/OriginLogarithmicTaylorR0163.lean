@@ -1,8 +1,14 @@
 module
 
 public import HodgeInitialDefinitionsR0163
+public import CompletedMarkedChartIdealR0152
+public import CompletedChartFieldMapsR0152
+public import LogarithmicCoordinateDerivativeR0144
 
 @[expose] public section
+
+-- Preserve the original elaborated instance path after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 
 /-! Compatibility of the actual finite-chart logarithmic derivation with
 Taylor expansion. All implementation declarations belong to this module. -/

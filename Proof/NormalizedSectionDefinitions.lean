@@ -3,6 +3,8 @@ module
 public import PullbackTensorSections
 public import TensorPowerRootIntegration
 public import SmoothRootCurve
+public import PullbackTensor
+public import PullbackTensorDefinitions
 
 @[expose] public section
 

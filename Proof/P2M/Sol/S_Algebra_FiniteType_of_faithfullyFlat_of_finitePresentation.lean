@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation
+public import Mathlib.RingTheory.Spectrum.Prime.Chevalley
 public import Theorems.Thm_Module_Flat_exists_fg_subalgebra_flat_tensorProduct
 public import P2M.Util
 

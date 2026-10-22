@@ -22,6 +22,10 @@ public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 public import Mathlib.Algebra.Module.Torsion.Basic
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Point
 public import Definitions.Def_WeierstrassCurve_ProjModel_AddFormulas
+public import Mathlib.RingTheory.TotallySplit
+public import Mathlib.Algebra.Lie.OfAssociative
+public import Mathlib.Tactic.ENatToNat
+public import Mathlib.Algebra.AffineMonoid.Basic
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

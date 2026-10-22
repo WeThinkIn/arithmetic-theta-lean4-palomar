@@ -1,6 +1,8 @@
 module
 
 public import BoundaryHodgeDefinitionsR0182
+public import EveryGeometricBoundaryTateDiskR0181
+public import EllipticFamilyWeierstrassAtlasR0180
 
 @[expose] public section
 

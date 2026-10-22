@@ -2,6 +2,7 @@ module
 
 public import ArbitraryKatoNormR0251
 public import FiniteEtaleNormFamilyR0251
+public import SchemeKatoUnitExistenceR0250
 
 @[expose] public section
 

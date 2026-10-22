@@ -2,6 +2,8 @@ module
 
 public import EnumerationAlgorithm
 public import EliminationAlgorithm
+public import Mathlib.RingTheory.PowerSeries.Basic
+public import Mathlib.LinearAlgebra.QuadraticForm.Basic
 
 @[expose] public section
 

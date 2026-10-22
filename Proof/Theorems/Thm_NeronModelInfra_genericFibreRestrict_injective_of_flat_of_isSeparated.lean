@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier
 public import P2M.Util
 public import P2M.Sol.S_NeronModelInfra_genericFibreRestrict_injective_of_flat_of_isSeparated

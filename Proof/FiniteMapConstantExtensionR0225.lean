@@ -1,6 +1,7 @@
 module
 
 public import ConstantExtensionDefinitionsR0225
+public import RamifiedFiniteMapModelR0222
 
 @[expose] public section
 

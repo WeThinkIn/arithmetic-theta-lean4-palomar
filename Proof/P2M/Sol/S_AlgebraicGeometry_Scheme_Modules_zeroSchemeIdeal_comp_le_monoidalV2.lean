@@ -2,6 +2,7 @@ module
 
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionZeroSchemeV2
 public import P2M.Util
+public import Definitions.Def_AlgebraicGeometry_ModulesSectionZeroScheme
 
 @[expose] public section
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_zeroSchemeIdeal_comp_le_monoidalV2

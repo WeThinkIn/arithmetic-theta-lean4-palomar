@@ -7,6 +7,7 @@ public import Theorems.Thm_AlgebraicGeometry_tilde_pullbackSpecIso_unit
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isIso_baseChange_sections_of_isIso_fromTildeGamma
 public import Definitions.Def_AlgebraicGeometry_TwoChartCechSectionsOf
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafOfModules
+public import ProperFormalFunctions
 
 @[expose] public section
 

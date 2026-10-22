@@ -1,6 +1,8 @@
 module
 
 public import DiscriminantTateRootR0185
+public import FiniteEtaleFormalDiskLift
+public import FiniteEtaleSelectedComponent
 
 @[expose] public section
 

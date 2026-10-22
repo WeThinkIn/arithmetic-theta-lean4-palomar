@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
 public import Theorems.Thm_AlgebraicGeometry_exists_comp_eq_of_isOpenImmersion_of_isProper_of_isDiscreteValuationRing_stalk
 public import P2M.Util
 

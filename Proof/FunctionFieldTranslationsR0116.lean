@@ -2,6 +2,8 @@ module
 
 public import MillerReciprocityDefinitionsR0116
 public import Mathlib.RingTheory.Algebraic.Integral
+public import InfinityFunctionFieldR0114
+public import SplitCubicGeometry
 
 @[expose] public section
 

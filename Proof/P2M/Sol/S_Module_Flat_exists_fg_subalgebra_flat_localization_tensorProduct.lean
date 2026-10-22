@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.RingTheory.Coalgebra.CoassocSimps
+public import Std.Tactic.BVDecide.Normalize.Prop
 public import Theorems.Thm_Module_flat_of_comap_maximalIdeal_rTensor_injective
 public import P2M.Util
 

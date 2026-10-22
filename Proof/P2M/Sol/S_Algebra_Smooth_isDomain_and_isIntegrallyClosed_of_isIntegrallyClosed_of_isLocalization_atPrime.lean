@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_Algebra_Etale_isDomain_and_isIntegrallyClosed_of_isLocalization_atPrime
 public import P2M.Util
 

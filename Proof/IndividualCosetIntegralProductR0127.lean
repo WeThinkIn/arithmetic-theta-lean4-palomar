@@ -1,6 +1,8 @@
 module
 
 public import OrthogonalConsumerDefinitionsR0127
+public import IntegrationDefinitions
+public import CosetThetaFactorization
 
 @[expose] public section
 

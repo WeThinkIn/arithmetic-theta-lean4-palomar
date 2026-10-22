@@ -1,6 +1,8 @@
 module
 
 public import ArbitraryKatoUnitExistenceR0249
+public import NormalModelUnitSpecializationR0249
+public import NormalDiscriminantModelR0243
 
 @[expose] public section
 

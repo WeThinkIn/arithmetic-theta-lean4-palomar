@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_AdicCompletion_isNoetherianRing_of_isNoetherianRing
 public import Theorems.Thm_AdicCompletion_isAdicComplete_map_algebraMap_of_fg
 public import Theorems.Thm_IsAdicComplete_of_module_finite

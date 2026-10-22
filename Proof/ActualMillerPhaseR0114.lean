@@ -2,6 +2,9 @@ module
 
 public import HalfTangentEvaluationNonzeroR0114
 public import MillerOpenEvaluationR0114
+public import MillerPhaseAlgebra
+public import FourTorsionRoot
+public import Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots
 
 @[expose] public section
 

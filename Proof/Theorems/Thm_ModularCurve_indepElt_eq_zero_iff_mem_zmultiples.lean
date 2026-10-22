@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_FLTPrelim_GaloisRep
 public import Definitions.Def_ModularCurve_KatzLevelP
 public import P2M.Util
 public import P2M.Sol.S_ModularCurve_indepElt_eq_zero_iff_mem_zmultiples

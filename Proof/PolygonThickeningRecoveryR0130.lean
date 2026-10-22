@@ -5,6 +5,11 @@ public import PolygonProvidersRecoveryR0130
 public import Mathlib.AlgebraicGeometry.Morphisms.ClosedImmersion
 public import Mathlib.AlgebraicGeometry.Morphisms.IsIso
 public import Mathlib.AlgebraicGeometry.PullbackCarrier
+public import InfinitesimalPolygonDefinitionsR0129
+public import Mathlib.CategoryTheory.ExtremalEpi
+public import Mathlib.AlgebraicGeometry.Sites.Fpqc
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
+public import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant
 
 @[expose] public section
 

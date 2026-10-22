@@ -7,6 +7,7 @@ public import RamifiedLiteralQuotientR0156
 public import CoefficientFunctionFieldExpansionR0157
 public import CoefficientGenericKatoSquareR0157
 public import LaurentGammaExistenceR0064
+public import LaurentNormDefinitionsR0064
 
 @[expose] public section
 

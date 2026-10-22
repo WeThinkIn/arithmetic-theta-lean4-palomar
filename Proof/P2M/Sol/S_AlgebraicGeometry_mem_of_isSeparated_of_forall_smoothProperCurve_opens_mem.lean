@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_Ideal_exists_isPrime_le_and_le_and_ringKrullDim_quotient_eq_one
 public import Theorems.Thm_AlgebraicGeometry_exists_smoothProperCurve_opens_hom_comp_eq_of_ringKrullDim_eq_one
 public import P2M.Util

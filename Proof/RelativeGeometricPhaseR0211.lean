@@ -1,6 +1,7 @@
 module
 
 public import RelativeSplitFiberBasisR0211
+public import GeometricFourCharacterR0118
 
 @[expose] public section
 

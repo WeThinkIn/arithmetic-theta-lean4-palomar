@@ -1,6 +1,10 @@
 module
 
 public import OpenHodgeDescentDefinitionsR0180
+public import RelativeWeierstrassPresentationR0174
+public import Theorems.Thm_AlgebraicGeometry_isOpen_irreducibleComponent_of_isDomain_stalk
+public import ActualGenericGroupLawR0146
+public import SmoothNormality
 
 @[expose] public section
 

@@ -12,6 +12,8 @@ public import Mathlib.RingTheory.TensorProduct.Basic
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isIso_fromTildeGamma_of_locallyTrivial
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isIso_baseChange_sections_of_isIso_fromTildeGamma
 public import P2M.Util
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.PiTensorProduct
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

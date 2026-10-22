@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_TateCurve_XMultAlignment
 public import Theorems.Thm_TateCurve_pointY_inv
 public import Theorems.Thm_TateCurve_pointY_zpow_mul

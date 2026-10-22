@@ -3,6 +3,7 @@ module
 public import CorrectedGammaDefinitionsR0061
 public import ScaledThetaLimitExactSpecializationR0050
 public import AllSolutionsAnnularEvaluationR0119
+public import ScaledThetaCompletedLimitR0050
 
 @[expose] public section
 

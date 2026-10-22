@@ -3,6 +3,7 @@ module
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionZeroScheme
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_coeffIdeal_le_and_ideal_zeroSchemeIdeal_eq
 public import P2M.Util
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_zeroSchemeIdeal_eq_of_app_eq_smul

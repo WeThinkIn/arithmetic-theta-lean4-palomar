@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_IsLocalRing_exists_ringEquiv_adicCompletion_powerSeries_of_flat_of_maximalIdeal_eq_sup_span
 public import Theorems.Thm_AlgebraicGeometry_stalk_flat_and_maximalIdeal_eq_sup_span_of_smoothOfRelativeDimension_one
 public import P2M.Util

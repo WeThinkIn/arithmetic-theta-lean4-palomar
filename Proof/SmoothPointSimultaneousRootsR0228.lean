@@ -2,6 +2,7 @@ module
 
 public import AcceptedRootProvidersR0228
 public import AmbientPrescribedRootsR0228
+public import CompletedPointDiskR0227
 
 @[expose] public section
 

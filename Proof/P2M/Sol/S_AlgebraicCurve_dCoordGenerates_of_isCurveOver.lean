@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.Valuation.LocalSubring
 public import Definitions.Def_AlgebraicCurve_IsCurveOver
 public import Definitions.Def_ModularCurve_CanonicalDivisor
 public import Theorems.Thm_AlgebraicCurve_IsCurveOver_exists_separating_transcendental

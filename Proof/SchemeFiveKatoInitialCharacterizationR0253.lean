@@ -2,6 +2,7 @@ module
 
 public import SchemeIdentityChartCoverR0253
 public import ArbitraryUnitInitialCoefficientR0253
+public import SchemeKatoCartierDivisorR0250
 
 @[expose] public section
 

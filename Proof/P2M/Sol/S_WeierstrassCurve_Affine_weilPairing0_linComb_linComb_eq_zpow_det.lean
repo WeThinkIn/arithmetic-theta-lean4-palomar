@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_EllipticCurve_WeilPairingFun
 public import Theorems.Thm_WeierstrassCurve_Affine_weilPairing0_add_left
 public import Theorems.Thm_WeierstrassCurve_Affine_weilPairing0_add_right

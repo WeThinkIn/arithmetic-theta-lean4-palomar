@@ -1,6 +1,8 @@
 module
 
 public import RelativeFourCharacterDefinitionsR0211
+public import IndependentHalvesFourBasisR0114
+public import RelativeFourTorsionRootR0190
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Topology.Separation.CompletelyRegular
 public import Definitions.Def_TateCurve_DefectLines
 
 @[expose] public section

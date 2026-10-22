@@ -2,6 +2,7 @@ module
 
 public import Definitions.Def_AlgebraicGeometry_PolarisedAbelianSchemeOfType
 public import Definitions.Def_AlgebraicGeometry_ModulesPullbackLocalSection
+public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
 
 @[expose] public section
 

@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.Etale.Weakly
+public import Mathlib.RingTheory.TotallySplit
 public import Theorems.Thm_IsRegularLocalRing_isDomain
 public import P2M.Util
 

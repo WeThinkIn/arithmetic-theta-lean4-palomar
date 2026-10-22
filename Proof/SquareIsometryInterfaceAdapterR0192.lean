@@ -1,6 +1,8 @@
 module
 
 public import SquareLineComparisonDefinitionsR0192
+public import SquareIsomorphismTorsor
+public import LineIsomorphismDivisors
 
 @[expose] public section
 

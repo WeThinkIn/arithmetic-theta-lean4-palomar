@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_DoubleComplex
 public import P2M.Util
 public import P2M.Sol.S_DoubleComplex_exists_HTot_equiv_of_levelwise_equiv_pinned

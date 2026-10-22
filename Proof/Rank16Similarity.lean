@@ -3,6 +3,8 @@ module
 public import Rank16Definitions
 public import Rank16LatticeDefinitions
 public import Rank16Unimodular
+public import Mathlib.Data.Rat.Star
+public import Mathlib.Algebra.Order.Ring.Star
 
 @[expose] public section
 

@@ -2,6 +2,9 @@ module
 
 public import FiniteStageAdjacentR0129
 public import Mathlib.AlgebraicGeometry.Gluing
+public import InfinitesimalPolygonDefinitionsR0129
+public import IndexedAdjacentCoordinatesR0058
+public import Mathlib.CategoryTheory.Monoidal.Mon
 
 @[expose] public section
 

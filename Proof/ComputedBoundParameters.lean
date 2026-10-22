@@ -1,6 +1,8 @@
 module
 
 public import ComputedOrthogonalization
+public import Mathlib.Data.Int.Star
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 namespace ArithmeticThetaOrthogonalAlgorithm

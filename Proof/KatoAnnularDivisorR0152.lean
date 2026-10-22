@@ -8,8 +8,13 @@ public import KatoDivisorFieldBaseChangeR0151
 public import RationalOrderUniqueR0066
 public import SectionLocalDVRR0066
 public import Mathlib.RingTheory.Flat.TorsionFree
+public import SectionHeightOneR0066
+public import HeightOneDVRR0066
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 
 /-! Transport of the actual Kato divisor to completed annular charts. -/
 set_option autoImplicit false

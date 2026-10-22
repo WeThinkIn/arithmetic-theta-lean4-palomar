@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.Proper
+public import Mathlib.AlgebraicGeometry.QuasiAffine
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafIdealFiltration
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafCechPushforward
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_forall_basicOpen_quasicoherent_of_forall_exists_linearEquiv_tensorProduct

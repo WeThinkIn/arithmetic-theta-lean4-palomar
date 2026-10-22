@@ -1,6 +1,9 @@
 module
 
 public import ScalarExtensionDefinitionsR0240
+public import DiskFrameComparisonAdapterR0192
+public import IndexedFullUnaryFactorizationR0188
+public import PointedSquareCoverFiniteModelR0221
 
 @[expose] public section
 

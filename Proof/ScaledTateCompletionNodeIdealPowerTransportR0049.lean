@@ -1,6 +1,7 @@
 module
 
 public import ScaledTateCompletionNodeIdealContinuityR0049
+public import ScaledTateCompletionExtensionDefinitions
 
 @[expose] public section
 

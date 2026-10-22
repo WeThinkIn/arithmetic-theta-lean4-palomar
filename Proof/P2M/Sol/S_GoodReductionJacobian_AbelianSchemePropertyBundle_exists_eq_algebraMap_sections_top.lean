@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_GoodReductionJacobian_AbelianSchemePropertyBundle_cechFinrank_unit_zero_eq_one
 public import Definitions.Def_JacJ1Iface
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafEulerChar

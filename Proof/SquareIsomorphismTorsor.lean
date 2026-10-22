@@ -1,6 +1,7 @@
 module
 
 public import CoverComparisonDefinitions
+public import GlobalRootTorsor
 
 @[expose] public section
 

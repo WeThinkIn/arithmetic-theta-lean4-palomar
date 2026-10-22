@@ -3,6 +3,7 @@ module
 public import SchemeFourMarkingActionR0215
 public import SchemeMillerPhaseR0215
 public import ArbitraryPhaseMarkingInvarianceR0214
+public import RelativeMarkingActionR0211
 
 @[expose] public section
 

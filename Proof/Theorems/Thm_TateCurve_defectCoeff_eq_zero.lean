@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_TateCurve_Defect
 public import P2M.Util
 public import P2M.Sol.S_TateCurve_defectCoeff_eq_zero

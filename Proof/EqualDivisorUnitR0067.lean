@@ -3,6 +3,7 @@ module
 public import OrderRegularityR0067
 public import QuotientOrderR0067
 public import NormalDomainIntersection
+public import LocalFDivisorR0066
 
 @[expose] public section
 

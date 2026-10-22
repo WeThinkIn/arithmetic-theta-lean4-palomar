@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.ZariskisMainTheorem
 public import Theorems.Thm_Ideal_height_eq_height_under_of_finiteType_of_isIntegral
 public import Theorems.Thm_AlgebraicGeometry_Smooth_isRegularLocalRing_stalk
 public import Theorems.Thm_AlgebraicGeometry_LocallyQuasiFinite_ringKrullDim_stalk_quotient_eq_zero

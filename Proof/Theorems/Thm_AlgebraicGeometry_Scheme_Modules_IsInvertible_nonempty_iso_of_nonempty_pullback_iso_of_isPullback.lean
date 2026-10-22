@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Definitions.Def_CerednikDrinfeld_QMFineModuli
+public import Definitions.Def_CerednikDrinfeld_QMModuliProps
+public import Definitions.Def_ModularCurve_ComplexPlaceDictionary
+public import Definitions.Def_Submodule_FiniteAdeleBox
 public import Definitions.Def_AlgebraicGeometry_PolarisedAbelianScheme
 public import Definitions.Def_SheafOfModules_MonoidalV2
 public import P2M.Util

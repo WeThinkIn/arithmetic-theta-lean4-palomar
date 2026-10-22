@@ -1,0 +1,11 @@
+# Verified optimized proof tree and restricted-resource build
+
+The published proof tree preserves all 13 source requirements and 103 exact theorem endpoints. Its 3,915 modules passed local compilation; the preservation audit checked 54,522 original non-internal named declarations and 13,670 definition bodies. The source manifest and detailed audit are in [the integration record](../direct-hodge-integration-856/Review.md).
+
+The `CommonUnarySolution` Lake build completed all 12,225 jobs under a four-CPU, 14 GiB local limit. The final resumed stage took 761.278 seconds, and accumulated build execution across the recorded attempts was 11,330.037 seconds. The compiler, dependency revisions, and proof sources remained unchanged. This was a staged build using retained cache. It does not establish an uninterrupted cold-build pass or equivalence to the official runner.
+
+The retained build records distinguish the initial disk-space interruption (839), a memory-limit failure (902), another disk-space interruption (964), and the successful resumed build (1033). None of the failed receipts is replaced by the successful receipt. The earlier local publication gate (856), which required the uninterrupted cold attempt, remains failed. This successor releases the independently audited optimization for official evaluation on the basis of full local compilation, exact preservation checks, the completed staged resource-limited build, and the scoped kernel checks below.
+
+The CommonUnary and CompleteMain Solution exports passed stock Lean, Con-ron, and NanoDa checks. The maintainer-selected updated Con-ron binary separately accepted the same bound exports. The recorded results apply to those mathematical scopes and immutable inputs. Other interfaces, full-paper semantic review, official preflight acceptance, and registry entry retain their own outstanding requirements.
+
+The official workflow calls the Palomar reusable workflow at pipeline commit `7a08c1da8e0558d330b9b3c244896c175d373303`, with the standard execution profile and all official checks enabled. The Lean toolchain remains `leanprover/lean4:v4.35.0-rc2`. Human authorship and responsibility remain Jue Ding. Original delivery files are unchanged.

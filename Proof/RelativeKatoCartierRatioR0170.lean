@@ -1,6 +1,8 @@
 module
 
 public import RelativeTorsionCartierR0170
+public import RelativeKatoNaturalityDefinitionsR0170
+public import RelativeKatoExistenceR0169
 
 @[expose] public section
 

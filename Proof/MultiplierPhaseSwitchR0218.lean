@@ -1,6 +1,7 @@
 module
 
 public import EvenCoverPhaseSwitchR0218
+public import MultiplierBaseChangeR0217
 
 @[expose] public section
 

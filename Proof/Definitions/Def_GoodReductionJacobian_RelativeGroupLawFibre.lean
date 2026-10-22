@@ -3,6 +3,8 @@ module
 public import Mathlib.AlgebraicGeometry.ResidueField
 public import Mathlib.AlgebraicGeometry.Pullbacks
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawKernel
+public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
+public import Mathlib.AlgebraicGeometry.Fiber
 
 @[expose] public section
 

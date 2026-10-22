@@ -2,6 +2,7 @@ module
 
 public import RelativeInitialHodgeSectionR0171
 public import RelativeHodgePowerBaseChangeR0171
+public import RelativeKatoArbitraryBaseChangeR0170
 
 @[expose] public section
 

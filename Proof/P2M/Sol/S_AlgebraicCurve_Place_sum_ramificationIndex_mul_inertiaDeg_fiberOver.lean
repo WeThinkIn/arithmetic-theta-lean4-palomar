@@ -4,6 +4,8 @@ public import Definitions.Def_AlgebraicCurve_PlacesOverDVR
 public import Theorems.Thm_AlgebraicCurve_Place_mem_iff_ord_nonneg
 public import Theorems.Thm_AlgebraicCurve_Place_ord_nonneg_of_mem
 public import P2M.Util
+public import Definitions.Def_ModularCurve_CharLFrobeniusGeomLevel
+public import Mathlib.NumberTheory.RamificationInertia.Basic
 
 @[expose] public section
 namespace P2MW.S_AlgebraicCurve_Place_sum_ramificationIndex_mul_inertiaDeg_fiberOver

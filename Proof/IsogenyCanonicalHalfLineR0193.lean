@@ -1,6 +1,8 @@
 module
 
 public import CompactIsogenyAlphaR0193
+public import IsogenyAlphaAllCuspOrdersR0193
+public import CompactAlphaCanonicalHalfLineR0192
 
 @[expose] public section
 

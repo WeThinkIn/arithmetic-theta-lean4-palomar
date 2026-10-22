@@ -1,6 +1,7 @@
 module
 
 public import SchemeFullLevelUniversalR0204
+public import GlobalSchemeClassifierR0204
 
 @[expose] public section
 

@@ -2,6 +2,7 @@ module
 
 public import PolygonCartierDefinitionsR0133
 public import Mathlib.RingTheory.Ideal.Quotient.Operations
+public import MarkedCartierEquationR0131
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

@@ -29,6 +29,7 @@ public import Mathlib.Data.Set.Card
 public import Mathlib.Algebra.Module.Torsion.Basic
 public import Definitions.Def_WeierstrassCurve_EDSEngine
 public import P2M.Util
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 namespace P2MW.S_WeierstrassCurve_card_torsion_of_isAlgClosed

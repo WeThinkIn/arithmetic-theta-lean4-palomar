@@ -3,6 +3,8 @@ module
 public import RelativeAlphaNaturalityR0190
 public import GeometricFourCharacterR0118
 public import CoordinateChangeCovarianceR0115
+public import GeometricFourPairingDefinitionsR0118
+public import GlobalFourTorsionDefinitionsR0190
 
 @[expose] public section
 

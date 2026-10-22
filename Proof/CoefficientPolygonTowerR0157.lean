@@ -1,6 +1,8 @@
 module
 
 public import CoefficientCompletedMapsR0157
+public import CoefficientNormDescentDefinitionsR0157
+public import RamifiedGenericBaseChangeR0155
 
 @[expose] public section
 

@@ -2,6 +2,9 @@ module
 
 public import TateCuspDefinitionsR0181
 public import SplitMarkedTorsionCompletenessR0146
+public import TwoTorsionAffineCoordinatesR0177
+public import ProjectiveTowerEffectivityR0135
+public import CompatibleProjectiveEmbeddingsR0135
 
 @[expose] public section
 

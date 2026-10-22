@@ -2,6 +2,7 @@ module
 
 public import SymmetricMarkingFiniteSignsR0142
 public import FiniteSignMarkingRealizationR0142
+public import GeometricBasisProjectiveValuesR0141
 
 @[expose] public section
 

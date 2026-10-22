@@ -5,6 +5,7 @@ public import UnitRootAlgebra
 public import ProperFormalFunctions
 public import Mathlib.AlgebraicGeometry.Modules.Tilde
 public import Mathlib.LinearAlgebra.Matrix.SpecialLinearGroup
+public import NormalizedSectionDefinitions
 
 @[expose] public section
 

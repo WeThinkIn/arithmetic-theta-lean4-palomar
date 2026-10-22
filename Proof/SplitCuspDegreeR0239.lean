@@ -6,6 +6,9 @@ public import FinitePullbackSectionDegree
 
 @[expose] public section
 
+-- Preserve original field inference without overriding specialized local-ring instances.
+attribute [local instance 999] HenselianLocalRing.toIsLocalRing
+
 set_option autoImplicit false
 set_option linter.style.haveILetI false
 set_option backward.isDefEq.respectTransparency false

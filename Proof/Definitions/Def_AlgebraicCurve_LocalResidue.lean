@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.Etale.Weakly
+public import Mathlib.RingTheory.TotallySplit
 public import Definitions.Def_ModularCurve_CanonicalDivisorUniformizer
 public import Definitions.Def_AlgebraicCurve_CanonicalDivisor
 public import Definitions.Def_AlgebraicCurve_AdelicIndex

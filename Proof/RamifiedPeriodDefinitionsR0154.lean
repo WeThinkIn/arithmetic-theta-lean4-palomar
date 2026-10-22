@@ -4,6 +4,7 @@ public import CompletedNormProductR0153
 public import LiteralQuotientAlgebraizationR0153
 public import RamifiedMonomialBasisR0096
 public import Mathlib.RingTheory.PowerSeries.Expand
+public import KatoAnnularDefinitionsR0152
 
 @[expose] public section
 

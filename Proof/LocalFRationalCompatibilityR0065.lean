@@ -4,6 +4,11 @@ public import GenericOpenFaithfulnessR0065
 public import LocalGammaProviderBridgeR0065
 public import PoweredInteriorOverlapR0065
 public import PoweredPeriodBoundaryR0065
+public import GenericAdjacentProvidersR0065
+public import GenericRestrictionProvidersR0065
+public import LocalNormFactorizationR0054
+public import CorrectedGammaPeriodBoundaryR0061
+public import CorrectedGammaInteriorOverlapR0061
 
 @[expose] public section
 set_option backward.privateInPublic true

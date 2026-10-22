@@ -2,6 +2,9 @@ module
 
 public import ArbitraryDiscriminantDefinitionsR0243
 public import Theorems.Thm_WeierstrassProjModel_exists_variableChange_smul_eq_and_projMap_eq_inv_of_iso_of_kwZeroSect_comp_eq_of_isArtinianRing
+public import LegendreNormalFormR0177
+public import PointedRelativeGroupHomR0173
+public import Mathlib.Algebra.Field.ULift
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

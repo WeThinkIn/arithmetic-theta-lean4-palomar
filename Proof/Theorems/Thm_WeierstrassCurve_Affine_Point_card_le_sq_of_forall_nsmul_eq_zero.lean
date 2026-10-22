@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_WeierstrassCurve_Affine_Point_card_le_sq_of_forall_nsmul_eq_zero
 

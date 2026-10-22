@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ProjSpace
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_isIso_of_isFinite_of_forall_isIso_pullback_snd_truncation_of_isAdicComplete

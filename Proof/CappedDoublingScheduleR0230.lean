@@ -1,6 +1,10 @@
 module
 
 public import AdaptiveSolverDefinitionsR0230
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.Tactic.ENatToNat
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 

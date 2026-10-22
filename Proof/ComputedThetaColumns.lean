@@ -3,6 +3,8 @@ module
 public import ComputedCoefficientMatrix
 public import ComputedPivotCoordinates
 public import RationalMatrixScalarExtension
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.LinearAlgebra.LinearIndependent.BaseChange
 
 @[expose] public section
 

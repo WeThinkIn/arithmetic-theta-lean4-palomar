@@ -1,6 +1,7 @@
 module
 
 public import TateCuspDefinitionsR0181
+public import CompactifiedCoordinateIsomorphismR0145
 
 @[expose] public section
 

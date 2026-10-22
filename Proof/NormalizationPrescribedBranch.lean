@@ -2,6 +2,7 @@ module
 
 public import KummerCover
 public import NormalizedSectionDefinitions
+public import Mathlib.AlgebraicGeometry.ValuativeCriterion
 
 @[expose] public section
 

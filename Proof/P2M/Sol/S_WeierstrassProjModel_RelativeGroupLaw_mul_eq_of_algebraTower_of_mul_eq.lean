@@ -2,6 +2,8 @@ module
 
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import P2M.Util
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
 
 @[expose] public section
 namespace P2MW.S_WeierstrassProjModel_RelativeGroupLaw_mul_eq_of_algebraTower_of_mul_eq

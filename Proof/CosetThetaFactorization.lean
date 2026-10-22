@@ -4,6 +4,8 @@ public import CosetFiniteIndex
 public import OrthogonalCosetArithmetic
 public import UnaryThetaProducts
 public import LatticeShellFinite
+public import Mathlib.RingTheory.PowerSeries.Expand
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 

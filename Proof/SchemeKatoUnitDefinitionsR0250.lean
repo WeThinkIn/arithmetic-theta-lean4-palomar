@@ -3,6 +3,8 @@ module
 public import ArbitraryKatoUnitNaturalityR0249
 public import ArbitraryKatoCartierDivisorR0249
 public import SchemeDiscriminantExistenceR0244
+public import SchemeDiscriminantDefinitionsR0244
+public import ArbitraryKatoUnitDefinitionsR0249
 
 @[expose] public section
 

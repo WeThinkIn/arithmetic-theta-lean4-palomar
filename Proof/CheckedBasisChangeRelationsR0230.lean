@@ -1,6 +1,7 @@
 module
 
 public import AdaptiveSolverDefinitionsR0230
+public import ThetaBasisChange
 
 @[expose] public section
 

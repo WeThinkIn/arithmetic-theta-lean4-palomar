@@ -3,6 +3,7 @@ module
 public import ThetaLineBaseChangeR0212
 public import ThetaIdentityEvaluationR0212
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_pullbackComp_hom_app_comp_pullbackUnitIso_hom
+public import RelativeFourCharacterDefinitionsR0211
 
 @[expose] public section
 

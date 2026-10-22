@@ -1,6 +1,7 @@
 module
 
 public import SchemeGeometricThetaNaturalityR0262
+public import SchemeThetaMarkingDefinitionsR0259
 
 @[expose] public section
 

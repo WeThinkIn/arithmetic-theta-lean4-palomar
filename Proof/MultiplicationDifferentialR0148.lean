@@ -1,6 +1,8 @@
 module
 
 public import TranslationInvariantDifferentialR0148
+public import AffineTranslationChainRuleR0148
+public import WeightedAffineExtensionR0148
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

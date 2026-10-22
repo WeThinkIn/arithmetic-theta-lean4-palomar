@@ -9,6 +9,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Hom_isInvertible_ker_of_comp
 public import Theorems.Thm_Module_rankAtStalk_eq_of_forall_localizedModule_equiv
 public import Theorems.Thm_Module_finitePresentation_of_rankAtStalk_eq
 public import P2M.Util
+public import Mathlib.RingTheory.PicardGroup
+public import Mathlib.Algebra.Module.StablyFree.Basic
+public import Mathlib.Algebra.Lie.OfAssociative
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

@@ -1,6 +1,7 @@
 module
 
 public import AllCuspNormalizedPowerIntegralityR0183
+public import CompactDiscriminantSectionR0182
 
 @[expose] public section
 

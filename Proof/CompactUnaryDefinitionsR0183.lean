@@ -2,6 +2,7 @@ module
 
 public import OpenUnaryDesignatedExpansionR0182
 public import CompactDiscriminantSectionR0182
+public import BoundaryHodgeDefinitionsR0182
 
 @[expose] public section
 

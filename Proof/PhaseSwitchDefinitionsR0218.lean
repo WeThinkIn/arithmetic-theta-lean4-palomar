@@ -2,6 +2,7 @@ module
 
 public import EvenKeyBaseChangeR0217
 public import Mathlib.RingTheory.AdjoinRoot
+public import EvenMarkingTorsorDefinitionsR0216
 
 @[expose] public section
 

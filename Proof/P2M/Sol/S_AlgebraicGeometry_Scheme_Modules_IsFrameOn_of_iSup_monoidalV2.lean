@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
+public import Mathlib.Order.CompletePartialOrder
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensorV2
 public import P2M.Util
 

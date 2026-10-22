@@ -7,6 +7,13 @@ public import Definitions.Def_EllipticCurve_FunctionFieldPullback
 public import Theorems.Thm_WeierstrassCurve_Affine_FunctionField_exists_valuation_eq_exp_natDegree_norm
 public import Theorems.Thm_WeierstrassCurve_Affine_FunctionField_eq_valuationSubring_of_X_not_mem
 public import P2M.Util
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.Algebra.Order.Ring.Star
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 namespace P2MW.S_WeierstrassCurve_Affine_valuation_placeOf_neg_transEquiv_algebraMap

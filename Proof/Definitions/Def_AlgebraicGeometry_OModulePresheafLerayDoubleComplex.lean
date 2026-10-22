@@ -4,6 +4,7 @@ public import Definitions.Def_AlgebraicGeometry_OModulePresheafLerayBicomplex
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 public import Definitions.Def_AlgebraicGeometry_OrderedAffineCoverOf
 public import Definitions.Def_AlgebraicGeometry_DoubleComplex
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

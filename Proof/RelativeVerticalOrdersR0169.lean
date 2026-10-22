@@ -6,6 +6,8 @@ public import RelativeMultiplicationDegreeR0169
 public import Theorems.Thm_AlgebraicGeometry_IsFinite_finite_hom_stalkMap_of_forall_base_eq
 public import Mathlib.RingTheory.LocalRing.Etale
 public import Mathlib.RingTheory.LocalRing.Length
+public import GeneralMultiplicationDegreeR0168
+public import GeometricNormOrdersR0150
 
 @[expose] public section
 

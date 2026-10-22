@@ -1,6 +1,15 @@
 module
 
 public import TateSeriesDefinitions
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.PowerSeries.WellKnown
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.RingTheory.PowerSeries.Substitution
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 open scoped BigOperators

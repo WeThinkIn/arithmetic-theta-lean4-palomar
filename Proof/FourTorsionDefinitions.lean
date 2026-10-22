@@ -5,6 +5,8 @@ public import Mathlib.GroupTheory.OrderOfElement
 public import Mathlib.Data.ZMod.Basic
 public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
 public import Mathlib.Algebra.Group.Submonoid.Membership
+public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Basic
+public import Mathlib.Data.Nat.Totient
 
 @[expose] public section
 

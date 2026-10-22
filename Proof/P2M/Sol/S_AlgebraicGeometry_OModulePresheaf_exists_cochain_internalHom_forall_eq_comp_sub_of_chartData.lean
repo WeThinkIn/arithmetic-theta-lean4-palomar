@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.Proper
+public import Mathlib.Tactic.Monotonicity.Lemmas
 public import Theorems.Thm_LinearMap_existsUnique_sub_eq_comp_comp_of_extension
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafInternalHom

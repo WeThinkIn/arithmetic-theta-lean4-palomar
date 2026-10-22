@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_OModulePresheafConstructions
 public import Definitions.Def_AlgebraicGeometry_OrderedAffineCoverCech
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_OModulePresheaf_eq_zero_of_d_eq_zero_of_forall_mem_pow_smul_of_isProper

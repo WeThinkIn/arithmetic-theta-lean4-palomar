@@ -1,6 +1,8 @@
 module
 
 public import LegendreLevelAtlasDefinitionsR0176
+public import FullLevelBaseChangeR0175
+public import RelativeKatoFiberSpecializationR0170
 
 @[expose] public section
 

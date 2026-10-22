@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_Algebra_FiniteType_of_faithfullyFlat_of_finitePresentation
 public import Theorems.Thm_Module_Flat_exists_fg_subalgebra_flat_tensorProduct
 public import P2M.Util

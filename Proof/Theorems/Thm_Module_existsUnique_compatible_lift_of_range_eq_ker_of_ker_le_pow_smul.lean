@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Module_existsUnique_compatible_lift_of_range_eq_ker_of_ker_le_pow_smul
 

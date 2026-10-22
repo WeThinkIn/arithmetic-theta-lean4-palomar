@@ -1,6 +1,12 @@
 module
 
-public import Mathlib
+public import Definitions.Def_ModularCurve_KroneckerTransport
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.Data.Finsupp.Pointwise
+public import Mathlib.Algebra.Order.Ring.Star
+public import Mathlib.Data.Int.Star
+public import Std.Tactic.BVDecide.Normalize.Prop
 public import Definitions.Def_AlgebraicCurve_IsCurveOver
 public import Definitions.Def_AlgebraicCurve_DivisorPushPull
 public import Definitions.Def_AlgebraicCurve_RatFuncPlaces

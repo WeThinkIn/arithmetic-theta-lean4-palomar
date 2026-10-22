@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_IsRegularLocalRing_isDomain
 public import Theorems.Thm_IsRegularLocalRing_uniqueFactorizationMonoid_of_ringKrullDim_le_two
 public import P2M.Util

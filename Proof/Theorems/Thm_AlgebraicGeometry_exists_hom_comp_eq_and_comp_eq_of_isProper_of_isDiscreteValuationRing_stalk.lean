@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_exists_hom_comp_eq_and_comp_eq_of_isProper_of_isDiscreteValuationRing_stalk
 

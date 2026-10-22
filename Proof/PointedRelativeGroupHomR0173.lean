@@ -4,6 +4,7 @@ public import RelativeCyclicQuotientDefinitionsR0173
 public import RelativeCurveGeometryR0169
 public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_comp_mul_eq_mul_comp_of_comp_one_eq_one_of_abelianSchemePropertyBundle
 public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_comp_mul_eq_mul_comp_of_genericFibre
+public import MultiplicationFiniteEtaleDegreeR0148
 
 @[expose] public section
 

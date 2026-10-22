@@ -2,6 +2,8 @@ module
 
 public import SchemeGeometricSchrodingerR0261
 public import SchemeSymmetricSignsR0259
+public import SchemeSchrodingerDefinitionsR0261
+public import SchemeThetaSectionCohomologyR0259
 
 @[expose] public section
 

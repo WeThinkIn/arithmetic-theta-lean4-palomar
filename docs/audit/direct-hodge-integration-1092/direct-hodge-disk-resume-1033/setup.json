@@ -1,0 +1,40 @@
+{
+  "public_metadata_commit": "6e5bbb824c096cf7117cb2f8ca9a21ae5735ad71",
+  "combined_setup_sha256": "bcd2c2e50769d755707a2c52977f3070c97ca2cb6054613ec578f8bbe5909b3a",
+  "combined_audit_sha256": "8e2b8b33e88b46bd566828e9995524150c1469e6f706286bbdaec8d81cea7cb6",
+  "target": "CommonUnarySolution",
+  "cpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "project_build_cache_empty": false,
+  "resumed_from": "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-staged-build-resume-964",
+  "prior_receipt_sha256": "d9752bade9f3f3a8005085f293b32fe2182dd24540f86172365d0796803bbfad",
+  "dependency_cache_shared": true,
+  "memory_max_bytes": 15032385536,
+  "runtime_max_seconds": 9231,
+  "combined_runtime_budget_seconds": 19800,
+  "command": [
+    "systemd-run",
+    "--unit=palomar-direct-hodge-resume-1033.service",
+    "--property=Type=exec",
+    "--property=WorkingDirectory=/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-cold-build-839/project",
+    "--property=MemoryMax=14G",
+    "--property=RuntimeMaxSec=9231",
+    "--property=StandardOutput=append:/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-disk-resume-1033/build.log",
+    "--property=StandardError=append:/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-disk-resume-1033/build.log",
+    "--setenv=LEAN4_AGENT_CPU_AFFINITY=0,1,2,3",
+    "--setenv=LEAN4_AGENT_LEAN_THREAD_BUDGET=4",
+    "--setenv=LEAN_NUM_THREADS=4",
+    "/usr/bin/python3",
+    "/home/Palomar/workspace/arithmetic-theta/tools/run.py",
+    "python3",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "--",
+    "python3",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-disk-resume-1033/stages.py"
+  ],
+  "scope": "Stage the failed module before remaining CommonUnary closure using retained839cache; not an uninterrupted cold run or official capacity equivalence"
+}

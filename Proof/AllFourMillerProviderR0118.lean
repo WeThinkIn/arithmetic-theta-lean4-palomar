@@ -1,6 +1,8 @@
 module
 
 public import GeometricFourPairingDefinitionsR0118
+public import EllipticTameReciprocityR0116
+public import CompleteMillerDivisorR0116
 
 @[expose] public section
 

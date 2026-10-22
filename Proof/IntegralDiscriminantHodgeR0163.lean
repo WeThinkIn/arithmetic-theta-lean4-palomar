@@ -1,6 +1,7 @@
 module
 
 public import GeometricDiscriminantHodgeR0163
+public import PullbackTensorSections
 
 @[expose] public section
 

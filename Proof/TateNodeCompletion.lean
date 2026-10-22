@@ -3,6 +3,7 @@ module
 public import TateNodeNormalForm
 public import TateNodeFiniteType
 public import NoetherianAdicCompletion
+public import Mathlib.RingTheory.AdicCompletion.Noetherian
 
 @[expose] public section
 

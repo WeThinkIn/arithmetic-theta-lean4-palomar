@@ -2,6 +2,12 @@ module
 
 public import PolygonCartierDefinitionsR0133
 public import Mathlib.RingTheory.Etale.Pi
+public import PolygonCompatibleMarkingsR0131
+public import PolygonSmoothMarkedSectionsR0131
+public import Mathlib.CategoryTheory.ExtremalEpi
+public import Mathlib.AlgebraicGeometry.Sites.Fpqc
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
+public import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant
 
 @[expose] public section
 

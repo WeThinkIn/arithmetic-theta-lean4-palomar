@@ -10,6 +10,9 @@ public import Definitions.Def_AlgebraicGeometry_GradedOAlgebraToProj
 public import Definitions.Def_AlgebraicGeometry_ModulesProjPresentation
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import P2M.Util
+public import Mathlib.AlgebraicGeometry.Sites.Fpqc
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
+public import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

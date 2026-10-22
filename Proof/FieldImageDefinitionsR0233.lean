@@ -2,6 +2,7 @@ module
 
 public import ArithmeticMatrixFiniteModelR0232
 public import CompactThetaSectionImageR0209
+public import ArithmeticFieldDefinitionsR0231
 
 @[expose] public section
 

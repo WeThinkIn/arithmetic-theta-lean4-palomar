@@ -1,6 +1,7 @@
 module
 
 public import NormalAffineClassifyingConstructionR0178
+public import CompatibleLevelDefinitionsR0178
 
 @[expose] public section
 

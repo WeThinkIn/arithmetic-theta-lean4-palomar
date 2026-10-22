@@ -8,8 +8,13 @@ public import Theorems.Thm_WeierstrassCurve_isCoprime_Phi_PsiSq
 public import Theorems.Thm_WeierstrassCurve_separable_prePsi_of_isUnit
 public import Theorems.Thm_WeierstrassCurve_isUnit_two_mul_add_a1_mul_add_a3_of_eval_prePsi_eq_zero_of_odd
 public import Mathlib.RingTheory.Unramified.Field
+public import CoprimeTorsionDivisorNormR0150
+public import ResidueDegrees
 
 @[expose] public section
+
+-- Preserve the original elaborated instance path after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 
 /-! Principality of the actual Kato divisor. The inverse odd division polynomial
 is constructed over the original field. Reducedness gives simple affine zeros,

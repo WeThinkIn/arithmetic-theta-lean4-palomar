@@ -2,6 +2,7 @@ module
 
 public import GenericKaehlerComparisonR0149
 public import IntegralHodgeFrameR0149
+public import GlobalNormalizedDifferentialR0145
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

@@ -1,6 +1,8 @@
 module
 
 public import MarkedAffineTestComparisonR0215
+public import ArbitraryAlphaNaturalityR0214
+public import SchemeCotangentCoherenceR0205
 
 @[expose] public section
 

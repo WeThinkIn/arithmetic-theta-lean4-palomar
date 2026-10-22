@@ -1,6 +1,7 @@
 module
 
 public import PullbackTensor
+public import PullbackTensorDefinitions
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

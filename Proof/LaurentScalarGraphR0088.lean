@@ -1,6 +1,7 @@
 module
 
 public import CyclicConstantDefinitionsR0088
+public import Mathlib.RingTheory.LocalProperties.Reduced
 
 @[expose] public section
 

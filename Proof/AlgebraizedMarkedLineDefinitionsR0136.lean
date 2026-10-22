@@ -3,6 +3,7 @@ module
 public import AlgebraizedGeometricConnectednessR0135
 public import SplitFiniteMarkedDivisorR0133
 public import GlobalPositiveSectionRealizationR0134
+public import ProjectiveEffectivityDefinitionsR0135
 
 @[expose] public section
 

@@ -6,6 +6,9 @@ public import Mathlib.Algebra.Category.Ring.Constructions
 public import Mathlib.LinearAlgebra.TensorProduct.RightExactness
 public import Mathlib.RingTheory.IsTensorProduct
 public import P2M.Util
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

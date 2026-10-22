@@ -1,12 +1,15 @@
 module
 
-public import Mathlib
+public import Mathlib.Order.CompletePartialOrder
 public import Definitions.Def_AlgebraicGeometry_IdealSheafModule
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 public import Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_range_moduleIota_app_and_injective
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] CompletePartialOrder.toSupSet
 namespace P2MW.S_AlgebraicGeometry_Scheme_IdealSheafData_exists_isFrameOn_module_of_forall_ideal_eq_span
 
 set_option autoImplicit false

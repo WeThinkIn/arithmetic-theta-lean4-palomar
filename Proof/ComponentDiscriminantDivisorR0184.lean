@@ -1,6 +1,7 @@
 module
 
 public import ComponentCurveFramesR0184
+public import CompactDiscriminantSectionR0182
 
 @[expose] public section
 

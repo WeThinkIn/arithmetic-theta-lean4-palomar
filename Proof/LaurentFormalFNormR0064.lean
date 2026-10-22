@@ -2,6 +2,7 @@ module
 
 public import LaurentPoweredNormR0064
 public import LaurentPreimageMonomialsR0064
+public import NormScalarCorrectionR0063
 
 @[expose] public section
 

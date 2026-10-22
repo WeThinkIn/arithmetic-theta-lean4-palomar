@@ -2,6 +2,8 @@ module
 
 public import FormalConstantDefinitions
 public import Mathlib.RingTheory.AdicCompletion.Completeness
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
 
 @[expose] public section
 

@@ -9,6 +9,7 @@ public import Mathlib.RingTheory.Flat.Basic
 public import Mathlib.RingTheory.TensorProduct.Free
 public import Mathlib.LinearAlgebra.TensorProduct.Tower
 public import P2M.Util
+public import Mathlib.LinearAlgebra.Dimension.StrongRankCondition
 
 @[expose] public section
 namespace P2MW.S_TwoChartCech_finrank_ker_baseChange_eq_of_field_extension

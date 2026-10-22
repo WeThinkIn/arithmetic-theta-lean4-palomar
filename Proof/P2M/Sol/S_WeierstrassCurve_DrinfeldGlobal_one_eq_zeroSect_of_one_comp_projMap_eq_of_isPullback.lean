@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary
 public import Definitions.Def_WeierstrassCurve_DrinfeldLevelFunctor
 public import Theorems.Thm_WeierstrassCurve_DrinfeldGlobal_comp_projMap_eq_of_isOriginChartSection

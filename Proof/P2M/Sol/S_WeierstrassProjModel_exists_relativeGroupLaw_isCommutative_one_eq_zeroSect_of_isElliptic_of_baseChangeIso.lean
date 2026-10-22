@@ -17,6 +17,7 @@ public import Mathlib.AlgebraicGeometry.EllipticCurve.ModelsWithJ
 public import Mathlib.RingTheory.Localization.Away.Basic
 public import Mathlib.AlgebraicGeometry.Noetherian
 public import P2M.Util
+public import Mathlib.Algebra.Ring.IsFormallyReal
 
 @[expose] public section
 namespace P2MW.S_WeierstrassProjModel_exists_relativeGroupLaw_isCommutative_one_eq_zeroSect_of_isElliptic_of_baseChangeIso

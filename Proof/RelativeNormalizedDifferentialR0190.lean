@@ -1,12 +1,17 @@
 module
 
 public import GlobalFourTorsionDefinitionsR0190
+public import GlobalFamilyDiscriminantR0180
+public import OrderedLegendreParameterRigidityR0177
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 set_option synthInstance.maxHeartbeats 200000
 
 @[expose] public section
+
+-- Preserve the original polynomial module instance after import reduction.
+attribute [local instance 1001] MvPolynomial.instModuleSelf
 
 /-! Construction of the relative Weierstrass differential. -/
 set_option autoImplicit false

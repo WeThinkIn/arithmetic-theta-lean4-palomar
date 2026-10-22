@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import Definitions.Def_AlgebraicGeometry_RelEffCartierDivSum
 public import Definitions.Def_ModularCurve_WeierstrassLevelComponents

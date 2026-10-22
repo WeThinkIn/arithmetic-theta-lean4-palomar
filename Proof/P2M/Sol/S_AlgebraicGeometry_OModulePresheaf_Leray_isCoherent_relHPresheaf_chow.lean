@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.ZariskisMainTheorem
+public import Mathlib.AlgebraicGeometry.QuasiAffine
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCover
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafLerayDoubleComplex
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_cechFinite_unit_of_isClosedImmersion_proj

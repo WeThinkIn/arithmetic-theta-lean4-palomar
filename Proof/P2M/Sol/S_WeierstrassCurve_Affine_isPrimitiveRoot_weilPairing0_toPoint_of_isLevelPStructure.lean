@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_ModularCurve_KatzLevelP
 public import Definitions.Def_ModularCurve_LevelRelabelling
 public import Definitions.Def_EllipticCurve_WeilPairingFun

@@ -5,6 +5,7 @@ public import AnnularThetaPeriodR0128
 public import CompletedChartThetaIndependenceR0128
 public import Mathlib.RingTheory.AdicCompletion.AsTensorProduct
 public import Mathlib.RingTheory.Flat.TorsionFree
+public import AllSolutionsAnnularEvaluationR0119
 
 @[expose] public section
 set_option backward.privateInPublic true

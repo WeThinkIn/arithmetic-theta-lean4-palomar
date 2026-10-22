@@ -1,6 +1,7 @@
 module
 
 public import ArbitraryKatoUnitDefinitionsR0249
+public import PointedCartesianGroupLawR0204
 
 @[expose] public section
 

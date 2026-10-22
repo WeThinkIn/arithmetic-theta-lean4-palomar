@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.QuasiFinite
 public import Definitions.Def_JacJ1Iface
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawAction
 public import Theorems.Thm_AlgebraicGeometry_Scheme_quotient_baseChange_of_finiteLocallyFree_of_isPullback

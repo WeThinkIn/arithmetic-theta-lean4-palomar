@@ -2,6 +2,7 @@ module
 
 public import SimultaneousUnaryRootsDefinitionsR0187
 public import CompactUnaryHodgeRealizationR0183
+public import CommonHalfHodgeCoverR0185
 
 @[expose] public section
 

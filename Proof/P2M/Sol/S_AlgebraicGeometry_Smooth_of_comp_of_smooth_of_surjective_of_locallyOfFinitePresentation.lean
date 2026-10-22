@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
+public import Mathlib.AlgebraicGeometry.Morphisms.Smooth
 public import Theorems.Thm_Algebra_IsSmoothAt_of_isSmoothAt_of_smooth
 public import P2M.Util
 

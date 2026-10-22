@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.EllipticCurve.DivisionPolynomial.Basic
+public import Mathlib.Tactic.ENatToNat
 public import Definitions.Def_ModularForm_KatzLevelOne
 
 @[expose] public section

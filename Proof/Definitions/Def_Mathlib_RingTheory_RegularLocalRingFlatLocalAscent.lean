@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.Regular.Flat
 public import Definitions.Def_Mathlib_RingTheory_RegularLocalRingQuotientRegular
 public import Theorems.Thm_IsRegularLocalRing_isDomain
 public import Definitions.Def_AlgebraicGeometry_RegularLocalRingRegularSequenceAscent

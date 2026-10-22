@@ -2,6 +2,8 @@ module
 
 public import SharpKernelDefinitionsR0195
 public import OneChartRegularRoot
+public import HigherLevelProjectiveRatiosR0194
+public import UnaryParameterIdentificationR0127
 
 @[expose] public section
 

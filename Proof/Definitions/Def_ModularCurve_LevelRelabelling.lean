@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.NumberTheory.ModularForms.CongruenceSubgroups
 public import Definitions.Def_ModularCurve_LevelModuliPackage
 public import Definitions.Def_ModularCurve_WeierstrassLevelModuliDatum
 public import Definitions.Def_ModularCurve_WeierstrassLevelComponents

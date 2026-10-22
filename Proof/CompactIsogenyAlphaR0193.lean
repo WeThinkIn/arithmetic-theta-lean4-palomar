@@ -2,6 +2,7 @@ module
 
 public import IsogenyAlphaDesignatedExpansionR0193
 public import IsogenyAlphaAllCuspOrdersR0193
+public import CompactFullLevelAlphaR0190
 
 @[expose] public section
 

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawKernel
 public import Definitions.Def_AlgebraicGeometry_NeronModelEndomorphismExtension
 public import Theorems.Thm_AlgebraicGeometry_geometricallyIntegral_of_isAlgClosed
@@ -8,6 +7,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_isReduced_sub
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 namespace P2MW.S_GoodReductionJacobian_RelativeGroupLaw_eq_of_mem_irreducibleComponents_of_apply_closedPoint_mem
 
 set_option autoImplicit false

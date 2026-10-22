@@ -2,6 +2,9 @@ module
 
 public import Rank16Definitions
 public import HadamardJacobi
+public import Mathlib.RingTheory.PowerSeries.Expand
+public import Mathlib.RingTheory.PowerSeries.NoZeroDivisors
+public import Mathlib.Algebra.Ring.IsFormallyReal
 
 @[expose] public section
 

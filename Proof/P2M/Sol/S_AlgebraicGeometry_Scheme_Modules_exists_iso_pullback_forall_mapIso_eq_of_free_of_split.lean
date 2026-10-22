@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_toDescentData_map_bijective_of_openCover
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_existsUnique_map_pullback_eq_of_iSup_eq_top_of_disjoint
 public import P2M.Util

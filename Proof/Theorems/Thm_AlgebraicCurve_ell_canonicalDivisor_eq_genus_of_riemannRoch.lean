@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicCurve_RiemannRochRows
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicCurve_ell_canonicalDivisor_eq_genus_of_riemannRoch

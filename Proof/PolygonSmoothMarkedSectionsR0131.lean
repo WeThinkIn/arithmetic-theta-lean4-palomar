@@ -1,6 +1,9 @@
 module
 
 public import PolygonCohomologyDefinitionsR0131
+public import InfinitesimalPolygonFlatR0129
+public import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation
+public import Mathlib.AlgebraicGeometry.Morphisms.Smooth
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

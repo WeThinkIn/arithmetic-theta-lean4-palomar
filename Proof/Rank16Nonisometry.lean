@@ -4,6 +4,7 @@ public import Rank16Coordinates
 public import Rank16Definitions
 public import Rank16LatticeDefinitions
 public import Rank16Similarity
+public import Mathlib.Data.Int.Star
 
 @[expose] public section
 

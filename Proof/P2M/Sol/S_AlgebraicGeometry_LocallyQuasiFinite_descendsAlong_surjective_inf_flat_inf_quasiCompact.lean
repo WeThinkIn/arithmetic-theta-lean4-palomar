@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.AlgebraicGeometry.Morphisms.QuasiFinite
+public import Mathlib.AlgebraicGeometry.Morphisms.Descent
+public import Mathlib.AlgebraicGeometry.Morphisms.Flat
 public import Theorems.Thm_RingHom_QuasiFinite_codescendsAlong_faithfullyFlat
 public import P2M.Util
 

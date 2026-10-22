@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Module_Flat_ker_baseChange_eq_bot_and_ker_le_range_of_flat_of_exact
 

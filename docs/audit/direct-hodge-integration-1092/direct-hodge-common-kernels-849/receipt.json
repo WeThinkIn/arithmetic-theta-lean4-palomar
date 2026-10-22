@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "results": {
+    "stock-lean": {
+      "exit_code": 0,
+      "seconds": 8980.101373743732,
+      "peak_rss_bytes": 13632049152,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+        "--silent",
+        "--from-export",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-common-unary-847/CommonUnarySolution-01.ndjson"
+      ]
+    },
+    "conron": {
+      "exit_code": 0,
+      "seconds": 633.7047988451086,
+      "peak_rss_bytes": 9899253760,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/con-ron",
+        "--verified",
+        "--jobs=2",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-common-unary-847/CommonUnarySolution-01.ndjson"
+      ]
+    },
+    "nanoda": {
+      "exit_code": 0,
+      "seconds": 1060.1658671130426,
+      "peak_rss_bytes": 3797540864,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-common-kernels-849/nanoda.json"
+      ]
+    }
+  },
+  "positive_kernel_markers": true,
+  "bindings_unchanged": true,
+  "scope": "Local full CommonUnary strict comparison and three independent kernel replays; not official cold build, whole-paper semantic acceptance or registration"
+}

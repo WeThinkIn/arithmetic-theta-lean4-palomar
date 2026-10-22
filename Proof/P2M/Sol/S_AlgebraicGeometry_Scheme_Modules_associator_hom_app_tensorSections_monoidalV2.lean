@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_PresheafOfModules_InternalHom
 public import Definitions.Def_SheafOfModules_MonoidalV2
 public import Definitions.Def_AlgebraicGeometry_ModulesTensorPowV2
@@ -10,6 +9,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_tensorHom_app_tensor
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] CategoryTheory.instHasWeakSheafifyOfHasSheafify
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_associator_hom_app_tensorSections_monoidalV2
 attribute [-instance] PresheafOfModules.PullbackMonoidal.pullback_monoidal PresheafOfModules.PullbackMonoidal.isIso_δ PresheafOfModules.pushforward_laxMonoidal PresheafOfModules.PullbackMonoidal.isIso_η PresheafOfModules.free_monoidal PresheafOfModules.restrictScalars_laxMonoidal PresheafOfModules.PullbackMonoidal.isIso_δ_gS PresheafOfModules.pullback_oplaxMonoidal PresheafOfModules.PullbackMonoidal.instPreservesColimitsOfSizeCompOppositeCommRingCatRingCatForget₂RingHomCarrierCarrierPb PresheafOfModules.pullback_monoidal'
 attribute [-simp] PresheafOfModules.freeεIso_hom_app PresheafOfModules.freeμIso_hom_app

@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.Monotonicity.Lemmas
 
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafConstructions
 public import Mathlib.Algebra.Module.Submodule.RestrictScalars

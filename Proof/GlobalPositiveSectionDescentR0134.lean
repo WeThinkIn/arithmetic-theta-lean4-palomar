@@ -1,6 +1,8 @@
 module
 
 public import CanonicalCartierLineReductionR0133
+public import Mathlib.CategoryTheory.ExtremalEpi
+public import Mathlib.CategoryTheory.EffectiveEpi.Comp
 
 @[expose] public section
 

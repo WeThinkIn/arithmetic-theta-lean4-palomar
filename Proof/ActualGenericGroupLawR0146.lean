@@ -5,6 +5,7 @@ public import AlgebraicTateCoordinatesR0143
 public import ProjectiveCubicChartR0145
 public import Theorems.Thm_WeierstrassProjModel_relativeGroupLaw_exists
 public import Theorems.Thm_WeierstrassProjModel_RelativeGroupLaw_mul_eq_of_one_eq_of_isElliptic
+public import CompactifiedCoordinateIsomorphismR0145
 
 @[expose] public section
 

@@ -1,6 +1,8 @@
 module
 
 public import LineRootFoundations
+public import LineRootGluing
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
 
 @[expose] public section
 

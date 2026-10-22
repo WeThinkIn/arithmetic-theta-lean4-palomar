@@ -7,6 +7,9 @@ public import Definitions.Def_AlgebraicCurve_BaseChangeGalois
 public import Definitions.Def_AlgebraicCurve_IsCurveOver
 public import Definitions.Def_CerednikDrinfeld_TwoPlaceTorsionDatum
 public import Definitions.Def_Compat_Mathlib430
+public import Definitions.Def_Submodule_LocalBox
+public import Definitions.Def_QuaternionAlgebra_Order
+public import Mathlib.Data.Multiset.Functor
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

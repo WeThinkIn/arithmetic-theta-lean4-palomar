@@ -7,6 +7,8 @@ public import MillerOpenEvaluationR0114
 public import ActualMillerPhaseR0114
 public import Mathlib.Algebra.BigOperators.Finprod
 public import Mathlib.FieldTheory.IsAlgClosed.Basic
+public import MillerGeometryDefinitionsR0114
+public import Mathlib.Data.Nat.Choose.Multinomial
 
 @[expose] public section
 

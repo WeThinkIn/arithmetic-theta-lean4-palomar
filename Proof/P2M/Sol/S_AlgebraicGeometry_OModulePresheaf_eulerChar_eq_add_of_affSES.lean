@@ -1,6 +1,16 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.RingTheory.PiTensorProduct
+public import Mathlib.Algebra.Order.Ring.Star
+public import Mathlib.Data.Int.Star
+public import Mathlib.Algebra.Homology.HomologySequence
+public import Mathlib.Algebra.Homology.HomologicalComplexAbelian
+public import Mathlib.Algebra.Homology.ShortComplex.ModuleCat
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafEulerChar
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_d_comp_d

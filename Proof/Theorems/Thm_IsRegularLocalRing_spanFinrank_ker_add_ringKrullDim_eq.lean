@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_IsRegularLocalRing_spanFinrank_ker_add_ringKrullDim_eq
 

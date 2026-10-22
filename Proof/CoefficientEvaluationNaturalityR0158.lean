@@ -1,6 +1,8 @@
 module
 
 public import UnsplitExpansionDefinitionsR0158
+public import CoefficientNormDescentDefinitionsR0157
+public import AnnularNormBridgeDefinitionsR0156
 
 @[expose] public section
 

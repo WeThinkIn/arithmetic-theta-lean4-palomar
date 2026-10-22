@@ -1,6 +1,7 @@
 module
 
 public import CompletedChartDefinitions
+public import ProperFormalFunctions
 
 @[expose] public section
 

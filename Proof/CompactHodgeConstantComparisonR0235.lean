@@ -4,6 +4,7 @@ public import ClassifiedTateDiskTransferR0235
 public import TateCoordinateConstantMapR0235
 public import TateMarkingConstantTransferR0235
 public import RootTestPullbackCoherenceR0196
+public import CompactNormalizedPowerExtensionR0183
 
 @[expose] public section
 

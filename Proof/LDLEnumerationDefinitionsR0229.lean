@@ -1,6 +1,7 @@
 module
 
 public import ComputedCoefficientMatrix
+public import EnumerationAlgorithm
 
 @[expose] public section
 

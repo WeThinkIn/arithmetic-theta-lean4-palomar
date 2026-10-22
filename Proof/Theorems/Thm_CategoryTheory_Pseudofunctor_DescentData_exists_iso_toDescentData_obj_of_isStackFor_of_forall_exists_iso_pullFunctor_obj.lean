@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_CategoryTheory_Pseudofunctor_DescentData_exists_iso_toDescentData_obj_of_isStackFor_of_forall_exists_iso_pullFunctor_obj
 

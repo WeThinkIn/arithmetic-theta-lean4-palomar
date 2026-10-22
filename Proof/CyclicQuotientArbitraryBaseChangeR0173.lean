@@ -2,6 +2,8 @@ module
 
 public import RelativeCyclicQuotientExistenceR0173
 public import AlgebraizedMarkedIdealSpecializationR0136
+public import RelativeCyclicQuotientDefinitionsR0173
+public import Theorems.Thm_WeierstrassProjModel_projModelStrCR_isProper
 
 @[expose] public section
 

@@ -2,6 +2,9 @@ module
 
 public import RelativeKatoDefinitionsR0169
 public import Theorems.Thm_AlgebraicGeometry_Smooth_isDomain_and_isIntegrallyClosed_stalk
+public import Theorems.Thm_WeierstrassProjModel_projModelStrCR_smoothOfRelativeDimension_one
+public import Theorems.Thm_WeierstrassProjModel_projModel_pullback_iso_baseChange
+public import Theorems.Thm_WeierstrassProjModel_kw_hgi_geometricallyIntegral_of_baseChangeIso
 
 @[expose] public section
 

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_RingHom_finiteDimensional_adjoin_range_of_finite_of_forall_mem_range
 

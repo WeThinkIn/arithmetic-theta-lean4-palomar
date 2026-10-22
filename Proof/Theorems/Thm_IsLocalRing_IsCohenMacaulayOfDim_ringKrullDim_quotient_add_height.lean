@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_Patching_CohenMacaulayOfDim
 public import P2M.Util
 public import P2M.Sol.S_IsLocalRing_IsCohenMacaulayOfDim_ringKrullDim_quotient_add_height

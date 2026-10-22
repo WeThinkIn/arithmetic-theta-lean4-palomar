@@ -1,6 +1,8 @@
 module
 
 public import TateSchemeMarkingDefinitionsR0263
+public import SchemeSymmetricSignsR0259
+public import SchemeThetaInversionR0259
 
 @[expose] public section
 

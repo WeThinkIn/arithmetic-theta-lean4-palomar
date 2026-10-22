@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.FormallyUnramified
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawKernel
 public import P2M.Util
 

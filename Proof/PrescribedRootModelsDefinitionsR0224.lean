@@ -3,6 +3,8 @@ module
 public import ValuedExtensionPrescribedRootsR0223
 public import PointedRamifiedRootModelR0222
 public import Theorems.Thm_AlgebraicGeometry_geometricallyIntegral_of_isAlgClosed
+public import RamifiedRootModelsDefinitionsR0222
+public import ValuativeRootSectionsDefinitionsR0223
 
 @[expose] public section
 

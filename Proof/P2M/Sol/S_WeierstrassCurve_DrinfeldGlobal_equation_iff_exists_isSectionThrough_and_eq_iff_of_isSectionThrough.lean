@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_WeierstrassCurve_PointChart
 public import Theorems.Thm_WeierstrassProjModel_exists_zChartAway_equiv_coordinateRing
 public import P2M.Util

@@ -3,6 +3,10 @@ module
 public import UnphasedMarkingCoverR0219
 public import PhaseOverlapSplittingR0219
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_pullbackComp_app_tensorObj
+public import MultiplierPhaseSwitchR0218
+public import AlphaDescentFaithfulnessR0217
+public import SchemeAlphaCharacterR0215
+public import SchemeAlphaNaturalityR0215
 
 @[expose] public section
 

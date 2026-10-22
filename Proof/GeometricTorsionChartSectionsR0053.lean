@@ -4,6 +4,8 @@ public import AnnularTorsionPrerequisiteDefinitionsR0053
 public import CompletedSectionKernelsR0053
 public import RGonRepresentativesR0053
 public import TateNodeTorusCharts
+public import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation
+public import Mathlib.AlgebraicGeometry.Morphisms.ClosedImmersion
 
 @[expose] public section
 

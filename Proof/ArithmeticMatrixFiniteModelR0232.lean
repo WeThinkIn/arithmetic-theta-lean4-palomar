@@ -2,6 +2,8 @@ module
 
 public import FieldSharpModularFamilyR0232
 public import RecoveredFieldConsumersR0232
+public import FieldDescentGeometryR0231
+public import PointedSquareCoverFiniteModelR0221
 
 @[expose] public section
 

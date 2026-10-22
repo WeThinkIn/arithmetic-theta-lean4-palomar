@@ -1,6 +1,7 @@
 module
 
 public import PhaseFreeMultiplierR0219
+public import KeyPhaseSwitchR0218
 
 @[expose] public section
 

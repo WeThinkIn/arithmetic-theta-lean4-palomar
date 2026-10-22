@@ -5,6 +5,8 @@ public import SmoothRootSections
 public import NormalizationPrescribedBranch
 public import RootCoverGeometricDegree
 public import RootCoverGeometricDegreePositive
+public import CommonHalfHodgeDefinitionsR0185
+public import CompactUnaryDefinitionsR0183
 
 @[expose] public section
 

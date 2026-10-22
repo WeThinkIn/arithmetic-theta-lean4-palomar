@@ -2,6 +2,8 @@ module
 
 public import NormalAffineClassifyingConstructionR0178
 public import CyclicQuotientUniversalFactorizationR0173
+public import CompatibleLevelDefinitionsR0178
+public import CurveDegreeDefinitions
 
 @[expose] public section
 

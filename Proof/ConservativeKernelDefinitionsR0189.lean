@@ -4,6 +4,7 @@ public import MatrixFamilyGlobalSectionsR0188
 public import FixedLineFiniteJet
 public import ComputedCoefficientMatrix
 public import RankZero
+public import LatticeGlobalSectionsDefinitionsR0188
 
 @[expose] public section
 

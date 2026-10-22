@@ -4,6 +4,7 @@ public import NormalDiscriminantModelR0243
 public import NormalDiscriminantIndependenceR0243
 public import RelativeKatoCartierRatioR0170
 public import PointedCartesianGroupLawR0204
+public import ArbitraryDiscriminantDefinitionsR0243
 
 @[expose] public section
 

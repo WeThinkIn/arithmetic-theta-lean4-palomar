@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.AffineTransitionLimit
 public import Theorems.Thm_AlgebraicGeometry_isAffine_of_isClosedImmersion_of_isNilpotent_ker
 public import Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_exists_le_isNilpotent_mem_ideal_of_le_nilradical
 public import P2M.Util

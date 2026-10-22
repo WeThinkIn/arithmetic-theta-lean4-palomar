@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_OModulePresheafConstructions
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafInternalHom
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_OModulePresheaf_internalHom_ext_of_apply_self_eq

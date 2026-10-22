@@ -1,6 +1,9 @@
 module
 
 public import Rank16Basis
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.Tactic.ENatToNat
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 

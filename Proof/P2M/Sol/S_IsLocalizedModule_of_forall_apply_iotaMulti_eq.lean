@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.Coalgebra.CoassocSimps
 public import Theorems.Thm_exteriorPower_exists_linearEquiv_baseChange
 public import P2M.Util
 

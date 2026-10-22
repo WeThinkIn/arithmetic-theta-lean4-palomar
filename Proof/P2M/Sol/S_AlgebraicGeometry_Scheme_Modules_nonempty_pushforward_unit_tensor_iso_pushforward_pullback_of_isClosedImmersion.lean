@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.ClosedImmersion
 public import Definitions.Def_AlgebraicGeometry_ModulesLocallyFreeOfRank
 public import Definitions.Def_SheafOfModules_Monoidal
 public import Definitions.Def_AlgebraicGeometry_ModulesPullbackMonoidal

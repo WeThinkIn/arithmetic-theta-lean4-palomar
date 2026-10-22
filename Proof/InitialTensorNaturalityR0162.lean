@@ -1,6 +1,7 @@
 module
 
 public import CanonicalDifferentialTensorR0162
+public import AugmentedConormalR0162
 
 @[expose] public section
 

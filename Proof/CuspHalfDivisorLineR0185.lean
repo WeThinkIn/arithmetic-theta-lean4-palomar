@@ -1,6 +1,8 @@
 module
 
 public import CommonHalfHodgeDefinitionsR0185
+public import EffectiveDivisorLine
+public import ComponentDiscriminantDivisorR0184
 
 @[expose] public section
 

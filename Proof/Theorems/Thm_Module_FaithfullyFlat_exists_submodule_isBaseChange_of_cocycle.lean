@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_Algebra_DescentCofaces
 public import P2M.Util
 public import P2M.Sol.S_Module_FaithfullyFlat_exists_submodule_isBaseChange_of_cocycle

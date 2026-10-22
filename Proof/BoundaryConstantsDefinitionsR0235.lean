@@ -7,6 +7,8 @@ public import ConstantComparisonCoherenceR0234
 public import CompactHodgeLatticeExtensionR0182
 public import CoefficientCompletedMapsR0157
 public import TateFullLevelMarkingR0181
+public import LevelConstantsDefinitionsR0234
+public import BoundaryHodgeDefinitionsR0182
 
 @[expose] public section
 

@@ -1,6 +1,7 @@
 module
 
 public import LocalGammaProviderBridgeR0065
+public import LaurentGammaExistenceR0064
 
 @[expose] public section
 set_option backward.privateInPublic true

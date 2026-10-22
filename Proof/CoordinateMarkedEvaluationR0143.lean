@@ -1,6 +1,9 @@
 module
 
 public import AlgebraicTateCoordinatesR0143
+public import AlgebraicTateCoordinatesDefinitionsR0143
+public import TateBridgesSeriesStabilization
+public import NormalizedIdentityFrameR0140
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

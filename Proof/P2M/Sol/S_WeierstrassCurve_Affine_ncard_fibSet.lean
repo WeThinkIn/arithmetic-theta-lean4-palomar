@@ -9,6 +9,7 @@ public import Theorems.Thm_WeierstrassCurve_card_torsion_of_isAlgClosed
 public import Theorems.Thm_WeierstrassCurve_Affine_Point_exists_zsmul_eq_of_isAlgClosed
 public import Theorems.Thm_WeierstrassCurve_Affine_fibSet_finite
 public import P2M.Util
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 namespace P2MW.S_WeierstrassCurve_Affine_ncard_fibSet

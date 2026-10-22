@@ -1,6 +1,7 @@
 module
 
 public import SharpMatrixKernelR0195
+public import EarlyCertificateAssembly
 
 @[expose] public section
 

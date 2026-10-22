@@ -2,6 +2,8 @@ module
 
 public import GeneralEllipticBaseChangeR0168
 public import GeneralKatoExistenceR0168
+public import GeneralMultiplicationDegreeR0168
+public import ActualKatoFieldBaseChangeR0151
 
 @[expose] public section
 

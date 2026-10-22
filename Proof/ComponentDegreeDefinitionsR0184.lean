@@ -4,6 +4,7 @@ public import CompactUnaryHodgeRealizationR0183
 public import TensorLineDegrees
 public import MarkingCuspProjectionR0102
 public import FiniteFullLevelCount
+public import CompactHodgeLatticeExtensionR0182
 
 @[expose] public section
 

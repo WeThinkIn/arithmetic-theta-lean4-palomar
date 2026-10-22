@@ -2,6 +2,8 @@ module
 
 public import PeriodOneGeometricComparisonR0246
 public import PeriodOneNormalizedFrameR0246
+public import UnmarkedTateDiscriminantR0245
+public import ArbitraryDiscriminantNaturalityR0243
 
 @[expose] public section
 

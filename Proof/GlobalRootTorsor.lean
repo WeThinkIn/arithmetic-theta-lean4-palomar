@@ -3,6 +3,15 @@ module
 public import RootAlgebraBaseChange
 public import NormalizedPowerCoefficients
 public import Mathlib.AlgebraicGeometry.RelativeGluing
+public import UnitRootAlgebra
+public import ProperFormalFunctions
+public import PullbackLineFrames
+public import TensorPowerLaws
+public import Mathlib.RingTheory.Etale.Weakly
+public import Mathlib.CategoryTheory.ExtremalEpi
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
+public import Mathlib.AlgebraicGeometry.Morphisms.FlatRank
+public import Mathlib.CategoryTheory.EffectiveEpi.Comp
 
 @[expose] public section
 

@@ -3,6 +3,7 @@ module
 public import MarkedSectionAlgebraizationR0136
 public import AlgebraizedPositiveFormalSectionsR0136
 public import ProjectiveTowerEffectivityR0135
+public import AlgebraizedMarkedLineDefinitionsR0136
 
 @[expose] public section
 

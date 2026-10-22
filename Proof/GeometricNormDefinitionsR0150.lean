@@ -2,6 +2,8 @@ module
 
 public import MultiplicationFiniteEtaleDegreeR0148
 public import PrincipalDegreeZero
+public import HodgeFourTorsionDefinitionsR0147
+public import Mathlib.AlgebraicGeometry.OrderOfVanishing
 
 @[expose] public section
 

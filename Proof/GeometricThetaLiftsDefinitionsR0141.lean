@@ -4,6 +4,8 @@ public import GenericProjectiveEvaluationR0140
 public import SchrodingerCommonScalarR0119
 public import AlgebraizedActionLawsR0137
 public import AlgebraizedMarkedTransportR0137
+public import ModelSymmetriesDefinitionsR0137
+public import GenericThetaEvaluationDefinitionsR0140
 
 @[expose] public section
 

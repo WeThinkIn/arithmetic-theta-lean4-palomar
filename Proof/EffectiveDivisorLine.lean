@@ -6,6 +6,10 @@ public import SectionOrderDefinitions
 public import AffineOrderRegularity
 public import CurveDegreeDefinitions
 public import ResidueDegrees
+public import FunctionOrders
+public import Mathlib.AlgebraicGeometry.Morphisms.UniversallyInjective
+public import Mathlib.Algebra.Category.ModuleCat.Presheaf.Submodule
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 

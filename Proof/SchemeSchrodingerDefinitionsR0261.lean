@@ -2,6 +2,7 @@ module
 
 public import SchemeFullLevelThetaMarkingR0259
 public import SchemeSymmetricSignsR0259
+public import SchemeThetaMarkingDefinitionsR0259
 
 @[expose] public section
 

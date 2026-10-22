@@ -3,6 +3,10 @@ module
 public import ScaledAnnularDefinitionsR0050
 public import Mathlib.RingTheory.AdicCompletion.Completeness
 public import Mathlib.RingTheory.Jacobson.Ideal
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.Tactic.ENatToNat
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 

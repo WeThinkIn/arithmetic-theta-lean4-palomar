@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawKernel
 public import P2M.Util
 public import P2M.Sol.S_GoodReductionJacobian_RelativeGroupLaw_etale_schemeNsmul_of_isUnit_of_smoothOfRelativeDimension

@@ -1,6 +1,7 @@
 module
 
 public import ScaledNormalRecoveryDefinitionsR0051
+public import TateNodeNormalForm
 
 @[expose] public section
 

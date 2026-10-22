@@ -4,6 +4,10 @@ public import EveryGeometricBoundaryTateDiskR0181
 public import TateCompletedLocalParameterR0181
 public import InitialTensorBaseChangeR0164
 public import IntegralDiscriminantHodgeR0163
+public import UnaryKatoPowerDefinitionsR0160
+public import TateCuspDefinitionsR0181
+public import OpenHodgeDescentDefinitionsR0180
+public import GlobalNormalizedDifferentialR0145
 
 @[expose] public section
 

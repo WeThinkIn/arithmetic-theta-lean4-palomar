@@ -1,6 +1,10 @@
 module
+public import Mathlib.RingTheory.Spectrum.Prime.IsOpenComapC
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.ValuativeCriterion
+public import Mathlib.AlgebraicGeometry.ZariskisMainTheorem
+public import Mathlib.AlgebraicGeometry.QuasiAffine
+public import Std.Tactic.BVDecide.Normalize.Prop
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCover
 public import Definitions.Def_AlgebraicGeometry_SmoothProperCurveBase
 public import Definitions.Def_AlgebraicCurve_CurveModel

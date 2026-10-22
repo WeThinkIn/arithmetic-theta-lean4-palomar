@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensorV2
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsFrameOn_of_iSup_monoidalV2

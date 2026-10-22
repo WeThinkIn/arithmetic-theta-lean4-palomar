@@ -3,6 +3,9 @@ module
 public import Definitions.Def_WeierstrassCurve_ProjModel_ThirdLawCharts
 public import Mathlib.RingTheory.MvPolynomial.WeightedHomogeneous
 public import P2M.Util
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Point
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

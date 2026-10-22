@@ -5,6 +5,8 @@ public import SchemePhaseNaturalityR0215
 public import SchemeAlphaNaturalityR0215
 public import SchemeFullLevelUniversalR0204
 public import FullLevelCoverGeometryR0175
+public import SchemeFourCharacterDefinitionsR0215
+public import UniversalThetaEvaluationDefinitionsR0213
 
 @[expose] public section
 

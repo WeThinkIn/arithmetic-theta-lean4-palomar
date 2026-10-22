@@ -2,6 +2,7 @@ module
 
 public import LegendreLevelFamilyConstructionR0176
 public import Mathlib.AlgebraicGeometry.EllipticCurve.VariableChange
+public import LegendreLevelAtlasDefinitionsR0176
 
 @[expose] public section
 

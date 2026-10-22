@@ -1,6 +1,7 @@
 module
 
 public import RelativeGeometricSchrodingerR0257
+public import RelativeSchrodingerDefinitionsR0257
 
 @[expose] public section
 

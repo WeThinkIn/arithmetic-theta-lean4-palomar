@@ -2,6 +2,8 @@ module
 
 public import LatticeShellFinite
 public import IntegralGramOrthogonalization
+public import Mathlib.RingTheory.PowerSeries.Basic
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 

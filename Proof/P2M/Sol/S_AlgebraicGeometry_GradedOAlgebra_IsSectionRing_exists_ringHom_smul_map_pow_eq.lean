@@ -5,6 +5,11 @@ public import Definitions.Def_AlgebraicGeometry_ModulesProjPresentation
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsFrameOn_tensorSections_monoidalV2
 public import P2M.Util
+public import Definitions.Def_AlgebraicGeometry_GradedOAlgebraSectionRing
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 namespace P2MW.S_AlgebraicGeometry_GradedOAlgebra_IsSectionRing_exists_ringHom_smul_map_pow_eq

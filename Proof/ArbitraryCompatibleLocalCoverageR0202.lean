@@ -1,6 +1,9 @@
 module
 
 public import ArbitraryLegendreNormalFormR0202
+public import LegendreFamilyGeometryR0176
+public import FullLevelBaseChangeR0175
+public import FullLevelCyclicLiftsR0175
 
 @[expose] public section
 

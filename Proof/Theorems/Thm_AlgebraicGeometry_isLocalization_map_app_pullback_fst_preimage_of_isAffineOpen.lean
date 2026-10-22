@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_isLocalization_map_app_pullback_fst_preimage_of_isAffineOpen
 

@@ -2,6 +2,7 @@ module
 
 public import SchemePushforwardIntertwiningR0262
 public import SchemeEvaluationNaturalityR0262
+public import SchemeFixedLineBaseChangeR0261
 
 @[expose] public section
 

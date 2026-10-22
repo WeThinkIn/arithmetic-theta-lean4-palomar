@@ -9,6 +9,10 @@ public import CorrectedGammaDataExistsR0061
 public import CorrectedGammaDataUniqueR0061
 public import CorrectedGammaInteriorOverlapR0061
 public import CorrectedGammaPeriodBoundaryR0061
+public import CorrectedGammaTailExistsR0061
+public import AnnularThetaGluingDefinitionsR0128
+public import AlgebraizedMarkedLineDefinitionsR0136
+public import FiniteStageCompletionComparisonR0129
 
 @[expose] public section
 

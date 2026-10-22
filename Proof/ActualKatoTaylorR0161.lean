@@ -1,6 +1,10 @@
 module
 
 public import GammaTaylorComparisonR0161
+public import FaithfulTaylorFieldR0161
+public import CompletedChartTaylorR0161
+public import SplitPeriodKatoFormulaR0158
+public import GammaBaseChangeNaturalityR0158
 
 @[expose] public section
 

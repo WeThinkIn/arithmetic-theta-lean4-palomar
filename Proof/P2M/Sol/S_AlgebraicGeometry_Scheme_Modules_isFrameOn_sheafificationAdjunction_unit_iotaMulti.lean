@@ -1,11 +1,19 @@
 module
 
-public import Mathlib
+public import Mathlib.Topology.Sheaves.LocallySurjective
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.LinearAlgebra.ExteriorPower.Basis
 public import Definitions.Def_AlgebraicGeometry_ModulesDet
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] CategoryTheory.instHasWeakSheafifyOfHasSheafify
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

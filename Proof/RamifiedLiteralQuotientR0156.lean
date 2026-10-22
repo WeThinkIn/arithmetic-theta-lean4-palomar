@@ -1,6 +1,9 @@
 module
 
 public import AnnularNormBridgeDefinitionsR0156
+public import RamifiedPeriodDefinitionsR0154
+public import RatioRegularityDefinitionsR0067
+public import LocalNormExponentR0054
 
 @[expose] public section
 

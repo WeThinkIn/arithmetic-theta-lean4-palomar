@@ -1,6 +1,8 @@
 module
 
 public import TateSeriesStabilization
+public import TateBridgesSeriesStabilization
+public import Mathlib.RingTheory.PowerSeries.Expand
 
 @[expose] public section
 

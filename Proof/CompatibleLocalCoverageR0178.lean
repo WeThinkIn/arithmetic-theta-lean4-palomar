@@ -1,6 +1,7 @@
 module
 
 public import CompatibleLevelDefinitionsR0178
+public import MarkedLegendreAtlasLocalCoverageR0177
 
 @[expose] public section
 

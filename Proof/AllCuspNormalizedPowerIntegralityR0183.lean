@@ -1,6 +1,8 @@
 module
 
 public import TateTorsionNormalizedIntegralityR0183
+public import RelativeMultiplicationHodgeWeightR0172
+import Lean
 
 @[expose] public section
 
@@ -9,6 +11,35 @@ set_option backward.isDefEq.respectTransparency false
 set_option maxRecDepth 4096
 set_option linter.style.haveILetI false
 noncomputable section
+
+open Lean Meta Elab Tactic in
+elab "split_eval_exact " term:term : tactic => withMainContext do
+  let h ← elabTerm term none
+  let ht ← whnf (← inferType h)
+  let goal ← whnf (← getMainTarget)
+  unless ht.isAppOfArity `Eq 3 && goal.isAppOfArity `Eq 3 do
+    throwError "Expected equality proofs"
+  let aa := ht.getAppArgs
+  let bb := goal.getAppArgs
+  let lhs := aa[1]!
+  let rhs := aa[2]!
+  let wanted := bb[1]!
+  unless lhs.isApp && wanted.isApp do throwError "Expected applied left sides"
+  let f := lhs.appFn!
+  let g := wanted.appFn!
+  let x := lhs.appArg!
+  let y := wanted.appArg!
+  let hf ← mkEqRefl f
+  let hx ← mkEqRefl x
+  let same ← mkAppOptM `congr #[none, none, some f, some g, some x, some y, some hf, some hx]
+  let back ← mkEqSymm same
+  let hr ← mkEqRefl rhs
+  let tail ← mkAppOptM `Eq.trans #[some aa[0]!, some lhs, some rhs, some bb[2]!, some h, some hr]
+  let proof ← mkAppOptM `Eq.trans #[some bb[0]!, some wanted, some lhs, some bb[2]!, some back, some tail]
+  let proof ← instantiateMVars proof
+  if proof.hasMVar then throwError "Unresolved congruence parameters"
+  (← getMainGoal).assign proof
+  replaceMainGoal []
 
 namespace ArithmeticThetaCompactUnaryR0183.AllCuspNormalizedPowerIntegrality
 
@@ -2837,6 +2868,13 @@ open ArithmeticThetaRelativeKatoR0169 ArithmeticThetaRelativeDiscriminantR0171
 open ArithmeticThetaOpenHodgeR0180 ArithmeticThetaTateCuspsR0181
 open ArithmeticThetaBoundaryHodgeR0182
 open ArithmeticThetaBoundaryHodgeR0182.OpenUnaryDesignatedExpansionR0182
+lemma cubicHodgeApply_pointMap_743 {K : Type} [Field K] (W Wt : WeierstrassCurve K)
+    (f : Curve K W ⟶ Curve K Wt) (hf : f ≫ structureMap K Wt = structureMap K W)
+    (ho : origin K W ≫ f = origin K Wt) (η : Γ(Hodge K Wt,⊤)) :
+    cubicHodgeApply W Wt f hf ho η =
+      (PeriodDifferential.pointMap (K := K) (structureMap K W) (structureMap K Wt)
+        f hf (origin K W) (origin K Wt) ho).app ⊤ η := rfl
+
 namespace TwistedQuotient
 open ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange
 open OpenDiscriminantFullTateExpansionR0182
@@ -2870,24 +2908,23 @@ lemma weight_one [Ws.IsElliptic] [Wt.IsElliptic]
     (CoefficientMap.origin_of_eq Ws Ws e.toRingHom hs) (CoefficientMap.origin_map Wt e.toRingHom)
     f hf ho (arrow Ws Wt e hs f) (arrow_over Ws Wt e hs f hf) (origin_arrow Ws Wt e hs f ho)
     (square Ws Wt e hs f).symm ω η (by with_reducible exact hw)
-  have ht : pointedDifferentialIso (structureMap K Wt) (structureMap K (Wt.map e.toRingHom))
-      (CoefficientMap.map Wt e.toRingHom) (CoefficientMap.cartesian Wt e.toRingHom)
-      (origin K Wt) (origin K (Wt.map e.toRingHom)) (CoefficientMap.origin_map Wt e.toRingHom) =
-      CoefficientMap.hodgeComparison Wt e := rfl
-  have hsrc : pointedDifferentialIso (structureMap K Ws) (structureMap K Ws)
-      (CoefficientMap.mapOfEq Ws Ws e.toRingHom hs) (CoefficientMap.cartesian_of_eq Ws Ws e.toRingHom hs)
-      (origin K Ws) (origin K Ws) (CoefficientMap.origin_of_eq Ws Ws e.toRingHom hs) =
-      CoefficientMap.hodgeComparisonOfEq Ws Ws e hs := rfl
-  have hmap : PeriodDifferential.pointMap (structureMap K Ws) (structureMap K (Wt.map e.toRingHom))
-      (arrow Ws Wt e hs f) (arrow_over Ws Wt e hs f hf)
-      (origin K Ws) (origin K (Wt.map e.toRingHom)) (origin_arrow Ws Wt e hs f ho) =
-      hodgeMap Ws Wt e hs f hf ho := rfl
-  rw [ht, hsrc, hmap] at h
-  unfold cubicHodgeApply
-  unfold hodgeMap at h
-  unfold CoefficientMap.transport CoefficientMap.transportOfEq
-  dsimp only [Base, Hodge, RingHom.algebraMap_toAlgebra] at h ⊢
-  with_reducible exact h
+  have ht : CoefficientMap.transport Wt e η =
+      transportSection (baseMap K K (algebraMap K K)) _ _
+        (pointedDifferentialIso (structureMap K Wt) (structureMap K (Wt.map e.toRingHom))
+          (CoefficientMap.map Wt e.toRingHom) (CoefficientMap.cartesian Wt e.toRingHom)
+          (origin K Wt) (origin K (Wt.map e.toRingHom)) (CoefficientMap.origin_map Wt e.toRingHom)) η := rfl
+  let φ := PeriodDifferential.pointMap (structureMap K Ws) (structureMap K (Wt.map e.toRingHom))
+    (arrow Ws Wt e hs f) (arrow_over Ws Wt e hs f hf)
+    (origin K Ws) (origin K (Wt.map e.toRingHom)) (origin_arrow Ws Wt e hs f ho)
+  have hc : ∀ ξ : Γ(Hodge K (Wt.map e.toRingHom),⊤),
+      cubicHodgeApply Ws (Wt.map e.toRingHom) (arrow Ws Wt e hs f)
+        (arrow_over Ws Wt e hs f hf) (origin_arrow Ws Wt e hs f ho) ξ = φ.app ⊤ ξ :=
+    fun ξ => cubicHodgeApply_pointMap_743 Ws (Wt.map e.toRingHom) (arrow Ws Wt e hs f)
+      (arrow_over Ws Wt e hs f hf) (origin_arrow Ws Wt e hs f ho) ξ
+  apply (hc _).trans
+  apply (congrArg (fun ξ => φ.app ⊤ ξ) ht).trans
+  split_eval_exact h
+
 
 #print axioms weight_one
 end TwistedQuotient

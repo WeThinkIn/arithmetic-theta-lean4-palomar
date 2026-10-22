@@ -1,6 +1,9 @@
 module
 
 public import TateSeriesCuspTerms
+public import TateSeriesDefinitions
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
 
 @[expose] public section
 

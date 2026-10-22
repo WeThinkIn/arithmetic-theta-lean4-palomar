@@ -3,6 +3,7 @@ module
 public import RatioRegularityDefinitionsR0067
 public import HeightOneDVRR0066
 public import FractionRestrictionR0067
+public import NormalDomainIntersection
 
 @[expose] public section
 

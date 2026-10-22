@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_IsRegularLocalRing_uniqueFactorizationMonoid_of_ringKrullDim_le_two
 

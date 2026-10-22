@@ -1,6 +1,7 @@
 module
 
 public import SchemeThetaNaturalityDefinitionsR0262
+public import SchemePrimitiveThetaCommutatorR0259
 
 @[expose] public section
 

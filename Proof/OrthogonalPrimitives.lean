@@ -1,6 +1,11 @@
 module
 
 public import OrthogonalAlgorithm
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.Data.Rat.Star
+public import Mathlib.Algebra.Order.Ring.Star
+public import Mathlib.LinearAlgebra.QuadraticForm.Basic
 
 @[expose] public section
 

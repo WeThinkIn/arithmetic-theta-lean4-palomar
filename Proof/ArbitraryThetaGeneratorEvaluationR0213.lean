@@ -4,6 +4,8 @@ public import ThetaIdentityEvaluationR0212
 public import ThetaLineBaseChangeR0212
 public import NoetherianPoleFiltrationR0203
 public import FramedFiniteTypeApproximationR0203
+public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_iso_invModule_zeroSchemeIdeal
+public import EvenThetaRigidificationR0212
 
 @[expose] public section
 

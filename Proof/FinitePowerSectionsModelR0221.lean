@@ -1,6 +1,8 @@
 module
 
 public import FiniteLineHomsModelR0221
+public import TensorPowerLaws
+public import PullbackTensorSections
 
 @[expose] public section
 

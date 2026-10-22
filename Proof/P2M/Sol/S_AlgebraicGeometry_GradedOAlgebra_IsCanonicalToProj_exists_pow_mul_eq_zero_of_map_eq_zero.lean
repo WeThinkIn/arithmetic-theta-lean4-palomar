@@ -6,6 +6,8 @@ public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsFrameOn_tensorSections_monoidalV2
 public import Theorems.Thm_AlgebraicGeometry_Proj_basicOpen_mul_eq_basicOpen_awayToSection
 public import P2M.Util
+public import Definitions.Def_AlgebraicGeometry_GradedOAlgebraSectionRing
+public import Mathlib.Order.CompletePartialOrder
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

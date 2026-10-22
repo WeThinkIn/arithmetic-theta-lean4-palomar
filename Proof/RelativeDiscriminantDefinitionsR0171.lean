@@ -2,6 +2,8 @@ module
 
 public import RelativeTorsionValueNaturalityR0170
 public import PullbackTensorSections
+public import RelativeKatoNaturalityDefinitionsR0170
+public import TensorPowerDefinitions
 
 @[expose] public section
 

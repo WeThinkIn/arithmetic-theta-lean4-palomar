@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.Immersion
 public import Definitions.Def_AlgebraicGeometry_AdicThickening
 public import Definitions.Def_AlgebraicGeometry_ProjSpace
 public import Theorems.Thm_AlgebraicGeometry_isPullback_adicThickening_pullback

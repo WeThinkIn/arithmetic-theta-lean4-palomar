@@ -1,6 +1,7 @@
 module
 
 public import CoherentMetaplecticPullbackR0207
+public import MetaplecticStackDefinitionsR0207
 
 @[expose] public section
 

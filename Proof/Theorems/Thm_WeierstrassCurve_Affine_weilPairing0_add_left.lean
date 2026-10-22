@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_EllipticCurve_WeilPairingFun
 public import P2M.Util
 public import P2M.Sol.S_WeierstrassCurve_Affine_weilPairing0_add_left

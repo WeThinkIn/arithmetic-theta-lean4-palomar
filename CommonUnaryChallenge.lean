@@ -524,7 +524,7 @@ def structureMap(W:z3 F):Curve F W⟶Spec (zCR F):=projModelStrCR vD
 def origin(W:z3 F):Spec (zCR F)⟶Curve F W:=(kwZeroSect F W).val
 abbrev Law(W:z3 F):=WeierstrassProjModel.RelativeGroupLaw F (structureMap F W)
 def IsOriginLaw(W:z3 F)(G:Law F W):Prop:=(∀ {V:zS.{u}} (t:V⟶Spec (zCR F)),(G.one t).val=t≫origin F W)∧(∀ {V:zS.{u}} (t:V⟶Spec (zCR F)) (x y:sh t (structureMap F W)),G.mul t x y=G.mul t y x)
-def originPoint(W:z3 F):Curve F W:=origin F W (IsLocalRing.closedPoint F)
+def originPoint(W:z3 F):Curve F W:=origin F W (@IsLocalRing.closedPoint F _ (@HenselianLocalRing.toIsLocalRing F _ (Field.henselian F)))
 def katoOrder(W:z3 F)(G:Law F W)(c:ℕ)(x:Curve F W):ℤ:=by
   classical
   exact (if x=originPoint F W then (c:ℤ)^2 else 0) - (if wJ c x=originPoint F W then 1 else 0)

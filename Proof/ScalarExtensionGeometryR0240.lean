@@ -5,6 +5,8 @@ public import FieldComponentGeometryR0237
 public import Theorems.Thm_AlgebraicGeometry_geometricallyIrreducible_iff_bijective_appTop_of_isProper_of_smooth
 public import Theorems.Thm_AlgebraicGeometry_geometricallyReduced_of_isReduced_of_charZero
 public import Theorems.Thm_AlgebraicGeometry_exists_eq_snd_comp_of_comp_eq_const_of_isProper
+public import DiskFrameComparisonAdapterR0192
+public import IndexedFullUnaryFactorizationR0188
 
 @[expose] public section
 

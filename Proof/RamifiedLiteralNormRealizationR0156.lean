@@ -6,6 +6,7 @@ public import LiteralQuotientAlgebraizationR0153
 public import CompatibleFormalSectionBasisR0134
 public import CompatibleProjectiveEmbeddingsR0135
 public import ProjectiveTowerEffectivityR0135
+public import RamifiedFunctionFieldExpansionR0155
 
 @[expose] public section
 

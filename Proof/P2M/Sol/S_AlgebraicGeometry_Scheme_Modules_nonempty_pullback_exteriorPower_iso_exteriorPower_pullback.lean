@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ModulesDet
 public import Definitions.Def_AlgebraicGeometry_ModulesRestrictOpen
 public import P2M.Util

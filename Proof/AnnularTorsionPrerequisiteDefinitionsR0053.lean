@@ -3,6 +3,8 @@ module
 public import ScaledThetaFiniteSpecializationR0050
 public import ScaledCompletedNodeNormalDomainR0051
 public import ScaledGammaUnitProductR0050
+public import ScaledAnnularDefinitionsR0050
+public import Mathlib.AlgebraicGeometry.Scheme
 
 @[expose] public section
 

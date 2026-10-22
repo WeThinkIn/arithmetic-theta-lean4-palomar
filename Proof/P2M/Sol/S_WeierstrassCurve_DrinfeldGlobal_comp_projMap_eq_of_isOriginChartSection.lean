@@ -1,7 +1,7 @@
 module
 
-public import Mathlib
-public import Mathlib
+public import Definitions.Def_WeierstrassCurve_SectionAtOrigin
+public import Definitions.Def_WeierstrassCurve_DrinfeldTransportPin
 public import Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary
 public import Definitions.Def_WeierstrassCurve_DrinfeldLevelFunctor
 public import P2M.Util

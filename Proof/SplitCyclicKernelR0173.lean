@@ -1,6 +1,7 @@
 module
 
 public import RelativeCyclicQuotientDefinitionsR0173
+public import Theorems.Thm_WeierstrassProjModel_projModelStrCR_isProper
 
 @[expose] public section
 

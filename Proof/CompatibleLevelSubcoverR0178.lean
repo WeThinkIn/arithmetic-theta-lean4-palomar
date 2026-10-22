@@ -1,6 +1,9 @@
 module
 
 public import CompatibleLevelDefinitionsR0178
+public import LegendreFamilyGeometryR0176
+public import FullLevelCoverGeometryR0175
+public import Mathlib.GroupTheory.Nilpotent
 
 @[expose] public section
 

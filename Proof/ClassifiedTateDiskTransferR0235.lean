@@ -1,6 +1,7 @@
 module
 
 public import TateHodgeGeneratorTransferR0235
+public import OpenHodgeConstantComparisonR0234
 
 @[expose] public section
 

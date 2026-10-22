@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.RegularLocalRing.Polynomial
+public import Mathlib.RingTheory.TotallySplit
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation
 public import Definitions.Def_Mathlib_RingTheory_SmoothAlgebraOverFieldRegularStalks
 
 @[expose] public section

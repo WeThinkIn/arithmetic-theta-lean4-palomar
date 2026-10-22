@@ -4,6 +4,13 @@ public import CoefficientGenericKatoSquareR0157
 public import CoefficientFunctionFieldExpansionR0157
 public import LiteralCoefficientTransportR0157
 public import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed
+public import CoefficientCompletedMapsR0157
+public import LiteralSplitGeometricNormR0156
+public import RamifiedLiteralQuotientR0156
+public import RamifiedFunctionFieldExpansionR0155
+public import ActualKatoFieldBaseChangeR0151
+public import ProjectiveTowerEffectivityR0135
+public import CompatibleProjectiveEmbeddingsR0135
 
 @[expose] public section
 

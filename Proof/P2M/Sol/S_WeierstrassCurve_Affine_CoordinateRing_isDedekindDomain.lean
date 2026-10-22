@@ -7,6 +7,7 @@ public import Mathlib.RingTheory.Jacobson.Ring
 public import Mathlib.FieldTheory.IsAlgClosed.Basic
 public import Mathlib.Tactic.LinearCombination
 public import P2M.Util
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

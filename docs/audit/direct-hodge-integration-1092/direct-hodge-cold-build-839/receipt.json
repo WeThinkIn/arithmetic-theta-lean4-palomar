@@ -1,0 +1,17 @@
+{
+  "passed": false,
+  "state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ControlGroup": "",
+    "MemoryCurrent": "[not set]",
+    "ActiveState": "inactive",
+    "SubState": "dead"
+  },
+  "seconds": 5481.0379102583975,
+  "sources_unchanged": true,
+  "stopped_for_disk": true,
+  "peak_observed_cgroup_bytes": 15032283136,
+  "scope": "Local cold CommonUnary Solution build; full comparator and official preflight remain separate",
+  "limitation": "Larger host and shared external cache mappings differ from official runner; a local pass is not an official pass"
+}

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_Module_Flat_ker_of_surjective_of_flat
 public import Theorems.Thm_Module_Flat_ker_baseChange_eq_bot_and_ker_le_range_of_flat_of_exact
 public import P2M.Util

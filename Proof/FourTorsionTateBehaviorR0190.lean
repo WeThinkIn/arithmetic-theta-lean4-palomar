@@ -1,6 +1,9 @@
 module
 
 public import GlobalFourTorsionDefinitionsR0190
+public import TateMarkedRootIdentity
+public import GlobalFamilyDiscriminantR0180
+public import TwoTorsionSplitCubicR0177
 
 @[expose] public section
 

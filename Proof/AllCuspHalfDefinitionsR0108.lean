@@ -3,6 +3,9 @@ module
 public import TateMarkedCuspOrders
 public import FourTorsionRoot
 public import FormalPowerRootsR0094
+public import FourTorsionDefinitions
+public import TateSeriesDefinitions
+public import Mathlib.RingTheory.PowerSeries.Substitution
 
 @[expose] public section
 

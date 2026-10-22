@@ -1,6 +1,7 @@
 module
 
 public import SymmetricMarkingDefinitionsR0142
+public import GeometricThetaRelationsR0141
 
 @[expose] public section
 

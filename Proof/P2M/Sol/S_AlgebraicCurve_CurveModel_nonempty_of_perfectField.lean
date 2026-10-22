@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.PicardGroup
+public import Mathlib.Algebra.Field.Shrink
 public import Definitions.Def_AlgebraicCurve_CurveModel
 public import Definitions.Def_AlgebraicCurve_CurveModelConstruction
 public import Definitions.Def_AlgebraicCurve_RatFuncPlaces

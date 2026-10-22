@@ -1,6 +1,11 @@
 module
 
 public import SharpKernelDefinitionsR0195
+public import DiskFrameCompletedCoordinateR0189
+public import LiftedCuspCompletionR0189
+public import IndexedFullUnaryFactorizationR0188
+public import FixedLineFiniteJet
+public import Mathlib.Analysis.CStarAlgebra.Classes
 
 @[expose] public section
 

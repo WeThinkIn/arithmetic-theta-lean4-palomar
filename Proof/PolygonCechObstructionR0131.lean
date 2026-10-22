@@ -1,6 +1,7 @@
 module
 
 public import TruncatedLaurentPresentationR0131
+public import PolygonCohomologyDefinitionsR0131
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

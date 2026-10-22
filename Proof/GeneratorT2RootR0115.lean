@@ -2,6 +2,7 @@ module
 
 public import BasisCoordinateGeometryR0115
 public import BasisRightActionR0115
+public import TwoTorsionTranslation
 
 @[expose] public section
 

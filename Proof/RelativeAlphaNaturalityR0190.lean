@@ -2,6 +2,9 @@ module
 
 public import RelativeFourTorsionRootR0190
 public import RelativeNormalizedDifferentialR0190
+public import LegendreNormalFormR0177
+public import FullLevelBaseChangeR0175
+public import RelativeTorsionValueNaturalityR0170
 
 @[expose] public section
 

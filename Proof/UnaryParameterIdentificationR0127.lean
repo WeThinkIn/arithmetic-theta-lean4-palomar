@@ -1,6 +1,10 @@
 module
 
 public import OrthogonalConsumerDefinitionsR0127
+public import FormalSchrodingerDefinitionsR0119
+public import UnaryThetaProducts
+public import Mathlib.RingTheory.PowerSeries.Expand
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 

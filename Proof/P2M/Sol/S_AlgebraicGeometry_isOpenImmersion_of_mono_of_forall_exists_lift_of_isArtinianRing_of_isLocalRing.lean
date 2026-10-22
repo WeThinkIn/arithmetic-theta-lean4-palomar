@@ -1,6 +1,14 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.Morphisms.FlatMono
+public import Mathlib.AlgebraicGeometry.Noetherian
+public import Mathlib.Algebra.Category.Ring.Epi
 public import Theorems.Thm_Module_flat_of_maximalIdeal_rTensor_injective_of_isLocalHom
 public import P2M.Util
 

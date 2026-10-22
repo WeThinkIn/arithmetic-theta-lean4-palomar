@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_Patching_SystemTypes
 public import P2M.Util
 public import P2M.Sol.S_Module_depth_le_ringKrullDim_quotient_of_mem_associatedPrimes

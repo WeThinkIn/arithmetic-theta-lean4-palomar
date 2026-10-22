@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Std.Tactic.BVDecide.Normalize.Prop
 public import Definitions.Def_JacJ1Iface
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawFibre
 public import Definitions.Def_AlgebraicGeometry_SchemeFibreEndo

@@ -2,8 +2,14 @@ module
 
 public import SchemeFourCoverGeometryR0216
 public import Theorems.Thm_AlgebraicGeometry_isClopen_preimage_diagonal_of_formallyUnramified_of_isSeparated
+public import SchemePhaseNaturalityR0215
+public import SchemeFourMarkingActionR0215
+public import SchemeThetaEvaluationR0213
 
 @[expose] public section
+
+-- Preserve original field inference without overriding specialized local-ring instances.
+attribute [local instance 999] HenselianLocalRing.toIsLocalRing
 
 /-! Construction tools for the fixed-characteristic, fixed-phase subcover.
 All comparisons below are comparisons of the actual scheme morphisms. -/

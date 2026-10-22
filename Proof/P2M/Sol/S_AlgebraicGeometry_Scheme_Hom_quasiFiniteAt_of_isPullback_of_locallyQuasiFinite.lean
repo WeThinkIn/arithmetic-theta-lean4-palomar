@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Std.Tactic.BVDecide.Normalize.Prop
 public import Theorems.Thm_AlgebraicGeometry_LocallyQuasiFinite_descendsAlong_surjective_inf_flat_inf_quasiCompact
 public import P2M.Util
 

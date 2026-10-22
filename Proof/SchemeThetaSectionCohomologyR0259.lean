@@ -3,6 +3,7 @@ module
 public import SchemeThetaMarkingDefinitionsR0259
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_linearEquiv_tensorProduct_sections_pullback_of_isPullback
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_linearEquiv_tensorProduct_sections_pullback_of_forall_isPullback_of_iso
+public import RelativeSectionIntertwiningR0258
 
 @[expose] public section
 

@@ -7,6 +7,7 @@ public import CompletedMarkedSpecializationR0159
 public import MarkedKatoRegularityR0159
 public import GammaZeroLocusR0159
 public import Lean
+public import SplitPeriodKatoFormulaR0158
 
 @[expose] public section
 

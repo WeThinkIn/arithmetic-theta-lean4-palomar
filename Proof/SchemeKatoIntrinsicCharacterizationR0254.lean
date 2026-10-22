@@ -2,6 +2,7 @@ module
 
 public import CartierUnitRatioExtensionR0254
 public import GlobalUnitTwoThreeNormRigidityR0254
+public import SchemeKatoNormR0251
 
 @[expose] public section
 

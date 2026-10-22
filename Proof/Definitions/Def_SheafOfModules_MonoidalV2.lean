@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.CategoryTheory.Sites.SheafHom
+public import Mathlib.CategoryTheory.Monoidal.Braided.Reflection
+public import Mathlib.CategoryTheory.Localization.Monoidal.Basic
+public import Mathlib.Algebra.Category.ModuleCat.Sheaf.Localization
 public import Definitions.Def_PresheafOfModules_InternalHom
 public import Definitions.Def_SheafOfModules_Monoidal
 

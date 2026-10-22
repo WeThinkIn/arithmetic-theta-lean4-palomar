@@ -4,6 +4,15 @@ public import Mathlib.LinearAlgebra.Dual.Defs
 public import Mathlib.Data.ZMod.QuotientRing
 public import Mathlib.Algebra.Exact
 public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+public import Mathlib.Tactic.ContinuousFunctionalCalculus
+public import Mathlib.LinearAlgebra.Quotient.Defs
+public import Mathlib.LinearAlgebra.Pi
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Tactic.Ring.RingNF
+public import Mathlib.Tactic.NormNum.OfScientific
+public import Mathlib.Tactic.NormNum.DivMod
+public import Mathlib.Tactic.NormNum.Abs
+public import Mathlib.Data.Rat.Cast.Order
 
 @[expose] public section
 

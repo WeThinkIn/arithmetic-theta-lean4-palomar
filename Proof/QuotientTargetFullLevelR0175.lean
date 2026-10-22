@@ -2,6 +2,8 @@ module
 
 public import FullLevelCyclicLiftsR0175
 public import FullLevelTorsionSplittingR0175
+public import CyclicQuotientTorsionKatoValueR0173
+public import RelativeCyclicQuotientExistenceR0173
 
 @[expose] public section
 

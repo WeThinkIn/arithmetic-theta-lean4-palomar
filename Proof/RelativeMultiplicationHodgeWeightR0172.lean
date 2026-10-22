@@ -2,6 +2,8 @@ module
 
 public import PointedHodgeFunctorialityR0172
 public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_formallyUnramified_schemeNsmul_of_isUnit_of_isLocalRing
+public import RelativeInitialHodgeSectionR0171
+public import Mathlib.Algebra.TrivSqZeroExt.Ideal
 
 @[expose] public section
 

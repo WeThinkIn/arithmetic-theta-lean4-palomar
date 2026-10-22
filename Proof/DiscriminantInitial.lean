@@ -1,6 +1,8 @@
 module
 
 public import DiscriminantDefinitions
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 

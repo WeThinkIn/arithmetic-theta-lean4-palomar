@@ -5,6 +5,7 @@ public import AlphaTensorCoherenceR0217
 public import AlphaDescentFaithfulnessR0217
 public import SchemeAlphaSectionR0215
 public import SchemeAlphaNaturalityR0215
+public import SchemeAlphaCharacterR0215
 
 @[expose] public section
 

@@ -4,6 +4,8 @@ public import CompletedChartDefinitions
 public import GeometricConstants
 public import Mathlib.RingTheory.AdicCompletion.Algebra
 public import Mathlib.RingTheory.Localization.Away.Basic
+public import Mathlib.RingTheory.LaurentSeries
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
 
 @[expose] public section
 

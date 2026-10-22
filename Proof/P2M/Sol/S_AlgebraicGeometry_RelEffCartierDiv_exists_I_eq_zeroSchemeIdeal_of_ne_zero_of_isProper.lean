@@ -13,6 +13,7 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_generic
 public import Theorems.Thm_AlgebraicGeometry_isReduced_of_smooth_over_field
 public import Theorems.Thm_AlgebraicCurve_finite_compl_of_isOpen
 public import P2M.Util
+public import Mathlib.AlgebraicGeometry.ZariskisMainTheorem
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

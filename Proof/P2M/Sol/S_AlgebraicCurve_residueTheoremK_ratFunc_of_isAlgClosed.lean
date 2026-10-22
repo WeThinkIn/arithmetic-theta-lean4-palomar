@@ -2,6 +2,8 @@ module
 
 public import P2M.Sol.S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosedPrelude
 import all P2M.Sol.S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosedPrelude
+public import Mathlib.Tactic.Monotonicity.Lemmas
+public import Mathlib.Topology.Sheaves.Presheaf
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

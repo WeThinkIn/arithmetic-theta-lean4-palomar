@@ -2,6 +2,7 @@ module
 
 public import CompletedActionEquivarianceR0153
 public import SplitMultiplicationNormR0153
+public import CompletedScalingExtensionR0153
 
 @[expose] public section
 

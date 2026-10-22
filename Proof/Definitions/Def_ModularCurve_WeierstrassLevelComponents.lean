@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_ModularCurve_WeierstrassLevelModuliDatum
 public import Definitions.Def_ModularCurve_KatzLevelP
 

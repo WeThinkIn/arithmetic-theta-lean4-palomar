@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.Extension.Cotangent.BaseChange
+public import Mathlib.RingTheory.RingHom.LocallyStandardSmooth
 public import Theorems.Thm_Algebra_H1Cotangent_liftBaseChange_map_injective_of_etale
 public import P2M.Util
 

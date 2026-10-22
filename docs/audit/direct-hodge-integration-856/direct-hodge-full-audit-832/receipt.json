@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "stage": "OriginalEndpointAudit",
+      "exit_code": 0,
+      "required_marker_present": true,
+      "seconds": 6.072874301113188,
+      "log_sha256": "e0f6e61c76a794c64d0db522cec4f67fe99ee59399a3e9eac294eeb721dd5578"
+    },
+    {
+      "stage": "ExactEndpointAudit",
+      "exit_code": 0,
+      "required_marker_present": true,
+      "seconds": 36.86085847392678,
+      "log_sha256": "47bebcf2a2a656c7de517b02e47667e736770dbc5cb83639f3159e70519a6721"
+    },
+    {
+      "stage": "FullNamedAudit",
+      "exit_code": 0,
+      "required_marker_present": true,
+      "seconds": 11.029721825849265,
+      "log_sha256": "1f479dbcdeb30e741ec6538e08e9d4995778f9331406e10a214bffe84809f7ef"
+    }
+  ],
+  "bindings_unchanged": true,
+  "utc": "2026-10-21T21:07:04.217842+00:00",
+  "scope": "All103 original endpoint checks plus all original non-internal named declarations across3915 modules: exact kinds/types/universes/definition bodies and standard axiom closures; internal generated names excluded; no official acceptance"
+}

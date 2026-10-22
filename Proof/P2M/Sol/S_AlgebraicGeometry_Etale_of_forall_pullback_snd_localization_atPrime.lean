@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_AlgebraicGeometry_FormallyUnramified_of_forall_pullback_snd_localization_atPrime
 public import Theorems.Thm_AlgebraicGeometry_Flat_of_forall_pullback_snd_localization_atPrime
 public import P2M.Util

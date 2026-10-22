@@ -1,6 +1,8 @@
 module
 
 public import AlgebraizedMarkedLineDefinitionsR0136
+public import AlgebraizedGeometricConnectednessR0135
+public import SplitFiniteMarkedDivisorR0133
 
 @[expose] public section
 

@@ -2,6 +2,8 @@ module
 
 public import PhaseFreeKeyR0219
 public import PhaseFreeMultiplierBaseChangeR0219
+public import PhaseFreeAlphaDescentR0219
+public import EvenKeyBaseChangeR0217
 
 @[expose] public section
 

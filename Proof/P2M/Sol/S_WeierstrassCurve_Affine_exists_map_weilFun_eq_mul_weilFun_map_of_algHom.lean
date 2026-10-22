@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_EllipticCurve_WeilPairingFun
 public import Theorems.Thm_WeierstrassCurve_Affine_valuation_weilFun
 public import Theorems.Thm_WeierstrassCurve_card_torsion_of_isAlgClosed

@@ -1,6 +1,7 @@
 module
 
 public import CoefficientModelBaseChangeR0157
+public import RamifiedKatoBaseChangeR0155
 
 @[expose] public section
 

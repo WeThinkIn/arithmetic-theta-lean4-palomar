@@ -4,6 +4,7 @@ public import GeneralKatoPrincipalityR0168
 public import GeneralCoprimeDivisorNormR0168
 public import Theorems.Thm_WeierstrassProjModel_kw_hgi_geometricallyIntegral_of_baseChangeIso
 public import Theorems.Thm_WeierstrassProjModel_projModel_pullback_iso_baseChange
+public import ActualKatoFunctionExistenceR0151
 
 @[expose] public section
 

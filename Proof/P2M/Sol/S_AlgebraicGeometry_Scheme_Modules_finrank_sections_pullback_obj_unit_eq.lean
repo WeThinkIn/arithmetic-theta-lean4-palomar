@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_TwoChartCechSectionsOf
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_nonempty_pullback_obj_unit_iso_unit
 public import P2M.Util

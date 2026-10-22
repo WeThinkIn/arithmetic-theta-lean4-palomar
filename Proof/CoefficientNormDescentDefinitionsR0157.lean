@@ -3,6 +3,7 @@ module
 public import RamifiedLiteralNormRealizationR0156
 public import ActualKatoAnnularComparisonR0152
 public import ActualKatoFieldBaseChangeR0151
+public import KatoAnnularDefinitionsR0152
 
 @[expose] public section
 

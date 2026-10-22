@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
 public import Theorems.Thm_LinearMap_exists_linearEquiv_extQuot_forall_comp_eq_of_surjective
 public import Theorems.Thm_LinearMap_exists_isBaseChange_extQuot_of_flat_of_surjective
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom

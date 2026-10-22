@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "results": {
+    "stock-lean": {
+      "exit_code": 0,
+      "seconds": 2523.099728736561,
+      "peak_rss_bytes": 8980287488,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+        "--silent",
+        "--from-export",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-hodge-direct-naturality-export-827/solution.ndjson"
+      ]
+    },
+    "conron": {
+      "exit_code": 0,
+      "seconds": 432.50066426815465,
+      "peak_rss_bytes": 8293384192,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/con-ron",
+        "--verified",
+        "--jobs=2",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-hodge-direct-naturality-export-827/solution.ndjson"
+      ]
+    },
+    "nanoda": {
+      "exit_code": 0,
+      "seconds": 579.6653777183965,
+      "peak_rss_bytes": 2738495488,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-hodge-direct-naturality-kernels-828/nanoda.json"
+      ]
+    }
+  },
+  "positive_kernel_markers": true,
+  "bindings_unchanged": true,
+  "scope": "Three unchanged independent kernels on full dependency closure of optimized original hodge transport and all-cusp theorem. Exact original declaration audit required upstream; integration, cold-build and official whole-paper acceptance remain pending."
+}

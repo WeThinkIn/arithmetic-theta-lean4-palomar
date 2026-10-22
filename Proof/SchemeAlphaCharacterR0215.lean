@@ -2,6 +2,8 @@ module
 
 public import SchemeAlphaNaturalityR0215
 public import SchemePhaseMarkingInvarianceR0215
+public import SchemeFourMarkingActionR0215
+public import SchemeAlphaSectionR0215
 
 @[expose] public section
 

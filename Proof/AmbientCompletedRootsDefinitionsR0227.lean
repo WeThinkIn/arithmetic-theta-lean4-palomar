@@ -4,8 +4,12 @@ public import AlgebraicBranchFiniteModelR0226
 public import CompletionUniformizer
 public import Theorems.Thm_AlgebraicGeometry_exists_adicCompletion_stalk_ringEquiv_powerSeries_of_smoothOfRelativeDimension_one
 public import Mathlib.FieldTheory.IntermediateField.Adjoin.Basic
+public import AlgebraicBranchDefinitionsR0226
 
 @[expose] public section
+
+-- Preserve original field inference without overriding specialized local-ring instances.
+attribute [local instance 999] HenselianLocalRing.toIsLocalRing
 
 /-! Actual completed disks and prescribed roots in an arbitrary ambient field.
 The finite algebraic subfield and every geometric realization are outputs. -/

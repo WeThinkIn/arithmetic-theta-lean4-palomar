@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_PresheafOfModules_InternalHom
 public import P2M.Util
 public import P2M.Sol.S_PresheafOfModules_isSheaf_ihomObj

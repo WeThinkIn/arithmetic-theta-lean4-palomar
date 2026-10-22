@@ -4,6 +4,7 @@ public import FPQCRootStackR0198
 public import Mathlib.CategoryTheory.Comma.Basic
 public import Mathlib.CategoryTheory.Category.ULift
 public import Mathlib.CategoryTheory.Yoneda
+public import RootModuliPseudofunctorR0198
 
 @[expose] public section
 

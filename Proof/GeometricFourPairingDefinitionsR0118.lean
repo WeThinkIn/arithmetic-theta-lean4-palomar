@@ -2,6 +2,8 @@ module
 
 public import ArithmeticMillerPairingR0116
 public import FullMarkingCharacterR0115
+public import MillerReciprocityDefinitionsR0116
+public import MarkingCharacterDefinitionsR0115
 
 @[expose] public section
 

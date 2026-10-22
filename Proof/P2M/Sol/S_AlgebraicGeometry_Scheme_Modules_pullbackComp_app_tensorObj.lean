@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ModulesPullbackMonoidalV2
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensorV2
 public import Definitions.Def_AlgebraicGeometry_ModulesPullbackLocalSection
@@ -8,6 +7,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_pullbackTensorObjIso
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] CategoryTheory.instHasWeakSheafifyOfHasSheafify
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_pullbackComp_app_tensorObj
 
 set_option autoImplicit false

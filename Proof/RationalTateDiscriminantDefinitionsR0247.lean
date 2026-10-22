@@ -1,6 +1,8 @@
 module
 
 public import PeriodOneDiscriminantR0246
+public import PeriodOneDiscriminantDefinitionsR0246
+public import SchemeDiscriminantDefinitionsR0244
 
 @[expose] public section
 

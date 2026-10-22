@@ -6,6 +6,7 @@ public import Theorems.Thm_AlgebraicCurve_Place_mem_of_ord_nonneg
 public import Theorems.Thm_AlgebraicCurve_RationalFunctionField_finite_setOf_ord_ne_zero
 public import Mathlib.FieldTheory.Minpoly.Field
 public import P2M.Util
+public import Definitions.Def_ModularCurve_CharLFrobeniusGeomLevel
 
 @[expose] public section
 namespace P2MW.S_AlgebraicCurve_finite_setOf_ord_ne_zero_of_finiteDimensional

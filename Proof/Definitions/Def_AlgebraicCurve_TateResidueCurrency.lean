@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.NumberTheory.FunctionField
+
 public import Definitions.Def_AlgebraicCurve_DivisorClassGroup
 public import Definitions.Def_AlgebraicCurve_DivisorPushPull
 public import Definitions.Def_ModularCurve_CanonicalDivisor

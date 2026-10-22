@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.AlgebraicGeometry.AffineTransitionLimit
+public import Mathlib.Tactic.Monotonicity.Lemmas
 public import Definitions.Def_Mathlib_Algebra_IsDirectLimit
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
@@ -8,6 +10,9 @@ public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] CompletePartialOrder.toSupSet
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_isAffineOpen_isFrameOn_preimage_of_isDirectLimit
 
 set_option autoImplicit false

@@ -6,6 +6,10 @@ public import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant
 public import Mathlib.RingTheory.RamificationInertia.Basic
 
 import all Mathlib.AlgebraicGeometry.Morphisms.FlatRank
+public import GenericLineCoefficients
+public import SectionDivisor
+public import PrincipalDegreeZero
+public import Mathlib.AlgebraicGeometry.Morphisms.FlatRank
 
 @[expose] public section
 set_option backward.privateInPublic true

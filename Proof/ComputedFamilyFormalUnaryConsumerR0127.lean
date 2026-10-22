@@ -2,6 +2,7 @@ module
 
 public import SourceOrthogonalFactorizationR0127
 public import UnaryParameterIdentificationR0127
+public import ComputedOrthogonalization
 
 @[expose] public section
 

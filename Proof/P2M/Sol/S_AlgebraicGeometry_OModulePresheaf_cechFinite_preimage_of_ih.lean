@@ -6,6 +6,7 @@ public import Mathlib.AlgebraicGeometry.Morphisms.ClosedImmersion
 public import Mathlib.AlgebraicGeometry.IdealSheaf.Subscheme
 public import Mathlib.RingTheory.Finiteness.Basic
 public import P2M.Util
+public import Mathlib.RingTheory.PicardGroup
 
 @[expose] public section
 namespace P2MW.S_AlgebraicGeometry_OModulePresheaf_cechFinite_preimage_of_ih

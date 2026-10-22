@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_EllipticCurve_WeilPairingFun
 public import Theorems.Thm_WeierstrassCurve_Affine_eq_zero_of_forall_transEquiv_eq
 public import Theorems.Thm_WeierstrassCurve_Affine_valuation_mulPull_le_of_ne_zero

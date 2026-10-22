@@ -1,6 +1,7 @@
 module
 
 public import FaithfulAnnularEvaluationR0156
+public import RamifiedPeriodDefinitionsR0154
 
 @[expose] public section
 

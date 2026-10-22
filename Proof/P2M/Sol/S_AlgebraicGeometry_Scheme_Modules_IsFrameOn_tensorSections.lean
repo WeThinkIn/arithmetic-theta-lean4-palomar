@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_PresheafOfModules_InternalHom
 public import Definitions.Def_SheafOfModules_Monoidal
 public import Definitions.Def_AlgebraicGeometry_ModulesTensorPow

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_JacJ1Iface
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawAction
 public import P2M.Util

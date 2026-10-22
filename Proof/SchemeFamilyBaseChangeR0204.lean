@@ -1,6 +1,7 @@
 module
 
 public import SchemeLevelDefinitionsR0204
+public import SchemeLocalWeierstrassR0203
 
 @[expose] public section
 

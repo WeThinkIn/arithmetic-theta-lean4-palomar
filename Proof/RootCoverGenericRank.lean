@@ -3,6 +3,7 @@ module
 public import RootCoverFlat
 
 import all Mathlib.AlgebraicGeometry.Morphisms.FlatRank
+public import Mathlib.AlgebraicGeometry.Morphisms.FlatRank
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

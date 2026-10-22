@@ -7,6 +7,7 @@ public import SchemeEvaluationNaturalityR0262
 public import SchemeInvariantComponentNaturalityR0262
 public import SchemeCommutatorNaturalityR0262
 public import SchemeGlobalSignAlignmentR0262
+public import SchemeGeometricSchrodingerR0261
 
 @[expose] public section
 

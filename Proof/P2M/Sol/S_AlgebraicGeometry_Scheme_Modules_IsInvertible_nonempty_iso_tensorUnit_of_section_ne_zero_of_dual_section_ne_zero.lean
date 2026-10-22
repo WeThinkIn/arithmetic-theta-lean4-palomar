@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
+public import Mathlib.Order.CompletePartialOrder
+public import Mathlib.Tactic.ENatToNat
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Definitions.Def_PresheafOfModules_InternalHom
 public import Definitions.Def_SheafOfModules_MonoidalV2

@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.Analysis.CStarAlgebra.Classes
+public import Mathlib.RingTheory.PowerSeries.Basic
 public import Det80CoefficientMinor
 
 @[expose] public section

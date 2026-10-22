@@ -4,6 +4,8 @@ public import Definitions.Def_AlgebraicGeometry_GradedOAlgebraToProj
 public import Definitions.Def_AlgebraicGeometry_ModulesProjPresentation
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import P2M.Util
+public import Definitions.Def_AlgebraicGeometry_GradedOAlgebraSectionRing
+public import Mathlib.Order.CompletePartialOrder
 
 @[expose] public section
 namespace P2MW.S_AlgebraicGeometry_Scheme_Modules_ClosedImmersionBySections_exists_iSup_eq_top_isFrameOn_of_isSectionRing

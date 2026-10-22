@@ -2,6 +2,9 @@ module
 
 public import SmoothNormalizedCurve
 public import NormalizationCurveDimension
+public import SmoothNormality
+public import NormalizationFinite
+public import SmoothDedekind
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency false

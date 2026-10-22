@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Mathlib.FieldTheory.RatFunc.Degree
 public import Mathlib.FieldTheory.IsAlgClosed.Basic
 public import Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty

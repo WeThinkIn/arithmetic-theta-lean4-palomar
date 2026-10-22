@@ -3,6 +3,8 @@ module
 public import TateNodeNormalForm
 public import TateNodeFiniteType
 public import TateNodeTorusCharts
+public import Mathlib.RingTheory.Etale.Weakly
+public import Mathlib.RingTheory.Polynomial.IsIntegral
 
 @[expose] public section
 

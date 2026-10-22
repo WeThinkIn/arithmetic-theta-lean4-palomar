@@ -1,6 +1,7 @@
 module
 
 public import FieldSharpKernelR0233
+public import ComputedPivotCoordinates
 
 @[expose] public section
 

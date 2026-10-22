@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_RingTheory_Sequence_IsWeaklyRegular_isZero_tor_one_quotient_ofList
 

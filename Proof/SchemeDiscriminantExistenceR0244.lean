@@ -1,6 +1,9 @@
 module
 
 public import SchemeDiscriminantDefinitionsR0244
+public import ArbitraryDiscriminantNaturalityR0243
+public import ArbitraryWeierstrassDiscriminantR0243
+public import SchemeCotangentCoherenceR0205
 
 @[expose] public section
 

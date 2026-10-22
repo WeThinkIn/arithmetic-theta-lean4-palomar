@@ -2,6 +2,7 @@ module
 
 public import InfinitesimalPolygonAtlasR0129
 public import Mathlib.AlgebraicGeometry.Morphisms.Flat
+public import InfinitesimalPolygonDefinitionsR0129
 
 @[expose] public section
 

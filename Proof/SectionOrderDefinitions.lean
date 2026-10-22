@@ -4,6 +4,7 @@ public import NormalizedSectionDefinitions
 public import LineRootGluing
 public import EffectiveDivisorBounds
 public import Mathlib.RingTheory.PowerSeries.Basic
+public import Mathlib.AlgebraicGeometry.OrderOfVanishing
 
 @[expose] public section
 

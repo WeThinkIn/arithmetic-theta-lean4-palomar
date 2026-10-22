@@ -1,6 +1,10 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.DedekindDomain.Different
+public import Mathlib.Tactic.ENatToNat
 public import Definitions.Def_AlgebraicCurve_IsCurveOver
 public import Definitions.Def_ModularCurve_CanonicalDivisor
 public import Definitions.Def_AlgebraicCurve_PlacesOverDVR

@@ -1,6 +1,7 @@
 module
 
 public import ScopedCuspDefinitionsR0102
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 

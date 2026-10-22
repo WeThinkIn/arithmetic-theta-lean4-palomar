@@ -3,6 +3,9 @@ module
 public import ArbitraryTwoCoordinatesR0202
 public import ArbitrarySplitCubicR0202
 public import RelativeFourTorsionRootR0190
+public import GlobalFourTorsionDefinitionsR0190
+public import OrderedLegendreParameterRigidityR0177
+public import FullLevelCyclicLiftsR0175
 
 @[expose] public section
 

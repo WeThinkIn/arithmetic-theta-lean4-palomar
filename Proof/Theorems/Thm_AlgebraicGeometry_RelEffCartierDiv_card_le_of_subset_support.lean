@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_RelEffCartierDiv
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_RelEffCartierDiv_card_le_of_subset_support

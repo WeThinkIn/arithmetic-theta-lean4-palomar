@@ -3,6 +3,8 @@ module
 public import PeriodOneNormDefinitionsR0248
 public import PeriodOneCoefficientDescentR0246
 public import FaithfulAnnularEvaluationR0156
+public import P2M.Sol.S_WeierstrassProjModel_exists_laurent_zChartRing_filtration
+public import Definitions.Def_EllipticCurve_FunctionFieldPullback
 
 @[expose] public section
 

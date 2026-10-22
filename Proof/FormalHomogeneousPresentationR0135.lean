@@ -1,6 +1,8 @@
 module
 
 public import ProjectiveEffectivityDefinitionsR0135
+public import PositiveSectionMultiplicationR0134
+public import CompatibleFormalSectionBasisR0134
 
 @[expose] public section
 

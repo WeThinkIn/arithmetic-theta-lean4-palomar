@@ -1,6 +1,7 @@
 module
 
 public import LocalPowerPullback
+public import NormalizationField
 
 @[expose] public section
 

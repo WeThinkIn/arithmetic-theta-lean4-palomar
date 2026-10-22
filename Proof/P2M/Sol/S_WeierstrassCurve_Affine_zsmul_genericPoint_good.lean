@@ -3,6 +3,7 @@ module
 public import Definitions.Def_EllipticCurve_FunctionFieldPullback
 public import Theorems.Thm_WeierstrassCurve_card_torsion_of_isAlgClosed
 public import P2M.Util
+public import Mathlib.RingTheory.SimpleRing.Principal
 
 @[expose] public section
 namespace P2MW.S_WeierstrassCurve_Affine_zsmul_genericPoint_good

@@ -2,6 +2,7 @@ module
 
 public import FramedRootCoefficientR0228
 public import KummerDegree
+public import AmbientCompletedRootsDefinitionsR0227
 
 @[expose] public section
 

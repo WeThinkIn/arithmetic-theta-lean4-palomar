@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_ModularCurve_KatzLevelP
 public import P2M.Util
 public import P2M.Sol.S_ModularCurve_IsLevelPStructure_exists_eq_nsmul_add_nsmul_of_isLevelPStructure

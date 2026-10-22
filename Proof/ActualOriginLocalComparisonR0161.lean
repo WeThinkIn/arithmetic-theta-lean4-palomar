@@ -4,6 +4,7 @@ public import FaithfulTaylorFieldR0161
 public import CompletedMarkedSpecializationR0159
 public import KatoAnnularDivisorR0152
 public import Mathlib.RingTheory.Flat.FaithfullyFlat.Algebra
+public import OriginInitialDefinitionsR0161
 
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 

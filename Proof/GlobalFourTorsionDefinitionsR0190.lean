@@ -4,6 +4,8 @@ public import ConservativeMatrixKernelR0189
 public import TwoTorsionAffineCoordinatesR0177
 public import TwoTorsionSplitCubicR0177
 public import TateMarkedRootIdentity
+public import BoundaryHodgeDefinitionsR0182
+public import RelativeCurveGeometryR0169
 
 @[expose] public section
 

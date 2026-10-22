@@ -2,6 +2,7 @@ module
 
 public import AllFourMillerProviderR0118
 import all MovedSupportMillerPairingR0116
+public import ArithmeticMillerPairingR0116
 
 @[expose] public section
 set_option backward.privateInPublic true

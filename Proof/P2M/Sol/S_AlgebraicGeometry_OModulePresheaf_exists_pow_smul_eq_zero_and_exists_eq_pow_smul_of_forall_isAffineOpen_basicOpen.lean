@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafIdealFiltration
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafCechPushforward
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_bijective_cechPushforward_of_isAffineOpen_preimage

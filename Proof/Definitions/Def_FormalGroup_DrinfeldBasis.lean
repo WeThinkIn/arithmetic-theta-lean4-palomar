@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Topology.Algebra.Nonarchimedean.AdicTopology
 public import Definitions.Def_FormalGroup_NSeries
 
 @[expose] public section

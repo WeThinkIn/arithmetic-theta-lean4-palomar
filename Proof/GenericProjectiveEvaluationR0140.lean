@@ -2,6 +2,7 @@ module
 
 public import GenericThetaBasisR0140
 public import AlgebraicIdentityEvaluationR0140
+public import Mathlib.Algebra.Ring.IsFormallyReal
 
 @[expose] public section
 

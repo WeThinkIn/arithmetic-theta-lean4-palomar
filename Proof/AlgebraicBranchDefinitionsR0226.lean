@@ -3,6 +3,7 @@ module
 public import PrescribedRootsFiniteConstantExtensionR0225
 public import ValuedExtensionPrescribedRootsR0223
 public import Mathlib.RingTheory.Valuation.LocalSubring
+public import ConstantExtensionDefinitionsR0225
 
 @[expose] public section
 

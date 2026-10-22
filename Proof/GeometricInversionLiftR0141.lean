@@ -1,6 +1,10 @@
 module
 
 public import GeometricThetaLiftsDefinitionsR0141
+public import AlgebraizedMarkedTransportR0137
+public import AlgebraizedActionLawsR0137
+public import GenericThetaBasisR0140
+public import MarkedSectionAlgebraizationR0136
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

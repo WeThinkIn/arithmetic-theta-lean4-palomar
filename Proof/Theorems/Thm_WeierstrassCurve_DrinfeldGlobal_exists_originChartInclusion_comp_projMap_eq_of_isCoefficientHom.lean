@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_FormalGroup_NSeries
 public import Definitions.Def_FormalGroup_DrinfeldBasis
 public import Definitions.Def_WeierstrassCurve_FormalGroupLaw

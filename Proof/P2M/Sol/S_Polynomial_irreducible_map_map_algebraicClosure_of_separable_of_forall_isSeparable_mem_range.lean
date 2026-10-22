@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.GroupTheory.MonoidLocalization.UniqueFactorization
+public import Mathlib.Algebra.MvPolynomial.Division
 public import Theorems.Thm_Algebra_TensorProduct_nilradical_isPrime_of_isAlgebraic_of_forall_isSeparable_mem_range
 public import P2M.Util
 

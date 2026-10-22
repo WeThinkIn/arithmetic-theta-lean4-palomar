@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
+public import Mathlib.AlgebraicGeometry.QuasiAffine
 public import Theorems.Thm_Module_Flat_exists_fg_subalgebra_flat_tensorProduct
 public import P2M.Util
 

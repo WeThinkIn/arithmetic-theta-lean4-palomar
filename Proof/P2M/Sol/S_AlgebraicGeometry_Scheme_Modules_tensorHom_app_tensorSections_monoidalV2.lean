@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 public import Definitions.Def_SheafOfModules_MonoidalV2
 public import Definitions.Def_PresheafOfModules_PullbackMonoidal
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensorV2

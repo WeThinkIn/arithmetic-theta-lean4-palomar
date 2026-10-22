@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_ModulesProjPresentation
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionZeroScheme
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_ratio_section

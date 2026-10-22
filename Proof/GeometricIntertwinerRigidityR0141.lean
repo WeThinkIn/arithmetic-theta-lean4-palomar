@@ -2,6 +2,7 @@ module
 
 public import GeometricScalarLiftR0141
 public import GeometricShiftLiftR0141
+public import SchrodingerCommonScalarR0119
 
 @[expose] public section
 

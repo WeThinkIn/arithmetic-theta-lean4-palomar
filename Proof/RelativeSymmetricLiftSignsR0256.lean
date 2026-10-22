@@ -1,6 +1,7 @@
 module
 
 public import RelativeThetaRelationsDefinitionsR0256
+public import RelativeMidpointSymmetricThetaLiftR0255
 
 @[expose] public section
 

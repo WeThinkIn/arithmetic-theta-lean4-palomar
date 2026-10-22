@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.TotallySplit
+public import Mathlib.Tactic.Monotonicity.Lemmas
 public import Theorems.Thm_Module_Flat_isOpen_setOf_flat_localization_atPrime
 public import Theorems.Thm_Module_Flat_exists_fg_subalgebra_flat_localization_tensorProduct
 public import P2M.Util

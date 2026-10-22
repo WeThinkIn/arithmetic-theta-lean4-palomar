@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
+public import Mathlib.AlgebraicGeometry.Morphisms.Proper
 public import Theorems.Thm_AlgebraicGeometry_exists_fg_subalgebra_isAffine_pullback_of_isAffine_pullback
 public import Theorems.Thm_Algebra_TensorProduct_exists_fg_subalgebra_surjective_map_of_surjective_map
 public import P2M.Util

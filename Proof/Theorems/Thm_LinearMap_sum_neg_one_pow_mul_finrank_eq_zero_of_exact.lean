@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_LinearMap_sum_neg_one_pow_mul_finrank_eq_zero_of_exact
 

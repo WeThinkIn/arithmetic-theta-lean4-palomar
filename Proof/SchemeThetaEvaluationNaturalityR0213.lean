@@ -1,6 +1,7 @@
 module
 
 public import SchemeThetaEvaluationR0213
+public import ThetaLineBaseChangeR0212
 
 @[expose] public section
 

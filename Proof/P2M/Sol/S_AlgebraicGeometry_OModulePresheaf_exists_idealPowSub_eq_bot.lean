@@ -5,6 +5,7 @@ public import Mathlib.AlgebraicGeometry.Noetherian
 public import Mathlib.RingTheory.Localization.Away.Basic
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafIdealFiltration
 public import P2M.Util
+public import Mathlib.Order.CompletePartialOrder
 
 @[expose] public section
 namespace P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_idealPowSub_eq_bot

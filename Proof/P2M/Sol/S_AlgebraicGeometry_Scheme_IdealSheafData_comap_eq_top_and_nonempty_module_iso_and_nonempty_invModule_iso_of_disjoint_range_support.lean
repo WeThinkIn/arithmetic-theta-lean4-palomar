@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Std.Tactic.BVDecide.Normalize.Prop
 public import Definitions.Def_AlgebraicGeometry_IdealSheafModule
 public import Definitions.Def_AlgebraicCurve_RelCartier
 public import Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_IsInvertible_nonempty_module_tensor_invModule_iso

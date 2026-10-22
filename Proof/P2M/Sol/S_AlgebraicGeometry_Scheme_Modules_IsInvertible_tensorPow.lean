@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_ModulesTensorPowV2
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor
 public import Definitions.Def_AlgebraicGeometry_ModulesTensorPow
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_tensor

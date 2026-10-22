@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_LinearMap_forall_smul_eq_zero_of_baseChange_eq_zero_and_forall_exists_baseChange_eq_smul_of_flat
 public import P2M.Util
 

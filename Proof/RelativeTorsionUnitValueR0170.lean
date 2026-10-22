@@ -2,6 +2,7 @@ module
 
 public import RelativeKatoNaturalityDefinitionsR0170
 public import Theorems.Thm_AlgebraicGeometry_eq_of_comp_eq_of_formallyUnramified_of_preconnectedSpace
+public import RelativeKatoExistenceR0169
 
 @[expose] public section
 

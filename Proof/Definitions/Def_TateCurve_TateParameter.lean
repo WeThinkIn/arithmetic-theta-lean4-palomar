@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.Topology.MetricSpace.Contracting
+public import Mathlib.Algebra.Order.Ring.Star
 public import Definitions.Def_TateCurve_QSeries
 
 @[expose] public section

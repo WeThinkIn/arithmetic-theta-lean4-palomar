@@ -2,6 +2,8 @@ module
 
 public import FaithfulAnnularEvaluationR0156
 public import LocalGammaProviderBridgeR0065
+public import LaurentGammaNonzeroR0064
+public import LaurentGammaExistenceR0064
 
 @[expose] public section
 

@@ -2,6 +2,7 @@ module
 
 public import ReversalCharacterR0218
 public import SchemePairingReversalR0218
+public import EvenCoverRightActionR0216
 
 @[expose] public section
 

@@ -1,6 +1,7 @@
 module
 
 public import GenericOverlapDefinitionsR0065
+public import Mathlib.RingTheory.Etale.Weakly
 
 @[expose] public section
 

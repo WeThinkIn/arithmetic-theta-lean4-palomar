@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import P2M.Util
 public import P2M.Sol.S_WeierstrassProjModel_exists_fromZeroRingHom_eq_of_awayMap_eq

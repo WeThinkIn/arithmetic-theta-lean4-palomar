@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AdjoinRoot_isDomain_and_isIntegrallyClosed_of_isUnit_derivative
 

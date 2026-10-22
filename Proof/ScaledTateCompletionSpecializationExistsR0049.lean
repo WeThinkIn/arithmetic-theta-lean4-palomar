@@ -4,6 +4,8 @@ public import ScaledTateCompletionNodeIdealPowerTransportR0049
 public import ScaledTateCompletionStageCompatibilityR0049
 public import ScaledTateNodeCompletion
 public import ScaledTateCompletionTargetIdealSeparated
+public import Mathlib.RingTheory.AdicCompletion.RingHom
+public import Mathlib.RingTheory.AdicCompletion.Completeness
 
 @[expose] public section
 

@@ -1,6 +1,11 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.PiTensorProduct
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
+public import Mathlib.Algebra.Order.Ring.Star
+public import Mathlib.Tactic.Monotonicity.Lemmas
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCover
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCechGradedModule
 

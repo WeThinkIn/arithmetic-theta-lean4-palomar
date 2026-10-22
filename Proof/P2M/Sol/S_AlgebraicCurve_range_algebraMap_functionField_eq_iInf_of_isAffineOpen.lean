@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicCurve_DivisorClassGroup
 public import Definitions.Def_AlgebraicCurve_CurveModel
 public import Theorems.Thm_AlgebraicGeometry_IsAffineOpen_range_algebraMap_functionField_eq_iInf

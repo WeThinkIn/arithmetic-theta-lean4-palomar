@@ -2,6 +2,12 @@ module
 
 public import TateGammaAnnular
 public import TatePartialXStabilization
+public import UnaryThetaProduct
+public import FormalNormProduct
+public import TateCoeffXTerm
+public import Mathlib.RingTheory.PowerSeries.Expand
+public import Mathlib.Data.Finsupp.Pointwise
+public import Mathlib.Algebra.AffineMonoid.UniqueSums
 
 @[expose] public section
 

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicCurve_IsCurveOver
 public import Theorems.Thm_AlgebraicCurve_finite_setOf_ord_ne_zero_of_finiteDimensional
 public import Theorems.Thm_AlgebraicCurve_RationalFunctionField_hasPrincipalDivisors

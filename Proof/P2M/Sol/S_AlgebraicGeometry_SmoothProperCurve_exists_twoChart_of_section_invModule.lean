@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Geometrically.Integral
 public import Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCover
 public import Definitions.Def_AlgebraicGeometry_SmoothProperCurveFiniteMapData

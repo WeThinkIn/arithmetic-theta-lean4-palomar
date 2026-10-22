@@ -2,6 +2,7 @@ module
 
 public import BasisRightActionR0115
 public import BasisCoordinateGeometryR0115
+public import ActualMillerPhaseR0114
 
 @[expose] public section
 

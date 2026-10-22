@@ -1,6 +1,10 @@
 module
 
 public import CoherentMetaplecticPullbackR0207
+public import MetaplecticStackDefinitionsR0207
+public import CategoricalRootDescentR0198
+public import NaturalMetaplecticComparisonR0206
+public import LegendreLevelFamilyConstructionR0176
 
 @[expose] public section
 

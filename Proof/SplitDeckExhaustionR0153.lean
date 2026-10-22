@@ -2,6 +2,7 @@ module
 
 public import MarkedFieldActionR0153
 public import Mathlib.FieldTheory.Fixed
+public import CoprimeTorsionDivisorNormR0150
 
 @[expose] public section
 

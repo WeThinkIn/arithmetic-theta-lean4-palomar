@@ -4,6 +4,9 @@ public import AnnularNormBridgeDefinitionsR0156
 
 @[expose] public section
 
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
+
 /-! Faithful evaluation of the completed annulus at a transcendental coordinate. -/
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

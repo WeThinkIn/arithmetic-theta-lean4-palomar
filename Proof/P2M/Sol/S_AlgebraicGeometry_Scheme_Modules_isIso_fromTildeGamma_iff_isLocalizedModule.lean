@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Modules.Tilde
+public import Mathlib.Tactic.ENatToNat
 public import Theorems.Thm_TopCat_Sheaf_isIso_of_isIso_app_of_isBasis
 public import P2M.Util
 

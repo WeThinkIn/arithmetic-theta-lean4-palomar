@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ModulesPullbackLocalSection
 public import Definitions.Def_AlgebraicGeometry_ModulesSectionZeroScheme
 public import Definitions.Def_AlgebraicGeometry_RelativePicardFunctor

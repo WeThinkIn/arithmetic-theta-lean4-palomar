@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Morphisms.Etale
 public import Definitions.Def_PresheafOfModules_ExteriorPower
 public import Definitions.Def_AlgebraicGeometry_ModulesDet
 public import Definitions.Def_AlgebraicGeometry_KaehlerModule

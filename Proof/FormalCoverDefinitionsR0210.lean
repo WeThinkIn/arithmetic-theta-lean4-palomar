@@ -1,6 +1,8 @@
 module
 
 public import ProperNoPoleRootR0089
+public import FormalConstantDefinitions
+public import GeometricPrerequisiteDefinitions
 
 @[expose] public section
 

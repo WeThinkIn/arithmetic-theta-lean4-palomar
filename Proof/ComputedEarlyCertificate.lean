@@ -3,6 +3,8 @@ module
 public import ComputedCoefficientMatrix
 public import ComputedNullspaceBasis
 public import RationalMatrixScalarExtension
+public import EliminationReduction
+public import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation
 
 @[expose] public section
 

@@ -1,6 +1,8 @@
 module
 
 public import ArbitraryGeometricPhaseR0214
+public import RelativePhaseBaseChangeR0211
+public import ArbitraryCompatibleLocalCoverageR0202
 
 @[expose] public section
 

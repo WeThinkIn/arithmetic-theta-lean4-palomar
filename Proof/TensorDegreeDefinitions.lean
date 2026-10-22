@@ -2,6 +2,7 @@ module
 
 public import SectionOrderDefinitions
 public import TensorProductLaws
+public import TensorPowerDefinitions
 
 @[expose] public section
 

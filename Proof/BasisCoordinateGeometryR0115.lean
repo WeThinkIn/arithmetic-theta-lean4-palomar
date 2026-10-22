@@ -2,6 +2,7 @@ module
 
 public import MarkingCharacterDefinitionsR0115
 public import Mathlib.Tactic.FinCases
+public import FourTorsionRoot
 
 @[expose] public section
 

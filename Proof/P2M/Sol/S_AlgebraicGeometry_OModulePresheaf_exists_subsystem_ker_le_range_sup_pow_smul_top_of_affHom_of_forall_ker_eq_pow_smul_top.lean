@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.Noetherian
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafHom
 public import Theorems.Thm_Ideal_exists_forall_ker_le_map_proj_sup_pow_smul_top_and_pow_smul_top_inf_le_of_forall_ker_eq_pow_smul_top
 public import P2M.Util

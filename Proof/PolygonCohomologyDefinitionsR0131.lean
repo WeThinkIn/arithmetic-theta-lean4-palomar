@@ -2,6 +2,7 @@ module
 
 public import ProperFlatPolygonTowerR0130
 public import Mathlib.AlgebraicGeometry.Morphisms.Smooth
+public import InfinitesimalPolygonProperR0129
 
 @[expose] public section
 

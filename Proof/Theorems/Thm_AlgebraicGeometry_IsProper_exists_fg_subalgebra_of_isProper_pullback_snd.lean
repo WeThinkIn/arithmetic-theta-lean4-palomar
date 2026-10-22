@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_IsProper_exists_fg_subalgebra_of_isProper_pullback_snd
 

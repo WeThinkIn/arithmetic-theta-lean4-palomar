@@ -1,6 +1,8 @@
 module
 
 public import CoefficientModelBaseChangeR0157
+public import CoefficientNormDescentDefinitionsR0157
+public import CompletedChartFieldMapsR0152
 
 @[expose] public section
 

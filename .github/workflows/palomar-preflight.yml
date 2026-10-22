@@ -85,11 +85,11 @@ jobs:
           PY
   palomar-preflight:
     needs: request
-    uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44
+    uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@7a08c1da8e0558d330b9b3c244896c175d373303
     with:
       repository: ${{ github.repository }}
       commit: ${{ github.sha }}
-      pipeline_commit: d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44
+      pipeline_commit: 7a08c1da8e0558d330b9b3c244896c175d373303
       request_id: ${{ needs.request.outputs.id }}
       mode: full
       execution_profile: palomar-standard-v1

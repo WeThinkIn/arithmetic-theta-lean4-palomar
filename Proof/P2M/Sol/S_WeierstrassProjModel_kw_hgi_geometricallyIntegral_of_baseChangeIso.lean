@@ -6,6 +6,9 @@ public import Mathlib.AlgebraicGeometry.Geometrically.Integral
 public import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic
 public import Mathlib.RingTheory.LocalProperties.Reduced
 public import P2M.Util
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.Order.CompletePartialOrder
 
 @[expose] public section
 namespace P2MW.S_WeierstrassProjModel_kw_hgi_geometricallyIntegral_of_baseChangeIso

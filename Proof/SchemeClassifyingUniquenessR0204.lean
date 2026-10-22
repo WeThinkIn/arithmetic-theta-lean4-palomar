@@ -2,6 +2,8 @@ module
 
 public import CartesianFullMarkingR0204
 public import ArbitraryClassifyingUniquenessR0202
+public import SchemeLocalWeierstrassR0203
+public import Mathlib.CategoryTheory.Sites.Hypercover.Subcanonical
 
 @[expose] public section
 

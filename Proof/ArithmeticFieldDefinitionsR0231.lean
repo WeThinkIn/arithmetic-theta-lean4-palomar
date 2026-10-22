@@ -2,6 +2,8 @@ module
 
 public import MatrixArithmeticModularityR0209
 public import PointedSquareCoverFiniteModelR0221
+public import CompactModularityDefinitionsR0209
+public import FiniteFieldModelsDefinitionsR0221
 
 @[expose] public section
 

@@ -2,6 +2,8 @@ module
 
 public import Definitions.Def_AlgebraicGeometry_PolarisedAbelianScheme
 public import Definitions.Def_SheafOfModules_MonoidalV2
+public import Definitions.Def_AlgebraicGeometry_RelativeGroupLaw
+public import Definitions.Def_SheafOfModules_Monoidal
 
 @[expose] public section
 

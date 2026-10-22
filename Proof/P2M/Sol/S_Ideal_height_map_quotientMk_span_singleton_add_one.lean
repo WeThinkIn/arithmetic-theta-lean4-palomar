@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_IsLocalRing_ringKrullDim_quotient_span_singleton_add_one_of_forall_minimalPrimes_notMem
 public import P2M.Util
 

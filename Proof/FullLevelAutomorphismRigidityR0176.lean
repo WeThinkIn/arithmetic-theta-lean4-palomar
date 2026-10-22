@@ -6,6 +6,7 @@ public import FullLevelBaseChangeR0175
 public import NormalAffineLevelExtensionR0175
 public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_nsmul_surjective_of_isAlgClosed_of_connectedSpace
 public import Theorems.Thm_Module_End_eq_one_of_pow_eq_one_of_forall_exists_sub_eq_prime_pow_smul
+public import RelativeGenericComparisonR0169
 
 @[expose] public section
 

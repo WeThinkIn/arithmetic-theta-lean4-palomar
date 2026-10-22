@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.CategoryTheory.Distributive.Monoidal
+public import Mathlib.Algebra.Category.ModuleCat.Sheaf.Free
 public import Definitions.Def_SheafOfModules_Monoidal
 public import Definitions.Def_AlgebraicGeometry_ModulesPullbackMonoidal
 public import Definitions.Def_AlgebraicGeometry_ModulesProjectionMorphism

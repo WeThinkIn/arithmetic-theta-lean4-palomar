@@ -12,6 +12,9 @@ public import Theorems.Thm_AlgebraicGeometry_exists_isProper_twoAffineLineCover
 
 @[expose] public section
 
+-- Restore the original field instance choice while retaining specialized local-ring instances.
+attribute [local instance 999] HenselianLocalRing.toIsLocalRing
+
 /-! Specialization tools for coverage of the actual compactified level base.
 The universal boundary-coverage theorem is proved using the finite flat
 compactified j-map, actual marked Tate fibers and proper specialization. -/

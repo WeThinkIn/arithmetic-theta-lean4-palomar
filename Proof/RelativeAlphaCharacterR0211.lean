@@ -1,6 +1,9 @@
 module
 
 public import RelativePhaseMarkingInvarianceR0211
+public import RelativeMarkingActionR0211
+public import RelativeGeometricPhaseR0211
+public import RelativeAlphaNaturalityR0190
 
 @[expose] public section
 

@@ -1,6 +1,10 @@
 module
 
 public import CubicModelDefinitionsR0144
+public import TateGeneralSplitCubic
+public import CoordinateGeometricInversionR0143
+public import CoordinateMarkedEvaluationR0143
+public import FiniteStageAdjacentR0129
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

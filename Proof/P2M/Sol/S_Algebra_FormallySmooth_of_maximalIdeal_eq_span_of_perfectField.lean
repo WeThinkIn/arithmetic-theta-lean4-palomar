@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.FieldTheory.SeparablyGenerated
+public import Mathlib.RingTheory.PicardGroup
 public import Theorems.Thm_Algebra_FormallySmooth_of_maximalIdeal_eq_span_of_isSeparable_residueField
 public import P2M.Util
 

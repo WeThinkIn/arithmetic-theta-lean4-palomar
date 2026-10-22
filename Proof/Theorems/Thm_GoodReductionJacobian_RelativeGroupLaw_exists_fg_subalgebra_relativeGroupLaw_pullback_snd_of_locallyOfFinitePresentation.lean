@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawBaseChange
 public import P2M.Util
 public import P2M.Sol.S_GoodReductionJacobian_RelativeGroupLaw_exists_fg_subalgebra_relativeGroupLaw_pullback_snd_of_locallyOfFinitePresentation

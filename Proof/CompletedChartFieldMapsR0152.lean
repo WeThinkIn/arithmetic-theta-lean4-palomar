@@ -1,8 +1,13 @@
 module
 
 public import KatoAnnularDefinitionsR0152
+public import LaurentScalarGraphR0088
+public import SimultaneousKatoNormalizationR0151
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 
 /-! Geometric function-field maps for completed annular charts. -/
 set_option autoImplicit false

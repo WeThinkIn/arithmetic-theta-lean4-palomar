@@ -5,6 +5,7 @@ public import ResidueDegrees
 public import Theorems.Thm_AlgebraicGeometry_SmoothOfRelativeDimension_topologicalKrullDim_le
 public import Theorems.Thm_AlgebraicGeometry_SmoothOfRelativeDimension_le_topologicalKrullDim
 public import Theorems.Thm_Algebra_IsStandardSmoothOfRelativeDimension_isDiscreteValuationRing_localization_atPrime
+public import LegendreFamilyGeometryR0176
 
 @[expose] public section
 

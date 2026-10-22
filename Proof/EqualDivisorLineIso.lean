@@ -5,6 +5,7 @@ public import AffineOrderRegularity
 public import GenericLineCoefficients
 public import NormalLineFrames
 public import CurveDegreeDefinitions
+public import SectionOrderDefinitions
 
 @[expose] public section
 

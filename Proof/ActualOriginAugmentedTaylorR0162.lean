@@ -1,6 +1,7 @@
 module
 
 public import ConormalInitialDefinitionsR0162
+public import GeometricDiscriminantInitialR0161
 
 @[expose] public section
 

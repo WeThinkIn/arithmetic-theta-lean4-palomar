@@ -2,6 +2,7 @@ module
 
 public import SchemeKatoFullTateExpansionR0252
 public import SchemeDiscriminantNaturalityR0244
+public import SchemeKatoUnitDefinitionsR0250
 
 @[expose] public section
 

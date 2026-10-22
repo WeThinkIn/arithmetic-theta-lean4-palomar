@@ -2,6 +2,7 @@ module
 
 public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawAlgPointsV2
 public import Definitions.Def_EllipticCurve_TateModule
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
 
 @[expose] public section
 

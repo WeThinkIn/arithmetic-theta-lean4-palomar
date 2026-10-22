@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation
+public import Mathlib.Algebra.Order.Ring.Star
 public import Theorems.Thm_IntermediateField_mem_adjoin_sum_mul_of_isSeparable_of_algebraicIndependent
 public import Theorems.Thm_Ideal_exists_ne_zero_and_forall_isMaximal_radical_map_isPrime
 public import P2M.Util

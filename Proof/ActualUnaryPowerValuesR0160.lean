@@ -1,6 +1,7 @@
 module
 
 public import UnaryKatoProductR0160
+public import ActualTorsionPowerValueR0159
 
 @[expose] public section
 

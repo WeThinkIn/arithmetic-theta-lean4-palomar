@@ -3,6 +3,11 @@ module
 public import TateCuspDiskExtensionR0181
 public import Theorems.Thm_AdicCompletion_exists_ringHom_comp_algebraMap_eq_of_forall_exists_pow_le_comap
 public import Theorems.Thm_AdicCompletion_exists_ringEquiv_of_forall_quotient_mk_comp_surjective_of_forall_ker_eq_pow
+public import TateLevelClassifyingParameterR0181
+public import TateJPoleR0181
+public import LevelBoundaryGeometryR0179
+public import ProjectiveTowerEffectivityR0135
+public import CompatibleProjectiveEmbeddingsR0135
 
 @[expose] public section
 

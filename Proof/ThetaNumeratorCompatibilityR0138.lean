@@ -3,6 +3,11 @@ module
 public import IdentityThetaSectionsDefinitionsR0138
 public import Mathlib.RingTheory.AdicCompletion.AsTensorProduct
 public import Mathlib.RingTheory.Flat.TorsionFree
+public import CorrectedGammaPeriodBoundaryR0061
+public import CorrectedGammaInteriorOverlapR0061
+public import CorrectedGammaFiniteFactorizationR0061
+public import AnnularThetaPeriodR0128
+public import AnnularThetaInteriorR0128
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

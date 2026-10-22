@@ -1,6 +1,7 @@
 module
 
 public import PeriodOneCoefficientDescentR0246
+public import LegendreNormalFormR0177
 
 @[expose] public section
 

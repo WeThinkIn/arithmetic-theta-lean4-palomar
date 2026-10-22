@@ -2,6 +2,8 @@ module
 
 public import LocalizedRingFamilyConstant
 public import NormalDomainIntersection
+public import LocalizedRingModuleNaturality
+public import Mathlib.RingTheory.Ideal.Height
 
 @[expose] public section
 

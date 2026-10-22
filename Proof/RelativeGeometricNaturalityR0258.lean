@@ -2,6 +2,7 @@ module
 
 public import RelativeMidpointNaturalityR0258
 public import RelativeSectionIntertwiningR0258
+public import RelativeGeometricSchrodingerR0257
 
 @[expose] public section
 

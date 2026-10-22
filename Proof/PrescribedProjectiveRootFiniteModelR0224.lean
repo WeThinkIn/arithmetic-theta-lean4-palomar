@@ -2,8 +2,14 @@ module
 
 public import FiniteModelFramedRootValuesR0224
 public import SmoothProjectiveLevelCompletionR0179
+public import PointedRamifiedRootModelR0222
+public import ValuativeSimultaneousSectionsR0223
+public import ValuativeRootIntegralityR0223
 
 @[expose] public section
+
+-- Preserve original field inference without overriding specialized local-ring instances.
+attribute [local instance 999] HenselianLocalRing.toIsLocalRing
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

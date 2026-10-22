@@ -2,6 +2,7 @@ module
 
 public import ScaledNormalRecoveryDefinitionsR0051
 public import Mathlib.RingTheory.AdicCompletion.RingHom
+public import TateCompletedNodeNormal
 
 @[expose] public section
 

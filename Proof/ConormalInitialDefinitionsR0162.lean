@@ -3,6 +3,7 @@ module
 public import GeometricDiscriminantInitialR0161
 public import Mathlib.RingTheory.Kaehler.Basic
 public import Mathlib.LinearAlgebra.PiTensorProduct.Basic
+public import OriginInitialDefinitionsR0161
 
 @[expose] public section
 

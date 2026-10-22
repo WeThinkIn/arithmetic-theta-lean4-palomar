@@ -2,6 +2,7 @@ module
 
 public import SplitCubicGeometry
 public import SplitCubicDuplication
+public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 
 @[expose] public section
 

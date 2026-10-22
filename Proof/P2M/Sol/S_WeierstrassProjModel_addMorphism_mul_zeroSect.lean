@@ -14,6 +14,9 @@ public import Mathlib.AlgebraicGeometry.Morphisms.Smooth
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 namespace P2MW.S_WeierstrassProjModel_addMorphism_mul_zeroSect
 
 set_option Elab.async false

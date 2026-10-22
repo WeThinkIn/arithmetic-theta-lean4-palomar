@@ -2,6 +2,7 @@ module
 
 public import AmbientCompletedRootsDefinitionsR0227
 public import ValuativeRootIntegralityR0223
+public import AlgebraicBranchDefinitionsR0226
 
 @[expose] public section
 

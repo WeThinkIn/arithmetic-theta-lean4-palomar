@@ -1,6 +1,7 @@
 module
 
 public import BinaryReduction
+public import Det80ReducedClassification
 
 @[expose] public section
 

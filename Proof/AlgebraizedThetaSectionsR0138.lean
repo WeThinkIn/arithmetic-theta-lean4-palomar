@@ -2,6 +2,7 @@ module
 
 public import IdentityStageSectionRealizationR0138
 public import ThetaNumeratorCompatibilityR0138
+public import AlgebraizedPositiveFormalSectionsR0136
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

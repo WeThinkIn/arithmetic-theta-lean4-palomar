@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Equiv_Perm_exists_comp_succAbove_eq_succAbove_comp_and_sign_eq
 

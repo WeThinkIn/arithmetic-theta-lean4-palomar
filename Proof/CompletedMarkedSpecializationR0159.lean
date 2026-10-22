@@ -1,6 +1,7 @@
 module
 
 public import MarkedKatoValueDefinitionsR0159
+public import CompletedMarkedChartIdealR0152
 
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 

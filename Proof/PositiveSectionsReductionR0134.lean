@@ -1,6 +1,10 @@
 module
 
 public import PositiveLineSectionsDefinitionsR0134
+public import MarkedIdealTowerBaseChangeR0133
+public import PolygonCechObstructionR0131
+public import TruncatedLaurentPresentationR0131
+public import PolygonThickeningRecoveryR0130
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_Patching_SystemTypes
 public import P2M.Util
 public import P2M.Sol.S_Module_Flat_of_isLocalHom_of_isRegularLocalRing_of_ringKrullDim_quotient_eq_zero

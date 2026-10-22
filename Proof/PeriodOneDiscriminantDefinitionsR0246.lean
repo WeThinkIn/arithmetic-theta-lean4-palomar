@@ -5,6 +5,8 @@ public import UnmarkedTateDiscriminantR0245
 public import RamifiedLaurentExtensionR0155
 public import LegendreNormalFormR0177
 public import RelativeAlphaNaturalityR0190
+public import ArbitraryDiscriminantDefinitionsR0243
+public import GlobalFourTorsionDefinitionsR0190
 
 @[expose] public section
 

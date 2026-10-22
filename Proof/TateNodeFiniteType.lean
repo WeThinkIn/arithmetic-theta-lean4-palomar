@@ -1,6 +1,10 @@
 module
 
 public import TateNodeChartDefinitions
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.TotallySplit
+public import Mathlib.RingTheory.PowerSeries.Ideal
+public import Mathlib.RingTheory.SimpleRing.Principal
 
 @[expose] public section
 

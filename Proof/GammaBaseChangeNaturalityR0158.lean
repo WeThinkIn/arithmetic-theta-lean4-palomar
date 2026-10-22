@@ -2,6 +2,7 @@ module
 
 public import CoefficientNormDescentDefinitionsR0157
 public import LaurentNormDefinitionsR0064
+public import RamifiedPeriodDefinitionsR0154
 
 @[expose] public section
 

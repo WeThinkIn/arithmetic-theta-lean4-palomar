@@ -1,6 +1,8 @@
 module
 
 public import SchemeThetaNaturalityDefinitionsR0262
+public import SchemeMidpointThetaLiftR0259
+public import RelativeMidpointNaturalityR0258
 
 @[expose] public section
 

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_AlgebraicGeometry_Scheme_isFinite_flat_etale_of_free_of_quotient
 public import Theorems.Thm_AlgebraicGeometry_Scheme_exists_open_eq_comp_aut_of_comp_eq_of_free_of_quotient
 public import P2M.Util

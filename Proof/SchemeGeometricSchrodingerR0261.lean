@@ -7,6 +7,7 @@ public import SchemeInvariantThetaLineR0261
 public import SchemeSchrodingerOrbitR0261
 public import SchemeThetaIdentityEvaluationR0261
 public import SchemeFixedLineBaseChangeR0261
+public import SchemeFullLevelThetaMarkingR0259
 
 @[expose] public section
 

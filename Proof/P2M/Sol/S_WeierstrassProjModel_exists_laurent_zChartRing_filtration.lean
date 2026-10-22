@@ -1,6 +1,7 @@
 module
+public import Mathlib.RingTheory.Spectrum.Prime.IsOpenComapC
 
-public import Mathlib
+public import Mathlib.Data.Int.Star
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import Definitions.Def_WeierstrassCurve_DrinfeldBasisGlobal
 public import Definitions.Def_WeierstrassCurve_PointChart

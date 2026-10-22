@@ -1,0 +1,18 @@
+{
+  "previous_gate": "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-publication-candidate-856/publication-gate.json",
+  "previous_gate_preserved": true,
+  "cold_build_passed": false,
+  "staged_build_receipt": "/home/Palomar/workspace/arithmetic-theta/evidence/direct-hodge-disk-resume-1033/receipt.json",
+  "release_purpose": "Publish audited proof optimizations for official mechanical evaluation; no official acceptance inferred",
+  "required_checks": [
+    "source manifest exact",
+    "103 endpoints and full named/data audit",
+    "staged4CPU14GiB build",
+    "CommonUnary and CompleteMain three kernels",
+    "maintainer-selected updated Conron",
+    "all bound source/artifact hashes including archived exports",
+    "official source requirements and Challenge limits",
+    "Jue Ding metadata",
+    "original delivery unchanged"
+  ]
+}

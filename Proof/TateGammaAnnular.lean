@@ -2,6 +2,13 @@ module
 
 public import TateIdentityDefinitions
 public import FormalNormProduct
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.Order.Interval.Finset.Box
+public import Mathlib.Algebra.Order.Ring.Star
+public import Mathlib.Data.Int.Star
+public import Mathlib.Tactic.ENatToNat
 
 @[expose] public section
 

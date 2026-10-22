@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Module_flat_of_maximalIdeal_rTensor_injective_of_isLocalHom
 

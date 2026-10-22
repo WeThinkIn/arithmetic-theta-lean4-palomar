@@ -1,6 +1,7 @@
 module
 
 public import RelativeThetaNaturalityDefinitionsR0258
+public import RelativeThetaSectionsCohomologyR0257
 
 @[expose] public section
 

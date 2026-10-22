@@ -3,6 +3,7 @@ module
 public import KatoAnnularDefinitionsR0152
 public import SplitFiniteMarkedDivisorR0133
 public import Theorems.Thm_AlgebraicGeometry_isIso_of_isClosedImmersion_of_finrank_comp_eq
+public import MultiplicationFiniteEtaleDegreeR0148
 
 @[expose] public section
 

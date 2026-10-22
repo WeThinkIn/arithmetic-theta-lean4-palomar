@@ -2,6 +2,8 @@ module
 
 public import ArithmeticFieldDefinitionsR0231
 public import Theorems.Thm_AlgebraicGeometry_geometricallyIntegral_of_isAlgClosed
+public import DiskFrameComparisonAdapterR0192
+public import IndexedFullUnaryFactorizationR0188
 
 @[expose] public section
 

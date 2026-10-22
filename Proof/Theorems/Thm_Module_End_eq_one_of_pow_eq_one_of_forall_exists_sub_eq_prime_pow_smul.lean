@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Module_End_eq_one_of_pow_eq_one_of_forall_exists_sub_eq_prime_pow_smul
 

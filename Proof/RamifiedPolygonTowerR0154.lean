@@ -1,6 +1,8 @@
 module
 
 public import CompletedChartRamificationR0154
+public import RamifiedPeriodDefinitionsR0154
+public import CompletedChartFieldMapsR0152
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

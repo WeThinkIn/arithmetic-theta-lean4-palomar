@@ -1,6 +1,7 @@
 module
 
 public import EllipticFamilyWeierstrassAtlasR0180
+public import RelativeInitialSectionNaturalityR0171
 
 @[expose] public section
 

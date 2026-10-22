@@ -5,6 +5,8 @@ public import FullLevelCoverGeometryR0175
 public import NormalAffineLevelExtensionR0175
 public import QuotientTargetFullLevelR0175
 public import Mathlib.RingTheory.Localization.Away.Basic
+public import FullLevelCoverDefinitionsR0175
+public import Definitions.Def_GoodReductionJacobian_RelativeGroupLawKernel
 
 @[expose] public section
 

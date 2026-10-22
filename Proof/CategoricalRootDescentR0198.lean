@@ -1,6 +1,7 @@
 module
 
 public import RootStackDefinitionsR0198
+public import FPQCSquareRootDescentR0197
 
 @[expose] public section
 

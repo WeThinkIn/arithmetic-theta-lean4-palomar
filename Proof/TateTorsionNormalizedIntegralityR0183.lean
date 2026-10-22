@@ -1,6 +1,8 @@
 module
 
 public import CompactUnaryDefinitionsR0183
+public import OpenUnaryDesignatedExpansionR0182
+public import SplitMarkedTorsionCompletenessR0146
 
 @[expose] public section
 

@@ -1,6 +1,7 @@
 module
 
 public import ExtendedActualMetaplecticLevelR0241
+public import AdaptiveScalarExtensionImageR0240
 
 @[expose] public section
 

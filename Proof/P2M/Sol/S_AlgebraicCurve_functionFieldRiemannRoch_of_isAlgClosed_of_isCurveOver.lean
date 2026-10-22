@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicCurve_DivisorClassGroup
 public import Definitions.Def_AlgebraicCurve_IsCurveOver
 public import Definitions.Def_ModularCurve_CanonicalDivisor

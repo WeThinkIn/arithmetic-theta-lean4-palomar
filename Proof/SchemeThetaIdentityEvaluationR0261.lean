@@ -3,6 +3,7 @@ module
 public import SchemeSchrodingerDefinitionsR0261
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_pullbackComp_hom_app_pullbackLocalSection
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isIso_baseChangeHom_of_isOpenImmersion
+public import SchemeThetaSectionCohomologyR0259
 
 @[expose] public section
 

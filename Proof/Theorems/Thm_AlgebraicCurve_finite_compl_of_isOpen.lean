@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicCurve_CurveModel
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicCurve_finite_compl_of_isOpen
 

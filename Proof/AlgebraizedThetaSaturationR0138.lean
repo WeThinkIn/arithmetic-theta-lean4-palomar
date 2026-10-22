@@ -4,6 +4,7 @@ public import AlgebraizedThetaFaithfulnessR0138
 public import IdentityPositiveSectionsRankR0138
 public import Mathlib.LinearAlgebra.Matrix.Nonsingular
 public import Mathlib.LinearAlgebra.Matrix.Adjugate
+public import CompatibleFormalSectionBasisR0134
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

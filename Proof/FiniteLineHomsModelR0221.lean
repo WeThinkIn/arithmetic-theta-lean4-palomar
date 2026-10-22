@@ -1,6 +1,13 @@
 module
 
 public import FiniteFieldModelsDefinitionsR0221
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.RingTheory.PiTensorProduct
+public import Mathlib.CategoryTheory.ExtremalEpi
+public import Mathlib.CategoryTheory.EffectiveEpi.Comp
+public import Mathlib.AlgebraicGeometry.QuasiAffine
+public import Mathlib.RingTheory.PicardGroup
+public import Mathlib.Tactic.Monotonicity.Lemmas
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_FLTPrelim_GaloisRep
 public import P2M.Util
 public import P2M.Sol.S_WeierstrassCurve_sum_eq_zero_of_forall_mem_iff_smul_eq_zero
 

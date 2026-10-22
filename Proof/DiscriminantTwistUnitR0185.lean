@@ -1,6 +1,10 @@
 module
 
 public import CommonHalfHodgeDefinitionsR0185
+public import GlobalRootTorsor
+public import SignedDivisorTensor
+public import EqualDivisorLineIso
+public import ComponentHodgePowerDegreeR0184
 
 @[expose] public section
 

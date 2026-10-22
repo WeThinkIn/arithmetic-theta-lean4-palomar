@@ -1,6 +1,10 @@
 module
 
 public import FieldImageDefinitionsR0233
+public import DiskFrameCompletedCoordinateR0189
+public import LiftedCuspCompletionR0189
+public import IndexedFullUnaryFactorizationR0188
+public import CompletedSectionInjective
 
 @[expose] public section
 

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_Module_Flat_lTensor_injective_of_exact_of_surjective_of_flat
 public import P2M.Util
 

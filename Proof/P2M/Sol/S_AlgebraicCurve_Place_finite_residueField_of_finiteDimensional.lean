@@ -2,6 +2,7 @@ module
 
 public import Definitions.Def_AlgebraicCurve_DivisorPushPull
 public import P2M.Util
+public import Std.Tactic.BVDecide.Normalize.Prop
 
 @[expose] public section
 namespace P2MW.S_AlgebraicCurve_Place_finite_residueField_of_finiteDimensional

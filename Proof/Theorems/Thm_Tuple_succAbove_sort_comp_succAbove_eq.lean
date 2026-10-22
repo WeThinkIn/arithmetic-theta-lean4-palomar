@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_Tuple_succAbove_sort_comp_succAbove_eq
 

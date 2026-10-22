@@ -1,6 +1,8 @@
 module
 
 public import CompletedTorsionSectionGluingR0058
+public import CompletedIndexedAdjacentR0058
+public import CompletedCoordinateRestrictionsR0058
 
 @[expose] public section
 

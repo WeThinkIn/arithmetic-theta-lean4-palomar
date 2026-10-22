@@ -2,6 +2,7 @@ module
 
 public import Definitions.Def_AlgebraicGeometry_FramedPolarisedAbelianScheme
 public import Definitions.Def_AlgebraicGeometry_PolarisationRosati
+public import Definitions.Def_AlgebraicGeometry_PolarisedAbelianScheme
 
 @[expose] public section
 

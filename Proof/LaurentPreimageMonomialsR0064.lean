@@ -1,6 +1,11 @@
 module
 
 public import LaurentNormDefinitionsR0064
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.Tactic.Polynomial.Basic
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.Algebra.AffineMonoid.Basic
 
 @[expose] public section
 

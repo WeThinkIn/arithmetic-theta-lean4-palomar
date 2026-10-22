@@ -4,6 +4,8 @@ public import SharpCoverRatiosDefinitionsR0194
 public import DiskFrameComparisonAdapterR0192
 public import OpenIsogenyAlphaR0193
 public import SimultaneousUnaryCommonCoverR0187
+public import IsogenyCanonicalHalfLineR0193
+public import CompactIsogenyAlphaR0193
 
 @[expose] public section
 

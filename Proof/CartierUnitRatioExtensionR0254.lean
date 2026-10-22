@@ -1,6 +1,7 @@
 module
 
 public import KatoCharacterizationDefinitionsR0254
+public import ArbitraryKatoCartierDivisorR0249
 
 @[expose] public section
 

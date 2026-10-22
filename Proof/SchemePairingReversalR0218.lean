@@ -1,6 +1,8 @@
 module
 
 public import PhaseSwitchDefinitionsR0218
+public import SchemePhaseMarkingInvarianceR0215
+public import SchemeFourMarkingActionR0215
 
 @[expose] public section
 

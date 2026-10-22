@@ -4,6 +4,7 @@ public import GlobalizationDefinitions
 public import GlobalRootTorsor
 public import EffectiveDivisorLine
 public import Mathlib.AlgebraicGeometry.ValuativeCriterion
+public import PullbackTensor
 
 @[expose] public section
 

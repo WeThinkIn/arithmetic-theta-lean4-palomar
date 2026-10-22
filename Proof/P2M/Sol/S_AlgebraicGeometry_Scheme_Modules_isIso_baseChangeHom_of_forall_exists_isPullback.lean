@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ModulesBaseChangeHom
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_baseChangeHom_comp_horizontal
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isIso_baseChangeHom_iff_of_isPullback

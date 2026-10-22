@@ -1,6 +1,9 @@
 module
 
 public import AnnularTorsionPrerequisiteDefinitionsR0053
+public import ScaledGammaUnitProductR0050
+public import Mathlib.Algebra.Order.Ring.Star
+public import Mathlib.Data.Int.Star
 
 @[expose] public section
 

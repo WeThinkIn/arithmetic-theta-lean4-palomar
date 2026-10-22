@@ -1,6 +1,7 @@
 module
 
 public import ComponentDegreeDefinitionsR0184
+public import TensorLineDegrees
 
 @[expose] public section
 

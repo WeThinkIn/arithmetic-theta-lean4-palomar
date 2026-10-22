@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_WeierstrassCurve_DrinfeldLevelFunctor
 public import P2M.Util
 public import P2M.Sol.S_WeierstrassProjModel_RelativeGroupLaw_mul_eq_of_one_eq_of_isElliptic

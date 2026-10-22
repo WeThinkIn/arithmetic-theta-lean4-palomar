@@ -2,6 +2,7 @@ module
 
 public import LiteralSiegelGammaR0160
 public import DiscriminantEtaSubstitutionR0160
+public import LaurentGammaExistenceR0064
 
 @[expose] public section
 

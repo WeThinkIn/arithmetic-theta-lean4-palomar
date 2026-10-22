@@ -3,6 +3,7 @@ module
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 public import Mathlib.FieldTheory.IntermediateField.Adjoin.Basic
 public import P2M.Util
+public import Mathlib.FieldTheory.IntermediateField.Adjoin.Algebra
 
 @[expose] public section
 namespace P2MW.S_WeierstrassCurve_Affine_FunctionField_adjoin_X_Y_eq_top

@@ -1,6 +1,8 @@
 module
 
 public import UnaryKatoPowerDefinitionsR0160
+public import DiscriminantInitial
+public import Mathlib.RingTheory.PowerSeries.Expand
 
 @[expose] public section
 

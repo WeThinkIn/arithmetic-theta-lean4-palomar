@@ -15,7 +15,6 @@ public import Definitions.Def_WeierstrassCurve_PointChart
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary
 public import Definitions.Def_WeierstrassCurve_SectionAtOrigin
-public import Mathlib
 public import P2M.Util
 public import Theorems.Thm_WeierstrassCurve_DrinfeldGlobal_exists_ringHom_originChartRing_powerSeries
 public import Theorems.Thm_WeierstrassCurve_DrinfeldGlobal_ker_eq_span_of_originChartRing
@@ -34,6 +33,9 @@ set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

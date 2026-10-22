@@ -1,6 +1,7 @@
 module
 
 public import CoefficientModuliCartesianR0241
+public import ActualCategoricalRootFiberR0208
 
 @[expose] public section
 

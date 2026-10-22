@@ -5,6 +5,7 @@ public import LogarithmicCoordinateDerivativeR0144
 public import Definitions.Def_WeierstrassCurve_PointChart
 public import Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary
 public import Definitions.Def_AlgebraicGeometry_KaehlerModule
+public import CubicModelDefinitionsR0144
 
 @[expose] public section
 

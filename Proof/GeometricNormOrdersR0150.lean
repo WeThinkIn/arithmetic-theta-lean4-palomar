@@ -4,6 +4,7 @@ public import FiniteEtaleLocalNormR0150
 public import Mathlib.LinearAlgebra.FreeModule.Norm
 public import Theorems.Thm_AlgebraicGeometry_Smooth_isRegularLocalRing_stalk
 public import Theorems.Thm_AlgebraicGeometry_SmoothOfRelativeDimension_topologicalKrullDim_le
+public import Mathlib.RingTheory.Localization.AtPrime.Extension
 
 @[expose] public section
 

@@ -4,6 +4,7 @@ public import Definitions.Def_AlgebraicCurve_PlaceEvaluation
 public import Theorems.Thm_AlgebraicCurve_Place_evalAt_mul
 public import Theorems.Thm_AlgebraicCurve_Place_mem_of_ord_nonneg
 public import P2M.Util
+public import Definitions.Def_ModularCurve_CharLFrobeniusGeomLevel
 
 @[expose] public section
 namespace P2MW.S_AlgebraicCurve_Place_evalAt_inv

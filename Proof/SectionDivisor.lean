@@ -2,6 +2,7 @@ module
 
 public import SectionOrderInvariance
 public import PrincipalDivisor
+public import FinitePrincipalSupport
 
 @[expose] public section
 

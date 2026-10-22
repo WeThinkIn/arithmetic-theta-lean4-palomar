@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_WeierstrassCurve_ProjModel
 public import Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary
 public import Theorems.Thm_WeierstrassProjModel_projModel_isPullback_baseChange_ring

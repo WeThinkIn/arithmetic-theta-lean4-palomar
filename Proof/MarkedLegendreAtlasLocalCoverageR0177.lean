@@ -2,6 +2,8 @@ module
 
 public import FullLevelDivisorReductionR0177
 public import LegendreNormalFormR0177
+public import LegendreFamilyGeometryR0176
+public import FullLevelBaseChangeR0175
 
 @[expose] public section
 

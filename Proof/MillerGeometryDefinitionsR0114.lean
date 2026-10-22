@@ -7,6 +7,8 @@ public import LevelFourFiniteCharacter
 public import Mathlib.RingTheory.LaurentSeries
 public import Mathlib.RingTheory.Localization.Away.Basic
 public import Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots
+public import FourTorsionDefinitions
+public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 
 @[expose] public section
 

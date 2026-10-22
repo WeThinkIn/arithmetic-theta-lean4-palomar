@@ -4,6 +4,7 @@ public import FourTorsionDefinitions
 public import Mathlib.Tactic.FieldSimp
 public import Mathlib.Tactic.LinearCombination
 public import Mathlib.Tactic.Ring
+public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Formula
 
 @[expose] public section
 

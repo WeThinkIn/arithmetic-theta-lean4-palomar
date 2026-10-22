@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_Mathlib_Algebra_IsDirectLimit
 public import Definitions.Def_AlgebraicGeometry_ModulesGlueOfCocycle
 public import Theorems.Thm_AlgebraicGeometry_Scheme_exists_app_eq_of_isCompact_of_isDirectLimit

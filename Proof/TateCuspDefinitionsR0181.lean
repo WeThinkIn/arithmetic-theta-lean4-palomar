@@ -4,6 +4,7 @@ public import OpenLevelNormalizedHodgePowerR0180
 public import MarkedPointAdditionR0146
 public import LevelBoundaryGeometryR0179
 public import Mathlib.RingTheory.AdicCompletion.Algebra
+public import LevelCompactificationDefinitionsR0179
 
 @[expose] public section
 

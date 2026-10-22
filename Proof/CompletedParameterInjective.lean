@@ -2,6 +2,9 @@ module
 
 public import CompletedChartDefinitions
 public import Mathlib.RingTheory.Flat.TorsionFree
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.RingTheory.PowerSeries.NoZeroDivisors
+public import Mathlib.AlgebraicGeometry.Morphisms.Flat
 
 @[expose] public section
 

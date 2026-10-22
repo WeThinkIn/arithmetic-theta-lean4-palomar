@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Definitions.Def_WeierstrassCurve_DivPolyMulFormula
 public import Definitions.Def_ModularCurve_KatzLevelP
 public import Definitions.Def_WeierstrassCurve_DivPolyMulFormulaCore
 public import Theorems.Thm_WeierstrassCurve_card_torsion_of_isAlgClosed

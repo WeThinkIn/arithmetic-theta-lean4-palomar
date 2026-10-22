@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_SubalgebraStages
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_SubalgebraStages_nonempty_isLimit_cone

@@ -2,6 +2,7 @@ module
 
 public import RelativeCyclicQuotientExistenceR0173
 public import RelativeTorsionUnitValueR0170
+public import PointedRelativeGroupHomR0173
 
 @[expose] public section
 

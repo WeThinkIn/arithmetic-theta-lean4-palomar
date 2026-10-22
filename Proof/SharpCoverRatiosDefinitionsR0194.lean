@@ -5,6 +5,7 @@ public import CompactIsogenyAlphaR0193
 public import CuspHalfLineCoverDegreeR0188
 public import AlignedMarkingProjectiveValuesR0142
 public import Mathlib.AlgebraicGeometry.FunctionField
+public import IsogenyHalfLinesDefinitionsR0193
 
 @[expose] public section
 

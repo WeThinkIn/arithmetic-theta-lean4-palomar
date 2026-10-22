@@ -3,6 +3,8 @@ module
 public import ArbitraryFourCharacterDefinitionsR0214
 public import ArbitraryFourTorsionRootR0214
 public import ArbitraryNormalizedFrameUniquenessR0214
+public import RelativeAlphaNaturalityR0190
+public import ArbitraryCompatibleLocalCoverageR0202
 
 @[expose] public section
 

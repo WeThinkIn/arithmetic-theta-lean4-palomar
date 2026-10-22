@@ -3,6 +3,7 @@ module
 public import ScalarExtensionDiskFrameR0240
 public import ScalarExtensionExpansionR0240
 public import CertifiedPrefixFieldImageR0240
+public import FieldSectionImageR0233
 
 @[expose] public section
 

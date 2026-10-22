@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import P2M.Util
 public import P2M.Sol.S_HomogeneousIdeal_exists_homogeneous_pos_mem_forall_notMem
 

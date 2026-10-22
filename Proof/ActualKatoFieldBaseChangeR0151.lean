@@ -2,6 +2,7 @@ module
 
 public import ActualKatoFunctionExistenceR0151
 public import KatoDivisorFieldBaseChangeR0151
+public import GeometricNormBaseChangeR0150
 
 @[expose] public section
 

@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicGeometry.QuasiAffine
+public import Mathlib.AlgebraicGeometry.Noetherian
 public import Definitions.Def_AlgebraicGeometry_ProjSpaceCover
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafLerayBicomplex
 public import P2M.Util

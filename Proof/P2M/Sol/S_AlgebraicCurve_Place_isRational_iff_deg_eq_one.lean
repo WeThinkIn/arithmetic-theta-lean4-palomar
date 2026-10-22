@@ -2,6 +2,7 @@ module
 
 public import Definitions.Def_AlgebraicCurve_PlaceEvaluation
 public import P2M.Util
+public import Mathlib.Order.CompletePartialOrder
 
 @[expose] public section
 namespace P2MW.S_AlgebraicCurve_Place_isRational_iff_deg_eq_one

@@ -4,6 +4,10 @@ public import ActualDiscriminantCotangentTensorR0162
 public import InitialTensorNaturalityR0162
 public import NormalizedIntegralHodgeFrameR0149
 public import PullbackTensorSections
+public import IntegralHodgeDefinitionsR0149
+public import ConormalInitialDefinitionsR0162
+public import PullbackTensor
+public import Mathlib.RingTheory.PowerSeries.Derivative
 
 @[expose] public section
 

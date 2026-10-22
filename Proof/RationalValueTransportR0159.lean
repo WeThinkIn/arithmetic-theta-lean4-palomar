@@ -1,6 +1,7 @@
 module
 
 public import MarkedKatoValueDefinitionsR0159
+public import ActualMultiplicationFieldNormR0150
 
 @[expose] public section
 

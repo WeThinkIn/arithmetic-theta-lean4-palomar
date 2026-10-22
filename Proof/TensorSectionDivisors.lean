@@ -2,6 +2,8 @@ module
 
 public import TensorDegreeDefinitions
 public import GenericLineCoefficients
+public import TensorProductLaws
+public import SectionOrderDefinitions
 
 @[expose] public section
 

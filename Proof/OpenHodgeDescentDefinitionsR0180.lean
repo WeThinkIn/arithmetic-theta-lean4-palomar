@@ -3,6 +3,8 @@ module
 public import LevelCompactificationDefinitionsR0179
 public import SmoothProjectiveLevelCompletionR0179
 public import CompactifiedLevelForgettingR0179
+public import LegendreLevelAtlasDefinitionsR0176
+public import RelativeHodgePowerBaseChangeR0171
 
 @[expose] public section
 

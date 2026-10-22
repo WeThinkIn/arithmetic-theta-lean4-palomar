@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_IsRegularLocalRing_isDomain
 public import Theorems.Thm_IsLocalRing_exists_mem_maximalIdeal_notMem_sq_forall_minimalPrimes_notMem
 public import Theorems.Thm_IsRegularLocalRing_quotient_span_singleton_of_notMem_sq_of_forall_minimalPrimes_notMem

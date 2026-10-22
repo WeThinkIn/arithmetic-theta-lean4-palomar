@@ -1,6 +1,11 @@
 module
 
 public import FormalJacobiTripleProduct
+public import Mathlib.Topology.Separation.Lemmas
+public import Mathlib.RingTheory.LaurentSeries
+public import Mathlib.Topology.Connected.Separation
+public import Mathlib.Data.Rat.Star
+public import Mathlib.RingTheory.PowerSeries.Substitution
 
 @[expose] public section
 

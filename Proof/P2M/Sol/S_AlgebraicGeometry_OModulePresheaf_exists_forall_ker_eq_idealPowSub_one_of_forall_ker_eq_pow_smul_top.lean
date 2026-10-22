@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_OModulePresheafIdealFiltration
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_isCoherent_idealPowQuot
 public import Theorems.Thm_AlgebraicGeometry_OModulePresheaf_isQuasicoherent_idealPowQuot

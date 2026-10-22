@@ -2,6 +2,7 @@ module
 
 public import GeometricNormDefinitionsR0150
 public import Mathlib.RingTheory.Localization.NormTrace
+public import FinitePullbackSectionDegree
 
 @[expose] public section
 

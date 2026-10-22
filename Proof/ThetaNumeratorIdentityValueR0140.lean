@@ -2,6 +2,7 @@ module
 
 public import GenericThetaEvaluationDefinitionsR0140
 public import AnnularFullSeriesIdentificationR0128
+public import AllSolutionsAnnularEvaluationR0119
 
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false

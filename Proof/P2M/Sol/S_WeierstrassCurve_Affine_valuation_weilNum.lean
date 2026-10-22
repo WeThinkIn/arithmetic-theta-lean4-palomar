@@ -10,6 +10,9 @@ public import Theorems.Thm_WeierstrassCurve_Affine_CoordinateRing_isPrincipal_pr
 public import Theorems.Thm_WeierstrassCurve_sum_eq_zero_of_forall_mem_iff_smul_eq_zero
 public import Theorems.Thm_WeierstrassCurve_Affine_fibSet_finite
 public import P2M.Util
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.SimpleRing.Principal
 
 @[expose] public section
 namespace P2MW.S_WeierstrassCurve_Affine_valuation_weilNum

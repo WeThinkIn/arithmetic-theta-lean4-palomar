@@ -4,8 +4,12 @@ public import LevelCompactificationDefinitionsR0179
 public import Theorems.Thm_AlgebraicGeometry_IsFinite_of_comp_of_surjective
 public import Theorems.Thm_AlgebraicGeometry_Flat_of_comp_of_flat_of_surjective
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Hom_finrank_comp_of_finrank_eq_const
+public import NormalAffineClassifyingConstructionR0178
 
 @[expose] public section
+
+-- Preserve the original elaborated instance path after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 
 /-! Supporting constructions for forgetting full even level on the specified
 compatible quotient. All helpers are confined to this module's namespace. -/

@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.ENatToNat
 public import Theorems.Thm_IsIntegrallyClosed_height_eq_one_of_mem_associatedPrimes
 public import P2M.Util
 

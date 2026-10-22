@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicCurve_KaehlerToFunctionField
 public import Definitions.Def_AlgebraicCurve_RegularDifferentials
 public import Theorems.Thm_AlgebraicCurve_exists_kaehlerToFunctionField_eq_smul_dCoord_of_mem_placesOf

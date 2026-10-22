@@ -2,6 +2,7 @@ module
 
 public import MarkedCartierEquationR0131
 public import PolygonSmoothMarkedSectionsR0131
+public import PolygonCohomologyDefinitionsR0131
 
 @[expose] public section
 

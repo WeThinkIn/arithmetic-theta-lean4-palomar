@@ -2,6 +2,7 @@ module
 
 public import CompactifiedDifferentialDefinitionsR0145
 public import Mathlib.RingTheory.Kaehler.Polynomial
+public import TateGeneralSplitCubic
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

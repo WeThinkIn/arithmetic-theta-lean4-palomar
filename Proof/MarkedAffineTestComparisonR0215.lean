@@ -1,6 +1,8 @@
 module
 
 public import SchemeFourCharacterDefinitionsR0215
+public import AffineConormalHodgeNaturalityR0205
+public import CartesianIdentityIdealR0205
 
 @[expose] public section
 

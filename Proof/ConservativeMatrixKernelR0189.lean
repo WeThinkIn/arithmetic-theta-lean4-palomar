@@ -3,6 +3,8 @@ module
 public import ArithmeticGeometricFamilyExistenceR0189
 public import GeometricFamilyConservativeCutoffR0189
 public import FiniteFullLevelCount
+public import RankZero
+public import ComputedCoefficientMatrix
 
 @[expose] public section
 

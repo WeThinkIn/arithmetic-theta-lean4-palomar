@@ -2,6 +2,14 @@ module
 
 public import TateNodeFiniteType
 public import NoetherianAdicCompletion
+public import TateNodeChartDefinitions
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.WittVector.IsPoly
+public import Mathlib.RingTheory.AdicCompletion.Completeness
+public import Mathlib.RingTheory.PowerSeries.Ideal
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.RingTheory.AdicCompletion.AsTensorProduct
+public import Mathlib.RingTheory.PicardGroup
 
 @[expose] public section
 

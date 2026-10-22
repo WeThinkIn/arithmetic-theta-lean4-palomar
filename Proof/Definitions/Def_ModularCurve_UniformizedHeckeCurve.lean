@@ -3,6 +3,12 @@ module
 public import Mathlib.SetTheory.Cardinal.Finite
 public import Definitions.Def_ModularCurve_ComplexPlaceDictionary
 public import Definitions.Def_ModularForm_HeckeOperator
+public import Definitions.Def_AlgebraicCurve_DivisorClassGroup
+public import Mathlib.NumberTheory.ModularForms.CongruenceSubgroups
+public import Mathlib.Analysis.Complex.UpperHalfPlane.Topology
+public import Mathlib.Analysis.Meromorphic.Order
+public import Mathlib.Analysis.InnerProductSpace.Basic
+public import Mathlib.MeasureTheory.Integral.Bochner.Basic
 
 @[expose] public section
 

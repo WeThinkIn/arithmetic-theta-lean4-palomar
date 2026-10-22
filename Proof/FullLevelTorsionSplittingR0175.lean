@@ -2,6 +2,7 @@ module
 
 public import FullLevelCoverDefinitionsR0175
 public import Theorems.Thm_AlgebraicGeometry_isIso_of_isClosedImmersion_of_finrank_comp_eq
+public import RelativeMultiplicationDegreeR0169
 
 @[expose] public section
 

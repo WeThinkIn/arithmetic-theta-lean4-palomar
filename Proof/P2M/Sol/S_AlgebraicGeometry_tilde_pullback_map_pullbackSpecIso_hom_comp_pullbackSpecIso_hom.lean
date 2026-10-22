@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_ModulesTildePullback
 public import Theorems.Thm_AlgebraicGeometry_tilde_pullbackSpecIso_unit
 public import P2M.Util

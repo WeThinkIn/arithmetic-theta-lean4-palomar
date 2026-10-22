@@ -2,6 +2,8 @@ module
 
 public import KatoExistenceDefinitionsR0151
 public import GeometricNormCompositionR0151
+public import CoprimeTorsionDivisorNormR0150
+public import ActualNormalizedKatoUniquenessR0150
 
 @[expose] public section
 

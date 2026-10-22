@@ -1,6 +1,8 @@
 module
 
 public import MetaplecticComparisonDefinitionsR0206
+public import SchemeCotangentCoherenceR0205
+public import CartesianIdentityIdealR0205
 
 @[expose] public section
 

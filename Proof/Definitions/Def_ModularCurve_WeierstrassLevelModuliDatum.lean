@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_ModularCurve_LevelModuliPackage
 public import Definitions.Def_ModularCurve_WeierstrassLevelCarrier
 

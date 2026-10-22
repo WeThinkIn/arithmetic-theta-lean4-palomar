@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Order.CompletePartialOrder
 public import Definitions.Def_Mathlib_Algebra_IsDirectLimit
 public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCover
 public import Theorems.Thm_AlgebraicGeometry_exists_algEquiv_sections_pullback_fst_preimage_tensor_of_isAffineOpen
@@ -8,6 +8,9 @@ public import Theorems.Thm_Algebra_TensorProduct_isDirectLimit_map_of_isDirectLi
 public import P2M.Util
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] CompletePartialOrder.toSupSet
 set_option backward.isDefEq.respectTransparency false
 set_option backward.privateInPublic true
 namespace P2MW.S_AlgebraicGeometry_Scheme_exists_iSup_preimage_eq_top_of_isDirectLimit

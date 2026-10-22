@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.TotallySplit
+public import Mathlib.Algebra.Module.StablyFree.Basic
 public import Theorems.Thm_LinearMap_exists_forall_mem_pow_smul_top_of_range_le_pow_smul
 public import P2M.Util
 

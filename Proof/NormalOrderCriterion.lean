@@ -1,6 +1,7 @@
 module
 
 public import NormalizedSectionDefinitions
+public import Mathlib.AlgebraicGeometry.Noetherian
 
 @[expose] public section
 

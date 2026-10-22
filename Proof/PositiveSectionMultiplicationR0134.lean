@@ -1,6 +1,7 @@
 module
 
 public import PositiveGlobalGenerationR0134
+public import PolygonCechKernelR0131
 
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false

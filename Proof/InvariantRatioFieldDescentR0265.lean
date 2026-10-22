@@ -2,6 +2,7 @@ module
 
 public import InvariantRatioDefinitionsR0265
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_unit_of_forall_invertible_free
+public import SchemeInvariantThetaLineR0261
 
 @[expose] public section
 

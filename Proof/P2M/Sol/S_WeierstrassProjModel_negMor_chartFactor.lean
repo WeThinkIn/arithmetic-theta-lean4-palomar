@@ -4,6 +4,7 @@ public import Definitions.Def_WeierstrassCurve_ProjModel
 public import Definitions.Def_WeierstrassCurve_ProjModel_GroupLawVocabulary
 public import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Functor
 public import P2M.Util
+public import Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Point
 
 @[expose] public section
 set_option backward.privateInPublic true

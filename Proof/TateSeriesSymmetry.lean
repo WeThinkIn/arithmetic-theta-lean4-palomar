@@ -1,6 +1,7 @@
 module
 
 public import TateSeriesStabilization
+public import TateBridgesSeriesStabilization
 
 @[expose] public section
 

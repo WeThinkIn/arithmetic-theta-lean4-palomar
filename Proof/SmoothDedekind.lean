@@ -1,6 +1,7 @@
 module
 
 public import SmoothDVR
+public import Mathlib.RingTheory.Smooth.Field
 
 @[expose] public section
 

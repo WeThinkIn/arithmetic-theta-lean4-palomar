@@ -1,11 +1,13 @@
 module
 
-public import Mathlib
 public import Definitions.Def_AlgebraicGeometry_NeronModelPropertyBundleCarrier
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_SchemeHomOver_ext_of_forall_algebraicClosure_point_of_isReduced_of_flat
 
 @[expose] public section
+
+-- Keep the original elaborated instance paths after import reduction.
+attribute [local instance 1001] IsRegularLocalRing.toIsLocalRing
 
 set_option autoImplicit false
 

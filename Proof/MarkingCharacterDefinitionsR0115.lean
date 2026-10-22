@@ -4,6 +4,7 @@ public import IndependentHalvesFourBasisR0114
 public import ActualMillerPhaseR0114
 public import TwoTorsionTranslation
 public import LevelFourFiniteCharacter
+public import MillerGeometryDefinitionsR0114
 
 @[expose] public section
 

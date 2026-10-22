@@ -1,6 +1,7 @@
 module
 
 public import SchemeSchrodingerDefinitionsR0261
+public import RelativeSchrodingerModuleR0257
 
 @[expose] public section
 

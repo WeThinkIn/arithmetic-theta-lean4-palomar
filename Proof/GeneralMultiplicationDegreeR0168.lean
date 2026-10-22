@@ -1,6 +1,7 @@
 module
 
 public import GeneralEllipticKatoDefinitionsR0168
+public import ActualMultiplicationFieldNormR0150
 
 @[expose] public section
 

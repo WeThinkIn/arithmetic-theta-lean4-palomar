@@ -1,6 +1,9 @@
 module
 
 public import SchemeLevelDefinitionsR0204
+public import SchemeLocalWeierstrassR0203
+public import Theorems.Thm_WeierstrassProjModel_RelativeGroupLaw_mul_eq_of_one_eq_of_isElliptic
+public import Mathlib.CategoryTheory.Sites.Hypercover.Subcanonical
 
 @[expose] public section
 

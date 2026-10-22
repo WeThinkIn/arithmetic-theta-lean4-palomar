@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_ModulesPullbackMonoidal
+public import Definitions.Def_AlgebraicGeometry_ModulesSectionsTensor
 public import Definitions.Def_PresheafOfModules_InternalHom
 public import Definitions.Def_SheafOfModules_MonoidalV2
 public import Definitions.Def_PresheafOfModules_PullbackMonoidal

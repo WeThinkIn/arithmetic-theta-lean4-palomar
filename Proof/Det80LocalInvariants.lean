@@ -1,6 +1,8 @@
 module
 
 public import BinaryDefinitions
+public import Mathlib.Tactic.ReduceModChar
+public import Mathlib.RingTheory.WittVector.IsPoly
 
 @[expose] public section
 

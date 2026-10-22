@@ -1,6 +1,7 @@
 module
 
 public import FiniteMetaplecticTestLevelR0196
+public import SharpMatrixGeometricFamilyR0195
 
 @[expose] public section
 

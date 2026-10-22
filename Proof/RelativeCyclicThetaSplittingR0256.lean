@@ -6,6 +6,7 @@ public import Definitions.Def_AlgebraicGeometry_ThetaGroup
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_tensor_hom_ext_monoidalV2
 public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_tensorHom_app_tensorSections_monoidalV2
 public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_translate_mul
+public import RelativeMidpointSymmetricThetaLiftR0255
 
 @[expose] public section
 

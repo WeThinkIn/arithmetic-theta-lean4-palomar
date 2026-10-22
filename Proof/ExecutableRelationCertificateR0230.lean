@@ -1,6 +1,8 @@
 module
 
 public import AdaptiveSolverDefinitionsR0230
+public import LDLThetaPrefixR0229
+public import EarlyCertificateAssembly
 
 @[expose] public section
 

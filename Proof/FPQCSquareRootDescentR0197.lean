@@ -5,6 +5,7 @@ public import AffineSquareRootEffectivityR0197
 public import OpenSquareRootEffectivityR0197
 public import Mathlib.CategoryTheory.Bicategory.Functor.Cat.ObjectProperty
 public import Mathlib.CategoryTheory.Sites.Descent.Precoverage
+public import Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_iso_toDescentData_of_isAffineHom_of_flat_of_surjective
 
 @[expose] public section
 

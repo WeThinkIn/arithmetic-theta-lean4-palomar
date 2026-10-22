@@ -1,6 +1,15 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicGeometry_TwoAffineOpenCover
+public import Mathlib.RingTheory.RegularLocalRing.Defs
+public import Mathlib.RingTheory.Henselian
+public import Mathlib.RingTheory.SimpleRing.Principal
+public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Mathlib.AlgebraicGeometry.Modules.Sheaf
+public import Mathlib.RingTheory.Etale.Descent
+public import Mathlib.AlgebraicGeometry.Morphisms.Smooth
+public import Mathlib.AlgebraicGeometry.Fiber
+public import Mathlib.Tactic.ENatToNat
 public import Definitions.Def_AlgebraicGeometry_TwoChartCechSectionsOf
 public import Theorems.Thm_Algebra_isSmoothAt_of_isSmoothAt_fiber
 public import P2M.Util

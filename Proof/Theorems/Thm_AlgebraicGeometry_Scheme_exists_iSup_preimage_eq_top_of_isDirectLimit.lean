@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Definitions.Def_Mathlib_Algebra_IsDirectLimit
 public import P2M.Util
 public import P2M.Sol.S_AlgebraicGeometry_Scheme_exists_iSup_preimage_eq_top_of_isDirectLimit

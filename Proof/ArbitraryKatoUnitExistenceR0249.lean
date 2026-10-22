@@ -2,6 +2,7 @@ module
 
 public import NormalModelUnitSpecializationR0249
 public import NormalModelUnitIndependenceR0249
+public import NormalDiscriminantModelR0243
 
 @[expose] public section
 

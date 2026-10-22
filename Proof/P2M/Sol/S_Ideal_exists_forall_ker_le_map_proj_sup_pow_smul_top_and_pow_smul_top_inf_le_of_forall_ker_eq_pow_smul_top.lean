@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import Theorems.Thm_Ideal_exists_forall_pow_smul_top_inf_ker_le_pow_smul_ker_of_forall_ker_eq_pow_smul_top
 public import P2M.Util
 

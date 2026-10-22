@@ -2,6 +2,7 @@ module
 
 public import EvenPointThetaEvaluationR0217
 public import ThetaEvaluationBaseChangeR0212
+public import ThetaLineBaseChangeR0212
 
 @[expose] public section
 

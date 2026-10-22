@@ -7,6 +7,8 @@ public import Theorems.Thm_AlgebraicGeometry_bijective_app_of_isProper_of_flat_o
 public import Theorems.Thm_AlgebraicGeometry_bijective_appTop_of_universallyClosed_of_geometricallyReduced_of_geometricallyConnected
 
 public import Theorems.Thm_AlgebraicGeometry_Smooth_isReduced_of_isReduced_of_isLocallyNoetherian
+public import FiniteEtaleNormSectionR0251
+public import SchemeKatoCartierDivisorR0250
 
 @[expose] public section
 

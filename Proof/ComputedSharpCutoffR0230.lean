@@ -1,6 +1,9 @@
 module
 
 public import AdaptiveSolverDefinitionsR0230
+public import ComputedBoundParameters
+public import SharpKernelDefinitionsR0195
+public import FiniteFullLevelCount
 
 @[expose] public section
 

@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.RingTheory.TotallySplit
+public import Mathlib.RingTheory.AdicCompletion.Completeness
+public import Mathlib.RingTheory.PicardGroup
+public import Mathlib.Algebra.Module.StablyFree.Basic
 public import Theorems.Thm_AdicCompletion_isNoetherianRing_of_isNoetherianRing
 public import P2M.Util
 

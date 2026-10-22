@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Definitions.Def_AlgebraicCurve_CanonicalLocalResidueInstanceV2
+public import Mathlib.RingTheory.AdicCompletion.RingHom
+public import Mathlib.RingTheory.AdicCompletion.Noetherian
 public import Definitions.Def_AlgebraicCurve_DivisorClassGroup
 public import Definitions.Def_AlgebraicCurve_RatFuncPlaces
 public import Definitions.Def_AlgebraicCurve_IsCurveOver

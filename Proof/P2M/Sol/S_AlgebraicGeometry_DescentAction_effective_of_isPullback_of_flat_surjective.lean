@@ -2,6 +2,7 @@ module
 
 public import Definitions.Def_AlgebraicGeometry_DescentAction
 public import P2M.Util
+public import Mathlib.AlgebraicGeometry.Morphisms.FlatDescent
 
 @[expose] public section
 set_option backward.isDefEq.respectTransparency.types false

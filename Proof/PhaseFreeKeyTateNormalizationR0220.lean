@@ -1,6 +1,7 @@
 module
 
 public import SchemeAlphaTateComparisonR0220
+public import CompactHodgeLatticeExtensionR0182
 
 @[expose] public section
 

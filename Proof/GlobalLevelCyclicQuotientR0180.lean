@@ -2,6 +2,9 @@ module
 
 public import EllipticFamilyWeierstrassAtlasR0180
 public import Theorems.Thm_GoodReductionJacobian_RelativeGroupLaw_exists_quotient_abelianSchemePropertyBundle_of_finiteFlat_subgroup_of_affineOrbit_of_commRing
+public import CyclicQuotientArbitraryBaseChangeR0173
+public import FramedSchemeQuotientR0174
+public import PointedRelativeGroupHomR0173
 
 @[expose] public section
 

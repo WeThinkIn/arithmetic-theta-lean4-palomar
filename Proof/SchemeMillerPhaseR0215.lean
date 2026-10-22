@@ -1,6 +1,8 @@
 module
 
 public import MarkedAffineTestComparisonR0215
+public import ArbitraryPhaseBaseChangeR0214
+public import Mathlib.AlgebraicGeometry.AffineSpace
 
 @[expose] public section
 

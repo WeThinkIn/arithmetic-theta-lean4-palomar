@@ -2,6 +2,7 @@ module
 
 public import TateNodeTorusCharts
 public import GeometricTorsionChartSectionsR0053
+public import CompletedSectionKernelsR0053
 
 @[expose] public section
 

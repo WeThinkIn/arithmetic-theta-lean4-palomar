@@ -2,6 +2,7 @@ module
 
 public import ClassifyingCotangentHodgeR0205
 public import SchemeCotangentCoherenceR0205
+public import SchemeFullLevelUniversalR0204
 
 @[expose] public section
 

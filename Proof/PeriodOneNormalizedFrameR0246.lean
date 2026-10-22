@@ -1,6 +1,11 @@
 module
 
 public import PeriodOneDiscriminantDefinitionsR0246
+public import Theorems.Thm_WeierstrassProjModel_exists_relativeGroupLaw_isCommutative_one_eq_zeroSect_of_isElliptic_of_baseChangeIso
+public import RelativeAlphaNaturalityR0190
+public import RamifiedPeriodDefinitionsR0154
+public import TateFullLevelMarkingR0181
+public import MarkedLegendreAtlasLocalCoverageR0177
 
 @[expose] public section
 

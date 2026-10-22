@@ -2,6 +2,7 @@ module
 
 public import NaturalMetaplecticComparisonR0206
 public import FPQCRootStackR0198
+public import ActualMetaplecticPullbackR0206
 
 @[expose] public section
 
