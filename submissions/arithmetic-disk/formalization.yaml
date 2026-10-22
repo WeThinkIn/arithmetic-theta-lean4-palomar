@@ -20,7 +20,7 @@ sources:
 - title: Arithmetic determination of relations among lattice theta series
   type: paper
   location: paper/Arithmetic determination of relations among lattice theta series
-    - A formal Tate and finite-cover construction with Lean verification.pdf
+    - Exact Tate normalization and common finite covers.pdf
   relationship: formalizes
 - title: Original arithmetic theta kernel task
   type: paper

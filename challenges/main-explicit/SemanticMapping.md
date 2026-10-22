@@ -39,7 +39,7 @@ Lean 自然数 cutoff 采用 n K^s |SL₂(Z/LZ)| / 48；命题另行要求它与
 
 ## 与论文及 103 端点的映射
 
-[论文 PDF](../../paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20A%20formal%20Tate%20and%20finite-cover%20construction%20with%20Lean%20verification.pdf) 的 Input and the finite-coefficient theorem 一节给出实际 θ、零秩、N/L/K/s/I/B_* 和矩阵核。本包审计时核对的原始 LaTeX 快照及当时仓库快照的输入哈希保存在 receipt 中；仓库当前以 PDF 作为论文发布文件。
+[论文 PDF](../../paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20Exact%20Tate%20normalization%20and%20common%20finite%20covers.pdf) 的 Input and the finite-coefficient theorem 一节给出实际 θ、零秩、N/L/K/s/I/B_* 和矩阵核。本包审计时核对的原始 LaTeX 快照及当时仓库快照的输入哈希保存在 receipt 中；仓库当前以 PDF 作为论文发布文件。
 
 本包的主要证明入口是 accepted-037 `ArithmeticThetaConservativeKernelR0189.conservative_matrix_kernel`。其内部已调用 accepted-035 `arithmetic_geometric_family_existence` 和 accepted-036 `geometric_family_conservative_cutoff`；构造几何的责任仍在已接受原证明依赖链中。本 Challenge 不把这些存在结论改写为假设。原 theorem 额外返回 `FormalIdentity A U`；本包仅消费其精确索引和核结论，完整余类乘积恒等式仍须由单独 orthogonal factorization 包覆盖。
 

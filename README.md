@@ -1,6 +1,6 @@
 # Arithmetic determination of relations among lattice theta series
 
-*A formal Tate and finite-cover construction with Lean verification*
+*Exact Tate normalization and common finite covers*
 
 Human author and responsible maintainer: **Jue Ding**.
 
@@ -8,7 +8,7 @@ This repository presents the research manuscript, the complete Lean 4 formalizat
 
 **The complete formalization has passed local Lean verification for all 13 source requirements, represented by 103 exact theorem endpoints.** The original delivery was verified with Lean **4.33.1**. The Palomar-compatible edition published here has also passed the complete `GoalRoot` build and all 103 original endpoint type and axiom checks with Lean **4.35.0-rc2**. The [main-result Palomar official mechanical preflight](docs/audit/official-main-complete-1477/Review.md) has passed for 40 original endpoints, with stock Lean, NanoDa, and Conron acceptance. Whole-paper semantic review and registration remain in progress.
 
-[Paper (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20A%20formal%20Tate%20and%20finite-cover%20construction%20with%20Lean%20verification.pdf) · [Original mathematical specification](paper/OriginalTask.tex) · [Formal theorem specification](docs/SourceObligations.json)
+[Paper (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20Exact%20Tate%20normalization%20and%20common%20finite%20covers.pdf) · [Original mathematical specification](paper/OriginalTask.tex) · [Formal theorem specification](docs/SourceObligations.json)
 
 ## Main mathematical result
 
@@ -144,7 +144,7 @@ The selected statements and scope are documented in [`challenges/main-and-compon
 
 | Path | Contents |
 | --- | --- |
-| [Research manuscript (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20A%20formal%20Tate%20and%20finite-cover%20construction%20with%20Lean%20verification.pdf) | Accompanying research manuscript |
+| [Research manuscript (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20Exact%20Tate%20normalization%20and%20common%20finite%20covers.pdf) | Accompanying research manuscript |
 | [`paper/OriginalTask.tex`](paper/OriginalTask.tex) | Original mathematical specification |
 | [`Proof/`](Proof/) | Formal proof modules and required local library sources |
 | [`Proof/GoalRoot.lean`](Proof/GoalRoot.lean) | Joint import of the complete delivered proof closure |
@@ -164,7 +164,7 @@ The modularity statements use the arithmetic geometric formulation specified in 
 
 For the mathematical result, cite the accompanying manuscript using its recorded author list and title:
 
-> *Arithmetic determination of relations among lattice theta series: A formal Tate and finite-cover construction with Lean verification.* See [the manuscript](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20A%20formal%20Tate%20and%20finite-cover%20construction%20with%20Lean%20verification.pdf) for authorship and version information.
+> *Arithmetic determination of relations among lattice theta series: Exact Tate normalization and common finite covers.* See [the manuscript](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20Exact%20Tate%20normalization%20and%20common%20finite%20covers.pdf) for authorship and version information.
 
 For the Lean formalization, cite this repository together with the exact Git commit used for verification:
 
