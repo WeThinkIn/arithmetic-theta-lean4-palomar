@@ -22,5 +22,25 @@
     "SchemeKatoFullTateExpansionR0252.lean": "9c3cfc34bdcc0d13d5ae7a8a4bafefb541c7c0964d145c59ff827d80f1ff678f"
   },
   "original_type_recovery": "recover_original_084; original whole theorem equality checked by rfl",
-  "formatting": "Comment/blank removal and signature folding; independent word/string/punctuation stream equivalence verified"
+  "formatting": "Comment/blank removal and signature folding; independent word/string/punctuation stream equivalence verified",
+  "current_interface_validation": {
+    "challenge_direct_imports": [
+      "Mathlib",
+      "Lean.Meta.Match.Match"
+    ],
+    "original_targets_preserved": true,
+    "additional_original_helper_obligations": [
+      "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+      "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+      "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+      "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+      "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+      "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+      "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+      "WeierstrassProjModel.kw_lrChart_aux._proof_2"
+    ],
+    "permitted_axioms_unchanged": true,
+    "source_definitions_and_solution_proofs_preserved": true,
+    "strict_receipt": "docs/audit/geometric-interface-alignment-1619/receipt.json"
+  }
 }

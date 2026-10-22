@@ -8,7 +8,15 @@
     "ArithmeticThetaPalomarKato394.schemeUnitNaturality",
     "ArithmeticThetaPalomarKato394.schemeIntrinsicCharacterization",
     "ArithmeticThetaPalomarSchemeTate422.gammaPair",
-    "ArithmeticThetaPalomarSchemeTate422.schemeKatoFullTateExpansion"
+    "ArithmeticThetaPalomarSchemeTate422.schemeKatoFullTateExpansion",
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2"
   ],
   "permitted_axioms": [
     "propext",
