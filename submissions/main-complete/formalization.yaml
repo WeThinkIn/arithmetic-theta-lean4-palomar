@@ -1,12 +1,19 @@
 version: v0.4
 project:
   name: Complete conservative theta relation bound and arithmetic components
-  description: This entry compares 43 targets covering 40 complete existing endpoints
-    and supporting results. The main theorem includes Indexed and FormalIdentity for
-    the same U, the exact conservative bound and rational formula for the same B,
-    all larger cutoffs, actual shell finiteness, and rank zero. See challenges/main-and-components-complete/Scope.json.
-    The other 63 original endpoints and full-paper independent verification remain
-    outside this entry.
+  description: This entry formalizes an explicit conservative coefficient bound determining
+    all complex linear relations among complete lattice theta series for arbitrary finite valid
+    even integral Gram families, including rank zero and all larger cutoffs. The selected statements
+    also prove rational orthogonal-sublattice factorization through actual preimage cosets;
+    exact coefficient enumeration using rational LDL decomposition and recursive ellipsoid enumeration,
+    with equality to the true theta coefficients and coefficient matrices; and concrete lattice
+    results including binary factorization, the determinant-80 forms, and nonsimilar rank-16
+    lattices with equal theta series. The formal-identity results include the Jacobi triple
+    product, the quartic theta identity, Tate-series addition identities, and the powered gamma
+    norm identity. The selection further proves existence and uniqueness of finite étale norm
+    families on arbitrary schemes. The 43 selected targets cover 40 original endpoints together
+    with their supporting declarations; the other 63 original endpoints are outside this entry.
+    See challenges/main-and-components-complete/Scope.json for the precise scope.
   license: Apache-2.0
   authors:
   - Jue Ding
@@ -19,7 +26,8 @@ classification:
 sources:
 - title: Arithmetic determination of relations among lattice theta series
   type: paper
-  location: paper/Arithmetic determination of relations among lattice theta series - Exact Tate normalization and common finite covers.pdf
+  location: paper/Arithmetic determination of relations among lattice theta series - Exact Tate
+    normalization and common finite covers.pdf
   relationship: formalizes
 - title: Original arithmetic theta kernel task
   type: paper
@@ -29,21 +37,19 @@ automation:
   methods:
   - method: agent
     framework: WujieAI Lean4 Agent and Codex
-    tool_setup: Original Lean proof development and independent Palomar adaptation
-      workspace
-  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
-    are recorded here.
+    tool_setup: Original Lean proof development and independent Palomar adaptation workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions are recorded
+    here.
 review:
   status: agent-reviewed
-  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
-    Official mechanical and semantic review are pending for this configuration.
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally. Official
+    mechanical and semantic review are pending for this configuration.
 status:
-  scope: This entry compares 43 targets covering 40 complete existing endpoints and
-    supporting results. The main theorem includes Indexed and FormalIdentity for the
-    same U, the exact conservative bound and rational formula for the same B, all
-    larger cutoffs, actual shell finiteness, and rank zero. See challenges/main-and-components-complete/Scope.json.
-    The other 63 original endpoints and full-paper independent verification remain
-    outside this entry.
+  scope: This entry compares 43 targets covering 40 complete existing endpoints and supporting
+    results. The main theorem includes Indexed and FormalIdentity for the same U, the exact
+    conservative bound and rational formula for the same B, all larger cutoffs, actual shell
+    finiteness, and rank zero. See challenges/main-and-components-complete/Scope.json. The other
+    63 original endpoints and full-paper independent verification remain outside this entry.
 fidelity:
-  divergences: No omitted original accepted-037 output in this interface; all other
-    scope limits are explicitly listed in Scope.json.
+  divergences: No omitted original accepted-037 output in this interface; all other scope limits
+    are explicitly listed in Scope.json.
