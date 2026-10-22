@@ -1,0 +1,18 @@
+{
+  "challenge_module": "ArithmeticThetaProjectiveOrbitChallenge",
+  "solution_module": "ArithmeticThetaProjectiveOrbitSolution",
+  "theorem_names": [
+    "ArithmeticThetaSchemeSchrodingerR0261.instHasFiniteBiproductsModules_schemeSchrodingerDefinitionsR0261",
+    "P2MW.S_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso.AlgebraicGeometry.Scheme.Modules.P2K2.map_resTop_smul",
+    "P2MW.S_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso.AlgebraicGeometry.Scheme.Modules.P2K2.smulHom_mul",
+    "P2MW.S_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso.AlgebraicGeometry.Scheme.Modules.P2K2.smulHom_one",
+    "P2MW.S_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso.AlgebraicGeometry.Scheme.Modules.P2K2.smul_res_comm",
+    "PalomarProjective969.orbit"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "definition_names": []
+}

@@ -1,0 +1,15 @@
+{
+  "challenge_module": "ArithmeticThetaProjectiveQuotientChallenge",
+  "solution_module": "ArithmeticThetaProjectiveQuotientSolution",
+  "theorem_names": [
+    "P2MW.S_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso.AlgebraicGeometry.Scheme.Modules.P2K2.map_resTop_smul",
+    "P2MW.S_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso.AlgebraicGeometry.Scheme.Modules.P2K2.smul_res_comm",
+    "PalomarProjective954.quotient_transfer"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "definition_names": []
+}

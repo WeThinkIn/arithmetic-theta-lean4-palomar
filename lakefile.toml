@@ -15,6 +15,25 @@ name = "ThetaProof"
 srcDir = "Proof"
 roots = ["GoalRoot"]
 globs = [
+  "ActualLiftsRecovery",
+  "AlternationRecovery",
+  "AlternationRecovery3",
+  "ConcreteGlobalMarking",
+  "ConcreteTateRatios2",
+  "GenericGlobalMarking",
+  "GenericSquare",
+  "GlobalMarkingRecovery",
+  "InducedSquareRecovery",
+  "LiftTransportRecovery",
+  "Original087Recovery2",
+  "ProjectiveCoreBridge",
+  "ProjectiveCoreRecovery",
+  "ProjectiveProviderBridge",
+  "ProjectiveTransportBridge",
+  "SquareRecovery",
+  "SymmetryRecovery",
+  "TateInversionRecovery",
+  "TateRatiosRecovery2",
   "AcceptedRootProvidersR0228",
   "ActualAnchoredPullbackR0208",
   "ActualCategoricalRootFiberR0208",
@@ -1572,3 +1591,108 @@ roots = ["CommonUnaryChallenge"]
 [[lean_lib]]
 name = "CommonUnarySolution"
 roots = ["CommonUnarySolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveQuotient"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveQuotientChallenge", "ArithmeticThetaProjectiveQuotientSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveGeometry"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveGeometryChallenge", "ArithmeticThetaProjectiveGeometrySolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectivePointedgroup"
+srcDir = "."
+roots = ["ArithmeticThetaProjectivePointedgroupChallenge", "ArithmeticThetaProjectivePointedgroupSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveCommutator"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveCommutatorChallenge", "ArithmeticThetaProjectiveCommutatorSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveInvariantline"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveInvariantlineChallenge", "ArithmeticThetaProjectiveInvariantlineSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveOrbit"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveOrbitChallenge", "ArithmeticThetaProjectiveOrbitSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveIntertwining"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveIntertwiningChallenge", "ArithmeticThetaProjectiveIntertwiningSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveNaturality"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveNaturalityChallenge", "ArithmeticThetaProjectiveNaturalitySolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveTestexists"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveTestexistsChallenge", "ArithmeticThetaProjectiveTestexistsSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveModel"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveModelChallenge", "ArithmeticThetaProjectiveModelSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveAlignment"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveAlignmentChallenge", "ArithmeticThetaProjectiveAlignmentSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveTransport"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveTransportChallenge", "ArithmeticThetaProjectiveTransportSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveInversion"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveInversionChallenge", "ArithmeticThetaProjectiveInversionSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveMidpoint"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveMidpointChallenge", "ArithmeticThetaProjectiveMidpointSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveFaithfulness"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveFaithfulnessChallenge", "ArithmeticThetaProjectiveFaithfulnessSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveSquare"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveSquareChallenge", "ArithmeticThetaProjectiveSquareSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveInversionchange"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveInversionchangeChallenge", "ArithmeticThetaProjectiveInversionchangeSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveGenericdual"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveGenericdualChallenge", "ArithmeticThetaProjectiveGenericdualSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveInduceddual"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveInduceddualChallenge", "ArithmeticThetaProjectiveInduceddualSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveFieldnormal"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveFieldnormalChallenge", "ArithmeticThetaProjectiveFieldnormalSolution"]
+
+[[lean_lib]]
+name = "ArithmeticThetaProjectiveRatiogenerator"
+srcDir = "."
+roots = ["ArithmeticThetaProjectiveRatiogeneratorChallenge", "ArithmeticThetaProjectiveRatiogeneratorSolution"]

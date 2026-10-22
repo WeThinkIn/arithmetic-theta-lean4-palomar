@@ -1,0 +1,50 @@
+version: v0.4
+project:
+  name: Dual compatibility of the induced ideal lift
+  description: This entry verifies dual compatibility of the induced ideal lift, including
+    the explicitly selected supporting declarations. It is a component of the exact
+    original global arithmetic projective-ratio recovery in Proof/Original087Recovery2.lean.
+    This configuration alone does not select that complete endpoint or all 103 original
+    endpoints.
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series
+    - A formal Tate and finite-cover construction with Lean verification.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+  - method: agent
+    framework: WujieAI Lean4 Agent and Codex
+    tool_setup: Original Lean proof development and independent Palomar adaptation
+      workspace
+  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
+    are recorded here.
+review:
+  status: agent-reviewed
+  notes: Local exact statement/data audits and strict comparisons exist for the source
+    component. Official mechanical and semantic review of this published configuration
+    remain pending.
+status:
+  scope: This entry verifies dual compatibility of the induced ideal lift, including
+    the explicitly selected supporting declarations. It is a component of the exact
+    original global arithmetic projective-ratio recovery in Proof/Original087Recovery2.lean.
+    This configuration alone does not select that complete endpoint or all 103 original
+    endpoints.
+fidelity:
+  divergences: The selected declarations retain their audited types and data definitions.
+    The full original endpoint is recovered separately; whole-paper coverage must
+    be assessed across the complete development.

@@ -1,0 +1,13 @@
+{
+  "challenge_module": "ArithmeticThetaProjectivePointedgroupChallenge",
+  "solution_module": "ArithmeticThetaProjectivePointedgroupSolution",
+  "theorem_names": [
+    "PalomarProjective969.pointedgroup"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "definition_names": []
+}

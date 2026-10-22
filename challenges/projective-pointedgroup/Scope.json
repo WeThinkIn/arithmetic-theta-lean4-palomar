@@ -1,0 +1,10 @@
+{
+  "scope": "This entry verifies pointed cartesian group law, including the explicitly selected supporting declarations. It is a component of the exact original global arithmetic projective-ratio recovery in Proof/Original087Recovery2.lean. This configuration alone does not select that complete endpoint or all 103 original endpoints.",
+  "theorem_names": [
+    "PalomarProjective969.pointedgroup"
+  ],
+  "definition_names": [],
+  "original_endpoint": "ArithmeticThetaGlobalProjectiveRatiosR0266.global_arithmetic_projective_ratios",
+  "recovery": "PalomarOriginal1413.original087",
+  "standalone_original_endpoint_selected": false
+}

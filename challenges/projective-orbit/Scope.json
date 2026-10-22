@@ -1,0 +1,15 @@
+{
+  "scope": "This entry verifies scheme schroedinger orbit, including the explicitly selected supporting declarations. It is a component of the exact original global arithmetic projective-ratio recovery in Proof/Original087Recovery2.lean. This configuration alone does not select that complete endpoint or all 103 original endpoints.",
+  "theorem_names": [
+    "ArithmeticThetaSchemeSchrodingerR0261.instHasFiniteBiproductsModules_schemeSchrodingerDefinitionsR0261",
+    "P2MW.S_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso.AlgebraicGeometry.Scheme.Modules.P2K2.map_resTop_smul",
+    "P2MW.S_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso.AlgebraicGeometry.Scheme.Modules.P2K2.smulHom_mul",
+    "P2MW.S_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso.AlgebraicGeometry.Scheme.Modules.P2K2.smulHom_one",
+    "P2MW.S_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso.AlgebraicGeometry.Scheme.Modules.P2K2.smul_res_comm",
+    "PalomarProjective969.orbit"
+  ],
+  "definition_names": [],
+  "original_endpoint": "ArithmeticThetaGlobalProjectiveRatiosR0266.global_arithmetic_projective_ratios",
+  "recovery": "PalomarOriginal1413.original087",
+  "standalone_original_endpoint_selected": false
+}
