@@ -1,5 +1,6 @@
 module
 public import Mathlib
+import all Lean.Meta.Match.Match
 @[expose] public section
 section Package00
 set_option autoImplicit false
@@ -393,6 +394,7 @@ def coefficientsUpTo {n : ℕ} (A : Matrix (Fin n) (Fin n) ℤ) (B : ℕ) : List
     (box.filter (fun x => normNumerator A x = 2 * (m.val : ℤ))).card)
 end ArithmeticThetaEnumeration
 namespace ArithmeticThetaElimination
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 def findPivot {m h : ℕ} (M : Matrix (Fin m) (Fin h) ℚ) (r : ℕ) (c : Fin h) :
     Option (Fin m) :=
   (List.finRange m).find? (fun i => r ≤ i.val && M i c != 0)
@@ -451,6 +453,7 @@ def columnCoordinates {m h : ℕ} (A : Matrix (Fin m) (Fin h) ℚ) (j : Fin h) :
   fun t => (run A).reduced (((run A).pivots.get t).1) j
 end ArithmeticThetaElimination
 namespace ArithmeticThetaComputed
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 def validGram {n : ℕ} (A : Matrix (Fin n) (Fin n) ℤ) : Prop :=
   A.IsSymm ∧ (∀ i, Even (A i i)) ∧
     ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef
