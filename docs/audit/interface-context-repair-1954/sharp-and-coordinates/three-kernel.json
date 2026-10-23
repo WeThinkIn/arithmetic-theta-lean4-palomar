@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "results": {
+    "stock-lean": {
+      "exit_code": 0,
+      "seconds": 5745.5553923798725,
+      "peak_rss_bytes": 13695533056,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+        "--silent",
+        "--from-export",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/coordinates-repaired-strict-1893/solution.ndjson"
+      ]
+    },
+    "conron": {
+      "exit_code": 0,
+      "seconds": 624.7084483671933,
+      "peak_rss_bytes": 10068774912,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/evidence/official-pipeline-refresh-858/trusted-checker-update-02/con-ron",
+        "--verified",
+        "--jobs=2",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/coordinates-repaired-strict-1893/solution.ndjson"
+      ]
+    },
+    "nanoda": {
+      "exit_code": 0,
+      "seconds": 892.005209330935,
+      "peak_rss_bytes": 3562205184,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/coordinates-three-kernel-replay-1897/nanoda.json"
+      ]
+    }
+  },
+  "positive_kernel_markers": true,
+  "bindings_unchanged": true,
+  "scope": "Independent three-kernel replay of full unchanged Solution target closure for repaired sharp-and-coordinates interface. Official fresh preflight remains required."
+}

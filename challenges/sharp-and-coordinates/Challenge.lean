@@ -1,11 +1,12 @@
 module
 public import Mathlib
+import all Lean.Meta.Match.Match
 @[expose] public section
 section Package00
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
-set_option backward.isDefEq.respectTransparency.types false
-set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
+set_option backward.isDefEq.respectTransparency.types true
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes true
 set_option synthInstance.maxHeartbeats 800000
 set_option maxRecDepth 4096
 set_option maxHeartbeats 1600000
@@ -13,6 +14,7 @@ noncomputable section
 universe u
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry Opposite TopologicalSpace
 namespace ArithmeticThetaNodeCharts
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 variable (k : Type u) [Field k]
 abbrev Base := PowerSeries k
 def parameter : Base k := PowerSeries.X
@@ -43,19 +45,15 @@ def toXChart : Node k →+* XChart k := algebraMap (Node k) (XChart k)
 def toYChart : Node k →+* YChart k := algebraMap (Node k) (YChart k)
 end ArithmeticThetaNodeCharts
 namespace ArithmeticThetaNodeCharts
-private theorem laurent_hom_ext {R S : Type*} [CommRing R] [CommRing S]
-    {f g : LaurentPolynomial R →+* S}
-    (hC : ∀ a, f (LaurentPolynomial.C a) = g (LaurentPolynomial.C a))
-    (hT : f (LaurentPolynomial.T 1) = g (LaurentPolynomial.T 1)) : f = g := by
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+private theorem laurent_hom_ext {R S : Type*} [CommRing R] [CommRing S] {f g : LaurentPolynomial R →+* S} (hC : ∀ a, f (LaurentPolynomial.C a) = g (LaurentPolynomial.C a)) (hT : f (LaurentPolynomial.T 1) = g (LaurentPolynomial.T 1)) : f = g := by
   apply IsLocalization.ringHom_ext (Submonoid.powers (Polynomial.X : Polynomial R))
   apply Polynomial.ringHom_ext
   · intro a
     simpa [LaurentPolynomial.algebraMap_eq_toLaurent] using hC a
   · simpa [LaurentPolynomial.algebraMap_eq_toLaurent] using hT
 variable (k : Type u) [Field k]
-private theorem coordinate_product (i j : Fin 2) (h : i ≠ j) :
-    quotientMap k (MvPolynomial.X i) * quotientMap k (MvPolynomial.X j) =
-      quotientMap k (MvPolynomial.C (parameter k)) := by
+private theorem coordinate_product (i j : Fin 2) (h : i ≠ j) : quotientMap k (MvPolynomial.X i) * quotientMap k (MvPolynomial.X j) = quotientMap k (MvPolynomial.C (parameter k)) := by
   have hr : quotientMap k (relation k) = 0 :=
     Ideal.Quotient.eq_zero_iff_mem.mpr (Ideal.subset_span (by simp))
   have hxy := sub_eq_zero.mp (show
@@ -63,12 +61,7 @@ private theorem coordinate_product (i j : Fin 2) (h : i ≠ j) :
       quotientMap k (MvPolynomial.C (parameter k)) = 0 by
         simpa [relation, map_sub, map_mul] using hr)
   fin_cases i <;> fin_cases j <;> simp_all [mul_comm]
-private theorem coordinate_chart (i : Fin 2) (f : PolynomialChart k →+* Torus k)
-    (hC : ∀ a, f (MvPolynomial.C a) = LaurentPolynomial.C a)
-    (hX : ∀ j, f (MvPolynomial.X j) = if j = i then LaurentPolynomial.T 1
-      else LaurentPolynomial.C (parameter k) * LaurentPolynomial.T (-1)) :
-    ∃! e : Localization.Away (quotientMap k (MvPolynomial.X i)) ≃+* Torus k,
-      e.toRingHom.comp ((algebraMap (Node k) _).comp (quotientMap k)) = f := by
+private theorem coordinate_chart (i : Fin 2) (f : PolynomialChart k →+* Torus k) (hC : ∀ a, f (MvPolynomial.C a) = LaurentPolynomial.C a) (hX : ∀ j, f (MvPolynomial.X j) = if j = i then LaurentPolynomial.T 1 else LaurentPolynomial.C (parameter k) * LaurentPolynomial.T (-1)) : ∃! e : Localization.Away (quotientMap k (MvPolynomial.X i)) ≃+* Torus k, e.toRingHom.comp ((algebraMap (Node k) _).comp (quotientMap k)) = f := by
   let v := quotientMap k (MvPolynomial.X i)
   let S := Localization.Away v
   let a : Node k →+* S := algebraMap _ _
@@ -145,29 +138,17 @@ private theorem coordinate_chart (i : Fin 2) (f : PolynomialChart k →+* Torus 
   apply IsLocalization.ringHom_ext (Submonoid.powers v)
   apply Ideal.Quotient.ringHom_ext
   exact he'.trans he.symm
-theorem node_torus_chart_equivalences :
-    ∀ (k : Type u) [Field k] [CharZero k],
-    (∃! e : XChart k ≃+* Torus k,
-      e.toRingHom.comp ((toXChart k).comp (quotientMap k)) = torusMap k) ∧
-    (∃! e : YChart k ≃+* Torus k,
-      e.toRingHom.comp ((toYChart k).comp (quotientMap k)) = oppositeTorusMap k) := by
-  intro k _ _
-  constructor
-  · exact coordinate_chart k 0 (torusMap k)
-      (fun z => by simp [torusMap]) (fun j => by simp [torusMap])
-  · apply coordinate_chart k 1 (oppositeTorusMap k)
-    · intro z; simp [oppositeTorusMap]
-    · intro j; fin_cases j <;> simp [oppositeTorusMap]
+theorem node_torus_chart_equivalences : ∀ (k : Type u) [Field k] [CharZero k], (∃! e : XChart k ≃+* Torus k, e.toRingHom.comp ((toXChart k).comp (quotientMap k)) = torusMap k) ∧ (∃! e : YChart k ≃+* Torus k, e.toRingHom.comp ((toYChart k).comp (quotientMap k)) = oppositeTorusMap k) := by sorry
 end ArithmeticThetaNodeCharts
 namespace ArithmeticThetaIndexedOverlapsR0058
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 variable (k : Type u) [Field k] [CharZero k]
 abbrev Node (_j : ℕ) := ArithmeticThetaNodeCharts.Node k
 def next (r j : ℕ) : ℕ := (j + 1) % r
 def nodeCoord (side : Bool) : Node k 0 :=
   if side then ArithmeticThetaNodeCharts.x k else ArithmeticThetaNodeCharts.y k
 abbrev Open (_j : ℕ) (side : Bool) := Localization.Away (nodeCoord k side)
-def torusEquiv (j : ℕ) (side : Bool) :
-    Open k j side ≃+* ArithmeticThetaNodeCharts.Torus k := by
+def torusEquiv (j : ℕ) (side : Bool) : Open k j side ≃+* ArithmeticThetaNodeCharts.Torus k := by
   cases side with
   | false => exact Classical.choose (ArithmeticThetaNodeCharts.node_torus_chart_equivalences k).2
   | true => exact Classical.choose (ArithmeticThetaNodeCharts.node_torus_chart_equivalences k).1
@@ -176,18 +157,16 @@ def adjacent (r j : ℕ) : Open k j false ≃+* Open k (next r j) true :=
     (torusEquiv k (next r j) true).symm
 end ArithmeticThetaIndexedOverlapsR0058
 namespace ArithmeticThetaInfinitesimalPolygonR0129
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev Trunc (R : Type u) [CommRing R] (t : R) (n : ℕ) :=
   R ⧸ (Ideal.span {t}) ^ (n+1)
 def trunc (R : Type u) [CommRing R] (t : R) (n : ℕ) : R →+* Trunc R t n :=
   Ideal.Quotient.mk _
-def truncMap {R S : Type u} [CommRing R] [CommRing S]
-    (f : R →+* S) (t : R) (s : S) (h : f t = s) (n : ℕ) :
-    Trunc R t n →+* Trunc S s n :=
+def truncMap {R S : Type u} [CommRing R] [CommRing S] (f : R →+* S) (t : R) (s : S) (h : f t = s) (n : ℕ) : Trunc R t n →+* Trunc S s n :=
   Ideal.quotientMap _ f (by
     apply Ideal.map_le_iff_le_comap.mp
     rw [Ideal.map_pow, Ideal.map_span, Set.image_singleton, h])
-def truncReduce (R : Type u) [CommRing R] (t : R) (n N : ℕ) (h : n ≤ N) :
-    Trunc R t N →+* Trunc R t n :=
+def truncReduce (R : Type u) [CommRing R] (t : R) (n N : ℕ) (h : n ≤ N) : Trunc R t N →+* Trunc R t n :=
   Ideal.Quotient.factor (Ideal.pow_le_pow_right (Nat.add_le_add_right h 1))
 variable (k : Type u) [Field k] [CharZero k]
 abbrev R (n : ℕ) := Trunc (PowerSeries k) PowerSeries.X n
@@ -209,6 +188,13 @@ def rawAdjacent : RawOpen k false ≃+* RawOpen k true :=
 def IsAdjacent (n : ℕ) (E : B k n false ≃+* B k n true) : Prop :=
   E.toRingHom.comp (trunc (RawOpen k false) (openParameter k false) n) =
     (trunc (RawOpen k true) (openParameter k true) n).comp (rawAdjacent k).toRingHom
+theorem _root_.ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_2.{u_1} : ∀ (k : Type u_1) [inst : Field.{u_1} k], @IsScalarTower.{u_1, u_1, u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@Algebra.toSMul.{u_1, u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst)) (@CommSemiring.toSemiring.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@Algebra.id.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst)))) (@instSMulOfMul.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@Distrib.toMul.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@instDistribOfSemiring.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@CommSemiring.toSemiring.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst)))))) (@Algebra.toSMul.{u_1, u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst)) (@CommSemiring.toSemiring.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@Algebra.id.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaNodeCharts.Node.{u_1} k inst) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst)))) := by sorry
+theorem _root_.ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_4.{u_1} : ∀ (k : Type u_1) [inst : Field.{u_1} k] (side : Bool), @IsScalarTower.{u_1, u_1, u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@Algebra.toSMul.{u_1, u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@OreLocalization.instCommRing.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side)) (@OreLocalization.oreSetComm.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst)) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side))))) (@CommSemiring.toSemiring.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@OreLocalization.instCommRing.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side)) (@OreLocalization.oreSetComm.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst)) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side)))))) (@Algebra.id.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@OreLocalization.instCommRing.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side)) (@OreLocalization.oreSetComm.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst)) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side))))))) (@instSMulOfMul.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@Distrib.toMul.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@instDistribOfSemiring.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@CommSemiring.toSemiring.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@OreLocalization.instCommRing.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side)) (@OreLocalization.oreSetComm.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst)) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side))))))))) (@Algebra.toSMul.{u_1, u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@OreLocalization.instCommRing.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side)) (@OreLocalization.oreSetComm.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst)) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side))))) (@CommSemiring.toSemiring.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@OreLocalization.instCommRing.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side)) (@OreLocalization.oreSetComm.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst)) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side)))))) (@Algebra.id.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@CommRing.toCommSemiring.{u_1} (@ArithmeticThetaInfinitesimalPolygonR0129.RawOpen.{u_1} k inst side) (@OreLocalization.instCommRing.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side)) (@OreLocalization.oreSetComm.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst)) (@Submonoid.powers.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommMonoid.toMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@CommRing.toCommMonoid.{u_1} (@ArithmeticThetaIndexedOverlapsR0058.Node.{u_1} k inst (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) (@ArithmeticThetaNodeCharts.nodeCommRing.{u_1} k inst))) (@ArithmeticThetaIndexedOverlapsR0058.nodeCoord.{u_1} k inst side))))))) := by sorry
+run_cmd do
+  for n in [`ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_2, `ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_4] do
+    let some ci := (← Lean.getEnv).find? n | throwError "Missing original completion helper"
+    let key : Lean.Meta.AuxLemmaKey := { type := ci.type, isPrivate := false, defeq := false }
+    Lean.modifyEnv fun env => Lean.Meta.auxLemmasExt.modifyState env fun s => { s with lemmas := s.lemmas.insert key (ci.name, ci.levelParams) }
 def specR (n : ℕ) : AlgebraicGeometry.Scheme.{u} :=
   AlgebraicGeometry.Spec (CommRingCat.of (R k n))
 def specA (n : ℕ) : AlgebraicGeometry.Scheme.{u} :=
@@ -219,8 +205,7 @@ def structureMap (n : ℕ) : specA k n ⟶ specR k n :=
   AlgebraicGeometry.Spec.map (CommRingCat.ofHom (base k n))
 def rightLeg (n : ℕ) : specB k n true ⟶ specA k n :=
   AlgebraicGeometry.Spec.map (CommRingCat.ofHom (restriction k n true))
-def leftLeg (n : ℕ) (E : B k n false ≃+* B k n true) :
-    specB k n true ⟶ specA k n :=
+def leftLeg (n : ℕ) (E : B k n false ≃+* B k n true) : specB k n true ⟶ specA k n :=
   AlgebraicGeometry.Spec.map (CommRingCat.ofHom (E.toRingHom.comp (restriction k n false)))
 def next (r : ℕ) (hr : 0 < r) (i : Fin r) : Fin r :=
   ⟨(i.val+1)%r, Nat.mod_lt _ hr⟩
@@ -241,9 +226,7 @@ def baseReduction (n N : ℕ) (h : n ≤ N) : specR k n ⟶ specR k N :=
 def chartReduction (n N : ℕ) (h : n ≤ N) : specA k n ⟶ specA k N :=
   AlgebraicGeometry.Spec.map (CommRingCat.ofHom
     (truncReduce (ArithmeticThetaNodeCharts.Node k) (ArithmeticThetaNodeCharts.t k) n N h))
-def IsReduction (r n N : ℕ) (hr : 0 < r) (h : n ≤ N)
-    {E : B k n false ≃+* B k n true} {F : B k N false ≃+* B k N true}
-    (D : Atlas k r n hr E) (T : Atlas k r N hr F) (i : D.X ⟶ T.X) : Prop :=
+def IsReduction (r n N : ℕ) (hr : 0 < r) (h : n ≤ N) {E : B k n false ≃+* B k n true} {F : B k N false ≃+* B k N true} (D : Atlas k r n hr E) (T : Atlas k r N hr F) (i : D.X ⟶ T.X) : Prop :=
   i ≫ T.p = D.p ≫ baseReduction k n N h ∧
     ∀ j : Fin r, D.chart j ≫ i = chartReduction k n N h ≫ T.chart j
 structure Tower (r : ℕ) (hr : 0 < r) where
@@ -257,6 +240,7 @@ structure Tower (r : ℕ) (hr : 0 < r) where
     transition n N h ≫ transition N P h' = transition n P (le_trans h h')
 end ArithmeticThetaInfinitesimalPolygonR0129
 namespace ArithmeticThetaInfinitesimalPolygonR0129
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 variable (k : Type u) [Field k] [CharZero k]
 variable (n : ℕ)
 def coordX : A k n := trunc _ (ArithmeticThetaNodeCharts.t k) n
@@ -269,8 +253,7 @@ lemma parameter_pow : parameter k n ^ (n+1) = 0 := by
   apply Ideal.Quotient.eq_zero_iff_mem.mpr
   exact Ideal.pow_mem_pow (Ideal.subset_span (by simp)) _
 variable {k n}
-def mkPoint {S : Type u} [CommRing S] (b : R k n →+* S) (x y : S)
-    (hxy : x * y = b (parameter k n)) : A k n →+* S := by
+def mkPoint {S : Type u} [CommRing S] (b : R k n →+* S) (x y : S) (hxy : x * y = b (parameter k n)) : A k n →+* S := by
   let f : ArithmeticThetaNodeCharts.PolynomialChart k →+* S :=
     MvPolynomial.eval₂Hom (b.comp (trunc _ PowerSeries.X n))
       (fun j => if j = 0 then x else y)
@@ -292,20 +275,43 @@ def mkPoint {S : Type u} [CommRing S] (b : R k n →+* S) (x y : S)
   exact Ideal.Quotient.lift _ g (fun a ha => hg ha)
 end ArithmeticThetaInfinitesimalPolygonR0129
 namespace ArithmeticThetaPolygonCohomologyR0131
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129
 variable (k : Type u) [Field k] [CharZero k]
+def LaurentPresentation (n : ℕ)
+    (L : B k n true ≃+* LaurentPolynomial (R k n)) : Prop :=
+  L.toRingHom.comp ((restriction k n true).comp (base k n)) =
+    LaurentPolynomial.C ∧
+  L (restriction k n true (coordX k n)) = LaurentPolynomial.T 1
+
+def difference (r n : ℕ) (hr : 0 < r) (E : B k n false ≃+* B k n true)
+    (a : Fin r → A k n) : Fin r → B k n true :=
+  fun i => E (restriction k n false (a i)) -
+    restriction k n true (a (next r hr i))
+
+def constants (r n : ℕ) (c : R k n) : Fin r → A k n :=
+  fun _ => base k n c
+
+def residue (r n : ℕ) (L : B k n true ≃+* LaurentPolynomial (R k n))
+    (b : Fin r → B k n true) : R k n :=
+  ∑ i : Fin r, (L (b i)).coeff 0
+
+def globalBase (r n : ℕ) (hr : 0 < r)
+    {E : B k n false ≃+* B k n true} (D : Atlas k r n hr E) :
+    R k n →+* D.X.presheaf.obj (Opposite.op ⊤) :=
+  D.p.appTop.hom.comp (Scheme.ΓSpecIso (CommRingCat.of (R k n))).inv.hom
+
 def markedUnit (n : ℕ) (a : kˣ) : (R k n)ˣ :=
   Units.map ((trunc (PowerSeries k) PowerSeries.X n).comp PowerSeries.C) a
 def markedPoint (n : ℕ) (a : kˣ) : A k n →+* R k n :=
   mkPoint (RingHom.id (R k n)) (markedUnit k n a : R k n)
     (parameter k n * ↑((markedUnit k n a)⁻¹)) (by
       simp [mul_left_comm])
-def markedSection (r n : ℕ) (hr : 0 < r)
-    {E : B k n false ≃+* B k n true} (D : Atlas k r n hr E)
-    (i : Fin r) (a : kˣ) : specR k n ⟶ D.X :=
+def markedSection (r n : ℕ) (hr : 0 < r) {E : B k n false ≃+* B k n true} (D : Atlas k r n hr E) (i : Fin r) (a : kˣ) : specR k n ⟶ D.X :=
   Spec.map (CommRingCat.ofHom (markedPoint k n a)) ≫ D.chart i
 end ArithmeticThetaPolygonCohomologyR0131
 namespace ArithmeticThetaProjectiveEffectivityR0135
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129
 variable (k : Type u) [Field k] [CharZero k]
 def baseInclusion (n : ℕ) : specR k n ⟶ Spec (CommRingCat.of (PowerSeries k)) :=
@@ -320,15 +326,16 @@ def IsModel {r : ℕ} {hr : 0 < r} (T : Tower k r hr) (M : Model k T) : Prop :=
   (∀ n N (h : n ≤ N), T.transition n N h ≫ M.inclusion N = M.inclusion n)
 end ArithmeticThetaProjectiveEffectivityR0135
 namespace ArithmeticThetaAlgebraizedMarkedLineR0136
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaPolygonCohomologyR0131
 variable (k : Type u) [Field k] [CharZero k]
 def baseScheme : Scheme.{u} := Spec (CommRingCat.of (PowerSeries k))
-def MarkedLift {r : ℕ} {hr : 0 < r} {T : Tower k r hr} (M : Model k T)
-    (i : Fin r) (a : kˣ) (s : baseScheme k ⟶ M.X) : Prop :=
+def MarkedLift {r : ℕ} {hr : 0 < r} {T : Tower k r hr} (M : Model k T) (i : Fin r) (a : kˣ) (s : baseScheme k ⟶ M.X) : Prop :=
   s ≫ M.p = 𝟙 (baseScheme k) ∧ ∀ n : ℕ,
     baseInclusion k n ≫ s = markedSection k r n hr (T.atlas n) i a ≫ M.inclusion n
 end ArithmeticThetaAlgebraizedMarkedLineR0136
 namespace ArithmeticThetaPolygonCartierR0133
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 def unitPullback {X Y : Scheme.{u}} (f : X ⟶ Y) :
     (Scheme.Modules.pullback f).obj
       (SheafOfModules.unit Y.ringCatSheaf : Y.Modules) ⟶
@@ -336,6 +343,7 @@ def unitPullback {X Y : Scheme.{u}} (f : X ⟶ Y) :
   SheafOfModules.pullbackObjUnitToUnit f.toRingCatSheafHom
 end ArithmeticThetaPolygonCartierR0133
 namespace ArithmeticThetaPolygonCartierR0133.GlobalCartierIdealLineR0133
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 def quotientMap {X : Scheme.{u}} (I : X.IdealSheafData) :
     (SheafOfModules.unit X.ringCatSheaf : X.Modules) ⟶
       (Scheme.Modules.pushforward I.subschemeι).obj
@@ -348,6 +356,7 @@ def idealInclusion {X : Scheme.{u}} (I : X.IdealSheafData) :
   kernel.ι (quotientMap I)
 end ArithmeticThetaPolygonCartierR0133.GlobalCartierIdealLineR0133
 namespace ArithmeticThetaIdentitySectionsR0138
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaPolygonCartierR0133
 variable (k : Type u) [Field k] [CharZero k]
 def zeroIndex (r : ℕ) (hr : 0 < r) : Fin r := ⟨0, hr⟩
@@ -362,6 +371,7 @@ def Dual {r : ℕ} {hr : 0 < r} {T : Tower k r hr} (M : Model k T)
   powerModule k M s d ⟶ (SheafOfModules.unit M.X.ringCatSheaf : M.X.Modules)
 end ArithmeticThetaIdentitySectionsR0138
 namespace ArithmeticThetaAlgebraicCoordinatesR0143
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133
 variable (k : Type u) [Field k] [CharZero k]
 def degree (odd : Bool) : ℕ := if odd then 3 else 2
@@ -406,6 +416,7 @@ def pulled (M : Model k T) (s : baseScheme k ⟶ M.X) (d : ℕ)
   (Scheme.Modules.pullback p).map φ ≫ unitPullback p
 end ArithmeticThetaAlgebraicCoordinatesR0143
 namespace ArithmeticThetaProjectiveEffectivityR0135
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129
 variable (k : Type u) [Field k] [CharZero k]
 def genericBase : Spec (CommRingCat.of (LaurentSeries k)) ⟶
@@ -415,6 +426,7 @@ def genericStructure {r : ℕ} {hr : 0 < r} {T : Tower k r hr} (M : Model k T) :
   CategoryTheory.Limits.pullback.snd M.p (genericBase k)
 end ArithmeticThetaProjectiveEffectivityR0135
 namespace ArithmeticThetaGenericEvaluationR0140
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133
 variable (k : Type u) [Field k] [CharZero k]
 variable {r : ℕ} {hr : 0 < r} {T : Tower k r hr}
@@ -440,6 +452,7 @@ def frameValue (M : Model k T) (s : baseScheme k ⟶ M.X) (d : ℕ)
     ((e.inv ≫ (Scheme.Modules.pullback s).map φ ≫ unitPullback s).app ⊤ ((Scheme.ΓSpecIso (CommRingCat.of (PowerSeries k))).inv 1))
 end ArithmeticThetaGenericEvaluationR0140
 namespace ArithmeticThetaTateSeries
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 variable {k : Type u} [Field k]
 def monomial (a : k) (n : ℕ) : PowerSeries k :=
   PowerSeries.C a * PowerSeries.X ^ n
@@ -456,6 +469,7 @@ def tateX (d i : ℕ) (a : k) : PowerSeries k :=
   PowerSeries.mk fun n => PowerSeries.coeff n (partialX d i a (n+1))
 end ArithmeticThetaTateSeries
 namespace ArithmeticThetaCubicModelR0144
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133 ArithmeticThetaAlgebraicCoordinatesR0143
 variable (k : Type u) [Field k] [CharZero k]
 def rootSeries (r : ℕ) (j : Fin 3) : PowerSeries k :=
@@ -479,6 +493,7 @@ def ModelCubic (M : Model k T) (s : baseScheme k ⟶ M.X)
         modelScalar k M U (rootSeries k r j) * ja)) * jb^2
 end ArithmeticThetaCubicModelR0144
 namespace AlgebraicGeometry.Scheme.Hom
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 variable {A : Type u} [CommRing A] {X : Scheme.{u}} (f : X ⟶ Spec (CommRingCat.of A))
 def constToPresheaf : (Functor.const (X.Opens)ᵒᵖ).obj (CommRingCat.of A) ⟶ X.presheaf where
   app U := (Scheme.ΓSpecIso (CommRingCat.of A)).inv ≫ f.appLE ⊤ U.unop le_top
@@ -497,6 +512,7 @@ def kaehlerToSections (U : X.Opens) :
     f.kaehlerPresheaf).app (op U)).hom s
 end AlgebraicGeometry.Scheme.Hom
 namespace ArithmeticThetaCompactifiedDifferentialR0145
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133 ArithmeticThetaGenericEvaluationR0140
 variable (k : Type u) [Field k] [CharZero k]
 variable {r : ℕ} {hr : 0 < r} {T : Tower k r hr}
@@ -516,6 +532,15 @@ def differentialAt (M : Model k T) (U : (genericScheme k M).Opens)
     (a : (genericScheme k M).presheaf.obj (Opposite.op U)) :
     Γ((genericStructure k M).kaehler, U) :=
   relativeD (genericStructure k M) U a
+theorem _root_.ArithmeticThetaCompactifiedDifferentialR0145.cubicDerivative._proof_2 : Nat.AtLeastTwo
+  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) := by sorry
+run_cmd do
+  let n := `ArithmeticThetaCompactifiedDifferentialR0145.cubicDerivative._proof_2
+  let some ci := (← Lean.getEnv).find? n | throwError "Missing original numeric helper"
+  let key : Lean.Meta.AuxLemmaKey := { type := ci.type, isPrivate := false, defeq := false }
+  Lean.modifyEnv fun env => Lean.Meta.auxLemmasExt.modifyState env fun s => { s with lemmas := s.lemmas.insert key (ci.name, ci.levelParams) }
 def IsGlobalDifferentialFrame (M : Model k T) (s : baseScheme k ⟶ M.X)
     (X : Dual k M s 2) (Y : Dual k M s 3)
     (e : (SheafOfModules.unit (genericScheme k M).ringCatSheaf : (genericScheme k M).Modules) ≅
@@ -535,6 +560,7 @@ def IsGlobalDifferentialFrame (M : Model k T) (s : baseScheme k ⟶ M.X)
         (1 : (genericScheme k M).presheaf.obj (Opposite.op U))
 end ArithmeticThetaCompactifiedDifferentialR0145
 namespace ArithmeticThetaPalomarCoordinates377
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 def NormalizedFrame (k : Type u) [Field k] [CharZero k]
     {r : ℕ} {hr : 0 < r} {T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr}
     (h3 : 3 ≤ r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
@@ -563,6 +589,7 @@ def NormalizedFrame (k : Type u) [Field k] [CharZero k]
             (ArithmeticThetaInfinitesimalPolygonR0129.A k n))).hom (q.app ⊤ z))
 end ArithmeticThetaPalomarCoordinates377
 namespace ArithmeticThetaPalomarCoordinates377
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133 ArithmeticThetaAlgebraicCoordinatesR0143 ArithmeticThetaGenericEvaluationR0140 ArithmeticThetaCompactifiedDifferentialR0145
 theorem algebraic_tate_coordinates :
     ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
@@ -578,18 +605,21 @@ theorem algebraic_tate_coordinates :
  := by sorry
 end ArithmeticThetaPalomarCoordinates377
 namespace ArithmeticThetaPalomarCoordinates377
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133 ArithmeticThetaAlgebraicCoordinatesR0143 ArithmeticThetaGenericEvaluationR0140 ArithmeticThetaCompactifiedDifferentialR0145
 theorem coordinate_exact_poles :
     ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s), ∀ (odd : Bool) (φ : ArithmeticThetaIdentitySectionsR0138.Dual k M s (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd)), ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k odd M s φ → CategoryTheory.IsIso (ArithmeticThetaAlgebraicCoordinatesR0143.pulled k M s (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd) s φ) ∧ ∀ e : ArithmeticThetaGenericEvaluationR0140.IdentityFrame k M s (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd), ArithmeticThetaPalomarCoordinates377.NormalizedFrame k h3 M hM s hs (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd) e → ArithmeticThetaGenericEvaluationR0140.frameValue k M s (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd) e φ = 1
  := by sorry
 end ArithmeticThetaPalomarCoordinates377
 namespace ArithmeticThetaPalomarCoordinates377
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133 ArithmeticThetaAlgebraicCoordinatesR0143 ArithmeticThetaGenericEvaluationR0140 ArithmeticThetaCompactifiedDifferentialR0145
 theorem algebraic_model_cubic :
     ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2) (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3), ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X → ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y → ArithmeticThetaCubicModelR0144.ModelCubic k M s X Y
  := by sorry
 end ArithmeticThetaPalomarCoordinates377
 namespace ArithmeticThetaPalomarCoordinates377
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133 ArithmeticThetaAlgebraicCoordinatesR0143 ArithmeticThetaGenericEvaluationR0140 ArithmeticThetaCompactifiedDifferentialR0145
 theorem global_normalized_differential (k : Type u) [Field k] [CharZero k]
     (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : Tower k r hr) (he : Even r)
@@ -607,6 +637,7 @@ section Package01
 set_option autoImplicit false
 noncomputable section
 namespace ArithmeticThetaPalomarSharp360
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 def validGram {n : ℕ} (A : Matrix (Fin n) (Fin n) ℤ) : Prop :=
   A.IsSymm ∧ (∀ i, Even (A i i)) ∧
     ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef

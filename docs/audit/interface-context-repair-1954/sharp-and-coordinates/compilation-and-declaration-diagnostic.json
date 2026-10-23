@@ -1,0 +1,20 @@
+{
+  "diagnostic_completed": true,
+  "results": {
+    "challenge": {
+      "exit_code": 0,
+      "seconds": 33.03825195599347,
+      "peak_rss_bytes": 3878256640,
+      "stop_reason": null
+    },
+    "diagnostic": {
+      "exit_code": 0,
+      "seconds": 4.005811753682792,
+      "peak_rss_bytes": 4396916736,
+      "stop_reason": null
+    }
+  },
+  "checked_shared_declarations": 257,
+  "mismatch_count": 0,
+  "scope": "Partial context repair candidate diagnostic, no strict/full/official pass inferred."
+}

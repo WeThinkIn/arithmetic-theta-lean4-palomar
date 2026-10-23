@@ -42,8 +42,11 @@ automation:
     the contribution account and its source provenance.
 review:
   status: agent-reviewed
-  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
-    Official mechanical and semantic review are pending for this configuration.
+  notes: >-
+    Original complete targets and implementation retained. Repaired Challenge uses
+    Mathlib and Lean core. Local compilation, serialized declaration comparison,
+    strict target-closure comparison and exact original recovery pass.
+    Independent kernel replay passes; fresh official verification is pending.
 status:
   scope: 'Five complete original endpoints: accepted019 algebraic Tate coordinates,020
     exact poles,021 algebraic model cubic,022 global normalized differential and049
