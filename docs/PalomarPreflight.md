@@ -2,8 +2,7 @@
 
 ## Current recorded mechanical coverage
 
-Official mechanical evidence covers **89 of 103 original endpoints**, counted once across their exact verified scopes and revisions. The [sharp-bound/adaptive-solver/image preflight](audit/official-sharp-adaptive-image-2079/Review.md) passed at `561a253f79bc11127fb0a4bc72865f23470e0ca6`, adding seven endpoints to the prior union of 82. Stock Lean, NanoDa and Conron accepted the Solution, and Challenge provenance is high trust. The [endpoint ledger](audit/official-sharp-adaptive-image-2079/endpoints.json) records scope and revision bindings. Whole-paper semantic acceptance and registration remain incomplete.
-
+Official mechanical evidence covers **93 of 103 original endpoints**, counted once across their exact verified scopes and revisions. The [algebraic Tate coordinates and sharp-bound preflight](audit/official-coordinates-2113/Review.md) passed at `44d7c226d10bb1b77b35f40bc320f0c69dd93a6e`, adding original endpoints 019–022 to the prior union of 89. Its accepted-049 endpoint was already covered and is counted once. Stock Lean, NanoDa and Conron accepted the Solution; Challenge provenance is high trust. The [endpoint ledger](audit/official-coordinates-2113/endpoints.json) records scope and revision bindings. Whole-paper semantic acceptance and registration remain incomplete.
 
 ## Main-result verification record
 

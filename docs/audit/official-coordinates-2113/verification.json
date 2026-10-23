@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "utc": "2026-10-23T18:46:01.376380+00:00",
+  "run": 39963269667,
+  "workflow_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39963269667",
+  "source_commit": "44d7c226d10bb1b77b35f40bc320f0c69dd93a6e",
+  "report_sha256": "da045268fb5884ede724b8f13755b37edacea61691f72a709d3e1dd63afcd469",
+  "scope_sha256": "dce15f08cf16b421d623f28e8fd1fcd5ab8ef7f54ab20dd1574f31849b47f2e0",
+  "configured_targets": [
+    "ArithmeticThetaPalomarCoordinates377.algebraic_tate_coordinates",
+    "ArithmeticThetaPalomarCoordinates377.coordinate_exact_poles",
+    "ArithmeticThetaPalomarCoordinates377.algebraic_model_cubic",
+    "ArithmeticThetaPalomarCoordinates377.global_normalized_differential",
+    "ArithmeticThetaPalomarSharp360.sharpFiniteDetermination",
+    "ArithmeticThetaNodeCharts.node_torus_chart_equivalences",
+    "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_2",
+    "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_4",
+    "ArithmeticThetaCompactifiedDifferentialR0145.cubicDerivative._proof_2",
+    "ArithmeticThetaPolygonCartierR0133.unitPullback._proof_2"
+  ],
+  "covered_complete_endpoint_ids": [
+    "accepted-019",
+    "accepted-020",
+    "accepted-021",
+    "accepted-022",
+    "accepted-049"
+  ],
+  "new_complete_endpoint_ids": [
+    "accepted-019",
+    "accepted-020",
+    "accepted-021",
+    "accepted-022"
+  ],
+  "official_complete_endpoint_union_before": 89,
+  "official_complete_endpoint_union": 93,
+  "original_endpoints": 103,
+  "original_requirements": 13,
+  "prepared_independent_interfaces": 99,
+  "accepted_kernels": [
+    "stock Lean",
+    "NanoDa",
+    "Conron"
+  ],
+  "challenge_trust_level": "high",
+  "challenge_bytes": 61028,
+  "challenge_lines": 701,
+  "whole_paper_semantic_acceptance": false,
+  "registration_performed": false,
+  "scope": "Historical union of exact-revision official mechanical results, not a single-revision whole-paper verification or semantic acceptance."
+}
