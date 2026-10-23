@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "utc": "2026-10-23T21:09:23.896183+00:00",
+  "run": 39998168880,
+  "artifact_id": 12532156838,
+  "submission_id": "7vdyb2knqedk",
+  "source_commit": "561a253f79bc11127fb0a4bc72865f23470e0ca6",
+  "report_sha256": "c294df73f793b5a47e2d319a36ab78c02f7c2af051dbeb3f0f5449bb41535414",
+  "source_bindings": {
+    "SharpAdaptiveImageChallenge.lean": "a5f2d7e631165169b7d8b92519cd2aa914a131a13233bc6369ffc2ee10b0eb29",
+    "SharpAdaptiveImageSolution.lean": "de12500d33934e9a09cefe229df2da4e842dde7e7f18c64886bac1463b8cb8f9",
+    "comparator-sharp-adaptive-image.json": "cdb3c5d5e6a90a7b0febcaad1685a237dc21aa182eca9045d7daab3eac1d1b25",
+    "submissions/sharp-adaptive-image/formalization.yaml": "1632f5d399403068c986f99f17c6c22f403c1983e83afcdc69aa675ef82b0306"
+  },
+  "configured_targets": [
+    "ArithmeticThetaPalomarSharp349.explicitSharpFiniteDetermination",
+    "ArithmeticThetaPalomarAdaptive348.checked_basis_change_relations",
+    "ArithmeticThetaPalomarAdaptive348.adaptive_universal_solver",
+    "ArithmeticThetaPalomarAdaptive348.adaptive_checked_input",
+    "ArithmeticThetaPalomarAdaptive348.adaptive_singleton_zero",
+    "ArithmeticThetaPalomarImage350.certifiedImage",
+    "ArithmeticThetaPalomarImage350.shellFinite"
+  ],
+  "original_endpoint_ids": [
+    "accepted-046",
+    "accepted-049",
+    "accepted-064",
+    "accepted-065",
+    "accepted-066",
+    "accepted-067",
+    "accepted-088"
+  ],
+  "accepted_kernels": [
+    "stock Lean",
+    "NanoDa",
+    "Conron"
+  ],
+  "execution_profile": "palomar-namespace-16x32-v1",
+  "service_status": "awaiting-review",
+  "service_observed_at": "20261023T210837Z",
+  "new_endpoint_credit": 0,
+  "official_endpoint_union": 97,
+  "semantic_review_complete": false,
+  "registration_performed": false,
+  "scope": "Ordinary mechanical verification of the same seven endpoints already covered by preflight; not whole-paper semantic acceptance."
+}
