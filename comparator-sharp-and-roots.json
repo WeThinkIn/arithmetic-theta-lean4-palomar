@@ -4,7 +4,8 @@
   "theorem_names": [
     "ArithmeticThetaPalomarAmbient355.ambient_prescribed_roots",
     "ArithmeticThetaPalomarAmbient355.smooth_point_simultaneous_roots",
-    "ArithmeticThetaPalomarSharp360.sharpFiniteDetermination"
+    "ArithmeticThetaPalomarSharp360.sharpFiniteDetermination",
+    "instAlgebraSubtypeMemValuationSubring_definitions._proof_3"
   ],
   "permitted_axioms": [
     "propext",

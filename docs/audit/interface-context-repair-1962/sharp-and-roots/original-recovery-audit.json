@@ -1,0 +1,21 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "type_definitionally_equal": true,
+  "recovery": "ArithmeticThetaPalomarAmbient355.ambient_prescribed_roots",
+  "original":
+  "ArithmeticThetaAmbientCompletedRootsR0227.ambient_prescribed_roots",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+ {"universes_equal": true,
+  "type_expression_equal": true,
+  "type_definitionally_equal": true,
+  "recovery":
+  "ArithmeticThetaPalomarAmbient355.smooth_point_simultaneous_roots",
+  "original":
+  "ArithmeticThetaAmbientCompletedRootsR0227.smooth_point_simultaneous_roots",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+ {"universes_equal": true,
+  "type_expression_equal": true,
+  "type_definitionally_equal": true,
+  "recovery": "ArithmeticThetaPalomarSharp360.original049Correspondence",
+  "original": "ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

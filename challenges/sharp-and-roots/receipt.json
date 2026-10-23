@@ -1,72 +1,20 @@
 {
-  "checks_passed": true,
-  "checks": {
-    "challenge-01": {
-      "exit_code": 0,
-      "seconds": 33.15469882590696,
-      "command": [
-        "python3",
-        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
-        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
-        "-j12",
-        "-o",
-        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-and-roots-361/Challenge.olean",
-        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-and-roots-361/Challenge.lean"
-      ]
-    },
-    "solution-01": {
-      "exit_code": 0,
-      "seconds": 3.518564734607935,
-      "command": [
-        "python3",
-        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
-        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
-        "-j12",
-        "-o",
-        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-and-roots-361/Solution.olean",
-        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-and-roots-361/Solution.lean"
-      ]
-    },
-    "audit-01": {
-      "exit_code": 0,
-      "seconds": 2.917942088097334,
-      "command": [
-        "python3",
-        "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
-        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
-        "-j12",
-        "-o",
-        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-and-roots-361/Audit.olean",
-        "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-and-roots-361/Audit.lean"
-      ]
-    }
-  },
-  "declarations_audited": 33,
-  "unexpected_axioms": 0,
-  "component_sources_unchanged": true,
-  "challenge_lines": 990,
-  "challenge_bytes": 66941,
-  "source_endpoint_count": 3,
-  "new_endpoint_count": 2,
-  "comparator_run": false,
-  "official_precheck_run": false,
-  "files": {
-    "Audit.olean": "2b3c496b45d8f114f044735f6b1be6b5aa162f9cb5c826ab60aa3c45c994df2e",
-    "Solution.olean": "6bdee33249ca8790b90f848c710020f69f3709c8fbb1db4d439c2a571f7e50ff",
-    "challenge-01.log": "dd9f6ca1481e20a6f8bae8bae5000c9e641bfc1853c48495dc8b205e15cac64f",
-    "comparator.json": "36c0963536c33831c96406d173e4d055ecc4682a13141255253e593cd28457e1",
-    "audit-01.log": "8665cc2c32a7abfc5421737b95f4228310d25fd2670762ce5a5c3609d271517c",
-    "Scope.json": "1060cf70b6319273c81723cb40453aa1e0557b9b77265a711cf75fde210de66e",
-    "README.md": "e30f3093dab6b660eac50df309586c2c00e4caa3bbc55fb2923ff578f65d83ed",
-    "Challenge.olean": "ea648cc1634fe9277e3a954bf215cb1fd03f48ebc644a742981079c073849050",
-    "challenge-01.json": "6a8a4072817d21c1a71084fa13d9429b5bacf941444112e366e062b5eb3d7c5f",
-    "audit-01.json": "259a9a85bd2f06d1d2dd09eafd9c7f318bb89b4a46a953724b53d433de2ecd0a",
-    "solution-01.log": "f356d95de3d3c81e6f83660577d9f946d2872d9f19306ca133cbcc4b2ff5ceb4",
-    "SourceMap.json": "c357752888db581139d02713a3641a22647797e9260a4ee44bfbab166088e61b",
-    "Solution.lean": "412d045336df3bbb34b582c84080c26c6f78488716a4bcba405e3cae866bb80d",
-    "Audit.lean": "47f07baa81f1944bb06d0ffcb5e0825fe3de83d6b0beb4c07b40933fcdfc5ba1",
-    "Challenge.lean": "318727f7fa13b8bd8fab3e511799040f11f800b825f66c805d7110802d2f5aeb",
-    "solution-01.json": "2b45657c0bd46f09fcaa394e1897e1c995b49c72c0a8880dc8f0991ec318e176",
-    "checkpoint.json": "f2ae201ab68758e524af264d0afb8caead0aacbea1c069411a84e4782c6d1bb2"
-  }
+  "scope": "sharp-and-roots",
+  "base_commit": "44d7c226d10bb1b77b35f40bc320f0c69dd93a6e",
+  "status": "local_verification_passed",
+  "challenge_sha256": "67fc0f9b47aa9028b07d43b64d74748f16d71e4892d0fd158ae8d06a47a9b6a7",
+  "solution_sha256": "412d045336df3bbb34b582c84080c26c6f78488716a4bcba405e3cae866bb80d",
+  "comparator_sha256": "eed48ada1c461eef9800fb807a1c187d4bdfbbd6b5a32c6481d195bb6063cc9e",
+  "configured_targets": 4,
+  "original_endpoints": [
+    "accepted-049",
+    "accepted-056",
+    "accepted-057"
+  ],
+  "strict_target_closure_passed": true,
+  "exact_original_recovery_passed": true,
+  "three_kernel_passed": true,
+  "historical_receipt_available_at_base_commit": true,
+  "official_pass_claimed": false,
+  "publication_ready": true
 }

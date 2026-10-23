@@ -1,5 +1,6 @@
 module
 public import Mathlib
+import all Lean.Meta.Match.Match
 @[expose] public section
 section Package00
 set_option autoImplicit false
@@ -11,7 +12,7 @@ set_option maxHeartbeats 1600000
 noncomputable section
 universe u
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry Opposite TopologicalSpace MonoidalCategory
-instance {K L : Type*} [Field K] [Semiring L] (O : ValuationSubring K) [Algebra K L] : Algebra O L where
+instance instAlgebraSubtypeMemValuationSubring_definitions {K L : Type*} [Field K] [Semiring L] (O : ValuationSubring K) [Algebra K L] : Algebra O L where
   smul r x := r.1 • x
   algebraMap := (algebraMap K L).comp (algebraMap O K)
   commutes' _ _ := by simp [Algebra.commutes]
@@ -21,14 +22,13 @@ set_option synthInstance.maxHeartbeats 800000
 set_option maxHeartbeats 1600000
 noncomputable section
 open IsDedekindDomain IsDedekindDomain.HeightOneSpectrum IsLocalRing WithZero MonoidWithZeroHom
-namespace AlgebraicGeometry
+namespace AlgebraicGeometry run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 structure Scheme.Modules.IsInvertible {X : Scheme.{u}} (M : X.Modules) : Prop where
   exists_trivialization : ∀ x : X, ∃ (U : X.Opens), x ∈ U ∧
     Nonempty ((Scheme.Modules.pullback U.ι).obj M ≅ SheafOfModules.unit U.toScheme.ringCatSheaf)
-end AlgebraicGeometry
-namespace ArithmeticThetaSheafTensor
+end AlgebraicGeometry namespace ArithmeticThetaSheafTensor run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 variable (X : Scheme.{u})
-local instance : MonoidalCategory X.PresheafOfModules :=
+local instance instMonoidalCategoryPresheafOfModules_actualSheafTensor : MonoidalCategory X.PresheafOfModules :=
   PresheafOfModulesOfCommRing.monoidalCategory (R := X.presheaf)
 def tensorPresheaf (H K : X.Modules) : X.PresheafOfModules := H.val ⊗ K.val
 def sheafTensor (H K : X.Modules) : X.Modules :=
@@ -40,8 +40,7 @@ def tensorSection (H K : X.Modules) (U : X.Opens) (s : Γ(H, U)) (t : Γ(K, U)) 
 variable (U : X.Opens)
 def presheafOver : X.PresheafOfModules ⥤ PresheafOfModules.{u} (X.ringCatSheaf.over U).obj :=
   PresheafOfModules.pushforward₀ (Over.forget U) X.ringCatSheaf.obj
-end ArithmeticThetaSheafTensor
-namespace ArithmeticThetaTensorPower
+end ArithmeticThetaSheafTensor namespace ArithmeticThetaTensorPower run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaSheafTensor
 def tensorPower (X : Scheme.{u}) (H : X.Modules) : ℕ → X.Modules
   | 0 => SheafOfModules.unit X.ringCatSheaf
@@ -50,9 +49,13 @@ def tensorPowerSection (X : Scheme.{u}) (H : X.Modules) : (n : ℕ) → (U : X.O
   | 0, U, _ => (1 : Γ(X, U))
   | n + 1, U, s => tensorSection X (tensorPower X H n) H U (tensorPowerSection X H n U s) s
 end ArithmeticThetaTensorPower
-namespace ArithmeticThetaPullback
+namespace ArithmeticThetaPullback run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaSheafTensor ArithmeticThetaTensorPower
+section OriginalUnitContext
+attribute [local instance 2000] CategoryTheory.CategoryStruct.toQuiver
 set_option backward.isDefEq.respectTransparency false in
+set_option backward.isDefEq.respectTransparency.types true in
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes true in
 def pullback_unit_iso (X Y : Scheme.{u}) (p : X ⟶ Y) : (Scheme.Modules.pullback p).obj (SheafOfModules.unit Y.ringCatSheaf) ≅
       SheafOfModules.unit X.ringCatSheaf := by
   letI : (TopologicalSpace.Opens.map p.base).Final := by
@@ -61,10 +64,15 @@ def pullback_unit_iso (X Y : Scheme.{u}) (p : X ⟶ Y) : (Scheme.Modules.pullbac
     exact ⟨⊤, by simp⟩
   let e := asIso (SheafOfModules.pullbackObjUnitToUnit p.toRingCatSheafHom)
   exact e
+end OriginalUnitContext
 def pullbackGlobalSection {X Y : Scheme.{u}} (p : X ⟶ Y) (M : Y.Modules) : Γ(M, ⊤) → Γ((Scheme.Modules.pullback p).obj M, p ⁻¹ᵁ (⊤ : Y.Opens)) :=
   fun s => ((Scheme.Modules.pullbackPushforwardAdjunction p).unit.app M).app ⊤ s
-local instance (X : Scheme.{u}) : MonoidalCategory X.PresheafOfModules :=
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+local instance instMonoidalCategoryPresheafOfModules_pullbackTensor (X : Scheme.{u}) : MonoidalCategory X.PresheafOfModules :=
   PresheafOfModulesOfCommRing.monoidalCategory (R := X.presheaf)
+def sheafTensorMap (X : Scheme.{u}) {H H' K K' : X.Modules}
+    (f : H ⟶ H') (g : K ⟶ K') : sheafTensor X H K ⟶ sheafTensor X H' K' :=
+  (PresheafOfModules.sheafification (𝟙 X.ringCatSheaf.obj)).map (f.val ⊗ₘ g.val)
 def sheafTensorCongr (X : Scheme.{u}) {H H' K K' : X.Modules} (e : H ≅ H') (d : K ≅ K') : sheafTensor X H K ≅ sheafTensor X H' K' :=
   (PresheafOfModules.sheafification (𝟙 X.ringCatSheaf.obj)).mapIso
     (tensorIso ((SheafOfModules.forget _).mapIso e) ((SheafOfModules.forget _).mapIso d))
@@ -569,7 +577,7 @@ def pullback_tensorPower_iso (X Y : Scheme.{u}) (p : X ⟶ Y) (H : Y.Modules) : 
   | 0 => pullback_unit_iso X Y p
   | n + 1 => pullback_sheafTensor_iso X Y p (tensorPower Y H n) H ≪≫ sheafTensorCongr X (pullback_tensorPower_iso X Y p H n) (Iso.refl _)
 end ArithmeticThetaPullback
-namespace ArithmeticThetaNormalizedSections
+namespace ArithmeticThetaNormalizedSections run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaTensorPower
 def IsLineBundle (X : Scheme.{u}) (H : X.Modules) : Prop :=
   ∀ x : X, ∃ U : X.Opens, x ∈ U ∧
@@ -579,14 +587,14 @@ def pullbackPowerSection {Y X : Scheme.{u}} (p : Y ⟶ X) (H : X.Modules) (n : �
   (ArithmeticThetaPullback.pullback_tensorPower_iso Y X p H n).hom.app (p ⁻¹ᵁ (⊤ : X.Opens))
     (ArithmeticThetaPullback.pullbackGlobalSection p (tensorPower X H n) F)
 end ArithmeticThetaNormalizedSections
-namespace ArithmeticThetaRelativeDiscriminantR0171
+namespace ArithmeticThetaRelativeDiscriminantR0171 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev Base (R : Type u) [CommRing R] := Spec (CommRingCat.of R)
 def res {X : Scheme.{u}} (F : X.Modules) {U V : X.Opens} (h : V ≤ U) (s : Γ(F, U)) : Γ(F, V) := F.presheaf.map (homOfLE h).op s
 def IsFrame {X : Scheme.{u}} (F : X.Modules) (U : X.Opens) (s : Γ(F, U)) : Prop :=
   ∀ (V : X.Opens) (h : V ≤ U),
     Function.Bijective (fun a : X.presheaf.obj (Opposite.op V) => a • res F h s)
 end ArithmeticThetaRelativeDiscriminantR0171
-namespace ArithmeticThetaTateCuspsR0181
+namespace ArithmeticThetaTateCuspsR0181 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaRelativeDiscriminantR0171
 variable (k : Type u) [Field k]
 abbrev Disk := Base (PowerSeries k)
@@ -596,17 +604,19 @@ def genericInclusion : Puncture k ⟶ Disk k :=
 def diskStructure : Disk k ⟶ Base k :=
   Spec.map (CommRingCat.ofHom (algebraMap k (PowerSeries k)))
 end ArithmeticThetaTateCuspsR0181
-namespace ArithmeticThetaOpenHodgeR0180
+namespace ArithmeticThetaOpenHodgeR0180 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaRelativeDiscriminantR0171
 def scalar (S : Type u) [CommRing S] (v : S) : (Base S).presheaf.obj (Opposite.op ⊤) :=
   (Scheme.ΓSpecIso (CommRingCat.of S)).inv v
 end ArithmeticThetaOpenHodgeR0180
-namespace ArithmeticThetaCommonHalfHodgeR0185
+namespace ArithmeticThetaCommonHalfHodgeR0185 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 def along {Z Y B : Scheme} (g : Z ⟶ Y) (p : Y ⟶ B) (f : Z ⟶ B) (h : g ≫ p = f) (M : B.Modules) :
     (Scheme.Modules.pullback g).obj ((Scheme.Modules.pullback p).obj M) ≅ (Scheme.Modules.pullback f).obj M :=
   (Scheme.Modules.pullbackComp g p).app M ≪≫ (Scheme.Modules.pullbackCongr h).app M
 end ArithmeticThetaCommonHalfHodgeR0185
 namespace ArithmeticThetaSimultaneousUnaryR0187
+abbrev Sections (B : Scheme) (J : B.Modules) := J.presheaf.obj (Opposite.op ⊤)
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 structure RootCover (k : Type) [Field k] (B : Scheme) (b : B ⟶ Spec (CommRingCat.of k)) (bound : ℕ) where
   space : Scheme
   map : space ⟶ B
@@ -618,7 +628,7 @@ structure RootCover (k : Type) [Field k] (B : Scheme) (b : B ⟶ Spec (CommRingC
   smooth : SmoothOfRelativeDimension 1 (map ≫ b)
   degree : ∀ x : B, 0 < map.finrank x ∧ map.finrank x ≤ bound
 end ArithmeticThetaSimultaneousUnaryR0187
-namespace ArithmeticThetaFiniteFieldModelsR0221
+namespace ArithmeticThetaFiniteFieldModelsR0221 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaPullback ArithmeticThetaTensorPower
 abbrev Base (k : Type) [CommRing k] := Spec (CommRingCat.of k)structure Curve (k : Type) [Field k] where
   space : Scheme
@@ -634,7 +644,7 @@ def powerComparison {X Y : Scheme} (p : X ⟶ Y) (H : Y.Modules) {J : X.Modules}
     (Scheme.Modules.pullback p).obj (tensorPower Y H n) ≅ tensorPower X J n :=
   pullback_tensorPower_iso X Y p H n ≪≫ powerIso e n
 end ArithmeticThetaFiniteFieldModelsR0221
-namespace ArithmeticThetaFiniteFieldModelsR0221.PointedSquareCover
+namespace ArithmeticThetaFiniteFieldModelsR0221.PointedSquareCover run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 def triangle {X Y Z : Scheme} (p : X ⟶ Y) (q : Y ⟶ Z) (t : X ⟶ Z) (h : p ≫ q = t) (H : Z.Modules) :
     (Scheme.Modules.pullback p).obj ((Scheme.Modules.pullback q).obj H) ≅ (Scheme.Modules.pullback t).obj H :=
   (Scheme.Modules.pullbackComp p q).app H ≪≫ (Scheme.Modules.pullbackCongr h).app H
@@ -642,7 +652,7 @@ def squareComparison {A B C T : Scheme} (p : A ⟶ B) (q : B ⟶ T) (r : A ⟶ C
     (Scheme.Modules.pullback p).obj ((Scheme.Modules.pullback q).obj H) ≅ (Scheme.Modules.pullback r).obj ((Scheme.Modules.pullback t).obj H) :=
   triangle p q (r ≫ t) h H ≪≫ ((Scheme.Modules.pullbackComp r t).app H).symm
 end ArithmeticThetaFiniteFieldModelsR0221.PointedSquareCover
-namespace ArithmeticThetaProjectiveEffectivityR0135
+namespace ArithmeticThetaProjectiveEffectivityR0135 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 attribute [local instance] MvPolynomial.gradedAlgebra
 def projectiveSpace (S : Type u) [CommRing S] (N : ℕ) : Scheme.{u} :=
   AlgebraicGeometry.Proj (MvPolynomial.homogeneousSubmodule (Fin N) S)
@@ -651,7 +661,7 @@ def projectiveStructure (S : Type u) [CommRing S] (N : ℕ) : projectiveSpace S 
     Spec.map (CommRingCat.ofHom
       (algebraMap S ((MvPolynomial.homogeneousSubmodule (Fin N) S) 0)))
 end ArithmeticThetaProjectiveEffectivityR0135
-namespace ArithmeticThetaPrescribedRootModelsR0224
+namespace ArithmeticThetaPrescribedRootModelsR0224 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 structure ProjectivePresentation (k : Type) [Field k] (X : Scheme.{0}) (b : X ⟶ ArithmeticThetaFiniteFieldModelsR0221.Base k) where
   dimension : ℕ
   embedding : X ⟶ ArithmeticThetaProjectiveEffectivityR0135.projectiveSpace k (dimension+1)
@@ -659,7 +669,7 @@ structure ProjectivePresentation (k : Type) [Field k] (X : Scheme.{0}) (b : X �
   over_eq : embedding ≫
     ArithmeticThetaProjectiveEffectivityR0135.projectiveStructure k (dimension+1) = b
 end ArithmeticThetaPrescribedRootModelsR0224
-namespace ArithmeticThetaRamifiedRootModelsR0222
+namespace ArithmeticThetaRamifiedRootModelsR0222 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaFiniteFieldModelsR0221 ArithmeticThetaTensorPower ArithmeticThetaPullback
 def pulledPower {X Y : Scheme} (p : Y ⟶ X) (H : X.Modules) (n : ℕ) (F : Sections (tensorPower X H n)) :
     Sections (tensorPower Y ((Scheme.Modules.pullback p).obj H) n) :=
@@ -669,8 +679,8 @@ def RootEquation {X Y : Scheme} (p : Y ⟶ X) (H : X.Modules) (n : ℕ) (F : Sec
     (r : Sections ((Scheme.Modules.pullback p).obj H)) : Prop :=
   tensorPowerSection Y ((Scheme.Modules.pullback p).obj H) n ⊤ r = pulledPower p H n F
 end ArithmeticThetaRamifiedRootModelsR0222
-namespace ArithmeticThetaValuativeRootsR0223
-abbrev Sections (B : Scheme) (J : B.Modules) := J.presheaf.obj (Opposite.op ⊤)
+namespace ArithmeticThetaValuativeRootsR0223 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+open ArithmeticThetaSimultaneousUnaryR0187
 open ArithmeticThetaPullback
 abbrev FieldPoint (Ω : Type) [Field Ω] := Spec (CommRingCat.of Ω)
 abbrev ValuationPoint (Ω : Type) [Field Ω] (A : ValuationSubring Ω) :=
@@ -687,7 +697,7 @@ def extendedFrame (k : Type) [Field k] (Ω : Type) [Field Ω] (A : ValuationSubr
     (pullbackGlobalSection (Spec.map (CommRingCat.ofHom ρ))
       ((Scheme.Modules.pullback f).obj J) h)
 end ArithmeticThetaValuativeRootsR0223
-namespace ArithmeticThetaConstantExtensionR0225
+namespace ArithmeticThetaConstantExtensionR0225 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry
 open ArithmeticThetaFiniteFieldModelsR0221 (Curve Base Sections powerIso powerComparison)
 open ArithmeticThetaTensorPower ArithmeticThetaNormalizedSections ArithmeticThetaPullback
@@ -824,7 +834,7 @@ def FiniteRealization {X : Curve (Omega k)} {J : X.space.Modules} {n s : ℕ} {F
       Nonempty (ProjectivePresentation K M.cover.curve.space M.cover.curve.map) ∧
       ModelBranchValues M E A f h T.coefficients T.lift
 end ArithmeticThetaConstantExtensionR0225
-namespace ArithmeticThetaAlgebraicBranchesR0226
+namespace ArithmeticThetaAlgebraicBranchesR0226 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open CategoryTheory AlgebraicGeometry
 open ArithmeticThetaFiniteFieldModelsR0221 (Base Sections)
 open ArithmeticThetaTensorPower ArithmeticThetaNormalizedSections ArithmeticThetaPullback
@@ -855,7 +865,7 @@ def Equation {Z : Scheme.{0}} (f : ArithmeticThetaTateCuspsR0181.Disk k ⟶ Z) (
       tensorPowerSection (Base E) ((Scheme.Modules.pullback (fieldDisk (E := E) f)).obj J)
         n ⊤ (fieldFrame (E := E) f J h)
 end ArithmeticThetaAlgebraicBranchesR0226
-namespace ArithmeticThetaAmbientCompletedRootsR0227
+namespace ArithmeticThetaAmbientCompletedRootsR0227 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 open CategoryTheory AlgebraicGeometry
 open ArithmeticThetaFiniteFieldModelsR0221 (Curve Base Sections)
 open ArithmeticThetaConstantExtensionR0225 (Omega FieldStage RootRealization FiniteRealization)
@@ -912,11 +922,11 @@ def AmbientValues (M : AlgebraicModel k X J n s F f h E r K0) : Prop :=
         (M.realization.roots j)) =
       ArithmeticThetaOpenHodgeR0180.scalar E (r j) • fieldFrame (E := E) f J h
 end ArithmeticThetaAmbientCompletedRootsR0227
-namespace ArithmeticThetaPalomarAmbient355
+namespace ArithmeticThetaPalomarAmbient355 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 theorem ambient_prescribed_roots :
 ∀ (k : Type) [Field k] [CharZero k] (X : ArithmeticThetaFiniteFieldModelsR0221.Curve (ArithmeticThetaConstantExtensionR0225.Omega k)) (J : X.space.Modules), AlgebraicGeometry.Scheme.Modules.IsInvertible J → ∀ (n s : ℕ), 0 < n → ∀ (F : Fin s → ArithmeticThetaFiniteFieldModelsR0221.Sections (ArithmeticThetaTensorPower.tensorPower X.space J n)), (∀ j, F j ≠ 0) → ∀ (f : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk (ArithmeticThetaConstantExtensionR0225.Omega k)) X.space), CategoryTheory.CategoryStruct.comp f X.map = ArithmeticThetaTateCuspsR0181.diskStructure (ArithmeticThetaConstantExtensionR0225.Omega k) → AlgebraicGeometry.IsDominant (CategoryTheory.CategoryStruct.comp (ArithmeticThetaTateCuspsR0181.genericInclusion (ArithmeticThetaConstantExtensionR0225.Omega k)) f) → ∀ (h : ArithmeticThetaFiniteFieldModelsR0221.Sections ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J)), ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J) ⊤ h → ∀ (E : Type) [Field E] [Algebra (LaurentSeries (ArithmeticThetaConstantExtensionR0225.Omega k)) E] (r : Fin s → E), (∀ j, ArithmeticThetaAlgebraicBranchesR0226.Equation f J n (F j) h (r j)) → ∀ K0 : ArithmeticThetaConstantExtensionR0225.FieldStage k, FiniteDimensional k K0 → ∃ M : ArithmeticThetaAmbientCompletedRootsR0227.AlgebraicModel k X J n s F f h E r K0, ArithmeticThetaAmbientCompletedRootsR0227.AmbientValues M := by sorry
 end ArithmeticThetaPalomarAmbient355
-namespace ArithmeticThetaPalomarAmbient355
+namespace ArithmeticThetaPalomarAmbient355 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 theorem smooth_point_simultaneous_roots :
 ∀ (k : Type) [Field k] [CharZero k] (X : ArithmeticThetaFiniteFieldModelsR0221.Curve (ArithmeticThetaConstantExtensionR0225.Omega k)) (J : X.space.Modules), AlgebraicGeometry.Scheme.Modules.IsInvertible J → ∀ (n s : ℕ), 0 < n → ∀ (F : Fin s → ArithmeticThetaFiniteFieldModelsR0221.Sections (ArithmeticThetaTensorPower.tensorPower X.space J n)), (∀ j, F j ≠ 0) → ∀ x : X.space, IsClosed ({x} : Set X.space) → ∃ f : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk (ArithmeticThetaConstantExtensionR0225.Omega k)) X.space, ArithmeticThetaAmbientCompletedRootsR0227.IsCompletedDisk (ArithmeticThetaConstantExtensionR0225.Omega k) X x f ∧ (∃ h : ArithmeticThetaFiniteFieldModelsR0221.Sections ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J), ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J) ⊤ h) ∧ ∀ h : ArithmeticThetaFiniteFieldModelsR0221.Sections ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J), ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J) ⊤ h → ∀ (E : Type) [Field E] [Algebra (LaurentSeries (ArithmeticThetaConstantExtensionR0225.Omega k)) E] (r : Fin s → E), (∀ j, ArithmeticThetaAlgebraicBranchesR0226.Equation f J n (F j) h (r j)) → ∀ K0 : ArithmeticThetaConstantExtensionR0225.FieldStage k, FiniteDimensional k K0 → ∃ M : ArithmeticThetaAmbientCompletedRootsR0227.AlgebraicModel k X J n s F f h E r K0, ArithmeticThetaAmbientCompletedRootsR0227.AmbientValues M := by sorry
 end ArithmeticThetaPalomarAmbient355
@@ -926,7 +936,7 @@ end Package00
 section Package01
 set_option autoImplicit false
 noncomputable section
-namespace ArithmeticThetaPalomarSharp360
+namespace ArithmeticThetaPalomarSharp360 run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 def validGram {n : ℕ} (A : Matrix (Fin n) (Fin n) ℤ) : Prop :=
   A.IsSymm ∧ (∀ i, Even (A i i)) ∧
     ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef

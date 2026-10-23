@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "results": {
+    "stock-lean": {
+      "exit_code": 0,
+      "seconds": 5814.354912812822,
+      "peak_rss_bytes": 13712547840,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+        "--silent",
+        "--from-export",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/roots-repaired-strict-1906/solution.ndjson"
+      ]
+    },
+    "conron": {
+      "exit_code": 0,
+      "seconds": 618.6922410652041,
+      "peak_rss_bytes": 10127347712,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/evidence/official-pipeline-refresh-858/trusted-checker-update-02/con-ron",
+        "--verified",
+        "--jobs=2",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/roots-repaired-strict-1906/solution.ndjson"
+      ]
+    },
+    "nanoda": {
+      "exit_code": 0,
+      "seconds": 955.1248298557475,
+      "peak_rss_bytes": 3646423040,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/roots-three-kernel-replay-1912/nanoda.json"
+      ]
+    }
+  },
+  "positive_kernel_markers": true,
+  "bindings_unchanged": true,
+  "scope": "Independent three-kernel replay of full unchanged Solution target closure for repaired sharp-and-roots interface. Official fresh preflight remains required."
+}
