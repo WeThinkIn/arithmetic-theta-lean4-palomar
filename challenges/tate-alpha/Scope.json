@@ -7,7 +7,7 @@
     "accepted-040"
   ],
   "universe": "Original040 k : Type; inherited052 arbitrary universe u",
-  "target_count": 8,
+  "target_count": 16,
   "retained": [
     "Every positive L divisible by4",
     "Actual level-dependent Tate cubic Q=t^L from literal Tate coordinate series",
@@ -20,5 +20,21 @@
   "no_new_main_assumptions": true,
   "new_endpoint_count": 1,
   "official_verified": false,
-  "full_paper_claimed": false
+  "full_paper_claimed": false,
+  "explicit_original_helper_obligations": [
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2"
+  ],
+  "local_complete_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "remaining_validation": [
+    "Fresh full official preflight for the exact published revision",
+    "Ordinary intake and semantic review"
+  ]
 }

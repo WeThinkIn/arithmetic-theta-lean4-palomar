@@ -27,5 +27,25 @@
     "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
     "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-alpha-character-package-437/comparator.json": "0b877e68fbd7321f4073c9b608f4867561a3047b29dadb36b95c87bff500438f"
   },
-  "original_type_recovery": "Whole original040 recovered; equality of theorems compiled by rfl; exact boundary predicate/generator recovered by rfl"
+  "original_type_recovery": "Whole original040 recovered; equality of theorems compiled by rfl; exact boundary predicate/generator recovered by rfl",
+  "current_interface_validation": {
+    "challenge_direct_imports": [
+      "Mathlib",
+      "Lean.Meta.Match.Match"
+    ],
+    "original_targets_preserved": true,
+    "additional_original_helper_obligations": [
+      "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+      "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+      "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+      "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+      "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+      "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+      "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+      "WeierstrassProjModel.kw_lrChart_aux._proof_2"
+    ],
+    "permitted_axioms_unchanged": true,
+    "source_definitions_and_solution_proofs_preserved": true,
+    "strict_receipt": "docs/audit/geometric-interface-alignment-1693/receipt.json"
+  }
 }

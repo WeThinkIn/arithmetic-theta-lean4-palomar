@@ -1,0 +1,48 @@
+{
+  "local_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "original_endpoint_ids": [
+    "accepted-040",
+    "accepted-052"
+  ],
+  "original_targets_retained": 8,
+  "additional_original_helper_obligations": [
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2"
+  ],
+  "configured_targets": 16,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_sha256": "f63c26fd4697e0ffba550bf13f75fbc46b43dd1aea3c73f130ea762689ff9678",
+  "challenge_bytes": 74282,
+  "challenge_lines": 939,
+  "configuration_sha256": "87ffa1b2129d1f24c424dcec71c25f59a16d892f9d57080cbddd2323a5ccca0d",
+  "solution_sha256": "8cd6ea17287e046b2738a0bddd3ea80e9b0ac3dec36e8161b9b4112a41bd88f3",
+  "strict_receipt_sha256": "850972f83f504370a87f22d768733d959d483de3e98f17025de46cf64cc2e66a",
+  "strict_verifier_sha256": "e65b6dda0565d21be49be5a8a5112eb90ebb0c8bf5c3c5af8ed19281afd5554b",
+  "primitives_sha256": "b217301595ce9113efe50a2c83df27b48613cc3834d2f0f8421d612e14ed5ca1",
+  "exports": {
+    "challenge": {
+      "bytes": 270611498,
+      "sha256": "65592ea6b3d9917e52e5e3c3943b96f28f8dda00bbf6a55c94c37fa945673960"
+    },
+    "solution": {
+      "bytes": 1922853102,
+      "sha256": "750a26f5589679fca7a01950e1612802f6a0001432ea8a00f5f18724948d09ff"
+    }
+  },
+  "markers": [
+    "TRUSTED_STRUCTURAL_COMPARISON_PASS",
+    "TRUSTED_AXIOM_CLOSURE_PASS"
+  ],
+  "limitation": "Local complete target-closure structural comparison and standard-axiom closure. Official independent-kernel acceptance and whole-paper semantic review remain separate."
+}
