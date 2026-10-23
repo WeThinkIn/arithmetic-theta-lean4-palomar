@@ -61,7 +61,13 @@
       "official_size_compliant": false,
       "official_verification": "not passed for this complete interface",
       "source_candidate": "global-projective-safe-block-pruning-2054",
-      "local_validation": "global-projective-safe-block-validation-2055"
+      "local_validation": "global-projective-safe-block-validation-2055",
+      "local_independent_kernel_typechecking": [
+        "stock Lean",
+        "Conron",
+        "NanoDa"
+      ],
+      "nanoda_pretty_printer_error": "Unable to print axioms"
     }
   },
   "files": {
@@ -87,7 +93,7 @@
     "accepted-076/audit/result.json": "bbf3bbc09445fb189b23218ad99a0a3321dc55994e191d8faff503a21d52bfaf",
     "accepted-076/comparator.json": "4fe3322f97306c83c16ce77be282c310fe166147e1db5e080094ff5cc26995c0",
     "accepted-087/Challenge.lean": "a8aedb74c0f4f549e706280c35e2daf72bfe7dd4384385ea5da0d12710e866bd",
-    "accepted-087/README.md": "2cc220b093f9ff416d4ccba54951f5dc176ff4c1d789843702d3591a700c3c13",
+    "accepted-087/README.md": "c3284bc15c1ecbb36bbf350559edae6ef1fbcaf6ce40f9c70bb32fd2ef92df2a",
     "accepted-087/Solution.lean": "13060da2f073c95b8240923a584829c49bee6eb8762c3461c20493c5b532a8de",
     "accepted-087/audit/Check.log": "1e0d7c8527dde89b6909f786b9da2320c75c5bc3882a66c95d4f3e82a2789afa",
     "accepted-087/audit/OriginalAudit.log": "ca2ba84cff6582d10a0c28c240315d282e79b336c415c840e99074dc7697b85a",
@@ -95,7 +101,7 @@
     "accepted-087/audit/challenge-export.json": "694302b2bf8078346e31d0a2d7823e8f6755b974e1d83baf2aa15da228942648",
     "accepted-087/audit/conron.log": "b2edea842603ee0c72303b4425526d273c2a0ba4e1faad324a3ae7a4e3ca4258",
     "accepted-087/audit/declaration-comparison.json": "255af01b52a9c0da92598dc978ddb62269fc0964dafb8e47e71dbcd4f2ac8515",
-    "accepted-087/audit/independent-kernel-results.json": "d25da0a0ffd0f3916caffde243bae52f10ac7951a1c433cc6bde16b5512d1175",
+    "accepted-087/audit/independent-kernel-results.json": "9d5ed673616ae7930807abdadb237fc0d8001cec1c2ad03b71ca0ecfe3063d39",
     "accepted-087/audit/nanoda.log": "64be3d577fbeff36ab8f5910a43ca07e6e32a6d8fb978d7b7dc077e2e98aa3ef",
     "accepted-087/audit/receipt.json": "a42c4a04d753de540728b0a99aff7e6dd9fb3e5f65b45ca9b71863ecfc43fb42",
     "accepted-087/audit/render-errors.json": "4ba05e79f75d5821a8273c41e43436db9ac18596bf295e75ca9066d94d336263",
@@ -114,6 +120,9 @@
     "conservative-image-consumer/audit/result.json": "b0a7227608a5705b63e6ef6d05ab01f5a12b38c98a316804c91d972db493beda",
     "conservative-image-consumer/comparator.json": "fbfc4bf4defc96260fdcab3d5ee15d12e1a1acd8eb016e43057b4e03eed168d3",
     "support/PointedHodgeCharacterization.lean": "ecb37f31a4f19091c7110095396ee7366dea5ba5a071d9b9565cf044f5ad4344",
-    "compile-local.py": "16a4c529849e427e2940d50a1fc29193e0361b948fcd319f941fe0f6264f2960"
-  }
+    "compile-local.py": "16a4c529849e427e2940d50a1fc29193e0361b948fcd319f941fe0f6264f2960",
+    "accepted-087/audit/stock-lean-process.json": "3654e96ac420f5aa7ac106f0556418e6b96b1f9aa684ad8bb01a5ab4d73fc588",
+    "accepted-087/audit/kernel-binding.json": "0b12e41581ba3231411ba1b08506cdbac71c84a70bfb176c55642d80706221f9"
+  },
+  "updated_at": "2026-10-23T17:03:17.808379+00:00"
 }

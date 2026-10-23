@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-23T17:03:17.807462+00:00",
+  "local_bindings_rechecked": 4446,
+  "bindings_unchanged": true,
+  "challenge_sha256": "a8aedb74c0f4f549e706280c35e2daf72bfe7dd4384385ea5da0d12710e866bd",
+  "solution_source_sha256": "13060da2f073c95b8240923a584829c49bee6eb8762c3461c20493c5b532a8de",
+  "solution_export_sha256": "e2ba53b864519b4ed9e7f27ce68a894237acade65b06b5d17474e545ff40a7b0",
+  "exported_target_roots": 168,
+  "published_target_roots": 142,
+  "published_targets_subset_of_verified_export": true,
+  "strict_comparison_receipt_sha256": "c73c9e3e99c440f46e22d39e4c28e08f738e5d854d25004b49d888e53025b108",
+  "kernel_receipt_sha256": "9d5ed673616ae7930807abdadb237fc0d8001cec1c2ad03b71ca0ecfe3063d39",
+  "nanoda_typechecking_passed": true,
+  "nanoda_pretty_printer_error": "Unable to print axioms",
+  "scope": "The published full original087 interface uses the same Solution export that passed all three local kernels; its142target subset passed fresh strict comparison. No new official acceptance or size compliance."
+}

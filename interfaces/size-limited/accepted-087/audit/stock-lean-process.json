@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "seconds": 3690.349793522153,
+  "peak_rss_bytes": 8194191360,
+  "stop_reason": null,
+  "command": [
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+    "--silent",
+    "--from-export",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/global-projective-current-fresh-strict-2031/solution.ndjson"
+  ]
+}

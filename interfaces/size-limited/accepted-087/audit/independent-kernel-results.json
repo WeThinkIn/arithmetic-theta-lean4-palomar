@@ -1,21 +1,42 @@
 {
-  "all_three_complete": false,
-  "checks": {
+  "passed": true,
+  "results": {
+    "stock-lean": {
+      "exit_code": 0,
+      "seconds": 3690.349793522153,
+      "peak_rss_bytes": 8194191360,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+        "--silent",
+        "--from-export",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/global-projective-current-fresh-strict-2031/solution.ndjson"
+      ]
+    },
     "conron": {
       "exit_code": 0,
       "seconds": 555.0938318087719,
+      "peak_rss_bytes": 9219252224,
       "stop_reason": null,
-      "positive_marker_present": true,
-      "typechecking_passed": true
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/evidence/official-pipeline-refresh-858/trusted-checker-update-02/con-ron",
+        "--verified",
+        "--jobs=2",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/global-projective-current-fresh-strict-2031/solution.ndjson"
+      ]
     },
     "nanoda": {
       "exit_code": 0,
       "seconds": 687.1055964636616,
+      "peak_rss_bytes": 3089641472,
       "stop_reason": null,
-      "positive_marker_present": true,
-      "typechecking_passed": true,
-      "pretty_printer_error": "Unable to print axioms; reported1prettyprintererror,zero typechecker errors"
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/global-projective-current-three-kernels-2033/nanoda.json"
+      ]
     }
   },
-  "stock_lean_pending": true
+  "positive_kernel_markers": true,
+  "bindings_unchanged": true,
+  "scope": "Independent stock Lean/current Con-ron/NanoDa replay of current full original087 Solution closure,168original/supporttheoremroots. Source interface still oversized; no official or wholepaper semantic acceptance claimed."
 }
