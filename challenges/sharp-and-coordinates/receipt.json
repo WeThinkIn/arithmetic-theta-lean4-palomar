@@ -1,11 +1,5 @@
 {
-  "scope": "sharp-and-coordinates",
-  "base_commit": "561a253f79bc11127fb0a4bc72865f23470e0ca6",
-  "status": "local_verification_passed",
-  "challenge_sha256": "c1ef98aeab395a014927b98955c47679ca0d16eb1bf3805035af789da2d7d7f8",
-  "solution_sha256": "6b93632218714e6a338fc5de6b90d6e860ed9b4ceccd7cb478d8fb9f1af493fb",
-  "comparator_sha256": "00cd8c1bdcc49b0f895c84667bd6ccd9a4f23f109c868c03835f6dde25d8b39b",
-  "configured_targets": 10,
+  "status": "local_declarations_strict_obligations_and_render_passed",
   "original_endpoints": [
     "accepted-019",
     "accepted-020",
@@ -13,10 +7,15 @@
     "accepted-022",
     "accepted-049"
   ],
-  "strict_target_closure_passed": true,
-  "exact_original_recovery_passed": true,
-  "three_kernel_passed": true,
-  "historical_receipt_available_at_base_commit": true,
-  "official_pass_claimed": false,
-  "publication_ready": true
+  "configured_targets": 10,
+  "base_commit": "3762b769cf5693844bf2b6b327aa2ba964d077ab",
+  "challenge_sha256": "002a06630f4ebf65baec7dd076773eaba286ecb1c320978b852ff071a0cc7648",
+  "solution_sha256": "6b93632218714e6a338fc5de6b90d6e860ed9b4ceccd7cb478d8fb9f1af493fb",
+  "configuration_unchanged": true,
+  "local_render_all10anchors": true,
+  "local_render_errors": 0,
+  "original_recovery": "reused unchanged Solution evidence with all recorded bindings rechecked",
+  "fresh_independent_kernel_replay_claimed": false,
+  "fresh_official_verification": "pending",
+  "official_credit_added": 0
 }

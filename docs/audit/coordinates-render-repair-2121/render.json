@@ -1,0 +1,15 @@
+{
+  "label": "candidate",
+  "literate_exit_code": 0,
+  "html_exit_code": 0,
+  "compared_targets": 10,
+  "missing_compared_anchors": [],
+  "all_compared_anchors_present": true,
+  "source_sha256": "002a06630f4ebf65baec7dd076773eaba286ecb1c320978b852ff071a0cc7648",
+  "html_path": "/home/Palomar/workspace/arithmetic-theta/evidence/coordinates-local-transparency-render-2118/candidate/html/SharpAndCoordinatesChallenge/index.html",
+  "html_sha256": "db6a5c16db8c8ee6bdd81b55b266d6c8aa8971f74ae60528502b774d8b4b2e8c",
+  "scope": "Pinned full Verso HTML generation plus unmodified official sanitizer anchor-class check; local reproduction only, no official acceptance.",
+  "rendered_errors": [],
+  "rendered_error_count": 0,
+  "clean_render": true
+}

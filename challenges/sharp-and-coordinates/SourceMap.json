@@ -1,18 +1,17 @@
 {
-  "base_commit": "561a253f79bc11127fb0a4bc72865f23470e0ca6",
+  "base_commit": "3762b769cf5693844bf2b6b327aa2ba964d077ab",
   "historical_packaging": {
     "path": "challenges/sharp-and-coordinates/SourceMap.json",
-    "commit": "561a253f79bc11127fb0a4bc72865f23470e0ca6",
-    "sha256": "ba32d62398233101b1c78aa3cc730e78490d365be237ec2f198fd04a7330269a",
-    "url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/blob/561a253f79bc11127fb0a4bc72865f23470e0ca6/challenges/sharp-and-coordinates/SourceMap.json",
+    "commit": "3762b769cf5693844bf2b6b327aa2ba964d077ab",
+    "sha256": "87fa44ce6449653e0058dd1088deb48ab9585c07d6ecca42d48d7008cb0d5632",
     "historical_line_mappings_apply_only_to_base_commit": true
   },
-  "current_transformation": "Restored original module-local elaboration contexts, generated instance/helper names and required definition prelude; reset elaboration caches at source-module boundaries. Added explicitly checked original support obligations. Original main targets and Solution preserved. Source equality is established by serialized comparison and strict target-closure checks, not obsolete historical line numbers.",
+  "current_transformation": "Explicit same-expression matcher cache name, exact support prerequisites, removal of unused private proofs, explicit node-chart type, and locally scoped transparency settings; all 257 shared mathematical declarations and all 10 selected targets preserved.",
   "challenge": {
     "path": "SharpAndCoordinatesChallenge.lean",
-    "sha256": "c1ef98aeab395a014927b98955c47679ca0d16eb1bf3805035af789da2d7d7f8",
-    "bytes": 61028,
-    "lines": 701
+    "sha256": "002a06630f4ebf65baec7dd076773eaba286ecb1c320978b852ff071a0cc7648",
+    "bytes": 92478,
+    "lines": 616
   },
   "solution": {
     "path": "SharpAndCoordinatesSolution.lean",
@@ -21,7 +20,8 @@
   },
   "comparator": {
     "path": "comparator-sharp-and-coordinates.json",
-    "sha256": "00cd8c1bdcc49b0f895c84667bd6ccd9a4f23f109c868c03835f6dde25d8b39b"
+    "sha256": "00cd8c1bdcc49b0f895c84667bd6ccd9a4f23f109c868c03835f6dde25d8b39b",
+    "unchanged_from_base": true
   },
-  "evidence_directory": "docs/audit/interface-context-repair-1954/sharp-and-coordinates"
+  "evidence_directory": "docs/audit/coordinates-render-repair-2121"
 }

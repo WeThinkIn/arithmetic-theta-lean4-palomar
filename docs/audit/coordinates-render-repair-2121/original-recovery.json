@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "original_endpoint_ids": [
+    "accepted-019",
+    "accepted-020",
+    "accepted-021",
+    "accepted-022",
+    "accepted-049"
+  ],
+  "exact_type_expression_and_universes": true,
+  "standard_axioms_only": true,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/coordinates-five-original-recovery-audit-1903/Audit.lean": "0c4ee09b0ec0d4eff0b6c2d6a1512b42123dead013faeccc8057c1900683622e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/coordinates-five-original-recovery-audit-1903/audit.json": "2c6cc048f5635fed8f5a4d5beee1caa9f1ea53844b3a34daf99f0df508da240a",
+    "/home/Palomar/workspace/arithmetic-theta/project/SharpAndCoordinatesSolution.lean": "6b93632218714e6a338fc5de6b90d6e860ed9b4ceccd7cb478d8fb9f1af493fb",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/coordinates-helper-repair-candidate-1892/SharpAndCoordinatesChallenge.lean": "c1ef98aeab395a014927b98955c47679ca0d16eb1bf3805035af789da2d7d7f8",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/coordinates-repaired-strict-1893/receipt.json": "8ef0f79a14873ec19ae2048ee96fdcc9b8afd7a32d2b7be6f3686a786d4da6f5"
+  }
+}

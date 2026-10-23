@@ -43,10 +43,11 @@ automation:
 review:
   status: agent-reviewed
   notes: >-
-    Original complete targets and implementation retained. Repaired Challenge uses
-    Mathlib and Lean core. Local compilation, serialized declaration comparison,
-    strict target-closure comparison and exact original recovery pass.
-    Independent kernel replay passes; fresh official verification is pending.
+    All five complete original endpoints and ten configured targets retained.
+    Exact shared declarations, full target-closure and standard-axiom checks pass.
+    The unchanged Solution retains checked original endpoint recovery.
+    Local official-version rendering shows all ten anchors with zero errors.
+    Fresh official verification is pending for the repaired Challenge.
 status:
   scope: 'Five complete original endpoints: accepted019 algebraic Tate coordinates,020
     exact poles,021 algebraic model cubic,022 global normalized differential and049

@@ -2,6 +2,7 @@ module
 public import Mathlib
 import all Lean.Meta.Match.Match
 @[expose] public section
+elab "matcher2087" : term => return Lean.mkConst (((((Lean.Name.num `_private.Lean.Meta.Match.Match 0).str "Lean").str "Meta").str "Match").str "matcherExt")
 section Package00
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
@@ -14,7 +15,7 @@ noncomputable section
 universe u
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry Opposite TopologicalSpace
 namespace ArithmeticThetaNodeCharts
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 variable (k : Type u) [Field k]
 abbrev Base := PowerSeries k
 def parameter : Base k := PowerSeries.X
@@ -45,119 +46,30 @@ def toXChart : Node k →+* XChart k := algebraMap (Node k) (XChart k)
 def toYChart : Node k →+* YChart k := algebraMap (Node k) (YChart k)
 end ArithmeticThetaNodeCharts
 namespace ArithmeticThetaNodeCharts
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
-private theorem laurent_hom_ext {R S : Type*} [CommRing R] [CommRing S] {f g : LaurentPolynomial R →+* S} (hC : ∀ a, f (LaurentPolynomial.C a) = g (LaurentPolynomial.C a)) (hT : f (LaurentPolynomial.T 1) = g (LaurentPolynomial.T 1)) : f = g := by
-  apply IsLocalization.ringHom_ext (Submonoid.powers (Polynomial.X : Polynomial R))
-  apply Polynomial.ringHom_ext
-  · intro a
-    simpa [LaurentPolynomial.algebraMap_eq_toLaurent] using hC a
-  · simpa [LaurentPolynomial.algebraMap_eq_toLaurent] using hT
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 variable (k : Type u) [Field k]
-private theorem coordinate_product (i j : Fin 2) (h : i ≠ j) : quotientMap k (MvPolynomial.X i) * quotientMap k (MvPolynomial.X j) = quotientMap k (MvPolynomial.C (parameter k)) := by
-  have hr : quotientMap k (relation k) = 0 :=
-    Ideal.Quotient.eq_zero_iff_mem.mpr (Ideal.subset_span (by simp))
-  have hxy := sub_eq_zero.mp (show
-    quotientMap k (MvPolynomial.X 0) * quotientMap k (MvPolynomial.X 1) -
-      quotientMap k (MvPolynomial.C (parameter k)) = 0 by
-        simpa [relation, map_sub, map_mul] using hr)
-  fin_cases i <;> fin_cases j <;> simp_all [mul_comm]
-private theorem coordinate_chart (i : Fin 2) (f : PolynomialChart k →+* Torus k) (hC : ∀ a, f (MvPolynomial.C a) = LaurentPolynomial.C a) (hX : ∀ j, f (MvPolynomial.X j) = if j = i then LaurentPolynomial.T 1 else LaurentPolynomial.C (parameter k) * LaurentPolynomial.T (-1)) : ∃! e : Localization.Away (quotientMap k (MvPolynomial.X i)) ≃+* Torus k, e.toRingHom.comp ((algebraMap (Node k) _).comp (quotientMap k)) = f := by
-  let v := quotientMap k (MvPolynomial.X i)
-  let S := Localization.Away v
-  let a : Node k →+* S := algebraMap _ _
-  let p : PolynomialChart k →+* S := a.comp (quotientMap k)
-  have hfrel : f (relation k) = 0 := by
-    simp only [relation, map_sub, map_mul, hC, hX]
-    fin_cases i
-    · change LaurentPolynomial.T 1 *
-        (LaurentPolynomial.C (parameter k) * LaurentPolynomial.T (-1)) -
-          LaurentPolynomial.C (parameter k) = 0
-      rw [mul_left_comm, ← LaurentPolynomial.T_add]
-      norm_num
-    · change (LaurentPolynomial.C (parameter k) * LaurentPolynomial.T (-1)) *
-        LaurentPolynomial.T 1 - LaurentPolynomial.C (parameter k) = 0
-      rw [mul_assoc, ← LaurentPolynomial.T_add]
-      norm_num
-  have hkill : relationIdeal k ≤ RingHom.ker f := by
-    rw [relationIdeal, Ideal.span_singleton_le_iff_mem]
-    exact hfrel
-  let g : Node k →+* Torus k := Ideal.Quotient.lift _ f (fun z hz => hkill hz)
-  have hg (z) : g (quotientMap k z) = f z := rfl
-  have hgv : g v = LaurentPolynomial.T 1 := by simp [v, hg, hX]
-  let F : S →+* Torus k := IsLocalization.Away.lift v
-    (show IsUnit (g v) by rw [hgv]; exact LaurentPolynomial.isUnit_T 1)
-  have hF (z) : F (a z) = g z := IsLocalization.Away.lift_eq _ _ z
-  have hFp (z) : F (p z) = f z := by change F (a (quotientMap k z)) = _; rw [hF, hg]
-  let U : Sˣ := (IsLocalization.Away.algebraMap_isUnit v (S := S)).unit
-  have hU : (U : S) = p (MvPolynomial.X i) := IsUnit.unit_spec _
-  let G : Torus k →+* S := LaurentPolynomial.eval₂ (p.comp MvPolynomial.C) U
-  have hGC (z) : G (LaurentPolynomial.C z) = p (MvPolynomial.C z) :=
-    LaurentPolynomial.eval₂_C _ _ _
-  have hGT : G (LaurentPolynomial.T 1) = p (MvPolynomial.X i) := by
-    simpa [G] using hU
-  have hGX (j : Fin 2) : G (f (MvPolynomial.X j)) = p (MvPolynomial.X j) := by
-    rw [hX]
-    split_ifs with h
-    · subst j; exact hGT
-    · have hprod : p (MvPolynomial.X i) * p (MvPolynomial.X j) =
-          p (MvPolynomial.C (parameter k)) := by
-        change a (quotientMap k (MvPolynomial.X i)) * a (quotientMap k (MvPolynomial.X j)) = _
-        rw [← map_mul, coordinate_product k i j (Ne.symm h)]
-        rfl
-      change G (LaurentPolynomial.C (parameter k) * LaurentPolynomial.T (-1)) = _
-      rw [map_mul, hGC]
-      have hneg : G (LaurentPolynomial.T (-1)) = ↑(U⁻¹) := by simp [G]
-      rw [hneg, ← hprod, ← hU]
-      rw [mul_right_comm, Units.mul_inv, one_mul]
-  have hGFp : G.comp f = p := MvPolynomial.ringHom_ext
-    (fun z => by simp only [RingHom.comp_apply, hC, hGC]) hGX
-  have hGF : G.comp F = RingHom.id S := by
-    apply IsLocalization.ringHom_ext (Submonoid.powers v)
-    apply Ideal.Quotient.ringHom_ext
-    apply RingHom.ext
-    intro z
-    change G (F (p z)) = p z
-    rw [hFp]
-    exact RingHom.congr_fun hGFp z
-  have hFG : F.comp G = RingHom.id (Torus k) := by
-    apply laurent_hom_ext
-    · intro z
-      change F (G (LaurentPolynomial.C z)) = LaurentPolynomial.C z
-      rw [hGC, hFp, hC]
-    · change F (G (LaurentPolynomial.T 1)) = LaurentPolynomial.T 1
-      rw [hGT, hFp, hX]; simp
-  let e : S ≃+* Torus k :=
-    { F with
-      invFun := G
-      left_inv := fun z => RingHom.congr_fun hGF z
-      right_inv := fun z => RingHom.congr_fun hFG z }
-  have he : e.toRingHom.comp p = f := RingHom.ext hFp
-  refine ⟨e, he, ?_⟩
-  intro e' he'
-  apply RingEquiv.toRingHom_injective
-  apply IsLocalization.ringHom_ext (Submonoid.powers v)
-  apply Ideal.Quotient.ringHom_ext
-  exact he'.trans he.symm
-theorem node_torus_chart_equivalences : ∀ (k : Type u) [Field k] [CharZero k], (∃! e : XChart k ≃+* Torus k, e.toRingHom.comp ((toXChart k).comp (quotientMap k)) = torusMap k) ∧ (∃! e : YChart k ≃+* Torus k, e.toRingHom.comp ((toYChart k).comp (quotientMap k)) = oppositeTorusMap k) := by sorry
+theorem node_torus_chart_equivalences : ∀ (k : Type u) [inst : Field k] [@CharZero k (@AddGroupWithOne.toAddMonoidWithOne k (@Ring.toAddGroupWithOne k (@DivisionRing.toRing k (@Field.toDivisionRing k inst))))], And (@ExistsUnique (@RingEquiv (@XChart k inst) (@Torus k inst) (@OreLocalization.instMul (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@x k inst)) (@OreLocalization.oreSetComm (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst)) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@x k inst)))) (@AddMonoidAlgebra.instMul (Base k) Int (@MvPowerSeries.instSemiring Unit k (@CommSemiring.toSemiring k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) Int.instAdd) (@OreLocalization.instAdd (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@x k inst)) (@OreLocalization.oreSetComm (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst)) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@x k inst))) (@Node k inst) (@AddCommMonoid.toAddMonoid (@Node k inst) (@Submodule.Quotient.addCommMonoid (@PolynomialChart k inst) (@PolynomialChart k inst) (@CommRing.toRing (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid))) (@Ring.toAddCommGroup (@PolynomialChart k inst) (@CommRing.toRing (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid)))) (@Semiring.toModule (@PolynomialChart k inst) (@Ring.toSemiring (@PolynomialChart k inst) (@CommRing.toRing (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid))))) (@relationIdeal k inst))) (@Module.toDistribMulAction (@Node k inst) (@Node k inst) (@CommSemiring.toSemiring (@Node k inst) (@CommRing.toCommSemiring (@Node k inst) (@nodeCommRing k inst))) (@Submodule.Quotient.addCommMonoid (@PolynomialChart k inst) (@PolynomialChart k inst) (@CommRing.toRing (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid))) (@Ring.toAddCommGroup (@PolynomialChart k inst) (@CommRing.toRing (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid)))) (@Semiring.toModule (@PolynomialChart k inst) (@Ring.toSemiring (@PolynomialChart k inst) (@CommRing.toRing (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid))))) (@relationIdeal k inst)) (@Semiring.toModule (@Node k inst) (@CommSemiring.toSemiring (@Node k inst) (@CommRing.toCommSemiring (@Node k inst) (@nodeCommRing k inst)))))) (@Distrib.toAdd (@Torus k inst) (@instDistribOfSemiring (@Torus k inst) (@AddMonoidAlgebra.semiring (Base k) Int (@MvPowerSeries.instSemiring Unit k (@CommSemiring.toSemiring k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) Int.instAddMonoid)))) fun e => @Eq (@RingHom (@PolynomialChart k inst) (@Torus k inst) (@AddMonoidAlgebra.nonAssocSemiring (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@CommSemiring.toSemiring (Base k) (@MvPowerSeries.instCommSemiring Unit k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) (@Finsupp.instAddZeroClass (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@AddMonoid.toAddZeroClass Nat Nat.instAddMonoid))) (@AddMonoidAlgebra.nonAssocSemiring (Base k) Int (@MvPowerSeries.instSemiring Unit k (@CommSemiring.toSemiring k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) (@AddMonoid.toAddZeroClass Int Int.instAddMonoid))) (@RingHom.comp (@PolynomialChart k inst) (@XChart k inst) (@Torus k inst) (@AddMonoidAlgebra.nonAssocSemiring (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@CommSemiring.toSemiring (Base k) (@MvPowerSeries.instCommSemiring Unit k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) (@Finsupp.instAddZeroClass (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@AddMonoid.toAddZeroClass Nat Nat.instAddMonoid))) (@Semiring.toNonAssocSemiring (@XChart k inst) (@OreLocalization.instSemiring (@Node k inst) (@CommSemiring.toSemiring (@Node k inst) (@CommRing.toCommSemiring (@Node k inst) (@nodeCommRing k inst))) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@x k inst)) (@OreLocalization.oreSetComm (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst)) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@x k inst))))) (@AddMonoidAlgebra.nonAssocSemiring (Base k) Int (@MvPowerSeries.instSemiring Unit k (@CommSemiring.toSemiring k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) (@AddMonoid.toAddZeroClass Int Int.instAddMonoid)) (@RingEquiv.toRingHom (@XChart k inst) (@Torus k inst) (@Semiring.toNonAssocSemiring (@XChart k inst) (@OreLocalization.instSemiring (@Node k inst) (@CommSemiring.toSemiring (@Node k inst) (@CommRing.toCommSemiring (@Node k inst) (@nodeCommRing k inst))) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@x k inst)) (@OreLocalization.oreSetComm (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst)) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@x k inst))))) (@AddMonoidAlgebra.nonAssocSemiring (Base k) Int (@MvPowerSeries.instSemiring Unit k (@CommSemiring.toSemiring k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) (@AddMonoid.toAddZeroClass Int Int.instAddMonoid)) e) (@RingHom.comp (@PolynomialChart k inst) (@Node k inst) (@XChart k inst) (@AddMonoidAlgebra.nonAssocSemiring (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@CommSemiring.toSemiring (Base k) (@MvPowerSeries.instCommSemiring Unit k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) (@Finsupp.instAddZeroClass (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@AddMonoid.toAddZeroClass Nat Nat.instAddMonoid))) (@Semiring.toNonAssocSemiring (@Node k inst) (@Ideal.Quotient.semiring (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid)) (@relationIdeal k inst))) (@Semiring.toNonAssocSemiring (@XChart k inst) (@OreLocalization.instSemiring (@Node k inst) (@CommSemiring.toSemiring (@Node k inst) (@CommRing.toCommSemiring (@Node k inst) (@nodeCommRing k inst))) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@x k inst)) (@OreLocalization.oreSetComm (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst)) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@x k inst))))) (@toXChart k inst) (@quotientMap k inst))) (@torusMap k inst)) (@ExistsUnique (@RingEquiv (@YChart k inst) (@Torus k inst) (@OreLocalization.instMul (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@y k inst)) (@OreLocalization.oreSetComm (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst)) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@y k inst)))) (@AddMonoidAlgebra.instMul (Base k) Int (@MvPowerSeries.instSemiring Unit k (@CommSemiring.toSemiring k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) Int.instAdd) (@OreLocalization.instAdd (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@y k inst)) (@OreLocalization.oreSetComm (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst)) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@y k inst))) (@Node k inst) (@AddCommMonoid.toAddMonoid (@Node k inst) (@Submodule.Quotient.addCommMonoid (@PolynomialChart k inst) (@PolynomialChart k inst) (@CommRing.toRing (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid))) (@Ring.toAddCommGroup (@PolynomialChart k inst) (@CommRing.toRing (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid)))) (@Semiring.toModule (@PolynomialChart k inst) (@Ring.toSemiring (@PolynomialChart k inst) (@CommRing.toRing (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid))))) (@relationIdeal k inst))) (@Module.toDistribMulAction (@Node k inst) (@Node k inst) (@CommSemiring.toSemiring (@Node k inst) (@CommRing.toCommSemiring (@Node k inst) (@nodeCommRing k inst))) (@Submodule.Quotient.addCommMonoid (@PolynomialChart k inst) (@PolynomialChart k inst) (@CommRing.toRing (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid))) (@Ring.toAddCommGroup (@PolynomialChart k inst) (@CommRing.toRing (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid)))) (@Semiring.toModule (@PolynomialChart k inst) (@Ring.toSemiring (@PolynomialChart k inst) (@CommRing.toRing (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid))))) (@relationIdeal k inst)) (@Semiring.toModule (@Node k inst) (@CommSemiring.toSemiring (@Node k inst) (@CommRing.toCommSemiring (@Node k inst) (@nodeCommRing k inst)))))) (@Distrib.toAdd (@Torus k inst) (@instDistribOfSemiring (@Torus k inst) (@AddMonoidAlgebra.semiring (Base k) Int (@MvPowerSeries.instSemiring Unit k (@CommSemiring.toSemiring k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) Int.instAddMonoid)))) fun e => @Eq (@RingHom (@PolynomialChart k inst) (@Torus k inst) (@AddMonoidAlgebra.nonAssocSemiring (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@CommSemiring.toSemiring (Base k) (@MvPowerSeries.instCommSemiring Unit k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) (@Finsupp.instAddZeroClass (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@AddMonoid.toAddZeroClass Nat Nat.instAddMonoid))) (@AddMonoidAlgebra.nonAssocSemiring (Base k) Int (@MvPowerSeries.instSemiring Unit k (@CommSemiring.toSemiring k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) (@AddMonoid.toAddZeroClass Int Int.instAddMonoid))) (@RingHom.comp (@PolynomialChart k inst) (@YChart k inst) (@Torus k inst) (@AddMonoidAlgebra.nonAssocSemiring (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@CommSemiring.toSemiring (Base k) (@MvPowerSeries.instCommSemiring Unit k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) (@Finsupp.instAddZeroClass (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@AddMonoid.toAddZeroClass Nat Nat.instAddMonoid))) (@Semiring.toNonAssocSemiring (@YChart k inst) (@OreLocalization.instSemiring (@Node k inst) (@CommSemiring.toSemiring (@Node k inst) (@CommRing.toCommSemiring (@Node k inst) (@nodeCommRing k inst))) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@y k inst)) (@OreLocalization.oreSetComm (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst)) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@y k inst))))) (@AddMonoidAlgebra.nonAssocSemiring (Base k) Int (@MvPowerSeries.instSemiring Unit k (@CommSemiring.toSemiring k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) (@AddMonoid.toAddZeroClass Int Int.instAddMonoid)) (@RingEquiv.toRingHom (@YChart k inst) (@Torus k inst) (@Semiring.toNonAssocSemiring (@YChart k inst) (@OreLocalization.instSemiring (@Node k inst) (@CommSemiring.toSemiring (@Node k inst) (@CommRing.toCommSemiring (@Node k inst) (@nodeCommRing k inst))) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@y k inst)) (@OreLocalization.oreSetComm (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst)) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@y k inst))))) (@AddMonoidAlgebra.nonAssocSemiring (Base k) Int (@MvPowerSeries.instSemiring Unit k (@CommSemiring.toSemiring k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) (@AddMonoid.toAddZeroClass Int Int.instAddMonoid)) e) (@RingHom.comp (@PolynomialChart k inst) (@Node k inst) (@YChart k inst) (@AddMonoidAlgebra.nonAssocSemiring (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@CommSemiring.toSemiring (Base k) (@MvPowerSeries.instCommSemiring Unit k (@Semifield.toCommSemiring k (@Field.toSemifield k inst)))) (@Finsupp.instAddZeroClass (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@AddMonoid.toAddZeroClass Nat Nat.instAddMonoid))) (@Semiring.toNonAssocSemiring (@Node k inst) (@Ideal.Quotient.semiring (@PolynomialChart k inst) (@AddMonoidAlgebra.commRing (Base k) (@Finsupp (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) (@MvPowerSeries.instCommRing Unit k (@Field.toCommRing k inst)) (@Finsupp.instAddCommMonoid (Fin (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) Nat Nat.instAddCommMonoid)) (@relationIdeal k inst))) (@Semiring.toNonAssocSemiring (@YChart k inst) (@OreLocalization.instSemiring (@Node k inst) (@CommSemiring.toSemiring (@Node k inst) (@CommRing.toCommSemiring (@Node k inst) (@nodeCommRing k inst))) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@y k inst)) (@OreLocalization.oreSetComm (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst)) (@Submonoid.powers (@Node k inst) (@CommMonoid.toMonoid (@Node k inst) (@CommRing.toCommMonoid (@Node k inst) (@nodeCommRing k inst))) (@y k inst))))) (@toYChart k inst) (@quotientMap k inst))) (@oppositeTorusMap k inst)) := by sorry
 end ArithmeticThetaNodeCharts
 namespace ArithmeticThetaIndexedOverlapsR0058
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 variable (k : Type u) [Field k] [CharZero k]
 abbrev Node (_j : ℕ) := ArithmeticThetaNodeCharts.Node k
 def next (r j : ℕ) : ℕ := (j + 1) % r
 def nodeCoord (side : Bool) : Node k 0 :=
   if side then ArithmeticThetaNodeCharts.x k else ArithmeticThetaNodeCharts.y k
 abbrev Open (_j : ℕ) (side : Bool) := Localization.Away (nodeCoord k side)
+set_option backward.isDefEq.respectTransparency true in
 def torusEquiv (j : ℕ) (side : Bool) : Open k j side ≃+* ArithmeticThetaNodeCharts.Torus k := by
   cases side with
   | false => exact Classical.choose (ArithmeticThetaNodeCharts.node_torus_chart_equivalences k).2
   | true => exact Classical.choose (ArithmeticThetaNodeCharts.node_torus_chart_equivalences k).1
+set_option backward.isDefEq.respectTransparency true in
 def adjacent (r j : ℕ) : Open k j false ≃+* Open k (next r j) true :=
   ((torusEquiv k j false).trans LaurentPolynomial.invert.toRingEquiv).trans
     (torusEquiv k (next r j) true).symm
 end ArithmeticThetaIndexedOverlapsR0058
 namespace ArithmeticThetaInfinitesimalPolygonR0129
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev Trunc (R : Type u) [CommRing R] (t : R) (n : ℕ) :=
   R ⧸ (Ideal.span {t}) ^ (n+1)
 def trunc (R : Type u) [CommRing R] (t : R) (n : ℕ) : R →+* Trunc R t n :=
@@ -183,6 +95,7 @@ def base (n : ℕ) : R k n →+* A k n :=
 def restriction (n : ℕ) (side : Bool) : A k n →+* B k n side :=
   truncMap (algebraMap (ArithmeticThetaNodeCharts.Node k) (RawOpen k side))
     (ArithmeticThetaNodeCharts.t k) (openParameter k side) rfl n
+set_option backward.isDefEq.respectTransparency true in
 def rawAdjacent : RawOpen k false ≃+* RawOpen k true :=
   ArithmeticThetaIndexedOverlapsR0058.adjacent k 1 0
 def IsAdjacent (n : ℕ) (E : B k n false ≃+* B k n true) : Prop :=
@@ -240,7 +153,7 @@ structure Tower (r : ℕ) (hr : 0 < r) where
     transition n N h ≫ transition N P h' = transition n P (le_trans h h')
 end ArithmeticThetaInfinitesimalPolygonR0129
 namespace ArithmeticThetaInfinitesimalPolygonR0129
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 variable (k : Type u) [Field k] [CharZero k]
 variable (n : ℕ)
 def coordX : A k n := trunc _ (ArithmeticThetaNodeCharts.t k) n
@@ -275,7 +188,7 @@ def mkPoint {S : Type u} [CommRing S] (b : R k n →+* S) (x y : S) (hxy : x * y
   exact Ideal.Quotient.lift _ g (fun a ha => hg ha)
 end ArithmeticThetaInfinitesimalPolygonR0129
 namespace ArithmeticThetaPolygonCohomologyR0131
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129
 variable (k : Type u) [Field k] [CharZero k]
 def LaurentPresentation (n : ℕ)
@@ -311,7 +224,7 @@ def markedSection (r n : ℕ) (hr : 0 < r) {E : B k n false ≃+* B k n true} (D
   Spec.map (CommRingCat.ofHom (markedPoint k n a)) ≫ D.chart i
 end ArithmeticThetaPolygonCohomologyR0131
 namespace ArithmeticThetaProjectiveEffectivityR0135
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129
 variable (k : Type u) [Field k] [CharZero k]
 def baseInclusion (n : ℕ) : specR k n ⟶ Spec (CommRingCat.of (PowerSeries k)) :=
@@ -326,7 +239,7 @@ def IsModel {r : ℕ} {hr : 0 < r} (T : Tower k r hr) (M : Model k T) : Prop :=
   (∀ n N (h : n ≤ N), T.transition n N h ≫ M.inclusion N = M.inclusion n)
 end ArithmeticThetaProjectiveEffectivityR0135
 namespace ArithmeticThetaAlgebraizedMarkedLineR0136
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaPolygonCohomologyR0131
 variable (k : Type u) [Field k] [CharZero k]
 def baseScheme : Scheme.{u} := Spec (CommRingCat.of (PowerSeries k))
@@ -335,15 +248,17 @@ def MarkedLift {r : ℕ} {hr : 0 < r} {T : Tower k r hr} (M : Model k T) (i : Fi
     baseInclusion k n ≫ s = markedSection k r n hr (T.atlas n) i a ≫ M.inclusion n
 end ArithmeticThetaAlgebraizedMarkedLineR0136
 namespace ArithmeticThetaPolygonCartierR0133
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
+theorem unitPullback._proof_1.{u_1} : ∀ {X Y : AlgebraicGeometry.Scheme.{u_1}} (f : @Quiver.Hom.{u_1, u_1 + 1} AlgebraicGeometry.Scheme.{u_1} (@CategoryTheory.ReflQuiver.toQuiver.{u_1, u_1 + 1} AlgebraicGeometry.Scheme.{u_1} (@CategoryTheory.catToReflQuiver.{u_1, u_1 + 1} AlgebraicGeometry.Scheme.{u_1} AlgebraicGeometry.Scheme.instCategory.{u_1})) X Y), @CategoryTheory.Functor.IsContinuous.{u_1, u_1, u_1, u_1} (@TopologicalSpace.Opens.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@Preorder.smallCategory.{u_1} (@TopologicalSpace.Opens.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@PartialOrder.toPreorder.{u_1} (@TopologicalSpace.Opens.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@TopologicalSpace.Opens.instPartialOrder.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str))) (@TopologicalSpace.Opens.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) (@Preorder.smallCategory.{u_1} (@TopologicalSpace.Opens.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) (@PartialOrder.toPreorder.{u_1} (@TopologicalSpace.Opens.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) (@TopologicalSpace.Opens.instPartialOrder.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str))) (@TopologicalSpace.Opens.map.{u_1} (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)) (@AlgebraicGeometry.PresheafedSpace.Hom.base.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace) (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace) (@AlgebraicGeometry.LocallyRingedSpace.Hom.toHom.{u_1} X.toLocallyRingedSpace Y.toLocallyRingedSpace (@AlgebraicGeometry.Scheme.Hom.toLRSHom'.{u_1} X Y f)))) (@Opens.grothendieckTopology.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@Opens.grothendieckTopology.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) := fun {X Y} f => @instIsContinuousOpensCarrierMapGrothendieckTopology.{u_1} (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)) (@AlgebraicGeometry.PresheafedSpace.Hom.base.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace) (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace) (@AlgebraicGeometry.LocallyRingedSpace.Hom.toHom.{u_1} X.toLocallyRingedSpace Y.toLocallyRingedSpace (@AlgebraicGeometry.Scheme.Hom.toLRSHom'.{u_1} X Y f)))
+theorem unitPullback._proof_2.{u_1} : ∀ {X Y : AlgebraicGeometry.Scheme.{u_1}} (f : @Quiver.Hom.{u_1, u_1 + 1} AlgebraicGeometry.Scheme.{u_1} (@CategoryTheory.ReflQuiver.toQuiver.{u_1, u_1 + 1} AlgebraicGeometry.Scheme.{u_1} (@CategoryTheory.catToReflQuiver.{u_1, u_1 + 1} AlgebraicGeometry.Scheme.{u_1} AlgebraicGeometry.Scheme.instCategory.{u_1})) X Y), @CategoryTheory.Functor.IsRightAdjoint.{u_1, u_1, u_1 + 1, u_1 + 1} (@SheafOfModules.{u_1, u_1, u_1, u_1} (@TopologicalSpace.Opens.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@Preorder.smallCategory.{u_1} (@TopologicalSpace.Opens.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@PartialOrder.toPreorder.{u_1} (@TopologicalSpace.Opens.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@TopologicalSpace.Opens.instPartialOrder.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str))) (@Opens.grothendieckTopology.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) Y.ringCatSheaf) (@SheafOfModules.instCategory.{u_1, u_1, u_1, u_1} (@TopologicalSpace.Opens.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@Preorder.smallCategory.{u_1} (@TopologicalSpace.Opens.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@PartialOrder.toPreorder.{u_1} (@TopologicalSpace.Opens.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@TopologicalSpace.Opens.instPartialOrder.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str))) (@Opens.grothendieckTopology.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) Y.ringCatSheaf) (@SheafOfModules.{u_1, u_1, u_1, u_1} (@TopologicalSpace.Opens.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) (@Preorder.smallCategory.{u_1} (@TopologicalSpace.Opens.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) (@PartialOrder.toPreorder.{u_1} (@TopologicalSpace.Opens.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) (@TopologicalSpace.Opens.instPartialOrder.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str))) (@Opens.grothendieckTopology.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) X.ringCatSheaf) (@SheafOfModules.instCategory.{u_1, u_1, u_1, u_1} (@TopologicalSpace.Opens.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) (@Preorder.smallCategory.{u_1} (@TopologicalSpace.Opens.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) (@PartialOrder.toPreorder.{u_1} (@TopologicalSpace.Opens.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) (@TopologicalSpace.Opens.instPartialOrder.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str))) (@Opens.grothendieckTopology.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) X.ringCatSheaf) (@SheafOfModules.pushforward.{u_1, u_1, u_1, u_1, u_1, u_1} (@TopologicalSpace.Opens.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@Preorder.smallCategory.{u_1} (@TopologicalSpace.Opens.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@PartialOrder.toPreorder.{u_1} (@TopologicalSpace.Opens.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@TopologicalSpace.Opens.instPartialOrder.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str))) (@TopologicalSpace.Opens.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) (@Preorder.smallCategory.{u_1} (@TopologicalSpace.Opens.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) (@PartialOrder.toPreorder.{u_1} (@TopologicalSpace.Opens.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) (@TopologicalSpace.Opens.instPartialOrder.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str))) (@Opens.grothendieckTopology.{u_1} (↥Y) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)).str) (@Opens.grothendieckTopology.{u_1} (↥X) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)).str) (@TopologicalSpace.Opens.map.{u_1} (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace)) (@AlgebraicGeometry.PresheafedSpace.carrier.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace)) (@AlgebraicGeometry.PresheafedSpace.Hom.base.{u_1, u_1 + 1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} X.toSheafedSpace) (@AlgebraicGeometry.SheafedSpace.toPresheafedSpace.{u_1 + 1, u_1, u_1} CommRingCat.{u_1} CommRingCat.instCategory.{u_1} Y.toSheafedSpace) (@AlgebraicGeometry.LocallyRingedSpace.Hom.toHom.{u_1} X.toLocallyRingedSpace Y.toLocallyRingedSpace (@AlgebraicGeometry.Scheme.Hom.toLRSHom'.{u_1} X Y f)))) Y.ringCatSheaf X.ringCatSheaf (@ArithmeticThetaPolygonCartierR0133.unitPullback._proof_1.{u_1} X Y f) (@AlgebraicGeometry.Scheme.Hom.toRingCatSheafHom.{u_1} X Y f)) := sorry
 def unitPullback {X Y : Scheme.{u}} (f : X ⟶ Y) :
     (Scheme.Modules.pullback f).obj
       (SheafOfModules.unit Y.ringCatSheaf : Y.Modules) ⟶
       (SheafOfModules.unit X.ringCatSheaf : X.Modules) :=
-  SheafOfModules.pullbackObjUnitToUnit f.toRingCatSheafHom
+  @SheafOfModules.pullbackObjUnitToUnit _ _ _ _ _ _ _ _ _ (unitPullback._proof_1 f) f.toRingCatSheafHom (unitPullback._proof_2 f)
 end ArithmeticThetaPolygonCartierR0133
 namespace ArithmeticThetaPolygonCartierR0133.GlobalCartierIdealLineR0133
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 def quotientMap {X : Scheme.{u}} (I : X.IdealSheafData) :
     (SheafOfModules.unit X.ringCatSheaf : X.Modules) ⟶
       (Scheme.Modules.pushforward I.subschemeι).obj
@@ -356,7 +271,7 @@ def idealInclusion {X : Scheme.{u}} (I : X.IdealSheafData) :
   kernel.ι (quotientMap I)
 end ArithmeticThetaPolygonCartierR0133.GlobalCartierIdealLineR0133
 namespace ArithmeticThetaIdentitySectionsR0138
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaPolygonCartierR0133
 variable (k : Type u) [Field k] [CharZero k]
 def zeroIndex (r : ℕ) (hr : 0 < r) : Fin r := ⟨0, hr⟩
@@ -371,7 +286,7 @@ def Dual {r : ℕ} {hr : 0 < r} {T : Tower k r hr} (M : Model k T)
   powerModule k M s d ⟶ (SheafOfModules.unit M.X.ringCatSheaf : M.X.Modules)
 end ArithmeticThetaIdentitySectionsR0138
 namespace ArithmeticThetaAlgebraicCoordinatesR0143
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133
 variable (k : Type u) [Field k] [CharZero k]
 def degree (odd : Bool) : ℕ := if odd then 3 else 2
@@ -416,7 +331,7 @@ def pulled (M : Model k T) (s : baseScheme k ⟶ M.X) (d : ℕ)
   (Scheme.Modules.pullback p).map φ ≫ unitPullback p
 end ArithmeticThetaAlgebraicCoordinatesR0143
 namespace ArithmeticThetaProjectiveEffectivityR0135
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129
 variable (k : Type u) [Field k] [CharZero k]
 def genericBase : Spec (CommRingCat.of (LaurentSeries k)) ⟶
@@ -426,7 +341,7 @@ def genericStructure {r : ℕ} {hr : 0 < r} {T : Tower k r hr} (M : Model k T) :
   CategoryTheory.Limits.pullback.snd M.p (genericBase k)
 end ArithmeticThetaProjectiveEffectivityR0135
 namespace ArithmeticThetaGenericEvaluationR0140
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133
 variable (k : Type u) [Field k] [CharZero k]
 variable {r : ℕ} {hr : 0 < r} {T : Tower k r hr}
@@ -452,7 +367,7 @@ def frameValue (M : Model k T) (s : baseScheme k ⟶ M.X) (d : ℕ)
     ((e.inv ≫ (Scheme.Modules.pullback s).map φ ≫ unitPullback s).app ⊤ ((Scheme.ΓSpecIso (CommRingCat.of (PowerSeries k))).inv 1))
 end ArithmeticThetaGenericEvaluationR0140
 namespace ArithmeticThetaTateSeries
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 variable {k : Type u} [Field k]
 def monomial (a : k) (n : ℕ) : PowerSeries k :=
   PowerSeries.C a * PowerSeries.X ^ n
@@ -469,7 +384,7 @@ def tateX (d i : ℕ) (a : k) : PowerSeries k :=
   PowerSeries.mk fun n => PowerSeries.coeff n (partialX d i a (n+1))
 end ArithmeticThetaTateSeries
 namespace ArithmeticThetaCubicModelR0144
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133 ArithmeticThetaAlgebraicCoordinatesR0143
 variable (k : Type u) [Field k] [CharZero k]
 def rootSeries (r : ℕ) (j : Fin 3) : PowerSeries k :=
@@ -493,7 +408,7 @@ def ModelCubic (M : Model k T) (s : baseScheme k ⟶ M.X)
         modelScalar k M U (rootSeries k r j) * ja)) * jb^2
 end ArithmeticThetaCubicModelR0144
 namespace AlgebraicGeometry.Scheme.Hom
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 variable {A : Type u} [CommRing A] {X : Scheme.{u}} (f : X ⟶ Spec (CommRingCat.of A))
 def constToPresheaf : (Functor.const (X.Opens)ᵒᵖ).obj (CommRingCat.of A) ⟶ X.presheaf where
   app U := (Scheme.ΓSpecIso (CommRingCat.of A)).inv ≫ f.appLE ⊤ U.unop le_top
@@ -512,7 +427,7 @@ def kaehlerToSections (U : X.Opens) :
     f.kaehlerPresheaf).app (op U)).hom s
 end AlgebraicGeometry.Scheme.Hom
 namespace ArithmeticThetaCompactifiedDifferentialR0145
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133 ArithmeticThetaGenericEvaluationR0140
 variable (k : Type u) [Field k] [CharZero k]
 variable {r : ℕ} {hr : 0 < r} {T : Tower k r hr}
@@ -560,7 +475,7 @@ def IsGlobalDifferentialFrame (M : Model k T) (s : baseScheme k ⟶ M.X)
         (1 : (genericScheme k M).presheaf.obj (Opposite.op U))
 end ArithmeticThetaCompactifiedDifferentialR0145
 namespace ArithmeticThetaPalomarCoordinates377
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 def NormalizedFrame (k : Type u) [Field k] [CharZero k]
     {r : ℕ} {hr : 0 < r} {T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr}
     (h3 : 3 ≤ r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
@@ -589,7 +504,7 @@ def NormalizedFrame (k : Type u) [Field k] [CharZero k]
             (ArithmeticThetaInfinitesimalPolygonR0129.A k n))).hom (q.app ⊤ z))
 end ArithmeticThetaPalomarCoordinates377
 namespace ArithmeticThetaPalomarCoordinates377
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133 ArithmeticThetaAlgebraicCoordinatesR0143 ArithmeticThetaGenericEvaluationR0140 ArithmeticThetaCompactifiedDifferentialR0145
 theorem algebraic_tate_coordinates :
     ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
@@ -605,21 +520,21 @@ theorem algebraic_tate_coordinates :
  := by sorry
 end ArithmeticThetaPalomarCoordinates377
 namespace ArithmeticThetaPalomarCoordinates377
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133 ArithmeticThetaAlgebraicCoordinatesR0143 ArithmeticThetaGenericEvaluationR0140 ArithmeticThetaCompactifiedDifferentialR0145
 theorem coordinate_exact_poles :
     ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s), ∀ (odd : Bool) (φ : ArithmeticThetaIdentitySectionsR0138.Dual k M s (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd)), ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k odd M s φ → CategoryTheory.IsIso (ArithmeticThetaAlgebraicCoordinatesR0143.pulled k M s (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd) s φ) ∧ ∀ e : ArithmeticThetaGenericEvaluationR0140.IdentityFrame k M s (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd), ArithmeticThetaPalomarCoordinates377.NormalizedFrame k h3 M hM s hs (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd) e → ArithmeticThetaGenericEvaluationR0140.frameValue k M s (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd) e φ = 1
  := by sorry
 end ArithmeticThetaPalomarCoordinates377
 namespace ArithmeticThetaPalomarCoordinates377
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133 ArithmeticThetaAlgebraicCoordinatesR0143 ArithmeticThetaGenericEvaluationR0140 ArithmeticThetaCompactifiedDifferentialR0145
 theorem algebraic_model_cubic :
     ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2) (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3), ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X → ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y → ArithmeticThetaCubicModelR0144.ModelCubic k M s X Y
  := by sorry
 end ArithmeticThetaPalomarCoordinates377
 namespace ArithmeticThetaPalomarCoordinates377
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 open ArithmeticThetaInfinitesimalPolygonR0129 ArithmeticThetaProjectiveEffectivityR0135 ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaIdentitySectionsR0138 ArithmeticThetaPolygonCartierR0133 ArithmeticThetaAlgebraicCoordinatesR0143 ArithmeticThetaGenericEvaluationR0140 ArithmeticThetaCompactifiedDifferentialR0145
 theorem global_normalized_differential (k : Type u) [Field k] [CharZero k]
     (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : Tower k r hr) (he : Even r)
@@ -637,7 +552,7 @@ section Package01
 set_option autoImplicit false
 noncomputable section
 namespace ArithmeticThetaPalomarSharp360
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {}
 def validGram {n : ℕ} (A : Matrix (Fin n) (Fin n) ℤ) : Prop :=
   A.IsSymm ∧ (∀ i, Even (A i i)) ∧
     ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef
