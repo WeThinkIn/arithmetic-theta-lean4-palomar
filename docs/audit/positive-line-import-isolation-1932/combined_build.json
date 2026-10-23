@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "recompiled": 121,
+  "reused": 655,
+  "failed": {},
+  "blocked": {},
+  "bindings_unchanged": true,
+  "scope": "Combined current public root-descent sources plus positive-line import deletion; source-bound complete affected build. Declaration equivalence, endpoint audit and official acceptance remain separate."
+}

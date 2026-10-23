@@ -1,0 +1,32 @@
+{
+  "base_commit": "15c6f9988991f04ec85c4af5e463becf55ec61fb",
+  "source_file": "Proof/PositiveLineSectionsDefinitionsR0134.lean",
+  "before_sha256": "24d63940b8e84fa8efe423a8dcecb9733f2acd781e3d590d74a19f7ff42dd0dd",
+  "after_sha256": "54747ba6fad6f33e3fe20848425a74b9c2f95df284531d50ec403530bac6b513",
+  "change": "Remove unused public import AffineMarkedComplementR0133; retain every declaration verbatim.",
+  "isolated_downstream_modules": 776,
+  "isolated_declaration_records": 25775,
+  "isolated_declaration_differences": 0,
+  "combined_rebuild_modules": 121,
+  "verified_reused_modules": 655,
+  "gates": {
+    "isolated_module_audit": {
+      "passed": true,
+      "pending": false,
+      "receipt_sha256": "a6df2b72623064e65bedb300878d658c56fcdf75d677ae19a28878f7aeebe15e"
+    },
+    "combined_build": {
+      "passed": true,
+      "pending": false,
+      "receipt_sha256": "2ce0537f33127dfa7d5ec2d77c3c6224dcefddf010ff44ca79a7ef3d27da3df6"
+    },
+    "combined_audit": {
+      "passed": true,
+      "pending": false,
+      "receipt_sha256": "556bab4f220634515ff561c267671d5adf11367648b3768dab7ce5824c4f57a3"
+    }
+  },
+  "publication_ready": true,
+  "official_endpoint_credit_added": 0,
+  "scope": "Build dependency optimization only. No original mathematical endpoint is removed or weakened; this local evidence does not assert new official acceptance."
+}

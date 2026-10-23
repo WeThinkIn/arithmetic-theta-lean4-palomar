@@ -1,0 +1,539 @@
+{
+  "passed": true,
+  "recompiled_modules": 121,
+  "declarations": 2882,
+  "differences": [],
+  "original_endpoints": 103,
+  "original_requirements": 13,
+  "axioms": {
+    "binary-orthogonal-example": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-000": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-001": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-002": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-003": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-004": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-005": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-006": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-007": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-008": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-009": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-010": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-011": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-012": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-013": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-014": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-015": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-016": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-017": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-018": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-023": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-024": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-025": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-026": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-027": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-058": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-059": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-060": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-061": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-062": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-063": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-077": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-078": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-079": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-088": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-089": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-090": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-091": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-092": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-050": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-019": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-020": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-021": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-022": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-080": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-081": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-083": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-086": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-098": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-093": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-028": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-029": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-030": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-031": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-032": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-033": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-034": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-035": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-036": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-037": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-038": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-040": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-039": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-041": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-042": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-051": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-056": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-057": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-082": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-094": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-043": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-044": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-045": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-052": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-046": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-047": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-048": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-049": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-064": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-065": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-066": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-067": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-084": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-085": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-099": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-053": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-054": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-055": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-095": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-096": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-097": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-100": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-068": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-072": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-073": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-074": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-069": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-070": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-071": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "conservative-image-consumer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-075": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-076": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "accepted-087": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "bindings_unchanged": true,
+  "results": [
+    {
+      "name": "Audit",
+      "exit_code": 0,
+      "seconds": 4.67050551623106
+    },
+    {
+      "name": "EndpointAudit",
+      "exit_code": 0,
+      "seconds": 6.522540559060872
+    }
+  ],
+  "scope": "Complete declaration comparison for 121 recombined modules against current public compiled baseline plus frozen 103 original endpoint types and standard axioms. Complements 655 reused-module audit in 1925/1926; official acceptance and publication remain separate."
+}

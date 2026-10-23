@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "result": {
+    "module": "Audit",
+    "exit_code": 0,
+    "seconds": 2.0032206629402936,
+    "peak_rss_bytes": 2320621568,
+    "stop_reason": null
+  },
+  "bindings_unchanged": true,
+  "scope": "All original serialized declarations of PositiveLineSectionsDefinitionsR0134 with only an unused import removed; downstream compilation remains separate."
+}

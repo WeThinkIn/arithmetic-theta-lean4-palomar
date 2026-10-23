@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "modules": 776,
+  "declaration_records": 25775,
+  "differences": 0,
+  "bindings_unchanged": true,
+  "failed_batch_retained": "1925/Audit02: independently valid compatibility modules have duplicate declaration names when imported together; all 97 modules passed separately in 1926",
+  "scope": "Isolated positive-line import deletion candidate. Complete current-public combination is still building in 1927; no publication or official acceptance inferred."
+}
