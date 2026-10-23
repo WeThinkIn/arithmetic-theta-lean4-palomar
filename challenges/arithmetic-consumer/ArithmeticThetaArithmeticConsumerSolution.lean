@@ -1,3 +1,3 @@
 module
-public import ConsumerFactorBridge
+public import ConsumerArithmeticCore
 @[expose] public section

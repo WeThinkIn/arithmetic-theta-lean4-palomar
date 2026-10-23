@@ -1,0 +1,41 @@
+{
+  "local_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "selected_targets": [
+    "PalomarConsumer897.consumer_core"
+  ],
+  "original_complete_endpoint_credit": 0,
+  "challenge_and_configuration_unchanged": true,
+  "consumer_core_type_and_consumer_core_definition_exact": true,
+  "original_full_consumer_and_cyclotomic_proof_dependencies_absent": true,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proof_source": "Proof/ConsumerArithmeticCore.lean",
+  "proof_source_sha256": "c5b3e633ccab0a0610a9190c95bbde9c29ddd98e9bfbd56bdf13ab7ea1d631b6",
+  "solution_sha256": "c33eeac3a99a3bb4717530498de7303a3d063b1afd917836f4d49421d91fbb21",
+  "strict_receipt_sha256": "d866457a49644eac061775c0b7bf8bad468856a6b52f3d6daabe54af717b6e6a",
+  "exact_audit_receipt_sha256": "cbcaf5e0e9fc9e3b8ef50a47438f21cd86ff8e97d8bc948a2f8ec5428da360a9",
+  "exports": {
+    "challenge": {
+      "bytes": 68125972,
+      "sha256": "9df79ad05050d3ae60663821638aaeddde21025293d20a612f085ed39bd39c8d"
+    },
+    "solution": {
+      "bytes": 2744454284,
+      "sha256": "e55560de8b06dc69f6c324bf7698dd108d4a25f7148eb3ca5b8428e4d7a3b1f4"
+    }
+  },
+  "previous_solution_export_bytes": 3070153283,
+  "static_import_analysis": {
+    "old_local_modules": 3924,
+    "new_local_modules": 2973,
+    "removed_local_modules": 952,
+    "removed_local_source_bytes": 11006391
+  },
+  "previous_failed_official_run": 39838919129,
+  "reason_for_fresh_official_preflight": "Previously OOM during solution build; replace projection from full geometric theorem with direct conservative-kernel/image-data proof, removing952local imports while preserving the selected proposition. Cold-build improvement not yet measured.",
+  "limitation": "Component verification only; full original conservative-image-consumer and whole-paper semantic acceptance remain separate."
+}

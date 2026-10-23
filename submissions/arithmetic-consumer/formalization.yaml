@@ -36,9 +36,12 @@ automation:
     are recorded here.
 review:
   status: agent-reviewed
-  notes: The source component has local exact statement/data audits, strict comparison
-    and linked kernel evidence. Fresh candidate compilation and official verification
-    remain separate checks.
+  notes: The unchanged consumer_core proposition is proved directly from the conservative
+    matrix kernel and certified image data. Exact statement/definition and transitive
+    no-full-consumer/cyclotomic-proof audits passed; full local strict comparison
+    passed. Static imports decrease by952local modules. Fresh official resource and
+    mechanical verification remain required; no complete original consumer endpoint
+    credit is inferred.
 status:
   scope: This entry verifies conservative cutoff with complete kernel and image data,
     including the explicitly selected supporting declarations. The complete cyclotomic
