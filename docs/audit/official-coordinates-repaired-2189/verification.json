@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "utc": "2026-10-23T22:57:21.916489+00:00",
+  "run": 40007573156,
+  "workflow_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/40007573156",
+  "source_commit": "be9f35368e5ffdb4cf9717e993ccbc3be6454008",
+  "report_sha256": "dc296cec9a2a081503511a511520dbd3d6092bcb7883bce76efce0b1fe1ebe28",
+  "scope_sha256": "7ce4e74c2936eb822606f71aa3798a5e8ff27672b0d193822933ffb717581b34",
+  "configured_targets": [
+    "ArithmeticThetaPalomarCoordinates377.algebraic_tate_coordinates",
+    "ArithmeticThetaPalomarCoordinates377.coordinate_exact_poles",
+    "ArithmeticThetaPalomarCoordinates377.algebraic_model_cubic",
+    "ArithmeticThetaPalomarCoordinates377.global_normalized_differential",
+    "ArithmeticThetaPalomarSharp360.sharpFiniteDetermination",
+    "ArithmeticThetaNodeCharts.node_torus_chart_equivalences",
+    "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_2",
+    "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_4",
+    "ArithmeticThetaCompactifiedDifferentialR0145.cubicDerivative._proof_2",
+    "ArithmeticThetaPolygonCartierR0133.unitPullback._proof_2"
+  ],
+  "covered_complete_endpoint_ids": [
+    "accepted-019",
+    "accepted-020",
+    "accepted-021",
+    "accepted-022",
+    "accepted-049"
+  ],
+  "new_complete_endpoint_ids": [],
+  "official_complete_endpoint_union_before": 97,
+  "official_complete_endpoint_union": 97,
+  "original_endpoints": 103,
+  "original_requirements": 13,
+  "prepared_independent_interfaces": 99,
+  "accepted_kernels": [
+    "stock Lean",
+    "NanoDa",
+    "Conron"
+  ],
+  "challenge_trust_level": "high",
+  "challenge_bytes": 92478,
+  "challenge_lines": 616,
+  "whole_paper_semantic_acceptance": false,
+  "registration_performed": false,
+  "scope": "Historical union of exact-revision official mechanical results, not a single-revision whole-paper verification or semantic acceptance."
+}
