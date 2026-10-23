@@ -47,14 +47,17 @@ automation:
     author and responsible maintainer is Jue Ding. See docs/AIContributions.md for
     the contribution account and its source provenance.
 review:
-  status: agent-reviewed
+  status: self-assessed
   notes: >-
-    Complete original endpoint and all 35 original/support obligations retained.
-    Shared declaration, strict target-closure, standard-axiom and exact original
-    recovery checks pass. The same private cache-reset expression is resolved
-    explicitly for compiler and renderer compatibility. Local official-version
-    rendering has all 35 anchors and no elaboration errors. Fresh official
-    verification and rendering remain pending for this revision.
+    Pre-submission assessment based on recorded machine checks: all 35 configured
+    original/support obligations, shared declarations, strict target closure,
+    standard axioms, and exact original-endpoint recovery were checked. Local
+    rendering of the repaired interface resolved all 35 anchors without
+    elaboration errors. These checks are not presented as a distinct agent's
+    semantic review. Official mechanical preflight 39970710615 passed for the
+    source revision a8547a01b1e84633eca792ceabf663a285ab4693; that historical result
+    remains bound to its original metadata and does not certify this metadata
+    revision or constitute whole-paper semantic acceptance.
 status:
   scope: 'Full original045: from the original actual normalized isogeny alpha and
     its supplied compact realization, constructs on every actual compact component
