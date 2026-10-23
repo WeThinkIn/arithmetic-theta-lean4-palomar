@@ -41,13 +41,18 @@ automation:
     author and responsible maintainer is Jue Ding. See docs/AIContributions.md for
     the contribution account and its source provenance.
 review:
-  status: agent-reviewed
+  status: self-assessed
   notes: >-
-    All five complete original endpoints and ten configured targets retained.
-    Exact shared declarations, full target-closure and standard-axiom checks pass.
-    The unchanged Solution retains checked original endpoint recovery.
-    Local official-version rendering shows all ten anchors with zero errors.
-    Fresh official verification is pending for the repaired Challenge.
+    Pre-submission assessment based on recorded machine checks: the five complete
+    original endpoints and all ten configured targets, shared declarations,
+    complete target closure, standard axioms and original recovery were checked.
+    The repaired Challenge renders all ten anchors without elaboration errors.
+    These checks are not presented as a distinct agent's semantic review.
+    Official full mechanical preflight 40007573156 passed at source commit
+    be9f35368e5ffdb4cf9717e993ccbc3be6454008 with stock Lean, NanoDa and Conron
+    acceptance. That result remains bound to its original metadata and build
+    configuration; it does not certify this metadata revision or establish
+    whole-paper semantic acceptance.
 status:
   scope: 'Five complete original endpoints: accepted019 algebraic Tate coordinates,020
     exact poles,021 algebraic model cubic,022 global normalized differential and049
