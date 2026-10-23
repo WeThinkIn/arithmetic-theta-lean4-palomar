@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-23T16:15:42.384509+00:00",
+  "run": 39957989305,
+  "report": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-current-report-collector-1929/39957989305/mechanical-report-12515305987.json",
+  "report_sha256": "cd346f93218e2592c9c00a47a85b8aa92e00e1543a3adf28bc2a517fb97c9c43",
+  "status": "error",
+  "stage": "resource-exhausted",
+  "error_kind": "infrastructure/resource-exhausted",
+  "last_active_stage": "solution-build",
+  "errors": [
+    "worker resource ceiling reached while running lake (exit 137, result oom-kill)"
+  ],
+  "oom_telemetry": [
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 41868696230000,
+      "deadline_fired": false,
+      "exec_main_code": "2",
+      "exec_main_status": "9",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 5
+      },
+      "memory_peak_bytes": 15859036160,
+      "phase": "solution-build:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "oom-kill"
+    }
+  ],
+  "profile": {
+    "id": "palomar-standard-v1",
+    "limits": {
+      "execution_budget_seconds": 19800,
+      "file_size_max_bytes": 1099511627776,
+      "job_timeout_minutes": 350,
+      "memory_high_percent": 95,
+      "memory_max_percent": 98,
+      "minimum_host_memory_bytes": 15032385536,
+      "minimum_workspace_free_bytes": 21474836480,
+      "open_files_max": 1048576,
+      "tasks_max": 32768
+    },
+    "observed_host": {
+      "architecture": "x86_64",
+      "effective_cpus": 4.0,
+      "memory_bytes": 16766414848,
+      "memory_high_bytes": 15928094105,
+      "memory_max_bytes": 16431086551,
+      "workspace_free_bytes": 114946625536
+    },
+    "runner": {
+      "architecture": "x86_64",
+      "label": "ubuntu-24.04",
+      "provider": "github-hosted"
+    },
+    "sha256": "94fcd7906a1b6c076c0036d742e1c5add8625e49bb474818ec8924576dbf0caa",
+    "trusted_tools": {
+      "bwrap_source_tag": "v0.12.0",
+      "toolchain_floor": "v4.35.0-rc2"
+    }
+  },
+  "retryable": true,
+  "scope": "Authoritative official preflight failure is OOM during Solution build, before solution export/comparator/kernels. No proof counterexample established; no pass or automatic retry inferred."
+}

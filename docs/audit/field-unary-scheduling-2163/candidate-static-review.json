@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-23T20:07:03.456002+00:00",
+  "static_review_passed": true,
+  "public_commit": "f334d1942043cec31e3afe98a724a6b35bfab726",
+  "candidate_lakefile_sha256": "df4a58c4b264aa99c208a765774cd9235a904f3d76b088d817daf6ab88d3594f",
+  "candidate_lakefile_bytes": 178659,
+  "source_and_configuration_bindings_checked": 3955,
+  "graph_modules": 3951,
+  "extra_scheduling_edges": 16,
+  "unique_module_ownership": true,
+  "all_existing_library_compiler_settings_preserved": true,
+  "all_original_endpoint_specifications_preserved": true,
+  "official_pinned_lakefile_file_size_toml_check_passed": true,
+  "patch_sha256": "445b1e1ad414858f8d14f7907c4c8e2cfc10d06f7cae9e56f224a69a3d2a07ed",
+  "patch_applies_to_current_public_head": true,
+  "patch_published": false,
+  "pending_requirements": [
+    "2155 cold build successful terminal receipt and resource analysis",
+    "2159 full exact-object audit against validated2066 cold objects",
+    "2160 full target-closure and axiom check plus export hashes",
+    "Revalidate live remote HEAD and all source/config bindings before publication"
+  ],
+  "scope": "Static review of the actual running16edge candidate. Does not establish resource success or official acceptance."
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "seconds": 10087.107598592993,
+  "sampled_peak_memory_bytes": 16430641152,
+  "cgroup_peak_memory_bytes": 16432656384,
+  "memory_limit_bytes": 16431083520,
+  "stop_reason": null,
+  "bindings_unchanged": true,
+  "scope": "Full FieldUnarySolution Lake cold project build with canonical dependency cache and scheduling-only configuration. No official result, full-project build, or new kernel acceptance is inferred."
+}

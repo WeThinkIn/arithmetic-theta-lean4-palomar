@@ -8,6 +8,8 @@ The [common-unary preflight](audit/common-unary-timeout-2133/Review.md) exhauste
 
 The repaired complete CommonUnary interface subsequently passed [official preparation checks](audit/common-preparation-2147/Review.md) at `f953715c31be0e30d6e8a2e8877bfcee191ce9ae`. Preparation is recorded as `pending / prepared`, not complete mechanical acceptance, and adds no endpoint coverage. External full preflight reports are advisory; ordinary submissions undergo their own official verification on the production service. See the [resource-profile distinction](audit/official-resource-profiles-2140/Review.md).
 
+The [FieldUnary scheduling change](audit/field-unary-scheduling-2163/Review.md) addresses the earlier Solution-build OOM through build prerequisites only. Its complete local resource experiment and a new official full preflight are being pursued in parallel. No additional endpoint coverage is claimed before an exact successful official report.
+
 ## Main-result verification record
 
 The official complete-main preflight [39709205904](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39709205904)

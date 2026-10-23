@@ -1,0 +1,38 @@
+{
+  "source_files_unchanged": 3951,
+  "scheduled_heavy_modules": [
+    "Definitions.Def_ModularCurve_CharLFrobeniusGeomLevel",
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists",
+    "P2M.Sol.S_AlgebraicCurve_RiemannGenusReachedAt_eq_of_ge",
+    "P2M.Sol.S_AlgebraicCurve_finiteDimensional_lSpace",
+    "P2M.Sol.S_AlgebraicCurve_indexOfSpecialty_eq_of_genusReached",
+    "Definitions.Def_AlgebraicCurve_CanonicalLocalResidueInstanceV2",
+    "P2M.Sol.S_AlgebraicCurve_functionFieldRiemannRoch_of_residueTheoremK_of_isAlgClosed",
+    "P2M.Sol.S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosedPrelude",
+    "P2M.Sol.S_AlgebraicCurve_tateAgreement",
+    "P2M.Sol.S_AlgebraicCurve_tateChainRule",
+    "P2M.Sol.S_AlgebraicCurve_tateCommFinite",
+    "P2M.Sol.S_AlgebraicCurve_tateTraceCompat_of_isSeparable",
+    "P2M.Sol.S_GoodReductionJacobian_RelativeGroupLaw_exists_isFrameOn_topDifferentials_forall_topFormMap_appLE_mul_eq",
+    "P2M.Sol.S_WeierstrassCurve_DrinfeldGlobal_isSectionThrough_map_of_comp_projMap_eq_of_isCoefficientHom",
+    "P2M.Sol.S_WeierstrassProjModel_exists_isCoefficientHom"
+  ],
+  "extra_build_dependency_edges": 16,
+  "acyclic_build_graph": true,
+  "unique_library_ownership": true,
+  "solution_local_closure_modules": 3152,
+  "lakefile_bytes": 178659,
+  "lakefile_sha256": "df4a58c4b264aa99c208a765774cd9235a904f3d76b088d817daf6ab88d3594f",
+  "scope": "Isolated 16-edge scheduling-only candidate; 14-edge complete cold build and full export strict comparison passed. Adds two previously measured late-memory overlap exclusions. No proof source changes. Fresh cold build required; not published.",
+  "additional_late_pairs": [
+    {
+      "prerequisite": "GlobalFamilyDiscriminantR0180",
+      "successor": "LocalComparisonFamilyR0067"
+    },
+    {
+      "prerequisite": "OpenUnaryDesignatedExpansionR0182",
+      "successor": "SchemeDiscriminantExistenceR0244"
+    }
+  ],
+  "base_commit": "e0108725d31a1027108a8bd24848384c4a09995b"
+}
