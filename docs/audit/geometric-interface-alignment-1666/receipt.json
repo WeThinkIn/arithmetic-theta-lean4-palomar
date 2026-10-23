@@ -1,0 +1,49 @@
+{
+  "local_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "original_endpoint_ids": [
+    "accepted-038",
+    "accepted-039",
+    "accepted-052"
+  ],
+  "original_targets_retained": 11,
+  "additional_original_helper_obligations": [
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2"
+  ],
+  "configured_targets": 19,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_sha256": "4aa11fc7a4abc177a0ce2344184b4107a62129380474c1a8e8b6462707d557ec",
+  "challenge_bytes": 70948,
+  "challenge_lines": 865,
+  "configuration_sha256": "d8a61fb77b566959aa90b8db44c1d67275db58ff5c3a5c9297372d81091004ad",
+  "solution_sha256": "3b9e65c138f2e80b08a0405a5a61c1129331780ab5500d90c67d0619f393662e",
+  "strict_receipt_sha256": "27e9c9f10c7aa6d5ebb35bfb56d462d96b5bd3fcdcbd9ecf407a700406401fd8",
+  "strict_verifier_sha256": "e65b6dda0565d21be49be5a8a5112eb90ebb0c8bf5c3c5af8ed19281afd5554b",
+  "primitives_sha256": "b217301595ce9113efe50a2c83df27b48613cc3834d2f0f8421d612e14ed5ca1",
+  "exports": {
+    "challenge": {
+      "bytes": 264872038,
+      "sha256": "4fd666e3f095fa26ab66509d877b6832c3b7d5d91bb9c38e19943dab73f455d6"
+    },
+    "solution": {
+      "bytes": 1831921042,
+      "sha256": "733c52dc6394e33bfd11b30b707689efd63e6383bd12081f21550505ffc7c30b"
+    }
+  },
+  "markers": [
+    "TRUSTED_STRUCTURAL_COMPARISON_PASS",
+    "TRUSTED_AXIOM_CLOSURE_PASS"
+  ],
+  "limitation": "Local complete target-closure structural comparison and standard-axiom closure. Official independent-kernel acceptance and whole-paper semantic review remain separate."
+}
