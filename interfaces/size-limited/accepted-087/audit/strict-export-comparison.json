@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "result": {
+    "exit_code": 0,
+    "seconds": 81.00929503096268,
+    "peak_rss_bytes": 3917545472,
+    "stop_reason": null,
+    "command": [
+      "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/global-projective-safe-block-strict-2057/comparator.json",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/primitives.json",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/global-projective-safe-block-strict-2057/challenge.ndjson",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/global-projective-current-fresh-strict-2031/solution.ndjson"
+    ]
+  },
+  "markers": true,
+  "bindings_unchanged": true,
+  "scope": "Fresh NDJSON export and strict full142target closure comparison for full original087 safe block pruned candidate. Reuses current2031Solution with all original bindings revalidated. Still oversized; three independent kernels2033 and official acceptance separate."
+}

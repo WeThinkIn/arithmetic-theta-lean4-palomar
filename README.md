@@ -6,7 +6,7 @@ Human author and responsible maintainer: **Jue Ding**.
 
 This repository presents the research manuscript, the complete Lean 4 formalization, and a reproducible verification environment for the arithmetic determination of relations among lattice theta series. **Jue Ding first publicly released both the accompanying paper and the original Lean 4 code as part of this project.** The manuscript records the full author and contributor list; third-party mathematical libraries retain their own authorship and attribution.
 
-**The complete formalization has passed local Lean verification for all 13 source requirements, represented by 103 exact theorem endpoints.** The original delivery was verified with Lean **4.33.1**. The Palomar-compatible edition published here has also passed the complete `GoalRoot` build and all 103 original endpoint type and axiom checks with Lean **4.35.0-rc2**. The [main-result Palomar official mechanical preflight](docs/audit/official-main-complete-1477/Review.md) and the [ordinary submission’s official mechanical verification](docs/audit/official-ordinary-main-complete-1509/Review.md) have passed for the same 40 original endpoints, with stock Lean, NanoDa, and Conron acceptance. Whole-paper semantic review and registration remain in progress.
+**The complete formalization has passed local Lean verification for all 13 source requirements, represented by 103 exact theorem endpoints.** The original delivery was verified with Lean **4.33.1**. The Palomar-compatible edition published here has also passed the complete `GoalRoot` build and all 103 original endpoint type and axiom checks with Lean **4.35.0-rc2**. The [main-result Palomar official mechanical preflight](docs/audit/official-main-complete-1477/Review.md) and the [ordinary submission’s official mechanical verification](docs/audit/official-ordinary-main-complete-1509/Review.md) have passed for the same 40 original endpoints, with stock Lean, NanoDa, and Conron acceptance. Whole-paper Palomar semantic acceptance and registration have not yet been established.
 
 [Paper (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20Exact%20Tate%20normalization%20and%20common%20finite%20covers.pdf) · [Original mathematical specification](paper/OriginalTask.tex) · [Formal theorem specification](docs/SourceObligations.json)
 
@@ -104,9 +104,24 @@ These engineering changes retain the original mathematical specification. In the
 
 **The main-result official mechanical preflight and ordinary submission verification have passed.** Their 43 selected targets cover the same 40 original endpoints at commit `57c6842d63e4860c7978dbc32307380415bcce1c`; stock Lean, NanoDa, and Conron accepted the solution, and the Challenge received high-trust provenance. The [ordinary submission report](docs/audit/official-ordinary-main-complete-1509/Review.md) records the official service result. Together with the separately verified formal-cover endpoint, the recorded official mechanical results cover **41 distinct original endpoints** at their respective revisions. The [official report and precise scope](docs/audit/official-main-complete-1477/Review.md) provide the verification evidence.
 
-**Whole-paper Palomar verification and registration are in progress.** Palomar adds official mechanical preflight, independent kernel replay, semantic review of the correspondence with the manuscript, and registry acceptance to the completed local Lean verification.
+**Whole-paper Palomar verification remains incomplete; registration has not been completed.** Palomar adds official mechanical preflight, independent kernel replay, semantic review of the correspondence with the manuscript, and registry acceptance to the completed local Lean verification.
 
 The repository provides [scoped verification packages](challenges/), named `comparator-*.json` configurations, and an [official preflight workflow](.github/workflows/palomar-preflight.yml). Each official result applies to its selected mathematical scope and immutable source revision. The [coverage map](docs/Coverage.md), [verification records](docs/PalomarPreflight.md), and [official workflow runs](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/workflows/palomar-preflight.yml) document those scopes and their results.
+
+### Complete interfaces above the current size cap
+
+The complete local formalization retains all **13 source requirements and 103 original endpoints**. Independent interfaces satisfying the current Challenge size limits have been prepared for **99 of the 103 endpoints**; this preparation count is distinct from official verification coverage. The four remaining complete interfaces are published with their Lean sources, comparator configurations, and local validation records in [`interfaces/size-limited`](interfaces/size-limited/README.md).
+
+| Complete interface | Challenge size | Lines | Current constraint |
+| --- | ---: | ---: | --- |
+| [Cyclotomic matrix modularity (`accepted-075`)](interfaces/size-limited/accepted-075/README.md) | 144,147 bytes | 577 | Byte cap |
+| [Extended cyclotomic modularity (`accepted-076`)](interfaces/size-limited/accepted-076/README.md) | 160,220 bytes | 600 | Byte cap |
+| [Global arithmetic projective ratios (`accepted-087`)](interfaces/size-limited/accepted-087/README.md) | 320,833 bytes | 1,311 | Byte and line caps |
+| [Conservative image consumer](interfaces/size-limited/conservative-image-consumer/README.md) | 147,894 bytes | 581 | Byte cap |
+
+Palomar currently limits each Challenge to **100 KiB (102,400 bytes) and 1,000 lines** and restricts its transitive imports to approved canonical dependencies. These limits concern the independent statement interface, rather than the size of the full proof development. All four published snapshots passed local compilation, declaration and original-endpoint checks, obligation accounting, and full serialized target-closure comparison; their individual records specify the additional export, rendering, and kernel checks completed. They have not passed official Palomar verification as complete interfaces.
+
+The validated interfaces remain above the cap after dependency pruning and engineering optimization. Further aggressive compression is deferred to preserve the complete mathematical statements and a maintainable presentation. The corresponding Lean code is available for inspection and local reproduction; no exception to the current official limits is assumed, and no expansion request is being pursued at this stage. The complete proof and the eligible independent interfaces remain available alongside these source snapshots.
 
 ## Reproduce the formal proof
 

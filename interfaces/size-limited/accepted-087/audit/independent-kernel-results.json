@@ -1,0 +1,21 @@
+{
+  "all_three_complete": false,
+  "checks": {
+    "conron": {
+      "exit_code": 0,
+      "seconds": 555.0938318087719,
+      "stop_reason": null,
+      "positive_marker_present": true,
+      "typechecking_passed": true
+    },
+    "nanoda": {
+      "exit_code": 0,
+      "seconds": 687.1055964636616,
+      "stop_reason": null,
+      "positive_marker_present": true,
+      "typechecking_passed": true,
+      "pretty_printer_error": "Unable to print axioms; reported1prettyprintererror,zero typechecker errors"
+    }
+  },
+  "stock_lean_pending": true
+}

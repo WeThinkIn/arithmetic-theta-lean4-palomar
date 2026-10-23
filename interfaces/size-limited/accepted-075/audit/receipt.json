@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "candidate": "/home/Palomar/workspace/arithmetic-theta/evidence/remaining-single-unused-syntax-repair-1999",
+  "candidate_bytes": 144147,
+  "candidate_lines": 577,
+  "bytes_saved": 26617,
+  "original_endpoints": [
+    "accepted-075"
+  ],
+  "theorem_obligations": 45,
+  "definition_obligations": 5,
+  "checked_shared_declarations": 1553,
+  "mismatches": [],
+  "exact_original_recovery": true,
+  "serialized_full_closure_passed": true,
+  "closure_declarations": 50029,
+  "bindings_unchanged": true,
+  "results": {
+    "Diagnostic": {
+      "exit_code": 0,
+      "seconds": 4.007804655004293,
+      "peak_rss_bytes": 4830887936,
+      "stop_reason": null
+    },
+    "TargetHoleAudit": {
+      "exit_code": 0,
+      "seconds": 3.0064282352104783,
+      "peak_rss_bytes": 3871510528,
+      "stop_reason": null
+    },
+    "OriginalRecovery": {
+      "exit_code": 0,
+      "seconds": 4.006787332240492,
+      "peak_rss_bytes": 4528951296,
+      "stop_reason": null
+    },
+    "Check": {
+      "exit_code": 0,
+      "seconds": 91.10919675603509,
+      "peak_rss_bytes": 6292451328,
+      "stop_reason": null
+    }
+  },
+  "official_size_compliant": false,
+  "ndjson_export_verified": false,
+  "independent_kernel_replay_passed": false,
+  "official_endpoint_credit_added": 0,
+  "scope": "Pruned individual complete interface retaining all five exact normalization constraints and all configured support obligations. Original recovery audit includes all three existing Solution recoveries, but candidate credit is restricted to the selected endpoint. Compilation, serialized diagnosis, direct-hole accounting, original recovery and official compareAt on full serialized closure; no NDJSON export, independent kernel or official acceptance inferred."
+}

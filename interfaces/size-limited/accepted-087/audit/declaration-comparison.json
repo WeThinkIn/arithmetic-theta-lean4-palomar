@@ -1,0 +1,21 @@
+{
+  "compiled": true,
+  "mismatches": 0,
+  "checked_shared_declarations": 1952,
+  "bindings_unchanged": true,
+  "results": {
+    "Challenge": {
+      "exit_code": 0,
+      "seconds": 109.02157417265698,
+      "peak_rss_bytes": 4591788032,
+      "stop_reason": null
+    },
+    "Diagnostic": {
+      "exit_code": 0,
+      "seconds": 4.001207938883454,
+      "peak_rss_bytes": 4848189440,
+      "stop_reason": null
+    }
+  },
+  "scope": "Explicit19originalsupportobligationsincomplete087interface;current-source diagnostic. No size compliance, fresh full closure, new kernel or official acceptance claimed."
+}

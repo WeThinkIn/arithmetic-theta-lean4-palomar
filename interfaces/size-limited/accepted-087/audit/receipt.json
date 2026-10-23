@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "results": {
+    "TargetHoleAudit": {
+      "exit_code": 0,
+      "seconds": 3.0024117450229824,
+      "peak_rss_bytes": 3889758208,
+      "stop_reason": null
+    },
+    "OriginalAudit": {
+      "exit_code": 0,
+      "seconds": 4.002438558265567,
+      "peak_rss_bytes": 4708704256,
+      "stop_reason": null
+    },
+    "Check": {
+      "exit_code": 0,
+      "seconds": 76.01487329369411,
+      "peak_rss_bytes": 6107152384,
+      "stop_reason": null
+    }
+  },
+  "errors": [],
+  "bindings_unchanged": true,
+  "scope": "Complete original087: official compareAt on full serialized closure, direct selected hole accounting, original source type/data recovery. Not NDJSON or independent kernel validation; remains oversized."
+}

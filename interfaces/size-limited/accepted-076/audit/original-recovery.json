@@ -1,0 +1,20 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "type_definitionally_equal": true,
+  "recovery": "PalomarCyclotomic669.original_cyclotomic_matrix_modularity",
+  "original":
+  "ArithmeticThetaCyclotomicModularityR0239.cyclotomic_matrix_modularity",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+ {"universes_equal": true,
+  "type_expression_equal": true,
+  "type_definitionally_equal": true,
+  "recovery": "PalomarRemaining861.original_cyclotomic_extended_modularity",
+  "original":
+  "ArithmeticThetaExtendedMetaplecticR0241.cyclotomic_extended_modularity",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+ {"universes_equal": true,
+  "type_expression_equal": true,
+  "type_definitionally_equal": true,
+  "recovery": "PalomarRemaining861.original_conservative_image_consumer",
+  "original": "ArithmeticThetaFullSourceR0268.conservative_image_consumer",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]
