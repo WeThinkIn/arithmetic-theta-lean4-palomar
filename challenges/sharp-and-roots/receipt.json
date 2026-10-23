@@ -1,20 +1,22 @@
 {
-  "scope": "sharp-and-roots",
-  "base_commit": "44d7c226d10bb1b77b35f40bc320f0c69dd93a6e",
-  "status": "local_verification_passed",
-  "challenge_sha256": "67fc0f9b47aa9028b07d43b64d74748f16d71e4892d0fd158ae8d06a47a9b6a7",
-  "solution_sha256": "412d045336df3bbb34b582c84080c26c6f78488716a4bcba405e3cae866bb80d",
-  "comparator_sha256": "eed48ada1c461eef9800fb807a1c187d4bdfbbd6b5a32c6481d195bb6063cc9e",
-  "configured_targets": 4,
+  "status": "local_declarations_strict_obligations_and_render_passed",
+  "base_commit": "be9f35368e5ffdb4cf9717e993ccbc3be6454008",
   "original_endpoints": [
     "accepted-049",
     "accepted-056",
     "accepted-057"
   ],
-  "strict_target_closure_passed": true,
-  "exact_original_recovery_passed": true,
-  "three_kernel_passed": true,
-  "historical_receipt_available_at_base_commit": true,
-  "official_pass_claimed": false,
-  "publication_ready": true
+  "configured_targets": 4,
+  "shared_declarations": 468,
+  "challenge_bytes": 74555,
+  "challenge_lines": 1000,
+  "challenge_sha256": "558253832d742fd0984fab41b60df98f54be9e714c554fa9ec2fb33b50c82931",
+  "solution_sha256": "412d045336df3bbb34b582c84080c26c6f78488716a4bcba405e3cae866bb80d",
+  "configuration_unchanged": true,
+  "solution_unchanged": true,
+  "local_render_errors": 0,
+  "fresh_independent_kernel_replay_claimed": false,
+  "fresh_official_verification": "not_started",
+  "prior_official_run_retained": 39966260932,
+  "official_endpoint_credit_added": 0
 }

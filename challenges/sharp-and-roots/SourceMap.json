@@ -1,17 +1,16 @@
 {
-  "base_commit": "44d7c226d10bb1b77b35f40bc320f0c69dd93a6e",
+  "base_commit": "be9f35368e5ffdb4cf9717e993ccbc3be6454008",
   "historical_packaging": {
     "path": "challenges/sharp-and-roots/SourceMap.json",
-    "commit": "44d7c226d10bb1b77b35f40bc320f0c69dd93a6e",
-    "sha256": "c357752888db581139d02713a3641a22647797e9260a4ee44bfbab166088e61b",
-    "url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/blob/44d7c226d10bb1b77b35f40bc320f0c69dd93a6e/challenges/sharp-and-roots/SourceMap.json",
+    "commit": "be9f35368e5ffdb4cf9717e993ccbc3be6454008",
+    "sha256": "350f06ed4d8bb49269f1db178ef893712d9fb033a5ad385869b1568580908c0a",
     "historical_line_mappings_apply_only_to_base_commit": true
   },
-  "current_transformation": "Restored original module-local elaboration contexts, generated instance/helper names and required definition prelude; reset elaboration caches at source-module boundaries. Added explicitly checked original support obligations. Original main targets and Solution preserved. Source equality is established by serialized comparison and strict target-closure checks, not obsolete historical line numbers.",
+  "transformation": "Resolve the same pinned Lean matcher-cache extension through an explicit term elaborator so it is available in compiler and renderer contexts. Make the already-selected algebra compatibility support theorem explicit with its exact original statement, retaining the original eta-expanded instance field.",
   "challenge": {
     "path": "SharpAndRootsChallenge.lean",
-    "sha256": "67fc0f9b47aa9028b07d43b64d74748f16d71e4892d0fd158ae8d06a47a9b6a7",
-    "bytes": 70288,
+    "sha256": "558253832d742fd0984fab41b60df98f54be9e714c554fa9ec2fb33b50c82931",
+    "bytes": 74555,
     "lines": 1000
   },
   "solution": {
@@ -21,7 +20,8 @@
   },
   "comparator": {
     "path": "comparator-sharp-and-roots.json",
-    "sha256": "eed48ada1c461eef9800fb807a1c187d4bdfbbd6b5a32c6481d195bb6063cc9e"
+    "sha256": "eed48ada1c461eef9800fb807a1c187d4bdfbbd6b5a32c6481d195bb6063cc9e",
+    "unchanged_from_base": true
   },
-  "evidence_directory": "docs/audit/interface-context-repair-1962/sharp-and-roots"
+  "evidence_directory": "docs/audit/common-roots-render-repair-2128/sharp-and-roots"
 }

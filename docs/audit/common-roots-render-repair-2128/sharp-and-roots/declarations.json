@@ -1,0 +1,10 @@
+{
+  "compiled": true,
+  "checked_shared_declarations": 468,
+  "mismatches": 0,
+  "source_sha256": "558253832d742fd0984fab41b60df98f54be9e714c554fa9ec2fb33b50c82931",
+  "challenge_bytes": 74555,
+  "challenge_lines": 1000,
+  "published": false,
+  "scope": "Explicit same-name selected support target, retaining original eta-expanded instance proof field. Full strict and rendering remain separate gates."
+}

@@ -1,0 +1,27 @@
+{
+  "base_commit": "be9f35368e5ffdb4cf9717e993ccbc3be6454008",
+  "historical_packaging": {
+    "path": "challenges/common-unary/Scope.json",
+    "commit": "be9f35368e5ffdb4cf9717e993ccbc3be6454008",
+    "sha256": "f0dc3e484f85e3098ecf9f0043ac489190ffd7e1d07c6ac1f7aee80c49248634",
+    "historical_line_mappings_apply_only_to_base_commit": true
+  },
+  "transformation": "Resolve the same pinned Lean matcher-cache extension through an explicit term elaborator so it is available in compiler and renderer contexts.",
+  "challenge": {
+    "path": "CommonUnaryChallenge.lean",
+    "sha256": "81e610346c08db3dc0d338716690b79c8b4cfda54e93417683e239bbdde9a23e",
+    "bytes": 102383,
+    "lines": 930
+  },
+  "solution": {
+    "path": "CommonUnarySolution.lean",
+    "sha256": "54fcbbe25ab7d4ff749f3d8423359c279a0c1bfd5d83ac3f80291f5f88c32ad6",
+    "unchanged_from_base": true
+  },
+  "comparator": {
+    "path": "comparator-common-unary.json",
+    "sha256": "346658bd5e87765d3b8bee8cc43d4f1495214f8a2790dd95e6c242d2befa8774",
+    "unchanged_from_base": true
+  },
+  "evidence_directory": "docs/audit/common-roots-render-repair-2128/common-unary"
+}

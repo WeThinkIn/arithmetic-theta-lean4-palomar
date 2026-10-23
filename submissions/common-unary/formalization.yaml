@@ -40,10 +40,13 @@ automation:
     the contribution account and its source provenance.
 review:
   status: agent-reviewed
-  notes: Challenge imports Mathlib and the pinned Lean compiler module for local cache
-    isolation; no project proof imports. Actual exported dependency structure and
-    standard axiom closure pass local unmodified Lake comparison. Exact original endpoint
-    recovery passes. Official mechanical and semantic review remain pending.
+  notes: >-
+    All 39 configured theorem obligations and original endpoints retained.
+    Exact shared declarations, full target-closure and standard-axiom checks pass.
+    The unchanged Solution retains checked original endpoint recovery.
+    Local official-version rendering shows all 39 anchors with zero errors.
+    Fresh official verification has not been started for this repaired Challenge;
+    the existing prior-revision official preflight is retained.
 status:
   scope: 'Full original accepted-071: arithmetic common unary cover over arbitrary
     characteristic-zero fields, with all original canonical geometry assumptions and

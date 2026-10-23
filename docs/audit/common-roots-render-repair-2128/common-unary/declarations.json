@@ -1,0 +1,15 @@
+{
+  "scope": "common-unary",
+  "compiled": true,
+  "mismatches": 0,
+  "checked_shared_declarations": 1288,
+  "exact_cache_reset_expression_equal": true,
+  "source_sha256": "81e610346c08db3dc0d338716690b79c8b4cfda54e93417683e239bbdde9a23e",
+  "original_source_sha256": "461ac08cc6cc76f57b2a7036d1c70641a7db990a155ebe71999a4f8a5c5b5eff",
+  "original_commit": "561a253f79bc11127fb0a4bc72865f23470e0ca6",
+  "challenge_bytes": 102383,
+  "challenge_lines": 930,
+  "replaced_source_references": 1,
+  "published": false,
+  "official_submission_changed": false
+}

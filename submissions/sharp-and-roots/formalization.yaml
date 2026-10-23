@@ -44,10 +44,12 @@ automation:
 review:
   status: agent-reviewed
   notes: >-
-    Original complete targets and implementation retained. Repaired Challenge uses
-    Mathlib and Lean core. Local compilation, serialized declaration comparison,
-    strict target-closure comparison and exact original recovery pass.
-    Independent kernel replay passes; fresh official verification is pending.
+    All 4 configured theorem obligations and original endpoints retained.
+    Exact shared declarations, full target-closure and standard-axiom checks pass.
+    The unchanged Solution retains checked original endpoint recovery.
+    Local official-version rendering shows all 4 anchors with zero errors.
+    Fresh official verification has not been started for this repaired Challenge;
+    the existing prior-revision official preflight is retained.
 status:
   scope: 'Three complete original endpoints: accepted-049 exact sharp finite theta-kernel
     determination for all larger prefixes and rank zero, accepted-056 actual prescribed

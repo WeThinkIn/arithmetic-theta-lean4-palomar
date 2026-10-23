@@ -1,17 +1,20 @@
 {
-  "scope": "full original accepted-071",
-  "source_bindings": {
-    "Challenge.lean": "1a8de139ba84c23bd439e746617eda051e409d10e4495363ae1571d2a39d46f2",
-    "Solution.lean": "54fcbbe25ab7d4ff749f3d8423359c279a0c1bfd5d83ac3f80291f5f88c32ad6",
-    "comparator.json": "889004f6a36dfc51fe85865a3d50fb29f0b823ac7b5225e597f426c080d7881f",
-    "OriginalEndpointAudit.lean": "2bc95406065b2bde24dd3cedd2d63a3bc32cdee4cf22783717d270b86b8b6eed"
-  },
-  "challenge_lines": 929,
-  "challenge_bytes": 102159,
-  "target_count": 39,
-  "strict_comparison": "pass",
-  "axioms": "standard only",
-  "original_recovery": "pass",
-  "official_verified": false,
-  "root_integration": "pass; both actual named root exports pass unmodified strict comparison and axiom gate together"
+  "status": "local_declarations_strict_obligations_and_render_passed",
+  "base_commit": "be9f35368e5ffdb4cf9717e993ccbc3be6454008",
+  "original_endpoints": [
+    "accepted-071"
+  ],
+  "configured_targets": 39,
+  "shared_declarations": 1288,
+  "challenge_bytes": 102383,
+  "challenge_lines": 930,
+  "challenge_sha256": "81e610346c08db3dc0d338716690b79c8b4cfda54e93417683e239bbdde9a23e",
+  "solution_sha256": "54fcbbe25ab7d4ff749f3d8423359c279a0c1bfd5d83ac3f80291f5f88c32ad6",
+  "configuration_unchanged": true,
+  "solution_unchanged": true,
+  "local_render_errors": 0,
+  "fresh_independent_kernel_replay_claimed": false,
+  "fresh_official_verification": "not_started",
+  "prior_official_run_retained": 39962946907,
+  "official_endpoint_credit_added": 0
 }

@@ -20,5 +20,15 @@
   ],
   "limitations": "Local exact exported dependency comparison and five audits passed. Actual named root build/export, independent kernel replay, and official verification are separate gates.",
   "local_exact_exported_comparison": true,
-  "local_axiom_closure": true
+  "local_axiom_closure": true,
+  "render_revision": {
+    "base_commit": "be9f35368e5ffdb4cf9717e993ccbc3be6454008",
+    "all_configured_obligations_preserved": true,
+    "configured_targets": 39,
+    "shared_declarations_exact": 1288,
+    "local_render_all_anchors_present": true,
+    "local_render_error_count": 0,
+    "fresh_official_verification": "not_started",
+    "prior_official_run": 39962946907
+  }
 }

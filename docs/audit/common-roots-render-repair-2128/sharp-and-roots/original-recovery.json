@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "original_endpoint_ids": [
+    "accepted-056",
+    "accepted-057",
+    "accepted-049"
+  ],
+  "exact_type_expression_and_universes": true,
+  "standard_axioms_only": true,
+  "bindings": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/roots-three-original-recovery-audit-1907/Audit.lean": "3289d142d5b9c456f4075c4c681a43aa6181ebd018e2ba4ba5cb66b536c8b903",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/roots-three-original-recovery-audit-1907/audit.json": "019a0450979066981946ea79095d4e684a266cbbde9507cb54b97df896f2385d",
+    "/home/Palomar/workspace/arithmetic-theta/project/SharpAndRootsSolution.lean": "412d045336df3bbb34b582c84080c26c6f78488716a4bcba405e3cae866bb80d",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/roots-final-bounded-repair-1905/SharpAndRootsChallenge.lean": "67fc0f9b47aa9028b07d43b64d74748f16d71e4892d0fd158ae8d06a47a9b6a7",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/roots-final-bounded-repair-1905/comparator.json": "eed48ada1c461eef9800fb807a1c187d4bdfbbd6b5a32c6481d195bb6063cc9e"
+  }
+}

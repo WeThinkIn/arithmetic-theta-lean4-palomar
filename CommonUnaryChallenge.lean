@@ -2,13 +2,14 @@ module
 public import Mathlib
 import all Lean.Meta.Match.Match
 @[expose] public section
+elab "matcher2087" : term => return Lean.mkConst (((((Lean.Name.num `_private.Lean.Meta.Match.Match 0).str "Lean").str "Meta").str "Match").str "matcherExt")
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 set_option maxHeartbeats 1600000
 set_option maxRecDepth 4096
-macro "rc":command=> `(run_cmd Lean.modifyEnv fun env=> Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {})
+macro "rc":command=> `(run_cmd Lean.modifyEnv fun env=> Lean.EnvExtension.setState matcher2087 (Lean.Meta.auxLemmasExt.setState env {}) {})
 macro "sc" es:term:command=> `(run_cmd do
   for n in $es do
     let some c:=(← Lean.getEnv).find? n | throwError "seed"

@@ -1,0 +1,12 @@
+{
+  "label": "candidate",
+  "literate_exit_code": 0,
+  "html_exit_code": 0,
+  "compared_targets": 4,
+  "missing_compared_anchors": [],
+  "all_compared_anchors_present": true,
+  "source_sha256": "558253832d742fd0984fab41b60df98f54be9e714c554fa9ec2fb33b50c82931",
+  "html_path": "/home/Palomar/workspace/arithmetic-theta/evidence/roots-explicit-support-render-2092/candidate/html/SharpAndRootsChallenge/index.html",
+  "html_sha256": "d06c7c55adf688c6d06a96bed74918364a759edd31c95724ef702d850a295962",
+  "scope": "Pinned full Verso HTML generation plus unmodified official sanitizer anchor-class check; local reproduction only, no official acceptance."
+}
