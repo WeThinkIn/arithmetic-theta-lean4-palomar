@@ -4,7 +4,17 @@
   "theorem_names": [
     "ArithmeticThetaPalomarSchemePhase433.localDataExists",
     "ArithmeticThetaPalomarSchemePhase433.arbitrarySplitFiberBasis",
-    "ArithmeticThetaPalomarSchemePhase433.schemeMillerPhase"
+    "ArithmeticThetaPalomarSchemePhase433.schemeMillerPhase",
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+    "ArithmeticThetaReciprocityR0116.translatedCoordinates._proof_1",
+    "ArithmeticThetaGeometricPairingR0118.fourFunction._proof_1"
   ],
   "permitted_axioms": [
     "propext",

@@ -1,0 +1,49 @@
+{
+  "local_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "original_endpoint_ids": [
+    "accepted-051"
+  ],
+  "original_targets_retained": 3,
+  "additional_original_helper_obligations": [
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+    "ArithmeticThetaReciprocityR0116.translatedCoordinates._proof_1",
+    "ArithmeticThetaGeometricPairingR0118.fourFunction._proof_1"
+  ],
+  "configured_targets": 13,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_sha256": "4630d20bf83c3b77b2193eb37ee1b027970eb528105af2b36b83178eb48c40b4",
+  "challenge_bytes": 58182,
+  "challenge_lines": 712,
+  "configuration_sha256": "7d52b1e3d5ac584e92993e1e79b9e6f613d6a9cab2c28aaf15a3ab9c11ce18c4",
+  "solution_sha256": "4dfadb79d2bbab21a1a31cd1f07d2a0ff5e50e92bd0bc6c2e3aa98333980ca08",
+  "strict_receipt_sha256": "2849d93f30c6fe09e178fe464591ed694999ef82263b616b062adf161c50b586",
+  "strict_verifier_sha256": "e65b6dda0565d21be49be5a8a5112eb90ebb0c8bf5c3c5af8ed19281afd5554b",
+  "primitives_sha256": "b217301595ce9113efe50a2c83df27b48613cc3834d2f0f8421d612e14ed5ca1",
+  "exports": {
+    "challenge": {
+      "bytes": 288493794,
+      "sha256": "bc0ecb30dfcde63ccb3e523949a5dcf475852662aa7fc3334c0f2e10d664e1ea"
+    },
+    "solution": {
+      "bytes": 1793250923,
+      "sha256": "aede2b6dd14fed733fc0d4092717f7e42952bf2e452248cc95da4b8429b5f98b"
+    }
+  },
+  "markers": [
+    "TRUSTED_STRUCTURAL_COMPARISON_PASS",
+    "TRUSTED_AXIOM_CLOSURE_PASS"
+  ],
+  "limitation": "Local complete target-closure structural comparison and standard-axiom closure. Official independent-kernel acceptance and whole-paper semantic review remain separate."
+}
