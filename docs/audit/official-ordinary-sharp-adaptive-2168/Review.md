@@ -7,3 +7,7 @@ The [official mechanical report](mechanical-report.json) reports `pass`, stage `
 The [binding receipt](receipt.json) checks the exact submitted commit, submission identity, Challenge, Solution, comparator configuration, formalization metadata hashes, and all seven configured targets against the prior scope record. They cover original endpoints 046, 049, 064, 065, 066, 067 and 088. These endpoints were already included in the historical official preflight union; this ordinary verification adds no endpoint credit, and the total remains 97/103.
 
 This is a completed official mechanical check of the stated scope, not a single run covering the whole paper or a completed semantic review. The four oversized complete interfaces remain deferred as documented in the repository README.
+
+## Review metadata clarification
+
+The current metadata uses `self-assessed` for the pre-submission assessment and specifies the checks actually recorded. Local compilation and proof-axiom checks alone do not establish a distinct independent agent review. This clarification changes only the disclosure; it leaves the submitted mathematical sources and targets unchanged. The official report above remains bound to commit `561a253f79bc11127fb0a4bc72865f23470e0ca6`, not to this later metadata revision.

@@ -41,9 +41,16 @@ automation:
     author and responsible maintainer is Jue Ding. See docs/AIContributions.md for
     the contribution account and its source provenance.
 review:
-  status: agent-reviewed
-  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally.
-    Official mechanical and semantic review are pending for this configuration.
+  status: self-assessed
+  notes: >-
+    The pre-submission assessment for this configuration comprises local compilation,
+    exact target and original-endpoint checks, and proof-axiom checks performed in
+    the development and verification workflow. These checks do not establish a
+    distinct independent agent review. See docs/audit/sharp-adaptive-image-351/README.md
+    and docs/audit/official-sharp-adaptive-image-2079/Review.md for the recorded checks.
+    The later ordinary mechanical result is recorded separately in
+    docs/audit/official-ordinary-sharp-adaptive-2168/Review.md and is bound to its
+    submitted commit; it does not certify this metadata revision.
 status:
   scope: 'Seven complete original endpoints: exact distinct-norm sharp cutoff and
     all larger theta relation kernels; executable adaptive first-stop solver with
