@@ -1,5 +1,6 @@
 module
 public import Mathlib
+import all Lean.Meta.Match.Match
 @[expose] public section
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
@@ -269,6 +270,8 @@ set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 set_option autoImplicit false
 open CategoryTheory MonoidalCategory Limits
 noncomputable section
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+set_option backward.isDefEq.respectTransparency true
 namespace SheafOfModules
 variable {C : Type u} [Category.{u} C] {J : GrothendieckTopology C}
   (𝒪 : Cᵒᵖ ⥤ CommRingCat.{u}) (h𝒪 : Presheaf.IsSheaf J (𝒪 ⋙ forget₂ CommRingCat RingCat))
@@ -349,10 +352,12 @@ def Scheme.Modules.tensorIsoSheafify (L M : X.Modules) : (Scheme.Modules.sheafif
 end AlgebraicGeometry
 end
 noncomputable section
+set_option backward.isDefEq.respectTransparency false
 namespace AlgebraicGeometry.Scheme.Modules
 variable {X : Scheme.{u}}
 section Hom
 variable (L M : X.Modules)
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 def tensorSectionsHom : L.val ⊗ M.val ⟶ (SheafOfModules.toPMod X.sheaf.obj X.ringCatSheaf.property).obj (L ⊗ M) :=
   (SheafOfModules.sheafifyAdj X.sheaf.obj X.ringCatSheaf.property).unit.app (L.val ⊗ M.val) ≫
     (SheafOfModules.toPMod X.sheaf.obj X.ringCatSheaf.property).map (tensorIsoSheafify L M).hom
@@ -365,6 +370,11 @@ def tensorSections (s : Γ(L, U)) (t : Γ(M, U)) : Γ(L ⊗ M, U) :=
     ((s : L.val.obj (op U)) ⊗ₜ[Γ(X, U)] (t : M.val.obj (op U)))
 end Sections
 end AlgebraicGeometry.Scheme.Modules
+section OriginalIdealContext1651
+set_option backward.isDefEq.respectTransparency true
+set_option backward.isDefEq.respectTransparency.types true
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes true
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace AlgebraicGeometry
 variable {X Y : Scheme.{u}}
 abbrev Scheme.Hom.unitToPushforwardUnit (f : X ⟶ Y) : SheafOfModules.unit Y.ringCatSheaf ⟶ (SheafOfModules.pushforward f.toRingCatSheafHom).obj (SheafOfModules.unit X.ringCatSheaf) :=
@@ -379,6 +389,7 @@ def invModuleSection (I : X.IdealSheafData) : 𝟙_ X.Modules ⟶ I.invModule :=
   MonoidalClosed.curry' I.moduleι
 end Scheme.IdealSheafData
 end AlgebraicGeometry
+end OriginalIdealContext1651
 namespace ArithmeticThetaPalomarDual465
 open AlgebraicGeometry
 variable {X : Scheme.{u}} (M N : X.Modules)
@@ -448,6 +459,9 @@ structure Scheme.Modules.IsInvertible {X : Scheme.{u}} (M : X.Modules) : Prop wh
     Nonempty ((Scheme.Modules.pullback U.ι).obj M ≅ SheafOfModules.unit U.toScheme.ringCatSheaf)
 instance Scheme.Hom.opensMapFinal {X Y : Scheme.{u}} (f : X ⟶ Y) : (TopologicalSpace.Opens.map f.base).Final :=
   CategoryTheory.final_of_representablyFlat _
+run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+set_option backward.isDefEq.respectTransparency.types true in
+set_option backward.isDefEq.respectTransparency.instanceSearchTypes true in
 def Scheme.Modules.pullbackUnitIso {X Y : Scheme.{u}} (f : X ⟶ Y) : (Scheme.Modules.pullback f).obj (SheafOfModules.unit Y.ringCatSheaf) ≅ SheafOfModules.unit X.ringCatSheaf := by
   haveI h : IsIso (SheafOfModules.pullbackObjUnitToUnit f.toRingCatSheafHom) := inferInstance
   exact @asIso _ _ _ _ _ h

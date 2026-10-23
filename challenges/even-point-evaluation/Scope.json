@@ -19,5 +19,12 @@
     "Every normalized identity-evaluation map is an isomorphism",
     "Actual generator/evaluation composite is the identity",
     "Actual evaluation section generates the dual pushforward on every subopen"
+  ],
+  "explicit_original_helper_obligations": [],
+  "local_complete_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "remaining_validation": [
+    "Fresh full official preflight for the exact published revision",
+    "Ordinary intake and semantic review"
   ]
 }

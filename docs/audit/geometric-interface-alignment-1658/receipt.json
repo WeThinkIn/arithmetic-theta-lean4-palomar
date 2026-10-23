@@ -1,0 +1,47 @@
+{
+  "local_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "original_endpoint_ids": [
+    "accepted-072"
+  ],
+  "original_targets_retained": 16,
+  "additional_original_helper_obligations": [
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2"
+  ],
+  "configured_targets": 24,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_sha256": "4162700562078a6bb252670b33a7c05bfa5d03e64c55e385fe11305864294132",
+  "challenge_bytes": 46450,
+  "challenge_lines": 510,
+  "configuration_sha256": "91570ae7faf3ff1a35e97deba0dbff16885fcdbe4e860e997ecb7d68501d9830",
+  "solution_sha256": "847b1f51fd41701a885b07d4f403cdb0fb92fbc2f41cb2d4e87e8df08265e5c9",
+  "strict_receipt_sha256": "b05b6565197f8ecc5a05b8eb5ebebc3d38910fafeebe6f69567f12d1441ff1bc",
+  "strict_verifier_sha256": "e65b6dda0565d21be49be5a8a5112eb90ebb0c8bf5c3c5af8ed19281afd5554b",
+  "primitives_sha256": "b217301595ce9113efe50a2c83df27b48613cc3834d2f0f8421d612e14ed5ca1",
+  "exports": {
+    "challenge": {
+      "bytes": 214479840,
+      "sha256": "a3de52efef7bebec120aaf66b467fea3298ce47a3126d13b2c39536aef7b896a"
+    },
+    "solution": {
+      "bytes": 2401565073,
+      "sha256": "711b621130a2a1f6143d0be7ab75a2d69555ecab1f970557c7a4bea887209c5b"
+    }
+  },
+  "markers": [
+    "TRUSTED_STRUCTURAL_COMPARISON_PASS",
+    "TRUSTED_AXIOM_CLOSURE_PASS"
+  ],
+  "limitation": "Local complete target-closure structural comparison and standard-axiom closure. Official independent-kernel acceptance and whole-paper semantic review remain separate."
+}

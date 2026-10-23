@@ -17,7 +17,15 @@
     "HomogeneousIdealQuotientGrading.coeAddMonoidHom_map_pieceHom",
     "WeierstrassProjModel.kwYChartEval_section",
     "ArithmeticThetaPalomarComponent485.componentIsOpen",
-    "ArithmeticThetaPalomarComponent485.geometricComponentCuspBound"
+    "ArithmeticThetaPalomarComponent485.geometricComponentCuspBound",
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2"
   ],
   "permitted_axioms": [
     "propext",
