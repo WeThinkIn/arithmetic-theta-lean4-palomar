@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "result": {
+    "module": "Audit",
+    "exit_code": 0,
+    "seconds": 5.006906779017299,
+    "peak_rss_bytes": 4690345984,
+    "stop_reason": null
+  },
+  "bindings_unchanged": true,
+  "original_modules": 121,
+  "candidate_modules": 122,
+  "scope": "All serialized declarations in affected modules: original types, universe parameters, data bodies and metadata, and standard axiom closure of propositions. Includes three source-bound generated equations with exact proof bodies from their original owners. No official acceptance inferred."
+}

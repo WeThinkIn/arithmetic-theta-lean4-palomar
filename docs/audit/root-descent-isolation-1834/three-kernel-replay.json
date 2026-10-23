@@ -1,0 +1,164 @@
+{
+  "passed": true,
+  "scopes": {
+    "split-discriminant": {
+      "passed": true,
+      "results": {
+        "stock-lean": {
+          "exit_code": 0,
+          "seconds": 3246.5314200399444,
+          "peak_rss_bytes": 13419081728,
+          "stop_reason": null,
+          "command": [
+            "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+            "--silent",
+            "--from-export",
+            "/home/Palomar/workspace/arithmetic-theta/evidence/root-descent-split-strict-path-repair-1827/split-discriminant/solution.ndjson"
+          ]
+        },
+        "conron": {
+          "exit_code": 0,
+          "seconds": 531.5930269360542,
+          "peak_rss_bytes": 9127182336,
+          "stop_reason": null,
+          "command": [
+            "/home/Palomar/workspace/arithmetic-theta/evidence/official-pipeline-refresh-858/trusted-checker-update-02/con-ron",
+            "--verified",
+            "--jobs=2",
+            "/home/Palomar/workspace/arithmetic-theta/evidence/root-descent-split-strict-path-repair-1827/split-discriminant/solution.ndjson"
+          ]
+        },
+        "nanoda": {
+          "exit_code": 0,
+          "seconds": 690.7626667749137,
+          "peak_rss_bytes": 3155722240,
+          "stop_reason": null,
+          "command": [
+            "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin",
+            "/home/Palomar/workspace/arithmetic-theta/evidence/root-descent-split-three-kernels-1829/split-discriminant/nanoda.json"
+          ]
+        }
+      },
+      "positive_kernel_markers": true,
+      "bindings_unchanged": true,
+      "target_count": 33,
+      "theorem_names": [
+        "WeierstrassProjModel.span_polynomial_isHomogeneousCR",
+        "HomogeneousIdealQuotientGrading.preDecompose_of_mem",
+        "WeierstrassProjModel.kwYEvalRingHom_comp_algebraMap",
+        "HomogeneousIdealQuotientGrading.mem_quotGradingSubmodule_iff",
+        "HomogeneousIdealQuotientGrading.quotDecompose_mk",
+        "WeierstrassProjModel.kwYEvalRingHom_mk_X1",
+        "ProjWeierstrassCubicPrime.isHomogeneous_polynomial",
+        "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedMonoid",
+        "HomogeneousIdealQuotientGrading.coeAddMonoidHom_preDecompose",
+        "HomogeneousIdealQuotientGrading.gradedMonoidOfImages",
+        "HomogeneousIdealQuotientGrading.preDecompose_eq_zero_of_mem",
+        "HomogeneousIdealQuotientGrading.pieceHom_coe",
+        "HomogeneousIdealQuotientGrading.coeAddMonoidHom_map_pieceHom",
+        "WeierstrassProjModel.kwYChartEval_section",
+        "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.differentialMap_isIso",
+        "P458.canonicalBinaryTensor",
+        "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+        "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+        "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+        "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+        "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+        "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+        "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+        "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+        "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_1",
+        "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_2",
+        "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_3",
+        "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_4",
+        "P485.componentIsOpen",
+        "ArithmeticThetaComponentDegreeR0184.componentIntegral",
+        "ArithmeticThetaComponentDegreeR0184.componentLocallyNoetherian",
+        "ArithmeticThetaBoundaryHodgeR0182.CompactHodgeLatticeExtensionR0182.compactComponent._proof_1",
+        "ArithmeticThetaPalomarSplit515.splitComponentDiscriminantDivisor"
+      ],
+      "export_sha256": "d3b91ea952e8405344dcb7b6c3b1f3805bede5fd87bb0b132ce50b3487ef9ee2",
+      "scope": "All selected public targets replayed under isolated root-definition import optimization. Local mechanical evidence only; publication, official verification and semantic acceptance separate."
+    },
+    "split-square-degree": {
+      "passed": true,
+      "results": {
+        "stock-lean": {
+          "exit_code": 0,
+          "seconds": 3658.006850487087,
+          "peak_rss_bytes": 13459841024,
+          "stop_reason": null,
+          "command": [
+            "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+            "--silent",
+            "--from-export",
+            "/home/Palomar/workspace/arithmetic-theta/evidence/root-descent-split-strict-path-repair-1827/split-square-degree/solution.ndjson"
+          ]
+        },
+        "conron": {
+          "exit_code": 0,
+          "seconds": 546.6417860258371,
+          "peak_rss_bytes": 9388691456,
+          "stop_reason": null,
+          "command": [
+            "/home/Palomar/workspace/arithmetic-theta/evidence/official-pipeline-refresh-858/trusted-checker-update-02/con-ron",
+            "--verified",
+            "--jobs=2",
+            "/home/Palomar/workspace/arithmetic-theta/evidence/root-descent-split-strict-path-repair-1827/split-square-degree/solution.ndjson"
+          ]
+        },
+        "nanoda": {
+          "exit_code": 0,
+          "seconds": 738.8161211437546,
+          "peak_rss_bytes": 3084234752,
+          "stop_reason": null,
+          "command": [
+            "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin",
+            "/home/Palomar/workspace/arithmetic-theta/evidence/root-descent-split-three-kernels-1829/split-square-degree/nanoda.json"
+          ]
+        }
+      },
+      "positive_kernel_markers": true,
+      "bindings_unchanged": true,
+      "target_count": 33,
+      "theorem_names": [
+        "WeierstrassProjModel.span_polynomial_isHomogeneousCR",
+        "HomogeneousIdealQuotientGrading.preDecompose_of_mem",
+        "WeierstrassProjModel.kwYEvalRingHom_comp_algebraMap",
+        "HomogeneousIdealQuotientGrading.mem_quotGradingSubmodule_iff",
+        "HomogeneousIdealQuotientGrading.quotDecompose_mk",
+        "WeierstrassProjModel.kwYEvalRingHom_mk_X1",
+        "ProjWeierstrassCubicPrime.isHomogeneous_polynomial",
+        "HomogeneousIdealQuotientGrading.quotGradingSubmoduleGradedMonoid",
+        "HomogeneousIdealQuotientGrading.coeAddMonoidHom_preDecompose",
+        "HomogeneousIdealQuotientGrading.gradedMonoidOfImages",
+        "HomogeneousIdealQuotientGrading.preDecompose_eq_zero_of_mem",
+        "HomogeneousIdealQuotientGrading.pieceHom_coe",
+        "HomogeneousIdealQuotientGrading.coeAddMonoidHom_map_pieceHom",
+        "WeierstrassProjModel.kwYChartEval_section",
+        "ArithmeticThetaRelativeDiscriminantR0171.HodgeBaseChange.differentialMap_isIso",
+        "P458.canonicalBinaryTensor",
+        "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+        "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+        "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+        "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+        "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+        "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+        "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+        "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+        "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_1",
+        "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_2",
+        "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_3",
+        "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_4",
+        "P485.componentIsOpen",
+        "ArithmeticThetaComponentDegreeR0184.componentIntegral",
+        "ArithmeticThetaComponentDegreeR0184.componentLocallyNoetherian",
+        "ArithmeticThetaBoundaryHodgeR0182.CompactHodgeLatticeExtensionR0182.compactComponent._proof_1",
+        "ArithmeticThetaPalomarSplit516.splitSquareCoverDegree"
+      ],
+      "export_sha256": "303f873f959bc41a2812440f4ea340510b4e345770000261f2ca062ed4359b7e",
+      "scope": "All selected public targets replayed under isolated root-definition import optimization. Local mechanical evidence only; publication, official verification and semantic acceptance separate."
+    }
+  },
+  "official_endpoint_credit_added": 0
+}

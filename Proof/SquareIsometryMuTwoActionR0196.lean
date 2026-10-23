@@ -1,6 +1,6 @@
 module
 
-public import MetaplecticTestDefinitionsR0196
+public import RootTestDefinitionsR0196
 public import GeometricShiftLiftR0141
 public import SquareIsometryInterfaceAdapterR0192
 

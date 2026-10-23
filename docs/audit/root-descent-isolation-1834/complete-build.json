@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "result": {
+    "module": "GoalRoot",
+    "exit_code": 0,
+    "seconds": 3.0044472771696746,
+    "peak_rss_bytes": 4436938752,
+    "stop_reason": null
+  },
+  "affected_modules": 122,
+  "baseline_compiled": 120,
+  "repaired_modules": [
+    "SharpFamilyRootLevelR0196",
+    "GoalRoot"
+  ],
+  "bindings_unchanged": true,
+  "scope": "Complete affected reverse dependency build including joint GoalRoot. Does not itself establish strict Comparator, independent replay, publication, official or semantic acceptance."
+}

@@ -28,12 +28,19 @@ sources:
   relationship: formalizes
 automation:
   methods:
-  - method: agent
-    framework: WujieAI Lean4 Agent and Codex
-    tool_setup: Original Lean proof development and independent Palomar adaptation
-      workspace
-  notes: Human project author and responsible maintainer is Jue Ding. AI contributions
-    are recorded here.
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See docs/AIContributions.md for
+    the contribution account and its source provenance.
 review:
   status: agent-reviewed
   notes: The unchanged consumer_core proposition is proved directly from the conservative

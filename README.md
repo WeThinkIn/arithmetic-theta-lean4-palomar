@@ -170,7 +170,7 @@ For the Lean formalization, cite this repository together with the exact Git com
 
 > Jue Ding, maintainer. *Arithmetic theta formalization in Lean 4 — Palomar-compatible edition.* https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar.
 
-AI-assisted development is disclosed in the scope-specific formalization metadata. Third-party source attribution is preserved separately from the authorship of this project.
+AI contributions to mathematical construction, Lean proof development, and Palomar adaptation are disclosed in the [contribution account](docs/AIContributions.md) and the scope-specific formalization metadata. Third-party source attribution is preserved separately from the authorship of this project.
 
 ## License
 

@@ -1,0 +1,406 @@
+{
+  "passed": true,
+  "utc": "2026-10-23T04:02:51.271693+00:00",
+  "base_commit": "4085af9d0f57a23c83e73eba9b550733a8db1c68",
+  "metadata_files_validated": 76,
+  "official_validator": "/home/Palomar/workspace/arithmetic-theta/evidence/ai-contribution-disclosure-validator-repair-1830/official-validator/scripts/submission_contract.py",
+  "validator_sha256": "264b7da57bd099b7cd4da15b580b32978671a60b8b396c60920f584176224cc3",
+  "original_task_sha256": "89cf15d63f655674b98a272aecc2610871c882e4b3588ff1fa63a39607a48be6",
+  "only_automation_metadata_changed": true,
+  "human_authorship_preserved": true,
+  "proofs_targets_scope_and_paper_unchanged": true,
+  "files": [
+    {
+      "path": "formalization.yaml",
+      "original_sha256": "bf4704a1a49b7a06a5abdcd830b4857835621ad2f7a8db573c209edc2c7ac934",
+      "candidate_sha256": "5e5823d3d2e2a76c73529263da3f18192bfb6c74f3f690dd2e434827d582bc6f"
+    },
+    {
+      "path": "submissions/arbitrary-rigidification/formalization.yaml",
+      "original_sha256": "ca626995cf4484eafa2783448d7effe33ae67973a83f85baabd85d289c506e83",
+      "candidate_sha256": "a5e3acc978d5930ab79b2a2a5b8b7b5410161c339db98bf7dd10f65340478d3a"
+    },
+    {
+      "path": "submissions/arithmetic-arrow/formalization.yaml",
+      "original_sha256": "f92afb852e7d876ce5bc866a542eeeebc0bab27cd57c2b32ef0f50bf0b3d2482",
+      "candidate_sha256": "2d18bdea51bead6925b056a6030d27ad6a16e0f19c12e43a2a0a90b802403ada"
+    },
+    {
+      "path": "submissions/arithmetic-classifier/formalization.yaml",
+      "original_sha256": "10d100ce58981857c89cd0337e5a1f96dbe5459860891cd938128fd596664ecf",
+      "candidate_sha256": "8250bcf9517474dd883cca0c21b02b4673a150e360366d5105823119dda30dde"
+    },
+    {
+      "path": "submissions/arithmetic-compact/formalization.yaml",
+      "original_sha256": "5927825f6de5ac142d67111b4b555913780fd758fda5b704e5a1b14892123529",
+      "candidate_sha256": "f862d044bd6477b979ecb7c1494b7dd0f781d253340395742d4d5d78bedc7053"
+    },
+    {
+      "path": "submissions/arithmetic-consumer/formalization.yaml",
+      "original_sha256": "6a0d579d3f8ac042d56c412015b2360e29299b967526aa89542de14129683db8",
+      "candidate_sha256": "abbf6feaf29e79f7fa3014a5372e5513e632a11a4162c48901938183b6656efe"
+    },
+    {
+      "path": "submissions/arithmetic-disk/formalization.yaml",
+      "original_sha256": "e367d72701d2398fabed0ccd1132064c30a51bfc6b6fc084cca58c4575f9ee96",
+      "candidate_sha256": "4dd68d3720c079686300597d5677f52190a6970957e2aa992ba28f1958f3fb43"
+    },
+    {
+      "path": "submissions/arithmetic-interior/formalization.yaml",
+      "original_sha256": "0354efaa91a560933775516cae8eb67a0271a6f3adfc1a03be3ae09d7427b661",
+      "candidate_sha256": "71fb1aef0bf125cebaf2da8b585bf339b38d660b1d77d133c5260a19ac437b0c"
+    },
+    {
+      "path": "submissions/arithmetic-matrix/formalization.yaml",
+      "original_sha256": "9719518ca148655c54d67289902fedde9f33ee5cd1759bcdbcff052f539e6972",
+      "candidate_sha256": "c08284903b9bbe523cace853d7335fe72af1b28c843b74ddbfc60f7904502cf5"
+    },
+    {
+      "path": "submissions/arithmetic-output/formalization.yaml",
+      "original_sha256": "d6024750a87de975d5633d2f4f5404df61466c154b35adeba950bc397f2f4690",
+      "candidate_sha256": "b6c50c2ce713b32003cb80a3dded0980f9b615d10eeacb71e11766cc5f0bae46"
+    },
+    {
+      "path": "submissions/arithmetic-solver/formalization.yaml",
+      "original_sha256": "514719ae538faf0b9031d314bf05f25593d120380ed663282f59be91df8d83e8",
+      "candidate_sha256": "26940b083fc4937b6d8b2c96c76135fd2d6c1ef7a1423bc4f01d145b5d651f6c"
+    },
+    {
+      "path": "submissions/arithmetic-standard/formalization.yaml",
+      "original_sha256": "72f66eb4eb2191b2d4a0dbcc2a8ec28426f4cd41659dcecbf76365f0355ec0da",
+      "candidate_sha256": "0428b3afd63d74e5725fa5066637d88a30b49f720e0e8718f0ceb0ffe14ac2cf"
+    },
+    {
+      "path": "submissions/arithmetic-transfer/formalization.yaml",
+      "original_sha256": "56e6705529bb5ef5bd46c3d1c5d0141cd4e089e7b4404385df561aa5835b1112",
+      "candidate_sha256": "3d31c8d26d253c8d2d5b741e2f4c49cece5d87cf69481fdc772057ab1df0c2ea"
+    },
+    {
+      "path": "submissions/arithmetic-triangle/formalization.yaml",
+      "original_sha256": "88348a93427f3a5156142d2ecda7885a3ceda86a749d78a0909fd2cbf7f694a9",
+      "candidate_sha256": "75556b8eed680bac725cd1cd4e5d205491f7664bdd5afe8a7ea69d70c9155210"
+    },
+    {
+      "path": "submissions/common-half-hodge/formalization.yaml",
+      "original_sha256": "08d8c0fc4462ddeb0fc9ee9ae68dbf7a7fa8ecb330592d75629ca80fdc3da8bc",
+      "candidate_sha256": "9ca28e940e8e87effcc7a760ef6f6211c008cd01b8ade8129ed2b251398e1fba"
+    },
+    {
+      "path": "submissions/common-unary/formalization.yaml",
+      "original_sha256": "0f44aaee50d55525e7611210e605113dd7fb3e9bf24d8a5bdfc636a432cf5f5a",
+      "candidate_sha256": "0f0070b45571e3a47dd5de5d7b1e08fe45a987c5d3b64001ec714f9a2c7775ee"
+    },
+    {
+      "path": "submissions/compact-alpha/formalization.yaml",
+      "original_sha256": "3a0f18ee9837e6ddfaf2c561e8eccfd082eaf1b3dc1c77efc7a5f708875d1a11",
+      "candidate_sha256": "bbf59fd53df2064f830c51e57a4717a44eb53d79af50e052a7b1ca18e4f871df"
+    },
+    {
+      "path": "submissions/compact-alpha-half-line/formalization.yaml",
+      "original_sha256": "0ad300e01e12d7aeaaf1a52de626c2b65ae05f74d4b31a896a985cb145d79f66",
+      "candidate_sha256": "ef1a2571624392881ac583f90259d5e0c6f396ed1ce6d5115858e6ce75fc8a5a"
+    },
+    {
+      "path": "submissions/compact-unary/formalization.yaml",
+      "original_sha256": "54862e338a5ac2cc6b9bd38c34ec4f8247ebc098aaad78a614f356d86dceb8fe",
+      "candidate_sha256": "2310a1b2c56cafc7bb1d3d555e8ab5dcd05ac07ed70fb77f1d0d0b7ef0a4eb0a"
+    },
+    {
+      "path": "submissions/component-cusp/formalization.yaml",
+      "original_sha256": "557ad5ed5f5611180266270db767243b8c990395c3bbcaa29a29cf73b2700abd",
+      "candidate_sha256": "fe33ddb08b7f4dee45c90d2dc40bfeb094e172d937ebd6f687a3d5d067734794"
+    },
+    {
+      "path": "submissions/component-discriminant/formalization.yaml",
+      "original_sha256": "6b4c409054edf7dadea85cdfa55db19324686b62ff0ae772716afdacc244d5d9",
+      "candidate_sha256": "9b30edc43f8eb1d010b6623acbc410c4ceb734bd9f1222e238fdef153dbd3870"
+    },
+    {
+      "path": "submissions/component-hodge-degree/formalization.yaml",
+      "original_sha256": "641e514356cc848d624d5e14e94e337273d514e5e4264e111708fd66e467c42c",
+      "candidate_sha256": "7feface0a76a54db1990f45ce56472b6d243ff4c2d1a5f8f57ec0fac24885bd0"
+    },
+    {
+      "path": "submissions/conservative-matrix-geometry/formalization.yaml",
+      "original_sha256": "1ea0f00ffc28ba3dc6c4b06149c105968b0fcb31ad1e02ba989603fe702a5942",
+      "candidate_sha256": "71d1a3a64f69cc0300ae5cb37f935a4239999c5a0e9a25ed2ce5d5ba506d0ed3"
+    },
+    {
+      "path": "submissions/discriminant-twist-root/formalization.yaml",
+      "original_sha256": "ee7370316ab6d6ff3f8093b1cf67ad00bfd18b4caa33d2f0a733068b9362e4ff",
+      "candidate_sha256": "fb5f510d8392918baa99870e0ce862e5d839da6ecec26601890b9e5770464a76"
+    },
+    {
+      "path": "submissions/even-point-evaluation/formalization.yaml",
+      "original_sha256": "3448fef882056359a9b6a5ee1cf37cde4f82fe7f98ebdd1138f9cbcc3f80128a",
+      "candidate_sha256": "bb9c1c1fd3f7b8db77a382ad65252cb9698fa3947c3fea5841018066c079ca28"
+    },
+    {
+      "path": "submissions/field-discriminant/formalization.yaml",
+      "original_sha256": "1bd9d811844878f40ebeb40f6a698fbe4fed4301209b00db80987641f1038342",
+      "candidate_sha256": "517430b3fce2eea18c4318458ccc3dbb7fea48d7e129b61a8db1980a52c0dd78"
+    },
+    {
+      "path": "submissions/field-unary/formalization.yaml",
+      "original_sha256": "882a5ac9f64fa968e1fcad4cce38ea7b1431209bd301b8b3fc3214269b6a351a",
+      "candidate_sha256": "e14b7e5bb54ff06a7abd3ea0adde1a45aca8f762d7715676d146abbe7795d919"
+    },
+    {
+      "path": "submissions/field-unary-naturality/formalization.yaml",
+      "original_sha256": "82c3598b6f37df90b44a28a02004f7d3dbc7394760106b28cabac76dcbff9b03",
+      "candidate_sha256": "3904b97e942d4d8276cb4350dbd065ceecd5424dc63ca08da586d704560eef89"
+    },
+    {
+      "path": "submissions/formal-cover/formalization.yaml",
+      "original_sha256": "e757c40e7295db5835859fb4c605e2fc799532cfe74de85ec3e9707b74312dc6",
+      "candidate_sha256": "a17af998442452c65805d6bf37daabb7f1c4b79d00279d5e3d9d6f8aa0e81989"
+    },
+    {
+      "path": "submissions/full-scheme-discriminant/formalization.yaml",
+      "original_sha256": "100275d653e89b80b9a0e2d3e74279080dd51234e135cf665188aa02573dfc7e",
+      "candidate_sha256": "016875ee6e4c594519c7cbfc6c402a95c4151adde03bba021369c1c27075fa24"
+    },
+    {
+      "path": "submissions/isogeny-alpha-cusps/formalization.yaml",
+      "original_sha256": "2b73468ae892eca3f82cf8fa8fae406629cdf0a072eb3c5a5a426b2a84088770",
+      "candidate_sha256": "f2a3942a844db5d717e854e49227c2c4f6152a28ca2dc845812964d5edfa3e00"
+    },
+    {
+      "path": "submissions/isogeny-half-line/formalization.yaml",
+      "original_sha256": "811c39a8b010f46adcf49cb09a24ec71ffbd3029d00d4408271170358ed14623",
+      "candidate_sha256": "56fb98c04da487720b06dd7d949dd376094e6933bec4101382a47ee0709ccfcf"
+    },
+    {
+      "path": "submissions/key-tate/formalization.yaml",
+      "original_sha256": "4e2428dbe9b830e5b8dd6f6af3aa2f1b51f9289cdbf0bfac2a26df2dc41d1779",
+      "candidate_sha256": "95479aff2236d2c4f669f979e77e7c3c6c5abf22b17989a2443e9b80f455d882"
+    },
+    {
+      "path": "submissions/main-and-components/formalization.yaml",
+      "original_sha256": "2b525cd3d65cbf905681a2735c8550b6eff4f1cbd608f24a6b5dc6a32e09a4ea",
+      "candidate_sha256": "cea6c112d4e66ae1ad39bc16c9942329df82ff884304e88d8c2ac68bae6e177b"
+    },
+    {
+      "path": "submissions/main-complete/formalization.yaml",
+      "original_sha256": "1c9f5c579777358df51cb9e0811e98766ac694e909ff9edc5d41407f4797e66f",
+      "candidate_sha256": "18a1da887471371f4b66a8c5e177df4804fb4037b6a83877ca806c3aac7b0702"
+    },
+    {
+      "path": "submissions/multiplier-fourth/formalization.yaml",
+      "original_sha256": "302f9f9b9e383ddbf4075d51470dbbe733550bb4b39f25101c50ceb666df9ef9",
+      "candidate_sha256": "74a607ac667725400c406d8b335109e8cd0fd9cd20989c23b75ce627efd591c8"
+    },
+    {
+      "path": "submissions/period-one/formalization.yaml",
+      "original_sha256": "a9f665b7d2ea53cbdb9ca1bd2eefe99d4cf5346a7f603bff192c3abda80841b6",
+      "candidate_sha256": "61ed9aeb28f7fe997a39cc03e3fa01214c180750bd7f8dc8f64ad1bf446778ef"
+    },
+    {
+      "path": "submissions/phase-free-alpha-descent/formalization.yaml",
+      "original_sha256": "9cdfaa5159ede2e9f6e551f7b541ba2e973347c9d2f6e583acd95aa04ad36602",
+      "candidate_sha256": "e699387f8caf0fded546f6cbe16e8f695dbbd3ab08c6e9710f1473e61eb9458b"
+    },
+    {
+      "path": "submissions/phase-free-key/formalization.yaml",
+      "original_sha256": "62cfa72370fc13527fbfffa84ed8637b0a99cfafedc0e62dcfaf1a055e9dfc77",
+      "candidate_sha256": "0e14b8ac7adbe626f41470be4c9ce8bfc2c481be46d2c4d6b47d744309331a83"
+    },
+    {
+      "path": "submissions/phase-free-multiplier/formalization.yaml",
+      "original_sha256": "ed3ee9cdc7b36b7d73f574e14a0fc3ee391c55e3dfa2c2b68a73e5facd31f3d9",
+      "candidate_sha256": "e81ea46b9da4d1c6338288893078b3ce6e81381d7563db8932e09cc5fe68ddbd"
+    },
+    {
+      "path": "submissions/projective-alignment/formalization.yaml",
+      "original_sha256": "b0b413ca54822ded5ac366fd23c6a6da4f5dd3beb37baddea9ab62d238a54bbf",
+      "candidate_sha256": "3549344ef0a44f36a7c8d96562c3384f9f64ca7c79f11e5da5cf1f9c784a6e0b"
+    },
+    {
+      "path": "submissions/projective-commutator/formalization.yaml",
+      "original_sha256": "5221022d397d395599a5d746c327ee31f5f767469cb97c976f22c0e885228907",
+      "candidate_sha256": "38cf098762464b0602c7174928779f2c727e7cc11461456774424d5548351c35"
+    },
+    {
+      "path": "submissions/projective-faithfulness/formalization.yaml",
+      "original_sha256": "49efd143e0706be3775009f2a12719e07d4288d062fab2ab74df41bae8936c4d",
+      "candidate_sha256": "7cde239e85f9f5107011c56d63f351b0da3e2b8652f65c3e5cc1fc7cec9c6046"
+    },
+    {
+      "path": "submissions/projective-fieldnormal/formalization.yaml",
+      "original_sha256": "38503dfa71963efae9c126431427d805593cebc0edbe006e4a815989ace44878",
+      "candidate_sha256": "0049fd55e2986a52519abf5d68b27481c60737435a5a81228cbc6631d181c5cf"
+    },
+    {
+      "path": "submissions/projective-genericdual/formalization.yaml",
+      "original_sha256": "b5215843978d29980bba34567008cca0f4b8164e6301a0eb12558193bb931a8e",
+      "candidate_sha256": "54d9ad6c0caf733d8ed872da98befa0caf18507e990e58645ed366025bf82836"
+    },
+    {
+      "path": "submissions/projective-geometry/formalization.yaml",
+      "original_sha256": "8c4aed25f2b40fc438e5c025b485be7a23f30188666be802195fb586cc8b7c63",
+      "candidate_sha256": "0a3a8dfd0fb0066e3ebe4ac412657760b92dfc01d4cc52f540ddfe5f6d544541"
+    },
+    {
+      "path": "submissions/projective-induceddual/formalization.yaml",
+      "original_sha256": "d424276ac41d9c577e0c8063becf93c3f2cc657ac14cf6a2bf2240525a16764f",
+      "candidate_sha256": "f2558aae24467007b438406fadabd4913c48f8f0ea34bddac1de9f42e5214bbd"
+    },
+    {
+      "path": "submissions/projective-intertwining/formalization.yaml",
+      "original_sha256": "ccfd38976e694f41162c38042d44d52bb32547fb296972005c55f6bf96d255c9",
+      "candidate_sha256": "13a0b77d4308bc3048ec571fbdb62e46c25523ed695d488528c15595c8dbeeab"
+    },
+    {
+      "path": "submissions/projective-invariantline/formalization.yaml",
+      "original_sha256": "dad275591d369c80fe67174d6cf567efd2fd713314e16a1ae412eda40986f453",
+      "candidate_sha256": "9e0d0321c5caa8c4e013629880e8bd14dbf8414ef3093c29d3bb339534982c15"
+    },
+    {
+      "path": "submissions/projective-inversion/formalization.yaml",
+      "original_sha256": "43ec4d3448c05462b3ad39840bb9ef19defe29c8fb1659abf37c8c3e9a571a81",
+      "candidate_sha256": "e4ffb808880ff7d46b25f1f622a37593abcca0701a1a1be7f59f251b16e1bf31"
+    },
+    {
+      "path": "submissions/projective-inversionchange/formalization.yaml",
+      "original_sha256": "d14a9d63616282e21a31e1bb8e437979d8326b52ea671fc99a847a4b2ac1e9af",
+      "candidate_sha256": "a1eb174cd38992f8e8fc00e39be43135feacdbcad6456802274ebba4c935e0b3"
+    },
+    {
+      "path": "submissions/projective-midpoint/formalization.yaml",
+      "original_sha256": "486f345f34eb4454667baf12402e8d5f1fad2df3bec39dc1c56d7edb06abf5b2",
+      "candidate_sha256": "01c42ac30cfa10761d6c6dd82ff06c3d2cd739e7fdd91b34327d0a1afd346eb6"
+    },
+    {
+      "path": "submissions/projective-model/formalization.yaml",
+      "original_sha256": "41bd92fcab2fec34b08e4d34e9d2b41f33ac5107215759c9a6408fc05f9d1d36",
+      "candidate_sha256": "eb3a736263508210212c11c22819c2c298658ebf5a025d9bcb998b8b692d1ebb"
+    },
+    {
+      "path": "submissions/projective-naturality/formalization.yaml",
+      "original_sha256": "d422c3cc6b2da890e62065b341ec2e193e5a297ae7a161946c7e2631a8a3bf46",
+      "candidate_sha256": "dbd9977805c2ed9353edd2a37c357761185a294d1ccf553a444608eb2ea33d5e"
+    },
+    {
+      "path": "submissions/projective-orbit/formalization.yaml",
+      "original_sha256": "e70455c4dbb2e38d1754e02964200cb6e2efa13374a5d03e9185c8660f3b513a",
+      "candidate_sha256": "00e8db55e5f271731962ace2b7b6839357e6bd38c5c431fd75309cadf188724a"
+    },
+    {
+      "path": "submissions/projective-pointedgroup/formalization.yaml",
+      "original_sha256": "c4f8e10c5f9dd684e16d5538efff491849eb500e97c2212c43374a4d8898ddfc",
+      "candidate_sha256": "88a1f1e03a6f78738eb69006eea0944b3d2a103e9d9c04ca5ef1601e0424799b"
+    },
+    {
+      "path": "submissions/projective-quotient/formalization.yaml",
+      "original_sha256": "96ec5750b09ee80196895b381c8ff44dfe861449aaf6167b8d18fc9e6731a01a",
+      "candidate_sha256": "8a79891dfbf8a2bee81b2b967b54d152ea8dfbc79636ef53fc5a6a8d9add7000"
+    },
+    {
+      "path": "submissions/projective-ratiogenerator/formalization.yaml",
+      "original_sha256": "adaaefc49a54d6ea5b9039d18821db8537f904ad025dc85c3d3bffb68bc047ba",
+      "candidate_sha256": "56ec38cb7f484d834f52ee4038f6bfa42b5384298a05f33ed868ad5f8b9310eb"
+    },
+    {
+      "path": "submissions/projective-square/formalization.yaml",
+      "original_sha256": "695704008a78848e70f1d53b4237177eb79e5ae73aa7430e0c7f213456564fed",
+      "candidate_sha256": "c6cda46040bae3e32e2195963ec1bd8d81d42910ea7e2c487dfb8aedbf8ff688"
+    },
+    {
+      "path": "submissions/projective-testexists/formalization.yaml",
+      "original_sha256": "c1085a08da7275e0e60f5af18b06714ec9588ddcd9be541dd550a1781c094071",
+      "candidate_sha256": "d3edd0eec8a42c6d77cd4dba14cef96faed6912174a47f3b8953a542ed387c42"
+    },
+    {
+      "path": "submissions/projective-transport/formalization.yaml",
+      "original_sha256": "fbcdf28db13920bd94e9c0419c837626e17868e0be8c88fe23dde3e260837c53",
+      "candidate_sha256": "e0084da877eb522ec2ba9511d592ddcb270d250cba5769cb777a873236589726"
+    },
+    {
+      "path": "submissions/relative-alpha/formalization.yaml",
+      "original_sha256": "ef73a21f593e586461cb639564a2f3d5e43fa799665dcba46854c643e5b85fcc",
+      "candidate_sha256": "c2b9c36a71839e95c32e2086506b06f7d002d2bbffa9f75a7189024e4ef6d556"
+    },
+    {
+      "path": "submissions/scheme-alpha-character/formalization.yaml",
+      "original_sha256": "8816e43fabc60391a9e29b249e2c58ebeefd1ea8253f1f07146514fe08abb66e",
+      "candidate_sha256": "faf6cd3f0864bd4a26356cc07c9c8239297112bbbc27fd6fd346733edf948bab"
+    },
+    {
+      "path": "submissions/scheme-initial/formalization.yaml",
+      "original_sha256": "9776b446370c7bc99f85c73936177d37cde089a08357a0a24c14355316f7461a",
+      "candidate_sha256": "4a1122e980716b7ae2e11809c3ff938e3586aac805c3587d557be02e4aede6c1"
+    },
+    {
+      "path": "submissions/scheme-kato/formalization.yaml",
+      "original_sha256": "a94c5edd986f67340f157c091374c051e748327f11352a49076af7b6846589dd",
+      "candidate_sha256": "3bc9d55f50a544e8286cfb0ec6917a536ae5ed737a1416a9a5aee512fcf4ac07"
+    },
+    {
+      "path": "submissions/scheme-miller-phase/formalization.yaml",
+      "original_sha256": "fd05318730ce0ed1e6ef9db8d31608345943b0c970ce2d61a0498635c44ba9b5",
+      "candidate_sha256": "dfcce7562ba94db1c937913eeb41f0791477217cd92cf30ea726e50a9f4440e4"
+    },
+    {
+      "path": "submissions/scheme-tate-unit/formalization.yaml",
+      "original_sha256": "a9201736306f5305b6a806851d3f47017bf77be1217497b0ba4011ca0c229ce5",
+      "candidate_sha256": "5c2cadd227412bd5191ce4df41aade46972d5441b018d1a82ec6491d63595e88"
+    },
+    {
+      "path": "submissions/sharp-adaptive-image/formalization.yaml",
+      "original_sha256": "a6e32d1be47c2ca75342d73263911a28ad2f9b0aaebcd37ca0d4e7547fd7fee9",
+      "candidate_sha256": "1632f5d399403068c986f99f17c6c22f403c1983e83afcdc69aa675ef82b0306"
+    },
+    {
+      "path": "submissions/sharp-and-coordinates/formalization.yaml",
+      "original_sha256": "9200f3c6bfbb1c516fb3a773a1146f10c57d10a0ae6d2755e7b12f6912b6d71f",
+      "candidate_sha256": "a651243c8ecf437fb7e5a891a9086312a0d3177ec70740fbe3d0b50ff5992c19"
+    },
+    {
+      "path": "submissions/sharp-and-roots/formalization.yaml",
+      "original_sha256": "1e10c84056d045a52fe40167c253cb0bc76e426774796a182aa9f83b7f5bad6e",
+      "candidate_sha256": "9d6c1861e89757a79f01fa6fcd9ba6bfd228a5798bb0a38878348adef62d19cb"
+    },
+    {
+      "path": "submissions/sharp-matrix-geometry/formalization.yaml",
+      "original_sha256": "f20585d52713e9513ab93c47cf087bba4f46ae4d34944370271be3c0aee1769c",
+      "candidate_sha256": "5ddd630b65a9d79f11090f19e146c0371b390e165c7c85ddee8c951680ac05fc"
+    },
+    {
+      "path": "submissions/split-cusp/formalization.yaml",
+      "original_sha256": "e93c03d0a61b474f3a2a14ad4eeb46d5d49f5d9c3e40bd7b9b35987b0a2c304a",
+      "candidate_sha256": "20291753cb07e678b01edf4ec08c034086709fe6d4be01975701abfc8d4c131b"
+    },
+    {
+      "path": "submissions/split-discriminant/formalization.yaml",
+      "original_sha256": "69bd4711035a33e43c961d93393f324fda3c3286dba152c2b63333c0cf7f500f",
+      "candidate_sha256": "8b6e6fd1a4312d8e0b4cfcbf002c83f1610b2f4d0f82efe9291a42e546645215"
+    },
+    {
+      "path": "submissions/split-square-degree/formalization.yaml",
+      "original_sha256": "cd6a4ab72834e364d1370dec3d7b5d97592fcc0a3dc5ae8081514925ab05b059",
+      "candidate_sha256": "178b9242f39c2438e82909d16cf4b3d76e14004d2923b9b5a07ecaa093122fe3"
+    },
+    {
+      "path": "submissions/tate-alpha/formalization.yaml",
+      "original_sha256": "996276eee7233a0c9bbabe8d41e76ceb33a2d9b981ba8a02517dbb24ba659c94",
+      "candidate_sha256": "b3aacf3c5679bf2ba4ec587b7fed6fa3ead8cc69541b18ecbe37765907ede045"
+    },
+    {
+      "path": "submissions/unary-geometric/formalization.yaml",
+      "original_sha256": "2fd0ea4d5d6cce8080d6197502dbc06f1015895c0809dbff5f535561fe1f8b0c",
+      "candidate_sha256": "0889ff8703c018fa43adfd8bbe0f6f9a6c220427b33f893bbb0ef32c58665958"
+    },
+    {
+      "path": "docs/AIContributions.md",
+      "original_sha256": null,
+      "candidate_sha256": "d2f8f88a860d5029e97e5ef15f4d108f4b7eec354702b0f252d3ac2428ff3ea3"
+    },
+    {
+      "path": "README.md",
+      "original_sha256": "0974dd79c770ca64aeefe30cc19d7a21ef72cd10a729939658e712d8fbaa2364",
+      "candidate_sha256": "0caa8ea862285e96c2be775dd8d2a59d9e2df2cca8723e2bb1c5ea2fa192262d"
+    }
+  ],
+  "published": false,
+  "review_acceptance_inferred": false
+}

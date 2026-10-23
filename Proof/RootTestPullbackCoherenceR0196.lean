@@ -1,6 +1,6 @@
 module
 
-public import MetaplecticTestDefinitionsR0196
+public import RootTestDefinitionsR0196
 public import SquareIsomorphismTorsor
 
 @[expose] public section

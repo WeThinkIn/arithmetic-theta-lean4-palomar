@@ -968,6 +968,7 @@ globs = [
   "RootEquationCartesianReflectionR0222",
   "RootModuliPseudofunctorR0198",
   "RootStackDefinitionsR0198",
+  "RootTestDefinitionsR0196",
   "RootTestPullbackCoherenceR0196",
   "ScalarExtensionDefinitionsR0240",
   "ScalarExtensionDiskFrameR0240",
