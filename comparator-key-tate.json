@@ -35,7 +35,15 @@
     "WeierstrassProjModel.kwYChartEval_section",
     "ArithmeticThetaPalomarAffineHodge478.idealComparison",
     "ArithmeticThetaPalomarAffineHodge478.hodgeIsIso",
-    "ArithmeticThetaPalomarKeyTate478.phaseFreeKeyTateNormalization"
+    "ArithmeticThetaPalomarKeyTate478.phaseFreeKeyTateNormalization",
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2"
   ],
   "permitted_axioms": [
     "propext",

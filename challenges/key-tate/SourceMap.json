@@ -23,5 +23,25 @@
     "recover_original_055 and compiled original theorem rfl equality"
   ],
   "no_laurent_truncation": true,
-  "no_compactification_extension_claim": true
+  "no_compactification_extension_claim": true,
+  "current_interface_validation": {
+    "challenge_direct_imports": [
+      "Mathlib",
+      "Lean.Meta.Match.Match"
+    ],
+    "original_targets_preserved": true,
+    "additional_original_helper_obligations": [
+      "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+      "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+      "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+      "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+      "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+      "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+      "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+      "WeierstrassProjModel.kw_lrChart_aux._proof_2"
+    ],
+    "permitted_axioms_unchanged": true,
+    "source_definitions_and_solution_proofs_preserved": true,
+    "strict_receipt": "docs/audit/geometric-interface-alignment-1789/receipt.json"
+  }
 }

@@ -2,7 +2,11 @@
   "challenge_module": "UnaryGeometricChallenge",
   "solution_module": "UnaryGeometricSolution",
   "theorem_names": [
-    "ArithmeticThetaPalomarUnary489.unaryPowerGeometricRealization"
+    "ArithmeticThetaPalomarUnary489.unaryPowerGeometricRealization",
+    "ArithmeticThetaNodeCharts.node_torus_chart_equivalences",
+    "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_2",
+    "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_4",
+    "ArithmeticThetaCubicModelR0144.GenericAffineCubicIsomorphismR0144.genericPoint_structure"
   ],
   "permitted_axioms": [
     "propext",

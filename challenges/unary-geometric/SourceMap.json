@@ -26,5 +26,21 @@
   ],
   "all_geometric_providers_remain_conclusions": true,
   "full_laurent_equality": true,
-  "pointOver_proof_change": "The same actual pullback point; its over-equation proved directly using the pullback lift, with semantic type/body compatibility checked"
+  "pointOver_proof_change": "The same actual pullback point; its over-equation proved directly using the pullback lift, with semantic type/body compatibility checked",
+  "current_interface_validation": {
+    "challenge_direct_imports": [
+      "Mathlib",
+      "Lean.Meta.Match.Match"
+    ],
+    "original_targets_preserved": true,
+    "additional_original_helper_obligations": [
+      "ArithmeticThetaNodeCharts.node_torus_chart_equivalences",
+      "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_2",
+      "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_4",
+      "ArithmeticThetaCubicModelR0144.GenericAffineCubicIsomorphismR0144.genericPoint_structure"
+    ],
+    "permitted_axioms_unchanged": true,
+    "source_definitions_and_solution_proofs_preserved": true,
+    "strict_receipt": "docs/audit/geometric-interface-alignment-1787/receipt.json"
+  }
 }

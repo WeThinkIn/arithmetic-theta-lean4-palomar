@@ -6,7 +6,7 @@
     "accepted-055"
   ],
   "universe": "Original k : Type, universe zero; every positive N divisible by four",
-  "target_count": 34,
+  "target_count": 42,
   "no_added_main_assumptions": true,
   "official_verified": false,
   "full_paper_claimed": false,
@@ -18,5 +18,21 @@
     "The same supplied key and identity evaluation square",
     "Frame conclusion and full Laurent equality with integral order zero or N/4",
     "Every canonical marking has precisely the specified theta(t^(N/2)) squared coefficient"
+  ],
+  "explicit_original_helper_obligations": [
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2"
+  ],
+  "local_complete_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "remaining_validation": [
+    "Fresh full official preflight for the exact published revision",
+    "Ordinary intake and semantic review"
   ]
 }

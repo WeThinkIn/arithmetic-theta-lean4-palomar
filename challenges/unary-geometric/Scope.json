@@ -6,7 +6,7 @@
     "accepted-093"
   ],
   "universe": "Original k : Type, characteristic-zero field; all positive d,m,N with m,N even and m dividing N",
-  "target_count": 1,
+  "target_count": 5,
   "no_added_main_assumptions": true,
   "official_verified": false,
   "full_paper_claimed": false,
@@ -18,5 +18,17 @@
     "One unique actual function-field element with full Kato divisor at all points",
     "All positive coprime multiplication norms for the actual generic-point field maps and their induced algebra structures",
     "Every normalized residue has the specified actual marked lift and stalk-based value with the original complete Laurent quotient"
+  ],
+  "explicit_original_helper_obligations": [
+    "ArithmeticThetaNodeCharts.node_torus_chart_equivalences",
+    "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_2",
+    "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_4",
+    "ArithmeticThetaCubicModelR0144.GenericAffineCubicIsomorphismR0144.genericPoint_structure"
+  ],
+  "local_complete_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "remaining_validation": [
+    "Fresh full official preflight for the exact published revision",
+    "Ordinary intake and semantic review"
   ]
 }

@@ -1,0 +1,43 @@
+{
+  "local_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "original_endpoint_ids": [
+    "accepted-093"
+  ],
+  "original_targets_retained": 1,
+  "additional_original_helper_obligations": [
+    "ArithmeticThetaNodeCharts.node_torus_chart_equivalences",
+    "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_2",
+    "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_4",
+    "ArithmeticThetaCubicModelR0144.GenericAffineCubicIsomorphismR0144.genericPoint_structure"
+  ],
+  "configured_targets": 5,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_sha256": "64a5beb97c9dd29432a46e95d3d89be71cbcf04aaebc431cca1f41e15ea6bcaa",
+  "challenge_bytes": 51089,
+  "challenge_lines": 515,
+  "configuration_sha256": "152ea486f65a83615142922a886f0ad0769059106d6f2a9a310cf40e326aafec",
+  "solution_sha256": "d88f9a2f2c6bd0d9859870c0fd166a3614963c566e9ad9213cb994276cd889a2",
+  "strict_receipt_sha256": "ae2b32269b757c7e64a132dd731b13133c1aa944395ccd37add05a419a3be5c6",
+  "strict_verifier_sha256": "e65b6dda0565d21be49be5a8a5112eb90ebb0c8bf5c3c5af8ed19281afd5554b",
+  "primitives_sha256": "b217301595ce9113efe50a2c83df27b48613cc3834d2f0f8421d612e14ed5ca1",
+  "exports": {
+    "challenge": {
+      "bytes": 231440858,
+      "sha256": "88fc063dc43b74ae1bb7c973d69a8c4b0cc9e5c75fc75437fbbc872496c94afc"
+    },
+    "solution": {
+      "bytes": 1840118397,
+      "sha256": "ae76cc6ca3aa78623ab9bf4c090250eff56727c6bffeb57a0a54dabcbf8a1aa8"
+    }
+  },
+  "markers": [
+    "TRUSTED_STRUCTURAL_COMPARISON_PASS",
+    "TRUSTED_AXIOM_CLOSURE_PASS"
+  ],
+  "limitation": "Local complete target-closure structural comparison and standard-axiom closure. Official independent-kernel acceptance and whole-paper semantic review remain separate."
+}
