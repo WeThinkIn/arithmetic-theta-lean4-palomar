@@ -1,6 +1,11 @@
 # Official Palomar preflight record
 
-## Current main-result outcome
+## Current recorded mechanical coverage
+
+Official mechanical evidence covers **89 of 103 original endpoints**, counted once across their exact verified scopes and revisions. The [sharp-bound/adaptive-solver/image preflight](audit/official-sharp-adaptive-image-2079/Review.md) passed at `561a253f79bc11127fb0a4bc72865f23470e0ca6`, adding seven endpoints to the prior union of 82. Stock Lean, NanoDa and Conron accepted the Solution, and Challenge provenance is high trust. The [endpoint ledger](audit/official-sharp-adaptive-image-2079/endpoints.json) records scope and revision bindings. Whole-paper semantic acceptance and registration remain incomplete.
+
+
+## Main-result verification record
 
 The official complete-main preflight [39709205904](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39709205904)
 **passed** at `57c6842d63e4860c7978dbc32307380415bcce1c`. Stock Lean,

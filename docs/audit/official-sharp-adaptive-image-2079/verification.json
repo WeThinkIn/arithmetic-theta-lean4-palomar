@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "utc": "2026-10-23T17:40:14.769792+00:00",
+  "run": 39962911648,
+  "workflow_url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39962911648",
+  "source_commit": "561a253f79bc11127fb0a4bc72865f23470e0ca6",
+  "report_sha256": "7fdc70a5c5ff77482793b21417b5b357ed1417ee318caaad6381973a2b2e336b",
+  "scope_sha256": "7b621c0ce19512f622591f2472f2234f04d6502a731fa86201921a88a0721a38",
+  "configured_targets": [
+    "ArithmeticThetaPalomarSharp349.explicitSharpFiniteDetermination",
+    "ArithmeticThetaPalomarAdaptive348.checked_basis_change_relations",
+    "ArithmeticThetaPalomarAdaptive348.adaptive_universal_solver",
+    "ArithmeticThetaPalomarAdaptive348.adaptive_checked_input",
+    "ArithmeticThetaPalomarAdaptive348.adaptive_singleton_zero",
+    "ArithmeticThetaPalomarImage350.certifiedImage",
+    "ArithmeticThetaPalomarImage350.shellFinite"
+  ],
+  "new_complete_endpoint_ids": [
+    "accepted-046",
+    "accepted-049",
+    "accepted-064",
+    "accepted-065",
+    "accepted-066",
+    "accepted-067",
+    "accepted-088"
+  ],
+  "official_complete_endpoint_union_before": 82,
+  "official_complete_endpoint_union": 89,
+  "original_endpoints": 103,
+  "original_requirements": 13,
+  "prepared_independent_interfaces": 99,
+  "accepted_kernels": [
+    "stock Lean",
+    "NanoDa",
+    "Conron"
+  ],
+  "challenge_trust_level": "high",
+  "challenge_bytes": 31350,
+  "challenge_lines": 488,
+  "whole_paper_semantic_acceptance": false,
+  "registration_performed": false,
+  "scope": "Historical union of exact-revision official mechanical results, not a single-revision whole-paper verification or semantic acceptance."
+}
