@@ -40,5 +40,13 @@
   "remaining_validation": [
     "Fresh full official preflight for the exact published revision",
     "Ordinary intake and semantic review"
-  ]
+  ],
+  "render_revision": {
+    "base_commit": "d3ef81d860d52758e44cef454c78ad829aa74020",
+    "all35obligations_preserved": true,
+    "same_cache_reset_expression": true,
+    "local_render_all_anchors_present": true,
+    "local_render_error_count": 0,
+    "fresh_official_verification": "pending"
+  }
 }

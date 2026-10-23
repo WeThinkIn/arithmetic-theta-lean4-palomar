@@ -1,0 +1,12 @@
+{
+  "label": "candidate",
+  "literate_exit_code": 0,
+  "html_exit_code": 0,
+  "compared_targets": 35,
+  "missing_compared_anchors": [],
+  "all_compared_anchors_present": true,
+  "source_sha256": "45fdce8e9aba383c845b5a307f471de90bcf4896f2dbed1c04fc6c0d93454b76",
+  "html_path": "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-cache-name-render-check-1983/candidate/html/IsogenyHalfLineChallenge/index.html",
+  "html_sha256": "2014b7265c20f941abba3a257947ffdf0f7ecbee9416564a63cc2d3f8669f775",
+  "scope": "Pinned full Verso HTML generation plus unmodified official sanitizer anchor-class check; local reproduction only, no official acceptance."
+}

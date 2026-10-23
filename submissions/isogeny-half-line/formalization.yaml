@@ -48,9 +48,13 @@ automation:
     the contribution account and its source provenance.
 review:
   status: agent-reviewed
-  notes: Original support/main targets preserved with explicitly checked original
-    support lemmas. Complete local strict structural and standard-axiom checks passed.
-    Solution is unchanged. Fresh official mechanical and semantic review remain pending.
+  notes: >-
+    Complete original endpoint and all 35 original/support obligations retained.
+    Shared declaration, strict target-closure, standard-axiom and exact original
+    recovery checks pass. The same private cache-reset expression is resolved
+    explicitly for compiler and renderer compatibility. Local official-version
+    rendering has all 35 anchors and no elaboration errors. Fresh official
+    verification and rendering remain pending for this revision.
 status:
   scope: 'Full original045: from the original actual normalized isogeny alpha and
     its supplied compact realization, constructs on every actual compact component

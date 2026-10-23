@@ -1,47 +1,27 @@
 {
-  "basis": "Actual quotient/normalized alpha constructions from502; full actual component/bounded-pole divisor/unique tensor comparison constructions from505; original CompactRealizes and HalfDivisor",
-  "source_bindings": {
-    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Challenge.lean": "ec0db01e3dbf4b1a1feff23176f4391c4e3d5c23f173e25b31c96d69d6a09dad",
-    "/home/Palomar/workspace/arithmetic-theta/project/Proof/OpenHodgeDescentDefinitionsR0180.lean": "5aa0de772477a2887268f62ebb92f9a0af2086c1d73ca2f02af3d9ac5a45cbb5",
-    "/home/Palomar/workspace/arithmetic-theta/project/Proof/IsogenyHalfLinesDefinitionsR0193.lean": "587e1bf629f04aa528b4e0778e70f1e08d4e56fbe5b27b98bf3cdbefafabb7b9",
-    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/Solution.lean": "34990cdcc74ef5b90ea99dfa5912e9b61d8015e13584871c066458834bf1707f",
-    "/home/Palomar/workspace/arithmetic-theta/project/docs/SourceObligations.json": "a300ba214101b0922010884758e218068cf51b8252cf1792f92377e928405874",
-    "/home/Palomar/workspace/arithmetic-theta/evidence/period-one-package-404/assemble.py": "c842db92af778e392376b5e4e8309c027e5e2af00ecf770c7e8442924c71705c",
-    "/home/Palomar/workspace/arithmetic-theta/evidence/compact-alpha-half-line-package-505/comparator.json": "3596e66010bfa2af50e1412609e8c06afa442cf7f5a5cf8e3189a0ed4969427b"
+  "base_commit": "d3ef81d860d52758e44cef454c78ad829aa74020",
+  "historical_packaging": {
+    "path": "challenges/isogeny-half-line/SourceMap.json",
+    "commit": "d3ef81d860d52758e44cef454c78ad829aa74020",
+    "sha256": "ddc0cfda35bd82d59f6811dd827eecee6f1be9c2c872292a0fc40b98e3ab1a21",
+    "historical_line_mappings_apply_only_to_base_commit": true
   },
-  "semantic_definitions": 587,
-  "target_types": "All explicit target types/universes and standard axiom closures checked",
-  "namespace_map": {
-    "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_canonical_half_line": "ArithmeticThetaPalomarIsogenyHalf506.isogenyCanonicalHalfLine"
+  "transformation": "All17matcher-cache resets use the same pinned private Lean extension through an explicit term elaborator. Exact elaborated cache-reset expressions are identical. This repairs the renderer import environment lookup without removing any obligation or changing shared mathematical declarations.",
+  "challenge": {
+    "path": "IsogenyHalfLineChallenge.lean",
+    "sha256": "45fdce8e9aba383c845b5a307f471de90bcf4896f2dbed1c04fc6c0d93454b76",
+    "bytes": 101508,
+    "lines": 995
   },
-  "bridges": [
-    "Compiled equality of recover_original_045 with the full original theorem",
-    "Inherited binary_eq_original and powerComparison_eq_original identify the all-local-section unique tensor comparison with the original canonical comparison",
-    "branch_iff_original recovers full original HalfBranch for theta(t^(L*m/2))"
-  ],
-  "current_interface_validation": {
-    "challenge_direct_imports": [
-      "Mathlib",
-      "Lean.Meta.Match.Match"
-    ],
-    "original_targets_preserved": true,
-    "additional_original_helper_obligations": [
-      "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
-      "WeierstrassProjModel.kw_lrChart_aux._proof_1",
-      "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
-      "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
-      "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
-      "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
-      "WeierstrassProjModel.kwYEvalRingHom._proof_2",
-      "WeierstrassProjModel.kw_lrChart_aux._proof_2",
-      "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_2",
-      "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_3",
-      "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_1",
-      "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_4",
-      "ArithmeticThetaBoundaryHodgeR0182.CompactHodgeLatticeExtensionR0182.compactComponent._proof_1"
-    ],
-    "permitted_axioms_unchanged": true,
-    "source_definitions_and_solution_proofs_preserved": true,
-    "strict_receipt": "docs/audit/geometric-interface-alignment-1774/receipt.json"
-  }
+  "solution": {
+    "path": "IsogenyHalfLineSolution.lean",
+    "sha256": "0ecca22b5330ae01ab09dc487bdc446149c853f986fff179c3ec351cf7c30a16",
+    "unchanged_from_base": true
+  },
+  "comparator": {
+    "path": "comparator-isogeny-half-line.json",
+    "sha256": "1038b6eb656feb8724ba4b790860441fd92adf0ed5a50c89806e8559992e6fea",
+    "unchanged_from_base": true
+  },
+  "evidence_directory": "docs/audit/isogeny-render-repair-1987"
 }

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "theorem_obligations": 35,
+  "result": {
+    "exit_code": 0,
+    "seconds": 3.004640338011086,
+    "peak_rss_bytes": 3880161280,
+    "stop_reason": null
+  },
+  "bindings_unchanged": true,
+  "scope": "Direct placeholder accounting for all35configuredoriginalandhelpertheoremobligations; no hidden extra holes."
+}
