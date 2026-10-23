@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-23T22:51:59.326366+00:00",
+  "passed": true,
+  "cold_build_receipt": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-candidate-2155/cold-build-receipt.json",
+  "cold_build_receipt_sha256": "cde70f300cf1d0d17b81f580225f5e4d744235ad669d47aad97cdb9aecb0b531",
+  "seconds": 10182.243736648,
+  "project_modules": 3153,
+  "lake_jobs": 12083,
+  "source_bindings_freshly_rechecked": 3955,
+  "lakefile_sha256": "df4a58c4b264aa99c208a765774cd9235a904f3d76b088d817daf6ab88d3594f",
+  "memory_limit_bytes": 16431083520,
+  "cgroup_peak_memory_bytes": 16431202304,
+  "memory_failcnt": 17273,
+  "oom_control": "oom_kill_disable 0\nunder_oom 0\noom_kill 0\n",
+  "full_exact_object_audit_passed": true,
+  "compared_constants": 67489,
+  "audit_receipt_sha256": "5a41564dc67eb14fb09cd6f541f4648fc32100acdbac7b094f639b4eb85e594b",
+  "audit_scope": "All3153modules, includingproofbodies, against14edgecold2066objects. Historical2072different-original-baselineFAIL retained.",
+  "official_result_inferred": false,
+  "new_kernel_replay_inferred": false,
+  "full_project_build_inferred": false,
+  "scope": "Local cold FieldUnarySolution build succeeded and full exact object audit passed. Target-closure export/strict remains pending; memory pressure occurred, zero OOM kills."
+}

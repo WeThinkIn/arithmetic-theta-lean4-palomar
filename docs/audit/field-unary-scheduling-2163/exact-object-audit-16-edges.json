@@ -1,0 +1,506 @@
+{
+  "passed": true,
+  "modules": 3153,
+  "completed_module_audits": 3153,
+  "constants": 67489,
+  "differences": [],
+  "bindings_unchanged": true,
+  "results": [
+    {
+      "index": 0,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-0.json"
+    },
+    {
+      "index": 32,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-32.json"
+    },
+    {
+      "index": 64,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-64.json"
+    },
+    {
+      "index": 96,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-96.json"
+    },
+    {
+      "index": 128,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-128.json"
+    },
+    {
+      "index": 160,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-160.json"
+    },
+    {
+      "index": 192,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-192.json"
+    },
+    {
+      "index": 224,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-224.json"
+    },
+    {
+      "index": 256,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-256.json"
+    },
+    {
+      "index": 288,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-288.json"
+    },
+    {
+      "index": 320,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-320.json"
+    },
+    {
+      "index": 352,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-352.json"
+    },
+    {
+      "index": 384,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-384.json"
+    },
+    {
+      "index": 416,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-416.json"
+    },
+    {
+      "index": 448,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-448.json"
+    },
+    {
+      "index": 480,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-480.json"
+    },
+    {
+      "index": 512,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-512.json"
+    },
+    {
+      "index": 544,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-544.json"
+    },
+    {
+      "index": 576,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-576.json"
+    },
+    {
+      "index": 608,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-608.json"
+    },
+    {
+      "index": 640,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-640.json"
+    },
+    {
+      "index": 672,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-672.json"
+    },
+    {
+      "index": 704,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-704.json"
+    },
+    {
+      "index": 736,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-736.json"
+    },
+    {
+      "index": 768,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-768.json"
+    },
+    {
+      "index": 800,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-800.json"
+    },
+    {
+      "index": 832,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-832.json"
+    },
+    {
+      "index": 864,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-864.json"
+    },
+    {
+      "index": 896,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-896.json"
+    },
+    {
+      "index": 928,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-928.json"
+    },
+    {
+      "index": 960,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-960.json"
+    },
+    {
+      "index": 992,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-992.json"
+    },
+    {
+      "index": 1024,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1024.json"
+    },
+    {
+      "index": 1056,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1056.json"
+    },
+    {
+      "index": 1088,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1088.json"
+    },
+    {
+      "index": 1120,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1120.json"
+    },
+    {
+      "index": 1152,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1152.json"
+    },
+    {
+      "index": 1184,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1184.json"
+    },
+    {
+      "index": 1216,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1216.json"
+    },
+    {
+      "index": 1248,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1248.json"
+    },
+    {
+      "index": 1280,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1280.json"
+    },
+    {
+      "index": 1312,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1312.json"
+    },
+    {
+      "index": 1344,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1344.json"
+    },
+    {
+      "index": 1376,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1376.json"
+    },
+    {
+      "index": 1408,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1408.json"
+    },
+    {
+      "index": 1440,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1440.json"
+    },
+    {
+      "index": 1472,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1472.json"
+    },
+    {
+      "index": 1504,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1504.json"
+    },
+    {
+      "index": 1536,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1536.json"
+    },
+    {
+      "index": 1568,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1568.json"
+    },
+    {
+      "index": 1600,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1600.json"
+    },
+    {
+      "index": 1632,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1632.json"
+    },
+    {
+      "index": 1664,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1664.json"
+    },
+    {
+      "index": 1696,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1696.json"
+    },
+    {
+      "index": 1728,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1728.json"
+    },
+    {
+      "index": 1760,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1760.json"
+    },
+    {
+      "index": 1792,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1792.json"
+    },
+    {
+      "index": 1824,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1824.json"
+    },
+    {
+      "index": 1856,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1856.json"
+    },
+    {
+      "index": 1888,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1888.json"
+    },
+    {
+      "index": 1920,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1920.json"
+    },
+    {
+      "index": 1952,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1952.json"
+    },
+    {
+      "index": 1984,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-1984.json"
+    },
+    {
+      "index": 2016,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2016.json"
+    },
+    {
+      "index": 2048,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2048.json"
+    },
+    {
+      "index": 2080,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2080.json"
+    },
+    {
+      "index": 2112,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2112.json"
+    },
+    {
+      "index": 2144,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2144.json"
+    },
+    {
+      "index": 2176,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2176.json"
+    },
+    {
+      "index": 2208,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2208.json"
+    },
+    {
+      "index": 2240,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2240.json"
+    },
+    {
+      "index": 2272,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2272.json"
+    },
+    {
+      "index": 2304,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2304.json"
+    },
+    {
+      "index": 2336,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2336.json"
+    },
+    {
+      "index": 2368,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2368.json"
+    },
+    {
+      "index": 2400,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2400.json"
+    },
+    {
+      "index": 2432,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2432.json"
+    },
+    {
+      "index": 2464,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2464.json"
+    },
+    {
+      "index": 2496,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2496.json"
+    },
+    {
+      "index": 2528,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2528.json"
+    },
+    {
+      "index": 2560,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2560.json"
+    },
+    {
+      "index": 2592,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2592.json"
+    },
+    {
+      "index": 2624,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2624.json"
+    },
+    {
+      "index": 2656,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2656.json"
+    },
+    {
+      "index": 2688,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2688.json"
+    },
+    {
+      "index": 2720,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2720.json"
+    },
+    {
+      "index": 2752,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2752.json"
+    },
+    {
+      "index": 2784,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2784.json"
+    },
+    {
+      "index": 2816,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2816.json"
+    },
+    {
+      "index": 2848,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2848.json"
+    },
+    {
+      "index": 2880,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2880.json"
+    },
+    {
+      "index": 2912,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2912.json"
+    },
+    {
+      "index": 2944,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2944.json"
+    },
+    {
+      "index": 2976,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-2976.json"
+    },
+    {
+      "index": 3008,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-3008.json"
+    },
+    {
+      "index": 3040,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-3040.json"
+    },
+    {
+      "index": 3072,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-3072.json"
+    },
+    {
+      "index": 3104,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-3104.json"
+    },
+    {
+      "index": 3136,
+      "exit_code": 0,
+      "output": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-object-audit-2159/output-3136.json"
+    }
+  ],
+  "scope": "Complete3152localdependency-plus-FieldUnarySolution cold closure. Exact serialized ConstantInfo comparison including proof bodies against source-identical 14-edge cold-build objects (2066). No official verification or publication inferred."
+}
