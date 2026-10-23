@@ -6,6 +6,8 @@ Official mechanical evidence covers **95 of 103 original endpoints**, counted on
 
 The [common-unary preflight](audit/common-unary-timeout-2133/Review.md) exhausted worker time in the comparator stage after successful Solution compilation and export. It adds no coverage; the rendering repair alone is not treated as a remedy for that resource failure.
 
+The repaired complete CommonUnary interface subsequently passed [official preparation checks](audit/common-preparation-2147/Review.md) at `f953715c31be0e30d6e8a2e8877bfcee191ce9ae`. Preparation is recorded as `pending / prepared`, not complete mechanical acceptance, and adds no endpoint coverage. External full preflight reports are advisory; ordinary submissions undergo their own official verification on the production service. See the [resource-profile distinction](audit/official-resource-profiles-2140/Review.md).
+
 ## Main-result verification record
 
 The official complete-main preflight [39709205904](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39709205904)
@@ -58,10 +60,13 @@ hexadecimal identifier. The original rejected input and corrected input were
 also checked locally against the pinned official `submission_request` parser.
 That local diagnosis is not an official mechanical pass.
 
-Palomar requires a passing full reusable mechanical report for the exact source
-commit and Comparator configuration before formal intake. A pilot pass would
-cover only its stated pilot theorem. Permanent registry publication is a
-separate later action after the review is available.
+This project's earlier intake tooling required a passing full reusable mechanical
+report for the exact source commit and Comparator configuration. That was a local
+conservative gate, not an official Palomar intake requirement: official documentation
+describes third-party preflight reports as advisory. Ordinary submission must still
+complete its own official mechanical verification. A pilot pass covers only its
+stated pilot theorem. Permanent registry publication is a separate later action
+after the review is available.
 
 Two additional scoped configurations are prepared for official full preflight:
 `comparator-main-and-components.json` (43 targets, the main explicit bound and 39 complete prior endpoints) with `submissions/main-and-components/formalization.yaml`, and
