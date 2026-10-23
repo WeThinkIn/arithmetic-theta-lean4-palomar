@@ -1,0 +1,935 @@
+{
+  "passed": true,
+  "bindings_unchanged": true,
+  "fresh_modules": 154,
+  "cached_modules": 3098,
+  "results": [
+    {
+      "module": "Definitions.Def_AlgebraicGeometry_DescentCharacter",
+      "exit_code": 0,
+      "seconds": 4.120028701145202,
+      "stop_reason": null
+    },
+    {
+      "module": "Definitions.Def_AlgebraicGeometry_ModulesIhomSectionsV2",
+      "exit_code": 0,
+      "seconds": 1.9661251045763493,
+      "stop_reason": null
+    },
+    {
+      "module": "AlphaTensorCoherenceR0217",
+      "exit_code": 0,
+      "seconds": 7.874882899224758,
+      "stop_reason": null
+    },
+    {
+      "module": "MillerPhaseAlgebra",
+      "exit_code": 0,
+      "seconds": 1.6156511311419308,
+      "stop_reason": null
+    },
+    {
+      "module": "LevelFourFiniteCharacter",
+      "exit_code": 0,
+      "seconds": 9.782039102166891,
+      "stop_reason": null
+    },
+    {
+      "module": "ArbitraryNormalizedFrameUniquenessR0214",
+      "exit_code": 0,
+      "seconds": 19.43877736432478,
+      "stop_reason": null
+    },
+    {
+      "module": "ArbitraryFourTorsionRootR0214",
+      "exit_code": 0,
+      "seconds": 22.593074879143387,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_DescentCharacter_pullback_map_sectionScalar_comp_canonical_unit_and_cocycle",
+      "exit_code": 0,
+      "seconds": 42.11581801297143,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_dual_iso_module_zeroSchemeIdeal",
+      "exit_code": 0,
+      "seconds": 4.068695231340826,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_isIso_fromTildeGamma_pushforward_of_locallyTrivial",
+      "exit_code": 0,
+      "seconds": 7.27265632012859,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_DescentCharacter_exists_isInvertible_iso_comp_eq_of_cocycle",
+      "exit_code": 0,
+      "seconds": 72.35862007318065,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_pullbackComp_app_tensorObj",
+      "exit_code": 0,
+      "seconds": 12.829625780694187,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_exists_eq_pullback_snd_comp_of_isProper",
+      "exit_code": 0,
+      "seconds": 3.1175257731229067,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_DescentCharacter_existsUnique_iso_mapIso_eq_of_hasValue_one",
+      "exit_code": 0,
+      "seconds": 83.06520163407549,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_isClopen_preimage_diagonal_of_formallyUnramified_of_isSeparated",
+      "exit_code": 0,
+      "seconds": 1.7160315378569067,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_locallyOfFinitePresentation_of_comp_of_locallyOfFiniteType",
+      "exit_code": 0,
+      "seconds": 1.3653952339664102,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_tensor_hom_ext_monoidalV2",
+      "exit_code": 0,
+      "seconds": 7.07758484268561,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_WeierstrassProjModel_RelativeGroupLaw_exists_grpObj_eq",
+      "exit_code": 0,
+      "seconds": 1.5655883862636983,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_WeierstrassProjModel_RelativeGroupLaw_mul_eq_of_algebraTower_of_mul_eq",
+      "exit_code": 0,
+      "seconds": 1.6668337187729776,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_DescentCharacter_existsUnique_iso_mapIso_eq_of_hasValue_one",
+      "exit_code": 0,
+      "seconds": 1.5656298249959946,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_WeierstrassCurve_DrinfeldGlobal_exists_isPointsEval_of_mul_comp_projMap_eq_of_isPullback",
+      "exit_code": 0,
+      "seconds": 4.969873522873968,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_dual_iso_module_zeroSchemeIdeal",
+      "exit_code": 0,
+      "seconds": 1.5657344898208976,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_DescentCharacter_exists_isInvertible_iso_comp_eq_of_cocycle",
+      "exit_code": 0,
+      "seconds": 4.221231027040631,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_DescentCharacter_pullback_map_sectionScalar_comp_canonical_unit_and_cocycle",
+      "exit_code": 0,
+      "seconds": 4.218872639816254,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isIso_fromTildeGamma_pushforward_of_locallyTrivial",
+      "exit_code": 0,
+      "seconds": 1.565666348207742,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_pullbackComp_app_tensorObj",
+      "exit_code": 0,
+      "seconds": 1.5155844576656818,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_tensor_hom_ext_monoidalV2",
+      "exit_code": 0,
+      "seconds": 1.5667788367718458,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_exists_eq_pullback_snd_comp_of_isProper",
+      "exit_code": 0,
+      "seconds": 1.5656126788817346,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_iso_invModule_zeroSchemeIdeal",
+      "exit_code": 0,
+      "seconds": 4.319166395813227,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_isClopen_preimage_diagonal_of_formallyUnramified_of_isSeparated",
+      "exit_code": 0,
+      "seconds": 1.5660596420057118,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_iso_invModule_zeroSchemeIdeal",
+      "exit_code": 0,
+      "seconds": 1.567974640056491,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_GrpObj_mul_eq_of_one_eq",
+      "exit_code": 0,
+      "seconds": 2.0162300411611795,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_locallyOfFinitePresentation_of_comp_of_locallyOfFiniteType",
+      "exit_code": 0,
+      "seconds": 1.26532539492473,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_GrpObj_mul_eq_of_one_eq",
+      "exit_code": 0,
+      "seconds": 1.5657233269885182,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_WeierstrassCurve_DrinfeldGlobal_exists_isPointsEval_of_mul_comp_projMap_eq_of_isPullback",
+      "exit_code": 0,
+      "seconds": 2.116555746179074,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_WeierstrassProjModel_RelativeGroupLaw_exists_grpObj_eq",
+      "exit_code": 0,
+      "seconds": 1.6665718876756728,
+      "stop_reason": null
+    },
+    {
+      "module": "TwoTorsionTranslation",
+      "exit_code": 0,
+      "seconds": 1.2652799650095403,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_WeierstrassProjModel_RelativeGroupLaw_mul_eq_of_algebraTower_of_mul_eq",
+      "exit_code": 0,
+      "seconds": 1.6156515618786216,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_WeierstrassProjModel_RelativeGroupLaw_mul_eq_at_id_of_one_eq_at_id_of_isAlgClosed",
+      "exit_code": 0,
+      "seconds": 1.7166428128257394,
+      "stop_reason": null
+    },
+    {
+      "module": "MillerGeometryDefinitionsR0114",
+      "exit_code": 0,
+      "seconds": 1.3655231399461627,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_WeierstrassProjModel_RelativeGroupLaw_mul_eq_at_id_of_one_eq_at_id_of_isAlgClosed",
+      "exit_code": 0,
+      "seconds": 1.5657258173450828,
+      "stop_reason": null
+    },
+    {
+      "module": "HalfTangentEvaluationNonzeroR0114",
+      "exit_code": 0,
+      "seconds": 1.3667367328889668,
+      "stop_reason": null
+    },
+    {
+      "module": "HalfTangentIdealR0114",
+      "exit_code": 0,
+      "seconds": 2.066612630151212,
+      "stop_reason": null
+    },
+    {
+      "module": "InfinityBranchR0114",
+      "exit_code": 0,
+      "seconds": 2.218099635094404,
+      "stop_reason": null
+    },
+    {
+      "module": "HalfMillerPrincipalIdealR0114",
+      "exit_code": 0,
+      "seconds": 1.9160448452457786,
+      "stop_reason": null
+    },
+    {
+      "module": "IndependentHalvesFourBasisR0114",
+      "exit_code": 0,
+      "seconds": 3.2679309463128448,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_WeierstrassProjModel_RelativeGroupLaw_mul_eq_of_one_eq_of_isAlgClosed",
+      "exit_code": 0,
+      "seconds": 1.6658511799760163,
+      "stop_reason": null
+    },
+    {
+      "module": "MillerOpenEvaluationR0114",
+      "exit_code": 0,
+      "seconds": 2.5169369210489094,
+      "stop_reason": null
+    },
+    {
+      "module": "InfinityFunctionFieldR0114",
+      "exit_code": 0,
+      "seconds": 4.07134986622259,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_WeierstrassProjModel_RelativeGroupLaw_mul_eq_of_one_eq_of_isAlgClosed",
+      "exit_code": 0,
+      "seconds": 1.6162038878537714,
+      "stop_reason": null
+    },
+    {
+      "module": "ActualMillerPhaseR0114",
+      "exit_code": 0,
+      "seconds": 2.566987346857786,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_WeierstrassProjModel_RelativeGroupLaw_mul_eq_of_one_eq_zeroSect_of_isElliptic_of_baseChangeIso",
+      "exit_code": 0,
+      "seconds": 1.6658836780115962,
+      "stop_reason": null
+    },
+    {
+      "module": "MarkingCharacterDefinitionsR0115",
+      "exit_code": 0,
+      "seconds": 1.2652847417630255,
+      "stop_reason": null
+    },
+    {
+      "module": "MillerInfinityNormalizationR0114",
+      "exit_code": 0,
+      "seconds": 3.017798262182623,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_WeierstrassProjModel_RelativeGroupLaw_mul_eq_of_one_eq_zeroSect_of_isElliptic_of_baseChangeIso",
+      "exit_code": 0,
+      "seconds": 1.666108479257673,
+      "stop_reason": null
+    },
+    {
+      "module": "BasisRightActionR0115",
+      "exit_code": 0,
+      "seconds": 1.815957312937826,
+      "stop_reason": null
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_DescentCharacter_hasValue_transport_of_pullback_map_comp_sectionScalar_eq_of_appTop_eq",
+      "exit_code": 0,
+      "seconds": 104.19358926964924,
+      "stop_reason": null
+    },
+    {
+      "module": "BasisCoordinateGeometryR0115",
+      "exit_code": 0,
+      "seconds": 2.416897885967046,
+      "stop_reason": null
+    },
+    {
+      "module": "GeneratorSMillerPhaseR0115",
+      "exit_code": 0,
+      "seconds": 1.465735426172614,
+      "stop_reason": null
+    },
+    {
+      "module": "CoordinateChangeCovarianceR0115",
+      "exit_code": 0,
+      "seconds": 4.469412034843117,
+      "stop_reason": null
+    },
+    {
+      "module": "GeneratorT2RootR0115",
+      "exit_code": 0,
+      "seconds": 1.3655185918323696,
+      "stop_reason": null
+    },
+    {
+      "module": "FieldExtensionNaturalityR0115",
+      "exit_code": 0,
+      "seconds": 2.86751130502671,
+      "stop_reason": null
+    },
+    {
+      "module": "MillerReciprocityDefinitionsR0116",
+      "exit_code": 0,
+      "seconds": 1.3666881090030074,
+      "stop_reason": null
+    },
+    {
+      "module": "MillerPhaseMarkingInvariantR0115",
+      "exit_code": 0,
+      "seconds": 1.4657321032136679,
+      "stop_reason": null
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_DescentCharacter_hasValue_transport_of_pullback_map_comp_sectionScalar_eq_of_appTop_eq",
+      "exit_code": 0,
+      "seconds": 5.270652092061937,
+      "stop_reason": null
+    },
+    {
+      "module": "FullMarkingCharacterR0115",
+      "exit_code": 0,
+      "seconds": 1.1151160039007664,
+      "stop_reason": null
+    },
+    {
+      "module": "FunctionFieldTranslationsR0116",
+      "exit_code": 0,
+      "seconds": 7.723177256993949,
+      "stop_reason": null
+    },
+    {
+      "module": "TranslationCompositionR0116",
+      "exit_code": 0,
+      "seconds": 3.7688062870875,
+      "stop_reason": null
+    },
+    {
+      "module": "LocalAffineExpansionR0116",
+      "exit_code": 0,
+      "seconds": 6.822519362904131,
+      "stop_reason": null
+    },
+    {
+      "module": "LocalIdealOrderR0116",
+      "exit_code": 0,
+      "seconds": 4.769455949775875,
+      "stop_reason": null
+    },
+    {
+      "module": "CompleteMillerDivisorR0116",
+      "exit_code": 0,
+      "seconds": 2.3670998122543097,
+      "stop_reason": null
+    },
+    {
+      "module": "PrincipalDivisorSupportR0116",
+      "exit_code": 0,
+      "seconds": 2.617494073230773,
+      "stop_reason": null
+    },
+    {
+      "module": "EllipticTameReciprocityR0116",
+      "exit_code": 0,
+      "seconds": 30.7502687308006,
+      "stop_reason": null
+    },
+    {
+      "module": "MovedSupportMillerPairingR0116",
+      "exit_code": 0,
+      "seconds": 7.222422228194773,
+      "stop_reason": null
+    },
+    {
+      "module": "ArithmeticMillerPairingR0116",
+      "exit_code": 0,
+      "seconds": 5.820753327105194,
+      "stop_reason": null
+    },
+    {
+      "module": "GeometricFourPairingDefinitionsR0118",
+      "exit_code": 0,
+      "seconds": 1.3153512026183307,
+      "stop_reason": null
+    },
+    {
+      "module": "AllFourMillerProviderR0118",
+      "exit_code": 0,
+      "seconds": 1.766110052820295,
+      "stop_reason": null
+    },
+    {
+      "module": "AdditionFunctionDivisorR0118",
+      "exit_code": 0,
+      "seconds": 5.323284259065986,
+      "stop_reason": null
+    },
+    {
+      "module": "PairingShiftIndependenceR0118",
+      "exit_code": 0,
+      "seconds": 5.370567086152732,
+      "stop_reason": null
+    },
+    {
+      "module": "MarkingPairingIdentificationR0118",
+      "exit_code": 0,
+      "seconds": 2.3674977449700236,
+      "stop_reason": null
+    },
+    {
+      "module": "PairingBilinearityR0118",
+      "exit_code": 0,
+      "seconds": 3.46877410588786,
+      "stop_reason": null
+    },
+    {
+      "module": "PairingFieldNaturalityR0118",
+      "exit_code": 0,
+      "seconds": 5.371234094724059,
+      "stop_reason": null
+    },
+    {
+      "module": "PairingAlternatingPerfectR0118",
+      "exit_code": 0,
+      "seconds": 2.0663620261475444,
+      "stop_reason": null
+    },
+    {
+      "module": "GeometricFourCharacterR0118",
+      "exit_code": 0,
+      "seconds": 1.1150546497665346,
+      "stop_reason": null
+    },
+    {
+      "module": "RelativeFourCharacterDefinitionsR0211",
+      "exit_code": 0,
+      "seconds": 2.86728719715029,
+      "stop_reason": null
+    },
+    {
+      "module": "RelativeMarkingActionR0211",
+      "exit_code": 0,
+      "seconds": 3.368422778788954,
+      "stop_reason": null
+    },
+    {
+      "module": "RelativeSplitFiberBasisR0211",
+      "exit_code": 0,
+      "seconds": 5.070350025780499,
+      "stop_reason": null
+    },
+    {
+      "module": "ArbitrarySplitFiberBasisR0214",
+      "exit_code": 0,
+      "seconds": 4.119167326949537,
+      "stop_reason": null
+    },
+    {
+      "module": "RelativeGeometricPhaseR0211",
+      "exit_code": 0,
+      "seconds": 4.219217883888632,
+      "stop_reason": null
+    },
+    {
+      "module": "RelativePhaseBaseChangeR0211",
+      "exit_code": 0,
+      "seconds": 4.6699118269607425,
+      "stop_reason": null
+    },
+    {
+      "module": "RelativePhaseMarkingInvarianceR0211",
+      "exit_code": 0,
+      "seconds": 19.287361622788012,
+      "stop_reason": null
+    },
+    {
+      "module": "RelativeAlphaCharacterR0211",
+      "exit_code": 0,
+      "seconds": 6.271349964197725,
+      "stop_reason": null
+    },
+    {
+      "module": "ArbitraryFourCharacterDefinitionsR0214",
+      "exit_code": 0,
+      "seconds": 2.9680951819755137,
+      "stop_reason": null
+    },
+    {
+      "module": "ThetaEvaluationDefinitionsR0212",
+      "exit_code": 0,
+      "seconds": 3.2680887025780976,
+      "stop_reason": null
+    },
+    {
+      "module": "EvenThetaRigidificationR0212",
+      "exit_code": 0,
+      "seconds": 3.3682712791487575,
+      "stop_reason": null
+    },
+    {
+      "module": "ArbitraryEvenThetaRigidificationR0213",
+      "exit_code": 0,
+      "seconds": 3.017500921152532,
+      "stop_reason": null
+    },
+    {
+      "module": "ThetaLineBaseChangeR0212",
+      "exit_code": 0,
+      "seconds": 3.568151207175106,
+      "stop_reason": null
+    },
+    {
+      "module": "ArbitraryGeometricPhaseR0214",
+      "exit_code": 0,
+      "seconds": 13.430725547019392,
+      "stop_reason": null
+    },
+    {
+      "module": "ArbitraryThetaLineBaseChangeR0213",
+      "exit_code": 0,
+      "seconds": 3.3681069551967084,
+      "stop_reason": null
+    },
+    {
+      "module": "ArbitraryPhaseBaseChangeR0214",
+      "exit_code": 0,
+      "seconds": 4.068638417869806,
+      "stop_reason": null
+    },
+    {
+      "module": "ArbitraryPhaseMarkingInvarianceR0214",
+      "exit_code": 0,
+      "seconds": 6.773576739244163,
+      "stop_reason": null
+    },
+    {
+      "module": "ThetaPushforwardGeneratorR0212",
+      "exit_code": 0,
+      "seconds": 26.897059488110244,
+      "stop_reason": null
+    },
+    {
+      "module": "ThetaIdentityEvaluationR0212",
+      "exit_code": 0,
+      "seconds": 14.783076609950513,
+      "stop_reason": null
+    },
+    {
+      "module": "ThetaEvaluationBaseChangeR0212",
+      "exit_code": 0,
+      "seconds": 11.07777212979272,
+      "stop_reason": null
+    },
+    {
+      "module": "UniversalThetaEvaluationDefinitionsR0213",
+      "exit_code": 0,
+      "seconds": 3.11766907107085,
+      "stop_reason": null
+    },
+    {
+      "module": "ArbitraryThetaGeneratorEvaluationR0213",
+      "exit_code": 0,
+      "seconds": 22.391920029185712,
+      "stop_reason": null
+    },
+    {
+      "module": "ArbitraryThetaEvaluationBaseChangeR0213",
+      "exit_code": 0,
+      "seconds": 2.917454743757844,
+      "stop_reason": null
+    },
+    {
+      "module": "SchemeThetaEvaluationR0213",
+      "exit_code": 0,
+      "seconds": 6.772174376063049,
+      "stop_reason": null
+    },
+    {
+      "module": "SchemeThetaEvaluationNaturalityR0213",
+      "exit_code": 0,
+      "seconds": 3.167794118169695,
+      "stop_reason": null
+    },
+    {
+      "module": "ArbitraryAlphaNaturalityR0214",
+      "exit_code": 0,
+      "seconds": 98.78642127523199,
+      "stop_reason": null
+    },
+    {
+      "module": "ArbitraryAlphaCharacterR0214",
+      "exit_code": 0,
+      "seconds": 6.721994685009122,
+      "stop_reason": null
+    },
+    {
+      "module": "SchemeFourCharacterDefinitionsR0215",
+      "exit_code": 0,
+      "seconds": 3.3177323322743177,
+      "stop_reason": null
+    },
+    {
+      "module": "MarkedAffineTestComparisonR0215",
+      "exit_code": 0,
+      "seconds": 3.1679747602902353,
+      "stop_reason": null
+    },
+    {
+      "module": "SchemeFourMarkingActionR0215",
+      "exit_code": 0,
+      "seconds": 3.3182387850247324,
+      "stop_reason": null
+    },
+    {
+      "module": "SchemeMillerPhaseR0215",
+      "exit_code": 0,
+      "seconds": 5.971322231926024,
+      "stop_reason": null
+    },
+    {
+      "module": "SchemePhaseMarkingInvarianceR0215",
+      "exit_code": 0,
+      "seconds": 3.0679259011521935,
+      "stop_reason": null
+    },
+    {
+      "module": "SchemePhaseNaturalityR0215",
+      "exit_code": 0,
+      "seconds": 3.168125052936375,
+      "stop_reason": null
+    },
+    {
+      "module": "SchemeAlphaSectionR0215",
+      "exit_code": 0,
+      "seconds": 200.5549260089174,
+      "stop_reason": null
+    },
+    {
+      "module": "SchemeAlphaNaturalityR0215",
+      "exit_code": 0,
+      "seconds": 201.45478567993268,
+      "stop_reason": null
+    },
+    {
+      "module": "SchemeAlphaCharacterR0215",
+      "exit_code": 0,
+      "seconds": 81.36230457294732,
+      "stop_reason": null
+    },
+    {
+      "module": "EvenMarkingTorsorDefinitionsR0216",
+      "exit_code": 0,
+      "seconds": 3.0675110770389438,
+      "stop_reason": null
+    },
+    {
+      "module": "SchemeFourCoverR0216",
+      "exit_code": 0,
+      "seconds": 7.372671872843057,
+      "stop_reason": null
+    },
+    {
+      "module": "SchemeFourCoverGeometryR0216",
+      "exit_code": 0,
+      "seconds": 10.026484766975045,
+      "stop_reason": null
+    },
+    {
+      "module": "EvenMarkingSubcoverR0216",
+      "exit_code": 0,
+      "seconds": 16.935437006875873,
+      "stop_reason": null
+    },
+    {
+      "module": "EvenCoverBaseChangeR0216",
+      "exit_code": 0,
+      "seconds": 3.418308168184012,
+      "stop_reason": null
+    },
+    {
+      "module": "EvenCoverRightActionR0216",
+      "exit_code": 0,
+      "seconds": 5.324982775840908,
+      "stop_reason": null
+    },
+    {
+      "module": "LocallyConstantMarkingComparisonR0216",
+      "exit_code": 0,
+      "seconds": 50.876076580025256,
+      "stop_reason": null
+    },
+    {
+      "module": "EvenCoverTorsorR0216",
+      "exit_code": 0,
+      "seconds": 3.4679976240731776,
+      "stop_reason": null
+    },
+    {
+      "module": "MultiplierKeyDefinitionsR0217",
+      "exit_code": 0,
+      "seconds": 3.7684681210666895,
+      "stop_reason": null
+    },
+    {
+      "module": "EvenPointThetaEvaluationR0217",
+      "exit_code": 0,
+      "seconds": 30.75166510604322,
+      "stop_reason": null
+    },
+    {
+      "module": "EvenPointEvaluationBaseChangeR0217",
+      "exit_code": 0,
+      "seconds": 3.2178072268143296,
+      "stop_reason": null
+    },
+    {
+      "module": "InverseCharacterMultiplierR0217",
+      "exit_code": 0,
+      "seconds": 122.16758479597047,
+      "stop_reason": null
+    },
+    {
+      "module": "AlphaDescentFaithfulnessR0217",
+      "exit_code": 0,
+      "seconds": 3.2180307996459305,
+      "stop_reason": null
+    },
+    {
+      "module": "AlphaTensorDescentR0217",
+      "exit_code": 0,
+      "seconds": 29.864579217974097,
+      "stop_reason": null
+    },
+    {
+      "module": "EvenKeyIsomorphismR0217",
+      "exit_code": 0,
+      "seconds": 2.9175285161472857,
+      "stop_reason": null
+    },
+    {
+      "module": "MultiplierBaseChangeR0217",
+      "exit_code": 0,
+      "seconds": 43.66751175140962,
+      "stop_reason": null
+    },
+    {
+      "module": "AlphaTensorBaseChangeR0217",
+      "exit_code": 0,
+      "seconds": 13.379691426642239,
+      "stop_reason": null
+    },
+    {
+      "module": "EvenKeyBaseChangeR0217",
+      "exit_code": 0,
+      "seconds": 11.97852692194283,
+      "stop_reason": null
+    },
+    {
+      "module": "PhaseSwitchDefinitionsR0218",
+      "exit_code": 0,
+      "seconds": 3.1175580699928105,
+      "stop_reason": null
+    },
+    {
+      "module": "PhaseCoverR0218",
+      "exit_code": 0,
+      "seconds": 4.822649930138141,
+      "stop_reason": null
+    },
+    {
+      "module": "ReversalCharacterR0218",
+      "exit_code": 0,
+      "seconds": 7.623971818014979,
+      "stop_reason": null
+    },
+    {
+      "module": "PhaseOverlapSplittingR0219",
+      "exit_code": 0,
+      "seconds": 6.872579362709075,
+      "stop_reason": null
+    },
+    {
+      "module": "SchemePairingReversalR0218",
+      "exit_code": 0,
+      "seconds": 80.71179515402764,
+      "stop_reason": null
+    },
+    {
+      "module": "EvenCoverPhaseSwitchR0218",
+      "exit_code": 0,
+      "seconds": 3.6181959877721965,
+      "stop_reason": null
+    },
+    {
+      "module": "MultiplierPhaseSwitchR0218",
+      "exit_code": 0,
+      "seconds": 38.809925225097686,
+      "stop_reason": null
+    },
+    {
+      "module": "KeyPhaseSwitchR0218",
+      "exit_code": 0,
+      "seconds": 11.628195616882294,
+      "stop_reason": null
+    },
+    {
+      "module": "PhaseFreeKeyDefinitionsR0219",
+      "exit_code": 0,
+      "seconds": 3.46802194789052,
+      "stop_reason": null
+    },
+    {
+      "module": "UnphasedMarkingCoverR0219",
+      "exit_code": 0,
+      "seconds": 3.467937498819083,
+      "stop_reason": null
+    },
+    {
+      "module": "PhaseFreeMultiplierR0219",
+      "exit_code": 0,
+      "seconds": 109.79502979991958,
+      "stop_reason": null
+    },
+    {
+      "module": "PhaseFreeAlphaDescentR0219",
+      "exit_code": 0,
+      "seconds": 19.438390749972314,
+      "stop_reason": null
+    },
+    {
+      "module": "PhaseFreeKeyR0219",
+      "exit_code": 0,
+      "seconds": 2.817342030350119,
+      "stop_reason": null
+    },
+    {
+      "module": "PhaseFreeMultiplierBaseChangeR0219",
+      "exit_code": 0,
+      "seconds": 23.693268550094217,
+      "stop_reason": null
+    },
+    {
+      "module": "PhaseFreeKeyNaturalityR0219",
+      "exit_code": 0,
+      "seconds": 19.337538520339876,
+      "stop_reason": null
+    },
+    {
+      "module": "PhaseFreeKeySolution",
+      "exit_code": 0,
+      "seconds": 35.55622862186283,
+      "stop_reason": null
+    }
+  ],
+  "pending": [],
+  "source_commit": "7f6e66592f46187e87f1d360b471ad28e5094c0b",
+  "scope": "Current complete PhaseFreeKeySolution closure compiled against source/hash-bound verified FieldUnary cold cache and canonical dependencies. Does not establish exact declarations, Comparator, rendering, kernel replay or official acceptance."
+}

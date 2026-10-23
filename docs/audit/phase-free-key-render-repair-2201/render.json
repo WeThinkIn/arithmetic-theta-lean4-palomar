@@ -1,0 +1,21 @@
+{
+  "scope": "phase-free-key",
+  "commit": "7f6e66592f46187e87f1d360b471ad28e5094c0b",
+  "official_run": null,
+  "source_sha256": "ce30b1b8d74c6ec3a10b2bb324a2947dac24e1be5bf36875d99ed06cd1e44712",
+  "configuration_sha256": "34fe3c8b4cd391c3ef6b1e27cea84840966f80be7f3b0720330b6ef3166ad439",
+  "compiled": true,
+  "literate_exit_code": 0,
+  "html_exit_code": 0,
+  "targets": 45,
+  "missing_target_anchors": [],
+  "rendered_errors": [],
+  "rendered_error_count": 0,
+  "clean_render": true,
+  "html_sha256": "f830fcea19c8c9b62341ab1e0d0439842240561db25002f01b877262fb11e746",
+  "sanitizer_sha256": "bd0e82e9a21b3995ed182ef956e3d30640d8a38e28a6edc018462004d47c481a",
+  "official_result_inferred": false,
+  "source_or_submission_changed": false,
+  "unpublished_candidate": true,
+  "exact_cache_expression_equal": true
+}

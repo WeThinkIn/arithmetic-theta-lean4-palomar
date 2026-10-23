@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "bindings_unchanged": true,
+  "original_endpoint_ids": [
+    "accepted-052",
+    "accepted-053",
+    "accepted-054",
+    "accepted-095",
+    "accepted-096",
+    "accepted-097"
+  ],
+  "original_type_and_ordered_universes_equal": true,
+  "standard_axioms_only": true,
+  "recovery_equalities_compiled": true,
+  "configured_proposition_obligations": 45,
+  "definition_obligations": 0,
+  "results": [
+    {
+      "probe": "Audit",
+      "exit_code": 0
+    },
+    {
+      "probe": "RecoveryEquality",
+      "exit_code": 0
+    },
+    {
+      "probe": "TargetHoleAudit",
+      "exit_code": 0
+    }
+  ],
+  "scope": "Six exact original endpoint recovery types/universes and standard axiom closure checked against current source-bound Solution, plus compiled original recovery equalities and direct accounting of45Challenge holes. This does not establish independent kernel replay or official acceptance."
+}

@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-23T23:09:36.246441+00:00",
+  "all_original_constants_exactly_preserved": true,
+  "original_constants": 758,
+  "original_constantinfo_comparison_includes_types_universes_definition_and_proof_bodies": true,
+  "added_declarations": [
+    {
+      "name": "termMatcher2195",
+      "type": "Lean.ParserDescr",
+      "kind": "safe definition"
+    },
+    {
+      "name": "_aux_PhaseFreeKeyChallenge___elabRules_termMatcher2195_1",
+      "type": "Lean.Elab.Term.TermElab",
+      "kind": "safe definition"
+    }
+  ],
+  "raw_total_declaration_identity_passed": false,
+  "raw_difference_record_retained": "output.json",
+  "exact_cache_reset_expression_equal": true,
+  "bindings_unchanged": true,
+  "clean_render_all45targets": true,
+  "scope": "All original Challenge declarations match exactly. Two added syntax/elaboration definitions inspected explicitly; full declaration sets are not identical. No Solution strict comparison or official result inferred."
+}

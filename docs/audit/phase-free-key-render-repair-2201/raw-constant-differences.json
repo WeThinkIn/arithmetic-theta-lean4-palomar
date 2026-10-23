@@ -1,0 +1,7 @@
+[{"retained_regions": 6,
+  "passed": false,
+  "module": "PhaseFreeKeyChallenge",
+  "differences":
+  [{"added": "termMatcher2195"},
+   {"added": "_aux_PhaseFreeKeyChallenge___elabRules_termMatcher2195_1"}],
+  "checked_constants": 758}]
