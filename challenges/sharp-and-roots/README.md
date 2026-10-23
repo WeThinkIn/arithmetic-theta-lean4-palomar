@@ -1,5 +1,7 @@
 # sharp-and-roots: complete interface rendering repair
 
+**Official mechanical verification passed for the earlier revision** `d3ef81d860d52758e44cef454c78ad829aa74020`, with stock Lean, NanoDa and Conron acceptance. The [report and exact scope](../../docs/audit/official-roots-2132/Review.md) cover original endpoints 049, 056 and 057, adding two to the historical union of **95/103**. The current rendering repair described below requires its own fresh official verification.
+
 This revision retains complete original endpoints accepted-049, accepted-056, accepted-057 and all 4 configured theorem obligations. The Solution and comparator configuration are unchanged. Resolve the same pinned Lean matcher-cache extension through an explicit term elaborator so it is available in compiler and renderer contexts. Make the already-selected algebra compatibility support theorem explicit with its exact original statement, retaining the original eta-expanded instance field.
 
 The Challenge contains 74,555 bytes and 1000 lines and satisfies the current hard caps. All 468 shared declarations retain their exact types, universe parameters and required definition bodies. Complete serialized target-closure comparison and standard-axiom closure checking pass. Direct obligation accounting confirms exactly 4 selected theorem holes, with no extra literal holes. The unchanged Solution's original-endpoint recovery is checked, and all recorded evidence bindings have been revalidated.

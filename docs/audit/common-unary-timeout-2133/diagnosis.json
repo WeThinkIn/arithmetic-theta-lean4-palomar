@@ -1,0 +1,157 @@
+{
+  "utc": "2026-10-23T19:11:56.753063+00:00",
+  "run": 39962946907,
+  "commit": "561a253f79bc11127fb0a4bc72865f23470e0ca6",
+  "report": "/home/Palomar/workspace/arithmetic-theta/evidence/positive-line-official-collector-repair-1958/39962946907/mechanical-report-12524299857.json",
+  "report_sha256": "31c4153662a3116f2544155cf6c296d7aa38094ecef85b5c26bf78ad74bf28db",
+  "source_bindings_verified": {
+    "CommonUnaryChallenge.lean": "461ac08cc6cc76f57b2a7036d1c70641a7db990a155ebe71999a4f8a5c5b5eff",
+    "CommonUnarySolution.lean": "54fcbbe25ab7d4ff749f3d8423359c279a0c1bfd5d83ac3f80291f5f88c32ad6",
+    "comparator-common-unary.json": "346658bd5e87765d3b8bee8cc43d4f1495214f8a2790dd95e6c242d2befa8774"
+  },
+  "status": "error",
+  "stage": "resource-exhausted",
+  "last_active_stage": "comparator",
+  "error_kind": "infrastructure/resource-exhausted",
+  "errors": [
+    "worker wall-clock capacity was exhausted; retry on a longer-running worker"
+  ],
+  "official_diagnostics": [
+    {
+      "code": "provider.resource_exhausted",
+      "explanation": "worker wall-clock capacity was exhausted; retry on a longer-running worker",
+      "next_action": "Inspect the reported resource limit and build usage. If the workload repeatedly exceeds the worker's capacity, reduce its resource use or arrange sufficient capacity before retrying. Retry an unchanged commit only after addressing the reported condition. Normal submission cooldowns still apply.",
+      "owner": "provider",
+      "repairable": false,
+      "retryable": true,
+      "stage": "resource-exhausted",
+      "summary": "worker wall-clock capacity was exhausted; retry on a longer-running worker"
+    }
+  ],
+  "profile": {
+    "id": "palomar-standard-v1",
+    "limits": {
+      "execution_budget_seconds": 19800,
+      "file_size_max_bytes": 1099511627776,
+      "job_timeout_minutes": 350,
+      "memory_high_percent": 95,
+      "memory_max_percent": 98,
+      "minimum_host_memory_bytes": 15032385536,
+      "minimum_workspace_free_bytes": 21474836480,
+      "open_files_max": 1048576,
+      "tasks_max": 32768
+    },
+    "observed_host": {
+      "architecture": "x86_64",
+      "effective_cpus": 4.0,
+      "memory_bytes": 16770748416,
+      "memory_high_bytes": 15932210995,
+      "memory_max_bytes": 16435333447,
+      "workspace_free_bytes": 114946584576
+    },
+    "runner": {
+      "architecture": "x86_64",
+      "label": "ubuntu-24.04",
+      "provider": "github-hosted"
+    },
+    "sha256": "94fcd7906a1b6c076c0036d742e1c5add8625e49bb474818ec8924576dbf0caa",
+    "trusted_tools": {
+      "bwrap_source_tag": "v0.12.0",
+      "toolchain_floor": "v4.35.0-rc2"
+    }
+  },
+  "important_phases": [
+    {
+      "elapsed_seconds": 54.729,
+      "max_rss_kib": 1190944,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "canonical-challenge",
+      "returncode": 0,
+      "system_cpu_seconds": 2.521,
+      "user_cpu_seconds": 68.255,
+      "workspace_disk_peak_bytes": 4096
+    },
+    {
+      "elapsed_seconds": 0.056,
+      "max_rss_kib": 25392,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "canonical-challenge",
+      "returncode": 0,
+      "system_cpu_seconds": 0.031,
+      "user_cpu_seconds": 0.058,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.057,
+      "max_rss_kib": 25396,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "canonical-challenge",
+      "returncode": 0,
+      "system_cpu_seconds": 0.032,
+      "user_cpu_seconds": 0.058,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 20.771,
+      "max_rss_kib": 1519680,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "challenge-export",
+      "returncode": 0,
+      "system_cpu_seconds": 2.063,
+      "user_cpu_seconds": 17.204,
+      "workspace_disk_peak_bytes": 331993088
+    },
+    {
+      "elapsed_seconds": 14418.981,
+      "max_rss_kib": 14217808,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "solution-build",
+      "returncode": 0,
+      "system_cpu_seconds": 2841.96,
+      "user_cpu_seconds": 46234.194,
+      "workspace_disk_peak_bytes": 12984418304
+    },
+    {
+      "elapsed_seconds": 200.735,
+      "max_rss_kib": 11613168,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "solution-export",
+      "returncode": 0,
+      "system_cpu_seconds": 8.599,
+      "user_cpu_seconds": 169.645,
+      "workspace_disk_peak_bytes": 2824761344
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 0,
+      "deadline_fired": false,
+      "exec_main_code": "",
+      "exec_main_status": "",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 0,
+      "phase": "comparator:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {},
+      "supervisor": "cgroup",
+      "supervisor_timeout": true,
+      "systemd_active_state": "active",
+      "systemd_result": null,
+      "systemd_result_before_cleanup": null
+    }
+  ],
+  "oom_kill_observed": false,
+  "official_kernel_acceptance_recorded": false,
+  "original_endpoint_credit_added": 0,
+  "automatic_retry": false,
+  "next_action": "Do not retry solely for renderer repair: Solution build/export succeeded, comparator-stage wall budget was exhausted. Investigate comparator timing and proof closure/resource efficiency or supported worker capacity before repeating this full scope. Existing FieldUnary cold scheduling experiment continues separately; it does not prove CommonUnary comparator fits.",
+  "scope": "Exact-source-bound official resource failure diagnosis. Successful build/export is not complete independent verification; no theorem counterexample or kernel rejection is reported, and missing comparator telemetry does not establish which internal checker consumed time."
+}

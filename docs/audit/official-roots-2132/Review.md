@@ -1,0 +1,9 @@
+# Official prescribed roots and sharp-bound verification
+
+The [official full mechanical preflight 39966260932](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/39966260932) passed at commit `d3ef81d860d52758e44cef454c78ad829aa74020`, using `comparator-sharp-and-roots.json`. Stock Lean, NanoDa and Conron accepted the Solution; Challenge provenance is high trust. The verified Challenge is 70,288 bytes and 1,000 lines.
+
+The four configured targets cover complete original endpoints accepted-056 (ambient prescribed roots), accepted-057 (simultaneous roots at smooth points), and accepted-049 (sharp finite determination), together with the required algebra compatibility support theorem. The original quantified statements and type hashes were checked against the frozen specification. The [verification receipt](verification.json) records the exact scope and report bindings. Report SHA-256: `b0cff950b8607e6703e6080ec0f17e473376a3d0ced024c26c2b104cf1940b6d`.
+
+Endpoints 056 and 057 add two new results to the previous union of 93; endpoint 049 was already covered and is counted once. The [endpoint ledger](endpoints.json) therefore records **95/103 original endpoints with official mechanical evidence at their respective verified revisions**. This is a union across scopes and revisions, not a single whole-paper verification.
+
+The current published roots Challenge includes a later [rendering repair](../common-roots-render-repair-2128/sharp-and-roots/Review.md). Its local checks pass, but this official report verifies the earlier commit stated above; fresh verification of the repaired Challenge remains separate. The complete project retains all 13 requirements and 103 endpoints. Size-compliant interfaces remain prepared for 99 endpoints. Whole-paper semantic acceptance and registration remain incomplete.

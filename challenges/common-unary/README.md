@@ -1,5 +1,7 @@
 # common-unary: complete interface rendering repair
 
+**The earlier official preflight exhausted worker time in the comparator stage**, after successful Solution build and export. See the [source-bound diagnosis](../../docs/audit/common-unary-timeout-2133/Review.md). The local rendering repair below does not by itself resolve that resource limit; a repeat full preflight is deferred pending a justified resource improvement.
+
 This revision retains complete original endpoints accepted-071 and all 39 configured theorem obligations. The Solution and comparator configuration are unchanged. Resolve the same pinned Lean matcher-cache extension through an explicit term elaborator so it is available in compiler and renderer contexts.
 
 The Challenge contains 102,383 bytes and 930 lines and satisfies the current hard caps. All 1288 shared declarations retain their exact types, universe parameters and required definition bodies. Complete serialized target-closure comparison and standard-axiom closure checking pass. Direct obligation accounting confirms exactly 39 selected theorem holes, with no extra literal holes. The unchanged Solution's original-endpoint recovery is checked, and all recorded evidence bindings have been revalidated.

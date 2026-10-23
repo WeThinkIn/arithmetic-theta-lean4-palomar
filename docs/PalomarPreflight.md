@@ -2,7 +2,9 @@
 
 ## Current recorded mechanical coverage
 
-Official mechanical evidence covers **93 of 103 original endpoints**, counted once across their exact verified scopes and revisions. The [algebraic Tate coordinates and sharp-bound preflight](audit/official-coordinates-2113/Review.md) passed at `44d7c226d10bb1b77b35f40bc320f0c69dd93a6e`, adding original endpoints 019–022 to the prior union of 89. Its accepted-049 endpoint was already covered and is counted once. Stock Lean, NanoDa and Conron accepted the Solution; Challenge provenance is high trust. The [endpoint ledger](audit/official-coordinates-2113/endpoints.json) records scope and revision bindings. Whole-paper semantic acceptance and registration remain incomplete.
+Official mechanical evidence covers **95 of 103 original endpoints**, counted once across their exact verified scopes and revisions. The [prescribed-roots preflight](audit/official-roots-2132/Review.md) passed at `d3ef81d860d52758e44cef454c78ad829aa74020`, adding original endpoints 056 and 057. Its accepted-049 endpoint was already covered. Stock Lean, NanoDa and Conron accepted the Solution, and Challenge provenance is high trust. The [endpoint ledger](audit/official-roots-2132/endpoints.json) records source and scope bindings. Whole-paper semantic acceptance and registration remain incomplete.
+
+The [common-unary preflight](audit/common-unary-timeout-2133/Review.md) exhausted worker time in the comparator stage after successful Solution compilation and export. It adds no coverage; the rendering repair alone is not treated as a remedy for that resource failure.
 
 ## Main-result verification record
 
