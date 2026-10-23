@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "results": {
+    "stock-lean": {
+      "exit_code": 0,
+      "seconds": 4180.576420603786,
+      "peak_rss_bytes": 13580185600,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/leanchecker",
+        "--silent",
+        "--from-export",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/conservative-context-strict-1946/solution.ndjson"
+      ]
+    },
+    "conron": {
+      "exit_code": 0,
+      "seconds": 600.6591771049425,
+      "peak_rss_bytes": 9764986880,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/evidence/official-pipeline-refresh-858/trusted-checker-update-02/con-ron",
+        "--verified",
+        "--jobs=2",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/conservative-context-strict-1946/solution.ndjson"
+      ]
+    },
+    "nanoda": {
+      "exit_code": 0,
+      "seconds": 786.8493637172505,
+      "peak_rss_bytes": 3207372800,
+      "stop_reason": null,
+      "command": [
+        "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin",
+        "/home/Palomar/workspace/arithmetic-theta/evidence/conservative-three-kernel-replay-1949/nanoda.json"
+      ]
+    }
+  },
+  "positive_kernel_markers": true,
+  "bindings_unchanged": true,
+  "scope": "Independent three-kernel replay of full unchanged Solution target closure for repaired full conservative-matrix-geometry interface (original035/036). Official fresh preflight remains required."
+}

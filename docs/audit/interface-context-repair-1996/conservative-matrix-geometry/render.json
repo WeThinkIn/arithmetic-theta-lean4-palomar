@@ -1,0 +1,12 @@
+{
+  "label": "candidate",
+  "literate_exit_code": 0,
+  "html_exit_code": 0,
+  "compared_targets": 34,
+  "missing_compared_anchors": [],
+  "all_compared_anchors_present": true,
+  "source_sha256": "f573d3e0e47c66ba48c416d9659097e0e0150c8693c37572c1aa57825e58683d",
+  "html_path": "/home/Palomar/workspace/arithmetic-theta/evidence/conservative-cache-name-render-check-1992/candidate/html/ConservativeMatrixGeometryChallenge/index.html",
+  "html_sha256": "6e541cb776e081a57ecc95d4a30c508dd162126f1df9145a5aee3123f4a457cd",
+  "scope": "Pinned full Verso HTML generation plus unmodified official sanitizer anchor-class check; local reproduction only, no official acceptance."
+}

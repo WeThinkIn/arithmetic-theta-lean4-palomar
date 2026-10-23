@@ -1,0 +1,27 @@
+{
+  "compiled": true,
+  "mismatches": 0,
+  "checked_shared_declarations": 918,
+  "exact_cache_expression_equal": true,
+  "results": {
+    "ConservativeMatrixGeometryChallenge": {
+      "exit_code": 0,
+      "seconds": 22.026279332116246,
+      "peak_rss_bytes": 4018081792,
+      "stop_reason": null
+    },
+    "Diagnostic": {
+      "exit_code": 0,
+      "seconds": 4.005723139736801,
+      "peak_rss_bytes": 4410925056,
+      "stop_reason": null
+    },
+    "CacheExpressionEquality": {
+      "exit_code": 0,
+      "seconds": 3.004539264831692,
+      "peak_rss_bytes": 3884060672,
+      "stop_reason": null
+    }
+  },
+  "scope": "Same14matcher-cache resets; unchanged original mathematical obligations and Solution. Strict closure, original recovery, direct holes and renderer gates required separately."
+}

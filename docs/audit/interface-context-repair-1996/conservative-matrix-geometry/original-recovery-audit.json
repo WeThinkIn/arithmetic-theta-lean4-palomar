@@ -1,0 +1,14 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarConservative530.recover_original_035",
+  "original":
+  "ArithmeticThetaConservativeKernelR0189.arithmetic_geometric_family_existence",
+  "id": "accepted-035",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+ {"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarConservative530.recover_original_036",
+  "original":
+  "ArithmeticThetaConservativeKernelR0189.geometric_family_conservative_cutoff",
+  "id": "accepted-036",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

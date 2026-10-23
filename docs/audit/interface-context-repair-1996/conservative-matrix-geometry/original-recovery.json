@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "original_endpoint_ids": [
+    "accepted-035",
+    "accepted-036"
+  ],
+  "result": {
+    "exit_code": 0,
+    "seconds": 3.0042916322126985,
+    "peak_rss_bytes": 4480188416,
+    "stop_reason": null
+  },
+  "bindings_unchanged": true,
+  "scope": "Exact original types and ordered universes plus standard axioms of existing recovery theorems in current Solution; combine with repaired Challenge strict and kernel gates."
+}

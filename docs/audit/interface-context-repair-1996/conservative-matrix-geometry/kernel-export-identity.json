@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "solution_exports_identical": true,
+  "sha256": "fefc70bb6331ad817b48f69faa328a10ef36d89bd0a8c5f68cdc9a850596104b",
+  "previous_export": "/home/Palomar/workspace/arithmetic-theta/evidence/conservative-context-strict-1946/solution.ndjson",
+  "current_export": "/home/Palomar/workspace/arithmetic-theta/evidence/conservative-render-repair-strict-1993/solution.ndjson",
+  "scope": "Independent kernels replay the identical Solution export and target configuration. New Challenge comparison is checked separately."
+}
