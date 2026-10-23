@@ -8,7 +8,7 @@
     "accepted-033"
   ],
   "universe": "Original k : Type algebraically closed characteristic-zero field; every positive L divisible by24",
-  "target_count": 22,
+  "target_count": 35,
   "no_added_main_assumptions": true,
   "official_verified": false,
   "full_paper_claimed": false,
@@ -21,5 +21,26 @@
     "For every extending specified Hodge generator, its product with1_A squared equals the full Euler(t^L)^2 times t^(L/12) times that same generator",
     "Actual sheaf tensor/trivialization, local differential, canonical pullback and complete Euler product preserved"
   ],
-  "limitations": "Geometry, intrinsic compact D2 and cusp half-line are supplied as in the original statements.032 constructs the twist and unit;033 uses any valid supplied twist to construct its unique complete prescribed root. Neither assumes that root or claims official acceptance."
+  "limitations": "Geometry, intrinsic compact D2 and cusp half-line are supplied as in the original statements.032 constructs the twist and unit;033 uses any valid supplied twist to construct its unique complete prescribed root. Neither assumes that root or claims official acceptance.",
+  "explicit_original_helper_obligations": [
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_2",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_3",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_1",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_4",
+    "ArithmeticThetaBoundaryHodgeR0182.CompactHodgeLatticeExtensionR0182.compactComponent._proof_1"
+  ],
+  "local_complete_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "remaining_validation": [
+    "Fresh full official preflight for the exact published revision",
+    "Ordinary intake and semantic review"
+  ]
 }
