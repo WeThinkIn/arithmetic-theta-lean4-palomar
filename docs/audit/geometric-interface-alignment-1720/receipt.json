@@ -1,0 +1,53 @@
+{
+  "local_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "original_endpoint_ids": [
+    "accepted-069"
+  ],
+  "original_targets_retained": 18,
+  "additional_original_helper_obligations": [
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "ArithmeticThetaOpenHodgeR0180.IsD2._proof_1",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_1",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_2",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_3",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_4",
+    "SheafOfModules.presheafW_isMonoidal"
+  ],
+  "configured_targets": 32,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_sha256": "072b55bc402e925c98ea1097627c357f605ea98a39d57af23ef5aca39716a442",
+  "challenge_bytes": 102364,
+  "challenge_lines": 989,
+  "configuration_sha256": "eed936c9abf1623d87c9318cdafab8d958ed8a16ac4f7cb574d513bc2dcec14d",
+  "solution_sha256": "ce25032df3653712b4ea5185d0292a7214bcddffab2e1b08d58969d0679259fd",
+  "strict_receipt_sha256": "2d3a1d62bdb9332c84c4b088a35cc059b2e9b2d0cc8364706ec128bf05944f3d",
+  "strict_verifier_sha256": "e65b6dda0565d21be49be5a8a5112eb90ebb0c8bf5c3c5af8ed19281afd5554b",
+  "primitives_sha256": "b217301595ce9113efe50a2c83df27b48613cc3834d2f0f8421d612e14ed5ca1",
+  "exports": {
+    "challenge": {
+      "bytes": 316375044,
+      "sha256": "c0c148a1fdb438b04bbb93bd933fe8ae3bb7d7d6a42e8b2c16c4b425f5bc9dbb"
+    },
+    "solution": {
+      "bytes": 2577828799,
+      "sha256": "caa74a077fe81cc5f1d246b56b6355789f006231eb8829f506e381108db4221a"
+    }
+  },
+  "markers": [
+    "TRUSTED_STRUCTURAL_COMPARISON_PASS",
+    "TRUSTED_AXIOM_CLOSURE_PASS"
+  ],
+  "limitation": "Local complete target-closure structural comparison and standard-axiom closure. Official independent-kernel acceptance and whole-paper semantic review remain separate."
+}

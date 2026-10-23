@@ -6,7 +6,7 @@
     "accepted-069"
   ],
   "universe": "Original arbitrary characteristic-zero field k : Type, positive even m,N with m dividing N, every normalized residue nu; original Canonical and GeometricallyCanonical inputs",
-  "target_count": 18,
+  "target_count": 32,
   "no_added_main_assumptions": true,
   "official_verified": false,
   "full_paper_claimed": false,
@@ -21,5 +21,27 @@
     "Full arbitrary-scheme SchemeLaw/Family and all-point group-compatible full-level classifier, not a pointwise or affine-only surrogate",
     "ClassifierHodge fixed by inclusion-compatible identity ideal map and universal conormal derivative on EVERY ideal section of EVERY open"
   ],
-  "limitations": "The actual compatible level geometry and Hodge extension with original Canonical and GeometricallyCanonical conditions remain supplied inputs. This proves actual unary section descent over arbitrary characteristic-zero fields; it does not separately construct those inputs or complete matrix-family assembly. Official verification is separate."
+  "limitations": "The actual compatible level geometry and Hodge extension with original Canonical and GeometricallyCanonical conditions remain supplied inputs. This proves actual unary section descent over arbitrary characteristic-zero fields; it does not separately construct those inputs or complete matrix-family assembly. Official verification is separate.",
+  "explicit_original_helper_obligations": [
+    "WeierstrassProjModel.kw_lrComul_tensorProj._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_1",
+    "WeierstrassProjModel.kw_lrChart_aux._proof_2",
+    "WeierstrassProjModel.kw_lrSixU_toE._proof_1",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_2",
+    "WeierstrassProjModel.kw_lrAdd_comulHom._proof_3",
+    "WeierstrassProjModel.kw_lrAddNegDiag_negSubstGen._proof_1",
+    "WeierstrassProjModel.kwYEvalRingHom._proof_2",
+    "ArithmeticThetaOpenHodgeR0180.IsD2._proof_1",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_1",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_2",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_3",
+    "P2MW.S_AlgebraicGeometry_Scheme_Hom_exists_hom_pullback_topDifferentials_map_pullbackLocalSection_topToSections_eq.OmegaPull.T0.unitD._proof_4",
+    "SheafOfModules.presheafW_isMonoidal"
+  ],
+  "local_complete_strict_comparison_passed": true,
+  "official_acceptance_for_this_revision": false,
+  "remaining_validation": [
+    "Fresh full official preflight for the exact published revision",
+    "Ordinary intake and semantic review"
+  ]
 }
