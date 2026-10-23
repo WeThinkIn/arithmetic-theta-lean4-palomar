@@ -1,8 +1,16 @@
 name: Palomar official mechanical preflight
-run-name: Palomar full preflight at ${{ github.sha }}
+run-name: Palomar ${{ inputs.verification_mode || 'full' }} preflight at ${{ github.sha }}
 on:
   workflow_dispatch:
     inputs:
+      verification_mode:
+        description: 'Full mechanical verification or preparation checks only'
+        required: false
+        default: full
+        type: choice
+        options:
+          - full
+          - preflight
       comparator_config_path:
         description: 'Scoped configuration for official mechanical verification'
         required: false
@@ -124,6 +132,6 @@ jobs:
       commit: ${{ github.sha }}
       pipeline_commit: 7a08c1da8e0558d330b9b3c244896c175d373303
       request_id: ${{ needs.request.outputs.id }}
-      mode: full
+      mode: ${{ inputs.verification_mode || 'full' }}
       execution_profile: palomar-standard-v1
       options: ${{ needs.request.outputs.options }}
