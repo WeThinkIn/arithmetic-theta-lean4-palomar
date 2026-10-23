@@ -1,0 +1,9 @@
+[{"retained_regions": 6,
+  "passed": false,
+  "module": "FieldUnaryChallenge",
+  "differences":
+  [{"universes_equal": true,
+    "type_equal": true,
+    "name": "_aux_FieldUnaryChallenge___macroRules_commandRC_1",
+    "body_equal": false}],
+  "checked_constants": 1253}]

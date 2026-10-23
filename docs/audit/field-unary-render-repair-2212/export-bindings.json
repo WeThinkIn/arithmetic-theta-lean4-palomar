@@ -1,0 +1,7 @@
+{
+  "challenge_bytes": 316375044,
+  "challenge_sha256": "c0c148a1fdb438b04bbb93bd933fe8ae3bb7d7d6a42e8b2c16c4b425f5bc9dbb",
+  "solution_path": "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-export-strict-2160/solution.ndjson",
+  "solution_sha256": "caa74a077fe81cc5f1d246b56b6355789f006231eb8829f506e381108db4221a",
+  "reused_source_bound_cold_solution_export": true
+}

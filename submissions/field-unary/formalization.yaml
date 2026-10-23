@@ -46,10 +46,15 @@ automation:
     author and responsible maintainer is Jue Ding. See docs/AIContributions.md for
     the contribution account and its source provenance.
 review:
-  status: agent-reviewed
-  notes: Original support/main targets preserved with explicitly checked original
-    support lemmas. Complete local strict structural and standard-axiom checks passed.
-    Solution is unchanged. Fresh official mechanical and semantic review remain pending.
+  status: self-assessed
+  notes: >-
+    Pre-submission assessment based on recorded machine checks: all 32 configured
+    obligations, shared declarations, complete target closure, standard axioms,
+    and exact original069 recovery were checked. The repaired Challenge renders
+    all 32 target anchors without elaboration errors. These checks are not
+    presented as a distinct agent's semantic review. The previous-revision
+    official run remains separate; official acceptance of this repaired revision
+    and whole-paper semantic acceptance have not been established.
 status:
   scope: Full original069 over arbitrary characteristic-zero fields. Constructs the
     prescribed indices and actual open normalized unary data, then the UNIQUE genuine

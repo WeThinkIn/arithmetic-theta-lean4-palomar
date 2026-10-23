@@ -1,0 +1,13 @@
+# FieldUnary rendering and full-scope validation
+
+The cache-reset command now resolves Lean's private matcher extension explicitly. This removes 72 rendered unknown-identifier errors from the previous Challenge while preserving all 32 configured obligations and the complete original endpoint 069. The candidate was compiled and rendered locally with all 32 target anchors present and zero rendered errors; see [render.json](render.json).
+
+The published Challenge contains **102,400 bytes and 989 lines**, exactly at the mandatory byte cap. The change replaces one private identifier in the cache-reset macro and removes 22 separator spaces. Mathematical statements, Solution source, dependency sources, comparator targets and permitted axioms are preserved. The private name is specific to the pinned Lean 4.35.0-rc2 toolchain; future compiler upgrades require renewed checks.
+
+The [serialized declaration comparison](declaration-preservation.json) checked 1,253 constants. Exactly 1,252 constants, including their types, ordered universes, definition bodies and proof bodies, are unchanged. The only difference is the body of `_aux_FieldUnaryChallenge___macroRules_commandRC_1`, the repaired compiler macro. The raw whole-module identity check therefore remains failed and its [difference record](raw-constant-differences.json) is retained. The old and repaired cache-reset terms elaborate to exactly equal expressions, as recorded in [cache-expression-equality.json](cache-expression-equality.json).
+
+The [full strict comparison](full-strict.json) passed for all 32 configured targets and their complete serialized dependency closure, with only the standard permitted axioms. It uses a fresh Challenge export and the rehashed full Solution export from the completed 3,153-module cold build; it does not substitute an older unbound Solution cache. The [export record](export-bindings.json) identifies these inputs. This comparison is not a fresh independent-kernel replay.
+
+The original 069 recovery has exactly the original theorem type and ordered universes, with only standard axioms; its original equality bridge also compiled. See [original-069.json](original-069.json). Direct obligation accounting confirms [32 proposition holes and no definition holes](target-holes.log). Challenge holes specify the obligations; the Solution supplies their proofs.
+
+These are local checks of this repaired interface, not an official Palomar acceptance. Official full preflight 40018009456 is bound to the earlier source commit `ede49ba93f1fce85660412ce31baaa8476a772f4` and cannot certify this source revision. Its existing run is retained. No original endpoint credit, whole-paper semantic acceptance or registration is added by this repair.

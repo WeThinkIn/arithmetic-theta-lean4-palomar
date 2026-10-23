@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "bindings_unchanged": true,
+  "positive_markers": true,
+  "result": {
+    "exit_code": 0,
+    "seconds": 84.01028763502836,
+    "peak_rss_bytes": 4042547200,
+    "stop_reason": null,
+    "command": [
+      "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-macro-full-strict-2212/comparator.json",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/primitives.json",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-macro-full-strict-2212/challenge.ndjson",
+      "/home/Palomar/workspace/arithmetic-theta/evidence/field-unary-late-memory-export-strict-2160/solution.ndjson"
+    ]
+  },
+  "configured_targets": 32,
+  "original_endpoint": "accepted-069",
+  "original_type_universes_standard_axioms_and_recovery_passed": true,
+  "direct_proposition_holes": 32,
+  "definition_holes": 0,
+  "checked_shared_declarations": 1074,
+  "scope": "Fresh repaired Challenge export compared against rehashed complete export of actual verified2155cold Solution objects; all32targets and original069 retained. No new independent-kernel replay or official acceptance inferred."
+}

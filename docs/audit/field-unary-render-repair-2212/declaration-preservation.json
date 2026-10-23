@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-23T23:27:17.703071+00:00",
+  "mathematical_declarations_exactly_preserved": true,
+  "exact_constants": 1252,
+  "checked_constants": 1253,
+  "compiler_macro_only_difference": [
+    {
+      "universes_equal": true,
+      "type_equal": true,
+      "name": "_aux_FieldUnaryChallenge___macroRules_commandRC_1",
+      "body_equal": false
+    }
+  ],
+  "raw_total_identity_passed": false,
+  "raw_difference_retained": "output.json",
+  "exact_cache_expression_equal": true,
+  "bindings_unchanged": true,
+  "clean_render": true,
+  "targets": 32,
+  "scope": "Only macro implementation changed; all other ConstantInfo including types, ordered universes, definitions and proof bodies exactly equal. No full Solution comparison or official acceptance inferred."
+}
