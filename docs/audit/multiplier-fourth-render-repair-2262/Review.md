@@ -1,0 +1,15 @@
+# Multiplier fourth-power trivialization: rendering and current-source validation
+
+The complete Challenge renders all **19 target anchors with zero errors**. It contains **78,585 bytes and 963 lines**, within the published Challenge limits. See [the render record](render.json).
+
+The matcher cache is resolved through a small term elaborator. The cache-restoration command also tolerates an auxiliary proof name that is absent in the renderer environment. The actual compiled Challenge still preserves every original declaration exactly; the command adds no proposition or proof assumption. All **552 original serialized declarations** are preserved exactly, including types, ordered universes, definition bodies and proof bodies. Each repaired module adds two syntax/elaboration declarations, so the raw comparison of entire declaration sets remains failed. Both the [preservation assessment](declaration-preservation.json) and [raw differences](raw-constant-differences.json) are retained. The old and repaired cache-reset terms elaborate to [exactly equal expressions](cache-expression-equality.json).
+
+The current Solution closure contains **3,250 project modules**: **3,248** were reused from a source-bound, rehashed cache and **2** were freshly compiled. See [the build record](current-solution-build.json). A dependency source changed after the historical official pass, so that pass is not treated as verification of the current dependency closure.
+
+The [full strict comparison](full-strict.json) passes for all **19 configured targets**, their complete exported dependency closure and the standard permitted axioms. [Fresh export hashes](export-bindings.json) bind the actual Challenge and current Solution inputs. This local check is separate from an independent-kernel replay and official acceptance.
+
+The original endpoint recovery audit covers **052, 095, 097, 100**. The original endpoint types and ordered universe parameters match exactly. Their recovery equalities compile by `rfl`, and the recovered results use only the standard permitted axioms. See [the original types and axioms](original-endpoint-types.json) and [recovery assessment](original-endpoint-recovery.json). [Direct obligation accounting](target-holes.log) confirms 19 proposition holes and zero definition holes in the Challenge; the Solution supplies all proofs. No configured target, original hypothesis or universe range is removed.
+
+The [combined readiness assessment](publication-readiness.json) binds rendering, preservation, the current-source full comparison and original endpoint recovery. The strict worker's earlier per-scope record marks recovery re-audit as pending; that separate check is completed by the linked recovery assessment.
+
+Historical official run **39880120328** applies to source `0a8f89d6332ba91d119d81cfe68276a04b861e04`. It does not certify this repaired revision. Fresh official verification and ordinary semantic review remain separate. These local results add no official endpoint coverage and do not establish whole-paper semantic acceptance or registration.

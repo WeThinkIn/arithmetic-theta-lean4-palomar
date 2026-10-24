@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "bindings_unchanged": true,
+  "results": [
+    {
+      "scope": "multiplier-fourth",
+      "passed": true,
+      "fresh_modules": [
+        "MultiplierFourthSolution",
+        "MultiplierFourthTrivializationR0219"
+      ],
+      "complete_closure_count": 3250,
+      "reused_modules": 3248,
+      "elapsed_seconds": 47.3415350234136
+    },
+    {
+      "scope": "full-scheme-discriminant",
+      "passed": true,
+      "fresh_modules": [
+        "FullSchemeDiscriminantSolution",
+        "SchemeDiscriminantFrameUniquenessR0244",
+        "SchemeDiscriminantNaturalityR0244"
+      ],
+      "complete_closure_count": 2543,
+      "reused_modules": 2540,
+      "elapsed_seconds": 283.0822123340331
+    }
+  ],
+  "scope": "Current solutions built with freshly rehashed source-bound cache. Full Challenge/Solution strict audit, rendering and official acceptance are separate."
+}

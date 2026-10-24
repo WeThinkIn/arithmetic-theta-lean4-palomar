@@ -1,0 +1,40 @@
+{
+  "all_original_constants_exactly_preserved": true,
+  "bindings_unchanged": true,
+  "results": [
+    {
+      "retained_regions": 6,
+      "passed": false,
+      "module": "MultiplierFourthChallenge",
+      "differences": [
+        {
+          "added": "termMatcher2255"
+        },
+        {
+          "added": "_aux_MultiplierFourthChallenge___elabRules_termMatcher2255_1"
+        }
+      ],
+      "checked_constants": 552
+    },
+    {
+      "retained_regions": 6,
+      "passed": false,
+      "module": "FullSchemeDiscriminantChallenge",
+      "differences": [
+        {
+          "added": "termMatcher2255"
+        },
+        {
+          "added": "_aux_FullSchemeDiscriminantChallenge___elabRules_termMatcher2255_1"
+        }
+      ],
+      "checked_constants": 452
+    }
+  ],
+  "raw_total_identity_passed": false,
+  "raw_difference_retained": "output.json",
+  "only_two_added_syntax_declarations_per_module": true,
+  "exact_cache_expression_equal": true,
+  "clean_render": true,
+  "scope": "Original types, ordered universes and proof/definition bodies exactly preserved. Full current solution audit is separate."
+}

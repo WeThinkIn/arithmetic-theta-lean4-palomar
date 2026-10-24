@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-24T00:25:41.848181+00:00",
+  "passed": true,
+  "bindings_rehashed": 26139,
+  "source_commit": "ce076fe40a60e3346d7117851aa331ab41b6578e",
+  "cases": [
+    {
+      "scope": "multiplier-fourth",
+      "original_endpoint_ids": [
+        "accepted-052",
+        "accepted-095",
+        "accepted-097",
+        "accepted-100"
+      ],
+      "targets": 19,
+      "challenge_bytes": 78585,
+      "challenge_lines": 963,
+      "source_sha256": "c8cfdee5da4c4bb9d40b332bb654c06de38979f9466870d2f67e644da3425777",
+      "original_raw_type_identity": true,
+      "original_types_definitionally_equal": true,
+      "ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equalities_rfl_passed": true,
+      "render_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-optional-cache-render-2260/multiplier-fourth",
+      "original_audit_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-scheme-original-endpoint-audit-2263/multiplier-fourth"
+    },
+    {
+      "scope": "full-scheme-discriminant",
+      "original_endpoint_ids": [
+        "accepted-080",
+        "accepted-081"
+      ],
+      "targets": 18,
+      "challenge_bytes": 73799,
+      "challenge_lines": 997,
+      "source_sha256": "05422a73fb75e246300460c2cfc6adec3062615a8810e00d03df50d4b7eba58b",
+      "original_raw_type_identity": false,
+      "original_types_definitionally_equal": true,
+      "ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equalities_rfl_passed": true,
+      "render_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/multiplier-scheme-inline-render-2256/full-scheme-discriminant",
+      "original_audit_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-original-definitional-recovery-audit-2264"
+    }
+  ],
+  "original_endpoint_union_size": 6,
+  "original_scope_preserved": true,
+  "original_scheme_raw_type_identity_failure_retained": true,
+  "new_official_acceptance": false,
+  "publication_or_dispatch_performed": false
+}

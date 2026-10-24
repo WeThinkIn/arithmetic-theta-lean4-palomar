@@ -1,0 +1,15 @@
+[{"retained_regions": 6,
+  "passed": false,
+  "module": "MultiplierFourthChallenge",
+  "differences":
+  [{"added": "termMatcher2255"},
+   {"added": "_aux_MultiplierFourthChallenge___elabRules_termMatcher2255_1"}],
+  "checked_constants": 552},
+ {"retained_regions": 6,
+  "passed": false,
+  "module": "FullSchemeDiscriminantChallenge",
+  "differences":
+  [{"added": "termMatcher2255"},
+   {"added":
+    "_aux_FullSchemeDiscriminantChallenge___elabRules_termMatcher2255_1"}],
+  "checked_constants": 452}]

@@ -1,7 +1,7 @@
 module
 public import Mathlib
 import all Lean.Meta.Match.Match
-@[expose] public section
+@[expose] public section elab "matcher2255" : term => return Lean.mkConst (((((Lean.Name.num `_private.Lean.Meta.Match.Match 0).str "Lean").str "Meta").str "Match").str "matcherExt")
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
@@ -424,7 +424,7 @@ structure RelativeGroupLaw (R : Type u) [CommRing R] {A : Scheme.{u}}
     schemeHomOverComp ψ hψ (mul t x y) =
       mul t' (schemeHomOverComp ψ hψ x) (schemeHomOverComp ψ hψ y)
 end WeierstrassProjModel
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2255 (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace ArithmeticThetaRelativeKatoR0169
 open NeronModelInfra
 variable (R : Type u) [CommRing R]
@@ -502,7 +502,7 @@ def IsKatoFunction (W : WeierstrassCurve F) (G : Law F W) (c : ℕ)
         ArithmeticThetaGeometricNormR0150.IsFieldMap (G.schemeNsmul d) φ →
           ArithmeticThetaGeometricNormR0150.fieldNorm φ g = g
 end ArithmeticThetaGeneralEllipticKatoR0168
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2255 (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace ArithmeticThetaRelativeKatoR0169
 variable (R : Type u) [CommRing R] [IsDomain R]
 abbrev GenericCurve (W : WeierstrassCurve R) : Scheme.{u} :=
@@ -591,7 +591,7 @@ def FiveNormalized (g : (Curve R W).functionField) : Prop :=
     ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction (FractionRing R)
       (W.map (algebraMap R (FractionRing R))) C.law 5 (C.field g)
 end ArithmeticThetaPalomarNormalKato378
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2255 (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace ArithmeticThetaPalomarDifferential365
 abbrev Base (R : Type u) [CommRing R] := Spec (CommRingCat.of R)
 def pullSection {X Y : Scheme.{u}} (f : X ⟶ Y) {M : Y.Modules} {U : Y.Opens}
@@ -676,7 +676,7 @@ theorem initialTensorExistsUnique :
   sorry
 end ArithmeticThetaPalomarNormalInitial381
 open NeronModelInfra
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2255 (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace GoodReductionJacobian
 def schemeHomOverComp {B T' T A : Scheme.{u}} {t : T ⟶ B} {t' : T' ⟶ B} {f : A ⟶ B}
     (ψ : T' ⟶ T) (hψ : ψ ≫ t = t') (x : SchemeHomOver t f) : SchemeHomOver t' f :=
@@ -712,7 +712,7 @@ structure Family (S : Scheme.{u}) where
 def Family.zero {S : Scheme.{u}} (E : Family S) : S ⟶ E.curve :=
   (E.law.one (𝟙 S)).val
 end ArithmeticThetaLocalWeierstrassR0203
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState matcher2255 (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace ArithmeticThetaPalomarDifferential365
 open ArithmeticThetaLocalWeierstrassR0203
 /-- Kernel of restriction to the actual closed subscheme. -/

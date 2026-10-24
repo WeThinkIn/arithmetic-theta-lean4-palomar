@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "bindings_unchanged": true,
+  "rows": [
+    {
+      "universes_equal": true,
+      "types_definitionally_equal": true,
+      "type_expression_equal": false,
+      "recovery": "ArithmeticThetaPalomarFullScheme385.recover_original_080",
+      "original": "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_existence",
+      "id": "accepted-080",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "universes_equal": true,
+      "types_definitionally_equal": true,
+      "type_expression_equal": false,
+      "recovery": "ArithmeticThetaPalomarFullScheme385.recover_original_081",
+      "original": "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_naturality",
+      "id": "accepted-081",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "raw_type_expression_identity_passed": false,
+  "raw_identity_failure_retained": "multiplier-scheme-original-endpoint-audit-2263/full-scheme-discriminant/OriginalAudit.log",
+  "types_definitionally_equal": true,
+  "ordered_universes_exact": true,
+  "recovery_equality_rfl_passed": true,
+  "direct_proposition_holes": 18,
+  "definition_holes": 0,
+  "official_acceptance_inferred": false
+}

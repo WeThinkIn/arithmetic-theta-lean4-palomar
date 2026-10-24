@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "scope": "full-scheme-discriminant",
+  "targets": 18,
+  "checked_shared_declarations": 415,
+  "exports": {
+    "challenge": {
+      "bytes": 290364657,
+      "sha256": "2e583f171ce868293132a53b664ea0e3c1f92b6affdce43393c4f754ba41b512"
+    },
+    "solution": {
+      "bytes": 1833038475,
+      "sha256": "c7b436fd58358ae12f2898001e30585d155c67796915f61b73983c8cd858de11"
+    }
+  },
+  "original_endpoint_recovery_reaudit_pending": true,
+  "official_acceptance_inferred": false
+}

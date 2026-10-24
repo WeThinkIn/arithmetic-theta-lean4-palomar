@@ -44,11 +44,18 @@ automation:
     author and responsible maintainer is Jue Ding. See docs/AIContributions.md for
     the contribution account and its source provenance.
 review:
-  status: agent-reviewed
-  notes: Independent Mathlib-based Challenge with Lean elaboration support and unchanged
-    Solution. Complete local strict target-dependency and standard-axiom comparison
-    passed. Fresh official mechanical and semantic review remain pending for this
-    revision.
+  status: self-assessed
+  notes: >-
+    Recorded pre-submission machine checks cover all 18 configured targets,
+    their complete current-source exported dependency closure and standard axioms.
+    All 452 original Challenge declarations are preserved; two syntax
+    declarations are added. All 18 target anchors render without errors.
+    Original endpoints 080, 081 are recovered with matching ordered universes
+    and Lean-checked original types. See docs/audit/full-scheme-discriminant-render-repair-2262/Review.md for the precise
+    distinction between raw expression identity and definitional equality.
+    This is not a distinct agent's semantic review. Historical official results
+    remain bound to their source revisions; official acceptance of this repair
+    and whole-paper semantic acceptance have not been established.
 status:
   scope: 'Complete original accepted080 and081: canonical discriminant-square section
     exists for every actual elliptic group family over every scheme over a characteristic-zero

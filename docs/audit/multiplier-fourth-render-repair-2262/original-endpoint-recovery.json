@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "scope": "multiplier-fourth",
+  "original_endpoint_ids": [
+    "accepted-052",
+    "accepted-095",
+    "accepted-097",
+    "accepted-100"
+  ],
+  "type_and_ordered_universes_exact": true,
+  "standard_axioms_only": true,
+  "recovery_proof_equality": true,
+  "direct_proposition_holes": 19,
+  "definition_holes": 0
+}
