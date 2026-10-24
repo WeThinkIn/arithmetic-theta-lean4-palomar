@@ -2,7 +2,7 @@
 
 ## Current recorded mechanical coverage
 
-Official mechanical evidence covers **97 of 103 original endpoints**, counted once across their exact verified scopes and revisions. The [conservative matrix geometry preflight](audit/official-conservative-matrix-2158/Review.md) passed at `8f25de079ade1664370872d258174ff00aa90fd6`, adding original endpoints 035 and 036. Stock Lean, NanoDa and Conron accepted the Solution, and Challenge provenance is high trust. The [endpoint ledger](audit/official-conservative-matrix-2158/endpoints.json) records source and scope bindings. Whole-paper semantic acceptance and registration remain incomplete.
+Official mechanical evidence covers **98 of 103 original endpoints**, counted once across their exact verified scopes and revisions. The [complete arbitrary-field unary preflight](audit/official-field-unary-2238/Review.md) passed at `ede49ba93f1fce85660412ce31baaa8476a772f4`, adding original endpoint 069. All 32 targets passed, stock Lean, NanoDa and Conron accepted the Solution, and Challenge provenance is high trust. The [endpoint ledger](audit/official-field-unary-2238/endpoints.json) records source and scope bindings. Whole-paper semantic acceptance and registration remain incomplete.
 
 The [common-unary preflight](audit/common-unary-timeout-2133/Review.md) exhausted worker time in the comparator stage after successful Solution compilation and export. It adds no coverage; the rendering repair alone is not treated as a remedy for that resource failure.
 

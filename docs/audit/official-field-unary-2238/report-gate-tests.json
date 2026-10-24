@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "positive_exact_report_passed": true,
+  "negative_cases": [
+    {
+      "case": "prep-phase",
+      "rejected": true
+    },
+    {
+      "case": "wrong-commit",
+      "rejected": true
+    },
+    {
+      "case": "missing-target",
+      "rejected": true
+    },
+    {
+      "case": "lake-hash",
+      "rejected": true
+    },
+    {
+      "case": "wrong-executed-pipeline",
+      "rejected": true
+    },
+    {
+      "case": "preflight-mode",
+      "rejected": true
+    },
+    {
+      "case": "incomplete-run",
+      "rejected": true
+    },
+    {
+      "case": "weakened-default",
+      "rejected": true
+    },
+    {
+      "case": "unbound-source",
+      "rejected": true
+    }
+  ],
+  "historical_gate_refusal": "Old gate required literal mode: full; current workflow uses a validated full/preflight selector. New gate binds exact selector, rendered run title, executed pipeline and complete verification report.",
+  "gate_sha256": "2269284386135a6977b40fbbfa5708584a7fb078f23e40f091bdefa8b87ec39e"
+}
