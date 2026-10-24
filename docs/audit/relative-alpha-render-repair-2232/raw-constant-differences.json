@@ -1,0 +1,7 @@
+[{"retained_regions": 6,
+  "passed": false,
+  "module": "RelativeAlphaChallenge",
+  "differences":
+  [{"added": "termMatcher2228"},
+   {"added": "_aux_RelativeAlphaChallenge___elabRules_termMatcher2228_1"}],
+  "checked_constants": 428}]

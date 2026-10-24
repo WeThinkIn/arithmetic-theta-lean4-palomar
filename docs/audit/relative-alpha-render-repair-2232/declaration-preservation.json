@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-23T23:55:39.938914+00:00",
+  "all_original_constants_exactly_preserved": true,
+  "original_constants": 428,
+  "comparison_includes_types_ordered_universes_definition_and_proof_bodies": true,
+  "added_syntax_declarations": [
+    {
+      "added": "termMatcher2228"
+    },
+    {
+      "added": "_aux_RelativeAlphaChallenge___elabRules_termMatcher2228_1"
+    }
+  ],
+  "raw_total_declaration_identity_passed": false,
+  "raw_difference_retained": "output.json",
+  "exact_cache_reset_expression_equal": true,
+  "bindings_unchanged": true,
+  "clean_render_all19targets": true,
+  "prior_line_shift_candidate_failure_retained": "relative-alpha-exact-challenge-audit-2230/output.json",
+  "scope": "All original Challenge declarations match exactly; two added elaborator/parser definitions. Full current Solution comparison and original-endpoint audit remain separate gates."
+}

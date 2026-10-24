@@ -43,10 +43,17 @@ automation:
     author and responsible maintainer is Jue Ding. See docs/AIContributions.md for
     the contribution account and its source provenance.
 review:
-  status: agent-reviewed
-  notes: Original support/main targets preserved with explicitly checked original
-    support lemmas. Complete local strict structural and standard-axiom checks passed.
-    Solution is unchanged. Fresh official mechanical and semantic review remain pending.
+  status: self-assessed
+  notes: >-
+    Pre-submission assessment based on recorded machine checks: all 19 configured
+    obligations and their complete current-source target closure, standard axioms,
+    and exact recovery of original038039052 were checked. All 428 original
+    Challenge declarations are preserved; two syntax/elaboration definitions are
+    added. The repaired Challenge renders all 19 target anchors without errors.
+    These checks are not presented as a distinct agent's semantic review. The
+    historical official result remains bound to its original source revision;
+    official acceptance of this repaired revision and whole-paper semantic
+    acceptance have not been established.
 status:
   scope: 'Complete original accepted038 and039 at arbitrary universe u: root data
     and unique alpha frame for every positive level divisible by4, with naturality

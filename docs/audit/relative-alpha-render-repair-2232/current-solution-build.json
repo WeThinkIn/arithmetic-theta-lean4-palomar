@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "bindings_unchanged": true,
+  "exit_code": 0,
+  "compile_seconds": 30.801222593989223,
+  "complete_project_closure_modules": 3125,
+  "reused_source_bound_modules": 3124,
+  "fresh_solution_modules": 1,
+  "scope": "Current RelativeAlphaSolution compiled using unchanged current sources and verified2200cache. This is not yet complete Challenge/Solution comparison, original-endpoint audit, kernel replay or official acceptance."
+}

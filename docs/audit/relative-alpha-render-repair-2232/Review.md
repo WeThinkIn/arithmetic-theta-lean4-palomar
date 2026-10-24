@@ -1,0 +1,13 @@
+# Relative four-torsion alpha: rendering and current-source validation
+
+The Challenge now resolves Lean's private matcher extension through a term elaborator. This removes eleven rendered errors in the previous interface: ten private matcher-name errors and one downstream generated-helper lookup error. Compilation and rendering pass with all **19 target anchors and zero errors**; see [render.json](render.json). The repaired Challenge contains **71,136 bytes and 865 lines**.
+
+All **428 original serialized declarations** match exactly, including types, ordered universes, definition bodies and proof bodies. Two safe syntax/elaboration definitions are added, so the raw whole-module identity result remains failed because the declaration sets differ. The [preservation assessment](declaration-preservation.json) and [raw differences](raw-constant-differences.json) retain this distinction. The old and repaired cache-reset terms elaborate to [exactly equal expressions](cache-expression-equality.json). No original obligation is removed.
+
+The current Solution closure contains **3,125 project modules**. The [build record](current-solution-build.json) documents reuse of 3,124 source-bound modules from the completed current PhaseFreeKey cache and fresh compilation of the RelativeAlphaSolution root. All current dependency sources and compiled input bindings were checked before and after the build. Historical official verification is not assumed to apply automatically after dependency changes.
+
+The [complete strict comparison](full-strict.json) passes for all 19 configured targets, their full serialized dependency closure and standard permitted axioms, using fresh Challenge and current Solution exports. The [export records](export-bindings.json) identify the exact inputs. This is not a fresh independent-kernel replay.
+
+The [original recovery audit](original-endpoint-types.json) verifies original endpoints **038, 039 and 052** with exactly equal theorem types and ordered universes, standard axioms, and compiled original recovery equalities. Direct obligation accounting confirms [19 proposition holes and zero definition holes](target-holes.log). These are specification obligations whose proofs are supplied by the Solution.
+
+Historical official mechanical verification 39878375767 applies to source commit `c0c6947d83b2de5a9a881199bcc2a889a1169832`; it does not certify this repaired revision. Fresh official verification and semantic review remain separate. No whole-paper semantic acceptance, registration or additional original-endpoint coverage is claimed by these local checks.
