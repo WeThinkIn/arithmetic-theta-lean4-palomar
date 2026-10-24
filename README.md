@@ -124,6 +124,8 @@ Palomar currently limits each Challenge to **100 KiB (102,400 bytes) and 1,000 l
 
 The validated interfaces remain above the cap after dependency pruning and engineering optimization. Further aggressive compression is deferred to preserve the complete mathematical statements and a maintainable presentation. The corresponding Lean code is available for inspection and local reproduction; no exception to the current official limits is assumed, and no expansion request is being pursued at this stage. The complete proof and the eligible independent interfaces remain available alongside these source snapshots.
 
+For a future policy discussion, [`docs/PalomarSizeExpansionMaterial.md`](docs/PalomarSizeExpansionMaterial.md) records the exact sizes, retained dependencies, completed local checks, and the additional review resources that would be needed for an explicitly supported larger-Challenge path. It is informational only; no oversized submission or implied exemption is made.
+
 ## Reproduce the formal proof
 
 Install [Elan](https://github.com/leanprover/elan), then run:
