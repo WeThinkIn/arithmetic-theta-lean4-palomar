@@ -1,0 +1,7 @@
+[{"universes_equal": true,
+  "type_definitionally_equal": true,
+  "recovery": "ArithmeticThetaFormalCoverRecovery2418.recover_original_050",
+  "raw_type_expression_equal": true,
+  "original": "ArithmeticThetaFormalCoverR0210.arbitrary_formal_cover_constant",
+  "id": "accepted-050",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "seconds": 27.003815340809524,
+  "peak_rss_bytes": 1439432704,
+  "stop_reason": null,
+  "command": [
+    "/home/miniconda3/envs/lean4/bin/python",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-public-import-audit-2419/comparator.json",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/primitives.json",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-public-import-audit-2419/challenge.ndjson",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-public-import-audit-2419/solution.ndjson"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "cached_dependencies": 243,
+  "solution_sha256": "c9179e2fdae25ed15af684713cd63f1cdb3f12baf0148eedd61a8a14ff84f86d",
+  "solution_olean_sha256": "c9f0452a60efec278cee208222acf78b3adcb73019fadc4f37da990801604285",
+  "source_provenance": {
+    "primary_cache": 212,
+    "older_cache": 31
+  }
+}

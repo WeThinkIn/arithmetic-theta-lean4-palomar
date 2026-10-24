@@ -1,0 +1,4 @@
+module
+import all FormalCoverRecovery2418
+set_option maxRecDepth 8192
+example : ArithmeticThetaFormalCoverRecovery2418.recover_original_050 = ArithmeticThetaFormalCoverR0210.arbitrary_formal_cover_constant := by rfl

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "scope": "formal-cover",
+  "targets": 1,
+  "original_endpoint_ids": [
+    "accepted-050"
+  ],
+  "original_recovered_through_checked_structure_bridges": true,
+  "original_type_and_axiom_audit": [
+    {
+      "universes_equal": true,
+      "type_definitionally_equal": true,
+      "recovery": "ArithmeticThetaFormalCoverRecovery2418.recover_original_050",
+      "raw_type_expression_equal": true,
+      "original": "ArithmeticThetaFormalCoverR0210.arbitrary_formal_cover_constant",
+      "id": "accepted-050",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "cached_dependencies": 243,
+  "full_strict_and_standard_axioms_passed": true,
+  "definition_holes": 0,
+  "bindings_unchanged": true,
+  "challenge_source_unchanged": true,
+  "official_acceptance_claimed": false
+}

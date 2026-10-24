@@ -1,0 +1,5 @@
+{
+  "type": "AssertionError",
+  "message": "statement-preflight",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-current-full-audit-2418/run.py\", line 138, in <module>\n    main()\n  File \"/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-current-full-audit-2418/run.py\", line 87, in main\n    run('statement-preflight', [str(BIN / 'lean'), '-j1', '-M16384', str(R / 'StatementPreflight.lean')])\n  File \"/home/Palomar/workspace/arithmetic-theta/evidence/formal-cover-current-full-audit-2418/run.py\", line 77, in run\n    assert result['exit_code'] == 0 and result['stop_reason'] is None, label\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: statement-preflight\n"
+}
