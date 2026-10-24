@@ -1,0 +1,22 @@
+{
+  "scope": "common-half-hodge",
+  "commit": "727454ed73c6c66c7de499eeafe4f352cb6666ef",
+  "historical_official_run": 39818757064,
+  "source_sha256": "e8ffc9a2d81a21d9fd117c18035502e9289ba939d46bbc4ee847fe267a367d4d",
+  "challenge_bytes": 101771,
+  "challenge_lines": 983,
+  "configuration_sha256": "af9ae70d502e1013df6fa8a52e8ed4fe20dd9af0045e032fe2efceb3a8f4242a",
+  "compiled": true,
+  "literate_exit_code": 0,
+  "html_exit_code": 0,
+  "targets": 33,
+  "missing_target_anchors": [],
+  "rendered_errors": [],
+  "rendered_error_count": 0,
+  "clean_render": true,
+  "html_sha256": "56943feae8506137af4c50c415bf731b726711940be3b1ac8f58bff52374b12d",
+  "sanitizer_sha256": "bd0e82e9a21b3995ed182ef956e3d30640d8a38e28a6edc018462004d47c481a",
+  "official_result_inferred": false,
+  "unpublished_candidate": true,
+  "official_submission_changed": false
+}

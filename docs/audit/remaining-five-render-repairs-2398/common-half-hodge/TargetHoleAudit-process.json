@@ -1,0 +1,14 @@
+{
+  "exit_code": 0,
+  "seconds": 3.000722588971257,
+  "peak_rss_bytes": 8192,
+  "stop_reason": null,
+  "command": [
+    "/home/miniconda3/envs/lean4/bin/python",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+    "-j1",
+    "-M16384",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/remaining-four-full-audit-continuation-2395/common-half-hodge/TargetHoleAudit.lean"
+  ]
+}

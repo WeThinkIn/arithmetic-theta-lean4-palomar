@@ -1,0 +1,28 @@
+[{"retained_regions": 6,
+  "passed": false,
+  "module": "ComponentHodgeDegreeChallenge",
+  "differences":
+  [{"added": "termMX"},
+   {"added": "_aux_ComponentHodgeDegreeChallenge___elabRules_termMX_1"}],
+  "checked_constants": 804},
+ {"retained_regions": 6,
+  "passed": false,
+  "module": "CommonHalfHodgeChallenge",
+  "differences":
+  [{"added": "_aux_CommonHalfHodgeChallenge___elabRules_termMX_1"},
+   {"added": "termMX"}],
+  "checked_constants": 958},
+ {"retained_regions": 6,
+  "passed": false,
+  "module": "CompactAlphaChallenge",
+  "differences":
+  [{"added": "termMX"},
+   {"added": "_aux_CompactAlphaChallenge___elabRules_termMX_1"}],
+  "checked_constants": 773},
+ {"retained_regions": 6,
+  "passed": false,
+  "module": "CompactAlphaHalfLineChallenge",
+  "differences":
+  [{"added": "termMX"},
+   {"added": "_aux_CompactAlphaHalfLineChallenge___elabRules_termMX_1"}],
+  "checked_constants": 915}]

@@ -1,0 +1,8 @@
+[{"universes_equal": true,
+  "type_definitionally_equal": true,
+  "recovery": "ArithmeticThetaPalomarHodge495.recover_original_031",
+  "raw_type_expression_equal": true,
+  "original":
+  "ArithmeticThetaComponentDegreeR0184.component_hodge_power_degree",
+  "id": "accepted-031",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

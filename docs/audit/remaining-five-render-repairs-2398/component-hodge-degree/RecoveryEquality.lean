@@ -1,0 +1,4 @@
+module
+import all ComponentHodgeDegreeSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarHodge495.recover_original_031 = ArithmeticThetaComponentDegreeR0184.component_hodge_power_degree := by rfl

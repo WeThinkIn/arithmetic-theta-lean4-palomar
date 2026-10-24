@@ -1,0 +1,12 @@
+/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-publication-2370/project/SchemeMillerPhaseSolution.lean:18:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-publication-2370/project/SchemeMillerPhaseSolution.lean:21:74: warning: Variable name `σ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _σ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

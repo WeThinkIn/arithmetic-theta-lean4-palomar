@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "seconds": 24.002585414331406,
+  "peak_rss_bytes": 5392388096,
+  "stop_reason": null,
+  "command": [
+    "/home/miniconda3/envs/lean4/bin/python",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "/home/Palomar/workspace/arithmetic-theta/toolchains/lean-4.35.0-rc2-linux/bin/lean",
+    "-j1",
+    "-M16384",
+    "-o",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/remaining-four-current-full-audit-2388/common-half-hodge/CommonHalfHodgeSolution.olean",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-publication-2370/project/CommonHalfHodgeSolution.lean"
+  ]
+}

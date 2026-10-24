@@ -1,0 +1,22 @@
+{
+  "scope": "component-hodge-degree",
+  "commit": "727454ed73c6c66c7de499eeafe4f352cb6666ef",
+  "historical_official_run": 39899935787,
+  "source_sha256": "031bdd636b3a95476509e7ed8d66b2679e08c7a19d1f08cbec6a4fc63dbe39d4",
+  "challenge_bytes": 78675,
+  "challenge_lines": 778,
+  "configuration_sha256": "bee51d896eea867f1d42be2e88d2a849a3cfb81761d3dca18f925dfd0d996714",
+  "compiled": true,
+  "literate_exit_code": 0,
+  "html_exit_code": 0,
+  "targets": 32,
+  "missing_target_anchors": [],
+  "rendered_errors": [],
+  "rendered_error_count": 0,
+  "clean_render": true,
+  "html_sha256": "a42d26ba93f6261b7cd1d7ec9e7080bab26e66b6c86a4b9216746e7493f9fa04",
+  "sanitizer_sha256": "bd0e82e9a21b3995ed182ef956e3d30640d8a38e28a6edc018462004d47c481a",
+  "official_result_inferred": false,
+  "unpublished_candidate": true,
+  "official_submission_changed": false
+}

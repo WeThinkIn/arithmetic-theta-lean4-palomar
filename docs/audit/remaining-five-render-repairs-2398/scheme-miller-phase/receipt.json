@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "scope": "scheme-miller-phase",
+  "targets": 13,
+  "challenge_sha256": "89004dca59fb5d7fbf95212de02803b7f21df85e25e3949768650f6a51ba219c",
+  "current_solution_build_passed": true,
+  "full_strict_and_axiom_checks_passed": true,
+  "original_endpoint_ids": [
+    "accepted-051"
+  ],
+  "original_type_definitionally_equal": true,
+  "ordered_universes_exact": true,
+  "recovery_equality_passed": true,
+  "direct_proposition_holes": 13,
+  "definition_holes": 0,
+  "official_acceptance_claimed": false
+}

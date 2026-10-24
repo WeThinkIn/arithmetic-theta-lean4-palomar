@@ -39,5 +39,17 @@
   "remaining_validation": [
     "Fresh full official preflight for the exact published revision",
     "Ordinary intake and semantic review"
-  ]
+  ],
+  "render_revision_2398": {
+    "base_commit": "7ede2df8416954f2e5633d67814973747eb97628",
+    "challenge_sha256": "348523a3b59a529b71f36d89b4668a293cc97c0ec70488e002aaa7769ba8b96c",
+    "targets": 28,
+    "original_endpoint_ids": [
+      "accepted-041"
+    ],
+    "local_full_current_audit_passed": true,
+    "clean_render": true,
+    "evidence": "docs/audit/remaining-five-render-repairs-2398/compact-alpha/Review.md",
+    "fresh_official_verification": "pending"
+  }
 }

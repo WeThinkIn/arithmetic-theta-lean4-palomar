@@ -1,0 +1,22 @@
+{
+  "scope": "scheme-miller-phase",
+  "commit": "727454ed73c6c66c7de499eeafe4f352cb6666ef",
+  "historical_official_run": 39880226870,
+  "source_sha256": "89004dca59fb5d7fbf95212de02803b7f21df85e25e3949768650f6a51ba219c",
+  "challenge_bytes": 59897,
+  "challenge_lines": 722,
+  "configuration_sha256": "7d52b1e3d5ac584e92993e1e79b9e6f613d6a9cab2c28aaf15a3ab9c11ce18c4",
+  "compiled": true,
+  "literate_exit_code": 0,
+  "html_exit_code": 0,
+  "targets": 13,
+  "missing_target_anchors": [],
+  "rendered_errors": [],
+  "rendered_error_count": 0,
+  "clean_render": true,
+  "html_sha256": "9f31ec26faf9f321e226d066303bfa02b38204f523ac8561040b41b24a6f5494",
+  "sanitizer_sha256": "bd0e82e9a21b3995ed182ef956e3d30640d8a38e28a6edc018462004d47c481a",
+  "official_result_inferred": false,
+  "unpublished_candidate": true,
+  "official_submission_changed": false
+}

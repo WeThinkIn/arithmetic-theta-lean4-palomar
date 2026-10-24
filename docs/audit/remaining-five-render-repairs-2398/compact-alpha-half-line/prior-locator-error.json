@@ -1,0 +1,5 @@
+{
+  "error_type": "AssertionError",
+  "message": "[]",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/Palomar/workspace/arithmetic-theta/evidence/remaining-four-current-full-audit-2388/run.py\", line 74, in <module>\n    try:main()\n        ^^^^^^\n  File \"/home/Palomar/workspace/arithmetic-theta/evidence/remaining-four-current-full-audit-2388/run.py\", line 64, in main\n    matches=re.findall(r'(?:theorem|def)\\s+([\\w.]+recover_original_'+ident.split('-')[1]+r')\\b',(P/(cfg['solution_module']+'.lean')).read_text());assert len(matches)==1,matches;recovery=matches[0]\n                                                                                                                                                         ^^^^^^^^^^^^^^^\nAssertionError: []\n"
+}

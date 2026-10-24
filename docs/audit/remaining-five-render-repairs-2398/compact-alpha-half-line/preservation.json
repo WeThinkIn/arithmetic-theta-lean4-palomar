@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "mathematical_declarations_exactly_preserved": true,
+  "results": [
+    {
+      "module": "ComponentHodgeDegreeChallenge",
+      "checked_constants": 804,
+      "exact_original_constants": 804,
+      "compiler_macro_body_changes": [],
+      "added_syntax_declarations": [
+        {
+          "added": "termMX"
+        },
+        {
+          "added": "_aux_ComponentHodgeDegreeChallenge___elabRules_termMX_1"
+        }
+      ]
+    },
+    {
+      "module": "CommonHalfHodgeChallenge",
+      "checked_constants": 958,
+      "exact_original_constants": 958,
+      "compiler_macro_body_changes": [],
+      "added_syntax_declarations": [
+        {
+          "added": "_aux_CommonHalfHodgeChallenge___elabRules_termMX_1"
+        },
+        {
+          "added": "termMX"
+        }
+      ]
+    },
+    {
+      "module": "CompactAlphaChallenge",
+      "checked_constants": 773,
+      "exact_original_constants": 773,
+      "compiler_macro_body_changes": [],
+      "added_syntax_declarations": [
+        {
+          "added": "termMX"
+        },
+        {
+          "added": "_aux_CompactAlphaChallenge___elabRules_termMX_1"
+        }
+      ]
+    },
+    {
+      "module": "CompactAlphaHalfLineChallenge",
+      "checked_constants": 915,
+      "exact_original_constants": 915,
+      "compiler_macro_body_changes": [],
+      "added_syntax_declarations": [
+        {
+          "added": "termMX"
+        },
+        {
+          "added": "_aux_CompactAlphaHalfLineChallenge___elabRules_termMX_1"
+        }
+      ]
+    }
+  ],
+  "cache_reset_expressions_exactly_equal": true,
+  "raw_total_constant_identity_passed": false,
+  "raw_differences_retained": "output.json",
+  "clean_render_targets": 128,
+  "published": false,
+  "official_acceptance_inferred": false,
+  "full_current_solution_validation_still_required": true
+}

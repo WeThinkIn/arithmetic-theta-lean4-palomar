@@ -1,0 +1,8 @@
+[{"universes_equal": true,
+  "type_definitionally_equal": true,
+  "recovery": "ArithmeticThetaPalomarHalf505.recover_original_042",
+  "raw_type_expression_equal": true,
+  "original":
+  "ArithmeticThetaSquareLinesR0192.compact_alpha_canonical_half_line",
+  "id": "accepted-042",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

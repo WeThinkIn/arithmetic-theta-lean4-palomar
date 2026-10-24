@@ -1,0 +1,4 @@
+module
+import all CompactAlphaHalfLineSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarHalf505.recover_original_042 = ArithmeticThetaSquareLinesR0192.compact_alpha_canonical_half_line := by rfl

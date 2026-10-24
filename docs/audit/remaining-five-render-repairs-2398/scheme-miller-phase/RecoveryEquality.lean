@@ -1,0 +1,4 @@
+module
+import all SchemeMillerPhaseSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarSchemePhase433.recover_original_051 = ArithmeticThetaSchemeFourCharacterR0215.scheme_miller_phase := by rfl

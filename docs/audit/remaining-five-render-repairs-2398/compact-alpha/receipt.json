@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "scope": "compact-alpha",
+  "targets": 28,
+  "challenge_sha256": "348523a3b59a529b71f36d89b4668a293cc97c0ec70488e002aaa7769ba8b96c",
+  "current_solution_build_passed": true,
+  "full_strict_and_axiom_checks_passed": true,
+  "original_endpoint_ids": [
+    "accepted-041"
+  ],
+  "original_type_definitionally_equal": true,
+  "ordered_universes_exact": true,
+  "recovery_equality_passed": true,
+  "direct_proposition_holes": 28,
+  "definition_holes": 0,
+  "official_acceptance_claimed": false
+}

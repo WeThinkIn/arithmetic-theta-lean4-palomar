@@ -1,0 +1,7 @@
+[{"universes_equal": true,
+  "type_definitionally_equal": true,
+  "recovery": "ArithmeticThetaPalomarCommon511.recover_original_034",
+  "raw_type_expression_equal": true,
+  "original": "ArithmeticThetaCommonHalfHodgeR0185.common_half_hodge_cover",
+  "id": "accepted-034",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

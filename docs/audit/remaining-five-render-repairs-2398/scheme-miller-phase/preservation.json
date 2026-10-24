@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "utc": "2026-10-24T16:42:18.569618+00:00",
+  "original_constants": 397,
+  "all_original_types_and_universes_exact": true,
+  "non_target_bodies_exact": true,
+  "changed_selected_proof_bodies": [
+    "ArithmeticThetaPalomarSchemePhase433.schemeMillerPhase",
+    "ArithmeticThetaPalomarSchemePhase433.arbitrarySplitFiberBasis",
+    "ArithmeticThetaPalomarSchemePhase433.localDataExists",
+    "ArithmeticThetaReciprocityR0116.translatedCoordinates._proof_1",
+    "ArithmeticThetaGeometricPairingR0118.fourFunction._proof_1"
+  ],
+  "added_syntax": [
+    "termMX",
+    "_aux_SchemeMillerPhaseChallenge___elabRules_termMX_1"
+  ],
+  "raw_total_identity_passed": false,
+  "current_solution_full_audit_pending": true,
+  "official_acceptance_claimed": false
+}

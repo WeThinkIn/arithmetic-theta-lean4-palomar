@@ -1,7 +1,7 @@
 module
 public import Mathlib
 import all Lean.Meta.Match.Match
-@[expose] public section
+@[expose] public section elab "mX" : term => return Lean.mkConst (((((Lean.Name.num `_private.Lean.Meta.Match.Match 0).str "Lean").str "Meta").str "Match").str "matcherExt")
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
@@ -361,7 +361,7 @@ structure RelativeGroupLaw (R : Type u) [CommRing R] {A : Scheme.{u}} (f : A ⟶
       mul t' (schemeHomOverComp ψ hψ x) (schemeHomOverComp ψ hψ y)
 end WeierstrassProjModel
 namespace ArithmeticThetaRelativeKatoR0169
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 open NeronModelInfra
 variable (R : Type u) [CommRing R]
 abbrev Curve (W : WeierstrassCurve R) : Scheme.{u} :=
@@ -390,7 +390,7 @@ def schemeNsmul (G : RelativeGroupLaw R f) (n : ℕ) : A ⟶ A :=
 end WeierstrassProjModel.RelativeGroupLaw
 open NeronModelInfra
 namespace GoodReductionJacobian
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def schemeHomOverComp {B T' T A : Scheme.{u}} {t : T ⟶ B} {t' : T' ⟶ B} {f : A ⟶ B} (ψ : T' ⟶ T) (hψ : ψ ≫ t = t') (x : SchemeHomOver t f) : SchemeHomOver t' f :=
   ⟨ψ ≫ x.1, by rw [Category.assoc, x.2, hψ]⟩
 end GoodReductionJacobian
@@ -433,12 +433,12 @@ open WeierstrassProjModel MvPolynomial HomogeneousLocalization HomogeneousIdealQ
 attribute [local instance] MvPolynomial.gradedAlgebra
 namespace WeierstrassCurve.DrinfeldGlobal
 variable {T : Type u} [CommRing T] (W : WeierstrassCurve.Projective T)
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev coord (i : Fin 3) : ProjModelRingCR W :=
   Ideal.Quotient.mk (projModelHomogeneousIdealCR W).toIdeal (X i)
 theorem coord_mem (i : Fin 3) : coord W i ∈ projModelGradingCR W 1 :=
   mk_mem_quotGradingSubmodule _ _ (isHomogeneous_X T i)
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev ZChartRing : Type u := Away (projModelGradingCR W) (coord W 2)
 abbrev zChartι : Spec (CommRingCat.of (ZChartRing W)) ⟶ projModelCR W :=
   Proj.awayι (projModelGradingCR W) (coord W 2) (coord_mem W 2) one_pos
@@ -521,7 +521,7 @@ def splitCurve {k : Type u} [CommRing k] (e₁ e₂ e₃ : k) : WeierstrassCurve
   a₆ := -(e₁ * e₂ * e₃)
 end ArithmeticThetaFourTorsion
 namespace ArithmeticThetaMillerR0114
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev Curve (k : Type u) [CommRing k] (e : Fin 3 → k) :=
   ArithmeticThetaFourTorsion.splitCurve (e 0) (e 1) (e 2)
 abbrev Coord (k : Type u) [CommRing k] (e : Fin 3 → k) :=
@@ -551,7 +551,7 @@ def IsInfinityEmbedding (k : Type u) [Field k] (e : Fin 3 → k) (h : PowerSerie
   E (xFunction k e) = infinityX k h ∧ E (yFunction k e) = infinityY k h
 end ArithmeticThetaMillerR0114
 namespace ArithmeticThetaReciprocityR0116
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev Curve (k : Type u) [CommRing k] (e : Fin 3 → k) :=
   ArithmeticThetaMillerR0114.Curve k e
 abbrev FF (k : Type u) [CommRing k] (e : Fin 3 → k) :=
@@ -559,6 +559,11 @@ abbrev FF (k : Type u) [CommRing k] (e : Fin 3 → k) :=
 abbrev Translations (k : Type u) [Field k] (e : Fin 3 → k) :=
   (Curve k e).Point → (FF k e ≃ₐ[k] FF k e)
 attribute [local instance 2000] Semifield.toCommSemiring instIsDomain
+theorem _root_.ArithmeticThetaReciprocityR0116.translatedCoordinates._proof_1.{u_1} : ∀ (k : Type u_1) [inst : Field.{u_1} k] (e : Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))) → k),   Nontrivial.{u_1}     (@WeierstrassCurve.Affine.CoordinateRing.{u_1} k (@Field.toCommRing.{u_1} k inst)       (@ArithmeticThetaMillerR0114.Curve.{u_1} k (@Field.toCommRing.{u_1} k inst) e)) := by sorry
+run_cmd do
+  let some ci := (← Lean.getEnv).find? `ArithmeticThetaReciprocityR0116.translatedCoordinates._proof_1 | throwError "Missing selected auxiliary target"
+  let key : Lean.Meta.AuxLemmaKey := { type := ci.type, isPrivate := false, defeq := false }
+  Lean.modifyEnv fun env => Lean.Meta.auxLemmasExt.modifyState env fun st => { st with lemmas := st.lemmas.insert key (ci.name, ci.levelParams) }
 def translatedCoordinates (k : Type u) [Field k] (e : Fin 3 → k) : (Curve k e).Point → FF k e × FF k e | .zero => (ArithmeticThetaMillerR0114.xFunction k e, ArithmeticThetaMillerR0114.yFunction k e) | .some a b _ => let x := ArithmeticThetaMillerR0114.xFunction k e
       let y := ArithmeticThetaMillerR0114.yFunction k e
       let c := algebraMap k (FF k e)
@@ -593,7 +598,7 @@ def labels (k : Type u) [Field k] [DecidableEq k] (e : Fin 3 → k) (b : Marking
     pointX k e (2 • b 0 + 2 • b 1)]
 end ArithmeticThetaMarkingR0115
 namespace ArithmeticThetaGeometricPairingR0118
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev Curve (k : Type u) [CommRing k] (e : Fin 3 → k) :=
   ArithmeticThetaMillerR0114.Curve k e
 abbrev FF (k : Type u) [CommRing k] (e : Fin 3 → k) :=
@@ -608,6 +613,11 @@ structure LocalData (k : Type u) [Field k] (e : Fin 3 → k) where
 def value (k : Type u) [Field k] (e : Fin 3 → k) (D : LocalData k e) (f : FF k e) (P : (Curve k e).Point) : k :=
   ArithmeticThetaReciprocityR0116.localValue k e D.translations D.embedding f P
 attribute [local instance 2000] Semifield.toCommSemiring instIsDomain
+theorem _root_.ArithmeticThetaGeometricPairingR0118.fourFunction._proof_1.{u_1} : ∀ (k : Type u_1) [inst : Field.{u_1} k] (e : Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))) → k),   Nontrivial.{u_1}     (@WeierstrassCurve.Affine.CoordinateRing.{u_1} k (@Field.toCommRing.{u_1} k inst)       (@ArithmeticThetaMillerR0114.Curve.{u_1} k (@Field.toCommRing.{u_1} k inst) e)) := by sorry
+run_cmd do
+  let some ci := (← Lean.getEnv).find? `ArithmeticThetaGeometricPairingR0118.fourFunction._proof_1 | throwError "Missing selected auxiliary target"
+  let key : Lean.Meta.AuxLemmaKey := { type := ci.type, isPrivate := false, defeq := false }
+  Lean.modifyEnv fun env => Lean.Meta.auxLemmasExt.modifyState env fun st => { st with lemmas := st.lemmas.insert key (ci.name, ci.levelParams) }
 def fourFunction (k : Type u) [Field k] [DecidableEq k] (e : Fin 3 → k) : (Curve k e).Point → FF k e | .zero => 1 | P@(.some x y _) => if y = 0 then (ArithmeticThetaMillerR0114.xFunction k e - algebraMap k (FF k e) x)^2 else (algebraMap (ArithmeticThetaMillerR0114.Coord k e) (FF k e) (ArithmeticThetaMillerR0114.tangentClass k e x y))^2 / (ArithmeticThetaMillerR0114.xFunction k e - algebraMap k (FF k e) (ArithmeticThetaMarkingR0115.pointX k e (2 • P)))
 def movedValue (k : Type u) [Field k] [DecidableEq k] (e : Fin 3 → k) (D : LocalData k e) (P Q Z : (Curve k e).Point) : k :=
   value k e D (fourFunction k e P) (Q + Z) /
@@ -623,7 +633,7 @@ end ArithmeticThetaGeometricPairingR0118
 namespace ArithmeticThetaRelativeFourCharacterR0211
 open ArithmeticThetaRelativeKatoR0169 ArithmeticThetaRelativeDiscriminantR0171 ArithmeticThetaFullLevelCoverR0175 ArithmeticThetaLegendreComparisonR0177 ArithmeticThetaGlobalFourTorsionR0190
 variable (R : Type u) [CommRing R] (W : WeierstrassCurve R) (G : Law R W)
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def Changes {T : Scheme.{u}} (t : T ⟶ Base R) (M M' : FullLevel R W G 4 t) (A : ArithmeticThetaFourTorsion.Mat4) : Prop :=
   M'.x = G.mul t (G.nsmul t (A 0 0).val M.x) (G.nsmul t (A 1 0).val M.y) ∧
   M'.y = G.mul t (G.nsmul t (A 0 1).val M.x) (G.nsmul t (A 1 1).val M.y)
@@ -649,7 +659,7 @@ end ArithmeticThetaRelativeFourCharacterR0211
 namespace ArithmeticThetaRelativeFourCharacterR0211.RelativeGeometricPhase
 def tangentNumerator {A : Type u} [CommRing A] (e : Fin 3 → A) (x y : Fin 2 → A) (i j : Fin 2) : A :=
   y j * (x i - e i.castSucc) - y i * (x j - e i.castSucc)
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def numerator {A : Type u} [CommRing A] (e : Fin 3 → A) (x y : Fin 2 → A) : A :=
   tangentNumerator e x y 0 1 ^ 2 * (x 1 - e 1)^2 * (x 0 - e 1)
 def denominator {A : Type u} [CommRing A] (e : Fin 3 → A) (x y : Fin 2 → A) : A :=

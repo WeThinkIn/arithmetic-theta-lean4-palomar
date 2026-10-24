@@ -40,5 +40,17 @@
   "remaining_validation": [
     "Fresh full official preflight for the exact published revision",
     "Ordinary intake and semantic review"
-  ]
+  ],
+  "render_revision_2398": {
+    "base_commit": "7ede2df8416954f2e5633d67814973747eb97628",
+    "challenge_sha256": "89004dca59fb5d7fbf95212de02803b7f21df85e25e3949768650f6a51ba219c",
+    "targets": 13,
+    "original_endpoint_ids": [
+      "accepted-051"
+    ],
+    "local_full_current_audit_passed": true,
+    "clean_render": true,
+    "evidence": "docs/audit/remaining-five-render-repairs-2398/scheme-miller-phase/Review.md",
+    "fresh_official_verification": "pending"
+  }
 }

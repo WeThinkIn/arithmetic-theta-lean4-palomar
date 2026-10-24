@@ -43,5 +43,18 @@
     "permitted_axioms_unchanged": true,
     "source_definitions_and_solution_proofs_preserved": true,
     "strict_receipt": "docs/audit/geometric-interface-alignment-1686/receipt.json"
-  }
+  },
+  "render_revision_2398": {
+    "base_commit": "7ede2df8416954f2e5633d67814973747eb97628",
+    "challenge_sha256": "89004dca59fb5d7fbf95212de02803b7f21df85e25e3949768650f6a51ba219c",
+    "targets": 13,
+    "original_endpoint_ids": [
+      "accepted-051"
+    ],
+    "local_full_current_audit_passed": true,
+    "clean_render": true,
+    "evidence": "docs/audit/remaining-five-render-repairs-2398/scheme-miller-phase/Review.md",
+    "fresh_official_verification": "pending"
+  },
+  "historical_line_map_note": "Earlier line maps refer to their hash-bound snapshots; this rendering revision is separately bound."
 }

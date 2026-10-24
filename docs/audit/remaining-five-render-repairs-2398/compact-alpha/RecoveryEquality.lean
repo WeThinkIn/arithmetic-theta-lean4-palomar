@@ -1,0 +1,4 @@
+module
+import all CompactAlphaSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarCompactAlpha501.recover_original_041 = ArithmeticThetaGlobalFourTorsionR0190.compact_full_level_alpha := by rfl

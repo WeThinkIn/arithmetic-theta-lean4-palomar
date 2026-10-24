@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "base_commit": "7ede2df8416954f2e5633d67814973747eb97628",
+  "utc": "2026-10-24T16:58:55.715884+00:00",
+  "scopes": 5,
+  "targets": 141,
+  "rehashed_evidence_files": 12702,
+  "matched_source_files": 3160,
+  "cases": [
+    {
+      "scope": "component-hodge-degree",
+      "targets": 32,
+      "challenge_sha256": "031bdd636b3a95476509e7ed8d66b2679e08c7a19d1f08cbec6a4fc63dbe39d4",
+      "original_endpoint_ids": [
+        "accepted-031"
+      ],
+      "configuration": "comparator-component-hodge-degree.json",
+      "metadata": "submissions/component-hodge-degree/formalization.yaml"
+    },
+    {
+      "scope": "common-half-hodge",
+      "targets": 33,
+      "challenge_sha256": "e8ffc9a2d81a21d9fd117c18035502e9289ba939d46bbc4ee847fe267a367d4d",
+      "original_endpoint_ids": [
+        "accepted-034"
+      ],
+      "configuration": "comparator-common-half-hodge.json",
+      "metadata": "submissions/common-half-hodge/formalization.yaml"
+    },
+    {
+      "scope": "compact-alpha",
+      "targets": 28,
+      "challenge_sha256": "348523a3b59a529b71f36d89b4668a293cc97c0ec70488e002aaa7769ba8b96c",
+      "original_endpoint_ids": [
+        "accepted-041"
+      ],
+      "configuration": "comparator-compact-alpha.json",
+      "metadata": "submissions/compact-alpha/formalization.yaml"
+    },
+    {
+      "scope": "compact-alpha-half-line",
+      "targets": 35,
+      "challenge_sha256": "6b75ebfa92986c2fcf0e1dfff5aa7c48a31620272736952b827e5cbdd3e32ab8",
+      "original_endpoint_ids": [
+        "accepted-042"
+      ],
+      "configuration": "comparator-compact-alpha-half-line.json",
+      "metadata": "submissions/compact-alpha-half-line/formalization.yaml"
+    },
+    {
+      "scope": "scheme-miller-phase",
+      "targets": 13,
+      "challenge_sha256": "89004dca59fb5d7fbf95212de02803b7f21df85e25e3949768650f6a51ba219c",
+      "original_endpoint_ids": [
+        "accepted-051"
+      ],
+      "configuration": "comparator-scheme-miller-phase.json",
+      "metadata": "submissions/scheme-miller-phase/formalization.yaml"
+    }
+  ],
+  "official_credit_added": 0,
+  "semantic_review_claimed": false
+}

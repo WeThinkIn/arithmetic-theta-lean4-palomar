@@ -1,0 +1,7 @@
+[{"universes_equal": true,
+  "type_definitionally_equal": true,
+  "recovery": "ArithmeticThetaPalomarSchemePhase433.recover_original_051",
+  "raw_type_expression_equal": true,
+  "original": "ArithmeticThetaSchemeFourCharacterR0215.scheme_miller_phase",
+  "id": "accepted-051",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

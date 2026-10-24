@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "scope": "component-hodge-degree",
+  "targets": 32,
+  "challenge_sha256": "031bdd636b3a95476509e7ed8d66b2679e08c7a19d1f08cbec6a4fc63dbe39d4",
+  "current_solution_build_passed": true,
+  "full_strict_and_axiom_checks_passed": true,
+  "original_endpoint_ids": [
+    "accepted-031"
+  ],
+  "original_type_definitionally_equal": true,
+  "ordered_universes_exact": true,
+  "recovery_equality_passed": true,
+  "direct_proposition_holes": 32,
+  "definition_holes": 0,
+  "official_acceptance_claimed": false
+}
