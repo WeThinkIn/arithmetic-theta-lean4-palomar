@@ -1,0 +1,7 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarUnary489.recover_original_093",
+  "original":
+  "ArithmeticThetaUnaryKatoPowerR0160.unary_power_geometric_realization",
+  "id": "accepted-093",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

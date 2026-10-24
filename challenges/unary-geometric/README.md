@@ -5,3 +5,8 @@ Full original093 for every characteristic-zero field k : Type and positive d,m,N
 The independent Challenge retains all 1 original support/main targets and explicitly checks 4 original support lemmas, for 5 obligations. Solution supplies every proof and remains unchanged. The interface restores original module elaboration context, auxiliary declaration names and local-ring instance selection; it adds no main assumptions or permitted axioms.
 
 The Challenge has 515 lines and 51089 bytes, within the mandatory limits. All selected statements and their complete exported dependency closure passed the local strict structural comparison and standard-axiom closure checks; see the [local validation receipt](../../docs/audit/geometric-interface-alignment-1787/receipt.json). Scope.json retains the full original endpoint coverage. Fresh official mechanical verification and semantic review remain required for this revision.
+
+
+## Current rendering revision
+
+All five obligations now render without errors. Current Solution build, shared declarations, full target-closure comparison, standard axioms and exact original accepted-093 recovery pass. See [the complete audit](../../docs/audit/unary-geometric-render-repair-2387/Review.md). Fresh official verification and semantic review remain pending.

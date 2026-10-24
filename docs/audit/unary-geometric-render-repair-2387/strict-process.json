@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "seconds": 60.00633848505095,
+  "peak_rss_bytes": 3072704512,
+  "stop_reason": null,
+  "command": [
+    "/home/miniconda3/envs/lean4/bin/python",
+    "/home/wujie-ai-lean4-proof-agent-program/tools/codex_goal_affinity_exec.py",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/Precheck",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-current-full-audit-2378/comparator.json",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/strict-export-precheck-537/primitives.json",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-current-full-audit-2378/challenge.ndjson",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-current-full-audit-2378/solution.ndjson"
+  ]
+}

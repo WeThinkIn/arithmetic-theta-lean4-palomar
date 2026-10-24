@@ -1,0 +1,4 @@
+module
+import all UnaryGeometricSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarUnary489.recover_original_093 = ArithmeticThetaUnaryKatoPowerR0160.unary_power_geometric_realization := by rfl

@@ -42,5 +42,18 @@
     "permitted_axioms_unchanged": true,
     "source_definitions_and_solution_proofs_preserved": true,
     "strict_receipt": "docs/audit/geometric-interface-alignment-1787/receipt.json"
-  }
+  },
+  "render_revision_2387": {
+    "base_commit": "381f2ccf9a101e4f7090874f51e7b1061adbdaa4",
+    "challenge_sha256": "879ac72ac73bdcdee2fea6fd853d9935c89ab7a911eb396bd82ab13f36bdccf4",
+    "targets": 5,
+    "original_endpoint_ids": [
+      "accepted-093"
+    ],
+    "local_full_current_audit_passed": true,
+    "clean_render": true,
+    "evidence": "docs/audit/unary-geometric-render-repair-2387/Review.md",
+    "fresh_official_verification": "pending"
+  },
+  "historical_line_map_note": "Earlier line maps refer to their original hash-bound snapshots; the current rendering revision is separately bound."
 }

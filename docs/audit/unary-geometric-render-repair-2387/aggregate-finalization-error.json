@@ -1,0 +1,5 @@
+{
+  "error_type": "AttributeError",
+  "message": "'str' object has no attribute 'open'",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-current-full-audit-2378/run.py\", line 90, in <module>\n    try:main()\n        ^^^^^^\n  File \"/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-current-full-audit-2378/run.py\", line 85, in main\n    assert all(sha(p)==h for p,h in bindings.items())\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-current-full-audit-2378/run.py\", line 85, in <genexpr>\n    assert all(sha(p)==h for p,h in bindings.items())\n               ^^^^^^\n  File \"/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-current-full-audit-2378/run.py\", line 7, in sha\n    def sha(p):return m.sha(p)\n                      ^^^^^^^^\n  File \"/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-render-repair-strict-1984/supervisor.py\", line 10, in sha\n    with p.open('rb') as f:\n         ^^^^^^\nAttributeError: 'str' object has no attribute 'open'\n"
+}

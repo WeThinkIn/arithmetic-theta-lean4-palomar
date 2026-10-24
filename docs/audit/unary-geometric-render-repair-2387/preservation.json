@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "original_constants": 240,
+  "unchanged_original_constants": 235,
+  "all_original_types_and_universes_exact": true,
+  "non_target_bodies_exact": true,
+  "target_proof_placeholder_bodies_differ": [
+    "ArithmeticThetaCubicModelR0144.GenericAffineCubicIsomorphismR0144.genericPoint_structure",
+    "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_2",
+    "ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison._proof_4",
+    "ArithmeticThetaNodeCharts.node_torus_chart_equivalences",
+    "ArithmeticThetaPalomarUnary489.unaryPowerGeometricRealization"
+  ],
+  "added_syntax": [
+    "_aux_UnaryGeometricChallenge___elabRules_termMX_1",
+    "termMX"
+  ],
+  "raw_total_identity_passed": false,
+  "full_solution_and_holes_checks_pending": true
+}

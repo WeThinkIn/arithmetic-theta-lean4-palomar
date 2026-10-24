@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "utc": "2026-10-24T16:35:42.924291+00:00",
+  "scope": "unary-geometric",
+  "targets": 5,
+  "challenge_sha256": "879ac72ac73bdcdee2fea6fd853d9935c89ab7a911eb396bd82ab13f36bdccf4",
+  "source_commit_for_solution": "381f2ccf9a101e4f7090874f51e7b1061adbdaa4",
+  "render_errors": 0,
+  "cached_dependency_modules": 1458,
+  "full_current_solution_build_passed": true,
+  "shared_declarations": 237,
+  "complete_export_structural_and_standard_axiom_checks_passed": true,
+  "original_endpoint_ids": [
+    "accepted-093"
+  ],
+  "original_type_and_universes_exact": true,
+  "recovery_equality_passed": true,
+  "direct_proposition_holes": 5,
+  "definition_holes": 0,
+  "cache_reset_expression_exact": true,
+  "all_original_types_and_non_target_bodies_exact": true,
+  "selected_placeholder_proof_bodies_differ": true,
+  "rehashed_bound_files": 5886,
+  "initial_aggregate_failure_retained": "/home/Palomar/workspace/arithmetic-theta/evidence/unary-geometric-current-full-audit-2378/error.json",
+  "aggregate_failure_cause": "Only the final Python hash helper received str instead of Path; all ten prior compiler/export/comparison processes had succeeded. This independent reconciliation verifies those outputs and current inputs without recompiling.",
+  "official_acceptance_claimed": false
+}
