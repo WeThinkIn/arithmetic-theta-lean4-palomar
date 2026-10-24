@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-24T00:54:31.200726+00:00",
+  "passed": true,
+  "bindings_rehashed": 26055,
+  "source_commit": "52bbbffef6f37de532dc58407f759705fed74800",
+  "cases": [
+    {
+      "scope": "isogeny-alpha-cusps",
+      "original_endpoint_ids": [
+        "accepted-043",
+        "accepted-044"
+      ],
+      "targets": 29,
+      "challenge_bytes": 89218,
+      "challenge_lines": 944,
+      "source_sha256": "f5e29b277a8b1b234bec504c9acf2928d8ba2c842d5fbb946f1e46efa19cba55",
+      "original_raw_type_identity": true,
+      "original_types_definitionally_equal": true,
+      "ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equalities_rfl_passed": true,
+      "render_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-discriminant-name-render-2277/isogeny-alpha-cusps",
+      "original_audit_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-discriminant-original-endpoint-audit-2283/isogeny-alpha-cusps"
+    },
+    {
+      "scope": "discriminant-twist-root",
+      "original_endpoint_ids": [
+        "accepted-032",
+        "accepted-033"
+      ],
+      "targets": 35,
+      "challenge_bytes": 94492,
+      "challenge_lines": 913,
+      "source_sha256": "3f5f894cf43c2d5fade3bba3847af61ffed30ef8d7656c57a10559e3b1eb3332",
+      "original_raw_type_identity": true,
+      "original_types_definitionally_equal": true,
+      "ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equalities_rfl_passed": true,
+      "render_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/discriminant-private-constructor-render-2280/discriminant-twist-root",
+      "original_audit_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/isogeny-discriminant-original-endpoint-audit-2283/discriminant-twist-root"
+    }
+  ],
+  "original_endpoint_union_size": 4,
+  "original_scope_preserved": true,
+  "all_original_types_raw_identity": true,
+  "new_official_acceptance": false,
+  "publication_or_dispatch_performed": false
+}

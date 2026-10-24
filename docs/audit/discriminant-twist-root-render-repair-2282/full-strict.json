@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "scope": "discriminant-twist-root",
+  "targets": 35,
+  "checked_shared_declarations": 931,
+  "exports": {
+    "challenge": {
+      "bytes": 304102374,
+      "sha256": "85da5601e68d99152037c5f7ea50abff4bbcc9d9871585f593daee301e5c1914"
+    },
+    "solution": {
+      "bytes": 2162537572,
+      "sha256": "d768829c5fa6787113c833836fd66a9a49ede37346ee8cb589f319ed84b0ccb8"
+    }
+  },
+  "original_endpoint_recovery_reaudit_pending": true,
+  "official_acceptance_inferred": false
+}

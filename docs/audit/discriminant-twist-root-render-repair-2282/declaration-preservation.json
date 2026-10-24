@@ -1,0 +1,58 @@
+{
+  "mathematical_declarations_exactly_preserved": true,
+  "bindings_unchanged": true,
+  "results": [
+    {
+      "module": "IsogenyAlphaCuspsChallenge",
+      "checked_constants": 857,
+      "exact_original_constants": 857,
+      "compiler_macro_only_differences": [],
+      "added_syntax_declarations": [
+        {
+          "added": "termMatcher2276"
+        },
+        {
+          "added": "_aux_IsogenyAlphaCuspsChallenge___elabRules_termMatcher2276_1"
+        }
+      ]
+    },
+    {
+      "module": "DiscriminantTwistRootChallenge",
+      "checked_constants": 1110,
+      "exact_original_constants": 1109,
+      "compiler_macro_only_differences": [
+        {
+          "universes_equal": true,
+          "type_equal": true,
+          "name": "_aux_DiscriminantTwistRootChallenge___macroRules_commandRC_1",
+          "body_equal": false
+        }
+      ],
+      "added_syntax_declarations": [
+        {
+          "added": "_aux_DiscriminantTwistRootChallenge___elabRules_termMatcherKey2276_1"
+        },
+        {
+          "added": "termMatcherKey2276"
+        },
+        {
+          "added": "_aux_DiscriminantTwistRootChallenge___elabRules_termMatcher2276_1"
+        },
+        {
+          "added": "termMatcher2276"
+        },
+        {
+          "added": "_aux_DiscriminantTwistRootChallenge___elabRules_termMatcherKeyMk2279_1"
+        },
+        {
+          "added": "termMatcherKeyMk2279"
+        }
+      ]
+    }
+  ],
+  "raw_total_identity_passed": false,
+  "raw_difference_retained": "output.json",
+  "exact_cache_reset_and_seed_expressions_equal": true,
+  "clean_render": true,
+  "scope": "All original mathematical types, ordered universes, proof and definition bodies preserved. Discriminant compiler macro body changed; added syntax definitions documented. Full current solution checks remain separate."
+}

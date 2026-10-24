@@ -1,0 +1,156 @@
+{
+  "utc": "2026-10-24T00:50:10.359680+00:00",
+  "run": 40009948653,
+  "commit": "9c152d973f4f5d18f45021f3f9fa349e8764c14b",
+  "report": "/home/Palomar/workspace/arithmetic-theta/evidence/roots-render-official-collector-2135/40009948653/mechanical-report-12540838982.json",
+  "report_sha256": "60146655ed688548f94b1468f2efbd776688403bddc711cb531e4e352a381351",
+  "report_equals_collected_official_zip": true,
+  "source_bindings_verified": {
+    "SharpAndRootsChallenge.lean": "558253832d742fd0984fab41b60df98f54be9e714c554fa9ec2fb33b50c82931",
+    "SharpAndRootsSolution.lean": "412d045336df3bbb34b582c84080c26c6f78488716a4bcba405e3cae866bb80d",
+    "comparator-sharp-and-roots.json": "eed48ada1c461eef9800fb807a1c187d4bdfbbd6b5a32c6481d195bb6063cc9e",
+    "submissions/sharp-and-roots/formalization.yaml": "3f26cf67ae98e947c305ef7675ad3f9775686fcd9f640374f5b673b5f436316a",
+    "lakefile.toml": "8f621feb6421aa48184e1e20fda989951d9dbcf9cf1e642f4cfd58eafd40384d"
+  },
+  "status": "error",
+  "stage": "resource-exhausted",
+  "last_active_stage": "comparator",
+  "error_kind": "infrastructure/resource-exhausted",
+  "errors": [
+    "worker wall-clock capacity was exhausted; retry on a longer-running worker"
+  ],
+  "official_diagnostics": [
+    {
+      "code": "provider.resource_exhausted",
+      "explanation": "worker wall-clock capacity was exhausted; retry on a longer-running worker",
+      "next_action": "Inspect the reported resource limit and build usage. If the workload repeatedly exceeds the worker's capacity, reduce its resource use or arrange sufficient capacity before retrying. Retry an unchanged commit only after addressing the reported condition. Normal submission cooldowns still apply.",
+      "owner": "provider",
+      "repairable": false,
+      "retryable": true,
+      "stage": "resource-exhausted",
+      "summary": "worker wall-clock capacity was exhausted; retry on a longer-running worker"
+    }
+  ],
+  "profile": {
+    "id": "palomar-standard-v1",
+    "limits": {
+      "execution_budget_seconds": 19800,
+      "file_size_max_bytes": 1099511627776,
+      "job_timeout_minutes": 350,
+      "memory_high_percent": 95,
+      "memory_max_percent": 98,
+      "minimum_host_memory_bytes": 15032385536,
+      "minimum_workspace_free_bytes": 21474836480,
+      "open_files_max": 1048576,
+      "tasks_max": 32768
+    },
+    "observed_host": {
+      "architecture": "x86_64",
+      "effective_cpus": 4.0,
+      "memory_bytes": 16770748416,
+      "memory_high_bytes": 15932210995,
+      "memory_max_bytes": 16435333447,
+      "workspace_free_bytes": 114943913984
+    },
+    "runner": {
+      "architecture": "x86_64",
+      "label": "ubuntu-24.04",
+      "provider": "github-hosted"
+    },
+    "sha256": "94fcd7906a1b6c076c0036d742e1c5add8625e49bb474818ec8924576dbf0caa",
+    "trusted_tools": {
+      "bwrap_source_tag": "v0.12.0",
+      "toolchain_floor": "v4.35.0-rc2"
+    }
+  },
+  "important_phases": [
+    {
+      "elapsed_seconds": 49.308,
+      "max_rss_kib": 8318616,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "trusted-cache",
+      "returncode": 0,
+      "system_cpu_seconds": 49.085,
+      "user_cpu_seconds": 81.445,
+      "workspace_disk_peak_bytes": 7896788992
+    },
+    {
+      "elapsed_seconds": 53.231,
+      "max_rss_kib": 967792,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "canonical-challenge",
+      "returncode": 0,
+      "system_cpu_seconds": 2.0,
+      "user_cpu_seconds": 70.754,
+      "workspace_disk_peak_bytes": 3198976
+    },
+    {
+      "elapsed_seconds": 20.957,
+      "max_rss_kib": 1446932,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "challenge-export",
+      "returncode": 0,
+      "system_cpu_seconds": 2.257,
+      "user_cpu_seconds": 17.065,
+      "workspace_disk_peak_bytes": 323141632
+    },
+    {
+      "elapsed_seconds": 12700.069,
+      "max_rss_kib": 14373416,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "solution-build",
+      "returncode": 0,
+      "system_cpu_seconds": 2739.08,
+      "user_cpu_seconds": 40687.451,
+      "workspace_disk_peak_bytes": 12291633152
+    },
+    {
+      "elapsed_seconds": 213.686,
+      "max_rss_kib": 11665324,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "solution-export",
+      "returncode": 0,
+      "system_cpu_seconds": 8.461,
+      "user_cpu_seconds": 171.614,
+      "workspace_disk_peak_bytes": 2954944512
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 0,
+      "deadline_fired": false,
+      "exec_main_code": "",
+      "exec_main_status": "",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 0,
+      "phase": "comparator:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {},
+      "supervisor": "cgroup",
+      "supervisor_timeout": true,
+      "systemd_active_state": "active",
+      "systemd_result": null,
+      "systemd_result_before_cleanup": null
+    }
+  ],
+  "solution_build_and_export_passed": true,
+  "official_kernel_acceptance_recorded": false,
+  "comparator_telemetry_incomplete": true,
+  "current_public_diff_of_proof_inputs_and_scheduling": [
+    "lakefile.toml"
+  ],
+  "source_math_changed": false,
+  "original_endpoint_credit_added": 0,
+  "automatic_retry": false,
+  "policy_basis": "official-resource-profile-review-2140/receipt.json",
+  "policy_basis_rehashed": true,
+  "next_action": "Do not repeat the same full external run unchanged. Prepare the complete rendered interface for ordinary intake through official preparation plus fresh source/local gates, after existing serial owner2183 and earlier ready candidates; ordinary production profile is service-controlled. Do not request private runner tiers or assume expansion/registration authorization. Current Lake scheduling differs, but no measured root-specific speedup is established.",
+  "scope": "Exact-source-bound infrastructure wall-budget failure. Build/export success is not full verification. No mathematical counterexample or kernel rejection recorded; incomplete comparator telemetry does not identify which internal comparison consumed the remaining budget."
+}

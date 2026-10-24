@@ -1,0 +1,14 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarIsogeny502.recover_original_043",
+  "original":
+  "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_designated_expansion",
+  "id": "accepted-043",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+ {"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarIsogeny502.recover_original_044",
+  "original":
+  "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_all_cusp_orders",
+  "id": "accepted-044",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

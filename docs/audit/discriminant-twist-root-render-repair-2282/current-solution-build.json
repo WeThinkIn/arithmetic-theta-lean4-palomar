@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "bindings_unchanged": true,
+  "results": [
+    {
+      "scope": "isogeny-alpha-cusps",
+      "passed": true,
+      "fresh_modules": [
+        "CompactAlphaCanonicalHalfLineR0192",
+        "CompactAlphaHalfDivisorR0192",
+        "CompactFullLevelAlphaR0190",
+        "CoverComparisonDefinitions",
+        "DiskFrameComparisonAdapterR0192",
+        "FiniteEtaleProductCover",
+        "FourTorsionTateBehaviorR0190",
+        "IsogenyAlphaAllCuspOrdersR0193",
+        "IsogenyAlphaCuspsSolution",
+        "IsogenyAlphaDesignatedExpansionR0193",
+        "IsogenyHalfLinesDefinitionsR0193",
+        "OpenFullLevelAlphaR0190",
+        "OpenIsogenyAlphaR0193",
+        "QuotientFourMarkingR0193",
+        "SimultaneousSquareLineComparison",
+        "SquareIsometryInterfaceAdapterR0192",
+        "SquareIsomorphismTorsor",
+        "SquareLineComparisonDefinitionsR0192"
+      ],
+      "complete_closure_count": 2976,
+      "reused_modules": 2958,
+      "elapsed_seconds": 919.8644984359853
+    },
+    {
+      "scope": "discriminant-twist-root",
+      "passed": true,
+      "fresh_modules": [
+        "DiscriminantTwistRootSolution"
+      ],
+      "complete_closure_count": 3000,
+      "reused_modules": 2999,
+      "elapsed_seconds": 4.970432874746621
+    }
+  ],
+  "scope": "Current solutions built with freshly rehashed source-bound cache. Full Challenge/Solution strict audit, rendering and official acceptance are separate."
+}

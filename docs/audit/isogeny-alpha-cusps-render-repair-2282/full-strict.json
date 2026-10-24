@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "scope": "isogeny-alpha-cusps",
+  "targets": 29,
+  "checked_shared_declarations": 820,
+  "exports": {
+    "challenge": {
+      "bytes": 271368138,
+      "sha256": "d3c68d69d0f1addbac76869025ec96328c2f1588d43e23d988d271ad46e711d6"
+    },
+    "solution": {
+      "bytes": 2149493949,
+      "sha256": "b507a87c848c2622756e0b579762f733410f21a8052eb6092f975546bd93e14c"
+    }
+  },
+  "original_endpoint_recovery_reaudit_pending": true,
+  "official_acceptance_inferred": false
+}

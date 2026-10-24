@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "isogeny-alpha-cusps",
+  "original_endpoint_ids": [
+    "accepted-043",
+    "accepted-044"
+  ],
+  "type_and_ordered_universes_exact": true,
+  "standard_axioms_only": true,
+  "recovery_proof_equality": true,
+  "direct_proposition_holes": 29,
+  "definition_holes": 0
+}

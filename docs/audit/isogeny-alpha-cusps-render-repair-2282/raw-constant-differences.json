@@ -1,0 +1,25 @@
+[{"retained_regions": 6,
+  "passed": false,
+  "module": "IsogenyAlphaCuspsChallenge",
+  "differences":
+  [{"added": "termMatcher2276"},
+   {"added": "_aux_IsogenyAlphaCuspsChallenge___elabRules_termMatcher2276_1"}],
+  "checked_constants": 857},
+ {"retained_regions": 6,
+  "passed": false,
+  "module": "DiscriminantTwistRootChallenge",
+  "differences":
+  [{"universes_equal": true,
+    "type_equal": true,
+    "name": "_aux_DiscriminantTwistRootChallenge___macroRules_commandRC_1",
+    "body_equal": false},
+   {"added":
+    "_aux_DiscriminantTwistRootChallenge___elabRules_termMatcherKey2276_1"},
+   {"added": "termMatcherKey2276"},
+   {"added":
+    "_aux_DiscriminantTwistRootChallenge___elabRules_termMatcher2276_1"},
+   {"added": "termMatcher2276"},
+   {"added":
+    "_aux_DiscriminantTwistRootChallenge___elabRules_termMatcherKeyMk2279_1"},
+   {"added": "termMatcherKeyMk2279"}],
+  "checked_constants": 1110}]

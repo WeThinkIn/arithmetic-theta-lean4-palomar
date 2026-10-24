@@ -1,0 +1,12 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarTwist510.recover_original_032",
+  "original": "ArithmeticThetaCommonHalfHodgeR0185.discriminant_twist_unit",
+  "id": "accepted-032",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+ {"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarTwist510.recover_original_033",
+  "original": "ArithmeticThetaCommonHalfHodgeR0185.discriminant_tate_root",
+  "id": "accepted-033",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

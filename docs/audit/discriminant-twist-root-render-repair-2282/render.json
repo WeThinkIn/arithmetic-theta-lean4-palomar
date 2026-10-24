@@ -1,0 +1,20 @@
+{
+  "scope": "discriminant-twist-root",
+  "commit": "52bbbffef6f37de532dc58407f759705fed74800",
+  "historical_official_run": 39903789170,
+  "source_sha256": "3f5f894cf43c2d5fade3bba3847af61ffed30ef8d7656c57a10559e3b1eb3332",
+  "configuration_sha256": "0afe8224b3d9b6ab32c45ac2785a8d99bf7227fd514b9b324cbddab7ead3c15e",
+  "compiled": true,
+  "literate_exit_code": 0,
+  "html_exit_code": 0,
+  "targets": 35,
+  "missing_target_anchors": [],
+  "rendered_errors": [],
+  "rendered_error_count": 0,
+  "clean_render": true,
+  "html_sha256": "9204ab2011fc8b13e22e3423ccc7ea03756d34805a36b17d7e2f6271f370ce45",
+  "sanitizer_sha256": "bd0e82e9a21b3995ed182ef956e3d30640d8a38e28a6edc018462004d47c481a",
+  "official_result_inferred": false,
+  "unpublished_candidate": true,
+  "exact_cache_expression_equal": true
+}

@@ -1,0 +1,9 @@
+# Repaired roots interface: official worker resource limit
+
+Official full run [40009948653](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/40009948653) ended with `status: error`, `stage: resource-exhausted`, and `last_active_stage: comparator`. It checks source `9c152d973f4f5d18f45021f3f9fa349e8764c14b`. The [official report](mechanical-report.json) and [source-bound diagnosis](diagnosis.json) retain the failure.
+
+The canonical Challenge compilation and export succeeded. The Solution build completed successfully in **12,700.069 seconds** (about **3 hours 32 minutes**), and its export succeeded in **213.686 seconds**. The standard external worker had 4 effective CPUs, about 16 GiB of host memory and a **19,800-second execution budget**. The worker exhausted its wall-clock capacity in the comparator stage. Its comparator telemetry is incomplete, so the report does not identify which internal comparison consumed the remaining time. It records no accepted independent-kernel result for this repaired revision.
+
+This is an infrastructure resource failure, not a reported mathematical counterexample or kernel rejection. Successful compilation and export are not counted as complete official verification. Historical acceptance at the earlier revision remains separately documented; this attempt adds no original-endpoint credit.
+
+Repeating the same full external job unchanged is not planned. The complete interface can instead be prepared for the ordinary submission route using fresh source bindings, the existing local complete checks and official preparation checks. The ordinary service controls its execution resources and queue. This does not assume access to an operator-only runner, a special exemption or registration consent. Current public Lake scheduling differs from the failed revision, but no root-specific speedup has been measured.
