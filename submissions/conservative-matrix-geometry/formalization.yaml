@@ -45,13 +45,18 @@ automation:
     author and responsible maintainer is Jue Ding. See docs/AIContributions.md for
     the contribution account and its source provenance.
 review:
-  status: agent-reviewed
+  status: self-assessed
   notes: >-
-    Original complete targets and implementation retained. Repaired Challenge uses
-    Mathlib and Lean core. Local compilation, serialized declaration comparison,
-    strict target-closure comparison and exact original recovery pass.
-    Local official-version rendering has all34anchors and no elaboration errors.
-    Independent kernel replay passes; fresh official verification is pending.
+    Pre-submission assessment based on recorded machine checks: all 34 configured
+    obligations, shared declarations, complete target closure, standard axioms
+    and exact original035036 recovery were checked. Local rendering of the
+    current Challenge resolves all 34 target anchors without elaboration errors.
+    These checks are not presented as a distinct agent's semantic review.
+    Official full mechanical preflight 39974154203 passed at source commit
+    8f25de079ade1664370872d258174ff00aa90fd6 with stock Lean, NanoDa and Conron
+    acceptance. The historical result remains bound to its original metadata and
+    build configuration; it does not certify this metadata revision or establish
+    whole-paper semantic acceptance.
 status:
   scope: Complete original035/036. For EVERY nonempty finite family of positive-rank
     valid integral Gram matrices, constructs actual arithmetic indexing/formal identity
