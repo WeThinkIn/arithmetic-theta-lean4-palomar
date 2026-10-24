@@ -42,14 +42,17 @@ automation:
     author and responsible maintainer is Jue Ding. See docs/AIContributions.md for
     the contribution account and its source provenance.
 review:
-  status: agent-reviewed
+  status: self-assessed
   notes: >-
-    All 4 configured theorem obligations and original endpoints retained.
-    Exact shared declarations, full target-closure and standard-axiom checks pass.
-    The unchanged Solution retains checked original endpoint recovery.
-    Local official-version rendering shows all 4 anchors with zero errors.
-    Fresh official verification has not been started for this repaired Challenge;
-    the existing prior-revision official preflight is retained.
+    Recorded local checks retain all 4 configured theorem obligations and original
+    endpoints 049, 056 and 057. Shared declarations, full target closure, standard
+    axioms, original recovery and local rendering were checked for the documented
+    source snapshots. This is not a distinct agent's semantic review. Official
+    full run 40009948653 completed Solution build and export but exhausted the
+    standard external worker time budget at the comparator stage; it supplies no
+    current kernel acceptance. See docs/audit/roots-resource-limit-2292/Review.md.
+    Preparation checks and ordinary submission remain separate from that failed
+    full attempt; no unchanged full retry or special resource exception is assumed.
 status:
   scope: 'Three complete original endpoints: accepted-049 exact sharp finite theta-kernel
     determination for all larger prefixes and rank zero, accepted-056 actual prescribed

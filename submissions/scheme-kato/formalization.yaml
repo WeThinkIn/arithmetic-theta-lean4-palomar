@@ -43,10 +43,17 @@ automation:
     author and responsible maintainer is Jue Ding. See docs/AIContributions.md for
     the contribution account and its source provenance.
 review:
-  status: agent-reviewed
-  notes: Independent Mathlib-based Challenge and implementation bridge compiled locally;
-    Lean elaboration cache controls reproduce the original helper references.
-    Official mechanical and semantic review are pending for this configuration.
+  status: self-assessed
+  notes: >-
+    Recorded local machine checks cover all 13 configured targets and their
+    complete current-source exported closure with standard permitted axioms.
+    All original mathematical declarations are preserved; compiler/syntax changes
+    are documented in docs/audit/scheme-kato-render-repair-2311/Review.md.
+    All target anchors render without errors. Original endpoints 083, 086 pass exact
+    type and ordered-universe checks and compiled recovery equalities.
+    This is not a distinct agent's semantic review. Historical official results
+    remain source-bound; official acceptance of this repair and whole-paper
+    semantic acceptance have not been established.
 status:
   scope: 'Complete original accepted083 and086: Kato unit naturality for every actual
     pointed Cartesian base change, and intrinsic characterization by the actual Cartier

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "bindings_unchanged": true,
+  "complete_closure_count": 3153,
+  "source_bound_cached_dependencies": 3152,
+  "fresh_modules": [
+    "FieldUnaryNaturalitySolution"
+  ],
+  "build_seconds": 21.898113191127777,
+  "scope": "Current FieldUnaryNaturalitySolution built against individually source-and-object-bound complete cold cache. No official acceptance or new independent kernel result inferred."
+}

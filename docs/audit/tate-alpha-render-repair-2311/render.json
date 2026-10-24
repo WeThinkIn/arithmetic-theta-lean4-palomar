@@ -1,0 +1,19 @@
+{
+  "scope": "tate-alpha",
+  "commit": "9485adfdcb541dce05836df8411855e0b28b5074",
+  "historical_official_run": 39880370631,
+  "source_sha256": "4ceefcfc886eb224628dec24b00f5c68660ef97c84b1607311b400a9a5a79234",
+  "configuration_sha256": "87ffa1b2129d1f24c424dcec71c25f59a16d892f9d57080cbddd2323a5ccca0d",
+  "compiled": true,
+  "literate_exit_code": 0,
+  "html_exit_code": 0,
+  "targets": 16,
+  "missing_target_anchors": [],
+  "rendered_errors": [],
+  "rendered_error_count": 0,
+  "clean_render": true,
+  "html_sha256": "1b6326a4e0d00a2914395085c04864f2527661a174d536b1c4c568233e333a6d",
+  "sanitizer_sha256": "bd0e82e9a21b3995ed182ef956e3d30640d8a38e28a6edc018462004d47c481a",
+  "official_result_inferred": false,
+  "unpublished_candidate": true
+}

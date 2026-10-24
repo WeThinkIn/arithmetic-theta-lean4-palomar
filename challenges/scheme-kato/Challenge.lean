@@ -1,7 +1,7 @@
 module
 public import Mathlib
 import all Lean.Meta.Match.Match
-@[expose] public section
+@[expose] public section elab "mX" : term => return Lean.mkConst (((((Lean.Name.num `_private.Lean.Meta.Match.Match 0).str "Lean").str "Meta").str "Match").str "matcherExt")
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
@@ -424,7 +424,7 @@ structure RelativeGroupLaw (R : Type u) [CommRing R] {A : Scheme.{u}}
     schemeHomOverComp ψ hψ (mul t x y) =
       mul t' (schemeHomOverComp ψ hψ x) (schemeHomOverComp ψ hψ y)
 end WeierstrassProjModel
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace ArithmeticThetaRelativeKatoR0169
 open NeronModelInfra
 variable (R : Type u) [CommRing R]
@@ -502,7 +502,7 @@ def IsKatoFunction (W : WeierstrassCurve F) (G : Law F W) (c : ℕ)
         ArithmeticThetaGeometricNormR0150.IsFieldMap (G.schemeNsmul d) φ →
           ArithmeticThetaGeometricNormR0150.fieldNorm φ g = g
 end ArithmeticThetaGeneralEllipticKatoR0168
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace ArithmeticThetaRelativeKatoR0169
 variable (R : Type u) [CommRing R] [IsDomain R]
 abbrev GenericCurve (W : WeierstrassCurve R) : Scheme.{u} :=
@@ -541,7 +541,7 @@ def IsRelativeKato (c : ℕ) (g : (Curve R W).functionField) : Prop :=
       ArithmeticThetaGeometricNormR0150.fieldNorm φ g = g)
 end ArithmeticThetaRelativeKatoR0169
 open NeronModelInfra
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace GoodReductionJacobian
 def schemeHomOverComp {B T' T A : Scheme.{u}} {t : T ⟶ B} {t' : T' ⟶ B} {f : A ⟶ B}
     (ψ : T' ⟶ T) (hψ : ψ ≫ t = t') (x : SchemeHomOver t f) : SchemeHomOver t' f :=
@@ -673,7 +673,7 @@ def AffineFree (f : X ⟶ Y) (U : Y.Opens) : Prop :=
     (X.presheaf.obj (Opposite.op (f ⁻¹ᵁ U)))
 
 end ArithmeticThetaGeometricNormR0150
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace ArithmeticThetaPalomarNormalized394
 open ArithmeticThetaRelativeKatoR0169
 variable (R : Type u) [CommRing R] [IsDomain R] (W : WeierstrassCurve R) (G : Law R W)

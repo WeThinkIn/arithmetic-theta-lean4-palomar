@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "scope": "field-unary-naturality",
+  "original_endpoint_ids": [
+    "accepted-070"
+  ],
+  "type_and_ordered_universes_exact": true,
+  "standard_axioms_only": true,
+  "recovery_proof_equality": true,
+  "direct_proposition_holes": 32,
+  "definition_holes": 0
+}

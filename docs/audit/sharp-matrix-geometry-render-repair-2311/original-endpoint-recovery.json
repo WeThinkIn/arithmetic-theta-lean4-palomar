@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "sharp-matrix-geometry",
+  "original_endpoint_ids": [
+    "accepted-047",
+    "accepted-048"
+  ],
+  "type_and_ordered_universes_exact": true,
+  "standard_axioms_only": true,
+  "recovery_proof_equality": true,
+  "direct_proposition_holes": 34,
+  "definition_holes": 0
+}

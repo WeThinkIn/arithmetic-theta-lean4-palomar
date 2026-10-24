@@ -1,0 +1,12 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarSharp529.recover_original_047",
+  "original": "ArithmeticThetaSharpKernelR0195.sharp_matrix_geometric_family",
+  "id": "accepted-047",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+ {"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarSharp529.recover_original_048",
+  "original": "ArithmeticThetaSharpKernelR0195.sharp_geometric_cutoff",
+  "id": "accepted-048",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

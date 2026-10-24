@@ -1,0 +1,13 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarKato394.recover_original_083",
+  "original": "ArithmeticThetaSchemeKatoUnitR0250.scheme_kato_unit_naturality",
+  "id": "accepted-083",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+ {"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarKato394.recover_original_086",
+  "original":
+  "ArithmeticThetaKatoCharacterizationR0254.scheme_kato_intrinsic_characterization",
+  "id": "accepted-086",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

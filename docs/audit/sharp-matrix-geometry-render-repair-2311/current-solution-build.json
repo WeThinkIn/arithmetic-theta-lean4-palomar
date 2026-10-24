@@ -1,0 +1,665 @@
+{
+  "passed": true,
+  "bindings_unchanged": true,
+  "complete_closure_count": 3196,
+  "source_bound_cached_dependencies": 3087,
+  "fresh_modules": [
+    "AlignedMarkingProjectiveValuesR0142",
+    "CommonBasicUnaryCoverR0194",
+    "CompactIsogenyAlphaR0193",
+    "ComputedComplexKernelBasis",
+    "ComputedNullspaceBasis",
+    "ComputedPivotCoordinates",
+    "ComputedThetaColumns",
+    "Definitions.Def_AlgebraicGeometry_PolarisationRosati",
+    "Definitions.Def_AlgebraicGeometry_PolarisedAbelianScheme",
+    "Definitions.Def_AlgebraicGeometry_RelativeGroupLawEndDegree",
+    "Definitions.Def_AlgebraicGeometry_RiemannForm",
+    "Definitions.Def_CerednikDrinfeld_JPrimeTorsionDatum",
+    "Definitions.Def_CerednikDrinfeld_QMCanonicalPol",
+    "Definitions.Def_CerednikDrinfeld_QMCoarseModuli",
+    "Definitions.Def_CerednikDrinfeld_QMFineModuli",
+    "Definitions.Def_CerednikDrinfeld_QMModuli",
+    "Definitions.Def_CerednikDrinfeld_QMModuliProps",
+    "Definitions.Def_CerednikDrinfeld_Ribbon",
+    "Definitions.Def_CerednikDrinfeld_ShimuraCurve",
+    "Definitions.Def_CerednikDrinfeld_TwoPlaceTorsionDatum",
+    "Definitions.Def_EllipticCurve_TateModule",
+    "Definitions.Def_FLTPrelim_Modularity",
+    "Definitions.Def_GaloisRep_Adic",
+    "Definitions.Def_GaloisRep_Residual",
+    "Definitions.Def_GaloisRep_ResidualEquiv",
+    "Definitions.Def_GoodReductionJacobian_RelativeGroupLawAlgPointsV2",
+    "Definitions.Def_ModularCurve_ComplexPlaceDictionary",
+    "Definitions.Def_ModularCurve_ComponentGroup",
+    "Definitions.Def_ModularCurve_LaurentCoeff",
+    "Definitions.Def_ModularCurve_UniformizedHeckeCurve",
+    "Definitions.Def_ModularForm_HeckeOperator",
+    "Definitions.Def_QuaternionAlgebra_EichlerOrder",
+    "Definitions.Def_QuaternionAlgebra_Order",
+    "Definitions.Def_QuaternionAlgebra_Order_FiniteIdele",
+    "Definitions.Def_QuaternionAlgebra_ReducedNorm",
+    "Definitions.Def_Submodule_FiniteAdeleBox",
+    "Definitions.Def_Submodule_LocalBox",
+    "DistinctNormSharpArithmeticR0195",
+    "EarlyCertificateAssembly",
+    "EliminationPrimitives",
+    "EliminationReduction",
+    "FiniteSignMarkingRealizationR0142",
+    "FullLevelProjectiveRatiosR0194",
+    "GenericLiftScalarComparisonR0142",
+    "GeometricBasisProjectiveValuesR0141",
+    "GeometricIntertwinerRigidityR0141",
+    "GeometricScalarLiftR0141",
+    "GeometricThetaRelationsR0141",
+    "HigherLevelProjectiveRatiosR0194",
+    "IsogenyCanonicalHalfLineR0193",
+    "P2M.Sol.S_Algebra_exists_isDirectLimit_of_finitePresentation",
+    "P2M.Sol.S_AlgebraicGeometry_OModulePresheaf_cechFinrank_unit_zero_eq_one_of_bijective",
+    "P2M.Sol.S_AlgebraicGeometry_OModulePresheaf_nonempty_sections_top_equiv_H0_ofModules",
+    "P2M.Sol.S_AlgebraicGeometry_Polarisation_nonempty_rigidifiedIso_of_iso",
+    "P2M.Sol.S_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso",
+    "P2M.Sol.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_exists_iso_map_pullback_rigSection_comp_eq",
+    "P2M.Sol.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_iso_eq_of_map_pullback_rigSection_comp_eq",
+    "P2M.Sol.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_iso_eq_of_map_pullback_rigSection_comp_eq_of_surjective",
+    "P2M.Sol.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections",
+    "P2M.Sol.S_AlgebraicGeometry_RiemannForm_existsUnique_isConstScalar",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_IdealSheafData_IsInvertible_exists_tensor_iso_mul_module",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_dual_monoidalV2",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_existsUnique_app_eq_smul",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_finite_sections_of_isProper",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_of_nonempty_pullback_iso_of_isPullback",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_tensorUnit_of_field_monoidalV2",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_tensorUnit_of_nonempty_pullback_iso_tensorUnit",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_pullback_dual_monoidalV2",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_exists_iso_pullback_map_hom_eq_of_pullback_section_trivial",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_OrderedAffineCover_nonempty_of_compactSpace",
+    "P2M.Sol.S_AlgebraicGeometry_bijective_appTop_pullback_snd_of_forall_bijective_algebraMap_sections",
+    "P2M.Sol.S_GoodReductionJacobian_AbelianSchemePropertyBundle_bijective_algebraMap_sections_pullback",
+    "P2M.Sol.S_GoodReductionJacobian_AbelianSchemePropertyBundle_cechFinrank_unit_zero_eq_one",
+    "P2M.Sol.S_GoodReductionJacobian_AbelianSchemePropertyBundle_exists_eq_algebraMap_sections_top",
+    "RatioUnaryRegularSectionsR0195",
+    "RationalMatrixScalarExtension",
+    "SharpCoverRatiosDefinitionsR0194",
+    "SharpGeometricCutoffR0195",
+    "SharpKernelDefinitionsR0195",
+    "SharpMatrixGeometricFamilyR0195",
+    "SharpMatrixGeometrySolution",
+    "SquareHalfHodgeCoverDegreeR0194",
+    "SymmetricMarkingDefinitionsR0142",
+    "SymmetricMarkingFiniteSignsR0142",
+    "Theorems.Thm_Algebra_exists_isDirectLimit_of_finitePresentation",
+    "Theorems.Thm_AlgebraicGeometry_OModulePresheaf_cechFinrank_unit_zero_eq_one_of_bijective",
+    "Theorems.Thm_AlgebraicGeometry_OModulePresheaf_nonempty_sections_top_equiv_H0_ofModules",
+    "Theorems.Thm_AlgebraicGeometry_Polarisation_nonempty_rigidifiedIso_of_iso",
+    "Theorems.Thm_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso",
+    "Theorems.Thm_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_exists_iso_map_pullback_rigSection_comp_eq",
+    "Theorems.Thm_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_iso_eq_of_map_pullback_rigSection_comp_eq",
+    "Theorems.Thm_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_iso_eq_of_map_pullback_rigSection_comp_eq_of_surjective",
+    "Theorems.Thm_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections",
+    "Theorems.Thm_AlgebraicGeometry_RiemannForm_existsUnique_isConstScalar",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_IsInvertible_exists_tensor_iso_mul_module",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_dual_monoidalV2",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_existsUnique_app_eq_smul",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_finite_sections_of_isProper",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_of_nonempty_pullback_iso_of_isPullback",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_tensorUnit_of_field_monoidalV2",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_tensorUnit_of_nonempty_pullback_iso_tensorUnit",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_pullback_dual_monoidalV2",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_iso_pullback_map_hom_eq_of_pullback_section_trivial",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_OrderedAffineCover_nonempty_of_compactSpace",
+    "Theorems.Thm_AlgebraicGeometry_bijective_appTop_pullback_snd_of_forall_bijective_algebraMap_sections",
+    "Theorems.Thm_GoodReductionJacobian_AbelianSchemePropertyBundle_bijective_algebraMap_sections_pullback",
+    "Theorems.Thm_GoodReductionJacobian_AbelianSchemePropertyBundle_cechFinrank_unit_zero_eq_one",
+    "Theorems.Thm_GoodReductionJacobian_AbelianSchemePropertyBundle_exists_eq_algebraMap_sections_top",
+    "TruncationCertificates"
+  ],
+  "results": [
+    {
+      "module": "Definitions.Def_FLTPrelim_Modularity",
+      "exit_code": 0,
+      "seconds": 1.4293679343536496
+    },
+    {
+      "module": "Definitions.Def_AlgebraicGeometry_PolarisedAbelianScheme",
+      "exit_code": 0,
+      "seconds": 1.9892996209673584
+    },
+    {
+      "module": "Definitions.Def_AlgebraicGeometry_RelativeGroupLawEndDegree",
+      "exit_code": 0,
+      "seconds": 2.870669659227133
+    },
+    {
+      "module": "Definitions.Def_GaloisRep_Residual",
+      "exit_code": 0,
+      "seconds": 1.918418426066637
+    },
+    {
+      "module": "Definitions.Def_AlgebraicGeometry_PolarisationRosati",
+      "exit_code": 0,
+      "seconds": 1.7493197112344205
+    },
+    {
+      "module": "Definitions.Def_ModularCurve_ComponentGroup",
+      "exit_code": 0,
+      "seconds": 1.2011789199896157
+    },
+    {
+      "module": "Definitions.Def_GaloisRep_ResidualEquiv",
+      "exit_code": 0,
+      "seconds": 1.6503575779497623
+    },
+    {
+      "module": "Definitions.Def_GoodReductionJacobian_RelativeGroupLawAlgPointsV2",
+      "exit_code": 0,
+      "seconds": 3.8436169987544417
+    },
+    {
+      "module": "Definitions.Def_CerednikDrinfeld_Ribbon",
+      "exit_code": 0,
+      "seconds": 1.9422280616126955
+    },
+    {
+      "module": "Definitions.Def_GaloisRep_Adic",
+      "exit_code": 0,
+      "seconds": 3.148898561950773
+    },
+    {
+      "module": "Definitions.Def_CerednikDrinfeld_JPrimeTorsionDatum",
+      "exit_code": 0,
+      "seconds": 1.5366905201226473
+    },
+    {
+      "module": "Definitions.Def_ModularCurve_LaurentCoeff",
+      "exit_code": 0,
+      "seconds": 1.893302752636373
+    },
+    {
+      "module": "Definitions.Def_CerednikDrinfeld_TwoPlaceTorsionDatum",
+      "exit_code": 0,
+      "seconds": 2.0905933589674532
+    },
+    {
+      "module": "Definitions.Def_ModularCurve_ComplexPlaceDictionary",
+      "exit_code": 0,
+      "seconds": 2.6929672877304256
+    },
+    {
+      "module": "Definitions.Def_ModularForm_HeckeOperator",
+      "exit_code": 0,
+      "seconds": 1.8792485389858484
+    },
+    {
+      "module": "Definitions.Def_QuaternionAlgebra_Order",
+      "exit_code": 0,
+      "seconds": 1.5139936250634491
+    },
+    {
+      "module": "CompactIsogenyAlphaR0193",
+      "exit_code": 0,
+      "seconds": 13.355936876963824
+    },
+    {
+      "module": "Definitions.Def_ModularCurve_UniformizedHeckeCurve",
+      "exit_code": 0,
+      "seconds": 1.6016589468345046
+    },
+    {
+      "module": "Definitions.Def_QuaternionAlgebra_ReducedNorm",
+      "exit_code": 0,
+      "seconds": 1.754793614614755
+    },
+    {
+      "module": "Definitions.Def_EllipticCurve_TateModule",
+      "exit_code": 0,
+      "seconds": 6.972289850004017
+    },
+    {
+      "module": "Definitions.Def_Submodule_FiniteAdeleBox",
+      "exit_code": 0,
+      "seconds": 1.8937551719136536
+    },
+    {
+      "module": "EliminationPrimitives",
+      "exit_code": 0,
+      "seconds": 2.4476863900199533
+    },
+    {
+      "module": "Definitions.Def_QuaternionAlgebra_Order_FiniteIdele",
+      "exit_code": 0,
+      "seconds": 2.186056127306074
+    },
+    {
+      "module": "EliminationReduction",
+      "exit_code": 0,
+      "seconds": 2.662132860161364
+    },
+    {
+      "module": "Definitions.Def_Submodule_LocalBox",
+      "exit_code": 0,
+      "seconds": 2.358719903975725
+    },
+    {
+      "module": "ComputedNullspaceBasis",
+      "exit_code": 0,
+      "seconds": 2.4752341508865356
+    },
+    {
+      "module": "ComputedPivotCoordinates",
+      "exit_code": 0,
+      "seconds": 1.7863174639642239
+    },
+    {
+      "module": "Definitions.Def_QuaternionAlgebra_EichlerOrder",
+      "exit_code": 0,
+      "seconds": 1.7758328882046044
+    },
+    {
+      "module": "Definitions.Def_CerednikDrinfeld_ShimuraCurve",
+      "exit_code": 0,
+      "seconds": 11.451969429850578
+    },
+    {
+      "module": "IsogenyCanonicalHalfLineR0193",
+      "exit_code": 0,
+      "seconds": 16.555348300375044
+    },
+    {
+      "module": "Definitions.Def_CerednikDrinfeld_QMModuli",
+      "exit_code": 0,
+      "seconds": 3.946050382219255
+    },
+    {
+      "module": "Definitions.Def_CerednikDrinfeld_QMModuliProps",
+      "exit_code": 0,
+      "seconds": 2.239021596033126
+    },
+    {
+      "module": "P2M.Sol.S_Algebra_exists_isDirectLimit_of_finitePresentation",
+      "exit_code": 0,
+      "seconds": 3.2689443873241544
+    },
+    {
+      "module": "Definitions.Def_CerednikDrinfeld_QMCoarseModuli",
+      "exit_code": 0,
+      "seconds": 2.1238817228004336
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_OModulePresheaf_cechFinrank_unit_zero_eq_one_of_bijective",
+      "exit_code": 0,
+      "seconds": 3.007903200108558
+    },
+    {
+      "module": "Definitions.Def_CerednikDrinfeld_QMFineModuli",
+      "exit_code": 0,
+      "seconds": 2.2851355420425534
+    },
+    {
+      "module": "Definitions.Def_CerednikDrinfeld_QMCanonicalPol",
+      "exit_code": 0,
+      "seconds": 2.0586038529872894
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_OModulePresheaf_nonempty_sections_top_equiv_H0_ofModules",
+      "exit_code": 0,
+      "seconds": 3.3836292941123247
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_IdealSheafData_IsInvertible_exists_tensor_iso_mul_module",
+      "exit_code": 0,
+      "seconds": 3.4337736242450774
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_exists_iso_map_pullback_rigSection_comp_eq",
+      "exit_code": 0,
+      "seconds": 3.832654771860689
+    },
+    {
+      "module": "Definitions.Def_AlgebraicGeometry_RiemannForm",
+      "exit_code": 0,
+      "seconds": 40.28898091427982
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_existsUnique_app_eq_smul",
+      "exit_code": 0,
+      "seconds": 5.532257800921798
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_tensorUnit_of_field_monoidalV2",
+      "exit_code": 0,
+      "seconds": 1.684562618844211
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_OrderedAffineCover_nonempty_of_compactSpace",
+      "exit_code": 0,
+      "seconds": 1.2505172728560865
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_bijective_appTop_pullback_snd_of_forall_bijective_algebraMap_sections",
+      "exit_code": 0,
+      "seconds": 2.568630605004728
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_exists_iso_pullback_map_hom_eq_of_pullback_section_trivial",
+      "exit_code": 0,
+      "seconds": 4.30293696327135
+    },
+    {
+      "module": "GeometricScalarLiftR0141",
+      "exit_code": 0,
+      "seconds": 47.009307579137385
+    },
+    {
+      "module": "RationalMatrixScalarExtension",
+      "exit_code": 0,
+      "seconds": 2.309305038303137
+    },
+    {
+      "module": "P2M.Sol.S_GoodReductionJacobian_AbelianSchemePropertyBundle_bijective_algebraMap_sections_pullback",
+      "exit_code": 0,
+      "seconds": 3.6450509559363127
+    },
+    {
+      "module": "ComputedComplexKernelBasis",
+      "exit_code": 0,
+      "seconds": 1.6481494647450745
+    },
+    {
+      "module": "ComputedThetaColumns",
+      "exit_code": 0,
+      "seconds": 1.5588111742399633
+    },
+    {
+      "module": "Theorems.Thm_Algebra_exists_isDirectLimit_of_finitePresentation",
+      "exit_code": 0,
+      "seconds": 1.4771388652734458
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_OModulePresheaf_cechFinrank_unit_zero_eq_one_of_bijective",
+      "exit_code": 0,
+      "seconds": 1.5419956846162677
+    },
+    {
+      "module": "GeometricThetaRelationsR0141",
+      "exit_code": 0,
+      "seconds": 4.95596061181277
+    },
+    {
+      "module": "GeometricIntertwinerRigidityR0141",
+      "exit_code": 0,
+      "seconds": 8.724258377216756
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_OModulePresheaf_nonempty_sections_top_equiv_H0_ofModules",
+      "exit_code": 0,
+      "seconds": 1.5739803700707853
+    },
+    {
+      "module": "P2M.Sol.S_GoodReductionJacobian_AbelianSchemePropertyBundle_cechFinrank_unit_zero_eq_one",
+      "exit_code": 0,
+      "seconds": 2.796412957832217
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_dual_monoidalV2",
+      "exit_code": 0,
+      "seconds": 21.66102609410882
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_exists_iso_map_pullback_rigSection_comp_eq",
+      "exit_code": 0,
+      "seconds": 1.5905376090668142
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_IdealSheafData_IsInvertible_exists_tensor_iso_mul_module",
+      "exit_code": 0,
+      "seconds": 1.5309811090119183
+    },
+    {
+      "module": "GeometricBasisProjectiveValuesR0141",
+      "exit_code": 0,
+      "seconds": 3.2991462307982147
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_dual_monoidalV2",
+      "exit_code": 0,
+      "seconds": 1.6324877687729895
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_existsUnique_app_eq_smul",
+      "exit_code": 0,
+      "seconds": 1.6544317798689008
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_tensorUnit_of_field_monoidalV2",
+      "exit_code": 0,
+      "seconds": 1.5689965253695846
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_pullback_dual_monoidalV2",
+      "exit_code": 0,
+      "seconds": 1.6729154852218926
+    },
+    {
+      "module": "SymmetricMarkingDefinitionsR0142",
+      "exit_code": 0,
+      "seconds": 2.758130087982863
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_pullback_dual_monoidalV2",
+      "exit_code": 0,
+      "seconds": 1.638629441615194
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso",
+      "exit_code": 0,
+      "seconds": 3.8945781253278255
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_iso_eq_of_map_pullback_rigSection_comp_eq_of_surjective",
+      "exit_code": 0,
+      "seconds": 3.776189805008471
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Polarisation_subsingleton_rigidifiedIso",
+      "exit_code": 0,
+      "seconds": 1.6486737481318414
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_iso_eq_of_map_pullback_rigSection_comp_eq_of_surjective",
+      "exit_code": 0,
+      "seconds": 1.613273854367435
+    },
+    {
+      "module": "FiniteSignMarkingRealizationR0142",
+      "exit_code": 0,
+      "seconds": 4.556495191063732
+    },
+    {
+      "module": "GenericLiftScalarComparisonR0142",
+      "exit_code": 0,
+      "seconds": 3.60018210997805
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_OrderedAffineCover_nonempty_of_compactSpace",
+      "exit_code": 0,
+      "seconds": 1.1873264042660594
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_iso_pullback_map_hom_eq_of_pullback_section_trivial",
+      "exit_code": 0,
+      "seconds": 1.5926265236921608
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_bijective_appTop_pullback_snd_of_forall_bijective_algebraMap_sections",
+      "exit_code": 0,
+      "seconds": 1.6200328972190619
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Polarisation_nonempty_rigidifiedIso_of_iso",
+      "exit_code": 0,
+      "seconds": 1.6993266572244465
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_iso_eq_of_map_pullback_rigSection_comp_eq",
+      "exit_code": 0,
+      "seconds": 1.5903949597850442
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_finite_sections_of_isProper",
+      "exit_code": 0,
+      "seconds": 2.8403146830387414
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Polarisation_nonempty_rigidifiedIso_of_iso",
+      "exit_code": 0,
+      "seconds": 1.589250931981951
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_iso_eq_of_map_pullback_rigSection_comp_eq",
+      "exit_code": 0,
+      "seconds": 1.6773602021858096
+    },
+    {
+      "module": "SymmetricMarkingFiniteSignsR0142",
+      "exit_code": 0,
+      "seconds": 5.231270380783826
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_finite_sections_of_isProper",
+      "exit_code": 0,
+      "seconds": 2.6635363423265517
+    },
+    {
+      "module": "Theorems.Thm_GoodReductionJacobian_AbelianSchemePropertyBundle_bijective_algebraMap_sections_pullback",
+      "exit_code": 0,
+      "seconds": 2.5414784299209714
+    },
+    {
+      "module": "TruncationCertificates",
+      "exit_code": 0,
+      "seconds": 1.4936701343394816
+    },
+    {
+      "module": "Theorems.Thm_GoodReductionJacobian_AbelianSchemePropertyBundle_cechFinrank_unit_zero_eq_one",
+      "exit_code": 0,
+      "seconds": 2.5532109970226884
+    },
+    {
+      "module": "AlignedMarkingProjectiveValuesR0142",
+      "exit_code": 0,
+      "seconds": 3.172726881224662
+    },
+    {
+      "module": "EarlyCertificateAssembly",
+      "exit_code": 0,
+      "seconds": 2.9447781429626048
+    },
+    {
+      "module": "P2M.Sol.S_GoodReductionJacobian_AbelianSchemePropertyBundle_exists_eq_algebraMap_sections_top",
+      "exit_code": 0,
+      "seconds": 3.802473999094218
+    },
+    {
+      "module": "SharpCoverRatiosDefinitionsR0194",
+      "exit_code": 0,
+      "seconds": 3.762154510244727
+    },
+    {
+      "module": "Theorems.Thm_GoodReductionJacobian_AbelianSchemePropertyBundle_exists_eq_algebraMap_sections_top",
+      "exit_code": 0,
+      "seconds": 2.7941637970507145
+    },
+    {
+      "module": "SquareHalfHodgeCoverDegreeR0194",
+      "exit_code": 0,
+      "seconds": 4.17408712208271
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_RiemannForm_existsUnique_isConstScalar",
+      "exit_code": 0,
+      "seconds": 5.588012687861919
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_RiemannForm_existsUnique_isConstScalar",
+      "exit_code": 0,
+      "seconds": 2.6137475157156587
+    },
+    {
+      "module": "CommonBasicUnaryCoverR0194",
+      "exit_code": 0,
+      "seconds": 36.51560912327841
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections",
+      "exit_code": 0,
+      "seconds": 362.3174891169183
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_RelPicard_RigidifiedLineBundle_nonempty_iso_of_pullback_finite_faithfullyFlat_of_bijective_sections",
+      "exit_code": 0,
+      "seconds": 1.6121480730362236
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_tensorUnit_of_nonempty_pullback_iso_tensorUnit",
+      "exit_code": 0,
+      "seconds": 3.281756276730448
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_tensorUnit_of_nonempty_pullback_iso_tensorUnit",
+      "exit_code": 0,
+      "seconds": 2.5514684352092445
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_of_nonempty_pullback_iso_of_isPullback",
+      "exit_code": 0,
+      "seconds": 2.6386826569214463
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_nonempty_iso_of_nonempty_pullback_iso_of_isPullback",
+      "exit_code": 0,
+      "seconds": 2.6184743591584265
+    },
+    {
+      "module": "FullLevelProjectiveRatiosR0194",
+      "exit_code": 0,
+      "seconds": 156.47754083992913
+    },
+    {
+      "module": "HigherLevelProjectiveRatiosR0194",
+      "exit_code": 0,
+      "seconds": 7.157805266324431
+    },
+    {
+      "module": "SharpKernelDefinitionsR0195",
+      "exit_code": 0,
+      "seconds": 11.73953035986051
+    },
+    {
+      "module": "DistinctNormSharpArithmeticR0195",
+      "exit_code": 0,
+      "seconds": 3.2190147768706083
+    },
+    {
+      "module": "SharpGeometricCutoffR0195",
+      "exit_code": 0,
+      "seconds": 4.044662702828646
+    },
+    {
+      "module": "RatioUnaryRegularSectionsR0195",
+      "exit_code": 0,
+      "seconds": 7.616504456382245
+    },
+    {
+      "module": "SharpMatrixGeometricFamilyR0195",
+      "exit_code": 0,
+      "seconds": 8.138603523373604
+    },
+    {
+      "module": "SharpMatrixGeometrySolution",
+      "exit_code": 0,
+      "seconds": 22.195664670784026
+    }
+  ],
+  "scope": "Current full SharpMatrixGeometrySolution closure built using verified current-source caches; full target comparison and official acceptance remain separate."
+}

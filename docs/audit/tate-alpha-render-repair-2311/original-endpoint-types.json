@@ -1,0 +1,13 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarTateAlpha445.recover_original_040",
+  "original":
+  "ArithmeticThetaGlobalFourTorsionR0190.four_torsion_tate_behavior",
+  "id": "accepted-040",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+ {"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarSchemeAlpha437.recover_original_052",
+  "original": "ArithmeticThetaSchemeFourCharacterR0215.scheme_alpha_character",
+  "id": "accepted-052",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

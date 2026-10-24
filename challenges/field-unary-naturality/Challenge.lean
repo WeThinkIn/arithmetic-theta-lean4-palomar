@@ -8,7 +8,7 @@ set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 set_option maxHeartbeats 1600000
 set_option maxRecDepth 4096
-macro "rC":command =>`(run_cmd Lean.modifyEnv fun env =>Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {})
+macro "rC":command=>`(run_cmd Lean.modifyEnv fun env=>$(Lean.mkIdent "_private.Lean.Meta.Match.Match.0.Lean.Meta.Match.matcherExt".toName).setState (Lean.Meta.auxLemmasExt.setState env {}) {})
 elab "eN" n:num : command => do let ss ← Lean.Elab.Command.getScopes; let ns := (ss.take n.getNat).reverse.foldl (fun a s => Lean.Name.str a s.header) Lean.Name.anonymous; Lean.Elab.Command.elabCommand (← `(end $(Lean.mkIdent ns)))
 noncomputable section
 universe u v

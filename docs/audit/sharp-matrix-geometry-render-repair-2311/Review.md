@@ -1,0 +1,11 @@
+# Complete sharp-matrix-geometry interface: rendering and current-source checks
+
+The complete Challenge renders all **34 configured target anchors with zero errors**. Its **102,301 bytes and 988 lines** satisfy the recorded official Challenge limits. See [the render record](render.json). All original targets remain selected.
+
+All 979 original serialized declarations match exactly. Two syntax/elaboration declarations are added. All original mathematical declaration types, ordered universe parameters, definition bodies and proof bodies are exactly preserved. The raw whole-module identity result records compiler/syntax differences; it is not described as an unconditional identity pass. See [the preservation assessment](declaration-preservation.json) and [raw differences](raw-constant-differences.json). The [cache-expression check](cache-expression-equality.log) establishes exact equality of the old and repaired cache-reset expressions after elaboration.
+
+The [current Solution build](current-solution-build.json) passes with individually source-bound and rehashed compilation caches. The [complete target-closure comparison](full-strict.json) passes for all 34 obligations and standard permitted axioms. [Export hashes](export-bindings.json) identify the actual Challenge and Solution inputs. These local comparisons are separate from independent-kernel replay and official acceptance.
+
+Original endpoints **047, 048** pass exact theorem-type and ordered-universe comparison, standard-axiom checks, and compiled rfl recovery equalities. See [the original type audit](original-endpoint-types.json) and [recovery assessment](original-endpoint-recovery.json). Recovery equality is checked together with full type preservation. [Direct obligation accounting](target-holes.log) confirms 34 proposition holes and zero definition holes in the Challenge; Solution supplies the proofs.
+
+The [combined readiness assessment](publication-readiness.json) binds these results. The strict per-scope receipt lists the separate original recovery audit as pending; its completion is established by the linked recovery assessment. Historical official results remain bound to their own exact revisions. This repair adds no official endpoint coverage and does not establish whole-paper semantic acceptance or registration.

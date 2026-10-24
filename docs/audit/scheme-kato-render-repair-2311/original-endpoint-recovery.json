@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "scheme-kato",
+  "original_endpoint_ids": [
+    "accepted-083",
+    "accepted-086"
+  ],
+  "type_and_ordered_universes_exact": true,
+  "standard_axioms_only": true,
+  "recovery_proof_equality": true,
+  "direct_proposition_holes": 13,
+  "definition_holes": 0
+}

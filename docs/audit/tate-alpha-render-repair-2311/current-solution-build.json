@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "bindings_unchanged": true,
+  "results": [
+    {
+      "scope": "scheme-kato",
+      "passed": true,
+      "fresh_modules": [
+        "ArbitraryKatoCartierDivisorR0249",
+        "ArbitraryKatoNormR0251",
+        "ArbitraryKatoUnitDefinitionsR0249",
+        "ArbitraryKatoUnitExistenceR0249",
+        "ArbitraryKatoUnitNaturalityR0249",
+        "CartierUnitRatioExtensionR0254",
+        "FiniteEtaleFreeCoverR0251",
+        "FiniteEtaleNormBaseChangeR0251",
+        "FiniteEtaleNormFamilyR0251",
+        "FiniteEtaleNormSectionR0251",
+        "GlobalUnitTwoThreeNormRigidityR0254",
+        "KatoCharacterizationDefinitionsR0254",
+        "NormalModelUnitIndependenceR0249",
+        "NormalModelUnitSpecializationR0249",
+        "SchemeKatoCartierDivisorR0250",
+        "SchemeKatoIntrinsicCharacterizationR0254",
+        "SchemeKatoNormDefinitionsR0251",
+        "SchemeKatoNormR0251",
+        "SchemeKatoSolution",
+        "SchemeKatoUnitDefinitionsR0250",
+        "SchemeKatoUnitExistenceR0250",
+        "SchemeKatoUnitNaturalityR0250",
+        "SchemeKatoUnitUniquenessR0250",
+        "SchemeMultiplicationDegreeR0250",
+        "SchemeTorsionCartesianR0250"
+      ],
+      "complete_closure_count": 2565,
+      "reused_modules": 2540,
+      "elapsed_seconds": 93.56915743136778
+    },
+    {
+      "scope": "tate-alpha",
+      "passed": true,
+      "fresh_modules": [
+        "FourTorsionTateBehaviorR0190",
+        "TateAlphaSolution"
+      ],
+      "complete_closure_count": 3126,
+      "reused_modules": 3124,
+      "elapsed_seconds": 105.66036608582363
+    }
+  ],
+  "scope": "Current solutions built with freshly rehashed source-bound cache. Full Challenge/Solution strict audit, rendering and official acceptance are separate."
+}

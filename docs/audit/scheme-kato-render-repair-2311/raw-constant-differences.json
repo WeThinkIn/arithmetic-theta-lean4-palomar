@@ -1,0 +1,30 @@
+[{"retained_regions": 6,
+  "passed": false,
+  "module": "SharpMatrixGeometryChallenge",
+  "differences":
+  [{"added": "_aux_SharpMatrixGeometryChallenge___elabRules_termMX_1"},
+   {"added": "termMX"}],
+  "checked_constants": 979},
+ {"retained_regions": 6,
+  "passed": false,
+  "module": "SchemeKatoChallenge",
+  "differences":
+  [{"added": "termMX"},
+   {"added": "_aux_SchemeKatoChallenge___elabRules_termMX_1"}],
+  "checked_constants": 374},
+ {"retained_regions": 6,
+  "passed": false,
+  "module": "TateAlphaChallenge",
+  "differences":
+  [{"added": "termMX"},
+   {"added": "_aux_TateAlphaChallenge___elabRules_termMX_1"}],
+  "checked_constants": 485},
+ {"retained_regions": 6,
+  "passed": false,
+  "module": "FieldUnaryNaturalityChallenge",
+  "differences":
+  [{"universes_equal": true,
+    "type_equal": true,
+    "name": "_aux_FieldUnaryNaturalityChallenge___macroRules_commandRC_1",
+    "body_equal": false}],
+  "checked_constants": 1273}]

@@ -1,0 +1,68 @@
+{
+  "mathematical_declarations_exactly_preserved": true,
+  "bindings_unchanged": true,
+  "results": [
+    {
+      "module": "SharpMatrixGeometryChallenge",
+      "checked_constants": 979,
+      "exact_original_constants": 979,
+      "compiler_macro_only_differences": [],
+      "added_syntax_declarations": [
+        {
+          "added": "_aux_SharpMatrixGeometryChallenge___elabRules_termMX_1"
+        },
+        {
+          "added": "termMX"
+        }
+      ]
+    },
+    {
+      "module": "SchemeKatoChallenge",
+      "checked_constants": 374,
+      "exact_original_constants": 374,
+      "compiler_macro_only_differences": [],
+      "added_syntax_declarations": [
+        {
+          "added": "termMX"
+        },
+        {
+          "added": "_aux_SchemeKatoChallenge___elabRules_termMX_1"
+        }
+      ]
+    },
+    {
+      "module": "TateAlphaChallenge",
+      "checked_constants": 485,
+      "exact_original_constants": 485,
+      "compiler_macro_only_differences": [],
+      "added_syntax_declarations": [
+        {
+          "added": "termMX"
+        },
+        {
+          "added": "_aux_TateAlphaChallenge___elabRules_termMX_1"
+        }
+      ]
+    },
+    {
+      "module": "FieldUnaryNaturalityChallenge",
+      "checked_constants": 1273,
+      "exact_original_constants": 1272,
+      "compiler_macro_only_differences": [
+        {
+          "universes_equal": true,
+          "type_equal": true,
+          "name": "_aux_FieldUnaryNaturalityChallenge___macroRules_commandRC_1",
+          "body_equal": false
+        }
+      ],
+      "added_syntax_declarations": []
+    }
+  ],
+  "raw_total_identity_passed": false,
+  "raw_difference_retained": "output.json",
+  "exact_cache_reset_expressions_equal": true,
+  "clean_render": true,
+  "targets": 95,
+  "scope": "All original mathematical types, ordered universes, proof and definition bodies preserved. FieldUnaryNaturality compiler macro body differs; three other modules add syntax declarations only. Full current Solution checks and official acceptance remain separate."
+}

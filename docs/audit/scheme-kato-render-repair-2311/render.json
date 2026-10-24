@@ -1,0 +1,19 @@
+{
+  "scope": "scheme-kato",
+  "commit": "9485adfdcb541dce05836df8411855e0b28b5074",
+  "historical_official_run": 39789657615,
+  "source_sha256": "534ac5464dc53907e67f2480f9166b5ba0838804b731fed929f6aaded9e57c03",
+  "configuration_sha256": "6f268884cec0cf3ce10f388b82822674b4e367ec6962a3cb96a81fd1df5ef89d",
+  "compiled": true,
+  "literate_exit_code": 0,
+  "html_exit_code": 0,
+  "targets": 13,
+  "missing_target_anchors": [],
+  "rendered_errors": [],
+  "rendered_error_count": 0,
+  "clean_render": true,
+  "html_sha256": "52b76f970ae88d1e80d6af97c63a336884aeb16c98b16fc6df8c75ed03b2ae00",
+  "sanitizer_sha256": "bd0e82e9a21b3995ed182ef956e3d30640d8a38e28a6edc018462004d47c481a",
+  "official_result_inferred": false,
+  "unpublished_candidate": true
+}

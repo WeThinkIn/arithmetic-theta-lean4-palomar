@@ -1,0 +1,87 @@
+{
+  "utc": "2026-10-24T01:27:51.659257+00:00",
+  "passed": true,
+  "bindings_rehashed": 27468,
+  "source_commit": "9485adfdcb541dce05836df8411855e0b28b5074",
+  "cases": [
+    {
+      "scope": "scheme-kato",
+      "original_endpoint_ids": [
+        "accepted-083",
+        "accepted-086"
+      ],
+      "targets": 13,
+      "challenge_bytes": 57331,
+      "challenge_lines": 871,
+      "source_sha256": "534ac5464dc53907e67f2480f9166b5ba0838804b731fed929f6aaded9e57c03",
+      "render_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/four-scope-render-python-repair-2298/scheme-kato",
+      "original_audit_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-tate-original-endpoint-audit-2303/scheme-kato",
+      "strict_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-tate-current-full-strict-2302/scheme-kato",
+      "build_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-tate-current-build-2300",
+      "original_raw_type_identity": true,
+      "ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equalities_rfl_passed": true
+    },
+    {
+      "scope": "tate-alpha",
+      "original_endpoint_ids": [
+        "accepted-040",
+        "accepted-052"
+      ],
+      "targets": 16,
+      "challenge_bytes": 74341,
+      "challenge_lines": 939,
+      "source_sha256": "4ceefcfc886eb224628dec24b00f5c68660ef97c84b1607311b400a9a5a79234",
+      "render_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/four-scope-render-python-repair-2298/tate-alpha",
+      "original_audit_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-tate-original-endpoint-audit-2303/tate-alpha",
+      "strict_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-tate-current-full-strict-2302/tate-alpha",
+      "build_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/scheme-kato-tate-current-build-2300",
+      "original_raw_type_identity": true,
+      "ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equalities_rfl_passed": true
+    },
+    {
+      "scope": "field-unary-naturality",
+      "original_endpoint_ids": [
+        "accepted-070"
+      ],
+      "targets": 32,
+      "challenge_bytes": 102397,
+      "challenge_lines": 1000,
+      "source_sha256": "c15df67b8acf3ffb3d837529232146b17ca8ec0c3e39af55144d74beab478676",
+      "render_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/four-scope-render-python-repair-2298/field-unary-naturality",
+      "original_audit_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/field-naturality-original-endpoint-audit-2307/field-unary-naturality",
+      "strict_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/field-naturality-current-full-strict-2306/field-unary-naturality",
+      "build_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/field-naturality-current-cached-build-2304",
+      "original_raw_type_identity": true,
+      "ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equalities_rfl_passed": true
+    },
+    {
+      "scope": "sharp-matrix-geometry",
+      "original_endpoint_ids": [
+        "accepted-047",
+        "accepted-048"
+      ],
+      "targets": 34,
+      "challenge_bytes": 102301,
+      "challenge_lines": 988,
+      "source_sha256": "0fe238a9697144e1821975d90b002332adfa09dc59033ceabc24125ab4082e5c",
+      "render_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/four-scope-render-python-repair-2298/sharp-matrix-geometry",
+      "original_audit_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-geometry-original-endpoint-audit-2310/sharp-matrix-geometry",
+      "strict_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-geometry-current-full-strict-2309/sharp-matrix-geometry",
+      "build_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/sharp-geometry-current-cached-build-2308",
+      "original_raw_type_identity": true,
+      "ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equalities_rfl_passed": true
+    }
+  ],
+  "original_endpoint_union_size": 7,
+  "original_scope_preserved": true,
+  "new_official_acceptance": false,
+  "publication_or_dispatch_performed": false
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "sharp-matrix-geometry",
+  "commit": "9485adfdcb541dce05836df8411855e0b28b5074",
+  "historical_official_run": 39800082710,
+  "source_sha256": "0fe238a9697144e1821975d90b002332adfa09dc59033ceabc24125ab4082e5c",
+  "configuration_sha256": "93cf83c9d9f8dab6a69051094fbf77122b81fa16d92bc5f6e8639ff9901c5036",
+  "compiled": true,
+  "literate_exit_code": 0,
+  "html_exit_code": 0,
+  "targets": 34,
+  "missing_target_anchors": [],
+  "rendered_errors": [],
+  "rendered_error_count": 0,
+  "clean_render": true,
+  "html_sha256": "a99720b4aaaa967d5069461fbf33bb497aa0e010549a95a5b146c9cabd1874fb",
+  "sanitizer_sha256": "bd0e82e9a21b3995ed182ef956e3d30640d8a38e28a6edc018462004d47c481a",
+  "official_result_inferred": false,
+  "unpublished_candidate": true
+}
