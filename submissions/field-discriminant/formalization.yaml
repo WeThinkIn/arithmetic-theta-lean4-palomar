@@ -47,11 +47,13 @@ automation:
     the contribution account and its source provenance.
 review:
   status: self-assessed
-  notes: 'Local agent self-assessment of the recorded interface and proof checks; this status
-    does not represent independent external review or official Palomar semantic approval. Recorded
-    local validation basis: Original support/main targets preserved with explicitly checked
-    original support lemmas. Complete local strict structural and standard-axiom checks passed.
-    Solution is unchanged. Fresh official mechanical and semantic review remain pending.'
+  notes: >-
+    Local checks retain all 32 configured obligations and original endpoints
+    accepted-068. Current Solution build, complete target-closure structural and standard
+    axiom checks, original type/universe/recovery checks and clean rendering pass.
+    Compiler-only differences and exact versus definitionally equal types are
+    documented in docs/audit/historical-render-repairs-2370/field-discriminant/Review.md. This is not a distinct agent's semantic review.
+    Fresh official verification and semantic review remain pending for this revision.
 status:
   scope: Full original068 over arbitrary characteristic-zero fields. From the original
     actual canonical geometry and intrinsic open D2, constructs the UNIQUE compact

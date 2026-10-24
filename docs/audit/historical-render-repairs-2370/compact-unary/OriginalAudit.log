@@ -1,0 +1,7 @@
+ORIGINAL_ENDPOINTS_DEFINITIONAL_TYPE_UNIVERSE_AXIOM_PASS
+/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-original-endpoint-defeq-audit-2365/compact-unary/OriginalAudit.lean:7:5: warning: Variable name `env` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _env
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

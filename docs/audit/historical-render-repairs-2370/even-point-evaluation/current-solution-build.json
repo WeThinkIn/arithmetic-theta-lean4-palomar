@@ -1,0 +1,12 @@
+{
+  "scope": "even-point-evaluation",
+  "solution_module": "EvenPointEvaluationSolution",
+  "solution_source_sha256": "32ea770c3d839220ed4a946862b733903c4f22efb619bfe47d7d63351de3194f",
+  "challenge_source_sha256": "99373376331d538925d1dff27e061959501cc07c1c3beaedb44fb00641e57510",
+  "solution_olean_sha256": "7917b3fa6952cea249a3d7d6e2f7f482a7a283d7762b978cb07eac6d0c64ebb9",
+  "exit_code": 0,
+  "seconds": 6.723452031146735,
+  "targets": 3,
+  "challenge_bytes": 32842,
+  "challenge_lines": 531
+}

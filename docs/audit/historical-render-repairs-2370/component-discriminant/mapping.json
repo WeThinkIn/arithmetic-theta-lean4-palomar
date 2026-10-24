@@ -1,0 +1,9 @@
+{
+  "scope": "component-discriminant",
+  "mapping": {
+    "accepted-030": "ArithmeticThetaPalomarD2_509.recover_original_030"
+  },
+  "challenge_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-three-matcher-render-2339/component-discriminant",
+  "targets": 33,
+  "original": "ArithmeticThetaComponentDegreeR0184.component_discriminant_divisor"
+}

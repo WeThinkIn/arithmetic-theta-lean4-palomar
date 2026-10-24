@@ -1,0 +1,4 @@
+module
+import all SplitCuspSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarComponent485.recover_original_072 = ArithmeticThetaCyclotomicModularityR0239.split_component_cusp_bound := by rfl

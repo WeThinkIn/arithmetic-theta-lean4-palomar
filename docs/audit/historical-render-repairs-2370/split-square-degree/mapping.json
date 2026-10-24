@@ -1,0 +1,9 @@
+{
+  "scope": "split-square-degree",
+  "mapping": {
+    "accepted-074": "ArithmeticThetaPalomarSplit516.recover_original_074"
+  },
+  "challenge_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-next-eleven-matcher-render-2342/split-square-degree",
+  "targets": 33,
+  "original": "ArithmeticThetaCyclotomicModularityR0239.split_square_cover_degree"
+}

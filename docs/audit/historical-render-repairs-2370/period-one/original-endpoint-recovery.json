@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "scope": "period-one",
+  "original_endpoint_ids": [
+    "accepted-082"
+  ],
+  "type_and_ordered_universes_exact": true,
+  "standard_axioms_only": true,
+  "recovery_equality_compiled": true,
+  "direct_proposition_holes": 22,
+  "definition_holes": 0,
+  "carried_from": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-original-endpoint-audit-2356/period-one/receipt.json",
+  "official_acceptance_inferred": false
+}

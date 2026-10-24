@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "scope": "compact-unary",
+  "original_endpoint_ids": [
+    "accepted-028"
+  ],
+  "type_definitionally_equal": true,
+  "ordered_universes_exact": true,
+  "standard_axioms_only": true,
+  "recovery_equality_compiled": true,
+  "direct_proposition_holes": 30,
+  "definition_holes": 0,
+  "official_acceptance_inferred": false
+}

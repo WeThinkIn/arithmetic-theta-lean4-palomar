@@ -27,5 +27,16 @@
   "remaining_validation": [
     "Fresh full official preflight for the exact published revision",
     "Ordinary intake and semantic review"
-  ]
+  ],
+  "render_revision_2370": {
+    "base_commit": "bf5e3663754ac09aa7e483da124574c3e1ab55dd",
+    "challenge_sha256": "d37890e028d41590c5b0c0a6bf72a8e82bf6f5bc23556e09365189bd1fb655ea",
+    "configured_targets": 30,
+    "mathematical_obligations_preserved": true,
+    "local_current_source_checks_passed": true,
+    "rendered_errors": 0,
+    "fresh_official_verification": "pending",
+    "semantic_review": "pending",
+    "evidence": "docs/audit/historical-render-repairs-2370/compact-unary/Review.md"
+  }
 }

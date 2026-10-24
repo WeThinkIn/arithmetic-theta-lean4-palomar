@@ -1,14 +1,14 @@
 module
 public import Mathlib
 import all Lean.Meta.Match.Match
-@[expose] public section
+@[expose] public section elab "mX" : term => return Lean.mkConst (((((Lean.Name.num `_private.Lean.Meta.Match.Match 0).str "Lean").str "Meta").str "Match").str "matcherExt")
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 set_option maxHeartbeats 1600000
 set_option maxRecDepth 4096
-macro "rc":command=> `(run_cmd Lean.modifyEnv fun env=> Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {})
+macro "rc":command=> `(run_cmd Lean.modifyEnv fun env=> Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {})
 noncomputable section
 universe u v
 open _root_ renaming CommRing → z0, Field → z1, CharZero → z2, WeierstrassCurve → z3, PowerSeries → z4, LaurentSeries → z5, MvPolynomial → z6, PresheafOfModules → z8, SheafOfModules → z9, CommRingCat → z10, LinearMap → z11, ModuleCat → z12, AddMonoidHom → z13, RingHom → z14, IsDomain → z15, IsIntegrallyClosed → z16, IsNoetherianRing → z17, IsAlgClosed → z18, Finsupp → z19, SetLike → z20, Submodule → z21, FractionRing → z22, HomogeneousIdeal → z23, HomogeneousLocalization → z24, IsUnit → z25, IsScalarTower → z26, AddSubgroupClass → z27, AddSubmonoidClass → z28, Algebra → z29, Nonempty → z30

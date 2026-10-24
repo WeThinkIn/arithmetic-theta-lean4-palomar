@@ -1,0 +1,9 @@
+{
+  "scope": "split-discriminant",
+  "mapping": {
+    "accepted-073": "ArithmeticThetaPalomarSplit515.recover_original_073"
+  },
+  "challenge_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-next-eleven-matcher-render-2342/split-discriminant",
+  "targets": 33,
+  "original": "ArithmeticThetaCyclotomicModularityR0239.split_component_discriminant_divisor"
+}

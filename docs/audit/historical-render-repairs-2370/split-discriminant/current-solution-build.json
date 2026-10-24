@@ -1,0 +1,12 @@
+{
+  "scope": "split-discriminant",
+  "solution_module": "SplitDiscriminantSolution",
+  "solution_source_sha256": "fa44247b562eb0ef7c88a62d76fb6677e7b3d6c5affa846e07a0a00f3774b342",
+  "challenge_source_sha256": "88cecf98d3e0c4128216506fea15b0de08402e82428570830c6eab895f18468f",
+  "solution_olean_sha256": "c640e72723b257f35f8ca6984d705134787c35ec15d7c3f496a8ba8ba4aeb8ba",
+  "exit_code": 0,
+  "seconds": 4.0705664358101785,
+  "targets": 33,
+  "challenge_bytes": 78186,
+  "challenge_lines": 641
+}

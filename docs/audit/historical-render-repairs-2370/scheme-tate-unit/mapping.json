@@ -1,0 +1,9 @@
+{
+  "scope": "scheme-tate-unit",
+  "mapping": {
+    "accepted-084": "ArithmeticThetaPalomarSchemeTate422.recover_original_084"
+  },
+  "challenge_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-next-eleven-matcher-render-2342/scheme-tate-unit",
+  "targets": 15,
+  "original": "ArithmeticThetaSchemeKatoExpansionR0252.scheme_kato_full_tate_expansion"
+}

@@ -1,0 +1,6 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarPeriod404.recover_original_082",
+  "original": "ArithmeticThetaRationalTateR0247.scheme_period_one_discriminant",
+  "id": "accepted-082",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

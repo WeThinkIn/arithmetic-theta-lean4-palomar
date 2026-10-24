@@ -1,0 +1,9 @@
+{
+  "scope": "arbitrary-rigidification",
+  "mapping": {
+    "accepted-094": "ArithmeticThetaPalomarRigidification484.recover_original_094"
+  },
+  "challenge_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-next-eleven-matcher-render-2342/arbitrary-rigidification",
+  "targets": 24,
+  "original": "ArithmeticThetaUniversalEvaluationR0213.arbitrary_even_theta_rigidification"
+}

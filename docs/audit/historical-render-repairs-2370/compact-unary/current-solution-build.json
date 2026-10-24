@@ -1,0 +1,12 @@
+{
+  "scope": "compact-unary",
+  "solution_module": "CompactUnarySolution",
+  "solution_source_sha256": "2b6a35952c40e81cc4f4f5cfafc22f0fd0a0ef5375aec7eb2f374101885b77b9",
+  "challenge_source_sha256": "d37890e028d41590c5b0c0a6bf72a8e82bf6f5bc23556e09365189bd1fb655ea",
+  "solution_olean_sha256": "bbc20abcd5630b235cf9886123929ed976a189f952e944c935926bc528ed6747",
+  "exit_code": 0,
+  "seconds": 5.372569247614592,
+  "targets": 30,
+  "challenge_bytes": 101324,
+  "challenge_lines": 990
+}

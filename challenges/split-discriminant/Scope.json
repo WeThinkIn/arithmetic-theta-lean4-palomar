@@ -22,5 +22,16 @@
   "limitations": "The geometric data, canonical Hodge extension and intrinsic compact D2 are inputs as in the original theorem. This endpoint proves their actual divisor over a split field; it does not construct those inputs or claim official acceptance.",
   "local_exact_exported_comparison": true,
   "local_axiom_closure": true,
-  "structural_repair": "Compiler proof and matcher caches are isolated between source fragments. Original auxiliary propositions are explicit targets with their actual original Solution proofs; no definition holes or added main assumptions."
+  "structural_repair": "Compiler proof and matcher caches are isolated between source fragments. Original auxiliary propositions are explicit targets with their actual original Solution proofs; no definition holes or added main assumptions.",
+  "render_revision_2370": {
+    "base_commit": "bf5e3663754ac09aa7e483da124574c3e1ab55dd",
+    "challenge_sha256": "88cecf98d3e0c4128216506fea15b0de08402e82428570830c6eab895f18468f",
+    "configured_targets": 33,
+    "mathematical_obligations_preserved": true,
+    "local_current_source_checks_passed": true,
+    "rendered_errors": 0,
+    "fresh_official_verification": "pending",
+    "semantic_review": "pending",
+    "evidence": "docs/audit/historical-render-repairs-2370/split-discriminant/Review.md"
+  }
 }

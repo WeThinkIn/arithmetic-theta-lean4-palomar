@@ -5,3 +5,8 @@ Full original028: for positive even m,N with m dividing N and every normalized r
 The Challenge has 990 lines and 101181 bytes and retains all 30 original support/main targets. The origin-point local-ring instance matches the unchanged Solution. Complete exported dependency comparison and standard-axiom closure passed; see the [local validation receipt](../../docs/audit/geometric-interface-alignment-1588/receipt.json). These local results require fresh official preflight and semantic review for this revision.
 
 Canonical level geometry and its Hodge extension are supplied exactly as in original028. This constructs its actual compact unary section over algebraically closed characteristic-zero fields; arbitrary-field descent and matrix-family assembly are separate endpoints. Not an official verification result.
+
+
+## Current rendering revision
+
+All 30 configured obligations are retained; all anchors render with zero errors. Current-source build, strict comparison, standard axioms and original endpoint recovery pass. See [the exact local validation](../../docs/audit/historical-render-repairs-2370/compact-unary/Review.md). Fresh official verification and ordinary semantic review are pending for this revision.

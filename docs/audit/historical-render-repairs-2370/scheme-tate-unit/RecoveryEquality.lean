@@ -1,0 +1,4 @@
+module
+import all SchemeTateUnitSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarSchemeTate422.recover_original_084 = ArithmeticThetaSchemeKatoExpansionR0252.scheme_kato_full_tate_expansion := by rfl

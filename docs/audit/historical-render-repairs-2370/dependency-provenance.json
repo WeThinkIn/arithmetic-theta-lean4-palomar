@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "utc": "2026-10-24T11:04:40.346258+00:00",
+  "scopes": 13,
+  "unique_dependency_sources": 3390,
+  "source_provenance_counts": {
+    "source-bound-cache-831": 105,
+    "source-bound-cache-2200": 3251,
+    "rebuilt-current-source": 34
+  },
+  "scope_dependency_counts": {
+    "field-discriminant": 3151,
+    "key-tate": 3257,
+    "split-cusp": 3122,
+    "split-discriminant": 3123,
+    "split-square-degree": 3148,
+    "period-one": 3079,
+    "scheme-tate-unit": 3108,
+    "scheme-initial": 3108,
+    "arbitrary-rigidification": 3009,
+    "even-point-evaluation": 3173,
+    "component-cusp": 2875,
+    "compact-unary": 2853,
+    "component-discriminant": 2869
+  },
+  "scope": "Fresh hash verification of current proof dependency sources against source-bound cache receipts or current rebuild inputs. Does not itself establish object integrity, kernel replay or official acceptance."
+}

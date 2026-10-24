@@ -1,0 +1,7 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarRigidification484.recover_original_094",
+  "original":
+  "ArithmeticThetaUniversalEvaluationR0213.arbitrary_even_theta_rigidification",
+  "id": "accepted-094",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

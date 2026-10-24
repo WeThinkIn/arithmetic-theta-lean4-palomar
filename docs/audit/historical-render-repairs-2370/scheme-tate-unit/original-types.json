@@ -1,0 +1,7 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarSchemeTate422.recover_original_084",
+  "original":
+  "ArithmeticThetaSchemeKatoExpansionR0252.scheme_kato_full_tate_expansion",
+  "id": "accepted-084",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

@@ -1,7 +1,7 @@
 module
 public import Mathlib
 import all Lean.Meta.Match.Match
-@[expose] public section
+@[expose] public section elab "mX" : term => return Lean.mkConst (((((Lean.Name.num `_private.Lean.Meta.Match.Match 0).str "Lean").str "Meta").str "Match").str "matcherExt")
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
@@ -191,7 +191,7 @@ structure RelativeGroupLaw (R : Type u) [CommRing R] {A : Scheme.{u}} (f : A ⟶
       mul t' (schemeHomOverComp ψ hψ x) (schemeHomOverComp ψ hψ y)
 end WeierstrassProjModel
 namespace ArithmeticThetaRelativeKatoR0169
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 open NeronModelInfra
 variable (R : Type u) [CommRing R]
 abbrev Curve (W : WeierstrassCurve R) : Scheme.{u} := WeierstrassProjModel.projModelCR W.toProjective
@@ -210,7 +210,7 @@ def nsmul (G : RelativeGroupLaw R f) {T : Scheme.{u}} (t : T ⟶ Spec (CommRingC
 end WeierstrassProjModel.RelativeGroupLaw
 open NeronModelInfra
 namespace GoodReductionJacobian
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def schemeHomOverComp {B T' T A : Scheme.{u}} {t : T ⟶ B} {t' : T' ⟶ B} {f : A ⟶ B} (ψ : T' ⟶ T) (hψ : ψ ≫ t = t') (x : SchemeHomOver t f) : SchemeHomOver t' f :=
   ⟨ψ ≫ x.1, by rw [Category.assoc, x.2, hψ]⟩
 structure RelativeGroupLaw (R : Type u) [CommRing R] {A : Scheme.{u}} (f : A ⟶ Spec (CommRingCat.of R)) where
@@ -377,10 +377,10 @@ open WeierstrassProjModel MvPolynomial HomogeneousLocalization HomogeneousIdealQ
 attribute [local instance] MvPolynomial.gradedAlgebra
 namespace WeierstrassCurve.DrinfeldGlobal
 variable {T : Type u} [CommRing T] (W : WeierstrassCurve.Projective T)
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev coord (i : Fin 3) : ProjModelRingCR W := Ideal.Quotient.mk (projModelHomogeneousIdealCR W).toIdeal (X i)
 theorem coord_mem (i : Fin 3) : coord W i ∈ projModelGradingCR W 1 := mk_mem_quotGradingSubmodule _ _ (isHomogeneous_X T i)
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev ZChartRing : Type u := Away (projModelGradingCR W) (coord W 2)
 abbrev zChartι : Spec (CommRingCat.of (ZChartRing W)) ⟶ projModelCR W :=
   Proj.awayι (projModelGradingCR W) (coord W 2) (coord_mem W 2) one_pos

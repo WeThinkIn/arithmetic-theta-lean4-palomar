@@ -1,0 +1,12 @@
+{
+  "scope": "field-discriminant",
+  "solution_module": "FieldDiscriminantSolution",
+  "solution_source_sha256": "2cd102734300055b861f7b4691c40b06a993902975a81ebe2c7ff10dd98ed8a7",
+  "challenge_source_sha256": "e5027fcc82ac1f2db2f1bc2a46f1af9845fdb752569a14ca21423882da720266",
+  "solution_olean_sha256": "e48316bda0f2be115fb9546c0a952ebe4263214e5146523ca4d20ae6505fcaeb",
+  "exit_code": 0,
+  "seconds": 17.33715368807316,
+  "targets": 32,
+  "challenge_bytes": 101997,
+  "challenge_lines": 993
+}

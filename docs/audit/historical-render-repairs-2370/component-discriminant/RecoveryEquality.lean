@@ -1,0 +1,4 @@
+module
+import all ComponentDiscriminantSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarD2_509.recover_original_030 = ArithmeticThetaComponentDegreeR0184.component_discriminant_divisor := by rfl

@@ -1,0 +1,4 @@
+module
+import all ArbitraryRigidificationSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarRigidification484.recover_original_094 = ArithmeticThetaUniversalEvaluationR0213.arbitrary_even_theta_rigidification := by rfl

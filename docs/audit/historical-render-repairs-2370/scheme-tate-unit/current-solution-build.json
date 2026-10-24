@@ -1,0 +1,12 @@
+{
+  "scope": "scheme-tate-unit",
+  "solution_module": "SchemeTateUnitSolution",
+  "solution_source_sha256": "0ad7a8307df7e117099902cdcb3d2bf6f47949d786f2af0651b1f2629c2b45f1",
+  "challenge_source_sha256": "2c40d5d9da47254aa82c9fdb6e7fa36d66b0a33882af5483525d5125bb1add73",
+  "solution_olean_sha256": "afcc65c28099acaae9e8206b9c3e7d47264171dc5944336678eb2000e0ad3460",
+  "exit_code": 0,
+  "seconds": 5.071755826007575,
+  "targets": 15,
+  "challenge_bytes": 68555,
+  "challenge_lines": 911
+}

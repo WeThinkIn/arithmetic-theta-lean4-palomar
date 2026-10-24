@@ -1,7 +1,7 @@
 module
 public import Mathlib
 import all Lean.Meta.Match.Match
-@[expose] public section
+@[expose] public section elab "mX" : term => return Lean.mkConst (((((Lean.Name.num `_private.Lean.Meta.Match.Match 0).str "Lean").str "Meta").str "Match").str "matcherExt")
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
@@ -367,7 +367,7 @@ abbrev Curve (W : WeierstrassCurve R) : Scheme.{u} :=
   WeierstrassProjModel.projModelCR W.toProjective
 def structureMap (W : WeierstrassCurve R) : Curve R W ⟶ Spec (CommRingCat.of R) :=
   WeierstrassProjModel.projModelStrCR W.toProjective
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def origin (W : WeierstrassCurve R) : Spec (CommRingCat.of R) ⟶ Curve R W :=
   (WeierstrassProjModel.kwZeroSect R W).val
 abbrev Law (W : WeierstrassCurve R) :=
@@ -468,7 +468,7 @@ def IsRelativeKato (c : ℕ) (g : (Curve R W).functionField) : Prop :=
 end ArithmeticThetaRelativeKatoR0169
 open NeronModelInfra
 namespace GoodReductionJacobian
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def schemeHomOverComp {B T' T A : Scheme.{u}} {t : T ⟶ B} {t' : T' ⟶ B} {f : A ⟶ B} (ψ : T' ⟶ T) (hψ : ψ ≫ t = t') (x : SchemeHomOver t f) : SchemeHomOver t' f :=
   ⟨ψ ≫ x.1, by rw [Category.assoc, x.2, hψ]⟩
 end GoodReductionJacobian
@@ -578,7 +578,7 @@ open ArithmeticThetaRelativeKatoR0169
 variable (R : Type u) [CommRing R] [IsDomain R] (W : WeierstrassCurve R) (G : Law R W)
 variable [IsIntegral (Curve R W)] [IsLocallyNoetherian (Curve R W)]
 variable [IsIntegral (GenericCurve R W)] [IsLocallyNoetherian (GenericCurve R W)]
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def Normalized (c : ℕ) (g : (Curve R W).functionField) : Prop :=
   IsRelativeKato R W G c g ∧ ∀ C : GenericComparison R W G,
     ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction (FractionRing R)
@@ -733,7 +733,7 @@ def fValue (K : Type) [Field K] (c d : ℕ) (v g h : Series K) : Series K :=
     (-v) ^ ArithmeticThetaNormFiniteR0063.p c * g ^ (c ^ 2) / h
 end ArithmeticThetaLaurentNormR0064
 namespace ArithmeticThetaUnsplitExpansionR0158
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def HasExpansion (k : Type) [Field k] [CharZero k] (r c j : ℕ) (v : ArithmeticThetaLaurentNormR0064.Series k) : Prop :=
   ∀ g h : ArithmeticThetaLaurentNormR0064.Series k,
     ArithmeticThetaLaurentNormR0064.IsGamma (ArithmeticThetaLaurentNormR0064.Coeff k) r j (ArithmeticThetaLaurentNormR0064.w k) g →
@@ -773,7 +773,7 @@ def rootSeries (r : ℕ) (j : Fin 3) : PowerSeries k :=
 end ArithmeticThetaCubicModelR0144
 namespace ArithmeticThetaPeriodOneR0246
 variable (k : Type) [Field k] [CharZero k]
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def ramifiedCoefficient (j : Fin 3) : PowerSeries k :=
   let e := ArithmeticThetaCubicModelR0144.rootSeries k 4
   if j.val = 0 then -(e 0 + e 1 + e 2)
@@ -793,12 +793,12 @@ open WeierstrassProjModel MvPolynomial HomogeneousLocalization HomogeneousIdealQ
 attribute [local instance] MvPolynomial.gradedAlgebra
 namespace WeierstrassCurve.DrinfeldGlobal
 variable {T : Type u} [CommRing T] (W : WeierstrassCurve.Projective T)
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev coord (i : Fin 3) : ProjModelRingCR W :=
   Ideal.Quotient.mk (projModelHomogeneousIdealCR W).toIdeal (X i)
 theorem coord_mem (i : Fin 3) : coord W i ∈ projModelGradingCR W 1 :=
   mk_mem_quotGradingSubmodule _ _ (isHomogeneous_X T i)
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev ZChartRing : Type u := Away (projModelGradingCR W) (coord W 2)
 abbrev zChartι : Spec (CommRingCat.of (ZChartRing W)) ⟶ projModelCR W :=
   Proj.awayι (projModelGradingCR W) (coord W 2) (coord_mem W 2) one_pos
@@ -846,7 +846,7 @@ abbrev periodCurve := ArithmeticThetaPeriodOneR0246.periodOneCurve k
 def baseMap : LaurentSeries k →+* Series k :=
   ArithmeticThetaRationalTateR0247.seriesMap
     (ArithmeticThetaAnnularNormBridgeR0156.coefficientMap k)
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def xSeries (r : ℕ) : Series k :=
   HahnSeries.ofPowerSeries ℤ (Coeff k)
     (ArithmeticThetaTateSeries.tateX r 0 (ArithmeticThetaLaurentNormR0064.w k))

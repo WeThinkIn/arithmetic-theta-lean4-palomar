@@ -1,0 +1,9 @@
+{
+  "scope": "component-cusp",
+  "mapping": {
+    "accepted-029": "ArithmeticThetaPalomarComponent485.recover_original_029"
+  },
+  "challenge_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-three-matcher-render-2339/component-cusp",
+  "targets": 24,
+  "original": "ArithmeticThetaComponentDegreeR0184.geometric_component_cusp_bound"
+}

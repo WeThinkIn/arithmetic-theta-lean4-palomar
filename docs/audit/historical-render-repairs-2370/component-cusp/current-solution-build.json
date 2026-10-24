@@ -1,0 +1,12 @@
+{
+  "scope": "component-cusp",
+  "solution_module": "ComponentCuspSolution",
+  "solution_source_sha256": "3e8969120511ea8d817d9a7b474d16e3aed9186ed33e082719b60df4f45950b4",
+  "challenge_source_sha256": "5c213dea20ca4934aee16607eecf5498380085706e86b9c78197a42614b4f61c",
+  "solution_olean_sha256": "4ae00efe6d64c120195daa92772175dd5bff9e5b67c1637ce480530c1b7bca99",
+  "exit_code": 0,
+  "seconds": 3.019187425263226,
+  "targets": 24,
+  "challenge_bytes": 46685,
+  "challenge_lines": 510
+}

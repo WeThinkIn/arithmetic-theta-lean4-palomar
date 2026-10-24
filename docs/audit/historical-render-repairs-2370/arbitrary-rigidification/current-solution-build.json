@@ -1,0 +1,12 @@
+{
+  "scope": "arbitrary-rigidification",
+  "solution_module": "ArbitraryRigidificationSolution",
+  "solution_source_sha256": "42dc716c70bb4ac6f2280887964e85da6e6ffff15c25bd29ebbc90032a14643b",
+  "challenge_source_sha256": "67cfb649024c084465658fc34a6d41365fe29ed7bce47c1b8ad6aaaae01574f3",
+  "solution_olean_sha256": "d5542b4ed76766a72d7ab4ec4cb679a3e5fc5630d788dd20623596317101fa2a",
+  "exit_code": 0,
+  "seconds": 3.319976498838514,
+  "targets": 24,
+  "challenge_bytes": 56444,
+  "challenge_lines": 679
+}

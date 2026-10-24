@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "scope": "component-cusp",
+  "targets": 24,
+  "checked_shared_declarations": 471,
+  "compiler_only_names_without_source": [
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_10_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_6_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_2",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_10",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_1_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_12",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_4",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_14",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_9_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_3",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_4_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_5_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_16_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_11",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_2",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_16",
+    "termMX",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_13_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_2_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_3_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_7_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_7",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_13",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_0",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_15_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_5",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_3",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_9",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_8_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_14_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_12_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_0_1",
+    "_aux_ComponentCuspChallenge___elabRules_termMX_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel._aux_ComponentCuspChallenge___macroRules__private_ComponentCuspChallenge_0_WeierstrassProjModel_termGh1567_11_1",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_6",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_15",
+    "_private.ComponentCuspChallenge.0.WeierstrassProjModel.termGh1567_8"
+  ],
+  "exports": {
+    "challenge": {
+      "bytes": 214487366,
+      "sha256": "43d324a98c27d310b7b8c59a54b679e6649ecddf08305ed78894d54110851f2b"
+    },
+    "solution": {
+      "bytes": 2025862708,
+      "sha256": "cf79206934df41edb4e120f6e1381d4a22e9017f2be3a2f2c113bf27fe2d6136"
+    }
+  },
+  "original_endpoint_recovery_reaudit_pending": true,
+  "official_acceptance_inferred": false
+}

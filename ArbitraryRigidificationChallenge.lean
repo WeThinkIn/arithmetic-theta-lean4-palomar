@@ -1,7 +1,7 @@
 module
 public import Mathlib
 import all Lean.Meta.Match.Match
-@[expose] public section
+@[expose] public section elab "mX" : term => return Lean.mkConst (((((Lean.Name.num `_private.Lean.Meta.Match.Match 0).str "Lean").str "Meta").str "Match").str "matcherExt")
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
@@ -270,7 +270,7 @@ set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 set_option autoImplicit false
 open CategoryTheory MonoidalCategory Limits
 noncomputable section
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 set_option backward.isDefEq.respectTransparency true
 namespace SheafOfModules
 variable {C : Type u} [Category.{u} C] {J : GrothendieckTopology C}
@@ -357,7 +357,7 @@ namespace AlgebraicGeometry.Scheme.Modules
 variable {X : Scheme.{u}}
 section Hom
 variable (L M : X.Modules)
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def tensorSectionsHom : L.val ⊗ M.val ⟶ (SheafOfModules.toPMod X.sheaf.obj X.ringCatSheaf.property).obj (L ⊗ M) :=
   (SheafOfModules.sheafifyAdj X.sheaf.obj X.ringCatSheaf.property).unit.app (L.val ⊗ M.val) ≫
     (SheafOfModules.toPMod X.sheaf.obj X.ringCatSheaf.property).map (tensorIsoSheafify L M).hom
@@ -374,7 +374,7 @@ section OriginalIdealContext1634
 set_option backward.isDefEq.respectTransparency true
 set_option backward.isDefEq.respectTransparency.types true
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes true
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 namespace AlgebraicGeometry
 variable {X Y : Scheme.{u}}
 abbrev Scheme.Hom.unitToPushforwardUnit (f : X ⟶ Y) : SheafOfModules.unit Y.ringCatSheaf ⟶ (SheafOfModules.pushforward f.toRingCatSheafHom).obj (SheafOfModules.unit X.ringCatSheaf) :=
@@ -577,7 +577,7 @@ open NeronModelInfra
 variable (R : Type u) [CommRing R]
 abbrev Curve (W : WeierstrassCurve R) : Scheme.{u} := WeierstrassProjModel.projModelCR W.toProjective
 def structureMap (W : WeierstrassCurve R) : Curve R W ⟶ Spec (CommRingCat.of R) := WeierstrassProjModel.projModelStrCR W.toProjective
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def origin (W : WeierstrassCurve R) : Spec (CommRingCat.of R) ⟶ Curve R W := (WeierstrassProjModel.kwZeroSect R W).val
 abbrev Law (W : WeierstrassCurve R) := WeierstrassProjModel.RelativeGroupLaw R (structureMap R W)
 def IsOriginLaw (W : WeierstrassCurve R) (G : Law R W) : Prop := (∀ {V : Scheme.{u}} (t : V ⟶ Spec (CommRingCat.of R)),
@@ -621,7 +621,7 @@ structure Scheme.Modules.IsInvertible {X : Scheme.{u}} (M : X.Modules) : Prop wh
     Nonempty ((Scheme.Modules.pullback U.ι).obj M ≅ SheafOfModules.unit U.toScheme.ringCatSheaf)
 instance Scheme.Hom.opensMapFinal {X Y : Scheme.{u}} (f : X ⟶ Y) : (TopologicalSpace.Opens.map f.base).Final :=
   CategoryTheory.final_of_representablyFlat _
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 set_option backward.isDefEq.respectTransparency.types true in
 set_option backward.isDefEq.respectTransparency.instanceSearchTypes true in
 def Scheme.Modules.pullbackUnitIso {X Y : Scheme.{u}} (f : X ⟶ Y) : (Scheme.Modules.pullback f).obj (SheafOfModules.unit Y.ringCatSheaf) ≅ SheafOfModules.unit X.ringCatSheaf := by
@@ -666,7 +666,7 @@ namespace ArithmeticThetaPalomarRigidification484
 open CategoryTheory MonoidalCategory AlgebraicGeometry
 open ArithmeticThetaRelativeKatoR0169 ArithmeticThetaRelativeDiscriminantR0171 ArithmeticThetaFullLevelCoverR0175 ArithmeticThetaGlobalFourTorsionR0190
 variable (R : Type u) [CommRing R] (W : WeierstrassCurve R) (G : Law R W) (M : FullLevel R W G 4 (𝟙 (Base R)))
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def evenPoint : Base R ⟶ Curve R W := twoLabel R W G 4 M 2
 def thetaIdeal : (Curve R W).IdealSheafData := (evenPoint R W G M).ker
 def thetaLine : (Curve R W).Modules := (thetaIdeal R W G M).invModule

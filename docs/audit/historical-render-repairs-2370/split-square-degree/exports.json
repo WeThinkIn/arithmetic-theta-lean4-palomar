@@ -1,0 +1,10 @@
+{
+  "challenge": {
+    "bytes": 284629724,
+    "sha256": "2971ac0da5acd4244209794b4d22329b9d1d64d8dad5140793cc981cf982b8e5"
+  },
+  "solution": {
+    "bytes": 2555330378,
+    "sha256": "06fb0a1fcf82b6c7f972580700780a73bfc4286e017d483fcc672cd63cbf571c"
+  }
+}

@@ -1,0 +1,4 @@
+module
+import all SplitSquareDegreeSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarSplit516.recover_original_074 = ArithmeticThetaCyclotomicModularityR0239.split_square_cover_degree := by rfl

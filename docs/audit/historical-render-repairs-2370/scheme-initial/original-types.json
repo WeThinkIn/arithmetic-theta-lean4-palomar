@@ -1,0 +1,7 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarSchemeInitial406.recover_original_085",
+  "original":
+  "ArithmeticThetaKatoInitialR0253.scheme_five_kato_initial_characterization",
+  "id": "accepted-085",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

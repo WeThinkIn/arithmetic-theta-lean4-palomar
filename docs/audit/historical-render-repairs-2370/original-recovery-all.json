@@ -1,0 +1,191 @@
+{
+  "passed": true,
+  "bindings_unchanged": true,
+  "results": [
+    {
+      "passed": true,
+      "scope": "field-discriminant",
+      "original_endpoint_ids": [
+        "accepted-068"
+      ],
+      "type_and_ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equality_compiled": true,
+      "direct_proposition_holes": 32,
+      "definition_holes": 0,
+      "carried_from": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-original-endpoint-audit-2356/field-discriminant/receipt.json",
+      "official_acceptance_inferred": false
+    },
+    {
+      "passed": true,
+      "scope": "key-tate",
+      "original_endpoint_ids": [
+        "accepted-055"
+      ],
+      "type_and_ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equality_compiled": true,
+      "direct_proposition_holes": 42,
+      "definition_holes": 0,
+      "carried_from": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-original-endpoint-audit-2356/key-tate/receipt.json",
+      "official_acceptance_inferred": false
+    },
+    {
+      "passed": true,
+      "scope": "split-cusp",
+      "original_endpoint_ids": [
+        "accepted-072"
+      ],
+      "type_and_ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equality_compiled": true,
+      "direct_proposition_holes": 24,
+      "definition_holes": 0,
+      "carried_from": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-original-endpoint-audit-2356/split-cusp/receipt.json",
+      "official_acceptance_inferred": false
+    },
+    {
+      "passed": true,
+      "scope": "split-discriminant",
+      "original_endpoint_ids": [
+        "accepted-073"
+      ],
+      "type_and_ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equality_compiled": true,
+      "direct_proposition_holes": 33,
+      "definition_holes": 0,
+      "carried_from": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-original-endpoint-audit-2356/split-discriminant/receipt.json",
+      "official_acceptance_inferred": false
+    },
+    {
+      "passed": true,
+      "scope": "split-square-degree",
+      "original_endpoint_ids": [
+        "accepted-074"
+      ],
+      "type_and_ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equality_compiled": true,
+      "direct_proposition_holes": 33,
+      "definition_holes": 0,
+      "carried_from": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-original-endpoint-audit-2356/split-square-degree/receipt.json",
+      "official_acceptance_inferred": false
+    },
+    {
+      "passed": true,
+      "scope": "period-one",
+      "original_endpoint_ids": [
+        "accepted-082"
+      ],
+      "type_and_ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equality_compiled": true,
+      "direct_proposition_holes": 22,
+      "definition_holes": 0,
+      "carried_from": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-original-endpoint-audit-2356/period-one/receipt.json",
+      "official_acceptance_inferred": false
+    },
+    {
+      "passed": true,
+      "scope": "scheme-tate-unit",
+      "original_endpoint_ids": [
+        "accepted-084"
+      ],
+      "type_and_ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equality_compiled": true,
+      "direct_proposition_holes": 15,
+      "definition_holes": 0,
+      "carried_from": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-original-endpoint-audit-2356/scheme-tate-unit/receipt.json",
+      "official_acceptance_inferred": false
+    },
+    {
+      "passed": true,
+      "scope": "scheme-initial",
+      "original_endpoint_ids": [
+        "accepted-085"
+      ],
+      "type_and_ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equality_compiled": true,
+      "direct_proposition_holes": 22,
+      "definition_holes": 0,
+      "carried_from": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-original-endpoint-audit-2356/scheme-initial/receipt.json",
+      "official_acceptance_inferred": false
+    },
+    {
+      "passed": true,
+      "scope": "arbitrary-rigidification",
+      "original_endpoint_ids": [
+        "accepted-094"
+      ],
+      "type_and_ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equality_compiled": true,
+      "direct_proposition_holes": 24,
+      "definition_holes": 0,
+      "carried_from": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-original-endpoint-audit-2356/arbitrary-rigidification/receipt.json",
+      "official_acceptance_inferred": false
+    },
+    {
+      "passed": true,
+      "scope": "even-point-evaluation",
+      "original_endpoint_ids": [
+        "accepted-099"
+      ],
+      "type_definitionally_equal": true,
+      "ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equality_compiled": true,
+      "direct_proposition_holes": 3,
+      "definition_holes": 0,
+      "official_acceptance_inferred": false
+    },
+    {
+      "passed": true,
+      "scope": "component-cusp",
+      "original_endpoint_ids": [
+        "accepted-029"
+      ],
+      "type_definitionally_equal": true,
+      "ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equality_compiled": true,
+      "direct_proposition_holes": 24,
+      "definition_holes": 0,
+      "official_acceptance_inferred": false
+    },
+    {
+      "passed": true,
+      "scope": "compact-unary",
+      "original_endpoint_ids": [
+        "accepted-028"
+      ],
+      "type_definitionally_equal": true,
+      "ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equality_compiled": true,
+      "direct_proposition_holes": 30,
+      "definition_holes": 0,
+      "official_acceptance_inferred": false
+    },
+    {
+      "passed": true,
+      "scope": "component-discriminant",
+      "original_endpoint_ids": [
+        "accepted-030"
+      ],
+      "type_definitionally_equal": true,
+      "ordered_universes_exact": true,
+      "standard_axioms_only": true,
+      "recovery_equality_compiled": true,
+      "direct_proposition_holes": 33,
+      "definition_holes": 0,
+      "official_acceptance_inferred": false
+    }
+  ],
+  "scopes": 13,
+  "official_acceptance_inferred": false,
+  "type_policy": "All original statement types are checked by Lean kernel definitional equality with exact universe parameter equality; source declarations and recovery proofs are retained."
+}

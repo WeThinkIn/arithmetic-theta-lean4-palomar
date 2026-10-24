@@ -1,0 +1,26 @@
+module
+import all EvenPointEvaluationSolution
+import Lean
+open Lean Elab Command Meta
+set_option maxHeartbeats 16000000
+run_cmd liftTermElabM do
+ let env ← getEnv
+ let data ← IO.ofExcept <| Json.parse (← IO.FS.readFile "/home/Palomar/workspace/arithmetic-theta/evidence/historical-scope-review-metadata-2335/project/docs/SourceObligations.json")
+ let rows ← IO.ofExcept data.getArr?
+ let mut found : Array Json := #[]
+ for row in rows do
+  let id ← IO.ofExcept <| row.getObjValAs? String "id"
+  if !(#["accepted-099"]).contains id then continue
+  let original ← IO.ofExcept <| row.getObjValAs? String "declaration"
+  let recovery := (match id with
+   | "accepted-099" => "ArithmeticThetaPalomarTheta473.recover_original_099"
+   | _ => "").toName
+  let a ← getConstInfo recovery
+  let b ← getConstInfo original.toName
+  unless (← isDefEq a.type b.type) && a.levelParams == b.levelParams do throwError "Original type mismatch {id}"
+  let axs ← collectAxioms recovery
+  unless axs.all (fun n => #[`propext,`Classical.choice,`Quot.sound].contains n) do throwError "Unexpected axioms {id}"
+  found := found.push <| Json.mkObj [("id",toJson id),("original",toJson original),("recovery",toJson recovery.toString),("type_definitionally_equal",toJson true),("universes_equal",toJson true),("axioms",toJson (axs.map Name.toString))]
+ unless found.size == 1 do throwError "Missing original endpoints"
+ IO.FS.writeFile "/home/Palomar/workspace/arithmetic-theta/evidence/historical-thirteen-original-endpoint-defeq-audit-2365/even-point-evaluation/audit.json" (toJson found).pretty
+ logInfo "ORIGINAL_ENDPOINTS_DEFINITIONAL_TYPE_UNIVERSE_AXIOM_PASS"

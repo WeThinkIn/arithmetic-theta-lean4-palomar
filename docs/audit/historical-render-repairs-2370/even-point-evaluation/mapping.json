@@ -1,0 +1,9 @@
+{
+  "scope": "even-point-evaluation",
+  "mapping": {
+    "accepted-099": "ArithmeticThetaPalomarTheta473.recover_original_099"
+  },
+  "challenge_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-next-eleven-matcher-render-2342/even-point-evaluation",
+  "targets": 3,
+  "original": "ArithmeticThetaMultiplierKeyR0217.even_point_theta_evaluation"
+}

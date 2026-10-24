@@ -51,5 +51,17 @@
     "permitted_axioms_unchanged": true,
     "source_definitions_and_solution_proofs_preserved": true,
     "strict_receipt": "docs/audit/geometric-interface-alignment-1736/receipt.json"
-  }
+  },
+  "render_revision_2370": {
+    "base_commit": "bf5e3663754ac09aa7e483da124574c3e1ab55dd",
+    "challenge_sha256": "e5027fcc82ac1f2db2f1bc2a46f1af9845fdb752569a14ca21423882da720266",
+    "configured_targets": 32,
+    "mathematical_obligations_preserved": true,
+    "local_current_source_checks_passed": true,
+    "rendered_errors": 0,
+    "fresh_official_verification": "pending",
+    "semantic_review": "pending",
+    "evidence": "docs/audit/historical-render-repairs-2370/field-discriminant/Review.md"
+  },
+  "historical_line_maps_note": "Prior maps identify the source snapshot recorded by their own bindings; current repair hashes and evidence are in render_revision_2370."
 }

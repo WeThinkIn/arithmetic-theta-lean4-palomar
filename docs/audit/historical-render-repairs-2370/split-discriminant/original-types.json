@@ -1,0 +1,7 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarSplit515.recover_original_073",
+  "original":
+  "ArithmeticThetaCyclotomicModularityR0239.split_component_discriminant_divisor",
+  "id": "accepted-073",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

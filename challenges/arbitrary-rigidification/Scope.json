@@ -33,5 +33,16 @@
   "remaining_validation": [
     "Fresh full official preflight for the exact published revision",
     "Ordinary intake and semantic review"
-  ]
+  ],
+  "render_revision_2370": {
+    "base_commit": "bf5e3663754ac09aa7e483da124574c3e1ab55dd",
+    "challenge_sha256": "67cfb649024c084465658fc34a6d41365fe29ed7bce47c1b8ad6aaaae01574f3",
+    "configured_targets": 24,
+    "mathematical_obligations_preserved": true,
+    "local_current_source_checks_passed": true,
+    "rendered_errors": 0,
+    "fresh_official_verification": "pending",
+    "semantic_review": "pending",
+    "evidence": "docs/audit/historical-render-repairs-2370/arbitrary-rigidification/Review.md"
+  }
 }

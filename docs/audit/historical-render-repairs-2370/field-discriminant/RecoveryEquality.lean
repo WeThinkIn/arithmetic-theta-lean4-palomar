@@ -1,0 +1,4 @@
+module
+import all FieldDiscriminantSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarFieldD2_522.recover_original_068 = ArithmeticThetaArithmeticSectionsR0236.field_compact_discriminant := by rfl

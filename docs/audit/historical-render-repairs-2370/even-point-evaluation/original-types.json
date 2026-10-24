@@ -1,0 +1,6 @@
+[{"universes_equal": true,
+  "type_definitionally_equal": true,
+  "recovery": "ArithmeticThetaPalomarTheta473.recover_original_099",
+  "original": "ArithmeticThetaMultiplierKeyR0217.even_point_theta_evaluation",
+  "id": "accepted-099",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

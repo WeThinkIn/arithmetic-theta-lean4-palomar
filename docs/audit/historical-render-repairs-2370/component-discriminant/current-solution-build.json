@@ -1,0 +1,12 @@
+{
+  "scope": "component-discriminant",
+  "solution_module": "ComponentDiscriminantSolution",
+  "solution_source_sha256": "caeb594b7888129e9022829bc60a9ce5abeb80c882ee70c5c499feb2d250895e",
+  "challenge_source_sha256": "0f787a0d63d215b1300e6d1c1e59b326f433af3e5555b9cc642978a79c37e0f9",
+  "solution_olean_sha256": "3bce94a561e3b4202ffd9f3dc7766a3c3b1b2131af7ca3f873be01525116d807",
+  "exit_code": 0,
+  "seconds": 3.9703195290639997,
+  "targets": 33,
+  "challenge_bytes": 83256,
+  "challenge_lines": 816
+}

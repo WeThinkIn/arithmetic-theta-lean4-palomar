@@ -1,0 +1,9 @@
+{
+  "scope": "split-cusp",
+  "mapping": {
+    "accepted-072": "ArithmeticThetaPalomarComponent485.recover_original_072"
+  },
+  "challenge_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-next-eleven-matcher-render-2342/split-cusp",
+  "targets": 24,
+  "original": "ArithmeticThetaCyclotomicModularityR0239.split_component_cusp_bound"
+}

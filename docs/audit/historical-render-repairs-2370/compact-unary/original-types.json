@@ -1,0 +1,7 @@
+[{"universes_equal": true,
+  "type_definitionally_equal": true,
+  "recovery": "ArithmeticThetaPalomarUnary514.recover_original_028",
+  "original":
+  "ArithmeticThetaCompactUnaryR0183.compact_unary_hodge_realization",
+  "id": "accepted-028",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

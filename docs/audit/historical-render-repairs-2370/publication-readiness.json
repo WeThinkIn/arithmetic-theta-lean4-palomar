@@ -1,0 +1,143 @@
+{
+  "passed": true,
+  "base_commit": "bf5e3663754ac09aa7e483da124574c3e1ab55dd",
+  "utc": "2026-10-24T16:19:30.567358+00:00",
+  "scopes": 13,
+  "targets": 337,
+  "rehashed_evidence_files": 3897,
+  "matched_source_files": 3416,
+  "cases": [
+    {
+      "scope": "field-discriminant",
+      "targets": 32,
+      "challenge_sha256": "e5027fcc82ac1f2db2f1bc2a46f1af9845fdb752569a14ca21423882da720266",
+      "original_endpoint_ids": [
+        "accepted-068"
+      ],
+      "configuration": "comparator-field-discriminant.json",
+      "metadata": "submissions/field-discriminant/formalization.yaml"
+    },
+    {
+      "scope": "key-tate",
+      "targets": 42,
+      "challenge_sha256": "1935196795d13fd9adfe8e1952a1857def17afcf8d3d14bf1f83e0903877df3c",
+      "original_endpoint_ids": [
+        "accepted-055"
+      ],
+      "configuration": "comparator-key-tate.json",
+      "metadata": "submissions/key-tate/formalization.yaml"
+    },
+    {
+      "scope": "split-cusp",
+      "targets": 24,
+      "challenge_sha256": "56a1c133df0dc36396f8ae94dac17e88bf3eec3f78d50aa5a1a1cb83542d671d",
+      "original_endpoint_ids": [
+        "accepted-072"
+      ],
+      "configuration": "comparator-split-cusp.json",
+      "metadata": "submissions/split-cusp/formalization.yaml"
+    },
+    {
+      "scope": "split-discriminant",
+      "targets": 33,
+      "challenge_sha256": "88cecf98d3e0c4128216506fea15b0de08402e82428570830c6eab895f18468f",
+      "original_endpoint_ids": [
+        "accepted-073"
+      ],
+      "configuration": "comparator-split-discriminant.json",
+      "metadata": "submissions/split-discriminant/formalization.yaml"
+    },
+    {
+      "scope": "split-square-degree",
+      "targets": 33,
+      "challenge_sha256": "d582562a4a2c6dfe23d05740417a652584941908d6108415d23adb0323945fd1",
+      "original_endpoint_ids": [
+        "accepted-074"
+      ],
+      "configuration": "comparator-split-square-degree.json",
+      "metadata": "submissions/split-square-degree/formalization.yaml"
+    },
+    {
+      "scope": "period-one",
+      "targets": 22,
+      "challenge_sha256": "7c59eced3d22916633e3b99281c158721374f8b4861248c7b4f6d772facb428d",
+      "original_endpoint_ids": [
+        "accepted-082"
+      ],
+      "configuration": "comparator-period-one.json",
+      "metadata": "submissions/period-one/formalization.yaml"
+    },
+    {
+      "scope": "scheme-tate-unit",
+      "targets": 15,
+      "challenge_sha256": "2c40d5d9da47254aa82c9fdb6e7fa36d66b0a33882af5483525d5125bb1add73",
+      "original_endpoint_ids": [
+        "accepted-084"
+      ],
+      "configuration": "comparator-scheme-tate-unit.json",
+      "metadata": "submissions/scheme-tate-unit/formalization.yaml"
+    },
+    {
+      "scope": "scheme-initial",
+      "targets": 22,
+      "challenge_sha256": "3d4bf6d7fe303ac8d490bb7e7542281054b6c7655d3f8aaf605e0758e6b86f6c",
+      "original_endpoint_ids": [
+        "accepted-085"
+      ],
+      "configuration": "comparator-scheme-initial.json",
+      "metadata": "submissions/scheme-initial/formalization.yaml"
+    },
+    {
+      "scope": "arbitrary-rigidification",
+      "targets": 24,
+      "challenge_sha256": "67cfb649024c084465658fc34a6d41365fe29ed7bce47c1b8ad6aaaae01574f3",
+      "original_endpoint_ids": [
+        "accepted-094"
+      ],
+      "configuration": "comparator-arbitrary-rigidification.json",
+      "metadata": "submissions/arbitrary-rigidification/formalization.yaml"
+    },
+    {
+      "scope": "even-point-evaluation",
+      "targets": 3,
+      "challenge_sha256": "99373376331d538925d1dff27e061959501cc07c1c3beaedb44fb00641e57510",
+      "original_endpoint_ids": [
+        "accepted-099"
+      ],
+      "configuration": "comparator-even-point-evaluation.json",
+      "metadata": "submissions/even-point-evaluation/formalization.yaml"
+    },
+    {
+      "scope": "component-cusp",
+      "targets": 24,
+      "challenge_sha256": "5c213dea20ca4934aee16607eecf5498380085706e86b9c78197a42614b4f61c",
+      "original_endpoint_ids": [
+        "accepted-029"
+      ],
+      "configuration": "comparator-component-cusp.json",
+      "metadata": "submissions/component-cusp/formalization.yaml"
+    },
+    {
+      "scope": "compact-unary",
+      "targets": 30,
+      "challenge_sha256": "d37890e028d41590c5b0c0a6bf72a8e82bf6f5bc23556e09365189bd1fb655ea",
+      "original_endpoint_ids": [
+        "accepted-028"
+      ],
+      "configuration": "comparator-compact-unary.json",
+      "metadata": "submissions/compact-unary/formalization.yaml"
+    },
+    {
+      "scope": "component-discriminant",
+      "targets": 33,
+      "challenge_sha256": "0f787a0d63d215b1300e6d1c1e59b326f433af3e5555b9cc642978a79c37e0f9",
+      "original_endpoint_ids": [
+        "accepted-030"
+      ],
+      "configuration": "comparator-component-discriminant.json",
+      "metadata": "submissions/component-discriminant/formalization.yaml"
+    }
+  ],
+  "official_credit_added": 0,
+  "semantic_review_claimed": false
+}

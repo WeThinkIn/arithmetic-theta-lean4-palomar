@@ -1,0 +1,12 @@
+{
+  "scope": "period-one",
+  "solution_module": "PeriodOneSolution",
+  "solution_source_sha256": "13058eec680d35654d78b5d2056b54a27a635249a063aad1dd3d370d62864c5e",
+  "challenge_source_sha256": "7c59eced3d22916633e3b99281c158721374f8b4861248c7b4f6d772facb428d",
+  "solution_olean_sha256": "937406c69b0cfcd78c36624e620b8c2c84baae1d5546732f237190ee6d4f6b47",
+  "exit_code": 0,
+  "seconds": 247.71786143491045,
+  "targets": 22,
+  "challenge_bytes": 81467,
+  "challenge_lines": 973
+}

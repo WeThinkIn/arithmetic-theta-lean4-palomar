@@ -1,0 +1,12 @@
+{
+  "scope": "scheme-initial",
+  "solution_module": "SchemeInitialSolution",
+  "solution_source_sha256": "8039e57a87ab1b6ba2892f3e9bc6eb025d6a81d539661977043fdc168c3ec282",
+  "challenge_source_sha256": "3d4bf6d7fe303ac8d490bb7e7542281054b6c7655d3f8aaf605e0758e6b86f6c",
+  "solution_olean_sha256": "a7eec013fb7f9047ce1fca83c08acd042b2b486a15ed92accef4a16f98407e4d",
+  "exit_code": 0,
+  "seconds": 198.25540217524394,
+  "targets": 22,
+  "challenge_bytes": 81238,
+  "challenge_lines": 769
+}

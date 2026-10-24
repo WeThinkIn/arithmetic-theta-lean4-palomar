@@ -1,0 +1,7 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarFieldD2_522.recover_original_068",
+  "original":
+  "ArithmeticThetaArithmeticSectionsR0236.field_compact_discriminant",
+  "id": "accepted-068",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

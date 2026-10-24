@@ -45,12 +45,13 @@ automation:
     the contribution account and its source provenance.
 review:
   status: self-assessed
-  notes: 'Local agent self-assessment of the recorded interface and proof checks; this status
-    does not represent independent external review or official Palomar semantic approval. Recorded
-    local validation basis: Challenge imports Mathlib and a pinned Lean compiler module for
-    local cache isolation. Full exported dependency structure and standard axiom closure pass
-    local unmodified Lake comparison. Original028 is recovered exactly. Official mechanical
-    and semantic verification of this repaired version remain pending.'
+  notes: >-
+    Local checks retain all 30 configured obligations and original endpoints
+    accepted-028. Current Solution build, complete target-closure structural and standard
+    axiom checks, original type/universe/recovery checks and clean rendering pass.
+    Compiler-only differences and exact versus definitionally equal types are
+    documented in docs/audit/historical-render-repairs-2370/compact-unary/Review.md. This is not a distinct agent's semantic review.
+    Fresh official verification and semantic review remain pending for this revision.
 status:
   scope: 'Full original028: for positive even m,N with m dividing N and every normalized
     residue, constructs the prescribed indices a,b, actual normalized open unary data

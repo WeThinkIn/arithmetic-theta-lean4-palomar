@@ -1,0 +1,4 @@
+module
+import all SchemeInitialSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarSchemeInitial406.recover_original_085 = ArithmeticThetaKatoInitialR0253.scheme_five_kato_initial_characterization := by rfl

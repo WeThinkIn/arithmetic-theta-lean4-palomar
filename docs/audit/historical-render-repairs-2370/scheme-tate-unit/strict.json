@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "scope": "scheme-tate-unit",
+  "targets": 15,
+  "checked_shared_declarations": 423,
+  "compiler_only_names_without_source": [
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_10_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_1_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_2",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_12",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_0_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_11",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_7_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_15",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_15_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_9_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_8",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_2_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_11_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_5_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_0",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_12_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_9",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_3",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_8_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_3_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_1",
+    "termMX",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_6_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_7",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_16_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_14_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_6",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_3",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_16",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_10",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_13",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_4",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_13_1",
+    "_aux_SchemeTateUnitChallenge___elabRules_termMX_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_2",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_5",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel._aux_SchemeTateUnitChallenge___macroRules__private_SchemeTateUnitChallenge_0_WeierstrassProjModel_termGh1567_4_1",
+    "_private.SchemeTateUnitChallenge.0.WeierstrassProjModel.termGh1567_14"
+  ],
+  "exports": {
+    "challenge": {
+      "bytes": 268273436,
+      "sha256": "f6a082f70e8d646fe5cf8d272aab71ee12db1518949bb7c050ca6589ccc8f6a9"
+    },
+    "solution": {
+      "bytes": 2320308116,
+      "sha256": "accfdae194e38cdc9ca5c4f6556f7426d385382b2970b138d894a35cd6a0c7ce"
+    }
+  },
+  "original_endpoint_recovery_reaudit_pending": true,
+  "official_acceptance_inferred": false
+}

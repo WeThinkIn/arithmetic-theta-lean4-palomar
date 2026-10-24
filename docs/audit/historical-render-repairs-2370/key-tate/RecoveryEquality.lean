@@ -1,0 +1,4 @@
+module
+import all KeyTateNormalizationSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarKeyTate478.recover_original_055 = ArithmeticThetaKeyTateR0220.phase_free_key_tate_normalization := by rfl

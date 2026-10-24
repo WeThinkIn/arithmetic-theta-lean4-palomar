@@ -21,5 +21,16 @@
   "limitations": "The actual square line and finite flat cover are supplied exactly as in the original endpoint. This proves their full geometric degree properties; their existence and matrix-family assembly are separate endpoints. Not official verification.",
   "local_exact_exported_comparison": true,
   "local_axiom_closure": true,
-  "structural_repair": "Compiler proof and matcher caches are isolated between source fragments. Original auxiliary propositions are explicit targets with their actual original Solution proofs; no definition holes or added main assumptions."
+  "structural_repair": "Compiler proof and matcher caches are isolated between source fragments. Original auxiliary propositions are explicit targets with their actual original Solution proofs; no definition holes or added main assumptions.",
+  "render_revision_2370": {
+    "base_commit": "bf5e3663754ac09aa7e483da124574c3e1ab55dd",
+    "challenge_sha256": "d582562a4a2c6dfe23d05740417a652584941908d6108415d23adb0323945fd1",
+    "configured_targets": 33,
+    "mathematical_obligations_preserved": true,
+    "local_current_source_checks_passed": true,
+    "rendered_errors": 0,
+    "fresh_official_verification": "pending",
+    "semantic_review": "pending",
+    "evidence": "docs/audit/historical-render-repairs-2370/split-square-degree/Review.md"
+  }
 }

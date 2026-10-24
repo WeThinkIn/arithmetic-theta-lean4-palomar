@@ -33,5 +33,16 @@
   "remaining_validation": [
     "Fresh full official preflight for the exact published revision",
     "Ordinary intake and semantic review"
-  ]
+  ],
+  "render_revision_2370": {
+    "base_commit": "bf5e3663754ac09aa7e483da124574c3e1ab55dd",
+    "challenge_sha256": "56a1c133df0dc36396f8ae94dac17e88bf3eec3f78d50aa5a1a1cb83542d671d",
+    "configured_targets": 24,
+    "mathematical_obligations_preserved": true,
+    "local_current_source_checks_passed": true,
+    "rendered_errors": 0,
+    "fresh_official_verification": "pending",
+    "semantic_review": "pending",
+    "evidence": "docs/audit/historical-render-repairs-2370/split-cusp/Review.md"
+  }
 }

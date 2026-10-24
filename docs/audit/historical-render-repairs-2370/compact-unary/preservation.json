@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "mathematical_declarations_exactly_preserved": true,
+  "results": [
+    {
+      "module": "ComponentCuspChallenge",
+      "checked_constants": 508,
+      "exact_original_constants": 508,
+      "compiler_macro_body_changes": [],
+      "added_syntax_declarations": [
+        {
+          "added": "termMX"
+        },
+        {
+          "added": "_aux_ComponentCuspChallenge___elabRules_termMX_1"
+        }
+      ]
+    },
+    {
+      "module": "CompactUnaryChallenge",
+      "checked_constants": 969,
+      "exact_original_constants": 968,
+      "compiler_macro_body_changes": [
+        {
+          "universes_equal": true,
+          "type_equal": true,
+          "name": "_aux_CompactUnaryChallenge___macroRules_commandResetSourceCaches_1",
+          "body_equal": false
+        }
+      ],
+      "added_syntax_declarations": [
+        {
+          "added": "termMX"
+        },
+        {
+          "added": "_aux_CompactUnaryChallenge___elabRules_termMX_1"
+        }
+      ]
+    },
+    {
+      "module": "ComponentDiscriminantChallenge",
+      "checked_constants": 1037,
+      "exact_original_constants": 1036,
+      "compiler_macro_body_changes": [
+        {
+          "universes_equal": true,
+          "type_equal": true,
+          "name": "_aux_ComponentDiscriminantChallenge___macroRules_commandRC_1",
+          "body_equal": false
+        }
+      ],
+      "added_syntax_declarations": [
+        {
+          "added": "_aux_ComponentDiscriminantChallenge___elabRules_termMX_1"
+        },
+        {
+          "added": "termMX"
+        }
+      ]
+    }
+  ],
+  "cache_reset_expressions_exactly_equal": true,
+  "raw_total_constant_identity_passed": false,
+  "raw_differences_retained": "output.json",
+  "clean_render_targets": 87,
+  "published": false,
+  "official_acceptance_inferred": false,
+  "full_current_solution_validation_still_required": true
+}

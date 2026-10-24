@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "scope": "arbitrary-rigidification",
+  "targets": 24,
+  "checked_shared_declarations": 413,
+  "compiler_only_names_without_source": [
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_4",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_6_1",
+    "_aux_ArbitraryRigidificationChallenge___elabRules_termMX_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_14",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_7_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_8",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_3",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_5",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_6",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_11",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_11_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_2",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_2_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_13",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_15",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_16",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_7",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_10",
+    "termMX",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_13_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_16_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_8_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_3_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_9",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_2",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_4_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_10_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_0",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_15_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_5_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_12_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_3",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_14_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.termGh1567_12",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_9_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_1_1",
+    "_private.ArbitraryRigidificationChallenge.0.WeierstrassProjModel._aux_ArbitraryRigidificationChallenge___macroRules__private_ArbitraryRigidificationChallenge_0_WeierstrassProjModel_termGh1567_0_1"
+  ],
+  "exports": {
+    "challenge": {
+      "bytes": 244995644,
+      "sha256": "c616f305c8201ae293ef98e8278045adb4db2f4b56d6126e6c1e9861abb73e20"
+    },
+    "solution": {
+      "bytes": 530824301,
+      "sha256": "e7bd81e03128c9c4520a94907703e06c2308b13d9fd2be5aadbd9d9db2cc1cb1"
+    }
+  },
+  "original_endpoint_recovery_reaudit_pending": true,
+  "official_acceptance_inferred": false
+}

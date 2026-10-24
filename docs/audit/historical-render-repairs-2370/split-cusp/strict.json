@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "scope": "split-cusp",
+  "targets": 24,
+  "checked_shared_declarations": 471,
+  "compiler_only_names_without_source": [
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_0",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_6",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_8_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_3_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_3",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_11",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_4_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_13",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_8",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_10",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_4",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_15",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_6_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_7_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_2",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_1_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_12_1",
+    "termMX",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_9",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_16",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_2",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_11_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_15_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_9_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_7",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_12",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_1",
+    "_aux_SplitCuspChallenge___elabRules_termMX_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_5",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_2_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_14_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.kwYEvalRingHom._simp_3",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_16_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_13_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_0_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_5_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel._aux_SplitCuspChallenge___macroRules__private_SplitCuspChallenge_0_WeierstrassProjModel_termGh1567_10_1",
+    "_private.SplitCuspChallenge.0.WeierstrassProjModel.termGh1567_14"
+  ],
+  "exports": {
+    "challenge": {
+      "bytes": 214479840,
+      "sha256": "a3de52efef7bebec120aaf66b467fea3298ce47a3126d13b2c39536aef7b896a"
+    },
+    "solution": {
+      "bytes": 2401567374,
+      "sha256": "dd9da4be8717abfc9252b9c36b4ad087981ef377e656357960729add0a26e270"
+    }
+  },
+  "original_endpoint_recovery_reaudit_pending": true,
+  "official_acceptance_inferred": false
+}

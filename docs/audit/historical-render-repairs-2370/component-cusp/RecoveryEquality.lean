@@ -1,0 +1,4 @@
+module
+import all ComponentCuspSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarComponent485.recover_original_029 = ArithmeticThetaComponentDegreeR0184.geometric_component_cusp_bound := by rfl

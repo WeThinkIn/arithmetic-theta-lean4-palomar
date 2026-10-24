@@ -73,5 +73,16 @@
     "WeierstrassProjModel.kw_lrChart_aux._proof_2"
   ],
   "local_complete_strict_comparison_passed": true,
-  "official_acceptance_for_this_revision": false
+  "official_acceptance_for_this_revision": false,
+  "render_revision_2370": {
+    "base_commit": "bf5e3663754ac09aa7e483da124574c3e1ab55dd",
+    "challenge_sha256": "7c59eced3d22916633e3b99281c158721374f8b4861248c7b4f6d772facb428d",
+    "configured_targets": 22,
+    "mathematical_obligations_preserved": true,
+    "local_current_source_checks_passed": true,
+    "rendered_errors": 0,
+    "fresh_official_verification": "pending",
+    "semantic_review": "pending",
+    "evidence": "docs/audit/historical-render-repairs-2370/period-one/Review.md"
+  }
 }

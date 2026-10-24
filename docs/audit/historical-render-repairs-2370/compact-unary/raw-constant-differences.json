@@ -1,0 +1,30 @@
+[{"retained_regions": 6,
+  "passed": false,
+  "module": "ComponentCuspChallenge",
+  "differences":
+  [{"added": "termMX"},
+   {"added": "_aux_ComponentCuspChallenge___elabRules_termMX_1"}],
+  "checked_constants": 508},
+ {"retained_regions": 6,
+  "passed": false,
+  "module": "CompactUnaryChallenge",
+  "differences":
+  [{"universes_equal": true,
+    "type_equal": true,
+    "name":
+    "_aux_CompactUnaryChallenge___macroRules_commandResetSourceCaches_1",
+    "body_equal": false},
+   {"added": "termMX"},
+   {"added": "_aux_CompactUnaryChallenge___elabRules_termMX_1"}],
+  "checked_constants": 969},
+ {"retained_regions": 6,
+  "passed": false,
+  "module": "ComponentDiscriminantChallenge",
+  "differences":
+  [{"universes_equal": true,
+    "type_equal": true,
+    "name": "_aux_ComponentDiscriminantChallenge___macroRules_commandRC_1",
+    "body_equal": false},
+   {"added": "_aux_ComponentDiscriminantChallenge___elabRules_termMX_1"},
+   {"added": "termMX"}],
+  "checked_constants": 1037}]

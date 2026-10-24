@@ -1,0 +1,12 @@
+{
+  "scope": "split-cusp",
+  "solution_module": "SplitCuspSolution",
+  "solution_source_sha256": "847b1f51fd41701a885b07d4f403cdb0fb92fbc2f41cb2d4e87e8df08265e5c9",
+  "challenge_source_sha256": "56a1c133df0dc36396f8ae94dac17e88bf3eec3f78d50aa5a1a1cb83542d671d",
+  "solution_olean_sha256": "d597ecde533fa68c19e39bd56df89a9a1b03e3644c5df8dde81c6eb5c0b2ff0a",
+  "exit_code": 0,
+  "seconds": 3.019075799267739,
+  "targets": 24,
+  "challenge_bytes": 46575,
+  "challenge_lines": 510
+}

@@ -7,3 +7,8 @@ Challenge has 669 lines, 79510 bytes and 33 explicit proposition targets. Its ac
 The actual square line and finite flat cover are supplied exactly as in the original endpoint. This proves their full geometric degree properties; their existence and matrix-family assembly are separate endpoints. Not official verification.
 
 The Solution imports only its original split theorem module and the pinned compiler cache helper. Unused common-unary and scheme-discriminant-existence imports and unused Solution declarations were removed, reducing the project import closure by 45 modules. The Challenge, all 33 targets, and original theorem scope remain byte-identical; five audits and isolated strict comparison pass again. See ../../docs/audit/split-import-pruning-561/Review.md for named root validation.
+
+
+## Current rendering revision
+
+All 33 configured obligations are retained; all anchors render with zero errors. Current-source build, strict comparison, standard axioms and original endpoint recovery pass. See [the exact local validation](../../docs/audit/historical-render-repairs-2370/split-square-degree/Review.md). Fresh official verification and ordinary semantic review are pending for this revision.

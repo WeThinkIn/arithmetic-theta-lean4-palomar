@@ -1,0 +1,4 @@
+module
+import all EvenPointEvaluationSolution
+set_option maxRecDepth 8192
+example : ArithmeticThetaPalomarTheta473.recover_original_099 = ArithmeticThetaMultiplierKeyR0217.even_point_theta_evaluation := by rfl

@@ -1,0 +1,6 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "recovery": "ArithmeticThetaPalomarKeyTate478.recover_original_055",
+  "original": "ArithmeticThetaKeyTateR0220.phase_free_key_tate_normalization",
+  "id": "accepted-055",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

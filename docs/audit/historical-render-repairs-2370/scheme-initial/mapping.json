@@ -1,0 +1,9 @@
+{
+  "scope": "scheme-initial",
+  "mapping": {
+    "accepted-085": "ArithmeticThetaPalomarSchemeInitial406.recover_original_085"
+  },
+  "challenge_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-next-eleven-matcher-render-2342/scheme-initial",
+  "targets": 22,
+  "original": "ArithmeticThetaKatoInitialR0253.scheme_five_kato_initial_characterization"
+}

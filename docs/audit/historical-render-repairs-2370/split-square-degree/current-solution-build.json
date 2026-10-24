@@ -1,0 +1,12 @@
+{
+  "scope": "split-square-degree",
+  "solution_module": "SplitSquareDegreeSolution",
+  "solution_source_sha256": "6e12f186cb616618402177cdf629f4ba973cca2a1a6cc0c8e5e2eaeb616d60c2",
+  "challenge_source_sha256": "d582562a4a2c6dfe23d05740417a652584941908d6108415d23adb0323945fd1",
+  "solution_olean_sha256": "2e67df435bd3d4c1f2c5176ab3aa0b46cccbc258476ccae8ff2e5264ec38c6fe",
+  "exit_code": 0,
+  "seconds": 3.319472149014473,
+  "targets": 33,
+  "challenge_bytes": 79730,
+  "challenge_lines": 672
+}

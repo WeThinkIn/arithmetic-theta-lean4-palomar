@@ -1,0 +1,9 @@
+{
+  "scope": "field-discriminant",
+  "mapping": {
+    "accepted-068": "ArithmeticThetaPalomarFieldD2_522.recover_original_068"
+  },
+  "challenge_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-next-eleven-matcher-render-2342/field-discriminant",
+  "targets": 32,
+  "original": "ArithmeticThetaArithmeticSectionsR0236.field_compact_discriminant"
+}

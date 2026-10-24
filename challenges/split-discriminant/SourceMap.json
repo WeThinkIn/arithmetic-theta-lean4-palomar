@@ -45,5 +45,17 @@
     ],
     "unchanged_challenge_and_targets": true,
     "isolated_exact_gate": "docs/audit/split-import-pruning-561/split-discriminant/precheck.json"
-  }
+  },
+  "render_revision_2370": {
+    "base_commit": "bf5e3663754ac09aa7e483da124574c3e1ab55dd",
+    "challenge_sha256": "88cecf98d3e0c4128216506fea15b0de08402e82428570830c6eab895f18468f",
+    "configured_targets": 33,
+    "mathematical_obligations_preserved": true,
+    "local_current_source_checks_passed": true,
+    "rendered_errors": 0,
+    "fresh_official_verification": "pending",
+    "semantic_review": "pending",
+    "evidence": "docs/audit/historical-render-repairs-2370/split-discriminant/Review.md"
+  },
+  "historical_line_maps_note": "Prior maps identify the source snapshot recorded by their own bindings; current repair hashes and evidence are in render_revision_2370."
 }

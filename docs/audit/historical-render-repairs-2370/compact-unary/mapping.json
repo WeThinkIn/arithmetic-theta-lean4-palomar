@@ -1,0 +1,9 @@
+{
+  "scope": "compact-unary",
+  "mapping": {
+    "accepted-028": "ArithmeticThetaPalomarUnary514.recover_original_028"
+  },
+  "challenge_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-three-matcher-render-2339/compact-unary",
+  "targets": 30,
+  "original": "ArithmeticThetaCompactUnaryR0183.compact_unary_hodge_realization"
+}

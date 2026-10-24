@@ -1,0 +1,181 @@
+{
+  "passed": true,
+  "mathematical_declarations_exactly_preserved": true,
+  "results": [
+    {
+      "module": "FieldDiscriminantChallenge",
+      "checked_constants": 1234,
+      "exact_original_constants": 1233,
+      "compiler_macro_body_changes": [
+        {
+          "universes_equal": true,
+          "type_equal": true,
+          "name": "_aux_FieldDiscriminantChallenge___macroRules_commandRC_1",
+          "body_equal": false
+        }
+      ],
+      "added_syntax_declarations": [
+        {
+          "added": "termMX"
+        },
+        {
+          "added": "_aux_FieldDiscriminantChallenge___elabRules_termMX_1"
+        }
+      ]
+    },
+    {
+      "module": "KeyTateNormalizationChallenge",
+      "checked_constants": 866,
+      "exact_original_constants": 865,
+      "compiler_macro_body_changes": [
+        {
+          "universes_equal": true,
+          "type_equal": true,
+          "name": "_aux_KeyTateNormalizationChallenge___macroRules_commandRC_1",
+          "body_equal": false
+        }
+      ],
+      "added_syntax_declarations": [
+        {
+          "added": "_aux_KeyTateNormalizationChallenge___elabRules_termMX_1"
+        },
+        {
+          "added": "termMX"
+        }
+      ]
+    },
+    {
+      "module": "SplitCuspChallenge",
+      "checked_constants": 508,
+      "exact_original_constants": 508,
+      "compiler_macro_body_changes": [],
+      "added_syntax_declarations": [
+        {
+          "added": "termMX"
+        },
+        {
+          "added": "_aux_SplitCuspChallenge___elabRules_termMX_1"
+        }
+      ]
+    },
+    {
+      "module": "SplitDiscriminantChallenge",
+      "checked_constants": 1076,
+      "exact_original_constants": 1075,
+      "compiler_macro_body_changes": [
+        {
+          "universes_equal": true,
+          "type_equal": true,
+          "name": "_aux_SplitDiscriminantChallenge___macroRules_commandRc_1",
+          "body_equal": false
+        }
+      ],
+      "added_syntax_declarations": [
+        {
+          "added": "_aux_SplitDiscriminantChallenge___elabRules_termMX_1"
+        },
+        {
+          "added": "termMX"
+        }
+      ]
+    },
+    {
+      "module": "SplitSquareDegreeChallenge",
+      "checked_constants": 1122,
+      "exact_original_constants": 1121,
+      "compiler_macro_body_changes": [
+        {
+          "universes_equal": true,
+          "type_equal": true,
+          "name": "_aux_SplitSquareDegreeChallenge___macroRules_commandRc_1",
+          "body_equal": false
+        }
+      ],
+      "added_syntax_declarations": [
+        {
+          "added": "_aux_SplitSquareDegreeChallenge___elabRules_termMX_1"
+        },
+        {
+          "added": "termMX"
+        }
+      ]
+    },
+    {
+      "module": "PeriodOneChallenge",
+      "checked_constants": 546,
+      "exact_original_constants": 546,
+      "compiler_macro_body_changes": [],
+      "added_syntax_declarations": [
+        {
+          "added": "_aux_PeriodOneChallenge___elabRules_termMX_1"
+        },
+        {
+          "added": "termMX"
+        }
+      ]
+    },
+    {
+      "module": "SchemeTateUnitChallenge",
+      "checked_constants": 460,
+      "exact_original_constants": 460,
+      "compiler_macro_body_changes": [],
+      "added_syntax_declarations": [
+        {
+          "added": "termMX"
+        },
+        {
+          "added": "_aux_SchemeTateUnitChallenge___elabRules_termMX_1"
+        }
+      ]
+    },
+    {
+      "module": "SchemeInitialChallenge",
+      "checked_constants": 491,
+      "exact_original_constants": 491,
+      "compiler_macro_body_changes": [],
+      "added_syntax_declarations": [
+        {
+          "added": "termMX"
+        },
+        {
+          "added": "_aux_SchemeInitialChallenge___elabRules_termMX_1"
+        }
+      ]
+    },
+    {
+      "module": "ArbitraryRigidificationChallenge",
+      "checked_constants": 450,
+      "exact_original_constants": 450,
+      "compiler_macro_body_changes": [],
+      "added_syntax_declarations": [
+        {
+          "added": "_aux_ArbitraryRigidificationChallenge___elabRules_termMX_1"
+        },
+        {
+          "added": "termMX"
+        }
+      ]
+    },
+    {
+      "module": "EvenPointEvaluationChallenge",
+      "checked_constants": 370,
+      "exact_original_constants": 370,
+      "compiler_macro_body_changes": [],
+      "added_syntax_declarations": [
+        {
+          "added": "_aux_EvenPointEvaluationChallenge___elabRules_termMX_1"
+        },
+        {
+          "added": "termMX"
+        }
+      ]
+    }
+  ],
+  "cache_reset_expressions_exactly_equal": true,
+  "raw_total_constant_identity_passed": false,
+  "raw_differences_retained": "output.json",
+  "clean_render_targets": 250,
+  "published": false,
+  "official_acceptance_inferred": false,
+  "full_current_solution_validation_still_required": true
+}

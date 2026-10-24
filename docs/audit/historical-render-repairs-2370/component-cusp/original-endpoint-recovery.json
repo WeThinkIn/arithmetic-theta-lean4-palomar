@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "scope": "component-cusp",
+  "original_endpoint_ids": [
+    "accepted-029"
+  ],
+  "type_definitionally_equal": true,
+  "ordered_universes_exact": true,
+  "standard_axioms_only": true,
+  "recovery_equality_compiled": true,
+  "direct_proposition_holes": 24,
+  "definition_holes": 0,
+  "official_acceptance_inferred": false
+}

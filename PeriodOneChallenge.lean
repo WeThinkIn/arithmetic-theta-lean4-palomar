@@ -1,7 +1,7 @@
 module
 public import Mathlib
 import all Lean.Meta.Match.Match
-@[expose] public section
+@[expose] public section elab "mX" : term => return Lean.mkConst (((((Lean.Name.num `_private.Lean.Meta.Match.Match 0).str "Lean").str "Meta").str "Match").str "matcherExt")
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
@@ -367,7 +367,7 @@ abbrev Curve (W : WeierstrassCurve R) : Scheme.{u} :=
   WeierstrassProjModel.projModelCR W.toProjective
 def structureMap (W : WeierstrassCurve R) : Curve R W ⟶ Spec (CommRingCat.of R) :=
   WeierstrassProjModel.projModelStrCR W.toProjective
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def origin (W : WeierstrassCurve R) : Spec (CommRingCat.of R) ⟶ Curve R W :=
   (WeierstrassProjModel.kwZeroSect R W).val
 abbrev Law (W : WeierstrassCurve R) :=
@@ -516,7 +516,7 @@ def constToPresheaf : (Functor.const (X.Opens)ᵒᵖ).obj (CommRingCat.of R) ⟶
   ((constToPresheaf f).app (op U)).hom.toAlgebra
 def kaehlerPresheaf : X.PresheafOfModules :=
   PresheafOfModulesOfCommRing.DifferentialsConstruction.relativeDifferentials' (constToPresheaf f)
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def kaehler : X.Modules :=
   (PresheafOfModules.sheafification (𝟙 X.ringCatSheaf.obj)).obj (kaehlerPresheaf f)
 def kaehlerToSections (U : X.Opens) : ((kaehlerPresheaf f).obj (op U) : Type u) → (Γ(kaehler f, U) : Type u) :=
@@ -574,7 +574,7 @@ theorem initialTensorExistsUnique : ∃! d : Γ(HodgePower R W 24, ⊤), FiveSpe
 end ArithmeticThetaPalomarNormalInitial381
 open NeronModelInfra
 namespace GoodReductionJacobian
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def schemeHomOverComp {B T' T A : Scheme.{u}} {t : T ⟶ B} {t' : T' ⟶ B} {f : A ⟶ B} (ψ : T' ⟶ T) (hψ : ψ ≫ t = t') (x : SchemeHomOver t f) : SchemeHomOver t' f :=
   ⟨ψ ≫ x.1, by rw [Category.assoc, x.2, hψ]⟩
 end GoodReductionJacobian
@@ -805,12 +805,12 @@ open WeierstrassProjModel MvPolynomial HomogeneousLocalization HomogeneousIdealQ
 attribute [local instance] MvPolynomial.gradedAlgebra
 namespace WeierstrassCurve.DrinfeldGlobal
 variable {T : Type u} [CommRing T] (W : WeierstrassCurve.Projective T)
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev coord (i : Fin 3) : ProjModelRingCR W :=
   Ideal.Quotient.mk (projModelHomogeneousIdealCR W).toIdeal (X i)
 theorem coord_mem (i : Fin 3) : coord W i ∈ projModelGradingCR W 1 :=
   mk_mem_quotGradingSubmodule _ _ (isHomogeneous_X T i)
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 abbrev ZChartRing : Type u := Away (projModelGradingCR W) (coord W 2)
 abbrev zChartι : Spec (CommRingCat.of (ZChartRing W)) ⟶ projModelCR W :=
   Proj.awayι (projModelGradingCR W) (coord W 2) (coord_mem W 2) one_pos
@@ -867,7 +867,7 @@ variable {k : Type u} [Field k]
 def monomial (a : k) (n : ℕ) : PowerSeries k :=
   PowerSeries.C a * PowerSeries.X ^ n
 def xTerm (v : PowerSeries k) : PowerSeries k := v * ((1-v)⁻¹)^2
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def partialX (d i : ℕ) (a : k) (N : ℕ) : PowerSeries k :=
   xTerm (monomial a i) +
   (∑ j ∈ Finset.range N,
@@ -887,7 +887,7 @@ def rootSeries (r : ℕ) (j : Fin 3) : PowerSeries k :=
 end ArithmeticThetaCubicModelR0144
 namespace ArithmeticThetaPeriodOneR0246
 variable (k : Type) [Field k] [CharZero k]
-run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
 def ramifiedCoefficient (j : Fin 3) : PowerSeries k :=
   let e := ArithmeticThetaCubicModelR0144.rootSeries k 4
   if j.val = 0 then -(e 0 + e 1 + e 2)

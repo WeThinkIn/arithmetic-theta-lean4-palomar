@@ -5,7 +5,7 @@ import all Lean.Meta.Match.Match
 The37 selected support/main propositions are proof obligations, not extra assumptions.
 All semantic definition bodies and original statements are checked against Solution.
 See challenges/phase-free-key/SourceMap.json for original definitions and recovery bridges. -/
-@[expose] public section
+@[expose] public section elab "mX" : term => return Lean.mkConst (((((Lean.Name.num `_private.Lean.Meta.Match.Match 0).str "Lean").str "Meta").str "Match").str "matcherExt")
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
 set_option backward.isDefEq.respectTransparency.types false
@@ -13,7 +13,7 @@ set_option backward.isDefEq.respectTransparency.instanceSearchTypes false
 set_option maxHeartbeats 1600000
 set_option maxRecDepth 4096
 noncomputable section
-macro "rC" : command => `(run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {})
+macro "rC" : command => `(run_cmd Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {})
 local notation "q0" => AlgebraicGeometry.Scheme.Modules.pullback
 universe u open CategoryTheory CategoryTheory.Limits AlgebraicGeometry Opposite namespace NeronModelInfra
 abbrev SchemeHomOver {B Y X:Scheme.{u}} (g:Y ⟶ B) (f:X ⟶ B):={φ:Y ⟶ X // φ ≫ f = g}
@@ -896,7 +896,7 @@ variable (k:Type) [Field k] [CharZero k]
 def thetaAt (L:ℕ):PowerSeries k:=PowerSeries.mk (fun n => if L/2 ∣ n then PowerSeries.coeff (n/(L/2)) (ArithmeticThetaTateSeries.theta k) else 0)
 end ArithmeticThetaGlobalFourTorsionR0190 namespace ArithmeticThetaPalomarBoundary445
 run_cmd do
-  Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {}
+  Lean.modifyEnv fun env => Lean.EnvExtension.setState mX (Lean.Meta.auxLemmasExt.setState env {}) {}
   for n in [`ArithmeticThetaPalomarGlobalFrame401.NormalizedFrame._proof_1, `ArithmeticThetaPalomarGlobalFrame401.NormalizedFrame._proof_2] do
     let some ci:=(← Lean.getEnv).find? n | throwError "Missing original normalized-frame helper"
     let key:Lean.Meta.AuxLemmaKey:={ type:=ci.type, isPrivate:=false, defeq:=false }

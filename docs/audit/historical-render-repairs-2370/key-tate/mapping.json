@@ -1,0 +1,9 @@
+{
+  "scope": "key-tate",
+  "mapping": {
+    "accepted-055": "ArithmeticThetaPalomarKeyTate478.recover_original_055"
+  },
+  "challenge_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-next-eleven-matcher-render-2342/key-tate",
+  "targets": 42,
+  "original": "ArithmeticThetaKeyTateR0220.phase_free_key_tate_normalization"
+}

@@ -1,0 +1,12 @@
+{
+  "scope": "key-tate",
+  "solution_module": "KeyTateNormalizationSolution",
+  "solution_source_sha256": "60921de37eedfe785f610242b920f5667875bedce48518e424eea2c5060e2b75",
+  "challenge_source_sha256": "1935196795d13fd9adfe8e1952a1857def17afcf8d3d14bf1f83e0903877df3c",
+  "solution_olean_sha256": "c070d23699d454293a556bce26ef402e6f9cefdf452b9e1cf18caeae69abcaa1",
+  "exit_code": 0,
+  "seconds": 53.53110441984609,
+  "targets": 42,
+  "challenge_bytes": 101501,
+  "challenge_lines": 989
+}

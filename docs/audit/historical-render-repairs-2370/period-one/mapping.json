@@ -1,0 +1,9 @@
+{
+  "scope": "period-one",
+  "mapping": {
+    "accepted-082": "ArithmeticThetaPalomarPeriod404.recover_original_082"
+  },
+  "challenge_dir": "/home/Palomar/workspace/arithmetic-theta/evidence/historical-next-eleven-matcher-render-2342/period-one",
+  "targets": 22,
+  "original": "ArithmeticThetaRationalTateR0247.scheme_period_one_discriminant"
+}

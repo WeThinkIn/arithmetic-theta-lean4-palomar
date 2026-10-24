@@ -1,0 +1,22 @@
+{
+  "scope": "split-cusp",
+  "commit": "727454ed73c6c66c7de499eeafe4f352cb6666ef",
+  "historical_official_run": 39877671567,
+  "source_sha256": "56a1c133df0dc36396f8ae94dac17e88bf3eec3f78d50aa5a1a1cb83542d671d",
+  "challenge_bytes": 46575,
+  "challenge_lines": 510,
+  "configuration_sha256": "91570ae7faf3ff1a35e97deba0dbff16885fcdbe4e860e997ecb7d68501d9830",
+  "compiled": true,
+  "literate_exit_code": 0,
+  "html_exit_code": 0,
+  "targets": 24,
+  "missing_target_anchors": [],
+  "rendered_errors": [],
+  "rendered_error_count": 0,
+  "clean_render": true,
+  "html_sha256": "cc1aafed8bb49907033793070fc1aa9b6c1c0b59eb9b49104756e81413fffdb5",
+  "sanitizer_sha256": "bd0e82e9a21b3995ed182ef956e3d30640d8a38e28a6edc018462004d47c481a",
+  "official_result_inferred": false,
+  "unpublished_candidate": true,
+  "official_submission_changed": false
+}
