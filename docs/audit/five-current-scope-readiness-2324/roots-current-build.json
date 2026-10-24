@@ -1,0 +1,449 @@
+{
+  "passed": true,
+  "bindings_unchanged": true,
+  "complete_closure_count": 3169,
+  "source_bound_cached_dependencies": 3096,
+  "fresh_modules": [
+    "AcceptedRootProvidersR0228",
+    "AlgebraicBranchDefinitionsR0226",
+    "AlgebraicBranchEquationR0226",
+    "AlgebraicBranchFiniteModelR0226",
+    "AlgebraicBranchResidueR0226",
+    "AlgebraicBranchValuationR0226",
+    "AmbientBranchValuesR0227",
+    "AmbientCompletedRootsDefinitionsR0227",
+    "AmbientPrescribedRootsR0228",
+    "CompletedPointDiskR0227",
+    "ConstantExtensionDefinitionsR0225",
+    "FiniteEtaleMapFiniteModelR0221",
+    "FiniteFieldModelsDefinitionsR0221",
+    "FiniteLineHomsModelR0221",
+    "FiniteMapConstantExtensionR0225",
+    "FiniteModelFramedRootValuesR0224",
+    "FinitePowerSectionsModelR0221",
+    "FramedRootCoefficientR0228",
+    "LineConstantExtensionR0225",
+    "LineFiniteModelR0221",
+    "LineHomsConstantExtensionR0225",
+    "P2M.Sol.S_AlgebraicGeometry_GeometricallyIntegral_of_isPullback_of_geometricallyIntegral",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_isAffineOpen_isFrameOn_preimage_of_isDirectLimit",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_UnitCocycle_exists_comap_eq_of_isDirectLimit",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_exists_intermediateField_isInvertible_nonempty_pullback_iso_of_isAlgebraic",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_exists_isInvertible_nonempty_pullback_iso_of_isInvertible_of_isDirectLimit",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_exists_pullback_glueOfCocycle_iso",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_isInvertible_glueOfCocycle",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_isInvertible_of_forall_exists_isFrameOn",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_exists_app_eq_app_of_isCompact_of_isDirectLimit",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_exists_app_eq_of_isCompact_of_isDirectLimit",
+    "P2M.Sol.S_AlgebraicGeometry_Scheme_exists_iSup_preimage_eq_top_of_isDirectLimit",
+    "P2M.Sol.S_AlgebraicGeometry_exists_adicCompletion_stalk_ringEquiv_powerSeries_of_smoothOfRelativeDimension_one",
+    "P2M.Sol.S_AlgebraicGeometry_exists_fg_subalgebra_forall_hom_pullback_of_hom_pullback_of_locallyOfFinitePresentation",
+    "P2M.Sol.S_AlgebraicGeometry_stalk_flat_and_maximalIdeal_eq_sup_span_of_smoothOfRelativeDimension_one",
+    "P2M.Sol.S_IsLocalRing_comap_map_adicCompletion_eq",
+    "P2M.Sol.S_IsLocalRing_exists_ringEquiv_adicCompletion_powerSeries_of_flat_of_maximalIdeal_eq_sup_span",
+    "PointedCurveConstantExtensionR0225",
+    "PointedCurveFiniteModelR0221",
+    "PointedRamifiedRootModelR0222",
+    "PointedSquareCoverFiniteModelR0221",
+    "PowerSectionsConstantExtensionR0225",
+    "PrescribedProjectiveRootFiniteModelR0224",
+    "PrescribedRootModelsDefinitionsR0224",
+    "PrescribedRootsFiniteConstantExtensionR0225",
+    "RamifiedFiniteMapModelR0222",
+    "RamifiedRootModelsDefinitionsR0222",
+    "RamifiedRootsConstantExtensionR0225",
+    "RootEquationCartesianReflectionR0222",
+    "SelectedRootFieldR0228",
+    "SharpAndRootsSolution",
+    "SharpMatrixKernelR0195",
+    "SmoothPointSimultaneousRootsR0228",
+    "Theorems.Thm_AlgebraicGeometry_GeometricallyIntegral_of_isPullback_of_geometricallyIntegral",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_isAffineOpen_isFrameOn_preimage_of_isDirectLimit",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_UnitCocycle_exists_comap_eq_of_isDirectLimit",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_intermediateField_isInvertible_nonempty_pullback_iso_of_isAlgebraic",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_isInvertible_nonempty_pullback_iso_of_isInvertible_of_isDirectLimit",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_pullback_glueOfCocycle_iso",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isInvertible_glueOfCocycle",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isInvertible_of_forall_exists_isFrameOn",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_exists_app_eq_app_of_isCompact_of_isDirectLimit",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_exists_app_eq_of_isCompact_of_isDirectLimit",
+    "Theorems.Thm_AlgebraicGeometry_Scheme_exists_iSup_preimage_eq_top_of_isDirectLimit",
+    "Theorems.Thm_AlgebraicGeometry_exists_adicCompletion_stalk_ringEquiv_powerSeries_of_smoothOfRelativeDimension_one",
+    "Theorems.Thm_AlgebraicGeometry_exists_fg_subalgebra_forall_hom_pullback_of_hom_pullback_of_locallyOfFinitePresentation",
+    "Theorems.Thm_AlgebraicGeometry_stalk_flat_and_maximalIdeal_eq_sup_span_of_smoothOfRelativeDimension_one",
+    "Theorems.Thm_IsLocalRing_comap_map_adicCompletion_eq",
+    "Theorems.Thm_IsLocalRing_exists_ringEquiv_adicCompletion_powerSeries_of_flat_of_maximalIdeal_eq_sup_span",
+    "ValuativeRootIntegralityR0223",
+    "ValuativeRootSectionsDefinitionsR0223",
+    "ValuativeSimultaneousSectionsR0223",
+    "ValuedExtensionPrescribedRootsR0223"
+  ],
+  "results": [
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_exists_pullback_glueOfCocycle_iso",
+      "exit_code": 0,
+      "seconds": 1.9343890091404319
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_GeometricallyIntegral_of_isPullback_of_geometricallyIntegral",
+      "exit_code": 0,
+      "seconds": 2.227362619712949
+    },
+    {
+      "module": "FiniteFieldModelsDefinitionsR0221",
+      "exit_code": 0,
+      "seconds": 2.3218290912918746
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_isInvertible_of_forall_exists_isFrameOn",
+      "exit_code": 0,
+      "seconds": 1.6893817600794137
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_isAffineOpen_isFrameOn_preimage_of_isDirectLimit",
+      "exit_code": 0,
+      "seconds": 4.229879104997963
+    },
+    {
+      "module": "FiniteEtaleMapFiniteModelR0221",
+      "exit_code": 0,
+      "seconds": 4.353154570795596
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_exists_fg_subalgebra_forall_hom_pullback_of_hom_pullback_of_locallyOfFinitePresentation",
+      "exit_code": 0,
+      "seconds": 2.3954258509911597
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_exists_iSup_preimage_eq_top_of_isDirectLimit",
+      "exit_code": 0,
+      "seconds": 4.843377543147653
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_exists_app_eq_app_of_isCompact_of_isDirectLimit",
+      "exit_code": 0,
+      "seconds": 7.999637236818671
+    },
+    {
+      "module": "P2M.Sol.S_IsLocalRing_comap_map_adicCompletion_eq",
+      "exit_code": 0,
+      "seconds": 1.7215003478340805
+    },
+    {
+      "module": "RamifiedFiniteMapModelR0222",
+      "exit_code": 0,
+      "seconds": 2.9265549168922007
+    },
+    {
+      "module": "SharpMatrixKernelR0195",
+      "exit_code": 0,
+      "seconds": 2.8249949510209262
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_stalk_flat_and_maximalIdeal_eq_sup_span_of_smoothOfRelativeDimension_one",
+      "exit_code": 0,
+      "seconds": 4.817455321084708
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_GeometricallyIntegral_of_isPullback_of_geometricallyIntegral",
+      "exit_code": 0,
+      "seconds": 1.4905935539864004
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_IsInvertible_exists_isAffineOpen_isFrameOn_preimage_of_isDirectLimit",
+      "exit_code": 0,
+      "seconds": 1.5536620491184294
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_pullback_glueOfCocycle_iso",
+      "exit_code": 0,
+      "seconds": 1.630295162089169
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isInvertible_of_forall_exists_isFrameOn",
+      "exit_code": 0,
+      "seconds": 1.5888471300713718
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_exists_app_eq_app_of_isCompact_of_isDirectLimit",
+      "exit_code": 0,
+      "seconds": 1.6230469970032573
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_exists_iSup_preimage_eq_top_of_isDirectLimit",
+      "exit_code": 0,
+      "seconds": 1.590866091195494
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_isInvertible_glueOfCocycle",
+      "exit_code": 0,
+      "seconds": 1.5256907236762345
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_exists_fg_subalgebra_forall_hom_pullback_of_hom_pullback_of_locallyOfFinitePresentation",
+      "exit_code": 0,
+      "seconds": 1.736687749158591
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_isInvertible_glueOfCocycle",
+      "exit_code": 0,
+      "seconds": 1.4495485499501228
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_stalk_flat_and_maximalIdeal_eq_sup_span_of_smoothOfRelativeDimension_one",
+      "exit_code": 0,
+      "seconds": 1.5402872553095222
+    },
+    {
+      "module": "Theorems.Thm_IsLocalRing_comap_map_adicCompletion_eq",
+      "exit_code": 0,
+      "seconds": 1.3934412943199277
+    },
+    {
+      "module": "PointedCurveFiniteModelR0221",
+      "exit_code": 0,
+      "seconds": 6.359869052190334
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_exists_app_eq_of_isCompact_of_isDirectLimit",
+      "exit_code": 0,
+      "seconds": 10.359041812829673
+    },
+    {
+      "module": "ValuativeRootSectionsDefinitionsR0223",
+      "exit_code": 0,
+      "seconds": 3.239349344279617
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_exists_app_eq_of_isCompact_of_isDirectLimit",
+      "exit_code": 0,
+      "seconds": 1.6174353868700564
+    },
+    {
+      "module": "P2M.Sol.S_IsLocalRing_exists_ringEquiv_adicCompletion_powerSeries_of_flat_of_maximalIdeal_eq_sup_span",
+      "exit_code": 0,
+      "seconds": 8.161350484006107
+    },
+    {
+      "module": "Theorems.Thm_IsLocalRing_exists_ringEquiv_adicCompletion_powerSeries_of_flat_of_maximalIdeal_eq_sup_span",
+      "exit_code": 0,
+      "seconds": 1.415835150051862
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_exists_adicCompletion_stalk_ringEquiv_powerSeries_of_smoothOfRelativeDimension_one",
+      "exit_code": 0,
+      "seconds": 1.5626459368504584
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_exists_adicCompletion_stalk_ringEquiv_powerSeries_of_smoothOfRelativeDimension_one",
+      "exit_code": 0,
+      "seconds": 1.4936727643944323
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_UnitCocycle_exists_comap_eq_of_isDirectLimit",
+      "exit_code": 0,
+      "seconds": 6.414329377934337
+    },
+    {
+      "module": "ValuativeRootIntegralityR0223",
+      "exit_code": 0,
+      "seconds": 6.89603211497888
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_UnitCocycle_exists_comap_eq_of_isDirectLimit",
+      "exit_code": 0,
+      "seconds": 1.6127408989705145
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_exists_isInvertible_nonempty_pullback_iso_of_isInvertible_of_isDirectLimit",
+      "exit_code": 0,
+      "seconds": 3.6675285841338336
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_isInvertible_nonempty_pullback_iso_of_isInvertible_of_isDirectLimit",
+      "exit_code": 0,
+      "seconds": 1.6640184712596238
+    },
+    {
+      "module": "P2M.Sol.S_AlgebraicGeometry_Scheme_Modules_exists_intermediateField_isInvertible_nonempty_pullback_iso_of_isAlgebraic",
+      "exit_code": 0,
+      "seconds": 4.061939144041389
+    },
+    {
+      "module": "Theorems.Thm_AlgebraicGeometry_Scheme_Modules_exists_intermediateField_isInvertible_nonempty_pullback_iso_of_isAlgebraic",
+      "exit_code": 0,
+      "seconds": 1.6518534659408033
+    },
+    {
+      "module": "ValuativeSimultaneousSectionsR0223",
+      "exit_code": 0,
+      "seconds": 16.548629487864673
+    },
+    {
+      "module": "FiniteLineHomsModelR0221",
+      "exit_code": 0,
+      "seconds": 48.36199465300888
+    },
+    {
+      "module": "ValuedExtensionPrescribedRootsR0223",
+      "exit_code": 0,
+      "seconds": 3.310900207143277
+    },
+    {
+      "module": "LineFiniteModelR0221",
+      "exit_code": 0,
+      "seconds": 15.53103178087622
+    },
+    {
+      "module": "FinitePowerSectionsModelR0221",
+      "exit_code": 0,
+      "seconds": 50.8665867280215
+    },
+    {
+      "module": "PointedSquareCoverFiniteModelR0221",
+      "exit_code": 0,
+      "seconds": 32.01243684301153
+    },
+    {
+      "module": "RamifiedRootModelsDefinitionsR0222",
+      "exit_code": 0,
+      "seconds": 7.810744079295546
+    },
+    {
+      "module": "RootEquationCartesianReflectionR0222",
+      "exit_code": 0,
+      "seconds": 16.553050769958645
+    },
+    {
+      "module": "PointedRamifiedRootModelR0222",
+      "exit_code": 0,
+      "seconds": 24.507915193215013
+    },
+    {
+      "module": "PrescribedRootModelsDefinitionsR0224",
+      "exit_code": 0,
+      "seconds": 9.83435552706942
+    },
+    {
+      "module": "FiniteModelFramedRootValuesR0224",
+      "exit_code": 0,
+      "seconds": 15.180745211895555
+    },
+    {
+      "module": "PrescribedProjectiveRootFiniteModelR0224",
+      "exit_code": 0,
+      "seconds": 7.484092271886766
+    },
+    {
+      "module": "ConstantExtensionDefinitionsR0225",
+      "exit_code": 0,
+      "seconds": 14.136916972696781
+    },
+    {
+      "module": "LineConstantExtensionR0225",
+      "exit_code": 0,
+      "seconds": 4.741602677851915
+    },
+    {
+      "module": "FiniteMapConstantExtensionR0225",
+      "exit_code": 0,
+      "seconds": 7.188850867096335
+    },
+    {
+      "module": "PointedCurveConstantExtensionR0225",
+      "exit_code": 0,
+      "seconds": 7.208909409120679
+    },
+    {
+      "module": "LineHomsConstantExtensionR0225",
+      "exit_code": 0,
+      "seconds": 23.44994813995436
+    },
+    {
+      "module": "PowerSectionsConstantExtensionR0225",
+      "exit_code": 0,
+      "seconds": 48.47803303785622
+    },
+    {
+      "module": "RamifiedRootsConstantExtensionR0225",
+      "exit_code": 0,
+      "seconds": 32.64445068221539
+    },
+    {
+      "module": "PrescribedRootsFiniteConstantExtensionR0225",
+      "exit_code": 0,
+      "seconds": 17.746611594222486
+    },
+    {
+      "module": "AlgebraicBranchDefinitionsR0226",
+      "exit_code": 0,
+      "seconds": 3.063934256788343
+    },
+    {
+      "module": "AlgebraicBranchResidueR0226",
+      "exit_code": 0,
+      "seconds": 4.135081664193422
+    },
+    {
+      "module": "AlgebraicBranchValuationR0226",
+      "exit_code": 0,
+      "seconds": 2.8562430571764708
+    },
+    {
+      "module": "AlgebraicBranchEquationR0226",
+      "exit_code": 0,
+      "seconds": 8.402010440360755
+    },
+    {
+      "module": "AlgebraicBranchFiniteModelR0226",
+      "exit_code": 0,
+      "seconds": 2.7978896009735763
+    },
+    {
+      "module": "AmbientCompletedRootsDefinitionsR0227",
+      "exit_code": 0,
+      "seconds": 3.9854289069771767
+    },
+    {
+      "module": "CompletedPointDiskR0227",
+      "exit_code": 0,
+      "seconds": 4.269449749030173
+    },
+    {
+      "module": "FramedRootCoefficientR0228",
+      "exit_code": 0,
+      "seconds": 4.385841215960681
+    },
+    {
+      "module": "SelectedRootFieldR0228",
+      "exit_code": 0,
+      "seconds": 3.2778063830919564
+    },
+    {
+      "module": "AmbientBranchValuesR0227",
+      "exit_code": 0,
+      "seconds": 30.823821772821248
+    },
+    {
+      "module": "AcceptedRootProvidersR0228",
+      "exit_code": 0,
+      "seconds": 2.655868779402226
+    },
+    {
+      "module": "AmbientPrescribedRootsR0228",
+      "exit_code": 0,
+      "seconds": 3.4648137618787587
+    },
+    {
+      "module": "SmoothPointSimultaneousRootsR0228",
+      "exit_code": 0,
+      "seconds": 2.8100902321748435
+    },
+    {
+      "module": "SharpAndRootsSolution",
+      "exit_code": 0,
+      "seconds": 3.383713307790458
+    }
+  ],
+  "scope": "Current full SharpAndRootsSolution closure built using verified current-source caches; full target comparison and official acceptance remain separate."
+}

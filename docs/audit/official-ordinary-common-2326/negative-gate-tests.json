@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "field": "status",
+      "refused": true
+    },
+    {
+      "field": "phase",
+      "refused": true
+    },
+    {
+      "field": "stage",
+      "refused": true
+    },
+    {
+      "field": "source.commit",
+      "refused": true
+    },
+    {
+      "field": "comparator.sha256",
+      "refused": true
+    },
+    {
+      "field": "execution_profile",
+      "refused": true
+    },
+    {
+      "field": "workflow_url",
+      "refused": true
+    },
+    {
+      "field": "submission.submission_id",
+      "refused": true
+    },
+    {
+      "field": "protected_config_sha256",
+      "refused": true
+    },
+    {
+      "field": "verification_profile.sha256",
+      "refused": true
+    },
+    {
+      "field": "comparator.theorem_names",
+      "refused": true
+    },
+    {
+      "field": "challenge.trust_level",
+      "refused": true
+    }
+  ]
+}

@@ -1,4 +1,6 @@
-# common-unary: complete interface and official preparation
+# common-unary: complete interface and official mechanical verification
+
+**Official ordinary mechanical verification passed** at immutable source `f953715c31be0e30d6e8a2e8877bfcee191ce9ae` in [run 40024734620](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/40024734620). All 39 targets passed with stock Lean, NanoDa and Conron acceptance, covering the complete original endpoint 071. See the [authentic report and exact scope](../../docs/audit/official-ordinary-common-2326/Review.md). Semantic review remains pending.
 
 **Official preparation checks succeeded for the current complete interface** at `f953715c31be0e30d6e8a2e8877bfcee191ce9ae`, in [run 40012026554](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/runs/40012026554). The report is `phase: preparation`, `stage: prepared`, `status: pending`. This establishes submission preparation, not a full mechanical proof check. See the [exact report and local evidence](../../docs/audit/common-preparation-2147/Review.md).
 

@@ -1,0 +1,7 @@
+[{"universes_equal": true,
+  "type_expression_equal": true,
+  "type_definitionally_equal": true,
+  "recovery": "P534.recover_original_071",
+  "original":
+  "ArithmeticThetaArithmeticCommonCoverR0238.arithmetic_common_unary_family",
+  "axioms": ["propext", "Classical.choice", "Quot.sound"]}]

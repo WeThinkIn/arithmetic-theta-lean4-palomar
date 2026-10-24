@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "utc": "2026-10-24T01:47:03.595044+00:00",
+  "run": 40024734620,
+  "artifact_id": 12543700474,
+  "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/40024734620",
+  "submission_id": "f01ilhiku4i7",
+  "source_commit": "f953715c31be0e30d6e8a2e8877bfcee191ce9ae",
+  "pipeline_commit": "c02bbeaed888df45c4e28c4e99dba540ad21552a",
+  "report_sha256": "e2b8530503c7b23a499bcd68a649a520aa3c4893c19ec2d91fa79ffdb9033ec9",
+  "configured_targets": 39,
+  "original_endpoint_ids": [
+    "accepted-071"
+  ],
+  "new_complete_endpoint_ids": [
+    "accepted-071"
+  ],
+  "official_complete_endpoint_union_before": 98,
+  "official_complete_endpoint_union": 99,
+  "remaining_original_endpoint_ids": [
+    "accepted-075",
+    "accepted-076",
+    "accepted-087",
+    "conservative-image-consumer"
+  ],
+  "original_endpoints": 103,
+  "original_requirements": 13,
+  "accepted_kernels": [
+    "stock Lean",
+    "NanoDa",
+    "Conron"
+  ],
+  "challenge_trust_level": "high",
+  "challenge_bytes": 102383,
+  "challenge_lines": 930,
+  "execution_profile": "palomar-namespace-16x32-v1",
+  "negative_gate_cases_passed": 12,
+  "service_observed_status": "awaiting-review",
+  "service_observed_at": "20261024T014633Z",
+  "whole_paper_semantic_acceptance": false,
+  "registration_performed": false,
+  "pipeline_source_bindings": {
+    "verification-profile.json": "94fcd7906a1b6c076c0036d742e1c5add8625e49bb474818ec8924576dbf0caa",
+    "execution-profiles.json": "7bef8cba4402f3d1e7324d501fdcbda44ece376fcdc98ea4c4ca945cca731bf4",
+    "scripts/verification_profile.py": "013ce5734e68f42bbd446bc3f8dd0288172b7ed7bd3078ef3332cbce9ab56e6f",
+    ".github/workflows/submission.yml": "10d97d59e223c3378d4b96601260f26fec1b27d4fd94739bc06a63ec3bab9c17"
+  },
+  "source_bindings": {
+    "CommonUnaryChallenge.lean": "81e610346c08db3dc0d338716690b79c8b4cfda54e93417683e239bbdde9a23e",
+    "CommonUnarySolution.lean": "54fcbbe25ab7d4ff749f3d8423359c279a0c1bfd5d83ac3f80291f5f88c32ad6",
+    "comparator-common-unary.json": "346658bd5e87765d3b8bee8cc43d4f1495214f8a2790dd95e6c242d2befa8774",
+    "submissions/common-unary/formalization.yaml": "78a7093ae034dd34bf6fe40e7270fdbbf344516b5b4ba1b25122754ba7142ec3",
+    "lakefile.toml": "8f621feb6421aa48184e1e20fda989951d9dbcf9cf1e642f4cfd58eafd40384d",
+    "lake-manifest.json": "d10801f1f3d53b548756c4797360b6c790ad00776fdf1a36f080ffd0b6accdb1"
+  },
+  "original_recovery_evidence": {
+    "/home/Palomar/workspace/arithmetic-theta/evidence/common-render-original-recovery-2127/receipt.json": "d7389cdeb8e10fcfa1cadf5194383389a81fbbac2ae9a3bbce443759e991d4c8",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/common-render-original-recovery-2127/audit.json": "efef638479dd5b8ef55bb001000720d3d3138b10c01367b0b29b94c5dfb45d5e",
+    "/home/Palomar/workspace/arithmetic-theta/evidence/common-ordinary-readiness-2144/receipt.json": "2199a24c3cedccc2dbf8e0ed12b93a30cde675e6d8b42dafcc72f2a30ea3ced8"
+  },
+  "scope": "Historical union of exact-revision official mechanical results; not a single whole-paper run or whole-paper semantic acceptance."
+}

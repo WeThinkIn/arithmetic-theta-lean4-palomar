@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "bindings_unchanged": true,
+  "results": [
+    {
+      "passed": true,
+      "scope": "sharp-and-roots",
+      "targets": 4,
+      "checked_shared_declarations": 468,
+      "exports": {
+        "challenge": {
+          "bytes": 323142468,
+          "sha256": "0e6ca7e454cb2988e5c7ab562b903a5c454ab11b9443ad480d88647edb0220d6"
+        },
+        "solution": {
+          "bytes": 2954938784,
+          "sha256": "314363b0c8fd244e86cf22f9df47ff13c7ba61e2ffc94915b33ecc059036249b"
+        }
+      },
+      "original_endpoint_recovery_reaudit_pending": true,
+      "official_acceptance_inferred": false
+    }
+  ],
+  "scope": "Full current 4 target closure structural and standard-axiom checks. Original endpoint recovery and independent official verification remain separate."
+}

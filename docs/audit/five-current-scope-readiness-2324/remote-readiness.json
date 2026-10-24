@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-24T01:40:13.454507+00:00",
+  "read_only_remote_gates_passed": true,
+  "commit": "7517ab6862e467913025ac47198e209624b306b8",
+  "scope_count": 5,
+  "original_endpoint_union_size": 10,
+  "reports": [
+    {
+      "scope": "scheme-kato",
+      "run": 40050205626,
+      "artifact": 12542808790,
+      "report_sha256": "f5124d804795f6af3b65353bd37e1bd69b3c7eb204892f0d1373db7c9f7cb2a5",
+      "authentic_artifact_exact_match": true,
+      "immutable_remote_source_match": true
+    },
+    {
+      "scope": "tate-alpha",
+      "run": 40050232173,
+      "artifact": 12542034899,
+      "report_sha256": "4ced14e6925f7c5d6c2ec17dadb09be58288bf8c2172c90d146cbbde1f814447",
+      "authentic_artifact_exact_match": true,
+      "immutable_remote_source_match": true
+    },
+    {
+      "scope": "field-unary-naturality",
+      "run": 40050342266,
+      "artifact": 12543555051,
+      "report_sha256": "998f26bb748a3cb8e734a1658447bdd4611d386fbdd1ed4e34083ec960650c6b",
+      "authentic_artifact_exact_match": true,
+      "immutable_remote_source_match": true
+    },
+    {
+      "scope": "sharp-matrix-geometry",
+      "run": 40050366430,
+      "artifact": 12542119557,
+      "report_sha256": "d9da2734df5e98a14090ce876f0cd982a4850acb8c577986169dd489fb48ef31",
+      "authentic_artifact_exact_match": true,
+      "immutable_remote_source_match": true
+    },
+    {
+      "scope": "sharp-and-roots",
+      "run": 40050474076,
+      "artifact": 12542619813,
+      "report_sha256": "d7ba223fc98aaf17da066460261c543dbf4dccd2310e626362dde6eb64ccf039",
+      "authentic_artifact_exact_match": true,
+      "immutable_remote_source_match": true
+    }
+  ],
+  "authenticated_identity_and_repository_permissions_passed": true,
+  "immutable_remote_sources_and_workflow_pins_verified": true,
+  "active_submission": "f01ilhiku4i7",
+  "active_status": "verifying",
+  "next_ordinary_owner": "isogeny-ordinary-serial-successor-2183",
+  "negative_gate_cases_passed": 45,
+  "ordinary_submission_dispatched": false,
+  "registration_performed": false,
+  "current_revision_full_mechanical_pass": false,
+  "scope": "GET-only current-revision artifact/source/workflow/account/service-state verification for five scopes. Does not submit, register, reserve, or change the existing ordinary successor."
+}

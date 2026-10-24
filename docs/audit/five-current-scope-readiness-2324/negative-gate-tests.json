@@ -1,0 +1,232 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "scope": "scheme-kato",
+      "case": "wrong-source",
+      "refused": true
+    },
+    {
+      "scope": "scheme-kato",
+      "case": "wrong-comparator-hash",
+      "refused": true
+    },
+    {
+      "scope": "scheme-kato",
+      "case": "truncated-theorem-scope",
+      "refused": true
+    },
+    {
+      "scope": "scheme-kato",
+      "case": "nonstandard-axiom",
+      "refused": true
+    },
+    {
+      "scope": "scheme-kato",
+      "case": "wrong-profile",
+      "refused": true
+    },
+    {
+      "scope": "scheme-kato",
+      "case": "wrong-verification-profile",
+      "refused": true
+    },
+    {
+      "scope": "scheme-kato",
+      "case": "wrong-workflow-url",
+      "refused": true
+    },
+    {
+      "scope": "scheme-kato",
+      "case": "wrong-authorization",
+      "refused": true
+    },
+    {
+      "scope": "scheme-kato",
+      "case": "wrong-selected-metadata",
+      "refused": true
+    },
+    {
+      "scope": "tate-alpha",
+      "case": "wrong-source",
+      "refused": true
+    },
+    {
+      "scope": "tate-alpha",
+      "case": "wrong-comparator-hash",
+      "refused": true
+    },
+    {
+      "scope": "tate-alpha",
+      "case": "truncated-theorem-scope",
+      "refused": true
+    },
+    {
+      "scope": "tate-alpha",
+      "case": "nonstandard-axiom",
+      "refused": true
+    },
+    {
+      "scope": "tate-alpha",
+      "case": "wrong-profile",
+      "refused": true
+    },
+    {
+      "scope": "tate-alpha",
+      "case": "wrong-verification-profile",
+      "refused": true
+    },
+    {
+      "scope": "tate-alpha",
+      "case": "wrong-workflow-url",
+      "refused": true
+    },
+    {
+      "scope": "tate-alpha",
+      "case": "wrong-authorization",
+      "refused": true
+    },
+    {
+      "scope": "tate-alpha",
+      "case": "wrong-selected-metadata",
+      "refused": true
+    },
+    {
+      "scope": "field-unary-naturality",
+      "case": "wrong-source",
+      "refused": true
+    },
+    {
+      "scope": "field-unary-naturality",
+      "case": "wrong-comparator-hash",
+      "refused": true
+    },
+    {
+      "scope": "field-unary-naturality",
+      "case": "truncated-theorem-scope",
+      "refused": true
+    },
+    {
+      "scope": "field-unary-naturality",
+      "case": "nonstandard-axiom",
+      "refused": true
+    },
+    {
+      "scope": "field-unary-naturality",
+      "case": "wrong-profile",
+      "refused": true
+    },
+    {
+      "scope": "field-unary-naturality",
+      "case": "wrong-verification-profile",
+      "refused": true
+    },
+    {
+      "scope": "field-unary-naturality",
+      "case": "wrong-workflow-url",
+      "refused": true
+    },
+    {
+      "scope": "field-unary-naturality",
+      "case": "wrong-authorization",
+      "refused": true
+    },
+    {
+      "scope": "field-unary-naturality",
+      "case": "wrong-selected-metadata",
+      "refused": true
+    },
+    {
+      "scope": "sharp-matrix-geometry",
+      "case": "wrong-source",
+      "refused": true
+    },
+    {
+      "scope": "sharp-matrix-geometry",
+      "case": "wrong-comparator-hash",
+      "refused": true
+    },
+    {
+      "scope": "sharp-matrix-geometry",
+      "case": "truncated-theorem-scope",
+      "refused": true
+    },
+    {
+      "scope": "sharp-matrix-geometry",
+      "case": "nonstandard-axiom",
+      "refused": true
+    },
+    {
+      "scope": "sharp-matrix-geometry",
+      "case": "wrong-profile",
+      "refused": true
+    },
+    {
+      "scope": "sharp-matrix-geometry",
+      "case": "wrong-verification-profile",
+      "refused": true
+    },
+    {
+      "scope": "sharp-matrix-geometry",
+      "case": "wrong-workflow-url",
+      "refused": true
+    },
+    {
+      "scope": "sharp-matrix-geometry",
+      "case": "wrong-authorization",
+      "refused": true
+    },
+    {
+      "scope": "sharp-matrix-geometry",
+      "case": "wrong-selected-metadata",
+      "refused": true
+    },
+    {
+      "scope": "sharp-and-roots",
+      "case": "wrong-source",
+      "refused": true
+    },
+    {
+      "scope": "sharp-and-roots",
+      "case": "wrong-comparator-hash",
+      "refused": true
+    },
+    {
+      "scope": "sharp-and-roots",
+      "case": "truncated-theorem-scope",
+      "refused": true
+    },
+    {
+      "scope": "sharp-and-roots",
+      "case": "nonstandard-axiom",
+      "refused": true
+    },
+    {
+      "scope": "sharp-and-roots",
+      "case": "wrong-profile",
+      "refused": true
+    },
+    {
+      "scope": "sharp-and-roots",
+      "case": "wrong-verification-profile",
+      "refused": true
+    },
+    {
+      "scope": "sharp-and-roots",
+      "case": "wrong-workflow-url",
+      "refused": true
+    },
+    {
+      "scope": "sharp-and-roots",
+      "case": "wrong-authorization",
+      "refused": true
+    },
+    {
+      "scope": "sharp-and-roots",
+      "case": "wrong-selected-metadata",
+      "refused": true
+    }
+  ],
+  "negative_case_count": 45,
+  "live_positive_scopes": 5
+}

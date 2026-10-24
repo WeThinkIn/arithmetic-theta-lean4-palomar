@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "original_endpoint_ids": [
+    "accepted-071"
+  ],
+  "exact_type_expression_and_universes": true,
+  "standard_axioms_only": true,
+  "bindings_unchanged": true
+}
