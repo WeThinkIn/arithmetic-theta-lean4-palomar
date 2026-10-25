@@ -1,4 +1,5 @@
 module
+public import Lean.Meta.Match.Match
 public import Mathlib
 
 @[expose] public section
