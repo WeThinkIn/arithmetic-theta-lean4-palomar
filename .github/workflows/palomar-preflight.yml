@@ -11,14 +11,6 @@ on:
         options:
           - full
           - preflight
-      execution_profile:
-        description: 'Approved Palomar runner profile'
-        required: false
-        default: palomar-standard-v1
-        type: choice
-        options:
-          - palomar-standard-v1
-          - palomar-namespace-16x32-v1
       comparator_config_path:
         description: 'Scoped configuration for official mechanical verification'
         required: false
@@ -141,5 +133,5 @@ jobs:
       pipeline_commit: 7a08c1da8e0558d330b9b3c244896c175d373303
       request_id: ${{ needs.request.outputs.id }}
       mode: ${{ inputs.verification_mode || 'full' }}
-      execution_profile: ${{ inputs.execution_profile || 'palomar-standard-v1' }}
+      execution_profile: palomar-standard-v1
       options: ${{ needs.request.outputs.options }}
