@@ -2105,7 +2105,7 @@ theorem finiteDimensional_restrictScalarsQuot_pow [u.FiniteResidue]
   induction M with
   | zero =>
     rw [pow_zero, Ideal.span_singleton_one, Submodule.restrictScalars_top]
-    infer_instance
+    exact @Module.Finite.of_finite K _ _ _ _ _root_.Finite.of_subsingleton
   | succ M ih =>
     have hle : (Ideal.span {πh^(M+1)} : Ideal u.adicCompletionIntegers)
         ≤ Ideal.span {πh^M} := by
@@ -4381,9 +4381,11 @@ variable {E : Type*} [Field E] [Algebra K E] [Algebra E F] [IsScalarTower K E F]
 variable [Algebra.IsIntegral E F]
 
 theorem kwTateRR3_isTorsionFree_integersCompletion (w : Place K F) :
-    Module.IsTorsionFree (w.restrict E).adicCompletionIntegers w.adicCompletion :=
-  .trans_faithfulSMul (w.restrict E).adicCompletionIntegers (w.restrict E).adicCompletion
-    w.adicCompletion
+    Module.IsTorsionFree (w.restrict E).adicCompletionIntegers w.adicCompletion := by
+  letI : Module.IsTorsionFree (w.restrict E).adicCompletion w.adicCompletion :=
+    DivisionSemiring.to_moduleIsTorsionFree
+  exact Module.IsTorsionFree.trans_faithfulSMul
+    (w.restrict E).adicCompletionIntegers (w.restrict E).adicCompletion w.adicCompletion
 
 end IsTorsionFree
 p2m_reactivate "P2MW.S_AlgebraicCurve_tateTraceCompat_of_isSeparable.AlgebraicCurve P2MW.S_AlgebraicCurve_tateTraceCompat_of_isSeparable.AlgebraicCurve.Place P2MW.S_AlgebraicCurve_tateTraceCompat_of_isSeparable.ModularCurve P2MW.S_AlgebraicCurve_tateTraceCompat_of_isSeparable.ModularCurve.KwF4R1V410a P2MW.S_AlgebraicCurve_tateTraceCompat_of_isSeparable.ModularCurve.KwF4gRRTate P2MW.S_AlgebraicCurve_tateTraceCompat_of_isSeparable.ModularCurve.KwF4R1V384a"
