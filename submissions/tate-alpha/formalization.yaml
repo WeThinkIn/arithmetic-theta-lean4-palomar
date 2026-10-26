@@ -1,14 +1,24 @@
 version: v0.4
 project:
   name: Complete relative alpha Tate behavior
-  description: 'Complete original accepted040: for every positive L divisible by4,
-    actual full marking on the actual Tate cubic Q=t^L and original normalized boundary
-    differential, every realizing alpha has a full power-series-unit expansion with
-    exact order0 or L/4. Every primitive root and canonical marking give the exact
-    signed thetaAt squared identity. Literal full series, all nonidentity coordinate
-    combinations and original boundary generator retained. Eight support/main targets
-    selected. Inherited052 not counted twice. See challenges/tate-alpha/Scope.json;
-    no whole-paper completion claimed.'
+  description: >-
+    Complete original accepted040: for every positive L divisible by4, actual full marking on
+    the actual Tate cubic Q=t^L and original normalized boundary differential, every realizing
+    alpha has a full power-series-unit expansion with exact order0 or L/4. Every primitive
+    root and canonical marking give the exact signed thetaAt squared identity. Literal full
+    series, all nonidentity coordinate combinations and original boundary generator retained.
+    For the selected scheme-alpha character theorem (original052), let S be a scheme over a
+    characteristic-zero field, E its elliptic family, M a full level-four marking, z a global
+    scalar satisfying MillerPhase E M z, and a a cotangent section satisfying RealizesAlpha E
+    M a. For every matrix A over ZMod 4 satisfying PreservesEven (determinant one and
+    preservation of the even quadratic form modulo two), there exists a full level-four
+    marking Mprime with Changes E M Mprime A and the same phase MillerPhase E Mprime z. Every
+    section aprime realizing alpha for Mprime satisfies aprime = z ^ (characterExponent A).val
+    * a, where multiplication denotes the scalar action on cotangent sections. The phase and
+    realizing-section conditions are explicit hypotheses, and the conclusion is equality of
+    global sections. All 16 configured obligations are retained: eight support/main targets
+    and eight explicit helper obligations. Original052 is counted only once across scopes. No
+    whole-paper completion is claimed.
   license: Apache-2.0
   authors:
   - Jue Ding
@@ -56,14 +66,24 @@ review:
     remain source-bound; official acceptance of this repair and whole-paper
     semantic acceptance have not been established.
 status:
-  scope: 'Complete original accepted040: for every positive L divisible by4, actual
-    full marking on the actual Tate cubic Q=t^L and original normalized boundary differential,
-    every realizing alpha has a full power-series-unit expansion with exact order0
-    or L/4. Every primitive root and canonical marking give the exact signed thetaAt
-    squared identity. Literal full series, all nonidentity coordinate combinations
-    and original boundary generator retained. Eight support/main targets selected.
-    Inherited052 not counted twice. See challenges/tate-alpha/Scope.json; no whole-paper
-    completion claimed.'
+  scope: >-
+    Complete original accepted040: for every positive L divisible by4, actual full marking on
+    the actual Tate cubic Q=t^L and original normalized boundary differential, every realizing
+    alpha has a full power-series-unit expansion with exact order0 or L/4. Every primitive
+    root and canonical marking give the exact signed thetaAt squared identity. Literal full
+    series, all nonidentity coordinate combinations and original boundary generator retained.
+    For the selected scheme-alpha character theorem (original052), let S be a scheme over a
+    characteristic-zero field, E its elliptic family, M a full level-four marking, z a global
+    scalar satisfying MillerPhase E M z, and a a cotangent section satisfying RealizesAlpha E
+    M a. For every matrix A over ZMod 4 satisfying PreservesEven (determinant one and
+    preservation of the even quadratic form modulo two), there exists a full level-four
+    marking Mprime with Changes E M Mprime A and the same phase MillerPhase E Mprime z. Every
+    section aprime realizing alpha for Mprime satisfies aprime = z ^ (characterExponent A).val
+    * a, where multiplication denotes the scalar action on cotangent sections. The phase and
+    realizing-section conditions are explicit hypotheses, and the conclusion is equality of
+    global sections. All 16 configured obligations are retained: eight support/main targets
+    and eight explicit helper obligations. Original052 is counted only once across scopes. No
+    whole-paper completion is claimed.
 fidelity:
   divergences: Original040 full proposition recovered with compiled rfl theorem audit.
     Boundary normalization and generator agree with originals by rfl; affine realization
