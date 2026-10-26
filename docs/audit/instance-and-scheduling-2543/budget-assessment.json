@@ -1,0 +1,34 @@
+{
+  "utc": "2026-10-26T17:48:02.633239+00:00",
+  "evaluated": true,
+  "cold_build_passed": true,
+  "candidate_commit": "d65f577e4bfbe5a90116c7b20298ddb5b02118b1",
+  "cold_seconds": 8483.09933926398,
+  "historical_same_schedule_baseline_seconds": 8563.619929006789,
+  "proof_optimization_ratio_vs_original_schedule": 0.9905973653185998,
+  "historical_scheduled_seconds": 9686.980352298822,
+  "combined_ratio_vs_scheduled": 0.8757217451412349,
+  "candidate_inputs_match_completed_build": true,
+  "roots_projection": {
+    "latest_official_run": 40260902247,
+    "estimated_total_seconds": 20037.787441144526,
+    "estimated_headroom_seconds": -237.78744114452638,
+    "historical_comparator_run": 39966260932,
+    "historical_comparator_not_current_upper_bound": true
+  },
+  "field_projection": {
+    "latest_official_run": 40260858434,
+    "estimated_headroom_above_local_replay_seconds": 1739.12842104404,
+    "roots_build_ratio_transferred_to_field_unproven": true
+  },
+  "limitations": [
+    "Noncontemporaneous local comparisons include memory pressure and host variability.",
+    "Local build ratios and Con-ron timing have not been demonstrated on GitHub.",
+    "Unmeasured overhead and changed proof-body replay costs are not bounded.",
+    "Current Roots comparator duration was not available; the historical value is only a sensitivity estimate."
+  ],
+  "official_resource_condition_proved_resolved": false,
+  "automatic_dispatch": false,
+  "ordinary_intake_performed": false,
+  "next_action": "Inspect complete measured build, source binding and per-scope official reports; select a fresh full standard-runner preflight without reusing old-version PASS claims."
+}
