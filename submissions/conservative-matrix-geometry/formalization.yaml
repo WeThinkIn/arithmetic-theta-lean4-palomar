@@ -4,7 +4,7 @@ project:
   description: Complete original035/036. For EVERY nonempty finite family of positive-rank
     valid integral Gram matrices, constructs actual arithmetic indexing/formal identity
     and ALL level model, compactification, canonical Hodge extension and Tate disk
-    data, then an actual cusp half-divisor line, finite flat cover with degree24*(exponent
+    data, then an actual cusp half-divisor line, finite flat cover with degree at most 24*(exponent
     N)^indexCount, square-compatible common frame, nonzero unary sections and coset
     tensor-polynomial matrix sections with COMPLETE theta expansion for every scalar
     combination. The actual cusp divisor and residue-field weighted degrees are specified
@@ -61,7 +61,7 @@ status:
   scope: Complete original035/036. For EVERY nonempty finite family of positive-rank
     valid integral Gram matrices, constructs actual arithmetic indexing/formal identity
     and ALL level model, compactification, canonical Hodge extension and Tate disk
-    data, then an actual cusp half-divisor line, finite flat cover with degree24*(exponent
+    data, then an actual cusp half-divisor line, finite flat cover with degree at most 24*(exponent
     N)^indexCount, square-compatible common frame, nonzero unary sections and coset
     tensor-polynomial matrix sections with COMPLETE theta expansion for every scalar
     combination. The actual cusp divisor and residue-field weighted degrees are specified
