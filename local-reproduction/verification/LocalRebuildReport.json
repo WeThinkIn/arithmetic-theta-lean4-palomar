@@ -1,0 +1,7252 @@
+{
+  "passed": true,
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "jobs": 6,
+  "lean_threads": 1,
+  "dependency_mode": "Fixed precompiled external libraries; proof sources freshly compiled unless verify-only",
+  "input_manifest_sha256": "33054848fe2d64d240273fced789b1e28833f6bf2024ea82d6b89e97bf42bb36",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "fresh_modules": 1199,
+  "verified_existing_modules": 0,
+  "exact_type_checks": 103,
+  "elapsed_seconds": 8903.988,
+  "compiles": [
+    {
+      "module": "BinaryDefinitions",
+      "returncode": 0,
+      "seconds": 8.534
+    },
+    {
+      "module": "ChartScalarExtensionProofR0076",
+      "returncode": 0,
+      "seconds": 8.855
+    },
+    {
+      "module": "CosetFiniteIndex",
+      "returncode": 0,
+      "seconds": 9.555
+    },
+    {
+      "module": "ActualNormalization",
+      "returncode": 0,
+      "seconds": 10.108
+    },
+    {
+      "module": "DiscriminantDefinitions",
+      "returncode": 0,
+      "seconds": 3.319
+    },
+    {
+      "module": "Det80LocalInvariants",
+      "returncode": 0,
+      "seconds": 3.655
+    },
+    {
+      "module": "EnumerationAlgorithm",
+      "returncode": 0,
+      "seconds": 2.845
+    },
+    {
+      "module": "EliminationAlgorithm",
+      "returncode": 0,
+      "seconds": 3.501
+    },
+    {
+      "module": "Det80CoefficientMinor",
+      "returncode": 0,
+      "seconds": 15.58
+    },
+    {
+      "module": "ComputableIntegerBoxes",
+      "returncode": 0,
+      "seconds": 3.144
+    },
+    {
+      "module": "EliminationPrimitives",
+      "returncode": 0,
+      "seconds": 4.312
+    },
+    {
+      "module": "Det80ReducedClassification",
+      "returncode": 0,
+      "seconds": 18.014
+    },
+    {
+      "module": "DiscriminantInitial",
+      "returncode": 0,
+      "seconds": 6.737
+    },
+    {
+      "module": "CofactorSearchBounds",
+      "returncode": 0,
+      "seconds": 4.406
+    },
+    {
+      "module": "EtaleNormality",
+      "returncode": 0,
+      "seconds": 8.781
+    },
+    {
+      "module": "BinaryReductionSteps",
+      "returncode": 0,
+      "seconds": 3.776
+    },
+    {
+      "module": "EliminationReduction",
+      "returncode": 0,
+      "seconds": 4.481
+    },
+    {
+      "module": "Det80LocalRealization",
+      "returncode": 0,
+      "seconds": 3.952
+    },
+    {
+      "module": "ExecutableEnumerationCorrectness",
+      "returncode": 0,
+      "seconds": 4.094
+    },
+    {
+      "module": "ComputedNullspaceBasis",
+      "returncode": 0,
+      "seconds": 4.238
+    },
+    {
+      "module": "ComputedPivotCoordinates",
+      "returncode": 0,
+      "seconds": 3.325
+    },
+    {
+      "module": "BinaryReduction",
+      "returncode": 0,
+      "seconds": 4.446
+    },
+    {
+      "module": "Det80Similarity",
+      "returncode": 0,
+      "seconds": 6.341
+    },
+    {
+      "module": "FormalNormDefinitions",
+      "returncode": 0,
+      "seconds": 2.778
+    },
+    {
+      "module": "Det80CompleteClassification",
+      "returncode": 0,
+      "seconds": 3.168
+    },
+    {
+      "module": "Det80ThetaIndependence",
+      "returncode": 0,
+      "seconds": 13.941
+    },
+    {
+      "module": "FourTorsionDefinitions",
+      "returncode": 0,
+      "seconds": 1.16
+    },
+    {
+      "module": "FormalPowerRootsR0094",
+      "returncode": 0,
+      "seconds": 4.061
+    },
+    {
+      "module": "FourTorsionCovariance",
+      "returncode": 0,
+      "seconds": 1.273
+    },
+    {
+      "module": "Det80OrderClassification",
+      "returncode": 0,
+      "seconds": 2.986
+    },
+    {
+      "module": "FunctionOrders",
+      "returncode": 0,
+      "seconds": 1.788
+    },
+    {
+      "module": "GenericFiberRestriction",
+      "returncode": 0,
+      "seconds": 1.583
+    },
+    {
+      "module": "FormalNormProduct",
+      "returncode": 0,
+      "seconds": 4.686
+    },
+    {
+      "module": "FiniteEtaleSelectedComponent",
+      "returncode": 0,
+      "seconds": 9.278
+    },
+    {
+      "module": "GeometricRankConstancy",
+      "returncode": 0,
+      "seconds": 3.03
+    },
+    {
+      "module": "IntegrationDefinitions",
+      "returncode": 0,
+      "seconds": 2.849
+    },
+    {
+      "module": "FormalJacobiTripleProduct",
+      "returncode": 0,
+      "seconds": 10.809
+    },
+    {
+      "module": "KummerDegree",
+      "returncode": 0,
+      "seconds": 3.659
+    },
+    {
+      "module": "LocalExpansionOrder",
+      "returncode": 0,
+      "seconds": 1.445
+    },
+    {
+      "module": "ComputedCoefficientMatrix",
+      "returncode": 0,
+      "seconds": 3.139
+    },
+    {
+      "module": "FiniteEtaleProductCover",
+      "returncode": 0,
+      "seconds": 6.97
+    },
+    {
+      "module": "LDLEnumerationDefinitionsR0229",
+      "returncode": 0,
+      "seconds": 2.85
+    },
+    {
+      "module": "LocalNormExponentR0054",
+      "returncode": 0,
+      "seconds": 3.809
+    },
+    {
+      "module": "HadamardJacobi",
+      "returncode": 0,
+      "seconds": 10.239
+    },
+    {
+      "module": "LineRootGluing",
+      "returncode": 0,
+      "seconds": 7.068
+    },
+    {
+      "module": "MillerPhaseAlgebra",
+      "returncode": 0,
+      "seconds": 2.009
+    },
+    {
+      "module": "MatrixDenominator",
+      "returncode": 0,
+      "seconds": 3.137
+    },
+    {
+      "module": "NoetherianAdicCompletion",
+      "returncode": 0,
+      "seconds": 2.635
+    },
+    {
+      "module": "NormalDomainIntersection",
+      "returncode": 0,
+      "seconds": 1.807
+    },
+    {
+      "module": "LevelFourFiniteCharacter",
+      "returncode": 0,
+      "seconds": 10.863
+    },
+    {
+      "module": "NormExponentAlgebra",
+      "returncode": 0,
+      "seconds": 3.388
+    },
+    {
+      "module": "LineRootFoundations",
+      "returncode": 0,
+      "seconds": 2.781
+    },
+    {
+      "module": "NormQuotientDefinitionsR0062",
+      "returncode": 0,
+      "seconds": 2.807
+    },
+    {
+      "module": "OrthogonalAlgorithm",
+      "returncode": 0,
+      "seconds": 2.73
+    },
+    {
+      "module": "ProperFunctionsDefinitions",
+      "returncode": 0,
+      "seconds": 2.73
+    },
+    {
+      "module": "NormFiniteDefinitionsR0063",
+      "returncode": 0,
+      "seconds": 2.687
+    },
+    {
+      "module": "AffineOrderRegularity",
+      "returncode": 0,
+      "seconds": 4.034
+    },
+    {
+      "module": "LocalFrameBridge",
+      "returncode": 0,
+      "seconds": 3.84
+    },
+    {
+      "module": "NormWeightedPointwiseR0062",
+      "returncode": 0,
+      "seconds": 3.044
+    },
+    {
+      "module": "NormResiduePermutationR0062",
+      "returncode": 0,
+      "seconds": 3.385
+    },
+    {
+      "module": "NormalizationField",
+      "returncode": 0,
+      "seconds": 7.982
+    },
+    {
+      "module": "NormIntegerCastsR0063",
+      "returncode": 0,
+      "seconds": 3.406
+    },
+    {
+      "module": "OrthogonalPrimitives",
+      "returncode": 0,
+      "seconds": 3.754
+    },
+    {
+      "module": "PullbackUnit",
+      "returncode": 0,
+      "seconds": 1.502
+    },
+    {
+      "module": "ProperFunctions",
+      "returncode": 0,
+      "seconds": 3.248
+    },
+    {
+      "module": "NormWeightedSumR0062",
+      "returncode": 0,
+      "seconds": 3.741
+    },
+    {
+      "module": "ActualSheafTensor",
+      "returncode": 0,
+      "seconds": 6.449
+    },
+    {
+      "module": "NormalizationFinite",
+      "returncode": 0,
+      "seconds": 4.16
+    },
+    {
+      "module": "OrthogonalIteration",
+      "returncode": 0,
+      "seconds": 3.397
+    },
+    {
+      "module": "ConstantDescentDefinitions",
+      "returncode": 0,
+      "seconds": 2.797
+    },
+    {
+      "module": "NormRationalExponentsR0063",
+      "returncode": 0,
+      "seconds": 3.08
+    },
+    {
+      "module": "RamifiedMonomialBasisR0096",
+      "returncode": 0,
+      "seconds": 4.885
+    },
+    {
+      "module": "ComputedOrthogonalization",
+      "returncode": 0,
+      "seconds": 3.138
+    },
+    {
+      "module": "FaithfullyFlatSections",
+      "returncode": 0,
+      "seconds": 3.194
+    },
+    {
+      "module": "LocalTensorFrame",
+      "returncode": 0,
+      "seconds": 5.297
+    },
+    {
+      "module": "Rank16Definitions",
+      "returncode": 0,
+      "seconds": 2.71
+    },
+    {
+      "module": "NormIntegerNormalizationR0063",
+      "returncode": 0,
+      "seconds": 3.456
+    },
+    {
+      "module": "ComputedBoundParameters",
+      "returncode": 0,
+      "seconds": 3.658
+    },
+    {
+      "module": "Rank16LatticeDefinitions",
+      "returncode": 0,
+      "seconds": 2.902
+    },
+    {
+      "module": "ConstantDescent",
+      "returncode": 0,
+      "seconds": 3.906
+    },
+    {
+      "module": "KummerCover",
+      "returncode": 0,
+      "seconds": 7.918
+    },
+    {
+      "module": "NormScalarCorrectionR0063",
+      "returncode": 0,
+      "seconds": 3.07
+    },
+    {
+      "module": "RankZero",
+      "returncode": 0,
+      "seconds": 3.258
+    },
+    {
+      "module": "GramThetaDefinitions",
+      "returncode": 0,
+      "seconds": 2.809
+    },
+    {
+      "module": "GeometricConstants",
+      "returncode": 0,
+      "seconds": 3.245
+    },
+    {
+      "module": "LaurentNormDefinitionsR0064",
+      "returncode": 0,
+      "seconds": 3.146
+    },
+    {
+      "module": "Rank16Theta",
+      "returncode": 0,
+      "seconds": 7.442
+    },
+    {
+      "module": "RationalOrthogonalBasis",
+      "returncode": 0,
+      "seconds": 1.928
+    },
+    {
+      "module": "Rank16Basis",
+      "returncode": 0,
+      "seconds": 5.727
+    },
+    {
+      "module": "RationalMatrixScalarExtension",
+      "returncode": 0,
+      "seconds": 4.035
+    },
+    {
+      "module": "LaurentGammaExistenceR0064",
+      "returncode": 0,
+      "seconds": 4.104
+    },
+    {
+      "module": "LaurentGammaNonzeroR0064",
+      "returncode": 0,
+      "seconds": 5.291
+    },
+    {
+      "module": "IntegralGramOrthogonalization",
+      "returncode": 0,
+      "seconds": 4.785
+    },
+    {
+      "module": "ComputedComplexKernelBasis",
+      "returncode": 0,
+      "seconds": 3.385
+    },
+    {
+      "module": "ComputedEarlyCertificate",
+      "returncode": 0,
+      "seconds": 3.06
+    },
+    {
+      "module": "LatticeShellFinite",
+      "returncode": 0,
+      "seconds": 2.016
+    },
+    {
+      "module": "ComputedThetaColumns",
+      "returncode": 0,
+      "seconds": 3.103
+    },
+    {
+      "module": "GammaZeroLocusR0159",
+      "returncode": 0,
+      "seconds": 4.221
+    },
+    {
+      "module": "GeneralDPlusBasisMetricR0242",
+      "returncode": 0,
+      "seconds": 9.295
+    },
+    {
+      "module": "LaurentPreimageMonomialsR0064",
+      "returncode": 0,
+      "seconds": 4.307
+    },
+    {
+      "module": "LaurentGammaTranslationR0064",
+      "returncode": 0,
+      "seconds": 5.77
+    },
+    {
+      "module": "LaurentUnpoweredNormR0064",
+      "returncode": 0,
+      "seconds": 3.911
+    },
+    {
+      "module": "OrthogonalCosetArithmetic",
+      "returncode": 0,
+      "seconds": 4.091
+    },
+    {
+      "module": "Rank16Unimodular",
+      "returncode": 0,
+      "seconds": 3.251
+    },
+    {
+      "module": "RationalSchurCompletionR0229",
+      "returncode": 0,
+      "seconds": 3.497
+    },
+    {
+      "module": "LaurentFormalFPeriodicityR0064",
+      "returncode": 0,
+      "seconds": 4.907
+    },
+    {
+      "module": "Rank16Similarity",
+      "returncode": 0,
+      "seconds": 3.212
+    },
+    {
+      "module": "ScaledTateNodeBridgeDefinitions",
+      "returncode": 0,
+      "seconds": 3.382
+    },
+    {
+      "module": "SchemeExpansionOrder",
+      "returncode": 0,
+      "seconds": 1.853
+    },
+    {
+      "module": "ComputedRationalLDLR0229",
+      "returncode": 0,
+      "seconds": 3.322
+    },
+    {
+      "module": "LaurentPoweredNormR0064",
+      "returncode": 0,
+      "seconds": 7.372
+    },
+    {
+      "module": "ShiftedIntegerIntervalR0229",
+      "returncode": 0,
+      "seconds": 3.54
+    },
+    {
+      "module": "ScaledTateCompletionExtensionDefinitions",
+      "returncode": 0,
+      "seconds": 4.049
+    },
+    {
+      "module": "SmoothCurveDimension",
+      "returncode": 0,
+      "seconds": 4.616
+    },
+    {
+      "module": "RecursiveEllipsoidEnumerationR0229",
+      "returncode": 0,
+      "seconds": 3.46
+    },
+    {
+      "module": "ScaledTateCompletionNodeMapCoordinates",
+      "returncode": 0,
+      "seconds": 3.549
+    },
+    {
+      "module": "LaurentFormalFNormR0064",
+      "returncode": 0,
+      "seconds": 5.596
+    },
+    {
+      "module": "NormalizationCurveDimension",
+      "returncode": 0,
+      "seconds": 3.377
+    },
+    {
+      "module": "ScaledTateNodeAlgebra",
+      "returncode": 0,
+      "seconds": 8.544
+    },
+    {
+      "module": "ScaledTateCompletionNodeIdealContinuityR0049",
+      "returncode": 0,
+      "seconds": 3.067
+    },
+    {
+      "module": "LDLThetaPrefixR0229",
+      "returncode": 0,
+      "seconds": 4.149
+    },
+    {
+      "module": "ScaledTateCompletionNodeMapQuotientCompatibility",
+      "returncode": 0,
+      "seconds": 3.193
+    },
+    {
+      "module": "ScaledTateCompletionTargetIdealSeparated",
+      "returncode": 0,
+      "seconds": 3.179
+    },
+    {
+      "module": "ScaledTateCompletionNodeIdealPowerTransportR0049",
+      "returncode": 0,
+      "seconds": 3.052
+    },
+    {
+      "module": "ScaledTateCompletionStageCompatibilityR0049",
+      "returncode": 0,
+      "seconds": 4.229
+    },
+    {
+      "module": "ScaledTateNodeCompletion",
+      "returncode": 0,
+      "seconds": 6.453
+    },
+    {
+      "module": "SplitCubicDuplication",
+      "returncode": 0,
+      "seconds": 1.482
+    },
+    {
+      "module": "SmoothPrerequisites",
+      "returncode": 0,
+      "seconds": 4.227
+    },
+    {
+      "module": "SplitCubicGeometry",
+      "returncode": 0,
+      "seconds": 2.086
+    },
+    {
+      "module": "ScaledTateCompletionSpecializationExistsR0049",
+      "returncode": 0,
+      "seconds": 3.685
+    },
+    {
+      "module": "FourTorsionRoot",
+      "returncode": 0,
+      "seconds": 1.575
+    },
+    {
+      "module": "SmoothGeometricallyConnectedIntegral",
+      "returncode": 0,
+      "seconds": 8.105
+    },
+    {
+      "module": "CurveDegreeDefinitions",
+      "returncode": 0,
+      "seconds": 3.149
+    },
+    {
+      "module": "SmoothDVR",
+      "returncode": 0,
+      "seconds": 11.19
+    },
+    {
+      "module": "SplitNormalDescentR0051",
+      "returncode": 0,
+      "seconds": 1.735
+    },
+    {
+      "module": "ScaledTateCompletionSpecializationUniqueR0049",
+      "returncode": 0,
+      "seconds": 3.727
+    },
+    {
+      "module": "SmoothNormality",
+      "returncode": 0,
+      "seconds": 3.423
+    },
+    {
+      "module": "ResidueDegrees",
+      "returncode": 0,
+      "seconds": 3.776
+    },
+    {
+      "module": "SmoothDedekind",
+      "returncode": 0,
+      "seconds": 3.365
+    },
+    {
+      "module": "FinitePrincipalSupport",
+      "returncode": 0,
+      "seconds": 5.442
+    },
+    {
+      "module": "ScaledAnnularDefinitionsR0050",
+      "returncode": 0,
+      "seconds": 3.583
+    },
+    {
+      "module": "TateNodeChartDefinitions",
+      "returncode": 0,
+      "seconds": 3.909
+    },
+    {
+      "module": "TateSeriesDefinitions",
+      "returncode": 0,
+      "seconds": 3.143
+    },
+    {
+      "module": "SmoothNormalizedCurve",
+      "returncode": 0,
+      "seconds": 4.434
+    },
+    {
+      "module": "PrincipalDivisor",
+      "returncode": 0,
+      "seconds": 3.521
+    },
+    {
+      "module": "ScaledSpecializedCoefficientStabilityR0050",
+      "returncode": 0,
+      "seconds": 6.809
+    },
+    {
+      "module": "NormalizationSmoothCurve",
+      "returncode": 0,
+      "seconds": 5.939
+    },
+    {
+      "module": "ScaledThetaExponentControlR0050",
+      "returncode": 0,
+      "seconds": 6.953
+    },
+    {
+      "module": "SmoothRootCurve",
+      "returncode": 0,
+      "seconds": 3.39
+    },
+    {
+      "module": "NormalizationCurveFlat",
+      "returncode": 0,
+      "seconds": 4.808
+    },
+    {
+      "module": "ScaledGammaUnitProductR0050",
+      "returncode": 0,
+      "seconds": 14.643
+    },
+    {
+      "module": "ScaledThetaFiniteSpecializationR0050",
+      "returncode": 0,
+      "seconds": 4.801
+    },
+    {
+      "module": "RootCoverFlat",
+      "returncode": 0,
+      "seconds": 3.532
+    },
+    {
+      "module": "ScaledThetaCompletedLimitR0050",
+      "returncode": 0,
+      "seconds": 6.657
+    },
+    {
+      "module": "TateCoeffInverse",
+      "returncode": 0,
+      "seconds": 3.562
+    },
+    {
+      "module": "TateCoeffMonomial",
+      "returncode": 0,
+      "seconds": 3.227
+    },
+    {
+      "module": "PrincipalDegreeZero",
+      "returncode": 0,
+      "seconds": 21.308
+    },
+    {
+      "module": "RootCoverGeometricDegreePositive",
+      "returncode": 0,
+      "seconds": 3.482
+    },
+    {
+      "module": "RootCoverGenericRank",
+      "returncode": 0,
+      "seconds": 5.705
+    },
+    {
+      "module": "TateCoeffXTerm",
+      "returncode": 0,
+      "seconds": 4.13
+    },
+    {
+      "module": "DivisorDegreeLaws",
+      "returncode": 0,
+      "seconds": 3.673
+    },
+    {
+      "module": "EffectiveDivisorBounds",
+      "returncode": 0,
+      "seconds": 3.354
+    },
+    {
+      "module": "ScaledThetaLimitExactSpecializationR0050",
+      "returncode": 0,
+      "seconds": 6.043
+    },
+    {
+      "module": "RootCoverGeometricDegree",
+      "returncode": 0,
+      "seconds": 3.82
+    },
+    {
+      "module": "TateNodeFiniteType",
+      "returncode": 0,
+      "seconds": 3.035
+    },
+    {
+      "module": "TateLegacySeriesStabilization",
+      "returncode": 0,
+      "seconds": 3.607
+    },
+    {
+      "module": "TateCoeffYTerm",
+      "returncode": 0,
+      "seconds": 6.11
+    },
+    {
+      "module": "TatePartialXStabilization",
+      "returncode": 0,
+      "seconds": 3.527
+    },
+    {
+      "module": "TatePartialYStabilization",
+      "returncode": 0,
+      "seconds": 3.814
+    },
+    {
+      "module": "TateNodeTorusCharts",
+      "returncode": 0,
+      "seconds": 7.47
+    },
+    {
+      "module": "TensorPowerDefinitions",
+      "returncode": 0,
+      "seconds": 3.553
+    },
+    {
+      "module": "TateNodeNormalForm",
+      "returncode": 0,
+      "seconds": 9.863
+    },
+    {
+      "module": "Rank16Coordinates",
+      "returncode": 0,
+      "seconds": 82.597
+    },
+    {
+      "module": "TateBridgesSeriesStabilization",
+      "returncode": 0,
+      "seconds": 3.013
+    },
+    {
+      "module": "ThetaLimitRecoveryRootR0128",
+      "returncode": 0,
+      "seconds": 2.782
+    },
+    {
+      "module": "PullbackTensorDefinitions",
+      "returncode": 0,
+      "seconds": 2.912
+    },
+    {
+      "module": "TateNodeCompletion",
+      "returncode": 0,
+      "seconds": 3.629
+    },
+    {
+      "module": "GeneralDPlusCoordinatesR0242",
+      "returncode": 0,
+      "seconds": 5.887
+    },
+    {
+      "module": "Rank16Nonisometry",
+      "returncode": 0,
+      "seconds": 7.311
+    },
+    {
+      "module": "TateSeriesStabilization",
+      "returncode": 0,
+      "seconds": 2.698
+    },
+    {
+      "module": "TateAlgebraicNodeRegular",
+      "returncode": 0,
+      "seconds": 11.12
+    },
+    {
+      "module": "GramThetaShells",
+      "returncode": 0,
+      "seconds": 3.473
+    },
+    {
+      "module": "TateNodeGenericFiber",
+      "returncode": 0,
+      "seconds": 7.152
+    },
+    {
+      "module": "TateBridgesSeriesSubstitution",
+      "returncode": 0,
+      "seconds": 3.612
+    },
+    {
+      "module": "GeneralDPlusDefinitionsR0242",
+      "returncode": 0,
+      "seconds": 2.746
+    },
+    {
+      "module": "TateLegacySeriesSubstitution",
+      "returncode": 0,
+      "seconds": 4.618
+    },
+    {
+      "module": "TateSeriesSymmetry",
+      "returncode": 0,
+      "seconds": 5.139
+    },
+    {
+      "module": "GeneralDPlusEvenUnimodularR0242",
+      "returncode": 0,
+      "seconds": 3.556
+    },
+    {
+      "module": "TateSeriesSubstitution",
+      "returncode": 0,
+      "seconds": 2.785
+    },
+    {
+      "module": "TensorPowerLaws",
+      "returncode": 0,
+      "seconds": 3.65
+    },
+    {
+      "module": "GeneralDPlusDualR0242",
+      "returncode": 0,
+      "seconds": 3.289
+    },
+    {
+      "module": "GeneralDPlusThetaRealizationR0242",
+      "returncode": 0,
+      "seconds": 3.574
+    },
+    {
+      "module": "TateGeneralSplitCubic",
+      "returncode": 0,
+      "seconds": 13.185
+    },
+    {
+      "module": "TensorPowerRootIntegration",
+      "returncode": 0,
+      "seconds": 3.327
+    },
+    {
+      "module": "TateSeriesCuspTerms",
+      "returncode": 0,
+      "seconds": 5.651
+    },
+    {
+      "module": "TensorProductLaws",
+      "returncode": 0,
+      "seconds": 3.638
+    },
+    {
+      "module": "ThetaSeriesConstruction",
+      "returncode": 0,
+      "seconds": 3.989
+    },
+    {
+      "module": "TruncationCertificates",
+      "returncode": 0,
+      "seconds": 3.235
+    },
+    {
+      "module": "TwoTorsionTranslation",
+      "returncode": 0,
+      "seconds": 1.507
+    },
+    {
+      "module": "TateMarkedCuspOrders",
+      "returncode": 0,
+      "seconds": 3.531
+    },
+    {
+      "module": "ThetaBasisChange",
+      "returncode": 0,
+      "seconds": 3.485
+    },
+    {
+      "module": "ActualEarlierCertificate",
+      "returncode": 0,
+      "seconds": 3.105
+    },
+    {
+      "module": "MillerGeometryDefinitionsR0114",
+      "returncode": 0,
+      "seconds": 1.593
+    },
+    {
+      "module": "AllCuspHalfDefinitionsR0108",
+      "returncode": 0,
+      "seconds": 2.816
+    },
+    {
+      "module": "EarlyCertificateAssembly",
+      "returncode": 0,
+      "seconds": 4.986
+    },
+    {
+      "module": "HalfTangentEvaluationNonzeroR0114",
+      "returncode": 0,
+      "seconds": 1.643
+    },
+    {
+      "module": "HalfTangentIdealR0114",
+      "returncode": 0,
+      "seconds": 2.589
+    },
+    {
+      "module": "PullbackTensor",
+      "returncode": 0,
+      "seconds": 33.855
+    },
+    {
+      "module": "InfinityBranchR0114",
+      "returncode": 0,
+      "seconds": 2.531
+    },
+    {
+      "module": "IndependentHalvesFourBasisR0114",
+      "returncode": 0,
+      "seconds": 3.736
+    },
+    {
+      "module": "HalfMillerPrincipalIdealR0114",
+      "returncode": 0,
+      "seconds": 2.566
+    },
+    {
+      "module": "TateMarkedPointDoubling",
+      "returncode": 0,
+      "seconds": 7.016
+    },
+    {
+      "module": "MillerOpenEvaluationR0114",
+      "returncode": 0,
+      "seconds": 2.8
+    },
+    {
+      "module": "InfinityFunctionFieldR0114",
+      "returncode": 0,
+      "seconds": 4.752
+    },
+    {
+      "module": "ActualMillerPhaseR0114",
+      "returncode": 0,
+      "seconds": 3.153
+    },
+    {
+      "module": "SubstitutedTorsionDifferencesR0108",
+      "returncode": 0,
+      "seconds": 4.153
+    },
+    {
+      "module": "MarkingCharacterDefinitionsR0115",
+      "returncode": 0,
+      "seconds": 1.414
+    },
+    {
+      "module": "MillerInfinityNormalizationR0114",
+      "returncode": 0,
+      "seconds": 3.403
+    },
+    {
+      "module": "AllHalfFormalRegularityR0108",
+      "returncode": 0,
+      "seconds": 3.618
+    },
+    {
+      "module": "BasisCoordinateGeometryR0115",
+      "returncode": 0,
+      "seconds": 2.845
+    },
+    {
+      "module": "BasisRightActionR0115",
+      "returncode": 0,
+      "seconds": 2.082
+    },
+    {
+      "module": "GeneratorSMillerPhaseR0115",
+      "returncode": 0,
+      "seconds": 1.739
+    },
+    {
+      "module": "FieldExtensionNaturalityR0115",
+      "returncode": 0,
+      "seconds": 3.349
+    },
+    {
+      "module": "GeneratorT2RootR0115",
+      "returncode": 0,
+      "seconds": 1.615
+    },
+    {
+      "module": "MillerReciprocityDefinitionsR0116",
+      "returncode": 0,
+      "seconds": 1.607
+    },
+    {
+      "module": "CoordinateChangeCovarianceR0115",
+      "returncode": 0,
+      "seconds": 5.156
+    },
+    {
+      "module": "MillerPhaseMarkingInvariantR0115",
+      "returncode": 0,
+      "seconds": 1.788
+    },
+    {
+      "module": "FullMarkingCharacterR0115",
+      "returncode": 0,
+      "seconds": 1.43
+    },
+    {
+      "module": "UnaryThetaProduct",
+      "returncode": 0,
+      "seconds": 15.266
+    },
+    {
+      "module": "UnaryThetaProducts",
+      "returncode": 0,
+      "seconds": 3.877
+    },
+    {
+      "module": "PullbackTensorSections",
+      "returncode": 0,
+      "seconds": 18.674
+    },
+    {
+      "module": "TateIdentityDefinitions",
+      "returncode": 0,
+      "seconds": 2.791
+    },
+    {
+      "module": "TateThetaJacobiBridge",
+      "returncode": 0,
+      "seconds": 4.071
+    },
+    {
+      "module": "CosetThetaFactorization",
+      "returncode": 0,
+      "seconds": 3.853
+    },
+    {
+      "module": "FormalSchrodingerDefinitionsR0119",
+      "returncode": 0,
+      "seconds": 3.126
+    },
+    {
+      "module": "FunctionFieldTranslationsR0116",
+      "returncode": 0,
+      "seconds": 8.976
+    },
+    {
+      "module": "NormalizedSectionDefinitions",
+      "returncode": 0,
+      "seconds": 3.113
+    },
+    {
+      "module": "OrthogonalConsumerDefinitionsR0127",
+      "returncode": 0,
+      "seconds": 2.887
+    },
+    {
+      "module": "FiniteFieldModelsDefinitionsR0221",
+      "returncode": 0,
+      "seconds": 4.062
+    },
+    {
+      "module": "CosetRepresentativeInvarianceR0127",
+      "returncode": 0,
+      "seconds": 3.074
+    },
+    {
+      "module": "TateGammaAnnular",
+      "returncode": 0,
+      "seconds": 7.114
+    },
+    {
+      "module": "AlphaTensorCoherenceR0217",
+      "returncode": 0,
+      "seconds": 10.525
+    },
+    {
+      "module": "LocalAffineExpansionR0116",
+      "returncode": 0,
+      "seconds": 8.071
+    },
+    {
+      "module": "FullSourceDefinitionsR0268",
+      "returncode": 0,
+      "seconds": 2.811
+    },
+    {
+      "module": "GenericLineCoefficients",
+      "returncode": 0,
+      "seconds": 3.259
+    },
+    {
+      "module": "IndividualCosetIntegralProductR0127",
+      "returncode": 0,
+      "seconds": 3.399
+    },
+    {
+      "module": "TateNodeRestrictedPresentation",
+      "returncode": 0,
+      "seconds": 81.194
+    },
+    {
+      "module": "FiniteEtaleMapFiniteModelR0221",
+      "returncode": 0,
+      "seconds": 8.451
+    },
+    {
+      "module": "LocalIdealOrderR0116",
+      "returncode": 0,
+      "seconds": 5.719
+    },
+    {
+      "module": "NormalLineFrames",
+      "returncode": 0,
+      "seconds": 2.917
+    },
+    {
+      "module": "NormalOrderCriterion",
+      "returncode": 0,
+      "seconds": 3.351
+    },
+    {
+      "module": "NormalizationPrescribedBranch",
+      "returncode": 0,
+      "seconds": 4.094
+    },
+    {
+      "module": "OneChartRegularRoot",
+      "returncode": 0,
+      "seconds": 4.541
+    },
+    {
+      "module": "LocalPowerPullback",
+      "returncode": 0,
+      "seconds": 8.88
+    },
+    {
+      "module": "NormalizedPowerCoefficients",
+      "returncode": 0,
+      "seconds": 3.368
+    },
+    {
+      "module": "RamifiedFiniteMapModelR0222",
+      "returncode": 0,
+      "seconds": 5.75
+    },
+    {
+      "module": "RationalPreimageCosetsR0127",
+      "returncode": 0,
+      "seconds": 3.731
+    },
+    {
+      "module": "PointedCurveFiniteModelR0221",
+      "returncode": 0,
+      "seconds": 11.1
+    },
+    {
+      "module": "SectionOrderDefinitions",
+      "returncode": 0,
+      "seconds": 2.769
+    },
+    {
+      "module": "SourceOrthogonalFactorizationR0127",
+      "returncode": 0,
+      "seconds": 3.512
+    },
+    {
+      "module": "CuspOrder",
+      "returncode": 0,
+      "seconds": 3.117
+    },
+    {
+      "module": "PullbackLineFrames",
+      "returncode": 0,
+      "seconds": 12.615
+    },
+    {
+      "module": "TateAnnularGeometryDefinitions",
+      "returncode": 0,
+      "seconds": 4.352
+    },
+    {
+      "module": "LineFiniteModelR0221",
+      "returncode": 0,
+      "seconds": 26.135
+    },
+    {
+      "module": "NormalizedRootSections",
+      "returncode": 0,
+      "seconds": 3.327
+    },
+    {
+      "module": "BinaryOrthogonalExampleR0268",
+      "returncode": 0,
+      "seconds": 4.347
+    },
+    {
+      "module": "SectionOrderInvariance",
+      "returncode": 0,
+      "seconds": 3.61
+    },
+    {
+      "module": "SmoothRootSections",
+      "returncode": 0,
+      "seconds": 3.109
+    },
+    {
+      "module": "EffectiveDivisorLine",
+      "returncode": 0,
+      "seconds": 7.717
+    },
+    {
+      "module": "LineIsomorphismDivisors",
+      "returncode": 0,
+      "seconds": 4.102
+    },
+    {
+      "module": "SectionDivisor",
+      "returncode": 0,
+      "seconds": 3.465
+    },
+    {
+      "module": "SectionDegreeBound",
+      "returncode": 0,
+      "seconds": 3.237
+    },
+    {
+      "module": "SignedDivisorTensor",
+      "returncode": 0,
+      "seconds": 5.999
+    },
+    {
+      "module": "EqualDivisorLineIso",
+      "returncode": 0,
+      "seconds": 7.238
+    },
+    {
+      "module": "SectionCompletionDefinitions",
+      "returncode": 0,
+      "seconds": 3.271
+    },
+    {
+      "module": "TensorDegreeDefinitions",
+      "returncode": 0,
+      "seconds": 2.908
+    },
+    {
+      "module": "ThetaAnnularConvergenceR0119",
+      "returncode": 0,
+      "seconds": 3.856
+    },
+    {
+      "module": "CompletionUniformizer",
+      "returncode": 0,
+      "seconds": 3.662
+    },
+    {
+      "module": "EtaleCompletedBranches",
+      "returncode": 0,
+      "seconds": 5.896
+    },
+    {
+      "module": "SectionRatios",
+      "returncode": 0,
+      "seconds": 3.547
+    },
+    {
+      "module": "CompletedSectionInjective",
+      "returncode": 0,
+      "seconds": 3.396
+    },
+    {
+      "module": "TateCompletedNodeNormal",
+      "returncode": 0,
+      "seconds": 22.87
+    },
+    {
+      "module": "CompletedSectionOrder",
+      "returncode": 0,
+      "seconds": 3.705
+    },
+    {
+      "module": "FiniteEtaleFormalDiskLift",
+      "returncode": 0,
+      "seconds": 3.675
+    },
+    {
+      "module": "SectionDivisorComparison",
+      "returncode": 0,
+      "seconds": 3.822
+    },
+    {
+      "module": "ScaledNormalRecoveryDefinitionsR0051",
+      "returncode": 0,
+      "seconds": 3.505
+    },
+    {
+      "module": "TensorSectionDivisors",
+      "returncode": 0,
+      "seconds": 3.867
+    },
+    {
+      "module": "ThetaOperatorLawsR0119",
+      "returncode": 0,
+      "seconds": 4.077
+    },
+    {
+      "module": "FixedLineFiniteJet",
+      "returncode": 0,
+      "seconds": 4.585
+    },
+    {
+      "module": "ScaledAdditiveCompletionExtensionR0051",
+      "returncode": 0,
+      "seconds": 6.209
+    },
+    {
+      "module": "FinitePullbackSectionDegree",
+      "returncode": 0,
+      "seconds": 9.577
+    },
+    {
+      "module": "TensorLineDegrees",
+      "returncode": 0,
+      "seconds": 3.263
+    },
+    {
+      "module": "ScaledRingCompletionExtensionR0051",
+      "returncode": 0,
+      "seconds": 6.955
+    },
+    {
+      "module": "ThetaRecurrenceBasisR0119",
+      "returncode": 0,
+      "seconds": 4.021
+    },
+    {
+      "module": "ScaledAlgebraicSplitR0051",
+      "returncode": 0,
+      "seconds": 10.72
+    },
+    {
+      "module": "GeometricPrerequisiteDefinitions",
+      "returncode": 0,
+      "seconds": 3.037
+    },
+    {
+      "module": "FiniteLineHomsModelR0221",
+      "returncode": 0,
+      "seconds": 69.666
+    },
+    {
+      "module": "AllSolutionsAnnularEvaluationR0119",
+      "returncode": 0,
+      "seconds": 4.197
+    },
+    {
+      "module": "TranslationCompositionR0116",
+      "returncode": 0,
+      "seconds": 4.431
+    },
+    {
+      "module": "TateGeneralAddition",
+      "returncode": 0,
+      "seconds": 44.868
+    },
+    {
+      "module": "CompleteMillerDivisorR0116",
+      "returncode": 0,
+      "seconds": 2.95
+    },
+    {
+      "module": "ThetaEigenspaceRigidityR0119",
+      "returncode": 0,
+      "seconds": 3.676
+    },
+    {
+      "module": "ScaledCompletedSplitLawsR0051",
+      "returncode": 0,
+      "seconds": 8.928
+    },
+    {
+      "module": "PrincipalDivisorSupportR0116",
+      "returncode": 0,
+      "seconds": 3.104
+    },
+    {
+      "module": "ScaledCompletedNodeNormalDomainR0051",
+      "returncode": 0,
+      "seconds": 2.971
+    },
+    {
+      "module": "SchrodingerCommonScalarR0119",
+      "returncode": 0,
+      "seconds": 4.477
+    },
+    {
+      "module": "TateBasicFourthIdentity",
+      "returncode": 0,
+      "seconds": 6.363
+    },
+    {
+      "module": "UnaryParameterIdentificationR0127",
+      "returncode": 0,
+      "seconds": 3.26
+    },
+    {
+      "module": "AnnularTorsionPrerequisiteDefinitionsR0053",
+      "returncode": 0,
+      "seconds": 3.922
+    },
+    {
+      "module": "TateMarkedRootIdentity",
+      "returncode": 0,
+      "seconds": 5.572
+    },
+    {
+      "module": "ComputedFamilyFormalUnaryConsumerR0127",
+      "returncode": 0,
+      "seconds": 3.779
+    },
+    {
+      "module": "PoweredChartPlacementR0054",
+      "returncode": 0,
+      "seconds": 3.875
+    },
+    {
+      "module": "PoweredGammaClearingR0053",
+      "returncode": 0,
+      "seconds": 9.16
+    },
+    {
+      "module": "RGonRepresentativesR0053",
+      "returncode": 0,
+      "seconds": 3.934
+    },
+    {
+      "module": "CompletedSectionKernelsR0053",
+      "returncode": 0,
+      "seconds": 17.006
+    },
+    {
+      "module": "UnitRootAlgebra",
+      "returncode": 0,
+      "seconds": 4.728
+    },
+    {
+      "module": "PoweredGammaUnitLimitR0053",
+      "returncode": 0,
+      "seconds": 15.83
+    },
+    {
+      "module": "GeometricTorsionChartSectionsR0053",
+      "returncode": 0,
+      "seconds": 6.889
+    },
+    {
+      "module": "EllipticTameReciprocityR0116",
+      "returncode": 0,
+      "seconds": 32.463
+    },
+    {
+      "module": "HorizontalSplitReducedR0053",
+      "returncode": 0,
+      "seconds": 6.13
+    },
+    {
+      "module": "IndexedFormalOverlapDefinitionsR0058",
+      "returncode": 0,
+      "seconds": 6.501
+    },
+    {
+      "module": "MovedSupportMillerPairingR0116",
+      "returncode": 0,
+      "seconds": 7.207
+    },
+    {
+      "module": "ArithmeticMillerPairingR0116",
+      "returncode": 0,
+      "seconds": 6.119
+    },
+    {
+      "module": "CompletedCoordinateRestrictionsR0058",
+      "returncode": 0,
+      "seconds": 10.553
+    },
+    {
+      "module": "GeometricFourPairingDefinitionsR0118",
+      "returncode": 0,
+      "seconds": 1.564
+    },
+    {
+      "module": "IndexedAdjacentCoordinatesR0058",
+      "returncode": 0,
+      "seconds": 11.706
+    },
+    {
+      "module": "AllFourMillerProviderR0118",
+      "returncode": 0,
+      "seconds": 2.029
+    },
+    {
+      "module": "PoweredGammaLocalDivisorR0053",
+      "returncode": 0,
+      "seconds": 19.148
+    },
+    {
+      "module": "AdditionFunctionDivisorR0118",
+      "returncode": 0,
+      "seconds": 5.792
+    },
+    {
+      "module": "InfinitesimalPolygonDefinitionsR0129",
+      "returncode": 0,
+      "seconds": 4.522
+    },
+    {
+      "module": "LocalNormDefinitionsR0054",
+      "returncode": 0,
+      "seconds": 3.06
+    },
+    {
+      "module": "CompletedIndexedAdjacentR0058",
+      "returncode": 0,
+      "seconds": 9.754
+    },
+    {
+      "module": "FiniteStageAdjacentR0129",
+      "returncode": 0,
+      "seconds": 3.648
+    },
+    {
+      "module": "FinitePowerSectionsModelR0221",
+      "returncode": 0,
+      "seconds": 65.791
+    },
+    {
+      "module": "PairingShiftIndependenceR0118",
+      "returncode": 0,
+      "seconds": 5.683
+    },
+    {
+      "module": "ProperFormalFunctions",
+      "returncode": 0,
+      "seconds": 69.457
+    },
+    {
+      "module": "LocalCoordinateUnitR0054",
+      "returncode": 0,
+      "seconds": 3.843
+    },
+    {
+      "module": "LocalGammaEndpointR0054",
+      "returncode": 0,
+      "seconds": 3.148
+    },
+    {
+      "module": "FiniteStageCompletionComparisonR0129",
+      "returncode": 0,
+      "seconds": 8.571
+    },
+    {
+      "module": "GlobalizationDefinitions",
+      "returncode": 0,
+      "seconds": 3.131
+    },
+    {
+      "module": "MarkingPairingIdentificationR0118",
+      "returncode": 0,
+      "seconds": 2.656
+    },
+    {
+      "module": "LocalGammaInteriorR0054",
+      "returncode": 0,
+      "seconds": 3.237
+    },
+    {
+      "module": "InfinitesimalPolygonAtlasR0129",
+      "returncode": 0,
+      "seconds": 7.885
+    },
+    {
+      "module": "PairingBilinearityR0118",
+      "returncode": 0,
+      "seconds": 3.969
+    },
+    {
+      "module": "InfinitesimalPolygonFlatR0129",
+      "returncode": 0,
+      "seconds": 3.102
+    },
+    {
+      "module": "LocalNormFactorizationR0054",
+      "returncode": 0,
+      "seconds": 3.808
+    },
+    {
+      "module": "FiniteFullLevelCount",
+      "returncode": 0,
+      "seconds": 5.55
+    },
+    {
+      "module": "PairingFieldNaturalityR0118",
+      "returncode": 0,
+      "seconds": 5.716
+    },
+    {
+      "module": "PairingAlternatingPerfectR0118",
+      "returncode": 0,
+      "seconds": 2.477
+    },
+    {
+      "module": "CompletedTorsionSectionGluingR0058",
+      "returncode": 0,
+      "seconds": 14.103
+    },
+    {
+      "module": "GeometricFourCharacterR0118",
+      "returncode": 0,
+      "seconds": 1.333
+    },
+    {
+      "module": "RootAlgebraBaseChange",
+      "returncode": 0,
+      "seconds": 4.01
+    },
+    {
+      "module": "CorrectedGammaDefinitionsR0061",
+      "returncode": 0,
+      "seconds": 3.289
+    },
+    {
+      "module": "ScopedCuspDefinitionsR0102",
+      "returncode": 0,
+      "seconds": 3.001
+    },
+    {
+      "module": "InfinitesimalPolygonProperR0129",
+      "returncode": 0,
+      "seconds": 10.291
+    },
+    {
+      "module": "AnnularThetaGluingDefinitionsR0128",
+      "returncode": 0,
+      "seconds": 3.419
+    },
+    {
+      "module": "CongruenceLabelFibersR0102",
+      "returncode": 0,
+      "seconds": 4.191
+    },
+    {
+      "module": "AnnularFullSeriesIdentificationR0128",
+      "returncode": 0,
+      "seconds": 4.042
+    },
+    {
+      "module": "CorrectedGammaFiniteFactorizationR0061",
+      "returncode": 0,
+      "seconds": 4.953
+    },
+    {
+      "module": "CompletedChartThetaIndependenceR0128",
+      "returncode": 0,
+      "seconds": 4.743
+    },
+    {
+      "module": "CorrectedGammaTailExistsR0061",
+      "returncode": 0,
+      "seconds": 3.543
+    },
+    {
+      "module": "AnnularThetaInteriorR0128",
+      "returncode": 0,
+      "seconds": 12.503
+    },
+    {
+      "module": "CorrectedGammaDataExistsR0061",
+      "returncode": 0,
+      "seconds": 3.492
+    },
+    {
+      "module": "IntegralPrimitiveLiftR0102",
+      "returncode": 0,
+      "seconds": 3.1
+    },
+    {
+      "module": "AnnularThetaPeriodR0128",
+      "returncode": 0,
+      "seconds": 13.13
+    },
+    {
+      "module": "PolygonProvidersRecoveryR0130",
+      "returncode": 0,
+      "seconds": 2.745
+    },
+    {
+      "module": "CongruenceMarkingQuotientR0102",
+      "returncode": 0,
+      "seconds": 3.644
+    },
+    {
+      "module": "CorrectedGammaDataUniqueR0061",
+      "returncode": 0,
+      "seconds": 4.441
+    },
+    {
+      "module": "GlobalRootTorsor",
+      "returncode": 0,
+      "seconds": 25.393
+    },
+    {
+      "module": "RationalBoundaryCoordinatesR0102",
+      "returncode": 0,
+      "seconds": 3.595
+    },
+    {
+      "module": "PolygonThickeningRecoveryR0130",
+      "returncode": 0,
+      "seconds": 5.054
+    },
+    {
+      "module": "CoverComparisonDefinitions",
+      "returncode": 0,
+      "seconds": 2.92
+    },
+    {
+      "module": "RationalCuspClassificationR0102",
+      "returncode": 0,
+      "seconds": 3.208
+    },
+    {
+      "module": "CorrectedGammaInteriorOverlapR0061",
+      "returncode": 0,
+      "seconds": 10.261
+    },
+    {
+      "module": "PointedSquareCoverFiniteModelR0221",
+      "returncode": 0,
+      "seconds": 41.151
+    },
+    {
+      "module": "SignedTranslationFiberR0102",
+      "returncode": 0,
+      "seconds": 4.126
+    },
+    {
+      "module": "ProperFlatPolygonTowerR0130",
+      "returncode": 0,
+      "seconds": 11.318
+    },
+    {
+      "module": "CorrectedGammaPeriodBoundaryR0061",
+      "returncode": 0,
+      "seconds": 15.936
+    },
+    {
+      "module": "MarkingCuspProjectionR0102",
+      "returncode": 0,
+      "seconds": 3.989
+    },
+    {
+      "module": "PolygonCohomologyDefinitionsR0131",
+      "returncode": 0,
+      "seconds": 3.242
+    },
+    {
+      "module": "GenericOverlapDefinitionsR0065",
+      "returncode": 0,
+      "seconds": 3.223
+    },
+    {
+      "module": "RamifiedRootModelsDefinitionsR0222",
+      "returncode": 0,
+      "seconds": 12.189
+    },
+    {
+      "module": "GenericAdjacentProvidersR0065",
+      "returncode": 0,
+      "seconds": 3.682
+    },
+    {
+      "module": "GenericRestrictionProvidersR0065",
+      "returncode": 0,
+      "seconds": 3.74
+    },
+    {
+      "module": "MarkedCartierEquationR0131",
+      "returncode": 0,
+      "seconds": 10.947
+    },
+    {
+      "module": "UniformThetaChartRealizationR0128",
+      "returncode": 0,
+      "seconds": 12.353
+    },
+    {
+      "module": "LocalGammaProviderBridgeR0065",
+      "returncode": 0,
+      "seconds": 4.175
+    },
+    {
+      "module": "ProperCoherentFormalSections",
+      "returncode": 0,
+      "seconds": 61.694
+    },
+    {
+      "module": "PolygonSmoothMarkedSectionsR0131",
+      "returncode": 0,
+      "seconds": 4.639
+    },
+    {
+      "module": "GenericOpenFaithfulnessR0065",
+      "returncode": 0,
+      "seconds": 11.526
+    },
+    {
+      "module": "CompletedChartDefinitions",
+      "returncode": 0,
+      "seconds": 3.664
+    },
+    {
+      "module": "PolygonCompatibleMarkingsR0131",
+      "returncode": 0,
+      "seconds": 5.863
+    },
+    {
+      "module": "CompletedAffineAlgebraization",
+      "returncode": 0,
+      "seconds": 5.195
+    },
+    {
+      "module": "ChartLaurentSpecializationR0065",
+      "returncode": 0,
+      "seconds": 10.921
+    },
+    {
+      "module": "CompletedParameterInjective",
+      "returncode": 0,
+      "seconds": 3.961
+    },
+    {
+      "module": "FormalConstantDefinitions",
+      "returncode": 0,
+      "seconds": 3.874
+    },
+    {
+      "module": "CompletedRingModuleComparison",
+      "returncode": 0,
+      "seconds": 5.791
+    },
+    {
+      "module": "CompletedCommonDenominator",
+      "returncode": 0,
+      "seconds": 6.751
+    },
+    {
+      "module": "LocalizedCompletedAlgebraization",
+      "returncode": 0,
+      "seconds": 3.311
+    },
+    {
+      "module": "CompletedRingRestrictions",
+      "returncode": 0,
+      "seconds": 4.755
+    },
+    {
+      "module": "ProperModelGlobalConstants",
+      "returncode": 0,
+      "seconds": 4.192
+    },
+    {
+      "module": "PoweredInteriorOverlapR0065",
+      "returncode": 0,
+      "seconds": 30.065
+    },
+    {
+      "module": "LocalizedRingModuleNaturality",
+      "returncode": 0,
+      "seconds": 7.19
+    },
+    {
+      "module": "LocalizedModuleFamilyConstant",
+      "returncode": 0,
+      "seconds": 4.721
+    },
+    {
+      "module": "RootEquationCartesianReflectionR0222",
+      "returncode": 0,
+      "seconds": 20.878
+    },
+    {
+      "module": "TruncatedLaurentPresentationR0131",
+      "returncode": 0,
+      "seconds": 4.249
+    },
+    {
+      "module": "LocalizedRingFamilyConstant",
+      "returncode": 0,
+      "seconds": 4.956
+    },
+    {
+      "module": "PoweredPeriodBoundaryR0065",
+      "returncode": 0,
+      "seconds": 34.376
+    },
+    {
+      "module": "SquareIsomorphismTorsor",
+      "returncode": 0,
+      "seconds": 59.068
+    },
+    {
+      "module": "PolygonCechKernelR0131",
+      "returncode": 0,
+      "seconds": 7.129
+    },
+    {
+      "module": "ProperNoPoleDefinitionsR0089",
+      "returncode": 0,
+      "seconds": 4.78
+    },
+    {
+      "module": "PolygonGlobalFunctionsR0131",
+      "returncode": 0,
+      "seconds": 3.893
+    },
+    {
+      "module": "PolygonCechObstructionR0131",
+      "returncode": 0,
+      "seconds": 11.246
+    },
+    {
+      "module": "PolygonCartierDefinitionsR0133",
+      "returncode": 0,
+      "seconds": 3.192
+    },
+    {
+      "module": "ProperFractionScalarsR0089",
+      "returncode": 0,
+      "seconds": 6.072
+    },
+    {
+      "module": "ProperRationalOverlapsR0089",
+      "returncode": 0,
+      "seconds": 6.5
+    },
+    {
+      "module": "SplitFiniteMarkedDivisorR0133",
+      "returncode": 0,
+      "seconds": 3.98
+    },
+    {
+      "module": "SimultaneousSquareLineComparison",
+      "returncode": 0,
+      "seconds": 14.974
+    },
+    {
+      "module": "ProperModelNoPoleConstantR0089",
+      "returncode": 0,
+      "seconds": 3.506
+    },
+    {
+      "module": "LocalFRationalCompatibilityR0065",
+      "returncode": 0,
+      "seconds": 16.731
+    },
+    {
+      "module": "ProperNoPoleRootR0089",
+      "returncode": 0,
+      "seconds": 2.658
+    },
+    {
+      "module": "LocalMarkedPairR0133",
+      "returncode": 0,
+      "seconds": 11.244
+    },
+    {
+      "module": "LocalOrderDefinitionsR0066",
+      "returncode": 0,
+      "seconds": 8.942
+    },
+    {
+      "module": "GlobalMarkedIdealChartsR0133",
+      "returncode": 0,
+      "seconds": 4.56
+    },
+    {
+      "module": "PointedRamifiedRootModelR0222",
+      "returncode": 0,
+      "seconds": 32.823
+    },
+    {
+      "module": "SectionPrimeR0066",
+      "returncode": 0,
+      "seconds": 3.32
+    },
+    {
+      "module": "RationalOrderUniqueR0066",
+      "returncode": 0,
+      "seconds": 5.654
+    },
+    {
+      "module": "MarkedIdealTowerBaseChangeR0133",
+      "returncode": 0,
+      "seconds": 4.874
+    },
+    {
+      "module": "HeightOneDVRR0066",
+      "returncode": 0,
+      "seconds": 8.269
+    },
+    {
+      "module": "GlobalCartierIdealLineR0133",
+      "returncode": 0,
+      "seconds": 6.929
+    },
+    {
+      "module": "SectionHeightOneR0066",
+      "returncode": 0,
+      "seconds": 3.298
+    },
+    {
+      "module": "SectionLocalDVRR0066",
+      "returncode": 0,
+      "seconds": 3.094
+    },
+    {
+      "module": "FormalCoverDefinitionsR0210",
+      "returncode": 0,
+      "seconds": 22.457
+    },
+    {
+      "module": "SectionEquationOrderR0066",
+      "returncode": 0,
+      "seconds": 4.402
+    },
+    {
+      "module": "CanonicalCartierLineReductionR0133",
+      "returncode": 0,
+      "seconds": 11.983
+    },
+    {
+      "module": "OrderRegularityR0067",
+      "returncode": 0,
+      "seconds": 13.218
+    },
+    {
+      "module": "NumeratorOrdersR0066",
+      "returncode": 0,
+      "seconds": 9.638
+    },
+    {
+      "module": "FormalOpenRestrictionsR0210",
+      "returncode": 0,
+      "seconds": 11.294
+    },
+    {
+      "module": "GlobalPositiveSectionDescentR0134",
+      "returncode": 0,
+      "seconds": 12.594
+    },
+    {
+      "module": "FormalCoverAlgebraizationR0210",
+      "returncode": 0,
+      "seconds": 9.264
+    },
+    {
+      "module": "DenominatorOrdersR0066",
+      "returncode": 0,
+      "seconds": 20.508
+    },
+    {
+      "module": "LocalFDivisorR0066",
+      "returncode": 0,
+      "seconds": 4.736
+    },
+    {
+      "module": "FormalCoverDenominatorClearingR0210",
+      "returncode": 0,
+      "seconds": 15.164
+    },
+    {
+      "module": "AffineMarkedComplementR0133",
+      "returncode": 0,
+      "seconds": 43.869
+    },
+    {
+      "module": "PositiveLineSectionsDefinitionsR0134",
+      "returncode": 0,
+      "seconds": 3.414
+    },
+    {
+      "module": "RatioRegularityDefinitionsR0067",
+      "returncode": 0,
+      "seconds": 9.602
+    },
+    {
+      "module": "FractionAdjacentR0067",
+      "returncode": 0,
+      "seconds": 7.102
+    },
+    {
+      "module": "PositiveSectionBasisR0134",
+      "returncode": 0,
+      "seconds": 19.557
+    },
+    {
+      "module": "CyclicCompletedFamilyConstantR0088",
+      "returncode": 0,
+      "seconds": 15.758
+    },
+    {
+      "module": "FractionRestrictionR0067",
+      "returncode": 0,
+      "seconds": 9.562
+    },
+    {
+      "module": "PositiveSectionsReductionR0134",
+      "returncode": 0,
+      "seconds": 21.691
+    },
+    {
+      "module": "ArbitraryFormalCoverConstantR0210",
+      "returncode": 0,
+      "seconds": 29.091
+    },
+    {
+      "module": "RatioQuotientR0067",
+      "returncode": 0,
+      "seconds": 5.068
+    },
+    {
+      "module": "UniformCompletedClearingR0067",
+      "returncode": 0,
+      "seconds": 6.51
+    },
+    {
+      "module": "RegularFamilyDescentR0067",
+      "returncode": 0,
+      "seconds": 7.855
+    },
+    {
+      "module": "CompatibleFormalSectionBasisR0134",
+      "returncode": 0,
+      "seconds": 15.272
+    },
+    {
+      "module": "QuotientOrderR0067",
+      "returncode": 0,
+      "seconds": 15.967
+    },
+    {
+      "module": "EqualDivisorUnitR0067",
+      "returncode": 0,
+      "seconds": 21.021
+    },
+    {
+      "module": "LocalComparisonFamilyR0067",
+      "returncode": 0,
+      "seconds": 70.509
+    },
+    {
+      "module": "CyclicConstantDefinitionsR0088",
+      "returncode": 0,
+      "seconds": 2.711
+    },
+    {
+      "module": "LaurentScalarGraphR0088",
+      "returncode": 0,
+      "seconds": 12.245
+    },
+    {
+      "module": "CyclicNoPoleConstantR0088",
+      "returncode": 0,
+      "seconds": 4.02
+    },
+    {
+      "module": "LocalThetaRatioConstantR0088",
+      "returncode": 0,
+      "seconds": 7.144
+    },
+    {
+      "module": "GlobalPositiveSectionRealizationR0134",
+      "returncode": 0,
+      "seconds": 216.263
+    },
+    {
+      "module": "PositiveGlobalGenerationR0134",
+      "returncode": 0,
+      "seconds": 5.458
+    },
+    {
+      "module": "PositiveSectionMultiplicationR0134",
+      "returncode": 0,
+      "seconds": 16.398
+    },
+    {
+      "module": "ProjectiveEffectivityDefinitionsR0135",
+      "returncode": 0,
+      "seconds": 3.75
+    },
+    {
+      "module": "FormalHomogeneousPresentationR0135",
+      "returncode": 0,
+      "seconds": 4.653
+    },
+    {
+      "module": "FormalRelationsEffectivityR0135",
+      "returncode": 0,
+      "seconds": 8.064
+    },
+    {
+      "module": "SpecialFiberCubicEmbeddingR0135",
+      "returncode": 0,
+      "seconds": 13.56
+    },
+    {
+      "module": "CompatibleProjectiveEmbeddingsR0135",
+      "returncode": 0,
+      "seconds": 8.809
+    },
+    {
+      "module": "ProjectiveTowerEffectivityR0135",
+      "returncode": 0,
+      "seconds": 27.182
+    },
+    {
+      "module": "AlgebraizedGenericSmoothnessR0135",
+      "returncode": 0,
+      "seconds": 17.36
+    },
+    {
+      "module": "AlgebraizedGeometricConnectednessR0135",
+      "returncode": 0,
+      "seconds": 5.622
+    },
+    {
+      "module": "AlgebraizedMarkedLineDefinitionsR0136",
+      "returncode": 0,
+      "seconds": 3.25
+    },
+    {
+      "module": "AlgebraizedMarkedSmoothnessR0136",
+      "returncode": 0,
+      "seconds": 3.379
+    },
+    {
+      "module": "AlgebraizedSplitMarkedDivisorR0136",
+      "returncode": 0,
+      "seconds": 4.005
+    },
+    {
+      "module": "MarkedSectionAlgebraizationR0136",
+      "returncode": 0,
+      "seconds": 4.057
+    },
+    {
+      "module": "AlgebraizedMarkedIdealSpecializationR0136",
+      "returncode": 0,
+      "seconds": 3.669
+    },
+    {
+      "module": "AlgebraizedEffectiveCartierR0136",
+      "returncode": 0,
+      "seconds": 5.192
+    },
+    {
+      "module": "AlgebraizedPositiveFormalSectionsR0136",
+      "returncode": 0,
+      "seconds": 47.687
+    },
+    {
+      "module": "ModelSymmetriesDefinitionsR0137",
+      "returncode": 0,
+      "seconds": 2.997
+    },
+    {
+      "module": "IdentityThetaSectionsDefinitionsR0138",
+      "returncode": 0,
+      "seconds": 3.684
+    },
+    {
+      "module": "TowerPeriodRotationR0137",
+      "returncode": 0,
+      "seconds": 4.122
+    },
+    {
+      "module": "IdentityChartIdealR0138",
+      "returncode": 0,
+      "seconds": 4.485
+    },
+    {
+      "module": "TowerScalarTranslationR0137",
+      "returncode": 0,
+      "seconds": 6.767
+    },
+    {
+      "module": "IdentityPositiveSectionsRankR0138",
+      "returncode": 0,
+      "seconds": 15.028
+    },
+    {
+      "module": "TowerInversionR0137",
+      "returncode": 0,
+      "seconds": 23.165
+    },
+    {
+      "module": "ThetaNumeratorCompatibilityR0138",
+      "returncode": 0,
+      "seconds": 31.038
+    },
+    {
+      "module": "IdentityStageSectionRealizationR0138",
+      "returncode": 0,
+      "seconds": 209.0
+    },
+    {
+      "module": "AlgebraizedThetaSectionsR0138",
+      "returncode": 0,
+      "seconds": 12.006
+    },
+    {
+      "module": "AlgebraizedThetaFaithfulnessR0138",
+      "returncode": 0,
+      "seconds": 5.886
+    },
+    {
+      "module": "AlgebraizedThetaSaturationR0138",
+      "returncode": 0,
+      "seconds": 12.911
+    },
+    {
+      "module": "GenericThetaEvaluationDefinitionsR0140",
+      "returncode": 0,
+      "seconds": 3.492
+    },
+    {
+      "module": "ThetaNumeratorIdentityValueR0140",
+      "returncode": 0,
+      "seconds": 4.253
+    },
+    {
+      "module": "NormalizedIdentityFrameR0140",
+      "returncode": 0,
+      "seconds": 20.701
+    },
+    {
+      "module": "AlgebraicIdentityEvaluationR0140",
+      "returncode": 0,
+      "seconds": 7.751
+    },
+    {
+      "module": "GenericDualLocalizationR0140",
+      "returncode": 0,
+      "seconds": 68.404
+    },
+    {
+      "module": "GenericThetaBasisR0140",
+      "returncode": 0,
+      "seconds": 52.606
+    },
+    {
+      "module": "GenericProjectiveEvaluationR0140",
+      "returncode": 0,
+      "seconds": 16.438
+    },
+    {
+      "module": "ProperTowerAutomorphismEffectivityR0137",
+      "returncode": 0,
+      "seconds": 464.896
+    },
+    {
+      "module": "AlgebraizedAnnularActionsR0137",
+      "returncode": 0,
+      "seconds": 3.458
+    },
+    {
+      "module": "AlgebraizedActionLawsR0137",
+      "returncode": 0,
+      "seconds": 8.038
+    },
+    {
+      "module": "AlgebraizedMarkedTransportR0137",
+      "returncode": 0,
+      "seconds": 10.062
+    },
+    {
+      "module": "GeometricThetaLiftsDefinitionsR0141",
+      "returncode": 0,
+      "seconds": 3.219
+    },
+    {
+      "module": "GeometricInversionLiftR0141",
+      "returncode": 0,
+      "seconds": 20.59
+    },
+    {
+      "module": "AlgebraicTateCoordinatesDefinitionsR0143",
+      "returncode": 0,
+      "seconds": 3.595
+    },
+    {
+      "module": "TateYNumeratorSystemR0143",
+      "returncode": 0,
+      "seconds": 7.006
+    },
+    {
+      "module": "TateXNumeratorSystemR0143",
+      "returncode": 0,
+      "seconds": 14.752
+    },
+    {
+      "module": "AlgebraicTateCoordinatesR0143",
+      "returncode": 0,
+      "seconds": 3.389
+    },
+    {
+      "module": "CoordinateExactPolesR0143",
+      "returncode": 0,
+      "seconds": 6.384
+    },
+    {
+      "module": "CoordinateGeometricInversionR0143",
+      "returncode": 0,
+      "seconds": 11.316
+    },
+    {
+      "module": "CoordinateMarkedEvaluationR0143",
+      "returncode": 0,
+      "seconds": 19.221
+    },
+    {
+      "module": "GeometricScalarLiftR0141",
+      "returncode": 0,
+      "seconds": 61.564
+    },
+    {
+      "module": "CubicModelDefinitionsR0144",
+      "returncode": 0,
+      "seconds": 3.96
+    },
+    {
+      "module": "FiniteChartSplitCubicR0144",
+      "returncode": 0,
+      "seconds": 6.169
+    },
+    {
+      "module": "DegreeTwoCoordinateBasisR0144",
+      "returncode": 0,
+      "seconds": 7.203
+    },
+    {
+      "module": "DegreeThreeCoordinateBasisR0144",
+      "returncode": 0,
+      "seconds": 7.981
+    },
+    {
+      "module": "LogarithmicCoordinateDerivativeR0144",
+      "returncode": 0,
+      "seconds": 14.538
+    },
+    {
+      "module": "GeometricShiftLiftR0141",
+      "returncode": 0,
+      "seconds": 97.188
+    },
+    {
+      "module": "GeometricThetaRelationsR0141",
+      "returncode": 0,
+      "seconds": 5.814
+    },
+    {
+      "module": "GeometricIntertwinerRigidityR0141",
+      "returncode": 0,
+      "seconds": 10.777
+    },
+    {
+      "module": "GeometricBasisProjectiveValuesR0141",
+      "returncode": 0,
+      "seconds": 4.533
+    },
+    {
+      "module": "SymmetricMarkingDefinitionsR0142",
+      "returncode": 0,
+      "seconds": 3.077
+    },
+    {
+      "module": "GenericLiftScalarComparisonR0142",
+      "returncode": 0,
+      "seconds": 4.274
+    },
+    {
+      "module": "FiniteSignMarkingRealizationR0142",
+      "returncode": 0,
+      "seconds": 5.21
+    },
+    {
+      "module": "SymmetricMarkingFiniteSignsR0142",
+      "returncode": 0,
+      "seconds": 6.34
+    },
+    {
+      "module": "AlignedMarkingProjectiveValuesR0142",
+      "returncode": 0,
+      "seconds": 3.866
+    },
+    {
+      "module": "AlgebraicModelCubicR0144",
+      "returncode": 0,
+      "seconds": 68.282
+    },
+    {
+      "module": "GenericAffineCubicIsomorphismR0144",
+      "returncode": 0,
+      "seconds": 65.829
+    },
+    {
+      "module": "CompactifiedDifferentialDefinitionsR0145",
+      "returncode": 0,
+      "seconds": 4.299
+    },
+    {
+      "module": "ProjectiveCubicChartR0145",
+      "returncode": 0,
+      "seconds": 13.926
+    },
+    {
+      "module": "AffineDifferentialFrameR0145",
+      "returncode": 0,
+      "seconds": 18.41
+    },
+    {
+      "module": "CompactifiedCoordinateIsomorphismR0145",
+      "returncode": 0,
+      "seconds": 7.159
+    },
+    {
+      "module": "GlobalNormalizedDifferentialR0145",
+      "returncode": 0,
+      "seconds": 101.679
+    },
+    {
+      "module": "MarkedGroupLawDefinitionsR0146",
+      "returncode": 0,
+      "seconds": 3.188
+    },
+    {
+      "module": "ActualGenericGroupLawR0146",
+      "returncode": 0,
+      "seconds": 4.492
+    },
+    {
+      "module": "ProjectivePointsEvaluationR0146",
+      "returncode": 0,
+      "seconds": 6.422
+    },
+    {
+      "module": "ActualRotationTranslationR0146",
+      "returncode": 0,
+      "seconds": 4.935
+    },
+    {
+      "module": "ActualInverseComparisonR0146",
+      "returncode": 0,
+      "seconds": 18.75
+    },
+    {
+      "module": "ActualScalarTranslationR0146",
+      "returncode": 0,
+      "seconds": 194.668
+    },
+    {
+      "module": "MarkedPointAdditionR0146",
+      "returncode": 0,
+      "seconds": 3.599
+    },
+    {
+      "module": "MarkedExactTorsionR0146",
+      "returncode": 0,
+      "seconds": 3.987
+    },
+    {
+      "module": "SplitMarkedTorsionCompletenessR0146",
+      "returncode": 0,
+      "seconds": 4.499
+    },
+    {
+      "module": "HodgeFourTorsionDefinitionsR0147",
+      "returncode": 0,
+      "seconds": 3.941
+    },
+    {
+      "module": "MarkedCoordinateChartR0147",
+      "returncode": 0,
+      "seconds": 6.457
+    },
+    {
+      "module": "InverseDifferentialSignR0147",
+      "returncode": 0,
+      "seconds": 13.68
+    },
+    {
+      "module": "ActualFourTorsionHodgeRootR0147",
+      "returncode": 0,
+      "seconds": 7.406
+    },
+    {
+      "module": "WeightedAffineExtensionR0148",
+      "returncode": 0,
+      "seconds": 4.961
+    },
+    {
+      "module": "AffineTranslationChainRuleR0148",
+      "returncode": 0,
+      "seconds": 20.317
+    },
+    {
+      "module": "TranslationInvariantDifferentialR0148",
+      "returncode": 0,
+      "seconds": 3.324
+    },
+    {
+      "module": "MultiplicationDifferentialR0148",
+      "returncode": 0,
+      "seconds": 24.032
+    },
+    {
+      "module": "MultiplicationFiniteEtaleDegreeR0148",
+      "returncode": 0,
+      "seconds": 4.563
+    },
+    {
+      "module": "IntegralHodgeDefinitionsR0149",
+      "returncode": 0,
+      "seconds": 3.354
+    },
+    {
+      "module": "GeometricNormDefinitionsR0150",
+      "returncode": 0,
+      "seconds": 3.628
+    },
+    {
+      "module": "IntegralHodgeFrameR0149",
+      "returncode": 0,
+      "seconds": 4.613
+    },
+    {
+      "module": "FiniteEtaleLocalNormR0150",
+      "returncode": 0,
+      "seconds": 6.22
+    },
+    {
+      "module": "GeometricNormCompositionR0151",
+      "returncode": 0,
+      "seconds": 3.861
+    },
+    {
+      "module": "ActualMultiplicationFieldNormR0150",
+      "returncode": 0,
+      "seconds": 4.409
+    },
+    {
+      "module": "FiniteEtaleFreeCoverR0251",
+      "returncode": 0,
+      "seconds": 4.568
+    },
+    {
+      "module": "GeometricNormBaseChangeR0150",
+      "returncode": 0,
+      "seconds": 5.186
+    },
+    {
+      "module": "GeometricNormOrdersR0150",
+      "returncode": 0,
+      "seconds": 7.977
+    },
+    {
+      "module": "ActualNormalizedKatoUniquenessR0150",
+      "returncode": 0,
+      "seconds": 4.225
+    },
+    {
+      "module": "CoprimeTorsionDivisorNormR0150",
+      "returncode": 0,
+      "seconds": 5.107
+    },
+    {
+      "module": "KatoExistenceDefinitionsR0151",
+      "returncode": 0,
+      "seconds": 3.11
+    },
+    {
+      "module": "SimultaneousKatoNormalizationR0151",
+      "returncode": 0,
+      "seconds": 4.339
+    },
+    {
+      "module": "KatoDivisorFieldBaseChangeR0151",
+      "returncode": 0,
+      "seconds": 6.785
+    },
+    {
+      "module": "ActualKatoDivisorPrincipalR0151",
+      "returncode": 0,
+      "seconds": 17.636
+    },
+    {
+      "module": "ActualKatoFunctionExistenceR0151",
+      "returncode": 0,
+      "seconds": 3.632
+    },
+    {
+      "module": "GenericKaehlerComparisonR0149",
+      "returncode": 0,
+      "seconds": 44.988
+    },
+    {
+      "module": "ActualKatoFieldBaseChangeR0151",
+      "returncode": 0,
+      "seconds": 3.57
+    },
+    {
+      "module": "GeneralEllipticKatoDefinitionsR0168",
+      "returncode": 0,
+      "seconds": 3.0
+    },
+    {
+      "module": "KatoAnnularDefinitionsR0152",
+      "returncode": 0,
+      "seconds": 5.378
+    },
+    {
+      "module": "GeneralMultiplicationDegreeR0168",
+      "returncode": 0,
+      "seconds": 3.87
+    },
+    {
+      "module": "GeneralEllipticBaseChangeR0168",
+      "returncode": 0,
+      "seconds": 3.946
+    },
+    {
+      "module": "ActualSplitTorsionKernelR0152",
+      "returncode": 0,
+      "seconds": 4.713
+    },
+    {
+      "module": "GeneralKatoPrincipalityR0168",
+      "returncode": 0,
+      "seconds": 7.342
+    },
+    {
+      "module": "CompletedModelChartMapsR0152",
+      "returncode": 0,
+      "seconds": 6.046
+    },
+    {
+      "module": "GeneralCoprimeDivisorNormR0168",
+      "returncode": 0,
+      "seconds": 3.524
+    },
+    {
+      "module": "CompletedMarkedChartIdealR0152",
+      "returncode": 0,
+      "seconds": 6.747
+    },
+    {
+      "module": "GeneralKatoExistenceR0168",
+      "returncode": 0,
+      "seconds": 3.874
+    },
+    {
+      "module": "GeneralKatoBaseChangeR0168",
+      "returncode": 0,
+      "seconds": 3.524
+    },
+    {
+      "module": "GeneralKatoUnitLocusR0168",
+      "returncode": 0,
+      "seconds": 3.961
+    },
+    {
+      "module": "RelativeKatoDefinitionsR0169",
+      "returncode": 0,
+      "seconds": 3.881
+    },
+    {
+      "module": "RelativeCurveGeometryR0169",
+      "returncode": 0,
+      "seconds": 3.775
+    },
+    {
+      "module": "RelativeMultiplicationDegreeR0169",
+      "returncode": 0,
+      "seconds": 4.742
+    },
+    {
+      "module": "RelativeGenericComparisonR0169",
+      "returncode": 0,
+      "seconds": 6.04
+    },
+    {
+      "module": "RelativeHorizontalOrdersR0169",
+      "returncode": 0,
+      "seconds": 4.197
+    },
+    {
+      "module": "RelativeVerticalOrdersR0169",
+      "returncode": 0,
+      "seconds": 6.119
+    },
+    {
+      "module": "NormalizedIntegralHodgeFrameR0149",
+      "returncode": 0,
+      "seconds": 46.38
+    },
+    {
+      "module": "RelativeKatoExistenceR0169",
+      "returncode": 0,
+      "seconds": 6.797
+    },
+    {
+      "module": "RelativeKatoNaturalityDefinitionsR0170",
+      "returncode": 0,
+      "seconds": 3.581
+    },
+    {
+      "module": "RelativeTorsionCartierR0170",
+      "returncode": 0,
+      "seconds": 3.299
+    },
+    {
+      "module": "RelativeTorsionUnitValueR0170",
+      "returncode": 0,
+      "seconds": 4.355
+    },
+    {
+      "module": "RelativeKatoCartierRatioR0170",
+      "returncode": 0,
+      "seconds": 6.482
+    },
+    {
+      "module": "CompletedChartFieldMapsR0152",
+      "returncode": 0,
+      "seconds": 57.877
+    },
+    {
+      "module": "RelativeKatoFiberSpecializationR0170",
+      "returncode": 0,
+      "seconds": 13.088
+    },
+    {
+      "module": "RelativeKatoArbitraryBaseChangeR0170",
+      "returncode": 0,
+      "seconds": 5.21
+    },
+    {
+      "module": "RelativeTorsionValueNaturalityR0170",
+      "returncode": 0,
+      "seconds": 4.325
+    },
+    {
+      "module": "RelativeDiscriminantDefinitionsR0171",
+      "returncode": 0,
+      "seconds": 3.694
+    },
+    {
+      "module": "RelativeIdentityTorsionNeighborhoodR0171",
+      "returncode": 0,
+      "seconds": 6.306
+    },
+    {
+      "module": "RelativeConormalHodgeGeneratorR0171",
+      "returncode": 0,
+      "seconds": 6.966
+    },
+    {
+      "module": "RelativeInitialHodgeSectionR0171",
+      "returncode": 0,
+      "seconds": 9.843
+    },
+    {
+      "module": "RelativeHodgePowerBaseChangeR0171",
+      "returncode": 0,
+      "seconds": 42.032
+    },
+    {
+      "module": "KatoAnnularDivisorR0152",
+      "returncode": 0,
+      "seconds": 67.557
+    },
+    {
+      "module": "RelativeInitialSectionNaturalityR0171",
+      "returncode": 0,
+      "seconds": 7.609
+    },
+    {
+      "module": "KatoAnnularOverlapR0152",
+      "returncode": 0,
+      "seconds": 70.824
+    },
+    {
+      "module": "ActualKatoAnnularComparisonR0152",
+      "returncode": 0,
+      "seconds": 3.284
+    },
+    {
+      "module": "SplitNormDefinitionsR0153",
+      "returncode": 0,
+      "seconds": 3.306
+    },
+    {
+      "module": "MarkedFieldActionR0153",
+      "returncode": 0,
+      "seconds": 4.118
+    },
+    {
+      "module": "RelativeIsogenyHodgeDefinitionsR0172",
+      "returncode": 0,
+      "seconds": 11.985
+    },
+    {
+      "module": "SplitDeckExhaustionR0153",
+      "returncode": 0,
+      "seconds": 4.347
+    },
+    {
+      "module": "EtaleHodgePullbackIsomorphismR0172",
+      "returncode": 0,
+      "seconds": 5.393
+    },
+    {
+      "module": "CompletedScalingExtensionR0153",
+      "returncode": 0,
+      "seconds": 10.346
+    },
+    {
+      "module": "SplitMultiplicationNormR0153",
+      "returncode": 0,
+      "seconds": 3.657
+    },
+    {
+      "module": "LiteralQuotientAlgebraizationR0153",
+      "returncode": 0,
+      "seconds": 17.909
+    },
+    {
+      "module": "PointedHodgeFunctorialityR0172",
+      "returncode": 0,
+      "seconds": 14.287
+    },
+    {
+      "module": "CompletedActionEquivarianceR0153",
+      "returncode": 0,
+      "seconds": 14.734
+    },
+    {
+      "module": "CompletedNormProductR0153",
+      "returncode": 0,
+      "seconds": 3.922
+    },
+    {
+      "module": "PointedHodgeBaseChangeR0172",
+      "returncode": 0,
+      "seconds": 12.471
+    },
+    {
+      "module": "RamifiedPeriodDefinitionsR0154",
+      "returncode": 0,
+      "seconds": 3.408
+    },
+    {
+      "module": "RelativeMultiplicationHodgeWeightR0172",
+      "returncode": 0,
+      "seconds": 22.093
+    },
+    {
+      "module": "RelativeCyclicQuotientDefinitionsR0173",
+      "returncode": 0,
+      "seconds": 3.537
+    },
+    {
+      "module": "SplitCyclicKernelR0173",
+      "returncode": 0,
+      "seconds": 3.728
+    },
+    {
+      "module": "PointedRelativeGroupHomR0173",
+      "returncode": 0,
+      "seconds": 5.911
+    },
+    {
+      "module": "CyclicPresentationDefinitionsR0174",
+      "returncode": 0,
+      "seconds": 3.476
+    },
+    {
+      "module": "CompletedChartRamificationR0154",
+      "returncode": 0,
+      "seconds": 22.707
+    },
+    {
+      "module": "RamifiedPolygonTowerR0154",
+      "returncode": 0,
+      "seconds": 7.528
+    },
+    {
+      "module": "RamifiedModelMorphismR0154",
+      "returncode": 0,
+      "seconds": 6.39
+    },
+    {
+      "module": "FramedSchemeQuotientR0174",
+      "returncode": 0,
+      "seconds": 14.801
+    },
+    {
+      "module": "RamifiedMarkedSectionsR0154",
+      "returncode": 0,
+      "seconds": 4.509
+    },
+    {
+      "module": "RamifiedAcceptedLeavesR0155",
+      "returncode": 0,
+      "seconds": 2.855
+    },
+    {
+      "module": "RamifiedPeriodRecoveryDefinitionsR0155",
+      "returncode": 0,
+      "seconds": 3.055
+    },
+    {
+      "module": "RamifiedLaurentExtensionR0155",
+      "returncode": 0,
+      "seconds": 3.8
+    },
+    {
+      "module": "RamifiedGenericBaseChangeR0155",
+      "returncode": 0,
+      "seconds": 27.412
+    },
+    {
+      "module": "RamifiedKatoBaseChangeR0155",
+      "returncode": 0,
+      "seconds": 4.192
+    },
+    {
+      "module": "RamifiedFunctionFieldExpansionR0155",
+      "returncode": 0,
+      "seconds": 7.795
+    },
+    {
+      "module": "AnnularNormBridgeDefinitionsR0156",
+      "returncode": 0,
+      "seconds": 5.519
+    },
+    {
+      "module": "RamifiedLiteralQuotientR0156",
+      "returncode": 0,
+      "seconds": 30.538
+    },
+    {
+      "module": "FaithfulAnnularEvaluationR0156",
+      "returncode": 0,
+      "seconds": 33.978
+    },
+    {
+      "module": "FullGammaEvaluationR0156",
+      "returncode": 0,
+      "seconds": 9.499
+    },
+    {
+      "module": "EvaluationScalingR0156",
+      "returncode": 0,
+      "seconds": 10.11
+    },
+    {
+      "module": "RamifiedEvaluationNaturalityR0158",
+      "returncode": 0,
+      "seconds": 18.721
+    },
+    {
+      "module": "MultiplicationEvaluationR0156",
+      "returncode": 0,
+      "seconds": 26.961
+    },
+    {
+      "module": "LiteralSplitGeometricNormR0156",
+      "returncode": 0,
+      "seconds": 18.614
+    },
+    {
+      "module": "RamifiedLiteralNormRealizationR0156",
+      "returncode": 0,
+      "seconds": 4.214
+    },
+    {
+      "module": "CoefficientNormDescentDefinitionsR0157",
+      "returncode": 0,
+      "seconds": 3.6
+    },
+    {
+      "module": "GammaBaseChangeNaturalityR0158",
+      "returncode": 0,
+      "seconds": 4.944
+    },
+    {
+      "module": "CoefficientCompletedMapsR0157",
+      "returncode": 0,
+      "seconds": 26.321
+    },
+    {
+      "module": "CoefficientPolygonTowerR0157",
+      "returncode": 0,
+      "seconds": 7.087
+    },
+    {
+      "module": "CoefficientModelBaseChangeR0157",
+      "returncode": 0,
+      "seconds": 6.76
+    },
+    {
+      "module": "RelativeWeierstrassPresentationR0174",
+      "returncode": 0,
+      "seconds": 201.727
+    },
+    {
+      "module": "RelativeCyclicQuotientExistenceR0173",
+      "returncode": 0,
+      "seconds": 3.49
+    },
+    {
+      "module": "LocalWeierstrassDefinitionsR0203",
+      "returncode": 0,
+      "seconds": 4.303
+    },
+    {
+      "module": "CoefficientGenericKatoSquareR0157",
+      "returncode": 0,
+      "seconds": 6.102
+    },
+    {
+      "module": "ArbitrarySmoothDiscriminantR0203",
+      "returncode": 0,
+      "seconds": 6.165
+    },
+    {
+      "module": "CyclicQuotientArbitraryBaseChangeR0173",
+      "returncode": 0,
+      "seconds": 4.221
+    },
+    {
+      "module": "CyclicQuotientUniversalFactorizationR0173",
+      "returncode": 0,
+      "seconds": 4.259
+    },
+    {
+      "module": "LiteralCoefficientTransportR0157",
+      "returncode": 0,
+      "seconds": 26.666
+    },
+    {
+      "module": "NoetherianPositiveCohomologyR0203",
+      "returncode": 0,
+      "seconds": 8.164
+    },
+    {
+      "module": "CoefficientFunctionFieldExpansionR0157",
+      "returncode": 0,
+      "seconds": 27.08
+    },
+    {
+      "module": "NoetherianPoleFiltrationR0203",
+      "returncode": 0,
+      "seconds": 10.932
+    },
+    {
+      "module": "FramedFiniteTypeApproximationR0203",
+      "returncode": 0,
+      "seconds": 24.269
+    },
+    {
+      "module": "LiteralNormDescentR0157",
+      "returncode": 0,
+      "seconds": 5.364
+    },
+    {
+      "module": "ExactKatoAnnularFormulaR0157",
+      "returncode": 0,
+      "seconds": 3.277
+    },
+    {
+      "module": "UnsplitExpansionDefinitionsR0158",
+      "returncode": 0,
+      "seconds": 2.952
+    },
+    {
+      "module": "SplitPeriodKatoFormulaR0158",
+      "returncode": 0,
+      "seconds": 4.054
+    },
+    {
+      "module": "CoefficientEvaluationNaturalityR0158",
+      "returncode": 0,
+      "seconds": 24.601
+    },
+    {
+      "module": "CyclicQuotientTorsionKatoValueR0173",
+      "returncode": 0,
+      "seconds": 62.312
+    },
+    {
+      "module": "FullLevelCoverDefinitionsR0175",
+      "returncode": 0,
+      "seconds": 3.695
+    },
+    {
+      "module": "NoetherianFramedPresentationR0203",
+      "returncode": 0,
+      "seconds": 46.6
+    },
+    {
+      "module": "FullLevelRepresentabilityR0175",
+      "returncode": 0,
+      "seconds": 4.961
+    },
+    {
+      "module": "FullLevelTorsionSplittingR0175",
+      "returncode": 0,
+      "seconds": 5.285
+    },
+    {
+      "module": "ArbitraryFramedPresentationR0203",
+      "returncode": 0,
+      "seconds": 3.682
+    },
+    {
+      "module": "FullLevelBaseChangeR0175",
+      "returncode": 0,
+      "seconds": 5.063
+    },
+    {
+      "module": "FullLevelCyclicLiftsR0175",
+      "returncode": 0,
+      "seconds": 11.231
+    },
+    {
+      "module": "UnsplitKatoFullExpansionR0158",
+      "returncode": 0,
+      "seconds": 20.094
+    },
+    {
+      "module": "FullLevelCoverGeometryR0175",
+      "returncode": 0,
+      "seconds": 7.195
+    },
+    {
+      "module": "SchemeLocalWeierstrassR0203",
+      "returncode": 0,
+      "seconds": 6.47
+    },
+    {
+      "module": "MarkedKatoValueDefinitionsR0159",
+      "returncode": 0,
+      "seconds": 3.243
+    },
+    {
+      "module": "FullLevelDivisorReductionR0177",
+      "returncode": 0,
+      "seconds": 3.572
+    },
+    {
+      "module": "QuotientTargetFullLevelR0175",
+      "returncode": 0,
+      "seconds": 4.794
+    },
+    {
+      "module": "NormalAffineLevelExtensionR0175",
+      "returncode": 0,
+      "seconds": 5.082
+    },
+    {
+      "module": "RationalValueTransportR0159",
+      "returncode": 0,
+      "seconds": 4.15
+    },
+    {
+      "module": "RaisedSiegelTorsionFormulaR0159",
+      "returncode": 0,
+      "seconds": 4.334
+    },
+    {
+      "module": "CompletedMarkedSpecializationR0159",
+      "returncode": 0,
+      "seconds": 4.919
+    },
+    {
+      "module": "MarkedKatoRegularityR0159",
+      "returncode": 0,
+      "seconds": 3.928
+    },
+    {
+      "module": "RationalValueFieldDescentR0159",
+      "returncode": 0,
+      "seconds": 3.962
+    },
+    {
+      "module": "LegendreLevelAtlasDefinitionsR0176",
+      "returncode": 0,
+      "seconds": 5.543
+    },
+    {
+      "module": "FullLevelFreeSignR0176",
+      "returncode": 0,
+      "seconds": 3.948
+    },
+    {
+      "module": "LegendreFamilyGeometryR0176",
+      "returncode": 0,
+      "seconds": 4.591
+    },
+    {
+      "module": "AffineFreeSignQuotientR0176",
+      "returncode": 0,
+      "seconds": 6.144
+    },
+    {
+      "module": "EllipticSignDescentR0176",
+      "returncode": 0,
+      "seconds": 7.896
+    },
+    {
+      "module": "FullMarkingSignDescentR0176",
+      "returncode": 0,
+      "seconds": 5.129
+    },
+    {
+      "module": "SplitMarkedKatoValueR0159",
+      "returncode": 0,
+      "seconds": 20.964
+    },
+    {
+      "module": "UnsplitMarkedKatoValueR0159",
+      "returncode": 0,
+      "seconds": 7.229
+    },
+    {
+      "module": "ActualTorsionPowerValueR0159",
+      "returncode": 0,
+      "seconds": 3.48
+    },
+    {
+      "module": "FullLevelAutomorphismRigidityR0176",
+      "returncode": 0,
+      "seconds": 38.502
+    },
+    {
+      "module": "UnaryKatoPowerDefinitionsR0160",
+      "returncode": 0,
+      "seconds": 3.205
+    },
+    {
+      "module": "LegendreLevelFamilyConstructionR0176",
+      "returncode": 0,
+      "seconds": 4.762
+    },
+    {
+      "module": "OriginInitialDefinitionsR0161",
+      "returncode": 0,
+      "seconds": 3.56
+    },
+    {
+      "module": "DiscriminantEtaSubstitutionR0160",
+      "returncode": 0,
+      "seconds": 4.122
+    },
+    {
+      "module": "LiteralSiegelGammaR0160",
+      "returncode": 0,
+      "seconds": 4.795
+    },
+    {
+      "module": "RamifiedInitialTransportR0161",
+      "returncode": 0,
+      "seconds": 5.714
+    },
+    {
+      "module": "UnaryKatoProductR0160",
+      "returncode": 0,
+      "seconds": 4.632
+    },
+    {
+      "module": "CompletedChartTaylorR0161",
+      "returncode": 0,
+      "seconds": 7.152
+    },
+    {
+      "module": "ActualUnaryPowerValuesR0160",
+      "returncode": 0,
+      "seconds": 4.177
+    },
+    {
+      "module": "LegendreComparisonDefinitionsR0177",
+      "returncode": 0,
+      "seconds": 12.004
+    },
+    {
+      "module": "UnaryPowerGeometricRealizationR0160",
+      "returncode": 0,
+      "seconds": 3.133
+    },
+    {
+      "module": "TwoTorsionSplitCubicR0177",
+      "returncode": 0,
+      "seconds": 6.745
+    },
+    {
+      "module": "FaithfulTaylorFieldR0161",
+      "returncode": 0,
+      "seconds": 11.5
+    },
+    {
+      "module": "StandardLegendreTwoMarkingR0177",
+      "returncode": 0,
+      "seconds": 7.495
+    },
+    {
+      "module": "TwoTorsionAffineCoordinatesR0177",
+      "returncode": 0,
+      "seconds": 9.508
+    },
+    {
+      "module": "ArbitrarySplitCubicR0202",
+      "returncode": 0,
+      "seconds": 6.197
+    },
+    {
+      "module": "GammaTaylorComparisonR0161",
+      "returncode": 0,
+      "seconds": 11.27
+    },
+    {
+      "module": "ActualOriginLocalComparisonR0161",
+      "returncode": 0,
+      "seconds": 13.472
+    },
+    {
+      "module": "ArbitraryTwoCoordinatesR0202",
+      "returncode": 0,
+      "seconds": 14.431
+    },
+    {
+      "module": "ActualKatoTaylorR0161",
+      "returncode": 0,
+      "seconds": 24.406
+    },
+    {
+      "module": "OrderedLegendreParameterRigidityR0177",
+      "returncode": 0,
+      "seconds": 46.086
+    },
+    {
+      "module": "GeometricDiscriminantInitialR0161",
+      "returncode": 0,
+      "seconds": 4.621
+    },
+    {
+      "module": "ArbitraryOrderedParameterR0202",
+      "returncode": 0,
+      "seconds": 5.092
+    },
+    {
+      "module": "ConormalInitialDefinitionsR0162",
+      "returncode": 0,
+      "seconds": 4.39
+    },
+    {
+      "module": "TaylorGradedCoefficientR0162",
+      "returncode": 0,
+      "seconds": 4.66
+    },
+    {
+      "module": "AugmentedConormalR0162",
+      "returncode": 0,
+      "seconds": 4.822
+    },
+    {
+      "module": "CartierGradedTensorR0162",
+      "returncode": 0,
+      "seconds": 5.528
+    },
+    {
+      "module": "CanonicalDifferentialTensorR0162",
+      "returncode": 0,
+      "seconds": 3.778
+    },
+    {
+      "module": "InitialTensorNaturalityR0162",
+      "returncode": 0,
+      "seconds": 5.082
+    },
+    {
+      "module": "ActualOriginAugmentedTaylorR0162",
+      "returncode": 0,
+      "seconds": 16.572
+    },
+    {
+      "module": "LegendreNormalFormR0177",
+      "returncode": 0,
+      "seconds": 60.606
+    },
+    {
+      "module": "ActualDiscriminantCotangentTensorR0162",
+      "returncode": 0,
+      "seconds": 6.117
+    },
+    {
+      "module": "MarkedLegendreAtlasLocalCoverageR0177",
+      "returncode": 0,
+      "seconds": 6.119
+    },
+    {
+      "module": "HodgeInitialDefinitionsR0163",
+      "returncode": 0,
+      "seconds": 5.433
+    },
+    {
+      "module": "InitialBaseChangeDefinitionsR0164",
+      "returncode": 0,
+      "seconds": 5.523
+    },
+    {
+      "module": "CompatibleLevelDefinitionsR0178",
+      "returncode": 0,
+      "seconds": 4.657
+    },
+    {
+      "module": "AugmentationPowersR0164",
+      "returncode": 0,
+      "seconds": 5.066
+    },
+    {
+      "module": "HodgeTensorSectionsR0163",
+      "returncode": 0,
+      "seconds": 8.255
+    },
+    {
+      "module": "OriginHodgeComparisonR0163",
+      "returncode": 0,
+      "seconds": 10.147
+    },
+    {
+      "module": "CompatibleLocalCoverageR0178",
+      "returncode": 0,
+      "seconds": 7.223
+    },
+    {
+      "module": "CompatibleSignQuotientR0178",
+      "returncode": 0,
+      "seconds": 5.019
+    },
+    {
+      "module": "DifferentialFiberBaseChangeR0164",
+      "returncode": 0,
+      "seconds": 6.934
+    },
+    {
+      "module": "GradedBaseChangeR0164",
+      "returncode": 0,
+      "seconds": 8.58
+    },
+    {
+      "module": "ArbitraryFullLevelRigidityR0202",
+      "returncode": 0,
+      "seconds": 31.402
+    },
+    {
+      "module": "TensorScalarExtensionR0164",
+      "returncode": 0,
+      "seconds": 5.752
+    },
+    {
+      "module": "InitialTensorBaseChangeR0164",
+      "returncode": 0,
+      "seconds": 8.442
+    },
+    {
+      "module": "OriginLogarithmicTaylorR0163",
+      "returncode": 0,
+      "seconds": 32.603
+    },
+    {
+      "module": "CompatibleLevelSubcoverR0178",
+      "returncode": 0,
+      "seconds": 32.703
+    },
+    {
+      "module": "GeometricDiscriminantHodgeR0163",
+      "returncode": 0,
+      "seconds": 10.024
+    },
+    {
+      "module": "OrderedTwoSignRigidityR0178",
+      "returncode": 0,
+      "seconds": 35.63
+    },
+    {
+      "module": "IntegralDiscriminantHodgeR0163",
+      "returncode": 0,
+      "seconds": 12.692
+    },
+    {
+      "module": "CompatibleClassifyingUniquenessR0178",
+      "returncode": 0,
+      "seconds": 11.883
+    },
+    {
+      "module": "NormalAffineClassifyingConstructionR0178",
+      "returncode": 0,
+      "seconds": 8.525
+    },
+    {
+      "module": "ArbitraryClassifyingUniquenessR0202",
+      "returncode": 0,
+      "seconds": 12.068
+    },
+    {
+      "module": "LevelCompactificationDefinitionsR0179",
+      "returncode": 0,
+      "seconds": 3.692
+    },
+    {
+      "module": "DescendedLegendreParameterR0179",
+      "returncode": 0,
+      "seconds": 3.949
+    },
+    {
+      "module": "LevelBoundaryGeometryR0179",
+      "returncode": 0,
+      "seconds": 4.475
+    },
+    {
+      "module": "ArbitraryAffineLevelDefinitionsR0202",
+      "returncode": 0,
+      "seconds": 11.416
+    },
+    {
+      "module": "SmoothProjectiveLevelCompletionR0179",
+      "returncode": 0,
+      "seconds": 13.13
+    },
+    {
+      "module": "LevelForgettingMapR0179",
+      "returncode": 0,
+      "seconds": 14.217
+    },
+    {
+      "module": "ArbitraryLegendreNormalFormR0202",
+      "returncode": 0,
+      "seconds": 8.63
+    },
+    {
+      "module": "CompactifiedLevelForgettingR0179",
+      "returncode": 0,
+      "seconds": 4.23
+    },
+    {
+      "module": "OpenHodgeDescentDefinitionsR0180",
+      "returncode": 0,
+      "seconds": 4.4
+    },
+    {
+      "module": "ArbitraryCompatibleLocalCoverageR0202",
+      "returncode": 0,
+      "seconds": 8.983
+    },
+    {
+      "module": "ArbitraryAffineClassificationR0202",
+      "returncode": 0,
+      "seconds": 6.644
+    },
+    {
+      "module": "EllipticFamilyWeierstrassAtlasR0180",
+      "returncode": 0,
+      "seconds": 9.948
+    },
+    {
+      "module": "SchemeLevelDefinitionsR0204",
+      "returncode": 0,
+      "seconds": 4.456
+    },
+    {
+      "module": "CartesianFullMarkingR0204",
+      "returncode": 0,
+      "seconds": 3.738
+    },
+    {
+      "module": "SchemeFamilyBaseChangeR0204",
+      "returncode": 0,
+      "seconds": 3.777
+    },
+    {
+      "module": "GlobalFamilyTorsionValueR0180",
+      "returncode": 0,
+      "seconds": 7.662
+    },
+    {
+      "module": "PointedCartesianGroupLawR0204",
+      "returncode": 0,
+      "seconds": 4.267
+    },
+    {
+      "module": "SchemeLocalClassifierR0204",
+      "returncode": 0,
+      "seconds": 3.7
+    },
+    {
+      "module": "MarkedCartesianReconstructionR0206",
+      "returncode": 0,
+      "seconds": 3.676
+    },
+    {
+      "module": "SchemeClassifyingUniquenessR0204",
+      "returncode": 0,
+      "seconds": 4.26
+    },
+    {
+      "module": "GlobalLevelCyclicQuotientR0180",
+      "returncode": 0,
+      "seconds": 12.223
+    },
+    {
+      "module": "GlobalSchemeClassifierR0204",
+      "returncode": 0,
+      "seconds": 5.41
+    },
+    {
+      "module": "SchemeFullLevelUniversalR0204",
+      "returncode": 0,
+      "seconds": 4.295
+    },
+    {
+      "module": "SchemeHodgeDefinitionsR0205",
+      "returncode": 0,
+      "seconds": 3.443
+    },
+    {
+      "module": "CartesianIdentityIdealR0205",
+      "returncode": 0,
+      "seconds": 3.697
+    },
+    {
+      "module": "AffineConormalHodgeNaturalityR0205",
+      "returncode": 0,
+      "seconds": 22.31
+    },
+    {
+      "module": "SchemeCotangentCoherenceR0205",
+      "returncode": 0,
+      "seconds": 27.195
+    },
+    {
+      "module": "ClassifyingCotangentHodgeR0205",
+      "returncode": 0,
+      "seconds": 15.375
+    },
+    {
+      "module": "SchemeHodgeUniversalR0205",
+      "returncode": 0,
+      "seconds": 31.112
+    },
+    {
+      "module": "GlobalFamilyDiscriminantR0180",
+      "returncode": 0,
+      "seconds": 267.5
+    },
+    {
+      "module": "ArbitraryDiscriminantDefinitionsR0243",
+      "returncode": 0,
+      "seconds": 3.752
+    },
+    {
+      "module": "NormalDiscriminantModelR0243",
+      "returncode": 0,
+      "seconds": 5.697
+    },
+    {
+      "module": "OpenLevelNormalizedHodgePowerR0180",
+      "returncode": 0,
+      "seconds": 31.228
+    },
+    {
+      "module": "TateCuspDefinitionsR0181",
+      "returncode": 0,
+      "seconds": 3.859
+    },
+    {
+      "module": "TateJPoleR0181",
+      "returncode": 0,
+      "seconds": 6.693
+    },
+    {
+      "module": "TateLevelClassifyingParameterR0181",
+      "returncode": 0,
+      "seconds": 10.415
+    },
+    {
+      "module": "TateCuspDiskExtensionR0181",
+      "returncode": 0,
+      "seconds": 5.306
+    },
+    {
+      "module": "TateFullLevelMarkingR0181",
+      "returncode": 0,
+      "seconds": 15.738
+    },
+    {
+      "module": "EveryGeometricBoundaryTateDiskR0181",
+      "returncode": 0,
+      "seconds": 19.215
+    },
+    {
+      "module": "TateCompletedLocalParameterR0181",
+      "returncode": 0,
+      "seconds": 28.254
+    },
+    {
+      "module": "BoundaryHodgeDefinitionsR0182",
+      "returncode": 0,
+      "seconds": 5.292
+    },
+    {
+      "module": "TateHodgeComparisonTestsR0182",
+      "returncode": 0,
+      "seconds": 4.337
+    },
+    {
+      "module": "OpenDiscriminantFullTateExpansionR0182",
+      "returncode": 0,
+      "seconds": 283.264
+    },
+    {
+      "module": "NormalDiscriminantIndependenceR0243",
+      "returncode": 0,
+      "seconds": 482.409
+    },
+    {
+      "module": "ArbitraryKatoUnitDefinitionsR0249",
+      "returncode": 0,
+      "seconds": 3.298
+    },
+    {
+      "module": "ArbitraryWeierstrassDiscriminantR0243",
+      "returncode": 0,
+      "seconds": 3.857
+    },
+    {
+      "module": "ArbitraryDiscriminantNaturalityR0243",
+      "returncode": 0,
+      "seconds": 3.391
+    },
+    {
+      "module": "NormalModelUnitSpecializationR0249",
+      "returncode": 0,
+      "seconds": 6.635
+    },
+    {
+      "module": "SchemeDiscriminantDefinitionsR0244",
+      "returncode": 0,
+      "seconds": 3.874
+    },
+    {
+      "module": "NormalModelUnitIndependenceR0249",
+      "returncode": 0,
+      "seconds": 7.86
+    },
+    {
+      "module": "ArbitraryKatoUnitExistenceR0249",
+      "returncode": 0,
+      "seconds": 3.483
+    },
+    {
+      "module": "ArbitraryKatoUnitNaturalityR0249",
+      "returncode": 0,
+      "seconds": 5.885
+    },
+    {
+      "module": "ArbitraryKatoCartierDivisorR0249",
+      "returncode": 0,
+      "seconds": 14.297
+    },
+    {
+      "module": "CompactHodgeLatticeExtensionR0182",
+      "returncode": 0,
+      "seconds": 171.893
+    },
+    {
+      "module": "CompactDiscriminantSectionR0182",
+      "returncode": 0,
+      "seconds": 14.158
+    },
+    {
+      "module": "SchemeDiscriminantFrameUniquenessR0244",
+      "returncode": 0,
+      "seconds": 175.24
+    },
+    {
+      "module": "OpenUnaryDesignatedExpansionR0182",
+      "returncode": 0,
+      "seconds": 426.899
+    },
+    {
+      "module": "CompactUnaryDefinitionsR0183",
+      "returncode": 0,
+      "seconds": 6.067
+    },
+    {
+      "module": "TateTorsionNormalizedIntegralityR0183",
+      "returncode": 0,
+      "seconds": 8.503
+    },
+    {
+      "module": "SchemeDiscriminantExistenceR0244",
+      "returncode": 0,
+      "seconds": 407.98
+    },
+    {
+      "module": "SchemeKatoUnitDefinitionsR0250",
+      "returncode": 0,
+      "seconds": 3.228
+    },
+    {
+      "module": "SchemeDiscriminantNaturalityR0244",
+      "returncode": 0,
+      "seconds": 3.627
+    },
+    {
+      "module": "SchemeTorsionCartesianR0250",
+      "returncode": 0,
+      "seconds": 3.6
+    },
+    {
+      "module": "SchemeTateDiscriminantDefinitionsR0245",
+      "returncode": 0,
+      "seconds": 4.254
+    },
+    {
+      "module": "SchemeMultiplicationDegreeR0250",
+      "returncode": 0,
+      "seconds": 3.753
+    },
+    {
+      "module": "SchemeKatoUnitUniquenessR0250",
+      "returncode": 0,
+      "seconds": 3.779
+    },
+    {
+      "module": "UnmarkedTateDiscriminantR0245",
+      "returncode": 0,
+      "seconds": 5.748
+    },
+    {
+      "module": "SchemeDiscriminantTateR0245",
+      "returncode": 0,
+      "seconds": 3.749
+    },
+    {
+      "module": "SchemeKatoUnitExistenceR0250",
+      "returncode": 0,
+      "seconds": 11.276
+    },
+    {
+      "module": "SchemeKatoUnitNaturalityR0250",
+      "returncode": 0,
+      "seconds": 3.557
+    },
+    {
+      "module": "SchemeKatoCartierDivisorR0250",
+      "returncode": 0,
+      "seconds": 5.497
+    },
+    {
+      "module": "SchemeKatoNormDefinitionsR0251",
+      "returncode": 0,
+      "seconds": 3.258
+    },
+    {
+      "module": "FiniteEtaleNormSectionR0251",
+      "returncode": 0,
+      "seconds": 3.908
+    },
+    {
+      "module": "FiniteEtaleNormFamilyR0251",
+      "returncode": 0,
+      "seconds": 3.692
+    },
+    {
+      "module": "FiniteEtaleNormBaseChangeR0251",
+      "returncode": 0,
+      "seconds": 3.693
+    },
+    {
+      "module": "ArbitraryKatoNormR0251",
+      "returncode": 0,
+      "seconds": 3.828
+    },
+    {
+      "module": "SchemeKatoNormR0251",
+      "returncode": 0,
+      "seconds": 4.043
+    },
+    {
+      "module": "KatoCharacterizationDefinitionsR0254",
+      "returncode": 0,
+      "seconds": 2.97
+    },
+    {
+      "module": "CartierUnitRatioExtensionR0254",
+      "returncode": 0,
+      "seconds": 5.019
+    },
+    {
+      "module": "GlobalUnitTwoThreeNormRigidityR0254",
+      "returncode": 0,
+      "seconds": 5.638
+    },
+    {
+      "module": "SchemeKatoIntrinsicCharacterizationR0254",
+      "returncode": 0,
+      "seconds": 3.737
+    },
+    {
+      "module": "AllCuspNormalizedPowerIntegralityR0183",
+      "returncode": 0,
+      "seconds": 360.823
+    },
+    {
+      "module": "CompactNormalizedPowerExtensionR0183",
+      "returncode": 0,
+      "seconds": 7.35
+    },
+    {
+      "module": "CompactUnaryHodgeRealizationR0183",
+      "returncode": 0,
+      "seconds": 3.733
+    },
+    {
+      "module": "ComponentDegreeDefinitionsR0184",
+      "returncode": 0,
+      "seconds": 3.586
+    },
+    {
+      "module": "ComponentCurveFramesR0184",
+      "returncode": 0,
+      "seconds": 3.816
+    },
+    {
+      "module": "FieldComponentGeometryR0237",
+      "returncode": 0,
+      "seconds": 3.438
+    },
+    {
+      "module": "ComponentDiscriminantDivisorR0184",
+      "returncode": 0,
+      "seconds": 69.711
+    },
+    {
+      "module": "GeometricComponentCuspBoundR0184",
+      "returncode": 0,
+      "seconds": 76.287
+    },
+    {
+      "module": "ComponentHodgePowerDegreeR0184",
+      "returncode": 0,
+      "seconds": 5.855
+    },
+    {
+      "module": "CommonHalfHodgeDefinitionsR0185",
+      "returncode": 0,
+      "seconds": 5.472
+    },
+    {
+      "module": "CuspHalfDivisorLineR0185",
+      "returncode": 0,
+      "seconds": 6.19
+    },
+    {
+      "module": "DiscriminantTwistUnitR0185",
+      "returncode": 0,
+      "seconds": 8.541
+    },
+    {
+      "module": "DiscriminantTateRootR0185",
+      "returncode": 0,
+      "seconds": 40.478
+    },
+    {
+      "module": "CommonHalfHodgeCoverR0185",
+      "returncode": 0,
+      "seconds": 132.625
+    },
+    {
+      "module": "SimultaneousUnaryRootsDefinitionsR0187",
+      "returncode": 0,
+      "seconds": 4.533
+    },
+    {
+      "module": "UnaryPowersInCommonSquareLineR0187",
+      "returncode": 0,
+      "seconds": 23.698
+    },
+    {
+      "module": "SimultaneousDiskRootSectionsR0187",
+      "returncode": 0,
+      "seconds": 25.867
+    },
+    {
+      "module": "ValuativeRootSectionsDefinitionsR0223",
+      "returncode": 0,
+      "seconds": 3.907
+    },
+    {
+      "module": "ValuativeRootIntegralityR0223",
+      "returncode": 0,
+      "seconds": 8.191
+    },
+    {
+      "module": "ValuativeSimultaneousSectionsR0223",
+      "returncode": 0,
+      "seconds": 19.623
+    },
+    {
+      "module": "SimultaneousUnaryCommonCoverR0187",
+      "returncode": 0,
+      "seconds": 24.392
+    },
+    {
+      "module": "ValuedExtensionPrescribedRootsR0223",
+      "returncode": 0,
+      "seconds": 4.453
+    },
+    {
+      "module": "LatticeGlobalSectionsDefinitionsR0188",
+      "returncode": 0,
+      "seconds": 4.269
+    },
+    {
+      "module": "CuspHalfLineCoverDegreeR0188",
+      "returncode": 0,
+      "seconds": 4.633
+    },
+    {
+      "module": "IndexedFullUnaryFactorizationR0188",
+      "returncode": 0,
+      "seconds": 4.694
+    },
+    {
+      "module": "PrescribedRootModelsDefinitionsR0224",
+      "returncode": 0,
+      "seconds": 9.556
+    },
+    {
+      "module": "FiniteModelFramedRootValuesR0224",
+      "returncode": 0,
+      "seconds": 20.832
+    },
+    {
+      "module": "PrescribedProjectiveRootFiniteModelR0224",
+      "returncode": 0,
+      "seconds": 9.317
+    },
+    {
+      "module": "MatrixFamilyGlobalSectionsR0188",
+      "returncode": 0,
+      "seconds": 34.695
+    },
+    {
+      "module": "ConservativeKernelDefinitionsR0189",
+      "returncode": 0,
+      "seconds": 3.59
+    },
+    {
+      "module": "ArithmeticGeometricFamilyExistenceR0189",
+      "returncode": 0,
+      "seconds": 4.067
+    },
+    {
+      "module": "LiftedCuspCompletionR0189",
+      "returncode": 0,
+      "seconds": 4.773
+    },
+    {
+      "module": "DiskFrameCompletedCoordinateR0189",
+      "returncode": 0,
+      "seconds": 4.983
+    },
+    {
+      "module": "GeometricFamilyConservativeCutoffR0189",
+      "returncode": 0,
+      "seconds": 6.275
+    },
+    {
+      "module": "ConstantExtensionDefinitionsR0225",
+      "returncode": 0,
+      "seconds": 18.824
+    },
+    {
+      "module": "ConservativeMatrixKernelR0189",
+      "returncode": 0,
+      "seconds": 4.476
+    },
+    {
+      "module": "GlobalFourTorsionDefinitionsR0190",
+      "returncode": 0,
+      "seconds": 5.217
+    },
+    {
+      "module": "LineConstantExtensionR0225",
+      "returncode": 0,
+      "seconds": 6.149
+    },
+    {
+      "module": "FiniteMapConstantExtensionR0225",
+      "returncode": 0,
+      "seconds": 9.051
+    },
+    {
+      "module": "PointedCurveConstantExtensionR0225",
+      "returncode": 0,
+      "seconds": 9.592
+    },
+    {
+      "module": "RelativeFourTorsionRootR0190",
+      "returncode": 0,
+      "seconds": 7.852
+    },
+    {
+      "module": "LineHomsConstantExtensionR0225",
+      "returncode": 0,
+      "seconds": 30.776
+    },
+    {
+      "module": "ArbitraryFourTorsionRootR0214",
+      "returncode": 0,
+      "seconds": 23.961
+    },
+    {
+      "module": "PowerSectionsConstantExtensionR0225",
+      "returncode": 0,
+      "seconds": 63.225
+    },
+    {
+      "module": "RamifiedRootsConstantExtensionR0225",
+      "returncode": 0,
+      "seconds": 42.002
+    },
+    {
+      "module": "FourTorsionTateBehaviorR0190",
+      "returncode": 0,
+      "seconds": 150.663
+    },
+    {
+      "module": "PrescribedRootsFiniteConstantExtensionR0225",
+      "returncode": 0,
+      "seconds": 23.273
+    },
+    {
+      "module": "AlgebraicBranchDefinitionsR0226",
+      "returncode": 0,
+      "seconds": 4.44
+    },
+    {
+      "module": "AlgebraicBranchResidueR0226",
+      "returncode": 0,
+      "seconds": 5.212
+    },
+    {
+      "module": "AlgebraicBranchValuationR0226",
+      "returncode": 0,
+      "seconds": 4.239
+    },
+    {
+      "module": "RelativeNormalizedDifferentialR0190",
+      "returncode": 0,
+      "seconds": 167.767
+    },
+    {
+      "module": "AlgebraicBranchEquationR0226",
+      "returncode": 0,
+      "seconds": 10.59
+    },
+    {
+      "module": "AlgebraicBranchFiniteModelR0226",
+      "returncode": 0,
+      "seconds": 3.771
+    },
+    {
+      "module": "AmbientCompletedRootsDefinitionsR0227",
+      "returncode": 0,
+      "seconds": 5.495
+    },
+    {
+      "module": "CompletedPointDiskR0227",
+      "returncode": 0,
+      "seconds": 5.845
+    },
+    {
+      "module": "FramedRootCoefficientR0228",
+      "returncode": 0,
+      "seconds": 5.848
+    },
+    {
+      "module": "SelectedRootFieldR0228",
+      "returncode": 0,
+      "seconds": 4.58
+    },
+    {
+      "module": "RationalNormalizedFrameR0247",
+      "returncode": 0,
+      "seconds": 21.416
+    },
+    {
+      "module": "ArbitraryNormalizedFrameUniquenessR0214",
+      "returncode": 0,
+      "seconds": 22.425
+    },
+    {
+      "module": "AmbientBranchValuesR0227",
+      "returncode": 0,
+      "seconds": 35.831
+    },
+    {
+      "module": "AcceptedRootProvidersR0228",
+      "returncode": 0,
+      "seconds": 3.484
+    },
+    {
+      "module": "AmbientPrescribedRootsR0228",
+      "returncode": 0,
+      "seconds": 4.589
+    },
+    {
+      "module": "SmoothPointSimultaneousRootsR0228",
+      "returncode": 0,
+      "seconds": 3.962
+    },
+    {
+      "module": "RelativeAlphaNaturalityR0190",
+      "returncode": 0,
+      "seconds": 97.741
+    },
+    {
+      "module": "RelativeFourCharacterDefinitionsR0211",
+      "returncode": 0,
+      "seconds": 3.59
+    },
+    {
+      "module": "PeriodOneDiscriminantDefinitionsR0246",
+      "returncode": 0,
+      "seconds": 5.261
+    },
+    {
+      "module": "RelativeMarkingActionR0211",
+      "returncode": 0,
+      "seconds": 4.32
+    },
+    {
+      "module": "RelativeSplitFiberBasisR0211",
+      "returncode": 0,
+      "seconds": 6.442
+    },
+    {
+      "module": "PeriodOneCoefficientDescentR0246",
+      "returncode": 0,
+      "seconds": 5.057
+    },
+    {
+      "module": "ArbitrarySplitFiberBasisR0214",
+      "returncode": 0,
+      "seconds": 5.076
+    },
+    {
+      "module": "RelativeGeometricPhaseR0211",
+      "returncode": 0,
+      "seconds": 5.198
+    },
+    {
+      "module": "PeriodOneGeometricComparisonR0246",
+      "returncode": 0,
+      "seconds": 5.511
+    },
+    {
+      "module": "RelativePhaseBaseChangeR0211",
+      "returncode": 0,
+      "seconds": 5.874
+    },
+    {
+      "module": "RelativePhaseMarkingInvarianceR0211",
+      "returncode": 0,
+      "seconds": 14.32
+    },
+    {
+      "module": "RelativeAlphaCharacterR0211",
+      "returncode": 0,
+      "seconds": 7.012
+    },
+    {
+      "module": "ArbitraryFourCharacterDefinitionsR0214",
+      "returncode": 0,
+      "seconds": 3.624
+    },
+    {
+      "module": "ThetaEvaluationDefinitionsR0212",
+      "returncode": 0,
+      "seconds": 3.849
+    },
+    {
+      "module": "EvenThetaRigidificationR0212",
+      "returncode": 0,
+      "seconds": 4.666
+    },
+    {
+      "module": "ArbitraryEvenThetaRigidificationR0213",
+      "returncode": 0,
+      "seconds": 4.485
+    },
+    {
+      "module": "ThetaLineBaseChangeR0212",
+      "returncode": 0,
+      "seconds": 4.915
+    },
+    {
+      "module": "ArbitraryGeometricPhaseR0214",
+      "returncode": 0,
+      "seconds": 15.175
+    },
+    {
+      "module": "ArbitraryThetaLineBaseChangeR0213",
+      "returncode": 0,
+      "seconds": 4.718
+    },
+    {
+      "module": "ArbitraryPhaseBaseChangeR0214",
+      "returncode": 0,
+      "seconds": 5.501
+    },
+    {
+      "module": "ArbitraryPhaseMarkingInvarianceR0214",
+      "returncode": 0,
+      "seconds": 8.104
+    },
+    {
+      "module": "ThetaPushforwardGeneratorR0212",
+      "returncode": 0,
+      "seconds": 27.879
+    },
+    {
+      "module": "ThetaIdentityEvaluationR0212",
+      "returncode": 0,
+      "seconds": 17.367
+    },
+    {
+      "module": "ThetaEvaluationBaseChangeR0212",
+      "returncode": 0,
+      "seconds": 14.602
+    },
+    {
+      "module": "UniversalThetaEvaluationDefinitionsR0213",
+      "returncode": 0,
+      "seconds": 3.97
+    },
+    {
+      "module": "ArbitraryThetaGeneratorEvaluationR0213",
+      "returncode": 0,
+      "seconds": 25.601
+    },
+    {
+      "module": "ArbitraryThetaEvaluationBaseChangeR0213",
+      "returncode": 0,
+      "seconds": 4.416
+    },
+    {
+      "module": "SchemeThetaEvaluationR0213",
+      "returncode": 0,
+      "seconds": 8.622
+    },
+    {
+      "module": "SchemeThetaEvaluationNaturalityR0213",
+      "returncode": 0,
+      "seconds": 4.47
+    },
+    {
+      "module": "ArbitraryAlphaNaturalityR0214",
+      "returncode": 0,
+      "seconds": 137.512
+    },
+    {
+      "module": "ArbitraryAlphaCharacterR0214",
+      "returncode": 0,
+      "seconds": 8.137
+    },
+    {
+      "module": "OpenFullLevelAlphaR0190",
+      "returncode": 0,
+      "seconds": 185.89
+    },
+    {
+      "module": "SchemeFourCharacterDefinitionsR0215",
+      "returncode": 0,
+      "seconds": 4.521
+    },
+    {
+      "module": "PeriodOneNormalizedFrameR0246",
+      "returncode": 0,
+      "seconds": 187.557
+    },
+    {
+      "module": "MarkedAffineTestComparisonR0215",
+      "returncode": 0,
+      "seconds": 4.104
+    },
+    {
+      "module": "SchemeFourMarkingActionR0215",
+      "returncode": 0,
+      "seconds": 4.587
+    },
+    {
+      "module": "SchemeMillerPhaseR0215",
+      "returncode": 0,
+      "seconds": 6.981
+    },
+    {
+      "module": "SchemePhaseMarkingInvarianceR0215",
+      "returncode": 0,
+      "seconds": 3.918
+    },
+    {
+      "module": "SchemePhaseNaturalityR0215",
+      "returncode": 0,
+      "seconds": 4.019
+    },
+    {
+      "module": "CompactFullLevelAlphaR0190",
+      "returncode": 0,
+      "seconds": 61.09
+    },
+    {
+      "module": "SquareLineComparisonDefinitionsR0192",
+      "returncode": 0,
+      "seconds": 4.334
+    },
+    {
+      "module": "SquareIsometryInterfaceAdapterR0192",
+      "returncode": 0,
+      "seconds": 4.192
+    },
+    {
+      "module": "CompactAlphaHalfDivisorR0192",
+      "returncode": 0,
+      "seconds": 6.13
+    },
+    {
+      "module": "CompactAlphaCanonicalHalfLineR0192",
+      "returncode": 0,
+      "seconds": 11.915
+    },
+    {
+      "module": "DiskFrameComparisonAdapterR0192",
+      "returncode": 0,
+      "seconds": 58.487
+    },
+    {
+      "module": "IsogenyHalfLinesDefinitionsR0193",
+      "returncode": 0,
+      "seconds": 5.965
+    },
+    {
+      "module": "QuotientFourMarkingR0193",
+      "returncode": 0,
+      "seconds": 4.67
+    },
+    {
+      "module": "PeriodOneDiscriminantR0246",
+      "returncode": 0,
+      "seconds": 132.65
+    },
+    {
+      "module": "RationalTateDiscriminantDefinitionsR0247",
+      "returncode": 0,
+      "seconds": 5.745
+    },
+    {
+      "module": "PeriodOneNormDefinitionsR0248",
+      "returncode": 0,
+      "seconds": 4.452
+    },
+    {
+      "module": "RationalTatePresentationR0247",
+      "returncode": 0,
+      "seconds": 6.687
+    },
+    {
+      "module": "OpenIsogenyAlphaR0193",
+      "returncode": 0,
+      "seconds": 19.109
+    },
+    {
+      "module": "PeriodOneChartEvaluationR0248",
+      "returncode": 0,
+      "seconds": 19.073
+    },
+    {
+      "module": "FieldOpenIsogenyAlphaR0237",
+      "returncode": 0,
+      "seconds": 16.185
+    },
+    {
+      "module": "RationalCoordinateHodgeR0247",
+      "returncode": 0,
+      "seconds": 32.11
+    },
+    {
+      "module": "FieldDiskFrameComparisonR0238",
+      "returncode": 0,
+      "seconds": 56.854
+    },
+    {
+      "module": "PeriodOneFunctionFieldEvaluationR0248",
+      "returncode": 0,
+      "seconds": 7.821
+    },
+    {
+      "module": "RamifiedCubicKatoEvaluationR0248",
+      "returncode": 0,
+      "seconds": 43.398
+    },
+    {
+      "module": "PeriodOneRamifiedEvaluationR0248",
+      "returncode": 0,
+      "seconds": 8.607
+    },
+    {
+      "module": "PeriodOneFullKatoNormR0248",
+      "returncode": 0,
+      "seconds": 7.143
+    },
+    {
+      "module": "SchemeKatoExpansionDefinitionsR0252",
+      "returncode": 0,
+      "seconds": 4.085
+    },
+    {
+      "module": "CanonicalKatoFieldAgreementR0252",
+      "returncode": 0,
+      "seconds": 4.47
+    },
+    {
+      "module": "CanonicalPeriodOneExpansionR0252",
+      "returncode": 0,
+      "seconds": 6.846
+    },
+    {
+      "module": "SchemeKatoFullTateExpansionR0252",
+      "returncode": 0,
+      "seconds": 5.93
+    },
+    {
+      "module": "KatoInitialDefinitionsR0253",
+      "returncode": 0,
+      "seconds": 5.134
+    },
+    {
+      "module": "SchemeIdentityChartCoverR0253",
+      "returncode": 0,
+      "seconds": 5.78
+    },
+    {
+      "module": "RationalTateDiscriminantR0247",
+      "returncode": 0,
+      "seconds": 62.689
+    },
+    {
+      "module": "SchemePeriodOneDiscriminantR0247",
+      "returncode": 0,
+      "seconds": 4.35
+    },
+    {
+      "module": "SchemeAlphaSectionR0215",
+      "returncode": 0,
+      "seconds": 245.674
+    },
+    {
+      "module": "ArbitraryUnitInitialCoefficientR0253",
+      "returncode": 0,
+      "seconds": 104.727
+    },
+    {
+      "module": "SchemeFiveKatoInitialCharacterizationR0253",
+      "returncode": 0,
+      "seconds": 18.152
+    },
+    {
+      "module": "SchemeAlphaNaturalityR0215",
+      "returncode": 0,
+      "seconds": 243.34
+    },
+    {
+      "module": "IsogenyAlphaAllCuspOrdersR0193",
+      "returncode": 0,
+      "seconds": 390.659
+    },
+    {
+      "module": "SchemeAlphaCharacterR0215",
+      "returncode": 0,
+      "seconds": 84.266
+    },
+    {
+      "module": "EvenMarkingTorsorDefinitionsR0216",
+      "returncode": 0,
+      "seconds": 3.991
+    },
+    {
+      "module": "SchemeFourCoverR0216",
+      "returncode": 0,
+      "seconds": 8.901
+    },
+    {
+      "module": "SchemeFourCoverGeometryR0216",
+      "returncode": 0,
+      "seconds": 11.67
+    },
+    {
+      "module": "EvenMarkingSubcoverR0216",
+      "returncode": 0,
+      "seconds": 18.187
+    },
+    {
+      "module": "EvenCoverBaseChangeR0216",
+      "returncode": 0,
+      "seconds": 4.625
+    },
+    {
+      "module": "EvenCoverRightActionR0216",
+      "returncode": 0,
+      "seconds": 6.311
+    },
+    {
+      "module": "IsogenyAlphaDesignatedExpansionR0193",
+      "returncode": 0,
+      "seconds": 461.625
+    },
+    {
+      "module": "CompactIsogenyAlphaR0193",
+      "returncode": 0,
+      "seconds": 16.586
+    },
+    {
+      "module": "LocallyConstantMarkingComparisonR0216",
+      "returncode": 0,
+      "seconds": 56.282
+    },
+    {
+      "module": "IsogenyCanonicalHalfLineR0193",
+      "returncode": 0,
+      "seconds": 17.838
+    },
+    {
+      "module": "EvenCoverTorsorR0216",
+      "returncode": 0,
+      "seconds": 4.586
+    },
+    {
+      "module": "SharpCoverRatiosDefinitionsR0194",
+      "returncode": 0,
+      "seconds": 5.045
+    },
+    {
+      "module": "MultiplierKeyDefinitionsR0217",
+      "returncode": 0,
+      "seconds": 4.744
+    },
+    {
+      "module": "SquareHalfHodgeCoverDegreeR0194",
+      "returncode": 0,
+      "seconds": 5.218
+    },
+    {
+      "module": "EvenPointThetaEvaluationR0217",
+      "returncode": 0,
+      "seconds": 31.335
+    },
+    {
+      "module": "EvenPointEvaluationBaseChangeR0217",
+      "returncode": 0,
+      "seconds": 4.387
+    },
+    {
+      "module": "CommonBasicUnaryCoverR0194",
+      "returncode": 0,
+      "seconds": 46.567
+    },
+    {
+      "module": "InverseCharacterMultiplierR0217",
+      "returncode": 0,
+      "seconds": 192.161
+    },
+    {
+      "module": "AlphaDescentFaithfulnessR0217",
+      "returncode": 0,
+      "seconds": 4.249
+    },
+    {
+      "module": "FullLevelProjectiveRatiosR0194",
+      "returncode": 0,
+      "seconds": 231.387
+    },
+    {
+      "module": "RelativeThetaLiftsDefinitionsR0255",
+      "returncode": 0,
+      "seconds": 3.721
+    },
+    {
+      "module": "FieldFullLevelProjectiveRatiosR0238",
+      "returncode": 0,
+      "seconds": 3.941
+    },
+    {
+      "module": "HigherLevelProjectiveRatiosR0194",
+      "returncode": 0,
+      "seconds": 8.798
+    },
+    {
+      "module": "FieldHigherLevelProjectiveRatiosR0238",
+      "returncode": 0,
+      "seconds": 3.999
+    },
+    {
+      "module": "AlphaTensorDescentR0217",
+      "returncode": 0,
+      "seconds": 48.243
+    },
+    {
+      "module": "MultiplierBaseChangeR0217",
+      "returncode": 0,
+      "seconds": 55.909
+    },
+    {
+      "module": "EvenKeyIsomorphismR0217",
+      "returncode": 0,
+      "seconds": 4.024
+    },
+    {
+      "module": "SharpKernelDefinitionsR0195",
+      "returncode": 0,
+      "seconds": 14.011
+    },
+    {
+      "module": "DistinctNormSharpArithmeticR0195",
+      "returncode": 0,
+      "seconds": 4.213
+    },
+    {
+      "module": "SharpGeometricCutoffR0195",
+      "returncode": 0,
+      "seconds": 5.163
+    },
+    {
+      "module": "RatioUnaryRegularSectionsR0195",
+      "returncode": 0,
+      "seconds": 9.314
+    },
+    {
+      "module": "AlphaTensorBaseChangeR0217",
+      "returncode": 0,
+      "seconds": 19.733
+    },
+    {
+      "module": "SharpMatrixGeometricFamilyR0195",
+      "returncode": 0,
+      "seconds": 9.558
+    },
+    {
+      "module": "SharpMatrixKernelR0195",
+      "returncode": 0,
+      "seconds": 4.036
+    },
+    {
+      "module": "MetaplecticTestDefinitionsR0196",
+      "returncode": 0,
+      "seconds": 4.436
+    },
+    {
+      "module": "SharpExactImageDataR0195",
+      "returncode": 0,
+      "seconds": 3.756
+    },
+    {
+      "module": "EvenKeyBaseChangeR0217",
+      "returncode": 0,
+      "seconds": 13.943
+    },
+    {
+      "module": "SquareIsometryMuTwoActionR0196",
+      "returncode": 0,
+      "seconds": 5.651
+    },
+    {
+      "module": "AdaptiveSolverDefinitionsR0230",
+      "returncode": 0,
+      "seconds": 3.92
+    },
+    {
+      "module": "PhaseSwitchDefinitionsR0218",
+      "returncode": 0,
+      "seconds": 3.903
+    },
+    {
+      "module": "CappedDoublingScheduleR0230",
+      "returncode": 0,
+      "seconds": 4.087
+    },
+    {
+      "module": "CheckedBasisChangeRelationsR0230",
+      "returncode": 0,
+      "seconds": 4.917
+    },
+    {
+      "module": "ComputedSharpCutoffR0230",
+      "returncode": 0,
+      "seconds": 4.009
+    },
+    {
+      "module": "ExecutableRelationCertificateR0230",
+      "returncode": 0,
+      "seconds": 4.099
+    },
+    {
+      "module": "PhaseCoverR0218",
+      "returncode": 0,
+      "seconds": 5.664
+    },
+    {
+      "module": "AdaptiveUniversalSolverR0230",
+      "returncode": 0,
+      "seconds": 4.668
+    },
+    {
+      "module": "ReversalCharacterR0218",
+      "returncode": 0,
+      "seconds": 9.744
+    },
+    {
+      "module": "PhaseOverlapSplittingR0219",
+      "returncode": 0,
+      "seconds": 6.827
+    },
+    {
+      "module": "RootTestPullbackCoherenceR0196",
+      "returncode": 0,
+      "seconds": 31.619
+    },
+    {
+      "module": "RelativeNormalizedThetaInversionR0255",
+      "returncode": 0,
+      "seconds": 103.886
+    },
+    {
+      "module": "SchemePairingReversalR0218",
+      "returncode": 0,
+      "seconds": 87.036
+    },
+    {
+      "module": "EvenCoverPhaseSwitchR0218",
+      "returncode": 0,
+      "seconds": 4.637
+    },
+    {
+      "module": "RelativeRootTestFiberR0196",
+      "returncode": 0,
+      "seconds": 128.006
+    },
+    {
+      "module": "MultiplierPhaseSwitchR0218",
+      "returncode": 0,
+      "seconds": 48.678
+    },
+    {
+      "module": "FiniteMetaplecticTestLevelR0196",
+      "returncode": 0,
+      "seconds": 3.797
+    },
+    {
+      "module": "SharpFamilyRootLevelR0196",
+      "returncode": 0,
+      "seconds": 4.033
+    },
+    {
+      "module": "RootDescentDefinitionsR0197",
+      "returncode": 0,
+      "seconds": 4.166
+    },
+    {
+      "module": "KeyPhaseSwitchR0218",
+      "returncode": 0,
+      "seconds": 15.426
+    },
+    {
+      "module": "PhaseFreeKeyDefinitionsR0219",
+      "returncode": 0,
+      "seconds": 4.487
+    },
+    {
+      "module": "UnphasedMarkingCoverR0219",
+      "returncode": 0,
+      "seconds": 4.662
+    },
+    {
+      "module": "PhaseFreeMultiplierR0219",
+      "returncode": 0,
+      "seconds": 128.453
+    },
+    {
+      "module": "FPQCRootMorphismsR0197",
+      "returncode": 0,
+      "seconds": 162.286
+    },
+    {
+      "module": "PhaseFreeAlphaDescentR0219",
+      "returncode": 0,
+      "seconds": 23.537
+    },
+    {
+      "module": "PhaseFreeKeyR0219",
+      "returncode": 0,
+      "seconds": 3.973
+    },
+    {
+      "module": "OpenSquareRootEffectivityR0197",
+      "returncode": 0,
+      "seconds": 176.263
+    },
+    {
+      "module": "MultiplierFourthTrivializationR0219",
+      "returncode": 0,
+      "seconds": 43.753
+    },
+    {
+      "module": "PhaseFreeMultiplierBaseChangeR0219",
+      "returncode": 0,
+      "seconds": 37.468
+    },
+    {
+      "module": "PhaseFreeKeyNaturalityR0219",
+      "returncode": 0,
+      "seconds": 22.487
+    },
+    {
+      "module": "KeyTateDefinitionsR0220",
+      "returncode": 0,
+      "seconds": 4.846
+    },
+    {
+      "module": "AlphaLevelReductionR0220",
+      "returncode": 0,
+      "seconds": 3.928
+    },
+    {
+      "module": "SchemeAlphaTateComparisonR0220",
+      "returncode": 0,
+      "seconds": 6.513
+    },
+    {
+      "module": "PhaseFreeKeyTateNormalizationR0220",
+      "returncode": 0,
+      "seconds": 13.174
+    },
+    {
+      "module": "AffineSquareRootEffectivityR0197",
+      "returncode": 0,
+      "seconds": 301.266
+    },
+    {
+      "module": "FPQCSquareRootDescentR0197",
+      "returncode": 0,
+      "seconds": 131.735
+    },
+    {
+      "module": "RootStackDefinitionsR0198",
+      "returncode": 0,
+      "seconds": 4.187
+    },
+    {
+      "module": "FPQCStackCriterionOverR0198",
+      "returncode": 0,
+      "seconds": 35.102
+    },
+    {
+      "module": "RootModuliPseudofunctorR0198",
+      "returncode": 0,
+      "seconds": 56.491
+    },
+    {
+      "module": "RelativeDoubledTorsionThetaLiftR0255",
+      "returncode": 0,
+      "seconds": 740.833
+    },
+    {
+      "module": "MetaplecticComparisonDefinitionsR0206",
+      "returncode": 0,
+      "seconds": 42.371
+    },
+    {
+      "module": "ActualMetaplecticGroupoidR0206",
+      "returncode": 0,
+      "seconds": 5.76
+    },
+    {
+      "module": "ActualMetaplecticPullbackR0206",
+      "returncode": 0,
+      "seconds": 9.304
+    },
+    {
+      "module": "CategoricalRootDescentR0198",
+      "returncode": 0,
+      "seconds": 120.384
+    },
+    {
+      "module": "FPQCRootStackR0198",
+      "returncode": 0,
+      "seconds": 3.86
+    },
+    {
+      "module": "MetaplecticFiberEquivalenceR0206",
+      "returncode": 0,
+      "seconds": 20.293
+    },
+    {
+      "module": "LevelConstantsDefinitionsR0234",
+      "returncode": 0,
+      "seconds": 3.659
+    },
+    {
+      "module": "StackLevelDefinitionsR0199",
+      "returncode": 0,
+      "seconds": 7.658
+    },
+    {
+      "module": "OpenConstantComparisonR0234",
+      "returncode": 0,
+      "seconds": 3.934
+    },
+    {
+      "module": "CompactConstantComparisonR0234",
+      "returncode": 0,
+      "seconds": 4.859
+    },
+    {
+      "module": "OpenHodgeConstantComparisonR0234",
+      "returncode": 0,
+      "seconds": 6.536
+    },
+    {
+      "module": "OpenConstantCartesianR0234",
+      "returncode": 0,
+      "seconds": 4.183
+    },
+    {
+      "module": "ConstantComparisonCoherenceR0234",
+      "returncode": 0,
+      "seconds": 4.58
+    },
+    {
+      "module": "RelativeMidpointSymmetricThetaLiftR0255",
+      "returncode": 0,
+      "seconds": 50.633
+    },
+    {
+      "module": "RelativeThetaRelationsDefinitionsR0256",
+      "returncode": 0,
+      "seconds": 3.719
+    },
+    {
+      "module": "BoundaryConstantsDefinitionsR0235",
+      "returncode": 0,
+      "seconds": 5.169
+    },
+    {
+      "module": "RelativeSymmetricLiftSignsR0256",
+      "returncode": 0,
+      "seconds": 5.308
+    },
+    {
+      "module": "TautologicalSquarePullbackR0199",
+      "returncode": 0,
+      "seconds": 18.547
+    },
+    {
+      "module": "TateCoordinateConstantMapR0235",
+      "returncode": 0,
+      "seconds": 11.275
+    },
+    {
+      "module": "NaturalMetaplecticComparisonR0206",
+      "returncode": 0,
+      "seconds": 38.725
+    },
+    {
+      "module": "MetaplecticStackDefinitionsR0207",
+      "returncode": 0,
+      "seconds": 4.705
+    },
+    {
+      "module": "RelativePrimitiveThetaCommutatorR0256",
+      "returncode": 0,
+      "seconds": 51.375
+    },
+    {
+      "module": "GeometricPullbackUnitR0207",
+      "returncode": 0,
+      "seconds": 4.345
+    },
+    {
+      "module": "GeometricPullbackCompositionR0207",
+      "returncode": 0,
+      "seconds": 33.473
+    },
+    {
+      "module": "CategoricalRootFiberR0199",
+      "returncode": 0,
+      "seconds": 52.551
+    },
+    {
+      "module": "TateMarkingConstantTransferR0235",
+      "returncode": 0,
+      "seconds": 9.179
+    },
+    {
+      "module": "RootClassifyingMapR0199",
+      "returncode": 0,
+      "seconds": 86.135
+    },
+    {
+      "module": "RelativeCyclicThetaSplittingR0256",
+      "returncode": 0,
+      "seconds": 87.693
+    },
+    {
+      "module": "RelativeSchrodingerDefinitionsR0257",
+      "returncode": 0,
+      "seconds": 3.897
+    },
+    {
+      "module": "RelativeThetaSectionsCohomologyR0257",
+      "returncode": 0,
+      "seconds": 5.112
+    },
+    {
+      "module": "CoherentMetaplecticPullbackR0207",
+      "returncode": 0,
+      "seconds": 40.663
+    },
+    {
+      "module": "RelativeSchrodingerModuleR0257",
+      "returncode": 0,
+      "seconds": 8.741
+    },
+    {
+      "module": "RelativeGeometricSchrodingerR0257",
+      "returncode": 0,
+      "seconds": 4.194
+    },
+    {
+      "module": "CoherentTautologicalLineR0207",
+      "returncode": 0,
+      "seconds": 8.406
+    },
+    {
+      "module": "RelativeThetaNaturalityDefinitionsR0258",
+      "returncode": 0,
+      "seconds": 4.56
+    },
+    {
+      "module": "RelativeSectionIntertwiningR0258",
+      "returncode": 0,
+      "seconds": 13.196
+    },
+    {
+      "module": "RelativeInversionNaturalityR0258",
+      "returncode": 0,
+      "seconds": 28.104
+    },
+    {
+      "module": "RelativeMidpointNaturalityR0258",
+      "returncode": 0,
+      "seconds": 29.114
+    },
+    {
+      "module": "RelativeGeometricNaturalityR0258",
+      "returncode": 0,
+      "seconds": 5.739
+    },
+    {
+      "module": "SchemeThetaMarkingDefinitionsR0259",
+      "returncode": 0,
+      "seconds": 4.558
+    },
+    {
+      "module": "SchemeSymmetricSignsR0259",
+      "returncode": 0,
+      "seconds": 5.944
+    },
+    {
+      "module": "SchemePrimitiveThetaCommutatorR0259",
+      "returncode": 0,
+      "seconds": 6.724
+    },
+    {
+      "module": "SchemeThetaSectionCohomologyR0259",
+      "returncode": 0,
+      "seconds": 16.078
+    },
+    {
+      "module": "SchemeThetaInversionR0259",
+      "returncode": 0,
+      "seconds": 41.379
+    },
+    {
+      "module": "TateHodgeGeneratorTransferR0235",
+      "returncode": 0,
+      "seconds": 207.113
+    },
+    {
+      "module": "ActualFamilyFPQCDescentR0207",
+      "returncode": 0,
+      "seconds": 162.825
+    },
+    {
+      "module": "SchemeDoubledTorsionLiftR0259",
+      "returncode": 0,
+      "seconds": 83.512
+    },
+    {
+      "module": "SchemeMidpointThetaLiftR0259",
+      "returncode": 0,
+      "seconds": 48.988
+    },
+    {
+      "module": "SchemeCyclicThetaSplittingR0259",
+      "returncode": 0,
+      "seconds": 15.663
+    },
+    {
+      "module": "SchemeFullLevelThetaMarkingR0259",
+      "returncode": 0,
+      "seconds": 4.068
+    },
+    {
+      "module": "FieldIsogenyAlphaLocalBehaviorR0237",
+      "returncode": 0,
+      "seconds": 147.064
+    },
+    {
+      "module": "SchemeSchrodingerDefinitionsR0261",
+      "returncode": 0,
+      "seconds": 4.587
+    },
+    {
+      "module": "SchemeThetaPushforwardActionR0261",
+      "returncode": 0,
+      "seconds": 4.517
+    },
+    {
+      "module": "SchemeFixedLineBaseChangeR0261",
+      "returncode": 0,
+      "seconds": 5.864
+    },
+    {
+      "module": "SchemeSchrodingerOrbitR0261",
+      "returncode": 0,
+      "seconds": 6.943
+    },
+    {
+      "module": "SchemeThetaIdentityEvaluationR0261",
+      "returncode": 0,
+      "seconds": 10.715
+    },
+    {
+      "module": "SchemeThetaActionRelationsR0261",
+      "returncode": 0,
+      "seconds": 29.764
+    },
+    {
+      "module": "SchemeThetaPushforwardBaseChangeR0261",
+      "returncode": 0,
+      "seconds": 42.571
+    },
+    {
+      "module": "SchemeInvariantThetaLineR0261",
+      "returncode": 0,
+      "seconds": 14.997
+    },
+    {
+      "module": "SchemeGeometricSchrodingerR0261",
+      "returncode": 0,
+      "seconds": 5.483
+    },
+    {
+      "module": "SchemeThetaNaturalityDefinitionsR0262",
+      "returncode": 0,
+      "seconds": 3.908
+    },
+    {
+      "module": "SchemeCommutatorNaturalityR0262",
+      "returncode": 0,
+      "seconds": 8.178
+    },
+    {
+      "module": "SchemePushforwardIntertwiningR0262",
+      "returncode": 0,
+      "seconds": 21.894
+    },
+    {
+      "module": "SchemeThetaComparisonCoherenceR0262",
+      "returncode": 0,
+      "seconds": 23.383
+    },
+    {
+      "module": "SchemeNormalizationTransportR0262",
+      "returncode": 0,
+      "seconds": 32.392
+    },
+    {
+      "module": "SchemeEvaluationNaturalityR0262",
+      "returncode": 0,
+      "seconds": 34.097
+    },
+    {
+      "module": "SchemeGlobalSignAlignmentR0262",
+      "returncode": 0,
+      "seconds": 4.445
+    },
+    {
+      "module": "SchemeInvariantComponentNaturalityR0262",
+      "returncode": 0,
+      "seconds": 6.664
+    },
+    {
+      "module": "SchemeGeometricThetaNaturalityR0262",
+      "returncode": 0,
+      "seconds": 4.215
+    },
+    {
+      "module": "TateSchemeMarkingDefinitionsR0263",
+      "returncode": 0,
+      "seconds": 17.881
+    },
+    {
+      "module": "ActualFamilyOpenDescentR0207",
+      "returncode": 0,
+      "seconds": 417.682
+    },
+    {
+      "module": "ActualMetaplecticFPQCStackR0207",
+      "returncode": 0,
+      "seconds": 3.924
+    },
+    {
+      "module": "ActualLevelDefinitionsR0208",
+      "returncode": 0,
+      "seconds": 5.079
+    },
+    {
+      "module": "TateSchemeInversionLiftR0263",
+      "returncode": 0,
+      "seconds": 17.354
+    },
+    {
+      "module": "TateSchemeSectionEvaluationR0263",
+      "returncode": 0,
+      "seconds": 22.303
+    },
+    {
+      "module": "TateSchemeShiftLiftR0263",
+      "returncode": 0,
+      "seconds": 83.245
+    },
+    {
+      "module": "ActualAnchoredPullbackR0208",
+      "returncode": 0,
+      "seconds": 73.509
+    },
+    {
+      "module": "TateSchemeScalarLiftR0263",
+      "returncode": 0,
+      "seconds": 183.052
+    },
+    {
+      "module": "TateSchemeExactCommutatorR0263",
+      "returncode": 0,
+      "seconds": 9.223
+    },
+    {
+      "module": "GlobalLiteralTateMarkingR0263",
+      "returncode": 0,
+      "seconds": 4.506
+    },
+    {
+      "module": "InvariantRatioDefinitionsR0265",
+      "returncode": 0,
+      "seconds": 7.463
+    },
+    {
+      "module": "InvariantRatioFieldDescentR0265",
+      "returncode": 0,
+      "seconds": 11.044
+    },
+    {
+      "module": "ActualCategoricalRootFiberR0208",
+      "returncode": 0,
+      "seconds": 178.401
+    },
+    {
+      "module": "FiniteEtaleActualLevelR0208",
+      "returncode": 0,
+      "seconds": 4.515
+    },
+    {
+      "module": "StandardActualMetaplecticLevelR0208",
+      "returncode": 0,
+      "seconds": 3.944
+    },
+    {
+      "module": "ClassifiedTateDiskTransferR0235",
+      "returncode": 0,
+      "seconds": 565.126
+    },
+    {
+      "module": "CompactModularityDefinitionsR0209",
+      "returncode": 0,
+      "seconds": 6.337
+    },
+    {
+      "module": "CompactInteriorLevelR0209",
+      "returncode": 0,
+      "seconds": 4.723
+    },
+    {
+      "module": "CompactActualMetaplecticLevelR0209",
+      "returncode": 0,
+      "seconds": 3.856
+    },
+    {
+      "module": "CompactThetaSectionImageR0209",
+      "returncode": 0,
+      "seconds": 8.607
+    },
+    {
+      "module": "MatrixArithmeticModularityR0209",
+      "returncode": 0,
+      "seconds": 4.145
+    },
+    {
+      "module": "TateInvariantComponentRatiosR0265",
+      "returncode": 0,
+      "seconds": 92.523
+    },
+    {
+      "module": "ArithmeticFieldDefinitionsR0231",
+      "returncode": 0,
+      "seconds": 6.454
+    },
+    {
+      "module": "FieldDescentGeometryR0231",
+      "returncode": 0,
+      "seconds": 4.274
+    },
+    {
+      "module": "FieldCosetSectionExpansionR0231",
+      "returncode": 0,
+      "seconds": 4.989
+    },
+    {
+      "module": "ValidGramFieldFormalIdentityR0232",
+      "returncode": 0,
+      "seconds": 5.072
+    },
+    {
+      "module": "RecoveredFieldConsumersR0232",
+      "returncode": 0,
+      "seconds": 3.389
+    },
+    {
+      "module": "ArithmeticInvariantRatioRealizationR0265",
+      "returncode": 0,
+      "seconds": 14.723
+    },
+    {
+      "module": "GlobalProjectiveRatioDefinitionsR0266",
+      "returncode": 0,
+      "seconds": 6.888
+    },
+    {
+      "module": "FieldSharpModularFamilyR0232",
+      "returncode": 0,
+      "seconds": 9.513
+    },
+    {
+      "module": "ArithmeticMatrixFiniteModelR0232",
+      "returncode": 0,
+      "seconds": 3.877
+    },
+    {
+      "module": "RationalMorphismOpenR0266",
+      "returncode": 0,
+      "seconds": 6.938
+    },
+    {
+      "module": "FieldImageDefinitionsR0233",
+      "returncode": 0,
+      "seconds": 3.718
+    },
+    {
+      "module": "FieldSectionRelationsR0233",
+      "returncode": 0,
+      "seconds": 5.51
+    },
+    {
+      "module": "FieldSharpKernelR0233",
+      "returncode": 0,
+      "seconds": 5.682
+    },
+    {
+      "module": "FieldSeriesImageR0233",
+      "returncode": 0,
+      "seconds": 4.884
+    },
+    {
+      "module": "CertifiedPrefixFieldImageR0240",
+      "returncode": 0,
+      "seconds": 4.577
+    },
+    {
+      "module": "FieldSectionImageR0233",
+      "returncode": 0,
+      "seconds": 5.607
+    },
+    {
+      "module": "ArithmeticSectionImageR0239",
+      "returncode": 0,
+      "seconds": 5.389
+    },
+    {
+      "module": "CompactHodgeConstantComparisonR0235",
+      "returncode": 0,
+      "seconds": 125.062
+    },
+    {
+      "module": "GlobalArithmeticProjectiveRatiosR0266",
+      "returncode": 0,
+      "seconds": 101.441
+    },
+    {
+      "module": "GeometricCanonicalHodgeDescentR0235",
+      "returncode": 0,
+      "seconds": 613.623
+    },
+    {
+      "module": "ArithmeticSectionsDefinitionsR0236",
+      "returncode": 0,
+      "seconds": 3.701
+    },
+    {
+      "module": "SplitCuspDegreeR0239",
+      "returncode": 0,
+      "seconds": 5.538
+    },
+    {
+      "module": "CompactPowerExtensionDescentR0236",
+      "returncode": 0,
+      "seconds": 9.451
+    },
+    {
+      "module": "SplitDiscriminantDivisorR0239",
+      "returncode": 0,
+      "seconds": 34.264
+    },
+    {
+      "module": "SplitHodgePowerDegreeR0239",
+      "returncode": 0,
+      "seconds": 4.287
+    },
+    {
+      "module": "SplitSquareCoverDegreeR0239",
+      "returncode": 0,
+      "seconds": 5.118
+    },
+    {
+      "module": "GeometricCompactHodgeComparisonR0236",
+      "returncode": 0,
+      "seconds": 120.937
+    },
+    {
+      "module": "OpenDiscriminantConstantNaturalityR0236",
+      "returncode": 0,
+      "seconds": 126.824
+    },
+    {
+      "module": "FieldCompactDiscriminantR0236",
+      "returncode": 0,
+      "seconds": 4.267
+    },
+    {
+      "module": "OpenUnaryConstantNaturalityR0236",
+      "returncode": 0,
+      "seconds": 190.727
+    },
+    {
+      "module": "OpenIsogenyAlphaConstantNaturalityR0237",
+      "returncode": 0,
+      "seconds": 39.347
+    },
+    {
+      "module": "FieldCompactIsogenyAlphaR0237",
+      "returncode": 0,
+      "seconds": 5.094
+    },
+    {
+      "module": "FieldIsogenyHalfDivisorR0237",
+      "returncode": 0,
+      "seconds": 5.594
+    },
+    {
+      "module": "FieldIsogenyCanonicalHalfLineR0237",
+      "returncode": 0,
+      "seconds": 11.767
+    },
+    {
+      "module": "FieldCommonBasicUnaryCoverR0238",
+      "returncode": 0,
+      "seconds": 37.291
+    },
+    {
+      "module": "FieldCompactUnaryR0236",
+      "returncode": 0,
+      "seconds": 108.731
+    },
+    {
+      "module": "ArithmeticCommonCoverDefinitionsR0238",
+      "returncode": 0,
+      "seconds": 3.67
+    },
+    {
+      "module": "FieldUnaryPowersInCommonSquareLineR0238",
+      "returncode": 0,
+      "seconds": 4.597
+    },
+    {
+      "module": "FieldRatioUnaryRegularSectionsR0238",
+      "returncode": 0,
+      "seconds": 4.877
+    },
+    {
+      "module": "ArithmeticCommonUnaryFamilyR0238",
+      "returncode": 0,
+      "seconds": 8.849
+    },
+    {
+      "module": "SplitMatrixModularFamilyR0239",
+      "returncode": 0,
+      "seconds": 9.688
+    },
+    {
+      "module": "CyclotomicMatrixModularityR0239",
+      "returncode": 0,
+      "seconds": 4.165
+    },
+    {
+      "module": "ConservativeImageConsumerR0268",
+      "returncode": 0,
+      "seconds": 4.237
+    },
+    {
+      "module": "ScalarExtensionDefinitionsR0240",
+      "returncode": 0,
+      "seconds": 4.379
+    },
+    {
+      "module": "ScalarExtensionGeometryR0240",
+      "returncode": 0,
+      "seconds": 4.41
+    },
+    {
+      "module": "ScalarExtensionDiskFrameR0240",
+      "returncode": 0,
+      "seconds": 4.254
+    },
+    {
+      "module": "ScalarExtensionExpansionR0240",
+      "returncode": 0,
+      "seconds": 13.444
+    },
+    {
+      "module": "ScalarExtensionSectionImageR0240",
+      "returncode": 0,
+      "seconds": 5.262
+    },
+    {
+      "module": "AdaptiveScalarExtensionImageR0240",
+      "returncode": 0,
+      "seconds": 4.42
+    },
+    {
+      "module": "ExtendedMetaplecticDefinitionsR0241",
+      "returncode": 0,
+      "seconds": 4.131
+    },
+    {
+      "module": "ExtendedInteriorGeometryR0241",
+      "returncode": 0,
+      "seconds": 4.318
+    },
+    {
+      "module": "CoefficientModuliCartesianR0241",
+      "returncode": 0,
+      "seconds": 4.366
+    },
+    {
+      "module": "ExtendedClassifierCartesianR0241",
+      "returncode": 0,
+      "seconds": 4.014
+    },
+    {
+      "module": "ExtendedCompactSquareR0241",
+      "returncode": 0,
+      "seconds": 118.406
+    },
+    {
+      "module": "ExtendedActualMetaplecticLevelR0241",
+      "returncode": 0,
+      "seconds": 29.316
+    },
+    {
+      "module": "CyclotomicExtendedModularityR0241",
+      "returncode": 0,
+      "seconds": 4.121
+    },
+    {
+      "module": "JointSourceIntegrationR0267",
+      "returncode": 0,
+      "seconds": 3.666
+    },
+    {
+      "module": "FullSourceIntegrationR0268",
+      "returncode": 0,
+      "seconds": 3.718
+    },
+    {
+      "module": "GoalRoot",
+      "returncode": 0,
+      "seconds": 3.725
+    }
+  ],
+  "obligations": [
+    {
+      "id": "binary-orthogonal-example",
+      "declaration": "ArithmeticThetaFullSourceR0268.binary_orthogonal_example",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.152
+    },
+    {
+      "id": "conservative-image-consumer",
+      "declaration": "ArithmeticThetaFullSourceR0268.conservative_image_consumer",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 4.166
+    },
+    {
+      "id": "accepted-000",
+      "declaration": "ArithmeticThetaElementary.rank_zero_coefficients",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.823
+    },
+    {
+      "id": "accepted-001",
+      "declaration": "ArithmeticThetaElementary.rank_zero_kernel",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.783
+    },
+    {
+      "id": "accepted-002",
+      "declaration": "ArithmeticThetaElementary.rank_zero_image",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.828
+    },
+    {
+      "id": "accepted-003",
+      "declaration": "ArithmeticThetaLattice.even_integral_gram_orthogonalization",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.818
+    },
+    {
+      "id": "accepted-004",
+      "declaration": "ArithmeticThetaDet80.actual_coefficient_matrix",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.939
+    },
+    {
+      "id": "accepted-005",
+      "declaration": "ArithmeticThetaDet80.actual_minor_determinant",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.821
+    },
+    {
+      "id": "accepted-006",
+      "declaration": "ArithmeticThetaDet80.actual_theta_kernel_zero",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.805
+    },
+    {
+      "id": "accepted-007",
+      "declaration": "ArithmeticThetaDurfee.formal_jacobi_triple_product",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 4.101
+    },
+    {
+      "id": "accepted-008",
+      "declaration": "ArithmeticThetaOrthogonalAlgorithm.computed_natural_data",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.807
+    },
+    {
+      "id": "accepted-009",
+      "declaration": "ArithmeticThetaHadamard.jacobi_formal",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.732
+    },
+    {
+      "id": "accepted-010",
+      "declaration": "ArithmeticThetaBinary.all_positive_classes",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.903
+    },
+    {
+      "id": "accepted-011",
+      "declaration": "ArithmeticThetaBinary.similarity_distinct",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.822
+    },
+    {
+      "id": "accepted-012",
+      "declaration": "ArithmeticThetaBinary.ambient_realization",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.779
+    },
+    {
+      "id": "accepted-013",
+      "declaration": "ArithmeticThetaBinary.same_order_classes",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.77
+    },
+    {
+      "id": "accepted-014",
+      "declaration": "ArithmeticThetaRank16.no_similarity",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.807
+    },
+    {
+      "id": "accepted-015",
+      "declaration": "ArithmeticThetaRank16.integral_identity",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.715
+    },
+    {
+      "id": "accepted-016",
+      "declaration": "ArithmeticThetaRank16.two_column_kernel",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.759
+    },
+    {
+      "id": "accepted-017",
+      "declaration": "ArithmeticThetaEarlyAssembly.actual_earlier_certificate",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.828
+    },
+    {
+      "id": "accepted-018",
+      "declaration": "ArithmeticThetaTateSeries.basic_fourth",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.761
+    },
+    {
+      "id": "accepted-019",
+      "declaration": "ArithmeticThetaAlgebraicCoordinatesR0143.algebraic_tate_coordinates",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.806
+    },
+    {
+      "id": "accepted-020",
+      "declaration": "ArithmeticThetaAlgebraicCoordinatesR0143.coordinate_exact_poles",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.878
+    },
+    {
+      "id": "accepted-021",
+      "declaration": "ArithmeticThetaCubicModelR0144.algebraic_model_cubic",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.77
+    },
+    {
+      "id": "accepted-022",
+      "declaration": "ArithmeticThetaCompactifiedDifferentialR0145.global_normalized_differential",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.951
+    },
+    {
+      "id": "accepted-023",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.rational_preimage_cosets",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 4.01
+    },
+    {
+      "id": "accepted-024",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.unary_parameter_identification",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.851
+    },
+    {
+      "id": "accepted-025",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.individual_coset_integral_product",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.915
+    },
+    {
+      "id": "accepted-026",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.source_orthogonal_factorization",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.691
+    },
+    {
+      "id": "accepted-027",
+      "declaration": "ArithmeticThetaOrthogonalConsumerR0127.computed_family_formal_unary_consumer",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.844
+    },
+    {
+      "id": "accepted-028",
+      "declaration": "ArithmeticThetaCompactUnaryR0183.compact_unary_hodge_realization",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.995
+    },
+    {
+      "id": "accepted-029",
+      "declaration": "ArithmeticThetaComponentDegreeR0184.geometric_component_cusp_bound",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.852
+    },
+    {
+      "id": "accepted-030",
+      "declaration": "ArithmeticThetaComponentDegreeR0184.component_discriminant_divisor",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.867
+    },
+    {
+      "id": "accepted-031",
+      "declaration": "ArithmeticThetaComponentDegreeR0184.component_hodge_power_degree",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.852
+    },
+    {
+      "id": "accepted-032",
+      "declaration": "ArithmeticThetaCommonHalfHodgeR0185.discriminant_twist_unit",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.791
+    },
+    {
+      "id": "accepted-033",
+      "declaration": "ArithmeticThetaCommonHalfHodgeR0185.discriminant_tate_root",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.844
+    },
+    {
+      "id": "accepted-034",
+      "declaration": "ArithmeticThetaCommonHalfHodgeR0185.common_half_hodge_cover",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.86
+    },
+    {
+      "id": "accepted-035",
+      "declaration": "ArithmeticThetaConservativeKernelR0189.arithmetic_geometric_family_existence",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.77
+    },
+    {
+      "id": "accepted-036",
+      "declaration": "ArithmeticThetaConservativeKernelR0189.geometric_family_conservative_cutoff",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.843
+    },
+    {
+      "id": "accepted-037",
+      "declaration": "ArithmeticThetaConservativeKernelR0189.conservative_matrix_kernel",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.814
+    },
+    {
+      "id": "accepted-038",
+      "declaration": "ArithmeticThetaGlobalFourTorsionR0190.relative_four_torsion_root",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.781
+    },
+    {
+      "id": "accepted-039",
+      "declaration": "ArithmeticThetaGlobalFourTorsionR0190.relative_alpha_naturality",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.929
+    },
+    {
+      "id": "accepted-040",
+      "declaration": "ArithmeticThetaGlobalFourTorsionR0190.four_torsion_tate_behavior",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 4.073
+    },
+    {
+      "id": "accepted-041",
+      "declaration": "ArithmeticThetaGlobalFourTorsionR0190.compact_full_level_alpha",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.842
+    },
+    {
+      "id": "accepted-042",
+      "declaration": "ArithmeticThetaSquareLinesR0192.compact_alpha_canonical_half_line",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.85
+    },
+    {
+      "id": "accepted-043",
+      "declaration": "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_designated_expansion",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.735
+    },
+    {
+      "id": "accepted-044",
+      "declaration": "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_all_cusp_orders",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.686
+    },
+    {
+      "id": "accepted-045",
+      "declaration": "ArithmeticThetaIsogenyHalfLinesR0193.isogeny_canonical_half_line",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.997
+    },
+    {
+      "id": "accepted-046",
+      "declaration": "ArithmeticThetaSharpKernelR0195.distinct_norm_sharp_arithmetic",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.902
+    },
+    {
+      "id": "accepted-047",
+      "declaration": "ArithmeticThetaSharpKernelR0195.sharp_matrix_geometric_family",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.852
+    },
+    {
+      "id": "accepted-048",
+      "declaration": "ArithmeticThetaSharpKernelR0195.sharp_geometric_cutoff",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.871
+    },
+    {
+      "id": "accepted-049",
+      "declaration": "ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.774
+    },
+    {
+      "id": "accepted-050",
+      "declaration": "ArithmeticThetaFormalCoverR0210.arbitrary_formal_cover_constant",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.727
+    },
+    {
+      "id": "accepted-051",
+      "declaration": "ArithmeticThetaSchemeFourCharacterR0215.scheme_miller_phase",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.914
+    },
+    {
+      "id": "accepted-052",
+      "declaration": "ArithmeticThetaSchemeFourCharacterR0215.scheme_alpha_character",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.962
+    },
+    {
+      "id": "accepted-053",
+      "declaration": "ArithmeticThetaPhaseFreeKeyR0219.phase_free_key",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.874
+    },
+    {
+      "id": "accepted-054",
+      "declaration": "ArithmeticThetaPhaseFreeKeyR0219.phase_free_key_naturality",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 4.06
+    },
+    {
+      "id": "accepted-055",
+      "declaration": "ArithmeticThetaKeyTateR0220.phase_free_key_tate_normalization",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.967
+    },
+    {
+      "id": "accepted-056",
+      "declaration": "ArithmeticThetaAmbientCompletedRootsR0227.ambient_prescribed_roots",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.949
+    },
+    {
+      "id": "accepted-057",
+      "declaration": "ArithmeticThetaAmbientCompletedRootsR0227.smooth_point_simultaneous_roots",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.991
+    },
+    {
+      "id": "accepted-058",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.shifted_integer_interval",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.758
+    },
+    {
+      "id": "accepted-059",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.rational_schur_completion",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.726
+    },
+    {
+      "id": "accepted-060",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.computed_rational_ldl",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.711
+    },
+    {
+      "id": "accepted-061",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.recursive_ellipsoid_enumeration",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.651
+    },
+    {
+      "id": "accepted-062",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.ldl_theta_prefix",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.612
+    },
+    {
+      "id": "accepted-063",
+      "declaration": "ArithmeticThetaLDLEnumerationR0229.ldl_coefficient_matrix",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.818
+    },
+    {
+      "id": "accepted-064",
+      "declaration": "ArithmeticThetaAdaptiveSolverR0230.checked_basis_change_relations",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.768
+    },
+    {
+      "id": "accepted-065",
+      "declaration": "ArithmeticThetaAdaptiveSolverR0230.adaptive_universal_solver",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.741
+    },
+    {
+      "id": "accepted-066",
+      "declaration": "ArithmeticThetaAdaptiveSolverR0230.adaptive_checked_input",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.705
+    },
+    {
+      "id": "accepted-067",
+      "declaration": "ArithmeticThetaAdaptiveSolverR0230.adaptive_singleton_zero",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.692
+    },
+    {
+      "id": "accepted-068",
+      "declaration": "ArithmeticThetaArithmeticSectionsR0236.field_compact_discriminant",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.799
+    },
+    {
+      "id": "accepted-069",
+      "declaration": "ArithmeticThetaArithmeticSectionsR0236.field_compact_unary",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.973
+    },
+    {
+      "id": "accepted-070",
+      "declaration": "ArithmeticThetaArithmeticSectionsR0236.field_unary_compact_naturality",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.916
+    },
+    {
+      "id": "accepted-071",
+      "declaration": "ArithmeticThetaArithmeticCommonCoverR0238.arithmetic_common_unary_family",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.764
+    },
+    {
+      "id": "accepted-072",
+      "declaration": "ArithmeticThetaCyclotomicModularityR0239.split_component_cusp_bound",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.733
+    },
+    {
+      "id": "accepted-073",
+      "declaration": "ArithmeticThetaCyclotomicModularityR0239.split_component_discriminant_divisor",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.806
+    },
+    {
+      "id": "accepted-074",
+      "declaration": "ArithmeticThetaCyclotomicModularityR0239.split_square_cover_degree",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.758
+    },
+    {
+      "id": "accepted-075",
+      "declaration": "ArithmeticThetaCyclotomicModularityR0239.cyclotomic_matrix_modularity",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.908
+    },
+    {
+      "id": "accepted-076",
+      "declaration": "ArithmeticThetaExtendedMetaplecticR0241.cyclotomic_extended_modularity",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.995
+    },
+    {
+      "id": "accepted-077",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_even_unimodular",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.829
+    },
+    {
+      "id": "accepted-078",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_dual",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.699
+    },
+    {
+      "id": "accepted-079",
+      "declaration": "ArithmeticThetaGeneralDPlusR0242.general_dplus_theta_realization",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.731
+    },
+    {
+      "id": "accepted-080",
+      "declaration": "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_existence",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.675
+    },
+    {
+      "id": "accepted-081",
+      "declaration": "ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_naturality",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.888
+    },
+    {
+      "id": "accepted-082",
+      "declaration": "ArithmeticThetaRationalTateR0247.scheme_period_one_discriminant",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.857
+    },
+    {
+      "id": "accepted-083",
+      "declaration": "ArithmeticThetaSchemeKatoUnitR0250.scheme_kato_unit_naturality",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.793
+    },
+    {
+      "id": "accepted-084",
+      "declaration": "ArithmeticThetaSchemeKatoExpansionR0252.scheme_kato_full_tate_expansion",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.797
+    },
+    {
+      "id": "accepted-085",
+      "declaration": "ArithmeticThetaKatoInitialR0253.scheme_five_kato_initial_characterization",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.793
+    },
+    {
+      "id": "accepted-086",
+      "declaration": "ArithmeticThetaKatoCharacterizationR0254.scheme_kato_intrinsic_characterization",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.648
+    },
+    {
+      "id": "accepted-087",
+      "declaration": "ArithmeticThetaGlobalProjectiveRatiosR0266.global_arithmetic_projective_ratios",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.892
+    },
+    {
+      "id": "accepted-088",
+      "declaration": "ArithmeticThetaDegreeAssembly.certified_theta_image_data",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.918
+    },
+    {
+      "id": "accepted-089",
+      "declaration": "ArithmeticThetaTateIdentities.general_annular_addition",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.846
+    },
+    {
+      "id": "accepted-090",
+      "declaration": "ArithmeticThetaElementary.norm_exponent_identities",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.853
+    },
+    {
+      "id": "accepted-091",
+      "declaration": "ArithmeticThetaElementary.norm_sign_exponent_even",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.737
+    },
+    {
+      "id": "accepted-092",
+      "declaration": "ArithmeticThetaLaurentNormR0064.powered_gamma_norm",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.941
+    },
+    {
+      "id": "accepted-093",
+      "declaration": "ArithmeticThetaUnaryKatoPowerR0160.unary_power_geometric_realization",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.893
+    },
+    {
+      "id": "accepted-094",
+      "declaration": "ArithmeticThetaUniversalEvaluationR0213.arbitrary_even_theta_rigidification",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.913
+    },
+    {
+      "id": "accepted-095",
+      "declaration": "ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.726
+    },
+    {
+      "id": "accepted-096",
+      "declaration": "ArithmeticThetaPhaseFreeKeyR0219.phase_free_alpha_descent",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.759
+    },
+    {
+      "id": "accepted-097",
+      "declaration": "ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier_base_change",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.767
+    },
+    {
+      "id": "accepted-098",
+      "declaration": "ArithmeticThetaSchemeKatoNormR0251.finite_etale_norm_family",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.591
+    },
+    {
+      "id": "accepted-099",
+      "declaration": "ArithmeticThetaMultiplierKeyR0217.even_point_theta_evaluation",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.988
+    },
+    {
+      "id": "accepted-100",
+      "declaration": "ArithmeticThetaPhaseFreeKeyR0219.multiplier_fourth_trivialization",
+      "passed": true,
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 3.882
+    }
+  ]
+}

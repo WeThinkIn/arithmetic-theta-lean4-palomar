@@ -1,0 +1,61 @@
+{
+  "install": {
+    "passed": true,
+    "fresh_dependency_install": true,
+    "elapsed_seconds": 47.21
+  },
+  "remote-assets": {
+    "passed": true,
+    "release_id": 425609865,
+    "assets": [
+      {
+        "name": "theta-lean4331-dependencies-01.zip",
+        "size": 517727619,
+        "digest": "sha256:fb50e166ff05c7bd18c142081e31ef3b76dc4fa8b5f2eee020ed06c549c609e2",
+        "state": "uploaded"
+      },
+      {
+        "name": "theta-lean4331-dependencies-02.zip",
+        "size": 531126198,
+        "digest": "sha256:d889c35eb0db9a5a616cc3aa3e90a03b7625c7a026e4a96e7a823c0943c8dd08",
+        "state": "uploaded"
+      },
+      {
+        "name": "theta-lean4331-dependencies-03.zip",
+        "size": 531191445,
+        "digest": "sha256:eadd166d843356444dc67629e463f2bdc9f20c26aa64203afc84553e3466eb0e",
+        "state": "uploaded"
+      },
+      {
+        "name": "theta-lean4331-dependencies-04.zip",
+        "size": 499416118,
+        "digest": "sha256:ab62e9f8a08788a0e47e2a6c3d2b526d00cab2da9a2c9988f6d6d66d424d98ca",
+        "state": "uploaded"
+      },
+      {
+        "name": "theta-lean4331-dependencies-05.zip",
+        "size": 532430489,
+        "digest": "sha256:4f7e6f17442e6befa92e0a332b37e700565939abdbfa9d4dac985c24c7a6b413",
+        "state": "uploaded"
+      },
+      {
+        "name": "theta-lean4331-dependencies-06.zip",
+        "size": 21447279,
+        "digest": "sha256:b2e3d32eea94c8000279fd6ed6d44f44dc4b56155098549430c067108cf2480e",
+        "state": "uploaded"
+      }
+    ]
+  },
+  "public-download": {
+    "passed": true,
+    "asset": "theta-lean4331-dependencies-06.zip",
+    "sha256": "b2e3d32eea94c8000279fd6ed6d44f44dc4b56155098549430c067108cf2480e",
+    "bytes": 21447279
+  },
+  "completed_at_unix": 1793122382.8765504,
+  "passed": true,
+  "proof_report_sha256": "4f75e79e2a63c0dc22558e7d8c9ad1ddd0925253a5aedc7b56446e34254c361c",
+  "input_manifest_sha256": "33054848fe2d64d240273fced789b1e28833f6bf2024ea82d6b89e97bf42bb36",
+  "fresh_modules": 1199,
+  "exact_type_checks": 103
+}
