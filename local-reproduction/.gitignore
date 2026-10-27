@@ -1,0 +1,5 @@
+/dependencies/lib/lean/*
+!/dependencies/lib/lean/.gitkeep
+/build*/
+/.downloads/
+__pycache__/

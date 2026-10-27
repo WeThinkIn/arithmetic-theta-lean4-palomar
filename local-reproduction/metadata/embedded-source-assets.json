@@ -1,0 +1,92 @@
+[
+  {
+    "module": "ProofWidgets.Component.OfRpcMethod",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/proofwidgets/widget/js/ofRpcMethod.js",
+    "bundle_path": "dependencies/src/widget/js/ofRpcMethod.js",
+    "sha256": "19e76563c4a0512c3fde763c5067bd66c1c513604531c4f9b0daf1ddfdebd827"
+  },
+  {
+    "module": "ProofWidgets.Component.Basic",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/proofwidgets/widget/js/interactiveExpr.js",
+    "bundle_path": "dependencies/src/widget/js/interactiveExpr.js",
+    "sha256": "18c98c245d6a8d9f93125926426c5d87ec5f03a0fa597c76a7ac7a8cb253825b"
+  },
+  {
+    "module": "ProofWidgets.Component.FilterDetails",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/proofwidgets/widget/js/filterDetails.js",
+    "bundle_path": "dependencies/src/widget/js/filterDetails.js",
+    "sha256": "d5a0f80c58c0be1db7d9d2b05d21623f869d20cc12297a42d1b1109d13e989c3"
+  },
+  {
+    "module": "ProofWidgets.Component.MakeEditLink",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/proofwidgets/widget/js/makeEditLink.js",
+    "bundle_path": "dependencies/src/widget/js/makeEditLink.js",
+    "sha256": "ad9b49e146566a1552956e89525ff3784660da014027d06e9e5eda6df88ceb4d"
+  },
+  {
+    "module": "ProofWidgets.Component.RefreshComponent",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/proofwidgets/widget/js/RefreshComponent.js",
+    "bundle_path": "dependencies/src/widget/js/RefreshComponent.js",
+    "sha256": "9beb5c9fe92bdf55d622ecb9d74e8ad4d51e01dc305d33cb10ca1c6316789f36"
+  },
+  {
+    "module": "Mathlib.Tactic.Widget.StringDiagram",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/mathlib/widget/src/penrose/monoidal.dsl",
+    "bundle_path": "dependencies/src/widget/src/penrose/monoidal.dsl",
+    "sha256": "41da4fe6bf36ac29571f5317fa8b420a48661c2815779e00cfae64ab8fefa704"
+  },
+  {
+    "module": "Mathlib.Tactic.Widget.StringDiagram",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/mathlib/widget/src/penrose/monoidal.sty",
+    "bundle_path": "dependencies/src/widget/src/penrose/monoidal.sty",
+    "sha256": "6fd7cb6bd0988e30cd12de761a18880b301dc1ec2a302af88fe9bdf6869036ff"
+  },
+  {
+    "module": "ProofWidgets.Presentation.Expr",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/proofwidgets/widget/js/exprPresentation.js",
+    "bundle_path": "dependencies/src/widget/js/exprPresentation.js",
+    "sha256": "c273723560834d73f1be4469c2210def90565489a147982e882a5b75928a8769"
+  },
+  {
+    "module": "ProofWidgets.Component.PenroseDiagram",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/proofwidgets/widget/js/penroseDisplay.js",
+    "bundle_path": "dependencies/src/widget/js/penroseDisplay.js",
+    "sha256": "9364a664c95a5ab19e8f92920b0a43fe4e1904053e9f38a64085f4a0124d66f6"
+  },
+  {
+    "module": "ProofWidgets.Component.HtmlDisplay",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/proofwidgets/widget/js/htmlDisplay.js",
+    "bundle_path": "dependencies/src/widget/js/htmlDisplay.js",
+    "sha256": "3a14e3454e065fec370942833afd1932b5ab46f9d34a7c8a499f1636c239bee8"
+  },
+  {
+    "module": "ProofWidgets.Component.HtmlDisplay",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/proofwidgets/widget/js/htmlDisplayPanel.js",
+    "bundle_path": "dependencies/src/widget/js/htmlDisplayPanel.js",
+    "sha256": "77405258d1bb34a22686da6261bc5f7380fd7b7727349920046de48f0c485160"
+  },
+  {
+    "module": "Mathlib.Tactic.Widget.CommDiag",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/mathlib/widget/src/penrose/commutative.dsl",
+    "bundle_path": "dependencies/src/widget/src/penrose/commutative.dsl",
+    "sha256": "b80d2dc18c1f00cf0bc11f52312c9eb43e1b2640b06b5e261281d4f1a5ca4a4d"
+  },
+  {
+    "module": "Mathlib.Tactic.Widget.CommDiag",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/mathlib/widget/src/penrose/commutative.sty",
+    "bundle_path": "dependencies/src/widget/src/penrose/commutative.sty",
+    "sha256": "7586edc626e03f29eb6efca985d8039a2ae4776b51de2bf5ac0062e7be53414f"
+  },
+  {
+    "module": "Mathlib.Tactic.Widget.CommDiag",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/mathlib/widget/src/penrose/triangle.sub",
+    "bundle_path": "dependencies/src/widget/src/penrose/triangle.sub",
+    "sha256": "5bcc2e21c6369251450dd6fdad0b4c2673078dfda282633c4c46f16096ae05a7"
+  },
+  {
+    "module": "Mathlib.Tactic.Widget.CommDiag",
+    "source": "/home/Lean4本地库/lean4-mathlib/.lake/packages/mathlib/widget/src/penrose/square.sub",
+    "bundle_path": "dependencies/src/widget/src/penrose/square.sub",
+    "sha256": "9684f4d73bcc79924b2954a70a01c906bf5086e3376ba67bd1acb239c249f4bd"
+  }
+]

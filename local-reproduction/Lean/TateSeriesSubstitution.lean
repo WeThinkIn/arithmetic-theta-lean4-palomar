@@ -1,0 +1,2 @@
+import TateBridgesSeriesSubstitution
+import TateLegacySeriesSubstitution

@@ -1,0 +1,7 @@
+{
+  "paper_revision": "2026-10-27",
+  "lean_files": 1199,
+  "all_lean_sources_identical_to_20261019_bundle": true,
+  "all_103_obligations_identical": true,
+  "scope": "Rebuild the delivered proof modules against bundled external libraries and recheck exact types/axioms. No claim of a new editorial contract audit or external-library cold rebuild."
+}

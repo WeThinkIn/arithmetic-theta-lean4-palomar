@@ -52,6 +52,14 @@ The following declarations provide entry points to the principal results. Each l
 
 The joint proof entry point is [`Proof/GoalRoot.lean`](Proof/GoalRoot.lean), with final integration in [`Proof/FullSourceIntegrationR0268.lean`](Proof/FullSourceIntegrationR0268.lean). The [formal specification](docs/SourceObligations.json) records the exact statements, hypotheses, and source correspondence of all **103 endpoints**, and the [requirement map](docs/RequirementCoverage.json) relates them to the **13 original requirements**.
 
+## Original local Lean 4.33.1 reproducibility artifacts
+
+The [`local-reproduction/`](local-reproduction/) directory contains **本地 Lean4 可复现代码相关产物**: the original 1,199 Lean 4.33.1 proof sources, the latest paper revised on 27 October 2026, the external dependency sources, and the 103 frozen exact-type/axiom probes. This is a separate reproducibility target from the Lean 4.35.0-rc2 Palomar edition above.
+
+Follow [`local-reproduction/REPRODUCE.md`](local-reproduction/REPRODUCE.md). Install Lean 4.33.1, download the hash-pinned precompiled dependencies using `scripts/fetch_dependencies.py`, and run `scripts/reproduce.py` to rebuild all proof modules and check all 103 endpoints. Large binary dependencies are distributed through this repository's [`local-lean4331-reproduction-20261027` Release](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/releases/tag/local-lean4331-reproduction-20261027); the downloader restores `dependencies/lib/lean/`. GitHub's source ZIP alone does not include those release assets.
+
+此目录用于本地重新编译论文证明和复核精确类型、公理闭包；它不声称从零重建全部外部库，也不代表新增 Palomar 语义验收或新版论文的原项目合同审计。详细环境、离线使用和验证范围见上述复现说明。
+
 ## Local formal verification
 
 **Local verification is complete for the specified formal development.** The verified results are:

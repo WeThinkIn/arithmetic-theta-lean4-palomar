@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "repository": "WeThinkIn/arithmetic-theta-lean4-palomar",
+  "tag": "local-lean4331-reproduction-20261027",
+  "assets": [
+    {
+      "name": "theta-lean4331-dependencies-01.zip",
+      "bytes": 517727619,
+      "sha256": "fb50e166ff05c7bd18c142081e31ef3b76dc4fa8b5f2eee020ed06c549c609e2",
+      "url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/releases/download/local-lean4331-reproduction-20261027/theta-lean4331-dependencies-01.zip"
+    },
+    {
+      "name": "theta-lean4331-dependencies-02.zip",
+      "bytes": 531126198,
+      "sha256": "d889c35eb0db9a5a616cc3aa3e90a03b7625c7a026e4a96e7a823c0943c8dd08",
+      "url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/releases/download/local-lean4331-reproduction-20261027/theta-lean4331-dependencies-02.zip"
+    },
+    {
+      "name": "theta-lean4331-dependencies-03.zip",
+      "bytes": 531191445,
+      "sha256": "eadd166d843356444dc67629e463f2bdc9f20c26aa64203afc84553e3466eb0e",
+      "url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/releases/download/local-lean4331-reproduction-20261027/theta-lean4331-dependencies-03.zip"
+    },
+    {
+      "name": "theta-lean4331-dependencies-04.zip",
+      "bytes": 499416118,
+      "sha256": "ab62e9f8a08788a0e47e2a6c3d2b526d00cab2da9a2c9988f6d6d66d424d98ca",
+      "url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/releases/download/local-lean4331-reproduction-20261027/theta-lean4331-dependencies-04.zip"
+    },
+    {
+      "name": "theta-lean4331-dependencies-05.zip",
+      "bytes": 532430489,
+      "sha256": "4f7e6f17442e6befa92e0a332b37e700565939abdbfa9d4dac985c24c7a6b413",
+      "url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/releases/download/local-lean4331-reproduction-20261027/theta-lean4331-dependencies-05.zip"
+    },
+    {
+      "name": "theta-lean4331-dependencies-06.zip",
+      "bytes": 21447279,
+      "sha256": "b2e3d32eea94c8000279fd6ed6d44f44dc4b56155098549430c067108cf2480e",
+      "url": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/releases/download/local-lean4331-reproduction-20261027/theta-lean4331-dependencies-06.zip"
+    }
+  ]
+}

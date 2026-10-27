@@ -1,0 +1,6 @@
+{
+  "source_root": "/home/Lean4本地库/fermats-last-theorem",
+  "git_head": "aa2d8b34692b16c70f699536de0d8e75b9a3e9ef",
+  "git_remote": "https://github.com/anthropics/fermats-last-theorem.git",
+  "git_status": "M lake-manifest.json\n M lakefile.lean"
+}
