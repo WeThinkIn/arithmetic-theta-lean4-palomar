@@ -8,10 +8,10 @@ Run commands from the repository root with the pinned Lean **4.35.0-rc2** toolch
 
 ```bash
 lake build +CompleteMainAndComponentsSolution
-lake comparator --config Palomar_leanwen/comparator-main-complete.json
+lake comparator --config Palomar_lean/comparator-main-complete.json
 ```
 
-The comparator command requires the Palomar comparator tooling described in the [repository verification instructions](../README.md#reproduce-the-formal-proof). For the official pipeline, open [Palomar official mechanical preflight](../.github/workflows/palomar-preflight.yml), select `main`, and choose a `Palomar_leanwen/comparator-*.json` configuration. The default `comparator.json` is a legacy, narrower specification; select the named scope you intend to verify.
+The comparator command requires the Palomar comparator tooling described in the [repository verification instructions](../README.md#reproduce-the-formal-proof). For the official pipeline, open [Palomar official mechanical preflight](../.github/workflows/palomar-preflight.yml), select `main`, and choose a `Palomar_lean/comparator-*.json` configuration. The default `comparator.json` is a legacy, narrower specification; select the named scope you intend to verify.
 
 Lean module names, imports, declarations and comparator contents are preserved. The root [Lake configuration](../lakefile.toml) uses this directory as the source root for these modules, so existing `lake build +ModuleName` targets remain valid. The shared mathematical development is in [`Proof/`](../Proof/), with scope descriptions in [`challenges/`](../challenges/) and submission metadata in [`submissions/`](../submissions/).
 

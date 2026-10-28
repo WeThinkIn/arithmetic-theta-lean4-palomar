@@ -14,86 +14,86 @@ on:
       comparator_config_path:
         description: 'Scoped configuration for official mechanical verification'
         required: false
-        default: Palomar_leanwen/comparator.json
+        default: Palomar_lean/comparator.json
         type: choice
         options:
-          - Palomar_leanwen/comparator.json
-          - Palomar_leanwen/comparator-early.json
-          - Palomar_leanwen/comparator-main-and-components.json
-          - Palomar_leanwen/comparator-formal-cover.json
-          - Palomar_leanwen/comparator-main-complete.json
-          - Palomar_leanwen/comparator-sharp-adaptive-image.json
-          - Palomar_leanwen/comparator-sharp-and-roots.json
-          - Palomar_leanwen/comparator-sharp-and-coordinates.json
-          - Palomar_leanwen/comparator-full-scheme-discriminant.json
-          - Palomar_leanwen/comparator-scheme-kato.json
-          - Palomar_leanwen/comparator-scheme-initial.json
-          - Palomar_leanwen/comparator-scheme-tate-unit.json
-          - Palomar_leanwen/comparator-common-unary.json
-          - Palomar_leanwen/comparator-conservative-matrix-geometry.json
-          - Palomar_leanwen/comparator-sharp-matrix-geometry.json
-          - Palomar_leanwen/comparator-field-unary-naturality.json
-          - Palomar_leanwen/comparator-field-discriminant.json
-          - Palomar_leanwen/comparator-field-unary.json
-          - Palomar_leanwen/comparator-split-square-degree.json
-          - Palomar_leanwen/comparator-split-discriminant.json
-          - Palomar_leanwen/comparator-compact-unary.json
-          - Palomar_leanwen/comparator-common-half-hodge.json
-          - Palomar_leanwen/comparator-discriminant-twist-root.json
-          - Palomar_leanwen/comparator-component-discriminant.json
-          - Palomar_leanwen/comparator-isogeny-half-line.json
-          - Palomar_leanwen/comparator-compact-alpha-half-line.json
-          - Palomar_leanwen/comparator-isogeny-alpha-cusps.json
-          - Palomar_leanwen/comparator-compact-alpha.json
-          - Palomar_leanwen/comparator-split-cusp.json
-          - Palomar_leanwen/comparator-component-hodge-degree.json
-          - Palomar_leanwen/comparator-unary-geometric.json
-          - Palomar_leanwen/comparator-component-cusp.json
-          - Palomar_leanwen/comparator-arbitrary-rigidification.json
-          - Palomar_leanwen/comparator-key-tate.json
-          - Palomar_leanwen/comparator-even-point-evaluation.json
-          - Palomar_leanwen/comparator-phase-free-key.json
-          - Palomar_leanwen/comparator-phase-free-alpha-descent.json
-          - Palomar_leanwen/comparator-multiplier-fourth.json
-          - Palomar_leanwen/comparator-phase-free-multiplier.json
-          - Palomar_leanwen/comparator-tate-alpha.json
-          - Palomar_leanwen/comparator-relative-alpha.json
-          - Palomar_leanwen/comparator-scheme-alpha-character.json
-          - Palomar_leanwen/comparator-scheme-miller-phase.json
-          - Palomar_leanwen/comparator-period-one.json
-          - Palomar_leanwen/comparator-projective-quotient.json
-          - Palomar_leanwen/comparator-projective-geometry.json
-          - Palomar_leanwen/comparator-projective-pointedgroup.json
-          - Palomar_leanwen/comparator-projective-commutator.json
-          - Palomar_leanwen/comparator-projective-invariantline.json
-          - Palomar_leanwen/comparator-projective-orbit.json
-          - Palomar_leanwen/comparator-projective-intertwining.json
-          - Palomar_leanwen/comparator-projective-naturality.json
-          - Palomar_leanwen/comparator-projective-testexists.json
-          - Palomar_leanwen/comparator-projective-model.json
-          - Palomar_leanwen/comparator-projective-alignment.json
-          - Palomar_leanwen/comparator-projective-transport.json
-          - Palomar_leanwen/comparator-projective-inversion.json
-          - Palomar_leanwen/comparator-projective-midpoint.json
-          - Palomar_leanwen/comparator-projective-faithfulness.json
-          - Palomar_leanwen/comparator-projective-square.json
-          - Palomar_leanwen/comparator-projective-inversionchange.json
-          - Palomar_leanwen/comparator-projective-genericdual.json
-          - Palomar_leanwen/comparator-projective-induceddual.json
-          - Palomar_leanwen/comparator-projective-fieldnormal.json
-          - Palomar_leanwen/comparator-projective-ratiogenerator.json
-          - Palomar_leanwen/comparator-arithmetic-matrix.json
-          - Palomar_leanwen/comparator-arithmetic-compact.json
-          - Palomar_leanwen/comparator-arithmetic-consumer.json
-          - Palomar_leanwen/comparator-arithmetic-transfer.json
-          - Palomar_leanwen/comparator-arithmetic-standard.json
-          - Palomar_leanwen/comparator-arithmetic-interior.json
-          - Palomar_leanwen/comparator-arithmetic-classifier.json
-          - Palomar_leanwen/comparator-arithmetic-arrow.json
-          - Palomar_leanwen/comparator-arithmetic-disk.json
-          - Palomar_leanwen/comparator-arithmetic-solver.json
-          - Palomar_leanwen/comparator-arithmetic-output.json
-          - Palomar_leanwen/comparator-arithmetic-triangle.json
+          - Palomar_lean/comparator.json
+          - Palomar_lean/comparator-early.json
+          - Palomar_lean/comparator-main-and-components.json
+          - Palomar_lean/comparator-formal-cover.json
+          - Palomar_lean/comparator-main-complete.json
+          - Palomar_lean/comparator-sharp-adaptive-image.json
+          - Palomar_lean/comparator-sharp-and-roots.json
+          - Palomar_lean/comparator-sharp-and-coordinates.json
+          - Palomar_lean/comparator-full-scheme-discriminant.json
+          - Palomar_lean/comparator-scheme-kato.json
+          - Palomar_lean/comparator-scheme-initial.json
+          - Palomar_lean/comparator-scheme-tate-unit.json
+          - Palomar_lean/comparator-common-unary.json
+          - Palomar_lean/comparator-conservative-matrix-geometry.json
+          - Palomar_lean/comparator-sharp-matrix-geometry.json
+          - Palomar_lean/comparator-field-unary-naturality.json
+          - Palomar_lean/comparator-field-discriminant.json
+          - Palomar_lean/comparator-field-unary.json
+          - Palomar_lean/comparator-split-square-degree.json
+          - Palomar_lean/comparator-split-discriminant.json
+          - Palomar_lean/comparator-compact-unary.json
+          - Palomar_lean/comparator-common-half-hodge.json
+          - Palomar_lean/comparator-discriminant-twist-root.json
+          - Palomar_lean/comparator-component-discriminant.json
+          - Palomar_lean/comparator-isogeny-half-line.json
+          - Palomar_lean/comparator-compact-alpha-half-line.json
+          - Palomar_lean/comparator-isogeny-alpha-cusps.json
+          - Palomar_lean/comparator-compact-alpha.json
+          - Palomar_lean/comparator-split-cusp.json
+          - Palomar_lean/comparator-component-hodge-degree.json
+          - Palomar_lean/comparator-unary-geometric.json
+          - Palomar_lean/comparator-component-cusp.json
+          - Palomar_lean/comparator-arbitrary-rigidification.json
+          - Palomar_lean/comparator-key-tate.json
+          - Palomar_lean/comparator-even-point-evaluation.json
+          - Palomar_lean/comparator-phase-free-key.json
+          - Palomar_lean/comparator-phase-free-alpha-descent.json
+          - Palomar_lean/comparator-multiplier-fourth.json
+          - Palomar_lean/comparator-phase-free-multiplier.json
+          - Palomar_lean/comparator-tate-alpha.json
+          - Palomar_lean/comparator-relative-alpha.json
+          - Palomar_lean/comparator-scheme-alpha-character.json
+          - Palomar_lean/comparator-scheme-miller-phase.json
+          - Palomar_lean/comparator-period-one.json
+          - Palomar_lean/comparator-projective-quotient.json
+          - Palomar_lean/comparator-projective-geometry.json
+          - Palomar_lean/comparator-projective-pointedgroup.json
+          - Palomar_lean/comparator-projective-commutator.json
+          - Palomar_lean/comparator-projective-invariantline.json
+          - Palomar_lean/comparator-projective-orbit.json
+          - Palomar_lean/comparator-projective-intertwining.json
+          - Palomar_lean/comparator-projective-naturality.json
+          - Palomar_lean/comparator-projective-testexists.json
+          - Palomar_lean/comparator-projective-model.json
+          - Palomar_lean/comparator-projective-alignment.json
+          - Palomar_lean/comparator-projective-transport.json
+          - Palomar_lean/comparator-projective-inversion.json
+          - Palomar_lean/comparator-projective-midpoint.json
+          - Palomar_lean/comparator-projective-faithfulness.json
+          - Palomar_lean/comparator-projective-square.json
+          - Palomar_lean/comparator-projective-inversionchange.json
+          - Palomar_lean/comparator-projective-genericdual.json
+          - Palomar_lean/comparator-projective-induceddual.json
+          - Palomar_lean/comparator-projective-fieldnormal.json
+          - Palomar_lean/comparator-projective-ratiogenerator.json
+          - Palomar_lean/comparator-arithmetic-matrix.json
+          - Palomar_lean/comparator-arithmetic-compact.json
+          - Palomar_lean/comparator-arithmetic-consumer.json
+          - Palomar_lean/comparator-arithmetic-transfer.json
+          - Palomar_lean/comparator-arithmetic-standard.json
+          - Palomar_lean/comparator-arithmetic-interior.json
+          - Palomar_lean/comparator-arithmetic-classifier.json
+          - Palomar_lean/comparator-arithmetic-arrow.json
+          - Palomar_lean/comparator-arithmetic-disk.json
+          - Palomar_lean/comparator-arithmetic-solver.json
+          - Palomar_lean/comparator-arithmetic-output.json
+          - Palomar_lean/comparator-arithmetic-triangle.json
 permissions:
   contents: read
 jobs:
@@ -106,20 +106,20 @@ jobs:
       - id: identifier
         name: Generate twelve-character preflight request identifier
         env:
-          COMPARATOR_CONFIG: ${{ inputs.comparator_config_path || 'Palomar_leanwen/comparator.json' }}
+          COMPARATOR_CONFIG: ${{ inputs.comparator_config_path || 'Palomar_lean/comparator.json' }}
         run: |
           python3 - <<'PY'
           import json, os, secrets
           with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
               print('id=' + secrets.token_hex(6), file=output)
               config = os.environ['COMPARATOR_CONFIG']
-              if config not in ('Palomar_leanwen/comparator-period-one.json', 'Palomar_leanwen/comparator-scheme-initial.json', 'Palomar_leanwen/comparator-scheme-tate-unit.json', 'Palomar_leanwen/comparator-scheme-miller-phase.json', 'Palomar_leanwen/comparator-scheme-alpha-character.json', 'Palomar_leanwen/comparator-relative-alpha.json', 'Palomar_leanwen/comparator-tate-alpha.json', 'Palomar_leanwen/comparator-phase-free-multiplier.json', 'Palomar_leanwen/comparator-multiplier-fourth.json', 'Palomar_leanwen/comparator-phase-free-alpha-descent.json', 'Palomar_leanwen/comparator-phase-free-key.json', 'Palomar_leanwen/comparator-even-point-evaluation.json', 'Palomar_leanwen/comparator-key-tate.json', 'Palomar_leanwen/comparator-arbitrary-rigidification.json', 'Palomar_leanwen/comparator-component-cusp.json', 'Palomar_leanwen/comparator-unary-geometric.json', 'Palomar_leanwen/comparator-component-hodge-degree.json', 'Palomar_leanwen/comparator-split-cusp.json', 'Palomar_leanwen/comparator-compact-alpha.json', 'Palomar_leanwen/comparator-isogeny-alpha-cusps.json', 'Palomar_leanwen/comparator-compact-alpha-half-line.json', 'Palomar_leanwen/comparator-isogeny-half-line.json', 'Palomar_leanwen/comparator-component-discriminant.json', 'Palomar_leanwen/comparator-discriminant-twist-root.json', 'Palomar_leanwen/comparator-common-half-hodge.json', 'Palomar_leanwen/comparator-compact-unary.json', 'Palomar_leanwen/comparator-split-discriminant.json', 'Palomar_leanwen/comparator-split-square-degree.json', 'Palomar_leanwen/comparator-field-unary.json', 'Palomar_leanwen/comparator-field-discriminant.json', 'Palomar_leanwen/comparator-field-unary-naturality.json', 'Palomar_leanwen/comparator-sharp-matrix-geometry.json', 'Palomar_leanwen/comparator-conservative-matrix-geometry.json', 'Palomar_leanwen/comparator-common-unary.json', 'Palomar_leanwen/comparator.json', 'Palomar_leanwen/comparator-early.json', 'Palomar_leanwen/comparator-main-and-components.json', 'Palomar_leanwen/comparator-formal-cover.json', 'Palomar_leanwen/comparator-main-complete.json', 'Palomar_leanwen/comparator-sharp-adaptive-image.json', 'Palomar_leanwen/comparator-sharp-and-roots.json', 'Palomar_leanwen/comparator-sharp-and-coordinates.json', 'Palomar_leanwen/comparator-full-scheme-discriminant.json', 'Palomar_leanwen/comparator-scheme-kato.json', 'Palomar_leanwen/comparator-projective-quotient.json', 'Palomar_leanwen/comparator-projective-geometry.json', 'Palomar_leanwen/comparator-projective-pointedgroup.json', 'Palomar_leanwen/comparator-projective-commutator.json', 'Palomar_leanwen/comparator-projective-invariantline.json', 'Palomar_leanwen/comparator-projective-orbit.json', 'Palomar_leanwen/comparator-projective-intertwining.json', 'Palomar_leanwen/comparator-projective-naturality.json', 'Palomar_leanwen/comparator-projective-testexists.json', 'Palomar_leanwen/comparator-projective-model.json', 'Palomar_leanwen/comparator-projective-alignment.json', 'Palomar_leanwen/comparator-projective-transport.json', 'Palomar_leanwen/comparator-projective-inversion.json', 'Palomar_leanwen/comparator-projective-midpoint.json', 'Palomar_leanwen/comparator-projective-faithfulness.json', 'Palomar_leanwen/comparator-projective-square.json', 'Palomar_leanwen/comparator-projective-inversionchange.json', 'Palomar_leanwen/comparator-projective-genericdual.json', 'Palomar_leanwen/comparator-projective-induceddual.json', 'Palomar_leanwen/comparator-projective-fieldnormal.json', 'Palomar_leanwen/comparator-projective-ratiogenerator.json', 'Palomar_leanwen/comparator-arithmetic-matrix.json', 'Palomar_leanwen/comparator-arithmetic-compact.json', 'Palomar_leanwen/comparator-arithmetic-consumer.json', 'Palomar_leanwen/comparator-arithmetic-transfer.json', 'Palomar_leanwen/comparator-arithmetic-standard.json', 'Palomar_leanwen/comparator-arithmetic-interior.json', 'Palomar_leanwen/comparator-arithmetic-classifier.json', 'Palomar_leanwen/comparator-arithmetic-arrow.json', 'Palomar_leanwen/comparator-arithmetic-disk.json', 'Palomar_leanwen/comparator-arithmetic-solver.json', 'Palomar_leanwen/comparator-arithmetic-output.json', 'Palomar_leanwen/comparator-arithmetic-triangle.json'):
+              if config not in ('Palomar_lean/comparator-period-one.json', 'Palomar_lean/comparator-scheme-initial.json', 'Palomar_lean/comparator-scheme-tate-unit.json', 'Palomar_lean/comparator-scheme-miller-phase.json', 'Palomar_lean/comparator-scheme-alpha-character.json', 'Palomar_lean/comparator-relative-alpha.json', 'Palomar_lean/comparator-tate-alpha.json', 'Palomar_lean/comparator-phase-free-multiplier.json', 'Palomar_lean/comparator-multiplier-fourth.json', 'Palomar_lean/comparator-phase-free-alpha-descent.json', 'Palomar_lean/comparator-phase-free-key.json', 'Palomar_lean/comparator-even-point-evaluation.json', 'Palomar_lean/comparator-key-tate.json', 'Palomar_lean/comparator-arbitrary-rigidification.json', 'Palomar_lean/comparator-component-cusp.json', 'Palomar_lean/comparator-unary-geometric.json', 'Palomar_lean/comparator-component-hodge-degree.json', 'Palomar_lean/comparator-split-cusp.json', 'Palomar_lean/comparator-compact-alpha.json', 'Palomar_lean/comparator-isogeny-alpha-cusps.json', 'Palomar_lean/comparator-compact-alpha-half-line.json', 'Palomar_lean/comparator-isogeny-half-line.json', 'Palomar_lean/comparator-component-discriminant.json', 'Palomar_lean/comparator-discriminant-twist-root.json', 'Palomar_lean/comparator-common-half-hodge.json', 'Palomar_lean/comparator-compact-unary.json', 'Palomar_lean/comparator-split-discriminant.json', 'Palomar_lean/comparator-split-square-degree.json', 'Palomar_lean/comparator-field-unary.json', 'Palomar_lean/comparator-field-discriminant.json', 'Palomar_lean/comparator-field-unary-naturality.json', 'Palomar_lean/comparator-sharp-matrix-geometry.json', 'Palomar_lean/comparator-conservative-matrix-geometry.json', 'Palomar_lean/comparator-common-unary.json', 'Palomar_lean/comparator.json', 'Palomar_lean/comparator-early.json', 'Palomar_lean/comparator-main-and-components.json', 'Palomar_lean/comparator-formal-cover.json', 'Palomar_lean/comparator-main-complete.json', 'Palomar_lean/comparator-sharp-adaptive-image.json', 'Palomar_lean/comparator-sharp-and-roots.json', 'Palomar_lean/comparator-sharp-and-coordinates.json', 'Palomar_lean/comparator-full-scheme-discriminant.json', 'Palomar_lean/comparator-scheme-kato.json', 'Palomar_lean/comparator-projective-quotient.json', 'Palomar_lean/comparator-projective-geometry.json', 'Palomar_lean/comparator-projective-pointedgroup.json', 'Palomar_lean/comparator-projective-commutator.json', 'Palomar_lean/comparator-projective-invariantline.json', 'Palomar_lean/comparator-projective-orbit.json', 'Palomar_lean/comparator-projective-intertwining.json', 'Palomar_lean/comparator-projective-naturality.json', 'Palomar_lean/comparator-projective-testexists.json', 'Palomar_lean/comparator-projective-model.json', 'Palomar_lean/comparator-projective-alignment.json', 'Palomar_lean/comparator-projective-transport.json', 'Palomar_lean/comparator-projective-inversion.json', 'Palomar_lean/comparator-projective-midpoint.json', 'Palomar_lean/comparator-projective-faithfulness.json', 'Palomar_lean/comparator-projective-square.json', 'Palomar_lean/comparator-projective-inversionchange.json', 'Palomar_lean/comparator-projective-genericdual.json', 'Palomar_lean/comparator-projective-induceddual.json', 'Palomar_lean/comparator-projective-fieldnormal.json', 'Palomar_lean/comparator-projective-ratiogenerator.json', 'Palomar_lean/comparator-arithmetic-matrix.json', 'Palomar_lean/comparator-arithmetic-compact.json', 'Palomar_lean/comparator-arithmetic-consumer.json', 'Palomar_lean/comparator-arithmetic-transfer.json', 'Palomar_lean/comparator-arithmetic-standard.json', 'Palomar_lean/comparator-arithmetic-interior.json', 'Palomar_lean/comparator-arithmetic-classifier.json', 'Palomar_lean/comparator-arithmetic-arrow.json', 'Palomar_lean/comparator-arithmetic-disk.json', 'Palomar_lean/comparator-arithmetic-solver.json', 'Palomar_lean/comparator-arithmetic-output.json', 'Palomar_lean/comparator-arithmetic-triangle.json'):
                   raise SystemExit('Unsupported comparator configuration')
               options = {
                   'comparator_config_path': config,
                   'authorization_relationship': 'I am a responsible author or maintainer',
               }
-              metadata_paths = {'Palomar_leanwen/comparator-common-unary.json': 'submissions/common-unary/formalization.yaml', 'Palomar_leanwen/comparator-conservative-matrix-geometry.json': 'submissions/conservative-matrix-geometry/formalization.yaml', 'Palomar_leanwen/comparator-sharp-matrix-geometry.json': 'submissions/sharp-matrix-geometry/formalization.yaml', 'Palomar_leanwen/comparator-field-unary-naturality.json': 'submissions/field-unary-naturality/formalization.yaml', 'Palomar_leanwen/comparator-field-discriminant.json': 'submissions/field-discriminant/formalization.yaml', 'Palomar_leanwen/comparator-field-unary.json': 'submissions/field-unary/formalization.yaml', 'Palomar_leanwen/comparator-split-square-degree.json': 'submissions/split-square-degree/formalization.yaml', 'Palomar_leanwen/comparator-split-discriminant.json': 'submissions/split-discriminant/formalization.yaml', 'Palomar_leanwen/comparator-compact-unary.json': 'submissions/compact-unary/formalization.yaml', 'Palomar_leanwen/comparator-common-half-hodge.json': 'submissions/common-half-hodge/formalization.yaml', 'Palomar_leanwen/comparator-discriminant-twist-root.json': 'submissions/discriminant-twist-root/formalization.yaml', 'Palomar_leanwen/comparator-component-discriminant.json': 'submissions/component-discriminant/formalization.yaml', 'Palomar_leanwen/comparator-isogeny-half-line.json': 'submissions/isogeny-half-line/formalization.yaml', 'Palomar_leanwen/comparator-compact-alpha-half-line.json': 'submissions/compact-alpha-half-line/formalization.yaml', 'Palomar_leanwen/comparator-isogeny-alpha-cusps.json': 'submissions/isogeny-alpha-cusps/formalization.yaml', 'Palomar_leanwen/comparator-compact-alpha.json': 'submissions/compact-alpha/formalization.yaml', 'Palomar_leanwen/comparator-split-cusp.json': 'submissions/split-cusp/formalization.yaml', 'Palomar_leanwen/comparator-component-hodge-degree.json': 'submissions/component-hodge-degree/formalization.yaml', 'Palomar_leanwen/comparator-unary-geometric.json': 'submissions/unary-geometric/formalization.yaml', 'Palomar_leanwen/comparator-component-cusp.json': 'submissions/component-cusp/formalization.yaml', 'Palomar_leanwen/comparator-arbitrary-rigidification.json': 'submissions/arbitrary-rigidification/formalization.yaml', 'Palomar_leanwen/comparator-key-tate.json': 'submissions/key-tate/formalization.yaml', 'Palomar_leanwen/comparator-even-point-evaluation.json': 'submissions/even-point-evaluation/formalization.yaml', 'Palomar_leanwen/comparator-phase-free-key.json': 'submissions/phase-free-key/formalization.yaml', 'Palomar_leanwen/comparator-phase-free-alpha-descent.json': 'submissions/phase-free-alpha-descent/formalization.yaml', 'Palomar_leanwen/comparator-multiplier-fourth.json': 'submissions/multiplier-fourth/formalization.yaml', 'Palomar_leanwen/comparator-phase-free-multiplier.json': 'submissions/phase-free-multiplier/formalization.yaml', 'Palomar_leanwen/comparator-tate-alpha.json': 'submissions/tate-alpha/formalization.yaml', 'Palomar_leanwen/comparator-relative-alpha.json': 'submissions/relative-alpha/formalization.yaml', 'Palomar_leanwen/comparator-scheme-alpha-character.json': 'submissions/scheme-alpha-character/formalization.yaml', 'Palomar_leanwen/comparator-scheme-miller-phase.json': 'submissions/scheme-miller-phase/formalization.yaml', 'Palomar_leanwen/comparator-scheme-tate-unit.json': 'submissions/scheme-tate-unit/formalization.yaml', 'Palomar_leanwen/comparator-scheme-initial.json': 'submissions/scheme-initial/formalization.yaml', 'Palomar_leanwen/comparator-period-one.json': 'submissions/period-one/formalization.yaml', 'Palomar_leanwen/comparator-main-and-components.json': 'submissions/main-and-components/formalization.yaml', 'Palomar_leanwen/comparator-formal-cover.json': 'submissions/formal-cover/formalization.yaml', 'Palomar_leanwen/comparator-main-complete.json': 'submissions/main-complete/formalization.yaml', 'Palomar_leanwen/comparator-sharp-adaptive-image.json': 'submissions/sharp-adaptive-image/formalization.yaml', 'Palomar_leanwen/comparator-sharp-and-roots.json': 'submissions/sharp-and-roots/formalization.yaml', 'Palomar_leanwen/comparator-sharp-and-coordinates.json': 'submissions/sharp-and-coordinates/formalization.yaml', 'Palomar_leanwen/comparator-full-scheme-discriminant.json': 'submissions/full-scheme-discriminant/formalization.yaml', 'Palomar_leanwen/comparator-scheme-kato.json': 'submissions/scheme-kato/formalization.yaml', 'Palomar_leanwen/comparator-projective-quotient.json': 'submissions/projective-quotient/formalization.yaml', 'Palomar_leanwen/comparator-projective-geometry.json': 'submissions/projective-geometry/formalization.yaml', 'Palomar_leanwen/comparator-projective-pointedgroup.json': 'submissions/projective-pointedgroup/formalization.yaml', 'Palomar_leanwen/comparator-projective-commutator.json': 'submissions/projective-commutator/formalization.yaml', 'Palomar_leanwen/comparator-projective-invariantline.json': 'submissions/projective-invariantline/formalization.yaml', 'Palomar_leanwen/comparator-projective-orbit.json': 'submissions/projective-orbit/formalization.yaml', 'Palomar_leanwen/comparator-projective-intertwining.json': 'submissions/projective-intertwining/formalization.yaml', 'Palomar_leanwen/comparator-projective-naturality.json': 'submissions/projective-naturality/formalization.yaml', 'Palomar_leanwen/comparator-projective-testexists.json': 'submissions/projective-testexists/formalization.yaml', 'Palomar_leanwen/comparator-projective-model.json': 'submissions/projective-model/formalization.yaml', 'Palomar_leanwen/comparator-projective-alignment.json': 'submissions/projective-alignment/formalization.yaml', 'Palomar_leanwen/comparator-projective-transport.json': 'submissions/projective-transport/formalization.yaml', 'Palomar_leanwen/comparator-projective-inversion.json': 'submissions/projective-inversion/formalization.yaml', 'Palomar_leanwen/comparator-projective-midpoint.json': 'submissions/projective-midpoint/formalization.yaml', 'Palomar_leanwen/comparator-projective-faithfulness.json': 'submissions/projective-faithfulness/formalization.yaml', 'Palomar_leanwen/comparator-projective-square.json': 'submissions/projective-square/formalization.yaml', 'Palomar_leanwen/comparator-projective-inversionchange.json': 'submissions/projective-inversionchange/formalization.yaml', 'Palomar_leanwen/comparator-projective-genericdual.json': 'submissions/projective-genericdual/formalization.yaml', 'Palomar_leanwen/comparator-projective-induceddual.json': 'submissions/projective-induceddual/formalization.yaml', 'Palomar_leanwen/comparator-projective-fieldnormal.json': 'submissions/projective-fieldnormal/formalization.yaml', 'Palomar_leanwen/comparator-projective-ratiogenerator.json': 'submissions/projective-ratiogenerator/formalization.yaml', 'Palomar_leanwen/comparator-arithmetic-matrix.json': 'submissions/arithmetic-matrix/formalization.yaml', 'Palomar_leanwen/comparator-arithmetic-compact.json': 'submissions/arithmetic-compact/formalization.yaml', 'Palomar_leanwen/comparator-arithmetic-consumer.json': 'submissions/arithmetic-consumer/formalization.yaml', 'Palomar_leanwen/comparator-arithmetic-transfer.json': 'submissions/arithmetic-transfer/formalization.yaml', 'Palomar_leanwen/comparator-arithmetic-standard.json': 'submissions/arithmetic-standard/formalization.yaml', 'Palomar_leanwen/comparator-arithmetic-interior.json': 'submissions/arithmetic-interior/formalization.yaml', 'Palomar_leanwen/comparator-arithmetic-classifier.json': 'submissions/arithmetic-classifier/formalization.yaml', 'Palomar_leanwen/comparator-arithmetic-arrow.json': 'submissions/arithmetic-arrow/formalization.yaml', 'Palomar_leanwen/comparator-arithmetic-disk.json': 'submissions/arithmetic-disk/formalization.yaml', 'Palomar_leanwen/comparator-arithmetic-solver.json': 'submissions/arithmetic-solver/formalization.yaml', 'Palomar_leanwen/comparator-arithmetic-output.json': 'submissions/arithmetic-output/formalization.yaml', 'Palomar_leanwen/comparator-arithmetic-triangle.json': 'submissions/arithmetic-triangle/formalization.yaml'}
+              metadata_paths = {'Palomar_lean/comparator-common-unary.json': 'submissions/common-unary/formalization.yaml', 'Palomar_lean/comparator-conservative-matrix-geometry.json': 'submissions/conservative-matrix-geometry/formalization.yaml', 'Palomar_lean/comparator-sharp-matrix-geometry.json': 'submissions/sharp-matrix-geometry/formalization.yaml', 'Palomar_lean/comparator-field-unary-naturality.json': 'submissions/field-unary-naturality/formalization.yaml', 'Palomar_lean/comparator-field-discriminant.json': 'submissions/field-discriminant/formalization.yaml', 'Palomar_lean/comparator-field-unary.json': 'submissions/field-unary/formalization.yaml', 'Palomar_lean/comparator-split-square-degree.json': 'submissions/split-square-degree/formalization.yaml', 'Palomar_lean/comparator-split-discriminant.json': 'submissions/split-discriminant/formalization.yaml', 'Palomar_lean/comparator-compact-unary.json': 'submissions/compact-unary/formalization.yaml', 'Palomar_lean/comparator-common-half-hodge.json': 'submissions/common-half-hodge/formalization.yaml', 'Palomar_lean/comparator-discriminant-twist-root.json': 'submissions/discriminant-twist-root/formalization.yaml', 'Palomar_lean/comparator-component-discriminant.json': 'submissions/component-discriminant/formalization.yaml', 'Palomar_lean/comparator-isogeny-half-line.json': 'submissions/isogeny-half-line/formalization.yaml', 'Palomar_lean/comparator-compact-alpha-half-line.json': 'submissions/compact-alpha-half-line/formalization.yaml', 'Palomar_lean/comparator-isogeny-alpha-cusps.json': 'submissions/isogeny-alpha-cusps/formalization.yaml', 'Palomar_lean/comparator-compact-alpha.json': 'submissions/compact-alpha/formalization.yaml', 'Palomar_lean/comparator-split-cusp.json': 'submissions/split-cusp/formalization.yaml', 'Palomar_lean/comparator-component-hodge-degree.json': 'submissions/component-hodge-degree/formalization.yaml', 'Palomar_lean/comparator-unary-geometric.json': 'submissions/unary-geometric/formalization.yaml', 'Palomar_lean/comparator-component-cusp.json': 'submissions/component-cusp/formalization.yaml', 'Palomar_lean/comparator-arbitrary-rigidification.json': 'submissions/arbitrary-rigidification/formalization.yaml', 'Palomar_lean/comparator-key-tate.json': 'submissions/key-tate/formalization.yaml', 'Palomar_lean/comparator-even-point-evaluation.json': 'submissions/even-point-evaluation/formalization.yaml', 'Palomar_lean/comparator-phase-free-key.json': 'submissions/phase-free-key/formalization.yaml', 'Palomar_lean/comparator-phase-free-alpha-descent.json': 'submissions/phase-free-alpha-descent/formalization.yaml', 'Palomar_lean/comparator-multiplier-fourth.json': 'submissions/multiplier-fourth/formalization.yaml', 'Palomar_lean/comparator-phase-free-multiplier.json': 'submissions/phase-free-multiplier/formalization.yaml', 'Palomar_lean/comparator-tate-alpha.json': 'submissions/tate-alpha/formalization.yaml', 'Palomar_lean/comparator-relative-alpha.json': 'submissions/relative-alpha/formalization.yaml', 'Palomar_lean/comparator-scheme-alpha-character.json': 'submissions/scheme-alpha-character/formalization.yaml', 'Palomar_lean/comparator-scheme-miller-phase.json': 'submissions/scheme-miller-phase/formalization.yaml', 'Palomar_lean/comparator-scheme-tate-unit.json': 'submissions/scheme-tate-unit/formalization.yaml', 'Palomar_lean/comparator-scheme-initial.json': 'submissions/scheme-initial/formalization.yaml', 'Palomar_lean/comparator-period-one.json': 'submissions/period-one/formalization.yaml', 'Palomar_lean/comparator-main-and-components.json': 'submissions/main-and-components/formalization.yaml', 'Palomar_lean/comparator-formal-cover.json': 'submissions/formal-cover/formalization.yaml', 'Palomar_lean/comparator-main-complete.json': 'submissions/main-complete/formalization.yaml', 'Palomar_lean/comparator-sharp-adaptive-image.json': 'submissions/sharp-adaptive-image/formalization.yaml', 'Palomar_lean/comparator-sharp-and-roots.json': 'submissions/sharp-and-roots/formalization.yaml', 'Palomar_lean/comparator-sharp-and-coordinates.json': 'submissions/sharp-and-coordinates/formalization.yaml', 'Palomar_lean/comparator-full-scheme-discriminant.json': 'submissions/full-scheme-discriminant/formalization.yaml', 'Palomar_lean/comparator-scheme-kato.json': 'submissions/scheme-kato/formalization.yaml', 'Palomar_lean/comparator-projective-quotient.json': 'submissions/projective-quotient/formalization.yaml', 'Palomar_lean/comparator-projective-geometry.json': 'submissions/projective-geometry/formalization.yaml', 'Palomar_lean/comparator-projective-pointedgroup.json': 'submissions/projective-pointedgroup/formalization.yaml', 'Palomar_lean/comparator-projective-commutator.json': 'submissions/projective-commutator/formalization.yaml', 'Palomar_lean/comparator-projective-invariantline.json': 'submissions/projective-invariantline/formalization.yaml', 'Palomar_lean/comparator-projective-orbit.json': 'submissions/projective-orbit/formalization.yaml', 'Palomar_lean/comparator-projective-intertwining.json': 'submissions/projective-intertwining/formalization.yaml', 'Palomar_lean/comparator-projective-naturality.json': 'submissions/projective-naturality/formalization.yaml', 'Palomar_lean/comparator-projective-testexists.json': 'submissions/projective-testexists/formalization.yaml', 'Palomar_lean/comparator-projective-model.json': 'submissions/projective-model/formalization.yaml', 'Palomar_lean/comparator-projective-alignment.json': 'submissions/projective-alignment/formalization.yaml', 'Palomar_lean/comparator-projective-transport.json': 'submissions/projective-transport/formalization.yaml', 'Palomar_lean/comparator-projective-inversion.json': 'submissions/projective-inversion/formalization.yaml', 'Palomar_lean/comparator-projective-midpoint.json': 'submissions/projective-midpoint/formalization.yaml', 'Palomar_lean/comparator-projective-faithfulness.json': 'submissions/projective-faithfulness/formalization.yaml', 'Palomar_lean/comparator-projective-square.json': 'submissions/projective-square/formalization.yaml', 'Palomar_lean/comparator-projective-inversionchange.json': 'submissions/projective-inversionchange/formalization.yaml', 'Palomar_lean/comparator-projective-genericdual.json': 'submissions/projective-genericdual/formalization.yaml', 'Palomar_lean/comparator-projective-induceddual.json': 'submissions/projective-induceddual/formalization.yaml', 'Palomar_lean/comparator-projective-fieldnormal.json': 'submissions/projective-fieldnormal/formalization.yaml', 'Palomar_lean/comparator-projective-ratiogenerator.json': 'submissions/projective-ratiogenerator/formalization.yaml', 'Palomar_lean/comparator-arithmetic-matrix.json': 'submissions/arithmetic-matrix/formalization.yaml', 'Palomar_lean/comparator-arithmetic-compact.json': 'submissions/arithmetic-compact/formalization.yaml', 'Palomar_lean/comparator-arithmetic-consumer.json': 'submissions/arithmetic-consumer/formalization.yaml', 'Palomar_lean/comparator-arithmetic-transfer.json': 'submissions/arithmetic-transfer/formalization.yaml', 'Palomar_lean/comparator-arithmetic-standard.json': 'submissions/arithmetic-standard/formalization.yaml', 'Palomar_lean/comparator-arithmetic-interior.json': 'submissions/arithmetic-interior/formalization.yaml', 'Palomar_lean/comparator-arithmetic-classifier.json': 'submissions/arithmetic-classifier/formalization.yaml', 'Palomar_lean/comparator-arithmetic-arrow.json': 'submissions/arithmetic-arrow/formalization.yaml', 'Palomar_lean/comparator-arithmetic-disk.json': 'submissions/arithmetic-disk/formalization.yaml', 'Palomar_lean/comparator-arithmetic-solver.json': 'submissions/arithmetic-solver/formalization.yaml', 'Palomar_lean/comparator-arithmetic-output.json': 'submissions/arithmetic-output/formalization.yaml', 'Palomar_lean/comparator-arithmetic-triangle.json': 'submissions/arithmetic-triangle/formalization.yaml'}
               if config in metadata_paths:
                   options['formalization_metadata_path'] = metadata_paths[config]
               print('options=' + json.dumps(options), file=output)
