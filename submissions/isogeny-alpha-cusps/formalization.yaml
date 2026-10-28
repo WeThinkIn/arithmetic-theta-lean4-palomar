@@ -1,7 +1,11 @@
 version: v0.4
 project:
   name: Complete isogeny alpha expansion and every-cusp orders
-  description: Full original043/044 for the same isogeny-normalized alpha, all original
+  description: For supplied LevelData k L and OpenAlpha k L m D, the selected theorems
+    prove the original043/044 expansion and every-cusp-order conclusions for
+    that supplied data. They do not independently construct LevelData or OpenAlpha
+    and do not assert existence of these inputs. The quotient and normalized alpha
+    described below belong to this supplied geometric data. The results apply to all original
     algebraically closed characteristic-zero fields, positive L,m with m even and8*m
     dividing L. The actual quotient has its full finite-etale degree, scheme kernel
     and universal property, and its full-four marking is forced by the original source
@@ -59,7 +63,11 @@ review:
     results remain bound to their source revisions; official acceptance of this
     repair and whole-paper semantic acceptance have not been established.
 status:
-  scope: Full original043/044 for the same isogeny-normalized alpha, all original
+  scope: For supplied LevelData k L and OpenAlpha k L m D, the selected theorems
+    prove the original043/044 expansion and every-cusp-order conclusions for
+    that supplied data. They do not independently construct LevelData or OpenAlpha
+    and do not assert existence of these inputs. The quotient and normalized alpha
+    described below belong to this supplied geometric data. The results apply to all original
     algebraically closed characteristic-zero fields, positive L,m with m even and8*m
     dividing L. The actual quotient has its full finite-etale degree, scheme kernel
     and universal property, and its full-four marking is forced by the original source
