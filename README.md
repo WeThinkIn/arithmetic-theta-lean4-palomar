@@ -95,6 +95,8 @@ The repository selects its compiler through [`lean-toolchain`](lean-toolchain), 
 
 ## Adaptation for Palomar
 
+The [`Palomar_leanwen/`](Palomar_leanwen/) directory collects all 154 scoped Challenge/Solution Lean entry points and 77 comparator configurations. Start with its [verification index](Palomar_leanwen/README.md) to select a scope.
+
 The Palomar edition ports the locally verified development from **Lean 4.33.1 to Lean 4.35.0-rc2**, together with the corresponding pinned Mathlib revision. It preserves the original **13 requirements and 103 theorem endpoints**, including their hypotheses, universe parameters, quantified conclusions, and complete-series interpretation.
 
 The resulting edition incorporates the following compatibility and engineering work:
@@ -161,10 +163,10 @@ To run the independent main-and-components comparison, use its explicit configur
 
 ```sh
 lake build CompleteMainAndComponentsChallenge CompleteMainAndComponentsSolution
-lake comparator --config comparator-main-complete.json
+lake comparator --config Palomar_leanwen/comparator-main-complete.json
 ```
 
-The selected statements and scope are documented in [`challenges/main-and-components-complete`](challenges/main-and-components-complete/README.md). The legacy default `comparator.json` selects an earlier, narrower specification; use a named configuration for the intended scope.
+The selected statements and scope are documented in [`challenges/main-and-components-complete`](challenges/main-and-components-complete/README.md). The legacy default `Palomar_leanwen/comparator.json` selects an earlier, narrower specification; use a named configuration for the intended scope.
 
 ## Repository guide
 
@@ -174,6 +176,7 @@ The selected statements and scope are documented in [`challenges/main-and-compon
 | [`paper/OriginalTask.tex`](paper/OriginalTask.tex) | Original mathematical specification |
 | [`Proof/`](Proof/) | Formal proof modules and required local library sources |
 | [`Proof/GoalRoot.lean`](Proof/GoalRoot.lean) | Joint import of the complete delivered proof closure |
+| [`Palomar_leanwen/`](Palomar_leanwen/README.md) | Palomar Challenge/Solution entry points and comparator configurations, indexed by scope |
 | [`docs/SourceObligations.json`](docs/SourceObligations.json) | Exact statements and source correspondence of all 103 endpoints |
 | [`docs/RequirementCoverage.json`](docs/RequirementCoverage.json) | Mapping of the original source requirements |
 | [`challenges/`](challenges/) | Scoped independent verification interfaces and metadata |

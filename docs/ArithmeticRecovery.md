@@ -23,15 +23,15 @@ Rebuild the recovery roots with
 
 | Component | Configuration | Statement source |
 | --- | --- | --- |
-| Arithmetic matrix geometry over a cyclotomic field | [comparator-arithmetic-matrix.json](../comparator-arithmetic-matrix.json) | [Challenge](../ArithmeticThetaArithmeticMatrixChallenge.lean) |
-| Actual compact cyclotomic level structure | [comparator-arithmetic-compact.json](../comparator-arithmetic-compact.json) | [Challenge](../ArithmeticThetaArithmeticCompactChallenge.lean) |
-| Conservative cutoff with complete kernel and image data | [comparator-arithmetic-consumer.json](../comparator-arithmetic-consumer.json) | [Challenge](../ArithmeticThetaArithmeticConsumerChallenge.lean) |
-| Transfer of section image data to the same geometric family | [comparator-arithmetic-transfer.json](../comparator-arithmetic-transfer.json) | [Challenge](../ArithmeticThetaArithmeticTransferChallenge.lean) |
-| Standard extension of the arithmetic level structure | [comparator-arithmetic-standard.json](../comparator-arithmetic-standard.json) | [Challenge](../ArithmeticThetaArithmeticStandardChallenge.lean) |
-| Transport of interior geometric data under field extension | [comparator-arithmetic-interior.json](../comparator-arithmetic-interior.json) | [Challenge](../ArithmeticThetaArithmeticInteriorChallenge.lean) |
-| Transport of the elliptic-family classifier | [comparator-arithmetic-classifier.json](../comparator-arithmetic-classifier.json) | [Challenge](../ArithmeticThetaArithmeticClassifierChallenge.lean) |
-| Transport of normalized comparison arrows | [comparator-arithmetic-arrow.json](../comparator-arithmetic-arrow.json) | [Challenge](../ArithmeticThetaArithmeticArrowChallenge.lean) |
-| Transport of the Tate disk under field extension | [comparator-arithmetic-disk.json](../comparator-arithmetic-disk.json) | [Challenge](../ArithmeticThetaArithmeticDiskChallenge.lean) |
-| Certificates for the exact rational solver | [comparator-arithmetic-solver.json](../comparator-arithmetic-solver.json) | [Challenge](../ArithmeticThetaArithmeticSolverChallenge.lean) |
-| Complete-series output certificate | [comparator-arithmetic-output.json](../comparator-arithmetic-output.json) | [Challenge](../ArithmeticThetaArithmeticOutputChallenge.lean) |
-| Compatibility of square comparisons under field extension | [comparator-arithmetic-triangle.json](../comparator-arithmetic-triangle.json) | [Challenge](../ArithmeticThetaArithmeticTriangleChallenge.lean) |
+| Arithmetic matrix geometry over a cyclotomic field | [Palomar_leanwen/comparator-arithmetic-matrix.json](../Palomar_leanwen/comparator-arithmetic-matrix.json) | [Challenge](../Palomar_leanwen/ArithmeticThetaArithmeticMatrixChallenge.lean) |
+| Actual compact cyclotomic level structure | [Palomar_leanwen/comparator-arithmetic-compact.json](../Palomar_leanwen/comparator-arithmetic-compact.json) | [Challenge](../Palomar_leanwen/ArithmeticThetaArithmeticCompactChallenge.lean) |
+| Conservative cutoff with complete kernel and image data | [Palomar_leanwen/comparator-arithmetic-consumer.json](../Palomar_leanwen/comparator-arithmetic-consumer.json) | [Challenge](../Palomar_leanwen/ArithmeticThetaArithmeticConsumerChallenge.lean) |
+| Transfer of section image data to the same geometric family | [Palomar_leanwen/comparator-arithmetic-transfer.json](../Palomar_leanwen/comparator-arithmetic-transfer.json) | [Challenge](../Palomar_leanwen/ArithmeticThetaArithmeticTransferChallenge.lean) |
+| Standard extension of the arithmetic level structure | [Palomar_leanwen/comparator-arithmetic-standard.json](../Palomar_leanwen/comparator-arithmetic-standard.json) | [Challenge](../Palomar_leanwen/ArithmeticThetaArithmeticStandardChallenge.lean) |
+| Transport of interior geometric data under field extension | [Palomar_leanwen/comparator-arithmetic-interior.json](../Palomar_leanwen/comparator-arithmetic-interior.json) | [Challenge](../Palomar_leanwen/ArithmeticThetaArithmeticInteriorChallenge.lean) |
+| Transport of the elliptic-family classifier | [Palomar_leanwen/comparator-arithmetic-classifier.json](../Palomar_leanwen/comparator-arithmetic-classifier.json) | [Challenge](../Palomar_leanwen/ArithmeticThetaArithmeticClassifierChallenge.lean) |
+| Transport of normalized comparison arrows | [Palomar_leanwen/comparator-arithmetic-arrow.json](../Palomar_leanwen/comparator-arithmetic-arrow.json) | [Challenge](../Palomar_leanwen/ArithmeticThetaArithmeticArrowChallenge.lean) |
+| Transport of the Tate disk under field extension | [Palomar_leanwen/comparator-arithmetic-disk.json](../Palomar_leanwen/comparator-arithmetic-disk.json) | [Challenge](../Palomar_leanwen/ArithmeticThetaArithmeticDiskChallenge.lean) |
+| Certificates for the exact rational solver | [Palomar_leanwen/comparator-arithmetic-solver.json](../Palomar_leanwen/comparator-arithmetic-solver.json) | [Challenge](../Palomar_leanwen/ArithmeticThetaArithmeticSolverChallenge.lean) |
+| Complete-series output certificate | [Palomar_leanwen/comparator-arithmetic-output.json](../Palomar_leanwen/comparator-arithmetic-output.json) | [Challenge](../Palomar_leanwen/ArithmeticThetaArithmeticOutputChallenge.lean) |
+| Compatibility of square comparisons under field extension | [Palomar_leanwen/comparator-arithmetic-triangle.json](../Palomar_leanwen/comparator-arithmetic-triangle.json) | [Challenge](../Palomar_leanwen/ArithmeticThetaArithmeticTriangleChallenge.lean) |

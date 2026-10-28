@@ -1258,517 +1258,605 @@ globs = [
 
 [[lean_lib]]
 name = "Challenge"
+srcDir = "Palomar_leanwen"
 roots = ["Challenge"]
 
 [[lean_lib]]
 name = "Solution"
+srcDir = "Palomar_leanwen"
 roots = ["Solution"]
 
 [[lean_lib]]
 name = "EarlyCertificateChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["EarlyCertificateChallenge"]
 
 [[lean_lib]]
 name = "EarlyCertificateSolution"
+srcDir = "Palomar_leanwen"
 roots = ["EarlyCertificateSolution"]
 
 [[lean_lib]]
 name = "MainAndComponentsChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["MainAndComponentsChallenge"]
 
 [[lean_lib]]
 name = "MainAndComponentsSolution"
+srcDir = "Palomar_leanwen"
 roots = ["MainAndComponentsSolution"]
 
 [[lean_lib]]
 name = "FormalCoverChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["FormalCoverChallenge"]
 
 [[lean_lib]]
 name = "FormalCoverSolution"
+srcDir = "Palomar_leanwen"
 roots = ["FormalCoverSolution"]
 
 [[lean_lib]]
 name = "CompleteMainAndComponentsChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["CompleteMainAndComponentsChallenge"]
 
 [[lean_lib]]
 name = "CompleteMainAndComponentsSolution"
+srcDir = "Palomar_leanwen"
 roots = ["CompleteMainAndComponentsSolution"]
 
 [[lean_lib]]
 name = "SharpAdaptiveImageChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["SharpAdaptiveImageChallenge"]
 
 [[lean_lib]]
 name = "SharpAdaptiveImageSolution"
+srcDir = "Palomar_leanwen"
 roots = ["SharpAdaptiveImageSolution"]
 
 [[lean_lib]]
 name = "SharpAndRootsChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["SharpAndRootsChallenge"]
 
 [[lean_lib]]
 name = "SharpAndRootsSolution"
+srcDir = "Palomar_leanwen"
 roots = ["SharpAndRootsSolution"]
 
 [[lean_lib]]
 name = "SharpAndCoordinatesChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["SharpAndCoordinatesChallenge"]
 
 [[lean_lib]]
 name = "SharpAndCoordinatesSolution"
+srcDir = "Palomar_leanwen"
 roots = ["SharpAndCoordinatesSolution"]
 
 [[lean_lib]]
 name = "FullSchemeDiscriminantChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["FullSchemeDiscriminantChallenge"]
 
 [[lean_lib]]
 name = "FullSchemeDiscriminantSolution"
+srcDir = "Palomar_leanwen"
 roots = ["FullSchemeDiscriminantSolution"]
 
 [[lean_lib]]
 name = "SchemeKatoChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["SchemeKatoChallenge"]
 
 [[lean_lib]]
 name = "SchemeKatoSolution"
+srcDir = "Palomar_leanwen"
 roots = ["SchemeKatoSolution"]
 
 [[lean_lib]]
 name = "PeriodOneChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["PeriodOneChallenge"]
 
 [[lean_lib]]
 name = "PeriodOneSolution"
+srcDir = "Palomar_leanwen"
 roots = ["PeriodOneSolution"]
 
 [[lean_lib]]
 name = "SchemeInitialChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["SchemeInitialChallenge"]
 
 [[lean_lib]]
 name = "SchemeInitialSolution"
+srcDir = "Palomar_leanwen"
 roots = ["SchemeInitialSolution"]
 
 [[lean_lib]]
 name = "SchemeTateUnitChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["SchemeTateUnitChallenge"]
 
 [[lean_lib]]
 name = "SchemeTateUnitSolution"
+srcDir = "Palomar_leanwen"
 roots = ["SchemeTateUnitSolution"]
 
 [[lean_lib]]
 name = "SchemeMillerPhaseChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["SchemeMillerPhaseChallenge"]
 
 [[lean_lib]]
 name = "SchemeMillerPhaseSolution"
+srcDir = "Palomar_leanwen"
 roots = ["SchemeMillerPhaseSolution"]
 
 [[lean_lib]]
 name = "SchemeAlphaCharacterChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["SchemeAlphaCharacterChallenge"]
 
 [[lean_lib]]
 name = "SchemeAlphaCharacterSolution"
+srcDir = "Palomar_leanwen"
 roots = ["SchemeAlphaCharacterSolution"]
 
 [[lean_lib]]
 name = "RelativeAlphaChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["RelativeAlphaChallenge"]
 
 [[lean_lib]]
 name = "RelativeAlphaSolution"
+srcDir = "Palomar_leanwen"
 roots = ["RelativeAlphaSolution"]
 
 [[lean_lib]]
 name = "TateAlphaChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["TateAlphaChallenge"]
 
 [[lean_lib]]
 name = "TateAlphaSolution"
+srcDir = "Palomar_leanwen"
 roots = ["TateAlphaSolution"]
 
 [[lean_lib]]
 name = "PhaseFreeMultiplierChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["PhaseFreeMultiplierChallenge"]
 
 [[lean_lib]]
 name = "PhaseFreeMultiplierSolution"
+srcDir = "Palomar_leanwen"
 roots = ["PhaseFreeMultiplierSolution"]
 
 [[lean_lib]]
 name = "MultiplierFourthChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["MultiplierFourthChallenge"]
 
 [[lean_lib]]
 name = "MultiplierFourthSolution"
+srcDir = "Palomar_leanwen"
 roots = ["MultiplierFourthSolution"]
 
 [[lean_lib]]
 name = "PhaseFreeAlphaDescentChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["PhaseFreeAlphaDescentChallenge"]
 
 [[lean_lib]]
 name = "PhaseFreeAlphaDescentSolution"
+srcDir = "Palomar_leanwen"
 roots = ["PhaseFreeAlphaDescentSolution"]
 
 [[lean_lib]]
 name = "PhaseFreeKeyChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["PhaseFreeKeyChallenge"]
 
 [[lean_lib]]
 name = "PhaseFreeKeySolution"
+srcDir = "Palomar_leanwen"
 roots = ["PhaseFreeKeySolution"]
 
 [[lean_lib]]
 name = "EvenPointEvaluationChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["EvenPointEvaluationChallenge"]
 
 [[lean_lib]]
 name = "EvenPointEvaluationSolution"
+srcDir = "Palomar_leanwen"
 roots = ["EvenPointEvaluationSolution"]
 
 [[lean_lib]]
 name = "KeyTateNormalizationChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["KeyTateNormalizationChallenge"]
 
 [[lean_lib]]
 name = "KeyTateNormalizationSolution"
+srcDir = "Palomar_leanwen"
 roots = ["KeyTateNormalizationSolution"]
 
 [[lean_lib]]
 name = "ArbitraryRigidificationChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["ArbitraryRigidificationChallenge"]
 
 [[lean_lib]]
 name = "ArbitraryRigidificationSolution"
+srcDir = "Palomar_leanwen"
 roots = ["ArbitraryRigidificationSolution"]
 
 [[lean_lib]]
 name = "ComponentCuspChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["ComponentCuspChallenge"]
 
 [[lean_lib]]
 name = "ComponentCuspSolution"
+srcDir = "Palomar_leanwen"
 roots = ["ComponentCuspSolution"]
 
 [[lean_lib]]
 name = "UnaryGeometricChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["UnaryGeometricChallenge"]
 
 [[lean_lib]]
 name = "UnaryGeometricSolution"
+srcDir = "Palomar_leanwen"
 roots = ["UnaryGeometricSolution"]
 
 [[lean_lib]]
 name = "ComponentHodgeDegreeChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["ComponentHodgeDegreeChallenge"]
 
 [[lean_lib]]
 name = "ComponentHodgeDegreeSolution"
+srcDir = "Palomar_leanwen"
 roots = ["ComponentHodgeDegreeSolution"]
 
 [[lean_lib]]
 name = "SplitCuspChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["SplitCuspChallenge"]
 
 [[lean_lib]]
 name = "SplitCuspSolution"
+srcDir = "Palomar_leanwen"
 roots = ["SplitCuspSolution"]
 
 [[lean_lib]]
 name = "CompactAlphaChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["CompactAlphaChallenge"]
 
 [[lean_lib]]
 name = "CompactAlphaSolution"
+srcDir = "Palomar_leanwen"
 roots = ["CompactAlphaSolution"]
 
 [[lean_lib]]
 name = "IsogenyAlphaCuspsChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["IsogenyAlphaCuspsChallenge"]
 
 [[lean_lib]]
 name = "IsogenyAlphaCuspsSolution"
+srcDir = "Palomar_leanwen"
 roots = ["IsogenyAlphaCuspsSolution"]
 
 [[lean_lib]]
 name = "CompactAlphaHalfLineChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["CompactAlphaHalfLineChallenge"]
 
 [[lean_lib]]
 name = "CompactAlphaHalfLineSolution"
+srcDir = "Palomar_leanwen"
 roots = ["CompactAlphaHalfLineSolution"]
 
 [[lean_lib]]
 name = "IsogenyHalfLineChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["IsogenyHalfLineChallenge"]
 
 [[lean_lib]]
 name = "IsogenyHalfLineSolution"
+srcDir = "Palomar_leanwen"
 roots = ["IsogenyHalfLineSolution"]
 
 [[lean_lib]]
 name = "ComponentDiscriminantChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["ComponentDiscriminantChallenge"]
 
 [[lean_lib]]
 name = "ComponentDiscriminantSolution"
+srcDir = "Palomar_leanwen"
 roots = ["ComponentDiscriminantSolution"]
 
 [[lean_lib]]
 name = "DiscriminantTwistRootChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["DiscriminantTwistRootChallenge"]
 
 [[lean_lib]]
 name = "DiscriminantTwistRootSolution"
+srcDir = "Palomar_leanwen"
 roots = ["DiscriminantTwistRootSolution"]
 
 [[lean_lib]]
 name = "CommonHalfHodgeChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["CommonHalfHodgeChallenge"]
 
 [[lean_lib]]
 name = "CommonHalfHodgeSolution"
+srcDir = "Palomar_leanwen"
 roots = ["CommonHalfHodgeSolution"]
 
 [[lean_lib]]
 name = "CompactUnaryChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["CompactUnaryChallenge"]
 
 [[lean_lib]]
 name = "CompactUnarySolution"
+srcDir = "Palomar_leanwen"
 roots = ["CompactUnarySolution"]
 
 [[lean_lib]]
 name = "SplitDiscriminantChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["SplitDiscriminantChallenge"]
 
 [[lean_lib]]
 name = "SplitDiscriminantSolution"
+srcDir = "Palomar_leanwen"
 roots = ["SplitDiscriminantSolution"]
 
 [[lean_lib]]
 name = "SplitSquareDegreeChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["SplitSquareDegreeChallenge"]
 
 [[lean_lib]]
 name = "SplitSquareDegreeSolution"
+srcDir = "Palomar_leanwen"
 roots = ["SplitSquareDegreeSolution"]
 
 [[lean_lib]]
 name = "FieldUnaryChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["FieldUnaryChallenge"]
 
 [[lean_lib]]
 name = "FieldUnarySolution"
+srcDir = "Palomar_leanwen"
 roots = ["FieldUnarySolution"]
 
 [[lean_lib]]
 name = "FieldDiscriminantChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["FieldDiscriminantChallenge"]
 
 [[lean_lib]]
 name = "FieldDiscriminantSolution"
+srcDir = "Palomar_leanwen"
 roots = ["FieldDiscriminantSolution"]
 
 [[lean_lib]]
 name = "FieldUnaryNaturalityChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["FieldUnaryNaturalityChallenge"]
 
 [[lean_lib]]
 name = "FieldUnaryNaturalitySolution"
+srcDir = "Palomar_leanwen"
 roots = ["FieldUnaryNaturalitySolution"]
 
 [[lean_lib]]
 name = "SharpMatrixGeometryChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["SharpMatrixGeometryChallenge"]
 
 [[lean_lib]]
 name = "SharpMatrixGeometrySolution"
+srcDir = "Palomar_leanwen"
 roots = ["SharpMatrixGeometrySolution"]
 
 [[lean_lib]]
 name = "ConservativeMatrixGeometryChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["ConservativeMatrixGeometryChallenge"]
 
 [[lean_lib]]
 name = "ConservativeMatrixGeometrySolution"
+srcDir = "Palomar_leanwen"
 roots = ["ConservativeMatrixGeometrySolution"]
 
 [[lean_lib]]
 name = "CommonUnaryChallenge"
+srcDir = "Palomar_leanwen"
 roots = ["CommonUnaryChallenge"]
 
 [[lean_lib]]
 name = "CommonUnarySolution"
+srcDir = "Palomar_leanwen"
 roots = ["CommonUnarySolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveQuotient"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveQuotientChallenge", "ArithmeticThetaProjectiveQuotientSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveGeometry"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveGeometryChallenge", "ArithmeticThetaProjectiveGeometrySolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectivePointedgroup"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectivePointedgroupChallenge", "ArithmeticThetaProjectivePointedgroupSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveCommutator"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveCommutatorChallenge", "ArithmeticThetaProjectiveCommutatorSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveInvariantline"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveInvariantlineChallenge", "ArithmeticThetaProjectiveInvariantlineSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveOrbit"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveOrbitChallenge", "ArithmeticThetaProjectiveOrbitSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveIntertwining"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveIntertwiningChallenge", "ArithmeticThetaProjectiveIntertwiningSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveNaturality"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveNaturalityChallenge", "ArithmeticThetaProjectiveNaturalitySolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveTestexists"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveTestexistsChallenge", "ArithmeticThetaProjectiveTestexistsSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveModel"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveModelChallenge", "ArithmeticThetaProjectiveModelSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveAlignment"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveAlignmentChallenge", "ArithmeticThetaProjectiveAlignmentSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveTransport"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveTransportChallenge", "ArithmeticThetaProjectiveTransportSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveInversion"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveInversionChallenge", "ArithmeticThetaProjectiveInversionSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveMidpoint"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveMidpointChallenge", "ArithmeticThetaProjectiveMidpointSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveFaithfulness"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveFaithfulnessChallenge", "ArithmeticThetaProjectiveFaithfulnessSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveSquare"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveSquareChallenge", "ArithmeticThetaProjectiveSquareSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveInversionchange"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveInversionchangeChallenge", "ArithmeticThetaProjectiveInversionchangeSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveGenericdual"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveGenericdualChallenge", "ArithmeticThetaProjectiveGenericdualSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveInduceddual"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveInduceddualChallenge", "ArithmeticThetaProjectiveInduceddualSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveFieldnormal"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveFieldnormalChallenge", "ArithmeticThetaProjectiveFieldnormalSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaProjectiveRatiogenerator"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaProjectiveRatiogeneratorChallenge", "ArithmeticThetaProjectiveRatiogeneratorSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaArithmeticMatrix"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaArithmeticMatrixChallenge", "ArithmeticThetaArithmeticMatrixSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaArithmeticCompact"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaArithmeticCompactChallenge", "ArithmeticThetaArithmeticCompactSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaArithmeticConsumer"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaArithmeticConsumerChallenge", "ArithmeticThetaArithmeticConsumerSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaArithmeticTransfer"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaArithmeticTransferChallenge", "ArithmeticThetaArithmeticTransferSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaArithmeticStandard"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaArithmeticStandardChallenge", "ArithmeticThetaArithmeticStandardSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaArithmeticInterior"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaArithmeticInteriorChallenge", "ArithmeticThetaArithmeticInteriorSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaArithmeticClassifier"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaArithmeticClassifierChallenge", "ArithmeticThetaArithmeticClassifierSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaArithmeticArrow"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaArithmeticArrowChallenge", "ArithmeticThetaArithmeticArrowSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaArithmeticDisk"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaArithmeticDiskChallenge", "ArithmeticThetaArithmeticDiskSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaArithmeticSolver"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaArithmeticSolverChallenge", "ArithmeticThetaArithmeticSolverSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaArithmeticOutput"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaArithmeticOutputChallenge", "ArithmeticThetaArithmeticOutputSolution"]
 
 [[lean_lib]]
 name = "ArithmeticThetaArithmeticTriangle"
-srcDir = "."
+srcDir = "Palomar_leanwen"
 roots = ["ArithmeticThetaArithmeticTriangleChallenge", "ArithmeticThetaArithmeticTriangleSolution"]
