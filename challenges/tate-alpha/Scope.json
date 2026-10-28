@@ -15,7 +15,7 @@
     "Original Z-chart normalized boundary differential frame",
     "Every realizing alpha has a full power-series-unit expansion with order0 or L/4",
     "Every primitive root and canonical full marking gives the exact signed full thetaAt^2 series identity",
-    "Inherited complete052 unchanged"
+    "For the selected scheme-alpha character theorem (original052), let S be a scheme over a characteristic-zero field, E its elliptic family, M a full level-four marking, z a global scalar satisfying MillerPhase E M z, and a a cotangent section satisfying RealizesAlpha E M a. For every matrix A over ZMod 4 satisfying PreservesEven (determinant one and preservation of the even quadratic form modulo two), there exists a full level-four marking Mprime with Changes E M Mprime A and the same phase MillerPhase E Mprime z. Every section aprime realizing alpha for Mprime satisfies aprime = z ^ (characterExponent A).val * a, where multiplication denotes the scalar action on cotangent sections. The phase and realizing-section conditions are explicit hypotheses, and the conclusion is equality of global sections."
   ],
   "no_new_main_assumptions": true,
   "new_endpoint_count": 1,

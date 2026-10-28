@@ -1,15 +1,19 @@
 version: v0.4
 project:
   name: Complete actual compact unary Hodge realization
-  description: 'Full original028: for positive even m,N with m dividing N and every
-    normalized residue, constructs the prescribed indices a,b, actual normalized open
-    unary data and the UNIQUE regular global section of the original compact Hodge
-    line power. It retains the actual open restriction, open frame, nonzero integral
-    coefficient on EVERY marked disk, and COMPLETE unary^(exponent N) expansion on
-    every canonical marking with the same extending normalized Hodge generator. Actual
-    quotient/kernel maps, point evaluation, intrinsic discriminant, normalization
-    and full series are exposed. Bidirectional transports preserve all actual objects
-    and recover the full original theorem.'
+  description: >-
+    Given level data, a compactification, and a Hodge extension satisfying Canonical
+    over an algebraically closed characteristic-zero field, proves the full
+    original028. These geometric objects and the canonicity condition are supplied
+    hypotheses; this result does not construct those inputs. for positive even m,N
+    with m dividing N and every normalized residue, constructs the prescribed indices
+    a,b, actual normalized open unary data and the UNIQUE regular global section of
+    the original compact Hodge line power. It retains the actual open restriction,
+    open frame, nonzero integral coefficient on EVERY marked disk, and COMPLETE
+    unary^(exponent N) expansion on every canonical marking with the same extending
+    normalized Hodge generator. Actual quotient/kernel maps, point evaluation,
+    intrinsic discriminant, normalization and full series are exposed. Bidirectional
+    transports preserve all actual objects and recover the full original theorem.
   license: Apache-2.0
   authors:
   - Jue Ding
@@ -53,15 +57,19 @@ review:
     documented in docs/audit/historical-render-repairs-2370/compact-unary/Review.md. This is not a distinct agent's semantic review.
     Fresh official verification and semantic review remain pending for this revision.
 status:
-  scope: 'Full original028: for positive even m,N with m dividing N and every normalized
-    residue, constructs the prescribed indices a,b, actual normalized open unary data
-    and the UNIQUE regular global section of the original compact Hodge line power.
-    It retains the actual open restriction, open frame, nonzero integral coefficient
-    on EVERY marked disk, and COMPLETE unary^(exponent N) expansion on every canonical
-    marking with the same extending normalized Hodge generator. Actual quotient/kernel
-    maps, point evaluation, intrinsic discriminant, normalization and full series
-    are exposed. Bidirectional transports preserve all actual objects and recover
-    the full original theorem.'
+  scope: >-
+    Given level data, a compactification, and a Hodge extension satisfying Canonical
+    over an algebraically closed characteristic-zero field, proves the full
+    original028. These geometric objects and the canonicity condition are supplied
+    hypotheses; this result does not construct those inputs. for positive even m,N
+    with m dividing N and every normalized residue, constructs the prescribed indices
+    a,b, actual normalized open unary data and the UNIQUE regular global section of
+    the original compact Hodge line power. It retains the actual open restriction,
+    open frame, nonzero integral coefficient on EVERY marked disk, and COMPLETE
+    unary^(exponent N) expansion on every canonical marking with the same extending
+    normalized Hodge generator. Actual quotient/kernel maps, point evaluation,
+    intrinsic discriminant, normalization and full series are exposed. Bidirectional
+    transports preserve all actual objects and recover the full original theorem.
 fidelity:
   divergences: Original mathematical definitions and main target retained. Local compiler
     proof/matcher caches are isolated between extracted source fragments; thirteen
