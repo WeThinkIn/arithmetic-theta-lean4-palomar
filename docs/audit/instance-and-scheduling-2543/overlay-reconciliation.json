@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-26T15:20:17.663115+00:00",
+  "cause": "Directory symlinks were omitted from overlay copy; Definitions import unavailable",
+  "added_links_count": 19136,
+  "compiled_sources_unchanged": true,
+  "rebuild_needed": false,
+  "original_audit_error_preserved": true
+}

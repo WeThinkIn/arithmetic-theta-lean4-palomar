@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-26T15:20:20.932803+00:00",
+  "passed": true,
+  "declarations_checked": 316,
+  "all_exact_type_expressions_equal": true,
+  "all_universe_parameter_lists_equal": true,
+  "all_axiom_sets_equal": true,
+  "all_axioms_standard": true,
+  "no_sorryAx": true,
+  "changed_bodies": [
+    "P2MW.S_AlgebraicCurve_tateTraceCompat_of_isSeparable.ModularCurve.KwF4gRRTate.finiteDimensional_restrictScalarsQuot_pow",
+    "P2MW.S_AlgebraicCurve_tateTraceCompat_of_isSeparable.ModularCurve.KwF4gRRTate.kwTateRR3_isTorsionFree_integersCompletion"
+  ],
+  "all_changed_definition_bodies_definitionally_equal": true,
+  "unexpected_declaration_changes": false,
+  "candidate_source_sha256": "6ffe043242d3ae26264a7eeb15b0cb44788db297f87b8fc8208790afe5e9f316",
+  "baseline_profile_seconds": 700.0634498698637,
+  "candidate_profile_seconds": 195.01350860996172,
+  "warm_module_reduction_fraction": 0.7214345233332591,
+  "audit_sha256": "5c2bf38731b0c73124c7a68f1b31c386dcff219b38f0438608da4fdbcd80ce06",
+  "cold_build_of_combined_candidate_pending": true,
+  "official_acceptance_claimed": false,
+  "canonical_project_modified": false
+}

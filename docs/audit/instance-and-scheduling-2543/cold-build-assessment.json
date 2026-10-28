@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "seconds": 8483.09933926398,
+  "sampled_peak_memory_bytes": 16430465024,
+  "cgroup_peak_memory_bytes": 16431198208,
+  "memory_limit_bytes": 16431083520,
+  "stop_reason": null,
+  "bindings_unchanged": true,
+  "final_memory_failcnt": 93021,
+  "final_oom_control": "oom_kill_disable 0\nunder_oom 0\noom_kill 0\n",
+  "scope": "Full SharpAndRootsSolution Lake cold project build with canonical dependency cache, audited proof-body optimizations and original baseline Lake scheduling. No official result, full-project build, or new kernel acceptance is inferred.",
+  "baseline_seconds": 8563.619929006789,
+  "historical_baseline_wall_reduction_fraction": 0.009402634681400235,
+  "comparison_limit": "Historical same-host baseline with the same original Lake scheduling; not contemporaneous and not a guarantee of GitHub performance. All original libraries preserved; only artificial MemoryStage scheduling libraries removed.",
+  "official_acceptance_claimed": false,
+  "automatic_external_retry": false
+}

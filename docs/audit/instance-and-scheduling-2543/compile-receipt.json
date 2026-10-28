@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-26T15:18:56.874219+00:00",
+  "passed": true,
+  "exit_code": 0,
+  "elapsed_seconds": 195.01350860996172,
+  "baseline_seconds": 700.0634498698637,
+  "warm_module_reduction_fraction": 0.7214345233332591,
+  "source_sha256": "6ffe043242d3ae26264a7eeb15b0cb44788db297f87b8fc8208790afe5e9f316",
+  "original_sha256": "633d970292089d4511a2adea982813ff66a423747e90c4c28c5a906215c6b518",
+  "log_sha256": "85b2ccd88f390975e87e949cb1938c7233e507dbd9060739118ebf51a1b77d8c",
+  "output_sha256": "43e5816227a8523b364b2f8b103982ed37162d836f37c247bfce55486405433a",
+  "cold_build_speedup_claimed": false,
+  "official_acceptance_claimed": false,
+  "type_axiom_audit_pending": true
+}
