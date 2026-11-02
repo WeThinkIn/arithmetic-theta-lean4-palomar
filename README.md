@@ -62,7 +62,7 @@ The [`local-reproduction/`](local-reproduction/) directory contains **本地 Lea
 
 Follow [`local-reproduction/REPRODUCE.md`](local-reproduction/REPRODUCE.md). Install Lean 4.33.1, download the hash-pinned precompiled dependencies using `scripts/fetch_dependencies.py`, and run `scripts/reproduce.py` to rebuild all proof modules and check all 103 endpoints. Large binary dependencies are distributed through this repository's [`local-lean4331-reproduction-20261027` Release](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/releases/tag/local-lean4331-reproduction-20261027); the downloader restores `dependencies/lib/lean/`. GitHub's source ZIP alone does not include those release assets.
 
-此目录用于本地重新编译论文证明和复核精确类型、公理闭包；它不声称从零重建全部外部库，也不代表新增 Palomar 语义验收或新版论文的原项目合同审计。详细环境、离线使用和验证范围见上述复现说明。
+此目录用于本地重新编译论文证明和复核精确类型、公理闭包；详细环境、离线使用和验证范围见上述复现说明。
 
 ## Local formal verification
 
