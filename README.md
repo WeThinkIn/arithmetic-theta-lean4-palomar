@@ -2,15 +2,19 @@
 
 *Exact Tate normalization and common finite covers*
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23938214.svg)](https://doi.org/10.5281/zenodo.23938214)
+
 Human author and responsible maintainer: **Jue Ding**.
 
 This repository presents the research manuscript, the complete Lean 4 formalization, and a reproducible verification environment for the arithmetic determination of relations among lattice theta series. **Jue Ding first publicly released both the accompanying paper and the original Lean 4 code as part of this project.** The manuscript records the full author and contributor list; third-party mathematical libraries retain their own authorship and attribution.
+
+**Public paper on Zenodo.** Jue Ding and ZhiPeng Liu, *A Proof of the Purely Arithmetic Characterization of Linear Relations among Theta Series of Quadratic Lattices*, released as a preprint on **4 November 2026**. The public record is available at [Zenodo 23938214](https://zenodo.org/records/23938214), with DOI **[10.5281/zenodo.23938214](https://doi.org/10.5281/zenodo.23938214)**. Use this record for the published preprint and its citation metadata; the repository retains its existing manuscript snapshots and verification artifacts.
 
 **Original Lean 4.33.1 formalization: complete and locally verified.** The full original Lean 4 code is published in [`local-reproduction/`](local-reproduction/). All **1,199 proof modules** have been rebuilt from source against the pinned external dependencies, and all **103 theorem endpoints** covering the **13 original source requirements** have passed exact-type and standard-axiom checks. The [rebuild report](local-reproduction/verification/README.md), original sources, dependency manifests and reproduction scripts are available for independent local checking.
 
 **Independent Palomar verification: in progress.** Building on the completed original formalization, this repository also maintains a **Lean 4.35.0-rc2** adaptation for independent Palomar review. The adapted development has recorded local build and endpoint-preservation checks, and individual scopes have passed official mechanical verification at their recorded revisions. Whole-paper Palomar semantic acceptance and registration remain incomplete. The [`Palomar_lean/`](Palomar_lean/README.md) interfaces and [verification records](docs/PalomarPreflight.md) document this continuing review effort.
 
-[Paper (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20Exact%20Tate%20normalization%20and%20common%20finite%20covers.pdf) · [Original mathematical specification](paper/OriginalTask.tex) · [Formal theorem specification](docs/SourceObligations.json)
+[Public paper (Zenodo)](https://zenodo.org/records/23938214) · [Paper DOI](https://doi.org/10.5281/zenodo.23938214) · [Repository manuscript snapshot (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20Exact%20Tate%20normalization%20and%20common%20finite%20covers.pdf) · [Original mathematical specification](paper/OriginalTask.tex) · [Formal theorem specification](docs/SourceObligations.json)
 
 [Original Lean 4.33.1 code](local-reproduction/Lean/) · [Reproduce the original verification](local-reproduction/REPRODUCE.md) · [Palomar verification interfaces](Palomar_lean/README.md)
 
@@ -214,9 +218,24 @@ The modularity statements use the arithmetic geometric formulation specified in 
 
 ## Attribution and citation
 
-For the mathematical result, cite the accompanying manuscript using its recorded author list and title:
+For the mathematical result, cite the public Zenodo preprint:
 
-> *Arithmetic determination of relations among lattice theta series: Exact Tate normalization and common finite covers.* See [the manuscript](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20Exact%20Tate%20normalization%20and%20common%20finite%20covers.pdf) for authorship and version information.
+> Ding, Jue, and Liu, ZhiPeng. (2026). *A Proof of the Purely Arithmetic Characterization of Linear Relations among Theta Series of Quadratic Lattices*. Zenodo. https://doi.org/10.5281/zenodo.23938214
+
+```bibtex
+@misc{ding_liu_2026_arithmetic_theta,
+  author    = {Ding, Jue and Liu, ZhiPeng},
+  title     = {A Proof of the Purely Arithmetic Characterization of Linear Relations among Theta Series of Quadratic Lattices},
+  year      = {2026},
+  month     = nov,
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23938214},
+  url       = {https://zenodo.org/records/23938214},
+  note      = {Preprint, published 4 November 2026}
+}
+```
+
+The [citation metadata](CITATION.cff) also supplies this paper as the preferred citation for GitHub's **Cite this repository** feature. The DOI identifies the Zenodo paper record; for a particular Lean verification result, also record the repository commit used.
 
 For the Lean formalization, cite this repository together with the exact Git commit used for verification:
 

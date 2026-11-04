@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: >-
+  Please cite the Zenodo preprint below for the mathematical result.
+  For reproducibility, also include the exact repository commit used for Lean verification.
+type: software
+title: "Arithmetic theta formalization in Lean 4"
+authors:
+  - family-names: Ding
+    given-names: Jue
+repository-code: "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar"
+url: "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar"
+preferred-citation:
+  type: generic
+  title: "A Proof of the Purely Arithmetic Characterization of Linear Relations among Theta Series of Quadratic Lattices"
+  authors:
+    - family-names: Ding
+      given-names: Jue
+    - family-names: Liu
+      given-names: ZhiPeng
+  year: 2026
+  date-published: 2026-11-04
+  publisher:
+    name: Zenodo
+  doi: "10.5281/zenodo.23938214"
+  url: "https://zenodo.org/records/23938214"
+  notes: "Preprint."
