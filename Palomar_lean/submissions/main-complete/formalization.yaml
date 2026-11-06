@@ -1,0 +1,63 @@
+version: v0.4
+project:
+  name: Complete conservative theta relation bound and arithmetic components
+  description: This entry formalizes an explicit conservative coefficient bound determining
+    all complex linear relations among complete lattice theta series for arbitrary finite valid
+    even integral Gram families, including rank zero and all larger cutoffs. The selected statements
+    also prove rational orthogonal-sublattice factorization through actual preimage cosets;
+    exact coefficient enumeration using rational LDL decomposition and recursive ellipsoid enumeration,
+    with equality to the true theta coefficients and coefficient matrices; and concrete lattice
+    results including binary factorization, the determinant-80 forms, and nonsimilar rank-16
+    lattices with equal theta series. The formal-identity results include the Jacobi triple
+    product, the quartic theta identity, Tate-series addition identities, and the powered gamma
+    norm identity. The selection further proves existence and uniqueness of finite étale norm
+    families on arbitrary schemes. The 43 selected targets cover 40 original endpoints together
+    with their supporting declarations; the other 63 original endpoints are outside this entry.
+    See Palomar_lean/challenges/main-and-components-complete/Scope.json for the precise scope.
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series - Exact Tate
+    normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: agent-reviewed
+  notes: Independent Mathlib-only Challenge and implementation bridge compiled locally. Official
+    mechanical and semantic review are pending for this configuration.
+status:
+  scope: This entry compares 43 targets covering 40 complete existing endpoints and supporting
+    results. The main theorem includes Indexed and FormalIdentity for the same U, the exact
+    conservative bound and rational formula for the same B, all larger cutoffs, actual shell
+    finiteness, and rank zero. See Palomar_lean/challenges/main-and-components-complete/Scope.json. The other
+    63 original endpoints and full-paper independent verification remain outside this entry.
+fidelity:
+  divergences: No omitted original accepted-037 output in this interface; all other scope limits
+    are explicitly listed in Scope.json.

@@ -1,0 +1,68 @@
+version: v0.4
+project:
+  name: Complete scheme Kato unit and full Tate expansion
+  description: 'Complete original accepted084: unique same actual elliptic scheme
+    unit with full Kato normalization, Cartier divisor, every positive coprime determinant
+    norm and complete period-one Tate expansion after its actual pullback. Retains
+    every coefficient-field extension and actual pointed Cartesian test, the concrete
+    curve and both coordinates, faithful function-field evaluation and full Laurent
+    gamma products. Explicit gamma-limit existence support prevents vacuous conditional
+    expansion. Includes inherited083/086 targets, counted only once. See Palomar_lean/challenges/scheme-tate-unit/Scope.json.
+    No full-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series
+    - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: self-assessed
+  notes: >-
+    Local checks retain all 15 configured obligations and original endpoints
+    accepted-084. Current Solution build, complete target-closure structural and standard
+    axiom checks, original type/universe/recovery checks and clean rendering pass.
+    Compiler-only differences and exact versus definitionally equal types are
+    documented in Palomar_lean/docs/audit/historical-render-repairs-2370/scheme-tate-unit/Review.md. This is not a distinct agent's semantic review.
+    Fresh official verification and semantic review remain pending for this revision.
+status:
+  scope: 'Complete original accepted084: unique same actual elliptic scheme unit with
+    full Kato normalization, Cartier divisor, every positive coprime determinant norm
+    and complete period-one Tate expansion after its actual pullback. Retains every
+    coefficient-field extension and actual pointed Cartesian test, the concrete curve
+    and both coordinates, faithful function-field evaluation and full Laurent gamma
+    products. Explicit gamma-limit existence support prevents vacuous conditional
+    expansion. Includes inherited083/086 targets, counted only once. See Palomar_lean/challenges/scheme-tate-unit/Scope.json.
+    No full-paper completion claimed.'
+fidelity:
+  divergences: Original084 full type recovered through exact predicate equivalences;
+    no new assumption on the scheme base, no restriction of all coprime positive norms
+    to2/3, no truncation and no product equation in test data. The scope includes
+    inherited083/086 but does not claim other original endpoints.

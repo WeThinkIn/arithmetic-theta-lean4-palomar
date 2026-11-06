@@ -1,0 +1,74 @@
+version: v0.4
+project:
+  name: Complete compact unary naturality under coefficient embeddings
+  description: 'Full original070: for EVERY embedding of characteristic-zero coefficient
+    fields and EVERY pair of actual normalized unary OpenPower choices and compact
+    sections with their original open restrictions, constructs an actual compact Hodge
+    isomorphism extending the SAME prescribed normalized open comparison and proves
+    exact equality of the transported global sections. The complete classifier, identity-ideal
+    conormal normalization, all-extension geometric canonicity, actual pullback maps
+    and original exponent are retained. Bidirectional record transports preserve identical
+    mathematical objects and only rewrite proven-equivalent predicates; the full original
+    theorem is recovered by compilation.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series
+    - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: self-assessed
+  notes: >-
+    Recorded local machine checks cover all 32 configured targets and their
+    complete current-source exported closure with standard permitted axioms.
+    All original mathematical declarations are preserved; compiler/syntax changes
+    are documented in Palomar_lean/docs/audit/field-unary-naturality-render-repair-2311/Review.md.
+    All target anchors render without errors. Original endpoints 070 pass exact
+    type and ordered-universe checks and compiled recovery equalities.
+    This is not a distinct agent's semantic review. Historical official results
+    remain source-bound; official acceptance of this repair and whole-paper
+    semantic acceptance have not been established.
+status:
+  scope: 'Full original070: for EVERY embedding of characteristic-zero coefficient
+    fields and EVERY pair of actual normalized unary OpenPower choices and compact
+    sections with their original open restrictions, constructs an actual compact Hodge
+    isomorphism extending the SAME prescribed normalized open comparison and proves
+    exact equality of the transported global sections. The complete classifier, identity-ideal
+    conormal normalization, all-extension geometric canonicity, actual pullback maps
+    and original exponent are retained. Bidirectional record transports preserve identical
+    mathematical objects and only rewrite proven-equivalent predicates; the full original
+    theorem is recovered by compilation.'
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

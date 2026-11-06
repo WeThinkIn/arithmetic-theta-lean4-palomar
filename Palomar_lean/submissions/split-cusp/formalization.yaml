@@ -1,0 +1,67 @@
+version: v0.4
+project:
+  name: Complete split-field component cusp bound
+  description: Full original072 for every characteristic-zero field carrying the specified
+    primitive L-th root, with L even and at least three. The actual cusps on every
+    actual irreducible component are finite and nonempty and satisfy 2*L*card(Cusps)
+    <= card(SL2(ZMod L)). The independent Challenge retains the original full level
+    data, Legendre atlas, sign quotient and its universal property, compatible locus
+    and compactification. No algebraic closure assumption is added. The actual component
+    open equals the original construction; full original theorem equality is compiled.
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series
+    - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: self-assessed
+  notes: >-
+    Local checks retain all 24 configured obligations and original endpoints
+    accepted-072. Current Solution build, complete target-closure structural and standard
+    axiom checks, original type/universe/recovery checks and clean rendering pass.
+    Compiler-only differences and exact versus definitionally equal types are
+    documented in Palomar_lean/docs/audit/historical-render-repairs-2370/split-cusp/Review.md. This is not a distinct agent's semantic review.
+    Fresh official verification and semantic review remain pending for this revision.
+status:
+  scope: Full original072 for every characteristic-zero field carrying the specified
+    primitive L-th root, with L even and at least three. The actual cusps on every
+    actual irreducible component are finite and nonempty and satisfy 2*L*card(Cusps)
+    <= card(SL2(ZMod L)). The independent Challenge retains the original full level
+    data, Legendre atlas, sign quotient and its universal property, compatible locus
+    and compactification. No algebraic closure assumption is added. The actual component
+    open equals the original construction; full original theorem equality is compiled.
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

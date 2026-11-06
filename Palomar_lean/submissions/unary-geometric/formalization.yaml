@@ -1,0 +1,63 @@
+version: v0.4
+project:
+  name: Complete unary power geometric realization
+  description: 'Full original093: constructs the actual polygon tower, proper flat
+    model, marked identity, original group law and integral locally Noetherian generic
+    scheme with r=24*d*m^2, and one unique Kato function with full actual divisor,
+    every positive coprime norm and all original marked-point Laurent values. All
+    providers remain conclusions. Original characteristic-zero field and d,m,N conditions
+    retained.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series
+    - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: self-assessed
+  notes: >-
+    All 5 configured obligations and complete original accepted-093 are retained.
+    Local current-source build, full structural/standard-axiom closure, exact original
+    type/universe checks, recovery equality and error-free rendering pass.
+    Non-target bodies are identical; selected placeholder-body and syntax differences
+    are disclosed in Palomar_lean/docs/audit/unary-geometric-render-repair-2387/Review.md. This is not a distinct agent's semantic review.
+    Fresh official verification and ordinary semantic review remain pending.
+status:
+  scope: 'Full original093: constructs the actual polygon tower, proper flat model,
+    marked identity, original group law and integral locally Noetherian generic scheme
+    with r=24*d*m^2, and one unique Kato function with full actual divisor, every
+    positive coprime norm and all original marked-point Laurent values. All providers
+    remain conclusions. Original characteristic-zero field and d,m,N conditions retained.'
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.One explicit main target, all semantic types/available bodies
+    and standard axioms checked. No new main assumption. Official verification pending.

@@ -1,0 +1,92 @@
+version: v0.4
+project:
+  name: Complete relative alpha Tate behavior
+  description: >-
+    Complete original accepted040: for every positive L divisible by4, actual full marking on
+    the actual Tate cubic Q=t^L and original normalized boundary differential, every realizing
+    alpha has a full power-series-unit expansion with exact order0 or L/4. Every primitive
+    root and canonical marking give the exact signed thetaAt squared identity. Literal full
+    series, all nonidentity coordinate combinations and original boundary generator retained.
+    For the selected scheme-alpha character theorem (original052), let S be a scheme over a
+    characteristic-zero field, E its elliptic family, M a full level-four marking, z a global
+    scalar satisfying MillerPhase E M z, and a a cotangent section satisfying RealizesAlpha E
+    M a. For every matrix A over ZMod 4 satisfying PreservesEven (determinant one and
+    preservation of the even quadratic form modulo two), there exists a full level-four
+    marking Mprime with Changes E M Mprime A and the same phase MillerPhase E Mprime z. Every
+    section aprime realizing alpha for Mprime satisfies aprime = z ^ (characterExponent A).val
+    * a, where multiplication denotes the scalar action on cotangent sections. The phase and
+    realizing-section conditions are explicit hypotheses, and the conclusion is equality of
+    global sections. All 16 configured obligations are retained: eight support/main targets
+    and eight explicit helper obligations. Original052 is counted only once across scopes. No
+    whole-paper completion is claimed.
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series
+    - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: self-assessed
+  notes: >-
+    Recorded local machine checks cover all 16 configured targets and their
+    complete current-source exported closure with standard permitted axioms.
+    All original mathematical declarations are preserved; compiler/syntax changes
+    are documented in Palomar_lean/docs/audit/tate-alpha-render-repair-2311/Review.md.
+    All target anchors render without errors. Original endpoints 040, 052 pass exact
+    type and ordered-universe checks and compiled recovery equalities.
+    This is not a distinct agent's semantic review. Historical official results
+    remain source-bound; official acceptance of this repair and whole-paper
+    semantic acceptance have not been established.
+status:
+  scope: >-
+    Complete original accepted040: for every positive L divisible by4, actual full marking on
+    the actual Tate cubic Q=t^L and original normalized boundary differential, every realizing
+    alpha has a full power-series-unit expansion with exact order0 or L/4. Every primitive
+    root and canonical marking give the exact signed thetaAt squared identity. Literal full
+    series, all nonidentity coordinate combinations and original boundary generator retained.
+    For the selected scheme-alpha character theorem (original052), let S be a scheme over a
+    characteristic-zero field, E its elliptic family, M a full level-four marking, z a global
+    scalar satisfying MillerPhase E M z, and a a cotangent section satisfying RealizesAlpha E
+    M a. For every matrix A over ZMod 4 satisfying PreservesEven (determinant one and
+    preservation of the even quadratic form modulo two), there exists a full level-four
+    marking Mprime with Changes E M Mprime A and the same phase MillerPhase E Mprime z. Every
+    section aprime realizing alpha for Mprime satisfies aprime = z ^ (characterExponent A).val
+    * a, where multiplication denotes the scalar action on cotangent sections. The phase and
+    realizing-section conditions are explicit hypotheses, and the conclusion is equality of
+    global sections. All 16 configured obligations are retained: eight support/main targets
+    and eight explicit helper obligations. Original052 is counted only once across scopes. No
+    whole-paper completion is claimed.
+fidelity:
+  divergences: Original040 full proposition recovered with compiled rfl theorem audit.
+    Boundary normalization and generator agree with originals by rfl; affine realization
+    predicate recovered by compiled iff. No truncated series, level4 restriction or
+    additional main assumption. Eight support/main targets selected; inherited052
+    not counted twice.

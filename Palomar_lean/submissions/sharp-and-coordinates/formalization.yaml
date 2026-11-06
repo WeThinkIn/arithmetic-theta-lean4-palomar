@@ -1,0 +1,68 @@
+version: v0.4
+project:
+  name: Sharp theta determination and algebraic Tate coordinates
+  description: 'Five complete original endpoints: accepted019 algebraic Tate coordinates,020
+    exact poles,021 algebraic model cubic,022 global normalized differential and049
+    sharp finite theta-kernel determination. Actual schemes, identity ideals, all
+    opens/thicknesses, normalized frames and full generic-curve differential retained.
+    The principal sharp conclusion includes every larger prefix and rank zero. See
+    Palomar_lean/challenges/sharp-and-coordinates/Scope.json. No full-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: self-assessed
+  notes: >-
+    Pre-submission assessment based on recorded machine checks: the five complete
+    original endpoints and all ten configured targets, shared declarations,
+    complete target closure, standard axioms and original recovery were checked.
+    The repaired Challenge renders all ten anchors without elaboration errors.
+    These checks are not presented as a distinct agent's semantic review.
+    Official full mechanical preflight 40007573156 passed at source commit
+    be9f35368e5ffdb4cf9717e993ccbc3be6454008 with stock Lean, NanoDa and Conron
+    acceptance. That result remains bound to its original metadata and build
+    configuration; it does not certify this metadata revision or establish
+    whole-paper semantic acceptance.
+status:
+  scope: 'Five complete original endpoints: accepted019 algebraic Tate coordinates,020
+    exact poles,021 algebraic model cubic,022 global normalized differential and049
+    sharp finite theta-kernel determination. Actual schemes, identity ideals, all
+    opens/thicknesses, normalized frames and full generic-curve differential retained.
+    The principal sharp conclusion includes every larger prefix and rank zero. See
+    Palomar_lean/challenges/sharp-and-coordinates/Scope.json. No full-paper completion claimed.'
+fidelity:
+  divergences: Complete original019/020/021/022/049 conclusions retained. NormalizedFrame
+    is independently specified using actual ideal generators and proved equivalent
+    in both directions; the literal original020 type is recovered. Other98 endpoints
+    are outside this configuration.049 overlaps another configuration and is counted
+    once.

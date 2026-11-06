@@ -1,0 +1,68 @@
+version: v0.4
+project:
+  name: Sharp theta relation bound and actual prescribed ambient roots
+  description: 'Three complete original endpoints: accepted-049 exact sharp finite
+    theta-kernel determination for all larger prefixes and rank zero, accepted-056
+    actual prescribed ambient roots and accepted-057 smooth-point simultaneous roots.
+    Preserves every original model field, any given ambient field and roots, finite
+    initial constant field, actual valuation/center, completed local ring, geometric
+    root cover, full sections and canonical tensor comparison. No full-paper completion
+    is claimed. See Palomar_lean/challenges/sharp-and-roots/Scope.json.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: self-assessed
+  notes: >-
+    Recorded local checks retain all 4 configured theorem obligations and original
+    endpoints 049, 056 and 057. Shared declarations, full target closure, standard
+    axioms, original recovery and local rendering were checked for the documented
+    source snapshots. This is not a distinct agent's semantic review. Official
+    full run 40009948653 completed Solution build and export but exhausted the
+    standard external worker time budget at the comparator stage; it supplies no
+    current kernel acceptance. See Palomar_lean/docs/audit/roots-resource-limit-2292/Review.md.
+    Preparation checks and ordinary submission remain separate from that failed
+    full attempt; no unchanged full retry or special resource exception is assumed.
+status:
+  scope: 'Three complete original endpoints: accepted-049 exact sharp finite theta-kernel
+    determination for all larger prefixes and rank zero, accepted-056 actual prescribed
+    ambient roots and accepted-057 smooth-point simultaneous roots. Preserves every
+    original model field, any given ambient field and roots, finite initial constant
+    field, actual valuation/center, completed local ring, geometric root cover, full
+    sections and canonical tensor comparison. No full-paper completion is claimed.
+    See Palomar_lean/challenges/sharp-and-roots/Scope.json.'
+fidelity:
+  divergences: Complete original049/056/057 outputs retained. The other100 original
+    endpoints are outside this configuration; the covered049 overlaps another configuration
+    and is not counted twice. Actual canonical comparison proof is present in the
+    independent Challenge, with no added existence assumption.

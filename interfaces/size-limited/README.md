@@ -1,6 +1,6 @@
 # Complete interfaces above the current Palomar size cap
 
-These four source packages preserve the complete mathematical endpoints while making the remaining Palomar packaging constraint explicit. The complete development under `Proof/` has passed the recorded local Lean verification. Preparing a small independently auditable Challenge is a separate requirement for official Palomar verification.
+These four source packages preserve the complete mathematical endpoints while making the remaining Palomar packaging constraint explicit. The complete development under `Palomar_lean/Proof/` has passed the recorded local Lean verification. Preparing a small independently auditable Challenge is a separate requirement for official Palomar verification.
 
 ## Published source snapshots
 
@@ -35,4 +35,4 @@ python3 interfaces/size-limited/compile-local.py accepted-075
 
 Replace `accepted-075` with `accepted-076`, `accepted-087`, or `conservative-image-consumer` as needed. The helper compiles the selected Challenge, the shared support theorem when required, and its Solution under separate `.lake/size-limited` output directories. It checks the source snapshot hashes before compiling. This command is a compilation check; it does not run the complete Comparator/export/kernel/render pipeline or submit anything to Palomar. The published audit receipts specify which additional checks were completed for each snapshot.
 
-The exact original paper statements remain in [`docs/SourceObligations.json`](../../docs/SourceObligations.json). The full proof remains under [`Proof/`](../../Proof/). The [manifest](manifest.json) binds the published Lean source files, comparator configurations, and audit records.
+The exact original paper statements remain in [`Palomar_lean/docs/SourceObligations.json`](../../Palomar_lean/docs/SourceObligations.json). The full proof remains under [`Palomar_lean/Proof/`](../../Palomar_lean/Proof/). The [manifest](manifest.json) binds the published Lean source files, comparator configurations, and audit records.

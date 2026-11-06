@@ -1,0 +1,57 @@
+version: v0.4
+project:
+  name: Pointed Cartesian group law
+  description: This entry verifies pointed cartesian group law, including the explicitly
+    selected supporting declarations. It is a component of the exact original global
+    arithmetic projective-ratio recovery in Palomar_lean/Proof/Original087Recovery2.lean. This
+    configuration alone does not select that complete endpoint or all 103 original
+    endpoints.
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series
+    - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: agent-reviewed
+  notes: Local exact statement/data audits and strict comparisons exist for the source
+    component. Official mechanical and semantic review of this published configuration
+    remain pending.
+status:
+  scope: This entry verifies pointed cartesian group law, including the explicitly
+    selected supporting declarations. It is a component of the exact original global
+    arithmetic projective-ratio recovery in Palomar_lean/Proof/Original087Recovery2.lean. This
+    configuration alone does not select that complete endpoint or all 103 original
+    endpoints.
+fidelity:
+  divergences: The selected declarations retain their audited types and data definitions.
+    The full original endpoint is recovered separately; whole-paper coverage must
+    be assessed across the complete development.

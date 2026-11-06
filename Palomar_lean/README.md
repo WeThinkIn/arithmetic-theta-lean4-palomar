@@ -1,6 +1,38 @@
-# Palomar Lean verification interfaces
+# Palomar formalization and verification
 
-本目录集中存放 Palomar 验证使用的 **154 个 Lean 入口文件**和 **77 个 comparator JSON 配置**。每个配置对应一个 Challenge/Solution 模块对；下表可直接查看配置、独立命题和证明入口。
+本目录集中存放 Palomar 版本的证明源码、独立验证接口、范围说明、审计资料和提交元数据，
+使用 **Lean 4.35.0-rc2**。原始 **Lean 4.33.1** 形式化的独立复现入口位于
+[`local-reproduction/`](../local-reproduction/REPRODUCE.md)。
+
+## Find your starting point
+
+| Task | Start here |
+| --- | --- |
+| Read the complete Palomar proof | [`Proof/GoalRoot.lean`](Proof/GoalRoot.lean) and the [`Proof/`](Proof/) sources |
+| Select an independent verification scope | The [scope index](#scope-index) below and [`challenges/`](challenges/) |
+| Review the original obligations and recorded verification | [Documentation guide](docs/README.md), [coverage](docs/Coverage.md), and [Palomar verification records](docs/PalomarPreflight.md) |
+| Find metadata for a scoped submission | [`submissions/`](submissions/) and the [official preflight workflow](../.github/workflows/palomar-preflight.yml) |
+| Check library provenance and licenses | [`docs/ThirdParty/`](docs/ThirdParty/README.md) |
+
+```text
+Palomar_lean/
+├── Proof/                 # Shared proof development and vendored library sources
+├── challenges/            # Scoped specifications, interfaces and supporting records
+├── docs/                  # Coverage, provenance and verification evidence
+│   ├── audit/             # Historical build and verification records
+│   └── maintenance/       # Repository layout and maintenance records
+├── submissions/           # Metadata selected by the official preflight workflow
+├── *Challenge.lean        # 154 Challenge/Solution entry-point files in total
+├── *Solution.lean
+├── comparator-*.json      # 77 comparator configurations, including comparator.json
+└── README.md
+```
+
+The entry-point modules and comparator configurations stay at this directory's
+top level. Each configuration selects one Challenge/Solution pair; the index
+below links its specification and proof directly. The repository root retains
+the Lake configuration, pinned toolchain and dependency manifest, so build
+commands continue to run from the repository root.
 
 ## Build and verification
 
@@ -13,7 +45,10 @@ lake comparator --config Palomar_lean/comparator-main-complete.json
 
 The comparator command requires the Palomar comparator tooling described in the [repository verification instructions](../README.md#reproduce-the-formal-proof). For the official pipeline, open [Palomar official mechanical preflight](../.github/workflows/palomar-preflight.yml), select `main`, and choose a `Palomar_lean/comparator-*.json` configuration. The default `comparator.json` is a legacy, narrower specification; select the named scope you intend to verify.
 
-Lean module names, imports, declarations and comparator contents are preserved. The root [Lake configuration](../lakefile.toml) uses this directory as the source root for these modules, so existing `lake build +ModuleName` targets remain valid. The shared mathematical development is in [`Proof/`](../Proof/), with scope descriptions in [`challenges/`](../challenges/) and submission metadata in [`submissions/`](../submissions/).
+The root [Lake configuration](../lakefile.toml) resolves the shared proof modules
+from `Palomar_lean/Proof` and the Challenge/Solution modules from `Palomar_lean`.
+Lean module names, imports, declarations and comparator contents are unchanged;
+existing `lake build +ModuleName` targets remain valid.
 
 The independent [local Lean 4.33.1 reproduction](../local-reproduction/REPRODUCE.md), its dependency files and its release assets are unchanged. Historical audit records retain their original paths and source revisions; moving files does not confer a new Palomar acceptance.
 

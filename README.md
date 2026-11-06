@@ -12,11 +12,16 @@ This repository presents the research manuscript, the complete Lean 4 formalizat
 
 **Original Lean 4.33.1 formalization: complete and locally verified.** The full original Lean 4 code is published in [`local-reproduction/`](local-reproduction/). All **1,199 proof modules** have been rebuilt from source against the pinned external dependencies, and all **103 theorem endpoints** covering the **13 original source requirements** have passed exact-type and standard-axiom checks. The [rebuild report](local-reproduction/verification/README.md), original sources, dependency manifests and reproduction scripts are available for independent local checking.
 
-**Independent Palomar verification: in progress.** Building on the completed original formalization, this repository also maintains a **Lean 4.35.0-rc2** adaptation for independent Palomar review. The adapted development has recorded local build and endpoint-preservation checks, and individual scopes have passed official mechanical verification at their recorded revisions. Whole-paper Palomar semantic acceptance and registration remain incomplete. The [`Palomar_lean/`](Palomar_lean/README.md) interfaces and [verification records](docs/PalomarPreflight.md) document this continuing review effort.
+**Independent Palomar verification: in progress.** Building on the completed original formalization, this repository also maintains a **Lean 4.35.0-rc2** adaptation for independent Palomar review. The adapted development has recorded local build and endpoint-preservation checks, and individual scopes have passed official mechanical verification at their recorded revisions. Whole-paper Palomar semantic acceptance and registration remain incomplete. The [`Palomar_lean/`](Palomar_lean/README.md) interfaces and [verification records](Palomar_lean/docs/PalomarPreflight.md) document this continuing review effort.
 
-[Public paper (Zenodo)](https://zenodo.org/records/23938214) · [Paper DOI](https://doi.org/10.5281/zenodo.23938214) · [Repository manuscript snapshot (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20Exact%20Tate%20normalization%20and%20common%20finite%20covers.pdf) · [Original mathematical specification](paper/OriginalTask.tex) · [Formal theorem specification](docs/SourceObligations.json)
+[Public paper (Zenodo)](https://zenodo.org/records/23938214) · [Paper DOI](https://doi.org/10.5281/zenodo.23938214) · [Repository manuscript snapshot (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20Exact%20Tate%20normalization%20and%20common%20finite%20covers.pdf) · [Original mathematical specification](paper/OriginalTask.tex) · [Formal theorem specification](Palomar_lean/docs/SourceObligations.json)
 
-[Original Lean 4.33.1 code](local-reproduction/Lean/) · [Reproduce the original verification](local-reproduction/REPRODUCE.md) · [Palomar verification interfaces](Palomar_lean/README.md)
+| Start with | Where to go |
+| --- | --- |
+| The mathematical proof and original Lean 4.33.1 sources | [`local-reproduction/`](local-reproduction/READING_GUIDE.md) |
+| Rebuilding the original formalization | [Reproduction instructions](local-reproduction/REPRODUCE.md) |
+| The Lean 4.35.0-rc2 adaptation and independent verification | [`Palomar_lean/`](Palomar_lean/README.md) |
+| The paper and original mathematical specification | [`paper/`](paper/) |
 
 **For mathematical review:** the [reading guide](local-reproduction/READING_GUIDE.md)
 explains the main theorem, its transparent abbreviations and the proof's structure.
@@ -70,7 +75,7 @@ The following declarations provide entry points to the principal results. Each l
 | Modularity, solver output, and complete expansions under coefficient-field extension | [`ArithmeticThetaExtendedMetaplecticR0241.cyclotomic_extended_modularity`](local-reproduction/Lean/CyclotomicExtendedModularityR0241.lean) |
 | Adaptive solver correctness, termination, and first-certified stopping on its schedule | [`ArithmeticThetaAdaptiveSolverR0230.adaptive_universal_solver`](local-reproduction/Lean/AdaptiveUniversalSolverR0230.lean) |
 
-The original Lean 4.33.1 proof entry point is [`local-reproduction/Lean/GoalRoot.lean`](local-reproduction/Lean/GoalRoot.lean), with final integration in [`FullSourceIntegrationR0268.lean`](local-reproduction/Lean/FullSourceIntegrationR0268.lean). The corresponding Palomar adaptation is under [`Proof/`](Proof/), with its own [`GoalRoot.lean`](Proof/GoalRoot.lean). The [formal specification](docs/SourceObligations.json) records the exact statements, hypotheses, and source correspondence of all **103 endpoints**, and the [requirement map](docs/RequirementCoverage.json) relates them to the **13 original requirements**.
+The original Lean 4.33.1 proof entry point is [`local-reproduction/Lean/GoalRoot.lean`](local-reproduction/Lean/GoalRoot.lean), with final integration in [`FullSourceIntegrationR0268.lean`](local-reproduction/Lean/FullSourceIntegrationR0268.lean). The corresponding Palomar adaptation is under [`Palomar_lean/Proof/`](Palomar_lean/Proof/), with its own [`GoalRoot.lean`](Palomar_lean/Proof/GoalRoot.lean). The [formal specification](Palomar_lean/docs/SourceObligations.json) records the exact statements, hypotheses, and source correspondence of all **103 endpoints**, and the [requirement map](Palomar_lean/docs/RequirementCoverage.json) relates them to the **13 original requirements**.
 
 ## Original local Lean 4.33.1 reproducibility artifacts
 
@@ -101,7 +106,7 @@ Quot.sound
 
 The audited theorem proofs have no `sorryAx` dependency and introduce no additional mathematical axioms. The exact-type audit checks the original quantified statements; the axiom audit checks their transitive proof dependencies. For the original Lean 4.33.1 edition, the [local rebuild report](local-reproduction/verification/LocalRebuildReport.json) and [verification summary](local-reproduction/verification/LocalRebuildSummary.json) record the complete 1,199-module rebuild and 103 endpoint checks.
 
-For the Lean 4.35.0-rc2 adaptation, evidence is provided by the [complete root-build receipt](docs/audit/full-root-build-342/receipt.json), the [103-endpoint audit result](docs/audit/partial-endpoint-audit-431-result.json), and the [optimized full-project build and preservation audit](docs/audit/direct-hodge-integration-856/Review.md). The latter also checks 54,522 original non-internal named declarations and 13,670 definition bodies across all 3,915 project modules. The [resource-limited build and independent-kernel record](docs/audit/direct-hodge-integration-1092/Review.md) documents the completed staged build and the verified CommonUnary and CompleteMain scopes.
+For the Lean 4.35.0-rc2 adaptation, evidence is provided by the [complete root-build receipt](Palomar_lean/docs/audit/full-root-build-342/receipt.json), the [103-endpoint audit result](Palomar_lean/docs/audit/partial-endpoint-audit-431-result.json), and the [optimized full-project build and preservation audit](Palomar_lean/docs/audit/direct-hodge-integration-856/Review.md). The latter also checks 54,522 original non-internal named declarations and 13,670 definition bodies across all 3,915 project modules. The [resource-limited build and independent-kernel record](Palomar_lean/docs/audit/direct-hodge-integration-1092/Review.md) documents the completed staged build and the verified CommonUnary and CompleteMain scopes.
 
 ### Verified toolchains and dependencies
 
@@ -126,20 +131,20 @@ The resulting edition incorporates the following compatibility and engineering w
 | Area | Adaptation in the published edition | Verification basis |
 | --- | --- | --- |
 | Compiler and Mathlib compatibility | Updated module headers, declaration exposure, private-declaration visibility, library interfaces, and explicit parameters where elaboration changed | Complete `GoalRoot` build and exact checks of all 103 original endpoint types and their axiom dependencies |
-| Dependency packaging | Required local library sources included under `Proof/Definitions`, `Proof/Theorems`, and `Proof/P2M`, with a locked dependency graph | Recorded [source provenance, licenses, and attribution](docs/ThirdParty/README.md) |
+| Dependency packaging | Required local library sources included under `Palomar_lean/Proof/Definitions`, `Palomar_lean/Proof/Theorems`, and `Palomar_lean/Proof/P2M`, with a locked dependency graph | Recorded [source provenance, licenses, and attribution](Palomar_lean/docs/ThirdParty/README.md) |
 | Independent verification interfaces | Scoped Challenge/Solution pairs and explicit comparator configurations specifying mathematical targets and permitted axioms | Package-specific checks of statement types, universes, proof dependencies, original-endpoint recovery, and exported interfaces |
-| Compilation and kernel efficiency | Replaced broad Mathlib imports with required dependencies; preserved the original elaboration instances; simplified descent, congruence, and Hodge transport proofs to reduce compilation and kernel work | [Complete build and original-declaration preservation audit](docs/audit/direct-hodge-integration-856/Review.md), covering all 3,915 modules and 103 original endpoints; separate independent-kernel receipts record their verified scopes |
-| Build scheduling | Added prerequisites between high-memory modules without adding Lean imports or changing mathematical source | [Completed FieldUnary cold build and preservation checks](docs/audit/field-unary-scheduling-2163/Review.md): 3,153 modules built; all 67,489 constants matched the preceding cold build; the complete export and target-closure checks passed |
+| Compilation and kernel efficiency | Replaced broad Mathlib imports with required dependencies; preserved the original elaboration instances; simplified descent, congruence, and Hodge transport proofs to reduce compilation and kernel work | [Complete build and original-declaration preservation audit](Palomar_lean/docs/audit/direct-hodge-integration-856/Review.md), covering all 3,915 modules and 103 original endpoints; separate independent-kernel receipts record their verified scopes |
+| Build scheduling | Added prerequisites between high-memory modules without adding Lean imports or changing mathematical source | [Completed FieldUnary cold build and preservation checks](Palomar_lean/docs/audit/field-unary-scheduling-2163/Review.md): 3,153 modules built; all 67,489 constants matched the preceding cold build; the complete export and target-closure checks passed |
 
 These engineering changes retain the original mathematical specification. In the independent verification interfaces, Challenge proof holes identify the propositions to be checked; the corresponding Solution supplies the proofs subject to the configured axiom checks. The complete local development and its verification evidence remain available alongside these interfaces.
 
 ## Independent Palomar verification
 
-**The main-result official mechanical preflight and ordinary submission verification have passed.** Their 43 selected targets cover the same 40 original endpoints at commit `57c6842d63e4860c7978dbc32307380415bcce1c`; stock Lean, NanoDa, and Conron accepted the solution, and the Challenge received high-trust provenance. The [ordinary submission report](docs/audit/official-ordinary-main-complete-1509/Review.md) records the official service result. The recorded official mechanical results now cover **99 of the 103 original endpoints** at their respective exact revisions. The [complete arithmetic common cover](docs/audit/official-ordinary-common-2326/Review.md) adds original endpoint 071 through ordinary official verification: all 39 configured obligations passed, with stock Lean, NanoDa and Conron acceptance and high-trust provenance. The [complete arbitrary-field unary realization](docs/audit/official-field-unary-2238/Review.md) adds original endpoint 069, with all 32 obligations and stock Lean, NanoDa and Conron acceptance. The previously passed [conservative matrix geometry scope](docs/audit/official-conservative-matrix-2158/Review.md) adds original endpoints 035 and 036, covering geometric realization for arbitrary finite valid Gram families and the conservative coefficient cutoff. The union also includes the [prescribed roots](docs/audit/official-roots-2132/Review.md), [algebraic Tate coordinates](docs/audit/official-coordinates-repaired-2189/Review.md), and [sharp-bound, adaptive-solver and image](docs/audit/official-sharp-adaptive-image-2079/Review.md) scopes. The sharp-bound, adaptive-solver and image scope has also passed [ordinary submission mechanical verification](docs/audit/official-ordinary-sharp-adaptive-2168/Review.md), with stock Lean, NanoDa and Conron acceptance; that submission has entered the semantic-review queue. Shared endpoints are counted once. It combines independently verified scopes and does not represent a single whole-paper run. The [official report and precise scope](docs/audit/official-main-complete-1477/Review.md) provide the verification evidence.
+**The main-result official mechanical preflight and ordinary submission verification have passed.** Their 43 selected targets cover the same 40 original endpoints at commit `57c6842d63e4860c7978dbc32307380415bcce1c`; stock Lean, NanoDa, and Conron accepted the solution, and the Challenge received high-trust provenance. The [ordinary submission report](Palomar_lean/docs/audit/official-ordinary-main-complete-1509/Review.md) records the official service result. The recorded official mechanical results now cover **99 of the 103 original endpoints** at their respective exact revisions. The [complete arithmetic common cover](Palomar_lean/docs/audit/official-ordinary-common-2326/Review.md) adds original endpoint 071 through ordinary official verification: all 39 configured obligations passed, with stock Lean, NanoDa and Conron acceptance and high-trust provenance. The [complete arbitrary-field unary realization](Palomar_lean/docs/audit/official-field-unary-2238/Review.md) adds original endpoint 069, with all 32 obligations and stock Lean, NanoDa and Conron acceptance. The previously passed [conservative matrix geometry scope](Palomar_lean/docs/audit/official-conservative-matrix-2158/Review.md) adds original endpoints 035 and 036, covering geometric realization for arbitrary finite valid Gram families and the conservative coefficient cutoff. The union also includes the [prescribed roots](Palomar_lean/docs/audit/official-roots-2132/Review.md), [algebraic Tate coordinates](Palomar_lean/docs/audit/official-coordinates-repaired-2189/Review.md), and [sharp-bound, adaptive-solver and image](Palomar_lean/docs/audit/official-sharp-adaptive-image-2079/Review.md) scopes. The sharp-bound, adaptive-solver and image scope has also passed [ordinary submission mechanical verification](Palomar_lean/docs/audit/official-ordinary-sharp-adaptive-2168/Review.md), with stock Lean, NanoDa and Conron acceptance; that submission has entered the semantic-review queue. Shared endpoints are counted once. It combines independently verified scopes and does not represent a single whole-paper run. The [official report and precise scope](Palomar_lean/docs/audit/official-main-complete-1477/Review.md) provide the verification evidence.
 
 **Whole-paper Palomar verification remains incomplete; registration has not been completed.** Palomar adds official mechanical preflight, independent kernel replay, semantic review of the correspondence with the manuscript, and registry acceptance to the completed local Lean verification.
 
-The repository provides [scoped verification packages](challenges/), named `comparator-*.json` configurations, and an [official preflight workflow](.github/workflows/palomar-preflight.yml). Each official result applies to its selected mathematical scope and immutable source revision. The [coverage map](docs/Coverage.md), [verification records](docs/PalomarPreflight.md), and [official workflow runs](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/workflows/palomar-preflight.yml) document those scopes and their results.
+The repository provides [scoped verification packages](Palomar_lean/challenges/), named `comparator-*.json` configurations, and an [official preflight workflow](.github/workflows/palomar-preflight.yml). Each official result applies to its selected mathematical scope and immutable source revision. The [coverage map](Palomar_lean/docs/Coverage.md), [verification records](Palomar_lean/docs/PalomarPreflight.md), and [official workflow runs](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/actions/workflows/palomar-preflight.yml) document those scopes and their results.
 
 ### Complete interfaces above the current size cap
 
@@ -156,7 +161,7 @@ Palomar currently limits each Challenge to **100 KiB (102,400 bytes) and 1,000 l
 
 The validated interfaces remain above the cap after dependency pruning and engineering optimization. Further aggressive compression is deferred to preserve the complete mathematical statements and a maintainable presentation. The corresponding Lean code is available for inspection and local reproduction; no exception to the current official limits is assumed, and no expansion request is being pursued at this stage. The complete proof and the eligible independent interfaces remain available alongside these source snapshots.
 
-For a future policy discussion, [`docs/PalomarSizeExpansionMaterial.md`](docs/PalomarSizeExpansionMaterial.md) records the exact sizes, retained dependencies, completed local checks, and the additional review resources that would be needed for an explicitly supported larger-Challenge path. It is informational only; no oversized submission or implied exemption is made.
+For a future policy discussion, [`Palomar_lean/docs/PalomarSizeExpansionMaterial.md`](Palomar_lean/docs/PalomarSizeExpansionMaterial.md) records the exact sizes, retained dependencies, completed local checks, and the additional review resources that would be needed for an explicitly supported larger-Challenge path. It is informational only; no oversized submission or implied exemption is made.
 
 ## Reproduce the formal proof
 
@@ -192,10 +197,10 @@ To inspect the active tool versions and repeat the published exact-type and axio
 ```sh
 lean --version
 lake --version
-lake env lean docs/audit/PartialEndpointAudit431.lean
+lake env lean Palomar_lean/docs/audit/PartialEndpointAudit431.lean
 ```
 
-The probe must complete successfully, and its reported axiom dependencies must be contained in the three standard axioms listed above. Its frozen [selection](docs/audit/partial-endpoint-audit-selection-431.json) and [reference output](docs/audit/partial-endpoint-audit-431.log) document the audited endpoints.
+The probe must complete successfully, and its reported axiom dependencies must be contained in the three standard axioms listed above. Its frozen [selection](Palomar_lean/docs/audit/partial-endpoint-audit-selection-431.json) and [reference output](Palomar_lean/docs/audit/partial-endpoint-audit-431.log) document the audited endpoints.
 
 To run the independent main-and-components comparison, use its explicit configuration:
 
@@ -204,7 +209,7 @@ lake build CompleteMainAndComponentsChallenge CompleteMainAndComponentsSolution
 lake comparator --config Palomar_lean/comparator-main-complete.json
 ```
 
-The selected statements and scope are documented in [`challenges/main-and-components-complete`](challenges/main-and-components-complete/README.md). The legacy default `Palomar_lean/comparator.json` selects an earlier, narrower specification; use a named configuration for the intended scope.
+The selected statements and scope are documented in [`Palomar_lean/challenges/main-and-components-complete`](Palomar_lean/challenges/main-and-components-complete/README.md). The legacy default `Palomar_lean/comparator.json` selects an earlier, narrower specification; use a named configuration for the intended scope.
 
 ## Repository guide
 
@@ -213,14 +218,17 @@ The selected statements and scope are documented in [`challenges/main-and-compon
 | [Research manuscript (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20Exact%20Tate%20normalization%20and%20common%20finite%20covers.pdf) | Accompanying research manuscript |
 | [`paper/OriginalTask.tex`](paper/OriginalTask.tex) | Original mathematical specification |
 | [`local-reproduction/`](local-reproduction/REPRODUCE.md) | Complete original Lean 4.33.1 sources, pinned dependencies, reproduction scripts and successful verification reports |
-| [`Proof/`](Proof/) | Lean 4.35.0-rc2 adaptation and required local library sources for Palomar |
-| [`Proof/GoalRoot.lean`](Proof/GoalRoot.lean) | Joint import of the complete delivered proof closure |
-| [`Palomar_lean/`](Palomar_lean/README.md) | Palomar Challenge/Solution entry points and comparator configurations, indexed by scope |
-| [`docs/SourceObligations.json`](docs/SourceObligations.json) | Exact statements and source correspondence of all 103 endpoints |
-| [`docs/RequirementCoverage.json`](docs/RequirementCoverage.json) | Mapping of the original source requirements |
-| [`challenges/`](challenges/) | Scoped independent verification interfaces and metadata |
-| [`docs/audit/`](docs/audit/) | Build receipts, statement-preservation checks, and proof audits |
-| [`docs/ThirdParty/`](docs/ThirdParty/README.md) | Library provenance, licenses, and attribution |
+| [`Palomar_lean/`](Palomar_lean/README.md) | Palomar development and verification hub, including all Challenge/Solution entry points and comparator configurations |
+| [`Palomar_lean/Proof/`](Palomar_lean/Proof/) | Shared Lean 4.35.0-rc2 proofs and required local library sources; [`GoalRoot.lean`](Palomar_lean/Proof/GoalRoot.lean) imports the complete proof closure |
+| [`Palomar_lean/challenges/`](Palomar_lean/challenges/) | Scoped independent specifications, interfaces and supporting records |
+| [`Palomar_lean/docs/`](Palomar_lean/docs/README.md) | Original obligations, coverage, build and audit evidence, library provenance and attribution |
+| [`Palomar_lean/submissions/`](Palomar_lean/submissions/) | Scoped submission metadata selected by the official preflight workflow |
+| [`interfaces/size-limited/`](interfaces/size-limited/README.md) | Standalone interfaces for the documented size limits |
+
+Build the Palomar edition from the repository root. Its `lakefile.toml`,
+`lean-toolchain` and `lake-manifest.json` configure the sources under
+`Palomar_lean/`; the independent `local-reproduction/` directory retains its
+own reproduction entry point and pinned Lean 4.33.1 environment.
 
 ## Mathematical scope
 
@@ -253,8 +261,8 @@ For the Lean formalization, cite this repository together with the exact Git com
 
 > Jue Ding, maintainer. *Arithmetic theta formalization in Lean 4 — verified original Lean 4.33.1 edition and Palomar verification adaptation.* https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar.
 
-AI contributions to mathematical construction, Lean proof development, and Palomar adaptation are disclosed in the [contribution account](docs/AIContributions.md) and the scope-specific formalization metadata. Third-party source attribution is preserved separately from the authorship of this project.
+AI contributions to mathematical construction, Lean proof development, and Palomar adaptation are disclosed in the [contribution account](Palomar_lean/docs/AIContributions.md) and the scope-specific formalization metadata. Third-party source attribution is preserved separately from the authorship of this project.
 
 ## License
 
-The original Lean code is licensed under the [Apache License 2.0](LICENSE). Mathlib and the included local library sources retain their respective licenses, copyright notices, and attribution; see [`docs/ThirdParty`](docs/ThirdParty/README.md).
+The original Lean code is licensed under the [Apache License 2.0](LICENSE). Mathlib and the included local library sources retain their respective licenses, copyright notices, and attribution; see [`Palomar_lean/docs/ThirdParty`](Palomar_lean/docs/ThirdParty/README.md).

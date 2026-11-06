@@ -1,0 +1,62 @@
+version: v0.4
+project:
+  name: Complete arbitrary even-theta rigidification
+  description: 'Full original094 at arbitrary universe u over every commutative rational
+    algebra and original elliptic Weierstrass curve with full level-four marking:
+    actual kernel ideal and dual line invertibility, exact zero-scheme ideal and unique
+    canonical identity rigidification. No reducedness, Noetherianity or normality
+    assumption.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series
+    - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: self-assessed
+  notes: >-
+    Local checks retain all 24 configured obligations and original endpoints
+    accepted-094. Current Solution build, complete target-closure structural and standard
+    axiom checks, original type/universe/recovery checks and clean rendering pass.
+    Compiler-only differences and exact versus definitionally equal types are
+    documented in Palomar_lean/docs/audit/historical-render-repairs-2370/arbitrary-rigidification/Review.md. This is not a distinct agent's semantic review.
+    Fresh official verification and semantic review remain pending for this revision.
+status:
+  scope: 'Full original094 at arbitrary universe u over every commutative rational
+    algebra and original elliptic Weierstrass curve with full level-four marking:
+    actual kernel ideal and dual line invertibility, exact zero-scheme ideal and unique
+    canonical identity rigidification. No reducedness, Noetherianity or normality
+    assumption.'
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.16 support/main targets, all semantic types/available bodies
+    and standard axioms checked. No new main assumption. Official verification pending.

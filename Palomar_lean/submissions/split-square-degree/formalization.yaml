@@ -1,0 +1,69 @@
+version: v0.4
+project:
+  name: Complete split-field square-cover degree
+  description: 'Full original074: over any characteristic-zero field containing the
+    specified primitive Lth root, the actual square root of the component Hodge line
+    satisfies the complete degree formula on every original finite flat cover. It
+    establishes the geometric chart and invertibility conditions and normal frame
+    existence, then quantifies over ALL actual normal frames, nonzero sections and
+    their actual Scheme.ord divisors. The exact residue-field weighted degree equation
+    and bound are retained, including exponent0 and the actual generic finrank. No
+    algebraic-closure assumption, divisor provider or surrogate degree is introduced.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: self-assessed
+  notes: >-
+    Local checks retain all 33 configured obligations and original endpoints
+    accepted-074. Current Solution build, complete target-closure structural and standard
+    axiom checks, original type/universe/recovery checks and clean rendering pass.
+    Compiler-only differences and exact versus definitionally equal types are
+    documented in Palomar_lean/docs/audit/historical-render-repairs-2370/split-square-degree/Review.md. This is not a distinct agent's semantic review.
+    Fresh official verification and semantic review remain pending for this revision.
+status:
+  scope: 'Full original074: over any characteristic-zero field containing the specified
+    primitive Lth root, the actual square root of the component Hodge line satisfies
+    the complete degree formula on every original finite flat cover. It establishes
+    the geometric chart and invertibility conditions and normal frame existence, then
+    quantifies over ALL actual normal frames, nonzero sections and their actual Scheme.ord
+    divisors. The exact residue-field weighted degree equation and bound are retained,
+    including exponent0 and the actual generic finrank. No algebraic-closure assumption,
+    divisor provider or surrogate degree is introduced.'
+fidelity:
+  divergences: Original mathematical data, quantifiers and main conclusion retained;
+    original endpoint recovered by compiled equality. Explicit auxiliary proposition
+    targets and cache isolation stabilize exact exported declarations. Lexical notation
+    shortens repeated syntax without new mathematical definitions. No definition holes
+    or new main assumptions. Local strict comparison and five audits pass; official
+    acceptance pending.

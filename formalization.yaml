@@ -35,7 +35,7 @@ automation:
     paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
     Agent and Codex were used in the proof-development workflow; Codex also assisted
     the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
-    author and responsible maintainer is Jue Ding. See docs/AIContributions.md for
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
     the contribution account and its source provenance.
 review:
   status: agent-reviewed
@@ -45,12 +45,12 @@ review:
     103 original endpoint type and standard-axiom checks. These local results
     are distinct from official preflight, whole-paper semantic review and
     registry acceptance, which remain incomplete. Scope-specific official
-    outcomes are recorded in docs/PalomarPreflight.md.
+    outcomes are recorded in Palomar_lean/docs/PalomarPreflight.md.
 status:
   scope: >-
     All thirteen original source requirements and all 103 frozen integration
     obligations are retained. Local independent interface coverage and the
-    remaining scope are recorded in docs/Coverage.md; interface coverage is
+    remaining scope are recorded in Palomar_lean/docs/Coverage.md; interface coverage is
     not a count of official passes.
 fidelity:
   divergences: >-

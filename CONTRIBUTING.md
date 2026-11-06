@@ -1,6 +1,6 @@
 # Maintenance policy
 
-`main` is the sole maintained branch. Integrate work into main and run new Palomar preflights from main. Former development branches are retired; their exact tips are preserved under `archive/20261028/` tags and in main history. See [the consolidation record](docs/maintenance/main-consolidation-20261028.md).
+`main` is the sole maintained branch. Integrate work into main and run new Palomar preflights from main. Former development branches are retired; their exact tips are preserved under `archive/20261028/` tags and in main history. See [the consolidation record](Palomar_lean/docs/maintenance/main-consolidation-20261028.md).
 
 Keep `local-reproduction/` and its related dependency inputs, release tag, release assets and reproduction documentation unchanged during Palomar development. This is the independent Lean 4.33.1 reproduction target. The top-level Palomar edition uses Lean 4.35.0-rc2 and has its own Lake configuration.
 

@@ -1,0 +1,71 @@
+version: v0.4
+project:
+  name: Complete component Hodge power degree
+  description: Full original031 over every original algebraically closed characteristic-zero
+    field and even L >= 3. For every actual component, canonical compact Hodge extension,
+    natural n (including zero), actual normal frame cover and nonzero global section
+    with its actual section divisor, the residue-weighted degree satisfies exactly
+    24*degree=n*2*L*#cusps and the upper bound n*#SL2. Canonical retains every actual
+    disk test, the specific Tate cubic, normalized differential and actual canonical
+    pointed differential pullback, with a unique extending generator. No arbitrary
+    line, scalar comparison, degree or expansion function replaces these objects.
+    The complete types and available bodies of these constructions are retained.
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series
+    - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: self-assessed
+  notes: >-
+    All 32 configured obligations and complete original accepted-031 are retained.
+    Local current-source build, full structural and standard-axiom closure, original
+    type/universe/recovery checks and error-free rendering pass. Exact versus
+    definitional equality and compiler-syntax differences are disclosed in
+    Palomar_lean/docs/audit/remaining-five-render-repairs-2398/component-hodge-degree/Review.md. This is not an independent semantic review.
+    Fresh official verification and ordinary semantic review remain pending.
+status:
+  scope: Full original031 over every original algebraically closed characteristic-zero
+    field and even L >= 3. For every actual component, canonical compact Hodge extension,
+    natural n (including zero), actual normal frame cover and nonzero global section
+    with its actual section divisor, the residue-weighted degree satisfies exactly
+    24*degree=n*2*L*#cusps and the upper bound n*#SL2. Canonical retains every actual
+    disk test, the specific Tate cubic, normalized differential and actual canonical
+    pointed differential pullback, with a unique extending generator. No arbitrary
+    line, scalar comparison, degree or expansion function replaces these objects.
+    The complete types and available bodies of these constructions are retained.
+fidelity:
+  divergences: Full original endpoint type and universe recovered by compiled theorem
+    equality. Actual mathematical definitions retained with explicit original-construction
+    equality bridges.All explicit support/main targets, all semantic types/available
+    bodies and standard axioms checked. No new main assumption. Official verification
+    pending.

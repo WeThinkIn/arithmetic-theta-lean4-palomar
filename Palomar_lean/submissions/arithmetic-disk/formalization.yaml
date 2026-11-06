@@ -1,0 +1,58 @@
+version: v0.4
+project:
+  name: Transport of the Tate disk under field extension
+  description: This entry verifies transport of the tate disk under field extension,
+    including the explicitly selected supporting declarations. The complete cyclotomic
+    modularity, extended modularity and conservative image-consumer endpoints are
+    recovered separately by FactorBridge, SquareFactorBridge and ConsumerFactorBridge.
+    This configuration alone does not select all three original endpoints or all103
+    endpoints.
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series
+    - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: agent-reviewed
+  notes: The source component has local exact statement/data audits, strict comparison
+    and linked kernel evidence. Fresh candidate compilation and official verification
+    remain separate checks.
+status:
+  scope: This entry verifies transport of the tate disk under field extension, including
+    the explicitly selected supporting declarations. The complete cyclotomic modularity,
+    extended modularity and conservative image-consumer endpoints are recovered separately
+    by FactorBridge, SquareFactorBridge and ConsumerFactorBridge. This configuration
+    alone does not select all three original endpoints or all103 endpoints.
+fidelity:
+  divergences: Selected statements and data are copied byte-identically from the audited
+    component. Full original endpoints are reconstructed separately, preserving the
+    same geometric witnesses and all field extensions.

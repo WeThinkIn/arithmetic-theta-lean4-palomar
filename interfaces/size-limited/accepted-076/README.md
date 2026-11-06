@@ -2,7 +2,7 @@
 
 Original endpoint: `ArithmeticThetaExtendedMetaplecticR0241.cyclotomic_extended_modularity`.
 
-This is a source snapshot of the complete independent verification interface. The original endpoint remains part of the complete formal proof under `Proof/`. Its precise statement is recorded in [`docs/SourceObligations.json`](../../../docs/SourceObligations.json).
+This is a source snapshot of the complete independent verification interface. The original endpoint remains part of the complete formal proof under `Palomar_lean/Proof/`. Its precise statement is recorded in [`Palomar_lean/docs/SourceObligations.json`](../../../Palomar_lean/docs/SourceObligations.json).
 
 The Challenge contains **160,220 bytes and 600 lines**, with **45 theorem obligations** and **5 definition obligations**. It exceeds Palomar's current 102,400-byte Challenge cap by **57,820 bytes**. It is published for inspection and local reproduction, and is not configured as an eligible official submission.
 

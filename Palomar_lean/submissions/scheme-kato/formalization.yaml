@@ -1,0 +1,71 @@
+version: v0.4
+project:
+  name: Scheme Kato unit naturality and intrinsic norm characterization
+  description: 'Complete original accepted083 and086: Kato unit naturality for every
+    actual pointed Cartesian base change, and intrinsic characterization by the actual
+    Cartier divisor and multiplication2and3 norm invariance. Preserves arbitrary schemes,
+    nonreduced coefficient rings, nonflat maps, actual torsion complements, all normal-model/affine
+    tests, full determinant-normalized multiplicative norm families on all opens,
+    and restriction compatibility. Includes actual geometry, normal-model existence
+    and scheme-unit existence support targets. See Palomar_lean/challenges/scheme-kato/Scope.json.
+    No full-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: self-assessed
+  notes: >-
+    Recorded local machine checks cover all 13 configured targets and their
+    complete current-source exported closure with standard permitted axioms.
+    All original mathematical declarations are preserved; compiler/syntax changes
+    are documented in Palomar_lean/docs/audit/scheme-kato-render-repair-2311/Review.md.
+    All target anchors render without errors. Original endpoints 083, 086 pass exact
+    type and ordered-universe checks and compiled recovery equalities.
+    This is not a distinct agent's semantic review. Historical official results
+    remain source-bound; official acceptance of this repair and whole-paper
+    semantic acceptance have not been established.
+status:
+  scope: 'Complete original accepted083 and086: Kato unit naturality for every actual
+    pointed Cartesian base change, and intrinsic characterization by the actual Cartier
+    divisor and multiplication2and3 norm invariance. Preserves arbitrary schemes,
+    nonreduced coefficient rings, nonflat maps, actual torsion complements, all normal-model/affine
+    tests, full determinant-normalized multiplicative norm families on all opens,
+    and restriction compatibility. Includes actual geometry, normal-model existence
+    and scheme-unit existence support targets. See Palomar_lean/challenges/scheme-kato/Scope.json.
+    No full-paper completion claimed.'
+fidelity:
+  divergences: Complete original083/086 conclusions recovered through exact predicate
+    equivalences and reverse original-type checks. The other101 original endpoints
+    are outside this configuration. Norm families are constructed existentially, with
+    the scalar structure induced by the actual scheme map; no arbitrary norm operator,
+    geometric-point-only test, flatness, domain or reducedness premise is added.

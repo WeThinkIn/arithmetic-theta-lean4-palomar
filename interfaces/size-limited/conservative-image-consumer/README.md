@@ -2,7 +2,7 @@
 
 Original endpoint: `ArithmeticThetaFullSourceR0268.conservative_image_consumer`.
 
-This is a source snapshot of the complete independent verification interface. The original endpoint remains part of the complete formal proof under `Proof/`. Its precise statement is recorded in [`docs/SourceObligations.json`](../../../docs/SourceObligations.json).
+This is a source snapshot of the complete independent verification interface. The original endpoint remains part of the complete formal proof under `Palomar_lean/Proof/`. Its precise statement is recorded in [`Palomar_lean/docs/SourceObligations.json`](../../../Palomar_lean/docs/SourceObligations.json).
 
 The Challenge contains **147,894 bytes and 581 lines**, with **45 theorem obligations** and **5 definition obligations**. It exceeds Palomar's current 102,400-byte Challenge cap by **45,494 bytes**. It is published for inspection and local reproduction, and is not configured as an eligible official submission.
 

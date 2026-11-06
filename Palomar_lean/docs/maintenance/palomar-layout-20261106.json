@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "date": "2026-11-06",
+  "baseline_commit": "5a5637a4bef96eaa4ef94842158e23c5a47bad96",
+  "directory_moves": {
+    "Proof": "Palomar_lean/Proof",
+    "challenges": "Palomar_lean/challenges",
+    "docs": "Palomar_lean/docs",
+    "submissions": "Palomar_lean/submissions"
+  },
+  "moved_files": {
+    "Proof": 3950,
+    "challenges": 575,
+    "docs": 3066,
+    "submissions": 77
+  },
+  "moved_total": 7668,
+  "lean_sources_interfaces_and_probes_byte_identical": 4662,
+  "comparator_configurations_byte_identical": 77,
+  "historical_non_markdown_audit_files_byte_identical": 2901,
+  "receipt_bound_historical_documents_unchanged": true,
+  "local_reproduction_tree_unchanged": true,
+  "local_reproduction_tree": "ba9679ca79feb20e6165bc6f94094c346c4e4d70",
+  "lean_toolchain_and_dependency_manifest_unchanged": true,
+  "relative_documentation_links_validated": 718,
+  "workflow_choices_validated": 77,
+  "workflow_metadata_paths_validated": 76,
+  "size_limited_manifest_document_hashes_updated": 5,
+  "size_limited_manifest_other_bindings_unchanged": true,
+  "lake_source_resolution_passed": true,
+  "source_resolution_log_sha256": "1735b07d2b19c60fdb2a98b137c8238630ecbe77b6b111d1949188833a7cc69d",
+  "modified_configuration_sha256": {
+    "lakefile.toml": "2dfc89879be440889e2de7d21eb40af02f108d814dc35adf2f68c4fbec5501a4",
+    ".github/workflows/palomar-preflight.yml": "1e1658cd2d85851afdd5245c3e78f63a6a1bd9829c03c38856f4ff62be20e151",
+    "formalization.yaml": "b32bd76b1a28189ef5234e6bcf95783820d51b7b3519eb911fa05c88224170a2",
+    "interfaces/size-limited/manifest.json": "d9f34ca92ef009d334a0a65039342d97e3e1c804a2d189489cea41eb30540de2"
+  },
+  "scope": "Directory relocation, byte preservation, documentation links and workflow path resolution. Historical verification outcomes retain their recorded revisions.",
+  "proof_tree": "c53f47591ce80a3e6ad8704cd43628a09438dfe5",
+  "proof_tree_identical_to_baseline": true,
+  "source_resolution_results": [
+    {
+      "module": "GoalRoot",
+      "path": "Palomar_lean/Proof/GoalRoot.lean"
+    },
+    {
+      "module": "CompleteMainAndComponentsChallenge",
+      "path": "Palomar_lean/CompleteMainAndComponentsChallenge.lean"
+    },
+    {
+      "module": "CompleteMainAndComponentsSolution",
+      "path": "Palomar_lean/CompleteMainAndComponentsSolution.lean"
+    }
+  ],
+  "compilation": {
+    "status": "stopped_at_user_request",
+    "completed_build_claimed": false,
+    "endpoint_check_started": false,
+    "reason": "User requested migration only, without recompilation."
+  }
+}

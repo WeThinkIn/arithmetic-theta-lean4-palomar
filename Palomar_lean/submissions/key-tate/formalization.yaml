@@ -1,0 +1,65 @@
+version: v0.4
+project:
+  name: Complete phase-free key Tate normalization
+  description: 'Full original055 for every characteristic-zero field k : Type and
+    positive N divisible by four: actual full Tate marking and level-four reduction,
+    every actual Tate test, same supplied key/evaluation square, both tensor pullbacks,
+    canonical conormal-to-Hodge comparison, actual multiplier sheaf/frame and full
+    Laurent normalization. Retains order zero-or-N/4 and exact canonical theta-square
+    coefficient.34 support/main targets; no whole-paper completion claimed.'
+  license: Apache-2.0
+  authors:
+  - Jue Ding
+  responsible_maintainers:
+  - Jue Ding
+classification:
+  arxiv:
+  - math.NT
+  - math.AG
+sources:
+- title: Arithmetic determination of relations among lattice theta series
+  type: paper
+  location: paper/Arithmetic determination of relations among lattice theta series
+    - Exact Tate normalization and common finite covers.pdf
+  relationship: formalizes
+- title: Original arithmetic theta kernel task
+  type: paper
+  location: paper/OriginalTask.tex
+  relationship: formalizes
+automation:
+  methods:
+    - method: agent
+      framework: WujieAI Lean4 Agent and Codex
+      tool_setup: >-
+        AI-assisted mathematical construction and proof development for the original
+        arithmetic theta task; Lean proof implementation, debugging and integration;
+        and independent Palomar adaptation, interface preparation and verification tooling.
+  notes: >-
+    Codex contributed to the mathematical construction, as explicitly credited in
+    paper/OriginalTask.tex, as well as to the Lean formalization. The WujieAI Lean4
+    Agent and Codex were used in the proof-development workflow; Codex also assisted
+    the Lean 4.35.0-rc2 port and Palomar verification preparation. Human project
+    author and responsible maintainer is Jue Ding. See Palomar_lean/docs/AIContributions.md for
+    the contribution account and its source provenance.
+review:
+  status: self-assessed
+  notes: >-
+    Local checks retain all 42 configured obligations and original endpoints
+    accepted-055. Current Solution build, complete target-closure structural and standard
+    axiom checks, original type/universe/recovery checks and clean rendering pass.
+    Compiler-only differences and exact versus definitionally equal types are
+    documented in Palomar_lean/docs/audit/historical-render-repairs-2370/key-tate/Review.md. This is not a distinct agent's semantic review.
+    Fresh official verification and semantic review remain pending for this revision.
+status:
+  scope: 'Full original055 for every characteristic-zero field k : Type and positive
+    N divisible by four: actual full Tate marking and level-four reduction, every
+    actual Tate test, same supplied key/evaluation square, both tensor pullbacks,
+    canonical conormal-to-Hodge comparison, actual multiplier sheaf/frame and full
+    Laurent normalization. Retains order zero-or-N/4 and exact canonical theta-square
+    coefficient.34 support/main targets; no whole-paper completion claimed.'
+fidelity:
+  divergences: Full original055 type recovered by compiled rfl theorem equality. Original
+    TateTest retained; canonical inclusion-compatible ideal, conormal-to-Hodge and
+    both tensor comparisons proved equal to original constructions. No new main assumption
+    or Laurent truncation.34 target types/universes and all retained semantic definitions
+    checked. Challenge982lines/86950bytes.
