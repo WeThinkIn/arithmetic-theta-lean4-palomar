@@ -1,5 +1,42 @@
 # Local Lean 4.33.1 verification
 
+The subsequent **statement-readability pass of 6 November 2026** changes seven
+supporting modules. It separates dependent witnesses, hypotheses and conclusions,
+uses scoped short names and standard notation, and introduces two private,
+transparent abbreviations for Čech chart sections and overlap compatibility.
+All seven mathematical lines previously exceeding 500 characters have been
+reorganized into shorter statements; the remaining 20 such lines are unchanged
+namespace helper commands.
+
+This pass verified the complete **1,199-module** development with the Wujie
+dependency-cone builder: **699 modules recompiled** and
+**500 modules reused after source, dependency, compiler and
+object checks**. `GoalRoot` was rebuilt. All **103 frozen exact-type and
+transitive-axiom probes passed**. Comparison with the immediately preceding
+source revision, `75c1e12918084e8c34a387deb29ef11125e160cd`, preserved
+**23,783 previous non-internal named declaration types** and
+**6,773 definition bodies**, including declaration kinds and
+universe parameters. These counts include transparent abbreviations added by
+the earlier readability pass. The comparison excludes generated internal names,
+theorem proof terms and opaque bodies.
+
+| Current evidence | What it verifies |
+| --- | --- |
+| [Statement preservation report](StatementReadabilityPreservationReport.json) | Current input-manifest hash, scope, metrics, builder identity, and hashes of the following reports |
+| [Complete build report](StatementReadabilityBuildReport.json) | All module source/object bindings, compiler results, and the distinction between fresh and reused objects |
+| [Frozen endpoint report](StatementReadabilityEndpointReport.json) | All 103 original exact-type checks and their permitted axiom closures |
+| [Declaration comparison](StatementReadabilityDeclarationReport.json) | The previous complete environment compared with the current complete environment using the same pinned dependencies |
+| [External environment comparison](StatementReadabilityEnvironmentReport.json) | All 11,403 resolved external objects match the reproduction bundle's fixed hashes |
+| [Completion audit](StatementReadabilityCompletionAudit.json) | Current source/report bindings, unchanged protected inputs and historical reports, documentation links, and the seven-module scope |
+
+The original contract, probes, import graph, dependency pins and reproduction
+scripts are unchanged. [The source change record](../metadata/statement-readability-source-changes.json)
+lists the seven modules and their before/after hashes. Reproduction from source
+still uses [REPRODUCE.md](../REPRODUCE.md). The reports below retain the earlier
+revisions and are historical evidence, not new compilation claims for this pass.
+
+## Earlier readability build and directory rename
+
 The **6 November 2026 readability edition** passed a complete build of all
 **1,199 proof modules**, including `GoalRoot`, and all **103 original exact-type
 and transitive-axiom checks**. Comparison against the original compiled sources
@@ -59,7 +96,8 @@ successful build.
 original-source verification**: a fresh 1,199-module rebuild and 103 checks,
 together with dependency packaging evidence. They keep their original input
 hashes. The reports in `publication/` likewise describe their recorded original
-delivery. Use the `Readability*` reports above for the current source edition.
+delivery. Use the `Readability*` reports above for the first readability revision.
+Use the `StatementReadability*` reports for the current source edition.
 
 All verification reports are generated outputs, outside the input
 `SHA256SUMS`. The preservation and endpoint reports bind the manifest recorded

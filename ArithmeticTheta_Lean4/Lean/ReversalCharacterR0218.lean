@@ -11,9 +11,17 @@ open ArithmeticThetaFourTorsion
 private theorem reversal_square : reversal * reversal = (1 : Mat4) := by
   decide
 
-/-- First-half reversal preserves the even stabilizer and inverts its character. -/
+/-- The five properties of first-half reversal used by the phase comparison.
+
+Reversal is an involution with determinant `-1`. Its conjugation preserves the
+even stabilizer, negates the character exponent, and respects multiplication. -/
 theorem reversal_character :
-    ArithmeticThetaPhaseSwitchR0218.reversal * ArithmeticThetaPhaseSwitchR0218.reversal = (1 : ArithmeticThetaFourTorsion.Mat4) ∧ ArithmeticThetaPhaseSwitchR0218.reversal.det = -1 ∧ (∀ A : ArithmeticThetaFourTorsion.Mat4, ArithmeticThetaFourTorsion.PreservesEven (ArithmeticThetaPhaseSwitchR0218.conjugate A) ↔ ArithmeticThetaFourTorsion.PreservesEven A) ∧ (∀ A : ArithmeticThetaFourTorsion.Mat4, ArithmeticThetaFourTorsion.PreservesEven A → ArithmeticThetaFourTorsion.characterExponent (ArithmeticThetaPhaseSwitchR0218.conjugate A) = -ArithmeticThetaFourTorsion.characterExponent A) ∧ (∀ A B : ArithmeticThetaFourTorsion.Mat4, ArithmeticThetaPhaseSwitchR0218.conjugate (A * B) = ArithmeticThetaPhaseSwitchR0218.conjugate A * ArithmeticThetaPhaseSwitchR0218.conjugate B) := by
+    reversal * reversal = (1 : Mat4) ∧
+    reversal.det = -1 ∧
+    (∀ A : Mat4, PreservesEven (conjugate A) ↔ PreservesEven A) ∧
+    (∀ A : Mat4, PreservesEven A →
+      characterExponent (conjugate A) = -characterExponent A) ∧
+    (∀ A B : Mat4, conjugate (A * B) = conjugate A * conjugate B) := by
   refine ⟨reversal_square, ?_, ?_, ?_, ?_⟩
   · decide
   · decide

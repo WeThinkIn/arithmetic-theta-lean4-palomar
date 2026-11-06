@@ -1,0 +1,69 @@
+{
+  "edition": "statement-readability-20261106",
+  "baseline_commit": "75c1e12918084e8c34a387deb29ef11125e160cd",
+  "module_count": 1199,
+  "changed_modules": 7,
+  "private_abbreviations_added": [
+    "CechChartSections",
+    "CechChartCompatible"
+  ],
+  "changes": [
+    {
+      "file": "Lean/GammaBaseChangeNaturalityR0158.lean",
+      "before_sha256": "2ebf37b4690de1901bf16f4500a14a2e009bf96bdbbe4b03a5cc93e022808d45",
+      "after_sha256": "2dcbf3495670a0122b9eb667ce0059f9199a528246e5559159bb5437d85fe524",
+      "kind": "statement_layout_scoped_names_notation_and_documentation"
+    },
+    {
+      "file": "Lean/NaturalMetaplecticComparisonR0206.lean",
+      "before_sha256": "9a7a7ed13afe30500234a2db476090838151a56874596de91ce6170484e0818d",
+      "after_sha256": "4df8ea5a2411c5cdb2293e02b2fbdfc6eb671b39c05943199a94a092ca0e1b9a",
+      "kind": "statement_layout_scoped_names_notation_and_documentation"
+    },
+    {
+      "file": "Lean/PointedHodgeFunctorialityR0172.lean",
+      "before_sha256": "50de29928ce286c0ba07df02340edfb512fc89c11d6d5f6e5f15bbf549419a72",
+      "after_sha256": "7a42f2bd1240b6d9065314db9e855fb9566a75b67e01cd45592a7151200eaf67",
+      "kind": "statement_layout_scoped_names_notation_and_documentation"
+    },
+    {
+      "file": "Lean/ProperTowerAutomorphismEffectivityR0137.lean",
+      "before_sha256": "2efa45db356cf06d41903b57d3e368f72a95785b88aa58f483ca9a28c7528325",
+      "after_sha256": "6b67b79cfdcfd92ea08ceeeaec4859000d7d97048d5677f8200383e5308299f4",
+      "kind": "private_transparent_abbreviations_and_statement_layout"
+    },
+    {
+      "file": "Lean/QuotientTargetFullLevelR0175.lean",
+      "before_sha256": "135391d218b1b751e6295cf80846df5fce1370a1be2a4c12539ea97be2e9e1e5",
+      "after_sha256": "34d8627aedb5ac9be6a3b0af2cfc773262592cefc5af3abe6bc6087632416ead",
+      "kind": "statement_layout_scoped_names_notation_and_documentation"
+    },
+    {
+      "file": "Lean/ReversalCharacterR0218.lean",
+      "before_sha256": "7de82fa2cf700fefc399bb72a004ac083748cf70e18e9dbc2657b4bd78f8dc5b",
+      "after_sha256": "60ec616bdc5ece2671512293465a6d5689ae3fbae63d6acb1951ab5c504f28f1",
+      "kind": "statement_layout_scoped_names_notation_and_documentation"
+    },
+    {
+      "file": "Lean/UnaryKatoPowerDefinitionsR0160.lean",
+      "before_sha256": "230343ee00c01089704530ce3621731a931c01f07d646d59c4d5246da0b9d562",
+      "after_sha256": "c395a0edf82047657f0cd3ccb0c4b626acf86a526575593b6dd166f6e0dc6ece",
+      "kind": "statement_layout_scoped_names_notation_and_documentation"
+    }
+  ],
+  "line_metrics": {
+    "before": {
+      "over_500": 27,
+      "over_1000": 6,
+      "non_p2m_over_500": 7
+    },
+    "after": {
+      "over_500": 20,
+      "over_1000": 3,
+      "non_p2m_over_500": 0
+    }
+  },
+  "original_contract_and_103_probes_unchanged": true,
+  "auxiliary_namespace_commands_unchanged": true,
+  "validation": "See verification/StatementReadabilityPreservationReport.json for compiler and declaration-comparison evidence."
+}

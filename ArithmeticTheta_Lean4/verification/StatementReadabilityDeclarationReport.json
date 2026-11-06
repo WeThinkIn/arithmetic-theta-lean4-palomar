@@ -1,0 +1,9 @@
+{
+  "types_requiring_reduction": 2,
+  "proof_modules": 1199,
+  "passed": true,
+  "named_declarations": 23783,
+  "definition_bodies": 6773,
+  "candidate_objects": "/home/wujie-ai-lean4-proof-agent-program/workspace/lean4-runs/arithmetic-theta-statement-readability-20261106-root-01",
+  "baseline_objects": "/home/wujie-ai-lean4-proof-agent-program/workspace/lean4-runs/arithmetic-theta-readability-20261106-root-01"
+}

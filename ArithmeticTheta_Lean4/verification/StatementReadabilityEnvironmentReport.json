@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "checked_external_modules": 11403,
+  "failure_count": 0,
+  "failures": [],
+  "seconds": 4.26,
+  "method": "Hash the first resolved external object on the builder LEAN_PATH and compare with the reproduction input SHA256SUMS."
+}

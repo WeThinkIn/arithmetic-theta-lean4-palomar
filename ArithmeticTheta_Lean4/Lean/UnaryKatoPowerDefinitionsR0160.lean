@@ -48,10 +48,35 @@ def PowerValues (k : Type) [Field k] [CharZero k]
         (unary k d m ν ^ ((1+12*N)^2-1) /
           discriminant k r ^ (((1+12*N)^2-1)/48))
 
-/-- All actual geometric providers and the power-value conclusion are constructed. -/
+section
+open ArithmeticThetaInfinitesimalPolygonR0129 (Tower)
+open ArithmeticThetaProjectiveEffectivityR0135 (Model IsModel)
+open ArithmeticThetaAlgebraizedMarkedLineR0136 (baseScheme MarkedLift)
+open ArithmeticThetaIdentitySectionsR0138 (zeroIndex)
+open ArithmeticThetaMarkedGroupLawR0146 (Law IsOriginLaw)
+open ArithmeticThetaGenericEvaluationR0140 (genericScheme)
+open ArithmeticThetaKatoExistenceR0151 (IsKatoFunction)
+
+/-- Geometric realization of the unary power-value identity.
+
+The witnesses first give a positive even period, its tower and algebraized model,
+then a marked origin and group law. Integrality and local Noetherianity of the
+generic scheme are witnessed as well and installed for the final assertion.
+That assertion fixes `r = 24 * d * m^2` and gives a unique Kato function with
+the exact marked-point values specified by `PowerValues`. -/
 def GeometricRealization (k : Type) [Field k] [CharZero k] (d m N : ℕ) : Prop :=
-  ∃ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) (hI : AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (hNoeth : AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)), letI : AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M) := hI
-  letI : AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M) := hNoeth
-  r = 24*d*m^2 ∧ ∃! g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)), ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G (1+12*N) g ∧ ArithmeticThetaUnaryKatoPowerR0160.PowerValues k M d m N g
+  ∃ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r)
+    (T : Tower k r hr) (M : Model k T) (hM : IsModel k T M)
+    (s : baseScheme k ⟶ M.X) (hs : MarkedLift k M (zeroIndex r hr) 1 s)
+    (G : Law k M) (hG : IsOriginLaw k M s hs.1 G)
+    (hI : IsIntegral (genericScheme k M))
+    (hNoeth : IsLocallyNoetherian (genericScheme k M)),
+    letI : IsIntegral (genericScheme k M) := hI
+    letI : IsLocallyNoetherian (genericScheme k M) := hNoeth
+    r = 24 * d * m^2 ∧
+      ∃! g : (genericScheme k M).functionField,
+        IsKatoFunction k M s hs.1 G (1 + 12 * N) g ∧ PowerValues k M d m N g
+
+end
 
 end ArithmeticThetaUnaryKatoPowerR0160

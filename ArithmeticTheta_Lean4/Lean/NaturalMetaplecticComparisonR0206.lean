@@ -231,10 +231,37 @@ lemma normalized_exists_unique (hL : 3 ≤ L) (heven : Even L)
   exact line_faithful H GT _ _ ((he' r).trans (hf r).symm)
 
 end NaturalComparisonProof
-/-- The unique line-normalized comparison for arbitrary choices, followed by
-one fixed quotient and a simultaneous system over every small test scheme. -/
+
+section
+open ArithmeticThetaLegendreAtlasR0176 ArithmeticThetaCompatibleLevelR0178
+
+/-- Naturality of the metaplectic comparison, in two parts.
+
+For any fixed quotient and Hodge-universal family, arbitrary fiber comparisons
+admit a unique comparison isomorphism compatible with the underlying line maps.
+The second part constructs one quotient together with a comparison system over
+all small test schemes. The quotient is chosen before that system. -/
 theorem natural_metaplectic_comparison :
-    (∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L) (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L) (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A) (C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B) (Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C), ArithmeticThetaSchemeHodgeR0205.HodgeUniversal k L A B C Q → ∀ (S T : CategoryTheory.Over (ArithmeticThetaLocalWeierstrassR0203.Base k)) (GS : ArithmeticThetaMetaplecticComparisonR0206.GroupoidData L S.left) (GT : ArithmeticThetaMetaplecticComparisonR0206.GroupoidData L T.left) (ES : ArithmeticThetaMetaplecticComparisonR0206.FiberComparison k L A B C Q S GS) (ET : ArithmeticThetaMetaplecticComparisonR0206.FiberComparison k L A B C Q T GT) (a : Quiver.Hom T S) (P : ArithmeticThetaMetaplecticComparisonR0206.PullbackData GS GT (CategoryTheory.Over.Hom.left a)), ∃! e : CategoryTheory.Iso (CategoryTheory.Functor.comp (ArithmeticThetaMetaplecticComparisonR0206.rootReindex k L A B C Q a) ET.equiv.functor) (CategoryTheory.Functor.comp ES.equiv.functor P.functor), ArithmeticThetaMetaplecticComparisonR0206.BaseChangeCompatible k L A B C Q ES ET a P e) ∧ (∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L) (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L), ∃ (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A) (hB : ArithmeticThetaCompatibleLevelR0178.CanonicalTwo k L A B) (C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B) (Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C), ArithmeticThetaSchemeHodgeR0205.HodgeUniversal k L A B C Q ∧ ArithmeticThetaMetaplecticComparisonR0206.ComparisonSystem k L A B C Q) := by
+    -- Uniqueness for arbitrary choices of the two fiber comparisons.
+    (∀ (k : Type) [Field k] [CharZero k]
+        (L : ℕ) (hL : 3 ≤ L) (heven : Even L)
+        (A : LegendreAtlas k L) (B : TwoMarking k L A)
+        (C : CompatibleCover k L A B) (Q : CompatibleQuotient k L A B C),
+      HodgeUniversal k L A B C Q →
+        ∀ (S T : Over (Base k))
+          (GS : GroupoidData L S.left) (GT : GroupoidData L T.left)
+          (ES : FiberComparison k L A B C Q S GS)
+          (ET : FiberComparison k L A B C Q T GT)
+          (a : T ⟶ S) (P : PullbackData GS GT a.left),
+          ∃! e : rootReindex k L A B C Q a ⋙ ET.equiv.functor ≅
+              ES.equiv.functor ⋙ P.functor,
+            BaseChangeCompatible k L A B C Q ES ET a P e) ∧
+    -- Existence of one quotient carrying a simultaneous comparison system.
+    (∀ (k : Type) [Field k] [CharZero k]
+        (L : ℕ) (hL : 3 ≤ L) (heven : Even L) (A : LegendreAtlas k L),
+      ∃ (B : TwoMarking k L A) (hB : CanonicalTwo k L A B)
+        (C : CompatibleCover k L A B) (Q : CompatibleQuotient k L A B C),
+        HodgeUniversal k L A B C Q ∧ ComparisonSystem k L A B C Q) := by
   constructor
   · intro k _ _ L hL heven A B C Q H S T GS GT ES ET a P
     exact NaturalComparisonProof.normalized_exists_unique ES ET a P hL heven H
@@ -248,6 +275,8 @@ theorem natural_metaplectic_comparison :
     intro S T a
     obtain ⟨P⟩ := actual_metaplectic_pullback L S.left T.left (G S) (G T) a.left
     exact ⟨P, NaturalComparisonProof.normalized_exists_unique (E S) (E T) a P hL heven H⟩
+
+end
 
 #print axioms natural_metaplectic_comparison
 end ArithmeticThetaMetaplecticComparisonR0206

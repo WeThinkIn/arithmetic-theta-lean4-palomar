@@ -31,9 +31,11 @@ The [Palomar adaptation](../Palomar_lean/README.md) is maintained separately wit
 Lean 4.35.0-rc2 and its own independent verification interfaces. Use the
 instructions in this directory for the original Lean 4.33.1 development.
 
-This directory was previously named `local-reproduction/`. The rename changes
-navigation and documentation; the Lean sources, dependency pins, original
-contract, verification probes and reproduction scripts retain their contents.
+This directory was previously named `local-reproduction/`. That rename changed
+navigation and documentation and preserved the then-current Lean sources,
+dependency pins, original contract, verification probes and reproduction scripts.
 Historical reports retain their recorded paths and hashes. See the
 [directory-rename record](verification/DirectoryRenameReport.json) for the
-static preservation checks performed for this change.
+static preservation checks performed for that change. Subsequent source
+readability changes are documented in the [reading guide](READING_GUIDE.md)
+and [verification notes](verification/README.md).

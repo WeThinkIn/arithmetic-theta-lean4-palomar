@@ -48,13 +48,33 @@ end QuotientTargetFullLevelR0175
 
 open QuotientTargetFullLevelR0175
 
-/-- Full target marking, with the exact source-lift labels, on the same quotient. -/
+/-- A full marking on the actual cyclic quotient, with its specified labels.
+
+The constructed kernel section is `kernelPoint`. The two target generators are
+the images of `liftPoint ... 0 1` and `liftPoint ... 1 0` under the same quotient
+map. The final isomorphism enumerates the target's `N`-torsion by `Fin N × Fin N`
+and identifies each component with the corresponding marked coordinate point. -/
 theorem QuotientTargetFullLevelR0175.quotient_with_enumeration :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 0 < L) (m N : ℕ) (hm : 0 < m) (hN : 0 < N) (hdiv : m*N ∣ L) (A : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))) , ∃ (P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G m) (V : WeierstrassCurve R) (hV : V.IsElliptic) (H : ArithmeticThetaRelativeKatoR0169.Law R V) (hH : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R V H) (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V) (T : ArithmeticThetaFullLevelCoverR0175.FullLevel R V H N (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))), P.point = ArithmeticThetaFullLevelCoverR0175.kernelPoint R W G m A ∧ ArithmeticThetaRelativeCyclicQuotientR0173.IsQuotient R W G P f ∧ T.x.val = CategoryTheory.CategoryStruct.comp (ArithmeticThetaFullLevelCoverR0175.liftPoint R W G m N 0 1 A) f.map ∧ T.y.val = CategoryTheory.CategoryStruct.comp (ArithmeticThetaFullLevelCoverR0175.liftPoint R W G m N 1 0 A) f.map ∧
-  ∃ e : (torsionIdeal R V H N).subscheme ≅ Spec (CommRingCat.of ((Fin N × Fin N) → R)),
-    e.hom ≫ torsionStructure R N = (torsionIdeal R V H N).subschemeι ≫ structureMap R V ∧
-    ∀ i j : Fin N, torsionComponent R N i j ≫ (e.inv ≫ (torsionIdeal R V H N).subschemeι) =
-      coordinatePoint R V H T i j := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R]
+      [IsIntegrallyClosed R] [Algebra ℚ R]
+      (W : WeierstrassCurve R) [W.IsElliptic] (G : Law R W) (hG : IsOriginLaw R W G)
+      (L : ℕ) (hL : 0 < L) (m N : ℕ) (hm : 0 < m) (hN : 0 < N) (hdiv : m * N ∣ L)
+      (A : FullLevel R W G L (𝟙 (Base R))),
+      ∃ (P : CyclicSection R W G m)
+        (V : WeierstrassCurve R) (hV : V.IsElliptic)
+        (H : Law R V) (hH : IsOriginLaw R V H)
+        (f : PointedMap R W V) (T : FullLevel R V H N (𝟙 (Base R))),
+        P.point = kernelPoint R W G m A ∧
+        IsQuotient R W G P f ∧
+        T.x.val = liftPoint R W G m N 0 1 A ≫ f.map ∧
+        T.y.val = liftPoint R W G m N 1 0 A ≫ f.map ∧
+        ∃ e : (torsionIdeal R V H N).subscheme ≅
+            Spec (CommRingCat.of ((Fin N × Fin N) → R)),
+          e.hom ≫ torsionStructure R N =
+            (torsionIdeal R V H N).subschemeι ≫ structureMap R V ∧
+          ∀ i j : Fin N,
+            torsionComponent R N i j ≫ (e.inv ≫ (torsionIdeal R V H N).subschemeι) =
+              coordinatePoint R V H T i j := by
   intro R _ _ _ _ _ W _ G hG L hL m N hm hN hdiv A
   obtain ⟨P, hP, hlifts⟩ := full_level_cyclic_lifts R W G hG L hL m N hm hN hdiv A
   obtain ⟨V, hV, f, hf⟩ := relative_cyclic_quotient_existence R W G hG m hm P

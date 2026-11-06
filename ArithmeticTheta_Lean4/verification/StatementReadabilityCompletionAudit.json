@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "baseline_commit": "75c1e12918084e8c34a387deb29ef11125e160cd",
+  "input_manifest_sha256": "c3d5f5e501b741511c88d9c662bc8a48a3838cb745303d1f54eff5c1f7964940",
+  "preservation_report_sha256": "b37bbf3c92c0be9aa243ab882f5eadf428da135e320da034d168890a7c76af96",
+  "changed_lean_modules": 7,
+  "complete_module_inventory_and_current_source_bindings": 1199,
+  "fresh_modules": 699,
+  "reused_modules": 500,
+  "goal_root_rebuilt": true,
+  "frozen_exact_type_and_axiom_checks": 103,
+  "named_declarations_preserved": 23783,
+  "definition_bodies_preserved": 6773,
+  "protected_files_unchanged": true,
+  "historical_json_reports_unchanged": true,
+  "no_changes_to_palomar_or_build_configuration": true,
+  "manifest_updates": [
+    "Lean/GammaBaseChangeNaturalityR0158.lean",
+    "Lean/NaturalMetaplecticComparisonR0206.lean",
+    "Lean/PointedHodgeFunctorialityR0172.lean",
+    "Lean/ProperTowerAutomorphismEffectivityR0137.lean",
+    "Lean/QuotientTargetFullLevelR0175.lean",
+    "Lean/ReversalCharacterR0218.lean",
+    "Lean/UnaryKatoPowerDefinitionsR0160.lean",
+    "READING_GUIDE.md",
+    "README.md",
+    "REPRODUCE.md"
+  ],
+  "relative_documentation_links_validated": 136,
+  "line_metrics": {
+    "over_500": 20,
+    "over_1000": 3,
+    "non_p2m_over_500": 0
+  },
+  "git_diff_check": true,
+  "only_scoped_worktree_changes": true
+}

@@ -119,6 +119,30 @@ Names ending in `R0189`, `R0239`, and similar suffixes are historical module and
 namespace identifiers. They are retained so existing imports, references and
 verification probes continue to identify the same declarations.
 
+## Reading the supporting geometric statements
+
+The following statements separate their objects, hypotheses and conclusions.
+Their docstrings explain the roles of the witnesses and the order of the
+conclusions, so the proof branches can be read alongside the statement.
+
+| Construction | What to check in the statement |
+| --- | --- |
+| [Natural metaplectic comparison](Lean/NaturalMetaplecticComparisonR0206.lean) | First the unique normalized comparison for arbitrary choices; then one fixed quotient with a simultaneous comparison system |
+| [Full marking on the cyclic quotient](Lean/QuotientTargetFullLevelR0175.lean) | The kernel section, the two specified images, and the enumeration of torsion on that same quotient |
+| [Local Hodge-power formula](Lean/PointedHodgeFunctorialityR0172.lean) | The common open `B`, the two restriction conditions `h₁` and `h₂`, and the equality of the transported and pulled-back tensors |
+| [Unary Kato geometric realization](Lean/UnaryKatoPowerDefinitionsR0160.lean) | The period and model, marked origin and group law, generic-scheme properties, and the unique function with the specified values |
+| [Reversal and its character](Lean/ReversalCharacterR0218.lean) | The five conclusions in the same order as the five proof branches |
+| [Naturality of Laurent gamma limits](Lean/GammaBaseChangeNaturalityR0158.lean) | Coefficient-field extension and positive ramification as two separate conclusions |
+| [Čech effectivity](Lean/ProperTowerAutomorphismEffectivityR0137.lean) | Lifting compatible tower threads, detecting zero, and finite generation of compatible chart families |
+
+In the Čech statement, the private abbreviations `CechChartSections` and
+`CechChartCompatible` name the chartwise sections and their overlap restriction
+equalities. Their definitions immediately precede the theorem and can be
+expanded to inspect the maps and opens involved. The original witnesses,
+quantifier order and conclusions remain explicit in the other six statements.
+The source changes for this pass are recorded in
+[`metadata/statement-readability-source-changes.json`](metadata/statement-readability-source-changes.json).
+
 ## Checking preservation and reproducing the result
 
 Follow [`REPRODUCE.md`](REPRODUCE.md) for the portable Lean 4.33.1 build. The

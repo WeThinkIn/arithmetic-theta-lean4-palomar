@@ -27,11 +27,15 @@ The [103-endpoint index](ArithmeticTheta_Lean4/THEOREM_INDEX.md) links each orig
 obligation to its defining declaration. The readability edition retains the
 original names and frozen type/axiom probes; its source changes are recorded
 separately from the historical verification evidence.
-The [readability preservation report](ArithmeticTheta_Lean4/verification/ReadabilityPreservationReport.json)
+The [first readability preservation report](ArithmeticTheta_Lean4/verification/ReadabilityPreservationReport.json)
 records the fresh 1,199-module build, all 103 original endpoint checks, and the
 preservation of 23,768 original non-internal named declarations and 6,759
-definition bodies. See the [verification notes](ArithmeticTheta_Lean4/verification/README.md)
-for the comparison's scope and the distinction between current and historical reports.
+definition bodies. The subsequent [statement-readability report](ArithmeticTheta_Lean4/verification/StatementReadabilityPreservationReport.json)
+records clearer mathematical statements in seven supporting modules, a complete
+build with 699 modules recompiled and 500 reused after validation,
+all 103 frozen endpoint checks, and preservation of all previous named declarations.
+See the [verification notes](ArithmeticTheta_Lean4/verification/README.md)
+for the comparisons' scopes and the distinction between current and historical reports.
 
 ## Main mathematical result
 

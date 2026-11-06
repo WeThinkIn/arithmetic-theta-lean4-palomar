@@ -154,14 +154,32 @@ lemma ramification_gamma [CharZero k] (ell : LaurentSeries k →+* LaurentSeries
 end GammaBaseChangeNaturalityR0158
 
 
-/-- Full Laurent gamma limits commute with coefficient extension and positive ramification. -/
+section
+open ArithmeticThetaLaurentNormR0064
+
+/-- Full Laurent gamma limits are natural under coefficient extension and ramification.
+
+The first conclusion extends the coefficient field along `ι`. The second uses
+the positive ramification `t ↦ t^d`, multiplying both indices `r` and `m` by `d`.
+Both conclusions concern the complete Laurent series. -/
 theorem gamma_base_change_naturality :
-    (∀ (k : Type) [Field k] [CharZero k] (l : Type) [Field l] [CharZero l] (ι : k →+* l) (ell : LaurentSeries k →+* LaurentSeries l), ArithmeticThetaCoefficientNormDescentR0157.IsLaurentMap k l ι ell → ∀ (r m : ℕ) (a : k) (g : LaurentSeries k), 0 < r → a ≠ 0 → ArithmeticThetaLaurentNormR0064.IsGamma k r m a g → ArithmeticThetaLaurentNormR0064.IsGamma l r m (ι a) (ell g)) ∧ (∀ (k : Type) [Field k] [CharZero k] (d : ℕ) (hd : 0 < d) (ell : LaurentSeries k →+* LaurentSeries k), ArithmeticThetaRamifiedPeriodR0154.IsLaurentExtension k d hd ell → ∀ (r m : ℕ) (a : k) (g : LaurentSeries k), 0 < r → a ≠ 0 → ArithmeticThetaLaurentNormR0064.IsGamma k r m a g → ArithmeticThetaLaurentNormR0064.IsGamma k (r*d) (m*d) a (ell g)) := by
+    (∀ (k : Type) [Field k] [CharZero k] (l : Type) [Field l] [CharZero l]
+        (ι : k →+* l) (ell : LaurentSeries k →+* LaurentSeries l),
+      ArithmeticThetaCoefficientNormDescentR0157.IsLaurentMap k l ι ell →
+        ∀ (r m : ℕ) (a : k) (g : LaurentSeries k),
+          0 < r → a ≠ 0 → IsGamma k r m a g → IsGamma l r m (ι a) (ell g)) ∧
+    (∀ (k : Type) [Field k] [CharZero k] (d : ℕ) (hd : 0 < d)
+        (ell : LaurentSeries k →+* LaurentSeries k),
+      ArithmeticThetaRamifiedPeriodR0154.IsLaurentExtension k d hd ell →
+        ∀ (r m : ℕ) (a : k) (g : LaurentSeries k),
+          0 < r → a ≠ 0 → IsGamma k r m a g → IsGamma k (r * d) (m * d) a (ell g)) := by
   constructor
   · intro k _ _ l _ _ ι ell hell r m a g _hr _ha hg
     exact GammaBaseChangeNaturalityR0158.coefficient_gamma k l ι ell hell r m a g hg
   · intro k _ _ d hd ell hell r m a g _hr _ha hg
     exact GammaBaseChangeNaturalityR0158.ramification_gamma k d hd ell hell r m a g hg
+
+end
 
 end ArithmeticThetaUnsplitExpansionR0158
 

@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "edition": "statement-readability-20261106",
+  "baseline_commit": "75c1e12918084e8c34a387deb29ef11125e160cd",
+  "input_manifest_sha256": "c3d5f5e501b741511c88d9c662bc8a48a3838cb745303d1f54eff5c1f7964940",
+  "changed_modules": 7,
+  "modules": 1199,
+  "fresh_modules": 699,
+  "reused_modules": 500,
+  "exact_type_checks": 103,
+  "named_declarations": 23783,
+  "definition_bodies": 6773,
+  "types_requiring_reduction": 2,
+  "original_contract_and_103_probes_unchanged": true,
+  "toolchain_dependency_pins_and_reproduction_scripts_unchanged": true,
+  "imports_unchanged": true,
+  "auxiliary_namespace_commands_unchanged": true,
+  "line_metrics": {
+    "before": {
+      "over_500": 27,
+      "over_1000": 6,
+      "non_p2m_over_500": 7
+    },
+    "after": {
+      "over_500": 20,
+      "over_1000": 3,
+      "non_p2m_over_500": 0
+    }
+  },
+  "builder": "/home/wujie-ai-lean4-proof-agent-program/tools/build_lean_dependency_cone.py",
+  "builder_sha256": "2996ad265fcf9c86641a9a1085bf50c0e663c07e81f2336fcd14d9d96115d5b6",
+  "build_seconds": 6875.15,
+  "cone_manifest_sha256": "53f2050de8c9ff203d8883b5a6c4895293733246802df658f997aecdfc84b7a7",
+  "declaration_checker_sha256": "026f0e65d7dab5a59939b008ae2b0a6fb1fa86b372ceb25f9d37a1f0f7e6fd9d",
+  "source_change_record_sha256": "6f64fb7fbf346905d40d31493e73ca99e0490d006191c3d6cbca35ffa30a45f7",
+  "reports_sha256": {
+    "StatementReadabilityBuildReport.json": "0f5937a2894ae9838464c83afc8c94dc98a9229cdc9e8fe8a7173d11f72ec32c",
+    "StatementReadabilityEndpointReport.json": "0e0b60cb345e145a31c491be0e8a3a3bf8827f2d37b5cc50f6232e8a54df9b8a",
+    "StatementReadabilityDeclarationReport.json": "00f93ad65a74c4cfe2ed80fe738b7d1cff3fd3e6d5b215de5be070763b5de05b",
+    "StatementReadabilityEnvironmentReport.json": "8cd5a20c9df00ed8f4c179edba2a17a74645b25f02cacd65aada902d8994f2d3"
+  },
+  "verification_commands": [
+    {
+      "command": [
+        "/home/miniconda3/envs/lean4/bin/python",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/scripts/reproduce.py",
+        "--lean",
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "--jobs",
+        "8",
+        "--lean-threads",
+        "1",
+        "--verify-only",
+        "--build-dir",
+        "/home/Palomar/workspace/arithmetic-theta-statement-readability-20261106/reproduction-check"
+      ],
+      "seconds": 66.125,
+      "exit_code": 0,
+      "log": "/home/Palomar/workspace/arithmetic-theta-statement-readability-20261106/endpoints.log",
+      "log_sha256": "dc1b49139725ba739c3bdd957a54effd042de104daae03c5f4fc7e97ff9ef5c7"
+    },
+    {
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j1",
+        "--run",
+        "check_declarations.lean",
+        "/home/wujie-ai-lean4-proof-agent-program/workspace/lean4-runs/arithmetic-theta-readability-20261106-root-01",
+        "/home/wujie-ai-lean4-proof-agent-program/workspace/lean4-runs/arithmetic-theta-statement-readability-20261106-root-01",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/dependencies/lib/lean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/metadata/dependencies.json",
+        "/home/Palomar/workspace/arithmetic-theta-statement-readability-20261106/declaration-preservation.json"
+      ],
+      "seconds": 18.985,
+      "exit_code": 0,
+      "log": "/home/Palomar/workspace/arithmetic-theta-statement-readability-20261106/declarations.log",
+      "log_sha256": "b26be731a13258c3dbd57113520c4c0d35c592b659e786505ae2cfa4c501db62"
+    }
+  ],
+  "scope": "Complete module build with validated cache reuse; all 103 frozen endpoint types and transitive axiom checks; all previous non-internal named declaration kinds, universes and definitionally equal types, plus definition bodies. Internal generated names and theorem proof terms are outside the declaration comparison."
+}

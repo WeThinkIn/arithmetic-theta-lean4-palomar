@@ -170,9 +170,24 @@ open PointedHodgeFunctoriality
 
 attribute [local irreducible] origin structureMap
 
-/-- All-open local formula, including the zeroth tensor power. -/
+/-- The local Hodge-power formula on any common open, including tensor power zero.
+
+For a function `a` on `U` in the target curve, `h₁` lets us restrict its
+transported Hodge tensor to `B`. The condition `h₂` lets us restrict the tensor
+of the pulled-back function to the same `B`. The two resulting sections agree. -/
 theorem pointed_hodge_local_formula :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (V : WeierstrassCurve R) [V.IsElliptic] (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V) (n : ℕ) (U : (ArithmeticThetaRelativeKatoR0169.Curve R V).Opens) (a : (ArithmeticThetaRelativeKatoR0169.Curve R V).presheaf.obj (Opposite.op U)) (B : (ArithmeticThetaRelativeDiscriminantR0171.Base R).Opens) (h₁ : B ≤ (TopologicalSpace.Opens.map (ArithmeticThetaRelativeKatoR0169.origin R V).base).obj U) (h₂ : B ≤ (TopologicalSpace.Opens.map (ArithmeticThetaRelativeKatoR0169.origin R W).base).obj ((TopologicalSpace.Opens.map f.map.base).obj U)), ArithmeticThetaRelativeDiscriminantR0171.res (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W n) h₁ ((ArithmeticThetaRelativeIsogenyHodgeR0172.powerMap f n).app ((origin R V) ⁻¹ᵁ U) (ArithmeticThetaRelativeDiscriminantR0171.localPower R V n U a)) = ArithmeticThetaRelativeDiscriminantR0171.res (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W n) h₂ (ArithmeticThetaRelativeDiscriminantR0171.localPower R W n ((TopologicalSpace.Opens.map f.map.base).obj U) (f.map.app U a)) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R]
+      [IsIntegrallyClosed R] [Algebra ℚ R]
+      (W : WeierstrassCurve R) [W.IsElliptic]
+      (V : WeierstrassCurve R) [V.IsElliptic]
+      (f : PointedMap R W V) (n : ℕ)
+      (U : (Curve R V).Opens) (a : Γ(Curve R V, U)) (B : (Base R).Opens)
+      (h₁ : B ≤ origin R V ⁻¹ᵁ U)
+      (h₂ : B ≤ origin R W ⁻¹ᵁ (f.map ⁻¹ᵁ U)),
+      res (HodgePower R W n) h₁
+          ((powerMap f n).app (origin R V ⁻¹ᵁ U) (localPower R V n U a)) =
+        res (HodgePower R W n) h₂
+          (localPower R W n (f.map ⁻¹ᵁ U) (f.map.app U a)) := by
   intro R _ _ _ _ _ W _ V _ f n U a B h₁ h₂
   unfold powerMap localPower
   exact tensorMap_res (X := Base R) (H := Hodge R V) (K := Hodge R W) (hodgeMap f) n

@@ -640,6 +640,37 @@ open scoped TensorProduct
 
 universe u
 
+/-- A family of sections on the pullbacks of the chosen Čech charts. -/
+private abbrev CechChartSections {R : Type u} [CommRing R]
+    {Y V P : Scheme.{u}} {sY : Y ⟶ Spec (CommRingCat.of R)}
+    (G : OModulePresheaf sY) (t : Y ⟶ V) (p : V ⟶ P)
+    (K : V.OrderedAffineCover) (W : P.Opens) :=
+  ∀ j : K.ι, G.obj (t ⁻¹ᵁ OModulePresheaf.cechPushforward.chart p K W j)
+
+/-- The two restrictions of a chart family agree on every chart overlap. -/
+private abbrev CechChartCompatible {R : Type u} [CommRing R]
+    {Y V P : Scheme.{u}} {sY : Y ⟶ Spec (CommRingCat.of R)}
+    (G : OModulePresheaf sY) (t : Y ⟶ V) (p : V ⟶ P)
+    (K : V.OrderedAffineCover) (W : P.Opens)
+    (c : CechChartSections G t p K W) : Prop :=
+  ∀ j j' : K.ι,
+    G.res ((Opens.map t.base).monotone
+        (inf_le_left : OModulePresheaf.cechPushforward.chart p K W j ⊓
+          OModulePresheaf.cechPushforward.chart p K W j' ≤ _)) (c j) =
+      G.res ((Opens.map t.base).monotone
+        (inf_le_right : OModulePresheaf.cechPushforward.chart p K W j ⊓
+          OModulePresheaf.cechPushforward.chart p K W j' ≤ _)) (c j')
+
+/-- Effectivity of compatible Čech sections for the given proper adic system.
+
+The hypotheses describe the coherent towers, their transition and base-change
+maps, the finite module `L` over the complete ring `R`, and its realization by `G` on `Y`.
+The conclusions are: every compatible tower thread has a chartwise lift;
+a compatible lift with zero image at every level vanishes; and all compatible
+chart families are spanned by one finite collection of compatible families.
+
+`CechChartSections` and `CechChartCompatible` expand to the displayed chart
+sections and overlap restriction equalities; they add no hypotheses. -/
 theorem AlgebraicGeometry.OModulePresheaf.exists_forall_eq_thread_and_eq_zero_of_forall_eq_zero_of_isAdicComplete_of_isProper
     {A : Type u} [CommRing A] [IsNoetherianRing A] (I : Ideal A)
     {P : Scheme.{u}} (q : P ⟶ Spec (CommRingCat.of A)) [IsProper q]
@@ -687,8 +718,13 @@ theorem AlgebraicGeometry.OModulePresheaf.exists_forall_eq_thread_and_eq_zero_of
     (hprc : ∀ (n : ℕ) (x : L), (φ n).app W (pr (n + 1) x) = pr n x)
     (hpri : ∀ x : L, (∀ n : ℕ, pr n x = 0) → x = 0)
     (hprs : ∀ n : ℕ, Function.Surjective (pr n))
-    (hprk : ∀ n : ℕ, LinearMap.ker (pr n) = (I.map ((Scheme.ΓSpecIso (CommRingCat.of A)).inv ≫ q.appLE ⊤ W.1 le_top).hom) ^ (n + 1) • (⊤ : Submodule Γ(P, W.1) L))
-    [IsNoetherianRing R] (hRc : IsAdicComplete (I.map ((algebraMap Γ(P, W.1) R).comp ((Scheme.ΓSpecIso (CommRingCat.of A)).inv ≫ q.appLE ⊤ W.1 le_top).hom)) R)
+    (hprk : ∀ n : ℕ, LinearMap.ker (pr n) =
+      (I.map ((Scheme.ΓSpecIso (CommRingCat.of A)).inv ≫ q.appLE ⊤ W.1 le_top).hom) ^
+        (n + 1) • (⊤ : Submodule Γ(P, W.1) L))
+    [IsNoetherianRing R]
+    (hRc : IsAdicComplete
+      (I.map ((algebraMap Γ(P, W.1) R).comp
+        ((Scheme.ΓSpecIso (CommRingCat.of A)).inv ≫ q.appLE ⊤ W.1 le_top).hom)) R)
 
     {Y : Scheme.{u}} (sY : Y ⟶ Spec (CommRingCat.of R)) [IsProper sY] (t : Y ⟶ V')
     (hY : IsPullback t sY (g ≫ i) (Spec.map (CommRingCat.ofHom (algebraMap Γ(P, W.1) R)) ≫ W.2.fromSpec))
@@ -712,33 +748,35 @@ theorem AlgebraicGeometry.OModulePresheaf.exists_forall_eq_thread_and_eq_zero_of
     (hθε : ∀ (n : ℕ) (V : V'.affineOpens) (h : V.1 ≤ (g ≫ i) ⁻¹ᵁ W.1) (x : L),
       θ n V h (ε (t ⁻¹ᵁ V.1) x) = η n W V h (pr n x))
     (hθo : ∀ (n : ℕ) (V : V'.affineOpens) (h : V.1 ≤ (g ≫ i) ⁻¹ᵁ W.1), Function.Surjective (θ n V h))
-    (hθk : ∀ (n : ℕ) (V : V'.affineOpens) (h : V.1 ≤ (g ≫ i) ⁻¹ᵁ W.1) (y : G.obj (t ⁻¹ᵁ V.1)),
-      θ n V h y = 0 ↔ y ∈ (I.map ((algebraMap Γ(P, W.1) R).comp ((Scheme.ΓSpecIso (CommRingCat.of A)).inv ≫ q.appLE ⊤ W.1 le_top).hom)) ^ (n + 1) • (⊤ : Submodule R (G.obj (t ⁻¹ᵁ V.1)))) :
+    (hθk : ∀ (n : ℕ) (V : V'.affineOpens) (h : V.1 ≤ (g ≫ i) ⁻¹ᵁ W.1)
+      (y : G.obj (t ⁻¹ᵁ V.1)),
+      θ n V h y = 0 ↔
+        y ∈ (I.map ((algebraMap Γ(P, W.1) R).comp
+          ((Scheme.ΓSpecIso (CommRingCat.of A)).inv ≫ q.appLE ⊤ W.1 le_top).hom)) ^
+            (n + 1) • (⊤ : Submodule R (G.obj (t ⁻¹ᵁ V.1)))) :
+    -- Every compatible tower thread is realized by a compatible chart family.
     (∀ (ℓ : ∀ n, (OModulePresheaf.cechPushforward (g ≫ i) q K' (F' n)).obj W.1),
         (∀ n, ((φ' n).cechPushforward (g ≫ i) q K').app W (ℓ (n + 1)) = ℓ n) →
-        ∃ c : ∀ j : K'.ι, G.obj (t ⁻¹ᵁ (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j)),
-          (∀ j j' : K'.ι,
-          G.res ((Opens.map t.base).monotone (inf_le_left : (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j) ⊓ (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j') ≤ _)) (c j)
-            = G.res ((Opens.map t.base).monotone (inf_le_right : (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j) ⊓ (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j') ≤ _)) (c j')) ∧
+        ∃ c : CechChartSections G t (g ≫ i) K' W.1,
+          CechChartCompatible G t (g ≫ i) K' W.1 c ∧
           ∀ (n : ℕ) (j : K'.ι),
             θ n (OModulePresheaf.AffHom.affineChart (g ≫ i) q K' W j)
               (OModulePresheaf.cechPushforward.chart_le_preimage (g ≫ i) K' W.1 j) (c j) = (ℓ n).1 j) ∧
-    (∀ c : ∀ j : K'.ι, G.obj (t ⁻¹ᵁ (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j)),
-        (∀ j j' : K'.ι,
-          G.res ((Opens.map t.base).monotone (inf_le_left : (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j) ⊓ (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j') ≤ _)) (c j)
-            = G.res ((Opens.map t.base).monotone (inf_le_right : (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j) ⊓ (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j') ≤ _)) (c j')) →
+    -- Compatibility and vanishing at every level imply that the family is zero.
+    (∀ c : CechChartSections G t (g ≫ i) K' W.1,
+        CechChartCompatible G t (g ≫ i) K' W.1 c →
         (∀ (n : ℕ) (j : K'.ι),
             θ n (OModulePresheaf.AffHom.affineChart (g ≫ i) q K' W j)
               (OModulePresheaf.cechPushforward.chart_le_preimage (g ≫ i) K' W.1 j) (c j) = 0) →
         c = 0) ∧
-    (∃ s : Finset (∀ j : K'.ι, G.obj (t ⁻¹ᵁ (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j))),
-        (∀ c ∈ s, (∀ j j' : K'.ι,
-          G.res ((Opens.map t.base).monotone (inf_le_left : (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j) ⊓ (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j') ≤ _)) (c j)
-            = G.res ((Opens.map t.base).monotone (inf_le_right : (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j) ⊓ (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j') ≤ _)) (c j'))) ∧
-        ∀ c : ∀ j : K'.ι, G.obj (t ⁻¹ᵁ (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j)),
-          (∀ j j' : K'.ι,
-          G.res ((Opens.map t.base).monotone (inf_le_left : (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j) ⊓ (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j') ≤ _)) (c j)
-            = G.res ((Opens.map t.base).monotone (inf_le_right : (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j) ⊓ (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j') ≤ _)) (c j')) → c ∈ Submodule.span R (s : Set (∀ j : K'.ι, G.obj (t ⁻¹ᵁ (OModulePresheaf.cechPushforward.chart (g ≫ i) K' W.1 j))))) := by p2m_exact_reverting @_root_.ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_forall_eq_thread_and_eq_zero_of_forall_eq_zero_of_isAdicComplete_of_isProper.solution
+    -- One finite collection of compatible families spans all such families.
+    (∃ s : Finset (CechChartSections G t (g ≫ i) K' W.1),
+        (∀ c ∈ s, CechChartCompatible G t (g ≫ i) K' W.1 c) ∧
+        ∀ c : CechChartSections G t (g ≫ i) K' W.1,
+          CechChartCompatible G t (g ≫ i) K' W.1 c →
+            c ∈ Submodule.span R (s : Set (CechChartSections G t (g ≫ i) K' W.1))) := by
+  p2m_exact_reverting
+    @_root_.ArithmeticThetaModelSymmetriesR0137.ProperTowerAutomorphismEffectivityR0137.CoherentEffectivity.P2MW.S_AlgebraicGeometry_OModulePresheaf_exists_forall_eq_thread_and_eq_zero_of_forall_eq_zero_of_isAdicComplete_of_isProper.solution
 
 
 end

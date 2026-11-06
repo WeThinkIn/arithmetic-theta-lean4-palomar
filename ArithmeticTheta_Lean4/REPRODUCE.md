@@ -56,7 +56,7 @@ python3 scripts/reproduce.py --lean /path/to/lean-4.33.1/bin/lean --jobs 2 --bui
 
 ## 目录
 
-- `Lean/`：1,199 个证明模块的可读性修订版；每个修改的原始与当前哈希见 `metadata/readability-source-changes.json`。
+- `Lean/`：1,199 个证明模块的可读性修订版；第一轮修改的前后哈希见 `metadata/readability-source-changes.json`，后续七处陈述整理见 `metadata/statement-readability-source-changes.json`。
 - `dependencies/src/`：11,403 个外部模块源码及 15 个嵌入资源；`dependencies/lib/lean/`：下载后恢复的 46,163 个编译相关文件。
 - `scripts/`：依赖下载/校验与本地独立复现入口。
 - `metadata/dependencies.json`：导入关系与原始依赖解析来源。
