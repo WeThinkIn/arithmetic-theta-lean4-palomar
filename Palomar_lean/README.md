@@ -2,7 +2,7 @@
 
 本目录集中存放 Palomar 版本的证明源码、独立验证接口、范围说明、审计资料和提交元数据，
 使用 **Lean 4.35.0-rc2**。原始 **Lean 4.33.1** 形式化的独立复现入口位于
-[`local-reproduction/`](../local-reproduction/REPRODUCE.md)。
+[`ArithmeticTheta_Lean4/`](../ArithmeticTheta_Lean4/REPRODUCE.md)。
 
 ## Find your starting point
 
@@ -50,7 +50,7 @@ from `Palomar_lean/Proof` and the Challenge/Solution modules from `Palomar_lean`
 Lean module names, imports, declarations and comparator contents are unchanged;
 existing `lake build +ModuleName` targets remain valid.
 
-The independent [local Lean 4.33.1 reproduction](../local-reproduction/REPRODUCE.md), its dependency files and its release assets are unchanged. Historical audit records retain their original paths and source revisions; moving files does not confer a new Palomar acceptance.
+The independent [local Lean 4.33.1 reproduction](../ArithmeticTheta_Lean4/REPRODUCE.md), its dependency files and its release assets are unchanged. Historical audit records retain their original paths and source revisions; moving files does not confer a new Palomar acceptance.
 
 ## Scope index
 

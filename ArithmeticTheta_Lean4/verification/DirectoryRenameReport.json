@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "date": "2026-11-06",
+  "scope": "Directory naming and documentation only; no Lean compilation or theorem audit was run.",
+  "baseline_commit": "d5d9d676d824016ad4534f4809319935695f73b5",
+  "old_directory": "local-reproduction",
+  "new_directory": "ArithmeticTheta_Lean4",
+  "tracked_files_moved": 12812,
+  "preexisting_files_byte_identical": 12809,
+  "modified_existing_files": [
+    "REPRODUCE.md",
+    "SHA256SUMS",
+    "verification/README.md"
+  ],
+  "new_files": [
+    "README.md",
+    "verification/DirectoryRenameReport.json"
+  ],
+  "proof_modules_byte_identical": 1199,
+  "original_probes_byte_identical": 103,
+  "original_proof_tree": "7f89803fec35b453c559a3e4ff65dc25da12f9a7",
+  "reproduction_scripts_unchanged": true,
+  "script_roots_resolve_new_directory": true,
+  "script_help_checks_passed": 2,
+  "original_contract_and_dependencies_unchanged": true,
+  "external_dependency_manifest_entries_unchanged": true,
+  "old_input_manifest_sha256": "49cd9d4854f600ae72992daf10df2dd533a4425390cbc620938dd79cd3eaa62e",
+  "new_input_manifest_sha256": "2a659fb1991aaa62c210e09dde255b449ea7b2da372626ea2b6c8713f2f94f40",
+  "input_manifest_changes": {
+    "added": [
+      "README.md"
+    ],
+    "updated": [
+      "REPRODUCE.md"
+    ],
+    "removed": []
+  },
+  "historical_verification_reports_unchanged": true,
+  "palomar_build_config_and_dependency_pins_unchanged": true,
+  "size_limited_manifest_document_hashes_updated": 4,
+  "size_limited_non_documentation_bindings_unchanged": true,
+  "relative_documentation_links_validated": 860
+}

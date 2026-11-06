@@ -13,7 +13,7 @@ also preserved **23,768 original non-internal named declarations** and
 
 | Evidence | What it verifies |
 | --- | --- |
-| [ReadabilityPreservationReport.json](ReadabilityPreservationReport.json) | Combined result, baseline commit, current input-manifest hash, builder and declaration-checker hashes, and preservation counts |
+| [ReadabilityPreservationReport.json](ReadabilityPreservationReport.json) | Combined result, baseline commit, recorded input-manifest hash, builder and declaration-checker hashes, and preservation counts |
 | [ReadabilityBuildReport.json](ReadabilityBuildReport.json) | All 1,199 modules freshly compiled with Lean 4.33.1; per-module source and object hashes; successful source, object and environment rechecks |
 | [ReadabilityEndpointReport.json](ReadabilityEndpointReport.json) | All 103 unchanged probes passed against the completed build, with their actual transitive axiom dependencies |
 | [ReadabilityDeclarationReport.json](ReadabilityDeclarationReport.json) | Direct comparison of the complete baseline and candidate Lean environments; original declaration kinds, universe parameters, types and definition bodies preserved |
@@ -62,7 +62,14 @@ hashes. The reports in `publication/` likewise describe their recorded original
 delivery. Use the `Readability*` reports above for the current source edition.
 
 All verification reports are generated outputs, outside the input
-`SHA256SUMS`. The current preservation and endpoint reports bind that manifest.
+`SHA256SUMS`. The preservation and endpoint reports bind the manifest recorded
+for the readability build. The subsequent rename from `local-reproduction/`
+to `ArithmeticTheta_Lean4/` adds a landing README and updates the reproduction
+instructions, so the current manifest has new documentation hashes. Proof,
+dependency, contract, probe and script hashes remain unchanged. The
+[directory-rename report](DirectoryRenameReport.json) records these static
+checks and the old/new manifest hashes; this rename performs no new compilation.
+Historical reports retain their original path names and verification results.
 Follow [REPRODUCE.md](../REPRODUCE.md) to repeat the full build and endpoint
 checks, or to compare against an independently compiled original revision.
 These results concern the local Lean 4.33.1 formal development; they do not

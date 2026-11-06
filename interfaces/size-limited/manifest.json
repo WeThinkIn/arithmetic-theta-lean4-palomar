@@ -73,7 +73,7 @@
   "files": {
     "README.md": "db1aea56bedec3369c3051b52b1e94703387141191781c78dc3bdc6fed335062",
     "accepted-075/Challenge.lean": "515d03b58092b9d454f17d9cd831882f28c58f35ce5ef6b16ca4ec08f6888a9b",
-    "accepted-075/README.md": "d3b1fa70d05595ebc90e66ae609c78795f31bd04806813980f0c49c3d330bf71",
+    "accepted-075/README.md": "c19253117eda2c3a6d67c34d5c08880bdf32d13852ebb17108106ddf6c21069e",
     "accepted-075/Solution.lean": "52e9823a33788a21254e94c437b0e15e2eb60111f12e5aea53ae058e1b764b9f",
     "accepted-075/audit/Check.log": "cc263d351c27111fc843b207efe172014e4af04be5b110260fa1ea7730db3df2",
     "accepted-075/audit/OriginalRecovery.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -83,7 +83,7 @@
     "accepted-075/audit/result.json": "f9a0edd98d54eb0bb46111de4e61cbc9f3a86e9704e9698db01558460aed9838",
     "accepted-075/comparator.json": "42271a64dc4cf28c0925ebc397169199f229f118e43f4083b65ba8a7cb655213",
     "accepted-076/Challenge.lean": "a37927a5aa36de8098beb1fc60ce5d5fe804f3e98220813926ff4a36fd8b566c",
-    "accepted-076/README.md": "c95aef2184cf58eacba72bff793a86fed16896313fde869e24b51bca791de7cc",
+    "accepted-076/README.md": "6dd5ea70538f3675efc8dbafcbd9f8adf84583bc2c42b51561f4324d9b88428e",
     "accepted-076/Solution.lean": "52e9823a33788a21254e94c437b0e15e2eb60111f12e5aea53ae058e1b764b9f",
     "accepted-076/audit/Check.log": "6178454847e8afef159add8715484e7ff9bf0eb0dd4ef215bbb5bf286de156ef",
     "accepted-076/audit/OriginalRecovery.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -93,7 +93,7 @@
     "accepted-076/audit/result.json": "bbf3bbc09445fb189b23218ad99a0a3321dc55994e191d8faff503a21d52bfaf",
     "accepted-076/comparator.json": "4fe3322f97306c83c16ce77be282c310fe166147e1db5e080094ff5cc26995c0",
     "accepted-087/Challenge.lean": "a8aedb74c0f4f549e706280c35e2daf72bfe7dd4384385ea5da0d12710e866bd",
-    "accepted-087/README.md": "de5d2b60e41b7a5a24f702370ba0ed4138c9100a07c6fa36aa3dc761e09b3ecd",
+    "accepted-087/README.md": "81f0f0b570ca986473beed95758b2c24ebcfd3db8e5ecab0b8024668c0d42c80",
     "accepted-087/Solution.lean": "13060da2f073c95b8240923a584829c49bee6eb8762c3461c20493c5b532a8de",
     "accepted-087/audit/Check.log": "1e0d7c8527dde89b6909f786b9da2320c75c5bc3882a66c95d4f3e82a2789afa",
     "accepted-087/audit/OriginalAudit.log": "ca2ba84cff6582d10a0c28c240315d282e79b336c415c840e99074dc7697b85a",
@@ -110,7 +110,7 @@
     "accepted-087/audit/strict-export-comparison.json": "c73c9e3e99c440f46e22d39e4c28e08f738e5d854d25004b49d888e53025b108",
     "accepted-087/comparator.json": "eead270f80469d063bcd276058e503be8d72590574ace87f28c5436b9eec3758",
     "conservative-image-consumer/Challenge.lean": "c99d1d4b3c4eaeb9e3227277a4cafdff30b664e8d01202f6baa722a9e8e3954d",
-    "conservative-image-consumer/README.md": "6aba12bc0406effc4413db891aae9740c24d6c2c96cf17fddb331de93eeb5889",
+    "conservative-image-consumer/README.md": "ae449611df20a4ab2f75a063c1978c799e6b51f205aa13605cb4c400eb28a78a",
     "conservative-image-consumer/Solution.lean": "52e9823a33788a21254e94c437b0e15e2eb60111f12e5aea53ae058e1b764b9f",
     "conservative-image-consumer/audit/Check.log": "e1cb405cbff750ae73a4a456726067023b5f6a5306f33cc8f731f5e35312ff96",
     "conservative-image-consumer/audit/OriginalRecovery.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -131,6 +131,19 @@
     "scope": "Update README paths for the Palomar_lean directory consolidation; all Lean sources, comparator configurations and verification-data hashes are unchanged.",
     "documents": [
       "README.md",
+      "accepted-075/README.md",
+      "accepted-076/README.md",
+      "accepted-087/README.md",
+      "conservative-image-consumer/README.md"
+    ]
+  },
+  "documentation_directory_rename": {
+    "date": "2026-11-06",
+    "repository_baseline": "d5d9d676d824016ad4534f4809319935695f73b5",
+    "old_directory": "local-reproduction",
+    "new_directory": "ArithmeticTheta_Lean4",
+    "scope": "Update four README links; all Lean, comparator and verification-data hashes are unchanged.",
+    "documents": [
       "accepted-075/README.md",
       "accepted-076/README.md",
       "accepted-087/README.md",

@@ -12,4 +12,4 @@ Compilation, shared-declaration checks, direct proof-obligation accounting, orig
 
 The files in [`audit/`](audit/) record the scope of each completed local check. Absolute paths in archival receipts identify the original local run; the repository-relative files and SHA-256 values in the [snapshot manifest](../manifest.json) identify the published source. Historical receipts do not certify a fresh clean build of every later repository commit.
 
-See the [shared reproduction instructions](../README.md#local-reproduction). The generic `Challenge` and `Solution` module names are intentional; each interface is built in a separate output directory.
+See the [shared reproduction instructions](../README.md#ArithmeticTheta_Lean4). The generic `Challenge` and `Solution` module names are intentional; each interface is built in a separate output directory.

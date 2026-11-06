@@ -10,29 +10,27 @@ This repository presents the research manuscript, the complete Lean 4 formalizat
 
 **Public paper on Zenodo.** Jue Ding and ZhiPeng Liu, *A Proof of the Purely Arithmetic Characterization of Linear Relations among Theta Series of Quadratic Lattices*, released as a preprint on **4 November 2026**. The public record is available at [Zenodo 23938214](https://zenodo.org/records/23938214), with DOI **[10.5281/zenodo.23938214](https://doi.org/10.5281/zenodo.23938214)**. Use this record for the published preprint and its citation metadata; the repository retains its existing manuscript snapshots and verification artifacts.
 
-**Original Lean 4.33.1 formalization: complete and locally verified.** The full original Lean 4 code is published in [`local-reproduction/`](local-reproduction/). All **1,199 proof modules** have been rebuilt from source against the pinned external dependencies, and all **103 theorem endpoints** covering the **13 original source requirements** have passed exact-type and standard-axiom checks. The [rebuild report](local-reproduction/verification/README.md), original sources, dependency manifests and reproduction scripts are available for independent local checking.
+**Original Lean 4.33.1 formalization: complete and locally verified.** The full original Lean 4 code is published in [`ArithmeticTheta_Lean4/`](ArithmeticTheta_Lean4/). All **1,199 proof modules** have been rebuilt from source against the pinned external dependencies, and all **103 theorem endpoints** covering the **13 original source requirements** have passed exact-type and standard-axiom checks. The [rebuild report](ArithmeticTheta_Lean4/verification/README.md), original sources, dependency manifests and reproduction scripts are available for independent local checking.
 
 **Independent Palomar verification: in progress.** Building on the completed original formalization, this repository also maintains a **Lean 4.35.0-rc2** adaptation for independent Palomar review. The adapted development has recorded local build and endpoint-preservation checks, and individual scopes have passed official mechanical verification at their recorded revisions. Whole-paper Palomar semantic acceptance and registration remain incomplete. The [`Palomar_lean/`](Palomar_lean/README.md) interfaces and [verification records](Palomar_lean/docs/PalomarPreflight.md) document this continuing review effort.
 
 [Public paper (Zenodo)](https://zenodo.org/records/23938214) · [Paper DOI](https://doi.org/10.5281/zenodo.23938214) · [Repository manuscript snapshot (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20Exact%20Tate%20normalization%20and%20common%20finite%20covers.pdf) · [Original mathematical specification](paper/OriginalTask.tex) · [Formal theorem specification](Palomar_lean/docs/SourceObligations.json)
 
-| Start with | Where to go |
+| 目录 | 面向读者的说明 |
 | --- | --- |
-| The mathematical proof and original Lean 4.33.1 sources | [`local-reproduction/`](local-reproduction/READING_GUIDE.md) |
-| Rebuilding the original formalization | [Reproduction instructions](local-reproduction/REPRODUCE.md) |
-| The Lean 4.35.0-rc2 adaptation and independent verification | [`Palomar_lean/`](Palomar_lean/README.md) |
-| The paper and original mathematical specification | [`paper/`](paper/) |
+| **[ArithmeticTheta_Lean4/](ArithmeticTheta_Lean4/)** | 论文的完整原始 Lean 4 形式化证明，包含源码、数学阅读导引、固定依赖、复现工具和验证报告 |
+| **[Palomar_lean/](Palomar_lean/)** | 面向 Palomar 独立验证的适配版本，包含证明源码、Challenge/Solution 接口、审计资料及提交元数据 |
 
-**For mathematical review:** the [reading guide](local-reproduction/READING_GUIDE.md)
+**For mathematical review:** the [reading guide](ArithmeticTheta_Lean4/READING_GUIDE.md)
 explains the main theorem, its transparent abbreviations and the proof's structure.
-The [103-endpoint index](local-reproduction/THEOREM_INDEX.md) links each original
+The [103-endpoint index](ArithmeticTheta_Lean4/THEOREM_INDEX.md) links each original
 obligation to its defining declaration. The readability edition retains the
 original names and frozen type/axiom probes; its source changes are recorded
 separately from the historical verification evidence.
-The [readability preservation report](local-reproduction/verification/ReadabilityPreservationReport.json)
+The [readability preservation report](ArithmeticTheta_Lean4/verification/ReadabilityPreservationReport.json)
 records the fresh 1,199-module build, all 103 original endpoint checks, and the
 preservation of 23,768 original non-internal named declarations and 6,759
-definition bodies. See the [verification notes](local-reproduction/verification/README.md)
+definition bodies. See the [verification notes](ArithmeticTheta_Lean4/verification/README.md)
 for the comparison's scope and the distinction between current and historical reports.
 
 ## Main mathematical result
@@ -69,19 +67,19 @@ The following declarations provide entry points to the principal results. Each l
 
 | Result | Lean declaration and source |
 | --- | --- |
-| Conservative bound, complete kernel and image, unique reconstruction coordinates, and compact cyclotomic modular family | [`ArithmeticThetaFullSourceR0268.conservative_image_consumer`](local-reproduction/Lean/ConservativeImageConsumerR0268.lean) |
-| Sharp coefficient bound determining the full complex relation kernel, including rank zero | [`ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel`](local-reproduction/Lean/SharpMatrixKernelR0195.lean) |
-| Actual finite metaplectic level and section image over the prescribed cyclotomic field | [`ArithmeticThetaCyclotomicModularityR0239.cyclotomic_matrix_modularity`](local-reproduction/Lean/CyclotomicMatrixModularityR0239.lean) |
-| Modularity, solver output, and complete expansions under coefficient-field extension | [`ArithmeticThetaExtendedMetaplecticR0241.cyclotomic_extended_modularity`](local-reproduction/Lean/CyclotomicExtendedModularityR0241.lean) |
-| Adaptive solver correctness, termination, and first-certified stopping on its schedule | [`ArithmeticThetaAdaptiveSolverR0230.adaptive_universal_solver`](local-reproduction/Lean/AdaptiveUniversalSolverR0230.lean) |
+| Conservative bound, complete kernel and image, unique reconstruction coordinates, and compact cyclotomic modular family | [`ArithmeticThetaFullSourceR0268.conservative_image_consumer`](ArithmeticTheta_Lean4/Lean/ConservativeImageConsumerR0268.lean) |
+| Sharp coefficient bound determining the full complex relation kernel, including rank zero | [`ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel`](ArithmeticTheta_Lean4/Lean/SharpMatrixKernelR0195.lean) |
+| Actual finite metaplectic level and section image over the prescribed cyclotomic field | [`ArithmeticThetaCyclotomicModularityR0239.cyclotomic_matrix_modularity`](ArithmeticTheta_Lean4/Lean/CyclotomicMatrixModularityR0239.lean) |
+| Modularity, solver output, and complete expansions under coefficient-field extension | [`ArithmeticThetaExtendedMetaplecticR0241.cyclotomic_extended_modularity`](ArithmeticTheta_Lean4/Lean/CyclotomicExtendedModularityR0241.lean) |
+| Adaptive solver correctness, termination, and first-certified stopping on its schedule | [`ArithmeticThetaAdaptiveSolverR0230.adaptive_universal_solver`](ArithmeticTheta_Lean4/Lean/AdaptiveUniversalSolverR0230.lean) |
 
-The original Lean 4.33.1 proof entry point is [`local-reproduction/Lean/GoalRoot.lean`](local-reproduction/Lean/GoalRoot.lean), with final integration in [`FullSourceIntegrationR0268.lean`](local-reproduction/Lean/FullSourceIntegrationR0268.lean). The corresponding Palomar adaptation is under [`Palomar_lean/Proof/`](Palomar_lean/Proof/), with its own [`GoalRoot.lean`](Palomar_lean/Proof/GoalRoot.lean). The [formal specification](Palomar_lean/docs/SourceObligations.json) records the exact statements, hypotheses, and source correspondence of all **103 endpoints**, and the [requirement map](Palomar_lean/docs/RequirementCoverage.json) relates them to the **13 original requirements**.
+The original Lean 4.33.1 proof entry point is [`ArithmeticTheta_Lean4/Lean/GoalRoot.lean`](ArithmeticTheta_Lean4/Lean/GoalRoot.lean), with final integration in [`FullSourceIntegrationR0268.lean`](ArithmeticTheta_Lean4/Lean/FullSourceIntegrationR0268.lean). The corresponding Palomar adaptation is under [`Palomar_lean/Proof/`](Palomar_lean/Proof/), with its own [`GoalRoot.lean`](Palomar_lean/Proof/GoalRoot.lean). The [formal specification](Palomar_lean/docs/SourceObligations.json) records the exact statements, hypotheses, and source correspondence of all **103 endpoints**, and the [requirement map](Palomar_lean/docs/RequirementCoverage.json) relates them to the **13 original requirements**.
 
 ## Original local Lean 4.33.1 reproducibility artifacts
 
-The [`local-reproduction/`](local-reproduction/) directory contains **本地 Lean4 可复现代码相关产物**: a readability edition of the original 1,199 Lean 4.33.1 proof modules, the original bundled paper snapshot, the external dependency sources, and the 103 frozen exact-type/axiom probes. This is a separate reproducibility target from the Lean 4.35.0-rc2 Palomar edition above.
+The [`ArithmeticTheta_Lean4/`](ArithmeticTheta_Lean4/) directory contains **本地 Lean4 可复现代码相关产物**: a readability edition of the original 1,199 Lean 4.33.1 proof modules, the original bundled paper snapshot, the external dependency sources, and the 103 frozen exact-type/axiom probes. This is a separate reproducibility target from the Lean 4.35.0-rc2 Palomar edition above.
 
-Follow [`local-reproduction/REPRODUCE.md`](local-reproduction/REPRODUCE.md). Install Lean 4.33.1, download the hash-pinned precompiled dependencies using `scripts/fetch_dependencies.py`, and run `scripts/reproduce.py` to rebuild all proof modules and check all 103 endpoints. Large binary dependencies are distributed through this repository's [`local-lean4331-reproduction-20261027` Release](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/releases/tag/local-lean4331-reproduction-20261027); the downloader restores `dependencies/lib/lean/`. GitHub's source ZIP alone does not include those release assets.
+Follow [`ArithmeticTheta_Lean4/REPRODUCE.md`](ArithmeticTheta_Lean4/REPRODUCE.md). Install Lean 4.33.1, download the hash-pinned precompiled dependencies using `scripts/fetch_dependencies.py`, and run `scripts/reproduce.py` to rebuild all proof modules and check all 103 endpoints. Large binary dependencies are distributed through this repository's [`local-lean4331-reproduction-20261027` Release](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/releases/tag/local-lean4331-reproduction-20261027); the downloader restores `dependencies/lib/lean/`. GitHub's source ZIP alone does not include those release assets.
 
 此目录用于本地重新编译论文证明和复核精确类型、公理闭包；详细环境、离线使用和验证范围见上述复现说明。
 
@@ -104,7 +102,7 @@ Classical.choice
 Quot.sound
 ```
 
-The audited theorem proofs have no `sorryAx` dependency and introduce no additional mathematical axioms. The exact-type audit checks the original quantified statements; the axiom audit checks their transitive proof dependencies. For the original Lean 4.33.1 edition, the [local rebuild report](local-reproduction/verification/LocalRebuildReport.json) and [verification summary](local-reproduction/verification/LocalRebuildSummary.json) record the complete 1,199-module rebuild and 103 endpoint checks.
+The audited theorem proofs have no `sorryAx` dependency and introduce no additional mathematical axioms. The exact-type audit checks the original quantified statements; the axiom audit checks their transitive proof dependencies. For the original Lean 4.33.1 edition, the [local rebuild report](ArithmeticTheta_Lean4/verification/LocalRebuildReport.json) and [verification summary](ArithmeticTheta_Lean4/verification/LocalRebuildSummary.json) record the complete 1,199-module rebuild and 103 endpoint checks.
 
 For the Lean 4.35.0-rc2 adaptation, evidence is provided by the [complete root-build receipt](Palomar_lean/docs/audit/full-root-build-342/receipt.json), the [103-endpoint audit result](Palomar_lean/docs/audit/partial-endpoint-audit-431-result.json), and the [optimized full-project build and preservation audit](Palomar_lean/docs/audit/direct-hodge-integration-856/Review.md). The latter also checks 54,522 original non-internal named declarations and 13,670 definition bodies across all 3,915 project modules. The [resource-limited build and independent-kernel record](Palomar_lean/docs/audit/direct-hodge-integration-1092/Review.md) documents the completed staged build and the verified CommonUnary and CompleteMain scopes.
 
@@ -118,7 +116,7 @@ For the Lean 4.35.0-rc2 adaptation, evidence is provided by the [complete root-b
 | Mathlib commit | `0df444a360eaa60ab8c11dca51a86af692955474` | `065356127b1dc0016f66b7283ce0ce2c4055aa55` |
 | Compiler platform | `x86_64-unknown-linux-gnu` | `x86_64-unknown-linux-gnu` |
 
-The original edition selects Lean 4.33.1 through [`local-reproduction/lean-toolchain`](local-reproduction/lean-toolchain) and uses its own pinned dependency manifests and reproduction scripts. At the repository root, [`lean-toolchain`](lean-toolchain), [`lakefile.toml`](lakefile.toml) and [`lake-manifest.json`](lake-manifest.json) configure the separate Lean 4.35.0-rc2 Palomar adaptation. Choose the directory and instructions for the edition you want to reproduce.
+The original edition selects Lean 4.33.1 through [`ArithmeticTheta_Lean4/lean-toolchain`](ArithmeticTheta_Lean4/lean-toolchain) and uses its own pinned dependency manifests and reproduction scripts. At the repository root, [`lean-toolchain`](lean-toolchain), [`lakefile.toml`](lakefile.toml) and [`lake-manifest.json`](lake-manifest.json) configure the separate Lean 4.35.0-rc2 Palomar adaptation. Choose the directory and instructions for the edition you want to reproduce.
 
 ## Adaptation for Palomar
 
@@ -171,13 +169,13 @@ To reproduce the completed original verification, install [Elan](https://github.
 
 ```sh
 git clone https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar.git
-cd arithmetic-theta-lean4-palomar/local-reproduction
+cd arithmetic-theta-lean4-palomar/ArithmeticTheta_Lean4
 elan toolchain install leanprover/lean4:v4.33.1
 python3 scripts/fetch_dependencies.py
 python3 scripts/reproduce.py --jobs 2 --lean-threads 1 --build-dir build-fresh
 ```
 
-This rebuilds all 1,199 original proof modules against the pinned precompiled external libraries and runs all 103 exact-type/axiom probes. The successful report must show `passed: true`, `fresh_modules: 1199` and `exact_type_checks: 103`. See the [full reproduction instructions](local-reproduction/REPRODUCE.md) for memory requirements, offline dependencies and toolchain selection.
+This rebuilds all 1,199 original proof modules against the pinned precompiled external libraries and runs all 103 exact-type/axiom probes. The successful report must show `passed: true`, `fresh_modules: 1199` and `exact_type_checks: 103`. See the [full reproduction instructions](ArithmeticTheta_Lean4/REPRODUCE.md) for memory requirements, offline dependencies and toolchain selection.
 
 ### Lean 4.35.0-rc2 adaptation for Palomar
 
@@ -217,7 +215,7 @@ The selected statements and scope are documented in [`Palomar_lean/challenges/ma
 | --- | --- |
 | [Research manuscript (PDF)](paper/Arithmetic%20determination%20of%20relations%20among%20lattice%20theta%20series%20-%20Exact%20Tate%20normalization%20and%20common%20finite%20covers.pdf) | Accompanying research manuscript |
 | [`paper/OriginalTask.tex`](paper/OriginalTask.tex) | Original mathematical specification |
-| [`local-reproduction/`](local-reproduction/REPRODUCE.md) | Complete original Lean 4.33.1 sources, pinned dependencies, reproduction scripts and successful verification reports |
+| [`ArithmeticTheta_Lean4/`](ArithmeticTheta_Lean4/REPRODUCE.md) | Complete original Lean 4.33.1 sources, pinned dependencies, reproduction scripts and successful verification reports |
 | [`Palomar_lean/`](Palomar_lean/README.md) | Palomar development and verification hub, including all Challenge/Solution entry points and comparator configurations |
 | [`Palomar_lean/Proof/`](Palomar_lean/Proof/) | Shared Lean 4.35.0-rc2 proofs and required local library sources; [`GoalRoot.lean`](Palomar_lean/Proof/GoalRoot.lean) imports the complete proof closure |
 | [`Palomar_lean/challenges/`](Palomar_lean/challenges/) | Scoped independent specifications, interfaces and supporting records |
@@ -227,7 +225,7 @@ The selected statements and scope are documented in [`Palomar_lean/challenges/ma
 
 Build the Palomar edition from the repository root. Its `lakefile.toml`,
 `lean-toolchain` and `lake-manifest.json` configure the sources under
-`Palomar_lean/`; the independent `local-reproduction/` directory retains its
+`Palomar_lean/`; the independent `ArithmeticTheta_Lean4/` directory retains its
 own reproduction entry point and pinned Lean 4.33.1 environment.
 
 ## Mathematical scope

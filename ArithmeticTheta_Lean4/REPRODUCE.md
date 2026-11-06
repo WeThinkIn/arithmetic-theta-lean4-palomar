@@ -1,4 +1,4 @@
-# 本地 Lean4 可复现代码相关产物 / Local Lean 4 reproduction
+# 算术 Theta 理论的 Lean 4 证明复现 / Reproducing the Arithmetic Theta Formalization
 
 本目录收录最新英文论文（修订日期 2026-10-27）对应的原始 **Lean 4.33.1 本地形式化证明产物**：1,199 个证明源码、固定外部依赖及 103 项冻结声明的精确类型和公理检查。当前源码为 **2026-11-06 可读性修订版**：增加透明简称并重新排版定理陈述，原始合同与全部 103 个检查探针保持不变。数学审阅请从 [READING_GUIDE.md](READING_GUIDE.md) 和 [103 项定理索引](THEOREM_INDEX.md) 开始。它与仓库顶层的 Lean 4.35.0-rc2 Palomar 版本分别维护。
 
@@ -17,7 +17,7 @@
 从仓库根目录进入此目录，确保使用本目录的 `lean-toolchain`：
 
 ```bash
-cd local-reproduction
+cd ArithmeticTheta_Lean4
 # 如使用 Elan，先安装指定工具链：
 elan toolchain install leanprover/lean4:v4.33.1
 

@@ -3,7 +3,7 @@
 These documents describe the Lean 4.35.0-rc2 adaptation, its mathematical scope,
 and the verification performed at recorded source revisions. For the original
 Lean 4.33.1 proof and reproducibility instructions, use
-[`local-reproduction/`](../../local-reproduction/REPRODUCE.md).
+[`ArithmeticTheta_Lean4/`](../../ArithmeticTheta_Lean4/REPRODUCE.md).
 
 | Read about | Document |
 | --- | --- |
