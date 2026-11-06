@@ -11,10 +11,27 @@ namespace ArithmeticThetaCyclotomicModularityR0239
 open ArithmeticThetaLatticeSectionsR0188 ArithmeticThetaCompactUnaryR0183
 open ArithmeticThetaBoundaryConstantsR0235.GeometricCanonicalHodgeDescent
 
+/-- Prescribed level obtained from the common unary denominator of the family. -/
+abbrev coefficientLevel {n h : ℕ} (A : Matrices n h) : ℕ :=
+  level (commonN A)
+
+/-- The concrete number field `ℚ(ζ_L)`, with `L = coefficientLevel A`.
+This abbreviation retains the prescribed field; it does not choose an arbitrary
+field or discard the dependence on the lattice family. -/
+abbrev CoefficientField {n h : ℕ} (A : Matrices n h) :=
+  CyclotomicField (coefficientLevel A) ℚ
+
 /-- The positive-rank nonempty matrix family, with its original full Tate frame,
 actual finite metaplectic level, and all sharp image assertions, over Q(ζ_L). -/
 theorem cyclotomic_matrix_modularity :
-∀ (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → FiniteDimensional ℚ (CyclotomicField (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) ℚ) ∧ ∃ G : ArithmeticThetaArithmeticFieldR0231.MatrixData (CyclotomicField (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) ℚ) A, ArithmeticThetaCompactModularityR0209.ActualLevel G.root ∧ ∀ B : ℕ, ArithmeticThetaSharpKernelR0195.cutoff A ≤ B → ArithmeticThetaFieldImageR0233.SectionImage (CyclotomicField (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) ℚ) A B (ArithmeticThetaArithmeticFieldR0231.structureMap G) G.sections := by
+    ∀ (n h : ℕ), 0 < n → 0 < h → ∀ (A : Matrices n h),
+      (∀ i, ArithmeticThetaComputed.validGram (A i)) →
+      FiniteDimensional ℚ (CoefficientField A) ∧
+      ∃ G : ArithmeticThetaArithmeticFieldR0231.MatrixData (CoefficientField A) A,
+        ArithmeticThetaCompactModularityR0209.ActualLevel G.root ∧
+        ∀ B : ℕ, ArithmeticThetaSharpKernelR0195.cutoff A ≤ B →
+          ArithmeticThetaFieldImageR0233.SectionImage (CoefficientField A) A B
+            (ArithmeticThetaArithmeticFieldR0231.structureMap G) G.sections := by
   intro n h hn hh A hA
   have hN := (indexed_full_unary_factorization n h hn hh A hA).1
   have hL : 3 ≤ level (commonN A) := by

@@ -229,7 +229,19 @@ end PointedHodgeFunctoriality
 
 /-- Contravariant composition and identity for the actual Hodge tensor maps. -/
 theorem pointed_hodge_functoriality :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (V : WeierstrassCurve R) [V.IsElliptic] (Z : WeierstrassCurve R) [Z.IsElliptic] (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V) (g : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R V Z) (n : ℕ), ArithmeticThetaRelativeIsogenyHodgeR0172.powerMap (ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap.comp f g) n = CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeIsogenyHodgeR0172.powerMap g n) (ArithmeticThetaRelativeIsogenyHodgeR0172.powerMap f n) ∧ ArithmeticThetaRelativeIsogenyHodgeR0172.powerMap (ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap.identity R W) n = CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W n) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (V : WeierstrassCurve R) [V.IsElliptic]
+      (Z : WeierstrassCurve R) [Z.IsElliptic]
+      (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V)
+      (g : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R V Z) (n : ℕ),
+      ArithmeticThetaRelativeIsogenyHodgeR0172.powerMap
+            (ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap.comp f g) n =
+          CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeIsogenyHodgeR0172.powerMap g n)
+            (ArithmeticThetaRelativeIsogenyHodgeR0172.powerMap f n) ∧
+        ArithmeticThetaRelativeIsogenyHodgeR0172.powerMap
+            (ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap.identity R W) n =
+          CategoryTheory.CategoryStruct.id
+            (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W n) := by
   intro R _ _ _ _ _ W _ V _ Z _ f g n
   exact ⟨power_ext R Z n _ _ (power_comp_section R W V Z f g n),
     power_ext R W n _ _ (power_id_section R W n)⟩

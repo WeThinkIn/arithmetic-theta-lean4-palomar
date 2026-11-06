@@ -18,6 +18,18 @@ This repository presents the research manuscript, the complete Lean 4 formalizat
 
 [Original Lean 4.33.1 code](local-reproduction/Lean/) · [Reproduce the original verification](local-reproduction/REPRODUCE.md) · [Palomar verification interfaces](Palomar_lean/README.md)
 
+**For mathematical review:** the [reading guide](local-reproduction/READING_GUIDE.md)
+explains the main theorem, its transparent abbreviations and the proof's structure.
+The [103-endpoint index](local-reproduction/THEOREM_INDEX.md) links each original
+obligation to its defining declaration. The readability edition retains the
+original names and frozen type/axiom probes; its source changes are recorded
+separately from the historical verification evidence.
+The [readability preservation report](local-reproduction/verification/ReadabilityPreservationReport.json)
+records the fresh 1,199-module build, all 103 original endpoint checks, and the
+preservation of 23,768 original non-internal named declarations and 6,759
+definition bodies. See the [verification notes](local-reproduction/verification/README.md)
+for the comparison's scope and the distinction between current and historical reports.
+
 ## Main mathematical result
 
 Let $A_1,\ldots,A_h$ be a nonempty finite family of positive-definite, even integral Gram matrices of a common rank $n$. Write
@@ -62,7 +74,7 @@ The original Lean 4.33.1 proof entry point is [`local-reproduction/Lean/GoalRoot
 
 ## Original local Lean 4.33.1 reproducibility artifacts
 
-The [`local-reproduction/`](local-reproduction/) directory contains **本地 Lean4 可复现代码相关产物**: the original 1,199 Lean 4.33.1 proof sources, the latest paper revised on 27 October 2026, the external dependency sources, and the 103 frozen exact-type/axiom probes. This is a separate reproducibility target from the Lean 4.35.0-rc2 Palomar edition above.
+The [`local-reproduction/`](local-reproduction/) directory contains **本地 Lean4 可复现代码相关产物**: a readability edition of the original 1,199 Lean 4.33.1 proof modules, the original bundled paper snapshot, the external dependency sources, and the 103 frozen exact-type/axiom probes. This is a separate reproducibility target from the Lean 4.35.0-rc2 Palomar edition above.
 
 Follow [`local-reproduction/REPRODUCE.md`](local-reproduction/REPRODUCE.md). Install Lean 4.33.1, download the hash-pinned precompiled dependencies using `scripts/fetch_dependencies.py`, and run `scripts/reproduce.py` to rebuild all proof modules and check all 103 endpoints. Large binary dependencies are distributed through this repository's [`local-lean4331-reproduction-20261027` Release](https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar/releases/tag/local-lean4331-reproduction-20261027); the downloader restores `dependencies/lib/lean/`. GitHub's source ZIP alone does not include those release assets.
 

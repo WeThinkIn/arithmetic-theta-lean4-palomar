@@ -75,7 +75,49 @@ end SchemeCommutatorNaturality
 
 /-- Canonical transport of the geometric commutator and its primitive base unit. -/
 theorem scheme_commutator_naturality :
-    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S), ∀ (T : AlgebraicGeometry.Scheme.{u}) (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (b : Quiver.Hom T S) (f : Quiver.Hom F.curve E.curve) (hc : CategoryTheory.IsPullback f F.p E.p b) (hz : CategoryTheory.CategoryStruct.comp F.zero f = CategoryTheory.CategoryStruct.comp b E.zero), ∀ m : ℕ, ArithmeticThetaSchemeLevelR0204.Multiplicative E F b f → ∀ (M : ArithmeticThetaSchemeLevelR0204.FullLevel E (2*m)) (N : ArithmeticThetaSchemeLevelR0204.FullLevel F (2*m)), CategoryTheory.CategoryStruct.comp N.x.val f = CategoryTheory.CategoryStruct.comp b M.x.val → CategoryTheory.CategoryStruct.comp N.y.val f = CategoryTheory.CategoryStruct.comp b M.y.val → ∀ (α : ArithmeticThetaSchemeThetaMarkingR0259.Lift E m (ArithmeticThetaSchemeThetaMarkingR0259.translation E M.x)) (β : ArithmeticThetaSchemeThetaMarkingR0259.Lift E m (ArithmeticThetaSchemeThetaMarkingR0259.translation E M.y)) (α' : ArithmeticThetaSchemeThetaMarkingR0259.Lift F m (ArithmeticThetaSchemeThetaMarkingR0259.translation F N.x)) (β' : ArithmeticThetaSchemeThetaMarkingR0259.Lift F m (ArithmeticThetaSchemeThetaMarkingR0259.translation F N.y)), ∀ c : (S.presheaf.obj (Opposite.op ⊤))ˣ, ArithmeticThetaSchemeThetaNaturalityR0262.LiftCorresponds E F b f hc hz m (ArithmeticThetaSchemeThetaMarkingR0259.translation E M.x) (ArithmeticThetaSchemeThetaMarkingR0259.translation F N.x) α α' → ArithmeticThetaSchemeThetaNaturalityR0262.LiftCorresponds E F b f hc hz m (ArithmeticThetaSchemeThetaMarkingR0259.translation E M.y) (ArithmeticThetaSchemeThetaMarkingR0259.translation F N.y) β β' → ArithmeticThetaSchemeThetaMarkingR0259.Commutator E m M.x M.y α β c → ArithmeticThetaSchemeThetaMarkingR0259.Commutator F m N.x N.y α' β' (ArithmeticThetaSchemeThetaNaturalityR0262.baseUnit b c) ∧ (ArithmeticThetaSchemeThetaMarkingR0259.PrimitiveUnit (S := S) m c → ArithmeticThetaSchemeThetaMarkingR0259.PrimitiveUnit (S := T) m (ArithmeticThetaSchemeThetaNaturalityR0262.baseUnit b c)) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S),
+      ∀ (T : AlgebraicGeometry.Scheme.{u}) (F : ArithmeticThetaLocalWeierstrassR0203.Family T)
+        (b : Quiver.Hom T S) (f : Quiver.Hom F.curve E.curve)
+        (hc : CategoryTheory.IsPullback f F.p E.p b)
+        (hz :
+          CategoryTheory.CategoryStruct.comp F.zero f =
+            CategoryTheory.CategoryStruct.comp b E.zero),
+        ∀ m : ℕ,
+          ArithmeticThetaSchemeLevelR0204.Multiplicative E F b f →
+            ∀ (M : ArithmeticThetaSchemeLevelR0204.FullLevel E (2 * m))
+              (N : ArithmeticThetaSchemeLevelR0204.FullLevel F (2 * m)),
+              CategoryTheory.CategoryStruct.comp N.x.val f =
+                  CategoryTheory.CategoryStruct.comp b M.x.val →
+                CategoryTheory.CategoryStruct.comp N.y.val f =
+                    CategoryTheory.CategoryStruct.comp b M.y.val →
+                  ∀
+                    (α :
+                      ArithmeticThetaSchemeThetaMarkingR0259.Lift E m
+                        (ArithmeticThetaSchemeThetaMarkingR0259.translation E M.x))
+                    (β :
+                      ArithmeticThetaSchemeThetaMarkingR0259.Lift E m
+                        (ArithmeticThetaSchemeThetaMarkingR0259.translation E M.y))
+                    (α' :
+                      ArithmeticThetaSchemeThetaMarkingR0259.Lift F m
+                        (ArithmeticThetaSchemeThetaMarkingR0259.translation F N.x))
+                    (β' :
+                      ArithmeticThetaSchemeThetaMarkingR0259.Lift F m
+                        (ArithmeticThetaSchemeThetaMarkingR0259.translation F N.y)),
+                    ∀ c : (S.presheaf.obj (Opposite.op ⊤))ˣ,
+                      ArithmeticThetaSchemeThetaNaturalityR0262.LiftCorresponds E F b f hc hz m
+                          (ArithmeticThetaSchemeThetaMarkingR0259.translation E M.x)
+                          (ArithmeticThetaSchemeThetaMarkingR0259.translation F N.x) α α' →
+                        ArithmeticThetaSchemeThetaNaturalityR0262.LiftCorresponds E F b f hc hz m
+                            (ArithmeticThetaSchemeThetaMarkingR0259.translation E M.y)
+                            (ArithmeticThetaSchemeThetaMarkingR0259.translation F N.y) β β' →
+                          ArithmeticThetaSchemeThetaMarkingR0259.Commutator E m M.x M.y α β c →
+                            ArithmeticThetaSchemeThetaMarkingR0259.Commutator F m N.x N.y α' β'
+                                (ArithmeticThetaSchemeThetaNaturalityR0262.baseUnit b c) ∧
+                              (ArithmeticThetaSchemeThetaMarkingR0259.PrimitiveUnit (S := S) m c →
+                                ArithmeticThetaSchemeThetaMarkingR0259.PrimitiveUnit (S := T) m
+                                  (ArithmeticThetaSchemeThetaNaturalityR0262.baseUnit b c)) := by
   intro k _ _ S σ E T F b f hc hz m hm M N hx hy α β α' β' c hα hβ hab
   exact ⟨SchemeCommutatorNaturality.commutator E F b f hc hz m M.x M.y N.x N.y
     α β α' β' c hα hβ hab, SchemeCommutatorNaturality.primitive_map b m c⟩

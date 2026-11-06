@@ -104,7 +104,41 @@ open ActualNormalizedKatoUniqueness
 /-- Equal divisors and the genuine [2] and [3] norms determine a nonzero
 rational function uniquely on the actual generic Tate curve. -/
 theorem actual_normalized_kato_uniqueness :
-∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)], ∀ (φ₂ φ₃ : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))), ArithmeticThetaGeometricNormR0150.IsFieldMap (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G 2) φ₂ → ArithmeticThetaGeometricNormR0150.IsFieldMap (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G 3) φ₃ → ∀ (f g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))), f ≠ 0 → g ≠ 0 → (∀ x : (ArithmeticThetaGenericEvaluationR0140.genericScheme k M), AlgebraicGeometry.Scheme.ord f x = AlgebraicGeometry.Scheme.ord g x) → ArithmeticThetaGeometricNormR0150.fieldNorm φ₂ f = f → ArithmeticThetaGeometricNormR0150.fieldNorm φ₂ g = g → ArithmeticThetaGeometricNormR0150.fieldNorm φ₃ f = f → ArithmeticThetaGeometricNormR0150.fieldNorm φ₃ g = g → f = g := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)],
+      ∀
+        (φ₂ φ₃ :
+          (AlgebraicGeometry.Scheme.functionField
+              (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+            (AlgebraicGeometry.Scheme.functionField
+              (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))),
+        ArithmeticThetaGeometricNormR0150.IsFieldMap
+            (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G 2) φ₂ →
+          ArithmeticThetaGeometricNormR0150.IsFieldMap
+              (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G 3) φ₃ →
+            ∀
+              (f g :
+                (AlgebraicGeometry.Scheme.functionField
+                  (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))),
+              f ≠ 0 →
+                g ≠ 0 →
+                  (∀ x : (ArithmeticThetaGenericEvaluationR0140.genericScheme k M),
+                      AlgebraicGeometry.Scheme.ord f x = AlgebraicGeometry.Scheme.ord g x) →
+                    ArithmeticThetaGeometricNormR0150.fieldNorm φ₂ f = f →
+                      ArithmeticThetaGeometricNormR0150.fieldNorm φ₂ g = g →
+                        ArithmeticThetaGeometricNormR0150.fieldNorm φ₃ f = f →
+                          ArithmeticThetaGeometricNormR0150.fieldNorm φ₃ g = g → f = g := by
   intro k _ _ r hr h3 T he M hM s hs G hG _ _ φ₂ φ₃ hφ₂ hφ₃ f g hf hg hord hf₂ hg₂ hf₃ hg₃
   letI := generic_relative_one k h3 M hM s hs
   letI := generic_geometricallyIntegral k h3 M hM

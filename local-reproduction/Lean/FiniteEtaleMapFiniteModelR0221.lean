@@ -360,7 +360,32 @@ open CategoryTheory CategoryTheory.Limits AlgebraicGeometry FiniteEtaleMap
 /-- The actual finite étale map descends after a common finite enlargement,
 with Cartesian refinements of both input models and exact pointwise degree. -/
 theorem finite_etale_map_finite_model :
-    ∀ (X Y : ArithmeticThetaFiniteFieldModelsR0221.Curve ArithmeticThetaFiniteFieldModelsR0221.Omega) (K0 : ArithmeticThetaFiniteFieldModelsR0221.FieldStage), FiniteDimensional ℚ K0 → ∀ (M : ArithmeticThetaFiniteFieldModelsR0221.Model X K0) (N : ArithmeticThetaFiniteFieldModelsR0221.Model Y K0) (f : Quiver.Hom X.space Y.space), CategoryTheory.CategoryStruct.comp f Y.map = X.map → AlgebraicGeometry.IsFinite f → AlgebraicGeometry.Etale f → AlgebraicGeometry.Surjective f → ∃ K : ArithmeticThetaFiniteFieldModelsR0221.FieldStage, FiniteDimensional ℚ K ∧ ∃ (M1 : ArithmeticThetaFiniteFieldModelsR0221.Model X K) (N1 : ArithmeticThetaFiniteFieldModelsR0221.Model Y K) (_ : ArithmeticThetaFiniteFieldModelsR0221.Refinement M M1) (_ : ArithmeticThetaFiniteFieldModelsR0221.Refinement N N1) (g : Quiver.Hom M1.curve.space N1.curve.space), CategoryTheory.CategoryStruct.comp g N1.curve.map = M1.curve.map ∧ CategoryTheory.IsPullback M1.projection f g N1.projection ∧ AlgebraicGeometry.IsFinite g ∧ AlgebraicGeometry.Etale g ∧ AlgebraicGeometry.Surjective g ∧ ∀ y : Y.space, AlgebraicGeometry.Scheme.Hom.finrank g (N1.projection y) = AlgebraicGeometry.Scheme.Hom.finrank f y := by
+    ∀
+      (X Y :
+        ArithmeticThetaFiniteFieldModelsR0221.Curve ArithmeticThetaFiniteFieldModelsR0221.Omega)
+      (K0 : ArithmeticThetaFiniteFieldModelsR0221.FieldStage),
+      FiniteDimensional ℚ K0 →
+        ∀ (M : ArithmeticThetaFiniteFieldModelsR0221.Model X K0)
+          (N : ArithmeticThetaFiniteFieldModelsR0221.Model Y K0) (f : Quiver.Hom X.space Y.space),
+          CategoryTheory.CategoryStruct.comp f Y.map = X.map →
+            AlgebraicGeometry.IsFinite f →
+              AlgebraicGeometry.Etale f →
+                AlgebraicGeometry.Surjective f →
+                  ∃ K : ArithmeticThetaFiniteFieldModelsR0221.FieldStage,
+                    FiniteDimensional ℚ K ∧
+                      ∃ (M1 : ArithmeticThetaFiniteFieldModelsR0221.Model X K) (N1 :
+                        ArithmeticThetaFiniteFieldModelsR0221.Model Y K) (_ :
+                        ArithmeticThetaFiniteFieldModelsR0221.Refinement M M1) (_ :
+                        ArithmeticThetaFiniteFieldModelsR0221.Refinement N N1) (g :
+                        Quiver.Hom M1.curve.space N1.curve.space),
+                        CategoryTheory.CategoryStruct.comp g N1.curve.map = M1.curve.map ∧
+                          CategoryTheory.IsPullback M1.projection f g N1.projection ∧
+                            AlgebraicGeometry.IsFinite g ∧
+                              AlgebraicGeometry.Etale g ∧
+                                AlgebraicGeometry.Surjective g ∧
+                                  ∀ y : Y.space,
+                                    AlgebraicGeometry.Scheme.Hom.finrank g (N1.projection y) =
+                                      AlgebraicGeometry.Scheme.Hom.finrank f y := by
   intro X Y K0 hK M N f hf _hfinite hetale hsurjective
   have : FiniteDimensional ℚ K0 := hK
   have : Etale f := hetale

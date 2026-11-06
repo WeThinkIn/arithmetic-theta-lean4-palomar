@@ -33,7 +33,62 @@ open ArithmeticThetaHodgeFourTorsionR0147
 /-- Existence and choice-independent naturality for actual Kato functions,
 with every positive coprime multiplication norm. -/
 theorem actual_kato_field_base_change :
-∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] (kb : Type u) [Field kb] [CharZero kb] (rb : ℕ) (hrb : 0 < rb) (h3b : 3 ≤ rb) (Tb : ArithmeticThetaInfinitesimalPolygonR0129.Tower kb rb hrb) (heb : Even rb) (Mb : ArithmeticThetaProjectiveEffectivityR0135.Model kb Tb) (hMb : ArithmeticThetaProjectiveEffectivityR0135.IsModel kb Tb Mb) (sb : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme kb) Mb.X) (hsb : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift kb Mb (ArithmeticThetaIdentitySectionsR0138.zeroIndex rb hrb) 1 sb) (Gb : ArithmeticThetaMarkedGroupLawR0146.Law kb Mb) (hGb : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw kb Mb sb hsb.1 Gb) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme kb Mb)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme kb Mb)] (ι : LaurentSeries k →+* LaurentSeries kb) (b : Quiver.Hom (ArithmeticThetaGenericEvaluationR0140.genericScheme kb Mb) (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)), ArithmeticThetaKatoExistenceR0151.IsTateBaseChange k kb M Mb s hs.1 sb hsb.1 G Gb ι b → ∀ (α : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme kb Mb))), ArithmeticThetaGeometricNormR0150.IsFieldMap b α → ∀ (c : ℕ), 1 < c → Nat.Coprime c 6 → (∃ g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)), ∃ gb : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme kb Mb)), ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G c g ∧ ArithmeticThetaKatoExistenceR0151.IsKatoFunction kb Mb sb hsb.1 Gb c gb ∧ α g = gb) ∧ (∀ (g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))), ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G c g → ArithmeticThetaKatoExistenceR0151.IsKatoFunction kb Mb sb hsb.1 Gb c (α g)) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      (kb : Type u) [Field kb] [CharZero kb] (rb : ℕ) (hrb : 0 < rb) (h3b : 3 ≤ rb)
+      (Tb : ArithmeticThetaInfinitesimalPolygonR0129.Tower kb rb hrb) (heb : Even rb)
+      (Mb : ArithmeticThetaProjectiveEffectivityR0135.Model kb Tb)
+      (hMb : ArithmeticThetaProjectiveEffectivityR0135.IsModel kb Tb Mb)
+      (sb : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme kb) Mb.X)
+      (hsb :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift kb Mb
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex rb hrb) 1 sb)
+      (Gb : ArithmeticThetaMarkedGroupLawR0146.Law kb Mb)
+      (hGb : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw kb Mb sb hsb.1 Gb)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme kb Mb)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme kb Mb)]
+      (ι : LaurentSeries k →+* LaurentSeries kb)
+      (b :
+        Quiver.Hom (ArithmeticThetaGenericEvaluationR0140.genericScheme kb Mb)
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)),
+      ArithmeticThetaKatoExistenceR0151.IsTateBaseChange k kb M Mb s hs.1 sb hsb.1 G Gb ι b →
+        ∀
+          (α :
+            (AlgebraicGeometry.Scheme.functionField
+                (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+              (AlgebraicGeometry.Scheme.functionField
+                (ArithmeticThetaGenericEvaluationR0140.genericScheme kb Mb))),
+          ArithmeticThetaGeometricNormR0150.IsFieldMap b α →
+            ∀ (c : ℕ),
+              1 < c →
+                Nat.Coprime c 6 →
+                  (∃ g :
+                      (AlgebraicGeometry.Scheme.functionField
+                        (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)),
+                      ∃ gb :
+                        (AlgebraicGeometry.Scheme.functionField
+                          (ArithmeticThetaGenericEvaluationR0140.genericScheme kb Mb)),
+                        ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G c g ∧
+                          ArithmeticThetaKatoExistenceR0151.IsKatoFunction kb Mb sb hsb.1 Gb c gb ∧
+                            α g = gb) ∧
+                    (∀
+                      (g :
+                        (AlgebraicGeometry.Scheme.functionField
+                          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))),
+                      ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G c g →
+                        ArithmeticThetaKatoExistenceR0151.IsKatoFunction kb Mb sb hsb.1 Gb c (α g)) := by
   intro k _ _ r hr h3 T he M hM s hs G hG _ _
     kb _ _ rb hrb h3b Tb heb Mb hMb sb hsb Gb hGb _ _ ι b hb α hα c hc hc6
   have hnatural (g : (genericScheme k M).functionField)

@@ -198,7 +198,22 @@ open Scheme.Modules
 /-- Restriction is faithful, and every actual generic dual section has one
 uniform vertical denominator. All nonnegative powers are included. -/
 theorem generic_dual_localization :
-∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (d : ℕ), Function.Injective (ArithmeticThetaGenericEvaluationR0140.restrictDual k M s d) ∧ ∀ ψ : ArithmeticThetaGenericEvaluationR0140.GenericDual k M s d, ∃ (b : ℕ) (φ : ArithmeticThetaIdentitySectionsR0138.Dual k M s d), ArithmeticThetaGenericEvaluationR0140.ScaledEq k M s d ((algebraMap (PowerSeries k) (LaurentSeries k) PowerSeries.X)^b) ψ (ArithmeticThetaGenericEvaluationR0140.restrictDual k M s d φ) := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+        (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+        (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+        (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+        (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+        (hs :
+          ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+            (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+        (d : ℕ),
+        Function.Injective (ArithmeticThetaGenericEvaluationR0140.restrictDual k M s d) ∧
+          ∀ ψ : ArithmeticThetaGenericEvaluationR0140.GenericDual k M s d,
+            ∃ (b : ℕ) (φ : ArithmeticThetaIdentitySectionsR0138.Dual k M s d),
+              ArithmeticThetaGenericEvaluationR0140.ScaledEq k M s d
+                ((algebraMap (PowerSeries k) (LaurentSeries k) PowerSeries.X) ^ b) ψ
+                (ArithmeticThetaGenericEvaluationR0140.restrictDual k M s d φ) := by
   intro k _ _ r hr h3 T M hM s hs d
   letI : IsProper M.p := hM.1
   letI : Flat M.p := hM.2.1

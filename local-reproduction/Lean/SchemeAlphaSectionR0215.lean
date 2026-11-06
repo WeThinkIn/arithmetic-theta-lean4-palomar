@@ -705,7 +705,16 @@ end SchemeAlphaSection
 /-- The unique intrinsic signed alpha on an arbitrary marked genus-one family,
 with its prescribed affine normalization and its frame property on every open. -/
 theorem scheme_alpha_section :
-    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4), (∃! a : (ArithmeticThetaSchemeHodgeR0205.Cotangent E).presheaf.obj (Opposite.op ⊤), ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E M a) ∧ (∀ a : (ArithmeticThetaSchemeHodgeR0205.Cotangent E).presheaf.obj (Opposite.op ⊤), ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E M a → ArithmeticThetaRelativeDiscriminantR0171.IsFrame (ArithmeticThetaSchemeHodgeR0205.Cotangent E) ⊤ a) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4),
+      (∃! a : (ArithmeticThetaSchemeHodgeR0205.Cotangent E).presheaf.obj (Opposite.op ⊤),
+          ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E M a) ∧
+        (∀ a : (ArithmeticThetaSchemeHodgeR0205.Cotangent E).presheaf.obj (Opposite.op ⊤),
+          ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E M a →
+            ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+              (ArithmeticThetaSchemeHodgeR0205.Cotangent E) ⊤ a) := by
   intro k _ _ S σ E M
   obtain ⟨a, ha⟩ := SchemeAlphaSection.exists_realizes E M k σ
   exact ⟨⟨a, ha, fun b hb => SchemeAlphaSection.realizes_unique E M k σ hb ha⟩,

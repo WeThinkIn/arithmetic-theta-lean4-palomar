@@ -118,7 +118,14 @@ end SectionImageProof
 
 /-- The given compact sections have exactly the sharp computed full-series image. -/
 theorem compact_theta_section_image :
-∀ (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ (G : ArithmeticThetaCompactModularityR0209.MatrixData A) (B : ℕ), ArithmeticThetaSharpKernelR0195.cutoff A ≤ B → ArithmeticThetaCompactModularityR0209.SectionImage G B := by
+    ∀ (n h : ℕ),
+      0 < n →
+        0 < h →
+          ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h),
+            (∀ i, ArithmeticThetaComputed.validGram (A i)) →
+              ∀ (G : ArithmeticThetaCompactModularityR0209.MatrixData A) (B : ℕ),
+                ArithmeticThetaSharpKernelR0195.cutoff A ≤ B →
+                  ArithmeticThetaCompactModularityR0209.SectionImage G B := by
   intro n h hn hh A hA G B hB
   classical
   have hr := SectionImageProof.relations hn hh hA G

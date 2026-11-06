@@ -113,7 +113,13 @@ end FieldSharpModularFamilyR0232
 /-- Construct the same norm-only compact cover, all matrix sections, their full
 expansions and its actual finite metaplectic level over the specified field. -/
 theorem field_sharp_modular_family :
-∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∃ G : ArithmeticThetaArithmeticFieldR0231.MatrixData k A, ArithmeticThetaCompactModularityR0209.ActualLevel G.root := by
+    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (n h : ℕ),
+      0 < n →
+        0 < h →
+          ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h),
+            (∀ i, ArithmeticThetaComputed.validGram (A i)) →
+              ∃ G : ArithmeticThetaArithmeticFieldR0231.MatrixData k A,
+                ArithmeticThetaCompactModularityR0209.ActualLevel G.root := by
   intro k _ _ _ n h hn hh A hA
   classical
   obtain ⟨hN, hNeven, _, U, hU, hpairs, hformal⟩ :=

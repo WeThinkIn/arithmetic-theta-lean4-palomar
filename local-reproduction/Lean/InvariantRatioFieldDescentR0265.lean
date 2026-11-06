@@ -115,7 +115,31 @@ open InvariantRatioFieldDescent
 
 /-- Faithful descent of the actual invariant-component quotients. -/
 theorem invariant_ratio_field_descent :
-∀ (F K : Type u) [Field F] [Field K] (θ : F →+* K) (E : ArithmeticThetaLocalWeierstrassR0203.Family (ArithmeticThetaLocalWeierstrassR0203.Base F)) (E' : ArithmeticThetaLocalWeierstrassR0203.Family (ArithmeticThetaLocalWeierstrassR0203.Base K)) (f : Quiver.Hom E'.curve E.curve) (hc : CategoryTheory.IsPullback f E'.p E.p (AlgebraicGeometry.Spec.map (CommRingCat.ofHom θ))) (hz : CategoryTheory.CategoryStruct.comp E'.zero f = CategoryTheory.CategoryStruct.comp (AlgebraicGeometry.Spec.map (CommRingCat.ofHom θ)) E.zero) (m : ℕ) (hm : 0 < m) (A B : CategoryTheory.End (ArithmeticThetaSchemeSchrodingerR0261.V E m)) (A' B' : CategoryTheory.End (ArithmeticThetaSchemeSchrodingerR0261.V E' m)), AlgebraicGeometry.Scheme.Modules.IsInvertible (ArithmeticThetaSchemeSchrodingerR0261.fixed A) → AlgebraicGeometry.Scheme.Modules.IsInvertible ((AlgebraicGeometry.Scheme.Modules.pullback E.zero).obj (ArithmeticThetaSchemeThetaMarkingR0259.thetaLine E m)) → ArithmeticThetaSchemeThetaNaturalityR0262.InvariantComponents E E' (AlgebraicGeometry.Spec.map (CommRingCat.ofHom θ)) f hc hz m A B A' B' → ∀ s : Fin m → K, ArithmeticThetaInvariantRatiosR0265.ComponentRatios E' m hm A' B' s → ∃! r : Fin m → F, ArithmeticThetaInvariantRatiosR0265.ComponentRatios E m hm A B r ∧ ∀ i, θ (r i) = s i := by
+    ∀ (F K : Type u) [Field F] [Field K] (θ : F →+* K)
+      (E :
+        ArithmeticThetaLocalWeierstrassR0203.Family (ArithmeticThetaLocalWeierstrassR0203.Base F))
+      (E' :
+        ArithmeticThetaLocalWeierstrassR0203.Family (ArithmeticThetaLocalWeierstrassR0203.Base K))
+      (f : Quiver.Hom E'.curve E.curve)
+      (hc : CategoryTheory.IsPullback f E'.p E.p (AlgebraicGeometry.Spec.map (CommRingCat.ofHom θ)))
+      (hz :
+        CategoryTheory.CategoryStruct.comp E'.zero f =
+          CategoryTheory.CategoryStruct.comp (AlgebraicGeometry.Spec.map (CommRingCat.ofHom θ))
+            E.zero)
+      (m : ℕ) (hm : 0 < m) (A B : CategoryTheory.End (ArithmeticThetaSchemeSchrodingerR0261.V E m))
+      (A' B' : CategoryTheory.End (ArithmeticThetaSchemeSchrodingerR0261.V E' m)),
+      AlgebraicGeometry.Scheme.Modules.IsInvertible
+          (ArithmeticThetaSchemeSchrodingerR0261.fixed A) →
+        AlgebraicGeometry.Scheme.Modules.IsInvertible
+            ((AlgebraicGeometry.Scheme.Modules.pullback E.zero).obj
+              (ArithmeticThetaSchemeThetaMarkingR0259.thetaLine E m)) →
+          ArithmeticThetaSchemeThetaNaturalityR0262.InvariantComponents E E'
+              (AlgebraicGeometry.Spec.map (CommRingCat.ofHom θ)) f hc hz m A B A' B' →
+            ∀ s : Fin m → K,
+              ArithmeticThetaInvariantRatiosR0265.ComponentRatios E' m hm A' B' s →
+                ∃! r : Fin m → F,
+                  ArithmeticThetaInvariantRatiosR0265.ComponentRatios E m hm A B r ∧
+                    ∀ i, θ (r i) = s i := by
   intro F K _ _ θ E E' f hc hz m hm A B A' B' hL hM hcmp s hs
   let b := Spec.map (CommRingCat.ofHom θ)
   let P := Scheme.Modules.pullback b

@@ -166,7 +166,27 @@ open ArithmeticThetaLocalWeierstrassR0203 EvenCoverRightAction
 
 /-- The unique actual right action, with identity and ordered composition. -/
 theorem even_cover_right_action :
-∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S), ∀ (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E) (z : S.presheaf.obj (Opposite.op ⊤)), z^2 = -1 → ∀ (D : ArithmeticThetaEvenMarkingTorsorR0216.Cover E), ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D → (∀ A : ArithmeticThetaEvenMarkingTorsorR0216.EvenGroup, ∃! q : CategoryTheory.Iso D.space D.space, ArithmeticThetaEvenMarkingTorsorR0216.Acts E D A.val q) ∧ (∀ q : CategoryTheory.Iso D.space D.space, ArithmeticThetaEvenMarkingTorsorR0216.Acts E D (1 : ArithmeticThetaFourTorsion.Mat4) q → q.hom = CategoryTheory.CategoryStruct.id D.space) ∧ (∀ (A B : ArithmeticThetaEvenMarkingTorsorR0216.EvenGroup) (q r s : CategoryTheory.Iso D.space D.space), ArithmeticThetaEvenMarkingTorsorR0216.Acts E D A.val q → ArithmeticThetaEvenMarkingTorsorR0216.Acts E D B.val r → ArithmeticThetaEvenMarkingTorsorR0216.Acts E D (A.val * B.val) s → CategoryTheory.CategoryStruct.comp q.hom r.hom = s.hom) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S),
+      ∀ (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E)
+        (z : S.presheaf.obj (Opposite.op ⊤)),
+        z ^ 2 = -1 →
+          ∀ (D : ArithmeticThetaEvenMarkingTorsorR0216.Cover E),
+            ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D →
+              (∀ A : ArithmeticThetaEvenMarkingTorsorR0216.EvenGroup,
+                  ∃! q : CategoryTheory.Iso D.space D.space,
+                    ArithmeticThetaEvenMarkingTorsorR0216.Acts E D A.val q) ∧
+                (∀ q : CategoryTheory.Iso D.space D.space,
+                    ArithmeticThetaEvenMarkingTorsorR0216.Acts E D
+                        (1 : ArithmeticThetaFourTorsion.Mat4) q →
+                      q.hom = CategoryTheory.CategoryStruct.id D.space) ∧
+                  (∀ (A B : ArithmeticThetaEvenMarkingTorsorR0216.EvenGroup)
+                    (q r s : CategoryTheory.Iso D.space D.space),
+                    ArithmeticThetaEvenMarkingTorsorR0216.Acts E D A.val q →
+                      ArithmeticThetaEvenMarkingTorsorR0216.Acts E D B.val r →
+                        ArithmeticThetaEvenMarkingTorsorR0216.Acts E D (A.val * B.val) s →
+                          CategoryTheory.CategoryStruct.comp q.hom r.hom = s.hom) := by
   intro k _ _ S σ E P z hz D hD
   refine ⟨?_, ?_, ?_⟩
   · exact iso_exists E k σ P z D hD

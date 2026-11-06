@@ -332,7 +332,23 @@ namespace ArithmeticThetaKatoAnnularR0152
 
 /-- Rational pullbacks agree on every completed cyclic overlap. -/
 theorem kato_annular_overlap :
-∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X) (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j)) (φ : Fin r → ((AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* ArithmeticThetaKatoAnnularR0152.ChartField k)) (hφ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M (χ j) (φ j)), ∀ g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)), ArithmeticThetaRatioRegularityR0067.RationalCompatible k r hr (fun j => φ j g) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X)
+      (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j))
+      (φ :
+        Fin r →
+          ((AlgebraicGeometry.Scheme.functionField
+              (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+            ArithmeticThetaKatoAnnularR0152.ChartField k))
+      (hφ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M (χ j) (φ j)),
+      ∀ g :
+        (AlgebraicGeometry.Scheme.functionField
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)),
+        ArithmeticThetaRatioRegularityR0067.RationalCompatible k r hr (fun j => φ j g) := by
   intro k _ _ r hr _h3 T M hM _ χ hχ φ hφ g
   exact KatoAnnularOverlap.rational_overlap k M hM χ hχ φ hφ g
 

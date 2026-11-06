@@ -403,7 +403,27 @@ open ArithmeticThetaCubicModelR0144 ArithmeticThetaCompactifiedDifferentialR0145
 
 /-- The actual polygon inversion is the inverse on every test scheme. -/
 theorem actual_inverse_comparison :
-∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s), ∀ (G : ArithmeticThetaMarkedGroupLawR0146.Law k M), ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G → ∀ (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → (CategoryTheory.Iso M.X M.X)) (inv : CategoryTheory.Iso M.X M.X) (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv), ∀ (V : AlgebraicGeometry.Scheme.{u}) (t : Quiver.Hom V (AlgebraicGeometry.Spec (CommRingCat.of (LaurentSeries k)))) (x : NeronModelInfra.SchemeHomOver t (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M)), (G.inv t x).val = CategoryTheory.CategoryStruct.comp x.val (ArithmeticThetaGeometricLiftsR0141.inversionMap k M rot scal inv ha) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s),
+      ∀ (G : ArithmeticThetaMarkedGroupLawR0146.Law k M),
+        ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G →
+          ∀ (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → (CategoryTheory.Iso M.X M.X))
+            (inv : CategoryTheory.Iso M.X M.X)
+            (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv),
+            ∀ (V : AlgebraicGeometry.Scheme.{u})
+              (t : Quiver.Hom V (AlgebraicGeometry.Spec (CommRingCat.of (LaurentSeries k))))
+              (x :
+                NeronModelInfra.SchemeHomOver t
+                  (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M)),
+              (G.inv t x).val =
+                CategoryTheory.CategoryStruct.comp x.val
+                  (ArithmeticThetaGeometricLiftsR0141.inversionMap k M rot scal inv ha) := by
   intro k _ _ r hr h3 T he M hM s hs G hG rot scal iv ha V t x
   obtain ⟨X, hX, _⟩ := algebraic_tate_coordinates k r hr h3 T M hM s hs false
   obtain ⟨Y, hY, _⟩ := algebraic_tate_coordinates k r hr h3 T M hM s hs true

@@ -18,7 +18,33 @@ open ArithmeticThetaPullback
 
 /-- The common cover, full frame and regular unary sections are all constructed. -/
 theorem arithmetic_common_unary_family :
-    ∀ (k : Type) [Field k] [CharZero k] (N s : ℕ), 0 < N → Even N → ∀ (m : Fin (s+1) → ℕ) (ν : Fin (s+1) → ℤ), (∀ i, 0 < m i ∧ Even (m i) ∧ m i ∣ N ∧ (-(m i : ℤ) ≤ 2*ν i ∧ 2*ν i < (m i : ℤ))) → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (ArithmeticThetaCompactUnaryR0183.level N)) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k (ArithmeticThetaCompactUnaryR0183.level N) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k (ArithmeticThetaCompactUnaryR0183.level N) D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k (ArithmeticThetaCompactUnaryR0183.level N) H → ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H → ∀ (V : ArithmeticThetaBoundaryHodgeR0182.DiskTest k (ArithmeticThetaCompactUnaryR0183.level N) D X) (ζ : k), IsPrimitiveRoot ζ (ArithmeticThetaCompactUnaryR0183.level N) → ArithmeticThetaTateCuspsR0181.CanonicalMarking k (ArithmeticThetaCompactUnaryR0183.level N) ζ V.level → ArithmeticThetaArithmeticCommonCoverR0238.CommonUnary k N s m ν D X H V := by
+    ∀ (k : Type) [Field k] [CharZero k] (N s : ℕ),
+      0 < N →
+        Even N →
+          ∀ (m : Fin (s + 1) → ℕ) (ν : Fin (s + 1) → ℤ),
+            (∀ i, 0 < m i ∧ Even (m i) ∧ m i ∣ N ∧ (-(m i : ℤ) ≤ 2 * ν i ∧ 2 * ν i < (m i : ℤ))) →
+              ∀
+                (D :
+                  ArithmeticThetaLevelCompactificationR0179.LevelData k
+                    (ArithmeticThetaCompactUnaryR0183.level N))
+                (X :
+                  ArithmeticThetaLevelCompactificationR0179.Compactification k
+                    (ArithmeticThetaCompactUnaryR0183.level N) D)
+                (H :
+                  ArithmeticThetaBoundaryHodgeR0182.Extension k
+                    (ArithmeticThetaCompactUnaryR0183.level N) D X),
+                ArithmeticThetaBoundaryHodgeR0182.Canonical k
+                    (ArithmeticThetaCompactUnaryR0183.level N) H →
+                  ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H →
+                    ∀
+                      (V :
+                        ArithmeticThetaBoundaryHodgeR0182.DiskTest k
+                          (ArithmeticThetaCompactUnaryR0183.level N) D X)
+                      (ζ : k),
+                      IsPrimitiveRoot ζ (ArithmeticThetaCompactUnaryR0183.level N) →
+                        ArithmeticThetaTateCuspsR0181.CanonicalMarking k
+                            (ArithmeticThetaCompactUnaryR0183.level N) ζ V.level →
+                          ArithmeticThetaArithmeticCommonCoverR0238.CommonUnary k N s m ν D X H V := by
   intro k _ _ N s hN hNeven m ν hm D X H hH hgH V ζ hζ hmark
   classical
   have hm' (i : Fin (s+1)) : 0 < m i ∧ Even (m i) ∧ 8*m i ∣ level N := by

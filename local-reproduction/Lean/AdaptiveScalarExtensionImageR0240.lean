@@ -7,6 +7,7 @@ set_option maxRecDepth 4096
 set_option maxHeartbeats 1600000
 noncomputable section
 namespace ArithmeticThetaScalarExtensionR0240
+open ArithmeticThetaCyclotomicModularityR0239 (CoefficientField)
 open ArithmeticThetaLatticeSectionsR0188 ArithmeticThetaCompactUnaryR0183
 open ArithmeticThetaAdaptiveSolverR0230 ArithmeticThetaFieldImageR0233
 
@@ -35,7 +36,40 @@ private theorem outputImage_of_correct
     ArithmeticThetaComputed.selectedIndex] using hi.2
 
 theorem adaptive_scalar_extension_image :
-∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ G : ArithmeticThetaArithmeticFieldR0231.MatrixData k A, ∀ (d : ℕ) (R : Matrix (Fin h) (Fin d) ℚ), ArithmeticThetaAdaptiveSolverR0230.Relations A R → ∃ o : ArithmeticThetaAdaptiveSolverR0230.Result h, ArithmeticThetaAdaptiveSolverR0230.solve A R = some o ∧ ArithmeticThetaAdaptiveSolverR0230.Correct A o ∧ ArithmeticThetaScalarExtensionR0240.OutputImage ι G o ∧ o.cutoff ≤ ArithmeticThetaAdaptiveSolverR0230.bound A ∧ o.cutoff ∈ ArithmeticThetaAdaptiveSolverR0230.schedule (ArithmeticThetaAdaptiveSolverR0230.bound A) ∧ (o.cutoff = ArithmeticThetaAdaptiveSolverR0230.bound A ∨ ArithmeticThetaAdaptiveSolverR0230.early A R o.cutoff = true) ∧ (∀ b ∈ ArithmeticThetaAdaptiveSolverR0230.schedule (ArithmeticThetaAdaptiveSolverR0230.bound A), b < o.cutoff → ArithmeticThetaAdaptiveSolverR0230.early A R b = false) ∧ ∃ D : ArithmeticThetaScalarExtensionR0240.DiskLift ι G, ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback D.map).obj (ArithmeticThetaScalarExtensionR0240.line ι G)) ⊤ (ArithmeticThetaScalarExtensionR0240.frame ι G D) ∧ AlgebraicGeometry.IsDominant (CategoryTheory.CategoryStruct.comp (ArithmeticThetaTateCuspsR0181.genericInclusion l) D.map) ∧ ArithmeticThetaScalarExtensionR0240.Expansion ι G D := by
+    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (n h : ℕ),
+      0 < n →
+        0 < h →
+          ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h),
+            (∀ i, ArithmeticThetaComputed.validGram (A i)) →
+              ∀ G : ArithmeticThetaArithmeticFieldR0231.MatrixData k A,
+                ∀ (d : ℕ) (R : Matrix (Fin h) (Fin d) ℚ),
+                  ArithmeticThetaAdaptiveSolverR0230.Relations A R →
+                    ∃ o : ArithmeticThetaAdaptiveSolverR0230.Result h,
+                      ArithmeticThetaAdaptiveSolverR0230.solve A R = some o ∧
+                        ArithmeticThetaAdaptiveSolverR0230.Correct A o ∧
+                          ArithmeticThetaScalarExtensionR0240.OutputImage ι G o ∧
+                            o.cutoff ≤ ArithmeticThetaAdaptiveSolverR0230.bound A ∧
+                              o.cutoff ∈
+                                  ArithmeticThetaAdaptiveSolverR0230.schedule
+                                    (ArithmeticThetaAdaptiveSolverR0230.bound A) ∧
+                                (o.cutoff = ArithmeticThetaAdaptiveSolverR0230.bound A ∨
+                                    ArithmeticThetaAdaptiveSolverR0230.early A R o.cutoff = true) ∧
+                                  (∀
+                                      b ∈
+                                        ArithmeticThetaAdaptiveSolverR0230.schedule
+                                          (ArithmeticThetaAdaptiveSolverR0230.bound A),
+                                      b < o.cutoff →
+                                        ArithmeticThetaAdaptiveSolverR0230.early A R b = false) ∧
+                                    ∃ D : ArithmeticThetaScalarExtensionR0240.DiskLift ι G,
+                                      ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+                                          ((AlgebraicGeometry.Scheme.Modules.pullback D.map).obj
+                                            (ArithmeticThetaScalarExtensionR0240.line ι G))
+                                          ⊤ (ArithmeticThetaScalarExtensionR0240.frame ι G D) ∧
+                                        AlgebraicGeometry.IsDominant
+                                            (CategoryTheory.CategoryStruct.comp
+                                              (ArithmeticThetaTateCuspsR0181.genericInclusion l)
+                                              D.map) ∧
+                                          ArithmeticThetaScalarExtensionR0240.Expansion ι G D := by
   intro k l _ _ _ _ ι n h hn hh A hA G d R hR
   obtain ⟨o, ho, hb, hc, hs, he, hf⟩ :=
     adaptive_universal_solver n h d A R hA hR hh
@@ -45,7 +79,24 @@ theorem adaptive_scalar_extension_image :
   exact ⟨D, hframe, hdom, scalar_extension_expansion k l ι n h hn hh A hA G D⟩
 
 theorem cyclotomic_extension_output :
-∀ (n h d : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ R : Matrix (Fin h) (Fin d) ℚ, ArithmeticThetaAdaptiveSolverR0230.Relations A R → FiniteDimensional ℚ (CyclotomicField (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) ℚ) ∧ ∃ (G : ArithmeticThetaArithmeticFieldR0231.MatrixData (CyclotomicField (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) ℚ) A) (o : ArithmeticThetaAdaptiveSolverR0230.Result h), ArithmeticThetaCompactModularityR0209.ActualLevel G.root ∧ ArithmeticThetaAdaptiveSolverR0230.solve A R = some o ∧ ArithmeticThetaAdaptiveSolverR0230.Correct A o ∧ o.cutoff ≤ ArithmeticThetaAdaptiveSolverR0230.bound A ∧ ∀ (l : Type) [Field l] [CharZero l] (ι : (CyclotomicField (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) ℚ) →+* l), ArithmeticThetaScalarExtensionR0240.OutputImage ι G o ∧ ∃ D : ArithmeticThetaScalarExtensionR0240.DiskLift ι G, ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback D.map).obj (ArithmeticThetaScalarExtensionR0240.line ι G)) ⊤ (ArithmeticThetaScalarExtensionR0240.frame ι G D) ∧ AlgebraicGeometry.IsDominant (CategoryTheory.CategoryStruct.comp (ArithmeticThetaTateCuspsR0181.genericInclusion l) D.map) ∧ ArithmeticThetaScalarExtensionR0240.Expansion ι G D := by
+    ∀ (n h d : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h),
+      (∀ i, ArithmeticThetaComputed.validGram (A i)) →
+      ∀ R : Matrix (Fin h) (Fin d) ℚ, Relations A R →
+      FiniteDimensional ℚ (CoefficientField A) ∧
+      ∃ (G : ArithmeticThetaArithmeticFieldR0231.MatrixData (CoefficientField A) A)
+        (o : Result h),
+        ArithmeticThetaCompactModularityR0209.ActualLevel G.root ∧
+        solve A R = some o ∧ Correct A o ∧ o.cutoff ≤ bound A ∧
+        ∀ (l : Type) [Field l] [CharZero l] (ι : CoefficientField A →+* l),
+          OutputImage ι G o ∧
+          ∃ D : DiskLift ι G,
+            ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+              ((AlgebraicGeometry.Scheme.Modules.pullback D.map).obj (line ι G))
+              ⊤ (frame ι G D) ∧
+            AlgebraicGeometry.IsDominant
+              (CategoryTheory.CategoryStruct.comp
+                (ArithmeticThetaTateCuspsR0181.genericInclusion l) D.map) ∧
+            Expansion ι G D := by
   intro n h d hn hh A hA R hR
   obtain ⟨hfinite, G, hlevel, _⟩ :=
     ArithmeticThetaCyclotomicModularityR0239.cyclotomic_matrix_modularity n h hn hh A hA

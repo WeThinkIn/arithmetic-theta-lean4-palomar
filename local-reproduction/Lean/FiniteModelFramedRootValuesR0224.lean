@@ -51,7 +51,21 @@ end FiniteModelFramedRootValuesR0224
 /-- Every supplied finite model preserves the whole prescribed root values in
 exactly the inverse image of the original valuation frame. -/
 theorem finite_model_framed_root_values :
-∀ (s n : ℕ) (D : ArithmeticThetaRamifiedRootModelsR0222.RootData s n) (K : ArithmeticThetaFiniteFieldModelsR0221.FieldStage) (M : ArithmeticThetaRamifiedRootModelsR0222.RootModel D K) (E : Type) [Field E] (A : ValuationSubring E) (f : Quiver.Hom (ArithmeticThetaValuativeRootsR0223.ValuationPoint E A) D.base.space) (h : ArithmeticThetaFiniteFieldModelsR0221.Sections ((AlgebraicGeometry.Scheme.Modules.pullback f).obj D.line)), ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback f).obj D.line) ⊤ h → ∀ (a : Fin s → A) (g : Quiver.Hom (ArithmeticThetaValuativeRootsR0223.ValuationPoint E A) D.cover.space) (hg : CategoryTheory.CategoryStruct.comp g D.map = f), ArithmeticThetaPrescribedRootModelsR0224.BranchValues D E A f h a g hg → ArithmeticThetaPrescribedRootModelsR0224.ModelBranchValues M E A f h a g := by
+    ∀ (s n : ℕ) (D : ArithmeticThetaRamifiedRootModelsR0222.RootData s n)
+      (K : ArithmeticThetaFiniteFieldModelsR0221.FieldStage)
+      (M : ArithmeticThetaRamifiedRootModelsR0222.RootModel D K) (E : Type) [Field E]
+      (A : ValuationSubring E)
+      (f : Quiver.Hom (ArithmeticThetaValuativeRootsR0223.ValuationPoint E A) D.base.space)
+      (h :
+        ArithmeticThetaFiniteFieldModelsR0221.Sections
+          ((AlgebraicGeometry.Scheme.Modules.pullback f).obj D.line)),
+      ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+          ((AlgebraicGeometry.Scheme.Modules.pullback f).obj D.line) ⊤ h →
+        ∀ (a : Fin s → A)
+          (g : Quiver.Hom (ArithmeticThetaValuativeRootsR0223.ValuationPoint E A) D.cover.space)
+          (hg : CategoryTheory.CategoryStruct.comp g D.map = f),
+          ArithmeticThetaPrescribedRootModelsR0224.BranchValues D E A f h a g hg →
+            ArithmeticThetaPrescribedRootModelsR0224.ModelBranchValues M E A f h a g := by
   intro s n D K M E _ A f h hh a g hg hv
   refine ⟨?_, ?_⟩
   · exact ArithmeticThetaOpenHodgeR0180.GlobalFamilyDiscriminantR0180.frame_iso

@@ -748,7 +748,28 @@ open SpecialFiberCubicEmbeddingR0135
 /-- The complete cubic marked-divisor system embeds the special polygon, with
 exactly the prescribed numerator maps and power-series structure map. -/
 theorem special_fiber_cubic_embedding :
-    ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r), 3 ≤ r → ∀ (E : ArithmeticThetaInfinitesimalPolygonR0129.B k 0 false ≃+* ArithmeticThetaInfinitesimalPolygonR0129.B k 0 true), ArithmeticThetaInfinitesimalPolygonR0129.IsAdjacent k 0 E → ∀ (a : Fin r → kˣ) (D : ArithmeticThetaInfinitesimalPolygonR0129.Atlas k r 0 hr E) (b : Fin (3*r) → ArithmeticThetaPositiveLineR0134.Sections k r 0 hr E a 3), ArithmeticThetaPositiveLineR0134.IsBasis k r 0 hr E a 3 b → ∃ j : D.X ⟶ ArithmeticThetaProjectiveEffectivityR0135.projectiveSpace (PowerSeries k) (3*r), AlgebraicGeometry.IsClosedImmersion j ∧ ArithmeticThetaProjectiveEffectivityR0135.RealizesEmbedding k D b j ∧ CategoryTheory.CategoryStruct.comp j (ArithmeticThetaProjectiveEffectivityR0135.projectiveStructure (PowerSeries k) (3*r)) = CategoryTheory.CategoryStruct.comp D.p (ArithmeticThetaProjectiveEffectivityR0135.baseInclusion k 0) := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (r : ℕ) (hr : 0 < r),
+        3 ≤ r →
+          ∀
+            (E :
+              ArithmeticThetaInfinitesimalPolygonR0129.B k 0 false ≃+*
+                ArithmeticThetaInfinitesimalPolygonR0129.B k 0 true),
+            ArithmeticThetaInfinitesimalPolygonR0129.IsAdjacent k 0 E →
+              ∀ (a : Fin r → kˣ) (D : ArithmeticThetaInfinitesimalPolygonR0129.Atlas k r 0 hr E)
+                (b : Fin (3 * r) → ArithmeticThetaPositiveLineR0134.Sections k r 0 hr E a 3),
+                ArithmeticThetaPositiveLineR0134.IsBasis k r 0 hr E a 3 b →
+                  ∃ j :
+                    D.X ⟶
+                      ArithmeticThetaProjectiveEffectivityR0135.projectiveSpace (PowerSeries k)
+                        (3 * r),
+                    AlgebraicGeometry.IsClosedImmersion j ∧
+                      ArithmeticThetaProjectiveEffectivityR0135.RealizesEmbedding k D b j ∧
+                        CategoryTheory.CategoryStruct.comp j
+                            (ArithmeticThetaProjectiveEffectivityR0135.projectiveStructure
+                              (PowerSeries k) (3 * r)) =
+                          CategoryTheory.CategoryStruct.comp D.p
+                            (ArithmeticThetaProjectiveEffectivityR0135.baseInclusion k 0) := by
   intro k _ _ r hr h3 E hE a D b hb
   exact ⟨globalMorphism k h3 hE D b hb,
     globalMorphism_closed k h3 hE D b hb,

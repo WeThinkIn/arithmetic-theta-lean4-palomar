@@ -50,7 +50,24 @@ open ActualDiscriminantCotangentTensorR0162
 
 /-- The actual initial class of 5g is the nonzero discriminant cotangent tensor. -/
 theorem actual_discriminant_cotangent_tensor :
-∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)], ∃! g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)), ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G 5 g ∧ ArithmeticThetaConormalInitialR0162.DiscriminantTensor k M s hs.1 g := by
+    ∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)],
+      ∃! g :
+        (AlgebraicGeometry.Scheme.functionField
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)),
+        ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G 5 g ∧
+          ArithmeticThetaConormalInitialR0162.DiscriminantTensor k M s hs.1 g := by
   intro k _ _ r hr h3 he T M hM s hs G hG _ _
   classical
   obtain ⟨g, hg, _⟩ := geometric_discriminant_initial k r hr h3 he T M hM s hs G hG

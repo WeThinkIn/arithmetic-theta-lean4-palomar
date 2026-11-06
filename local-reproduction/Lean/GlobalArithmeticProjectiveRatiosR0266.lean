@@ -233,7 +233,14 @@ end GlobalArithmeticProjectiveRatios
 /-- Global arithmetic quotients on the original selected compact component,
 with their regular representatives and full canonical Tate expansions. -/
 theorem global_arithmetic_projective_ratios :
-∀ (k : Type) [Field k] [CharZero k] (m : ℕ) (hm : 0 < m) (he : Even m) (ζ : kˣ) (hζ : IsPrimitiveRoot (ζ : k) (2*m)), ∃ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (2*m)) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k (2*m) D) (Vd : ArithmeticThetaBoundaryHodgeR0182.DiskTest k (2*m) D X), ArithmeticThetaTateCuspsR0181.CanonicalMarking k (2*m) (ζ : k) Vd.level ∧ ArithmeticThetaGlobalProjectiveRatiosR0266.Arithmetic.GlobalRealization k m D X Vd hm he ζ hζ := by
+    ∀ (k : Type) [Field k] [CharZero k] (m : ℕ) (hm : 0 < m) (he : Even m) (ζ : kˣ)
+      (hζ : IsPrimitiveRoot (ζ : k) (2 * m)),
+      ∃ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (2 * m)) (X :
+        ArithmeticThetaLevelCompactificationR0179.Compactification k (2 * m) D) (Vd :
+        ArithmeticThetaBoundaryHodgeR0182.DiskTest k (2 * m) D X),
+        ArithmeticThetaTateCuspsR0181.CanonicalMarking k (2 * m) (ζ : k) Vd.level ∧
+          ArithmeticThetaGlobalProjectiveRatiosR0266.Arithmetic.GlobalRealization k m D X Vd hm he ζ
+            hζ := by
   intro k _ _ m hm he ζ hζ
   obtain ⟨D, X, Vd, hmark⟩ := GlobalArithmeticProjectiveRatios.geometric_data k m hm he ζ hζ
   exact ⟨D, X, Vd, hmark, GlobalArithmeticProjectiveRatios.realization k m D X Vd hm he ζ hζ hmark⟩

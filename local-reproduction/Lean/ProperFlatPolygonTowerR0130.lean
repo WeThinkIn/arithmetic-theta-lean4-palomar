@@ -104,7 +104,25 @@ end TowerAssemblyR0130
 /-- One compatible tower of proper flat polygons, with all base changes and
 completion comparisons. No stage or coefficient field is bounded. -/
 theorem proper_flat_polygon_tower :
-    ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r), 3 ≤ r → ∃ T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr, (∀ n : ℕ, AlgebraicGeometry.IsProper (T.atlas n).p ∧ AlgebraicGeometry.Flat (T.atlas n).p) ∧ (∀ (n N : ℕ) (h : n ≤ N), AlgebraicGeometry.IsClosedImmersion (T.transition n N h) ∧ CategoryTheory.IsPullback (T.transition n N h) (T.atlas n).p (T.atlas N).p (ArithmeticThetaInfinitesimalPolygonR0129.baseReduction k n N h)) ∧ (∀ n : ℕ, ∃ (e : ArithmeticThetaInfinitesimalPolygonR0129.HatA k n ≃+* ArithmeticThetaInfinitesimalPolygonR0129.A k n) (o : ∀ side : Bool, ArithmeticThetaInfinitesimalPolygonR0129.HatB k n side ≃+* ArithmeticThetaInfinitesimalPolygonR0129.B k n side), ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison k n e o) := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (r : ℕ) (hr : 0 < r),
+        3 ≤ r →
+          ∃ T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr,
+            (∀ n : ℕ,
+                AlgebraicGeometry.IsProper (T.atlas n).p ∧ AlgebraicGeometry.Flat (T.atlas n).p) ∧
+              (∀ (n N : ℕ) (h : n ≤ N),
+                  AlgebraicGeometry.IsClosedImmersion (T.transition n N h) ∧
+                    CategoryTheory.IsPullback (T.transition n N h) (T.atlas n).p (T.atlas N).p
+                      (ArithmeticThetaInfinitesimalPolygonR0129.baseReduction k n N h)) ∧
+                (∀ n : ℕ,
+                  ∃ (e :
+                    ArithmeticThetaInfinitesimalPolygonR0129.HatA k n ≃+*
+                      ArithmeticThetaInfinitesimalPolygonR0129.A k n)
+                    (o :
+                    ∀ side : Bool,
+                      ArithmeticThetaInfinitesimalPolygonR0129.HatB k n side ≃+*
+                        ArithmeticThetaInfinitesimalPolygonR0129.B k n side),
+                    ArithmeticThetaInfinitesimalPolygonR0129.CompletionComparison k n e o) := by
   intro k _ _ r hr h3
   refine ⟨TowerAssemblyR0130.assembledTower k r hr h3, ?_, ?_, ?_⟩
   · intro n

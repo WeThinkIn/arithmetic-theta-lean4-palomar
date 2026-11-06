@@ -10,7 +10,15 @@ noncomputable section
 namespace ArithmeticThetaTensorPower
 
 theorem exists_powerFrames_comparison :
-    ∀ (X : AlgebraicGeometry.Scheme.{u}) (H : X.Modules) [AlgebraicGeometry.IsIntegral X] (ι : Type v) (C : ArithmeticThetaLineRoot.NormalFrameCover X H ι) (n : ℕ), ∃ E : ArithmeticThetaLineRoot.PowerFrames C (ArithmeticThetaTensorPower.tensorPower X H n) n, (∀ i, E.frame i = ArithmeticThetaTensorPower.tensorPowerFrame X H (C.opens i) (C.frame i) n) ∧ ∀ s : (H.presheaf.obj (Opposite.op ⊤)), ArithmeticThetaLineRoot.powerSection C (ArithmeticThetaTensorPower.tensorPower X H n) n E s = ArithmeticThetaTensorPower.tensorPowerSection X H n ⊤ s := by
+    ∀ (X : AlgebraicGeometry.Scheme.{u}) (H : X.Modules) [AlgebraicGeometry.IsIntegral X]
+      (ι : Type v) (C : ArithmeticThetaLineRoot.NormalFrameCover X H ι) (n : ℕ),
+      ∃ E : ArithmeticThetaLineRoot.PowerFrames C (ArithmeticThetaTensorPower.tensorPower X H n) n,
+        (∀ i,
+            E.frame i = ArithmeticThetaTensorPower.tensorPowerFrame X H (C.opens i) (C.frame i) n) ∧
+          ∀ s : (H.presheaf.obj (Opposite.op ⊤)),
+            ArithmeticThetaLineRoot.powerSection C (ArithmeticThetaTensorPower.tensorPower X H n) n
+                E s =
+              ArithmeticThetaTensorPower.tensorPowerSection X H n ⊤ s := by
   intro X H _ ι C n
   let E : PowerFrames C (tensorPower X H n) n :=
     { frame := fun i => tensorPowerFrame X H (C.opens i) (C.frame i) n
@@ -34,7 +42,22 @@ theorem exists_powerFrames_comparison :
     simp only [coordinate, LinearEquiv.apply_symm_apply]
 
 theorem existsUnique_regular_tensor_root :
-    ∀ (X : AlgebraicGeometry.Scheme.{u}) (H : X.Modules) [AlgebraicGeometry.IsIntegral X] (ι : Type v) (C : ArithmeticThetaLineRoot.NormalFrameCover X H ι) (T : ArithmeticThetaLineRoot.RationalFrame C) (n : ℕ) (hn : 0 < n) (r : X.functionField) (F : ((ArithmeticThetaTensorPower.tensorPower X H n).presheaf.obj (Opposite.op ⊤))), (∀ i, (r / T.coeff i) ^ n = X.germToFunctionField (C.opens i) (((ArithmeticThetaTensorPower.tensorPowerFrame X H (C.opens i) (C.frame i) n).equiv (C.opens i) le_rfl).symm ((ArithmeticThetaTensorPower.tensorPower X H n).presheaf.map (CategoryTheory.homOfLE le_top).op F))) → ∃! s : (H.presheaf.obj (Opposite.op ⊤)), (∀ i, X.germToFunctionField (C.opens i) (ArithmeticThetaLineRoot.coordinate C s i) = r / T.coeff i) ∧ ArithmeticThetaTensorPower.tensorPowerSection X H n ⊤ s = F := by
+    ∀ (X : AlgebraicGeometry.Scheme.{u}) (H : X.Modules) [AlgebraicGeometry.IsIntegral X]
+      (ι : Type v) (C : ArithmeticThetaLineRoot.NormalFrameCover X H ι)
+      (T : ArithmeticThetaLineRoot.RationalFrame C) (n : ℕ) (hn : 0 < n) (r : X.functionField)
+      (F : ((ArithmeticThetaTensorPower.tensorPower X H n).presheaf.obj (Opposite.op ⊤))),
+      (∀ i,
+          (r / T.coeff i) ^ n =
+            X.germToFunctionField (C.opens i)
+              (((ArithmeticThetaTensorPower.tensorPowerFrame X H (C.opens i) (C.frame i) n).equiv
+                    (C.opens i) le_rfl).symm
+                ((ArithmeticThetaTensorPower.tensorPower X H n).presheaf.map
+                  (CategoryTheory.homOfLE le_top).op F))) →
+        ∃! s : (H.presheaf.obj (Opposite.op ⊤)),
+          (∀ i,
+              X.germToFunctionField (C.opens i) (ArithmeticThetaLineRoot.coordinate C s i) =
+                r / T.coeff i) ∧
+            ArithmeticThetaTensorPower.tensorPowerSection X H n ⊤ s = F := by
   intro X H _ ι C T n hn r F hpow
   obtain ⟨E, hframe, hcompare⟩ := exists_powerFrames_comparison X H ι C n
   have hpowE : ∀ i, (r / T.coeff i) ^ n = X.germToFunctionField (C.opens i)

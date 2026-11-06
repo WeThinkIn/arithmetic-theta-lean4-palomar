@@ -1422,7 +1422,42 @@ lemma composeComparison_postcompose {X Y Z : Scheme} (p : Y ⟶ X) (q : Z ⟶ Y)
 /-- Naturality of the normalized unary power through the specified coefficient
 comparison, proved on one actual common fully marked family. -/
 theorem _root_.ArithmeticThetaArithmeticSectionsR0236.open_unary_constant_naturality :
-    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (m N : ℕ), 0 < m → Even m → 0 < N → Even N → m ∣ N → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (ArithmeticThetaCompactUnaryR0183.level N)) (E : ArithmeticThetaLevelCompactificationR0179.LevelData l (ArithmeticThetaCompactUnaryR0183.level N)) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k (ArithmeticThetaCompactUnaryR0183.level N) D) (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l (ArithmeticThetaCompactUnaryR0183.level N) E) (C : ArithmeticThetaArithmeticSectionsR0236.Comparison k (ArithmeticThetaCompactUnaryR0183.level N) ι D E X Y) (a b : Fin N), (a.val ≠ 0 ∨ b.val ≠ 0) → ∀ (A : ArithmeticThetaCompactUnaryR0183.OpenPower k m N D a b) (A' : ArithmeticThetaCompactUnaryR0183.OpenPower l m N E a b), ArithmeticThetaArithmeticSectionsR0236.powerTransport C.openMap (ArithmeticThetaLevelConstantsR0234.weight D) (ArithmeticThetaLevelConstantsR0234.weight E) C.hodgeMap (ArithmeticThetaCompactUnaryR0183.weight N) (ArithmeticThetaBoundaryHodgeR0182.pullToOpen k (ArithmeticThetaCompactUnaryR0183.level N) (ArithmeticThetaCompactUnaryR0183.weight N) A.section_) = ArithmeticThetaBoundaryHodgeR0182.pullToOpen l (ArithmeticThetaCompactUnaryR0183.level N) (ArithmeticThetaCompactUnaryR0183.weight N) A'.section_ := by
+    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (m N : ℕ),
+      0 < m →
+        Even m →
+          0 < N →
+            Even N →
+              m ∣ N →
+                ∀
+                  (D :
+                    ArithmeticThetaLevelCompactificationR0179.LevelData k
+                      (ArithmeticThetaCompactUnaryR0183.level N))
+                  (E :
+                    ArithmeticThetaLevelCompactificationR0179.LevelData l
+                      (ArithmeticThetaCompactUnaryR0183.level N))
+                  (X :
+                    ArithmeticThetaLevelCompactificationR0179.Compactification k
+                      (ArithmeticThetaCompactUnaryR0183.level N) D)
+                  (Y :
+                    ArithmeticThetaLevelCompactificationR0179.Compactification l
+                      (ArithmeticThetaCompactUnaryR0183.level N) E)
+                  (C :
+                    ArithmeticThetaArithmeticSectionsR0236.Comparison k
+                      (ArithmeticThetaCompactUnaryR0183.level N) ι D E X Y)
+                  (a b : Fin N),
+                  (a.val ≠ 0 ∨ b.val ≠ 0) →
+                    ∀ (A : ArithmeticThetaCompactUnaryR0183.OpenPower k m N D a b)
+                      (A' : ArithmeticThetaCompactUnaryR0183.OpenPower l m N E a b),
+                      ArithmeticThetaArithmeticSectionsR0236.powerTransport C.openMap
+                          (ArithmeticThetaLevelConstantsR0234.weight D)
+                          (ArithmeticThetaLevelConstantsR0234.weight E) C.hodgeMap
+                          (ArithmeticThetaCompactUnaryR0183.weight N)
+                          (ArithmeticThetaBoundaryHodgeR0182.pullToOpen k
+                            (ArithmeticThetaCompactUnaryR0183.level N)
+                            (ArithmeticThetaCompactUnaryR0183.weight N) A.section_) =
+                        ArithmeticThetaBoundaryHodgeR0182.pullToOpen l
+                          (ArithmeticThetaCompactUnaryR0183.level N)
+                          (ArithmeticThetaCompactUnaryR0183.weight N) A'.section_ := by
   intro k l _ _ _ _ ι m N hm hmeven hN hNeven hmN D E X Y C a b hab A A'
   have hL : 3 ≤ ArithmeticThetaCompactUnaryR0183.level N := by
     have := Nat.one_le_pow 2 N hN

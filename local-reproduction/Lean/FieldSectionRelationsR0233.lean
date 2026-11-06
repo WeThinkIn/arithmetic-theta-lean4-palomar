@@ -18,7 +18,17 @@ open ArithmeticThetaSharpKernelR0195 ArithmeticThetaComputed
 /-- The actual completed coordinate detects exactly the original full theta relations,
 over the specified coefficient field and using the structural scalar action. -/
 theorem field_section_relations :
-∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ G : ArithmeticThetaArithmeticFieldR0231.MatrixData k A, ∀ c : Fin h → k, ArithmeticThetaFieldImageR0233.combination k (ArithmeticThetaArithmeticFieldR0231.structureMap G) G.sections c = 0 ↔ ArithmeticThetaFieldImageR0233.seriesCombination k A c = 0 := by
+    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (n h : ℕ),
+      0 < n →
+        0 < h →
+          ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h),
+            (∀ i, ArithmeticThetaComputed.validGram (A i)) →
+              ∀ G : ArithmeticThetaArithmeticFieldR0231.MatrixData k A,
+                ∀ c : Fin h → k,
+                  ArithmeticThetaFieldImageR0233.combination k
+                        (ArithmeticThetaArithmeticFieldR0231.structureMap G) G.sections c =
+                      0 ↔
+                    ArithmeticThetaFieldImageR0233.seriesCombination k A c = 0 := by
   intro k _ _ _ n h hn hh A hA G c
   classical
   have hN := (indexed_full_unary_factorization n h hn hh A hA).1

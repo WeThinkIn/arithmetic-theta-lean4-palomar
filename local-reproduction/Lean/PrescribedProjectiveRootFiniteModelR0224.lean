@@ -28,7 +28,62 @@ end PrescribedProjectiveRootFiniteModelR0224
 /-- Construct the prescribed valuative roots, and descend their finite algebraic
  data to one number field while retaining the original whole-section values. -/
 theorem prescribed_projective_root_finite_model :
-∀ (X : ArithmeticThetaFiniteFieldModelsR0221.Curve ArithmeticThetaFiniteFieldModelsR0221.Omega) (J : X.space.Modules), AlgebraicGeometry.Scheme.Modules.IsInvertible J → ∀ (n s : ℕ), 0 < n → ∀ (F : Fin s → ArithmeticThetaFiniteFieldModelsR0221.Sections (ArithmeticThetaTensorPower.tensorPower X.space J n)), (∀ j, F j ≠ 0) → ∀ (E : Type) [Field E] (A : ValuationSubring E) (f : Quiver.Hom (ArithmeticThetaValuativeRootsR0223.ValuationPoint E A) X.space), AlgebraicGeometry.IsDominant (CategoryTheory.CategoryStruct.comp (ArithmeticThetaValuativeRootsR0223.genericInclusion E A) f) → ∀ (h : ArithmeticThetaFiniteFieldModelsR0221.Sections ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J)), ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J) ⊤ h → ∀ (r : Fin s → E), (∀ j, ArithmeticThetaValuativeRootsR0223.FieldEquation E A f J n (F j) h (r j)) → ∀ (c : Quiver.Hom (ArithmeticThetaFiniteFieldModelsR0221.Base ArithmeticThetaFiniteFieldModelsR0221.Omega) (ArithmeticThetaValuativeRootsR0223.ValuationPoint E A)), c (IsLocalRing.closedPoint ArithmeticThetaFiniteFieldModelsR0221.Omega) = IsLocalRing.closedPoint A → CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.comp c f) X.map = CategoryTheory.CategoryStruct.id _ → ∀ K0 : ArithmeticThetaFiniteFieldModelsR0221.FieldStage, FiniteDimensional ℚ K0 → ∃ T : ArithmeticThetaPrescribedRootModelsR0224.RootRealization X J n s F E A f h r c, Nonempty (ArithmeticThetaPrescribedRootModelsR0224.ProjectivePresentation ArithmeticThetaFiniteFieldModelsR0221.Omega X.space X.map) ∧ Nonempty (ArithmeticThetaPrescribedRootModelsR0224.ProjectivePresentation ArithmeticThetaFiniteFieldModelsR0221.Omega T.cover.space (CategoryTheory.CategoryStruct.comp T.cover.map X.map)) ∧ ArithmeticThetaPrescribedRootModelsR0224.FiniteRealization T K0 := by
+    ∀ (X : ArithmeticThetaFiniteFieldModelsR0221.Curve ArithmeticThetaFiniteFieldModelsR0221.Omega)
+      (J : X.space.Modules),
+      AlgebraicGeometry.Scheme.Modules.IsInvertible J →
+        ∀ (n s : ℕ),
+          0 < n →
+            ∀
+              (F :
+                Fin s →
+                  ArithmeticThetaFiniteFieldModelsR0221.Sections
+                    (ArithmeticThetaTensorPower.tensorPower X.space J n)),
+              (∀ j, F j ≠ 0) →
+                ∀ (E : Type) [Field E] (A : ValuationSubring E)
+                  (f : Quiver.Hom (ArithmeticThetaValuativeRootsR0223.ValuationPoint E A) X.space),
+                  AlgebraicGeometry.IsDominant
+                      (CategoryTheory.CategoryStruct.comp
+                        (ArithmeticThetaValuativeRootsR0223.genericInclusion E A) f) →
+                    ∀
+                      (h :
+                        ArithmeticThetaFiniteFieldModelsR0221.Sections
+                          ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J)),
+                      ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+                          ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J) ⊤ h →
+                        ∀ (r : Fin s → E),
+                          (∀ j,
+                              ArithmeticThetaValuativeRootsR0223.FieldEquation E A f J n (F j) h
+                                (r j)) →
+                            ∀
+                              (c :
+                                Quiver.Hom
+                                  (ArithmeticThetaFiniteFieldModelsR0221.Base
+                                    ArithmeticThetaFiniteFieldModelsR0221.Omega)
+                                  (ArithmeticThetaValuativeRootsR0223.ValuationPoint E A)),
+                              c
+                                    (IsLocalRing.closedPoint
+                                      ArithmeticThetaFiniteFieldModelsR0221.Omega) =
+                                  IsLocalRing.closedPoint A →
+                                CategoryTheory.CategoryStruct.comp
+                                      (CategoryTheory.CategoryStruct.comp c f) X.map =
+                                    CategoryTheory.CategoryStruct.id _ →
+                                  ∀ K0 : ArithmeticThetaFiniteFieldModelsR0221.FieldStage,
+                                    FiniteDimensional ℚ K0 →
+                                      ∃ T :
+                                        ArithmeticThetaPrescribedRootModelsR0224.RootRealization X J
+                                          n s F E A f h r c,
+                                        Nonempty
+                                            (ArithmeticThetaPrescribedRootModelsR0224.ProjectivePresentation
+                                              ArithmeticThetaFiniteFieldModelsR0221.Omega X.space
+                                              X.map) ∧
+                                          Nonempty
+                                              (ArithmeticThetaPrescribedRootModelsR0224.ProjectivePresentation
+                                                ArithmeticThetaFiniteFieldModelsR0221.Omega
+                                                T.cover.space
+                                                (CategoryTheory.CategoryStruct.comp T.cover.map
+                                                  X.map)) ∧
+                                            ArithmeticThetaPrescribedRootModelsR0224.FiniteRealization
+                                              T K0 := by
   intro X J hJ n s hn F hF E _ A f hdom h hh r hr c _hc hcf K0 hK0
   classical
   letI := X.proper

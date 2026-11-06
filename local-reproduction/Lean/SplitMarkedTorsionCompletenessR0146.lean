@@ -148,7 +148,35 @@ open SplitMarkedTorsionCompleteness CategoryTheory NeronModelInfra
 
 /-- Every r-torsion point over every extension field is uniquely an actual mark. -/
 theorem split_marked_torsion_completeness :
-    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s), ∀ (G : ArithmeticThetaMarkedGroupLawR0146.Law k M), ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G → ∀ (ζ : kˣ), IsPrimitiveRoot (ζ : k) r → ∀ (p : Fin r → kˣ → (Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)) (hp : ∀ i a, ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M i a (p i a)) (F : Type u) [Field F] [Algebra (LaurentSeries k) F] (x : NeronModelInfra.SchemeHomOver (ArithmeticThetaMarkedGroupLawR0146.extensionBase k F) (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M)), G.nsmul (ArithmeticThetaMarkedGroupLawR0146.extensionBase k F) r x = G.one (ArithmeticThetaMarkedGroupLawR0146.extensionBase k F) ↔ ∃! ij : Fin r × Fin r, x = ArithmeticThetaMarkedGroupLawR0146.pointOver k M (ArithmeticThetaMarkedGroupLawR0146.extensionBase k F) (p ij.1 (ζ^ij.2.val)) (hp ij.1 (ζ^ij.2.val)).1 := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s),
+      ∀ (G : ArithmeticThetaMarkedGroupLawR0146.Law k M),
+        ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G →
+          ∀ (ζ : kˣ),
+            IsPrimitiveRoot (ζ : k) r →
+              ∀
+                (p :
+                  Fin r →
+                    kˣ → (Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X))
+                (hp : ∀ i a, ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M i a (p i a))
+                (F : Type u) [Field F] [Algebra (LaurentSeries k) F]
+                (x :
+                  NeronModelInfra.SchemeHomOver
+                    (ArithmeticThetaMarkedGroupLawR0146.extensionBase k F)
+                    (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M)),
+                G.nsmul (ArithmeticThetaMarkedGroupLawR0146.extensionBase k F) r x =
+                    G.one (ArithmeticThetaMarkedGroupLawR0146.extensionBase k F) ↔
+                  ∃! ij : Fin r × Fin r,
+                    x =
+                      ArithmeticThetaMarkedGroupLawR0146.pointOver k M
+                        (ArithmeticThetaMarkedGroupLawR0146.extensionBase k F)
+                        (p ij.1 (ζ ^ ij.2.val)) (hp ij.1 (ζ ^ ij.2.val)).1 := by
   intro k _ _ r hr h3 T he M hM s hs G hG ζ hζ p hp F _ _ x
   classical
   let f : Fin r × Fin r → SchemeHomOver (extensionBase k F)

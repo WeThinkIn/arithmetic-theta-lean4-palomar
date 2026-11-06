@@ -10,7 +10,19 @@ open CategoryTheory AlgebraicGeometry
 
 /-- The total family and its generic curve have the geometry needed for relative divisors. -/
 theorem relative_curve_geometry :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic], AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W) ∧ AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W) ∧ (∀ x : (ArithmeticThetaRelativeKatoR0169.Curve R W), IsIntegrallyClosed ((ArithmeticThetaRelativeKatoR0169.Curve R W).presheaf.stalk x)) ∧ AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W) ∧ AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W) ∧ AlgebraicGeometry.SmoothOfRelativeDimension 1 (ArithmeticThetaRelativeKatoR0169.structureMap R W) ∧ AlgebraicGeometry.GeometricallyIntegral (ArithmeticThetaRelativeKatoR0169.structureMap R W) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic],
+      AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W) ∧
+        AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W) ∧
+          (∀ x : (ArithmeticThetaRelativeKatoR0169.Curve R W),
+              IsIntegrallyClosed ((ArithmeticThetaRelativeKatoR0169.Curve R W).presheaf.stalk x)) ∧
+            AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W) ∧
+              AlgebraicGeometry.IsLocallyNoetherian
+                  (ArithmeticThetaRelativeKatoR0169.GenericCurve R W) ∧
+                AlgebraicGeometry.SmoothOfRelativeDimension 1
+                    (ArithmeticThetaRelativeKatoR0169.structureMap R W) ∧
+                  AlgebraicGeometry.GeometricallyIntegral
+                    (ArithmeticThetaRelativeKatoR0169.structureMap R W) := by
   intro R _ _ _ _ _ W _
   let : SmoothOfRelativeDimension 1 (structureMap R W) :=
     WeierstrassProjModel.projModelStrCR_smoothOfRelativeDimension_one W.toProjective

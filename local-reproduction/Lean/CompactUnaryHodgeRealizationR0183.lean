@@ -19,7 +19,29 @@ open ArithmeticThetaOpenHodgeR0180
 /-- The open normalized section supplied by the arithmetic level data has a
 unique compact regular realization, with the literal complete unary expansion. -/
 theorem compact_unary_hodge_realization :
-    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (m N : ℕ) (hm : 0 < m) (hmeven : Even m) (hN : 0 < N) (hNeven : Even N) (hmN : m ∣ N) (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (ArithmeticThetaCompactUnaryR0183.level N)) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k (ArithmeticThetaCompactUnaryR0183.level N) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k (ArithmeticThetaCompactUnaryR0183.level N) D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k (ArithmeticThetaCompactUnaryR0183.level N) H → ∀ ν : ℤ, (-(m : ℤ) ≤ 2*ν ∧ 2*ν < (m : ℤ)) → ∃ (a b : Fin N), a.val = ArithmeticThetaBoundaryHodgeR0182.unaryResidue m N ν ∧ b.val = N/2 ∧ ∃ A : ArithmeticThetaCompactUnaryR0183.OpenPower k m N D a b, ∃! s : (ArithmeticThetaTensorPower.tensorPower X.space H.line (ArithmeticThetaCompactUnaryR0183.weight N)).presheaf.obj (Opposite.op ⊤), ArithmeticThetaCompactUnaryR0183.RealizesUnary k m N H ν A s := by
+    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (m N : ℕ) (hm : 0 < m) (hmeven : Even m)
+      (hN : 0 < N) (hNeven : Even N) (hmN : m ∣ N)
+      (D :
+        ArithmeticThetaLevelCompactificationR0179.LevelData k
+          (ArithmeticThetaCompactUnaryR0183.level N))
+      (X :
+        ArithmeticThetaLevelCompactificationR0179.Compactification k
+          (ArithmeticThetaCompactUnaryR0183.level N) D)
+      (H :
+        ArithmeticThetaBoundaryHodgeR0182.Extension k (ArithmeticThetaCompactUnaryR0183.level N) D
+          X),
+      ArithmeticThetaBoundaryHodgeR0182.Canonical k (ArithmeticThetaCompactUnaryR0183.level N) H →
+        ∀ ν : ℤ,
+          (-(m : ℤ) ≤ 2 * ν ∧ 2 * ν < (m : ℤ)) →
+            ∃ (a b : Fin N),
+              a.val = ArithmeticThetaBoundaryHodgeR0182.unaryResidue m N ν ∧
+                b.val = N / 2 ∧
+                  ∃ A : ArithmeticThetaCompactUnaryR0183.OpenPower k m N D a b,
+                    ∃! s :
+                      (ArithmeticThetaTensorPower.tensorPower X.space H.line
+                            (ArithmeticThetaCompactUnaryR0183.weight N)).presheaf.obj
+                        (Opposite.op ⊤),
+                      ArithmeticThetaCompactUnaryR0183.RealizesUnary k m N H ν A s := by
   intro k _ _ _ m N hm hmeven hN hNeven hmN D X H hH ν hν
   have hL : 3 ≤ level N := by
     have := Nat.one_le_pow 2 N hN

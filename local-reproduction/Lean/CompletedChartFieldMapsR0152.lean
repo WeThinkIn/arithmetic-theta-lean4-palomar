@@ -331,7 +331,24 @@ open CompletedChartFieldMaps
 /-- The actual chart induces the unique geometric function-field embedding,
 with the exact accepted Laurent scalar action. -/
 theorem completed_chart_field_maps :
-∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] (j : Fin r) (χ : Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X), ArithmeticThetaKatoAnnularR0152.IsChartMap k M j χ → ∃! φ : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* ArithmeticThetaKatoAnnularR0152.ChartField k, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M χ φ ∧ (∀ a : LaurentSeries k, φ (ArithmeticThetaGeometricNormR0150.baseScalar (X := (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (LaurentSeries k) (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M) a) = (Classical.choose (ArithmeticThetaCyclicConstantsR0088.laurent_scalar_graph k)) a) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      (j : Fin r) (χ : Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X),
+      ArithmeticThetaKatoAnnularR0152.IsChartMap k M j χ →
+        ∃! φ :
+          (AlgebraicGeometry.Scheme.functionField
+              (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+            ArithmeticThetaKatoAnnularR0152.ChartField k,
+          ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M χ φ ∧
+            (∀ a : LaurentSeries k,
+              φ
+                  (ArithmeticThetaGeometricNormR0150.baseScalar (X :=
+                    (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (LaurentSeries k)
+                    (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M) a) =
+                (Classical.choose (ArithmeticThetaCyclicConstantsR0088.laurent_scalar_graph k)) a) := by
   intro k _ _ r hr _h3 T M hM _ j χ hχ
   obtain ⟨φ, hφ⟩ := exists_fieldMap_of_generic k M χ hχ.1
     (genericChart_point k M hM j χ hχ)

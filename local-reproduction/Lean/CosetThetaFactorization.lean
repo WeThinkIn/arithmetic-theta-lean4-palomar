@@ -91,7 +91,47 @@ theorem expanded_identity_faithful : ∀ (D : ℕ) (hD : D ≠ 0) (f g : PowerSe
   · exact congrArg (PowerSeries.expand D hD)
 
 /-- The full theta series decomposes into all actual coset unary products. -/
-theorem full_theta_factorization : ∀ (n : ℕ) (A B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ), A.IsSymm → (∀ j, Even (A j j)) → ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef → B.det ≠ 0 → (∀ j, 0 < m j ∧ Even (m j)) → B.transpose * A * B = Matrix.diagonal (fun j => (m j : ℤ)) → ∀ (D : ℕ) (hD : D ≠ 0), (∀ j : Fin n, 2 * m j ∣ D) → ∃ (e : Fin (Int.natAbs B.det) ≃ ((Fin n → ℤ) ⧸ LinearMap.range (Matrix.mulVecLin B))) (ρ : Fin (Int.natAbs B.det) → (Fin n → ℤ)), ((∀ i : Fin (Int.natAbs B.det), (LinearMap.range (Matrix.mulVecLin B)).mkQ (ρ i) = e i) ∧ Function.Bijective (fun p : Fin (Int.natAbs B.det) × (Fin n → ℤ) => ρ p.1 + B.mulVec p.2)) ∧ PowerSeries.expand D hD (PowerSeries.mk (fun a : ℕ => (Nat.card {x : (Fin n → ℤ) // ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm') (fun j => (x j : ℚ)) = (a : ℚ)} : ℤ)) : PowerSeries ℤ) = (∑ i : Fin (Int.natAbs B.det), ∏ j : Fin n, (PowerSeries.mk (fun a : ℕ => (Nat.card {r : ℤ // Int.ModEq (m j : ℤ) r (((B.transpose * A).mulVec (ρ i)) j) ∧ ((D / (2 * m j) : ℕ) : ℤ) * r ^ 2 = (a : ℤ)} : ℤ)) : PowerSeries ℤ)) := by
+theorem full_theta_factorization :
+    ∀ (n : ℕ) (A B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ),
+      A.IsSymm →
+        (∀ j, Even (A j j)) →
+          ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef →
+            B.det ≠ 0 →
+              (∀ j, 0 < m j ∧ Even (m j)) →
+                B.transpose * A * B = Matrix.diagonal (fun j => (m j : ℤ)) →
+                  ∀ (D : ℕ) (hD : D ≠ 0),
+                    (∀ j : Fin n, 2 * m j ∣ D) →
+                      ∃ (e :
+                        Fin (Int.natAbs B.det) ≃
+                          ((Fin n → ℤ) ⧸ LinearMap.range (Matrix.mulVecLin B)))
+                        (ρ : Fin (Int.natAbs B.det) → (Fin n → ℤ)),
+                        ((∀ i : Fin (Int.natAbs B.det),
+                              (LinearMap.range (Matrix.mulVecLin B)).mkQ (ρ i) = e i) ∧
+                            Function.Bijective
+                              (fun p : Fin (Int.natAbs B.det) × (Fin n → ℤ) =>
+                                ρ p.1 + B.mulVec p.2)) ∧
+                          PowerSeries.expand D hD
+                              (PowerSeries.mk
+                                  (fun a : ℕ =>
+                                    (Nat.card
+                                        { x : (Fin n → ℤ) //
+                                          ((1 / 2 : ℚ) •
+                                                (A.map (Int.castRingHom ℚ)).toQuadraticForm')
+                                              (fun j => (x j : ℚ)) =
+                                            (a : ℚ) } :
+                                      ℤ)) :
+                                PowerSeries ℤ) =
+                            (∑ i : Fin (Int.natAbs B.det),
+                              ∏ j : Fin n,
+                                (PowerSeries.mk
+                                    (fun a : ℕ =>
+                                      (Nat.card
+                                          { r : ℤ //
+                                            Int.ModEq (m j : ℤ) r
+                                                (((B.transpose * A).mulVec (ρ i)) j) ∧
+                                              ((D / (2 * m j) : ℕ) : ℤ) * r ^ 2 = (a : ℤ) } :
+                                        ℤ)) :
+                                  PowerSeries ℤ)) := by
   intro n A B m hsym heven hpos hdet hm hgram D hD hd
   classical
   let Q : (Fin n → ℤ) → ℚ := fun x =>

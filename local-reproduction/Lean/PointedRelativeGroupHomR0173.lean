@@ -101,7 +101,17 @@ end PointedRelativeGroupHom
 /-- Every pointed relative elliptic morphism is a group morphism and commutes
 with all multiplication maps, including the zero map. -/
 theorem pointed_relative_group_hom :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (V : WeierstrassCurve R) [V.IsElliptic] (H : ArithmeticThetaRelativeKatoR0169.Law R V) (hH : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R V H) (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V), ArithmeticThetaRelativeCyclicQuotientR0173.IsGroupHom R W G H f ∧ ∀ j : ℕ, CategoryTheory.CategoryStruct.comp (G.schemeNsmul j) f.map = CategoryTheory.CategoryStruct.comp f.map (H.schemeNsmul j) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (V : WeierstrassCurve R)
+      [V.IsElliptic] (H : ArithmeticThetaRelativeKatoR0169.Law R V)
+      (hH : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R V H)
+      (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V),
+      ArithmeticThetaRelativeCyclicQuotientR0173.IsGroupHom R W G H f ∧
+        ∀ j : ℕ,
+          CategoryTheory.CategoryStruct.comp (G.schemeNsmul j) f.map =
+            CategoryTheory.CategoryStruct.comp f.map (H.schemeNsmul j) := by
   intro R _ _ _ _ _ W _ G hG V _ H hH f
   have hW := relative_curve_geometry R W
   have hV := relative_curve_geometry R V

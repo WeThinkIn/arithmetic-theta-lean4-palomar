@@ -123,7 +123,18 @@ private lemma split_cusp_order (hL : 3 ≤ L) (heven : Even L) (A : TateLevel k 
 end SplitDiscriminantDivisor
 
 theorem split_compact_discriminant :
-    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (ζ : k), IsPrimitiveRoot ζ L → 3 ≤ L → Even L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space), ∀ (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ∃ s : (ArithmeticThetaTensorPower.tensorPower X.space H.line 24).presheaf.obj (Opposite.op ⊤), ArithmeticThetaComponentDegreeR0184.IsCompactD2 k L D X H s := by
+    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (ζ : k),
+      IsPrimitiveRoot ζ L →
+        3 ≤ L →
+          Even L →
+            ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+              (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space),
+              ∀ (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X),
+                ArithmeticThetaBoundaryHodgeR0182.Canonical k L H →
+                  ∃ s :
+                    (ArithmeticThetaTensorPower.tensorPower X.space H.line 24).presheaf.obj
+                      (Opposite.op ⊤),
+                    ArithmeticThetaComponentDegreeR0184.IsCompactD2 k L D X H s := by
   intro k _ _ L ζ hζ hL heven D X x H hH
   obtain ⟨A, _⟩ := tate_full_level_marking k L hL heven ζ hζ
   obtain ⟨d, hd, _⟩ := ArithmeticThetaOpenHodgeR0180.global_family_discriminant
@@ -138,7 +149,31 @@ theorem split_compact_discriminant :
   exact ⟨s, d, hd, hs⟩
 
 theorem split_component_discriminant_divisor :
-    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (ζ : k) (hζ : IsPrimitiveRoot ζ L) (hL : 3 ≤ L) (heven : Even L) (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space), ∀ (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ∀ (s : (ArithmeticThetaTensorPower.tensorPower X.space H.line 24).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaComponentDegreeR0184.IsCompactD2 k L D X H s → (ArithmeticThetaComponentDegreeR0184.restrict k L D X x H 24 s) ≠ 0 ∧ ∀ (ι : Type) (C : ArithmeticThetaLineRoot.NormalFrameCover (ArithmeticThetaComponentDegreeR0184.Component k L D X x) (ArithmeticThetaComponentDegreeR0184.power k L D X x H 24) ι), ∃ E : (ArithmeticThetaComponentDegreeR0184.Component k L D X x) →₀ ℤ, ArithmeticThetaSectionOrder.MatchesSectionOrder (ArithmeticThetaComponentDegreeR0184.Component k L D X x) (ArithmeticThetaComponentDegreeR0184.power k L D X x H 24) C (ArithmeticThetaComponentDegreeR0184.restrict k L D X x H 24 s) E ∧ ∀ y : ArithmeticThetaComponentDegreeR0184.Component k L D X x, (y ∈ ArithmeticThetaComponentDegreeR0184.cuspSet k L D X x → E y = (2*L : ℕ)) ∧ (y ∉ ArithmeticThetaComponentDegreeR0184.cuspSet k L D X x → E y = 0) := by
+    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (ζ : k) (hζ : IsPrimitiveRoot ζ L) (hL : 3 ≤ L)
+      (heven : Even L) (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+      (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space),
+      ∀ (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X),
+        ArithmeticThetaBoundaryHodgeR0182.Canonical k L H →
+          ∀
+            (s :
+              (ArithmeticThetaTensorPower.tensorPower X.space H.line 24).presheaf.obj
+                (Opposite.op ⊤)),
+            ArithmeticThetaComponentDegreeR0184.IsCompactD2 k L D X H s →
+              (ArithmeticThetaComponentDegreeR0184.restrict k L D X x H 24 s) ≠ 0 ∧
+                ∀ (ι : Type)
+                  (C :
+                    ArithmeticThetaLineRoot.NormalFrameCover
+                      (ArithmeticThetaComponentDegreeR0184.Component k L D X x)
+                      (ArithmeticThetaComponentDegreeR0184.power k L D X x H 24) ι),
+                  ∃ E : (ArithmeticThetaComponentDegreeR0184.Component k L D X x) →₀ ℤ,
+                    ArithmeticThetaSectionOrder.MatchesSectionOrder
+                        (ArithmeticThetaComponentDegreeR0184.Component k L D X x)
+                        (ArithmeticThetaComponentDegreeR0184.power k L D X x H 24) C
+                        (ArithmeticThetaComponentDegreeR0184.restrict k L D X x H 24 s) E ∧
+                      ∀ y : ArithmeticThetaComponentDegreeR0184.Component k L D X x,
+                        (y ∈ ArithmeticThetaComponentDegreeR0184.cuspSet k L D X x →
+                            E y = (2 * L : ℕ)) ∧
+                          (y ∉ ArithmeticThetaComponentDegreeR0184.cuspSet k L D X x → E y = 0) := by
   intro k _ _ L ζ hζ hL heven D X x H hH s hs
   obtain ⟨A, _⟩ := tate_full_level_marking k L hL heven ζ hζ
   have hg := ArithmeticThetaArithmeticHalfLinesR0237.field_component_geometry k L hL heven D X x

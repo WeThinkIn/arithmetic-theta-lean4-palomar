@@ -393,7 +393,26 @@ end GeometricCompactHodgeComparison
 /-- The unique normalized compact Hodge comparison for every coefficient
 embedding between geometrically canonical compact lattices. -/
 theorem geometric_compact_hodge_comparison :
-    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (L : ℕ), 3 ≤ L → Even L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E) (C : ArithmeticThetaArithmeticSectionsR0236.Comparison k L ι D E X Y) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X) (J : ArithmeticThetaBoundaryHodgeR0182.Extension l L E Y), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H → ArithmeticThetaBoundaryHodgeR0182.Canonical l L J → ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical J → ∃! a : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback C.compactMap).obj H.line) (J.line), ArithmeticThetaBoundaryConstantsR0235.CompactCompatible ι C.openMap C.compactMap C.extendsOpen C.hodgeMap H J a := by
+    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (L : ℕ),
+      3 ≤ L →
+        Even L →
+          ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+            (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L)
+            (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D)
+            (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E)
+            (C : ArithmeticThetaArithmeticSectionsR0236.Comparison k L ι D E X Y)
+            (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X)
+            (J : ArithmeticThetaBoundaryHodgeR0182.Extension l L E Y),
+            ArithmeticThetaBoundaryHodgeR0182.Canonical k L H →
+              ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H →
+                ArithmeticThetaBoundaryHodgeR0182.Canonical l L J →
+                  ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical J →
+                    ∃! a :
+                      CategoryTheory.Iso
+                        ((AlgebraicGeometry.Scheme.Modules.pullback C.compactMap).obj H.line)
+                        (J.line),
+                      ArithmeticThetaBoundaryConstantsR0235.CompactCompatible ι C.openMap
+                        C.compactMap C.extendsOpen C.hodgeMap H J a := by
   intro k l _ _ _ _ ι L hL heven D E X Y C H J _hH hgH _hJ hgJ
   let HC := ArithmeticThetaBoundaryConstantsR0235.CompactHodgeConstantComparison.pullbackExtension
     ι C.openMap C.compactMap C.extendsOpen C.hodgeMap H

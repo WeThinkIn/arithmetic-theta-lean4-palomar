@@ -29,7 +29,24 @@ private lemma integral_residues (n : ℕ) (A B : Matrix (Fin n) (Fin n) ℤ)
     (fun j => (hB.2.1 j).1) hB.2.2 x 0).1 j, hinv]
 
 /-- The complete source theta identity and every common-denominator expansion. -/
-theorem source_orthogonal_factorization : ∀ (n : ℕ) (A B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ), ArithmeticThetaComputed.validGram A → ArithmeticThetaOrthogonalConsumerR0127.OrthogonalData A B m → ∀ t : Fin B.det.natAbs → ArithmeticThetaOrthogonalConsumerR0127.preimageLattice B, ArithmeticThetaOrthogonalConsumerR0127.Representatives B t → ∃ ν : Fin B.det.natAbs → Fin n → ℤ, (∀ i j, (ν i j : ℚ) = (m j : ℚ) * (t i).val j) ∧ ArithmeticThetaOrthogonalConsumerR0127.thetaZ A = ∑ i : Fin B.det.natAbs, ArithmeticThetaOrthogonalConsumerR0127.cosetSeries m (t i).val ∧ (∀ (D : ℕ) (hD : D ≠ 0), (∀ j, 2 * m j ∣ D) → PowerSeries.expand D hD (ArithmeticThetaOrthogonalConsumerR0127.thetaZ A) = ∑ i : Fin B.det.natAbs, ∏ j : Fin n, ArithmeticThetaOrthogonalConsumerR0127.scaledUnary (m j) (D / (2 * m j)) (ν i j)) := by
+theorem source_orthogonal_factorization :
+    ∀ (n : ℕ) (A B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ),
+      ArithmeticThetaComputed.validGram A →
+        ArithmeticThetaOrthogonalConsumerR0127.OrthogonalData A B m →
+          ∀ t : Fin B.det.natAbs → ArithmeticThetaOrthogonalConsumerR0127.preimageLattice B,
+            ArithmeticThetaOrthogonalConsumerR0127.Representatives B t →
+              ∃ ν : Fin B.det.natAbs → Fin n → ℤ,
+                (∀ i j, (ν i j : ℚ) = (m j : ℚ) * (t i).val j) ∧
+                  ArithmeticThetaOrthogonalConsumerR0127.thetaZ A =
+                      ∑ i : Fin B.det.natAbs,
+                        ArithmeticThetaOrthogonalConsumerR0127.cosetSeries m (t i).val ∧
+                    (∀ (D : ℕ) (hD : D ≠ 0),
+                      (∀ j, 2 * m j ∣ D) →
+                        PowerSeries.expand D hD (ArithmeticThetaOrthogonalConsumerR0127.thetaZ A) =
+                          ∑ i : Fin B.det.natAbs,
+                            ∏ j : Fin n,
+                              ArithmeticThetaOrthogonalConsumerR0127.scaledUnary (m j)
+                                (D / (2 * m j)) (ν i j)) := by
   intro n A B m hA hB t ht
   classical
   choose ν hν using fun i => integral_residues n A B m hA hB (t i)

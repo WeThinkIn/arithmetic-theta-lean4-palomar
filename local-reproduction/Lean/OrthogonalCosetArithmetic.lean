@@ -41,7 +41,21 @@ private lemma quadratic_change {n : ℕ} (A B : Matrix (Fin n) (Fin n) ℚ)
   rw [he, h]
   simp [dotProduct, Matrix.mulVec_diagonal, Finset.mul_sum]
 
-theorem orthogonal_residue_formula : ∀ (n : ℕ) (A B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ), A.IsSymm → B.det ≠ 0 → (∀ j, 0 < m j) → B.transpose * A * B = Matrix.diagonal (fun j => (m j : ℤ)) → ∀ v k : (Fin n → ℤ), (∀ j : Fin n, (((B.transpose * A).mulVec v) j : ℚ) = (m j : ℚ) * (((B.map (Int.castRingHom ℚ))⁻¹).mulVec (fun l => (v l : ℚ))) j) ∧ ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm') (fun j => ((v + B.mulVec k) j : ℚ)) = ∑ j : Fin n, (((((B.transpose * A).mulVec v) j + (m j : ℤ) * k j : ℤ) : ℚ) ^ 2) / (2 * (m j : ℚ)) := by
+theorem orthogonal_residue_formula :
+    ∀ (n : ℕ) (A B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ),
+      A.IsSymm →
+        B.det ≠ 0 →
+          (∀ j, 0 < m j) →
+            B.transpose * A * B = Matrix.diagonal (fun j => (m j : ℤ)) →
+              ∀ v k : (Fin n → ℤ),
+                (∀ j : Fin n,
+                    (((B.transpose * A).mulVec v) j : ℚ) =
+                      (m j : ℚ) * (((B.map (Int.castRingHom ℚ))⁻¹).mulVec (fun l => (v l : ℚ))) j) ∧
+                  ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm')
+                      (fun j => ((v + B.mulVec k) j : ℚ)) =
+                    ∑ j : Fin n,
+                      (((((B.transpose * A).mulVec v) j + (m j : ℤ) * k j : ℤ) : ℚ) ^ 2) /
+                        (2 * (m j : ℚ)) := by
   intro n A B m _hsym hdet hm hgram v k
   let C := B.map (Int.castRingHom ℚ)
   let M := A.map (Int.castRingHom ℚ)
@@ -113,7 +127,17 @@ private lemma natural_half_norm {n : ℕ} (A : Matrix (Fin n) (Fin n) ℤ)
   rw [hq]
   exact_mod_cast (Int.toNat_of_nonneg hzpos).symm
 
-theorem total_exponent_integrality : ∀ (n : ℕ) (A B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ), A.IsSymm → (∀ j, Even (A j j)) → ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef → B.det ≠ 0 → (∀ j, 0 < m j ∧ Even (m j)) → B.transpose * A * B = Matrix.diagonal (fun j => (m j : ℤ)) → ∀ v r : (Fin n → ℤ), (∀ j : Fin n, Int.ModEq (m j : ℤ) (r j) (((B.transpose * A).mulVec v) j)) → ∃ a : ℕ, (∑ j : Fin n, (r j : ℚ) ^ 2 / (2 * (m j : ℚ))) = (a : ℚ) := by
+theorem total_exponent_integrality :
+    ∀ (n : ℕ) (A B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ),
+      A.IsSymm →
+        (∀ j, Even (A j j)) →
+          ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef →
+            B.det ≠ 0 →
+              (∀ j, 0 < m j ∧ Even (m j)) →
+                B.transpose * A * B = Matrix.diagonal (fun j => (m j : ℤ)) →
+                  ∀ v r : (Fin n → ℤ),
+                    (∀ j : Fin n, Int.ModEq (m j : ℤ) (r j) (((B.transpose * A).mulVec v) j)) →
+                      ∃ a : ℕ, (∑ j : Fin n, (r j : ℚ) ^ 2 / (2 * (m j : ℚ))) = (a : ℚ) := by
   intro n A B m hsym heven hpos hdet hm hgram v r hres
   have hk : ∀ j, ∃ k : ℤ, r j - ((B.transpose * A).mulVec v) j = (m j : ℤ) * k := by
     intro j

@@ -1,7 +1,9 @@
 {
   "paper_revision": "2026-10-27",
   "lean_files": 1199,
-  "all_lean_sources_identical_to_20261019_bundle": true,
+  "all_lean_sources_identical_to_20261019_bundle": false,
   "all_103_obligations_identical": true,
-  "scope": "Rebuild the delivered proof modules against bundled external libraries and recheck exact types/axioms. No claim of a new editorial contract audit or external-library cold rebuild."
+  "scope": "Readability refactoring of the original 1199 proof modules. Transparent abbreviations and formatting preserve the original endpoints; see the new readability preservation report. Historical reports remain bound to their original hashes.",
+  "source_edition": "readability-20261106",
+  "original_source_revision": "2df5f396"
 }

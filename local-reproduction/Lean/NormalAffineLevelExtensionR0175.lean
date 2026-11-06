@@ -228,7 +228,11 @@ open ArithmeticThetaRelativeKatoR0169 ArithmeticThetaRelativeDiscriminantR0171
 
 /-- A normal integral affine splitting extension, extracted from the full GL cover. -/
 theorem normal_affine_level_extension :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 0 < L) , Nonempty (ArithmeticThetaFullLevelCoverR0175.LevelExtension R W G L) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 0 < L),
+      Nonempty (ArithmeticThetaFullLevelCoverR0175.LevelExtension R W G L) := by
   intro R _ _ _ _ _ W _ G hG L hL
   obtain ⟨Z,hZ⟩ := full_level_representability R W G hG L hL
   obtain ⟨hf,he,hs,hr⟩ := full_level_cover_geometry R W G hG L hL Z hZ

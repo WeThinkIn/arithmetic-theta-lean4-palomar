@@ -472,7 +472,56 @@ open ArithmeticThetaHodgeFourTorsionR0147.MultiplicationDifferential
 /-- Normalized Kato values at every nonzero N-torsion point of the actual Tate
 cubic, with integrality on the original, unramified disk. -/
 theorem tate_torsion_normalized_integrality :
-∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (r N : ℕ) (hr : 3 ≤ r) (heven : Even r) (hN : 0 < N) (hNeven : Even N) [(ArithmeticThetaTateCuspsR0181.TateCurve k r).IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k r))] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k r))] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k r))] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k r))] (G : ArithmeticThetaRelativeKatoR0169.Law (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k r)), ArithmeticThetaRelativeKatoR0169.IsOriginLaw (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k r) G → ∀ (p : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Puncture k) (ArithmeticThetaRelativeKatoR0169.Curve (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k r))), CategoryTheory.CategoryStruct.comp p (ArithmeticThetaRelativeKatoR0169.structureMap (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k r)) = CategoryTheory.CategoryStruct.id (ArithmeticThetaTateCuspsR0181.Puncture k) → CategoryTheory.CategoryStruct.comp p (G.schemeNsmul N) = ArithmeticThetaRelativeKatoR0169.origin (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k r) → p ≠ ArithmeticThetaRelativeKatoR0169.origin (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k r) → ∀ (g : AlgebraicGeometry.Scheme.functionField (ArithmeticThetaRelativeKatoR0169.Curve (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k r))) (v : LaurentSeries k), ArithmeticThetaRelativeKatoNaturalityR0170.Normalized (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k r) G (1+12*N) g → ArithmeticThetaRelativeKatoNaturalityR0170.HasValue (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k r) p g v → ∃ f : PowerSeries k, f ≠ 0 ∧ algebraMap (PowerSeries k) (LaurentSeries k) f = v * ArithmeticThetaUnaryKatoPowerR0160.discriminant k r ^ (ArithmeticThetaCompactUnaryR0183.dExponent N) := by
+    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (r N : ℕ) (hr : 3 ≤ r) (heven : Even r)
+      (hN : 0 < N) (hNeven : Even N) [(ArithmeticThetaTateCuspsR0181.TateCurve k r).IsElliptic]
+      [AlgebraicGeometry.IsIntegral
+          (ArithmeticThetaRelativeKatoR0169.Curve (LaurentSeries k)
+            (ArithmeticThetaTateCuspsR0181.TateCurve k r))]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaRelativeKatoR0169.Curve (LaurentSeries k)
+            (ArithmeticThetaTateCuspsR0181.TateCurve k r))]
+      [AlgebraicGeometry.IsIntegral
+          (ArithmeticThetaRelativeKatoR0169.GenericCurve (LaurentSeries k)
+            (ArithmeticThetaTateCuspsR0181.TateCurve k r))]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaRelativeKatoR0169.GenericCurve (LaurentSeries k)
+            (ArithmeticThetaTateCuspsR0181.TateCurve k r))]
+      (G :
+        ArithmeticThetaRelativeKatoR0169.Law (LaurentSeries k)
+          (ArithmeticThetaTateCuspsR0181.TateCurve k r)),
+      ArithmeticThetaRelativeKatoR0169.IsOriginLaw (LaurentSeries k)
+          (ArithmeticThetaTateCuspsR0181.TateCurve k r) G →
+        ∀
+          (p :
+            Quiver.Hom (ArithmeticThetaTateCuspsR0181.Puncture k)
+              (ArithmeticThetaRelativeKatoR0169.Curve (LaurentSeries k)
+                (ArithmeticThetaTateCuspsR0181.TateCurve k r))),
+          CategoryTheory.CategoryStruct.comp p
+                (ArithmeticThetaRelativeKatoR0169.structureMap (LaurentSeries k)
+                  (ArithmeticThetaTateCuspsR0181.TateCurve k r)) =
+              CategoryTheory.CategoryStruct.id (ArithmeticThetaTateCuspsR0181.Puncture k) →
+            CategoryTheory.CategoryStruct.comp p (G.schemeNsmul N) =
+                ArithmeticThetaRelativeKatoR0169.origin (LaurentSeries k)
+                  (ArithmeticThetaTateCuspsR0181.TateCurve k r) →
+              p ≠
+                  ArithmeticThetaRelativeKatoR0169.origin (LaurentSeries k)
+                    (ArithmeticThetaTateCuspsR0181.TateCurve k r) →
+                ∀
+                  (g :
+                    AlgebraicGeometry.Scheme.functionField
+                      (ArithmeticThetaRelativeKatoR0169.Curve (LaurentSeries k)
+                        (ArithmeticThetaTateCuspsR0181.TateCurve k r)))
+                  (v : LaurentSeries k),
+                  ArithmeticThetaRelativeKatoNaturalityR0170.Normalized (LaurentSeries k)
+                      (ArithmeticThetaTateCuspsR0181.TateCurve k r) G (1 + 12 * N) g →
+                    ArithmeticThetaRelativeKatoNaturalityR0170.HasValue (LaurentSeries k)
+                        (ArithmeticThetaTateCuspsR0181.TateCurve k r) p g v →
+                      ∃ f : PowerSeries k,
+                        f ≠ 0 ∧
+                          algebraMap (PowerSeries k) (LaurentSeries k) f =
+                            v *
+                              ArithmeticThetaUnaryKatoPowerR0160.discriminant k r ^
+                                (ArithmeticThetaCompactUnaryR0183.dExponent N) := by
   intro k _ _ _ r N h3 he hN heN _ _ _ _ _ G hG p hp hkill hne g v hg hv
   have hr : 0 < r := by omega
   obtain ⟨T, M, hM⟩ := TateFullLevelMarking.model_exists k r h3 hr

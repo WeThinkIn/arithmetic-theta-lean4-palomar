@@ -31,7 +31,32 @@ open ArithmeticThetaAlgebraizedMarkedLineR0136 ArithmeticThetaMarkedKatoValuesR0
 
 /-- The unique normalized Kato function has all the exact unary stalk values. -/
 theorem actual_unary_power_values :
-∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] (d m N : ℕ), 0 < d → 0 < m → Even m → 0 < N → Even N → m ∣ N → r = 24*d*m^2 → ∃! g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)), ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G (1+12*N) g ∧ ArithmeticThetaUnaryKatoPowerR0160.PowerValues k M d m N g := by
+    ∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      (d m N : ℕ),
+      0 < d →
+        0 < m →
+          Even m →
+            0 < N →
+              Even N →
+                m ∣ N →
+                  r = 24 * d * m ^ 2 →
+                    ∃! g :
+                      (AlgebraicGeometry.Scheme.functionField
+                        (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)),
+                      ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G (1 + 12 * N) g ∧
+                        ArithmeticThetaUnaryKatoPowerR0160.PowerValues k M d m N g := by
   intro k _ _ r hr h3 he T M hM s hs G hG _ _ d m N hd hm hem hN heN hmN hrEq
   obtain ⟨g, hg, _⟩ := actual_torsion_power_value
     k r hr h3 he T M hM s hs G hG N hN

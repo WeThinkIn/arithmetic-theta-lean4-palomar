@@ -29,7 +29,34 @@ end SplitCyclicKernelR0173
 /-- The scheme-theoretic cyclic kernel is split finite étale, with the
 prescribed structural map and every prescribed labeled multiple. -/
 theorem split_cyclic_kernel :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (n : ℕ) (hn : 0 < n) (P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G n), AlgebraicGeometry.IsFinite (CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeCyclicQuotientR0173.kernelIdeal R W G P).subschemeι (ArithmeticThetaRelativeKatoR0169.structureMap R W)) ∧ AlgebraicGeometry.Etale (CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeCyclicQuotientR0173.kernelIdeal R W G P).subschemeι (ArithmeticThetaRelativeKatoR0169.structureMap R W)) ∧ ∃ e : CategoryTheory.Iso (ArithmeticThetaRelativeCyclicQuotientR0173.kernelIdeal R W G P).subscheme (AlgebraicGeometry.Spec (CommRingCat.of (Fin n → R))), CategoryTheory.CategoryStruct.comp e.hom (ArithmeticThetaRelativeCyclicQuotientR0173.splitStructure R n) = CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeCyclicQuotientR0173.kernelIdeal R W G P).subschemeι (ArithmeticThetaRelativeKatoR0169.structureMap R W) ∧ ∀ i : Fin n, CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeCyclicQuotientR0173.component R n i) (CategoryTheory.CategoryStruct.comp e.inv (ArithmeticThetaRelativeCyclicQuotientR0173.kernelIdeal R W G P).subschemeι) = ArithmeticThetaRelativeCyclicQuotientR0173.multiple R W G P i := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (n : ℕ) (hn : 0 < n)
+      (P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G n),
+      AlgebraicGeometry.IsFinite
+          (CategoryTheory.CategoryStruct.comp
+            (ArithmeticThetaRelativeCyclicQuotientR0173.kernelIdeal R W G P).subschemeι
+            (ArithmeticThetaRelativeKatoR0169.structureMap R W)) ∧
+        AlgebraicGeometry.Etale
+            (CategoryTheory.CategoryStruct.comp
+              (ArithmeticThetaRelativeCyclicQuotientR0173.kernelIdeal R W G P).subschemeι
+              (ArithmeticThetaRelativeKatoR0169.structureMap R W)) ∧
+          ∃ e :
+            CategoryTheory.Iso
+              (ArithmeticThetaRelativeCyclicQuotientR0173.kernelIdeal R W G P).subscheme
+              (AlgebraicGeometry.Spec (CommRingCat.of (Fin n → R))),
+            CategoryTheory.CategoryStruct.comp e.hom
+                  (ArithmeticThetaRelativeCyclicQuotientR0173.splitStructure R n) =
+                CategoryTheory.CategoryStruct.comp
+                  (ArithmeticThetaRelativeCyclicQuotientR0173.kernelIdeal R W G P).subschemeι
+                  (ArithmeticThetaRelativeKatoR0169.structureMap R W) ∧
+              ∀ i : Fin n,
+                CategoryTheory.CategoryStruct.comp
+                    (ArithmeticThetaRelativeCyclicQuotientR0173.component R n i)
+                    (CategoryTheory.CategoryStruct.comp e.inv
+                      (ArithmeticThetaRelativeCyclicQuotientR0173.kernelIdeal R W G P).subschemeι) =
+                  ArithmeticThetaRelativeCyclicQuotientR0173.multiple R W G P i := by
   intro R _ _ _ _ _ W _ G _hG n _hn P
   let s (i : Fin n) := multiple R W G P i
   have hs (i : Fin n) : s i ≫ structureMap R W = 𝟙 _ := by

@@ -494,7 +494,22 @@ open CategoryTheory AlgebraicGeometry
 /-- The actual function-field norm pushes forward principal orders at every
 scheme point, including nonsplit closed points and the generic point. -/
 theorem geometric_norm_orders :
-    ∀ (F : Type u) [Field F] (X Y : AlgebraicGeometry.Scheme.{u}) [AlgebraicGeometry.IsIntegral X] [AlgebraicGeometry.IsIntegral Y] [AlgebraicGeometry.IsLocallyNoetherian X] [AlgebraicGeometry.IsLocallyNoetherian Y] (p : Quiver.Hom X (AlgebraicGeometry.Spec (CommRingCat.of F))) (q : Quiver.Hom Y (AlgebraicGeometry.Spec (CommRingCat.of F))) [AlgebraicGeometry.IsProper p] [AlgebraicGeometry.IsProper q] [AlgebraicGeometry.SmoothOfRelativeDimension 1 p] [AlgebraicGeometry.SmoothOfRelativeDimension 1 q] (f : Quiver.Hom X Y), CategoryTheory.CategoryStruct.comp f q = p → ∀ [AlgebraicGeometry.IsFinite f] [AlgebraicGeometry.Etale f] [AlgebraicGeometry.Surjective f] (φ : Y.functionField →+* X.functionField), ArithmeticThetaGeometricNormR0150.IsFieldMap f φ → ∀ (g : X.functionField), g ≠ 0 → ∀ y : Y, AlgebraicGeometry.Scheme.ord (ArithmeticThetaGeometricNormR0150.fieldNorm φ g) y = ArithmeticThetaGeometricNormR0150.pushOrder f g y := by
+    ∀ (F : Type u) [Field F] (X Y : AlgebraicGeometry.Scheme.{u}) [AlgebraicGeometry.IsIntegral X]
+      [AlgebraicGeometry.IsIntegral Y] [AlgebraicGeometry.IsLocallyNoetherian X]
+      [AlgebraicGeometry.IsLocallyNoetherian Y]
+      (p : Quiver.Hom X (AlgebraicGeometry.Spec (CommRingCat.of F)))
+      (q : Quiver.Hom Y (AlgebraicGeometry.Spec (CommRingCat.of F))) [AlgebraicGeometry.IsProper p]
+      [AlgebraicGeometry.IsProper q] [AlgebraicGeometry.SmoothOfRelativeDimension 1 p]
+      [AlgebraicGeometry.SmoothOfRelativeDimension 1 q] (f : Quiver.Hom X Y),
+      CategoryTheory.CategoryStruct.comp f q = p →
+        ∀ [AlgebraicGeometry.IsFinite f] [AlgebraicGeometry.Etale f]
+          [AlgebraicGeometry.Surjective f] (φ : Y.functionField →+* X.functionField),
+          ArithmeticThetaGeometricNormR0150.IsFieldMap f φ →
+            ∀ (g : X.functionField),
+              g ≠ 0 →
+                ∀ y : Y,
+                  AlgebraicGeometry.Scheme.ord (ArithmeticThetaGeometricNormR0150.fieldNorm φ g) y =
+                    ArithmeticThetaGeometricNormR0150.pushOrder f g y := by
   intro F _ X Y _ _ _ _ p q _ _ _ _ f hf _ _ _ φ hφ g hg y
   by_cases hyng : y = genericPoint Y
   · subst y

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "baseline_commit": "2df5f396b6d325f74ae6733612df2c5af1b915e6",
+  "input_manifest_sha256": "49cd9d4854f600ae72992daf10df2dd533a4425390cbc620938dd79cd3eaa62e",
+  "modules": 1199,
+  "fresh_modules": 1199,
+  "reused_modules": 0,
+  "exact_type_checks": 103,
+  "named_declarations": 23768,
+  "definition_bodies": 6759,
+  "original_contract_and_103_probes_unchanged": true,
+  "builder": "/home/wujie-ai-lean4-proof-agent-program/tools/build_lean_dependency_cone.py",
+  "builder_sha256": "2996ad265fcf9c86641a9a1085bf50c0e663c07e81f2336fcd14d9d96115d5b6",
+  "cone_manifest_sha256": "d700b723c5802778bcd9045803aa67396eecfa51f1b2972702995da09c542ac7",
+  "declaration_comparison_sha256": "df401b31db6aca4d9cafa06a84d3cec7929b74aab9bb436ca6e19bc6d5bc956a",
+  "declaration_checker_sha256": "026f0e65d7dab5a59939b008ae2b0a6fb1fa86b372ceb25f9d37a1f0f7e6fd9d",
+  "scope": "Complete module build; original endpoint types and axiom closure; all original non-internal named declaration kinds, universes and definitionally equal types; definition bodies."
+}

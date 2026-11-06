@@ -115,7 +115,36 @@ lemma integral_of_extension (k : Type) [Field k] [CharZero k]
 end FieldCompactUnary
 
 theorem field_compact_unary :
-    ∀ (k : Type) [Field k] [CharZero k] (m N : ℕ), 0 < m → Even m → 0 < N → Even N → m ∣ N → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (ArithmeticThetaCompactUnaryR0183.level N)) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k (ArithmeticThetaCompactUnaryR0183.level N) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k (ArithmeticThetaCompactUnaryR0183.level N) D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k (ArithmeticThetaCompactUnaryR0183.level N) H → ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H → ∀ ν : ℤ, (-(m : ℤ) ≤ 2*ν ∧ 2*ν < (m : ℤ)) → ∃ (a b : Fin N), a.val = ArithmeticThetaBoundaryHodgeR0182.unaryResidue m N ν ∧ b.val = N/2 ∧ ∃ A : ArithmeticThetaCompactUnaryR0183.OpenPower k m N D a b, ∃! s : (ArithmeticThetaTensorPower.tensorPower X.space H.line (ArithmeticThetaCompactUnaryR0183.weight N)).presheaf.obj (Opposite.op ⊤), ArithmeticThetaCompactUnaryR0183.RealizesUnary k m N H ν A s := by
+    ∀ (k : Type) [Field k] [CharZero k] (m N : ℕ),
+      0 < m →
+        Even m →
+          0 < N →
+            Even N →
+              m ∣ N →
+                ∀
+                  (D :
+                    ArithmeticThetaLevelCompactificationR0179.LevelData k
+                      (ArithmeticThetaCompactUnaryR0183.level N))
+                  (X :
+                    ArithmeticThetaLevelCompactificationR0179.Compactification k
+                      (ArithmeticThetaCompactUnaryR0183.level N) D)
+                  (H :
+                    ArithmeticThetaBoundaryHodgeR0182.Extension k
+                      (ArithmeticThetaCompactUnaryR0183.level N) D X),
+                  ArithmeticThetaBoundaryHodgeR0182.Canonical k
+                      (ArithmeticThetaCompactUnaryR0183.level N) H →
+                    ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H →
+                      ∀ ν : ℤ,
+                        (-(m : ℤ) ≤ 2 * ν ∧ 2 * ν < (m : ℤ)) →
+                          ∃ (a b : Fin N),
+                            a.val = ArithmeticThetaBoundaryHodgeR0182.unaryResidue m N ν ∧
+                              b.val = N / 2 ∧
+                                ∃ A : ArithmeticThetaCompactUnaryR0183.OpenPower k m N D a b,
+                                  ∃! s :
+                                    (ArithmeticThetaTensorPower.tensorPower X.space H.line
+                                          (ArithmeticThetaCompactUnaryR0183.weight N)).presheaf.obj
+                                      (Opposite.op ⊤),
+                                    ArithmeticThetaCompactUnaryR0183.RealizesUnary k m N H ν A s := by
   intro k _ _ m N hm hmeven hN hNeven hmN D X H hH hgH ν hν
   have hL : 3 ≤ level N := by
     have := Nat.one_le_pow 2 N hN
@@ -162,7 +191,76 @@ theorem field_compact_unary :
 
 
 theorem field_unary_compact_naturality :
-    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (m N : ℕ), 0 < m → Even m → 0 < N → Even N → m ∣ N → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (ArithmeticThetaCompactUnaryR0183.level N)) (E : ArithmeticThetaLevelCompactificationR0179.LevelData l (ArithmeticThetaCompactUnaryR0183.level N)) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k (ArithmeticThetaCompactUnaryR0183.level N) D) (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l (ArithmeticThetaCompactUnaryR0183.level N) E) (C : ArithmeticThetaArithmeticSectionsR0236.Comparison k (ArithmeticThetaCompactUnaryR0183.level N) ι D E X Y) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k (ArithmeticThetaCompactUnaryR0183.level N) D X) (J : ArithmeticThetaBoundaryHodgeR0182.Extension l (ArithmeticThetaCompactUnaryR0183.level N) E Y), ArithmeticThetaBoundaryHodgeR0182.Canonical k (ArithmeticThetaCompactUnaryR0183.level N) H → ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H → ArithmeticThetaBoundaryHodgeR0182.Canonical l (ArithmeticThetaCompactUnaryR0183.level N) J → ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical J → ∀ (a b : Fin N), (a.val ≠ 0 ∨ b.val ≠ 0) → ∀ (A : ArithmeticThetaCompactUnaryR0183.OpenPower k m N D a b) (A' : ArithmeticThetaCompactUnaryR0183.OpenPower l m N E a b) (s : (ArithmeticThetaTensorPower.tensorPower X.space H.line (ArithmeticThetaCompactUnaryR0183.weight N)).presheaf.obj (Opposite.op ⊤)) (t : (ArithmeticThetaTensorPower.tensorPower Y.space J.line (ArithmeticThetaCompactUnaryR0183.weight N)).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaBoundaryHodgeR0182.restrictPower k (ArithmeticThetaCompactUnaryR0183.level N) H (ArithmeticThetaCompactUnaryR0183.weight N) s = ArithmeticThetaBoundaryHodgeR0182.pullToOpen k (ArithmeticThetaCompactUnaryR0183.level N) (ArithmeticThetaCompactUnaryR0183.weight N) A.section_ → ArithmeticThetaBoundaryHodgeR0182.restrictPower l (ArithmeticThetaCompactUnaryR0183.level N) J (ArithmeticThetaCompactUnaryR0183.weight N) t = ArithmeticThetaBoundaryHodgeR0182.pullToOpen l (ArithmeticThetaCompactUnaryR0183.level N) (ArithmeticThetaCompactUnaryR0183.weight N) A'.section_ → ∃ eH : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback C.compactMap).obj H.line) (J.line), ArithmeticThetaBoundaryConstantsR0235.CompactCompatible ι C.openMap C.compactMap C.extendsOpen C.hodgeMap H J eH ∧ ArithmeticThetaArithmeticSectionsR0236.powerTransport C.compactMap H.line J.line eH (ArithmeticThetaCompactUnaryR0183.weight N) (s) = t := by
+    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (m N : ℕ),
+      0 < m →
+        Even m →
+          0 < N →
+            Even N →
+              m ∣ N →
+                ∀
+                  (D :
+                    ArithmeticThetaLevelCompactificationR0179.LevelData k
+                      (ArithmeticThetaCompactUnaryR0183.level N))
+                  (E :
+                    ArithmeticThetaLevelCompactificationR0179.LevelData l
+                      (ArithmeticThetaCompactUnaryR0183.level N))
+                  (X :
+                    ArithmeticThetaLevelCompactificationR0179.Compactification k
+                      (ArithmeticThetaCompactUnaryR0183.level N) D)
+                  (Y :
+                    ArithmeticThetaLevelCompactificationR0179.Compactification l
+                      (ArithmeticThetaCompactUnaryR0183.level N) E)
+                  (C :
+                    ArithmeticThetaArithmeticSectionsR0236.Comparison k
+                      (ArithmeticThetaCompactUnaryR0183.level N) ι D E X Y)
+                  (H :
+                    ArithmeticThetaBoundaryHodgeR0182.Extension k
+                      (ArithmeticThetaCompactUnaryR0183.level N) D X)
+                  (J :
+                    ArithmeticThetaBoundaryHodgeR0182.Extension l
+                      (ArithmeticThetaCompactUnaryR0183.level N) E Y),
+                  ArithmeticThetaBoundaryHodgeR0182.Canonical k
+                      (ArithmeticThetaCompactUnaryR0183.level N) H →
+                    ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H →
+                      ArithmeticThetaBoundaryHodgeR0182.Canonical l
+                          (ArithmeticThetaCompactUnaryR0183.level N) J →
+                        ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical J →
+                          ∀ (a b : Fin N),
+                            (a.val ≠ 0 ∨ b.val ≠ 0) →
+                              ∀ (A : ArithmeticThetaCompactUnaryR0183.OpenPower k m N D a b)
+                                (A' : ArithmeticThetaCompactUnaryR0183.OpenPower l m N E a b)
+                                (s :
+                                  (ArithmeticThetaTensorPower.tensorPower X.space H.line
+                                        (ArithmeticThetaCompactUnaryR0183.weight N)).presheaf.obj
+                                    (Opposite.op ⊤))
+                                (t :
+                                  (ArithmeticThetaTensorPower.tensorPower Y.space J.line
+                                        (ArithmeticThetaCompactUnaryR0183.weight N)).presheaf.obj
+                                    (Opposite.op ⊤)),
+                                ArithmeticThetaBoundaryHodgeR0182.restrictPower k
+                                      (ArithmeticThetaCompactUnaryR0183.level N) H
+                                      (ArithmeticThetaCompactUnaryR0183.weight N) s =
+                                    ArithmeticThetaBoundaryHodgeR0182.pullToOpen k
+                                      (ArithmeticThetaCompactUnaryR0183.level N)
+                                      (ArithmeticThetaCompactUnaryR0183.weight N) A.section_ →
+                                  ArithmeticThetaBoundaryHodgeR0182.restrictPower l
+                                        (ArithmeticThetaCompactUnaryR0183.level N) J
+                                        (ArithmeticThetaCompactUnaryR0183.weight N) t =
+                                      ArithmeticThetaBoundaryHodgeR0182.pullToOpen l
+                                        (ArithmeticThetaCompactUnaryR0183.level N)
+                                        (ArithmeticThetaCompactUnaryR0183.weight N) A'.section_ →
+                                    ∃ eH :
+                                      CategoryTheory.Iso
+                                        ((AlgebraicGeometry.Scheme.Modules.pullback
+                                              C.compactMap).obj
+                                          H.line)
+                                        (J.line),
+                                      ArithmeticThetaBoundaryConstantsR0235.CompactCompatible ι
+                                          C.openMap C.compactMap C.extendsOpen C.hodgeMap H J eH ∧
+                                        ArithmeticThetaArithmeticSectionsR0236.powerTransport
+                                            C.compactMap H.line J.line eH
+                                            (ArithmeticThetaCompactUnaryR0183.weight N) (s) =
+                                          t := by
   intro k l _ _ _ _ ι m N hm hmeven hN hNeven hmN D E X Y C H J hH hgH hJ hgJ
     a b hab A A' s t hs ht
   have hL : 3 ≤ level N := by

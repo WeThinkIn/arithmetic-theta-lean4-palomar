@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "baseline_commit": "2df5f396b6d325f74ae6733612df2c5af1b915e6",
+  "input_manifest_sha256": "49cd9d4854f600ae72992daf10df2dd533a4425390cbc620938dd79cd3eaa62e",
+  "requirement_checks": {
+    "actual_lean_source_readability_changes": {
+      "passed": true,
+      "changed_modules": 293,
+      "transparent_abbreviation_refactor_modules": 8,
+      "formatting_only_modules": 285
+    },
+    "full_root_build": {
+      "passed": true,
+      "modules": 1199,
+      "fresh_modules": 1199,
+      "parallel_slots": 8,
+      "failed_modules": 0
+    },
+    "unchanged_original_103_endpoints": {
+      "passed": true,
+      "exact_type_checks": 103,
+      "original_contract_and_probe_hashes_match": true,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "declaration_preservation": {
+      "passed": true,
+      "original_noninternal_named_declarations": 23768,
+      "definition_bodies": 6759,
+      "types_requiring_definitional_reduction": 7,
+      "negative_test_rejections": 2
+    },
+    "original_dependencies_and_reproduction_tools": {
+      "passed": true,
+      "manifest_entries_unchanged": true
+    },
+    "review_navigation": {
+      "passed": true,
+      "endpoint_definition_anchors": 103,
+      "valid_local_links": 131
+    },
+    "delivery_scope": {
+      "passed": true,
+      "tracked_modifications_only_in_requested_proof_sources_and_review_documentation": true,
+      "git_diff_check": true
+    }
+  },
+  "reports_sha256": {
+    "ReadabilityPreservationReport.json": "73637592026b1e68269e07e83614757cf75e94fae7709d0a608b3fd54cde0b63",
+    "ReadabilityBuildReport.json": "19d7ae938d18d5a2cebdae86d4fbcb51c6a0b975dfa2f0e8a63002ba2a82840a",
+    "ReadabilityEndpointReport.json": "0a938a856d0624f871bb7e20b03057b2ccad2dcf81555793d117a15a83e7e17b",
+    "ReadabilityDeclarationReport.json": "df401b31db6aca4d9cafa06a84d3cec7929b74aab9bb436ca6e19bc6d5bc956a",
+    "ReadabilityNegativeTests.json": "3dcfc5e7f3319e94fc75c07e491520fd4de087c43c03cf301b1b35ad173ff776"
+  },
+  "review_documentation_sha256": {
+    "README.md": "57a2267da1646646fd318769d4e55c00a1f91b3c44518551f4505722dc1d9d96",
+    "local-reproduction/verification/README.md": "7f984708369142d65ef6324ba6bb0a464c807b63f4b9ba3cda91e94c82bdd323",
+    "local-reproduction/READING_GUIDE.md": "c9a9885c1e4606aabf11cee7fae8eef6348182776697b150cb174a7cd07a0fa8",
+    "local-reproduction/THEOREM_INDEX.md": "98a23abc40d82e888e760593d251e4b609537fee90c5015de45f91bf503b36f9",
+    "local-reproduction/REPRODUCE.md": "e474964a1017284127932f59d881d27ea361729a291b5fb1ec7881e13e2b1b00"
+  }
+}

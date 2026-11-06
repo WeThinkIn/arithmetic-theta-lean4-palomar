@@ -553,7 +553,43 @@ end MultiplicationEvaluation
 open CategoryTheory AlgebraicGeometry MultiplicationEvaluation
 /-- Pullback by actual multiplication is power substitution in the full faithful evaluation. -/
 theorem multiplication_evaluation :
-    ∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] (χ : Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X) (hχ : ArithmeticThetaKatoAnnularR0152.IsChartMap k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) χ) (φ : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* ArithmeticThetaKatoAnnularR0152.ChartField k) (hφ : ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M χ φ) (d : ℕ) (hd : 0 < d) (μ : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))) (hμ : ArithmeticThetaGeometricNormR0150.IsFieldMap (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G d) μ) (v w : ArithmeticThetaAnnularNormBridgeR0156.ChartField k →+* ArithmeticThetaAnnularNormBridgeR0156.Series k) (hv : ArithmeticThetaAnnularNormBridgeR0156.IsEvaluation k 1 1 v) (hw : ArithmeticThetaAnnularNormBridgeR0156.IsEvaluation k 1 d w), ∀ g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)), v (φ (μ g)) = w (φ g) := by
+    ∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      (χ : Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X)
+      (hχ :
+        ArithmeticThetaKatoAnnularR0152.IsChartMap k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) χ)
+      (φ :
+        (AlgebraicGeometry.Scheme.functionField
+            (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+          ArithmeticThetaKatoAnnularR0152.ChartField k)
+      (hφ : ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M χ φ) (d : ℕ) (hd : 0 < d)
+      (μ :
+        (AlgebraicGeometry.Scheme.functionField
+            (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+          (AlgebraicGeometry.Scheme.functionField
+            (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)))
+      (hμ :
+        ArithmeticThetaGeometricNormR0150.IsFieldMap
+          (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G d) μ)
+      (v w :
+        ArithmeticThetaAnnularNormBridgeR0156.ChartField k →+*
+          ArithmeticThetaAnnularNormBridgeR0156.Series k)
+      (hv : ArithmeticThetaAnnularNormBridgeR0156.IsEvaluation k 1 1 v)
+      (hw : ArithmeticThetaAnnularNormBridgeR0156.IsEvaluation k 1 d w),
+      ∀ g :
+        (AlgebraicGeometry.Scheme.functionField
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)),
+        v (φ (μ g)) = w (φ g) := by
   intro k _ _ r hr h3 T he M hM s hs G hG _ χ hχ φ hφ d hd μ hμ v w hv hw g
   have hh : (v.comp φ).comp μ = w.comp φ := by
     suffices h : CommRingCat.ofHom ((v.comp φ).comp μ) = CommRingCat.ofHom (w.comp φ) from

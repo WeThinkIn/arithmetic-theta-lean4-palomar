@@ -958,7 +958,26 @@ open OriginLogarithmicTaylorR0163
 /-- The normalized geometric frame acts on every actual regular Taylor
 expansion as (1+u)d/du, as an identity of entire power series. -/
 theorem origin_logarithmic_taylor :
-∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)], ∀ (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2) (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3), ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X → ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y → ∀ (δ : ArithmeticThetaHodgeFourTorsionR0147.Frame k M), ArithmeticThetaCompactifiedDifferentialR0145.IsGlobalDifferentialFrame k M s X Y δ → ArithmeticThetaHodgeInitialR0163.LogarithmicTaylor k M s hs.1 δ := by
+    ∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)],
+      ∀ (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2)
+        (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3),
+        ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X →
+          ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y →
+            ∀ (δ : ArithmeticThetaHodgeFourTorsionR0147.Frame k M),
+              ArithmeticThetaCompactifiedDifferentialR0145.IsGlobalDifferentialFrame k M s X Y δ →
+                ArithmeticThetaHodgeInitialR0163.LogarithmicTaylor k M s hs.1 δ := by
   intro k _ _ r hr h3 he T M hM s hs G hG _ _ X Y hX hY δ hδ
   intro ε κ hκ U hx a
   obtain ⟨_, χ, φ, σ, Ψ, hχ, hφ, hσ, hΨ, hκ⟩ := hκ

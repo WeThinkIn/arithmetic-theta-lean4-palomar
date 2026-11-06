@@ -77,7 +77,20 @@ lemma bijective : Function.Bijective (fun i => cosetClass binaryBasis (represent
 end BinaryOrthogonalExample
 
 /-- The specified binary lattice, its two actual cosets, and its complete theta factorization. -/
-theorem binary_orthogonal_example : ArithmeticThetaComputed.validGram ArithmeticThetaFullSourceR0268.binaryGram ∧ ArithmeticThetaFullSourceR0268.binaryBasis.det = 2 ∧ ArithmeticThetaOrthogonalConsumerR0127.OrthogonalData ArithmeticThetaFullSourceR0268.binaryGram ArithmeticThetaFullSourceR0268.binaryBasis ArithmeticThetaFullSourceR0268.binaryNorms ∧ ∃ t : Fin 2 → ArithmeticThetaOrthogonalConsumerR0127.preimageLattice ArithmeticThetaFullSourceR0268.binaryBasis, (∀ i, (t i).val = ArithmeticThetaFullSourceR0268.binaryRepresentatives i) ∧ Function.Bijective (fun i => ArithmeticThetaOrthogonalConsumerR0127.cosetClass ArithmeticThetaFullSourceR0268.binaryBasis (t i)) ∧ (∀ i j, ((ArithmeticThetaFullSourceR0268.binaryResidues i j : ℤ) : ℚ) = (ArithmeticThetaFullSourceR0268.binaryNorms j : ℚ) * (t i).val j) ∧ ArithmeticThetaOrthogonalConsumerR0127.thetaZ ArithmeticThetaFullSourceR0268.binaryGram = ArithmeticThetaOrthogonalConsumerR0127.cosetSeries ArithmeticThetaFullSourceR0268.binaryNorms (ArithmeticThetaFullSourceR0268.binaryRepresentatives 0) + ArithmeticThetaOrthogonalConsumerR0127.cosetSeries ArithmeticThetaFullSourceR0268.binaryNorms (ArithmeticThetaFullSourceR0268.binaryRepresentatives 1) ∧ (∀ (D : ℕ) (hD : D ≠ 0), 92 ∣ D → PowerSeries.expand D hD (ArithmeticThetaOrthogonalConsumerR0127.thetaZ ArithmeticThetaFullSourceR0268.binaryGram) = ArithmeticThetaOrthogonalConsumerR0127.scaledUnary 2 (D / 4) 0 * ArithmeticThetaOrthogonalConsumerR0127.scaledUnary 46 (D / 92) 0 + ArithmeticThetaOrthogonalConsumerR0127.scaledUnary 2 (D / 4) 1 * ArithmeticThetaOrthogonalConsumerR0127.scaledUnary 46 (D / 92) 23) := by
+theorem binary_orthogonal_example :
+    ArithmeticThetaComputed.validGram binaryGram ∧
+    binaryBasis.det = 2 ∧ OrthogonalData binaryGram binaryBasis binaryNorms ∧
+    ∃ t : Fin 2 → preimageLattice binaryBasis,
+      (∀ i, (t i).val = binaryRepresentatives i) ∧
+      Function.Bijective (fun i => cosetClass binaryBasis (t i)) ∧
+      (∀ i j, ((binaryResidues i j : ℤ) : ℚ) = (binaryNorms j : ℚ) * (t i).val j) ∧
+      thetaZ binaryGram =
+        cosetSeries binaryNorms (binaryRepresentatives 0) +
+        cosetSeries binaryNorms (binaryRepresentatives 1) ∧
+      (∀ (D : ℕ) (hD : D ≠ 0), 92 ∣ D →
+        PowerSeries.expand D hD (thetaZ binaryGram) =
+          scaledUnary 2 (D / 4) 0 * scaledUnary 46 (D / 92) 0 +
+          scaledUnary 2 (D / 4) 1 * scaledUnary 46 (D / 92) 23) := by
   refine ⟨BinaryOrthogonalExample.gram_valid, BinaryOrthogonalExample.determinant,
     BinaryOrthogonalExample.orthogonal, BinaryOrthogonalExample.representatives,
     (fun _ => rfl), BinaryOrthogonalExample.bijective, BinaryOrthogonalExample.residues, ?_⟩

@@ -75,7 +75,54 @@ end ValuedExtensionPrescribedRootsR0223
 /-- Prescribed field roots over the same extended disk and frame are realized
 by integral coefficients and one smooth proper finite flat cover. -/
 theorem valued_extension_prescribed_roots :
-∀ (k : Type) [Field k] [CharZero k] (Z : AlgebraicGeometry.Scheme.{0}) [AlgebraicGeometry.IsIntegral Z] (b : Quiver.Hom Z (AlgebraicGeometry.Spec (CommRingCat.of k))) [AlgebraicGeometry.IsProper b] [AlgebraicGeometry.SmoothOfRelativeDimension 1 b] (J : Z.Modules), AlgebraicGeometry.Scheme.Modules.IsInvertible J → ∀ (K s : ℕ), 0 < K → ∀ (F : Fin s → ArithmeticThetaSimultaneousUnaryR0187.Sections Z (ArithmeticThetaTensorPower.tensorPower Z J K)), (∀ j, F j ≠ 0) → ∀ (f : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk k) Z), CategoryTheory.CategoryStruct.comp f b = ArithmeticThetaTateCuspsR0181.diskStructure k → AlgebraicGeometry.IsDominant (CategoryTheory.CategoryStruct.comp (ArithmeticThetaTateCuspsR0181.genericInclusion k) f) → ∀ (h : ArithmeticThetaSimultaneousUnaryR0187.Sections (ArithmeticThetaTateCuspsR0181.Disk k) ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J)), ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J) ⊤ h → ∀ (Ω : Type) [Field Ω] [Algebra (LaurentSeries k) Ω] (A : ValuationSubring Ω) (ρ : PowerSeries k →+* A), (∀ t : PowerSeries k, algebraMap A Ω (ρ t) = algebraMap (LaurentSeries k) Ω (algebraMap (PowerSeries k) (LaurentSeries k) t)) → ∀ (r : Fin s → Ω), (∀ j, ArithmeticThetaValuativeRootsR0223.FieldEquation Ω A (ArithmeticThetaValuativeRootsR0223.extendedDisk k Ω A ρ f) J K (F j) (ArithmeticThetaValuativeRootsR0223.extendedFrame k Ω A ρ f J h) (r j)) → ∃ R : ArithmeticThetaSimultaneousUnaryR0187.RootCover k Z b (K^s), ArithmeticThetaValuativeRootsR0223.PrescribedFieldRoots k R Ω A J K s F (ArithmeticThetaValuativeRootsR0223.extendedDisk k Ω A ρ f) (ArithmeticThetaValuativeRootsR0223.extendedFrame k Ω A ρ f J h) r := by
+    ∀ (k : Type) [Field k] [CharZero k] (Z : AlgebraicGeometry.Scheme.{0})
+      [AlgebraicGeometry.IsIntegral Z]
+      (b : Quiver.Hom Z (AlgebraicGeometry.Spec (CommRingCat.of k))) [AlgebraicGeometry.IsProper b]
+      [AlgebraicGeometry.SmoothOfRelativeDimension 1 b] (J : Z.Modules),
+      AlgebraicGeometry.Scheme.Modules.IsInvertible J →
+        ∀ (K s : ℕ),
+          0 < K →
+            ∀
+              (F :
+                Fin s →
+                  ArithmeticThetaSimultaneousUnaryR0187.Sections Z
+                    (ArithmeticThetaTensorPower.tensorPower Z J K)),
+              (∀ j, F j ≠ 0) →
+                ∀ (f : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk k) Z),
+                  CategoryTheory.CategoryStruct.comp f b =
+                      ArithmeticThetaTateCuspsR0181.diskStructure k →
+                    AlgebraicGeometry.IsDominant
+                        (CategoryTheory.CategoryStruct.comp
+                          (ArithmeticThetaTateCuspsR0181.genericInclusion k) f) →
+                      ∀
+                        (h :
+                          ArithmeticThetaSimultaneousUnaryR0187.Sections
+                            (ArithmeticThetaTateCuspsR0181.Disk k)
+                            ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J)),
+                        ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+                            ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J) ⊤ h →
+                          ∀ (Ω : Type) [Field Ω] [Algebra (LaurentSeries k) Ω]
+                            (A : ValuationSubring Ω) (ρ : PowerSeries k →+* A),
+                            (∀ t : PowerSeries k,
+                                algebraMap A Ω (ρ t) =
+                                  algebraMap (LaurentSeries k) Ω
+                                    (algebraMap (PowerSeries k) (LaurentSeries k) t)) →
+                              ∀ (r : Fin s → Ω),
+                                (∀ j,
+                                    ArithmeticThetaValuativeRootsR0223.FieldEquation Ω A
+                                      (ArithmeticThetaValuativeRootsR0223.extendedDisk k Ω A ρ f) J
+                                      K (F j)
+                                      (ArithmeticThetaValuativeRootsR0223.extendedFrame k Ω A ρ f J
+                                        h)
+                                      (r j)) →
+                                  ∃ R :
+                                    ArithmeticThetaSimultaneousUnaryR0187.RootCover k Z b (K ^ s),
+                                    ArithmeticThetaValuativeRootsR0223.PrescribedFieldRoots k R Ω A
+                                      J K s F
+                                      (ArithmeticThetaValuativeRootsR0223.extendedDisk k Ω A ρ f)
+                                      (ArithmeticThetaValuativeRootsR0223.extendedFrame k Ω A ρ f J
+                                        h)
+                                      r := by
   intro k _ _ Z _ b _ _ J hJ K s hK F hF f hf hdom h hh Ω _ _ A ρ hρ r hr
   have hh' := ValuedExtensionPrescribedRootsR0223.extended_frame_isFrame k Ω A ρ f J h hh
   have hd := ValuedExtensionPrescribedRootsR0223.extended_disk_dominant k Ω A ρ hρ f hdom

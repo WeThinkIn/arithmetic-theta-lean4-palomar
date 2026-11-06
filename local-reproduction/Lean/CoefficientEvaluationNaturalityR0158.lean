@@ -157,7 +157,39 @@ end CoefficientEvaluationNaturalityR0158
 /-- Coefficient extension fixing the transcendental coordinate and compatibility
 of the full completed-chart evaluation with coefficient base change. -/
 theorem coefficient_evaluation_naturality :
-∀ (k : Type) [Field k] [CharZero k] (l : Type) [Field l] [CharZero l] (ι : k →+* l), (∃! κ : ArithmeticThetaLaurentNormR0064.Coeff k →+* ArithmeticThetaLaurentNormR0064.Coeff l, ArithmeticThetaUnsplitExpansionR0158.IsCoefficientMap k l ι κ) ∧ (∀ (κ : ArithmeticThetaLaurentNormR0064.Coeff k →+* ArithmeticThetaLaurentNormR0064.Coeff l), ArithmeticThetaUnsplitExpansionR0158.IsCoefficientMap k l ι κ → ∀ (ell : ArithmeticThetaLaurentNormR0064.Series k →+* ArithmeticThetaLaurentNormR0064.Series l), ArithmeticThetaCoefficientNormDescentR0157.IsLaurentMap (ArithmeticThetaLaurentNormR0064.Coeff k) (ArithmeticThetaLaurentNormR0064.Coeff l) κ ell → ∀ (ρ : ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart l), ArithmeticThetaCoefficientNormDescentR0157.IsChartMap k l ι ρ → ∀ (E : ArithmeticThetaKatoAnnularR0152.ChartField k →+* ArithmeticThetaKatoAnnularR0152.ChartField l), ArithmeticThetaCoefficientNormDescentR0157.ExtendsChart k l ρ E → ∀ (evk : ArithmeticThetaKatoAnnularR0152.ChartField k →+* ArithmeticThetaLaurentNormR0064.Series k) (evl : ArithmeticThetaKatoAnnularR0152.ChartField l →+* ArithmeticThetaLaurentNormR0064.Series l), ArithmeticThetaAnnularNormBridgeR0156.IsEvaluation k 1 1 evk → ArithmeticThetaAnnularNormBridgeR0156.IsEvaluation l 1 1 evl → evl.comp E = ell.comp evk) := by
+    ∀ (k : Type) [Field k] [CharZero k] (l : Type) [Field l] [CharZero l] (ι : k →+* l),
+      (∃! κ : ArithmeticThetaLaurentNormR0064.Coeff k →+* ArithmeticThetaLaurentNormR0064.Coeff l,
+          ArithmeticThetaUnsplitExpansionR0158.IsCoefficientMap k l ι κ) ∧
+        (∀
+          (κ : ArithmeticThetaLaurentNormR0064.Coeff k →+* ArithmeticThetaLaurentNormR0064.Coeff l),
+          ArithmeticThetaUnsplitExpansionR0158.IsCoefficientMap k l ι κ →
+            ∀
+              (ell :
+                ArithmeticThetaLaurentNormR0064.Series k →+*
+                  ArithmeticThetaLaurentNormR0064.Series l),
+              ArithmeticThetaCoefficientNormDescentR0157.IsLaurentMap
+                  (ArithmeticThetaLaurentNormR0064.Coeff k)
+                  (ArithmeticThetaLaurentNormR0064.Coeff l) κ ell →
+                ∀
+                  (ρ :
+                    ArithmeticThetaKatoAnnularR0152.Chart k →+*
+                      ArithmeticThetaKatoAnnularR0152.Chart l),
+                  ArithmeticThetaCoefficientNormDescentR0157.IsChartMap k l ι ρ →
+                    ∀
+                      (E :
+                        ArithmeticThetaKatoAnnularR0152.ChartField k →+*
+                          ArithmeticThetaKatoAnnularR0152.ChartField l),
+                      ArithmeticThetaCoefficientNormDescentR0157.ExtendsChart k l ρ E →
+                        ∀
+                          (evk :
+                            ArithmeticThetaKatoAnnularR0152.ChartField k →+*
+                              ArithmeticThetaLaurentNormR0064.Series k)
+                          (evl :
+                            ArithmeticThetaKatoAnnularR0152.ChartField l →+*
+                              ArithmeticThetaLaurentNormR0064.Series l),
+                          ArithmeticThetaAnnularNormBridgeR0156.IsEvaluation k 1 1 evk →
+                            ArithmeticThetaAnnularNormBridgeR0156.IsEvaluation l 1 1 evl →
+                              evl.comp E = ell.comp evk) := by
   intro k _ _ l _ _ ι
   constructor
   · refine ⟨CoefficientEvaluationNaturalityR0158.coefficientExtension k l ι,

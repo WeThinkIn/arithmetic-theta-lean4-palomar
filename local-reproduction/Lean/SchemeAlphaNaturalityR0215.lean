@@ -168,7 +168,36 @@ end SchemeAlphaNaturality
 /-- The inclusion-normalized cotangent comparison transports the intrinsic
 signed alpha along every marked Cartesian family map. -/
 theorem scheme_alpha_naturality :
-    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4), ∀ (T : AlgebraicGeometry.Scheme.{u}) (τ : Quiver.Hom T (ArithmeticThetaLocalWeierstrassR0203.Base k)) (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (N : ArithmeticThetaSchemeLevelR0204.FullLevel F 4) (b : Quiver.Hom T S) (f : Quiver.Hom F.curve E.curve), CategoryTheory.CategoryStruct.comp b σ = τ → ∀ (hb : ArithmeticThetaSchemeLevelR0204.MarkedCartesian E F M N b f), (∃! e : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback b).obj (ArithmeticThetaSchemeHodgeR0205.Cotangent E)) (ArithmeticThetaSchemeHodgeR0205.Cotangent F), ArithmeticThetaSchemeHodgeR0205.CotangentCompatible E F b f hb.2.1 e) ∧ (∀ (e : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback b).obj (ArithmeticThetaSchemeHodgeR0205.Cotangent E)) (ArithmeticThetaSchemeHodgeR0205.Cotangent F)), ArithmeticThetaSchemeHodgeR0205.CotangentCompatible E F b f hb.2.1 e → ∀ (a : (ArithmeticThetaSchemeHodgeR0205.Cotangent E).presheaf.obj (Opposite.op ⊤)) (a' : (ArithmeticThetaSchemeHodgeR0205.Cotangent F).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E M a → ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha F N a' → ArithmeticThetaSchemeFourCharacterR0215.pullAlpha E F b e a = a') := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4),
+      ∀ (T : AlgebraicGeometry.Scheme.{u})
+        (τ : Quiver.Hom T (ArithmeticThetaLocalWeierstrassR0203.Base k))
+        (F : ArithmeticThetaLocalWeierstrassR0203.Family T)
+        (N : ArithmeticThetaSchemeLevelR0204.FullLevel F 4) (b : Quiver.Hom T S)
+        (f : Quiver.Hom F.curve E.curve),
+        CategoryTheory.CategoryStruct.comp b σ = τ →
+          ∀ (hb : ArithmeticThetaSchemeLevelR0204.MarkedCartesian E F M N b f),
+            (∃! e :
+                CategoryTheory.Iso
+                  ((AlgebraicGeometry.Scheme.Modules.pullback b).obj
+                    (ArithmeticThetaSchemeHodgeR0205.Cotangent E))
+                  (ArithmeticThetaSchemeHodgeR0205.Cotangent F),
+                ArithmeticThetaSchemeHodgeR0205.CotangentCompatible E F b f hb.2.1 e) ∧
+              (∀
+                (e :
+                  CategoryTheory.Iso
+                    ((AlgebraicGeometry.Scheme.Modules.pullback b).obj
+                      (ArithmeticThetaSchemeHodgeR0205.Cotangent E))
+                    (ArithmeticThetaSchemeHodgeR0205.Cotangent F)),
+                ArithmeticThetaSchemeHodgeR0205.CotangentCompatible E F b f hb.2.1 e →
+                  ∀ (a : (ArithmeticThetaSchemeHodgeR0205.Cotangent E).presheaf.obj (Opposite.op ⊤))
+                    (a' :
+                      (ArithmeticThetaSchemeHodgeR0205.Cotangent F).presheaf.obj (Opposite.op ⊤)),
+                    ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E M a →
+                      ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha F N a' →
+                        ArithmeticThetaSchemeFourCharacterR0215.pullAlpha E F b e a = a') := by
   intro k _ _ S σ E M T τ F N b f hbase hb
   refine ⟨SchemeAlphaNaturality.cotangent_exists_unique E F M N b f hb, ?_⟩
   intro e he a a' ha ha'

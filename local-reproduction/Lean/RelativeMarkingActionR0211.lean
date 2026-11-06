@@ -87,7 +87,23 @@ open ArithmeticThetaFourTorsion
 
 /-- Determinant-one matrices act on full-four scheme markings on the right. -/
 theorem relative_marking_action :
-∀ (R : Type u) [CommRing R] (W : WeierstrassCurve R) (G : ArithmeticThetaRelativeKatoR0169.Law R W), ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G → ∀ (T : AlgebraicGeometry.Scheme.{u}) (t : Quiver.Hom T (ArithmeticThetaRelativeDiscriminantR0171.Base R)), (∀ (M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 t) (A : ArithmeticThetaFourTorsion.Mat4), A.det = 1 → ∃! M' : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 t, ArithmeticThetaRelativeFourCharacterR0211.Changes R W G t M M' A) ∧ (∀ M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 t, ArithmeticThetaRelativeFourCharacterR0211.Changes R W G t M M 1) ∧ (∀ (M M' M'' : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 t) (A B : ArithmeticThetaFourTorsion.Mat4), ArithmeticThetaRelativeFourCharacterR0211.Changes R W G t M M' A → ArithmeticThetaRelativeFourCharacterR0211.Changes R W G t M' M'' B → ArithmeticThetaRelativeFourCharacterR0211.Changes R W G t M M'' (A * B)) := by
+    ∀ (R : Type u) [CommRing R] (W : WeierstrassCurve R)
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W),
+      ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G →
+        ∀ (T : AlgebraicGeometry.Scheme.{u})
+          (t : Quiver.Hom T (ArithmeticThetaRelativeDiscriminantR0171.Base R)),
+          (∀ (M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 t)
+              (A : ArithmeticThetaFourTorsion.Mat4),
+              A.det = 1 →
+                ∃! M' : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 t,
+                  ArithmeticThetaRelativeFourCharacterR0211.Changes R W G t M M' A) ∧
+            (∀ M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 t,
+                ArithmeticThetaRelativeFourCharacterR0211.Changes R W G t M M 1) ∧
+              (∀ (M M' M'' : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 t)
+                (A B : ArithmeticThetaFourTorsion.Mat4),
+                ArithmeticThetaRelativeFourCharacterR0211.Changes R W G t M M' A →
+                  ArithmeticThetaRelativeFourCharacterR0211.Changes R W G t M' M'' B →
+                    ArithmeticThetaRelativeFourCharacterR0211.Changes R W G t M M'' (A * B)) := by
   intro R _ W G hG T t
   letI : CommGroup (SchemeHomOver t (structureMap R W)) :=
     { G.pointGroup t with mul_comm := hG.2 t }

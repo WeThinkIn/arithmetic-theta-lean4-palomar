@@ -193,7 +193,22 @@ open ArithmeticThetaBoundaryConstantsR0235
 /-- The effective integral half-divisor of the normalized compact isogeny
 section over its original characteristic-zero coefficient field. -/
 theorem field_isogeny_half_divisor :
-    ∀ (k : Type) [Field k] [CharZero k] (L m : ℕ), 0 < L → 0 < m → Even m → 8*m ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L), ∀ (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H → ∀ A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D, ∀ a : (H.line).presheaf.obj (Opposite.op ⊤), ArithmeticThetaIsogenyHalfLinesR0193.CompactRealizes k L m D X H A a → ∀ x : X.space, ∃ E : (ArithmeticThetaComponentDegreeR0184.Component k L D X x) →₀ ℤ, ArithmeticThetaIsogenyHalfLinesR0193.HalfDivisor k L D X H x a E := by
+    ∀ (k : Type) [Field k] [CharZero k] (L m : ℕ),
+      0 < L →
+        0 < m →
+          Even m →
+            8 * m ∣ L →
+              ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L),
+                ∀ (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D)
+                  (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X),
+                  ArithmeticThetaBoundaryHodgeR0182.Canonical k L H →
+                    ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H →
+                      ∀ A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D,
+                        ∀ a : (H.line).presheaf.obj (Opposite.op ⊤),
+                          ArithmeticThetaIsogenyHalfLinesR0193.CompactRealizes k L m D X H A a →
+                            ∀ x : X.space,
+                              ∃ E : (ArithmeticThetaComponentDegreeR0184.Component k L D X x) →₀ ℤ,
+                                ArithmeticThetaIsogenyHalfLinesR0193.HalfDivisor k L D X H x a E := by
   intro k _ _ L m hL hm hmeven hdiv D X H hH hgH A a ha x
   classical
   have hb := IsogenyAlphaAllCuspOrders.level_bounds L m hL hm hdiv

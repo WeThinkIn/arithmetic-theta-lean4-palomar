@@ -2422,7 +2422,16 @@ end GeometricComponentCuspBoundR0184
 
 /-- The actual component cusp bound at every even level at least three. -/
 theorem geometric_component_cusp_bound :
-    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L) (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space), Finite (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ∧ Nonempty (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ∧ Nonempty ((ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ↪ ArithmeticThetaLevelCount.SignedPrimitivePair L) ∧ 2 * L * Nat.card (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ≤ Nat.card (Matrix.SpecialLinearGroup (Fin 2) (ZMod L)) := by
+    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L)
+      (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+      (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space),
+      Finite (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ∧
+        Nonempty (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ∧
+          Nonempty
+              ((ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ↪
+                ArithmeticThetaLevelCount.SignedPrimitivePair L) ∧
+            2 * L * Nat.card (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ≤
+              Nat.card (Matrix.SpecialLinearGroup (Fin 2) (ZMod L)) := by
   intro k _ _ _ L hL heven D X x
   exact ⟨GeometricComponentCuspBoundR0184.cusps_finite k L D X x,
     GeometricComponentCuspBoundR0184.cusps_nonempty k L D X x,

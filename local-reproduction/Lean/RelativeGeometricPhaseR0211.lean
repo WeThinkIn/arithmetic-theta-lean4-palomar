@@ -138,7 +138,16 @@ end RelativeGeometricPhase
 /-- The primitive moved-divisor phase extends uniquely from the generic fiber
 and agrees with the same pairing on every field-valued point of the base. -/
 theorem relative_geometric_phase :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W), ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G → ∀ M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)), ∃! z : R, ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase R W G M z ∧ IsUnit z ∧ IsPrimitiveRoot z 4 := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W),
+      ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G →
+        ∀ M :
+          ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4
+            (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)),
+          ∃! z : R,
+            ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase R W G M z ∧
+              IsUnit z ∧ IsPrimitiveRoot z 4 := by
   intro R _ _ _ _ _ W _ G hG M
   classical
   let K := FractionRing R

@@ -249,7 +249,66 @@ open ArithmeticThetaPullback ArithmeticThetaRelativeDiscriminantR0171
 
 /-- Opposite-pairing compatibility of the complete descended section and actual key morphism. -/
 theorem key_phase_switch :
-∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom (S) (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E) (z : S.presheaf.obj (Opposite.op ⊤)), z^2 = -1 → ∀ (D C : ArithmeticThetaEvenMarkingTorsorR0216.Cover E), ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D → ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P (-z) C → ∀ (q : CategoryTheory.Iso (D.space) (C.space)) (h : ArithmeticThetaPhaseSwitchR0218.Switches E D C q), ∀ (L K : S.Modules) (m : ((AlgebraicGeometry.Scheme.Modules.pullback D.projection).obj (L)).presheaf.obj (Opposite.op ⊤)) (n : ((AlgebraicGeometry.Scheme.Modules.pullback C.projection).obj (K)).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaMultiplierKeyR0217.Multiplier E D z L m → ArithmeticThetaMultiplierKeyR0217.Multiplier E C (-z) K n → ∀ (v : CategoryTheory.Iso (L) (K)), ArithmeticThetaPhaseSwitchR0218.SwitchFrame E D C q h L K m n v → ∀ (β : (ArithmeticThetaMultiplierKeyR0217.productLine E L).presheaf.obj (Opposite.op ⊤)) (γ : (ArithmeticThetaMultiplierKeyR0217.productLine E K).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaMultiplierKeyR0217.DescendsAlpha E D L m β → ArithmeticThetaMultiplierKeyR0217.DescendsAlpha E C K n γ → (ArithmeticThetaPullback.sheafTensorCongr S (CategoryTheory.Iso.refl (ArithmeticThetaSchemeHodgeR0205.Cotangent E)) v).hom.app ⊤ β = γ ∧ (∀ (e : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback E.zero).obj (ArithmeticThetaMultiplierKeyR0217.thetaLine E P)) (SheafOfModules.unit S.ringCatSheaf)), ArithmeticThetaMultiplierKeyR0217.IsRigidification E P e → ∀ (κ : CategoryTheory.Iso (ArithmeticThetaMultiplierKeyR0217.inverseSquare E P) (ArithmeticThetaMultiplierKeyR0217.productLine E L)) (κminus : CategoryTheory.Iso (ArithmeticThetaMultiplierKeyR0217.inverseSquare E P) (ArithmeticThetaMultiplierKeyR0217.productLine E K)), ArithmeticThetaMultiplierKeyR0217.IsKey E P L e β κ → ArithmeticThetaMultiplierKeyR0217.IsKey E P K e γ κminus → CategoryTheory.CategoryStruct.comp (κ.hom) ((ArithmeticThetaPullback.sheafTensorCongr S (CategoryTheory.Iso.refl (ArithmeticThetaSchemeHodgeR0205.Cotangent E)) v).hom) = κminus.hom) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom (S) (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E) (z : S.presheaf.obj (Opposite.op ⊤)),
+      z ^ 2 = -1 →
+        ∀ (D C : ArithmeticThetaEvenMarkingTorsorR0216.Cover E),
+          ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D →
+            ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P (-z) C →
+              ∀ (q : CategoryTheory.Iso (D.space) (C.space))
+                (h : ArithmeticThetaPhaseSwitchR0218.Switches E D C q),
+                ∀ (L K : S.Modules)
+                  (m :
+                    ((AlgebraicGeometry.Scheme.Modules.pullback D.projection).obj (L)).presheaf.obj
+                      (Opposite.op ⊤))
+                  (n :
+                    ((AlgebraicGeometry.Scheme.Modules.pullback C.projection).obj (K)).presheaf.obj
+                      (Opposite.op ⊤)),
+                  ArithmeticThetaMultiplierKeyR0217.Multiplier E D z L m →
+                    ArithmeticThetaMultiplierKeyR0217.Multiplier E C (-z) K n →
+                      ∀ (v : CategoryTheory.Iso (L) (K)),
+                        ArithmeticThetaPhaseSwitchR0218.SwitchFrame E D C q h L K m n v →
+                          ∀
+                            (β :
+                              (ArithmeticThetaMultiplierKeyR0217.productLine E L).presheaf.obj
+                                (Opposite.op ⊤))
+                            (γ :
+                              (ArithmeticThetaMultiplierKeyR0217.productLine E K).presheaf.obj
+                                (Opposite.op ⊤)),
+                            ArithmeticThetaMultiplierKeyR0217.DescendsAlpha E D L m β →
+                              ArithmeticThetaMultiplierKeyR0217.DescendsAlpha E C K n γ →
+                                (ArithmeticThetaPullback.sheafTensorCongr S
+                                          (CategoryTheory.Iso.refl
+                                            (ArithmeticThetaSchemeHodgeR0205.Cotangent E))
+                                          v).hom.app
+                                      ⊤ β =
+                                    γ ∧
+                                  (∀
+                                    (e :
+                                      CategoryTheory.Iso
+                                        ((AlgebraicGeometry.Scheme.Modules.pullback E.zero).obj
+                                          (ArithmeticThetaMultiplierKeyR0217.thetaLine E P))
+                                        (SheafOfModules.unit S.ringCatSheaf)),
+                                    ArithmeticThetaMultiplierKeyR0217.IsRigidification E P e →
+                                      ∀
+                                        (κ :
+                                          CategoryTheory.Iso
+                                            (ArithmeticThetaMultiplierKeyR0217.inverseSquare E P)
+                                            (ArithmeticThetaMultiplierKeyR0217.productLine E L))
+                                        (κminus :
+                                          CategoryTheory.Iso
+                                            (ArithmeticThetaMultiplierKeyR0217.inverseSquare E P)
+                                            (ArithmeticThetaMultiplierKeyR0217.productLine E K)),
+                                        ArithmeticThetaMultiplierKeyR0217.IsKey E P L e β κ →
+                                          ArithmeticThetaMultiplierKeyR0217.IsKey E P K e γ κminus →
+                                            CategoryTheory.CategoryStruct.comp (κ.hom)
+                                                ((ArithmeticThetaPullback.sheafTensorCongr S
+                                                    (CategoryTheory.Iso.refl
+                                                      (ArithmeticThetaSchemeHodgeR0205.Cotangent E))
+                                                    v).hom) =
+                                              κminus.hom) := by
   intro k _ _ S σ E P z hz D C hD hC q h L K m n hm hn v hv β γ hβ hγ
   have H := KeyPhaseSwitch.alpha_switch E D C k σ P z hz hD hC q h L K m n hn v hv β γ hβ hγ
   refine ⟨H, ?_⟩

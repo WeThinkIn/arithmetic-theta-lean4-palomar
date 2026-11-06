@@ -9,7 +9,13 @@ namespace ArithmeticThetaSharpKernelR0195
 /-- The computed rational nullspace, selected columns, and unique rational
 coordinates describe the full formal theta map at the sharp cutoff and above. -/
 theorem sharp_exact_image_data :
-∀ (n h : ℕ), 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ B : ℕ, ArithmeticThetaSharpKernelR0195.cutoff A ≤ B → ArithmeticThetaSharpKernelR0195.ImageData A B := by
+    ∀ (n h : ℕ),
+      0 < h →
+        ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h),
+          (∀ i, ArithmeticThetaComputed.validGram (A i)) →
+            ∀ B : ℕ,
+              ArithmeticThetaSharpKernelR0195.cutoff A ≤ B →
+                ArithmeticThetaSharpKernelR0195.ImageData A B := by
   intro n h hh A hA B hB
   have hker := (sharp_matrix_kernel n h hh A hA).1 B hB
   apply ArithmeticThetaDegreeAssembly.certified_theta_image_data n h B A hA

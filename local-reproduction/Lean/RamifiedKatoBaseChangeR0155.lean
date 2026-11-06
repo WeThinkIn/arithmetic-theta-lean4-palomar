@@ -113,7 +113,43 @@ open ArithmeticThetaRamifiedPeriodR0154
 
 
 theorem ramified_kato_base_change :
-    ∀ (k : Type u) [Field k] [CharZero k] (d : ℕ) (hd : 0 < d) (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (hrd : 0 < r*d) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (Tb : ArithmeticThetaInfinitesimalPolygonR0129.Tower k (r*d) hrd) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (Mb : ArithmeticThetaProjectiveEffectivityR0135.Model k Tb) (hMb : ArithmeticThetaProjectiveEffectivityR0135.IsModel k Tb Mb) (ρ : Fin d → (ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart k)) (hρ : ∀ q, ArithmeticThetaRamifiedPeriodR0154.IsChartRamification k d hd q (ρ q)) (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) (M.X)) (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j)) (χb : Fin (r*d) → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) (Mb.X)) (hχb : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k Mb j (χb j)) (F : Quiver.Hom (Mb.X) (M.X)) (hF : ArithmeticThetaRamifiedPeriodR0154.IsModelRamification k (hd := hd) T Tb M Mb ρ χ χb F) (ell : LaurentSeries k →+* LaurentSeries k) (hell : ArithmeticThetaRamifiedPeriodR0154.IsLaurentExtension k d hd ell) (f : Quiver.Hom (ArithmeticThetaGenericEvaluationR0140.genericScheme k Mb) (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (hf : ArithmeticThetaRamifiedPeriodR0154.IsGenericLift k T Tb M Mb F f) (he : Even r) (heb : Even (r*d)) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) (M.X)) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (sb : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) (Mb.X)) (hsb : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k Mb (ArithmeticThetaIdentitySectionsR0138.zeroIndex (r*d) hrd) 1 sb) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) (Gb : ArithmeticThetaMarkedGroupLawR0146.Law k Mb) (hGb : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k Mb sb hsb.1 Gb), ArithmeticThetaKatoExistenceR0151.IsTateBaseChange k k M Mb s hs.1 sb hsb.1 G Gb ell f := by
+    ∀ (k : Type u) [Field k] [CharZero k] (d : ℕ) (hd : 0 < d) (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (hrd : 0 < r * d) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (Tb : ArithmeticThetaInfinitesimalPolygonR0129.Tower k (r * d) hrd)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (Mb : ArithmeticThetaProjectiveEffectivityR0135.Model k Tb)
+      (hMb : ArithmeticThetaProjectiveEffectivityR0135.IsModel k Tb Mb)
+      (ρ :
+        Fin d →
+          (ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart k))
+      (hρ : ∀ q, ArithmeticThetaRamifiedPeriodR0154.IsChartRamification k d hd q (ρ q))
+      (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) (M.X))
+      (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j))
+      (χb : Fin (r * d) → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) (Mb.X))
+      (hχb : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k Mb j (χb j))
+      (F : Quiver.Hom (Mb.X) (M.X))
+      (hF : ArithmeticThetaRamifiedPeriodR0154.IsModelRamification k (hd := hd) T Tb M Mb ρ χ χb F)
+      (ell : LaurentSeries k →+* LaurentSeries k)
+      (hell : ArithmeticThetaRamifiedPeriodR0154.IsLaurentExtension k d hd ell)
+      (f :
+        Quiver.Hom (ArithmeticThetaGenericEvaluationR0140.genericScheme k Mb)
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))
+      (hf : ArithmeticThetaRamifiedPeriodR0154.IsGenericLift k T Tb M Mb F f) (he : Even r)
+      (heb : Even (r * d))
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) (M.X))
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (sb : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) (Mb.X))
+      (hsb :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k Mb
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex (r * d) hrd) 1 sb)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      (Gb : ArithmeticThetaMarkedGroupLawR0146.Law k Mb)
+      (hGb : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k Mb sb hsb.1 Gb),
+      ArithmeticThetaKatoExistenceR0151.IsTateBaseChange k k M Mb s hs.1 sb hsb.1 G Gb ell f := by
   intro k _ _ d hd r hr h3 hrd T Tb M hM Mb hMb ρ hρ χ hχ χb hχb F hF ell hell f hf he heb s hs sb hsb G hG Gb hGb
   obtain ⟨f₀, hf₀, hu⟩ := ramified_generic_base_change k d hd r hr h3 hrd T Tb M hM Mb hMb
     ρ hρ χ hχ χb hχb F hF ell hell

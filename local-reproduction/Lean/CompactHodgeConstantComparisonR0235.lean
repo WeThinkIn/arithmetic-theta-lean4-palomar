@@ -820,7 +820,37 @@ end CanonicalLocalComparison
 end CompactHodgeConstantComparison
 /-- The normalized open comparison extends uniquely across every cusp. -/
 theorem compact_hodge_constant_comparison :
-    ∀ (k l : Type) [Field k] [CharZero k] [IsAlgClosed k] [Field l] [CharZero l] [IsAlgClosed l] (ι : k →+* l) (L : ℕ), 3 ≤ L → Even L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L), ∀ (f : Quiver.Hom (ArithmeticThetaLevelCompactificationR0179.OpenBase l L E) (ArithmeticThetaLevelCompactificationR0179.OpenBase k L D)), ArithmeticThetaLevelConstantsR0234.RespectsClassifiers ι D E f → ∀ (e : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (ArithmeticThetaLevelConstantsR0234.weight D)) (ArithmeticThetaLevelConstantsR0234.weight E)), ArithmeticThetaLevelConstantsR0234.HodgeCompatible ι D E f e → ∀ (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E) (F : Quiver.Hom (Y.space) (X.space)) (hF : ArithmeticThetaLevelConstantsR0234.Extends ι D E X Y f F), ∀ (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X) (J : ArithmeticThetaBoundaryHodgeR0182.Extension l L E Y), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ArithmeticThetaBoundaryHodgeR0182.Canonical l L J → ∃! a : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback F).obj H.line) J.line, ArithmeticThetaBoundaryConstantsR0235.CompactCompatible ι f F hF e H J a := by
+    ∀ (k l : Type) [Field k] [CharZero k] [IsAlgClosed k] [Field l] [CharZero l] [IsAlgClosed l]
+      (ι : k →+* l) (L : ℕ),
+      3 ≤ L →
+        Even L →
+          ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+            (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L),
+            ∀
+              (f :
+                Quiver.Hom (ArithmeticThetaLevelCompactificationR0179.OpenBase l L E)
+                  (ArithmeticThetaLevelCompactificationR0179.OpenBase k L D)),
+              ArithmeticThetaLevelConstantsR0234.RespectsClassifiers ι D E f →
+                ∀
+                  (e :
+                    CategoryTheory.Iso
+                      ((AlgebraicGeometry.Scheme.Modules.pullback f).obj
+                        (ArithmeticThetaLevelConstantsR0234.weight D))
+                      (ArithmeticThetaLevelConstantsR0234.weight E)),
+                  ArithmeticThetaLevelConstantsR0234.HodgeCompatible ι D E f e →
+                    ∀ (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D)
+                      (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E)
+                      (F : Quiver.Hom (Y.space) (X.space))
+                      (hF : ArithmeticThetaLevelConstantsR0234.Extends ι D E X Y f F),
+                      ∀ (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X)
+                        (J : ArithmeticThetaBoundaryHodgeR0182.Extension l L E Y),
+                        ArithmeticThetaBoundaryHodgeR0182.Canonical k L H →
+                          ArithmeticThetaBoundaryHodgeR0182.Canonical l L J →
+                            ∃! a :
+                              CategoryTheory.Iso
+                                ((AlgebraicGeometry.Scheme.Modules.pullback F).obj H.line) J.line,
+                              ArithmeticThetaBoundaryConstantsR0235.CompactCompatible ι f F hF e H J
+                                a := by
   intro k l _ _ _ _ _ _ ι L hL heven D E f hf e he X Y F hF H J hH hJ
   obtain ⟨a, ha⟩ := CompactHodgeConstantComparison.canonical_comparison_exists hL heven
     (CompactHodgeConstantComparison.pullbackExtension ι f F hF e H) J
@@ -835,7 +865,44 @@ theorem compact_hodge_constant_comparison :
 
 /-- Exact integral Tate-frame transport for the same compact comparison. -/
 theorem compact_tate_frame_transfer :
-    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (L : ℕ), 3 ≤ L → Even L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L), ∀ (f : Quiver.Hom (ArithmeticThetaLevelCompactificationR0179.OpenBase l L E) (ArithmeticThetaLevelCompactificationR0179.OpenBase k L D)), ArithmeticThetaLevelConstantsR0234.RespectsClassifiers ι D E f → ∀ (e : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (ArithmeticThetaLevelConstantsR0234.weight D)) (ArithmeticThetaLevelConstantsR0234.weight E)), ArithmeticThetaLevelConstantsR0234.HodgeCompatible ι D E f e → ∀ (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E) (F : Quiver.Hom (Y.space) (X.space)) (hF : ArithmeticThetaLevelConstantsR0234.Extends ι D E X Y f F), ∀ (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X) (J : ArithmeticThetaBoundaryHodgeR0182.Extension l L E Y), ∀ (a : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback F).obj H.line) J.line), ArithmeticThetaBoundaryConstantsR0235.CompactCompatible ι f F hF e H J a → ∀ (T : ArithmeticThetaBoundaryHodgeR0182.DiskTest k L D X) (S : ArithmeticThetaBoundaryHodgeR0182.DiskTest l L E Y) (h : CategoryTheory.CategoryStruct.comp S.disk F = CategoryTheory.CategoryStruct.comp (ArithmeticThetaBoundaryConstantsR0235.diskMap ι) T.disk), ArithmeticThetaBoundaryConstantsR0235.TestCompatible ι T.toTest S.toTest f e → ArithmeticThetaBoundaryConstantsR0235.DiskFrameCompatible ι H J F a T S h := by
+    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (L : ℕ),
+      3 ≤ L →
+        Even L →
+          ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+            (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L),
+            ∀
+              (f :
+                Quiver.Hom (ArithmeticThetaLevelCompactificationR0179.OpenBase l L E)
+                  (ArithmeticThetaLevelCompactificationR0179.OpenBase k L D)),
+              ArithmeticThetaLevelConstantsR0234.RespectsClassifiers ι D E f →
+                ∀
+                  (e :
+                    CategoryTheory.Iso
+                      ((AlgebraicGeometry.Scheme.Modules.pullback f).obj
+                        (ArithmeticThetaLevelConstantsR0234.weight D))
+                      (ArithmeticThetaLevelConstantsR0234.weight E)),
+                  ArithmeticThetaLevelConstantsR0234.HodgeCompatible ι D E f e →
+                    ∀ (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D)
+                      (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E)
+                      (F : Quiver.Hom (Y.space) (X.space))
+                      (hF : ArithmeticThetaLevelConstantsR0234.Extends ι D E X Y f F),
+                      ∀ (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X)
+                        (J : ArithmeticThetaBoundaryHodgeR0182.Extension l L E Y),
+                        ∀
+                          (a :
+                            CategoryTheory.Iso
+                              ((AlgebraicGeometry.Scheme.Modules.pullback F).obj H.line) J.line),
+                          ArithmeticThetaBoundaryConstantsR0235.CompactCompatible ι f F hF e H J a →
+                            ∀ (T : ArithmeticThetaBoundaryHodgeR0182.DiskTest k L D X)
+                              (S : ArithmeticThetaBoundaryHodgeR0182.DiskTest l L E Y)
+                              (h :
+                                CategoryTheory.CategoryStruct.comp S.disk F =
+                                  CategoryTheory.CategoryStruct.comp
+                                    (ArithmeticThetaBoundaryConstantsR0235.diskMap ι) T.disk),
+                              ArithmeticThetaBoundaryConstantsR0235.TestCompatible ι T.toTest
+                                  S.toTest f e →
+                                ArithmeticThetaBoundaryConstantsR0235.DiskFrameCompatible ι H J F a
+                                  T S h := by
   intro k l _ _ _ _ ι L _ _ D E f _ e _ X Y F hF H J a ha T S h hc
   exact CompactHodgeConstantComparison.disk_frame_transfer ι f F hF e H J a ha T S h hc
 

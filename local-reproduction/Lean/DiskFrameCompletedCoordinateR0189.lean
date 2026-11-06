@@ -46,7 +46,39 @@ end DiskFrameCompletedCoordinate
 
 /-- The same unit compares every section with its prescribed disk series. -/
 theorem disk_frame_completed_coordinate :
-∀ (k : Type) [Field k] [CharZero k] (Y : AlgebraicGeometry.Scheme.{0}) [AlgebraicGeometry.IsIntegral Y] (J : Y.Modules) (n : ℕ) (ι : Type) (C : ArithmeticThetaLineRoot.NormalFrameCover Y (ArithmeticThetaTensorPower.tensorPower (Y) (J) (n)) ι) (i : ι) (g : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk k) (Y)) (hx : g (ArithmeticThetaTateCuspsR0181.closedPoint k) ∈ C.opens i) (e : ArithmeticThetaSectionCompletion.completedLocalRing (Y.presheaf.stalk (g (ArithmeticThetaTateCuspsR0181.closedPoint k))) ≃+* PowerSeries k), ArithmeticThetaConservativeKernelR0189.CompatibleCompletion k Y g e → ∀ (h : ArithmeticThetaSimultaneousUnaryR0187.Sections (ArithmeticThetaTateCuspsR0181.Disk k) ((AlgebraicGeometry.Scheme.Modules.pullback g).obj (J))), ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback g).obj (J)) ⊤ h → ∃ a : (PowerSeries k)ˣ, ∀ (s : ArithmeticThetaSimultaneousUnaryR0187.Sections (Y) (ArithmeticThetaTensorPower.tensorPower (Y) (J) (n))) (F : PowerSeries k), ArithmeticThetaNormalizedSections.pullbackPowerSection g J n s = ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k) F • ArithmeticThetaTensorPower.tensorPowerSection (ArithmeticThetaTateCuspsR0181.Disk k) ((AlgebraicGeometry.Scheme.Modules.pullback g).obj (J)) n ⊤ h → ArithmeticThetaSectionCompletion.completedSection Y (ArithmeticThetaTensorPower.tensorPower (Y) (J) (n)) C s i (g (ArithmeticThetaTateCuspsR0181.closedPoint k)) hx k e = (a : PowerSeries k) * F := by
+    ∀ (k : Type) [Field k] [CharZero k] (Y : AlgebraicGeometry.Scheme.{0})
+      [AlgebraicGeometry.IsIntegral Y] (J : Y.Modules) (n : ℕ) (ι : Type)
+      (C :
+        ArithmeticThetaLineRoot.NormalFrameCover Y
+          (ArithmeticThetaTensorPower.tensorPower (Y) (J) (n)) ι)
+      (i : ι) (g : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk k) (Y))
+      (hx : g (ArithmeticThetaTateCuspsR0181.closedPoint k) ∈ C.opens i)
+      (e :
+        ArithmeticThetaSectionCompletion.completedLocalRing
+            (Y.presheaf.stalk (g (ArithmeticThetaTateCuspsR0181.closedPoint k))) ≃+*
+          PowerSeries k),
+      ArithmeticThetaConservativeKernelR0189.CompatibleCompletion k Y g e →
+        ∀
+          (h :
+            ArithmeticThetaSimultaneousUnaryR0187.Sections (ArithmeticThetaTateCuspsR0181.Disk k)
+              ((AlgebraicGeometry.Scheme.Modules.pullback g).obj (J))),
+          ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+              ((AlgebraicGeometry.Scheme.Modules.pullback g).obj (J)) ⊤ h →
+            ∃ a : (PowerSeries k)ˣ,
+              ∀
+                (s :
+                  ArithmeticThetaSimultaneousUnaryR0187.Sections (Y)
+                    (ArithmeticThetaTensorPower.tensorPower (Y) (J) (n)))
+                (F : PowerSeries k),
+                ArithmeticThetaNormalizedSections.pullbackPowerSection g J n s =
+                    ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k) F •
+                      ArithmeticThetaTensorPower.tensorPowerSection
+                        (ArithmeticThetaTateCuspsR0181.Disk k)
+                        ((AlgebraicGeometry.Scheme.Modules.pullback g).obj (J)) n ⊤ h →
+                  ArithmeticThetaSectionCompletion.completedSection Y
+                      (ArithmeticThetaTensorPower.tensorPower (Y) (J) (n)) C s i
+                      (g (ArithmeticThetaTateCuspsR0181.closedPoint k)) hx k e =
+                    (a : PowerSeries k) * F := by
   intro k _ _ Y _ J n ι C i g hx e he h hh
   let M := tensorPower Y J n
   let P := (Scheme.Modules.pullback g).obj M

@@ -440,7 +440,42 @@ lemma normalized_test {L : ℕ} (hL : 3 ≤ L) (heven : Even L) (ι : k →+* l)
 end ClassifiedTateDiskTransfer
 /-- Exact coefficient transport of the classified normalized Tate test and its entire disk. -/
 theorem classified_tate_disk_transfer :
-    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (L : ℕ), 3 ≤ L → Even L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L), ∀ (f : Quiver.Hom (ArithmeticThetaLevelCompactificationR0179.OpenBase l L E) (ArithmeticThetaLevelCompactificationR0179.OpenBase k L D)), ArithmeticThetaLevelConstantsR0234.RespectsClassifiers ι D E f → ∀ (e : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (ArithmeticThetaLevelConstantsR0234.weight D)) (ArithmeticThetaLevelConstantsR0234.weight E)), ArithmeticThetaLevelConstantsR0234.HodgeCompatible ι D E f e → ∀ (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E) (F : Quiver.Hom (Y.space) (X.space)) (hF : ArithmeticThetaLevelConstantsR0234.Extends ι D E X Y f F), ∀ (T : ArithmeticThetaBoundaryHodgeR0182.DiskTest k L D X) (S : ArithmeticThetaBoundaryHodgeR0182.DiskTest l L E Y) (b : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve (LaurentSeries l) (ArithmeticThetaTateCuspsR0181.TateCurve l L)) (ArithmeticThetaRelativeKatoR0169.Curve (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k L))), ArithmeticThetaBoundaryConstantsR0235.CurveMap ι L b → ArithmeticThetaBoundaryConstantsR0235.Transfers ι T.level S.level b → ArithmeticThetaBoundaryConstantsR0235.TestCompatible ι T.toTest S.toTest f e ∧ CategoryTheory.CategoryStruct.comp S.disk F = CategoryTheory.CategoryStruct.comp (ArithmeticThetaBoundaryConstantsR0235.diskMap ι) T.disk := by
+    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (L : ℕ),
+      3 ≤ L →
+        Even L →
+          ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+            (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L),
+            ∀
+              (f :
+                Quiver.Hom (ArithmeticThetaLevelCompactificationR0179.OpenBase l L E)
+                  (ArithmeticThetaLevelCompactificationR0179.OpenBase k L D)),
+              ArithmeticThetaLevelConstantsR0234.RespectsClassifiers ι D E f →
+                ∀
+                  (e :
+                    CategoryTheory.Iso
+                      ((AlgebraicGeometry.Scheme.Modules.pullback f).obj
+                        (ArithmeticThetaLevelConstantsR0234.weight D))
+                      (ArithmeticThetaLevelConstantsR0234.weight E)),
+                  ArithmeticThetaLevelConstantsR0234.HodgeCompatible ι D E f e →
+                    ∀ (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D)
+                      (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E)
+                      (F : Quiver.Hom (Y.space) (X.space))
+                      (hF : ArithmeticThetaLevelConstantsR0234.Extends ι D E X Y f F),
+                      ∀ (T : ArithmeticThetaBoundaryHodgeR0182.DiskTest k L D X)
+                        (S : ArithmeticThetaBoundaryHodgeR0182.DiskTest l L E Y)
+                        (b :
+                          Quiver.Hom
+                            (ArithmeticThetaRelativeKatoR0169.Curve (LaurentSeries l)
+                              (ArithmeticThetaTateCuspsR0181.TateCurve l L))
+                            (ArithmeticThetaRelativeKatoR0169.Curve (LaurentSeries k)
+                              (ArithmeticThetaTateCuspsR0181.TateCurve k L))),
+                        ArithmeticThetaBoundaryConstantsR0235.CurveMap ι L b →
+                          ArithmeticThetaBoundaryConstantsR0235.Transfers ι T.level S.level b →
+                            ArithmeticThetaBoundaryConstantsR0235.TestCompatible ι T.toTest S.toTest
+                                f e ∧
+                              CategoryTheory.CategoryStruct.comp S.disk F =
+                                CategoryTheory.CategoryStruct.comp
+                                  (ArithmeticThetaBoundaryConstantsR0235.diskMap ι) T.disk := by
   intro k l _ _ _ _ ι L hL he D E f hf e heH X Y F hF T S b hb ht
   have h := ClassifiedTateDiskTransfer.normalized_test hL he ι T.toTest S.toTest f hf e heH b hb ht
   exact ⟨h, ClassifiedTateDiskTransfer.disks_equal ι f F hF T S h.choose⟩

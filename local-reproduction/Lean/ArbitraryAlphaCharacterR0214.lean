@@ -281,7 +281,41 @@ end ArbitraryAlphaCharacter
 /-- The full even-stabilizer character on the actual intrinsic Hodge sections
 of an arbitrary rational base, including nonreduced and empty bases. -/
 theorem arbitrary_alpha_character :
-∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W), ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G → ∀ M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)), ∃ z : R, ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M z ∧ ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase R W G M z ∧ IsUnit z ∧ z^2 = -1 ∧ (Nontrivial R → IsPrimitiveRoot z 4) ∧ (∀ A : ArithmeticThetaFourTorsion.Mat4, ArithmeticThetaFourTorsion.PreservesEven A → ∃ M' : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)), ArithmeticThetaRelativeFourCharacterR0211.Changes R W G (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)) M M' A ∧ ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M' z ∧ (∀ a a' : (ArithmeticThetaRelativeDiscriminantR0171.Hodge R W).presheaf.obj (Opposite.op ⊤), ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha R W G 4 M a → ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha R W G 4 M' a' → a' = ArithmeticThetaOpenHodgeR0180.scalar R (z ^ (ArithmeticThetaFourTorsion.characterExponent A).val) • a)) := by
+    ∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W),
+      ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G →
+        ∀ M :
+          ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4
+            (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)),
+          ∃ z : R,
+            ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M z ∧
+              ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase R W G M z ∧
+                IsUnit z ∧
+                  z ^ 2 = -1 ∧
+                    (Nontrivial R → IsPrimitiveRoot z 4) ∧
+                      (∀ A : ArithmeticThetaFourTorsion.Mat4,
+                        ArithmeticThetaFourTorsion.PreservesEven A →
+                          ∃ M' :
+                            ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4
+                              (CategoryTheory.CategoryStruct.id
+                                (ArithmeticThetaRelativeDiscriminantR0171.Base R)),
+                            ArithmeticThetaRelativeFourCharacterR0211.Changes R W G
+                                (CategoryTheory.CategoryStruct.id
+                                  (ArithmeticThetaRelativeDiscriminantR0171.Base R))
+                                M M' A ∧
+                              ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M' z ∧
+                                (∀ a a' :
+                                  (ArithmeticThetaRelativeDiscriminantR0171.Hodge R W).presheaf.obj
+                                    (Opposite.op ⊤),
+                                  ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha R W G 4 M a →
+                                    ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha R W G 4 M'
+                                        a' →
+                                      a' =
+                                        ArithmeticThetaOpenHodgeR0180.scalar R
+                                            (z ^
+                                              (ArithmeticThetaFourTorsion.characterExponent
+                                                  A).val) •
+                                          a)) := by
   intro R _ _ W _ G hG M
   obtain ⟨z,hz,_⟩ := (arbitrary_geometric_phase R W G hG M).1
   obtain ⟨hgeom,hu,hs,hprim⟩ := (arbitrary_geometric_phase R W G hG M).2 z hz

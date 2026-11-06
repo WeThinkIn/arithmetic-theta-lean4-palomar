@@ -57,7 +57,29 @@ open ArithmeticThetaFourTorsion
 
 /-- The source right action, including preservation of the actual even point. -/
 theorem scheme_four_marking_action :
-∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4), (∀ A : ArithmeticThetaFourTorsion.Mat4, A.det = 1 → ∃! M' : ArithmeticThetaSchemeLevelR0204.FullLevel E 4, ArithmeticThetaSchemeFourCharacterR0215.Changes E M M' A) ∧ ArithmeticThetaSchemeFourCharacterR0215.Changes E M M (1 : ArithmeticThetaFourTorsion.Mat4) ∧ (∀ (M' M'' : ArithmeticThetaSchemeLevelR0204.FullLevel E 4) (A B : ArithmeticThetaFourTorsion.Mat4), A.det = 1 → B.det = 1 → ArithmeticThetaSchemeFourCharacterR0215.Changes E M M' A → ArithmeticThetaSchemeFourCharacterR0215.Changes E M' M'' B → ArithmeticThetaSchemeFourCharacterR0215.Changes E M M'' (A * B)) ∧ (∀ (M' : ArithmeticThetaSchemeLevelR0204.FullLevel E 4) (A : ArithmeticThetaFourTorsion.Mat4), ArithmeticThetaFourTorsion.PreservesEven A → ArithmeticThetaSchemeFourCharacterR0215.Changes E M M' A → ArithmeticThetaUniversalEvaluationR0213.evenPoint E M' = ArithmeticThetaUniversalEvaluationR0213.evenPoint E M) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4),
+      (∀ A : ArithmeticThetaFourTorsion.Mat4,
+          A.det = 1 →
+            ∃! M' : ArithmeticThetaSchemeLevelR0204.FullLevel E 4,
+              ArithmeticThetaSchemeFourCharacterR0215.Changes E M M' A) ∧
+        ArithmeticThetaSchemeFourCharacterR0215.Changes E M M
+            (1 : ArithmeticThetaFourTorsion.Mat4) ∧
+          (∀ (M' M'' : ArithmeticThetaSchemeLevelR0204.FullLevel E 4)
+              (A B : ArithmeticThetaFourTorsion.Mat4),
+              A.det = 1 →
+                B.det = 1 →
+                  ArithmeticThetaSchemeFourCharacterR0215.Changes E M M' A →
+                    ArithmeticThetaSchemeFourCharacterR0215.Changes E M' M'' B →
+                      ArithmeticThetaSchemeFourCharacterR0215.Changes E M M'' (A * B)) ∧
+            (∀ (M' : ArithmeticThetaSchemeLevelR0204.FullLevel E 4)
+              (A : ArithmeticThetaFourTorsion.Mat4),
+              ArithmeticThetaFourTorsion.PreservesEven A →
+                ArithmeticThetaSchemeFourCharacterR0215.Changes E M M' A →
+                  ArithmeticThetaUniversalEvaluationR0213.evenPoint E M' =
+                    ArithmeticThetaUniversalEvaluationR0213.evenPoint E M) := by
   intro k _ _ S σ E M
   letI := pointGroup E (𝟙 S)
   let basis (M : FullLevel E 4) : Fin 2 → SchemeHomOver (𝟙 S) E.p :=

@@ -159,7 +159,20 @@ end EvenCoverTorsor
 
 /-- Finite étale degree sixteen and simple transitivity on every scheme-valued test. -/
 theorem even_cover_torsor :
-∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S), ∀ (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E) (z : S.presheaf.obj (Opposite.op ⊤)), z^2 = -1 → ∀ (D : ArithmeticThetaEvenMarkingTorsorR0216.Cover E), ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D → ArithmeticThetaEvenMarkingTorsorR0216.Geometry E D 16 ∧ (∀ (T : AlgebraicGeometry.Scheme.{u}) (a b : Quiver.Hom T D.space), CategoryTheory.CategoryStruct.comp a D.projection = CategoryTheory.CategoryStruct.comp b D.projection → ∃! g : LocallyConstant T ArithmeticThetaEvenMarkingTorsorR0216.EvenGroup, ArithmeticThetaEvenMarkingTorsorR0216.LocallyRelated E D a b g) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S),
+      ∀ (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E)
+        (z : S.presheaf.obj (Opposite.op ⊤)),
+        z ^ 2 = -1 →
+          ∀ (D : ArithmeticThetaEvenMarkingTorsorR0216.Cover E),
+            ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D →
+              ArithmeticThetaEvenMarkingTorsorR0216.Geometry E D 16 ∧
+                (∀ (T : AlgebraicGeometry.Scheme.{u}) (a b : Quiver.Hom T D.space),
+                  CategoryTheory.CategoryStruct.comp a D.projection =
+                      CategoryTheory.CategoryStruct.comp b D.projection →
+                    ∃! g : LocallyConstant T ArithmeticThetaEvenMarkingTorsorR0216.EvenGroup,
+                      ArithmeticThetaEvenMarkingTorsorR0216.LocallyRelated E D a b g) := by
   intro k _ _ S σ E P z hz D hD
   exact ⟨EvenCoverTorsor.geometry E k σ P z hz D hD,
     EvenCoverTorsor.simple_transitivity E k σ P z D hD⟩

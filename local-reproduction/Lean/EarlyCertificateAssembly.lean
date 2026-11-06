@@ -6,6 +6,73 @@ namespace ArithmeticThetaDegreeAssembly
 
 open ArithmeticThetaComputed
 
+/-! ## Reading the computed kernel and image
+
+The abbreviations below name the actual output of rational elimination. They
+are transparent: unfolding them gives the original vectors, theta series and
+coordinate formulas. In particular, `CertifiedImageData` asserts independence,
+spanning and unique reconstruction for the complete series, not just a prefix.
+-/
+
+/-- Number of rational nullspace vectors computed from coefficients through `B`. -/
+abbrev relationCount {n h : ℕ} (A : Fin h → Matrix (Fin n) (Fin n) ℤ) (B : ℕ) : ℕ :=
+  (ArithmeticThetaElimination.freeColumns
+    (ArithmeticThetaElimination.run (coefficientMatrix A B))).length
+
+/-- Number of selected theta series (the number of pivot columns). -/
+abbrev imageDimension {n h : ℕ} (A : Fin h → Matrix (Fin n) (Fin n) ℤ) (B : ℕ) : ℕ :=
+  (ArithmeticThetaElimination.run (coefficientMatrix A B)).pivots.length
+
+/-- The computed rational nullspace basis, viewed as vectors over `ℂ`. -/
+noncomputable abbrev relationBasis {n h : ℕ}
+    (A : Fin h → Matrix (Fin n) (Fin n) ℤ) (B : ℕ) :
+    Fin (relationCount A B) → Fin h → ℂ :=
+  fun t j => ((ArithmeticThetaElimination.nullBasis (coefficientMatrix A B) t j : ℚ) : ℂ)
+
+/-- The original complete theta series selected by the pivot columns. -/
+noncomputable abbrev imageBasis {n h : ℕ}
+    (A : Fin h → Matrix (Fin n) (Fin n) ℤ) (B : ℕ) :
+    Fin (imageDimension A B) → PowerSeries ℂ :=
+  fun t => theta (A (selectedIndex A B t))
+
+/-- Rational reconstruction coordinates supplied by the same elimination. -/
+abbrev reconstructionCoordinates {n h : ℕ}
+    (A : Fin h → Matrix (Fin n) (Fin n) ℤ) (B : ℕ) :
+    Fin h → Fin (imageDimension A B) → ℚ :=
+  ArithmeticThetaElimination.columnCoordinates (coefficientMatrix A B)
+
+/-- A rational linear combination of the selected complete theta series. -/
+noncomputable abbrev imageCombination {n h : ℕ}
+    (A : Fin h → Matrix (Fin n) (Fin n) ℤ) (B : ℕ)
+    (c : Fin (imageDimension A B) → ℚ) : PowerSeries ℂ :=
+  ∑ t, (c t : ℂ) • imageBasis A B t
+
+/-- The computed nullspace vectors form a basis of all complex theta relations. -/
+abbrev RelationBasisCorrect {n h : ℕ}
+    (A : Fin h → Matrix (Fin n) (Fin n) ℤ) (B : ℕ) : Prop :=
+  LinearIndependent ℂ (relationBasis A B) ∧
+    Submodule.span ℂ (Set.range (relationBasis A B)) = LinearMap.ker (thetaMap A)
+
+/-- The selected complete theta series form a basis of the theta image. -/
+abbrev ImageBasisCorrect {n h : ℕ}
+    (A : Fin h → Matrix (Fin n) (Fin n) ℤ) (B : ℕ) : Prop :=
+  LinearIndependent ℂ (imageBasis A B) ∧
+    Submodule.span ℂ (Set.range (imageBasis A B)) = LinearMap.range (thetaMap A)
+
+/-- Every input series has the computed coordinates, uniquely over `ℚ`. -/
+abbrev ReconstructionCorrect {n h : ℕ}
+    (A : Fin h → Matrix (Fin n) (Fin n) ℤ) (B : ℕ) : Prop :=
+  ∀ j : Fin h,
+    theta (A j) = imageCombination A B (reconstructionCoordinates A B j) ∧
+      ∀ c : Fin (imageDimension A B) → ℚ,
+        theta (A j) = imageCombination A B c → c = reconstructionCoordinates A B j
+
+/-- Full kernel basis, full image basis and unique rational reconstruction.
+This is an abbreviation of three explicit conclusions, with no added assumption. -/
+abbrev CertifiedImageData {n h : ℕ}
+    (A : Fin h → Matrix (Fin n) (Fin n) ℤ) (B : ℕ) : Prop :=
+  RelationBasisCorrect A B ∧ ImageBasisCorrect A B ∧ ReconstructionCorrect A B
+
 /-- The actual computed prefix certificate identifies the full theta kernel. -/
 theorem actual_early_certificate :
     ∀ (n h B : ℕ) (A : Fin h → Matrix (Fin n) (Fin n) ℤ),
@@ -48,25 +115,7 @@ theorem certified_theta_image_data :
       ∀ W : Submodule ℂ (Fin h → ℂ),
         W ≤ LinearMap.ker (ArithmeticThetaComputed.thetaMap A) →
         Module.finrank ℂ W = h - (ArithmeticThetaComputed.coefficientMatrix A B).rank →
-        (LinearIndependent ℂ (fun t : Fin (ArithmeticThetaElimination.freeColumns (ArithmeticThetaElimination.run
-          (ArithmeticThetaComputed.coefficientMatrix A B))).length => fun j =>
-          ((ArithmeticThetaElimination.nullBasis (ArithmeticThetaComputed.coefficientMatrix A B) t j : ℚ) : ℂ)) ∧
-          Submodule.span ℂ (Set.range (fun t : Fin (ArithmeticThetaElimination.freeColumns
-          (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B))).length => fun j =>
-          ((ArithmeticThetaElimination.nullBasis (ArithmeticThetaComputed.coefficientMatrix A B) t j : ℚ) : ℂ))) =
-          LinearMap.ker (ArithmeticThetaComputed.thetaMap A)) ∧ (LinearIndependent ℂ (fun t : Fin
-          (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A B)).pivots.length =>
-          ArithmeticThetaComputed.theta (A (ArithmeticThetaComputed.selectedIndex A B t))) ∧ Submodule.span ℂ
-          (Set.range (fun t : Fin (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A
-          B)).pivots.length => ArithmeticThetaComputed.theta (A (ArithmeticThetaComputed.selectedIndex A B t)))) =
-          LinearMap.range (ArithmeticThetaComputed.thetaMap A)) ∧ ∀ j : Fin h, ArithmeticThetaComputed.theta (A j)
-          = ∑ t : Fin (ArithmeticThetaElimination.run (ArithmeticThetaComputed.coefficientMatrix A
-          B)).pivots.length, ((ArithmeticThetaElimination.columnCoordinates
-          (ArithmeticThetaComputed.coefficientMatrix A B) j t : ℚ) : ℂ) • ArithmeticThetaComputed.theta (A
-          (ArithmeticThetaComputed.selectedIndex A B t)) ∧ ∀ c : Fin (ArithmeticThetaElimination.run
-          (ArithmeticThetaComputed.coefficientMatrix A B)).pivots.length → ℚ, ArithmeticThetaComputed.theta (A j) =
-          ∑ t, ((c t : ℚ) : ℂ) • ArithmeticThetaComputed.theta (A (ArithmeticThetaComputed.selectedIndex A B t)) →
-          c = ArithmeticThetaElimination.columnCoordinates (ArithmeticThetaComputed.coefficientMatrix A B) j := by
+        CertifiedImageData A B := by
   intro n h B A hv W hW hdim
   have heq := actual_early_certificate n h B A hv W hW hdim
   have hnull := ArithmeticThetaComputed.computed_complex_kernel_basis (B + 1) h (ArithmeticThetaComputed.coefficientMatrix A B)

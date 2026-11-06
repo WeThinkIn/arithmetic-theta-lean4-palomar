@@ -13,7 +13,25 @@ open ArithmeticThetaFullLevelCoverR0175
 /-- Reducing both marked sections by the quotient of levels preserves full level,
 including divisor one. Avoidance is inherited on the entire base. -/
 theorem full_level_divisor_reduction :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L d : ℕ) (hL : 0 < L) (hd : 0 < d) (hdL : d ∣ L) (M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))), ∃ N : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G d (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)), N.x = G.nsmul (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)) (L / d) M.x ∧ N.y = G.nsmul (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)) (L / d) M.y := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L d : ℕ) (hL : 0 < L) (hd : 0 < d)
+      (hdL : d ∣ L)
+      (M :
+        ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L
+          (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))),
+      ∃ N :
+        ArithmeticThetaFullLevelCoverR0175.FullLevel R W G d
+          (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)),
+        N.x =
+            G.nsmul
+              (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))
+              (L / d) M.x ∧
+          N.y =
+            G.nsmul
+              (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))
+              (L / d) M.y := by
   intro R _ _ _ _ _ W _ G hG L d hL hd hdL M
   let := FullLevelCyclicLiftsR0175.sectionGroup G hG
   have hqd : L / d * d = L := Nat.div_mul_cancel hdL

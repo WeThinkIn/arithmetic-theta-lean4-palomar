@@ -238,7 +238,21 @@ open ArithmeticThetaFullLevelCoverR0175 ArithmeticThetaRelativeFourCharacterR021
 /-- The actual normalized Miller phase is unchanged by every determinant-one
 change of full-four marking, including over nonreduced and zero rings. -/
 theorem arbitrary_phase_marking_invariance :
-∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W), ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G → ∀ (M M' : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))) (A : ArithmeticThetaFourTorsion.Mat4), A.det = 1 → ArithmeticThetaRelativeFourCharacterR0211.Changes R W G (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)) M M' A → ∀ z z' : R, ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M z → ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M' z' → z' = z := by
+    ∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W),
+      ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G →
+        ∀
+          (M M' :
+            ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4
+              (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)))
+          (A : ArithmeticThetaFourTorsion.Mat4),
+          A.det = 1 →
+            ArithmeticThetaRelativeFourCharacterR0211.Changes R W G
+                (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))
+                M M' A →
+              ∀ z z' : R,
+                ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M z →
+                  ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M' z' → z' = z := by
   intro R _ _ W _ G hG M M' A hA hchange z z' hz hz'
   classical
   obtain ⟨hgeom, hunit, hs, _⟩ := (arbitrary_geometric_phase R W G hG M).2 z hz

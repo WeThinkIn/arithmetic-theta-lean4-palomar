@@ -126,7 +126,26 @@ end RamifiedEvaluationNaturality
 
 /-- The complete evaluation square for residue-zero ramification, including degree one. -/
 theorem ramified_evaluation_naturality :
-    ∀ (k : Type) [Field k] [CharZero k] (d : ℕ) (hd : 0 < d) (q : Fin d) (hq : q.val = 0) (ρ : ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart k), ArithmeticThetaRamifiedPeriodR0154.IsChartRamification k d hd q ρ → ∀ (E : ArithmeticThetaKatoAnnularR0152.ChartField k →+* ArithmeticThetaKatoAnnularR0152.ChartField k), ArithmeticThetaRamifiedPeriodR0154.ExtendsChart k ρ E → ∀ (ell : ArithmeticThetaLaurentNormR0064.Series k →+* ArithmeticThetaLaurentNormR0064.Series k), ArithmeticThetaRamifiedPeriodR0154.IsLaurentExtension (ArithmeticThetaLaurentNormR0064.Coeff k) d hd ell → ∀ (ev : ArithmeticThetaKatoAnnularR0152.ChartField k →+* ArithmeticThetaLaurentNormR0064.Series k), ArithmeticThetaAnnularNormBridgeR0156.IsEvaluation k 1 1 ev → ev.comp E = ell.comp ev := by
+    ∀ (k : Type) [Field k] [CharZero k] (d : ℕ) (hd : 0 < d) (q : Fin d) (hq : q.val = 0)
+      (ρ : ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart k),
+      ArithmeticThetaRamifiedPeriodR0154.IsChartRamification k d hd q ρ →
+        ∀
+          (E :
+            ArithmeticThetaKatoAnnularR0152.ChartField k →+*
+              ArithmeticThetaKatoAnnularR0152.ChartField k),
+          ArithmeticThetaRamifiedPeriodR0154.ExtendsChart k ρ E →
+            ∀
+              (ell :
+                ArithmeticThetaLaurentNormR0064.Series k →+*
+                  ArithmeticThetaLaurentNormR0064.Series k),
+              ArithmeticThetaRamifiedPeriodR0154.IsLaurentExtension
+                  (ArithmeticThetaLaurentNormR0064.Coeff k) d hd ell →
+                ∀
+                  (ev :
+                    ArithmeticThetaKatoAnnularR0152.ChartField k →+*
+                      ArithmeticThetaLaurentNormR0064.Series k),
+                  ArithmeticThetaAnnularNormBridgeR0156.IsEvaluation k 1 1 ev →
+                    ev.comp E = ell.comp ev := by
   intro k _ _ d hd q hq ρ hρ E hE ell hell ev hev
   have hchart (b : ArithmeticThetaKatoAnnularR0152.Chart k) :
       ev (E (ArithmeticThetaKatoAnnularR0152.chartToField k b)) =

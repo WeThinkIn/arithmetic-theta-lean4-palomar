@@ -73,7 +73,46 @@ private lemma origin_regular (k : Type) [Field k] [CharZero k]
 
 /-- The exact nonzero initial class in the actual identity stalk. -/
 theorem geometric_discriminant_initial :
-∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)], ∃! g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)), ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G 5 g ∧ (∃ (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X) (φ : Fin r → ((AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* ArithmeticThetaKatoAnnularR0152.ChartField k)) (σ : ArithmeticThetaOriginInitialR0161.Chart k →+* ArithmeticThetaOriginInitialR0161.Bivariate k) (Ψ : ArithmeticThetaOriginInitialR0161.ChartField k →+* ArithmeticThetaOriginInitialR0161.Iterated k) (κ : ArithmeticThetaOriginInitialR0161.OriginStalk k M s hs.1 →+* PowerSeries (LaurentSeries k)), (∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j)) ∧ (∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M (χ j) (φ j)) ∧ ArithmeticThetaOriginInitialR0161.IsChartTaylor k σ ∧ ArithmeticThetaOriginInitialR0161.ExtendsTaylor k σ Ψ ∧ ArithmeticThetaOriginInitialR0161.IsOriginTaylor k M s hs.1 (Ψ.comp (φ (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr))) κ ∧ Ψ (φ (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) g) = ArithmeticThetaOriginInitialR0161.f5Taylor k r ∧ ArithmeticThetaOriginInitialR0161.HasDiscriminantInitial k M s hs.1 g κ) := by
+    ∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)],
+      ∃! g :
+        (AlgebraicGeometry.Scheme.functionField
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)),
+        ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G 5 g ∧
+          (∃ (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X) (φ :
+            Fin r →
+              ((AlgebraicGeometry.Scheme.functionField
+                  (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+                ArithmeticThetaKatoAnnularR0152.ChartField k))
+            (σ :
+            ArithmeticThetaOriginInitialR0161.Chart k →+*
+              ArithmeticThetaOriginInitialR0161.Bivariate k)
+            (Ψ :
+            ArithmeticThetaOriginInitialR0161.ChartField k →+*
+              ArithmeticThetaOriginInitialR0161.Iterated k)
+            (κ :
+            ArithmeticThetaOriginInitialR0161.OriginStalk k M s hs.1 →+*
+              PowerSeries (LaurentSeries k)),
+            (∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j)) ∧
+              (∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M (χ j) (φ j)) ∧
+                ArithmeticThetaOriginInitialR0161.IsChartTaylor k σ ∧
+                  ArithmeticThetaOriginInitialR0161.ExtendsTaylor k σ Ψ ∧
+                    ArithmeticThetaOriginInitialR0161.IsOriginTaylor k M s hs.1
+                        (Ψ.comp (φ (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr))) κ ∧
+                      Ψ (φ (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) g) =
+                          ArithmeticThetaOriginInitialR0161.f5Taylor k r ∧
+                        ArithmeticThetaOriginInitialR0161.HasDiscriminantInitial k M s hs.1 g κ) := by
   intro k _ _ r hr h3 he T M hM s hs G hG _ _
   classical
   obtain ⟨g, hg, huniq⟩ := actual_kato_function_existence

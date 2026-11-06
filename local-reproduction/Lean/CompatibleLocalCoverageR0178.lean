@@ -18,7 +18,20 @@ open ArithmeticThetaHodgeFourTorsionR0147.MultiplicationDifferential
 /-- The ordered normal form makes the full marking compatible, so its
 classifying map factors through the specified sign quotient. -/
 theorem compatible_local_coverage :
-    ∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L) (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L) (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A), ArithmeticThetaCompatibleLevelR0178.CanonicalTwo k L A B → ∀ (C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B) (Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C) (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] [Algebra k R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))), Nonempty (ArithmeticThetaCompatibleLevelR0178.LocalComparison k L A B C Q R W G M) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L)
+      (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L)
+      (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A),
+      ArithmeticThetaCompatibleLevelR0178.CanonicalTwo k L A B →
+        ∀ (C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B)
+          (Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C) (R : Type u)
+          [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R]
+          [Algebra k R] (W : WeierstrassCurve R) [W.IsElliptic]
+          (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+          (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G)
+          (M :
+            ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L
+              (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))),
+          Nonempty (ArithmeticThetaCompatibleLevelR0178.LocalComparison k L A B C Q R W G M) := by
   intro k _ _ L hL heven A B hB C Q R _ _ _ _ _ _ W _ G hG M
   obtain ⟨M₂, hM₂x, hM₂y⟩ := full_level_divisor_reduction R W G hG L 2
     (by omega) (by omega) (even_iff_two_dvd.mp heven) M

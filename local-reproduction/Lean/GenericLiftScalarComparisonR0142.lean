@@ -76,7 +76,22 @@ lemma scalar_ne_zero {X : Scheme.{u}} {L : X.Modules}
 end GenericLiftScalarComparisonR0142
 
 theorem generic_lift_scalar_comparison :
-∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r), 3 ≤ r → ∀ (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T), ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M → ∀ (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X), ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s → ∀ (d : ℕ) (f : Quiver.Hom (ArithmeticThetaGenericEvaluationR0140.genericScheme k M) (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (e e' : ArithmeticThetaGeometricLiftsR0141.Lift k M s d f), ∃! c : LaurentSeries k, c ≠ 0 ∧ ArithmeticThetaSymmetricMarkingR0142.LiftScaled k M s d f c e e' := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (r : ℕ) (hr : 0 < r),
+        3 ≤ r →
+          ∀ (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+            (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T),
+            ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M →
+              ∀ (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X),
+                ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+                    (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s →
+                  ∀ (d : ℕ)
+                    (f :
+                      Quiver.Hom (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)
+                        (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))
+                    (e e' : ArithmeticThetaGeometricLiftsR0141.Lift k M s d f),
+                    ∃! c : LaurentSeries k,
+                      c ≠ 0 ∧ ArithmeticThetaSymmetricMarkingR0142.LiftScaled k M s d f c e e' := by
   intro k _ _ r hr h3 T M hM s hs d f e e'
   have hL : Scheme.Modules.IsInvertible (genericPower k M s d) :=
     Scheme.Modules.IsInvertible.pullback (genericInclusion k M)

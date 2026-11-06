@@ -475,7 +475,44 @@ open SimultaneousDiskRootSectionsR0187
 /-- Simultaneous global roots on one actual finite cover, with the prescribed
 complete disk expansions and positive pointwise degree bounded by `K^s`. -/
 theorem simultaneous_disk_root_sections :
-∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (Z : AlgebraicGeometry.Scheme.{0}) [AlgebraicGeometry.IsIntegral Z] (b : Quiver.Hom Z (AlgebraicGeometry.Spec (CommRingCat.of k))) [AlgebraicGeometry.IsProper b] [AlgebraicGeometry.SmoothOfRelativeDimension 1 b] (J : Z.Modules), AlgebraicGeometry.Scheme.Modules.IsInvertible J → ∀ (K s : ℕ), 0 < K → ∀ (F : Fin s → ArithmeticThetaSimultaneousUnaryR0187.Sections Z (ArithmeticThetaTensorPower.tensorPower Z (J) (K))), (∀ j, F j ≠ 0) → ∀ (f : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk k) Z), CategoryTheory.CategoryStruct.comp f b = ArithmeticThetaTateCuspsR0181.diskStructure k → AlgebraicGeometry.IsDominant (CategoryTheory.CategoryStruct.comp (ArithmeticThetaTateCuspsR0181.genericInclusion k) f) → ∀ (h : ArithmeticThetaSimultaneousUnaryR0187.Sections (ArithmeticThetaTateCuspsR0181.Disk k) ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (J))), ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (J)) ⊤ h → ∀ (a : Fin s → PowerSeries k), (∀ j, ArithmeticThetaNormalizedSections.pullbackPowerSection f J (K) (F j) = ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k) ((a j)^K) • ArithmeticThetaTensorPower.tensorPowerSection (ArithmeticThetaTateCuspsR0181.Disk k) ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (J)) (K) ⊤ h) → ∃ R : ArithmeticThetaSimultaneousUnaryR0187.RootCover k Z b (K^s), ArithmeticThetaSimultaneousUnaryR0187.RealizesRoots k R J K s F f h a := by
+    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (Z : AlgebraicGeometry.Scheme.{0})
+      [AlgebraicGeometry.IsIntegral Z]
+      (b : Quiver.Hom Z (AlgebraicGeometry.Spec (CommRingCat.of k))) [AlgebraicGeometry.IsProper b]
+      [AlgebraicGeometry.SmoothOfRelativeDimension 1 b] (J : Z.Modules),
+      AlgebraicGeometry.Scheme.Modules.IsInvertible J →
+        ∀ (K s : ℕ),
+          0 < K →
+            ∀
+              (F :
+                Fin s →
+                  ArithmeticThetaSimultaneousUnaryR0187.Sections Z
+                    (ArithmeticThetaTensorPower.tensorPower Z (J) (K))),
+              (∀ j, F j ≠ 0) →
+                ∀ (f : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk k) Z),
+                  CategoryTheory.CategoryStruct.comp f b =
+                      ArithmeticThetaTateCuspsR0181.diskStructure k →
+                    AlgebraicGeometry.IsDominant
+                        (CategoryTheory.CategoryStruct.comp
+                          (ArithmeticThetaTateCuspsR0181.genericInclusion k) f) →
+                      ∀
+                        (h :
+                          ArithmeticThetaSimultaneousUnaryR0187.Sections
+                            (ArithmeticThetaTateCuspsR0181.Disk k)
+                            ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (J))),
+                        ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+                            ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (J)) ⊤ h →
+                          ∀ (a : Fin s → PowerSeries k),
+                            (∀ j,
+                                ArithmeticThetaNormalizedSections.pullbackPowerSection f J (K)
+                                    (F j) =
+                                  ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k) ((a j) ^ K) •
+                                    ArithmeticThetaTensorPower.tensorPowerSection
+                                      (ArithmeticThetaTateCuspsR0181.Disk k)
+                                      ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (J)) (K) ⊤
+                                      h) →
+                              ∃ R : ArithmeticThetaSimultaneousUnaryR0187.RootCover k Z b (K ^ s),
+                                ArithmeticThetaSimultaneousUnaryR0187.RealizesRoots k R J K s F f h
+                                  a := by
   intro k _ _ _ Z _ b _ _ J hJ K s hK F hF f hfb hdom h hh a ha
   letI := hdom
   obtain ⟨φ, hφ⟩ := disk_field_map k f

@@ -52,7 +52,58 @@ end SchemeThetaEvaluationNaturality
 /-- Arbitrary marked Cartesian maps preserve the actual theta ideal and its
 canonical section uniquely, and intertwine the adjunction-defined evaluations. -/
 theorem scheme_theta_evaluation_naturality :
-    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4), ∀ (T : AlgebraicGeometry.Scheme.{u}) (τ : Quiver.Hom T (ArithmeticThetaLocalWeierstrassR0203.Base k)) (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (N : ArithmeticThetaSchemeLevelR0204.FullLevel F 4) (b : Quiver.Hom T S) (f : Quiver.Hom F.curve E.curve), CategoryTheory.CategoryStruct.comp b σ = τ → ∀ (hb : ArithmeticThetaSchemeLevelR0204.MarkedCartesian E F M N b f), (ArithmeticThetaUniversalEvaluationR0213.thetaIdeal E M).comap f = ArithmeticThetaUniversalEvaluationR0213.thetaIdeal F N ∧ (∃! q : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (ArithmeticThetaUniversalEvaluationR0213.thetaLine E M)) (ArithmeticThetaUniversalEvaluationR0213.thetaLine F N), ArithmeticThetaUniversalEvaluationR0213.PreservesThetaSection E M F N f q) ∧ (∀ (q : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (ArithmeticThetaUniversalEvaluationR0213.thetaLine E M)) (ArithmeticThetaUniversalEvaluationR0213.thetaLine F N)), ArithmeticThetaUniversalEvaluationR0213.PreservesThetaSection E M F N f q → ∀ (eS : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback (ArithmeticThetaLocalWeierstrassR0203.Family.zero E)).obj (ArithmeticThetaUniversalEvaluationR0213.thetaLine E M)) (SheafOfModules.unit S.ringCatSheaf)) (eT : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback (ArithmeticThetaLocalWeierstrassR0203.Family.zero F)).obj (ArithmeticThetaUniversalEvaluationR0213.thetaLine F N)) (SheafOfModules.unit T.ringCatSheaf)), ArithmeticThetaUniversalEvaluationR0213.IsRigidification E M eS → ArithmeticThetaUniversalEvaluationR0213.IsRigidification F N eT → CategoryTheory.IsIso (ArithmeticThetaUniversalEvaluationR0213.pushforwardComparison E M F N b f hb.1.w q) ∧ CategoryTheory.CategoryStruct.comp (ArithmeticThetaUniversalEvaluationR0213.pushforwardComparison E M F N b f hb.1.w q) (ArithmeticThetaUniversalEvaluationR0213.evaluation F N eT) = CategoryTheory.CategoryStruct.comp ((AlgebraicGeometry.Scheme.Modules.pullback b).map (ArithmeticThetaUniversalEvaluationR0213.evaluation E M eS)) (AlgebraicGeometry.Scheme.Modules.pullbackUnitIso b).hom) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4),
+      ∀ (T : AlgebraicGeometry.Scheme.{u})
+        (τ : Quiver.Hom T (ArithmeticThetaLocalWeierstrassR0203.Base k))
+        (F : ArithmeticThetaLocalWeierstrassR0203.Family T)
+        (N : ArithmeticThetaSchemeLevelR0204.FullLevel F 4) (b : Quiver.Hom T S)
+        (f : Quiver.Hom F.curve E.curve),
+        CategoryTheory.CategoryStruct.comp b σ = τ →
+          ∀ (hb : ArithmeticThetaSchemeLevelR0204.MarkedCartesian E F M N b f),
+            (ArithmeticThetaUniversalEvaluationR0213.thetaIdeal E M).comap f =
+                ArithmeticThetaUniversalEvaluationR0213.thetaIdeal F N ∧
+              (∃! q :
+                  CategoryTheory.Iso
+                    ((AlgebraicGeometry.Scheme.Modules.pullback f).obj
+                      (ArithmeticThetaUniversalEvaluationR0213.thetaLine E M))
+                    (ArithmeticThetaUniversalEvaluationR0213.thetaLine F N),
+                  ArithmeticThetaUniversalEvaluationR0213.PreservesThetaSection E M F N f q) ∧
+                (∀
+                  (q :
+                    CategoryTheory.Iso
+                      ((AlgebraicGeometry.Scheme.Modules.pullback f).obj
+                        (ArithmeticThetaUniversalEvaluationR0213.thetaLine E M))
+                      (ArithmeticThetaUniversalEvaluationR0213.thetaLine F N)),
+                  ArithmeticThetaUniversalEvaluationR0213.PreservesThetaSection E M F N f q →
+                    ∀
+                      (eS :
+                        CategoryTheory.Iso
+                          ((AlgebraicGeometry.Scheme.Modules.pullback
+                                (ArithmeticThetaLocalWeierstrassR0203.Family.zero E)).obj
+                            (ArithmeticThetaUniversalEvaluationR0213.thetaLine E M))
+                          (SheafOfModules.unit S.ringCatSheaf))
+                      (eT :
+                        CategoryTheory.Iso
+                          ((AlgebraicGeometry.Scheme.Modules.pullback
+                                (ArithmeticThetaLocalWeierstrassR0203.Family.zero F)).obj
+                            (ArithmeticThetaUniversalEvaluationR0213.thetaLine F N))
+                          (SheafOfModules.unit T.ringCatSheaf)),
+                      ArithmeticThetaUniversalEvaluationR0213.IsRigidification E M eS →
+                        ArithmeticThetaUniversalEvaluationR0213.IsRigidification F N eT →
+                          CategoryTheory.IsIso
+                              (ArithmeticThetaUniversalEvaluationR0213.pushforwardComparison E M F N
+                                b f hb.1.w q) ∧
+                            CategoryTheory.CategoryStruct.comp
+                                (ArithmeticThetaUniversalEvaluationR0213.pushforwardComparison E M F
+                                  N b f hb.1.w q)
+                                (ArithmeticThetaUniversalEvaluationR0213.evaluation F N eT) =
+                              CategoryTheory.CategoryStruct.comp
+                                ((AlgebraicGeometry.Scheme.Modules.pullback b).map
+                                  (ArithmeticThetaUniversalEvaluationR0213.evaluation E M eS))
+                                (AlgebraicGeometry.Scheme.Modules.pullbackUnitIso b).hom) := by
   intro k _ _ S σ E M T τ F N b f hbase hb
   refine ⟨SchemeThetaEvaluation.thetaIdeal_comap E M F N b f hb,
     SchemeThetaEvaluationNaturality.unique_line_comparison E M F N b f hb, ?_⟩

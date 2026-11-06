@@ -29,7 +29,28 @@ private lemma origin_law_eq (F : Type) [Field F] [CharZero F]
 
 /-- Transfer the accepted complete product to the germ of this same unit. -/
 theorem canonical_period_one_expansion :
-∀ (k : Type) [Field k] [CharZero k] [(ArithmeticThetaPeriodOneNormR0248.periodCurve k).IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaPeriodOneNormR0248.Curve k (ArithmeticThetaPeriodOneNormR0248.periodCurve k))] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaPeriodOneNormR0248.Curve k (ArithmeticThetaPeriodOneNormR0248.periodCurve k))] (G : ArithmeticThetaRelativeKatoR0169.Law (LaurentSeries k) (ArithmeticThetaPeriodOneNormR0248.periodCurve k)), ArithmeticThetaRelativeKatoR0169.IsOriginLaw (LaurentSeries k) (ArithmeticThetaPeriodOneNormR0248.periodCurve k) G → ∀ c : ℕ, 1 < c → Nat.Coprime c 6 → ∀ v : ArithmeticThetaArbitraryKatoUnitR0249.UnitSection (LaurentSeries k) (ArithmeticThetaPeriodOneNormR0248.periodCurve k) G c, ArithmeticThetaArbitraryKatoUnitR0249.IsKatoUnit (LaurentSeries k) (ArithmeticThetaPeriodOneNormR0248.periodCurve k) G c v → ArithmeticThetaSchemeKatoExpansionR0252.PeriodUnitExpansion k G c v := by
+    ∀ (k : Type) [Field k] [CharZero k]
+      [(ArithmeticThetaPeriodOneNormR0248.periodCurve k).IsElliptic]
+      [AlgebraicGeometry.IsIntegral
+          (ArithmeticThetaPeriodOneNormR0248.Curve k
+            (ArithmeticThetaPeriodOneNormR0248.periodCurve k))]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaPeriodOneNormR0248.Curve k
+            (ArithmeticThetaPeriodOneNormR0248.periodCurve k))]
+      (G :
+        ArithmeticThetaRelativeKatoR0169.Law (LaurentSeries k)
+          (ArithmeticThetaPeriodOneNormR0248.periodCurve k)),
+      ArithmeticThetaRelativeKatoR0169.IsOriginLaw (LaurentSeries k)
+          (ArithmeticThetaPeriodOneNormR0248.periodCurve k) G →
+        ∀ c : ℕ,
+          1 < c →
+            Nat.Coprime c 6 →
+              ∀ v :
+                ArithmeticThetaArbitraryKatoUnitR0249.UnitSection (LaurentSeries k)
+                  (ArithmeticThetaPeriodOneNormR0248.periodCurve k) G c,
+                ArithmeticThetaArbitraryKatoUnitR0249.IsKatoUnit (LaurentSeries k)
+                    (ArithmeticThetaPeriodOneNormR0248.periodCurve k) G c v →
+                  ArithmeticThetaSchemeKatoExpansionR0252.PeriodUnitExpansion k G c v := by
   intro k _ _ _ _ _ G hG c hc hc6 v hv
   letI : CharZero (LaurentSeries k) := LaurentSeries.XAdic.charZero k
   have hv' : ArithmeticThetaArbitraryKatoUnitR0249.IsKatoUnit

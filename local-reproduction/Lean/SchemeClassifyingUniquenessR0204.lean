@@ -128,7 +128,20 @@ end SchemeClassifyingUniqueness
 
 /-- Open-chart affine rigidity detects both original morphisms, including nilpotents. -/
 theorem scheme_classifying_uniqueness :
-∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L) (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L) (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A), ArithmeticThetaCompatibleLevelR0178.CanonicalTwo k L A B → ∀ (C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B) (Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C) (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (M : ArithmeticThetaSchemeLevelR0204.FullLevel E L) (b₁ b₂ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base Q.quotient.ring)) (f₁ f₂ : Quiver.Hom E.curve A.descent.family.curve), ArithmeticThetaSchemeLevelR0204.Classifies k L A B C Q σ E M b₁ f₁ → ArithmeticThetaSchemeLevelR0204.Classifies k L A B C Q σ E M b₂ f₂ → b₁ = b₂ ∧ f₁ = f₂ := by
+    ∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L)
+      (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L)
+      (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A),
+      ArithmeticThetaCompatibleLevelR0178.CanonicalTwo k L A B →
+        ∀ (C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B)
+          (Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C)
+          (S : AlgebraicGeometry.Scheme.{u})
+          (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+          (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+          (M : ArithmeticThetaSchemeLevelR0204.FullLevel E L)
+          (b₁ b₂ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base Q.quotient.ring))
+          (f₁ f₂ : Quiver.Hom E.curve A.descent.family.curve),
+          ArithmeticThetaSchemeLevelR0204.Classifies k L A B C Q σ E M b₁ f₁ →
+            ArithmeticThetaSchemeLevelR0204.Classifies k L A B C Q σ E M b₂ f₂ → b₁ = b₂ ∧ f₁ = f₂ := by
   intro k _ _ L hL heven A B hB C Q S σ E M b₁ b₂ f₁ f₂ h₁ h₂
   classical
   choose P hP using scheme_local_weierstrass k S σ E

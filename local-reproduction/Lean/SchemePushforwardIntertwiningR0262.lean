@@ -165,7 +165,29 @@ end PushforwardIntertwining
 /-- The fixed adjoint-counit comparison is invertible in positive degree and
 intertwines every pair of corresponding geometric lifts on every open. -/
 theorem scheme_pushforward_intertwining :
-    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S), ∀ (T : AlgebraicGeometry.Scheme.{u}) (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (b : Quiver.Hom T S) (f : Quiver.Hom F.curve E.curve) (hc : CategoryTheory.IsPullback f F.p E.p b) (hz : CategoryTheory.CategoryStruct.comp F.zero f = CategoryTheory.CategoryStruct.comp b E.zero), ∀ (m : ℕ), 0 < m → CategoryTheory.IsIso (ArithmeticThetaSchemeThetaNaturalityR0262.pushforwardMap E F b f hc hz m) ∧ ∀ (g : Quiver.Hom E.curve E.curve) (g' : Quiver.Hom F.curve F.curve) (α : ArithmeticThetaSchemeThetaMarkingR0259.Lift E m g) (α' : ArithmeticThetaSchemeThetaMarkingR0259.Lift F m g') (A : CategoryTheory.End (ArithmeticThetaSchemeSchrodingerR0261.V E m)) (A' : CategoryTheory.End (ArithmeticThetaSchemeSchrodingerR0261.V F m)), ArithmeticThetaSchemeThetaNaturalityR0262.LiftCorresponds E F b f hc hz m g g' α α' → ArithmeticThetaSchemeSchrodingerR0261.IsAction E m g α A → ArithmeticThetaSchemeSchrodingerR0261.IsAction F m g' α' A' → ArithmeticThetaSchemeThetaNaturalityR0262.Intertwines E F b f hc hz m A A' := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S),
+      ∀ (T : AlgebraicGeometry.Scheme.{u}) (F : ArithmeticThetaLocalWeierstrassR0203.Family T)
+        (b : Quiver.Hom T S) (f : Quiver.Hom F.curve E.curve)
+        (hc : CategoryTheory.IsPullback f F.p E.p b)
+        (hz :
+          CategoryTheory.CategoryStruct.comp F.zero f =
+            CategoryTheory.CategoryStruct.comp b E.zero),
+        ∀ (m : ℕ),
+          0 < m →
+            CategoryTheory.IsIso
+                (ArithmeticThetaSchemeThetaNaturalityR0262.pushforwardMap E F b f hc hz m) ∧
+              ∀ (g : Quiver.Hom E.curve E.curve) (g' : Quiver.Hom F.curve F.curve)
+                (α : ArithmeticThetaSchemeThetaMarkingR0259.Lift E m g)
+                (α' : ArithmeticThetaSchemeThetaMarkingR0259.Lift F m g')
+                (A : CategoryTheory.End (ArithmeticThetaSchemeSchrodingerR0261.V E m))
+                (A' : CategoryTheory.End (ArithmeticThetaSchemeSchrodingerR0261.V F m)),
+                ArithmeticThetaSchemeThetaNaturalityR0262.LiftCorresponds E F b f hc hz m g g' α
+                    α' →
+                  ArithmeticThetaSchemeSchrodingerR0261.IsAction E m g α A →
+                    ArithmeticThetaSchemeSchrodingerR0261.IsAction F m g' α' A' →
+                      ArithmeticThetaSchemeThetaNaturalityR0262.Intertwines E F b f hc hz m A A' := by
   intro k _ _ S σ E T F b f hc hz m hm
   refine ⟨PushforwardIntertwining.map_isIso E F b f hc hz k σ m hm, ?_⟩
   intro g g' α α' A A' h ha ha'

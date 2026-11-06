@@ -299,7 +299,83 @@ open UnaryPowersInCommonSquareLineR0187
 open ArithmeticThetaCommonHalfHodgeR0185.DiscriminantTateRootR0185
 
 theorem unary_powers_in_common_square_line :
-    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (N s : ℕ), 0 < N → Even N → ∀ (m : Fin s → ℕ) (ν : Fin s → ℤ), (∀ j, 0 < m j ∧ Even (m j) ∧ m j ∣ N ∧ (-(m j : ℤ) ≤ 2*ν j ∧ 2*ν j < (m j : ℤ))) → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (ArithmeticThetaCompactUnaryR0183.level N)) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k (ArithmeticThetaCompactUnaryR0183.level N) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k (ArithmeticThetaCompactUnaryR0183.level N) D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k (ArithmeticThetaCompactUnaryR0183.level N) H → ∀ (V : ArithmeticThetaBoundaryHodgeR0182.DiskTest k (ArithmeticThetaCompactUnaryR0183.level N) D X) (ζ : k), IsPrimitiveRoot ζ (ArithmeticThetaCompactUnaryR0183.level N) → ArithmeticThetaTateCuspsR0181.CanonicalMarking k (ArithmeticThetaCompactUnaryR0183.level N) ζ V.level → ∀ (Z : AlgebraicGeometry.Scheme.{0}) [AlgebraicGeometry.IsIntegral Z] (p : Quiver.Hom Z X.space) (J : Z.Modules), AlgebraicGeometry.Scheme.Modules.IsInvertible J → ∀ (β : CategoryTheory.Iso (ArithmeticThetaTensorPower.tensorPower Z (J) (2)) ((AlgebraicGeometry.Scheme.Modules.pullback p).obj (H.line))) (f : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk k) Z) (hf : CategoryTheory.CategoryStruct.comp f p = V.disk) (η : ArithmeticThetaSimultaneousUnaryR0187.Sections (ArithmeticThetaTateCuspsR0181.Disk k) ((AlgebraicGeometry.Scheme.Modules.pullback V.disk).obj (H.line))), ArithmeticThetaBoundaryHodgeR0182.ExtendsGenerator k (ArithmeticThetaCompactUnaryR0183.level N) H V η → ∀ (h : ArithmeticThetaSimultaneousUnaryR0187.Sections (ArithmeticThetaTateCuspsR0181.Disk k) ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (J))), ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (J)) ⊤ h → (ArithmeticThetaSimultaneousUnaryR0187.squareOnDisk k p J H.line β f V.disk hf).hom.app ⊤ (ArithmeticThetaTensorPower.tensorPowerSection (ArithmeticThetaTateCuspsR0181.Disk k) ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (J)) 2 ⊤ h) = η → ∃ F : Fin s → ArithmeticThetaSimultaneousUnaryR0187.Sections Z (ArithmeticThetaTensorPower.tensorPower Z (J) (ArithmeticThetaCompactUnaryR0183.exponent N)), ArithmeticThetaSimultaneousUnaryR0187.UnaryPowers k N s m ν H p J β F ∧ ∀ j, ArithmeticThetaNormalizedSections.pullbackPowerSection f J (ArithmeticThetaCompactUnaryR0183.exponent N) (F j) = ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k) (ArithmeticThetaSimultaneousUnaryR0187.unarySeries k N (m j) (ν j) ^ (ArithmeticThetaCompactUnaryR0183.exponent N)) • ArithmeticThetaTensorPower.tensorPowerSection (ArithmeticThetaTateCuspsR0181.Disk k) ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (J)) (ArithmeticThetaCompactUnaryR0183.exponent N) ⊤ h := by
+    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (N s : ℕ),
+      0 < N →
+        Even N →
+          ∀ (m : Fin s → ℕ) (ν : Fin s → ℤ),
+            (∀ j, 0 < m j ∧ Even (m j) ∧ m j ∣ N ∧ (-(m j : ℤ) ≤ 2 * ν j ∧ 2 * ν j < (m j : ℤ))) →
+              ∀
+                (D :
+                  ArithmeticThetaLevelCompactificationR0179.LevelData k
+                    (ArithmeticThetaCompactUnaryR0183.level N))
+                (X :
+                  ArithmeticThetaLevelCompactificationR0179.Compactification k
+                    (ArithmeticThetaCompactUnaryR0183.level N) D)
+                (H :
+                  ArithmeticThetaBoundaryHodgeR0182.Extension k
+                    (ArithmeticThetaCompactUnaryR0183.level N) D X),
+                ArithmeticThetaBoundaryHodgeR0182.Canonical k
+                    (ArithmeticThetaCompactUnaryR0183.level N) H →
+                  ∀
+                    (V :
+                      ArithmeticThetaBoundaryHodgeR0182.DiskTest k
+                        (ArithmeticThetaCompactUnaryR0183.level N) D X)
+                    (ζ : k),
+                    IsPrimitiveRoot ζ (ArithmeticThetaCompactUnaryR0183.level N) →
+                      ArithmeticThetaTateCuspsR0181.CanonicalMarking k
+                          (ArithmeticThetaCompactUnaryR0183.level N) ζ V.level →
+                        ∀ (Z : AlgebraicGeometry.Scheme.{0}) [AlgebraicGeometry.IsIntegral Z]
+                          (p : Quiver.Hom Z X.space) (J : Z.Modules),
+                          AlgebraicGeometry.Scheme.Modules.IsInvertible J →
+                            ∀
+                              (β :
+                                CategoryTheory.Iso
+                                  (ArithmeticThetaTensorPower.tensorPower Z (J) (2))
+                                  ((AlgebraicGeometry.Scheme.Modules.pullback p).obj (H.line)))
+                              (f : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk k) Z)
+                              (hf : CategoryTheory.CategoryStruct.comp f p = V.disk)
+                              (η :
+                                ArithmeticThetaSimultaneousUnaryR0187.Sections
+                                  (ArithmeticThetaTateCuspsR0181.Disk k)
+                                  ((AlgebraicGeometry.Scheme.Modules.pullback V.disk).obj
+                                    (H.line))),
+                              ArithmeticThetaBoundaryHodgeR0182.ExtendsGenerator k
+                                  (ArithmeticThetaCompactUnaryR0183.level N) H V η →
+                                ∀
+                                  (h :
+                                    ArithmeticThetaSimultaneousUnaryR0187.Sections
+                                      (ArithmeticThetaTateCuspsR0181.Disk k)
+                                      ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (J))),
+                                  ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+                                      ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (J)) ⊤ h →
+                                    (ArithmeticThetaSimultaneousUnaryR0187.squareOnDisk k p J H.line
+                                              β f V.disk hf).hom.app
+                                          ⊤
+                                          (ArithmeticThetaTensorPower.tensorPowerSection
+                                            (ArithmeticThetaTateCuspsR0181.Disk k)
+                                            ((AlgebraicGeometry.Scheme.Modules.pullback f).obj (J))
+                                            2 ⊤ h) =
+                                        η →
+                                      ∃ F :
+                                        Fin s →
+                                          ArithmeticThetaSimultaneousUnaryR0187.Sections Z
+                                            (ArithmeticThetaTensorPower.tensorPower Z (J)
+                                              (ArithmeticThetaCompactUnaryR0183.exponent N)),
+                                        ArithmeticThetaSimultaneousUnaryR0187.UnaryPowers k N s m ν
+                                            H p J β F ∧
+                                          ∀ j,
+                                            ArithmeticThetaNormalizedSections.pullbackPowerSection f
+                                                J (ArithmeticThetaCompactUnaryR0183.exponent N)
+                                                (F j) =
+                                              ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k)
+                                                  (ArithmeticThetaSimultaneousUnaryR0187.unarySeries
+                                                      k N (m j) (ν j) ^
+                                                    (ArithmeticThetaCompactUnaryR0183.exponent N)) •
+                                                ArithmeticThetaTensorPower.tensorPowerSection
+                                                  (ArithmeticThetaTateCuspsR0181.Disk k)
+                                                  ((AlgebraicGeometry.Scheme.Modules.pullback f).obj
+                                                    (J))
+                                                  (ArithmeticThetaCompactUnaryR0183.exponent N) ⊤ h := by
   intro k _ _ _ N s hN hNeven m ν hm D X H hH V ζ hζ hmark Z _ p J hJ β f hf η hη h hh hsquare
   classical
   have hc (j : Fin s) := compact_unary_hodge_realization k (m j) N

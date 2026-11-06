@@ -7,7 +7,31 @@ namespace ArithmeticThetaActualLevelR0208
 /-- One universal provider and one coherent actual family stack realize every
 finite étale level with its specified Hodge square root. -/
 theorem standard_actual_metaplectic_level :
-    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L), ∃ (P : ArithmeticThetaActualLevelR0208.Provider k L) (C : ArithmeticThetaMetaplecticStackR0207.Coherence L (ArithmeticThetaLocalWeierstrassR0203.Base k)), Nonempty (ArithmeticThetaMetaplecticStackR0207.ForgetData L (ArithmeticThetaLocalWeierstrassR0203.Base k) C) ∧ CategoryTheory.Pseudofunctor.IsStack C.functor (ArithmeticThetaRootStackR0198.rootTopology (ArithmeticThetaLocalWeierstrassR0203.Base k)) ∧ ∀ (Y : CategoryTheory.Over (ArithmeticThetaLocalWeierstrassR0203.Base k)) (p : Quiver.Hom Y (ArithmeticThetaActualLevelR0208.base P)) (H : ArithmeticThetaSquareLinesR0192.SquareLine Y.left ((AlgebraicGeometry.Scheme.Modules.pullback p.left).obj (ArithmeticThetaActualLevelR0208.hodge P))), AlgebraicGeometry.IsFinite p.left → AlgebraicGeometry.Etale p.left → Nonempty (ArithmeticThetaActualLevelR0208.PullbackComparison (ArithmeticThetaActualLevelR0208.canonicalMap C Y (ArithmeticThetaActualLevelR0208.object P p H))) ∧ ArithmeticThetaActualLevelR0208.FiniteEtaleLevel P p H (ArithmeticThetaActualLevelR0208.canonicalMap C Y (ArithmeticThetaActualLevelR0208.object P p H)) := by
+    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L),
+      ∃ (P : ArithmeticThetaActualLevelR0208.Provider k L) (C :
+        ArithmeticThetaMetaplecticStackR0207.Coherence L
+          (ArithmeticThetaLocalWeierstrassR0203.Base k)),
+        Nonempty
+            (ArithmeticThetaMetaplecticStackR0207.ForgetData L
+              (ArithmeticThetaLocalWeierstrassR0203.Base k) C) ∧
+          CategoryTheory.Pseudofunctor.IsStack C.functor
+              (ArithmeticThetaRootStackR0198.rootTopology
+                (ArithmeticThetaLocalWeierstrassR0203.Base k)) ∧
+            ∀ (Y : CategoryTheory.Over (ArithmeticThetaLocalWeierstrassR0203.Base k))
+              (p : Quiver.Hom Y (ArithmeticThetaActualLevelR0208.base P))
+              (H :
+                ArithmeticThetaSquareLinesR0192.SquareLine Y.left
+                  ((AlgebraicGeometry.Scheme.Modules.pullback p.left).obj
+                    (ArithmeticThetaActualLevelR0208.hodge P))),
+              AlgebraicGeometry.IsFinite p.left →
+                AlgebraicGeometry.Etale p.left →
+                  Nonempty
+                      (ArithmeticThetaActualLevelR0208.PullbackComparison
+                        (ArithmeticThetaActualLevelR0208.canonicalMap C Y
+                          (ArithmeticThetaActualLevelR0208.object P p H))) ∧
+                    ArithmeticThetaActualLevelR0208.FiniteEtaleLevel P p H
+                      (ArithmeticThetaActualLevelR0208.canonicalMap C Y
+                        (ArithmeticThetaActualLevelR0208.object P p H)) := by
   intro k _ _ L hL heven
   obtain ⟨P⟩ := ArithmeticThetaMetaplecticStackR0207.ActualFamilyFPQCDescentProof.provider_exists
     k L hL heven

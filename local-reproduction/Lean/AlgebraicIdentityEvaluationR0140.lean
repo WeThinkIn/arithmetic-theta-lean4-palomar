@@ -99,7 +99,29 @@ open AlgebraicIdentityEvaluationR0140
 
 /-- Full identity value of any realized algebraic section in the normalized frame. -/
 theorem algebraic_identity_evaluation :
-    ∀ (k : Type u) [Field k] [CharZero k], ∀ (m : ℕ) (hm : 0 < m) (he : Even m), ∀ (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k (2*m) (Nat.mul_pos (by decide) hm)) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex (2*m) (Nat.mul_pos (by decide) hm)) 1 s), ∀ (e : ArithmeticThetaGenericEvaluationR0140.IdentityFrame k M s m), ArithmeticThetaGenericEvaluationR0140.NormalizedFrame k (ArithmeticThetaGenericEvaluationR0140.thetaChartBound m hm he) M hM s hs m e → ∀ (b : ℕ) (w : Fin m → PowerSeries k) (φ : ArithmeticThetaIdentitySectionsR0138.Dual k M s m), ArithmeticThetaIdentitySectionsR0138.Realizes k (hm := hm) he M s b w φ → PowerSeries.X^b * ArithmeticThetaGenericEvaluationR0140.frameValue k M s m e φ = PowerSeries.X^((2*m)^2) * (↑(ArithmeticThetaGenericEvaluationR0140.commonUnit k m hm) : PowerSeries k) * ∑ ν : Fin m, w ν * ArithmeticThetaSchrodingerR0119.unary k m ν := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (m : ℕ) (hm : 0 < m) (he : Even m),
+        ∀
+          (T :
+            ArithmeticThetaInfinitesimalPolygonR0129.Tower k (2 * m) (Nat.mul_pos (by decide) hm))
+          (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+          (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+          (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+          (hs :
+            ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+              (ArithmeticThetaIdentitySectionsR0138.zeroIndex (2 * m) (Nat.mul_pos (by decide) hm))
+              1 s),
+          ∀ (e : ArithmeticThetaGenericEvaluationR0140.IdentityFrame k M s m),
+            ArithmeticThetaGenericEvaluationR0140.NormalizedFrame k
+                (ArithmeticThetaGenericEvaluationR0140.thetaChartBound m hm he) M hM s hs m e →
+              ∀ (b : ℕ) (w : Fin m → PowerSeries k)
+                (φ : ArithmeticThetaIdentitySectionsR0138.Dual k M s m),
+                ArithmeticThetaIdentitySectionsR0138.Realizes k (hm := hm) he M s b w φ →
+                  PowerSeries.X ^ b * ArithmeticThetaGenericEvaluationR0140.frameValue k M s m e φ =
+                    PowerSeries.X ^ ((2 * m) ^ 2) *
+                        (↑(ArithmeticThetaGenericEvaluationR0140.commonUnit k m hm) :
+                          PowerSeries k) *
+                      ∑ ν : Fin m, w ν * ArithmeticThetaSchrodingerR0119.unary k m ν := by
   intro k _ _ m hm he T M hM s hs e he' b w φ hφ
   rw [← theta_numerator_identity_value k m hm he w]
   apply AlgebraizedThetaSaturationR0138.powerSeries_ext

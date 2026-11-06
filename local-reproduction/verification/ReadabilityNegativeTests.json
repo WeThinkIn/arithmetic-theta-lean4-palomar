@@ -1,0 +1,14 @@
+[
+  {
+    "case": "type",
+    "passed": true,
+    "expected_rejection": "Type changed: ArithmeticThetaFullSourceR0268.binary_orthogonal_example",
+    "returncode": 1
+  },
+  {
+    "case": "body",
+    "passed": true,
+    "expected_rejection": "Definition body changed: ArithmeticThetaFullSourceR0268.binaryGram",
+    "returncode": 1
+  }
+]

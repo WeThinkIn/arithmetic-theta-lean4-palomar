@@ -126,7 +126,20 @@ open ArithmeticThetaHodgeFourTorsionR0147.MultiplicationDifferential
 /-- The full marking supplies the actual cyclic kernel and all nonzero lifts. -/
 theorem full_level_cyclic_lifts :
 
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 0 < L) (m N : ℕ) (hm : 0 < m) (hN : 0 < N) (hdiv : m*N ∣ L) (A : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))) , ∃ P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G m, P.point = ArithmeticThetaFullLevelCoverR0175.kernelPoint R W G m A ∧ ∀ a b : Fin N, a.val ≠ 0 ∨ b.val ≠ 0 → ArithmeticThetaRelativeCyclicQuotientR0173.LiftConditions R W G P N (ArithmeticThetaFullLevelCoverR0175.liftPoint R W G m N a.val b.val A) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 0 < L) (m N : ℕ)
+      (hm : 0 < m) (hN : 0 < N) (hdiv : m * N ∣ L)
+      (A :
+        ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L
+          (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))),
+      ∃ P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G m,
+        P.point = ArithmeticThetaFullLevelCoverR0175.kernelPoint R W G m A ∧
+          ∀ a b : Fin N,
+            a.val ≠ 0 ∨ b.val ≠ 0 →
+              ArithmeticThetaRelativeCyclicQuotientR0173.LiftConditions R W G P N
+                (ArithmeticThetaFullLevelCoverR0175.liftPoint R W G m N a.val b.val A) := by
   intro R _ _ _ _ _ W _ G hG L hL m N hm hN hdiv A
   letI := sectionGroup G hG
   have hx : A.x ^ L = 1 := by

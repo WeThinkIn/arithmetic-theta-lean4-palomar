@@ -618,7 +618,20 @@ open OpenDiscriminantFullTateExpansionR0182
 /-- The common half-Hodge cover, with the prescribed complete Tate branch,
 constructed on the actual accepted geometric component. -/
 theorem common_half_hodge_cover :
-    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L : ℕ), 0 < L → 24 ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ∀ (s : (ArithmeticThetaTensorPower.tensorPower X.space H.line 24).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaComponentDegreeR0184.IsCompactD2 k L D X H s → ∀ V : ArithmeticThetaBoundaryHodgeR0182.DiskTest k L D X, ArithmeticThetaCommonHalfHodgeR0185.CommonHalfHodge k L D X H s V := by
+    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L : ℕ),
+      0 < L →
+        24 ∣ L →
+          ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+            (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D)
+            (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X),
+            ArithmeticThetaBoundaryHodgeR0182.Canonical k L H →
+              ∀
+                (s :
+                  (ArithmeticThetaTensorPower.tensorPower X.space H.line 24).presheaf.obj
+                    (Opposite.op ⊤)),
+                ArithmeticThetaComponentDegreeR0184.IsCompactD2 k L D X H s →
+                  ∀ V : ArithmeticThetaBoundaryHodgeR0182.DiskTest k L D X,
+                    ArithmeticThetaCommonHalfHodgeR0185.CommonHalfHodge k L D X H s V := by
   intro k _ _ _ L hL h24 D X H hH s hs V
   have hlev : 3 ≤ L := le_trans (by decide) (Nat.le_of_dvd hL h24)
   have heven : Even L := even_iff_two_dvd.mpr (dvd_trans (by decide : 2 ∣ 24) h24)

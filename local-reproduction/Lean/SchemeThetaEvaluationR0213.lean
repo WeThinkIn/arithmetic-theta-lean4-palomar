@@ -200,7 +200,41 @@ open ArithmeticThetaLocalWeierstrassR0203
 /-- The actual even-theta identity evaluation for every characteristic-zero
 scheme base, including empty, nonreduced and non-quasicompact bases. -/
 theorem scheme_theta_evaluation :
-    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4), (ArithmeticThetaUniversalEvaluationR0213.thetaIdeal E M).IsInvertible ∧ AlgebraicGeometry.Scheme.Modules.IsInvertible (ArithmeticThetaUniversalEvaluationR0213.thetaLine E M) ∧ AlgebraicGeometry.Scheme.Modules.zeroSchemeIdeal (ArithmeticThetaUniversalEvaluationR0213.thetaMap E M) = ArithmeticThetaUniversalEvaluationR0213.thetaIdeal E M ∧ (∃! e : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback (ArithmeticThetaLocalWeierstrassR0203.Family.zero E)).obj (ArithmeticThetaUniversalEvaluationR0213.thetaLine E M)) (SheafOfModules.unit S.ringCatSheaf), ArithmeticThetaUniversalEvaluationR0213.IsRigidification E M e) ∧ CategoryTheory.IsIso (ArithmeticThetaUniversalEvaluationR0213.generator E M) ∧ (∀ e : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback (ArithmeticThetaLocalWeierstrassR0203.Family.zero E)).obj (ArithmeticThetaUniversalEvaluationR0213.thetaLine E M)) (SheafOfModules.unit S.ringCatSheaf), ArithmeticThetaUniversalEvaluationR0213.IsRigidification E M e → CategoryTheory.IsIso (ArithmeticThetaUniversalEvaluationR0213.evaluation E M e) ∧ CategoryTheory.CategoryStruct.comp (ArithmeticThetaUniversalEvaluationR0213.generator E M) (ArithmeticThetaUniversalEvaluationR0213.evaluation E M e) = CategoryTheory.CategoryStruct.id (SheafOfModules.unit S.ringCatSheaf) ∧ ArithmeticThetaRelativeDiscriminantR0171.IsFrame (AlgebraicGeometry.Scheme.Modules.dual (ArithmeticThetaUniversalEvaluationR0213.pushforwardLine E M)) ⊤ (ArithmeticThetaUniversalEvaluationR0213.evaluationSection E M e)) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4),
+      (ArithmeticThetaUniversalEvaluationR0213.thetaIdeal E M).IsInvertible ∧
+        AlgebraicGeometry.Scheme.Modules.IsInvertible
+            (ArithmeticThetaUniversalEvaluationR0213.thetaLine E M) ∧
+          AlgebraicGeometry.Scheme.Modules.zeroSchemeIdeal
+                (ArithmeticThetaUniversalEvaluationR0213.thetaMap E M) =
+              ArithmeticThetaUniversalEvaluationR0213.thetaIdeal E M ∧
+            (∃! e :
+                CategoryTheory.Iso
+                  ((AlgebraicGeometry.Scheme.Modules.pullback
+                        (ArithmeticThetaLocalWeierstrassR0203.Family.zero E)).obj
+                    (ArithmeticThetaUniversalEvaluationR0213.thetaLine E M))
+                  (SheafOfModules.unit S.ringCatSheaf),
+                ArithmeticThetaUniversalEvaluationR0213.IsRigidification E M e) ∧
+              CategoryTheory.IsIso (ArithmeticThetaUniversalEvaluationR0213.generator E M) ∧
+                (∀ e :
+                  CategoryTheory.Iso
+                    ((AlgebraicGeometry.Scheme.Modules.pullback
+                          (ArithmeticThetaLocalWeierstrassR0203.Family.zero E)).obj
+                      (ArithmeticThetaUniversalEvaluationR0213.thetaLine E M))
+                    (SheafOfModules.unit S.ringCatSheaf),
+                  ArithmeticThetaUniversalEvaluationR0213.IsRigidification E M e →
+                    CategoryTheory.IsIso
+                        (ArithmeticThetaUniversalEvaluationR0213.evaluation E M e) ∧
+                      CategoryTheory.CategoryStruct.comp
+                            (ArithmeticThetaUniversalEvaluationR0213.generator E M)
+                            (ArithmeticThetaUniversalEvaluationR0213.evaluation E M e) =
+                          CategoryTheory.CategoryStruct.id (SheafOfModules.unit S.ringCatSheaf) ∧
+                        ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+                          (AlgebraicGeometry.Scheme.Modules.dual
+                            (ArithmeticThetaUniversalEvaluationR0213.pushforwardLine E M))
+                          ⊤ (ArithmeticThetaUniversalEvaluationR0213.evaluationSection E M e)) := by
   intro k _ _ S σ E M
   have hI := SchemeThetaEvaluation.thetaIdeal_invertible E M
   haveI := SchemeThetaEvaluation.generator_isIso E M k σ

@@ -695,7 +695,33 @@ open HodgeBaseChange
 /-- The uniquely characterized comparison on actual Hodge tensor powers for
 an arbitrary pointed Cartesian base change of the relative Weierstrass family. -/
 theorem relative_hodge_power_base_change :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (S : Type u) [CommRing S] [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S] (Ws : WeierstrassCurve S) [Ws.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve S Ws)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve S Ws)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve S Ws)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve S Ws)] (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws) (hGs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs) (ι : R →+* S) (b : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws) (ArithmeticThetaRelativeKatoR0169.Curve R W)) (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b) (n : ℕ), ∃! e : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι)).obj (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W n)) (ArithmeticThetaRelativeDiscriminantR0171.HodgePower S Ws n), ArithmeticThetaRelativeDiscriminantR0171.IsPowerBaseChange R W S Ws ι b n e := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (S : Type u) [CommRing S]
+      [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S]
+      (Ws : WeierstrassCurve S) [Ws.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve S Ws)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve S Ws)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve S Ws)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve S Ws)]
+      (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws)
+      (hGs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs) (ι : R →+* S)
+      (b :
+        Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws)
+          (ArithmeticThetaRelativeKatoR0169.Curve R W))
+      (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b) (n : ℕ),
+      ∃! e :
+        CategoryTheory.Iso
+          ((AlgebraicGeometry.Scheme.Modules.pullback
+                (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι)).obj
+            (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W n))
+          (ArithmeticThetaRelativeDiscriminantR0171.HodgePower S Ws n),
+        ArithmeticThetaRelativeDiscriminantR0171.IsPowerBaseChange R W S Ws ι b n e := by
   intro R _ _ _ _ _ W _ _ _ _ _ G _hG S _ _ _ _ _ Ws _ _ _ _ _ Gs _hGs ι b hb n
   refine ⟨hodgePowerIso R W G S Ws Gs ι b hb n,
     hodgePowerIso_spec R W G S Ws Gs ι b hb n, ?_⟩

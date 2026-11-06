@@ -152,7 +152,28 @@ theorem QuotientTargetFullLevelR0175.quotient_with_enumeration :
 
 /-- The frozen target-marking endpoint, from the quotient with its torsion enumeration. -/
 theorem quotient_target_full_level :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 0 < L) (m N : ℕ) (hm : 0 < m) (hN : 0 < N) (hdiv : m*N ∣ L) (A : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))) , ∃ (P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G m) (V : WeierstrassCurve R) (hV : V.IsElliptic) (H : ArithmeticThetaRelativeKatoR0169.Law R V) (hH : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R V H) (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V) (T : ArithmeticThetaFullLevelCoverR0175.FullLevel R V H N (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))), P.point = ArithmeticThetaFullLevelCoverR0175.kernelPoint R W G m A ∧ ArithmeticThetaRelativeCyclicQuotientR0173.IsQuotient R W G P f ∧ T.x.val = CategoryTheory.CategoryStruct.comp (ArithmeticThetaFullLevelCoverR0175.liftPoint R W G m N 0 1 A) f.map ∧ T.y.val = CategoryTheory.CategoryStruct.comp (ArithmeticThetaFullLevelCoverR0175.liftPoint R W G m N 1 0 A) f.map := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 0 < L) (m N : ℕ)
+      (hm : 0 < m) (hN : 0 < N) (hdiv : m * N ∣ L)
+      (A :
+        ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L
+          (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))),
+      ∃ (P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G m) (V :
+        WeierstrassCurve R) (hV : V.IsElliptic) (H : ArithmeticThetaRelativeKatoR0169.Law R V) (hH :
+        ArithmeticThetaRelativeKatoR0169.IsOriginLaw R V H) (f :
+        ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V) (T :
+        ArithmeticThetaFullLevelCoverR0175.FullLevel R V H N
+          (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))),
+        P.point = ArithmeticThetaFullLevelCoverR0175.kernelPoint R W G m A ∧
+          ArithmeticThetaRelativeCyclicQuotientR0173.IsQuotient R W G P f ∧
+            T.x.val =
+                CategoryTheory.CategoryStruct.comp
+                  (ArithmeticThetaFullLevelCoverR0175.liftPoint R W G m N 0 1 A) f.map ∧
+              T.y.val =
+                CategoryTheory.CategoryStruct.comp
+                  (ArithmeticThetaFullLevelCoverR0175.liftPoint R W G m N 1 0 A) f.map := by
   intro R _ _ _ _ _ W _ G hG L hL m N hm hN hdiv A
   obtain ⟨P, V, hV, H, hH, f, T, hP, hf, hx, hy, _⟩ :=
     QuotientTargetFullLevelR0175.quotient_with_enumeration R W G hG L hL m N hm hN hdiv A

@@ -13,7 +13,24 @@ open ArithmeticThetaGeometricNormR0150
 /-- Every positive coprime multiplication norm preserves the full Kato divisor
 on the specified arbitrary characteristic-zero elliptic curve. -/
 theorem general_coprime_divisor_norm :
-∀ (F : Type u) [Field F] [CharZero F] (W : WeierstrassCurve F) [W.IsElliptic] (G : ArithmeticThetaGeneralEllipticKatoR0168.Law F W) (hG : ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw F W G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)], ∀ (c d : ℕ), 1 < c → 0 < d → Nat.Coprime c d → ∀ (φ : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField →+* (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField), ArithmeticThetaGeometricNormR0150.IsFieldMap (G.schemeNsmul d) φ → ∀ (g : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField), ArithmeticThetaGeneralEllipticKatoR0168.HasKatoDivisor F W G c g → ArithmeticThetaGeneralEllipticKatoR0168.HasKatoDivisor F W G c (ArithmeticThetaGeometricNormR0150.fieldNorm φ g) := by
+    ∀ (F : Type u) [Field F] [CharZero F] (W : WeierstrassCurve F) [W.IsElliptic]
+      (G : ArithmeticThetaGeneralEllipticKatoR0168.Law F W)
+      (hG : ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw F W G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)],
+      ∀ (c d : ℕ),
+        1 < c →
+          0 < d →
+            Nat.Coprime c d →
+              ∀
+                (φ :
+                  (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField →+*
+                    (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField),
+                ArithmeticThetaGeometricNormR0150.IsFieldMap (G.schemeNsmul d) φ →
+                  ∀ (g : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField),
+                    ArithmeticThetaGeneralEllipticKatoR0168.HasKatoDivisor F W G c g →
+                      ArithmeticThetaGeneralEllipticKatoR0168.HasKatoDivisor F W G c
+                        (ArithmeticThetaGeometricNormR0150.fieldNorm φ g) := by
   intro F _ _ W _ G hG _ _ c d hc hd hcd φ hφ g hg
   classical
   obtain ⟨hfinite, hetale, hsurj, _⟩ :=

@@ -72,7 +72,29 @@ end GeneralMultiplicationDegree
 /-- Multiplication on an arbitrary characteristic-zero elliptic curve, with
 its actual induced field action and scalar norm. -/
 theorem general_multiplication_degree :
-∀ (F : Type u) [Field F] [CharZero F] (W : WeierstrassCurve F) [W.IsElliptic] (G : ArithmeticThetaGeneralEllipticKatoR0168.Law F W) (hG : ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw F W G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)], ∀ (n : ℕ), 0 < n → AlgebraicGeometry.IsFinite (G.schemeNsmul n) ∧ AlgebraicGeometry.Etale (G.schemeNsmul n) ∧ AlgebraicGeometry.Surjective (G.schemeNsmul n) ∧ (∀ x, (G.schemeNsmul n).finrank x = n^2) ∧ ∃ φ : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField →+* (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField, ArithmeticThetaGeometricNormR0150.IsFieldMap (G.schemeNsmul n) φ ∧ ArithmeticThetaGeneralEllipticKatoR0168.HasFieldDegree φ (n^2) ∧ ∀ a : F, ArithmeticThetaGeometricNormR0150.fieldNorm φ (ArithmeticThetaGeometricNormR0150.baseScalar F (ArithmeticThetaGeneralEllipticKatoR0168.structureMap F W) a) = ArithmeticThetaGeometricNormR0150.baseScalar F (ArithmeticThetaGeneralEllipticKatoR0168.structureMap F W) (a^(n^2)) := by
+    ∀ (F : Type u) [Field F] [CharZero F] (W : WeierstrassCurve F) [W.IsElliptic]
+      (G : ArithmeticThetaGeneralEllipticKatoR0168.Law F W)
+      (hG : ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw F W G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)],
+      ∀ (n : ℕ),
+        0 < n →
+          AlgebraicGeometry.IsFinite (G.schemeNsmul n) ∧
+            AlgebraicGeometry.Etale (G.schemeNsmul n) ∧
+              AlgebraicGeometry.Surjective (G.schemeNsmul n) ∧
+                (∀ x, (G.schemeNsmul n).finrank x = n ^ 2) ∧
+                  ∃ φ :
+                    (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField →+*
+                      (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField,
+                    ArithmeticThetaGeometricNormR0150.IsFieldMap (G.schemeNsmul n) φ ∧
+                      ArithmeticThetaGeneralEllipticKatoR0168.HasFieldDegree φ (n ^ 2) ∧
+                        ∀ a : F,
+                          ArithmeticThetaGeometricNormR0150.fieldNorm φ
+                              (ArithmeticThetaGeometricNormR0150.baseScalar F
+                                (ArithmeticThetaGeneralEllipticKatoR0168.structureMap F W) a) =
+                            ArithmeticThetaGeometricNormR0150.baseScalar F
+                              (ArithmeticThetaGeneralEllipticKatoR0168.structureMap F W)
+                              (a ^ (n ^ 2)) := by
   intro F _ _ W _ G hG _ _ n hn
   letI : SmoothOfRelativeDimension 1 (structureMap F W) :=
     WeierstrassProjModel.projModelStrCR_smoothOfRelativeDimension_one W.toProjective

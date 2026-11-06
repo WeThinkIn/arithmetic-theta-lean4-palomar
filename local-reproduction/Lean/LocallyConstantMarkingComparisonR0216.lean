@@ -677,7 +677,16 @@ namespace ArithmeticThetaEvenMarkingTorsorR0216
 
 /-- Two phase- and characteristic-compatible full markings differ by a unique locally constant even matrix. -/
 theorem locally_constant_marking_comparison :
-    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S), ∀ (M N : ArithmeticThetaSchemeLevelR0204.FullLevel E 4) (z : S.presheaf.obj (Opposite.op ⊤)), ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z → ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E N z → ArithmeticThetaUniversalEvaluationR0213.evenPoint E M = ArithmeticThetaUniversalEvaluationR0213.evenPoint E N → ∃! g : LocallyConstant S ArithmeticThetaEvenMarkingTorsorR0216.EvenGroup, ArithmeticThetaEvenMarkingTorsorR0216.LocalChange E M N g := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S),
+      ∀ (M N : ArithmeticThetaSchemeLevelR0204.FullLevel E 4) (z : S.presheaf.obj (Opposite.op ⊤)),
+        ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z →
+          ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E N z →
+            ArithmeticThetaUniversalEvaluationR0213.evenPoint E M =
+                ArithmeticThetaUniversalEvaluationR0213.evenPoint E N →
+              ∃! g : LocallyConstant S ArithmeticThetaEvenMarkingTorsorR0216.EvenGroup,
+                ArithmeticThetaEvenMarkingTorsorR0216.LocalChange E M N g := by
   intro k _ _ S σ E M N z hM hN hp
   exact LocallyConstantMarkingComparison.glue_localWitness E M N
     (LocallyConstantMarkingComparison.localWitness_exists E M k σ N z hM hN hp)

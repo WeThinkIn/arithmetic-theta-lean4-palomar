@@ -391,7 +391,26 @@ open SchemePairingReversal
 /-- Reversal is uniquely defined on the original scheme and preserves the signed
 cotangent alpha, while negating the full normalized Miller regular function. -/
 theorem scheme_pairing_reversal :
-∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom (S) (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4), (∃! N : ArithmeticThetaSchemeLevelR0204.FullLevel E 4, ArithmeticThetaSchemeFourCharacterR0215.Changes E M N ArithmeticThetaPhaseSwitchR0218.reversal) ∧ (∀ N : ArithmeticThetaSchemeLevelR0204.FullLevel E 4, ArithmeticThetaSchemeFourCharacterR0215.Changes E M N ArithmeticThetaPhaseSwitchR0218.reversal → ArithmeticThetaSchemeFourCharacterR0215.Changes E N M ArithmeticThetaPhaseSwitchR0218.reversal ∧ ArithmeticThetaUniversalEvaluationR0213.evenPoint E N = ArithmeticThetaUniversalEvaluationR0213.evenPoint E M ∧ (∀ z : S.presheaf.obj (Opposite.op ⊤), ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z → ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E N (-z)) ∧ (∀ a : (ArithmeticThetaSchemeHodgeR0205.Cotangent E).presheaf.obj (Opposite.op ⊤), ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E M a ↔ ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E N a)) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom (S) (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4),
+      (∃! N : ArithmeticThetaSchemeLevelR0204.FullLevel E 4,
+          ArithmeticThetaSchemeFourCharacterR0215.Changes E M N
+            ArithmeticThetaPhaseSwitchR0218.reversal) ∧
+        (∀ N : ArithmeticThetaSchemeLevelR0204.FullLevel E 4,
+          ArithmeticThetaSchemeFourCharacterR0215.Changes E M N
+              ArithmeticThetaPhaseSwitchR0218.reversal →
+            ArithmeticThetaSchemeFourCharacterR0215.Changes E N M
+                ArithmeticThetaPhaseSwitchR0218.reversal ∧
+              ArithmeticThetaUniversalEvaluationR0213.evenPoint E N =
+                  ArithmeticThetaUniversalEvaluationR0213.evenPoint E M ∧
+                (∀ z : S.presheaf.obj (Opposite.op ⊤),
+                    ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z →
+                      ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E N (-z)) ∧
+                  (∀ a : (ArithmeticThetaSchemeHodgeR0205.Cotangent E).presheaf.obj (Opposite.op ⊤),
+                    ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E M a ↔
+                      ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E N a)) := by
   intro k _ _ S σ E M
   refine ⟨scheme_exists E M, ?_⟩
   intro N hN

@@ -675,7 +675,27 @@ open ArithmeticThetaTensorPower
 
 /-- The intrinsic discriminant is natural under the actual normalized coefficient comparison. -/
 theorem open_discriminant_constant_naturality :
-∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (L : ℕ), 3 ≤ L → Even L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E) (C : ArithmeticThetaArithmeticSectionsR0236.Comparison k L ι D E X Y) (d : (ArithmeticThetaOpenHodgeR0180.power D.atlas.descent.family 24).presheaf.obj (Opposite.op ⊤)) (e : (ArithmeticThetaOpenHodgeR0180.power E.atlas.descent.family 24).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaOpenHodgeR0180.IsD2 D.atlas.descent.family d → ArithmeticThetaOpenHodgeR0180.IsD2 E.atlas.descent.family e → ArithmeticThetaArithmeticSectionsR0236.powerTransport C.openMap (ArithmeticThetaLevelConstantsR0234.weight D) (ArithmeticThetaLevelConstantsR0234.weight E) C.hodgeMap 24 (ArithmeticThetaBoundaryHodgeR0182.pullToOpen k L 24 d) = ArithmeticThetaBoundaryHodgeR0182.pullToOpen l L 24 e := by
+    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (L : ℕ),
+      3 ≤ L →
+        Even L →
+          ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+            (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L)
+            (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D)
+            (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E)
+            (C : ArithmeticThetaArithmeticSectionsR0236.Comparison k L ι D E X Y)
+            (d :
+              (ArithmeticThetaOpenHodgeR0180.power D.atlas.descent.family 24).presheaf.obj
+                (Opposite.op ⊤))
+            (e :
+              (ArithmeticThetaOpenHodgeR0180.power E.atlas.descent.family 24).presheaf.obj
+                (Opposite.op ⊤)),
+            ArithmeticThetaOpenHodgeR0180.IsD2 D.atlas.descent.family d →
+              ArithmeticThetaOpenHodgeR0180.IsD2 E.atlas.descent.family e →
+                ArithmeticThetaArithmeticSectionsR0236.powerTransport C.openMap
+                    (ArithmeticThetaLevelConstantsR0234.weight D)
+                    (ArithmeticThetaLevelConstantsR0234.weight E) C.hodgeMap 24
+                    (ArithmeticThetaBoundaryHodgeR0182.pullToOpen k L 24 d) =
+                  ArithmeticThetaBoundaryHodgeR0182.pullToOpen l L 24 e := by
   intro k l _ _ _ _ ι L hL heven D E X Y C d e hd he
   obtain ⟨F, M, g, hg⟩ := SchemeFullLevelUniversal.converse E.atlas
     (OpenBase l L E) (openStructure l L E) (𝟙 _) (Category.id_comp _)

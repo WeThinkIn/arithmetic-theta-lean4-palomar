@@ -917,7 +917,41 @@ open ArithmeticThetaCubicModelR0144 ArithmeticThetaCompactifiedDifferentialR0145
 /-- The unique faithful evaluation of the specified ramified cubic fixes the
 structural scalars and both literal coordinates, and carries every normalized
 Kato function to its full unsplit polygon expansion. -/
-theorem ramified_cubic_kato_evaluation : ∀ (k : Type) [Field k] [CharZero k] (r : ℕ), 3 ≤ r → Even r → ∀ [(ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r).IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaPeriodOneNormR0248.Curve k (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r))] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaPeriodOneNormR0248.Curve k (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r))], ∃! ev : (ArithmeticThetaPeriodOneNormR0248.Curve k (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r)).functionField →+* ArithmeticThetaPeriodOneNormR0248.Series k, ArithmeticThetaPeriodOneNormR0248.IsEvaluation k (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r) r ev ∧ Function.Injective ev ∧ ∀ (G : ArithmeticThetaGeneralEllipticKatoR0168.Law (LaurentSeries k) (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r)), ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw (LaurentSeries k) (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r) G → ∀ c : ℕ, 1 < c → Nat.Coprime c 6 → ∀ g : (ArithmeticThetaPeriodOneNormR0248.Curve k (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r)).functionField, ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction (LaurentSeries k) (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r) G c g → ArithmeticThetaUnsplitExpansionR0158.HasExpansion k r c 0 (ev g) := by
+theorem ramified_cubic_kato_evaluation :
+    ∀ (k : Type) [Field k] [CharZero k] (r : ℕ),
+      3 ≤ r →
+        Even r →
+          ∀ [(ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r).IsElliptic]
+            [AlgebraicGeometry.IsIntegral
+                (ArithmeticThetaPeriodOneNormR0248.Curve k
+                  (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r))]
+            [AlgebraicGeometry.IsLocallyNoetherian
+                (ArithmeticThetaPeriodOneNormR0248.Curve k
+                  (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r))],
+            ∃! ev :
+              (ArithmeticThetaPeriodOneNormR0248.Curve k
+                    (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r)).functionField →+*
+                ArithmeticThetaPeriodOneNormR0248.Series k,
+              ArithmeticThetaPeriodOneNormR0248.IsEvaluation k
+                  (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r) r ev ∧
+                Function.Injective ev ∧
+                  ∀
+                    (G :
+                      ArithmeticThetaGeneralEllipticKatoR0168.Law (LaurentSeries k)
+                        (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r)),
+                    ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw (LaurentSeries k)
+                        (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r) G →
+                      ∀ c : ℕ,
+                        1 < c →
+                          Nat.Coprime c 6 →
+                            ∀ g :
+                              (ArithmeticThetaPeriodOneNormR0248.Curve k
+                                  (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k
+                                    r)).functionField,
+                              ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction
+                                  (LaurentSeries k)
+                                  (ArithmeticThetaPeriodOneNormR0248.ramifiedCurve k r) G c g →
+                                ArithmeticThetaUnsplitExpansionR0158.HasExpansion k r c 0 (ev g) := by
   intro k _ _ r h3 he _ _ _
   have hr : 0 < r := by omega
   obtain ⟨T, M, hM⟩ := ArithmeticThetaTateCuspsR0181.TateFullLevelMarking.model_exists k r h3 hr

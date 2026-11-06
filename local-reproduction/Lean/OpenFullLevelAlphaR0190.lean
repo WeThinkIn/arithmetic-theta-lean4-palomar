@@ -654,7 +654,12 @@ namespace ArithmeticThetaGlobalFourTorsionR0190
 /-- The intrinsic four-torsion formula descends to a unique frame of the actual
 open Hodge sheaf, tested along every specified normal affine classifying map. -/
 theorem open_full_level_alpha :
-∀ (k : Type) [Field k] [CharZero k] (L : ℕ), 0 < L → 4 ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L), ∃! a : (ArithmeticThetaBoundaryHodgeR0182.openHodge k L D).presheaf.obj (Opposite.op ⊤), ArithmeticThetaGlobalFourTorsionR0190.IsOpenAlpha L k D a := by
+    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ),
+      0 < L →
+        4 ∣ L →
+          ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L),
+            ∃! a : (ArithmeticThetaBoundaryHodgeR0182.openHodge k L D).presheaf.obj (Opposite.op ⊤),
+              ArithmeticThetaGlobalFourTorsionR0190.IsOpenAlpha L k D a := by
   intro k _ _ L hL h4 D
   obtain ⟨a,ha⟩ := OpenFullLevelAlpha.open_alpha_exists k L hL h4 D
   exact ⟨a,ha,fun a' ha' => OpenFullLevelAlpha.open_alpha_unique k L D a' a ha' ha⟩

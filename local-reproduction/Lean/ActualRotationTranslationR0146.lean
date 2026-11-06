@@ -266,7 +266,27 @@ open ActualRotationTranslation
 /-- The actual single rotation is translation by the actual marked point (1,1),
 with equality on every test scheme in the original universe. -/
 theorem actual_rotation_translation :
-    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s), ∀ (G : ArithmeticThetaMarkedGroupLawR0146.Law k M), ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G → ∀ (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → (CategoryTheory.Iso M.X M.X)) (inv : CategoryTheory.Iso M.X M.X) (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv), ∀ (p : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hp : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaInfinitesimalPolygonR0129.next r hr (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr)) 1 p), ArithmeticThetaMarkedGroupLawR0146.IsTranslation k M G p hp.1 (ArithmeticThetaMarkedGroupLawR0146.rotationMap k M rot scal inv ha) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s),
+      ∀ (G : ArithmeticThetaMarkedGroupLawR0146.Law k M),
+        ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G →
+          ∀ (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → (CategoryTheory.Iso M.X M.X))
+            (inv : CategoryTheory.Iso M.X M.X)
+            (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv),
+            ∀ (p : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+              (hp :
+                ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+                  (ArithmeticThetaInfinitesimalPolygonR0129.next r hr
+                    (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr))
+                  1 p),
+              ArithmeticThetaMarkedGroupLawR0146.IsTranslation k M G p hp.1
+                (ArithmeticThetaMarkedGroupLawR0146.rotationMap k M rot scal inv ha) := by
   intro k _ _ r hr h3 T he M hM s hs G hG rot scal inv ha p hp
   let f := rotationMap k M rot scal inv ha
   have hf : f ≫ genericStructure k M = genericStructure k M :=

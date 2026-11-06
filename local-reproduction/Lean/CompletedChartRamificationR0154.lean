@@ -49,7 +49,9 @@ variable (k : Type u) [Field k] [CharZero k]
 variable (d : ℕ) (hd : 0 < d) (q : Fin d)
 
 omit [CharZero k] in
-private lemma node_xy : ArithmeticThetaScaledTateBridgeR0046.x k 1 * ArithmeticThetaScaledTateBridgeR0046.y k 1 = ArithmeticThetaScaledTateBridgeR0046.t k 1 := by
+private lemma node_xy :
+    ArithmeticThetaScaledTateBridgeR0046.x k 1 * ArithmeticThetaScaledTateBridgeR0046.y k 1 =
+      ArithmeticThetaScaledTateBridgeR0046.t k 1 := by
   have h : ArithmeticThetaScaledTateBridgeR0046.quotientMap k 1 (ArithmeticThetaScaledTateBridgeR0046.relation k 1) = 0 :=
     Ideal.Quotient.eq_zero_iff_mem.mpr (Ideal.subset_span (by simp))
   exact sub_eq_zero.mp h
@@ -59,7 +61,8 @@ private def polynomialMap : ArithmeticThetaScaledTateBridgeR0046.PolynomialChart
     (fun i => if i = 0 then ArithmeticThetaScaledTateBridgeR0046.t k 1 ^ q.val * ArithmeticThetaScaledTateBridgeR0046.x k 1
       else ArithmeticThetaScaledTateBridgeR0046.t k 1 ^ (d-q.val-1) * ArithmeticThetaScaledTateBridgeR0046.y k 1)
 
-private lemma polynomialMap_relation : polynomialMap k d hd q (ArithmeticThetaScaledTateBridgeR0046.relation k 1) = 0 := by
+private lemma polynomialMap_relation :
+    polynomialMap k d hd q (ArithmeticThetaScaledTateBridgeR0046.relation k 1) = 0 := by
   have he : q.val + (d-q.val-1) + 1 = d := by omega
   simp only [polynomialMap, ArithmeticThetaScaledTateBridgeR0046.relation, map_sub, map_mul, MvPolynomial.eval₂Hom_X',
     MvPolynomial.eval₂Hom_C, RingHom.comp_apply, ArithmeticThetaScaledTateBridgeR0046.parameter, pow_one, baseMap,
@@ -87,19 +90,29 @@ private lemma nodeMap_base (b : PowerSeries k) :
   change polynomialMap k d hd q (MvPolynomial.C b) = _
   simp [polynomialMap]
 
-private lemma nodeMap_t : nodeMap k d hd q (ArithmeticThetaScaledTateBridgeR0046.t k 1) = ArithmeticThetaScaledTateBridgeR0046.t k 1 ^ d := by
+private lemma nodeMap_t :
+    nodeMap k d hd q (ArithmeticThetaScaledTateBridgeR0046.t k 1) =
+      ArithmeticThetaScaledTateBridgeR0046.t k 1 ^ d := by
   simp only [ArithmeticThetaScaledTateBridgeR0046.t, ArithmeticThetaScaledTateBridgeR0046.parameter, pow_one, nodeMap_base, baseMap,
     AlgHom.toRingHom_eq_coe, AlgHom.coe_toRingHom, PowerSeries.expand_X, map_pow]
 
-private lemma nodeMap_x : nodeMap k d hd q (ArithmeticThetaScaledTateBridgeR0046.x k 1) = ArithmeticThetaScaledTateBridgeR0046.t k 1 ^ q.val * ArithmeticThetaScaledTateBridgeR0046.x k 1 := by
+private lemma nodeMap_x :
+    nodeMap k d hd q (ArithmeticThetaScaledTateBridgeR0046.x k 1) =
+      ArithmeticThetaScaledTateBridgeR0046.t k 1 ^ q.val *
+        ArithmeticThetaScaledTateBridgeR0046.x k 1 := by
   change polynomialMap k d hd q (MvPolynomial.X 0) = _
   simp [polynomialMap]
 
-private lemma nodeMap_y : nodeMap k d hd q (ArithmeticThetaScaledTateBridgeR0046.y k 1) = ArithmeticThetaScaledTateBridgeR0046.t k 1 ^ (d-q.val-1) * ArithmeticThetaScaledTateBridgeR0046.y k 1 := by
+private lemma nodeMap_y :
+    nodeMap k d hd q (ArithmeticThetaScaledTateBridgeR0046.y k 1) =
+      ArithmeticThetaScaledTateBridgeR0046.t k 1 ^ (d - q.val - 1) *
+        ArithmeticThetaScaledTateBridgeR0046.y k 1 := by
   change polynomialMap k d hd q (MvPolynomial.X 1) = _
   simp [polynomialMap]
 
-private lemma nodeMap_ideal : (ArithmeticThetaScaledTateBridgeR0046.nodeIdeal k 1).map (nodeMap k d hd q) ≤ ArithmeticThetaScaledTateBridgeR0046.nodeIdeal k 1 := by
+private lemma nodeMap_ideal :
+    (ArithmeticThetaScaledTateBridgeR0046.nodeIdeal k 1).map (nodeMap k d hd q) ≤
+      ArithmeticThetaScaledTateBridgeR0046.nodeIdeal k 1 := by
   rw [ArithmeticThetaScaledTateBridgeR0046.nodeIdeal, Ideal.map_span, Set.image_singleton, nodeMap_t, Ideal.span_le]
   intro a ha
   rcases Set.mem_singleton_iff.mp ha with rfl

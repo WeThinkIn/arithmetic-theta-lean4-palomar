@@ -17,7 +17,22 @@ open ArithmeticThetaOpenHodgeR0180
 /-- The intrinsic discriminant extends over the original coefficient field,
 by descent of its actual algebraically closed compact extension. -/
 theorem field_compact_discriminant :
-    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ), 3 ≤ L → Even L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H → ∀ d : (ArithmeticThetaOpenHodgeR0180.power D.atlas.descent.family 24).presheaf.obj (Opposite.op ⊤), ArithmeticThetaOpenHodgeR0180.IsD2 D.atlas.descent.family d → ∃! s : (ArithmeticThetaTensorPower.tensorPower X.space H.line 24).presheaf.obj (Opposite.op ⊤), ArithmeticThetaArithmeticSectionsR0236.RealizesDiscriminant k L H d s := by
+    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ),
+      3 ≤ L →
+        Even L →
+          ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+            (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D)
+            (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X),
+            ArithmeticThetaBoundaryHodgeR0182.Canonical k L H →
+              ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H →
+                ∀ d :
+                  (ArithmeticThetaOpenHodgeR0180.power D.atlas.descent.family 24).presheaf.obj
+                    (Opposite.op ⊤),
+                  ArithmeticThetaOpenHodgeR0180.IsD2 D.atlas.descent.family d →
+                    ∃! s :
+                      (ArithmeticThetaTensorPower.tensorPower X.space H.line 24).presheaf.obj
+                        (Opposite.op ⊤),
+                      ArithmeticThetaArithmeticSectionsR0236.RealizesDiscriminant k L H d s := by
   intro k _ _ L hL heven D X H _hH hgeom d hd
   let l := AlgebraicClosure k
   let ι : k →+* l := algebraMap k l

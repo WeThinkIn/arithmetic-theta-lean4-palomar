@@ -59,7 +59,33 @@ end SplitHodgePowerDegree
 /-- Exact residue-weighted degree for every nonzero Hodge-power section,
 including exponent zero, and its full-level upper bound. -/
 theorem split_hodge_power_degree :
-    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (ζ : k) (hζ : IsPrimitiveRoot ζ L) (hL : 3 ≤ L) (heven : Even L) (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space), ∀ (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ∀ (n : ℕ) (ι : Type) (C : ArithmeticThetaLineRoot.NormalFrameCover (ArithmeticThetaComponentDegreeR0184.Component k L D X x) (ArithmeticThetaComponentDegreeR0184.power k L D X x H n) ι) (t : (ArithmeticThetaComponentDegreeR0184.power k L D X x H n).presheaf.obj (Opposite.op ⊤)) (E : (ArithmeticThetaComponentDegreeR0184.Component k L D X x) →₀ ℤ), t ≠ 0 → ArithmeticThetaSectionOrder.MatchesSectionOrder (ArithmeticThetaComponentDegreeR0184.Component k L D X x) (ArithmeticThetaComponentDegreeR0184.power k L D X x H n) C t E → 24 * (ArithmeticThetaCurveDegree.weightedDegree k (ArithmeticThetaComponentDegreeR0184.projection k L D X x) E) = (n : ℤ) * (2*L : ℕ) * (Nat.card (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) : ℤ) ∧ 24 * (ArithmeticThetaCurveDegree.weightedDegree k (ArithmeticThetaComponentDegreeR0184.projection k L D X x) E) ≤ (n : ℤ) * (Nat.card (Matrix.SpecialLinearGroup (Fin 2) (ZMod L)) : ℤ) := by
+    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (ζ : k) (hζ : IsPrimitiveRoot ζ L) (hL : 3 ≤ L)
+      (heven : Even L) (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+      (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space),
+      ∀ (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X),
+        ArithmeticThetaBoundaryHodgeR0182.Canonical k L H →
+          ∀ (n : ℕ) (ι : Type)
+            (C :
+              ArithmeticThetaLineRoot.NormalFrameCover
+                (ArithmeticThetaComponentDegreeR0184.Component k L D X x)
+                (ArithmeticThetaComponentDegreeR0184.power k L D X x H n) ι)
+            (t :
+              (ArithmeticThetaComponentDegreeR0184.power k L D X x H n).presheaf.obj
+                (Opposite.op ⊤))
+            (E : (ArithmeticThetaComponentDegreeR0184.Component k L D X x) →₀ ℤ),
+            t ≠ 0 →
+              ArithmeticThetaSectionOrder.MatchesSectionOrder
+                  (ArithmeticThetaComponentDegreeR0184.Component k L D X x)
+                  (ArithmeticThetaComponentDegreeR0184.power k L D X x H n) C t E →
+                24 *
+                      (ArithmeticThetaCurveDegree.weightedDegree k
+                        (ArithmeticThetaComponentDegreeR0184.projection k L D X x) E) =
+                    (n : ℤ) * (2 * L : ℕ) *
+                      (Nat.card (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) : ℤ) ∧
+                  24 *
+                      (ArithmeticThetaCurveDegree.weightedDegree k
+                        (ArithmeticThetaComponentDegreeR0184.projection k L D X x) E) ≤
+                    (n : ℤ) * (Nat.card (Matrix.SpecialLinearGroup (Fin 2) (ZMod L)) : ℤ) := by
   intro k _ _ L ζ hζ hL heven D X x H hH n ι C t E ht hE
   have hg := ArithmeticThetaArithmeticHalfLinesR0237.field_component_geometry
     k L hL heven D X x

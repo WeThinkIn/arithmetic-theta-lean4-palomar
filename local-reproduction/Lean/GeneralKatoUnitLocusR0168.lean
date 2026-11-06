@@ -72,7 +72,25 @@ end GeneralKatoUnitLocus
 /-- The normalized Kato function is a unique regular unit on every nonempty
 open avoiding the actual multiplication kernel. -/
 theorem general_kato_unit_locus :
-∀ (F : Type u) [Field F] [CharZero F] (W : WeierstrassCurve F) [W.IsElliptic] (G : ArithmeticThetaGeneralEllipticKatoR0168.Law F W) (hG : ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw F W G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)], ∀ (c : ℕ), 1 < c → Nat.Coprime c 6 → ∀ (g : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField), ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction F W G c g → ∀ (U : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).Opens) [Nonempty U], (∀ x ∈ U, G.schemeNsmul c x ≠ ArithmeticThetaGeneralEllipticKatoR0168.originPoint F W) → ∃! a : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).presheaf.obj (Opposite.op U), (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).germToFunctionField U a = g ∧ IsUnit a := by
+    ∀ (F : Type u) [Field F] [CharZero F] (W : WeierstrassCurve F) [W.IsElliptic]
+      (G : ArithmeticThetaGeneralEllipticKatoR0168.Law F W)
+      (hG : ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw F W G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)],
+      ∀ (c : ℕ),
+        1 < c →
+          Nat.Coprime c 6 →
+            ∀ (g : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField),
+              ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction F W G c g →
+                ∀ (U : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).Opens) [Nonempty U],
+                  (∀ x ∈ U,
+                      G.schemeNsmul c x ≠ ArithmeticThetaGeneralEllipticKatoR0168.originPoint F W) →
+                    ∃! a :
+                      (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).presheaf.obj
+                        (Opposite.op U),
+                      (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).germToFunctionField U a =
+                          g ∧
+                        IsUnit a := by
   intro F _ _ W _ G hG _ _ c hc hc6 g hg U _ hU
   letI : SmoothOfRelativeDimension 1 (structureMap F W) :=
     WeierstrassProjModel.projModelStrCR_smoothOfRelativeDimension_one W.toProjective

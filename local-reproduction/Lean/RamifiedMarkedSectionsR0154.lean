@@ -91,7 +91,33 @@ open RamifiedPolygonTower RamifiedMarkedSections
 
 /-- Every unit-marked algebraized section has its prescribed ramified image. -/
 theorem ramified_marked_sections :
-    ∀ (k : Type u) [Field k] [CharZero k] (d : ℕ) (hd : 0 < d) (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (hrd : 0 < r*d) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (Tb : ArithmeticThetaInfinitesimalPolygonR0129.Tower k (r*d) hrd) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (Mb : ArithmeticThetaProjectiveEffectivityR0135.Model k Tb) (hMb : ArithmeticThetaProjectiveEffectivityR0135.IsModel k Tb Mb) (ρ : Fin d → (ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart k)) (hρ : ∀ q, ArithmeticThetaRamifiedPeriodR0154.IsChartRamification k d hd q (ρ q)) (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) (M.X)) (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j)) (χb : Fin (r*d) → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) (Mb.X)) (hχb : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k Mb j (χb j)) (F : Quiver.Hom (Mb.X) (M.X)) (hF : ArithmeticThetaRamifiedPeriodR0154.IsModelRamification k (hd := hd) T Tb M Mb ρ χ χb F) (i : Fin r) (a : kˣ) (p : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) (M.X)) (hp : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M i a p) (pb : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) (Mb.X)) (hpb : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k Mb (ArithmeticThetaRamifiedPeriodR0154.markedIndex r d hd i) a pb), CategoryTheory.CategoryStruct.comp pb F = CategoryTheory.CategoryStruct.comp (ArithmeticThetaRamifiedPeriodR0154.baseMorphism k d hd) p := by
+    ∀ (k : Type u) [Field k] [CharZero k] (d : ℕ) (hd : 0 < d) (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (hrd : 0 < r * d) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (Tb : ArithmeticThetaInfinitesimalPolygonR0129.Tower k (r * d) hrd)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (Mb : ArithmeticThetaProjectiveEffectivityR0135.Model k Tb)
+      (hMb : ArithmeticThetaProjectiveEffectivityR0135.IsModel k Tb Mb)
+      (ρ :
+        Fin d →
+          (ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart k))
+      (hρ : ∀ q, ArithmeticThetaRamifiedPeriodR0154.IsChartRamification k d hd q (ρ q))
+      (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) (M.X))
+      (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j))
+      (χb : Fin (r * d) → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) (Mb.X))
+      (hχb : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k Mb j (χb j))
+      (F : Quiver.Hom (Mb.X) (M.X))
+      (hF : ArithmeticThetaRamifiedPeriodR0154.IsModelRamification k (hd := hd) T Tb M Mb ρ χ χb F)
+      (i : Fin r) (a : kˣ)
+      (p : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) (M.X))
+      (hp : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M i a p)
+      (pb : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) (Mb.X))
+      (hpb :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k Mb
+          (ArithmeticThetaRamifiedPeriodR0154.markedIndex r d hd i) a pb),
+      CategoryTheory.CategoryStruct.comp pb F =
+        CategoryTheory.CategoryStruct.comp (ArithmeticThetaRamifiedPeriodR0154.baseMorphism k d hd)
+          p := by
   intro k _ _ d hd r hr h3 hrd T Tb M hM Mb hMb ρ hρ χ hχ χb hχb F hF i a p hp pb hpb
   apply RamifiedMarkedSections.section_ext k M hM (baseMorphism k d hd)
   · rw [Category.assoc, hF.1, ← Category.assoc, hpb.1, Category.id_comp]

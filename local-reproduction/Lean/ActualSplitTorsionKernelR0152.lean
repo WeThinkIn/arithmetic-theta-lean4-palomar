@@ -143,7 +143,28 @@ open ActualSplitTorsionKernel
 
 /-- The full multiplication kernel is the disjoint union of the actual marked sections. -/
 theorem actual_split_torsion_kernel :
-    ∀ (k : Type u) [Field k] [CharZero k] (c : ℕ) (hc : 1 < c) (hcop : Nat.Coprime c 6) (hr : 0 < 2*c) (h3 : 3 ≤ 2*c) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k (2*c) hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex (2*c) hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] (ζ : kˣ) (hζ : IsPrimitiveRoot (ζ : k) c) (p : Fin c × Fin c → Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hp : ∀ ab, ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaKatoAnnularR0152.torsionIndex (r := 2*c) c ab.1) (ζ ^ ab.2.val) (p ab)), ArithmeticThetaKatoAnnularR0152.SplitKernel k M s hs.1 G p (fun ab => (hp ab).1) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (c : ℕ) (hc : 1 < c) (hcop : Nat.Coprime c 6)
+      (hr : 0 < 2 * c) (h3 : 3 ≤ 2 * c)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k (2 * c) hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex (2 * c) hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      (ζ : kˣ) (hζ : IsPrimitiveRoot (ζ : k) c)
+      (p : Fin c × Fin c → Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hp :
+        ∀ ab,
+          ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+            (ArithmeticThetaKatoAnnularR0152.torsionIndex (r := 2 * c) c ab.1) (ζ ^ ab.2.val)
+            (p ab)),
+      ArithmeticThetaKatoAnnularR0152.SplitKernel k M s hs.1 G p (fun ab => (hp ab).1) := by
   intro k _ _ c hc hcop hr h3 T M hM s hs G hG _ _ ζ hζ p hp
   obtain ⟨hfin, het, _, hdegree⟩ := multiplication_finite_etale_degree
     k (2*c) hr h3 T (even_two_mul c) M hM s hs G hG c (by omega)

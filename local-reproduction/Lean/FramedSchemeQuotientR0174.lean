@@ -853,7 +853,12 @@ open ArithmeticThetaRelativeCyclicQuotientR0173.FramedSchemeQuotientR0174
 
 /-- Construct the finite étale cyclic quotient and a frame of its actual Hodge sheaf. -/
 theorem framed_scheme_quotient :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (n : ℕ) (hn : 0 < n) (P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G n), Nonempty (ArithmeticThetaCyclicPresentationR0174.FramedQuotient R W G P) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (n : ℕ) (hn : 0 < n)
+      (P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G n),
+      Nonempty (ArithmeticThetaCyclicPresentationR0174.FramedQuotient R W G P) := by
   intro R _ _ _ _ _ W _ G hG n hn P
   obtain ⟨Q⟩ := schemeQuotient_nonempty R W G hG hn P
   exact ⟨{

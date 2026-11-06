@@ -45,7 +45,33 @@ private lemma nonzero_value_of_order_zero (F : Type u) [Field F]
 /-- Every nonidentity marked N-torsion point prime to c has a unique nonzero
 value, obtained from a unit in its actual local ring. -/
 theorem marked_kato_regularity :
-∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] (c : ℕ) (hc : 1 < c) (hcop : Nat.Coprime c 6) (j : Fin r) (a : kˣ) (p : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hp : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M j a p) (N : ℕ) (hN : 0 < N) (hcopN : Nat.Coprime c N) (hidx : r ∣ N*j.val) (haN : (a : k)^N = 1) (hne : j.val ≠ 0 ∨ (a : k) ≠ 1) (g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))), ArithmeticThetaKatoExistenceR0151.HasKatoDivisor k M s hs.1 G c g → ∃! v : LaurentSeries k, v ≠ 0 ∧ ArithmeticThetaMarkedKatoValuesR0159.HasValue (LaurentSeries k) (ArithmeticThetaGenericEvaluationR0140.genericScheme k M) (ArithmeticThetaGenericEvaluationR0140.genericPoint k M p hp.1) g (v) := by
+    ∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      (c : ℕ) (hc : 1 < c) (hcop : Nat.Coprime c 6) (j : Fin r) (a : kˣ)
+      (p : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hp : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M j a p) (N : ℕ) (hN : 0 < N)
+      (hcopN : Nat.Coprime c N) (hidx : r ∣ N * j.val) (haN : (a : k) ^ N = 1)
+      (hne : j.val ≠ 0 ∨ (a : k) ≠ 1)
+      (g :
+        (AlgebraicGeometry.Scheme.functionField
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))),
+      ArithmeticThetaKatoExistenceR0151.HasKatoDivisor k M s hs.1 G c g →
+        ∃! v : LaurentSeries k,
+          v ≠ 0 ∧
+            ArithmeticThetaMarkedKatoValuesR0159.HasValue (LaurentSeries k)
+              (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)
+              (ArithmeticThetaGenericEvaluationR0140.genericPoint k M p hp.1) g (v) := by
   intro k _ _ r hr h3 he T M hM s hs G hG _ _ c hc hcop j a p hp N hN hcopN hidx haN hne g hg
   let P := pointOver k M (𝟙 _) p hp.1
   let x := genericPoint k M p hp.1 (IsLocalRing.closedPoint (LaurentSeries k))

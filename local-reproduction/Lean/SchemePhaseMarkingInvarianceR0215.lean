@@ -74,7 +74,16 @@ open CategoryTheory AlgebraicGeometry
 
 /-- Equality of the full regular functions, tested over the original affine rings. -/
 theorem scheme_phase_marking_invariance :
-∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4), ∀ (M' : ArithmeticThetaSchemeLevelR0204.FullLevel E 4) (A : ArithmeticThetaFourTorsion.Mat4), A.det = 1 → ArithmeticThetaSchemeFourCharacterR0215.Changes E M M' A → ∀ z z' : S.presheaf.obj (Opposite.op ⊤), ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z → ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M' z' → z' = z := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4),
+      ∀ (M' : ArithmeticThetaSchemeLevelR0204.FullLevel E 4) (A : ArithmeticThetaFourTorsion.Mat4),
+        A.det = 1 →
+          ArithmeticThetaSchemeFourCharacterR0215.Changes E M M' A →
+            ∀ z z' : S.presheaf.obj (Opposite.op ⊤),
+              ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z →
+                ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M' z' → z' = z := by
   intro k _ _ S σ E M N A hA hN z z' hz hz'
   apply SchemeMillerPhase.section_ext E M k σ
   intro P

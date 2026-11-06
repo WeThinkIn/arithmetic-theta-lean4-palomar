@@ -18,7 +18,40 @@ open ArithmeticThetaLatticeSectionsR0188.MatrixFamilyGlobalSectionsR0188
 identifies their full series in the specified common frame, including empty
 products, empty families, and zero coefficient vectors. -/
 theorem field_coset_section_expansion :
-∀ (k : Type) [Field k] [CharZero k] (n h : ℕ) (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h) (U : ArithmeticThetaLatticeSectionsR0188.Indexing A), ArithmeticThetaArithmeticFieldR0231.FormalIdentity k A U → ∀ (Y : AlgebraicGeometry.Scheme.{0}) (b : Quiver.Hom Y (AlgebraicGeometry.Spec (CommRingCat.of k))) (g : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk k) Y), CategoryTheory.CategoryStruct.comp g b = ArithmeticThetaTateCuspsR0181.diskStructure k → ∀ (M : Y.Modules) (e : ArithmeticThetaSimultaneousUnaryR0187.Sections (ArithmeticThetaTateCuspsR0181.Disk k) ((AlgebraicGeometry.Scheme.Modules.pullback g).obj M)), ArithmeticThetaRelativeDiscriminantR0171.IsFrame _ ⊤ e → ∀ (t : Fin U.count → ArithmeticThetaSimultaneousUnaryR0187.Sections Y M), (∀ j, ArithmeticThetaPullback.pullbackGlobalSection g M (t j) = ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k) (ArithmeticThetaSimultaneousUnaryR0187.unarySeries k (ArithmeticThetaLatticeSectionsR0188.commonN A) (U.pair j).1 (U.pair j).2) • e) → ∀ c : Fin h → k, ArithmeticThetaNormalizedSections.pullbackPowerSection g M n (∑ i : Fin h, ArithmeticThetaLatticeSectionsR0188.baseScalar k b (c i) • ∑ a : ArithmeticThetaLatticeSectionsR0188.Cosets A i, ArithmeticThetaTensorPower.tensorProductSection Y M n ⊤ (fun j => t (U.index i a j))) = ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k) (ArithmeticThetaArithmeticFieldR0231.expanded k A c) • ArithmeticThetaTensorPower.tensorPowerSection (ArithmeticThetaTateCuspsR0181.Disk k) ((AlgebraicGeometry.Scheme.Modules.pullback g).obj M) n ⊤ e := by
+    ∀ (k : Type) [Field k] [CharZero k] (n h : ℕ)
+      (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h)
+      (U : ArithmeticThetaLatticeSectionsR0188.Indexing A),
+      ArithmeticThetaArithmeticFieldR0231.FormalIdentity k A U →
+        ∀ (Y : AlgebraicGeometry.Scheme.{0})
+          (b : Quiver.Hom Y (AlgebraicGeometry.Spec (CommRingCat.of k)))
+          (g : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk k) Y),
+          CategoryTheory.CategoryStruct.comp g b = ArithmeticThetaTateCuspsR0181.diskStructure k →
+            ∀ (M : Y.Modules)
+              (e :
+                ArithmeticThetaSimultaneousUnaryR0187.Sections
+                  (ArithmeticThetaTateCuspsR0181.Disk k)
+                  ((AlgebraicGeometry.Scheme.Modules.pullback g).obj M)),
+              ArithmeticThetaRelativeDiscriminantR0171.IsFrame _ ⊤ e →
+                ∀ (t : Fin U.count → ArithmeticThetaSimultaneousUnaryR0187.Sections Y M),
+                  (∀ j,
+                      ArithmeticThetaPullback.pullbackGlobalSection g M (t j) =
+                        ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k)
+                            (ArithmeticThetaSimultaneousUnaryR0187.unarySeries k
+                              (ArithmeticThetaLatticeSectionsR0188.commonN A) (U.pair j).1
+                              (U.pair j).2) •
+                          e) →
+                    ∀ c : Fin h → k,
+                      ArithmeticThetaNormalizedSections.pullbackPowerSection g M n
+                          (∑ i : Fin h,
+                            ArithmeticThetaLatticeSectionsR0188.baseScalar k b (c i) •
+                              ∑ a : ArithmeticThetaLatticeSectionsR0188.Cosets A i,
+                                ArithmeticThetaTensorPower.tensorProductSection Y M n ⊤
+                                  (fun j => t (U.index i a j))) =
+                        ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k)
+                            (ArithmeticThetaArithmeticFieldR0231.expanded k A c) •
+                          ArithmeticThetaTensorPower.tensorPowerSection
+                            (ArithmeticThetaTateCuspsR0181.Disk k)
+                            ((AlgebraicGeometry.Scheme.Modules.pullback g).obj M) n ⊤ e := by
   intro k _ _ n h A U hformal Y b g hgb M e he t ht c
   classical
   have hp (a : Γ(Y, ⊤)) (v : Sections Y (tensorPower Y M n)) :

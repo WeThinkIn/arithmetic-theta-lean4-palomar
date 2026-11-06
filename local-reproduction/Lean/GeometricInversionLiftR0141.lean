@@ -734,7 +734,27 @@ open GeometricInversionLiftR0141
 
 /-- The unique symmetric theta lift above the actual generic inversion map. -/
 theorem geometric_inversion_lift :
-    ∀ (k : Type u) [Field k] [CharZero k], ∀ (m : ℕ) (hm : 0 < m) (he : Even m), ∀ (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k (2*m) (Nat.mul_pos (by decide) hm)) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex (2*m) (Nat.mul_pos (by decide) hm)) 1 s) (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → CategoryTheory.Iso M.X M.X) (inv : CategoryTheory.Iso M.X M.X) (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv), ∃! eS : ArithmeticThetaGeometricLiftsR0141.Lift k M s m (ArithmeticThetaGeometricLiftsR0141.inversionMap k M rot scal inv ha), ArithmeticThetaGeometricLiftsR0141.Reverses k M s m m hm (ArithmeticThetaGeometricLiftsR0141.inversionMap k M rot scal inv ha) eS (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs) := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (m : ℕ) (hm : 0 < m) (he : Even m),
+        ∀
+          (T :
+            ArithmeticThetaInfinitesimalPolygonR0129.Tower k (2 * m) (Nat.mul_pos (by decide) hm))
+          (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+          (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+          (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+          (hs :
+            ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+              (ArithmeticThetaIdentitySectionsR0138.zeroIndex (2 * m) (Nat.mul_pos (by decide) hm))
+              1 s)
+          (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → CategoryTheory.Iso M.X M.X)
+          (inv : CategoryTheory.Iso M.X M.X)
+          (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv),
+          ∃! eS :
+            ArithmeticThetaGeometricLiftsR0141.Lift k M s m
+              (ArithmeticThetaGeometricLiftsR0141.inversionMap k M rot scal inv ha),
+            ArithmeticThetaGeometricLiftsR0141.Reverses k M s m m hm
+              (ArithmeticThetaGeometricLiftsR0141.inversionMap k M rot scal inv ha) eS
+              (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs) := by
   intro k _ _ m hm he T M hM s hs rot scal iv ha
   let e := genericLift k (ArithmeticThetaGenericEvaluationR0140.thetaChartBound m hm he) M hM s hs rot scal iv ha m
   have h := genericLift_reverses k m hm he M hM s hs rot scal iv ha

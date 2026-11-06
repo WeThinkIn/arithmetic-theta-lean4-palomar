@@ -310,7 +310,24 @@ open ArithmeticThetaRamifiedPeriodR0154
 
 /-- The full literal quotient commutes with every specified ramified chart pullback. -/
 theorem ramified_literal_quotient :
-    ∀ (k : Type) [Field k] [CharZero k] (c : ℕ) (hc : 1 < c) (hcop : Nat.Coprime c 6) (ζ : k) (hζ : IsPrimitiveRoot ζ c) (d : ℕ) (hd : 0 < d) (hrd : 0 < (2*c)*d) (hdiv : c ∣ (2*c)*d) (ρ : Fin d → (ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart k)) (hρ : ∀ q, ArithmeticThetaRamifiedPeriodR0154.IsChartRamification k d hd q (ρ q)) (E : Fin d → (ArithmeticThetaKatoAnnularR0152.ChartField k →+* ArithmeticThetaKatoAnnularR0152.ChartField k)) (hE : ∀ q, ArithmeticThetaRamifiedPeriodR0154.ExtendsChart k (ρ q) (E q)), ∀ j : Fin ((2*c)*d), E (ArithmeticThetaRamifiedPeriodR0154.residueIndex (2*c) d hd j) (ArithmeticThetaRatioRegularityR0067.LocalTheta k c ζ hc hcop hζ (ArithmeticThetaRamifiedPeriodR0154.coarseIndex (2*c) d hd j)) = ArithmeticThetaAnnularNormBridgeR0156.literalTheta k ((2*c)*d) c hrd hc hdiv hcop ζ hζ j := by
+    ∀ (k : Type) [Field k] [CharZero k] (c : ℕ) (hc : 1 < c) (hcop : Nat.Coprime c 6) (ζ : k)
+      (hζ : IsPrimitiveRoot ζ c) (d : ℕ) (hd : 0 < d) (hrd : 0 < (2 * c) * d)
+      (hdiv : c ∣ (2 * c) * d)
+      (ρ :
+        Fin d →
+          (ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart k))
+      (hρ : ∀ q, ArithmeticThetaRamifiedPeriodR0154.IsChartRamification k d hd q (ρ q))
+      (E :
+        Fin d →
+          (ArithmeticThetaKatoAnnularR0152.ChartField k →+*
+            ArithmeticThetaKatoAnnularR0152.ChartField k))
+      (hE : ∀ q, ArithmeticThetaRamifiedPeriodR0154.ExtendsChart k (ρ q) (E q)),
+      ∀ j : Fin ((2 * c) * d),
+        E (ArithmeticThetaRamifiedPeriodR0154.residueIndex (2 * c) d hd j)
+            (ArithmeticThetaRatioRegularityR0067.LocalTheta k c ζ hc hcop hζ
+              (ArithmeticThetaRamifiedPeriodR0154.coarseIndex (2 * c) d hd j)) =
+          ArithmeticThetaAnnularNormBridgeR0156.literalTheta k ((2 * c) * d) c hrd hc hdiv hcop ζ hζ
+            j := by
   intro k _ _ c hc hcop ζ hζ d hd hrd hdiv ρ hρ E hE j
   let i := coarseIndex (2*c) d hd j
   let q := residueIndex (2*c) d hd j

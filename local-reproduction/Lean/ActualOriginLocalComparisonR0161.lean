@@ -288,7 +288,36 @@ open ActualOriginLocalComparisonR0161
 /-- The actual identity-stalk Taylor map preserves the specified field expansion,
 residue evaluation, and every power of the maximal ideal. -/
 theorem actual_origin_local_comparison :
-∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X) (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j)) (φ : Fin r → ((AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* ArithmeticThetaKatoAnnularR0152.ChartField k)) (hφ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M (χ j) (φ j)) (σ : ArithmeticThetaOriginInitialR0161.Chart k →+* ArithmeticThetaOriginInitialR0161.Bivariate k) (hσ : ArithmeticThetaOriginInitialR0161.IsChartTaylor k σ) (Ψ : ArithmeticThetaOriginInitialR0161.ChartField k →+* ArithmeticThetaOriginInitialR0161.Iterated k) (hΨ : ArithmeticThetaOriginInitialR0161.ExtendsTaylor k σ Ψ), ∃! κ : ArithmeticThetaOriginInitialR0161.OriginStalk k M s hs.1 →+* PowerSeries (LaurentSeries k), ArithmeticThetaOriginInitialR0161.IsOriginTaylor k M s hs.1 (Ψ.comp (φ (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr))) κ := by
+    ∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X)
+      (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j))
+      (φ :
+        Fin r →
+          ((AlgebraicGeometry.Scheme.functionField
+              (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+            ArithmeticThetaKatoAnnularR0152.ChartField k))
+      (hφ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M (χ j) (φ j))
+      (σ :
+        ArithmeticThetaOriginInitialR0161.Chart k →+* ArithmeticThetaOriginInitialR0161.Bivariate k)
+      (hσ : ArithmeticThetaOriginInitialR0161.IsChartTaylor k σ)
+      (Ψ :
+        ArithmeticThetaOriginInitialR0161.ChartField k →+*
+          ArithmeticThetaOriginInitialR0161.Iterated k)
+      (hΨ : ArithmeticThetaOriginInitialR0161.ExtendsTaylor k σ Ψ),
+      ∃! κ :
+        ArithmeticThetaOriginInitialR0161.OriginStalk k M s hs.1 →+* PowerSeries (LaurentSeries k),
+        ArithmeticThetaOriginInitialR0161.IsOriginTaylor k M s hs.1
+          (Ψ.comp (φ (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr))) κ := by
   intro k _ _ r hr h3 he T M hM s hs _ _ χ hχ φ hφ σ hσ Ψ hΨ
   let f := arc k M (χ (zeroIndex r hr)) (hχ _).1 σ hσ
   let E := Ψ.comp (φ (zeroIndex r hr))

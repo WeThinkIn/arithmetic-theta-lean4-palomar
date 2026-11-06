@@ -7,7 +7,13 @@ noncomputable section
 universe u
 namespace ArithmeticThetaMillerR0114
 set_option autoImplicit false
-private theorem half_tangent_ideal_equality : ∀ (k : Type u) [Field k] [CharZero k] [DecidableEq k] (e : Fin 3 → k), Distinct k e → ∀ (i : Fin 3) (x y : k), IsHalf k e i x y → Ideal.span ({tangentClass k e x y} : Set (Coord k e)) = pointIdeal k e x y ^ 2 * pointIdeal k e (e i) 0 := by
+private theorem half_tangent_ideal_equality :
+    ∀ (k : Type u) [Field k] [CharZero k] [DecidableEq k] (e : Fin 3 → k),
+      Distinct k e →
+        ∀ (i : Fin 3) (x y : k),
+          IsHalf k e i x y →
+            Ideal.span ({tangentClass k e x y} : Set (Coord k e)) =
+              pointIdeal k e x y ^ 2 * pointIdeal k e (e i) 0 := by
   intro k _ _ _ e he i x y hh
   rcases hh with ⟨hR, hP, hd⟩
   let W := Curve k e
@@ -97,7 +103,13 @@ private theorem half_tangent_ideal_equality : ∀ (k : Type u) [Field k] [CharZe
   simpa [tangentClass, tangentSlope, pointIdeal, W, Curve, WeierstrassCurve.Affine.CoordinateRing.YIdeal,
     WeierstrassCurve.Affine.CoordinateRing.XYIdeal, V] using htargetF
 
-private theorem half_tangent_norm : ∀ (k : Type u) [Field k] [CharZero k] [DecidableEq k] (e : Fin 3 → k), Distinct k e → ∀ (i : Fin 3) (x y : k), IsHalf k e i x y → Algebra.norm (Polynomial k) (tangentClass k e x y) = -((Polynomial.X - Polynomial.C x) ^ 2 * (Polynomial.X - Polynomial.C (e i))) := by
+private theorem half_tangent_norm :
+    ∀ (k : Type u) [Field k] [CharZero k] [DecidableEq k] (e : Fin 3 → k),
+      Distinct k e →
+        ∀ (i : Fin 3) (x y : k),
+          IsHalf k e i x y →
+            Algebra.norm (Polynomial k) (tangentClass k e x y) =
+              -((Polynomial.X - Polynomial.C x) ^ 2 * (Polynomial.X - Polynomial.C (e i))) := by
   intro k _ _ _ e he i x y hh
   rcases hh with ⟨hR, hP, hd⟩
   let W := Curve k e
@@ -142,7 +154,17 @@ private theorem half_tangent_norm : ∀ (k : Type u) [Field k] [CharZero k] [Dec
 /-- The tangent to an actual half has affine ideal multiplicities two and one,
 and its polynomial norm has the corresponding signed factorization. -/
 theorem half_tangent_ideal :
-    ∀ (k : Type u) [Field k] [CharZero k] [DecidableEq k] (e : Fin 3 → k), ArithmeticThetaMillerR0114.Distinct k e → ∀ (i : Fin 3) (x y : k), ArithmeticThetaMillerR0114.IsHalf k e i x y → (Ideal.span ({ArithmeticThetaMillerR0114.tangentClass k e x y} : Set (ArithmeticThetaMillerR0114.Coord k e)) = ArithmeticThetaMillerR0114.pointIdeal k e x y ^ 2 * ArithmeticThetaMillerR0114.pointIdeal k e (e i) 0) ∧ Algebra.norm (Polynomial k) (ArithmeticThetaMillerR0114.tangentClass k e x y) = -((Polynomial.X - Polynomial.C x) ^ 2 * (Polynomial.X - Polynomial.C (e i))) := by
+    ∀ (k : Type u) [Field k] [CharZero k] [DecidableEq k] (e : Fin 3 → k),
+      ArithmeticThetaMillerR0114.Distinct k e →
+        ∀ (i : Fin 3) (x y : k),
+          ArithmeticThetaMillerR0114.IsHalf k e i x y →
+            (Ideal.span
+                  ({ArithmeticThetaMillerR0114.tangentClass k e x y} :
+                    Set (ArithmeticThetaMillerR0114.Coord k e)) =
+                ArithmeticThetaMillerR0114.pointIdeal k e x y ^ 2 *
+                  ArithmeticThetaMillerR0114.pointIdeal k e (e i) 0) ∧
+              Algebra.norm (Polynomial k) (ArithmeticThetaMillerR0114.tangentClass k e x y) =
+                -((Polynomial.X - Polynomial.C x) ^ 2 * (Polynomial.X - Polynomial.C (e i))) := by
   intro k _ _ _ e he i x y hh
   exact ⟨half_tangent_ideal_equality k e he i x y hh, half_tangent_norm k e he i x y hh⟩
 

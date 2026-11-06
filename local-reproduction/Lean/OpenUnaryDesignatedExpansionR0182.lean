@@ -3314,7 +3314,46 @@ open OpenDiscriminantFullTateExpansionR0182
 
 /-- Exact designated expansion of the same normalized open section. -/
 theorem open_unary_designated_expansion :
-∀ (k : Type) [Field k] [CharZero k] (m N : ℕ) (hm : 0 < m) (hmeven : Even m) (hN : 0 < N) (hNeven : Even N) (hmN : m ∣ N) (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (24*N^2)) (V : ArithmeticThetaBoundaryHodgeR0182.Test k (24*N^2) D) (ζ : k), IsPrimitiveRoot ζ (24*N^2) → ArithmeticThetaTateCuspsR0181.CanonicalMarking k (24*N^2) ζ V.level → ∀ (Q : ArithmeticThetaOpenHodgeR0180.Quotient D.atlas.quotient.ring (ArithmeticThetaOpenHodgeR0180.levelFamily k (24*N^2) D.atlas) m (ArithmeticThetaOpenHodgeR0180.kernelPoint k (24*N^2) D.atlas m)) (d : (ArithmeticThetaOpenHodgeR0180.power Q.target 24).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaOpenHodgeR0180.IsD2 Q.target d → ∀ (ν : ℤ), (-(m : ℤ) ≤ 2*ν ∧ 2*ν < (m : ℤ)) → ∀ (v : D.atlas.quotient.ring) (F : (ArithmeticThetaOpenHodgeR0180.power D.atlas.descent.family (((1+12*N)^2-1)/2)).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaOpenHodgeR0180.IsKatoValue Q.target (1+12*N) (CategoryTheory.CategoryStruct.comp (ArithmeticThetaOpenHodgeR0180.liftPoint k (24*N^2) D.atlas m N (ArithmeticThetaBoundaryHodgeR0182.unaryResidue m N ν) (N/2)) Q.arrow.map) v → ArithmeticThetaOpenHodgeR0180.IsNormalizedPower k (24*N^2) D.atlas m N Q d v F → ArithmeticThetaBoundaryHodgeR0182.pullAmbientPower k (24*N^2) V (((1+12*N)^2-1)/2) F = ArithmeticThetaOpenHodgeR0180.scalar (LaurentSeries k) (ArithmeticThetaUnaryKatoPowerR0160.unary k (N^2/m) m ν ^ ((1+12*N)^2-1)) • ArithmeticThetaTensorPower.tensorPowerSection (ArithmeticThetaTateCuspsR0181.Puncture k) (ArithmeticThetaRelativeDiscriminantR0171.Hodge (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k (24*N^2))) (((1+12*N)^2-1)/2) ⊤ (ArithmeticThetaBoundaryHodgeR0182.hodgeGenerator k (24*N^2) V.differential) := by
+    ∀ (k : Type) [Field k] [CharZero k] (m N : ℕ) (hm : 0 < m) (hmeven : Even m) (hN : 0 < N)
+      (hNeven : Even N) (hmN : m ∣ N)
+      (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (24 * N ^ 2))
+      (V : ArithmeticThetaBoundaryHodgeR0182.Test k (24 * N ^ 2) D) (ζ : k),
+      IsPrimitiveRoot ζ (24 * N ^ 2) →
+        ArithmeticThetaTateCuspsR0181.CanonicalMarking k (24 * N ^ 2) ζ V.level →
+          ∀
+            (Q :
+              ArithmeticThetaOpenHodgeR0180.Quotient D.atlas.quotient.ring
+                (ArithmeticThetaOpenHodgeR0180.levelFamily k (24 * N ^ 2) D.atlas) m
+                (ArithmeticThetaOpenHodgeR0180.kernelPoint k (24 * N ^ 2) D.atlas m))
+            (d : (ArithmeticThetaOpenHodgeR0180.power Q.target 24).presheaf.obj (Opposite.op ⊤)),
+            ArithmeticThetaOpenHodgeR0180.IsD2 Q.target d →
+              ∀ (ν : ℤ),
+                (-(m : ℤ) ≤ 2 * ν ∧ 2 * ν < (m : ℤ)) →
+                  ∀ (v : D.atlas.quotient.ring)
+                    (F :
+                      (ArithmeticThetaOpenHodgeR0180.power D.atlas.descent.family
+                            (((1 + 12 * N) ^ 2 - 1) / 2)).presheaf.obj
+                        (Opposite.op ⊤)),
+                    ArithmeticThetaOpenHodgeR0180.IsKatoValue Q.target (1 + 12 * N)
+                        (CategoryTheory.CategoryStruct.comp
+                          (ArithmeticThetaOpenHodgeR0180.liftPoint k (24 * N ^ 2) D.atlas m N
+                            (ArithmeticThetaBoundaryHodgeR0182.unaryResidue m N ν) (N / 2))
+                          Q.arrow.map)
+                        v →
+                      ArithmeticThetaOpenHodgeR0180.IsNormalizedPower k (24 * N ^ 2) D.atlas m N Q d
+                          v F →
+                        ArithmeticThetaBoundaryHodgeR0182.pullAmbientPower k (24 * N ^ 2) V
+                            (((1 + 12 * N) ^ 2 - 1) / 2) F =
+                          ArithmeticThetaOpenHodgeR0180.scalar (LaurentSeries k)
+                              (ArithmeticThetaUnaryKatoPowerR0160.unary k (N ^ 2 / m) m ν ^
+                                ((1 + 12 * N) ^ 2 - 1)) •
+                            ArithmeticThetaTensorPower.tensorPowerSection
+                              (ArithmeticThetaTateCuspsR0181.Puncture k)
+                              (ArithmeticThetaRelativeDiscriminantR0171.Hodge (LaurentSeries k)
+                                (ArithmeticThetaTateCuspsR0181.TateCurve k (24 * N ^ 2)))
+                              (((1 + 12 * N) ^ 2 - 1) / 2) ⊤
+                              (ArithmeticThetaBoundaryHodgeR0182.hodgeGenerator k (24 * N ^ 2)
+                                V.differential) := by
 
   intro k _ _ m N hm hmeven hN hNeven hmN D V ζ hζ hmark Q d hd ν hν v F hv hF
   classical

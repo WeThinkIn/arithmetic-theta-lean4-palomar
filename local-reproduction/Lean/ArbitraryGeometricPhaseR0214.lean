@@ -586,7 +586,17 @@ end ArbitraryGeometricPhase
 Its square identity is proved in that ring, and primitivity is restricted to
 nontrivial rings. -/
 theorem arbitrary_geometric_phase :
-∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W), ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G → ∀ M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)), (∃! z : R, ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M z) ∧ (∀ z : R, ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M z → ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase R W G M z ∧ IsUnit z ∧ z^2 = -1 ∧ (Nontrivial R → IsPrimitiveRoot z 4)) := by
+    ∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W),
+      ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G →
+        ∀ M :
+          ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4
+            (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)),
+          (∃! z : R, ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M z) ∧
+            (∀ z : R,
+              ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M z →
+                ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase R W G M z ∧
+                  IsUnit z ∧ z ^ 2 = -1 ∧ (Nontrivial R → IsPrimitiveRoot z 4)) := by
   intro R _ _ W _ G hG M
   refine ⟨ArbitraryGeometricPhase.phase_exists_unique W G hG M, ?_⟩
   intro z hz

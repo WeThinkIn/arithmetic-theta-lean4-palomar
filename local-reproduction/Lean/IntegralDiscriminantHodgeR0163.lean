@@ -155,7 +155,56 @@ open IntegralDiscriminantHodgeR0163
 
 /-- The unique integral extension, with full coefficient and exact nonzero order. -/
 theorem integral_discriminant_hodge :
-∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)], ∀ (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2) (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3), ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X → ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y → ∀ (δ : ArithmeticThetaHodgeFourTorsionR0147.Frame k M), ArithmeticThetaCompactifiedDifferentialR0145.IsGlobalDifferentialFrame k M s X Y δ → ∀ (b : ArithmeticThetaIntegralHodgeR0149.GenericComparison k M), ArithmeticThetaIntegralHodgeR0149.IsGenericComparison k M b → ∀ (E : ArithmeticThetaIntegralHodgeR0149.IntegralFrame k M s), ArithmeticThetaIntegralHodgeR0149.ExtendsFrame k M s hs.1 b E δ → ∀ (g : AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)), ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G 5 g → ∃ q : ((ArithmeticThetaHodgeInitialR0163.IntegralPower k M s 24).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaHodgeInitialR0163.RepresentsInitial k M s hs.1 g (ArithmeticThetaHodgeInitialR0163.powerRestriction k M s hs.1 b 24 q) ∧ (∀ q' : ((ArithmeticThetaHodgeInitialR0163.IntegralPower k M s 24).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaHodgeInitialR0163.RepresentsInitial k M s hs.1 g (ArithmeticThetaHodgeInitialR0163.powerRestriction k M s hs.1 b 24 q') → q' = q) ∧ ArithmeticThetaHodgeInitialR0163.powerCoefficient k M s E 24 q = ArithmeticThetaHodgeInitialR0163.discriminantSeries k r ∧ ArithmeticThetaHodgeInitialR0163.powerCoefficient k M s E 24 q ≠ 0 ∧ (ArithmeticThetaHodgeInitialR0163.powerCoefficient k M s E 24 q).order = ((2*r : ℕ) : ENat) := by
+    ∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)],
+      ∀ (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2)
+        (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3),
+        ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X →
+          ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y →
+            ∀ (δ : ArithmeticThetaHodgeFourTorsionR0147.Frame k M),
+              ArithmeticThetaCompactifiedDifferentialR0145.IsGlobalDifferentialFrame k M s X Y δ →
+                ∀ (b : ArithmeticThetaIntegralHodgeR0149.GenericComparison k M),
+                  ArithmeticThetaIntegralHodgeR0149.IsGenericComparison k M b →
+                    ∀ (E : ArithmeticThetaIntegralHodgeR0149.IntegralFrame k M s),
+                      ArithmeticThetaIntegralHodgeR0149.ExtendsFrame k M s hs.1 b E δ →
+                        ∀
+                          (g :
+                            AlgebraicGeometry.Scheme.functionField
+                              (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)),
+                          ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G 5 g →
+                            ∃ q :
+                              ((ArithmeticThetaHodgeInitialR0163.IntegralPower k M s
+                                    24).presheaf.obj
+                                (Opposite.op ⊤)),
+                              ArithmeticThetaHodgeInitialR0163.RepresentsInitial k M s hs.1 g
+                                  (ArithmeticThetaHodgeInitialR0163.powerRestriction k M s hs.1 b 24
+                                    q) ∧
+                                (∀ q' :
+                                    ((ArithmeticThetaHodgeInitialR0163.IntegralPower k M s
+                                          24).presheaf.obj
+                                      (Opposite.op ⊤)),
+                                    ArithmeticThetaHodgeInitialR0163.RepresentsInitial k M s hs.1 g
+                                        (ArithmeticThetaHodgeInitialR0163.powerRestriction k M s
+                                          hs.1 b 24 q') →
+                                      q' = q) ∧
+                                  ArithmeticThetaHodgeInitialR0163.powerCoefficient k M s E 24 q =
+                                      ArithmeticThetaHodgeInitialR0163.discriminantSeries k r ∧
+                                    ArithmeticThetaHodgeInitialR0163.powerCoefficient k M s E 24 q ≠
+                                        0 ∧
+                                      (ArithmeticThetaHodgeInitialR0163.powerCoefficient k M s E 24
+                                            q).order =
+                                        ((2 * r : ℕ) : ENat) := by
   intro k _ _ r hr h3 he T M hM s hs G hG _ _ X Y hX hY δ hδ b hb E hE g hg
   obtain ⟨d, hd, hdu, hexp⟩ := geometric_discriminant_hodge
     k r hr h3 he T M hM s hs G hG X Y hX hY g hg

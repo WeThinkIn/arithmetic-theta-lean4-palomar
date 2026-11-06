@@ -599,7 +599,31 @@ open RelativeKatoFiberSpecialization
 /-- The accepted relative Kato function specializes to the accepted normalized
 function over every field base change, on all nonempty sheaf opens. -/
 theorem relative_kato_fiber_specialization :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (F : Type u) [Field F] [Algebra ℚ F] (Wf : WeierstrassCurve F) [Wf.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve F Wf)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve F Wf)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve F Wf)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve F Wf)] (Gf : ArithmeticThetaRelativeKatoR0169.Law F Wf) (hGf : ArithmeticThetaRelativeKatoR0169.IsOriginLaw F Wf Gf) (ι : R →+* F) (b : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve F Wf) (ArithmeticThetaRelativeKatoR0169.Curve R W)) (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G F Wf Gf ι b) (c : ℕ) (hc : 1 < c) (hc6 : Nat.Coprime c 6) (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField) (hg : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R W G c g) (gf : (ArithmeticThetaRelativeKatoR0169.Curve F Wf).functionField) (hgf : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized F Wf Gf c gf), ArithmeticThetaRelativeKatoNaturalityR0170.UnitPullback R W G F Wf b c g gf := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (F : Type u) [Field F] [Algebra ℚ F]
+      (Wf : WeierstrassCurve F) [Wf.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve F Wf)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve F Wf)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve F Wf)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve F Wf)]
+      (Gf : ArithmeticThetaRelativeKatoR0169.Law F Wf)
+      (hGf : ArithmeticThetaRelativeKatoR0169.IsOriginLaw F Wf Gf) (ι : R →+* F)
+      (b :
+        Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve F Wf)
+          (ArithmeticThetaRelativeKatoR0169.Curve R W))
+      (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G F Wf Gf ι b) (c : ℕ)
+      (hc : 1 < c) (hc6 : Nat.Coprime c 6)
+      (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField)
+      (hg : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R W G c g)
+      (gf : (ArithmeticThetaRelativeKatoR0169.Curve F Wf).functionField)
+      (hgf : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized F Wf Gf c gf),
+      ArithmeticThetaRelativeKatoNaturalityR0170.UnitPullback R W G F Wf b c g gf := by
   intro R _ _ _ _ _ W _ _ _ _ _ G hG F _ _ Wf _ _ _ _ _ Gf hGf ι b hb c hc hc6 g hg gf hgf
   letI : CharZero F := charZero_of_injective_algebraMap (algebraMap ℚ F).injective
   obtain ⟨q, hq, _⟩ := exists_unique_specialized_function R W G hG F Wf Gf hGf ι b hb

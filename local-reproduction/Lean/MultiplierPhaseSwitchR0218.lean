@@ -169,7 +169,32 @@ open MultiplierPhaseSwitch
 /-- The unique comparison of the given opposite-phase associated lines,
 with reversal coherence on their actual level frames. -/
 theorem multiplier_phase_switch :
-∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom (S) (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E) (z : S.presheaf.obj (Opposite.op ⊤)), z^2 = -1 → ∀ (D C : ArithmeticThetaEvenMarkingTorsorR0216.Cover E), ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D → ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P (-z) C → ∀ (q : CategoryTheory.Iso (D.space) (C.space)) (h : ArithmeticThetaPhaseSwitchR0218.Switches E D C q), ∀ (L K : S.Modules) (m : ((AlgebraicGeometry.Scheme.Modules.pullback D.projection).obj (L)).presheaf.obj (Opposite.op ⊤)) (n : ((AlgebraicGeometry.Scheme.Modules.pullback C.projection).obj (K)).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaMultiplierKeyR0217.Multiplier E D z L m → ArithmeticThetaMultiplierKeyR0217.Multiplier E C (-z) K n → (∃! v : CategoryTheory.Iso (L) (K), ArithmeticThetaPhaseSwitchR0218.SwitchFrame E D C q h L K m n v) ∧ (∀ v : CategoryTheory.Iso (L) (K), ArithmeticThetaPhaseSwitchR0218.SwitchFrame E D C q h L K m n v → ∀ hrev : ArithmeticThetaPhaseSwitchR0218.Switches E C D q.symm, ArithmeticThetaPhaseSwitchR0218.SwitchFrame E C D q.symm hrev K L n m v.symm) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom (S) (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E) (z : S.presheaf.obj (Opposite.op ⊤)),
+      z ^ 2 = -1 →
+        ∀ (D C : ArithmeticThetaEvenMarkingTorsorR0216.Cover E),
+          ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D →
+            ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P (-z) C →
+              ∀ (q : CategoryTheory.Iso (D.space) (C.space))
+                (h : ArithmeticThetaPhaseSwitchR0218.Switches E D C q),
+                ∀ (L K : S.Modules)
+                  (m :
+                    ((AlgebraicGeometry.Scheme.Modules.pullback D.projection).obj (L)).presheaf.obj
+                      (Opposite.op ⊤))
+                  (n :
+                    ((AlgebraicGeometry.Scheme.Modules.pullback C.projection).obj (K)).presheaf.obj
+                      (Opposite.op ⊤)),
+                  ArithmeticThetaMultiplierKeyR0217.Multiplier E D z L m →
+                    ArithmeticThetaMultiplierKeyR0217.Multiplier E C (-z) K n →
+                      (∃! v : CategoryTheory.Iso (L) (K),
+                          ArithmeticThetaPhaseSwitchR0218.SwitchFrame E D C q h L K m n v) ∧
+                        (∀ v : CategoryTheory.Iso (L) (K),
+                          ArithmeticThetaPhaseSwitchR0218.SwitchFrame E D C q h L K m n v →
+                            ∀ hrev : ArithmeticThetaPhaseSwitchR0218.Switches E C D q.symm,
+                              ArithmeticThetaPhaseSwitchR0218.SwitchFrame E C D q.symm hrev K L n m
+                                v.symm) := by
   intro k _ _ S σ E P z hz D C hD hC q h L K m n hm hn
   have hn' := switch_multiplier E D C k σ P z hz hC q h K n hn
   refine ⟨multiplier_unique E k σ P z D hD hz m (switchPull E D C q h K n) hm hn', ?_⟩

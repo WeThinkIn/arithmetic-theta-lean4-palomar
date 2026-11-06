@@ -7,7 +7,22 @@ open scoped BigOperators
 namespace ArithmeticThetaOrthogonalConsumerR0127
 open ArithmeticThetaCosets
 
-theorem individual_coset_integral_product : ∀ (n : ℕ) (A B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ), ArithmeticThetaComputed.validGram A → ArithmeticThetaOrthogonalConsumerR0127.OrthogonalData A B m → ∀ (t : ArithmeticThetaOrthogonalConsumerR0127.preimageLattice B) (ν : Fin n → ℤ), (∀ j, (ν j : ℚ) = (m j : ℚ) * t.val j) → (∀ r : Fin n → ℤ, (∀ j, Int.ModEq (m j : ℤ) (r j) (ν j)) → ∃ a : ℕ, (∑ j : Fin n, (r j : ℚ)^2 / (2 * (m j : ℚ))) = (a : ℚ)) ∧ (∀ (D : ℕ) (hD : D ≠ 0), (∀ j, 2 * m j ∣ D) → PowerSeries.expand D hD (ArithmeticThetaOrthogonalConsumerR0127.cosetSeries m t.val) = ∏ j : Fin n, ArithmeticThetaOrthogonalConsumerR0127.scaledUnary (m j) (D / (2 * m j)) (ν j)) := by
+theorem individual_coset_integral_product :
+    ∀ (n : ℕ) (A B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ),
+      ArithmeticThetaComputed.validGram A →
+        ArithmeticThetaOrthogonalConsumerR0127.OrthogonalData A B m →
+          ∀ (t : ArithmeticThetaOrthogonalConsumerR0127.preimageLattice B) (ν : Fin n → ℤ),
+            (∀ j, (ν j : ℚ) = (m j : ℚ) * t.val j) →
+              (∀ r : Fin n → ℤ,
+                  (∀ j, Int.ModEq (m j : ℤ) (r j) (ν j)) →
+                    ∃ a : ℕ, (∑ j : Fin n, (r j : ℚ) ^ 2 / (2 * (m j : ℚ))) = (a : ℚ)) ∧
+                (∀ (D : ℕ) (hD : D ≠ 0),
+                  (∀ j, 2 * m j ∣ D) →
+                    PowerSeries.expand D hD
+                        (ArithmeticThetaOrthogonalConsumerR0127.cosetSeries m t.val) =
+                      ∏ j : Fin n,
+                        ArithmeticThetaOrthogonalConsumerR0127.scaledUnary (m j) (D / (2 * m j))
+                          (ν j)) := by
   intro n A B m hA hB t ν hν
   classical
   obtain ⟨hsym, heven, hpos⟩ := hA

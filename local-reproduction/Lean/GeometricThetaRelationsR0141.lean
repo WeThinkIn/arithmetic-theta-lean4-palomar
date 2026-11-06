@@ -249,7 +249,51 @@ open GeometricThetaRelationsR0141
 /-- The normalized geometric theta lifts satisfy the full operator relations
 on every actual generic dual section. -/
 theorem geometric_theta_relations :
-∀ (k : Type u) [Field k] [CharZero k], ∀ (m : ℕ) (hm : 0 < m) (he : Even m), ∀ (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k (2*m) (Nat.mul_pos (by decide) hm)) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex (2*m) (Nat.mul_pos (by decide) hm)) 1 s) (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → CategoryTheory.Iso M.X M.X) (inv : CategoryTheory.Iso M.X M.X) (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv), ∀ (ζ : kˣ), IsPrimitiveRoot (ζ : k) m → ∀ (eA : ArithmeticThetaGeometricLiftsR0141.Lift k M s m (ArithmeticThetaGeometricLiftsR0141.scalarMap k M rot scal inv ha ζ)) (eB : ArithmeticThetaGeometricLiftsR0141.Lift k M s m (ArithmeticThetaGeometricLiftsR0141.shiftMap k M rot scal inv ha)), ArithmeticThetaGeometricLiftsR0141.Eigen k M s m m ζ (ArithmeticThetaGeometricLiftsR0141.scalarMap k M rot scal inv ha ζ) eA (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs) → ArithmeticThetaGeometricLiftsR0141.Cyclic k M s m m hm (ArithmeticThetaGeometricLiftsR0141.shiftMap k M rot scal inv ha) eB (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs) → ∀ (eS : ArithmeticThetaGeometricLiftsR0141.Lift k M s m (ArithmeticThetaGeometricLiftsR0141.inversionMap k M rot scal inv ha)), ArithmeticThetaGeometricLiftsR0141.Reverses k M s m m hm (ArithmeticThetaGeometricLiftsR0141.inversionMap k M rot scal inv ha) eS (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs) → ArithmeticThetaGeometricLiftsR0141.Relations k M s m ζ (ArithmeticThetaGeometricLiftsR0141.act k M s m (ArithmeticThetaGeometricLiftsR0141.scalarMap k M rot scal inv ha ζ) eA) (ArithmeticThetaGeometricLiftsR0141.act k M s m (ArithmeticThetaGeometricLiftsR0141.shiftMap k M rot scal inv ha) eB) (ArithmeticThetaGeometricLiftsR0141.act k M s m (ArithmeticThetaGeometricLiftsR0141.inversionMap k M rot scal inv ha) eS) := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (m : ℕ) (hm : 0 < m) (he : Even m),
+        ∀
+          (T :
+            ArithmeticThetaInfinitesimalPolygonR0129.Tower k (2 * m) (Nat.mul_pos (by decide) hm))
+          (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+          (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+          (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+          (hs :
+            ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+              (ArithmeticThetaIdentitySectionsR0138.zeroIndex (2 * m) (Nat.mul_pos (by decide) hm))
+              1 s)
+          (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → CategoryTheory.Iso M.X M.X)
+          (inv : CategoryTheory.Iso M.X M.X)
+          (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv),
+          ∀ (ζ : kˣ),
+            IsPrimitiveRoot (ζ : k) m →
+              ∀
+                (eA :
+                  ArithmeticThetaGeometricLiftsR0141.Lift k M s m
+                    (ArithmeticThetaGeometricLiftsR0141.scalarMap k M rot scal inv ha ζ))
+                (eB :
+                  ArithmeticThetaGeometricLiftsR0141.Lift k M s m
+                    (ArithmeticThetaGeometricLiftsR0141.shiftMap k M rot scal inv ha)),
+                ArithmeticThetaGeometricLiftsR0141.Eigen k M s m m ζ
+                    (ArithmeticThetaGeometricLiftsR0141.scalarMap k M rot scal inv ha ζ) eA
+                    (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs) →
+                  ArithmeticThetaGeometricLiftsR0141.Cyclic k M s m m hm
+                      (ArithmeticThetaGeometricLiftsR0141.shiftMap k M rot scal inv ha) eB
+                      (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs) →
+                    ∀
+                      (eS :
+                        ArithmeticThetaGeometricLiftsR0141.Lift k M s m
+                          (ArithmeticThetaGeometricLiftsR0141.inversionMap k M rot scal inv ha)),
+                      ArithmeticThetaGeometricLiftsR0141.Reverses k M s m m hm
+                          (ArithmeticThetaGeometricLiftsR0141.inversionMap k M rot scal inv ha) eS
+                          (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs) →
+                        ArithmeticThetaGeometricLiftsR0141.Relations k M s m ζ
+                          (ArithmeticThetaGeometricLiftsR0141.act k M s m
+                            (ArithmeticThetaGeometricLiftsR0141.scalarMap k M rot scal inv ha ζ) eA)
+                          (ArithmeticThetaGeometricLiftsR0141.act k M s m
+                            (ArithmeticThetaGeometricLiftsR0141.shiftMap k M rot scal inv ha) eB)
+                          (ArithmeticThetaGeometricLiftsR0141.act k M s m
+                            (ArithmeticThetaGeometricLiftsR0141.inversionMap k M rot scal inv ha)
+                            eS) := by
   intro k _ _ m hm he T M hM s hs rot scal inv ha ζ hζ eA eB hA hB eS hS
   apply relations_of_basis k M s m hm ζ hζ
     (genericTheta k m hm he M hM s hs)

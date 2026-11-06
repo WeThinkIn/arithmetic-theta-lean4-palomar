@@ -15,7 +15,52 @@ open ArithmeticThetaValuativeRootsR0223
 /-- Construct the valuation and centre, transport the prescribed equations with
 exactly the original frame, and apply the finite constant-extension theorem. -/
 theorem algebraic_branch_finite_model :
-∀ (k : Type) [Field k] [CharZero k] (X : ArithmeticThetaFiniteFieldModelsR0221.Curve (ArithmeticThetaConstantExtensionR0225.Omega k)) (J : X.space.Modules), AlgebraicGeometry.Scheme.Modules.IsInvertible J → ∀ (n s : ℕ), 0 < n → ∀ (F : Fin s → ArithmeticThetaFiniteFieldModelsR0221.Sections (ArithmeticThetaTensorPower.tensorPower X.space J n)), (∀ j, F j ≠ 0) → ∀ (f : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk (ArithmeticThetaConstantExtensionR0225.Omega k)) X.space), CategoryTheory.CategoryStruct.comp f X.map = ArithmeticThetaTateCuspsR0181.diskStructure (ArithmeticThetaConstantExtensionR0225.Omega k) → AlgebraicGeometry.IsDominant (CategoryTheory.CategoryStruct.comp (ArithmeticThetaTateCuspsR0181.genericInclusion (ArithmeticThetaConstantExtensionR0225.Omega k)) f) → ∀ (h : ArithmeticThetaFiniteFieldModelsR0221.Sections ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J)), ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J) ⊤ h → ∀ (E : Type) [Field E] [Algebra (LaurentSeries (ArithmeticThetaConstantExtensionR0225.Omega k)) E] [Algebra.IsAlgebraic (LaurentSeries (ArithmeticThetaConstantExtensionR0225.Omega k)) E] (r : Fin s → E), (∀ j, ArithmeticThetaAlgebraicBranchesR0226.Equation f J n (F j) h (r j)) → ∀ K0 : ArithmeticThetaConstantExtensionR0225.FieldStage k, FiniteDimensional k K0 → ArithmeticThetaAlgebraicBranchesR0226.Realization k X J n s F f h E r K0 := by
+    ∀ (k : Type) [Field k] [CharZero k]
+      (X :
+        ArithmeticThetaFiniteFieldModelsR0221.Curve (ArithmeticThetaConstantExtensionR0225.Omega k))
+      (J : X.space.Modules),
+      AlgebraicGeometry.Scheme.Modules.IsInvertible J →
+        ∀ (n s : ℕ),
+          0 < n →
+            ∀
+              (F :
+                Fin s →
+                  ArithmeticThetaFiniteFieldModelsR0221.Sections
+                    (ArithmeticThetaTensorPower.tensorPower X.space J n)),
+              (∀ j, F j ≠ 0) →
+                ∀
+                  (f :
+                    Quiver.Hom
+                      (ArithmeticThetaTateCuspsR0181.Disk
+                        (ArithmeticThetaConstantExtensionR0225.Omega k))
+                      X.space),
+                  CategoryTheory.CategoryStruct.comp f X.map =
+                      ArithmeticThetaTateCuspsR0181.diskStructure
+                        (ArithmeticThetaConstantExtensionR0225.Omega k) →
+                    AlgebraicGeometry.IsDominant
+                        (CategoryTheory.CategoryStruct.comp
+                          (ArithmeticThetaTateCuspsR0181.genericInclusion
+                            (ArithmeticThetaConstantExtensionR0225.Omega k))
+                          f) →
+                      ∀
+                        (h :
+                          ArithmeticThetaFiniteFieldModelsR0221.Sections
+                            ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J)),
+                        ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+                            ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J) ⊤ h →
+                          ∀ (E : Type) [Field E]
+                            [Algebra (LaurentSeries (ArithmeticThetaConstantExtensionR0225.Omega k))
+                                E]
+                            [Algebra.IsAlgebraic
+                                (LaurentSeries (ArithmeticThetaConstantExtensionR0225.Omega k)) E]
+                            (r : Fin s → E),
+                            (∀ j,
+                                ArithmeticThetaAlgebraicBranchesR0226.Equation f J n (F j) h
+                                  (r j)) →
+                              ∀ K0 : ArithmeticThetaConstantExtensionR0225.FieldStage k,
+                                FiniteDimensional k K0 →
+                                  ArithmeticThetaAlgebraicBranchesR0226.Realization k X J n s F f h
+                                    E r K0 := by
   intro k _ _ X J hJ n s hn F hF f hf hdom h hh E _ _ _ r hr K0 hK0
   obtain ⟨B, hcentre, htriangle⟩ := algebraic_branch_valuation (Omega k) E
   have hcompat := fun t => RingHom.congr_fun B.compatible t

@@ -176,7 +176,28 @@ open EvenCoverPhaseSwitch
 
 /-- Opposite pairing covers are uniquely isomorphic by first-half reversal. -/
 theorem even_cover_phase_switch :
-∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom (S) (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E) (z : S.presheaf.obj (Opposite.op ⊤)), z^2 = -1 → ∀ (D C : ArithmeticThetaEvenMarkingTorsorR0216.Cover E), ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D → ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P (-z) C → (∃! q : CategoryTheory.Iso (D.space) (C.space), ArithmeticThetaPhaseSwitchR0218.Switches E D C q) ∧ (∀ (q : CategoryTheory.Iso (D.space) (C.space)) (h : ArithmeticThetaPhaseSwitchR0218.Switches E D C q), ArithmeticThetaPhaseSwitchR0218.Switches E C D q.symm ∧ (∀ (A : ArithmeticThetaFourTorsion.Mat4), ArithmeticThetaFourTorsion.PreservesEven A → ∀ (a : CategoryTheory.Iso (D.space) (D.space)) (b : CategoryTheory.Iso (C.space) (C.space)), ArithmeticThetaEvenMarkingTorsorR0216.Acts E D A a → ArithmeticThetaEvenMarkingTorsorR0216.Acts E C (ArithmeticThetaPhaseSwitchR0218.conjugate A) b → CategoryTheory.CategoryStruct.comp (a.hom) (q.hom) = CategoryTheory.CategoryStruct.comp (q.hom) (b.hom))) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom (S) (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E) (z : S.presheaf.obj (Opposite.op ⊤)),
+      z ^ 2 = -1 →
+        ∀ (D C : ArithmeticThetaEvenMarkingTorsorR0216.Cover E),
+          ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D →
+            ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P (-z) C →
+              (∃! q : CategoryTheory.Iso (D.space) (C.space),
+                  ArithmeticThetaPhaseSwitchR0218.Switches E D C q) ∧
+                (∀ (q : CategoryTheory.Iso (D.space) (C.space))
+                  (h : ArithmeticThetaPhaseSwitchR0218.Switches E D C q),
+                  ArithmeticThetaPhaseSwitchR0218.Switches E C D q.symm ∧
+                    (∀ (A : ArithmeticThetaFourTorsion.Mat4),
+                      ArithmeticThetaFourTorsion.PreservesEven A →
+                        ∀ (a : CategoryTheory.Iso (D.space) (D.space))
+                          (b : CategoryTheory.Iso (C.space) (C.space)),
+                          ArithmeticThetaEvenMarkingTorsorR0216.Acts E D A a →
+                            ArithmeticThetaEvenMarkingTorsorR0216.Acts E C
+                                (ArithmeticThetaPhaseSwitchR0218.conjugate A) b →
+                              CategoryTheory.CategoryStruct.comp (a.hom) (q.hom) =
+                                CategoryTheory.CategoryStruct.comp (q.hom) (b.hom))) := by
   intro k _ _ S σ E P z _ D C hD hC
   refine ⟨switch_exists E k σ P z D C hD hC, ?_⟩
   intro q hq

@@ -186,7 +186,40 @@ open MarkedFieldAction ActualMultiplicationFieldNorm
 
 /-- The specified actual translations act faithfully on the generic function field. -/
 theorem marked_field_action :
-∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → (CategoryTheory.Iso M.X M.X)) (inv : CategoryTheory.Iso M.X M.X) (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv), ∃! σ : Fin r → kˣ → ((AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) ≃+* (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))), ArithmeticThetaSplitNormR0153.IsFieldAction k M rot scal inv ha σ ∧ Function.Injective (fun ia : Fin r × kˣ => σ ia.1 ia.2) ∧ (∀ (i j : Fin r) (a b : kˣ), σ (ArithmeticThetaSplitNormR0153.shift (hr := hr) i j) (a*b) = (σ i a).trans (σ j b)) ∧ (∀ (i : Fin r) (a : kˣ) (v : LaurentSeries k), σ i a (ArithmeticThetaGeometricNormR0150.baseScalar (X := (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (LaurentSeries k) (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M) v) = ArithmeticThetaGeometricNormR0150.baseScalar (X := (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (LaurentSeries k) (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M) v) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → (CategoryTheory.Iso M.X M.X))
+      (inv : CategoryTheory.Iso M.X M.X)
+      (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv),
+      ∃! σ :
+        Fin r →
+          kˣ →
+            ((AlgebraicGeometry.Scheme.functionField
+                (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) ≃+*
+              (AlgebraicGeometry.Scheme.functionField
+                (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))),
+        ArithmeticThetaSplitNormR0153.IsFieldAction k M rot scal inv ha σ ∧
+          Function.Injective (fun ia : Fin r × kˣ => σ ia.1 ia.2) ∧
+            (∀ (i j : Fin r) (a b : kˣ),
+                σ (ArithmeticThetaSplitNormR0153.shift (hr := hr) i j) (a * b) =
+                  (σ i a).trans (σ j b)) ∧
+              (∀ (i : Fin r) (a : kˣ) (v : LaurentSeries k),
+                σ i a
+                    (ArithmeticThetaGeometricNormR0150.baseScalar (X :=
+                      (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (LaurentSeries k)
+                      (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M) v) =
+                  ArithmeticThetaGeometricNormR0150.baseScalar (X :=
+                    (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (LaurentSeries k)
+                    (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M) v) := by
   intro k _ _ r hr h3 T he M hM s hs G hG _ rot scal inv ha
   have hex (i : Fin r) (a : kˣ) : ∃ E : (genericScheme k M).functionField ≃+*
       (genericScheme k M).functionField, IsFieldMap (translation k M rot scal inv ha i a) E.toRingHom := by

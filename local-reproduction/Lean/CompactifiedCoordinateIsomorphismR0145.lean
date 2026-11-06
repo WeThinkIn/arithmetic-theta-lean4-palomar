@@ -414,7 +414,36 @@ lemma iso_extension_origin (M : Model k T) (hM : IsModel k T M)
 end CompactifiedCoordinateIsomorphism
 /-- The prescribed affine coordinate isomorphism extends uniquely across the actual identity. -/
 theorem compactified_coordinate_isomorphism :
-    ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2) (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3), ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X → ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y → ∀ (a : CategoryTheory.Iso (ArithmeticThetaCubicModelR0144.complementScheme k M s) (ArithmeticThetaCubicModelR0144.cubicScheme k r)), ArithmeticThetaCubicModelR0144.IsCoordinateIso k M s X Y a → ∀ (c : CategoryTheory.Iso (ArithmeticThetaCubicModelR0144.cubicScheme k r) (AlgebraicGeometry.Spec (CommRingCat.of (ArithmeticThetaCompactifiedDifferentialR0145.ChartRing k r)))), ArithmeticThetaCompactifiedDifferentialR0145.IsChartIso k r c → ∃! e : CategoryTheory.Iso (ArithmeticThetaGenericEvaluationR0140.genericScheme k M) (ArithmeticThetaCompactifiedDifferentialR0145.projectiveCurve k r), ArithmeticThetaCompactifiedDifferentialR0145.IsCompactificationIso k M s hs.1 a c e := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+        (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+        (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+        (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+        (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+        (hs :
+          ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+            (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+        (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2)
+        (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3),
+        ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X →
+          ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y →
+            ∀
+              (a :
+                CategoryTheory.Iso (ArithmeticThetaCubicModelR0144.complementScheme k M s)
+                  (ArithmeticThetaCubicModelR0144.cubicScheme k r)),
+              ArithmeticThetaCubicModelR0144.IsCoordinateIso k M s X Y a →
+                ∀
+                  (c :
+                    CategoryTheory.Iso (ArithmeticThetaCubicModelR0144.cubicScheme k r)
+                      (AlgebraicGeometry.Spec
+                        (CommRingCat.of
+                          (ArithmeticThetaCompactifiedDifferentialR0145.ChartRing k r)))),
+                  ArithmeticThetaCompactifiedDifferentialR0145.IsChartIso k r c →
+                    ∃! e :
+                      CategoryTheory.Iso (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)
+                        (ArithmeticThetaCompactifiedDifferentialR0145.projectiveCurve k r),
+                      ArithmeticThetaCompactifiedDifferentialR0145.IsCompactificationIso k M s hs.1
+                        a c e := by
   intro k _ _ r hr h3 T he M hM s hs X Y _hX _hY a ha c hc
   obtain ⟨e, hb, he⟩ := CompactifiedCoordinateIsomorphism.exists_iso_extension
     k h3 he M hM s hs X Y a ha c hc

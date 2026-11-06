@@ -164,7 +164,56 @@ open ArithmeticThetaCommonHalfHodgeR0185.DiscriminantTateRootR0185
 
 /-- Actual matrix theta sections, in one common tensor line and normalized disk frame. -/
 theorem matrix_family_global_sections :
-∀ (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) →∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A))) (X : ArithmeticThetaLevelCompactificationR0179.Compactification ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X), ArithmeticThetaBoundaryHodgeR0182.Canonical ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) H → ∀ (d2 : ArithmeticThetaSimultaneousUnaryR0187.Sections X.space (ArithmeticThetaTensorPower.tensorPower X.space H.line 24)), ArithmeticThetaComponentDegreeR0184.IsCompactD2 ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X H d2 → ∀ (V : ArithmeticThetaBoundaryHodgeR0182.DiskTest ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X) (ζ : ℂ), IsPrimitiveRoot ζ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) → ArithmeticThetaTateCuspsR0181.CanonicalMarking ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) ζ V.level → ∃ U : ArithmeticThetaLatticeSectionsR0188.Indexing A, ArithmeticThetaLatticeSectionsR0188.Indexed A U ∧ ArithmeticThetaLatticeSectionsR0188.FormalIdentity A U ∧ ArithmeticThetaLatticeSectionsR0188.GeometricFamily A U H V := by
+    ∀ (n h : ℕ),
+      0 < n →
+        0 < h →
+          ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h),
+            (∀ i, ArithmeticThetaComputed.validGram (A i)) →
+              ∀
+                (D :
+                  ArithmeticThetaLevelCompactificationR0179.LevelData ℂ
+                    (ArithmeticThetaCompactUnaryR0183.level
+                      (ArithmeticThetaLatticeSectionsR0188.commonN A)))
+                (X :
+                  ArithmeticThetaLevelCompactificationR0179.Compactification ℂ
+                    (ArithmeticThetaCompactUnaryR0183.level
+                      (ArithmeticThetaLatticeSectionsR0188.commonN A))
+                    D)
+                (H :
+                  ArithmeticThetaBoundaryHodgeR0182.Extension ℂ
+                    (ArithmeticThetaCompactUnaryR0183.level
+                      (ArithmeticThetaLatticeSectionsR0188.commonN A))
+                    D X),
+                ArithmeticThetaBoundaryHodgeR0182.Canonical ℂ
+                    (ArithmeticThetaCompactUnaryR0183.level
+                      (ArithmeticThetaLatticeSectionsR0188.commonN A))
+                    H →
+                  ∀
+                    (d2 :
+                      ArithmeticThetaSimultaneousUnaryR0187.Sections X.space
+                        (ArithmeticThetaTensorPower.tensorPower X.space H.line 24)),
+                    ArithmeticThetaComponentDegreeR0184.IsCompactD2 ℂ
+                        (ArithmeticThetaCompactUnaryR0183.level
+                          (ArithmeticThetaLatticeSectionsR0188.commonN A))
+                        D X H d2 →
+                      ∀
+                        (V :
+                          ArithmeticThetaBoundaryHodgeR0182.DiskTest ℂ
+                            (ArithmeticThetaCompactUnaryR0183.level
+                              (ArithmeticThetaLatticeSectionsR0188.commonN A))
+                            D X)
+                        (ζ : ℂ),
+                        IsPrimitiveRoot ζ
+                            (ArithmeticThetaCompactUnaryR0183.level
+                              (ArithmeticThetaLatticeSectionsR0188.commonN A)) →
+                          ArithmeticThetaTateCuspsR0181.CanonicalMarking ℂ
+                              (ArithmeticThetaCompactUnaryR0183.level
+                                (ArithmeticThetaLatticeSectionsR0188.commonN A))
+                              ζ V.level →
+                            ∃ U : ArithmeticThetaLatticeSectionsR0188.Indexing A,
+                              ArithmeticThetaLatticeSectionsR0188.Indexed A U ∧
+                                ArithmeticThetaLatticeSectionsR0188.FormalIdentity A U ∧
+                                  ArithmeticThetaLatticeSectionsR0188.GeometricFamily A U H V := by
   intro n h hn hh A hA D X H hH d2 hd2 V ζ hζ hmark
   classical
   obtain ⟨hN, hNeven, hnorm, U, hU, hpairs, hformal⟩ :=

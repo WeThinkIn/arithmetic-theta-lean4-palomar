@@ -16,7 +16,17 @@ open ArithmeticThetaFieldImageR0233 ArithmeticThetaPullback
 
 /-- Faithfulness on the prescribed dominant disk over the given field. -/
 theorem arithmetic_section_relations :
-∀ (k : Type) [Field k] [CharZero k] (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ G : ArithmeticThetaArithmeticFieldR0231.MatrixData k A, ∀ c : Fin h → k, ArithmeticThetaFieldImageR0233.combination k (ArithmeticThetaArithmeticFieldR0231.structureMap G) G.sections c = 0 ↔ ArithmeticThetaFieldImageR0233.seriesCombination k A c = 0 := by
+    ∀ (k : Type) [Field k] [CharZero k] (n h : ℕ),
+      0 < n →
+        0 < h →
+          ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h),
+            (∀ i, ArithmeticThetaComputed.validGram (A i)) →
+              ∀ G : ArithmeticThetaArithmeticFieldR0231.MatrixData k A,
+                ∀ c : Fin h → k,
+                  ArithmeticThetaFieldImageR0233.combination k
+                        (ArithmeticThetaArithmeticFieldR0231.structureMap G) G.sections c =
+                      0 ↔
+                    ArithmeticThetaFieldImageR0233.seriesCombination k A c = 0 := by
   intro k _ _ n h hn hh A hA G c
   classical
   have hN := (indexed_full_unary_factorization n h hn hh A hA).1

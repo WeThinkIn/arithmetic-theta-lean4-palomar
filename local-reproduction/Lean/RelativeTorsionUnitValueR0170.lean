@@ -113,7 +113,30 @@ open CategoryTheory AlgebraicGeometry ArithmeticThetaRelativeKatoR0169
 
 /-- Every nonidentity prime-to-c torsion section has a unique unit Kato value. -/
 theorem relative_torsion_unit_value :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (c : ℕ) (hc : 1 < c) (hc6 : Nat.Coprime c 6) (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField) (hg : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R W G c g) (P : Quiver.Hom (AlgebraicGeometry.Spec (CommRingCat.of R)) (ArithmeticThetaRelativeKatoR0169.Curve R W)) (hP : CategoryTheory.CategoryStruct.comp P (ArithmeticThetaRelativeKatoR0169.structureMap R W) = CategoryTheory.CategoryStruct.id _) (N : ℕ) (hN : 0 < N) (hNP : CategoryTheory.CategoryStruct.comp P (G.schemeNsmul N) = ArithmeticThetaRelativeKatoR0169.origin R W) (hne : P ≠ ArithmeticThetaRelativeKatoR0169.origin R W) (hcN : Nat.Coprime c N), (∀ x : AlgebraicGeometry.Spec (CommRingCat.of R), G.schemeNsmul c (P x) ∉ Set.range (ArithmeticThetaRelativeKatoR0169.origin R W)) ∧ ∃! v : R, IsUnit v ∧ ArithmeticThetaRelativeKatoNaturalityR0170.HasValue R W P g v := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (c : ℕ) (hc : 1 < c)
+      (hc6 : Nat.Coprime c 6) (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField)
+      (hg : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R W G c g)
+      (P :
+        Quiver.Hom (AlgebraicGeometry.Spec (CommRingCat.of R))
+          (ArithmeticThetaRelativeKatoR0169.Curve R W))
+      (hP :
+        CategoryTheory.CategoryStruct.comp P (ArithmeticThetaRelativeKatoR0169.structureMap R W) =
+          CategoryTheory.CategoryStruct.id _)
+      (N : ℕ) (hN : 0 < N)
+      (hNP :
+        CategoryTheory.CategoryStruct.comp P (G.schemeNsmul N) =
+          ArithmeticThetaRelativeKatoR0169.origin R W)
+      (hne : P ≠ ArithmeticThetaRelativeKatoR0169.origin R W) (hcN : Nat.Coprime c N),
+      (∀ x : AlgebraicGeometry.Spec (CommRingCat.of R),
+          G.schemeNsmul c (P x) ∉ Set.range (ArithmeticThetaRelativeKatoR0169.origin R W)) ∧
+        ∃! v : R, IsUnit v ∧ ArithmeticThetaRelativeKatoNaturalityR0170.HasValue R W P g v := by
   intro R _ _ _ _ _ W _ _ _ _ _ G hG c hc hc6 g hg P hP N hN hNP hne hcN
   have hav := TorsionUnitValue.avoids_torsion R W G hG P hP N hN hNP hne c hcN
   refine ⟨hav, ?_⟩

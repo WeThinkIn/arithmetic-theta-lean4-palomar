@@ -53,7 +53,16 @@ open MarkedLegendreAtlasLocalCoverageR0177
 /-- Every full even level family in the stated normal affine domain is locally
 a Cartesian pullback of the same accepted sign-quotient family, with both labels. -/
 theorem marked_legendre_atlas_local_coverage :
-    ∀ (k : Type u) [Field k] [CharZero k] (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] [Algebra k R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 3 ≤ L) (heven : Even L) (M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))) (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L), Nonempty (ArithmeticThetaLegendreComparisonR0177.AtlasComparison k R W G M A) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (R : Type u) [CommRing R] [IsDomain R]
+      [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] [Algebra k R]
+      (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 3 ≤ L)
+      (heven : Even L)
+      (M :
+        ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L
+          (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)))
+      (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L),
+      Nonempty (ArithmeticThetaLegendreComparisonR0177.AtlasComparison k R W G M A) := by
   intro k _ _ R _ _ _ _ _ _ W _ G hG L hL heven M A
   obtain ⟨M₂, _, _⟩ := full_level_divisor_reduction R W G hG L 2
     (by omega) (by omega) (even_iff_two_dvd.mp heven) M

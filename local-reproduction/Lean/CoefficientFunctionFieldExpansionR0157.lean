@@ -76,7 +76,64 @@ open ArithmeticThetaKatoAnnularR0152.CompletedChartFieldMaps
 /-- The unique geometric coefficient pullback preserves every Laurent scalar
 and every full completed-chart expansion, including the zero function. -/
 theorem coefficient_function_field_expansion :
-∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (Tl : ArithmeticThetaInfinitesimalPolygonR0129.Tower l r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (Ml : ArithmeticThetaProjectiveEffectivityR0135.Model l Tl) (hMl : ArithmeticThetaProjectiveEffectivityR0135.IsModel l Tl Ml) (ρ : ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart l) (hρ : ArithmeticThetaCoefficientNormDescentR0157.IsChartMap k l ι ρ) (E : ArithmeticThetaKatoAnnularR0152.ChartField k →+* ArithmeticThetaKatoAnnularR0152.ChartField l) (hE : ArithmeticThetaCoefficientNormDescentR0157.ExtendsChart k l ρ E) (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X) (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j)) (χl : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme l) Ml.X) (hχl : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap l Ml j (χl j)) (F : Quiver.Hom Ml.X M.X) (hF : ArithmeticThetaCoefficientNormDescentR0157.IsModelMap k l ι T Tl M Ml ρ χ χl F) (ell : LaurentSeries k →+* LaurentSeries l) (hell : ArithmeticThetaCoefficientNormDescentR0157.IsLaurentMap k l ι ell) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme l Ml)] (b : Quiver.Hom (ArithmeticThetaGenericEvaluationR0140.genericScheme l Ml) (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (hb : ArithmeticThetaCoefficientNormDescentR0157.IsGenericLift k l T Tl M Ml F b) (φ : Fin r → ((AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* ArithmeticThetaKatoAnnularR0152.ChartField k)) (hφ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M (χ j) (φ j)) (φl : Fin r → ((AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme l Ml)) →+* ArithmeticThetaKatoAnnularR0152.ChartField l)) (hφl : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap l Ml (χl j) (φl j)), ∃! α : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme l Ml)), ArithmeticThetaGeometricNormR0150.IsFieldMap b α ∧ (∀ a : LaurentSeries k, α (ArithmeticThetaGeometricNormR0150.baseScalar (X := (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (LaurentSeries k) (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M) a) = ArithmeticThetaGeometricNormR0150.baseScalar (X := (ArithmeticThetaGenericEvaluationR0140.genericScheme l Ml)) (LaurentSeries l) (ArithmeticThetaProjectiveEffectivityR0135.genericStructure l Ml) (ell a)) ∧ (∀ (j : Fin r) (g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))), φl j (α g) = E (φ j g)) := by
+    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (r : ℕ) (hr : 0 < r)
+      (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (Tl : ArithmeticThetaInfinitesimalPolygonR0129.Tower l r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (Ml : ArithmeticThetaProjectiveEffectivityR0135.Model l Tl)
+      (hMl : ArithmeticThetaProjectiveEffectivityR0135.IsModel l Tl Ml)
+      (ρ : ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart l)
+      (hρ : ArithmeticThetaCoefficientNormDescentR0157.IsChartMap k l ι ρ)
+      (E :
+        ArithmeticThetaKatoAnnularR0152.ChartField k →+*
+          ArithmeticThetaKatoAnnularR0152.ChartField l)
+      (hE : ArithmeticThetaCoefficientNormDescentR0157.ExtendsChart k l ρ E)
+      (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X)
+      (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j))
+      (χl : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme l) Ml.X)
+      (hχl : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap l Ml j (χl j))
+      (F : Quiver.Hom Ml.X M.X)
+      (hF : ArithmeticThetaCoefficientNormDescentR0157.IsModelMap k l ι T Tl M Ml ρ χ χl F)
+      (ell : LaurentSeries k →+* LaurentSeries l)
+      (hell : ArithmeticThetaCoefficientNormDescentR0157.IsLaurentMap k l ι ell)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme l Ml)]
+      (b :
+        Quiver.Hom (ArithmeticThetaGenericEvaluationR0140.genericScheme l Ml)
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))
+      (hb : ArithmeticThetaCoefficientNormDescentR0157.IsGenericLift k l T Tl M Ml F b)
+      (φ :
+        Fin r →
+          ((AlgebraicGeometry.Scheme.functionField
+              (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+            ArithmeticThetaKatoAnnularR0152.ChartField k))
+      (hφ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M (χ j) (φ j))
+      (φl :
+        Fin r →
+          ((AlgebraicGeometry.Scheme.functionField
+              (ArithmeticThetaGenericEvaluationR0140.genericScheme l Ml)) →+*
+            ArithmeticThetaKatoAnnularR0152.ChartField l))
+      (hφl : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap l Ml (χl j) (φl j)),
+      ∃! α :
+        (AlgebraicGeometry.Scheme.functionField
+            (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+          (AlgebraicGeometry.Scheme.functionField
+            (ArithmeticThetaGenericEvaluationR0140.genericScheme l Ml)),
+        ArithmeticThetaGeometricNormR0150.IsFieldMap b α ∧
+          (∀ a : LaurentSeries k,
+              α
+                  (ArithmeticThetaGeometricNormR0150.baseScalar (X :=
+                    (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (LaurentSeries k)
+                    (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M) a) =
+                ArithmeticThetaGeometricNormR0150.baseScalar (X :=
+                  (ArithmeticThetaGenericEvaluationR0140.genericScheme l Ml)) (LaurentSeries l)
+                  (ArithmeticThetaProjectiveEffectivityR0135.genericStructure l Ml) (ell a)) ∧
+            (∀ (j : Fin r)
+              (g :
+                (AlgebraicGeometry.Scheme.functionField
+                  (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))),
+              φl j (α g) = E (φ j g)) := by
   intro k l _ _ _ _ ι r hr h3 T Tl M hM Ml hMl ρ hρ E hE χ hχ χl hχl F hF ell hell _ _ b hb φ hφ φl hφl
   have hs j := CoefficientFunctionFieldExpansionR0157.chart_square k l M Ml F b hb
     (χ j) (χl j) ρ (hF.2 j) (φ j) (hφ j) (φl j) (hφl j) E hE

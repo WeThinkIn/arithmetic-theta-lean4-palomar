@@ -148,7 +148,16 @@ open ArithmeticThetaFullLevelCoverR0175
 /-- The three marked nonidentity two-torsion coordinates split the completed
 cubic, and ellipticity makes all root differences units on the entire base. -/
 theorem two_torsion_split_cubic :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 2 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))) (e : Fin 3 → R), ArithmeticThetaLegendreComparisonR0177.TwoCoordinates R W G M e → ArithmeticThetaLegendreComparisonR0177.SplitCubic R W e := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G)
+      (M :
+        ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 2
+          (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)))
+      (e : Fin 3 → R),
+      ArithmeticThetaLegendreComparisonR0177.TwoCoordinates R W G M e →
+        ArithmeticThetaLegendreComparisonR0177.SplitCubic R W e := by
   intro R _ _ _ _ _ W _ G hG M e he
   have hi := TwoTorsionSplitCubicR0177.roots_injective G hG M he
   obtain ⟨ha, hb, hc⟩ := TwoTorsionSplitCubicR0177.cubic_coefficients

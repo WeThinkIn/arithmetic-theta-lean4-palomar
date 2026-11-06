@@ -599,7 +599,34 @@ lemma normalized_hodge_eq (L : ℕ)
 end FourTorsionTateBehavior
 
 /-- Exact integral and signed Tate expansion in any prescribed normalized frame. -/
-theorem four_torsion_tate_behavior : ∀ (k : Type) [Field k] [CharZero k] (L : ℕ), 0 < L → 4 ∣ L → ∀ (E : ArithmeticThetaTateCuspsR0181.TateLevel k L) (δ : ArithmeticThetaBoundaryHodgeR0182.CurveFrame k L), ArithmeticThetaBoundaryHodgeR0182.Normalized k L δ → ∀ a : (ArithmeticThetaRelativeDiscriminantR0171.Hodge (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k L)).presheaf.obj (Opposite.op ⊤), ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha (LaurentSeries k) (ArithmeticThetaTateCuspsR0181.TateCurve k L) E.law L E.marking a → (∃ (v : (PowerSeries k)ˣ) (j : ℕ), (j = 0 ∨ j = L/4) ∧ a = ArithmeticThetaOpenHodgeR0180.scalar (LaurentSeries k) (algebraMap (PowerSeries k) (LaurentSeries k) (PowerSeries.X^j * (v : PowerSeries k))) • (ArithmeticThetaBoundaryHodgeR0182.hodgeGenerator k L δ)) ∧ (∀ ζ : k, IsPrimitiveRoot ζ L → ArithmeticThetaTateCuspsR0181.CanonicalMarking k L ζ E → a = ArithmeticThetaOpenHodgeR0180.scalar (LaurentSeries k) (algebraMap (PowerSeries k) (LaurentSeries k) (ArithmeticThetaGlobalFourTorsionR0190.thetaAt k L ^ 2)) • (ArithmeticThetaBoundaryHodgeR0182.hodgeGenerator k L δ)) := by
+theorem four_torsion_tate_behavior :
+    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ),
+      0 < L →
+        4 ∣ L →
+          ∀ (E : ArithmeticThetaTateCuspsR0181.TateLevel k L)
+            (δ : ArithmeticThetaBoundaryHodgeR0182.CurveFrame k L),
+            ArithmeticThetaBoundaryHodgeR0182.Normalized k L δ →
+              ∀ a :
+                (ArithmeticThetaRelativeDiscriminantR0171.Hodge (LaurentSeries k)
+                      (ArithmeticThetaTateCuspsR0181.TateCurve k L)).presheaf.obj
+                  (Opposite.op ⊤),
+                ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha (LaurentSeries k)
+                    (ArithmeticThetaTateCuspsR0181.TateCurve k L) E.law L E.marking a →
+                  (∃ (v : (PowerSeries k)ˣ) (j : ℕ),
+                      (j = 0 ∨ j = L / 4) ∧
+                        a =
+                          ArithmeticThetaOpenHodgeR0180.scalar (LaurentSeries k)
+                              (algebraMap (PowerSeries k) (LaurentSeries k)
+                                (PowerSeries.X ^ j * (v : PowerSeries k))) •
+                            (ArithmeticThetaBoundaryHodgeR0182.hodgeGenerator k L δ)) ∧
+                    (∀ ζ : k,
+                      IsPrimitiveRoot ζ L →
+                        ArithmeticThetaTateCuspsR0181.CanonicalMarking k L ζ E →
+                          a =
+                            ArithmeticThetaOpenHodgeR0180.scalar (LaurentSeries k)
+                                (algebraMap (PowerSeries k) (LaurentSeries k)
+                                  (ArithmeticThetaGlobalFourTorsionR0190.thetaAt k L ^ 2)) •
+                              (ArithmeticThetaBoundaryHodgeR0182.hodgeGenerator k L δ)) := by
   intro k _ _ L hL h4 E δ hδ a ha
   obtain ⟨e, x, y, g, ε, hd, hε, ha⟩ := ha
   obtain ⟨χ, hχ, hx, hy⟩ := hd.2.2.1.2

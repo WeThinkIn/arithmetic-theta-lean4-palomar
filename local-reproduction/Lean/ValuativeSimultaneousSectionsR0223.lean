@@ -191,7 +191,37 @@ open ValuativeSimultaneousSectionsR0223
 
 /-- One smooth proper finite flat cover realizes all prescribed valuative sections. -/
 theorem valuative_simultaneous_sections :
-∀ (k : Type) [Field k] [CharZero k] (Z : AlgebraicGeometry.Scheme.{0}) [AlgebraicGeometry.IsIntegral Z] (b : Quiver.Hom Z (AlgebraicGeometry.Spec (CommRingCat.of k))) [AlgebraicGeometry.IsProper b] [AlgebraicGeometry.SmoothOfRelativeDimension 1 b] (J : Z.Modules), AlgebraicGeometry.Scheme.Modules.IsInvertible J → ∀ (K s : ℕ), 0 < K → ∀ (F : Fin s → ArithmeticThetaSimultaneousUnaryR0187.Sections Z (ArithmeticThetaTensorPower.tensorPower Z J K)), (∀ j, F j ≠ 0) → ∀ (Ω : Type) [Field Ω] (A : ValuationSubring Ω) (f : Quiver.Hom (ArithmeticThetaValuativeRootsR0223.ValuationPoint Ω A) Z), AlgebraicGeometry.IsDominant (CategoryTheory.CategoryStruct.comp (ArithmeticThetaValuativeRootsR0223.genericInclusion Ω A) f) → ∀ (h : ArithmeticThetaSimultaneousUnaryR0187.Sections (ArithmeticThetaValuativeRootsR0223.ValuationPoint Ω A) ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J)), ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J) ⊤ h → ∀ (a : Fin s → A), (∀ j, ArithmeticThetaValuativeRootsR0223.IntegralEquation Ω A f J K (F j) h (a j)) → ∃ R : ArithmeticThetaSimultaneousUnaryR0187.RootCover k Z b (K^s), ArithmeticThetaValuativeRootsR0223.Realizes k R Ω A J K s F f h a := by
+    ∀ (k : Type) [Field k] [CharZero k] (Z : AlgebraicGeometry.Scheme.{0})
+      [AlgebraicGeometry.IsIntegral Z]
+      (b : Quiver.Hom Z (AlgebraicGeometry.Spec (CommRingCat.of k))) [AlgebraicGeometry.IsProper b]
+      [AlgebraicGeometry.SmoothOfRelativeDimension 1 b] (J : Z.Modules),
+      AlgebraicGeometry.Scheme.Modules.IsInvertible J →
+        ∀ (K s : ℕ),
+          0 < K →
+            ∀
+              (F :
+                Fin s →
+                  ArithmeticThetaSimultaneousUnaryR0187.Sections Z
+                    (ArithmeticThetaTensorPower.tensorPower Z J K)),
+              (∀ j, F j ≠ 0) →
+                ∀ (Ω : Type) [Field Ω] (A : ValuationSubring Ω)
+                  (f : Quiver.Hom (ArithmeticThetaValuativeRootsR0223.ValuationPoint Ω A) Z),
+                  AlgebraicGeometry.IsDominant
+                      (CategoryTheory.CategoryStruct.comp
+                        (ArithmeticThetaValuativeRootsR0223.genericInclusion Ω A) f) →
+                    ∀
+                      (h :
+                        ArithmeticThetaSimultaneousUnaryR0187.Sections
+                          (ArithmeticThetaValuativeRootsR0223.ValuationPoint Ω A)
+                          ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J)),
+                      ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+                          ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J) ⊤ h →
+                        ∀ (a : Fin s → A),
+                          (∀ j,
+                              ArithmeticThetaValuativeRootsR0223.IntegralEquation Ω A f J K (F j) h
+                                (a j)) →
+                            ∃ R : ArithmeticThetaSimultaneousUnaryR0187.RootCover k Z b (K ^ s),
+                              ArithmeticThetaValuativeRootsR0223.Realizes k R Ω A J K s F f h a := by
   intro k _ _ Z _ b _ _ J hJ K s hK F hF Ω _ A f hdom h hh a ha
   letI := hdom
   obtain ⟨φ, hφ⟩ := valuation_field_map Ω A f

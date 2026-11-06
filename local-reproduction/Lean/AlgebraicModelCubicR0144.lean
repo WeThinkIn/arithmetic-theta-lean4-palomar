@@ -460,7 +460,20 @@ end ArithmeticThetaCubicModelR0144
 namespace ArithmeticThetaCubicModelR0144
 
 theorem algebraic_model_cubic :
-    ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2) (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3), ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X → ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y → ArithmeticThetaCubicModelR0144.ModelCubic k M s X Y := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+        (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+        (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+        (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+        (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+        (hs :
+          ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+            (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+        (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2)
+        (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3),
+        ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X →
+          ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y →
+            ArithmeticThetaCubicModelR0144.ModelCubic k M s X Y := by
   intro k _ _ r hr h3 T he M hM s hs X Y hX hY
   exact AlgebraicModelCubicR0144.model_cubic_proof k h3 he M hM s hs X Y hX hY
 

@@ -109,7 +109,23 @@ end SchemeAlphaCharacter
 /-- The full source character, using the same global Miller phase and signed
 cotangent alpha for every even-stabilizer marking change. -/
 theorem scheme_alpha_character :
-∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4), ∀ (z : S.presheaf.obj (Opposite.op ⊤)) (a : (ArithmeticThetaSchemeHodgeR0205.Cotangent E).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z → ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E M a → ∀ (A : ArithmeticThetaFourTorsion.Mat4), ArithmeticThetaFourTorsion.PreservesEven A → ∃ M' : ArithmeticThetaSchemeLevelR0204.FullLevel E 4, ArithmeticThetaSchemeFourCharacterR0215.Changes E M M' A ∧ ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M' z ∧ (∀ a' : (ArithmeticThetaSchemeHodgeR0205.Cotangent E).presheaf.obj (Opposite.op ⊤), ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E M' a' → a' = z ^ (ArithmeticThetaFourTorsion.characterExponent A).val • a) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4),
+      ∀ (z : S.presheaf.obj (Opposite.op ⊤))
+        (a : (ArithmeticThetaSchemeHodgeR0205.Cotangent E).presheaf.obj (Opposite.op ⊤)),
+        ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z →
+          ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E M a →
+            ∀ (A : ArithmeticThetaFourTorsion.Mat4),
+              ArithmeticThetaFourTorsion.PreservesEven A →
+                ∃ M' : ArithmeticThetaSchemeLevelR0204.FullLevel E 4,
+                  ArithmeticThetaSchemeFourCharacterR0215.Changes E M M' A ∧
+                    ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M' z ∧
+                      (∀ a' :
+                        (ArithmeticThetaSchemeHodgeR0205.Cotangent E).presheaf.obj (Opposite.op ⊤),
+                        ArithmeticThetaSchemeFourCharacterR0215.RealizesAlpha E M' a' →
+                          a' = z ^ (ArithmeticThetaFourTorsion.characterExponent A).val • a) := by
   intro k _ _ S σ E M z a hz ha A hA
   obtain ⟨N, hN, _⟩ := (scheme_four_marking_action k S σ E M).1 A hA.1
   obtain ⟨w, hw, _⟩ := (scheme_miller_phase k S σ E N).1

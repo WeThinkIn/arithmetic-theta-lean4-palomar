@@ -558,7 +558,26 @@ open CompatibleClassifyingUniqueness
 
 /-- Both maps of a compatible marked Cartesian classification are unique. -/
 theorem compatible_classifying_uniqueness :
-∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L) (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L) (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A), ArithmeticThetaCompatibleLevelR0178.CanonicalTwo k L A B → ∀ (C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B) (Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C) (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] [Algebra k R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))) (b₁ b₂ : Quiver.Hom (ArithmeticThetaRelativeDiscriminantR0171.Base R) (ArithmeticThetaRelativeDiscriminantR0171.Base Q.quotient.ring)) (f₁ f₂ : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve R W) A.descent.family.curve), ArithmeticThetaCompatibleLevelR0178.Classifies k L A B C Q R W G M b₁ f₁ → ArithmeticThetaCompatibleLevelR0178.Classifies k L A B C Q R W G M b₂ f₂ → b₁ = b₂ ∧ f₁ = f₂ := by
+    ∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L)
+      (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L)
+      (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A),
+      ArithmeticThetaCompatibleLevelR0178.CanonicalTwo k L A B →
+        ∀ (C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B)
+          (Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C) (R : Type u)
+          [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R]
+          [Algebra k R] (W : WeierstrassCurve R) [W.IsElliptic]
+          (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+          (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G)
+          (M :
+            ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L
+              (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)))
+          (b₁ b₂ :
+            Quiver.Hom (ArithmeticThetaRelativeDiscriminantR0171.Base R)
+              (ArithmeticThetaRelativeDiscriminantR0171.Base Q.quotient.ring))
+          (f₁ f₂ : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve R W) A.descent.family.curve),
+          ArithmeticThetaCompatibleLevelR0178.Classifies k L A B C Q R W G M b₁ f₁ →
+            ArithmeticThetaCompatibleLevelR0178.Classifies k L A B C Q R W G M b₂ f₂ →
+              b₁ = b₂ ∧ f₁ = f₂ := by
   intro k _ _ L hL _heven A B hB C Q R _ _ _ _ _ _ W _ G hG M b₁ b₂ f₁ f₂ h₁ h₂
   letI : CharZero R := charZero_of_injective_algebraMap (algebraMap ℚ R).injective
   let K := AlgebraicClosure (FractionRing R)

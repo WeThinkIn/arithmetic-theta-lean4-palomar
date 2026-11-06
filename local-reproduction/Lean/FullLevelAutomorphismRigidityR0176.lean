@@ -503,7 +503,24 @@ open FullLevelAutomorphismRigidity
 
 /-- Full-level pointed automorphism rigidity over the specified rational base. -/
 theorem full_level_automorphism_rigidity :
-    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 3 ≤ L) (M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))) (e : CategoryTheory.Iso (ArithmeticThetaRelativeKatoR0169.Curve R W) (ArithmeticThetaRelativeKatoR0169.Curve R W)), CategoryTheory.CategoryStruct.comp (e.hom) (ArithmeticThetaRelativeKatoR0169.structureMap R W) = ArithmeticThetaRelativeKatoR0169.structureMap R W → CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeKatoR0169.origin R W) (e.hom) = ArithmeticThetaRelativeKatoR0169.origin R W → CategoryTheory.CategoryStruct.comp (M.x.val) (e.hom) = M.x.val → CategoryTheory.CategoryStruct.comp (M.y.val) (e.hom) = M.y.val → e.hom = CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeKatoR0169.Curve R W) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 3 ≤ L)
+      (M :
+        ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L
+          (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)))
+      (e :
+        CategoryTheory.Iso (ArithmeticThetaRelativeKatoR0169.Curve R W)
+          (ArithmeticThetaRelativeKatoR0169.Curve R W)),
+      CategoryTheory.CategoryStruct.comp (e.hom)
+            (ArithmeticThetaRelativeKatoR0169.structureMap R W) =
+          ArithmeticThetaRelativeKatoR0169.structureMap R W →
+        CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeKatoR0169.origin R W) (e.hom) =
+            ArithmeticThetaRelativeKatoR0169.origin R W →
+          CategoryTheory.CategoryStruct.comp (M.x.val) (e.hom) = M.x.val →
+            CategoryTheory.CategoryStruct.comp (M.y.val) (e.hom) = M.y.val →
+              e.hom = CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeKatoR0169.Curve R W) := by
   intro R _ _ _ _ _ W _ G hG L hL M e he ho hx hy
   classical
   let K := AlgebraicClosure (FractionRing R)

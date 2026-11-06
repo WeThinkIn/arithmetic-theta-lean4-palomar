@@ -233,7 +233,26 @@ private lemma uniform_zero (m : ℕ) [NeZero m] (he : Even m)
 
 /-- Uniform realization of every Laurent coefficient vector, including zero. -/
 theorem uniform_theta_chart_realization :
-    ∀ (k : Type u) [Field k] [CharZero k] (m : ℕ) [NeZero m] (he : Even m), ∀ v : Fin m → ArithmeticThetaSchrodingerR0119.K k, ∃ (b : ℕ) (w : Fin m → PowerSeries k), (∀ ν : Fin m, (HahnSeries.ofPowerSeries ℤ k) (w ν) = ArithmeticThetaSchrodingerR0119.monomial k (b : ℤ) * v ν) ∧ ArithmeticThetaAnnularThetaR0128.UniformCompatible k m (NeZero.pos m) (ArithmeticThetaAnnularThetaR0128.uniformSection k m (NeZero.pos m) he w) ∧ (∀ (j : Fin (2*m)) (a : kˣ), (HahnSeries.ofPowerSeries ℤ k) (ArithmeticThetaAnnularThetaR0128.specialize k a (ArithmeticThetaAnnularThetaR0128.uniformSection k m (NeZero.pos m) he w j)) = ArithmeticThetaSchrodingerR0119.monomial k ((b + ArithmeticThetaAnnularThetaR0128.commonShift m : ℕ) : ℤ) * ArithmeticThetaSchrodingerR0119.evaluate k (ArithmeticThetaSchrodingerR0119.synth k m v) (j.val : ℤ) a) ∧ (∀ j : Fin (2*m), ArithmeticThetaAnnularThetaR0128.uniformSection k m (NeZero.pos m) he w j = 0 ↔ v = 0) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (m : ℕ) [NeZero m] (he : Even m),
+      ∀ v : Fin m → ArithmeticThetaSchrodingerR0119.K k,
+        ∃ (b : ℕ) (w : Fin m → PowerSeries k),
+          (∀ ν : Fin m,
+              (HahnSeries.ofPowerSeries ℤ k) (w ν) =
+                ArithmeticThetaSchrodingerR0119.monomial k (b : ℤ) * v ν) ∧
+            ArithmeticThetaAnnularThetaR0128.UniformCompatible k m (NeZero.pos m)
+                (ArithmeticThetaAnnularThetaR0128.uniformSection k m (NeZero.pos m) he w) ∧
+              (∀ (j : Fin (2 * m)) (a : kˣ),
+                  (HahnSeries.ofPowerSeries ℤ k)
+                      (ArithmeticThetaAnnularThetaR0128.specialize k a
+                        (ArithmeticThetaAnnularThetaR0128.uniformSection k m (NeZero.pos m) he w
+                          j)) =
+                    ArithmeticThetaSchrodingerR0119.monomial k
+                        ((b + ArithmeticThetaAnnularThetaR0128.commonShift m : ℕ) : ℤ) *
+                      ArithmeticThetaSchrodingerR0119.evaluate k
+                        (ArithmeticThetaSchrodingerR0119.synth k m v) (j.val : ℤ) a) ∧
+                (∀ j : Fin (2 * m),
+                  ArithmeticThetaAnnularThetaR0128.uniformSection k m (NeZero.pos m) he w j = 0 ↔
+                    v = 0) := by
   intro k _ _ m _ he v
   obtain ⟨b, w, hw⟩ := clear_denominators k m v
   refine ⟨b, w, hw, uniform_compatible k m he w,

@@ -75,18 +75,26 @@ private lemma nodeMap_base (b : PowerSeries k) :
   change polynomialMap k l ι (MvPolynomial.C b) = _
   simp [polynomialMap]
 
-private lemma nodeMap_t : nodeMap k l ι (ArithmeticThetaScaledTateBridgeR0046.t k 1) = ArithmeticThetaScaledTateBridgeR0046.t l 1 := by
+private lemma nodeMap_t :
+    nodeMap k l ι (ArithmeticThetaScaledTateBridgeR0046.t k 1) =
+      ArithmeticThetaScaledTateBridgeR0046.t l 1 := by
   simp [ArithmeticThetaScaledTateBridgeR0046.t, ArithmeticThetaScaledTateBridgeR0046.parameter, nodeMap_base, baseMap]
 
-private lemma nodeMap_x : nodeMap k l ι (ArithmeticThetaScaledTateBridgeR0046.x k 1) = ArithmeticThetaScaledTateBridgeR0046.x l 1 := by
+private lemma nodeMap_x :
+    nodeMap k l ι (ArithmeticThetaScaledTateBridgeR0046.x k 1) =
+      ArithmeticThetaScaledTateBridgeR0046.x l 1 := by
   change polynomialMap k l ι (MvPolynomial.X 0) = _
   simp [polynomialMap]
 
-private lemma nodeMap_y : nodeMap k l ι (ArithmeticThetaScaledTateBridgeR0046.y k 1) = ArithmeticThetaScaledTateBridgeR0046.y l 1 := by
+private lemma nodeMap_y :
+    nodeMap k l ι (ArithmeticThetaScaledTateBridgeR0046.y k 1) =
+      ArithmeticThetaScaledTateBridgeR0046.y l 1 := by
   change polynomialMap k l ι (MvPolynomial.X 1) = _
   simp [polynomialMap]
 
-private lemma nodeMap_ideal : (ArithmeticThetaScaledTateBridgeR0046.nodeIdeal k 1).map (nodeMap k l ι) ≤ ArithmeticThetaScaledTateBridgeR0046.nodeIdeal l 1 := by
+private lemma nodeMap_ideal :
+    (ArithmeticThetaScaledTateBridgeR0046.nodeIdeal k 1).map (nodeMap k l ι) ≤
+      ArithmeticThetaScaledTateBridgeR0046.nodeIdeal l 1 := by
   rw [ArithmeticThetaScaledTateBridgeR0046.nodeIdeal, Ideal.map_span, Set.image_singleton, nodeMap_t]
   rfl
 
@@ -397,7 +405,19 @@ private lemma laurent_extension : ∃! ell : LaurentSeries k →+* LaurentSeries
 end CoefficientCompletedMapsR0157
 
 theorem coefficient_completed_maps :
-    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) , (∃! ell : LaurentSeries k →+* LaurentSeries l, ArithmeticThetaCoefficientNormDescentR0157.IsLaurentMap k l ι ell) ∧ (∃! ρ : ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart l, ArithmeticThetaCoefficientNormDescentR0157.IsChartMap k l ι ρ ∧ Function.Injective ρ) ∧ (∀ (ρ : ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart l), ArithmeticThetaCoefficientNormDescentR0157.IsChartMap k l ι ρ → ∃! E : ArithmeticThetaKatoAnnularR0152.ChartField k →+* ArithmeticThetaKatoAnnularR0152.ChartField l, ArithmeticThetaCoefficientNormDescentR0157.ExtendsChart k l ρ E) := by
+    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l),
+      (∃! ell : LaurentSeries k →+* LaurentSeries l,
+          ArithmeticThetaCoefficientNormDescentR0157.IsLaurentMap k l ι ell) ∧
+        (∃! ρ : ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart l,
+            ArithmeticThetaCoefficientNormDescentR0157.IsChartMap k l ι ρ ∧ Function.Injective ρ) ∧
+          (∀
+            (ρ :
+              ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart l),
+            ArithmeticThetaCoefficientNormDescentR0157.IsChartMap k l ι ρ →
+              ∃! E :
+                ArithmeticThetaKatoAnnularR0152.ChartField k →+*
+                  ArithmeticThetaKatoAnnularR0152.ChartField l,
+                ArithmeticThetaCoefficientNormDescentR0157.ExtendsChart k l ρ E) := by
   intro k l _ _ _ _ ι
   refine ⟨CoefficientCompletedMapsR0157.laurent_extension k l ι, ?_, ?_⟩
   · refine ⟨CoefficientCompletedMapsR0157.coefficientMap k l ι,

@@ -129,7 +129,33 @@ open SchemeFourCover EvenMarkingSubcover EvenCoverBaseChange
 
 /-- The actual even marking cover commutes with every pointed Cartesian base change. -/
 theorem even_cover_base_change :
-∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S), ∀ (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E) (z : S.presheaf.obj (Opposite.op ⊤)), z^2 = -1 → ∀ (D : ArithmeticThetaEvenMarkingTorsorR0216.Cover E), ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D → ∀ (T : AlgebraicGeometry.Scheme.{u}) (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (b : Quiver.Hom T S) (f : Quiver.Hom F.curve E.curve), ArithmeticThetaEvenMarkingTorsorR0216.Cartesian E F b f → ∀ (Q : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint F), CategoryTheory.CategoryStruct.comp Q.point.val f = CategoryTheory.CategoryStruct.comp b P.point.val → ∀ (C : ArithmeticThetaEvenMarkingTorsorR0216.Cover F), ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven F Q (b.appTop z) C → ∃! q : {q : Quiver.Hom C.space D.space // CategoryTheory.CategoryStruct.comp q D.projection = CategoryTheory.CategoryStruct.comp C.projection b}, CategoryTheory.IsPullback q.val C.projection D.projection b ∧ ∃ h : Quiver.Hom C.family.curve D.family.curve, ArithmeticThetaSchemeLevelR0204.MarkedCartesian D.family C.family D.marking C.marking q.val h ∧ CategoryTheory.CategoryStruct.comp h D.comparison = CategoryTheory.CategoryStruct.comp C.comparison f := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S),
+      ∀ (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E)
+        (z : S.presheaf.obj (Opposite.op ⊤)),
+        z ^ 2 = -1 →
+          ∀ (D : ArithmeticThetaEvenMarkingTorsorR0216.Cover E),
+            ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D →
+              ∀ (T : AlgebraicGeometry.Scheme.{u})
+                (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (b : Quiver.Hom T S)
+                (f : Quiver.Hom F.curve E.curve),
+                ArithmeticThetaEvenMarkingTorsorR0216.Cartesian E F b f →
+                  ∀ (Q : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint F),
+                    CategoryTheory.CategoryStruct.comp Q.point.val f =
+                        CategoryTheory.CategoryStruct.comp b P.point.val →
+                      ∀ (C : ArithmeticThetaEvenMarkingTorsorR0216.Cover F),
+                        ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven F Q (b.appTop z) C →
+                          ∃! q :
+                            { q : Quiver.Hom C.space D.space //
+                              CategoryTheory.CategoryStruct.comp q D.projection =
+                                CategoryTheory.CategoryStruct.comp C.projection b },
+                            CategoryTheory.IsPullback q.val C.projection D.projection b ∧
+                              ∃ h : Quiver.Hom C.family.curve D.family.curve,
+                                ArithmeticThetaSchemeLevelR0204.MarkedCartesian D.family C.family
+                                    D.marking C.marking q.val h ∧
+                                  CategoryTheory.CategoryStruct.comp h D.comparison =
+                                    CategoryTheory.CategoryStruct.comp C.comparison f := by
   intro k _ _ S σ E P z _hz D hD T F b f hc Q hQ C hC
   have hCE := cartesian_comp E F C.family b f hc
     C.projection C.comparison C.cartesian

@@ -16,7 +16,35 @@ open ArithmeticThetaRelativeIsogenyHodgeR0172 ArithmeticThetaRelativeKatoNatural
 /-- The same quotient carries the lift to a nowhere-identity torsion section
 and the normalized Kato function has a unique unit value along this section. -/
 theorem cyclic_quotient_torsion_kato_value :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (n : ℕ) (hn : 0 < n) (P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G n) (V : WeierstrassCurve R) [V.IsElliptic] (H : ArithmeticThetaRelativeKatoR0169.Law R V) (hH : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R V H) (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V) (hf : ArithmeticThetaRelativeCyclicQuotientR0173.IsQuotient R W G P f) [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R V)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R V)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R V)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R V)] (N : ℕ) (hN : 0 < N) (Q : Quiver.Hom (ArithmeticThetaRelativeDiscriminantR0171.Base R) (ArithmeticThetaRelativeKatoR0169.Curve R W)) (hQ : ArithmeticThetaRelativeCyclicQuotientR0173.LiftConditions R W G P N Q), CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.comp Q f.map) (H.schemeNsmul N) = ArithmeticThetaRelativeKatoR0169.origin R V ∧ Disjoint (Set.range (CategoryTheory.CategoryStruct.comp Q f.map)) (Set.range (ArithmeticThetaRelativeKatoR0169.origin R V)) ∧ ∀ (g : (ArithmeticThetaRelativeKatoR0169.Curve R V).functionField), ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R V H (1+12*N) g → ∃! v : R, IsUnit v ∧ ArithmeticThetaRelativeKatoNaturalityR0170.HasValue R V (CategoryTheory.CategoryStruct.comp Q f.map) g v := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (n : ℕ) (hn : 0 < n)
+      (P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G n)
+      (V : WeierstrassCurve R) [V.IsElliptic] (H : ArithmeticThetaRelativeKatoR0169.Law R V)
+      (hH : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R V H)
+      (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V)
+      (hf : ArithmeticThetaRelativeCyclicQuotientR0173.IsQuotient R W G P f)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R V)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R V)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R V)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R V)]
+      (N : ℕ) (hN : 0 < N)
+      (Q :
+        Quiver.Hom (ArithmeticThetaRelativeDiscriminantR0171.Base R)
+          (ArithmeticThetaRelativeKatoR0169.Curve R W))
+      (hQ : ArithmeticThetaRelativeCyclicQuotientR0173.LiftConditions R W G P N Q),
+      CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.comp Q f.map)
+            (H.schemeNsmul N) =
+          ArithmeticThetaRelativeKatoR0169.origin R V ∧
+        Disjoint (Set.range (CategoryTheory.CategoryStruct.comp Q f.map))
+            (Set.range (ArithmeticThetaRelativeKatoR0169.origin R V)) ∧
+          ∀ (g : (ArithmeticThetaRelativeKatoR0169.Curve R V).functionField),
+            ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R V H (1 + 12 * N) g →
+              ∃! v : R,
+                IsUnit v ∧
+                  ArithmeticThetaRelativeKatoNaturalityR0170.HasValue R V
+                    (CategoryTheory.CategoryStruct.comp Q f.map) g v := by
   intro R _ _ _ _ _ W _ G hG n hn P V _ H hH f hf _ _ _ _ N hN Q hQ
   have ho : origin R V ≫ structureMap R V = 𝟙 _ :=
     (WeierstrassProjModel.kwZeroSect R V).property

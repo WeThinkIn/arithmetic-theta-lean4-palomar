@@ -1,0 +1,1768 @@
+{
+  "baseline_commit": "2df5f396b6d325f74ae6733612df2c5af1b915e6",
+  "edition": "readability-20261106",
+  "module_count": 1199,
+  "changed_modules": 293,
+  "formatting_only_modules": 285,
+  "original_contract_and_103_probes_unchanged": true,
+  "changes": [
+    {
+      "file": "Lean/ArbitraryThetaLineBaseChangeR0213.lean",
+      "before_sha256": "961989c7a9e58b57100ecbe24414e041ab931eb3084235e71743223cd3687461",
+      "after_sha256": "6c24b521a7f41c60a77f12ced8d569622a45544e0adf60e852abd4b925f16fe9",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CompactifiedCoordinateIsomorphismR0145.lean",
+      "before_sha256": "0b0b8d928ce39aca05af4136bbee08c11759cccd73a921b4c978f1274fbaefd6",
+      "after_sha256": "05e1bf42b1a69a86b5341cf6119581c7a2b38c0c21796b6d427b00df37c712da",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/MultiplicationEvaluationR0156.lean",
+      "before_sha256": "8a93377b6504a19e58f149e819f0a1a6d16ce443acf23d2856311bf50ac0e502",
+      "after_sha256": "2008b39fbda8efa79e109702f6565ebdc0163e6d8b76280a40fb5075c0197a27",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeometricShiftLiftR0141.lean",
+      "before_sha256": "450e57fccb509202e4b45ecfebee4ae069b25a1ddc4a5db0fba0d9409ed6af4d",
+      "after_sha256": "0cfcc3e153ce7fca4629e63ff9c884e88f2c0db51100925860b8b1114c03debc",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeCyclicThetaSplittingR0259.lean",
+      "before_sha256": "387cd6cd4452f7878d7e3d1370eaa81528b660891d528b90333acf7fb387ee94",
+      "after_sha256": "cac782dfa743bb45e5f63dd64949e4f1ed45f77f5b429e51ba4f1e976fd3e95f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/PointedHodgeFunctorialityR0172.lean",
+      "before_sha256": "cef52805bd2a2019c8b10e587721520d9124455dc8faee14e8170f452f1c0de2",
+      "after_sha256": "50de29928ce286c0ba07df02340edfb512fc89c11d6d5f6e5f15bbf549419a72",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/AdaptiveScalarExtensionImageR0240.lean",
+      "before_sha256": "b6b086ab7badf8ba745935959d351bafcdbae8f4dce572ed5fdadd9b4af2786c",
+      "after_sha256": "91aa1791248f905b1c62974ccb3b76e18cff71d51114c2cb73adfc124167e327",
+      "kind": "transparent_abbreviations_and_presentation"
+    },
+    {
+      "file": "Lean/PrescribedProjectiveRootFiniteModelR0224.lean",
+      "before_sha256": "c2afccebeb35fa506a189775499a6e3658b070e3ea75dd39bf2dd19bf14e565a",
+      "after_sha256": "d1eb76ed1db76b056c710120b0f240c971e8d5754cf142cd43969f5705a12c3c",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FieldUnaryPowersInCommonSquareLineR0238.lean",
+      "before_sha256": "acf467e1750b306ccdfb06195c83151e19a5e08e9e8ffcc4b32acba2c5417228",
+      "after_sha256": "45a862df92f997e0e2a3f606af69fd358c33e40954b321b862c4c5d176324e32",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/OrderedTwoSignRigidityR0178.lean",
+      "before_sha256": "4b5f5428e20bf99b98308f8f7d2aa1bb076aec3a0e0795efff621646db95514c",
+      "after_sha256": "9295ed5f5ab1588e7887ecceb9cdc06b4c443f18d8c232f51f47221e3d006fe2",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeTorsionValueNaturalityR0170.lean",
+      "before_sha256": "bb2dad1a3c6bd8299182ccf59002f393c99685974e7b10e4504b4221df538af2",
+      "after_sha256": "ef3bd76ebafafd06efa7266f107fea7fe1883db16326f82b711b7db7da99debf",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeKatoArbitraryBaseChangeR0170.lean",
+      "before_sha256": "9d87d46062608148620e40a2d7fe9cc116fe55fd9bb733a6f61f4919e0037c4f",
+      "after_sha256": "fa7f8d7c2a27b0a6535376f4c094e7cba87a482a21c33e880e688c042c0d84ab",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GenericThetaBasisR0140.lean",
+      "before_sha256": "975e6c93f8b6b9e4662d0f4e4eb0eb7b395baf807151f7ded7a2fc840b2b4da5",
+      "after_sha256": "66fff2ea3e73e3b209515c137f85a8ad019d181bf4ad37f72f4872e34c0438bd",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/QuotientTargetFullLevelR0175.lean",
+      "before_sha256": "b0d071e738ed6209af27158147febdd57dce0e66b5d5baeef9e9c1410e4f42ca",
+      "after_sha256": "135391d218b1b751e6295cf80846df5fce1370a1be2a4c12539ea97be2e9e1e5",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CompactThetaSectionImageR0209.lean",
+      "before_sha256": "906ce7077ad6845514e81f54ec1722f41ff7dbc5671229a33f6cad69020c90b9",
+      "after_sha256": "156c893bac66e349d5267d98fb154c39cf382546237b74a930ca4cfddb996572",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualSplitTorsionKernelR0152.lean",
+      "before_sha256": "87562c5ca931fd29a02ee4e7a7aa0bd7476db5ea17823d9f3a39ca28e237cee3",
+      "after_sha256": "11fb75bfe0dfb3905f98b03fa94e4e1cd17f86f763010f5378216973e56b7b5f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CoefficientEvaluationNaturalityR0158.lean",
+      "before_sha256": "e01b4e665545affe806864e036adadcf874419471e791bd0bdf60b2456a6ac8d",
+      "after_sha256": "0ce8bdb2718bc24a2c72ca80f90eb9d786807bfe70f3028d5ae8d179daacfffb",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RationalMorphismOpenR0266.lean",
+      "before_sha256": "4b1da3f17329cb7389e7628ac0b7f4c7f14ff3c2deefa2834f297386dd4697a8",
+      "after_sha256": "0c08acf00f818f2eb7378116bda092bb0def8155cb2731afa5c5fba79ce707b3",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeFullLevelThetaMarkingR0259.lean",
+      "before_sha256": "a631fc69bfc0c9bc8cc193bebabbebeb70fe5902350ff4d3706d063c553b629e",
+      "after_sha256": "938ae30f8dfcd4f0b4518cc1946a637a0f6649fbc898d4ad3071035214a9eefa",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CompatibleLocalCoverageR0178.lean",
+      "before_sha256": "6c93851648331e992ebcfff0b71b893f3dc0ee246c35b9a798f1b67b12804b42",
+      "after_sha256": "330a79193659c1547683d1e6de15c76bfa1ebe277e5ba280eee286df1192cde3",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemePairingReversalR0218.lean",
+      "before_sha256": "22f945fc4831cfda115dd1210d3c4370b8b740d52734dccde030d32fcf1ee243",
+      "after_sha256": "1ff36a4a2ab53f06bffb1e0d27d0510ea943db002a6665d8f5821e903f50b000",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeInitialSectionNaturalityR0171.lean",
+      "before_sha256": "68ca78af82ae4f81355b6f07edfed2b73c2907b6045cd81acbf42777058f8317",
+      "after_sha256": "243503845ebcf81e897f3e5247c45652b148dc3478e222b9c2d80b13f6bfb149",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/TranslationInvariantDifferentialR0148.lean",
+      "before_sha256": "68aa93ce4bd47f14d138d8737ebccb5f78220e2a2f018ebf41a85c5950299f78",
+      "after_sha256": "a2d6d451656e13683131e32a2e73e995389c7edda4316b6f6020af07e23f0218",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/TwoTorsionSplitCubicR0177.lean",
+      "before_sha256": "e7f260807472516d40246caee0ab40cdcdcdd3fb7170e58d8e67d8d33e4d9856",
+      "after_sha256": "0fac91aabd906e2d9b6abf9947c731e774bedf210003ec97ecf73a5abe2b431d",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ConservativeImageConsumerR0268.lean",
+      "before_sha256": "c37cd37b00ade5a18aa909bd3dda0303d5b7ff408be6c9351a42797a852fe17c",
+      "after_sha256": "de12045644142ddec0e4596dd9fe4c575d1e531a055bb7924ffeb521364872b9",
+      "kind": "transparent_abbreviations_and_presentation"
+    },
+    {
+      "file": "Lean/ArbitraryOrderedParameterR0202.lean",
+      "before_sha256": "0779e906a8ebbd13c290355d0df537f74b4a7cb271c15f263408035cba2cda36",
+      "after_sha256": "14abfa8317a00acea0b2004ae89e42132b53e461d47689f4fa43891e79e120ca",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RamifiedMarkedSectionsR0154.lean",
+      "before_sha256": "37f01c6fd3577be2be5bd67bcf08a197803fec169e5848add62cc5526872d680",
+      "after_sha256": "8b70e625f3698e58f41fe692ea0b85f325e4b5cf8ce953078ce673446da54468",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/DiscriminantTateRootR0185.lean",
+      "before_sha256": "7816d4e2bb605e4a2d23ff4afa09cd095423ed722ae635c1208c855a7a159e09",
+      "after_sha256": "24a451be5e97a13d1238cc83c0b73878add9ba77da299be2456ef12b6927ee6e",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArithmeticSectionImageR0239.lean",
+      "before_sha256": "2448a573c1f7c7ea1a1ce609f59429a074ef2c8640cacda47b234b2255f88e9e",
+      "after_sha256": "5fb746cbffe1a2c528aa1743cfec7639fe13580006edc8bd19a6ed26edf4e062",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CyclotomicMatrixModularityR0239.lean",
+      "before_sha256": "53ddfccd406ac1ec17ca948b9c51245244809473417b8ffcda1e6a248299f23e",
+      "after_sha256": "e5589b495d1c4f8030dea2f98e885c723337a83dd349f26d30dfbd01a5213f8c",
+      "kind": "transparent_abbreviations_and_presentation"
+    },
+    {
+      "file": "Lean/OpenDiscriminantConstantNaturalityR0236.lean",
+      "before_sha256": "e5e6146bfbc25364c3b1c2c5ed57a59eec6c1e1f673c1f65a77443851258067d",
+      "after_sha256": "dae5d2ee14271b1d8762c944e158fac8997667312bbeb4d19abfc6dbe7339692",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/TateInvariantComponentRatiosR0265.lean",
+      "before_sha256": "c2cef4bcc77518e4dbbe08c1a4eec2856b8f9fcb289770ad36360b1b63c91a2b",
+      "after_sha256": "10d57592e69dad6467ae3439d90f2a4cd91cd672df9474cc37577cc8d93e2722",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/EvenCoverBaseChangeR0216.lean",
+      "before_sha256": "2294580f322da8e63933348a7cc0a28ec8402a6491510308a722483347563a53",
+      "after_sha256": "3f305e5ddf552e5acb7545dce9c45aa1e94bad95430543fea26ae5ac2ac44949",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeAlphaSectionR0215.lean",
+      "before_sha256": "8bd2cc94745f411ebf1f464fe82e40841d72942d0d022c76a4aa434558aa4971",
+      "after_sha256": "967b2e51ee27d9a6f3406f44134d800159d97cfe64ef485b4d8901f1a779b111",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArbitrarySplitFiberBasisR0214.lean",
+      "before_sha256": "7551d98a7eb615c2236f8c8a8bc3595c90c1e4b89979feb361baeee337bafa83",
+      "after_sha256": "7c24829e2561b68ffec4d9cf7252ea191c5e6edb0a75a275baba5278a523615a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/PhaseCoverR0218.lean",
+      "before_sha256": "965ee7f32d7afc3966d58e8b9dfc3a2c65f64eee6a5b25f622f507f5228efaef",
+      "after_sha256": "29a5bb81735f3d447fbebddf5a12c6ccbb6bd6825f0fb85987eae1f16190f5a4",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CoordinateExactPolesR0143.lean",
+      "before_sha256": "559347795fd128baf556a353bc8c09b62d5dced693e0dfd36f7135151f9a8c9f",
+      "after_sha256": "729d4f2e1fc5af96248b88ec35c1b501dfd02aa3a1a5fa19af6f58e1a8893c68",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeFourMarkingActionR0215.lean",
+      "before_sha256": "6a119da0e61f60f879847d666a323dd011016d213a492257455c84203cc83f0b",
+      "after_sha256": "c24bbd677a56dc40b1284f07b6c02c8075fe8d1964072cc8c8169beec8d4cb74",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FullLevelCyclicLiftsR0175.lean",
+      "before_sha256": "daf643a7220f91e75584eea1467daa74ef4f47915df780bf1a13e0edb37113d0",
+      "after_sha256": "4c1cf4c2ccb2e95dd6120cc23f85b49573e0f6a7545f8f845ce4030a5f034b43",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CompactHodgeConstantComparisonR0235.lean",
+      "before_sha256": "02962ba028cfe27ea872e85b9df75424374c7ef2a8d97250b4c229ac907d81c1",
+      "after_sha256": "b25683db5e74a6c51b6e3af5a9152fd5ca40ad2435d451921712ac8cac355a53",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GlobalArithmeticProjectiveRatiosR0266.lean",
+      "before_sha256": "c0ce170ef597193c6591bb2a1214e7e64624db5eab3c65bd5b8b061bdab279d6",
+      "after_sha256": "4137d6f21eb45157f9677220afd783a914900fe80665512c6ac45c2af2376793",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/EllipticSignDescentR0176.lean",
+      "before_sha256": "4a5485d97275aa107400cdec5497574cbb61de61cc5ac0da55083407e87d884d",
+      "after_sha256": "4fec38b2ffe281121f3db96838fa9b0a079e40d859ab4cc0f3b650f8b6e8e7ec",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualKatoFieldBaseChangeR0151.lean",
+      "before_sha256": "1e42b75dfc76ca5aa36c4d743e46a0eb984cba2fa8ac961567c8946f6dfc284c",
+      "after_sha256": "127af1fe89afa7dc54e05fc3be4051b2cb01112ec2dbe9429b6f196ba8766ba6",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GlobalSchemeClassifierR0204.lean",
+      "before_sha256": "fdbd3879af0f4020efb47ff4d0e906d49ac29901b8b227e0f7390366f3d1987d",
+      "after_sha256": "b1365b1542e9d1e04a1ee1e73b4b21f670b8935367cea60db4eaf116f588b8a5",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeAlphaCharacterR0211.lean",
+      "before_sha256": "03849bdd4eebf26db2e1e859fd4e427ec6d895ff1d85d4329801418291234b5d",
+      "after_sha256": "360438f6caa9e7f3fca8dfcca450594454110ee5ef7d325e0e3c1bbd42e20773",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CosetRepresentativeInvarianceR0127.lean",
+      "before_sha256": "1f6ef9d56d25fe535c9d49c5852f4f6a378b5a6cc4a3aff30698f5443188d35c",
+      "after_sha256": "9914e1d4793e07ee1302b0c819665aa681d83b76b44202ae7d2eb0ca6ac3c5c8",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SimultaneousDiskRootSectionsR0187.lean",
+      "before_sha256": "5b24ef33d5d7ff373671055cf98edccf86b2a6db0a78c41201dae34df36191d4",
+      "after_sha256": "78d9a3cdf08a9c8afe768e15e2144270bead789c22bc53b907b0402306de83b6",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/EvenKeyBaseChangeR0217.lean",
+      "before_sha256": "827a5ec47238c66419a397beeb6c786350f5c00c13f8005bc18ec43bfd0dff57",
+      "after_sha256": "a60e7d090117f3c9e0e06aa2ad2b9c5f427acf7be4dceb01ad289731849f3fe7",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CyclicQuotientTorsionKatoValueR0173.lean",
+      "before_sha256": "baa52863b00dbd3925bc849bbdaf5fb1e4a88fcabf125615db909c281dd9cb19",
+      "after_sha256": "33936fe1104414424ad2c5699d864b14e55c88472207611fe524437f53886c9a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/AlgebraicIdentityEvaluationR0140.lean",
+      "before_sha256": "bc7f7bf76ef77dde3570520b8337bc7abca66ffcbdcd2b1bb3801d335b339075",
+      "after_sha256": "b56aec118405ea86d2500cd4136cfa2c3f808c23e7d1ccf23f07304a7e7359c0",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/NormalizedIntegralHodgeFrameR0149.lean",
+      "before_sha256": "f08119eb0de43c90d251c6d658e5d81424bc1b984ea6719e6d3b615513a5a247",
+      "after_sha256": "d73eaffa3f3a2e704f54e2f62eaeb6263fc0cbcce397a79520f843bda8eddc4d",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeometricInversionLiftR0141.lean",
+      "before_sha256": "66ac0cbae0e2999269bf079b331701d4bc75571b76f55c72333ba4d06683b31a",
+      "after_sha256": "b471249d3d4d5d63fa63921b07bc7fbba11f892009532e7b675e1e0c70c6905f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ConservativeMatrixKernelR0189.lean",
+      "before_sha256": "8ac481b7849ff8a2df22a3adb2d8f816bac440b87887c90a653fe7320568fd95",
+      "after_sha256": "518bb959e990ec920b09d6e9ba3196eaef01c76e1424978ae0891133b80b0189",
+      "kind": "transparent_abbreviations_and_presentation"
+    },
+    {
+      "file": "Lean/CosetThetaFactorization.lean",
+      "before_sha256": "b9c7a329dbd3978a1649d33becd65f8c28a7c8c97caf6628e27a757d47ea1d33",
+      "after_sha256": "98d344004f3ab502b4f3b2537722aeacb4a73a4636098cd815c558a0b68049bd",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/UniformThetaChartRealizationR0128.lean",
+      "before_sha256": "1e832151f3163d56a5e86bf122629beb0d1266c1ed4a592cb2d51efb624088d0",
+      "after_sha256": "1a31ff02ed3373706b67c24b530528d4c9114b0efe260bcdc17806ebca7501d3",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/TensorPowerRootIntegration.lean",
+      "before_sha256": "6f96754c942379c49b9f4a53812051af6a696a2cb840d5fd7e64b45cf9b95e38",
+      "after_sha256": "5a3c74c298b6f5f3edfd59146336930fb4c05b839e03833e4fedfe759553f896",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeHodgePowerBaseChangeR0171.lean",
+      "before_sha256": "d51a1b90407c1255034160572c4e916bceb8cec6a31d95808c2830d484ef51a2",
+      "after_sha256": "0542f2b4e536fb1cda32813ddbf5aca02f178c720957cf9c02afc1c7456edebe",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CompactDiscriminantSectionR0182.lean",
+      "before_sha256": "82c27bf4922182edfbd2fa2e5cc23bbf94fc2dc864a869b49ae3e597f180baeb",
+      "after_sha256": "9ae1bddb48972163cb86ebc0b119ddcc0a620252d49f20f4b975731a7f1ea9bd",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/UnaryPowersInCommonSquareLineR0187.lean",
+      "before_sha256": "eeb0400eef284ebde7e330607148284ded79ddc9d4d213e3e63ac442ee56d6b0",
+      "after_sha256": "529f0911e7c2c6cf5b927c9ae840dde5d9ced51c54b9fda5c46921305c0d617b",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/AlgebraizedPositiveFormalSectionsR0136.lean",
+      "before_sha256": "1bfa679c942347567663f93f5499039b1c25c088c2a20200b6fea9c1359d9702",
+      "after_sha256": "5f589ce2ee6dcd6730847d29c873ff93a3f9bdbb2e7469c9f6d81ac6484c0086",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/InvariantRatioFieldDescentR0265.lean",
+      "before_sha256": "164032dfbab01ee4f9e6fccd72019f9cfe28c1400e68a09b7a72c32b31d6c163",
+      "after_sha256": "6a064e390c42e37601244af9081d8d468dda0bec396887ebabe5d54b0156664e",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FramedSchemeQuotientR0174.lean",
+      "before_sha256": "da1fd6b8f91fdcd7e988d4a291902ba8dc18c04ec2412ab2ce010673c534d326",
+      "after_sha256": "df758d4037f72fcf602dd8ff87c032bbf33e1e9804ce0cc3c05a3e65b8e7a4e7",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeConormalHodgeGeneratorR0171.lean",
+      "before_sha256": "2d6ec2919430ea3930fd0406ba351cb5b006db491d6ea646ded1a2e3da3a102c",
+      "after_sha256": "54587e4c1950c24613a4a68f883ab4efc65feb1ad98188ea182fe157673df5ed",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeThetaComparisonCoherenceR0262.lean",
+      "before_sha256": "a20c51e945a774cfb1b0eb618d74b2a9426e1d1aaa1f92e408c5ad6fe9f43dfa",
+      "after_sha256": "b14520f6ff6107325edd1a3b55dd49aff9a60c94f8d1e5b835c4a5992dcff064",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualKatoFunctionExistenceR0151.lean",
+      "before_sha256": "10610e90d1a02402657f3753da39611c0174446014c0048b8034003b71517209",
+      "after_sha256": "dc466e9f81360003abb9a50d1c11f44fdd4e6c9425b743e997f0c0aa87bcbc56",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeMultiplicationHodgeWeightR0172.lean",
+      "before_sha256": "87fbe71867608bb3d5a9a261a91a24995966f0fb8e7a6a09daf2ed6366248f19",
+      "after_sha256": "c1b2d67df0d1273e83fec073a2cd4d11c5d887ea80f7b08dbc5fc759d31d1833",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/MetaplecticFiberEquivalenceR0206.lean",
+      "before_sha256": "45f98a7a794fb0a4cc89ea803e86a09f00e3f3bef66c836a8037a7990871442a",
+      "after_sha256": "f26f0dc710ecc20b5e161c25f5aa60fdfbebafe6cfe0dbcbff5ae8ed4b93e423",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CompletedActionEquivarianceR0153.lean",
+      "before_sha256": "e226f2ab077f3b373ca3ef7d52022cfce1a2613d52087dc7cf4eac3c62663ae5",
+      "after_sha256": "f0f2dbc36aef96bf7cf832bba24e169b6805240537cb6c660a83a24ec9301aea",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/TateTorsionNormalizedIntegralityR0183.lean",
+      "before_sha256": "e0653bd6e80ce676d3846ec6fac46d181e808af0393585794ab75d0df2633e34",
+      "after_sha256": "4e3c4532b38c474b04a306f9e6127c12ab2505b7af78c7311413320f9041f08d",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/EvenCoverTorsorR0216.lean",
+      "before_sha256": "dfd5c7a302396407a019dd13070996b9f02f68cc312c562e3c3f0761a082675c",
+      "after_sha256": "c857836c9aa1fd46be4cd0f354933ad4a1b71ba6da5f5d1d0c534bb18068988e",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeMultiplicationDegreeR0169.lean",
+      "before_sha256": "91b194606527810bb011c492b596874490833661b5fe82a42415571e63964f13",
+      "after_sha256": "134bcfed9b9360d910817d9bdc216f5c65788bb01fbcb59ba62ce1e975fa7f5d",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/EvenCoverRightActionR0216.lean",
+      "before_sha256": "484e3f34033b37ef66964d63e9b4691f92bbeb8672bfa2d39ad20822cdf3207b",
+      "after_sha256": "522b0ec4475c796a24d34f53bb01d216c009d71f5657267d62f06c35ac076b54",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemePushforwardIntertwiningR0262.lean",
+      "before_sha256": "91197d526c63b34b135788694a979c875c2cbbd9491a84f68a16ecea9f19d45b",
+      "after_sha256": "d95a48559e4b7d0b261f77d65c0587d2d8cf82729c719a901e0d364c0a50ae36",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FieldCompactIsogenyAlphaR0237.lean",
+      "before_sha256": "10ec7cd327746e85806e31f39c3b08a9f847942c381814fa5a5433a667a0bea2",
+      "after_sha256": "9d6070d0267b3ef9ace2d1ce6ed0d3d6ca6f763448532d1ed49aa06ac4d51304",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/MarkedCartesianReconstructionR0206.lean",
+      "before_sha256": "39548e678f015f06253626c8410d45097b176d0a98916ba6bb59de82bfd4efbd",
+      "after_sha256": "87881cf6ad28f0dcedb7d3f69fbf2d7086300b039d7e88b452665dcd3041fd2a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GenericDualLocalizationR0140.lean",
+      "before_sha256": "890e6bb001492a1d53ff868a120fd306969ddc8948e27bf39bb9af5a94a0fd2f",
+      "after_sha256": "97951caa213108c470817683eb7dfa146baa6d4d95378b0df33d45fc66031273",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArbitraryAffineClassificationR0202.lean",
+      "before_sha256": "f2ff3734e886dda55d370a0cb370f05eff01d89d2b4ae00d69b010c5b7a8dbd9",
+      "after_sha256": "a314efeca696f744876f891c3f3b50fe19de6a194012f1a0d0fc3f460af11ecb",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemePhaseNaturalityR0215.lean",
+      "before_sha256": "b0d6af2bf4c76fd4c63671ad805b4db251a5258dec8c36d58f88a386efaef420",
+      "after_sha256": "3fd937acfaa0bcc66db1e02aeefaed6c238120e6ffc8f3617097409a086cab7f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/KeyPhaseSwitchR0218.lean",
+      "before_sha256": "262a35494117076a82c07bbe11c0fc8206d554fdce5396408bbac084a683a246",
+      "after_sha256": "c0852e026b28547df8a46cdb4658dfede01701f226c6c2faf7ee458ed6114a1f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeometricScalarLiftR0141.lean",
+      "before_sha256": "083404d87efa85c0dc0016f0ddb5f6a5b1d89466f69aaeb84970f8b63a178caa",
+      "after_sha256": "247960299db354b5021cf65f5a8846bab1f556cc597e665d5f384a4d108a7847",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeneralKatoExistenceR0168.lean",
+      "before_sha256": "580e958d0c993ab5ce50f49ca2b459751d306d7f0ec5f5b2037219478ec13fb1",
+      "after_sha256": "b82a7ddf1c74997b6cb2bdba0a2f9cf9c5e8333336f9c4ae5011d665bf56a060",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/EvenKeyIsomorphismR0217.lean",
+      "before_sha256": "760548c95001b5f5c2c1fa0587eb50dc22e496b9be2ac5b2c98c4ea508ba52c6",
+      "after_sha256": "5163f9c2acba478f4a6f50acc75c3cd747766777b0ff9798614900b42372ffa0",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/UnsplitMarkedKatoValueR0159.lean",
+      "before_sha256": "934ef23e4a50361e8bdab819564ce5b41605bd8e6ee1b1376ab7a2c5c66cb156",
+      "after_sha256": "eba11efcd1d0c5fa7587347fc624f3c511b9008d394798fde493c6d0179ab532",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArithmeticInvariantRatioRealizationR0265.lean",
+      "before_sha256": "4b12f6a5540c3c12ab1b74ed88184d211fcf369d8684c59da12fb7c5fec29d46",
+      "after_sha256": "f82619d67f6b37d7f344d38b9bbbcc485e2e2a40e4e175958063b7a743a334d3",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ProperTowerAutomorphismEffectivityR0137.lean",
+      "before_sha256": "a06338ea9a0f4c048ea1c33a41ec9f3a837f38c2770a2342b1775f0b413bebb8",
+      "after_sha256": "2efa45db356cf06d41903b57d3e368f72a95785b88aa58f483ca9a28c7528325",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeMarkingActionR0211.lean",
+      "before_sha256": "d7480d782f9caac43dafa39a3f2521a4f3b38cc1a757835980411a2e190bfe37",
+      "after_sha256": "edf02bba4ea19b54b03fa9c2b661ad6e3633228d7d47dc7206d96ceca673cc35",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FieldCompactUnaryR0236.lean",
+      "before_sha256": "0d371cf36787a16e68f75dcaeb5c5ce794f2069eaf0ddd15c03a30c78570c673",
+      "after_sha256": "493c926dba49bd07b80c962938b7036b44f23f3f6b6fc27f3c8d9067a10f371a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArithmeticGeometricFamilyExistenceR0189.lean",
+      "before_sha256": "0319330948140ec3bdd6472f5fbff7072e7cce028ceb23a1976fa762eefc6d2e",
+      "after_sha256": "acf2345424703465441276365f97ffa7c206b07567a0662d4850d3e155f5bc00",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/IntegralDiscriminantHodgeR0163.lean",
+      "before_sha256": "7de4a535f3a5a87d1e80c95d967dcde28b4344644dd0d5594a19f532a1157681",
+      "after_sha256": "e336af284eea9b756d56f81c4e2d4ce015a7d522b074113884c219aff3fbde40",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FieldSharpModularFamilyR0232.lean",
+      "before_sha256": "1eb0bc2de96df9a52b49f044cb75509c97d6cac87c02aa3a8fbcfa0cb498f74a",
+      "after_sha256": "3964134d119c3ee3cb828eef42b2aed3946f458f46b981dc5234feee00bf7981",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualInverseComparisonR0146.lean",
+      "before_sha256": "ba738ca59a43c45fd3c65c8a558bd68de50a4afc2f29fe6cd9ca6e3ccb6c4e6f",
+      "after_sha256": "27b4dd244d6ce3833787b0c44e6db9e2670309eebc8096c59ac450e9725c6a3a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SharpFamilyRootLevelR0196.lean",
+      "before_sha256": "f3d8275f62c9d0de7b851dd09fd7be0290995a427c098b5805606f06385ea881",
+      "after_sha256": "0c9c580cd9ce011d2424a31a335d3dc519d0b8945fe55ae72beb42623d1ca60e",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SplitMarkedKatoValueR0159.lean",
+      "before_sha256": "d655347526c88cf24fe0a648ddf1af6eb0081119d72eb739869b716ac0a86ed4",
+      "after_sha256": "d65dccebed59e6801779ad589c17b939d311c8e0f8148efae51659b86bb90b20",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SharpGeometricCutoffR0195.lean",
+      "before_sha256": "93b6bd422a78516414971489e73104edfd3b813c226ba94e2aa772410e9ab10d",
+      "after_sha256": "c306396ee29fd32f40e65b4949dd8e7bc59beaccdbc116aeb75475b2b1fcc25b",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeometricFamilyConservativeCutoffR0189.lean",
+      "before_sha256": "14662191d653a3586fc4549246890d94254e919526f140420178d081c401f5f8",
+      "after_sha256": "543748f33c0c33d9377ed794d27507b2565e6d46157be3cf7a28dd42c630dd19",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ValuedExtensionPrescribedRootsR0223.lean",
+      "before_sha256": "ff1f6f907d059dad4574d6e8c95d05a0f095da448c865e7436534e2b5ba0bbd7",
+      "after_sha256": "c2dcbf56735733b7e8e6a469a439d109ea95a9b8115fbdbc04c5afa0179c543c",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ComputedFamilyFormalUnaryConsumerR0127.lean",
+      "before_sha256": "31db360e02b28d4110f8c4910c08a9ec343cdb90571744a44c520ce6e8897da5",
+      "after_sha256": "bb49e9274adcc601cbef5a5fc9c3c1a31d086dd4b181ef2c96498c6d8e07d21f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeAlphaNaturalityR0215.lean",
+      "before_sha256": "5b8b08d0b293bb00ca4e4eaa81df7d2bd53f50b452bd43f5bdd8d6ef69a2ed98",
+      "after_sha256": "48204aede3181db4f84f891654c70f2012682c3b3d073e7a2ecc8866bf8ca3cd",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CompletedNormProductR0153.lean",
+      "before_sha256": "e57d2ab5158d2d7eea376303501e0252ec618c7b9eab204ba96fc64aca17cd8e",
+      "after_sha256": "8164981bab370bcd55cde6f4457c181e97051ce3a6624ec945c0ec44ac7a0b21",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeometricThetaRelationsR0141.lean",
+      "before_sha256": "29a01e7a3ca8862aeebee2a4e85ff09887e5610cd51a8332c15d8d29d53dc3ea",
+      "after_sha256": "5c437d3810f191b0a1e191a9dc6dcf1dee97b3a9e098c4a1e015c2db1056d41b",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArbitraryAlphaNaturalityR0214.lean",
+      "before_sha256": "d3622320d9b449a44633030a82b129531a301ff31be3fcfc1d61ec6916a4a3aa",
+      "after_sha256": "0397225c9549c520b508117b73464329bd39d34a7ab78ef88fcbb1e9f005824b",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualKatoAnnularComparisonR0152.lean",
+      "before_sha256": "43df258a49c9025e2ff2557c6e4eb0016d5d895beef548c62ac15a59e1eefeb1",
+      "after_sha256": "e3eead0afe51e32e8777e0accd5ffe79919693afb1b73a519fcf27e227a357ea",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/LiteralSplitGeometricNormR0156.lean",
+      "before_sha256": "e7f55d9f1f90fb9fc3083f7e825d846cbb81633396278cbde32e60fa329173d0",
+      "after_sha256": "2a28f65593597d7adf2f4c632075e95c81d0173b8ca14055990933366454f613",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeTorsionCartierR0170.lean",
+      "before_sha256": "6c107371415e0bc0b8f8276ca90f2ac14dcb26779822292c969aa43bbe78f2b9",
+      "after_sha256": "567afcc384b4b75a5ddff3e20e0f975738b5db1ca354280db7688d368a816af4",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SimultaneousKatoNormalizationR0151.lean",
+      "before_sha256": "fed05f92a04fa3621283276439c915c45d53ed259caff2bbd53963bf81d64f37",
+      "after_sha256": "1378a23e3cf0660eafa46cc8c809a8c35000358f0a6f8616209f86386828123d",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeWeierstrassPresentationR0174.lean",
+      "before_sha256": "2618e580814734dcce3f2c071f119dca5a701e7bc99bf09ede64e50a6166cce1",
+      "after_sha256": "bf750decaff55f93695745aa6256f16134589ec8678eacd0b028ebc795c22fd8",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArbitraryClassifyingUniquenessR0202.lean",
+      "before_sha256": "120d65ca58c6518622f8990f413171e9bc701e6b1624c653014df78abee4f916",
+      "after_sha256": "f063a914ba2d1eb520df944c45dd36eaa7e9c2773f2796d5ea6c04b8b74b49ce",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/PhaseFreeKeyR0219.lean",
+      "before_sha256": "7f6ec7635e9581c9d255ff892693ca663e8a7b05f319e8e0729a4d311278741b",
+      "after_sha256": "211b9f9109eaa0992f792a0e7e79fee96506800ca5da140728bfdcc76d4811ce",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeAlphaCharacterR0215.lean",
+      "before_sha256": "f51a0301649dc52e70b40c22d8052e5cc8da2b72615d1f316fe68256e0d4319b",
+      "after_sha256": "8e5e96eb653121ef871c3bfbb3fdbd01ee00237d2bb06b0e10ee25e28c3fc38d",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeneralMultiplicationDegreeR0168.lean",
+      "before_sha256": "a89e0556431843ee06cec289f01dd9e1513bf0146f32b457a7c75f0fcba11804",
+      "after_sha256": "6dbf9d367da354aae94a574ae8e9cfda4c5e481b1ac5cc14485367693678d28a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualRotationTranslationR0146.lean",
+      "before_sha256": "bf8fe704deb184a3353b74fcbd616403297241ee1be97d34cba7219bc5c8c6fa",
+      "after_sha256": "5b312d7e3377e0ddb7fde8fab2c3055f7e09d389e5370b69a227066ec274e0ec",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GlobalLiteralTateMarkingR0263.lean",
+      "before_sha256": "6b25c0cfbb7552a7db2cc87db266aae57d13b02d44dadd747216d074668af5aa",
+      "after_sha256": "9f04916c29b34b526ed9979cc1b4ac926b6cf63ea1d05f792fe2ed1774971dbd",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeometricDiscriminantHodgeR0163.lean",
+      "before_sha256": "2a89068b282a301d3b4d40fb7c067c4cd0dfbd90f421df4f2f3d822c14208fbb",
+      "after_sha256": "8147a7ee29f3f0660831d68c01224ab6ffee468030dc3fab885025f172ef3965",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/IsogenyCanonicalHalfLineR0193.lean",
+      "before_sha256": "7aa482c525c86a9e09b6a6e84f0463bd1c05857aa946a01707657fa0bbbb3f35",
+      "after_sha256": "804313ff3325375910aa22fe081b290277bbcc6a503fcdf583c0818e34720978",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ProjectiveTowerEffectivityR0135.lean",
+      "before_sha256": "dd27aa874dfcbc7d704004c3bca40804b23b834b914ea33112318575e36eb565",
+      "after_sha256": "25f823199998d3d624522174b7c65301f64b92354a9ee27a76e3ecbbe5db7e3a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CyclicQuotientUniversalFactorizationR0173.lean",
+      "before_sha256": "b4a241ba871b2c67f1c46baf9d89192d5e2a4046d4123582569ad7a06b6990cb",
+      "after_sha256": "75eb97d6fa66f1b2d33c5033f71d0bd9c86b0aaf47b8b47d3d6f72ffa22afa9c",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/HalfTangentIdealR0114.lean",
+      "before_sha256": "b898398a113d37c58959d43a213e6a4890744b436f96cc1273d70427bda3da8d",
+      "after_sha256": "107cda9a08b638f70c3d4d547525c44e452bf4d34865210dc4a79425a6c078e7",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SimultaneousUnaryCommonCoverR0187.lean",
+      "before_sha256": "14b031db609007ba519fac9c5c183f5cba7eddf37f5c7a16a6daecdb52cbd388",
+      "after_sha256": "9ce9ce4fb49bd4397f6d7d65bdfb573b8038f972e7c92e22d57ad799a01345b2",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CompletedChartRamificationR0154.lean",
+      "before_sha256": "a04fb0988ff2e72342668062af6ff5a3a6a647ba593d29c0c6e5809c70db30fd",
+      "after_sha256": "40715e4e8d11f4fe0d97461bb0037abbc8f53eae123dca19be040c6f238af491",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CanonicalPeriodOneExpansionR0252.lean",
+      "before_sha256": "63cd225b630f9c0d37fb6b53d95a5dc3c62e3f09bd86501f24e37c35892ff3cb",
+      "after_sha256": "0cc51ceddf862a1538b0dd2d029a20bfe631c9c505cc41b11fad85373664fb19",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/OpenLevelNormalizedHodgePowerR0180.lean",
+      "before_sha256": "87775b98e74847a8b4f79d4f8b55acf34f3c267cb1e49247ad654ace6f8dd37f",
+      "after_sha256": "ddf8a3d9b69b48f3a3111d175cb714cf55c886dbb72d35a5a17e7fc4ab7cf5c4",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/OpenUnaryConstantNaturalityR0236.lean",
+      "before_sha256": "08b3d7d28f7e7c7d222cd4dd5e0e6b0705f2bfde4e7ca6702d38554f3856da2c",
+      "after_sha256": "70e5a9f3496cb25b8bd77fe65761fef8ceb957c5f07b6d5d04ce63f8c7f0b182",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SmoothPointSimultaneousRootsR0228.lean",
+      "before_sha256": "3110d0938848a6d8ede3f76ef059362d1600c60615f06733761781d0816e0a17",
+      "after_sha256": "1cbd331c6c01305547cd966ff6fbecffe6ef1d94c9520957a13858e100e1b320",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RamifiedEvaluationNaturalityR0158.lean",
+      "before_sha256": "9a90e4bf57ad4d998191f6380b6b8f7544a18f9ff08e99b264017f3b5d7400dc",
+      "after_sha256": "658832b174ea963e7e3152c459d27a0f509c385b00c992e31c8cf1e72d4916bc",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeometricDiscriminantInitialR0161.lean",
+      "before_sha256": "b53f4fddd9f0c31aa4df1d7bc92cab05d3df7640edc0394e1455bde00b8ebe35",
+      "after_sha256": "a9233e9c0e1474e343c50db6e9537923f7e7faaccdea35ae34d71a0a8446ea93",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SpecialFiberCubicEmbeddingR0135.lean",
+      "before_sha256": "a1ecf9e4d7cdf69cb192e9fe2b63229972d03c02e445619385859a23a8c2e630",
+      "after_sha256": "03870ddc6536b45de1e6e3fe068fc27b254d41f28532bd1b2cf665d75947bdc8",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CompatibleClassifyingUniquenessR0178.lean",
+      "before_sha256": "863f517abd58d13ddce0a3606f3f8084d816dfd61f8d009a0088b2b104526e69",
+      "after_sha256": "58fe6750337f5f95d51b1e4f141294b0b1938e3fbe2355399beae80ad69722db",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArbitraryGeometricPhaseR0214.lean",
+      "before_sha256": "f95ced503db63d6a34368fa48ad0a42eb03b96c6eff64cd1a08444440447f921",
+      "after_sha256": "a9afb1a396ac42dff84db26778ab4bc0d24ae07b2c148b1e955d5edb3e5f3b52",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/OpenUnaryDesignatedExpansionR0182.lean",
+      "before_sha256": "7a835b2ea950fe0fba66b8beebd0828ddbffd1ff5999fbe406f402b86cf186b4",
+      "after_sha256": "501a71e1b26d772b59f4d698c01f8e24769b82207fcc5e150b295de8c86f8316",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CompactNormalizedPowerExtensionR0183.lean",
+      "before_sha256": "8781fab3fe00e863ae160a2b227a117ee1d8099428147a7a0788ffb3d51beb95",
+      "after_sha256": "99d147176ebe6ec5ef5ebdb4475b65ed4211d397f17c3c64776959df618c0b4a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ComponentHodgePowerDegreeR0184.lean",
+      "before_sha256": "b076f5199b1cba28791e56985a079e0e74453628b4c0f0e358fc57956aa48dac",
+      "after_sha256": "eb09585afa6b1a884707eeba8f8a1474d4ac49a681f7d17ba6fcdaa4112143f4",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeHorizontalOrdersR0169.lean",
+      "before_sha256": "70949e08a41c4dd73996e82a7901e6920d0b5ea64e86299926bf516aebf797ba",
+      "after_sha256": "b115c9ff27e0db3800ec20d0f7842f351eae0a76e02334fa3596bedae5f9f883",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeThetaEvaluationNaturalityR0213.lean",
+      "before_sha256": "99268731b7f23ab4f75e850236df3da007a5cc24865af0851d121e513954b3c5",
+      "after_sha256": "f6777cf3f0a0fed4056324289d43e7fe34b2bf49e780d197381cb03068def259",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeneralKatoUnitLocusR0168.lean",
+      "before_sha256": "2dba2c2af189f2dca55b949125ede5f705a74f17ab755113c4c732e6952f0fd6",
+      "after_sha256": "118b04969259c91126d05b9006facaa18be407b1fb7b769c1502c84ac7ba310f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SplitMultiplicationNormR0153.lean",
+      "before_sha256": "c5cab4d2faeb30f9f2391ed848b132bc828c8f48603f69883afb1d1823f53dbc",
+      "after_sha256": "fea8bc008d2ba059f1646651b21f964c86dcb626cbdcf1536571bc84856fbf4a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/KatoDivisorFieldBaseChangeR0151.lean",
+      "before_sha256": "cc23bec8dc35891a84f9175d28d3a9baf150832afcef938ea7b5f3feeeb63efe",
+      "after_sha256": "f36f4697322ae4899a9c6aae296507c21e4edb40001e241e274c61fd5c360dfd",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualNormalizedKatoUniquenessR0150.lean",
+      "before_sha256": "b0a9dafcc85be0a3da14119d6a593d2a01663f44906608bbb8bf94ee9eaec35e",
+      "after_sha256": "6efde8f029b6a7e2f6b6a8dd93e16831c5bbbd46f4068dbc59b387757080cb76",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeAlphaTateComparisonR0220.lean",
+      "before_sha256": "c984521fe0a9c892739f5ac6f363054fb9309cb3539283d72c3a7023975d038d",
+      "after_sha256": "4f8050ed9dd27fee60baf41888e5436e05649f4cb849028c771fc45e51f429cd",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/PointedRelativeGroupHomR0173.lean",
+      "before_sha256": "769269267131f8b72c1a117f43ad8d7253fea798921c98307bf7f20f36861b56",
+      "after_sha256": "886986d9ec5b61f30f35ed84aa9763bc8c4efbf0890bb602b12f195329aaf2d3",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SharpMatrixKernelR0195.lean",
+      "before_sha256": "8c4fd890b5af203ec5a86a623e919689a79cca65d4b196c7fdab4a2801f305b4",
+      "after_sha256": "cdcd5852c4b9238c6d5aeac4838ff049122e48dfdaf67a60e7088d10c5296f80",
+      "kind": "transparent_abbreviations_and_presentation"
+    },
+    {
+      "file": "Lean/FourTorsionTateBehaviorR0190.lean",
+      "before_sha256": "55b2aea2e62ccc77579cd80d8a7d0b3ba6e9d862081f503796fe4b3dd0081ee7",
+      "after_sha256": "6b1a764618e0e02e0da4df94e2bb31f7e4bfec41f12edf10c40da230b145de7f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemePhaseMarkingInvarianceR0215.lean",
+      "before_sha256": "9ed004370ec32aecd8bc5705f8fab240f9477f0d17c1da344293a37e7c1a6d54",
+      "after_sha256": "3636a6c4bfdcc3a1097c065d301ad7c75d59f2553f4ec374eafd5753e2b884cc",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SourceOrthogonalFactorizationR0127.lean",
+      "before_sha256": "b0b3f9d2092cac651984e9d892bba494fe9a3bd3f4e366cc33570357119a2a97",
+      "after_sha256": "31ed81371558b6d43d4f7e1fa259f2b069ed15d314872a87c29206d4d1afc1eb",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ThetaIdentityEvaluationR0212.lean",
+      "before_sha256": "f819612aa280c3b769dea5556fd186fe6b11866a36775111efe418d9041ca886",
+      "after_sha256": "22a1de6a1c99f8bf65ad39260b0d2657bd17115a083219fb7f8e4987084ab6dd",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/OpenIsogenyAlphaConstantNaturalityR0237.lean",
+      "before_sha256": "87c94e535fdc74507876e4ae6d6d966e9757fc228c6bf65db92c2b4d9e79cb2f",
+      "after_sha256": "c06caa7f9d2d35e9fc9186eaa9a315cb87d5de5f3ea9d20bee386ed08b2cac8b",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArbitrarySplitCubicR0202.lean",
+      "before_sha256": "3dab4f75d48e96fc1897600013d186278156007b4e3cab982a51c709d20e2c44",
+      "after_sha256": "17975a207d2af7ddc8f5b28f2515dc0cb8af94b8795d849dc7460f6985afc0ff",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/AlignedMarkingProjectiveValuesR0142.lean",
+      "before_sha256": "cc5034f22ecab40fc931103a58221ae0b98a8512db17eb896abc139eb256c63c",
+      "after_sha256": "f4ccb5000945a92e08abdcbdafdb246ce580406722f26691d61826e26fa7cdfa",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/MatrixDenominator.lean",
+      "before_sha256": "197f86179e37326ca0edf067b5b3a9650aa20227c80089a4cf00fb3e3600a5f9",
+      "after_sha256": "bde7dd4c2e060f6749d2f5ff571cc066f39a9ffe52714fe18c6ad2f08b263e06",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeometricIntertwinerRigidityR0141.lean",
+      "before_sha256": "bf72cbacdb64201300ed1227ed4d0e1fafd9834caf6618796d3153fa6a999e85",
+      "after_sha256": "8a8c7edbadff90fc2d72a0d38ee6b545c19705d2fad48f7cd25835f8da3f053d",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/MarkedLegendreAtlasLocalCoverageR0177.lean",
+      "before_sha256": "dc78172c1bb3ab8a71f612f52f15912b6ff9a94752dd4d5223051568300e0ac5",
+      "after_sha256": "51d375d94c7c17ecaa874ac6c0f74052338d7ec7671f5396030f537b15f61ead",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArbitraryFullLevelRigidityR0202.lean",
+      "before_sha256": "e8f618380584aa7f224991f74f0ee2674f670af6cef9e282f54e7c6097ce5b08",
+      "after_sha256": "ea85b4f7d0a360cb1c42c487b8b73e59379143c98fffd04d089e58843ece8b8b",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FieldRatioUnaryRegularSectionsR0238.lean",
+      "before_sha256": "04f823a22c423be3431637112c4ebeb3a130ba25bae73453da6bbd94ac5aaf3d",
+      "after_sha256": "241799c872a228ec62d84925cdfb1cc420fbfb46c4c0b6799b48070de0d99544",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/PhaseFreeKeyTateNormalizationR0220.lean",
+      "before_sha256": "3a0e813dab28c1bda4ca3dad1b1640e95eadb2a23858e64329fc816a3c451b22",
+      "after_sha256": "563e90bf69f05e535faeb0efaf69dfcab84a2e8ebbad95b58fff541fbaf1acc7",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/LiteralCoefficientTransportR0157.lean",
+      "before_sha256": "44d871458381170f5f2890acd4d2dce6e19bed6a05977b145cf0ad8e100f4d49",
+      "after_sha256": "57f02ba1c9632b55c9b351e19b1162462a8e8a11c7f0427749604fd42b58dacb",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FullLevelBaseChangeR0175.lean",
+      "before_sha256": "a3cbb9c865e9fa642d94dbb2261f2f77e1789a7116610e70bcbeee58c13f7a88",
+      "after_sha256": "d23185af50270bb92af2e07d70659d76a0fd21ab4fc647639cc1fd826dc98f7e",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FiniteMapConstantExtensionR0225.lean",
+      "before_sha256": "c0ba38d726c0730b7097f70c354d885facea8ac958c55ed7a52bc779d31eee9e",
+      "after_sha256": "4ba37d24afb4d1e16b3ed722210a8127f932b2f94c75b9c750a5f2855496e61d",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SplitMatrixModularFamilyR0239.lean",
+      "before_sha256": "2bdd0f3c90ce0675b8523017eab4ab2428fb6be122b8d7f0b8aff8e4a46a8fae",
+      "after_sha256": "c6f5bae2ebbf985898b6aad45f4f530a6a1caf9a20725e2def27c3d86f685a2a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/OrderedLegendreParameterRigidityR0177.lean",
+      "before_sha256": "041dc6f48456192291679788dfcad81e3d56fe91dcf7dbae4a905cc825277723",
+      "after_sha256": "fd4b11fdccdd5d6388b584d03ccf192529a3f6f0b69618d04da627327863053b",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FieldIsogenyHalfDivisorR0237.lean",
+      "before_sha256": "81f5015297a461a4e50d89c7a191a85be58ba66e442d04f47da8c45385a3f2a4",
+      "after_sha256": "87fefc5af0686bbd8dcde6313cf6ff4e13198418efab3cb4bb5edbdd4bbd6224",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeIdentityTorsionNeighborhoodR0171.lean",
+      "before_sha256": "90e16b30c6ffc630814609e8d21add19f452ffc3632fd8e0324cd42d05302b51",
+      "after_sha256": "02d638987841b4bef6b196eeecaf2b8b99d55abc50940d5ad7db38fa16236a40",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/EarlyCertificateAssembly.lean",
+      "before_sha256": "60f9cab63f796c732e8b7233d86b763eb97871d84c92ec74ac5837713bb3617f",
+      "after_sha256": "16cc43c035acbf3324a4125a11f4f62c81527047e39f251433cb04036f54ac99",
+      "kind": "transparent_abbreviations_and_presentation"
+    },
+    {
+      "file": "Lean/MultiplierPhaseSwitchR0218.lean",
+      "before_sha256": "bf4611f22a29961bcc913efa08e72c590c50043c812c0a95260c405bbba4eabf",
+      "after_sha256": "590b931fa67bde2320a1166f8e096dae4d3d1736c71edb9d0a90d4a313e9b489",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/InverseDifferentialSignR0147.lean",
+      "before_sha256": "6b34f3070089bce06cc0bd45f0ec0a5afcd0c1713eb8e48ff57e0c5303bcb9b6",
+      "after_sha256": "05f5e532f5823e8e8131953458ded60514a9a439efb45b8de8824db09a2d3c04",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/EvenCoverPhaseSwitchR0218.lean",
+      "before_sha256": "4b17ffec8a98f21daa1a50bd0e088c5ec2bbafbf17c9146e4a7fcf1173163d4b",
+      "after_sha256": "4d89b6db3da1301ced5e2c356f463d95880b3ec99e57ed8119e17adf4f814d4b",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SplitMarkedTorsionCompletenessR0146.lean",
+      "before_sha256": "da7ce74065661a9af176d8754347ac40d8dd8b37b8e4af84bc8eb7b19251bebd",
+      "after_sha256": "7357e04e4b371dec3ddc9d2759b7baa36ef6839c785dc7b99b2e103a7d8be467",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/BinaryOrthogonalExampleR0268.lean",
+      "before_sha256": "cbbf0e5759e0f32070b4661494567da62077d1e674c2ce10bfcf41b16a938317",
+      "after_sha256": "1a6dcc36f60b958384f8144266ea11f4b3ee29d3ac6b9ec1931771a939c1f2a9",
+      "kind": "transparent_abbreviations_and_presentation"
+    },
+    {
+      "file": "Lean/NormalizedIdentityFrameR0140.lean",
+      "before_sha256": "2c6f3f98412d34dd65d307fcfd7b137e8f1d516cd968afd17b4f243f7524e12f",
+      "after_sha256": "21fb57706998b7a13f99961fc0bddce9d03c15001028a3fd3b6886bb98b5d2c4",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeometricNormOrdersR0150.lean",
+      "before_sha256": "5ce6bc1e0a9573e5b62e3b1a227bf81f6b06ee18201789ba3aa4a48591c4b4c1",
+      "after_sha256": "c4fb9bfd066b47277fbb63c77ab236ad3dcf7e8c8ee19b4691ad718bdf060edb",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FiniteEtaleMapFiniteModelR0221.lean",
+      "before_sha256": "184389fe73965ccbd5a77f9d3784780d8e7e7445ce7967531500fe9b28d7c226",
+      "after_sha256": "9095b2ca55fb2055c6d6983b70a0d9a77a6fc027d8fa9672315f98b2129653f9",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeometricBasisProjectiveValuesR0141.lean",
+      "before_sha256": "73ef4043cc48d31cbb79883dd816f3b75df921165035f0187e51d433fd9f72b1",
+      "after_sha256": "8037950c6e46aaee00a7905e6b7575f47cfd14993f1acaaed5faf9b9a253d5a8",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FullMarkingSignDescentR0176.lean",
+      "before_sha256": "6991aea4d6ca2d95cef33b5c24f958979494b5dff3baf9ff4921078ceb4d9467",
+      "after_sha256": "2e9f863d4aff75c25b24d5396ae854fdc07c1c2c1f04518d5062c851db92dfef",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/AmbientBranchValuesR0227.lean",
+      "before_sha256": "cc6f70378842d8f25b21641449b7036ab99e57d3a882257907637b441d112582",
+      "after_sha256": "e02150fdb8f49888d0dfcdf5d02ffe21d0635d9a36f7a3b58fb830f514d3916b",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArbitraryPhaseBaseChangeR0214.lean",
+      "before_sha256": "f5ccbff75146ba0dc6fd613428c5c6a006d63c1797668e852e11225cdd912f16",
+      "after_sha256": "a2c7b4a2d280a99bd46ecfd74f39c98a26738c0baa3a2ba55385fc93717df096",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/OriginLogarithmicTaylorR0163.lean",
+      "before_sha256": "e0b50df332406973419a6020aaf7128c3aeab64acee23bf06a244e3c9488977e",
+      "after_sha256": "f0bf6df7793ae841887f5177e408077eb19b49824c61fc4290a09fc53320e9c8",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/MarkedFieldActionR0153.lean",
+      "before_sha256": "a0c077e199cd0b9c6e1254aed6d0f3a76da24c7ceb3f742eb74072dd3bbf71ca",
+      "after_sha256": "6414e5e11ab40bd0f3772e3977eef4a9641281d9f08701ef7bb6184827cd1962",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeCommutatorNaturalityR0262.lean",
+      "before_sha256": "d6803761d7bc13e28b7355d9da4972db8a1dff4502d98b5e043f1bf6bd4a6597",
+      "after_sha256": "76e946df04025493285eb510ce4c5e13a0d1daddd8ea3a5f09e6447e85492005",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/AffineTranslationChainRuleR0148.lean",
+      "before_sha256": "04e04323f8c75eddbe20aedcbce26e7246eddf1356ea725b4605d68aeede4ead",
+      "after_sha256": "db3668adf43c8edaba26561ddb1a5d1ef6aae30505d21e43f407d3555b76db05",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/TateLevelClassifyingParameterR0181.lean",
+      "before_sha256": "327a301b588591114dcd04a6601bb68213269842ff0e0620e1bf52096e0aa44a",
+      "after_sha256": "4f31958fdeb4b5686ded49d375f412bae621444a60de8676b406fc89bc072d1d",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ClassifiedTateDiskTransferR0235.lean",
+      "before_sha256": "8ed7cf65c4fae8fb65f3487d447b46d687795414a064c0cb25607189ffd50ca2",
+      "after_sha256": "621d71f1a2c0ad2f3b75788b1b68f495547c7ff07e270d856f15f3f073a74de8",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/IndividualCosetIntegralProductR0127.lean",
+      "before_sha256": "2fc0ae577e10ee5b4892bd2971a8773cafd2ef0ca5b117e2e1238c2b8d2cb9fa",
+      "after_sha256": "8a2699a1c38664e66091e017456eeb27e5c83db9a76e76d269bbf3e0a882377a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/MatrixFamilyGlobalSectionsR0188.lean",
+      "before_sha256": "d559587fa99e019c92cb4f6c4ae6c9a88a26a0322000a974e9d72144f31bfb6a",
+      "after_sha256": "dcd47970d57aeaa1c874748c90f104b2f7123e5d3f6956f1359f91ad5f9ef82c",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeThetaEvaluationR0213.lean",
+      "before_sha256": "7eb7cf92f1ae4296075d9a033a0fefae627572292f10e2b669fc36ad11cd089b",
+      "after_sha256": "66cde1e5640114ead3a54fa0cf4156967483d6aa6cc9156bd753ea2d6fde991c",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualUnaryPowerValuesR0160.lean",
+      "before_sha256": "d229572690c629568c6298cd9a8f85cbcc7336e280d858c1daf46d5a3c5510d6",
+      "after_sha256": "1613cba14b03b2f611b92c5367a6617244947ef9edf4c8fe5292901f34b4e7b8",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/OpenFullLevelAlphaR0190.lean",
+      "before_sha256": "3e35f4b69d9f4f51d5c10a7f16d3c23080979c07995e3a51d567a90cfb450648",
+      "after_sha256": "55ad45e42a7d01bc71f3bfb5388b5056edcee706c1f3447e7e293f730435cdaf",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualOriginLocalComparisonR0161.lean",
+      "before_sha256": "1af32c7c1973582c5075aeaef2496bfa604a41a5c35a493f61c9d2eacd041c41",
+      "after_sha256": "5d65008000384f9b706e29710505d358e128facdf2ba07ddbd9c48a5567fbb31",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ProperFlatPolygonTowerR0130.lean",
+      "before_sha256": "2687b512b5956f85c0c7c85de5b98929f78d52d37d1a19419b0698b5594e7a7d",
+      "after_sha256": "f7f03f5cd27ca98568b6beb596fbf417b1043469ba7e64004ce79988e893c5ad",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ProperFormalFunctions.lean",
+      "before_sha256": "388fa478d2759bc56526fbfb5a0af55ab87834ce14b504a2367d20e305c5ebfa",
+      "after_sha256": "6401a359d4af7b3b810e190996cc422217d6f39658e28a834fa9cb7dc48eafe2",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArbitraryThetaEvaluationBaseChangeR0213.lean",
+      "before_sha256": "00ded0f3172e1958ff82dea1ae85a410f8cdba549cf9a3c5807e282d2fb15b56",
+      "after_sha256": "3a261180e7f0d9bf47ad43179ec705acbd1592ff07cf635b8a31ad148fd1c1b0",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/MultiplicationFiniteEtaleDegreeR0148.lean",
+      "before_sha256": "d76a565898b37c11b79d134ec917376bcda76b5684aa01b736154bf3bf8c12b1",
+      "after_sha256": "994d854ecd72dd0a7684fcd6bef7e58a10548650112c688d61d75091baa6baa5",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativePhaseMarkingInvarianceR0211.lean",
+      "before_sha256": "8ed26a4457a38012631539185ffdb891e4a47e76ea0157e553de973126ec681d",
+      "after_sha256": "e2bcdd8aea7080e312a628ab5e379a9b14e57c6f0eef2b4bbe2ad8b99d700039",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualMultiplicationFieldNormR0150.lean",
+      "before_sha256": "c1946efbd3659ae26fba1c455d83daaeff0f1d82b0137723d8bf19ea5085d75a",
+      "after_sha256": "394301e7c3faf21eb2a99ddfaec5d4e4b1ba1277cbe1f75d901195b16c3ceba3",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualScalarTranslationR0146.lean",
+      "before_sha256": "b1762bc94b40cfb17d779904c1d07cfa9a515e1898c9b338b3a5324d2bb2b504",
+      "after_sha256": "dc2e7fb70c06a844aba39e4d67ded9c11d6081bfe80ab891964e777b6a5b40be",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SymmetricMarkingFiniteSignsR0142.lean",
+      "before_sha256": "cf9c297e9ce5685d5d364d9a17d3646cea6d77dd55274f6a66d616d53ed631ab",
+      "after_sha256": "28c9f526303618ee47dbcf84d6f2daf0c574438368e64f14a970bd0ac5b603fd",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RamifiedLiteralNormRealizationR0156.lean",
+      "before_sha256": "8f8706b80ae02bd00c658359f7639219ce901a6c58a66d5172faca058617656f",
+      "after_sha256": "2e9cb3a708a35244ce24fc82d268f2fbcb68c20304a91d59c6fbb182bcd9fe6a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeInitialHodgeSectionR0171.lean",
+      "before_sha256": "16670b0ed5f9a872f6c15b8e165db94a78406804121b42b414cbf2b9e62c4101",
+      "after_sha256": "af56c8330dd2f4277a81e69075002abd4b76273498cd33a31a3e8919e24842ac",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CyclotomicExtendedModularityR0241.lean",
+      "before_sha256": "47f711a129b33f9710fab639beb4549ab0bbcedae05cb2a1a5194124ecdbdeb4",
+      "after_sha256": "4fb2f422cf7e54ca72f231e8f7e600297d097faf94b3f03cef569a5c44e68ca8",
+      "kind": "transparent_abbreviations_and_presentation"
+    },
+    {
+      "file": "Lean/MarkedAffineTestComparisonR0215.lean",
+      "before_sha256": "057fe75a0ac59244fcd90caec4f42e12bf66fbc36c202ed98a9e2b34c7a39283",
+      "after_sha256": "71815dd22165240a1586289ec71f5e82d37187b3d90a1aa2c8fe82ff9a9d320f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeKatoCartierRatioR0170.lean",
+      "before_sha256": "0bea74e580fff8707d6a7204bc82f3d27fad4e0086f9e3c86678739bd8d88e3b",
+      "after_sha256": "054a1dd323710f3e27716331923144db619b051304195f842b886b941e1f4206",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArbitraryCompatibleLocalCoverageR0202.lean",
+      "before_sha256": "edb3183641800b4ca900ec186cf36b1d7a77c607f304da10f9795f6b1dee2ab6",
+      "after_sha256": "1a6f7f1d9ec05e65b77f0cacdec4c1d8949dc041e9bed39cdf6128eb57f96fa1",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ValuativeSimultaneousSectionsR0223.lean",
+      "before_sha256": "6c3d082a9760b9df8c974fa1648762495d845a78550823ae5726be1af20154ee",
+      "after_sha256": "aeb4c51d269fcb96d0158f6725a134bf559ecf2ce891b11d05bc212fccae3dab",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativePrimitiveThetaCommutatorR0256.lean",
+      "before_sha256": "bb877d1f38ca91261ae75ecc8090d3eb3aac72e859e776353d646f88e3be72fc",
+      "after_sha256": "9b4a1375c8c46dc4a70d922970c154d0af8b6cb621b0498a4c9b90044ff1989f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FullLevelDivisorReductionR0177.lean",
+      "before_sha256": "cd7dc295b9e5bf061ce5e2ebd30b765f48e7f6f079db054ce4afd5a4b9fd914b",
+      "after_sha256": "8f42c8598505cae0fbf9ee85b771d2c45c0a516a206b89472893250e50bfb856",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeClassifyingUniquenessR0204.lean",
+      "before_sha256": "ca69e561056ac2bba367242ecf6007f3e910cc95dac6186303ef0c5aa75fbae2",
+      "after_sha256": "9e133c8792fdce17b3c69c9f39f557f503c1b27c9cb4b935bb4f187fb2942045",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FieldIsogenyCanonicalHalfLineR0237.lean",
+      "before_sha256": "139c9c56ef1614ff3bc3301ad58f158b0b621828c2a83ae18596f2fc1abc1e64",
+      "after_sha256": "7e7a19409785e0e458953dae35165360d0fb78e598d5aa22cf008c7f7a3296ff",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeAlphaNaturalityR0190.lean",
+      "before_sha256": "5e3a0576bb49186843cb50d15b3ac62506ee9a311b5e2ee8ed3981a8d56854d3",
+      "after_sha256": "81e0f8c00a93a183be5c2a7fbc7c3e6442102feb38c390bc26a91fe9bb0702f0",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeGeometricPhaseR0211.lean",
+      "before_sha256": "679ed2acc8b52dca535b208041819e109555d312e73923889ed3cc167dd7372a",
+      "after_sha256": "619baf8c5b78fd9022d8a68d156c8e81b2780b3d4ca62e0e7e1e427a3777b4b4",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/AlgebraicModelCubicR0144.lean",
+      "before_sha256": "da213c77484277d9ba132c9e64a4074d93b60c8d90486759f75b46699f3d6cec",
+      "after_sha256": "c2c11fd9f3df7e639da8edcc0cb75e68ea06f5f3d696d753fe271556a7d4295d",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArithmeticCommonUnaryFamilyR0238.lean",
+      "before_sha256": "c2f70522d60ce28d29c30b4e04f9f891c15865041c87606a3777b8df1c51d567",
+      "after_sha256": "827bcdd50fb8493317aa1be383154a16d64a42655923b28453a18c921dd84f86",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/DiskFrameCompletedCoordinateR0189.lean",
+      "before_sha256": "cd7e1fc907b8b4a8324315036ecdfb7657b4716340894277f85db928166b0642",
+      "after_sha256": "555031afd1f4e29cc0add50fd513827b661e9497a4accf022e570852f6593943",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RamifiedCubicKatoEvaluationR0248.lean",
+      "before_sha256": "00ff4fa22d537c5222ea89ed06bca8d6fccfbd4af3c043d07ebdda84cbc98f4f",
+      "after_sha256": "feacfa0b50eeb530244d80341470732bb1d5da88e3facc9045e596918dff17d3",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FieldSectionRelationsR0233.lean",
+      "before_sha256": "e5c16a4123fcc01e9c03f718ff94774e711bec5047350f26312b8e466e87a8d4",
+      "after_sha256": "f37838bc6b2d89862ce44613651241f138c6788c32a066b253724e7fd8714870",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativePhaseBaseChangeR0211.lean",
+      "before_sha256": "17b30512f1570908ddebcbfb970c3b4f3e703f24aba6eb65f38cc33d485428e3",
+      "after_sha256": "15e1f56275e4c2348609f48bde247c56cef691b9a3b0ed3fa8f56bf3a849d51e",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SplitHodgePowerDegreeR0239.lean",
+      "before_sha256": "e808cf41994a6addde2e811a32670e3806a9b6b7fabd1cc29aa4c6a19f633de9",
+      "after_sha256": "2d827f9e0e7df080b2a65f9f8dbd32a9d03f1f400a7da6dba920080aebb0218c",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SharpMatrixGeometricFamilyR0195.lean",
+      "before_sha256": "99cff28afea62ca08756dc1ee723aa6315be44ffd80e94c8de63b59527812370",
+      "after_sha256": "593ec444bf8163160a925c3924d2ed7180c0121c3eda2f2bb1d9af130fe94483",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FullLevelTorsionSplittingR0175.lean",
+      "before_sha256": "0ed6d332f6f10eb298b623d2700eef5719482b95ed68b54ccf03623244ef736a",
+      "after_sha256": "523a1b5e46d0a88472e9781de927022c5c9ca1fd4b3c75f19b1ce9b85edacac8",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SplitDiscriminantDivisorR0239.lean",
+      "before_sha256": "54142fc760be805b025c021e3c3c32947970226d7c65bd928e1dd8d5be962a87",
+      "after_sha256": "6774fade892b903e7b5a2b8dcdeaa1b6648f21d5533916963ee39f0d61710f57",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/LocallyConstantMarkingComparisonR0216.lean",
+      "before_sha256": "f7ab4d7dc4d6e2851c785b4249806e6cb757d67f195d6fa5f8090cde6223bab6",
+      "after_sha256": "a310b89f3b437972a20bc103443a304571f0fc45c488847b85ec3f786f76757e",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArbitraryAlphaCharacterR0214.lean",
+      "before_sha256": "60a356fba8bc9fb5e8c954b613eaa71b5a518b14e871d89441da21f7d517f3c2",
+      "after_sha256": "7bc980df8170d612358b8d6c1504286a13833171a83444f9858208aa50985a0f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CoefficientGenericKatoSquareR0157.lean",
+      "before_sha256": "a2ea6cb3e3f96abadca81462414a6ab2dabf8ed05f355224689d97b14fdacef4",
+      "after_sha256": "829241f750dccbc0223400da78d025ab2df4358d4708489b77e077e956a7266d",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CyclicQuotientArbitraryBaseChangeR0173.lean",
+      "before_sha256": "15c757a9a8b66a64bb5373a1995ee9cb66cf363a10fda9876a2aa0f4ee4733fd",
+      "after_sha256": "d03aa2ca7800ea46e3abf13da802c28c980879ab5719eca4f757192da1e0596c",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RamifiedLiteralQuotientR0156.lean",
+      "before_sha256": "a6c03fbaf9bf987f2826cb00815e6ac4aeed80288a701841b8d7d9f57c23e24d",
+      "after_sha256": "30bf754ed9f9c4758eb3b89d6a54ebc9a912e81455201c7ba3b83c12c3e553df",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SplitCyclicKernelR0173.lean",
+      "before_sha256": "efcfc998a2c9b1bba056d422e2067292795d7a5ab3ed82929d60b4df5f0541c6",
+      "after_sha256": "8a08f585d6a18cbca3b3caae2033e4240f3c00e4e8620b27c248fbd7d9d8e312",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualKatoDivisorPrincipalR0151.lean",
+      "before_sha256": "950d981edff0e68efe8b61c6d23ee03859048df2f730cb638c848adc49abf383",
+      "after_sha256": "7eaaa3df57c01581ec923bff17cca5fee9755fa3e17ce3ab0e54273546dff980",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RamifiedFiniteMapModelR0222.lean",
+      "before_sha256": "a9ea4a681257df7091da04ec0c11ff65ff1d33deaa2f7c6564d77d8fe95bccc2",
+      "after_sha256": "99228f95a53899ea9280d708635d4f5532521839c1f509738142eef79fd66870",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SplitCuspDegreeR0239.lean",
+      "before_sha256": "2cee54f2a415a064f6c51708783807de6347483172ff6859d3c507c249b2c0f6",
+      "after_sha256": "97f640e8f619ea87144a6f121f4ffc45f8108835d35872c95a3987315880c6ed",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeneralKatoBaseChangeR0168.lean",
+      "before_sha256": "537a3c1f134a1eb788ed94efb17bf07b9604103709694ee73029e03f9c9ad5a1",
+      "after_sha256": "8202e13b11e85ced8bc4ffcba44d097b41f93595d3862701303bca42da411072",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CompactUnaryHodgeRealizationR0183.lean",
+      "before_sha256": "f344fb6a5043c9667f1a97ca7c67c0ffecba08e9b53589b3254df6f53ce597dc",
+      "after_sha256": "ddec2159d0c618ef11cb99d30ac227bf7ad5f6d4f72cca1e8ab52daf0935375f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeTorsionUnitValueR0170.lean",
+      "before_sha256": "def7006cacc6026f45453d85bf1a14def127adc2fdcb56b6f4885e7586ca49dc",
+      "after_sha256": "3c65fdf0e302c3c8c3b269936ad0e6929222f0b1c989e15dc786ce339486a613",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArbitraryPhaseMarkingInvarianceR0214.lean",
+      "before_sha256": "7850021921734ae20c60879fceaa736c454b2206182c08381bffa40d84d2d365",
+      "after_sha256": "5af8f25a9e473475bb6bd139158aa01ef35b7c68f820428916dbf83f2cce6928",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeCurveGeometryR0169.lean",
+      "before_sha256": "af352fd253e326adef1ef0dde3abb39ca92b571dc2c99dea98055613e849e419",
+      "after_sha256": "97f3bc32e64466aeb57c2afcf17c0501fa6615cf03bc9352ba02109f0cc16526",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GenericProjectiveEvaluationR0140.lean",
+      "before_sha256": "1285f09e54f990b2b74861023d07583b2f238411e1689a6f2b8deb8a08707baa",
+      "after_sha256": "ee091405bc90cbb297d613db74bd51c2400939225978252f1f5ba35f9c7b8e74",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CoefficientCompletedMapsR0157.lean",
+      "before_sha256": "06daf9a69150860e1ee4ec471e1235fa23bcb054f3019d19adbc3dd57b10732a",
+      "after_sha256": "b248ae68eefa58d1da7a0378d4bfa313333ce108204b9df1a62015ae750709f8",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FieldCompactDiscriminantR0236.lean",
+      "before_sha256": "06898968782bebdc286f17f349405fc6038f5878613c4c3577fcabc91f5f268e",
+      "after_sha256": "df14eb4d43e231ec6d800ce2400e73aa95636a311b00af598735c34e244874c8",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/OriginHodgeComparisonR0163.lean",
+      "before_sha256": "e389de9b379e66fd08971709619f13537214fcf3d6a71ad84db6e890eb8efa9c",
+      "after_sha256": "47ff0ba86e7e4b5854995ce4c678a8818fd811efb2ec9502a983a704ae820785",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeKatoFiberSpecializationR0170.lean",
+      "before_sha256": "b58a4a13039174b86dacd7f3ed41b3019abec0c7be072399d8bb970cf28fb9de",
+      "after_sha256": "537e1cca0559a04fdcf0ab7492f6def797075f959743b270a51773fa0a09d2d9",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CompletedChartFieldMapsR0152.lean",
+      "before_sha256": "b2958a281701a97377e61ef0acd4f1fe7557f839a9692f946971e43eb2e9fc95",
+      "after_sha256": "476d2dd9b46c4b1d11f36d35194a10611402186afbf1eeb49399ad6dcd0a1c6f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeMillerPhaseR0215.lean",
+      "before_sha256": "ae44f77ba59334e978a530763042642c12ad1e3b80a4e9a86928d5578537aabb",
+      "after_sha256": "14d6ee691cef4c8cf057991d784eaeff7cabc026ac2ae0035bb3eed8a1b3ff69",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/PhaseOverlapSplittingR0219.lean",
+      "before_sha256": "ffe1c768bd5fc85d738d17be8707a1f89728969427ea2b088481078ff313ffd3",
+      "after_sha256": "52096742073085446d1796823b1148d980302768294dcaa08fc4d9ea2898369f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/KatoAnnularOverlapR0152.lean",
+      "before_sha256": "b0365b1e5f53842db469a518063abae32a4be47b8d60172bf426618131bb3988",
+      "after_sha256": "7eb4eed31d6788160605a21f050768b27aa97c201b8583b03e382025e43c1f29",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RamifiedKatoBaseChangeR0155.lean",
+      "before_sha256": "b9876b53dafb654581816056484dc0fef3d82813406555fa2ed89ebe91572352",
+      "after_sha256": "9285688982aabf8936426d9cf46a1027f309dd84e06ce6eaea662ee0be03c0b8",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/TwoTorsionTranslation.lean",
+      "before_sha256": "9152f47469bbaa1f3c860264b7bbbfa9605478c77c14b68abed7ef8ad2c86742",
+      "after_sha256": "088a5c242c96fb5684702141eeff425e8adf232b59cf5246a5a9bc3e90836ac1",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeInvariantComponentNaturalityR0262.lean",
+      "before_sha256": "54b8ccb58c0a1099fb4571cec81eefe5b0e5ba22701439f08262f81a0bae1425",
+      "after_sha256": "f7371bcfc94118817df8fa04ebc4dd75582e7a3e5accb3cad3cdc58e7fe13489",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/NormalDiscriminantIndependenceR0243.lean",
+      "before_sha256": "26532d105e50652c43aded39d8da383e285dfc2fc7c5c31b17b985d3cfcd5a66",
+      "after_sha256": "1f5332786a9ebb71080452aa57c7969938966c8193487996acc793e610fa514c",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualDiscriminantCotangentTensorR0162.lean",
+      "before_sha256": "1e12134d15d426b1c80e6ccefcec4ab87419cc32aab6dd2afa3adf141d2a48b1",
+      "after_sha256": "ce12162a72016713289b09add4a1b97f37812f85fef590c2f3728dbecb0215c9",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FullLevelCoverGeometryR0175.lean",
+      "before_sha256": "a8802abbc4f833a8496af421c6bd8571de2fdbf2c954330016dd15e181015878",
+      "after_sha256": "d561ed06927896112f7e15c3d3fafe192484b046c17aced706933af2123381ee",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ExactKatoAnnularFormulaR0157.lean",
+      "before_sha256": "224c5703a633b59a401f3ab17f6da469e66c5a01adc4fa705a1b432f0b224454",
+      "after_sha256": "a3e26eb75638a85dba43925419b64bd6b49de4f983c1a724eedfb30364f611e6",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/UnaryPowerGeometricRealizationR0160.lean",
+      "before_sha256": "bb2828b093f7b241ed8133254dbeffd14fcaf2e0ce5972aabb7f3c4d480079f9",
+      "after_sha256": "f98a0b428433a1f8127eff440efc4a4aba5e2730a2bd548fba6954c0b707d239",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SplitPeriodKatoFormulaR0158.lean",
+      "before_sha256": "88ab33ac962a1568a5c7ff9f7ef478e77bc47391ac0829571eac7dcb263bd408",
+      "after_sha256": "397ad38962002cde206d9ca37eee85420a47480050570fc3489e3e219b61d6fd",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CompatibleProjectiveEmbeddingsR0135.lean",
+      "before_sha256": "4cccfeb32c5cbe67aa7118ab9e0ae84c2ee90004ae9794f07c04d6c51c372a5b",
+      "after_sha256": "174a9d3fa8ab1d719f7763fefda7d43ec344bb69231263ca461374741889424a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/MultiplicationDifferentialR0148.lean",
+      "before_sha256": "ff735b4f6d9451ee71183ece6459c3efbe8f52669c2bbb67361f19a4c6d5fa5a",
+      "after_sha256": "4c7e436afb235ac02f1e5e2ce6df5d0170888aaa8b19b62882e7fa57aafe48d4",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SharpExactImageDataR0195.lean",
+      "before_sha256": "eb96326ec42fd8d8a280060f6ec5bd44346699ac8807662b6394c2911fd66df7",
+      "after_sha256": "10e0da5a6d7fb002702b8d2830b6753a422ee22c9913ba763ca85d758826a0f9",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RatioUnaryRegularSectionsR0195.lean",
+      "before_sha256": "63af5a4978f5426503416161e282b6102d69ee046db2bce2683f739f3d4e1835",
+      "after_sha256": "bdd0f44bab9d1d6422b7b5fab2b6a26f5d362b98f6ff0330a9fa9f606c556fff",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CoprimeTorsionDivisorNormR0150.lean",
+      "before_sha256": "7ffac06d340c669590f8efa2eb2730f80f42bb6399f610413360327eb58e3f29",
+      "after_sha256": "07e6cb23f2a9b7a42222f85f6a6ac9248ebdb2d6517ea5e3f169d04db53c6998",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/PointedHodgeBaseChangeR0172.lean",
+      "before_sha256": "229a97ecc401fbed5c6943749cbc1c7c0410a7c148fc04ea179fea39af6e1415",
+      "after_sha256": "55a6d1445ae55034430fd913c1faa7e43f35db7580700a6ad502b9d766771d1c",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/KatoAnnularDivisorR0152.lean",
+      "before_sha256": "1a7ddda46d6e5cd0a83a1889418acc319e5bc2027c851eb4a28f65d2d3504ad3",
+      "after_sha256": "e7b3759da9795a247f1576b58a13574007f60ef1bb50cdd0e8f85ec851c055f7",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeGeometricThetaNaturalityR0262.lean",
+      "before_sha256": "620640d45727f80da706a58d44aa5c0e7e66025422f0e45baed415bc931b97ed",
+      "after_sha256": "0365c067a07d4839a05b2c4347fdd8c88c287e62883379b75a028dedc4898318",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeSplitFiberBasisR0211.lean",
+      "before_sha256": "156495024f057c922248df255606b00a0d933e927b1ca13e8da700c79e02572d",
+      "after_sha256": "3a425d39b1d8f61657c585299bc06eb2069bbd70b52bd130d72f436df82b25ee",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/RelativeKatoExistenceR0169.lean",
+      "before_sha256": "7219a1426027d158b7519b33ad150cfc3f92da8868a640369197c0dc16f9f6c0",
+      "after_sha256": "cfc5646dc1843f150d1ef97c7b5e9a5bae5474326ca654ec5fd3d7765ff82d14",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/AmbientPrescribedRootsR0228.lean",
+      "before_sha256": "976ab1953881e002e3a06ad7a3bc2042739d5285f64e5fee29d2ae7fb57e5a4f",
+      "after_sha256": "86e00c18c5532778bbaaaa8fcd9bd331d7ec0b965d7e24bd8ed9c3734251ce20",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/UnsplitKatoFullExpansionR0158.lean",
+      "before_sha256": "c4ed4014f5c016b0dda05477784d3ea460404d7352edd26de05b2af4755ca4fe",
+      "after_sha256": "45cbf53af324cf408da881cc61adee4a601c63130bb98776f7da8b6b92d95f91",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualTorsionPowerValueR0159.lean",
+      "before_sha256": "13ac919b6b84a5d10fbe1e7b34d018e357fb92d90287f1d5d88a53828209f8e6",
+      "after_sha256": "f5869622272d26d11bbe3f9050d22d3a07f6a31640f0582c979de2c0fd4f973a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/NormalAffineLevelExtensionR0175.lean",
+      "before_sha256": "ffd0342c813eb5504c24c0a02acbb3a78cd5a51503be241012a53837195869ae",
+      "after_sha256": "f9311b0161e3a4b55885212830b64c1859a7e103c1ae39d87709e91eddc49f38",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ThetaEvaluationBaseChangeR0212.lean",
+      "before_sha256": "a94c7304347897c3b3cac4f76d19ead63e5808b0fb0be0a3e8ff1deeac14cf29",
+      "after_sha256": "86ff0eda73c4671af1725b0040e51dbb76acd6c8c96d0fa5a8896ab9bf6d9574",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CoordinateGeometricInversionR0143.lean",
+      "before_sha256": "4b48a2044163f57ce02b88597c23a44f3aa9900a3ccfbb23541fdd88c1e33431",
+      "after_sha256": "c95299e7e16ae4db94c84ac760e9f471034763900af713f8ac49a6edd58ba0b4",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CommonHalfHodgeCoverR0185.lean",
+      "before_sha256": "3bf200be51fdd07e731c58dbf262a64324abb54acf54fe2d64e4442bf3aeb3b4",
+      "after_sha256": "fe4a84fed3aba45cf7db3e100834854df97001bfcf47342d9c0b2d5dd95ee11b",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/IntegralGramOrthogonalization.lean",
+      "before_sha256": "68d5d78062b69f53ba513eb46c8b059f6dc9414ff3bfb8dc94f7ffccefa63566",
+      "after_sha256": "5b4bc9fadb481098ba5366d6203059d852de19fa2617a70876339363080969e7",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/IdentityStageSectionRealizationR0138.lean",
+      "before_sha256": "4d5de78c917868fe43919b0854bc0e34f03e5d29762c1adda60c50eed31ee850",
+      "after_sha256": "40ea111e089134e029cdf893228c62ab8afd10db9422687a2b01a0f411f83665",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SplitDeckExhaustionR0153.lean",
+      "before_sha256": "2eba84ca08497476de2d13f0c0d1e3aae0dd13171c91f6fe0def15a82893dcda",
+      "after_sha256": "f8ab7f1ef3d8001d3c1984859be166a6b2af4e6fa42d287451eec99d7a43c329",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GenericLiftScalarComparisonR0142.lean",
+      "before_sha256": "10eba65be8035eb9dee6c93aa9745b14d79b2918748b68cbe1d89886a81e526a",
+      "after_sha256": "c4e4aca66fc323604ef6b6853828685c39f6c7eb8e532a9249bcacb1dfcab8ee",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FiniteSignMarkingRealizationR0142.lean",
+      "before_sha256": "c2d2d8d61a6aa951825d760ed52eb41ecd0c9143de22a2f6244a2dbef3d20607",
+      "after_sha256": "e7416bde779a2a74235e26cc626caf753b914a290a09e115fb3eb013391fe747",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ArbitraryThetaGeneratorEvaluationR0213.lean",
+      "before_sha256": "36e3d67b7903605dccccc9d6a378f8adf0e37b1233ed76b44b30bce66b67490f",
+      "after_sha256": "c710c37c511e60f670efebd7378a0ecafc519bd29f178cec4fbc997bdfde7156",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeometricCompactHodgeComparisonR0236.lean",
+      "before_sha256": "624a007936534ba7a20a550ad7d727bcd4ad4722c6d6783a6ea2f4acbdb148e4",
+      "after_sha256": "c8052e501a54ddb433993a426a3754941c75342171bc93251570f18a41dc05e6",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/LiteralNormDescentR0157.lean",
+      "before_sha256": "f5c211b65a8b0d036898df20d95ce69b5a7d82febe846bb13c96c822d0aa44ab",
+      "after_sha256": "b6355395f3835da5d23f4f42046e80dc9017389640c5a9e18bccdbe422826b72",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/StandardActualMetaplecticLevelR0208.lean",
+      "before_sha256": "d84d72d1573f20537a968763e119ff8bf277aae9c380ad4a9d4a8d4a8d452b49",
+      "after_sha256": "59f0ada258abf741f60b5bffbede2d4f1b3759c339a9dc9df79ebd39939b522e",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/MarkedKatoRegularityR0159.lean",
+      "before_sha256": "1ec61253b164e25636f9d81da087e5a84fa1b964c70833ef90cd34a409a30597",
+      "after_sha256": "a4353b75c2258064c938d0a3c5242df9b6fc1d6271ce0ad4e1b8dd85b1015497",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ActualOriginAugmentedTaylorR0162.lean",
+      "before_sha256": "4a2250904397022eeb88579ac82ddd3de862a7ad88d5b94fc8810040cc2d24bc",
+      "after_sha256": "ac6fab16cac0dd99ff5a25bbb1c25db7469230a5164678c8ef7dafd985564cf7",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ThetaLineBaseChangeR0212.lean",
+      "before_sha256": "8908d90a77f7b3f30be7a740e5523729acbbe19cd44cb4e84aae44fd727fd854",
+      "after_sha256": "f3595c56ce59c7b10580451b596a6eb2e693596aa2806163f950cccdd24e7504",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/LiteralQuotientAlgebraizationR0153.lean",
+      "before_sha256": "1bb8e7025f25aad6d664279eb30565c59ccff95d113445bbd0f91be758065d28",
+      "after_sha256": "614d25ea48b81d199f65beec3652901b10b9db3e906bf22a8b51228ac274c827",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FieldCosetSectionExpansionR0231.lean",
+      "before_sha256": "9d42db465399174711bf1b7b19b7b3bb8e17847e7dd01d2e3557113d51380da2",
+      "after_sha256": "fa8a155abf4d98872acf4268c27ce0cbb2d8f22cb4f189bfcc1f1656b2ab09d1",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/PeriodOneNormalizedFrameR0246.lean",
+      "before_sha256": "18ffece92d8f0f2d240ed7bc6fd447f8f3f3a5d9cb303806c0b14f2c9de19937",
+      "after_sha256": "fb491cc2976683a60fd8c6509001ee24d818146d7ff165c1f3d79a15d71a4ab3",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeneralCoprimeDivisorNormR0168.lean",
+      "before_sha256": "116be576c8d9049736583c175bc695d245321f2bc23145f3665dbeeae64809d8",
+      "after_sha256": "4a86394ae23b7458f60a71f55f7890aa21b37aa72f81b429cce36107de1e0b2b",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/PhaseFreeKeyNaturalityR0219.lean",
+      "before_sha256": "d12b4c98bcd7c81f5b8038943c214b798ac96826c265b6a7053bdfc2e0ce266d",
+      "after_sha256": "b5a1bcb8e115a984f1a8755de5e33f28214965952f361f471235e01e20cb4c1e",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/PrescribedRootsFiniteConstantExtensionR0225.lean",
+      "before_sha256": "bbb4e733af7de5770729c5ff3cabb246f279e12c8d0bcbe8be7572c32b3d1b82",
+      "after_sha256": "24a5ceefde6559f1e67dcbf491015ae19fad2f73efc0837f9f278ce4e05d1d96",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/NormalAffineClassifyingConstructionR0178.lean",
+      "before_sha256": "5d1ff819ecc6582065d4c2eb6b5841aef0917ab1485dd0fd28c882fe1ddf7ed9",
+      "after_sha256": "0b09af845fb3db14b744294ac2c2d8447ff7271f7c949ab0d6121c6e4d7248c8",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeDiscriminantTateR0245.lean",
+      "before_sha256": "3a4ea95e9ae57fe56ba08caa57ced40d64df84e297a7fa24bba71f893006f9ae",
+      "after_sha256": "b6b2bab9d6652daaeb02fc670c1a26cf8afeda2fa7e48be336e9ba0eb6632c09",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/GeometricComponentCuspBoundR0184.lean",
+      "before_sha256": "b91b1ab5616d301939e451e277f2b809a72b31355c577325bf431d2e13b6c329",
+      "after_sha256": "aaa72f7c14f4adfb9ded23747b388d389f83c91583408bee4644947ecfa636de",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/SchemeKatoFullTateExpansionR0252.lean",
+      "before_sha256": "dc0742dcf4d2d1fc783dbc7382542008d1ce77ecb6f59fe4e90edae32cc9ee26",
+      "after_sha256": "23d72b8309d9e1a4f30d1f8df8d5d6809f53d6043ad83abbf98e280ba7322287",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FullLevelAutomorphismRigidityR0176.lean",
+      "before_sha256": "dfb71a78ababa7afac7ce090dfc87d8223bc928a21e590c9b2c790b6b091c041",
+      "after_sha256": "813f2c5e91a7aa1d3abcd9941bbbbc28e9e825c8dbdb9f3da5848fe0b837178f",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/CoefficientFunctionFieldExpansionR0157.lean",
+      "before_sha256": "9485d81d9df2bf5a842c2637b815cd9f0ee96353bba369a8c5c2d47dda48e80f",
+      "after_sha256": "97307d8cac323437c14a266c4aa99a61123e657c9917f4bed1d8c73277cb3c5b",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/OrthogonalCosetArithmetic.lean",
+      "before_sha256": "d56cc26019eaa3c003b095bd108adb6451342d146a7006dfb737ffb9308b346f",
+      "after_sha256": "cc433c8cb5bedd538b33a01f9047ecf14976f86ff9616021ba68dcdf28eac445",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/ProperCoherentFormalSections.lean",
+      "before_sha256": "7e60a177c1606cb886a16180bffdf2100cf795634dd58014eeac8c2e878cb111",
+      "after_sha256": "36af4fd4c3060f7610d194080ac40d392863b30450233f5a75ebcea63eed444a",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/AlgebraicBranchFiniteModelR0226.lean",
+      "before_sha256": "3675b0e896e1142e81cd078806f39195cf2edde71c2ad9ed459dcd8804e9740e",
+      "after_sha256": "1a0256bf58c6b116c85534d64665cdcaa1e5038bd347c3bf3883e81f807d1b27",
+      "kind": "formatting_only"
+    },
+    {
+      "file": "Lean/FiniteModelFramedRootValuesR0224.lean",
+      "before_sha256": "fda4d1de3afc08dc7d8ec6aef929b84471b168faa2a5b0b80c98cbb5b8de2c83",
+      "after_sha256": "a5819307e37e9ad79ee5030d2b4bf043bd0651190954cb0a89b31541aa5f1168",
+      "kind": "formatting_only"
+    }
+  ]
+}

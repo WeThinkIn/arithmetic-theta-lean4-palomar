@@ -106,7 +106,41 @@ attribute [local instance] sectionModule
 /-- The unique actual Hodge section representing the initial class of 5g,
 with its entire discriminant coefficient in every normalized frame. -/
 theorem geometric_discriminant_hodge :
-∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)], ∀ (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2) (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3), ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X → ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y → ∀ (g : AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)), ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G 5 g → ∃ d : ((ArithmeticThetaHodgeInitialR0163.HodgePower k M s hs.1 24).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaHodgeInitialR0163.RepresentsInitial k M s hs.1 g d ∧ (∀ d' : ((ArithmeticThetaHodgeInitialR0163.HodgePower k M s hs.1 24).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaHodgeInitialR0163.RepresentsInitial k M s hs.1 g d' → d' = d) ∧ (∀ (δ : ArithmeticThetaHodgeFourTorsionR0147.Frame k M), ArithmeticThetaCompactifiedDifferentialR0145.IsGlobalDifferentialFrame k M s X Y δ → ArithmeticThetaHodgeInitialR0163.ExactHodgeExpansion k M s hs.1 δ d) := by
+    ∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)],
+      ∀ (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2)
+        (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3),
+        ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X →
+          ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y →
+            ∀
+              (g :
+                AlgebraicGeometry.Scheme.functionField
+                  (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)),
+              ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G 5 g →
+                ∃ d :
+                  ((ArithmeticThetaHodgeInitialR0163.HodgePower k M s hs.1 24).presheaf.obj
+                    (Opposite.op ⊤)),
+                  ArithmeticThetaHodgeInitialR0163.RepresentsInitial k M s hs.1 g d ∧
+                    (∀ d' :
+                        ((ArithmeticThetaHodgeInitialR0163.HodgePower k M s hs.1 24).presheaf.obj
+                          (Opposite.op ⊤)),
+                        ArithmeticThetaHodgeInitialR0163.RepresentsInitial k M s hs.1 g d' →
+                          d' = d) ∧
+                      (∀ (δ : ArithmeticThetaHodgeFourTorsionR0147.Frame k M),
+                        ArithmeticThetaCompactifiedDifferentialR0145.IsGlobalDifferentialFrame k M s
+                            X Y δ →
+                          ArithmeticThetaHodgeInitialR0163.ExactHodgeExpansion k M s hs.1 δ d) := by
   intro k _ _ r hr h3 he T M hM s hs G hG _ _ X Y hX hY g hg
   classical
   letI : Algebra (LaurentSeries k) (OriginStalk k M s hs.1) :=

@@ -1,0 +1,114 @@
+# Index of all 103 original theorem endpoints
+
+This index points to the defining declarations, including those checked through
+`FullSourceIntegrationR0268`. The exact original types and hypotheses remain in
+[`metadata/original-contract.json`](metadata/original-contract.json) and the
+unchanged [`verification/probes/`](verification/probes/) sources.
+
+Start with the [reading guide](READING_GUIDE.md) for the main result and notation.
+
+| Original obligation | Lean declaration | Definition in the source |
+| --- | --- | --- |
+| `binary-orthogonal-example` | `ArithmeticThetaFullSourceR0268.binary_orthogonal_example` | [BinaryOrthogonalExampleR0268.lean](Lean/BinaryOrthogonalExampleR0268.lean#L80) |
+| `conservative-image-consumer` | `ArithmeticThetaFullSourceR0268.conservative_image_consumer` | [ConservativeImageConsumerR0268.lean](Lean/ConservativeImageConsumerR0268.lean#L78) |
+| `accepted-000` | `ArithmeticThetaElementary.rank_zero_coefficients` | [RankZero.lean](Lean/RankZero.lean#L5) |
+| `accepted-001` | `ArithmeticThetaElementary.rank_zero_kernel` | [RankZero.lean](Lean/RankZero.lean#L23) |
+| `accepted-002` | `ArithmeticThetaElementary.rank_zero_image` | [RankZero.lean](Lean/RankZero.lean#L30) |
+| `accepted-003` | `ArithmeticThetaLattice.even_integral_gram_orthogonalization` | [IntegralGramOrthogonalization.lean](Lean/IntegralGramOrthogonalization.lean#L73) |
+| `accepted-004` | `ArithmeticThetaDet80.actual_coefficient_matrix` | [Det80CoefficientMinor.lean](Lean/Det80CoefficientMinor.lean#L256) |
+| `accepted-005` | `ArithmeticThetaDet80.actual_minor_determinant` | [Det80CoefficientMinor.lean](Lean/Det80CoefficientMinor.lean#L275) |
+| `accepted-006` | `ArithmeticThetaDet80.actual_theta_kernel_zero` | [Det80ThetaIndependence.lean](Lean/Det80ThetaIndependence.lean#L77) |
+| `accepted-007` | `ArithmeticThetaDurfee.formal_jacobi_triple_product` | [FormalJacobiTripleProduct.lean](Lean/FormalJacobiTripleProduct.lean#L641) |
+| `accepted-008` | `ArithmeticThetaOrthogonalAlgorithm.computed_natural_data` | [ComputedOrthogonalization.lean](Lean/ComputedOrthogonalization.lean#L44) |
+| `accepted-009` | `ArithmeticThetaHadamard.jacobi_formal` | [HadamardJacobi.lean](Lean/HadamardJacobi.lean#L623) |
+| `accepted-010` | `ArithmeticThetaBinary.all_positive_classes` | [Det80CompleteClassification.lean](Lean/Det80CompleteClassification.lean#L16) |
+| `accepted-011` | `ArithmeticThetaBinary.similarity_distinct` | [Det80Similarity.lean](Lean/Det80Similarity.lean#L84) |
+| `accepted-012` | `ArithmeticThetaBinary.ambient_realization` | [Det80LocalRealization.lean](Lean/Det80LocalRealization.lean#L8) |
+| `accepted-013` | `ArithmeticThetaBinary.same_order_classes` | [Det80OrderClassification.lean](Lean/Det80OrderClassification.lean#L10) |
+| `accepted-014` | `ArithmeticThetaRank16.no_similarity` | [Rank16Nonisometry.lean](Lean/Rank16Nonisometry.lean#L117) |
+| `accepted-015` | `ArithmeticThetaRank16.integral_identity` | [Rank16Theta.lean](Lean/Rank16Theta.lean#L585) |
+| `accepted-016` | `ArithmeticThetaRank16.two_column_kernel` | [Rank16Theta.lean](Lean/Rank16Theta.lean#L607) |
+| `accepted-017` | `ArithmeticThetaEarlyAssembly.actual_earlier_certificate` | [ActualEarlierCertificate.lean](Lean/ActualEarlierCertificate.lean#L7) |
+| `accepted-018` | `ArithmeticThetaTateSeries.basic_fourth` | [TateBasicFourthIdentity.lean](Lean/TateBasicFourthIdentity.lean#L148) |
+| `accepted-019` | `ArithmeticThetaAlgebraicCoordinatesR0143.algebraic_tate_coordinates` | [AlgebraicTateCoordinatesR0143.lean](Lean/AlgebraicTateCoordinatesR0143.lean#L20) |
+| `accepted-020` | `ArithmeticThetaAlgebraicCoordinatesR0143.coordinate_exact_poles` | [CoordinateExactPolesR0143.lean](Lean/CoordinateExactPolesR0143.lean#L82) |
+| `accepted-021` | `ArithmeticThetaCubicModelR0144.algebraic_model_cubic` | [AlgebraicModelCubicR0144.lean](Lean/AlgebraicModelCubicR0144.lean#L462) |
+| `accepted-022` | `ArithmeticThetaCompactifiedDifferentialR0145.global_normalized_differential` | [GlobalNormalizedDifferentialR0145.lean](Lean/GlobalNormalizedDifferentialR0145.lean#L1493) |
+| `accepted-023` | `ArithmeticThetaOrthogonalConsumerR0127.rational_preimage_cosets` | [RationalPreimageCosetsR0127.lean](Lean/RationalPreimageCosetsR0127.lean#L43) |
+| `accepted-024` | `ArithmeticThetaOrthogonalConsumerR0127.unary_parameter_identification` | [UnaryParameterIdentificationR0127.lean](Lean/UnaryParameterIdentificationR0127.lean#L40) |
+| `accepted-025` | `ArithmeticThetaOrthogonalConsumerR0127.individual_coset_integral_product` | [IndividualCosetIntegralProductR0127.lean](Lean/IndividualCosetIntegralProductR0127.lean#L10) |
+| `accepted-026` | `ArithmeticThetaOrthogonalConsumerR0127.source_orthogonal_factorization` | [SourceOrthogonalFactorizationR0127.lean](Lean/SourceOrthogonalFactorizationR0127.lean#L32) |
+| `accepted-027` | `ArithmeticThetaOrthogonalConsumerR0127.computed_family_formal_unary_consumer` | [ComputedFamilyFormalUnaryConsumerR0127.lean](Lean/ComputedFamilyFormalUnaryConsumerR0127.lean#L32) |
+| `accepted-028` | `ArithmeticThetaCompactUnaryR0183.compact_unary_hodge_realization` | [CompactUnaryHodgeRealizationR0183.lean](Lean/CompactUnaryHodgeRealizationR0183.lean#L21) |
+| `accepted-029` | `ArithmeticThetaComponentDegreeR0184.geometric_component_cusp_bound` | [GeometricComponentCuspBoundR0184.lean](Lean/GeometricComponentCuspBoundR0184.lean#L2424) |
+| `accepted-030` | `ArithmeticThetaComponentDegreeR0184.component_discriminant_divisor` | [ComponentDiscriminantDivisorR0184.lean](Lean/ComponentDiscriminantDivisorR0184.lean#L338) |
+| `accepted-031` | `ArithmeticThetaComponentDegreeR0184.component_hodge_power_degree` | [ComponentHodgePowerDegreeR0184.lean](Lean/ComponentHodgePowerDegreeR0184.lean#L154) |
+| `accepted-032` | `ArithmeticThetaCommonHalfHodgeR0185.discriminant_twist_unit` | [DiscriminantTwistUnitR0185.lean](Lean/DiscriminantTwistUnitR0185.lean#L469) |
+| `accepted-033` | `ArithmeticThetaCommonHalfHodgeR0185.discriminant_tate_root` | [DiscriminantTateRootR0185.lean](Lean/DiscriminantTateRootR0185.lean#L468) |
+| `accepted-034` | `ArithmeticThetaCommonHalfHodgeR0185.common_half_hodge_cover` | [CommonHalfHodgeCoverR0185.lean](Lean/CommonHalfHodgeCoverR0185.lean#L620) |
+| `accepted-035` | `ArithmeticThetaConservativeKernelR0189.arithmetic_geometric_family_existence` | [ArithmeticGeometricFamilyExistenceR0189.lean](Lean/ArithmeticGeometricFamilyExistenceR0189.lean#L19) |
+| `accepted-036` | `ArithmeticThetaConservativeKernelR0189.geometric_family_conservative_cutoff` | [GeometricFamilyConservativeCutoffR0189.lean](Lean/GeometricFamilyConservativeCutoffR0189.lean#L32) |
+| `accepted-037` | `ArithmeticThetaConservativeKernelR0189.conservative_matrix_kernel` | [ConservativeMatrixKernelR0189.lean](Lean/ConservativeMatrixKernelR0189.lean#L99) |
+| `accepted-038` | `ArithmeticThetaGlobalFourTorsionR0190.relative_four_torsion_root` | [RelativeFourTorsionRootR0190.lean](Lean/RelativeFourTorsionRootR0190.lean#L256) |
+| `accepted-039` | `ArithmeticThetaGlobalFourTorsionR0190.relative_alpha_naturality` | [RelativeAlphaNaturalityR0190.lean](Lean/RelativeAlphaNaturalityR0190.lean#L972) |
+| `accepted-040` | `ArithmeticThetaGlobalFourTorsionR0190.four_torsion_tate_behavior` | [FourTorsionTateBehaviorR0190.lean](Lean/FourTorsionTateBehaviorR0190.lean#L602) |
+| `accepted-041` | `ArithmeticThetaGlobalFourTorsionR0190.compact_full_level_alpha` | [CompactFullLevelAlphaR0190.lean](Lean/CompactFullLevelAlphaR0190.lean#L273) |
+| `accepted-042` | `ArithmeticThetaSquareLinesR0192.compact_alpha_canonical_half_line` | [CompactAlphaCanonicalHalfLineR0192.lean](Lean/CompactAlphaCanonicalHalfLineR0192.lean#L180) |
+| `accepted-043` | `ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_designated_expansion` | [IsogenyAlphaDesignatedExpansionR0193.lean](Lean/IsogenyAlphaDesignatedExpansionR0193.lean#L592) |
+| `accepted-044` | `ArithmeticThetaIsogenyHalfLinesR0193.isogeny_alpha_all_cusp_orders` | [IsogenyAlphaAllCuspOrdersR0193.lean](Lean/IsogenyAlphaAllCuspOrdersR0193.lean#L564) |
+| `accepted-045` | `ArithmeticThetaIsogenyHalfLinesR0193.isogeny_canonical_half_line` | [IsogenyCanonicalHalfLineR0193.lean](Lean/IsogenyCanonicalHalfLineR0193.lean#L372) |
+| `accepted-046` | `ArithmeticThetaSharpKernelR0195.distinct_norm_sharp_arithmetic` | [DistinctNormSharpArithmeticR0195.lean](Lean/DistinctNormSharpArithmeticR0195.lean#L72) |
+| `accepted-047` | `ArithmeticThetaSharpKernelR0195.sharp_matrix_geometric_family` | [SharpMatrixGeometricFamilyR0195.lean](Lean/SharpMatrixGeometricFamilyR0195.lean#L168) |
+| `accepted-048` | `ArithmeticThetaSharpKernelR0195.sharp_geometric_cutoff` | [SharpGeometricCutoffR0195.lean](Lean/SharpGeometricCutoffR0195.lean#L33) |
+| `accepted-049` | `ArithmeticThetaSharpKernelR0195.sharp_matrix_kernel` | [SharpMatrixKernelR0195.lean](Lean/SharpMatrixKernelR0195.lean#L15) |
+| `accepted-050` | `ArithmeticThetaFormalCoverR0210.arbitrary_formal_cover_constant` | [ArbitraryFormalCoverConstantR0210.lean](Lean/ArbitraryFormalCoverConstantR0210.lean#L88) |
+| `accepted-051` | `ArithmeticThetaSchemeFourCharacterR0215.scheme_miller_phase` | [SchemeMillerPhaseR0215.lean](Lean/SchemeMillerPhaseR0215.lean#L328) |
+| `accepted-052` | `ArithmeticThetaSchemeFourCharacterR0215.scheme_alpha_character` | [SchemeAlphaCharacterR0215.lean](Lean/SchemeAlphaCharacterR0215.lean#L111) |
+| `accepted-053` | `ArithmeticThetaPhaseFreeKeyR0219.phase_free_key` | [PhaseFreeKeyR0219.lean](Lean/PhaseFreeKeyR0219.lean#L15) |
+| `accepted-054` | `ArithmeticThetaPhaseFreeKeyR0219.phase_free_key_naturality` | [PhaseFreeKeyNaturalityR0219.lean](Lean/PhaseFreeKeyNaturalityR0219.lean#L107) |
+| `accepted-055` | `ArithmeticThetaKeyTateR0220.phase_free_key_tate_normalization` | [PhaseFreeKeyTateNormalizationR0220.lean](Lean/PhaseFreeKeyTateNormalizationR0220.lean#L19) |
+| `accepted-056` | `ArithmeticThetaAmbientCompletedRootsR0227.ambient_prescribed_roots` | [AmbientPrescribedRootsR0228.lean](Lean/AmbientPrescribedRootsR0228.lean#L15) |
+| `accepted-057` | `ArithmeticThetaAmbientCompletedRootsR0227.smooth_point_simultaneous_roots` | [SmoothPointSimultaneousRootsR0228.lean](Lean/SmoothPointSimultaneousRootsR0228.lean#L14) |
+| `accepted-058` | `ArithmeticThetaLDLEnumerationR0229.shifted_integer_interval` | [ShiftedIntegerIntervalR0229.lean](Lean/ShiftedIntegerIntervalR0229.lean#L52) |
+| `accepted-059` | `ArithmeticThetaLDLEnumerationR0229.rational_schur_completion` | [RationalSchurCompletionR0229.lean](Lean/RationalSchurCompletionR0229.lean#L60) |
+| `accepted-060` | `ArithmeticThetaLDLEnumerationR0229.computed_rational_ldl` | [ComputedRationalLDLR0229.lean](Lean/ComputedRationalLDLR0229.lean#L20) |
+| `accepted-061` | `ArithmeticThetaLDLEnumerationR0229.recursive_ellipsoid_enumeration` | [RecursiveEllipsoidEnumerationR0229.lean](Lean/RecursiveEllipsoidEnumerationR0229.lean#L30) |
+| `accepted-062` | `ArithmeticThetaLDLEnumerationR0229.ldl_theta_prefix` | [LDLThetaPrefixR0229.lean](Lean/LDLThetaPrefixR0229.lean#L87) |
+| `accepted-063` | `ArithmeticThetaLDLEnumerationR0229.ldl_coefficient_matrix` | [LDLThetaPrefixR0229.lean](Lean/LDLThetaPrefixR0229.lean#L106) |
+| `accepted-064` | `ArithmeticThetaAdaptiveSolverR0230.checked_basis_change_relations` | [CheckedBasisChangeRelationsR0230.lean](Lean/CheckedBasisChangeRelationsR0230.lean#L26) |
+| `accepted-065` | `ArithmeticThetaAdaptiveSolverR0230.adaptive_universal_solver` | [AdaptiveUniversalSolverR0230.lean](Lean/AdaptiveUniversalSolverR0230.lean#L51) |
+| `accepted-066` | `ArithmeticThetaAdaptiveSolverR0230.adaptive_checked_input` | [AdaptiveUniversalSolverR0230.lean](Lean/AdaptiveUniversalSolverR0230.lean#L84) |
+| `accepted-067` | `ArithmeticThetaAdaptiveSolverR0230.adaptive_singleton_zero` | [AdaptiveUniversalSolverR0230.lean](Lean/AdaptiveUniversalSolverR0230.lean#L127) |
+| `accepted-068` | `ArithmeticThetaArithmeticSectionsR0236.field_compact_discriminant` | [FieldCompactDiscriminantR0236.lean](Lean/FieldCompactDiscriminantR0236.lean#L19) |
+| `accepted-069` | `ArithmeticThetaArithmeticSectionsR0236.field_compact_unary` | [FieldCompactUnaryR0236.lean](Lean/FieldCompactUnaryR0236.lean#L117) |
+| `accepted-070` | `ArithmeticThetaArithmeticSectionsR0236.field_unary_compact_naturality` | [FieldCompactUnaryR0236.lean](Lean/FieldCompactUnaryR0236.lean#L193) |
+| `accepted-071` | `ArithmeticThetaArithmeticCommonCoverR0238.arithmetic_common_unary_family` | [ArithmeticCommonUnaryFamilyR0238.lean](Lean/ArithmeticCommonUnaryFamilyR0238.lean#L20) |
+| `accepted-072` | `ArithmeticThetaCyclotomicModularityR0239.split_component_cusp_bound` | [SplitCuspDegreeR0239.lean](Lean/SplitCuspDegreeR0239.lean#L237) |
+| `accepted-073` | `ArithmeticThetaCyclotomicModularityR0239.split_component_discriminant_divisor` | [SplitDiscriminantDivisorR0239.lean](Lean/SplitDiscriminantDivisorR0239.lean#L151) |
+| `accepted-074` | `ArithmeticThetaCyclotomicModularityR0239.split_square_cover_degree` | [SplitSquareCoverDegreeR0239.lean](Lean/SplitSquareCoverDegreeR0239.lean#L34) |
+| `accepted-075` | `ArithmeticThetaCyclotomicModularityR0239.cyclotomic_matrix_modularity` | [CyclotomicMatrixModularityR0239.lean](Lean/CyclotomicMatrixModularityR0239.lean#L26) |
+| `accepted-076` | `ArithmeticThetaExtendedMetaplecticR0241.cyclotomic_extended_modularity` | [CyclotomicExtendedModularityR0241.lean](Lean/CyclotomicExtendedModularityR0241.lean#L21) |
+| `accepted-077` | `ArithmeticThetaGeneralDPlusR0242.general_dplus_even_unimodular` | [GeneralDPlusEvenUnimodularR0242.lean](Lean/GeneralDPlusEvenUnimodularR0242.lean#L95) |
+| `accepted-078` | `ArithmeticThetaGeneralDPlusR0242.general_dplus_dual` | [GeneralDPlusDualR0242.lean](Lean/GeneralDPlusDualR0242.lean#L63) |
+| `accepted-079` | `ArithmeticThetaGeneralDPlusR0242.general_dplus_theta_realization` | [GeneralDPlusThetaRealizationR0242.lean](Lean/GeneralDPlusThetaRealizationR0242.lean#L122) |
+| `accepted-080` | `ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_existence` | [SchemeDiscriminantExistenceR0244.lean](Lean/SchemeDiscriminantExistenceR0244.lean#L622) |
+| `accepted-081` | `ArithmeticThetaSchemeDiscriminantR0244.scheme_discriminant_naturality` | [SchemeDiscriminantNaturalityR0244.lean](Lean/SchemeDiscriminantNaturalityR0244.lean#L42) |
+| `accepted-082` | `ArithmeticThetaRationalTateR0247.scheme_period_one_discriminant` | [SchemePeriodOneDiscriminantR0247.lean](Lean/SchemePeriodOneDiscriminantR0247.lean#L20) |
+| `accepted-083` | `ArithmeticThetaSchemeKatoUnitR0250.scheme_kato_unit_naturality` | [SchemeKatoUnitNaturalityR0250.lean](Lean/SchemeKatoUnitNaturalityR0250.lean#L18) |
+| `accepted-084` | `ArithmeticThetaSchemeKatoExpansionR0252.scheme_kato_full_tate_expansion` | [SchemeKatoFullTateExpansionR0252.lean](Lean/SchemeKatoFullTateExpansionR0252.lean#L51) |
+| `accepted-085` | `ArithmeticThetaKatoInitialR0253.scheme_five_kato_initial_characterization` | [SchemeFiveKatoInitialCharacterizationR0253.lean](Lean/SchemeFiveKatoInitialCharacterizationR0253.lean#L363) |
+| `accepted-086` | `ArithmeticThetaKatoCharacterizationR0254.scheme_kato_intrinsic_characterization` | [SchemeKatoIntrinsicCharacterizationR0254.lean](Lean/SchemeKatoIntrinsicCharacterizationR0254.lean#L45) |
+| `accepted-087` | `ArithmeticThetaGlobalProjectiveRatiosR0266.global_arithmetic_projective_ratios` | [GlobalArithmeticProjectiveRatiosR0266.lean](Lean/GlobalArithmeticProjectiveRatiosR0266.lean#L235) |
+| `accepted-088` | `ArithmeticThetaDegreeAssembly.certified_theta_image_data` | [EarlyCertificateAssembly.lean](Lean/EarlyCertificateAssembly.lean#L112) |
+| `accepted-089` | `ArithmeticThetaTateIdentities.general_annular_addition` | [TateGeneralAddition.lean](Lean/TateGeneralAddition.lean#L2830) |
+| `accepted-090` | `ArithmeticThetaElementary.norm_exponent_identities` | [NormExponentAlgebra.lean](Lean/NormExponentAlgebra.lean#L5) |
+| `accepted-091` | `ArithmeticThetaElementary.norm_sign_exponent_even` | [NormExponentAlgebra.lean](Lean/NormExponentAlgebra.lean#L19) |
+| `accepted-092` | `ArithmeticThetaLaurentNormR0064.powered_gamma_norm` | [LaurentPoweredNormR0064.lean](Lean/LaurentPoweredNormR0064.lean#L77) |
+| `accepted-093` | `ArithmeticThetaUnaryKatoPowerR0160.unary_power_geometric_realization` | [UnaryPowerGeometricRealizationR0160.lean](Lean/UnaryPowerGeometricRealizationR0160.lean#L9) |
+| `accepted-094` | `ArithmeticThetaUniversalEvaluationR0213.arbitrary_even_theta_rigidification` | [ArbitraryEvenThetaRigidificationR0213.lean](Lean/ArbitraryEvenThetaRigidificationR0213.lean#L60) |
+| `accepted-095` | `ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier` | [PhaseFreeMultiplierR0219.lean](Lean/PhaseFreeMultiplierR0219.lean#L798) |
+| `accepted-096` | `ArithmeticThetaPhaseFreeKeyR0219.phase_free_alpha_descent` | [PhaseFreeAlphaDescentR0219.lean](Lean/PhaseFreeAlphaDescentR0219.lean#L187) |
+| `accepted-097` | `ArithmeticThetaPhaseFreeKeyR0219.phase_free_multiplier_base_change` | [PhaseFreeMultiplierBaseChangeR0219.lean](Lean/PhaseFreeMultiplierBaseChangeR0219.lean#L153) |
+| `accepted-098` | `ArithmeticThetaSchemeKatoNormR0251.finite_etale_norm_family` | [FiniteEtaleNormFamilyR0251.lean](Lean/FiniteEtaleNormFamilyR0251.lean#L45) |
+| `accepted-099` | `ArithmeticThetaMultiplierKeyR0217.even_point_theta_evaluation` | [EvenPointThetaEvaluationR0217.lean](Lean/EvenPointThetaEvaluationR0217.lean#L126) |
+| `accepted-100` | `ArithmeticThetaPhaseFreeKeyR0219.multiplier_fourth_trivialization` | [MultiplierFourthTrivializationR0219.lean](Lean/MultiplierFourthTrivializationR0219.lean#L484) |

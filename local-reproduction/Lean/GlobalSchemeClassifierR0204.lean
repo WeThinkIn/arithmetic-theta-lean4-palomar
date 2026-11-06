@@ -160,7 +160,19 @@ attribute [local instance] LocalPresentation.commRing LocalPresentation.algebra
 /-- The fixed full-level quotient classifies every general marked elliptic family.
 Both maps are glued over the complete open cover, without any finiteness hypothesis. -/
 theorem global_scheme_classifier :
-∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L) (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L) (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A), ArithmeticThetaCompatibleLevelR0178.CanonicalTwo k L A B → ∀ (C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B) (Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C) (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (M : ArithmeticThetaSchemeLevelR0204.FullLevel E L), ∃ (b : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base Q.quotient.ring)) (f : Quiver.Hom E.curve A.descent.family.curve), ArithmeticThetaSchemeLevelR0204.Classifies k L A B C Q σ E M b f := by
+    ∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L)
+      (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L)
+      (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A),
+      ArithmeticThetaCompatibleLevelR0178.CanonicalTwo k L A B →
+        ∀ (C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B)
+          (Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C)
+          (S : AlgebraicGeometry.Scheme.{u})
+          (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+          (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+          (M : ArithmeticThetaSchemeLevelR0204.FullLevel E L),
+          ∃ (b : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base Q.quotient.ring)) (f :
+            Quiver.Hom E.curve A.descent.family.curve),
+            ArithmeticThetaSchemeLevelR0204.Classifies k L A B C Q σ E M b f := by
   intro k _ _ L hL heven A B hB C Q S σ E M
   classical
   choose D hD using scheme_local_classifier k L hL heven A B hB C Q S σ E M

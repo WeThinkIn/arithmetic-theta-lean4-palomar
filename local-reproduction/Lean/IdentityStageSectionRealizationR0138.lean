@@ -381,7 +381,22 @@ end IdentityStageSectionRealizationR0138
 
 /-- Compatible numerators and actual dual sections determine each other uniquely, including degree zero. -/
 theorem identity_stage_section_realization :
-    ∀ (k : Type u) [Field k] [CharZero k], ∀ (r n : ℕ) (hr : 0 < r), 3 ≤ r → ∀ (E : ArithmeticThetaInfinitesimalPolygonR0129.B k n false ≃+* ArithmeticThetaInfinitesimalPolygonR0129.B k n true), ArithmeticThetaInfinitesimalPolygonR0129.IsAdjacent k n E → ∀ D : ArithmeticThetaInfinitesimalPolygonR0129.Atlas k r n hr E, ∀ d : ℕ, (∀ v : ArithmeticThetaIdentitySectionsR0138.Sections k r n hr E d, ∃! φ : ArithmeticThetaIdentitySectionsR0138.StageDual k D d, ArithmeticThetaIdentitySectionsR0138.StageRealizes k D d v.val φ) ∧ (∀ φ : ArithmeticThetaIdentitySectionsR0138.StageDual k D d, ∃! v : ArithmeticThetaIdentitySectionsR0138.Sections k r n hr E d, ArithmeticThetaIdentitySectionsR0138.StageRealizes k D d v.val φ) := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (r n : ℕ) (hr : 0 < r),
+        3 ≤ r →
+          ∀
+            (E :
+              ArithmeticThetaInfinitesimalPolygonR0129.B k n false ≃+*
+                ArithmeticThetaInfinitesimalPolygonR0129.B k n true),
+            ArithmeticThetaInfinitesimalPolygonR0129.IsAdjacent k n E →
+              ∀ D : ArithmeticThetaInfinitesimalPolygonR0129.Atlas k r n hr E,
+                ∀ d : ℕ,
+                  (∀ v : ArithmeticThetaIdentitySectionsR0138.Sections k r n hr E d,
+                      ∃! φ : ArithmeticThetaIdentitySectionsR0138.StageDual k D d,
+                        ArithmeticThetaIdentitySectionsR0138.StageRealizes k D d v.val φ) ∧
+                    (∀ φ : ArithmeticThetaIdentitySectionsR0138.StageDual k D d,
+                      ∃! v : ArithmeticThetaIdentitySectionsR0138.Sections k r n hr E d,
+                        ArithmeticThetaIdentitySectionsR0138.StageRealizes k D d v.val φ) := by
   intro k _ _ r n hr h3 E hE D d
   constructor
   · intro v

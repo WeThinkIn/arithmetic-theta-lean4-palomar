@@ -196,7 +196,40 @@ open CoefficientGenericKatoSquareR0157
 /-- The unique generic coefficient lift preserves the marked origin and every
 natural multiplication map, including multiplication by zero. -/
 theorem coefficient_generic_kato_square :
-    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (Tl : ArithmeticThetaInfinitesimalPolygonR0129.Tower l r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (Ml : ArithmeticThetaProjectiveEffectivityR0135.Model l Tl) (hMl : ArithmeticThetaProjectiveEffectivityR0135.IsModel l Tl Ml) (ρ : ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart l) (hρ : ArithmeticThetaCoefficientNormDescentR0157.IsChartMap k l ι ρ) (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X) (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j)) (χl : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme l) Ml.X) (hχl : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap l Ml j (χl j)) (F : Quiver.Hom Ml.X M.X) (hF : ArithmeticThetaCoefficientNormDescentR0157.IsModelMap k l ι T Tl M Ml ρ χ χl F) (ell : LaurentSeries k →+* LaurentSeries l) (hell : ArithmeticThetaCoefficientNormDescentR0157.IsLaurentMap k l ι ell) (he : Even r) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (sl : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme l) Ml.X) (hsl : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift l Ml (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 sl) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) (Gl : ArithmeticThetaMarkedGroupLawR0146.Law l Ml) (hGl : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw l Ml sl hsl.1 Gl) , ∃! b : Quiver.Hom (ArithmeticThetaGenericEvaluationR0140.genericScheme l Ml) (ArithmeticThetaGenericEvaluationR0140.genericScheme k M), ArithmeticThetaCoefficientNormDescentR0157.IsGenericLift k l T Tl M Ml F b ∧ ArithmeticThetaKatoExistenceR0151.IsTateBaseChange k l M Ml s hs.1 sl hsl.1 G Gl ell b := by
+    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (r : ℕ) (hr : 0 < r)
+      (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (Tl : ArithmeticThetaInfinitesimalPolygonR0129.Tower l r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (Ml : ArithmeticThetaProjectiveEffectivityR0135.Model l Tl)
+      (hMl : ArithmeticThetaProjectiveEffectivityR0135.IsModel l Tl Ml)
+      (ρ : ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart l)
+      (hρ : ArithmeticThetaCoefficientNormDescentR0157.IsChartMap k l ι ρ)
+      (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X)
+      (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j))
+      (χl : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme l) Ml.X)
+      (hχl : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap l Ml j (χl j))
+      (F : Quiver.Hom Ml.X M.X)
+      (hF : ArithmeticThetaCoefficientNormDescentR0157.IsModelMap k l ι T Tl M Ml ρ χ χl F)
+      (ell : LaurentSeries k →+* LaurentSeries l)
+      (hell : ArithmeticThetaCoefficientNormDescentR0157.IsLaurentMap k l ι ell) (he : Even r)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (sl : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme l) Ml.X)
+      (hsl :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift l Ml
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 sl)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      (Gl : ArithmeticThetaMarkedGroupLawR0146.Law l Ml)
+      (hGl : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw l Ml sl hsl.1 Gl),
+      ∃! b :
+        Quiver.Hom (ArithmeticThetaGenericEvaluationR0140.genericScheme l Ml)
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M),
+        ArithmeticThetaCoefficientNormDescentR0157.IsGenericLift k l T Tl M Ml F b ∧
+          ArithmeticThetaKatoExistenceR0151.IsTateBaseChange k l M Ml s hs.1 sl hsl.1 G Gl ell b := by
   intro k l _ _ _ _ ι r hr h3 T Tl M hM Ml hMl ρ hρ χ hχ χl hχl F hF ell hell he s hs sl hsl G hG Gl hGl
   let b := lift k l ι T Tl M Ml F hF.1.w ell hell
   have hb := lift_inclusion k l ι T Tl M Ml F hF.1.w ell hell

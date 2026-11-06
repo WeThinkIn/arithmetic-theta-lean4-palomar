@@ -213,7 +213,22 @@ open ArithmeticThetaFullLevelCoverR0175
 /-- Every determinant-one change of actual marking sections preserves the
 regular geometric phase. Equality is tested on the actual generic fiber. -/
 theorem relative_phase_marking_invariance :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W), ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G → ∀ (M M' : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))) (A : ArithmeticThetaFourTorsion.Mat4), A.det = 1 → ArithmeticThetaRelativeFourCharacterR0211.Changes R W G (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)) M M' A → ∀ z z' : R, ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase R W G M z → ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase R W G M' z' → z' = z := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W),
+      ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G →
+        ∀
+          (M M' :
+            ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4
+              (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)))
+          (A : ArithmeticThetaFourTorsion.Mat4),
+          A.det = 1 →
+            ArithmeticThetaRelativeFourCharacterR0211.Changes R W G
+                (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))
+                M M' A →
+              ∀ z z' : R,
+                ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase R W G M z →
+                  ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase R W G M' z' → z' = z := by
   intro R _ _ _ _ _ W _ G hG M M' A hA hchange z z' hz hz'
   classical
   let F := FractionRing R

@@ -61,7 +61,24 @@ open ArithmeticThetaKatoExistenceR0151.DivisorFieldBaseChange
 
 /-- The generic divisor determines every horizontal codimension-one order. -/
 theorem relative_horizontal_orders :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (C : ArithmeticThetaRelativeKatoR0169.GenericComparison R W G) (c : ℕ) (hc : 1 < c) (hc6 : Nat.Coprime c 6) (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField) (hg : ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction (FractionRing R) (W.map (algebraMap R (FractionRing R))) C.law c (C.field g)), ∀ x : (ArithmeticThetaRelativeKatoR0169.Curve R W), Order.coheight x = 1 → ArithmeticThetaRelativeKatoR0169.structureMap R W x = _root_.genericPoint (AlgebraicGeometry.Spec (CommRingCat.of R)) → AlgebraicGeometry.Scheme.ord g x = ArithmeticThetaRelativeKatoR0169.katoOrder R W G c x := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G)
+      (C : ArithmeticThetaRelativeKatoR0169.GenericComparison R W G) (c : ℕ) (hc : 1 < c)
+      (hc6 : Nat.Coprime c 6) (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField)
+      (hg :
+        ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction (FractionRing R)
+          (W.map (algebraMap R (FractionRing R))) C.law c (C.field g)),
+      ∀ x : (ArithmeticThetaRelativeKatoR0169.Curve R W),
+        Order.coheight x = 1 →
+          ArithmeticThetaRelativeKatoR0169.structureMap R W x =
+              _root_.genericPoint (AlgebraicGeometry.Spec (CommRingCat.of R)) →
+            AlgebraicGeometry.Scheme.ord g x = ArithmeticThetaRelativeKatoR0169.katoOrder R W G c x := by
   intro R _ _ _ _ _ W _ _ _ _ _ G hG C c hc hc6 g hg x hx hbase
   let K := FractionRing R
   let ι := algebraMap R K

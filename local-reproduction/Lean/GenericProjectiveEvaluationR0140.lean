@@ -139,7 +139,40 @@ open ArithmeticThetaIdentitySectionsR0138 GenericProjectiveEvaluationR0140
 /-- The actual generic theta basis has the full unary projective identity value
 in every frame of its identity fiber. -/
 theorem generic_projective_evaluation :
-    ∀ (k : Type u) [Field k] [CharZero k], ∀ (m : ℕ) (hm : 0 < m) (he : Even m), ∀ (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k (2*m) (Nat.mul_pos (by decide) hm)) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex (2*m) (Nat.mul_pos (by decide) hm)) 1 s), (∀ φ : ArithmeticThetaGenericEvaluationR0140.GenericDual k M s m, ∃! c : Fin m → LaurentSeries k, ArithmeticThetaGenericEvaluationR0140.Combines k M s m m (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs) c φ) ∧ Nonempty (ArithmeticThetaGenericEvaluationR0140.GenericFrame k M s hs.1 m) ∧ ∀ e : ArithmeticThetaGenericEvaluationR0140.GenericFrame k M s hs.1 m, ArithmeticThetaGenericEvaluationR0140.genericValue k M s hs.1 m e (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs (ArithmeticThetaIdentitySectionsR0138.zeroIndex m hm)) ≠ 0 ∧ ∀ ν : Fin m, ArithmeticThetaGenericEvaluationR0140.genericValue k M s hs.1 m e (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs ν) / ArithmeticThetaGenericEvaluationR0140.genericValue k M s hs.1 m e (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs (ArithmeticThetaIdentitySectionsR0138.zeroIndex m hm)) = (algebraMap (PowerSeries k) (LaurentSeries k) (ArithmeticThetaSchrodingerR0119.unary k m ν)) / (algebraMap (PowerSeries k) (LaurentSeries k) (ArithmeticThetaSchrodingerR0119.unary k m (ArithmeticThetaIdentitySectionsR0138.zeroIndex m hm))) := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (m : ℕ) (hm : 0 < m) (he : Even m),
+        ∀
+          (T :
+            ArithmeticThetaInfinitesimalPolygonR0129.Tower k (2 * m) (Nat.mul_pos (by decide) hm))
+          (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+          (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+          (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+          (hs :
+            ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+              (ArithmeticThetaIdentitySectionsR0138.zeroIndex (2 * m) (Nat.mul_pos (by decide) hm))
+              1 s),
+          (∀ φ : ArithmeticThetaGenericEvaluationR0140.GenericDual k M s m,
+              ∃! c : Fin m → LaurentSeries k,
+                ArithmeticThetaGenericEvaluationR0140.Combines k M s m m
+                  (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs) c φ) ∧
+            Nonempty (ArithmeticThetaGenericEvaluationR0140.GenericFrame k M s hs.1 m) ∧
+              ∀ e : ArithmeticThetaGenericEvaluationR0140.GenericFrame k M s hs.1 m,
+                ArithmeticThetaGenericEvaluationR0140.genericValue k M s hs.1 m e
+                      (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs
+                        (ArithmeticThetaIdentitySectionsR0138.zeroIndex m hm)) ≠
+                    0 ∧
+                  ∀ ν : Fin m,
+                    ArithmeticThetaGenericEvaluationR0140.genericValue k M s hs.1 m e
+                          (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs
+                            ν) /
+                        ArithmeticThetaGenericEvaluationR0140.genericValue k M s hs.1 m e
+                          (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs
+                            (ArithmeticThetaIdentitySectionsR0138.zeroIndex m hm)) =
+                      (algebraMap (PowerSeries k) (LaurentSeries k)
+                          (ArithmeticThetaSchrodingerR0119.unary k m ν)) /
+                        (algebraMap (PowerSeries k) (LaurentSeries k)
+                          (ArithmeticThetaSchrodingerR0119.unary k m
+                            (ArithmeticThetaIdentitySectionsR0138.zeroIndex m hm))) := by
   intro k _ _ m hm he T M hM s hs
   refine ⟨generic_theta_basis k m hm he T M hM s hs, ?_⟩
   obtain ⟨e, he'⟩ := normalized_identity_frame k (2*m)

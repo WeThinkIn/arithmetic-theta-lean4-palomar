@@ -137,7 +137,14 @@ open ArithmeticThetaSchemeLevelR0204
 /-- The arithmetic component quotients and their complete expansions are obtained
 through the original disk and the same canonical theta comparison. -/
 theorem arithmetic_invariant_ratio_realization :
-∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (m : ℕ) (hm : 0 < m) (he : Even m) (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (2*m)) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k (2*m) D) (Vd : ArithmeticThetaBoundaryHodgeR0182.DiskTest k (2*m) D X) (ζ : kˣ) (hζ : IsPrimitiveRoot (ζ : k) (2*m)), ArithmeticThetaTateCuspsR0181.CanonicalMarking k (2*m) (ζ : k) Vd.level → ∃ T : ArithmeticThetaInvariantRatiosR0265.Arithmetic.Test k m D X Vd, ArithmeticThetaInvariantRatiosR0265.Arithmetic.Realization k m D X Vd T hm he ζ hζ := by
+    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (m : ℕ) (hm : 0 < m) (he : Even m)
+      (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (2 * m))
+      (X : ArithmeticThetaLevelCompactificationR0179.Compactification k (2 * m) D)
+      (Vd : ArithmeticThetaBoundaryHodgeR0182.DiskTest k (2 * m) D X) (ζ : kˣ)
+      (hζ : IsPrimitiveRoot (ζ : k) (2 * m)),
+      ArithmeticThetaTateCuspsR0181.CanonicalMarking k (2 * m) (ζ : k) Vd.level →
+        ∃ T : ArithmeticThetaInvariantRatiosR0265.Arithmetic.Test k m D X Vd,
+          ArithmeticThetaInvariantRatiosR0265.Arithmetic.Realization k m D X Vd T hm he ζ hζ := by
   intro k _ _ _ m hm he D X Vd ζ hζ hmark
   obtain ⟨T⟩ := test_exists k m D X Vd
   refine ⟨T, ?_⟩

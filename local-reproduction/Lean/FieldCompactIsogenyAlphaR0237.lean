@@ -96,7 +96,19 @@ lemma extension_exists (k : Type) [Field k] [CharZero k] (L m : ℕ)
 end FieldCompactIsogenyAlpha
 
 theorem field_compact_isogeny_alpha :
-    ∀ (k : Type) [Field k] [CharZero k] (L m : ℕ), 0 < L → 0 < m → Even m → 8*m ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L), ∀ (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H → ∀ A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D, ∃! a : (H.line).presheaf.obj (Opposite.op ⊤), ArithmeticThetaIsogenyHalfLinesR0193.CompactRealizes k L m D X H A a := by
+    ∀ (k : Type) [Field k] [CharZero k] (L m : ℕ),
+      0 < L →
+        0 < m →
+          Even m →
+            8 * m ∣ L →
+              ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L),
+                ∀ (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D)
+                  (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X),
+                  ArithmeticThetaBoundaryHodgeR0182.Canonical k L H →
+                    ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H →
+                      ∀ A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D,
+                        ∃! a : (H.line).presheaf.obj (Opposite.op ⊤),
+                          ArithmeticThetaIsogenyHalfLinesR0193.CompactRealizes k L m D X H A a := by
   intro k _ _ L m hL hm hmeven hdiv D X H hH hgH A
   obtain ⟨a, har⟩ := FieldCompactIsogenyAlpha.extension_exists k L m hL hm hmeven hdiv D X H hH hgH A
   obtain ⟨hord, hexp⟩ := field_isogeny_alpha_local_behavior k L m hL hm hmeven hdiv D A
@@ -116,7 +128,38 @@ theorem field_compact_isogeny_alpha :
     exact restrict_injective k L H (hb.1.trans har.symm)
 
 theorem compact_isogeny_alpha_constant_naturality :
-    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (L m : ℕ), 0 < L → 0 < m → Even m → 8*m ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E) (C : ArithmeticThetaArithmeticSectionsR0236.Comparison k L ι D E X Y) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X) (J : ArithmeticThetaBoundaryHodgeR0182.Extension l L E Y), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H → ArithmeticThetaBoundaryHodgeR0182.Canonical l L J → ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical J → ∀ (A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D) (B : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha l L m E) (a : (H.line).presheaf.obj (Opposite.op ⊤)) (b : (J.line).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaIsogenyHalfLinesR0193.CompactRealizes k L m D X H A a → ArithmeticThetaIsogenyHalfLinesR0193.CompactRealizes l L m E Y J B b → ∃ e : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback C.compactMap).obj H.line) (J.line), ArithmeticThetaBoundaryConstantsR0235.CompactCompatible ι C.openMap C.compactMap C.extendsOpen C.hodgeMap H J e ∧ ArithmeticThetaBoundaryHodgeR0182.OpenDiscriminantFullTateExpansionR0182.transportSection C.compactMap H.line J.line e a = b := by
+    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (L m : ℕ),
+      0 < L →
+        0 < m →
+          Even m →
+            8 * m ∣ L →
+              ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+                (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L)
+                (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D)
+                (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E)
+                (C : ArithmeticThetaArithmeticSectionsR0236.Comparison k L ι D E X Y)
+                (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X)
+                (J : ArithmeticThetaBoundaryHodgeR0182.Extension l L E Y),
+                ArithmeticThetaBoundaryHodgeR0182.Canonical k L H →
+                  ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H →
+                    ArithmeticThetaBoundaryHodgeR0182.Canonical l L J →
+                      ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical J →
+                        ∀ (A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D)
+                          (B : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha l L m E)
+                          (a : (H.line).presheaf.obj (Opposite.op ⊤))
+                          (b : (J.line).presheaf.obj (Opposite.op ⊤)),
+                          ArithmeticThetaIsogenyHalfLinesR0193.CompactRealizes k L m D X H A a →
+                            ArithmeticThetaIsogenyHalfLinesR0193.CompactRealizes l L m E Y J B b →
+                              ∃ e :
+                                CategoryTheory.Iso
+                                  ((AlgebraicGeometry.Scheme.Modules.pullback C.compactMap).obj
+                                    H.line)
+                                  (J.line),
+                                ArithmeticThetaBoundaryConstantsR0235.CompactCompatible ι C.openMap
+                                    C.compactMap C.extendsOpen C.hodgeMap H J e ∧
+                                  ArithmeticThetaBoundaryHodgeR0182.OpenDiscriminantFullTateExpansionR0182.transportSection
+                                      C.compactMap H.line J.line e a =
+                                    b := by
   intro k l _ _ _ _ ι L m hL hm hmeven hdiv D E X Y C H J hH hgH hJ hgJ A B a b ha hb
   have hbound := IsogenyAlphaAllCuspOrders.level_bounds L m hL hm hdiv
   obtain ⟨e, he, _⟩ := geometric_compact_hodge_comparison k l ι L hbound.1 hbound.2.1

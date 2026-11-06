@@ -160,7 +160,30 @@ end RamifiedFiniteMap
 /-- Descend the prescribed finite surjective map, retaining the input models
 through Cartesian refinements and preserving pointwise scheme finrank. -/
 theorem ramified_finite_map_model :
-    ∀ (X Y : ArithmeticThetaFiniteFieldModelsR0221.Curve ArithmeticThetaFiniteFieldModelsR0221.Omega) (K0 : ArithmeticThetaFiniteFieldModelsR0221.FieldStage), FiniteDimensional ℚ K0 → ∀ (M : ArithmeticThetaFiniteFieldModelsR0221.Model X K0) (N : ArithmeticThetaFiniteFieldModelsR0221.Model Y K0) (f : Quiver.Hom X.space Y.space), CategoryTheory.CategoryStruct.comp f Y.map = X.map → AlgebraicGeometry.IsFinite f → AlgebraicGeometry.Surjective f → ∃ K : ArithmeticThetaFiniteFieldModelsR0221.FieldStage, FiniteDimensional ℚ K ∧ ∃ (M1 : ArithmeticThetaFiniteFieldModelsR0221.Model X K) (N1 : ArithmeticThetaFiniteFieldModelsR0221.Model Y K) (_ : ArithmeticThetaFiniteFieldModelsR0221.Refinement M M1) (_ : ArithmeticThetaFiniteFieldModelsR0221.Refinement N N1) (g : Quiver.Hom M1.curve.space N1.curve.space), CategoryTheory.CategoryStruct.comp g N1.curve.map = M1.curve.map ∧ CategoryTheory.IsPullback M1.projection f g N1.projection ∧ AlgebraicGeometry.IsFinite g ∧ AlgebraicGeometry.Surjective g ∧ ∀ y : Y.space, AlgebraicGeometry.Scheme.Hom.finrank g (N1.projection y) = AlgebraicGeometry.Scheme.Hom.finrank f y := by
+    ∀
+      (X Y :
+        ArithmeticThetaFiniteFieldModelsR0221.Curve ArithmeticThetaFiniteFieldModelsR0221.Omega)
+      (K0 : ArithmeticThetaFiniteFieldModelsR0221.FieldStage),
+      FiniteDimensional ℚ K0 →
+        ∀ (M : ArithmeticThetaFiniteFieldModelsR0221.Model X K0)
+          (N : ArithmeticThetaFiniteFieldModelsR0221.Model Y K0) (f : Quiver.Hom X.space Y.space),
+          CategoryTheory.CategoryStruct.comp f Y.map = X.map →
+            AlgebraicGeometry.IsFinite f →
+              AlgebraicGeometry.Surjective f →
+                ∃ K : ArithmeticThetaFiniteFieldModelsR0221.FieldStage,
+                  FiniteDimensional ℚ K ∧
+                    ∃ (M1 : ArithmeticThetaFiniteFieldModelsR0221.Model X K) (N1 :
+                      ArithmeticThetaFiniteFieldModelsR0221.Model Y K) (_ :
+                      ArithmeticThetaFiniteFieldModelsR0221.Refinement M M1) (_ :
+                      ArithmeticThetaFiniteFieldModelsR0221.Refinement N N1) (g :
+                      Quiver.Hom M1.curve.space N1.curve.space),
+                      CategoryTheory.CategoryStruct.comp g N1.curve.map = M1.curve.map ∧
+                        CategoryTheory.IsPullback M1.projection f g N1.projection ∧
+                          AlgebraicGeometry.IsFinite g ∧
+                            AlgebraicGeometry.Surjective g ∧
+                              ∀ y : Y.space,
+                                AlgebraicGeometry.Scheme.Hom.finrank g (N1.projection y) =
+                                  AlgebraicGeometry.Scheme.Hom.finrank f y := by
   intro X Y K0 hK M N f hf hfinite hsurjective
   have : FiniteDimensional ℚ K0 := hK
   have : IsFinite f := hfinite

@@ -91,7 +91,21 @@ end MarkedAffineTestComparison
 
 /-- Cover every base point and compare the identity cotangent on every affine test. -/
 theorem marked_affine_test_comparison :
-    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4), (∀ s : S, ∃ P : ArithmeticThetaSchemeFourCharacterR0215.AffineTest E M, AlgebraicGeometry.IsOpenImmersion P.base ∧ s ∈ Set.range P.base) ∧ (∀ P : ArithmeticThetaSchemeFourCharacterR0215.AffineTest E M, ∃! i : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback P.comparison).obj (ArithmeticThetaLocalWeierstrassR0203.Family.zero E).ker.module) ((ArithmeticThetaRelativeKatoR0169.origin P.ring P.equation).ker.module), ArithmeticThetaSchemeFourCharacterR0215.AffineIdealCompatible E M P i ∧ CategoryTheory.IsIso (ArithmeticThetaSchemeFourCharacterR0215.affineHodgeMap E M P i)) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4),
+      (∀ s : S,
+          ∃ P : ArithmeticThetaSchemeFourCharacterR0215.AffineTest E M,
+            AlgebraicGeometry.IsOpenImmersion P.base ∧ s ∈ Set.range P.base) ∧
+        (∀ P : ArithmeticThetaSchemeFourCharacterR0215.AffineTest E M,
+          ∃! i :
+            CategoryTheory.Iso
+              ((AlgebraicGeometry.Scheme.Modules.pullback P.comparison).obj
+                (ArithmeticThetaLocalWeierstrassR0203.Family.zero E).ker.module)
+              ((ArithmeticThetaRelativeKatoR0169.origin P.ring P.equation).ker.module),
+            ArithmeticThetaSchemeFourCharacterR0215.AffineIdealCompatible E M P i ∧
+              CategoryTheory.IsIso (ArithmeticThetaSchemeFourCharacterR0215.affineHodgeMap E M P i)) := by
   intro k _ _ S σ E M
   constructor
   · exact MarkedAffineTestComparison.coverage E M k σ

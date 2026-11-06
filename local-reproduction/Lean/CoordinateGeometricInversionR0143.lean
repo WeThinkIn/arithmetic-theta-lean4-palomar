@@ -187,7 +187,33 @@ open CoordinateGeometricInversionR0143
 /-- Actual inversion fixes the algebraic Tate X and negates the algebraic Tate Y,
 using the canonical lift on the second and third powers of the identity ideal. -/
 theorem coordinate_geometric_inversion :
-    ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s), ∀ (odd : Bool) (φ : ArithmeticThetaIdentitySectionsR0138.Dual k M s (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd)), ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k odd M s φ → ∀ (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → CategoryTheory.Iso M.X M.X) (iv : CategoryTheory.Iso M.X M.X) (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal iv), ∀ (U : M.X.Opens) (x : ((ArithmeticThetaIdentitySectionsR0138.powerModule k M s (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd)).presheaf.obj (Opposite.op U))), (ArithmeticThetaAlgebraicCoordinatesR0143.inversionAction k h3 M hM s hs rot scal iv ha (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd) φ).app U x = (if odd then -(show M.X.presheaf.obj (Opposite.op U) from φ.app U x) else (show M.X.presheaf.obj (Opposite.op U) from φ.app U x)) := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+        (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+        (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+        (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+        (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+        (hs :
+          ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+            (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s),
+        ∀ (odd : Bool)
+          (φ :
+            ArithmeticThetaIdentitySectionsR0138.Dual k M s
+              (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd)),
+          ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k odd M s φ →
+            ∀ (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → CategoryTheory.Iso M.X M.X)
+              (iv : CategoryTheory.Iso M.X M.X)
+              (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal iv),
+              ∀ (U : M.X.Opens)
+                (x :
+                  ((ArithmeticThetaIdentitySectionsR0138.powerModule k M s
+                        (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd)).presheaf.obj
+                    (Opposite.op U))),
+                (ArithmeticThetaAlgebraicCoordinatesR0143.inversionAction k h3 M hM s hs rot scal iv
+                        ha (ArithmeticThetaAlgebraicCoordinatesR0143.degree odd) φ).app
+                    U x =
+                  (if odd then -(show M.X.presheaf.obj (Opposite.op U) from φ.app U x)
+                  else (show M.X.presheaf.obj (Opposite.op U) from φ.app U x)) := by
   intro k _ _ r hr h3 T M hM s hs odd φ hφ rot scal iv ha U x
   have he := (algebraic_tate_coordinates k r hr h3 T M hM s hs odd).unique
     (signed_action_realizes k h3 M hM s hs odd φ hφ rot scal iv ha) hφ

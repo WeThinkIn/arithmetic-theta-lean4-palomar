@@ -628,7 +628,41 @@ open CompactHodgeLatticeExtensionR0182 CompactDiscriminantSectionR0182
 /-- The unique global regular extension of the intrinsic open discriminant,
 with its literal complete series and exact normalized order at every Tate cusp. -/
 theorem compact_discriminant_section :
-    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L) (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L), ∀ [IsAlgClosed k] (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ∀ (d : (ArithmeticThetaOpenHodgeR0180.power D.atlas.descent.family 24).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaOpenHodgeR0180.IsD2 D.atlas.descent.family d → ∃! s : (ArithmeticThetaTensorPower.tensorPower X.space H.line 24).presheaf.obj (Opposite.op ⊤), ArithmeticThetaBoundaryHodgeR0182.restrictPower k L H 24 s = ArithmeticThetaBoundaryHodgeR0182.pullToOpen k L 24 d ∧ ∀ V : ArithmeticThetaBoundaryHodgeR0182.DiskTest k L D X, ∀ η : ((AlgebraicGeometry.Scheme.Modules.pullback V.disk).obj H.line).presheaf.obj (Opposite.op ⊤), ArithmeticThetaBoundaryHodgeR0182.ExtendsGenerator k L H V η → ArithmeticThetaBoundaryHodgeR0182.diskPower k L H V 24 s = ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k) (ArithmeticThetaHodgeInitialR0163.discriminantSeries k L) • ArithmeticThetaTensorPower.tensorPowerSection (ArithmeticThetaTateCuspsR0181.Disk k) ((AlgebraicGeometry.Scheme.Modules.pullback V.disk).obj H.line) 24 ⊤ η ∧ (∀ j : ℕ, j < 2*L → PowerSeries.coeff j (ArithmeticThetaHodgeInitialR0163.discriminantSeries k L) = 0) ∧ PowerSeries.coeff (2*L) (ArithmeticThetaHodgeInitialR0163.discriminantSeries k L) = 1 := by
+    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L)
+      (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L),
+      ∀ [IsAlgClosed k] (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D)
+        (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X),
+        ArithmeticThetaBoundaryHodgeR0182.Canonical k L H →
+          ∀
+            (d :
+              (ArithmeticThetaOpenHodgeR0180.power D.atlas.descent.family 24).presheaf.obj
+                (Opposite.op ⊤)),
+            ArithmeticThetaOpenHodgeR0180.IsD2 D.atlas.descent.family d →
+              ∃! s :
+                (ArithmeticThetaTensorPower.tensorPower X.space H.line 24).presheaf.obj
+                  (Opposite.op ⊤),
+                ArithmeticThetaBoundaryHodgeR0182.restrictPower k L H 24 s =
+                    ArithmeticThetaBoundaryHodgeR0182.pullToOpen k L 24 d ∧
+                  ∀ V : ArithmeticThetaBoundaryHodgeR0182.DiskTest k L D X,
+                    ∀ η :
+                      ((AlgebraicGeometry.Scheme.Modules.pullback V.disk).obj H.line).presheaf.obj
+                        (Opposite.op ⊤),
+                      ArithmeticThetaBoundaryHodgeR0182.ExtendsGenerator k L H V η →
+                        ArithmeticThetaBoundaryHodgeR0182.diskPower k L H V 24 s =
+                            ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k)
+                                (ArithmeticThetaHodgeInitialR0163.discriminantSeries k L) •
+                              ArithmeticThetaTensorPower.tensorPowerSection
+                                (ArithmeticThetaTateCuspsR0181.Disk k)
+                                ((AlgebraicGeometry.Scheme.Modules.pullback V.disk).obj H.line) 24 ⊤
+                                η ∧
+                          (∀ j : ℕ,
+                              j < 2 * L →
+                                PowerSeries.coeff j
+                                    (ArithmeticThetaHodgeInitialR0163.discriminantSeries k L) =
+                                  0) ∧
+                            PowerSeries.coeff (2 * L)
+                                (ArithmeticThetaHodgeInitialR0163.discriminantSeries k L) =
+                              1 := by
   intro k _ _ L hL heven D _ X H hH d hd
   letI := X.openImmersion
   letI := compact_noetherian k L D X

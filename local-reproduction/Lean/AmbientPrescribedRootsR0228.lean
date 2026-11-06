@@ -13,7 +13,52 @@ open ArithmeticThetaConstantExtensionR0225 (Omega)
 /-- Realize the prescribed roots over their exact finite generated subfield,
 then transport the same branch and its full section values to the ambient field. -/
 theorem ambient_prescribed_roots :
-∀ (k : Type) [Field k] [CharZero k] (X : ArithmeticThetaFiniteFieldModelsR0221.Curve (ArithmeticThetaConstantExtensionR0225.Omega k)) (J : X.space.Modules), AlgebraicGeometry.Scheme.Modules.IsInvertible J → ∀ (n s : ℕ), 0 < n → ∀ (F : Fin s → ArithmeticThetaFiniteFieldModelsR0221.Sections (ArithmeticThetaTensorPower.tensorPower X.space J n)), (∀ j, F j ≠ 0) → ∀ (f : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk (ArithmeticThetaConstantExtensionR0225.Omega k)) X.space), CategoryTheory.CategoryStruct.comp f X.map = ArithmeticThetaTateCuspsR0181.diskStructure (ArithmeticThetaConstantExtensionR0225.Omega k) → AlgebraicGeometry.IsDominant (CategoryTheory.CategoryStruct.comp (ArithmeticThetaTateCuspsR0181.genericInclusion (ArithmeticThetaConstantExtensionR0225.Omega k)) f) → ∀ (h : ArithmeticThetaFiniteFieldModelsR0221.Sections ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J)), ArithmeticThetaRelativeDiscriminantR0171.IsFrame ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J) ⊤ h → ∀ (E : Type) [Field E] [Algebra (LaurentSeries (ArithmeticThetaConstantExtensionR0225.Omega k)) E] (r : Fin s → E), (∀ j, ArithmeticThetaAlgebraicBranchesR0226.Equation f J n (F j) h (r j)) → ∀ K0 : ArithmeticThetaConstantExtensionR0225.FieldStage k, FiniteDimensional k K0 → ∃ M : ArithmeticThetaAmbientCompletedRootsR0227.AlgebraicModel k X J n s F f h E r K0, ArithmeticThetaAmbientCompletedRootsR0227.AmbientValues M := by
+    ∀ (k : Type) [Field k] [CharZero k]
+      (X :
+        ArithmeticThetaFiniteFieldModelsR0221.Curve (ArithmeticThetaConstantExtensionR0225.Omega k))
+      (J : X.space.Modules),
+      AlgebraicGeometry.Scheme.Modules.IsInvertible J →
+        ∀ (n s : ℕ),
+          0 < n →
+            ∀
+              (F :
+                Fin s →
+                  ArithmeticThetaFiniteFieldModelsR0221.Sections
+                    (ArithmeticThetaTensorPower.tensorPower X.space J n)),
+              (∀ j, F j ≠ 0) →
+                ∀
+                  (f :
+                    Quiver.Hom
+                      (ArithmeticThetaTateCuspsR0181.Disk
+                        (ArithmeticThetaConstantExtensionR0225.Omega k))
+                      X.space),
+                  CategoryTheory.CategoryStruct.comp f X.map =
+                      ArithmeticThetaTateCuspsR0181.diskStructure
+                        (ArithmeticThetaConstantExtensionR0225.Omega k) →
+                    AlgebraicGeometry.IsDominant
+                        (CategoryTheory.CategoryStruct.comp
+                          (ArithmeticThetaTateCuspsR0181.genericInclusion
+                            (ArithmeticThetaConstantExtensionR0225.Omega k))
+                          f) →
+                      ∀
+                        (h :
+                          ArithmeticThetaFiniteFieldModelsR0221.Sections
+                            ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J)),
+                        ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+                            ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J) ⊤ h →
+                          ∀ (E : Type) [Field E]
+                            [Algebra (LaurentSeries (ArithmeticThetaConstantExtensionR0225.Omega k))
+                                E]
+                            (r : Fin s → E),
+                            (∀ j,
+                                ArithmeticThetaAlgebraicBranchesR0226.Equation f J n (F j) h
+                                  (r j)) →
+                              ∀ K0 : ArithmeticThetaConstantExtensionR0225.FieldStage k,
+                                FiniteDimensional k K0 →
+                                  ∃ M :
+                                    ArithmeticThetaAmbientCompletedRootsR0227.AlgebraicModel k X J n
+                                      s F f h E r K0,
+                                    ArithmeticThetaAmbientCompletedRootsR0227.AmbientValues M := by
   intro k _ _ X J hJ n s hn F hF f hf hdom h hh E _ _ r hr K0 hK0
   obtain ⟨hfinite, _, r0, hr0, heq⟩ :=
     selected_root_field (Omega k) E X.space f J n s hn F h hh r hr

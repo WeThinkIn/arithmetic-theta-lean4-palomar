@@ -49,7 +49,22 @@ private lemma canonical_tate_expansion
 /-- Unique canonical scheme unit with divisor, every coprime positive norm,
 and full period-one expansion in every actual pointed Cartesian test. -/
 theorem scheme_kato_full_tate_expansion :
-∀ (k : Type) [Field k] [CharZero k] (B : AlgebraicGeometry.Scheme.{0}) (σ : Quiver.Hom B (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family B), ∀ c : ℕ, 1 < c → Nat.Coprime c 6 → ∃! v : ArithmeticThetaSchemeKatoUnitR0250.UnitSection E c, ArithmeticThetaSchemeKatoUnitR0250.IsKatoUnit E k σ c v ∧ ArithmeticThetaSchemeKatoUnitR0250.HasCartierDivisor E c v ∧ (∀ d : ℕ, 0 < d → Nat.Coprime c d → ArithmeticThetaSchemeKatoNormR0251.NormInvariant (ArithmeticThetaSchemeKatoUnitR0250.multiplication E d) (ArithmeticThetaSchemeKatoUnitR0250.complement E c) (v : _)) ∧ ArithmeticThetaSchemeKatoExpansionR0252.TateExpansion k σ E c v := by
+    ∀ (k : Type) [Field k] [CharZero k] (B : AlgebraicGeometry.Scheme.{0})
+      (σ : Quiver.Hom B (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family B),
+      ∀ c : ℕ,
+        1 < c →
+          Nat.Coprime c 6 →
+            ∃! v : ArithmeticThetaSchemeKatoUnitR0250.UnitSection E c,
+              ArithmeticThetaSchemeKatoUnitR0250.IsKatoUnit E k σ c v ∧
+                ArithmeticThetaSchemeKatoUnitR0250.HasCartierDivisor E c v ∧
+                  (∀ d : ℕ,
+                      0 < d →
+                        Nat.Coprime c d →
+                          ArithmeticThetaSchemeKatoNormR0251.NormInvariant
+                            (ArithmeticThetaSchemeKatoUnitR0250.multiplication E d)
+                            (ArithmeticThetaSchemeKatoUnitR0250.complement E c) (v : _)) ∧
+                    ArithmeticThetaSchemeKatoExpansionR0252.TateExpansion k σ E c v := by
   intro k _ _ B σ E c hc hc6
   obtain ⟨v, hv⟩ := scheme_kato_unit_existence k B σ E c hc hc6
   refine ⟨v, ⟨hv, scheme_kato_cartier_divisor k B σ E c hc hc6 v hv,

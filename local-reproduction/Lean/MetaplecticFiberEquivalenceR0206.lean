@@ -273,7 +273,15 @@ end FiberEquivalenceProof
 /-- The actual marked families with their specified cotangent roots are equivalent
     to the accepted root categories over all maps to the same fixed quotient. -/
 theorem metaplectic_fiber_equivalence :
-    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L) (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L) (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A) (C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B) (Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C), ArithmeticThetaSchemeHodgeR0205.HodgeUniversal k L A B C Q → ∀ (S : CategoryTheory.Over (ArithmeticThetaLocalWeierstrassR0203.Base k)) (G : ArithmeticThetaMetaplecticComparisonR0206.GroupoidData L S.left), Nonempty (ArithmeticThetaMetaplecticComparisonR0206.FiberComparison k L A B C Q S G) := by
+    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L)
+      (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L)
+      (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A)
+      (C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B)
+      (Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C),
+      ArithmeticThetaSchemeHodgeR0205.HodgeUniversal k L A B C Q →
+        ∀ (S : CategoryTheory.Over (ArithmeticThetaLocalWeierstrassR0203.Base k))
+          (G : ArithmeticThetaMetaplecticComparisonR0206.GroupoidData L S.left),
+          Nonempty (ArithmeticThetaMetaplecticComparisonR0206.FiberComparison k L A B C Q S G) := by
   intro k _ _ L hL heven A B C Q H S G
   exact ⟨FiberEquivalenceProof.comparison hL heven H G⟩
 

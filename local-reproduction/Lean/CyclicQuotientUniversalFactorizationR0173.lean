@@ -153,7 +153,22 @@ end CyclicQuotientUniversalFactorizationR0173
 
 /- Faithfully flat descent yields the unique actual pointed factorization. -/
 theorem cyclic_quotient_universal_factorization :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (n : ℕ) (hn : 0 < n) (P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G n) (V : WeierstrassCurve R) [V.IsElliptic] (H : ArithmeticThetaRelativeKatoR0169.Law R V) (hH : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R V H) (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V) (hf : ArithmeticThetaRelativeCyclicQuotientR0173.IsQuotient R W G P f) (Z : WeierstrassCurve R) [Z.IsElliptic] (J : ArithmeticThetaRelativeKatoR0169.Law R Z) (hJ : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R Z J) (a : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W Z), CategoryTheory.CategoryStruct.comp P.point a.map = ArithmeticThetaRelativeKatoR0169.origin R Z → ∃! u : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R V Z, CategoryTheory.CategoryStruct.comp f.map u.map = a.map := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (n : ℕ) (hn : 0 < n)
+      (P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G n)
+      (V : WeierstrassCurve R) [V.IsElliptic] (H : ArithmeticThetaRelativeKatoR0169.Law R V)
+      (hH : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R V H)
+      (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V)
+      (hf : ArithmeticThetaRelativeCyclicQuotientR0173.IsQuotient R W G P f)
+      (Z : WeierstrassCurve R) [Z.IsElliptic] (J : ArithmeticThetaRelativeKatoR0169.Law R Z)
+      (hJ : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R Z J)
+      (a : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W Z),
+      CategoryTheory.CategoryStruct.comp P.point a.map =
+          ArithmeticThetaRelativeKatoR0169.origin R Z →
+        ∃! u : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R V Z,
+          CategoryTheory.CategoryStruct.comp f.map u.map = a.map := by
   intro R _ _ _ _ _ W _ G hG n hn P V _ H hH f hf Z _ J hJ a ha
   haveI : Etale f.map := hf.2.1
   haveI : Surjective f.map := hf.2.2.1

@@ -216,7 +216,42 @@ open ArithmeticThetaKatoAnnularR0152 CompletedActionEquivariance
 /-- Pullback by the specified actual translation agrees with completed scaling
 on the cyclically shifted chart, for every rational function including zero. -/
 theorem completed_action_equivariance :
-∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → (CategoryTheory.Iso M.X M.X)) (inv : CategoryTheory.Iso M.X M.X) (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv) (σ : Fin r → kˣ → ((AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) ≃+* (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)))) (hσ : ArithmeticThetaSplitNormR0153.IsFieldAction k M rot scal inv ha σ) (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X) (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j)) (φ : Fin r → ((AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* ArithmeticThetaKatoAnnularR0152.ChartField k)) (hφ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M (χ j) (φ j)), ∀ (i : Fin r) (a : kˣ) (e : ArithmeticThetaKatoAnnularR0152.Chart k ≃+* ArithmeticThetaKatoAnnularR0152.Chart k) (E : ArithmeticThetaKatoAnnularR0152.ChartField k ≃+* ArithmeticThetaKatoAnnularR0152.ChartField k), ArithmeticThetaSplitNormR0153.IsScaling k a e → ArithmeticThetaSplitNormR0153.ExtendsScaling k e E → ∀ (j : Fin r) (g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))), φ j (σ i a g) = E (φ (ArithmeticThetaSplitNormR0153.shift (hr := hr) j i) g) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → (CategoryTheory.Iso M.X M.X))
+      (inv : CategoryTheory.Iso M.X M.X)
+      (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv)
+      (σ :
+        Fin r →
+          kˣ →
+            ((AlgebraicGeometry.Scheme.functionField
+                (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) ≃+*
+              (AlgebraicGeometry.Scheme.functionField
+                (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))))
+      (hσ : ArithmeticThetaSplitNormR0153.IsFieldAction k M rot scal inv ha σ)
+      (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X)
+      (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j))
+      (φ :
+        Fin r →
+          ((AlgebraicGeometry.Scheme.functionField
+              (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+            ArithmeticThetaKatoAnnularR0152.ChartField k))
+      (hφ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M (χ j) (φ j)),
+      ∀ (i : Fin r) (a : kˣ)
+        (e : ArithmeticThetaKatoAnnularR0152.Chart k ≃+* ArithmeticThetaKatoAnnularR0152.Chart k)
+        (E :
+          ArithmeticThetaKatoAnnularR0152.ChartField k ≃+*
+            ArithmeticThetaKatoAnnularR0152.ChartField k),
+        ArithmeticThetaSplitNormR0153.IsScaling k a e →
+          ArithmeticThetaSplitNormR0153.ExtendsScaling k e E →
+            ∀ (j : Fin r)
+              (g :
+                (AlgebraicGeometry.Scheme.functionField
+                  (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))),
+              φ j (σ i a g) = E (φ (ArithmeticThetaSplitNormR0153.shift (hr := hr) j i) g) := by
   intro k _ _ r hr h3 T heven M hM _ rot scal inv ha σ hσ χ hχ φ hφ i a e E he hE j g
   have hinc : translation k M rot scal inv ha i a ≫ genericInclusion k M =
       genericInclusion k M ≫ MarkedFieldAction.modelTranslation k M rot scal i a := by

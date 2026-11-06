@@ -389,7 +389,26 @@ end SchemeCyclicThetaSplitting
 open SchemeCyclicThetaSplitting in
 /-- Unique coherent midpoint-normalized cyclic lifts on every characteristic-zero base. -/
 theorem scheme_cyclic_theta_splitting :
-    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S), ∀ (m : ℕ), 0 < m → Even m → ∀ (P : ArithmeticThetaSchemeThetaMarkingR0259.point E), ArithmeticThetaSchemeThetaMarkingR0259.multiple E P (2*m) = E.law.one (CategoryTheory.CategoryStruct.id S) → ∀ (ι : ArithmeticThetaSchemeThetaMarkingR0259.Lift E m (ArithmeticThetaSchemeThetaMarkingR0259.inverse E)), ArithmeticThetaSchemeThetaMarkingR0259.NormalizedInversion E m ι → ∃! A : (∀ n : ℕ, ArithmeticThetaSchemeThetaMarkingR0259.Lift E m (ArithmeticThetaSchemeThetaMarkingR0259.translation E (ArithmeticThetaSchemeThetaMarkingR0259.multiple E P n))), ArithmeticThetaSchemeThetaMarkingR0259.CyclicSystem E m P ι A := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S),
+      ∀ (m : ℕ),
+        0 < m →
+          Even m →
+            ∀ (P : ArithmeticThetaSchemeThetaMarkingR0259.point E),
+              ArithmeticThetaSchemeThetaMarkingR0259.multiple E P (2 * m) =
+                  E.law.one (CategoryTheory.CategoryStruct.id S) →
+                ∀
+                  (ι :
+                    ArithmeticThetaSchemeThetaMarkingR0259.Lift E m
+                      (ArithmeticThetaSchemeThetaMarkingR0259.inverse E)),
+                  ArithmeticThetaSchemeThetaMarkingR0259.NormalizedInversion E m ι →
+                    ∃! A :
+                      (∀ n : ℕ,
+                        ArithmeticThetaSchemeThetaMarkingR0259.Lift E m
+                          (ArithmeticThetaSchemeThetaMarkingR0259.translation E
+                            (ArithmeticThetaSchemeThetaMarkingR0259.multiple E P n))),
+                      ArithmeticThetaSchemeThetaMarkingR0259.CyclicSystem E m P ι A := by
   intro k _ _ S σ E m hm he P hP ι hι
   let A := normalizedFamily (k := k) (σ := σ) E m hm he P hP ι hι
   have hA : CyclicSystem E m P ι A := by

@@ -12,7 +12,14 @@ namespace ArithmeticThetaSchemeThetaMarkingR0259
 
 /-- The full-level marking and section cohomology use the same actual theta line. -/
 theorem scheme_full_level_theta_marking :
-    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S), ∀ (m : ℕ), 0 < m → Even m → ∀ M : ArithmeticThetaSchemeLevelR0204.FullLevel E (2*m), ArithmeticThetaSchemeThetaMarkingR0259.MarkingExists E m M := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S),
+      ∀ (m : ℕ),
+        0 < m →
+          Even m →
+            ∀ M : ArithmeticThetaSchemeLevelR0204.FullLevel E (2 * m),
+              ArithmeticThetaSchemeThetaMarkingR0259.MarkingExists E m M := by
   intro k _ _ S σ E m hm he M
   obtain ⟨ι, hι, _⟩ := scheme_theta_inversion k S σ E m
   obtain ⟨α, hα, _⟩ :=

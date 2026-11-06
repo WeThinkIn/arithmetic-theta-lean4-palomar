@@ -45,7 +45,55 @@ attribute [local irreducible] origin structureMap
 /-- The actual pointed differential tensor map commutes with arbitrary Cartesian
 base change, as determined on covering local differential tensor frames. -/
 theorem pointed_hodge_arbitrary_base_change :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (S : Type u) [CommRing S] [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S] (W : WeierstrassCurve R) [W.IsElliptic] (V : WeierstrassCurve R) [V.IsElliptic] (Ws : WeierstrassCurve S) [Ws.IsElliptic] (Vs : WeierstrassCurve S) [Vs.IsElliptic] (ι : R →+* S) (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V) (fs : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap S Ws Vs) (bW : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws) (ArithmeticThetaRelativeKatoR0169.Curve R W)) (hbW : CategoryTheory.IsPullback bW (ArithmeticThetaRelativeKatoR0169.structureMap S Ws) (ArithmeticThetaRelativeKatoR0169.structureMap R W) (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι)) (hpbW : CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeKatoR0169.origin S Ws) bW = CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι) (ArithmeticThetaRelativeKatoR0169.origin R W)) (bV : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Vs) (ArithmeticThetaRelativeKatoR0169.Curve R V)) (hbV : CategoryTheory.IsPullback bV (ArithmeticThetaRelativeKatoR0169.structureMap S Vs) (ArithmeticThetaRelativeKatoR0169.structureMap R V) (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι)) (hpbV : CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeKatoR0169.origin S Vs) bV = CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι) (ArithmeticThetaRelativeKatoR0169.origin R V)) (hsquare : CategoryTheory.CategoryStruct.comp fs.map bV = CategoryTheory.CategoryStruct.comp bW f.map) (n : ℕ) (eW : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι)).obj (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W n)) (ArithmeticThetaRelativeDiscriminantR0171.HodgePower S Ws n)) (heW : ArithmeticThetaRelativeDiscriminantR0171.IsPowerBaseChange R W S Ws ι bW n eW) (eV : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι)).obj (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R V n)) (ArithmeticThetaRelativeDiscriminantR0171.HodgePower S Vs n)) (heV : ArithmeticThetaRelativeDiscriminantR0171.IsPowerBaseChange R V S Vs ι bV n eV), ArithmeticThetaRelativeIsogenyHodgeR0172.PowerNatural W V Ws Vs ι f fs n eW eV := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (S : Type u) [CommRing S] [IsDomain S] [IsNoetherianRing S]
+      [IsIntegrallyClosed S] [Algebra ℚ S] (W : WeierstrassCurve R) [W.IsElliptic]
+      (V : WeierstrassCurve R) [V.IsElliptic] (Ws : WeierstrassCurve S) [Ws.IsElliptic]
+      (Vs : WeierstrassCurve S) [Vs.IsElliptic] (ι : R →+* S)
+      (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V)
+      (fs : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap S Ws Vs)
+      (bW :
+        Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws)
+          (ArithmeticThetaRelativeKatoR0169.Curve R W))
+      (hbW :
+        CategoryTheory.IsPullback bW (ArithmeticThetaRelativeKatoR0169.structureMap S Ws)
+          (ArithmeticThetaRelativeKatoR0169.structureMap R W)
+          (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι))
+      (hpbW :
+        CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeKatoR0169.origin S Ws) bW =
+          CategoryTheory.CategoryStruct.comp
+            (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι)
+            (ArithmeticThetaRelativeKatoR0169.origin R W))
+      (bV :
+        Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Vs)
+          (ArithmeticThetaRelativeKatoR0169.Curve R V))
+      (hbV :
+        CategoryTheory.IsPullback bV (ArithmeticThetaRelativeKatoR0169.structureMap S Vs)
+          (ArithmeticThetaRelativeKatoR0169.structureMap R V)
+          (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι))
+      (hpbV :
+        CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeKatoR0169.origin S Vs) bV =
+          CategoryTheory.CategoryStruct.comp
+            (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι)
+            (ArithmeticThetaRelativeKatoR0169.origin R V))
+      (hsquare :
+        CategoryTheory.CategoryStruct.comp fs.map bV = CategoryTheory.CategoryStruct.comp bW f.map)
+      (n : ℕ)
+      (eW :
+        CategoryTheory.Iso
+          ((AlgebraicGeometry.Scheme.Modules.pullback
+                (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι)).obj
+            (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W n))
+          (ArithmeticThetaRelativeDiscriminantR0171.HodgePower S Ws n))
+      (heW : ArithmeticThetaRelativeDiscriminantR0171.IsPowerBaseChange R W S Ws ι bW n eW)
+      (eV :
+        CategoryTheory.Iso
+          ((AlgebraicGeometry.Scheme.Modules.pullback
+                (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι)).obj
+            (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R V n))
+          (ArithmeticThetaRelativeDiscriminantR0171.HodgePower S Vs n))
+      (heV : ArithmeticThetaRelativeDiscriminantR0171.IsPowerBaseChange R V S Vs ι bV n eV),
+      ArithmeticThetaRelativeIsogenyHodgeR0172.PowerNatural W V Ws Vs ι f fs n eW eV := by
   intro R _ _ _ _ _ S _ _ _ _ _ W _ V _ Ws _ Vs _ ι f fs bW hbW hpbW bV hbV hpbV hsquare n eW heW eV heV
   unfold PowerNatural
   apply hom_ext_frames

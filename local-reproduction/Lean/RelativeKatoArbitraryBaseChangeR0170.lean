@@ -77,7 +77,32 @@ open RelativeKatoArbitraryBaseChange
 /-- Arbitrary pointed Cartesian base change preserves the actual Kato unit
 sections. Equality is detected on the target generic fiber. -/
 theorem relative_kato_arbitrary_base_change :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (S : Type u) [CommRing S] [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S] (Ws : WeierstrassCurve S) [Ws.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve S Ws)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve S Ws)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve S Ws)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve S Ws)] (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws) (hGs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs) (ι : R →+* S) (b : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws) (ArithmeticThetaRelativeKatoR0169.Curve R W)) (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b) (c : ℕ) (hc : 1 < c) (hc6 : Nat.Coprime c 6) (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField) (hg : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R W G c g) (gs : (ArithmeticThetaRelativeKatoR0169.Curve S Ws).functionField) (hgs : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized S Ws Gs c gs), ArithmeticThetaRelativeKatoNaturalityR0170.UnitPullback R W G S Ws b c g gs := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (S : Type u) [CommRing S]
+      [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S]
+      (Ws : WeierstrassCurve S) [Ws.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve S Ws)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve S Ws)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve S Ws)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve S Ws)]
+      (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws)
+      (hGs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs) (ι : R →+* S)
+      (b :
+        Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws)
+          (ArithmeticThetaRelativeKatoR0169.Curve R W))
+      (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b) (c : ℕ)
+      (hc : 1 < c) (hc6 : Nat.Coprime c 6)
+      (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField)
+      (hg : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R W G c g)
+      (gs : (ArithmeticThetaRelativeKatoR0169.Curve S Ws).functionField)
+      (hgs : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized S Ws Gs c gs),
+      ArithmeticThetaRelativeKatoNaturalityR0170.UnitPullback R W G S Ws b c g gs := by
   intro R _ _ _ _ _ W _ _ _ _ _ G hG S _ _ _ _ _ Ws _ _ _ _ _ Gs hGs ι b hb c hc hc6 g hg gs hgs
   obtain ⟨C⟩ := relative_generic_comparison S Ws Gs hGs
   let K := FractionRing S

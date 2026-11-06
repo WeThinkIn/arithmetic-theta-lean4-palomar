@@ -5,7 +5,15 @@ open scoped BigOperators
 
 namespace ArithmeticThetaLattice
 
-theorem integral_orthogonalization : ∀ (n : ℕ) (Q : QuadraticForm ℚ (Fin n → ℚ)), Q.PosDef → ∃ B : Matrix (Fin n) (Fin n) ℤ, B.det ≠ 0 ∧ (∀ i j, i ≠ j → QuadraticMap.associated Q (fun k => (B k i : ℚ)) (fun k => (B k j : ℚ)) = 0) ∧ ∀ i, 0 < Q (fun k => (B k i : ℚ)) := by
+theorem integral_orthogonalization :
+    ∀ (n : ℕ) (Q : QuadraticForm ℚ (Fin n → ℚ)),
+      Q.PosDef →
+        ∃ B : Matrix (Fin n) (Fin n) ℤ,
+          B.det ≠ 0 ∧
+            (∀ i j,
+                i ≠ j →
+                  QuadraticMap.associated Q (fun k => (B k i : ℚ)) (fun k => (B k j : ℚ)) = 0) ∧
+              ∀ i, 0 < Q (fun k => (B k i : ℚ)) := by
   intro n Q hQ
   obtain ⟨b, hb, hpos, _⟩ := rational_orthogonal_basis n Q hQ
   let P : Matrix (Fin n) (Fin n) ℚ := fun k i => b i k
@@ -62,7 +70,13 @@ lemma gram_entry {R : Type*} [CommRing R] {n : ℕ}
   simp only [Matrix.mul_apply, Matrix.transpose_apply, Finset.sum_mul]
   rw [Finset.sum_comm]
 
-theorem even_integral_gram_orthogonalization : ∀ (n : ℕ) (A : Matrix (Fin n) (Fin n) ℤ), A.IsSymm → (∀ i, Even (A i i)) → ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef → ∃ (B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℤ), B.det ≠ 0 ∧ (∀ i, 0 < m i ∧ Even (m i)) ∧ B.transpose * A * B = Matrix.diagonal m := by
+theorem even_integral_gram_orthogonalization :
+    ∀ (n : ℕ) (A : Matrix (Fin n) (Fin n) ℤ),
+      A.IsSymm →
+        (∀ i, Even (A i i)) →
+          ((1 / 2 : ℚ) • (A.map (Int.castRingHom ℚ)).toQuadraticForm').PosDef →
+            ∃ (B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℤ),
+              B.det ≠ 0 ∧ (∀ i, 0 < m i ∧ Even (m i)) ∧ B.transpose * A * B = Matrix.diagonal m := by
   intro n A hsym heven hpos
   let M := A.map (Int.castRingHom ℚ)
   let Q : QuadraticForm ℚ (Fin n → ℚ) := (1 / 2 : ℚ) • M.toQuadraticForm'

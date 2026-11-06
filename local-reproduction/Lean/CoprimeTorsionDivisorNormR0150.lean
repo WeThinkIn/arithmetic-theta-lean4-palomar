@@ -232,7 +232,44 @@ private lemma norm_nonzero {X Y : Scheme.{u}} [IsIntegral X] [IsIntegral Y]
 
 /-- Coprime multiplication preserves the actual Kato divisor, including residue degrees. -/
 theorem coprime_torsion_divisor_norm :
-∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)], ∀ (c d : ℕ), 1 < c → 0 < d → Nat.Coprime c d → ∀ (φ : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))), ArithmeticThetaGeometricNormR0150.IsFieldMap (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G d) φ → ∀ (g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))), g ≠ 0 → (∀ x : (ArithmeticThetaGenericEvaluationR0140.genericScheme k M), AlgebraicGeometry.Scheme.ord g x = ArithmeticThetaGeometricNormR0150.katoOrder k M s hs.1 G c x) → (ArithmeticThetaGeometricNormR0150.fieldNorm φ g ≠ 0 ∧ ∀ x : (ArithmeticThetaGenericEvaluationR0140.genericScheme k M), AlgebraicGeometry.Scheme.ord (ArithmeticThetaGeometricNormR0150.fieldNorm φ g) x = ArithmeticThetaGeometricNormR0150.katoOrder k M s hs.1 G c x) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)],
+      ∀ (c d : ℕ),
+        1 < c →
+          0 < d →
+            Nat.Coprime c d →
+              ∀
+                (φ :
+                  (AlgebraicGeometry.Scheme.functionField
+                      (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+                    (AlgebraicGeometry.Scheme.functionField
+                      (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))),
+                ArithmeticThetaGeometricNormR0150.IsFieldMap
+                    (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G d) φ →
+                  ∀
+                    (g :
+                      (AlgebraicGeometry.Scheme.functionField
+                        (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))),
+                    g ≠ 0 →
+                      (∀ x : (ArithmeticThetaGenericEvaluationR0140.genericScheme k M),
+                          AlgebraicGeometry.Scheme.ord g x =
+                            ArithmeticThetaGeometricNormR0150.katoOrder k M s hs.1 G c x) →
+                        (ArithmeticThetaGeometricNormR0150.fieldNorm φ g ≠ 0 ∧
+                          ∀ x : (ArithmeticThetaGenericEvaluationR0140.genericScheme k M),
+                            AlgebraicGeometry.Scheme.ord
+                                (ArithmeticThetaGeometricNormR0150.fieldNorm φ g) x =
+                              ArithmeticThetaGeometricNormR0150.katoOrder k M s hs.1 G c x) := by
   intro k _ _ r hr h3 T he M hM s hs G hG _ _ c d hc hd hcd φ hφ g hg hdiv
   classical
   obtain ⟨hfinite, hetale, hsurj, _⟩ :=

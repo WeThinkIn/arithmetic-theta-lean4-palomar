@@ -240,7 +240,23 @@ open CategoryTheory AlgebraicGeometry ArithmeticThetaCompatibleLevelR0178
 
 /-- One fixed compatible quotient classifies all affine marked Weierstrass families. -/
 theorem arbitrary_affine_classification :
-∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L) (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L), ∃ (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A) (hB : ArithmeticThetaCompatibleLevelR0178.CanonicalTwo k L A B) (C : ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B) (Q : ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C), ∀ (R : Type u) [CommRing R] [Algebra ℚ R] [Algebra k R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))), ∃! b : Quiver.Hom (ArithmeticThetaRelativeDiscriminantR0171.Base R) (ArithmeticThetaRelativeDiscriminantR0171.Base Q.quotient.ring), ∃! f : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve R W) A.descent.family.curve, ArithmeticThetaCompatibleLevelR0178.Classifies k L A B C Q R W G M b f := by
+    ∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L)
+      (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L),
+      ∃ (B : ArithmeticThetaCompatibleLevelR0178.TwoMarking k L A) (hB :
+        ArithmeticThetaCompatibleLevelR0178.CanonicalTwo k L A B) (C :
+        ArithmeticThetaCompatibleLevelR0178.CompatibleCover k L A B) (Q :
+        ArithmeticThetaCompatibleLevelR0178.CompatibleQuotient k L A B C),
+        ∀ (R : Type u) [CommRing R] [Algebra ℚ R] [Algebra k R] (W : WeierstrassCurve R)
+          [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+          (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G)
+          (M :
+            ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L
+              (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))),
+          ∃! b :
+            Quiver.Hom (ArithmeticThetaRelativeDiscriminantR0171.Base R)
+              (ArithmeticThetaRelativeDiscriminantR0171.Base Q.quotient.ring),
+            ∃! f : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve R W) A.descent.family.curve,
+              ArithmeticThetaCompatibleLevelR0178.Classifies k L A B C Q R W G M b f := by
   intro k _ _ L hL heven A
   obtain ⟨B, hB⟩ := ArithmeticThetaCompatibleLevelR0178.NormalAffineClassifyingConstruction.canonical_marking k L A
   obtain ⟨C⟩ := compatible_level_subcover k L hL heven A B hB

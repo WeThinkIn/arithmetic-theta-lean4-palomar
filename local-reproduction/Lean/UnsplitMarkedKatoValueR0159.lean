@@ -169,7 +169,36 @@ private lemma marked_section (hM : IsModel k T M)
 end CoefficientSections
 
 private theorem split_field_value :
-∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] (c : ℕ) (hc : 1 < c) (hcop : Nat.Coprime c 6) (ζ : kˣ) (hζ : IsPrimitiveRoot (ζ : k) c) (j : Fin r) (a : kˣ) (p : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hp : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M j a p) (N : ℕ) (hN : 0 < N) (hcopN : Nat.Coprime c N) (hidx : r ∣ N*j.val) (haN : (a : k)^N = 1) (hne : j.val ≠ 0 ∨ (a : k) ≠ 1) (g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))), ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G c g → ∀ (γ δ : LaurentSeries k), ArithmeticThetaLaurentNormR0064.IsGamma k r j.val (a : k) γ → ArithmeticThetaLaurentNormR0064.IsGamma k r (c*j.val) ((a : k)^c) δ → ArithmeticThetaMarkedKatoValuesR0159.HasValue (LaurentSeries k) (ArithmeticThetaGenericEvaluationR0140.genericScheme k M) (ArithmeticThetaGenericEvaluationR0140.genericPoint k M p hp.1) g (ArithmeticThetaMarkedKatoValuesR0159.literalValue k r c j.val (a : k) γ δ) := by
+    ∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      (c : ℕ) (hc : 1 < c) (hcop : Nat.Coprime c 6) (ζ : kˣ) (hζ : IsPrimitiveRoot (ζ : k) c)
+      (j : Fin r) (a : kˣ)
+      (p : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hp : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M j a p) (N : ℕ) (hN : 0 < N)
+      (hcopN : Nat.Coprime c N) (hidx : r ∣ N * j.val) (haN : (a : k) ^ N = 1)
+      (hne : j.val ≠ 0 ∨ (a : k) ≠ 1)
+      (g :
+        (AlgebraicGeometry.Scheme.functionField
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))),
+      ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G c g →
+        ∀ (γ δ : LaurentSeries k),
+          ArithmeticThetaLaurentNormR0064.IsGamma k r j.val (a : k) γ →
+            ArithmeticThetaLaurentNormR0064.IsGamma k r (c * j.val) ((a : k) ^ c) δ →
+              ArithmeticThetaMarkedKatoValuesR0159.HasValue (LaurentSeries k)
+                (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)
+                (ArithmeticThetaGenericEvaluationR0140.genericPoint k M p hp.1) g
+                (ArithmeticThetaMarkedKatoValuesR0159.literalValue k r c j.val (a : k) γ δ) := by
   intro k _ _ r hr h3 he T M hM s hs G hG _ _ c hc hcop ζ hζ j a p hp N hN hcopN hidx haN hne g hg γ δ hγ hδ
   classical
   have Hχ0 : ∀ j : Fin r, ∃ χj, IsChartMap k M j χj := by
@@ -272,7 +301,35 @@ open ArithmeticThetaUnsplitExpansionR0158
 
 /-- The actual marked Kato value over the original field and period. -/
 theorem unsplit_marked_kato_value :
-∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] (c : ℕ) (hc : 1 < c) (hcop : Nat.Coprime c 6) (j : Fin r) (a : kˣ) (p : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hp : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M j a p) (N : ℕ) (hN : 0 < N) (hcopN : Nat.Coprime c N) (hidx : r ∣ N*j.val) (haN : (a : k)^N = 1) (hne : j.val ≠ 0 ∨ (a : k) ≠ 1) (g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))), ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G c g → ∀ (γ δ : LaurentSeries k), ArithmeticThetaLaurentNormR0064.IsGamma k r j.val (a : k) γ → ArithmeticThetaLaurentNormR0064.IsGamma k r (c*j.val) ((a : k)^c) δ → ArithmeticThetaMarkedKatoValuesR0159.HasValue (LaurentSeries k) (ArithmeticThetaGenericEvaluationR0140.genericScheme k M) (ArithmeticThetaGenericEvaluationR0140.genericPoint k M p hp.1) g (ArithmeticThetaMarkedKatoValuesR0159.literalValue k r c j.val (a : k) γ δ) := by
+    ∀ (k : Type) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (he : Even r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      [AlgebraicGeometry.IsLocallyNoetherian
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      (c : ℕ) (hc : 1 < c) (hcop : Nat.Coprime c 6) (j : Fin r) (a : kˣ)
+      (p : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hp : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M j a p) (N : ℕ) (hN : 0 < N)
+      (hcopN : Nat.Coprime c N) (hidx : r ∣ N * j.val) (haN : (a : k) ^ N = 1)
+      (hne : j.val ≠ 0 ∨ (a : k) ≠ 1)
+      (g :
+        (AlgebraicGeometry.Scheme.functionField
+          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))),
+      ArithmeticThetaKatoExistenceR0151.IsKatoFunction k M s hs.1 G c g →
+        ∀ (γ δ : LaurentSeries k),
+          ArithmeticThetaLaurentNormR0064.IsGamma k r j.val (a : k) γ →
+            ArithmeticThetaLaurentNormR0064.IsGamma k r (c * j.val) ((a : k) ^ c) δ →
+              ArithmeticThetaMarkedKatoValuesR0159.HasValue (LaurentSeries k)
+                (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)
+                (ArithmeticThetaGenericEvaluationR0140.genericPoint k M p hp.1) g
+                (ArithmeticThetaMarkedKatoValuesR0159.literalValue k r c j.val (a : k) γ δ) := by
   intro k _ _ r hr h3 he T M hM s hs G hG _ _ c hc hcop j a p hp N hN hcopN hidx haN hne g hg γ δ hγ hδ
   classical
   have Hχ0 : ∀ j : Fin r, ∃ χj, IsChartMap k M j χj := by

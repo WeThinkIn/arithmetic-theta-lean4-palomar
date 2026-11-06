@@ -157,7 +157,41 @@ lemma involution (k : Type u) [Field k] (S : Scheme.{u}) (σ : S ⟶ Base k) :
 end PhaseCoverProof
 
 /-- The explicit phase cover, on arbitrary scheme bases and arbitrary scheme tests. -/
-theorem phase_cover : ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom (S) (ArithmeticThetaLocalWeierstrassR0203.Base k)), AlgebraicGeometry.IsFinite (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) ∧ AlgebraicGeometry.Etale (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) ∧ AlgebraicGeometry.Surjective (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) ∧ (∀ s : S, (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ).finrank s = 2) ∧ (ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ)^2 = -1 ∧ (∀ (T : AlgebraicGeometry.Scheme.{u}) (b : Quiver.Hom (T) (S)) (w : T.presheaf.obj (Opposite.op ⊤)), w^2 = -1 → ∃! q : Quiver.Hom (T) (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ), CategoryTheory.CategoryStruct.comp (q) (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) = b ∧ q.appTop (ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ) = w) ∧ (∃! τ : CategoryTheory.Iso (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ) (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ), CategoryTheory.CategoryStruct.comp (τ.hom) (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) = ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ ∧ τ.hom.appTop (ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ) = -(ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ)) ∧ (∀ τ : CategoryTheory.Iso (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ) (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ), (CategoryTheory.CategoryStruct.comp (τ.hom) (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) = ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ ∧ τ.hom.appTop (ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ) = -(ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ)) → CategoryTheory.CategoryStruct.comp (τ.hom) (τ.hom) = CategoryTheory.CategoryStruct.id (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ)) := by
+theorem phase_cover :
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom (S) (ArithmeticThetaLocalWeierstrassR0203.Base k)),
+      AlgebraicGeometry.IsFinite (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) ∧
+        AlgebraicGeometry.Etale (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) ∧
+          AlgebraicGeometry.Surjective (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) ∧
+            (∀ s : S, (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ).finrank s = 2) ∧
+              (ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ) ^ 2 = -1 ∧
+                (∀ (T : AlgebraicGeometry.Scheme.{u}) (b : Quiver.Hom (T) (S))
+                    (w : T.presheaf.obj (Opposite.op ⊤)),
+                    w ^ 2 = -1 →
+                      ∃! q : Quiver.Hom (T) (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ),
+                        CategoryTheory.CategoryStruct.comp (q)
+                              (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) =
+                            b ∧
+                          q.appTop (ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ) = w) ∧
+                  (∃! τ :
+                      CategoryTheory.Iso (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ)
+                        (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ),
+                      CategoryTheory.CategoryStruct.comp (τ.hom)
+                            (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) =
+                          ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ ∧
+                        τ.hom.appTop (ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ) =
+                          -(ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ)) ∧
+                    (∀ τ :
+                      CategoryTheory.Iso (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ)
+                        (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ),
+                      (CategoryTheory.CategoryStruct.comp (τ.hom)
+                              (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) =
+                            ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ ∧
+                          τ.hom.appTop (ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ) =
+                            -(ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ)) →
+                        CategoryTheory.CategoryStruct.comp (τ.hom) (τ.hom) =
+                          CategoryTheory.CategoryStruct.id
+                            (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ)) := by
   intro k _ _ S σ
   obtain ⟨hf, he, hs, hr⟩ := PhaseCoverProof.geometry k
   letI := hf

@@ -30,7 +30,39 @@ end GeometricFamilyConservativeCutoff
 
 /-- The actual common tensor-line realization gives the conservative finite jet cutoff. -/
 theorem geometric_family_conservative_cutoff :
-∀ (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ (U : ArithmeticThetaLatticeSectionsR0188.Indexing A), ArithmeticThetaLatticeSectionsR0188.Indexed A U → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A))) (X : ArithmeticThetaLevelCompactificationR0179.Compactification ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X) (V : ArithmeticThetaBoundaryHodgeR0182.DiskTest ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X), ArithmeticThetaLatticeSectionsR0188.GeometricFamily A U H V → ∀ c : Fin h → ℂ, ArithmeticThetaSectionOrder.VanishesThrough (ArithmeticThetaComputed.thetaMap A c) (ArithmeticThetaConservativeKernelR0189.cutoff A U) → ArithmeticThetaComputed.thetaMap A c = 0 := by
+    ∀ (n h : ℕ),
+      0 < n →
+        0 < h →
+          ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h),
+            (∀ i, ArithmeticThetaComputed.validGram (A i)) →
+              ∀ (U : ArithmeticThetaLatticeSectionsR0188.Indexing A),
+                ArithmeticThetaLatticeSectionsR0188.Indexed A U →
+                  ∀
+                    (D :
+                      ArithmeticThetaLevelCompactificationR0179.LevelData ℂ
+                        (ArithmeticThetaCompactUnaryR0183.level
+                          (ArithmeticThetaLatticeSectionsR0188.commonN A)))
+                    (X :
+                      ArithmeticThetaLevelCompactificationR0179.Compactification ℂ
+                        (ArithmeticThetaCompactUnaryR0183.level
+                          (ArithmeticThetaLatticeSectionsR0188.commonN A))
+                        D)
+                    (H :
+                      ArithmeticThetaBoundaryHodgeR0182.Extension ℂ
+                        (ArithmeticThetaCompactUnaryR0183.level
+                          (ArithmeticThetaLatticeSectionsR0188.commonN A))
+                        D X)
+                    (V :
+                      ArithmeticThetaBoundaryHodgeR0182.DiskTest ℂ
+                        (ArithmeticThetaCompactUnaryR0183.level
+                          (ArithmeticThetaLatticeSectionsR0188.commonN A))
+                        D X),
+                    ArithmeticThetaLatticeSectionsR0188.GeometricFamily A U H V →
+                      ∀ c : Fin h → ℂ,
+                        ArithmeticThetaSectionOrder.VanishesThrough
+                            (ArithmeticThetaComputed.thetaMap A c)
+                            (ArithmeticThetaConservativeKernelR0189.cutoff A U) →
+                          ArithmeticThetaComputed.thetaMap A c = 0 := by
   intro n h hn hh A hA U _ D X H V hfamily c hvan
   classical
   have hN := (indexed_full_unary_factorization n h hn hh A hA).1

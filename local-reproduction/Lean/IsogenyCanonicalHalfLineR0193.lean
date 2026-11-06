@@ -370,7 +370,50 @@ open CategoryTheory AlgebraicGeometry
 open ArithmeticThetaComponentDegreeR0184
 /-- The canonical effective half-divisor line and its prescribed isogeny theta frame. -/
 theorem isogeny_canonical_half_line :
-∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L m : ℕ), 0 < L → 0 < m → Even m → 8*m ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L), ∀ (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ∀ A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D, ∀ a : (H.line).presheaf.obj (Opposite.op ⊤), ArithmeticThetaIsogenyHalfLinesR0193.CompactRealizes k L m D X H A a → ∀ x : X.space, ∃ (E : (ArithmeticThetaComponentDegreeR0184.Component k L D X x) →₀ ℤ) (hE : ∀ y, 0 ≤ E y) (hN : ArithmeticThetaNormalizedSections.NormalAffine (ArithmeticThetaComponentDegreeR0184.Component k L D X x)), ArithmeticThetaIsogenyHalfLinesR0193.HalfDivisor k L D X H x a E ∧ AlgebraicGeometry.Scheme.Modules.IsInvertible (ArithmeticThetaSquareLinesR0192.canonicalDivisorData k L D X x E hE hN).line ∧ ∃ β : CategoryTheory.Iso (ArithmeticThetaTensorPower.tensorPower (ArithmeticThetaComponentDegreeR0184.Component k L D X x) (ArithmeticThetaSquareLinesR0192.canonicalDivisorData k L D X x E hE hN).line 2) (ArithmeticThetaComponentDegreeR0184.hodge k L D X x H), β.hom.app ⊤ (ArithmeticThetaTensorPower.tensorPowerSection (ArithmeticThetaComponentDegreeR0184.Component k L D X x) (ArithmeticThetaSquareLinesR0192.canonicalDivisorData k L D X x E hE hN).line 2 ⊤ (ArithmeticThetaSquareLinesR0192.canonicalDivisorData k L D X x E hE hN).section_) = ArithmeticThetaSquareLinesR0192.componentAlpha k L D X H x a ∧ ArithmeticThetaIsogenyHalfLinesR0193.HalfBranch k L m D X H x (ArithmeticThetaSquareLinesR0192.canonicalDivisorData k L D X x E hE hN) β := by
+    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L m : ℕ),
+      0 < L →
+        0 < m →
+          Even m →
+            8 * m ∣ L →
+              ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L),
+                ∀ (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D)
+                  (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X),
+                  ArithmeticThetaBoundaryHodgeR0182.Canonical k L H →
+                    ∀ A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D,
+                      ∀ a : (H.line).presheaf.obj (Opposite.op ⊤),
+                        ArithmeticThetaIsogenyHalfLinesR0193.CompactRealizes k L m D X H A a →
+                          ∀ x : X.space,
+                            ∃ (E : (ArithmeticThetaComponentDegreeR0184.Component k L D X x) →₀ ℤ)
+                              (hE : ∀ y, 0 ≤ E y) (hN :
+                              ArithmeticThetaNormalizedSections.NormalAffine
+                                (ArithmeticThetaComponentDegreeR0184.Component k L D X x)),
+                              ArithmeticThetaIsogenyHalfLinesR0193.HalfDivisor k L D X H x a E ∧
+                                AlgebraicGeometry.Scheme.Modules.IsInvertible
+                                    (ArithmeticThetaSquareLinesR0192.canonicalDivisorData k L D X x
+                                        E hE hN).line ∧
+                                  ∃ β :
+                                    CategoryTheory.Iso
+                                      (ArithmeticThetaTensorPower.tensorPower
+                                        (ArithmeticThetaComponentDegreeR0184.Component k L D X x)
+                                        (ArithmeticThetaSquareLinesR0192.canonicalDivisorData k L D
+                                            X x E hE hN).line
+                                        2)
+                                      (ArithmeticThetaComponentDegreeR0184.hodge k L D X x H),
+                                    β.hom.app ⊤
+                                          (ArithmeticThetaTensorPower.tensorPowerSection
+                                            (ArithmeticThetaComponentDegreeR0184.Component k L D X
+                                              x)
+                                            (ArithmeticThetaSquareLinesR0192.canonicalDivisorData k
+                                                L D X x E hE hN).line
+                                            2 ⊤
+                                            (ArithmeticThetaSquareLinesR0192.canonicalDivisorData k
+                                                L D X x E hE hN).section_) =
+                                        ArithmeticThetaSquareLinesR0192.componentAlpha k L D X H x
+                                          a ∧
+                                      ArithmeticThetaIsogenyHalfLinesR0193.HalfBranch k L m D X H x
+                                        (ArithmeticThetaSquareLinesR0192.canonicalDivisorData k L D
+                                          X x E hE hN)
+                                        β := by
   intro k _ _ _ L m hL hm hmEven hdiv D X H hH A a ha x
   have hb := IsogenyAlphaAllCuspOrders.level_bounds L m hL hm hdiv
   obtain ⟨E, hE⟩ := IsogenyCanonicalHalfLine.half_divisor k L D X H m hm A

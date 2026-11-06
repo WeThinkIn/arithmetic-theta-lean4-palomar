@@ -172,7 +172,47 @@ open InitialSectionNaturality InitialHodgeSection
 /-- Intrinsic initial Hodge sections commute with every pointed Cartesian
 base change, using sheaf pullbacks even when no function-field map exists. -/
 theorem relative_initial_section_naturality :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (S : Type u) [CommRing S] [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S] (Ws : WeierstrassCurve S) [Ws.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve S Ws)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve S Ws)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve S Ws)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve S Ws)] (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws) (hGs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs) (ι : R →+* S) (b : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws) (ArithmeticThetaRelativeKatoR0169.Curve R W)) (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b) (c : ℕ) (hc : 1 < c) (hc6 : Nat.Coprime c 6) (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField) (hg : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R W G c g) (gs : (ArithmeticThetaRelativeKatoR0169.Curve S Ws).functionField) (hgs : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized S Ws Gs c gs) (d : (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W (c^2-1)).presheaf.obj (Opposite.op ⊤)) (hd : ArithmeticThetaRelativeDiscriminantR0171.RepresentsInitial R W G c g d) (ds : (ArithmeticThetaRelativeDiscriminantR0171.HodgePower S Ws (c^2-1)).presheaf.obj (Opposite.op ⊤)) (hds : ArithmeticThetaRelativeDiscriminantR0171.RepresentsInitial S Ws Gs c gs ds) (e : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι)).obj (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W (c^2-1))) (ArithmeticThetaRelativeDiscriminantR0171.HodgePower S Ws (c^2-1))) (he : ArithmeticThetaRelativeDiscriminantR0171.IsPowerBaseChange R W S Ws ι b (c^2-1) e), ArithmeticThetaRelativeDiscriminantR0171.InitialBaseChange R W S Ws ι (c^2-1) e d ds := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (S : Type u) [CommRing S]
+      [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S]
+      (Ws : WeierstrassCurve S) [Ws.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve S Ws)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve S Ws)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve S Ws)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve S Ws)]
+      (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws)
+      (hGs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs) (ι : R →+* S)
+      (b :
+        Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws)
+          (ArithmeticThetaRelativeKatoR0169.Curve R W))
+      (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b) (c : ℕ)
+      (hc : 1 < c) (hc6 : Nat.Coprime c 6)
+      (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField)
+      (hg : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R W G c g)
+      (gs : (ArithmeticThetaRelativeKatoR0169.Curve S Ws).functionField)
+      (hgs : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized S Ws Gs c gs)
+      (d :
+        (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W (c ^ 2 - 1)).presheaf.obj
+          (Opposite.op ⊤))
+      (hd : ArithmeticThetaRelativeDiscriminantR0171.RepresentsInitial R W G c g d)
+      (ds :
+        (ArithmeticThetaRelativeDiscriminantR0171.HodgePower S Ws (c ^ 2 - 1)).presheaf.obj
+          (Opposite.op ⊤))
+      (hds : ArithmeticThetaRelativeDiscriminantR0171.RepresentsInitial S Ws Gs c gs ds)
+      (e :
+        CategoryTheory.Iso
+          ((AlgebraicGeometry.Scheme.Modules.pullback
+                (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι)).obj
+            (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W (c ^ 2 - 1)))
+          (ArithmeticThetaRelativeDiscriminantR0171.HodgePower S Ws (c ^ 2 - 1)))
+      (he : ArithmeticThetaRelativeDiscriminantR0171.IsPowerBaseChange R W S Ws ι b (c ^ 2 - 1) e),
+      ArithmeticThetaRelativeDiscriminantR0171.InitialBaseChange R W S Ws ι (c ^ 2 - 1) e d ds := by
   intro R _ _ _ _ _ W _ _ _ _ _ G hG S _ _ _ _ _ Ws _ _ _ _ _ Gs hGs
     ι b hb c hc hc6 g hg gs hgs d hd ds hds e he
   classical

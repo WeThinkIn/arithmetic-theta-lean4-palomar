@@ -305,7 +305,23 @@ lemma classified_alpha_transport {k l R : Type} [Field k] [CharZero k]
 /-- The normalized open isogeny alpha commutes with the prescribed coefficient
 comparison, for arbitrary choices of the two quotient constructions. -/
 theorem _root_.ArithmeticThetaArithmeticHalfLinesR0237.open_isogeny_alpha_constant_naturality :
-    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (L m : ℕ), 0 < L → 0 < m → Even m → 8*m ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E) (C : ArithmeticThetaArithmeticSectionsR0236.Comparison k L ι D E X Y) (A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D) (B : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha l L m E), ArithmeticThetaBoundaryHodgeR0182.OpenDiscriminantFullTateExpansionR0182.transportSection C.openMap (ArithmeticThetaLevelConstantsR0234.weight D) (ArithmeticThetaLevelConstantsR0234.weight E) C.hodgeMap (ArithmeticThetaIsogenyHalfLinesR0193.openAlpha k L m D A) = ArithmeticThetaIsogenyHalfLinesR0193.openAlpha l L m E B := by
+    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (L m : ℕ),
+      0 < L →
+        0 < m →
+          Even m →
+            8 * m ∣ L →
+              ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+                (E : ArithmeticThetaLevelCompactificationR0179.LevelData l L)
+                (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D)
+                (Y : ArithmeticThetaLevelCompactificationR0179.Compactification l L E)
+                (C : ArithmeticThetaArithmeticSectionsR0236.Comparison k L ι D E X Y)
+                (A : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha k L m D)
+                (B : ArithmeticThetaIsogenyHalfLinesR0193.OpenAlpha l L m E),
+                ArithmeticThetaBoundaryHodgeR0182.OpenDiscriminantFullTateExpansionR0182.transportSection
+                    C.openMap (ArithmeticThetaLevelConstantsR0234.weight D)
+                    (ArithmeticThetaLevelConstantsR0234.weight E) C.hodgeMap
+                    (ArithmeticThetaIsogenyHalfLinesR0193.openAlpha k L m D A) =
+                  ArithmeticThetaIsogenyHalfLinesR0193.openAlpha l L m E B := by
   intro k l _ _ _ _ ι L m hL hm hmeven hdiv D E X Y C A A'
   have hL3 : 3 ≤ L := by
     have := Nat.le_of_dvd hL hdiv

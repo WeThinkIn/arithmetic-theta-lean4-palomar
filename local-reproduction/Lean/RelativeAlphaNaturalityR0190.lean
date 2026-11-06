@@ -970,7 +970,52 @@ end RelativeAlphaNaturality
 /-- The intrinsic section is a unique frame and is natural under every specified
 pointed Cartesian comparison preserving both full marking sections. -/
 theorem relative_alpha_naturality :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ), 0 < L → 4 ∣ L → ∀ (M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))), (∃! a : (ArithmeticThetaRelativeDiscriminantR0171.Hodge R W).presheaf.obj (Opposite.op ⊤), ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha R W G L M a ∧ ArithmeticThetaRelativeDiscriminantR0171.IsFrame (ArithmeticThetaRelativeDiscriminantR0171.Hodge R W) ⊤ a) ∧ (∀ (S : Type u) [CommRing S] [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S] (Ws : WeierstrassCurve S) [Ws.IsElliptic] (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws) (hGs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs) (Ms : ArithmeticThetaFullLevelCoverR0175.FullLevel S Ws Gs L (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base S))) (ι : R →+* S) (b : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws) (ArithmeticThetaRelativeKatoR0169.Curve R W)) (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b), CategoryTheory.CategoryStruct.comp (Ms.x.val) (b) = CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι) (M.x.val) → CategoryTheory.CategoryStruct.comp (Ms.y.val) (b) = CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι) (M.y.val) → ∀ (a : (ArithmeticThetaRelativeDiscriminantR0171.Hodge R W).presheaf.obj (Opposite.op ⊤)) (as_ : (ArithmeticThetaRelativeDiscriminantR0171.Hodge S Ws).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha R W G L M a → ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha S Ws Gs L Ms as_ → ArithmeticThetaGlobalFourTorsionR0190.pullAlpha R W G S Ws Gs ι b hb a = as_) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ),
+      0 < L →
+        4 ∣ L →
+          ∀
+            (M :
+              ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L
+                (CategoryTheory.CategoryStruct.id
+                  (ArithmeticThetaRelativeDiscriminantR0171.Base R))),
+            (∃! a :
+                (ArithmeticThetaRelativeDiscriminantR0171.Hodge R W).presheaf.obj (Opposite.op ⊤),
+                ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha R W G L M a ∧
+                  ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+                    (ArithmeticThetaRelativeDiscriminantR0171.Hodge R W) ⊤ a) ∧
+              (∀ (S : Type u) [CommRing S] [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S]
+                [Algebra ℚ S] (Ws : WeierstrassCurve S) [Ws.IsElliptic]
+                (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws)
+                (hGs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs)
+                (Ms :
+                  ArithmeticThetaFullLevelCoverR0175.FullLevel S Ws Gs L
+                    (CategoryTheory.CategoryStruct.id
+                      (ArithmeticThetaRelativeDiscriminantR0171.Base S)))
+                (ι : R →+* S)
+                (b :
+                  Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws)
+                    (ArithmeticThetaRelativeKatoR0169.Curve R W))
+                (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b),
+                CategoryTheory.CategoryStruct.comp (Ms.x.val) (b) =
+                    CategoryTheory.CategoryStruct.comp
+                      (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι) (M.x.val) →
+                  CategoryTheory.CategoryStruct.comp (Ms.y.val) (b) =
+                      CategoryTheory.CategoryStruct.comp
+                        (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι) (M.y.val) →
+                    ∀
+                      (a :
+                        (ArithmeticThetaRelativeDiscriminantR0171.Hodge R W).presheaf.obj
+                          (Opposite.op ⊤))
+                      (as_ :
+                        (ArithmeticThetaRelativeDiscriminantR0171.Hodge S Ws).presheaf.obj
+                          (Opposite.op ⊤)),
+                      ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha R W G L M a →
+                        ArithmeticThetaGlobalFourTorsionR0190.RealizesAlpha S Ws Gs L Ms as_ →
+                          ArithmeticThetaGlobalFourTorsionR0190.pullAlpha R W G S Ws Gs ι b hb a =
+                            as_) := by
   intro R _ _ _ _ _ W _ G hG L hL h4 M
   refine ⟨RelativeAlphaNaturality.exists_unique_alpha R W G L M hG hL h4, ?_⟩
   intro S _ _ _ _ _ Ws _ Gs hGs Ms ι b hb hx hy a as_ ha has

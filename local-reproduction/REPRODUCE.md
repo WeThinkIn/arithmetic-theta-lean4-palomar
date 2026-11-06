@@ -1,6 +1,6 @@
 # 本地 Lean4 可复现代码相关产物 / Local Lean 4 reproduction
 
-本目录收录最新英文论文（修订日期 2026-10-27）对应的原始 **Lean 4.33.1 本地形式化证明产物**：1,199 个证明源码、固定外部依赖及 103 项冻结声明的精确类型和公理检查。它与仓库顶层的 Lean 4.35.0-rc2 Palomar 版本分别维护。
+本目录收录最新英文论文（修订日期 2026-10-27）对应的原始 **Lean 4.33.1 本地形式化证明产物**：1,199 个证明源码、固定外部依赖及 103 项冻结声明的精确类型和公理检查。当前源码为 **2026-11-06 可读性修订版**：增加透明简称并重新排版定理陈述，原始合同与全部 103 个检查探针保持不变。数学审阅请从 [READING_GUIDE.md](READING_GUIDE.md) 和 [103 项定理索引](THEOREM_INDEX.md) 开始。它与仓库顶层的 Lean 4.35.0-rc2 Palomar 版本分别维护。
 
 本次验证范围：使用固定的预编译外部库，从源码重新编译全部 1,199 个论文模块（包括 `GoalRoot`），然后运行 103 项类型/公理检查。允许的公理仅为 `propext`、`Classical.choice`、`Quot.sound`。这不是 Lean 编译器及全部外部库的从零构建，也不签发新版论文的原项目合同审计或 Palomar 语义验收。
 
@@ -56,7 +56,7 @@ python3 scripts/reproduce.py --lean /path/to/lean-4.33.1/bin/lean --jobs 2 --bui
 
 ## 目录
 
-- `Lean/`：最新交付中的 1,199 个原样证明源码。
+- `Lean/`：1,199 个证明模块的可读性修订版；每个修改的原始与当前哈希见 `metadata/readability-source-changes.json`。
 - `dependencies/src/`：11,403 个外部模块源码及 15 个嵌入资源；`dependencies/lib/lean/`：下载后恢复的 46,163 个编译相关文件。
 - `scripts/`：依赖下载/校验与本地独立复现入口。
 - `metadata/dependencies.json`：导入关系与原始依赖解析来源。
@@ -70,4 +70,34 @@ python3 scripts/reproduce.py --lean /path/to/lean-4.33.1/bin/lean --jobs 2 --bui
 
 ## English scope
 
-These are the original **local Lean 4.33.1 reproducibility artifacts** for the paper revised on 27 October 2026, separate from the repository's Palomar port. Install Lean 4.33.1 and Python, run `scripts/fetch_dependencies.py`, then `scripts/reproduce.py` from this directory. All 1,199 delivered proof modules are recompiled against pinned, precompiled external libraries, followed by 103 frozen exact-type/axiom checks. Sources and dependency assets are hash-checked before and after verification. This does not claim a cold rebuild of external libraries, a new original-project editorial audit, or Palomar semantic acceptance.
+This is the readability edition of the original **local Lean 4.33.1 reproducibility artifacts** for the paper revised on 27 October 2026, separate from the repository's Palomar port. Install Lean 4.33.1 and Python, run `scripts/fetch_dependencies.py`, then `scripts/reproduce.py` from this directory. All 1,199 delivered proof modules are recompiled against pinned, precompiled external libraries, followed by 103 frozen exact-type/axiom checks. Sources and dependency assets are hash-checked before and after verification. This does not claim a cold rebuild of external libraries, a new original-project editorial audit, or Palomar semantic acceptance.
+
+## 可读性修订的核对 / Checking the readability edition
+
+`metadata/original-contract.json` 与 `verification/probes/` 保留原始完整类型。
+新增的 `abbrev` 仅封装重复表达；复现时仍将实际声明与原始展开类型逐项比较。
+外部依赖版本、依赖附件和 1,199 个模块的导入关系保持不变。
+`SHA256SUMS` 对应当前修订版。`publication/`、`verification/LocalRebuildReport.json`
+以及 `metadata/portability-source-binding.json` 是原版本的历史证据，其原始哈希未被改写。
+
+For a broader preservation check, use `scripts/check_declarations.lean` with two
+complete compiled versions. Both object directories must contain all 1,199 proof
+modules. The candidate environment never falls back to original proof objects.
+Use Lean 4.33.1 from the selected toolchain on `PATH`:
+
+```bash
+lean --run scripts/check_declarations.lean \
+  /path/to/original/build/lib/lean \
+  /path/to/current/build/lib/lean \
+  "$PWD/dependencies/lib/lean" \
+  "$PWD/metadata/dependencies.json" \
+  /path/to/preservation-report.json
+```
+
+This directly compares all original non-internal named declaration types and
+definition bodies by definitional equality, and also checks declaration kinds
+and universe parameters. It loads both complete Lean environments with the same
+pinned external dependencies, without serializing the expressions to temporary
+text files. The baseline source revision is recorded in
+`metadata/readability-source-changes.json`; compile that original revision in
+an independent directory to reproduce the preservation comparison.

@@ -236,7 +236,18 @@ open LiteralCoefficientTransportR0157
 
 /-- Transport of the full normalized annular quotient under coefficient change. -/
 theorem literal_coefficient_transport :
-    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l) (ρ : ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart l) (hρ : ArithmeticThetaCoefficientNormDescentR0157.IsChartMap k l ι ρ) (E : ArithmeticThetaKatoAnnularR0152.ChartField k →+* ArithmeticThetaKatoAnnularR0152.ChartField l) (hE : ArithmeticThetaCoefficientNormDescentR0157.ExtendsChart k l ρ E) (r c : ℕ) (hr : 0 < r) (hc : 1 < c) (hcr : c ∣ r) (hcop : Nat.Coprime c 6) (ζ : k) (hζ : IsPrimitiveRoot ζ c) (hζl : IsPrimitiveRoot (ι ζ) c), ∀ j : Fin r, E (ArithmeticThetaAnnularNormBridgeR0156.literalTheta k r c hr hc hcr hcop ζ hζ j) = ArithmeticThetaAnnularNormBridgeR0156.literalTheta l r c hr hc hcr hcop (ι ζ) hζl j := by
+    ∀ (k l : Type) [Field k] [CharZero k] [Field l] [CharZero l] (ι : k →+* l)
+      (ρ : ArithmeticThetaKatoAnnularR0152.Chart k →+* ArithmeticThetaKatoAnnularR0152.Chart l)
+      (hρ : ArithmeticThetaCoefficientNormDescentR0157.IsChartMap k l ι ρ)
+      (E :
+        ArithmeticThetaKatoAnnularR0152.ChartField k →+*
+          ArithmeticThetaKatoAnnularR0152.ChartField l)
+      (hE : ArithmeticThetaCoefficientNormDescentR0157.ExtendsChart k l ρ E) (r c : ℕ) (hr : 0 < r)
+      (hc : 1 < c) (hcr : c ∣ r) (hcop : Nat.Coprime c 6) (ζ : k) (hζ : IsPrimitiveRoot ζ c)
+      (hζl : IsPrimitiveRoot (ι ζ) c),
+      ∀ j : Fin r,
+        E (ArithmeticThetaAnnularNormBridgeR0156.literalTheta k r c hr hc hcr hcop ζ hζ j) =
+          ArithmeticThetaAnnularNormBridgeR0156.literalTheta l r c hr hc hcr hcop (ι ζ) hζl j := by
   intro k l _ _ _ _ ι ρ hρ E hE r c hr hc hcr hcop ζ hζ hζl j
   unfold ArithmeticThetaAnnularNormBridgeR0156.literalTheta
   simp only [map_div₀, map_mul, map_pow, map_neg,

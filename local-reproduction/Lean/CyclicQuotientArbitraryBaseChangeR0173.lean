@@ -78,7 +78,37 @@ attribute [local irreducible] origin structureMap
 /-- The marked generator and the quotient morphism commute uniquely with every
 specified pointed Cartesian base change, including noninjective specialization. -/
 theorem cyclic_quotient_arbitrary_base_change :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (n : ℕ) (hn : 0 < n) (P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G n) (V : WeierstrassCurve R) [V.IsElliptic] (H : ArithmeticThetaRelativeKatoR0169.Law R V) (hH : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R V H) (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V) (hf : ArithmeticThetaRelativeCyclicQuotientR0173.IsQuotient R W G P f) (S : Type u) [CommRing S] [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S] (Ws : WeierstrassCurve S) [Ws.IsElliptic] (Vs : WeierstrassCurve S) [Vs.IsElliptic] (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws) (hGs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs) (Hs : ArithmeticThetaRelativeKatoR0169.Law S Vs) (hHs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Vs Hs) (ι : R →+* S) (bW : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws) (ArithmeticThetaRelativeKatoR0169.Curve R W)) (hbW : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι bW) (bV : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Vs) (ArithmeticThetaRelativeKatoR0169.Curve R V)) (hbV : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R V H S Vs Hs ι bV), ∃! Ps : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection S Ws Gs n, CategoryTheory.CategoryStruct.comp Ps.point bW = CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι) P.point ∧ ∃! fs : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap S Ws Vs, ArithmeticThetaRelativeCyclicQuotientR0173.IsQuotient S Ws Gs Ps fs ∧ CategoryTheory.CategoryStruct.comp fs.map bV = CategoryTheory.CategoryStruct.comp bW f.map := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (n : ℕ) (hn : 0 < n)
+      (P : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection R W G n)
+      (V : WeierstrassCurve R) [V.IsElliptic] (H : ArithmeticThetaRelativeKatoR0169.Law R V)
+      (hH : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R V H)
+      (f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W V)
+      (hf : ArithmeticThetaRelativeCyclicQuotientR0173.IsQuotient R W G P f) (S : Type u)
+      [CommRing S] [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S]
+      (Ws : WeierstrassCurve S) [Ws.IsElliptic] (Vs : WeierstrassCurve S) [Vs.IsElliptic]
+      (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws)
+      (hGs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs)
+      (Hs : ArithmeticThetaRelativeKatoR0169.Law S Vs)
+      (hHs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Vs Hs) (ι : R →+* S)
+      (bW :
+        Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws)
+          (ArithmeticThetaRelativeKatoR0169.Curve R W))
+      (hbW : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι bW)
+      (bV :
+        Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Vs)
+          (ArithmeticThetaRelativeKatoR0169.Curve R V))
+      (hbV : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R V H S Vs Hs ι bV),
+      ∃! Ps : ArithmeticThetaRelativeCyclicQuotientR0173.CyclicSection S Ws Gs n,
+        CategoryTheory.CategoryStruct.comp Ps.point bW =
+            CategoryTheory.CategoryStruct.comp
+              (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι) P.point ∧
+          ∃! fs : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap S Ws Vs,
+            ArithmeticThetaRelativeCyclicQuotientR0173.IsQuotient S Ws Gs Ps fs ∧
+              CategoryTheory.CategoryStruct.comp fs.map bV =
+                CategoryTheory.CategoryStruct.comp bW f.map := by
   intro R _ _ _ _ _ W _ G hG n hn P V _ H hH f hf
     S _ _ _ _ _ Ws _ Vs _ Gs hGs Hs hHs ι bW hbW bV hbV
   obtain ⟨hw, how, hmw⟩ := hbW

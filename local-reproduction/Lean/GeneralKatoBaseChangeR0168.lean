@@ -16,7 +16,31 @@ open ArithmeticThetaKatoExistenceR0151
 /-- The unique geometric function-field map preserves the full normalized
 Kato predicate, including every positive coprime multiplication norm. -/
 theorem general_kato_base_change :
-∀ (F : Type u) [Field F] [CharZero F] (W : WeierstrassCurve F) [W.IsElliptic] (G : ArithmeticThetaGeneralEllipticKatoR0168.Law F W) (hG : ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw F W G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)] (K : Type u) [Field K] [CharZero K] (Wb : WeierstrassCurve K) [Wb.IsElliptic] (Gb : ArithmeticThetaGeneralEllipticKatoR0168.Law K Wb) (hGb : ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw K Wb Gb) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGeneralEllipticKatoR0168.Curve K Wb)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGeneralEllipticKatoR0168.Curve K Wb)] (ι : F →+* K) (b : Quiver.Hom (ArithmeticThetaGeneralEllipticKatoR0168.Curve K Wb) (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)) (hb : ArithmeticThetaGeneralEllipticKatoR0168.IsBaseChange F K W Wb G Gb ι b), ∃! α : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField →+* (ArithmeticThetaGeneralEllipticKatoR0168.Curve K Wb).functionField, ArithmeticThetaGeometricNormR0150.IsFieldMap b α ∧ ∀ (c : ℕ), 1 < c → Nat.Coprime c 6 → ∀ (g : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField), ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction F W G c g → ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction K Wb Gb c (α g) := by
+    ∀ (F : Type u) [Field F] [CharZero F] (W : WeierstrassCurve F) [W.IsElliptic]
+      (G : ArithmeticThetaGeneralEllipticKatoR0168.Law F W)
+      (hG : ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw F W G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)]
+      (K : Type u) [Field K] [CharZero K] (Wb : WeierstrassCurve K) [Wb.IsElliptic]
+      (Gb : ArithmeticThetaGeneralEllipticKatoR0168.Law K Wb)
+      (hGb : ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw K Wb Gb)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGeneralEllipticKatoR0168.Curve K Wb)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGeneralEllipticKatoR0168.Curve K Wb)]
+      (ι : F →+* K)
+      (b :
+        Quiver.Hom (ArithmeticThetaGeneralEllipticKatoR0168.Curve K Wb)
+          (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W))
+      (hb : ArithmeticThetaGeneralEllipticKatoR0168.IsBaseChange F K W Wb G Gb ι b),
+      ∃! α :
+        (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField →+*
+          (ArithmeticThetaGeneralEllipticKatoR0168.Curve K Wb).functionField,
+        ArithmeticThetaGeometricNormR0150.IsFieldMap b α ∧
+          ∀ (c : ℕ),
+            1 < c →
+              Nat.Coprime c 6 →
+                ∀ (g : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField),
+                  ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction F W G c g →
+                    ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction K Wb Gb c (α g) := by
   intro F _ _ W _ G hG _ _ K _ _ Wb _ Gb hGb _ _ ι b hb
   letI : Surjective b :=
     MorphismProperty.of_isPullback (P := @Surjective) hb.1.flip inferInstance

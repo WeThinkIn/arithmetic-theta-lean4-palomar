@@ -1904,7 +1904,22 @@ open RelativePrimitiveThetaCommutator
 
 /-- The actual theta commutator of a full doubled level basis is primitive on every fibre. -/
 theorem relative_primitive_theta_commutator :
-    ∀ (R : Type u) [CommRing R] [Algebra ℚ R] [IsNoetherianRing R] (E : ArithmeticThetaLegendreAtlasR0176.EllipticFamily R), ∀ m : ℕ, 0 < m → Even m → ∀ M : ArithmeticThetaLegendreAtlasR0176.FamilyLevel R E (2*m), ∀ (α : ArithmeticThetaRelativeThetaLiftsR0255.Lift E m (ArithmeticThetaRelativeThetaLiftsR0255.translation E M.x)) (β : ArithmeticThetaRelativeThetaLiftsR0255.Lift E m (ArithmeticThetaRelativeThetaLiftsR0255.translation E M.y)), ∃! c : Rˣ, ArithmeticThetaRelativeThetaRelationsR0256.Commutator E m M.x M.y α β c ∧ ArithmeticThetaRelativeThetaRelationsR0256.PrimitiveUnit m c := by
+    ∀ (R : Type u) [CommRing R] [Algebra ℚ R] [IsNoetherianRing R]
+      (E : ArithmeticThetaLegendreAtlasR0176.EllipticFamily R),
+      ∀ m : ℕ,
+        0 < m →
+          Even m →
+            ∀ M : ArithmeticThetaLegendreAtlasR0176.FamilyLevel R E (2 * m),
+              ∀
+                (α :
+                  ArithmeticThetaRelativeThetaLiftsR0255.Lift E m
+                    (ArithmeticThetaRelativeThetaLiftsR0255.translation E M.x))
+                (β :
+                  ArithmeticThetaRelativeThetaLiftsR0255.Lift E m
+                    (ArithmeticThetaRelativeThetaLiftsR0255.translation E M.y)),
+                ∃! c : Rˣ,
+                  ArithmeticThetaRelativeThetaRelationsR0256.Commutator E m M.x M.y α β c ∧
+                    ArithmeticThetaRelativeThetaRelationsR0256.PrimitiveUnit m c := by
   intro R _ _ _ E m hm _ M α β
   apply (primitive_commutator_iff_geometric_tests E m M α β).mpr
   intro k _ _ f i hi

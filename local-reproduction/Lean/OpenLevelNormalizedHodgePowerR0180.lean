@@ -318,7 +318,34 @@ open OpenLevelNormalizedHodgePowerR0180
 
 /-- The normalized source section on the entire open full-level base. -/
 theorem open_level_normalized_hodge_power :
-∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (hLeven : Even L) (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L) (m N : ℕ) (hm : 0 < m) (hmeven : Even m) (hN : 0 < N) (hNeven : Even N) (hmN : m ∣ N) (hmNL : m*N ∣ L), ∃ (Q : ArithmeticThetaOpenHodgeR0180.Quotient A.quotient.ring (ArithmeticThetaOpenHodgeR0180.levelFamily k L A) m (ArithmeticThetaOpenHodgeR0180.kernelPoint k L A m)) (d : (ArithmeticThetaOpenHodgeR0180.power Q.target 24).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaOpenHodgeR0180.IsD2 Q.target d ∧ CategoryTheory.IsIso (ArithmeticThetaOpenHodgeR0180.familyHodgeMap Q.arrow) ∧ ∀ (a b : Fin N), a.val ≠ 0 ∨ b.val ≠ 0 → ∃! z : A.quotient.ring × (ArithmeticThetaOpenHodgeR0180.power (ArithmeticThetaOpenHodgeR0180.levelFamily k L A) (((1+12*N)^2-1)/2)).presheaf.obj (Opposite.op ⊤), ArithmeticThetaOpenHodgeR0180.IsKatoValue Q.target (1+12*N) (CategoryTheory.CategoryStruct.comp (ArithmeticThetaOpenHodgeR0180.liftPoint k L A m N a.val b.val) Q.arrow.map) z.1 ∧ ArithmeticThetaRelativeDiscriminantR0171.IsFrame (ArithmeticThetaOpenHodgeR0180.power (ArithmeticThetaOpenHodgeR0180.levelFamily k L A) (((1+12*N)^2-1)/2)) ⊤ z.2 ∧ ArithmeticThetaOpenHodgeR0180.IsNormalizedPower k L A m N Q d z.1 z.2 := by
+    ∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (hLeven : Even L)
+      (A : ArithmeticThetaLegendreAtlasR0176.LegendreAtlas k L) (m N : ℕ) (hm : 0 < m)
+      (hmeven : Even m) (hN : 0 < N) (hNeven : Even N) (hmN : m ∣ N) (hmNL : m * N ∣ L),
+      ∃ (Q :
+        ArithmeticThetaOpenHodgeR0180.Quotient A.quotient.ring
+          (ArithmeticThetaOpenHodgeR0180.levelFamily k L A) m
+          (ArithmeticThetaOpenHodgeR0180.kernelPoint k L A m))
+        (d : (ArithmeticThetaOpenHodgeR0180.power Q.target 24).presheaf.obj (Opposite.op ⊤)),
+        ArithmeticThetaOpenHodgeR0180.IsD2 Q.target d ∧
+          CategoryTheory.IsIso (ArithmeticThetaOpenHodgeR0180.familyHodgeMap Q.arrow) ∧
+            ∀ (a b : Fin N),
+              a.val ≠ 0 ∨ b.val ≠ 0 →
+                ∃! z :
+                  A.quotient.ring ×
+                    (ArithmeticThetaOpenHodgeR0180.power
+                          (ArithmeticThetaOpenHodgeR0180.levelFamily k L A)
+                          (((1 + 12 * N) ^ 2 - 1) / 2)).presheaf.obj
+                      (Opposite.op ⊤),
+                  ArithmeticThetaOpenHodgeR0180.IsKatoValue Q.target (1 + 12 * N)
+                      (CategoryTheory.CategoryStruct.comp
+                        (ArithmeticThetaOpenHodgeR0180.liftPoint k L A m N a.val b.val) Q.arrow.map)
+                      z.1 ∧
+                    ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+                        (ArithmeticThetaOpenHodgeR0180.power
+                          (ArithmeticThetaOpenHodgeR0180.levelFamily k L A)
+                          (((1 + 12 * N) ^ 2 - 1) / 2))
+                        ⊤ z.2 ∧
+                      ArithmeticThetaOpenHodgeR0180.IsNormalizedPower k L A m N Q d z.1 z.2 := by
   intro k _ _ L hL hLeven A m N hm hmeven hN hNeven hmN hmNL
   classical
   let E := levelFamily k L A

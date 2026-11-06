@@ -1007,7 +1007,27 @@ open InverseDifferentialSign WeierstrassCurve.DrinfeldGlobal
 /-- Multiplication by every natural number scales the actual normalized relative
 frame by that number on every open and every regular function. -/
 theorem multiplication_differential :
-∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s), ∀ (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2) (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3), ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X → ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y → ∀ (G : ArithmeticThetaMarkedGroupLawR0146.Law k M), ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G → ∀ (δ : ArithmeticThetaHodgeFourTorsionR0147.Frame k M), ArithmeticThetaCompactifiedDifferentialR0145.IsGlobalDifferentialFrame k M s X Y δ → ∀ (n : ℕ), ArithmeticThetaHodgeFourTorsionR0147.DifferentialWeight k M δ (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n) (n : LaurentSeries k) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s),
+      ∀ (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2)
+        (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3),
+        ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X →
+          ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y →
+            ∀ (G : ArithmeticThetaMarkedGroupLawR0146.Law k M),
+              ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G →
+                ∀ (δ : ArithmeticThetaHodgeFourTorsionR0147.Frame k M),
+                  ArithmeticThetaCompactifiedDifferentialR0145.IsGlobalDifferentialFrame k M s X Y
+                      δ →
+                    ∀ (n : ℕ),
+                      ArithmeticThetaHodgeFourTorsionR0147.DifferentialWeight k M δ
+                        (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n)
+                        (n : LaurentSeries k) := by
   intro k _ _ r hr h3 T he M hM s hs X Y hX hY G hG e heN n
   classical
   by_cases hn : n = 0

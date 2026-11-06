@@ -50,7 +50,26 @@ end AmbientBranchValuesR0227
 /-- Pull back the same valuative branch and sections along the selected-field
 inclusion. Every scalar becomes the originally prescribed ambient root. -/
 theorem ambient_branch_values :
-∀ (k : Type) [Field k] [CharZero k] (X : ArithmeticThetaFiniteFieldModelsR0221.Curve (ArithmeticThetaConstantExtensionR0225.Omega k)) (J : X.space.Modules) (n s : ℕ) (F : Fin s → ArithmeticThetaFiniteFieldModelsR0221.Sections (ArithmeticThetaTensorPower.tensorPower X.space J n)) (f : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk (ArithmeticThetaConstantExtensionR0225.Omega k)) X.space) (h : ArithmeticThetaFiniteFieldModelsR0221.Sections ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J)) (E : Type) [Field E] [Algebra (LaurentSeries (ArithmeticThetaConstantExtensionR0225.Omega k)) E] (r : Fin s → E) (K0 : ArithmeticThetaConstantExtensionR0225.FieldStage k), ∀ M : ArithmeticThetaAmbientCompletedRootsR0227.AlgebraicModel k X J n s F f h E r K0, ArithmeticThetaAmbientCompletedRootsR0227.AmbientValues M := by
+    ∀ (k : Type) [Field k] [CharZero k]
+      (X :
+        ArithmeticThetaFiniteFieldModelsR0221.Curve (ArithmeticThetaConstantExtensionR0225.Omega k))
+      (J : X.space.Modules) (n s : ℕ)
+      (F :
+        Fin s →
+          ArithmeticThetaFiniteFieldModelsR0221.Sections
+            (ArithmeticThetaTensorPower.tensorPower X.space J n))
+      (f :
+        Quiver.Hom
+          (ArithmeticThetaTateCuspsR0181.Disk (ArithmeticThetaConstantExtensionR0225.Omega k))
+          X.space)
+      (h :
+        ArithmeticThetaFiniteFieldModelsR0221.Sections
+          ((AlgebraicGeometry.Scheme.Modules.pullback f).obj J))
+      (E : Type) [Field E]
+      [Algebra (LaurentSeries (ArithmeticThetaConstantExtensionR0225.Omega k)) E] (r : Fin s → E)
+      (K0 : ArithmeticThetaConstantExtensionR0225.FieldStage k),
+      ∀ M : ArithmeticThetaAmbientCompletedRootsR0227.AlgebraicModel k X J n s F f h E r K0,
+        ArithmeticThetaAmbientCompletedRootsR0227.AmbientValues M := by
   intro k _ _ X J n s F f h E _ _ r K0 M
   let i : Base E ⟶ Base M.field := Spec.map (CommRingCat.ofHom M.field.subtype)
   let q := i ≫ genericInclusion M.field M.branch.ring

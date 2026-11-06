@@ -188,7 +188,50 @@ open ArithmeticThetaLegendreComparisonR0177.OrderedLegendreParameterRigidity
 open OrderedTwoSignRigidity
 
 theorem ordered_two_sign_rigidity :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (lam : R), IsUnit (lam * (lam - 1)) → ∀ (G : ArithmeticThetaRelativeKatoR0169.Law R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam)), ArithmeticThetaRelativeKatoR0169.IsOriginLaw R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) G → ∀ (p0 p1 : Quiver.Hom (ArithmeticThetaRelativeDiscriminantR0171.Base R) (ArithmeticThetaRelativeKatoR0169.Curve R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam))), ArithmeticThetaLegendreComparisonR0177.HasCoordinates R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) p0 0 0 → ArithmeticThetaLegendreComparisonR0177.HasCoordinates R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) p1 1 0 → ∀ f : CategoryTheory.Iso (ArithmeticThetaRelativeKatoR0169.Curve R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam)) (ArithmeticThetaRelativeKatoR0169.Curve R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam)), CategoryTheory.CategoryStruct.comp f.hom (ArithmeticThetaRelativeKatoR0169.structureMap R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam)) = ArithmeticThetaRelativeKatoR0169.structureMap R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) → CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeKatoR0169.origin R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam)) f.hom = ArithmeticThetaRelativeKatoR0169.origin R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) → CategoryTheory.CategoryStruct.comp p0 f.hom = p0 → CategoryTheory.CategoryStruct.comp p1 f.hom = p1 → f.hom = CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeKatoR0169.Curve R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam)) ∨ f.hom = ArithmeticThetaCompatibleLevelR0178.inversion R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) G := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (lam : R),
+      IsUnit (lam * (lam - 1)) →
+        ∀
+          (G :
+            ArithmeticThetaRelativeKatoR0169.Law R
+              (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam)),
+          ArithmeticThetaRelativeKatoR0169.IsOriginLaw R
+              (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) G →
+            ∀
+              (p0 p1 :
+                Quiver.Hom (ArithmeticThetaRelativeDiscriminantR0171.Base R)
+                  (ArithmeticThetaRelativeKatoR0169.Curve R
+                    (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam))),
+              ArithmeticThetaLegendreComparisonR0177.HasCoordinates R
+                  (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) p0 0 0 →
+                ArithmeticThetaLegendreComparisonR0177.HasCoordinates R
+                    (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) p1 1 0 →
+                  ∀ f :
+                    CategoryTheory.Iso
+                      (ArithmeticThetaRelativeKatoR0169.Curve R
+                        (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam))
+                      (ArithmeticThetaRelativeKatoR0169.Curve R
+                        (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam)),
+                    CategoryTheory.CategoryStruct.comp f.hom
+                          (ArithmeticThetaRelativeKatoR0169.structureMap R
+                            (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam)) =
+                        ArithmeticThetaRelativeKatoR0169.structureMap R
+                          (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) →
+                      CategoryTheory.CategoryStruct.comp
+                            (ArithmeticThetaRelativeKatoR0169.origin R
+                              (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam))
+                            f.hom =
+                          ArithmeticThetaRelativeKatoR0169.origin R
+                            (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) →
+                        CategoryTheory.CategoryStruct.comp p0 f.hom = p0 →
+                          CategoryTheory.CategoryStruct.comp p1 f.hom = p1 →
+                            f.hom =
+                                CategoryTheory.CategoryStruct.id
+                                  (ArithmeticThetaRelativeKatoR0169.Curve R
+                                    (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam)) ∨
+                              f.hom =
+                                ArithmeticThetaCompatibleLevelR0178.inversion R
+                                  (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) G := by
   intro R _ _ _ _ _ lam hlam G hG p0 p1 hp0 hp1 f hf ho h0 h1
   let W := legendreAt R lam
   letI : W.IsElliptic := (standard_legendre_two_marking R lam hlam).1

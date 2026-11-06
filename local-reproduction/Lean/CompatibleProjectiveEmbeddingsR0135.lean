@@ -366,7 +366,18 @@ open CategoryTheory AlgebraicGeometry CompatibleProjectiveEmbeddingsR0135
 /-- The supplied compatible cubic bases define closed projective embeddings
 at every thickness, realizing every prescribed tower transition. -/
 theorem compatible_projective_embeddings :
-    ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r), 3 ≤ r → ∀ (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (a : Fin r → kˣ) (b : ArithmeticThetaProjectiveEffectivityR0135.CubicBases k r hr T a), ArithmeticThetaProjectiveEffectivityR0135.CompatibleBases k T a b → ∃ j : ∀ n, (T.atlas n).X ⟶ ArithmeticThetaProjectiveEffectivityR0135.projectiveSpace (PowerSeries k) (3*r), ArithmeticThetaProjectiveEffectivityR0135.ProjectiveSystem k T a b j := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (r : ℕ) (hr : 0 < r),
+        3 ≤ r →
+          ∀ (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (a : Fin r → kˣ)
+            (b : ArithmeticThetaProjectiveEffectivityR0135.CubicBases k r hr T a),
+            ArithmeticThetaProjectiveEffectivityR0135.CompatibleBases k T a b →
+              ∃ j :
+                ∀ n,
+                  (T.atlas n).X ⟶
+                    ArithmeticThetaProjectiveEffectivityR0135.projectiveSpace (PowerSeries k)
+                      (3 * r),
+                ArithmeticThetaProjectiveEffectivityR0135.ProjectiveSystem k T a b j := by
   intro k _ _ r hr h3 T a b hb
   refine ⟨stageMorphism k T a b hb h3, ?_⟩
   constructor

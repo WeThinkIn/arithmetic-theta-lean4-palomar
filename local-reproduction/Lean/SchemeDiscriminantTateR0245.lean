@@ -49,7 +49,22 @@ end SchemeDiscriminantTate
 /-- The same unique canonical section is a frame, has every full unmarked
 Tate expansion, and obeys every pointed Cartesian base-change equation. -/
 theorem scheme_discriminant_tate :
-    ∀ (k : Type) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S), ∃! d : ArithmeticThetaSchemeDiscriminantR0244.Sections E, ArithmeticThetaSchemeDiscriminantR0244.IsD2 k σ E d ∧ ArithmeticThetaRelativeDiscriminantR0171.IsFrame (ArithmeticThetaSchemeDiscriminantR0244.Power E) ⊤ d ∧ ArithmeticThetaSchemeTateDiscriminantR0245.HasTateExpansions k σ E d ∧ ∀ (T : AlgebraicGeometry.Scheme) (τ : Quiver.Hom T (ArithmeticThetaLocalWeierstrassR0203.Base k)) (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (b : Quiver.Hom T S), CategoryTheory.CategoryStruct.comp b σ = τ → ∀ (C : ArithmeticThetaSchemeDiscriminantR0244.Comparison E F b) (e : ArithmeticThetaSchemeDiscriminantR0244.Sections F), ArithmeticThetaSchemeDiscriminantR0244.IsD2 k τ F e → ArithmeticThetaSchemeDiscriminantR0244.pull C d = e := by
+    ∀ (k : Type) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme)
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S),
+      ∃! d : ArithmeticThetaSchemeDiscriminantR0244.Sections E,
+        ArithmeticThetaSchemeDiscriminantR0244.IsD2 k σ E d ∧
+          ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+              (ArithmeticThetaSchemeDiscriminantR0244.Power E) ⊤ d ∧
+            ArithmeticThetaSchemeTateDiscriminantR0245.HasTateExpansions k σ E d ∧
+              ∀ (T : AlgebraicGeometry.Scheme)
+                (τ : Quiver.Hom T (ArithmeticThetaLocalWeierstrassR0203.Base k))
+                (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (b : Quiver.Hom T S),
+                CategoryTheory.CategoryStruct.comp b σ = τ →
+                  ∀ (C : ArithmeticThetaSchemeDiscriminantR0244.Comparison E F b)
+                    (e : ArithmeticThetaSchemeDiscriminantR0244.Sections F),
+                    ArithmeticThetaSchemeDiscriminantR0244.IsD2 k τ F e →
+                      ArithmeticThetaSchemeDiscriminantR0244.pull C d = e := by
   intro k _ _ S σ E
   obtain ⟨d, hd⟩ := scheme_discriminant_existence k S σ E
   have hframe := scheme_discriminant_frame_uniqueness k S σ E d hd

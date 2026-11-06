@@ -617,7 +617,22 @@ open RelativeMultiplicationHodgeWeight
 /-- Multiplication by m induces weight m^n on all sections of the genuine nth
 Hodge tensor power, including zero multiplication and the zeroth power. -/
 theorem relative_multiplication_hodge_weight :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (m : ℕ), ∃ f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W W, f.map = G.schemeNsmul m ∧ ∀ (n : ℕ) (U : (ArithmeticThetaRelativeDiscriminantR0171.Base R).Opens) (s : (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W n).presheaf.obj (Opposite.op U)), (ArithmeticThetaRelativeIsogenyHodgeR0172.powerMap f n).app U s = ((m : (ArithmeticThetaRelativeDiscriminantR0171.Base R).presheaf.obj (Opposite.op U))^n) • s := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (m : ℕ),
+      ∃ f : ArithmeticThetaRelativeIsogenyHodgeR0172.PointedMap R W W,
+        f.map = G.schemeNsmul m ∧
+          ∀ (n : ℕ) (U : (ArithmeticThetaRelativeDiscriminantR0171.Base R).Opens)
+            (s :
+              (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W n).presheaf.obj
+                (Opposite.op U)),
+            (ArithmeticThetaRelativeIsogenyHodgeR0172.powerMap f n).app U s =
+              ((m :
+                    (ArithmeticThetaRelativeDiscriminantR0171.Base R).presheaf.obj
+                      (Opposite.op U)) ^
+                  n) •
+                s := by
   intro R _ _ _ _ _ W _ G hG m
   refine ⟨multiplicationPointed R W G hG m, rfl, ?_⟩
   exact power_weight_of_hodge_weight R W (multiplicationPointed R W G hG m) m

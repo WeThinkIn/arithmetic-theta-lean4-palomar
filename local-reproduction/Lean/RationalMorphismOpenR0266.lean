@@ -240,7 +240,18 @@ end RationalMorphismOpen
 /-- The unique generic quotients extend regularly on an open refinement of
 exactly the original chart, with the actual generic-field images. -/
 theorem rational_morphism_open :
-∀ (Z S : AlgebraicGeometry.Scheme.{u}) [AlgebraicGeometry.IsIntegral Z] (g : Quiver.Hom (AlgebraicGeometry.Spec (CommRingCat.of Z.functionField)) S) (C : ArithmeticThetaGlobalProjectiveRatiosR0266.GenericChart Z S g) (M N : S.Modules) (d : Quiver.Hom M N) (n : ℕ) (v : Fin n → Quiver.Hom M N), AlgebraicGeometry.Scheme.Modules.IsInvertible M → AlgebraicGeometry.Scheme.Modules.IsInvertible N → CategoryTheory.IsIso ((AlgebraicGeometry.Scheme.Modules.pullback g).map d) → ∃! r : Fin n → Z.functionField, ArithmeticThetaGlobalProjectiveRatiosR0266.GenericRatios g M N d v r ∧ ∃ C' : ArithmeticThetaGlobalProjectiveRatiosR0266.GenericChart Z S g, ArithmeticThetaGlobalProjectiveRatiosR0266.Refines g C C' ∧ ArithmeticThetaGlobalProjectiveRatiosR0266.RegularRatios g M N d v C' r := by
+    ∀ (Z S : AlgebraicGeometry.Scheme.{u}) [AlgebraicGeometry.IsIntegral Z]
+      (g : Quiver.Hom (AlgebraicGeometry.Spec (CommRingCat.of Z.functionField)) S)
+      (C : ArithmeticThetaGlobalProjectiveRatiosR0266.GenericChart Z S g) (M N : S.Modules)
+      (d : Quiver.Hom M N) (n : ℕ) (v : Fin n → Quiver.Hom M N),
+      AlgebraicGeometry.Scheme.Modules.IsInvertible M →
+        AlgebraicGeometry.Scheme.Modules.IsInvertible N →
+          CategoryTheory.IsIso ((AlgebraicGeometry.Scheme.Modules.pullback g).map d) →
+            ∃! r : Fin n → Z.functionField,
+              ArithmeticThetaGlobalProjectiveRatiosR0266.GenericRatios g M N d v r ∧
+                ∃ C' : ArithmeticThetaGlobalProjectiveRatiosR0266.GenericChart Z S g,
+                  ArithmeticThetaGlobalProjectiveRatiosR0266.Refines g C C' ∧
+                    ArithmeticThetaGlobalProjectiveRatiosR0266.RegularRatios g M N d v C' r := by
   intro Z S _ g C M N d n v hM hN hd
   obtain ⟨C', hC', hd'⟩ := RationalMorphismOpen.refine_iso g C d hM hN hd
   obtain ⟨r, hr, hreg⟩ := RationalMorphismOpen.ratios_on_iso_chart g C' M N d n v hN hd'

@@ -172,7 +172,53 @@ open CategoryTheory CategoryTheory.Limits AlgebraicGeometry
 open ArithmeticThetaLocalWeierstrassR0203 ArithmeticThetaPhaseSwitchR0218
 
 /-- The entire phase overlap is the diagonal plus the negating graph. -/
-theorem phase_overlap_splitting : ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (τ : CategoryTheory.Iso (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ) (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ)), CategoryTheory.CategoryStruct.comp (τ.hom) (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) = ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ → τ.hom.appTop (ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ) = -(ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ) → ∃! c : CategoryTheory.Iso (CategoryTheory.Limits.coprod (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ) (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ)) (CategoryTheory.Limits.pullback (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)), CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.comp (CategoryTheory.Limits.coprod.inl) (c.hom)) (CategoryTheory.Limits.pullback.fst (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)) = CategoryTheory.CategoryStruct.id (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ) ∧ CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.comp (CategoryTheory.Limits.coprod.inl) (c.hom)) (CategoryTheory.Limits.pullback.snd (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)) = CategoryTheory.CategoryStruct.id (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ) ∧ CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.comp (CategoryTheory.Limits.coprod.inr) (c.hom)) (CategoryTheory.Limits.pullback.fst (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)) = CategoryTheory.CategoryStruct.id (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ) ∧ CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.comp (CategoryTheory.Limits.coprod.inr) (c.hom)) (CategoryTheory.Limits.pullback.snd (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)) = τ.hom := by
+theorem phase_overlap_splitting :
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (τ :
+        CategoryTheory.Iso (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ)
+          (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ)),
+      CategoryTheory.CategoryStruct.comp (τ.hom)
+            (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ) =
+          ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ →
+        τ.hom.appTop (ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ) =
+            -(ArithmeticThetaPhaseSwitchR0218.phaseValue k S σ) →
+          ∃! c :
+            CategoryTheory.Iso
+              (CategoryTheory.Limits.coprod (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ)
+                (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ))
+              (CategoryTheory.Limits.pullback
+                (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)
+                (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)),
+            CategoryTheory.CategoryStruct.comp
+                  (CategoryTheory.CategoryStruct.comp (CategoryTheory.Limits.coprod.inl) (c.hom))
+                  (CategoryTheory.Limits.pullback.fst
+                    (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)
+                    (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)) =
+                CategoryTheory.CategoryStruct.id
+                  (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ) ∧
+              CategoryTheory.CategoryStruct.comp
+                    (CategoryTheory.CategoryStruct.comp (CategoryTheory.Limits.coprod.inl) (c.hom))
+                    (CategoryTheory.Limits.pullback.snd
+                      (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)
+                      (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)) =
+                  CategoryTheory.CategoryStruct.id
+                    (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ) ∧
+                CategoryTheory.CategoryStruct.comp
+                      (CategoryTheory.CategoryStruct.comp (CategoryTheory.Limits.coprod.inr)
+                        (c.hom))
+                      (CategoryTheory.Limits.pullback.fst
+                        (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)
+                        (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)) =
+                    CategoryTheory.CategoryStruct.id
+                      (ArithmeticThetaPhaseSwitchR0218.phaseSpace k S σ) ∧
+                  CategoryTheory.CategoryStruct.comp
+                      (CategoryTheory.CategoryStruct.comp (CategoryTheory.Limits.coprod.inr)
+                        (c.hom))
+                      (CategoryTheory.Limits.pullback.snd
+                        (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)
+                        (ArithmeticThetaPhaseSwitchR0218.phaseProjection k S σ)) =
+                    τ.hom := by
   intro k _ _ S σ τ hb hv
   let d := PhaseOverlapProof.diagonal k S σ
   let g := PhaseOverlapProof.graph k S σ τ hb

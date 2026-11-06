@@ -132,7 +132,25 @@ open ArithmeticThetaRelativeFourCharacterR0211
 completed-square marking, a full basis with the specified doubled labels,
 on every characteristic-zero field-valued point. -/
 theorem arbitrary_split_fiber_basis :
-∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W), ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G → ∀ M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)), (∃ (e : Fin 3 → R) (x y : Fin 2 → R), ArithmeticThetaRelativeFourCharacterR0211.Coordinates R W G M e x y) ∧ (∀ (e : Fin 3 → R) (x y : Fin 2 → R), ArithmeticThetaRelativeFourCharacterR0211.Coordinates R W G M e x y → ∀ (F : Type u) [Field F] [CharZero F] [DecidableEq F] (ι : R →+* F),  Function.Injective (ι ∘ e) ∧ (∃! b : ArithmeticThetaMarkingR0115.Marking F (ι ∘ e), ArithmeticThetaRelativeFourCharacterR0211.FiberCoordinates R W e x y F ι b) ∧ (∀ b : ArithmeticThetaMarkingR0115.Marking F (ι ∘ e), ArithmeticThetaRelativeFourCharacterR0211.FiberCoordinates R W e x y F ι b → ArithmeticThetaMarkingR0115.IsBasis F (ι ∘ e) b ∧ ArithmeticThetaMarkingR0115.labels F (ι ∘ e) b = ι ∘ e)) := by
+    ∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W),
+      ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G →
+        ∀ M :
+          ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4
+            (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)),
+          (∃ (e : Fin 3 → R) (x y : Fin 2 → R),
+              ArithmeticThetaRelativeFourCharacterR0211.Coordinates R W G M e x y) ∧
+            (∀ (e : Fin 3 → R) (x y : Fin 2 → R),
+              ArithmeticThetaRelativeFourCharacterR0211.Coordinates R W G M e x y →
+                ∀ (F : Type u) [Field F] [CharZero F] [DecidableEq F] (ι : R →+* F),
+                  Function.Injective (ι ∘ e) ∧
+                    (∃! b : ArithmeticThetaMarkingR0115.Marking F (ι ∘ e),
+                        ArithmeticThetaRelativeFourCharacterR0211.FiberCoordinates R W e x y F ι
+                          b) ∧
+                      (∀ b : ArithmeticThetaMarkingR0115.Marking F (ι ∘ e),
+                        ArithmeticThetaRelativeFourCharacterR0211.FiberCoordinates R W e x y F ι b →
+                          ArithmeticThetaMarkingR0115.IsBasis F (ι ∘ e) b ∧
+                            ArithmeticThetaMarkingR0115.labels F (ι ∘ e) b = ι ∘ e)) := by
   intro R _ _ W _ G hG M
   refine ⟨ArbitrarySplitFiberBasis.coordinates_exists W G hG M, ?_⟩
   intro e x y hC F _ _ _ ι

@@ -1074,7 +1074,31 @@ namespace ArithmeticThetaProjectiveEffectivityR0135
 open CategoryTheory AlgebraicGeometry ProjectiveTowerEffectivityR0135
 
 theorem projective_tower_effectivity :
-    ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r), 3 ≤ r → ∀ (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (a : Fin r → kˣ) (b : ArithmeticThetaProjectiveEffectivityR0135.CubicBases k r hr T a), ArithmeticThetaProjectiveEffectivityR0135.CompatibleBases k T a b → ∀ (j : ∀ n, (T.atlas n).X ⟶ ArithmeticThetaProjectiveEffectivityR0135.projectiveSpace (PowerSeries k) (3*r)), ArithmeticThetaProjectiveEffectivityR0135.ProjectiveSystem k T a b j → ∃ M : ArithmeticThetaProjectiveEffectivityR0135.Model k T, ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M ∧ ∃ e : M.X ⟶ ArithmeticThetaProjectiveEffectivityR0135.projectiveSpace (PowerSeries k) (3*r), AlgebraicGeometry.IsClosedImmersion e ∧ CategoryTheory.CategoryStruct.comp e (ArithmeticThetaProjectiveEffectivityR0135.projectiveStructure (PowerSeries k) (3*r)) = M.p ∧ ∀ n, CategoryTheory.CategoryStruct.comp (M.inclusion n) e = j n := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (r : ℕ) (hr : 0 < r),
+        3 ≤ r →
+          ∀ (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (a : Fin r → kˣ)
+            (b : ArithmeticThetaProjectiveEffectivityR0135.CubicBases k r hr T a),
+            ArithmeticThetaProjectiveEffectivityR0135.CompatibleBases k T a b →
+              ∀
+                (j :
+                  ∀ n,
+                    (T.atlas n).X ⟶
+                      ArithmeticThetaProjectiveEffectivityR0135.projectiveSpace (PowerSeries k)
+                        (3 * r)),
+                ArithmeticThetaProjectiveEffectivityR0135.ProjectiveSystem k T a b j →
+                  ∃ M : ArithmeticThetaProjectiveEffectivityR0135.Model k T,
+                    ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M ∧
+                      ∃ e :
+                        M.X ⟶
+                          ArithmeticThetaProjectiveEffectivityR0135.projectiveSpace (PowerSeries k)
+                            (3 * r),
+                        AlgebraicGeometry.IsClosedImmersion e ∧
+                          CategoryTheory.CategoryStruct.comp e
+                                (ArithmeticThetaProjectiveEffectivityR0135.projectiveStructure
+                                  (PowerSeries k) (3 * r)) =
+                              M.p ∧
+                            ∀ n, CategoryTheory.CategoryStruct.comp (M.inclusion n) e = j n := by
   intro k _ _ r hr h3 T a b hb j hj
   refine ⟨candidateModel k b j hj, ?_, candidateEmbedding k b,
     candidateEmbedding_closed k b, rfl, stageInclusion_embedding k b j hj⟩

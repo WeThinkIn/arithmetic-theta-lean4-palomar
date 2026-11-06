@@ -11,7 +11,56 @@ namespace ArithmeticThetaSplitNormR0153
 
 /-- Completed-chart product formula for the actual split multiplication norm. -/
 theorem completed_norm_product :
-∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)] (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → (CategoryTheory.Iso M.X M.X)) (inv : CategoryTheory.Iso M.X M.X) (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv) (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X) (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j)) (φ : Fin r → ((AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* ArithmeticThetaKatoAnnularR0152.ChartField k)) (hφ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M (χ j) (φ j)) (d : ℕ) (hd : 0 < d) (hdiv : d ∣ r) (ζ : kˣ) (hζ : IsPrimitiveRoot (ζ : k) d), ∃ (μ : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))) (e : kˣ → (ArithmeticThetaKatoAnnularR0152.Chart k ≃+* ArithmeticThetaKatoAnnularR0152.Chart k)) (E : kˣ → (ArithmeticThetaKatoAnnularR0152.ChartField k ≃+* ArithmeticThetaKatoAnnularR0152.ChartField k)), ArithmeticThetaGeometricNormR0150.IsFieldMap (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G d) μ ∧ (∀ a, ArithmeticThetaSplitNormR0153.IsScaling k a (e a) ∧ ArithmeticThetaSplitNormR0153.ExtendsScaling k (e a) (E a)) ∧ (∀ (j : Fin r) (g : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))), φ j (μ (ArithmeticThetaGeometricNormR0150.fieldNorm μ g)) = ∏ ab : Fin d × Fin d, E (ζ ^ ab.2.val) (φ (ArithmeticThetaSplitNormR0153.shift (hr := hr) j (ArithmeticThetaSplitNormR0153.kernelIndex (hr := hr) d ab.1)) g)) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)]
+      (rot : CategoryTheory.Iso M.X M.X) (scal : kˣ → (CategoryTheory.Iso M.X M.X))
+      (inv : CategoryTheory.Iso M.X M.X)
+      (ha : ArithmeticThetaModelSymmetriesR0137.Actions k M rot scal inv)
+      (χ : Fin r → Quiver.Hom (ArithmeticThetaKatoAnnularR0152.chartScheme k) M.X)
+      (hχ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartMap k M j (χ j))
+      (φ :
+        Fin r →
+          ((AlgebraicGeometry.Scheme.functionField
+              (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+            ArithmeticThetaKatoAnnularR0152.ChartField k))
+      (hφ : ∀ j, ArithmeticThetaKatoAnnularR0152.IsChartFieldMap k M (χ j) (φ j)) (d : ℕ)
+      (hd : 0 < d) (hdiv : d ∣ r) (ζ : kˣ) (hζ : IsPrimitiveRoot (ζ : k) d),
+      ∃ (μ :
+        (AlgebraicGeometry.Scheme.functionField
+            (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+          (AlgebraicGeometry.Scheme.functionField
+            (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)))
+        (e :
+        kˣ → (ArithmeticThetaKatoAnnularR0152.Chart k ≃+* ArithmeticThetaKatoAnnularR0152.Chart k))
+        (E :
+        kˣ →
+          (ArithmeticThetaKatoAnnularR0152.ChartField k ≃+*
+            ArithmeticThetaKatoAnnularR0152.ChartField k)),
+        ArithmeticThetaGeometricNormR0150.IsFieldMap
+            (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G d) μ ∧
+          (∀ a,
+              ArithmeticThetaSplitNormR0153.IsScaling k a (e a) ∧
+                ArithmeticThetaSplitNormR0153.ExtendsScaling k (e a) (E a)) ∧
+            (∀ (j : Fin r)
+              (g :
+                (AlgebraicGeometry.Scheme.functionField
+                  (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))),
+              φ j (μ (ArithmeticThetaGeometricNormR0150.fieldNorm μ g)) =
+                ∏ ab : Fin d × Fin d,
+                  E (ζ ^ ab.2.val)
+                    (φ
+                      (ArithmeticThetaSplitNormR0153.shift (hr := hr) j
+                        (ArithmeticThetaSplitNormR0153.kernelIndex (hr := hr) d ab.1))
+                      g)) := by
   intro k _ _ r hr h3 T he M hM s hs G hG _ rot scal inv ha χ hχ φ hφ d hd hdiv ζ hζ
   classical
   obtain ⟨μ, hμ, _⟩ :=

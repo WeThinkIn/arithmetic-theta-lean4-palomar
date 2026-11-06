@@ -310,7 +310,47 @@ end TateInvariantComponentRatios
 /-- The actual invariant-line components for the matched literal Tate lifts
 are the complete unary ratios, as morphisms of sheaves. -/
 theorem tate_invariant_component_ratios :
-    ∀ (k : Type) [Field k] [CharZero k] (m : ℕ) (hm : 0 < m) (he : Even m) (Vd : ArithmeticThetaTateCuspsR0181.TateLevel k (2*m)) (ζ : kˣ) (hζ : IsPrimitiveRoot (ζ : k) (2*m)) (Q : ArithmeticThetaSharpCoverR0194.FullLevelProjectiveRatiosR0194.ArithmeticFamily.LocalTheta.MarkedModel k m hm Vd ζ), ∀ (a : ArithmeticThetaSchemeThetaMarkingR0259.Lift (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) m (ArithmeticThetaSchemeThetaMarkingR0259.translation (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) (ArithmeticThetaTateSchemeMarkingR0263.pointX k Vd))) (b : ArithmeticThetaSchemeThetaMarkingR0259.Lift (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) m (ArithmeticThetaSchemeThetaMarkingR0259.translation (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) (ArithmeticThetaTateSchemeMarkingR0263.pointY k Vd))), ArithmeticThetaTateSchemeMarkingR0263.scalarLiftFacts k Vd Q he hζ a → ArithmeticThetaTateSchemeMarkingR0263.shiftLiftFacts k Vd Q he b → ∀ (A B : CategoryTheory.End (ArithmeticThetaSchemeSchrodingerR0261.V (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) m)), ArithmeticThetaSchemeSchrodingerR0261.IsAction (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) m (ArithmeticThetaSchemeThetaMarkingR0259.translation (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) (ArithmeticThetaTateSchemeMarkingR0263.pointX k Vd)) a A → ArithmeticThetaSchemeSchrodingerR0261.IsAction (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) m (ArithmeticThetaSchemeThetaMarkingR0259.translation (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) (ArithmeticThetaTateSchemeMarkingR0263.pointY k Vd)) b B → ArithmeticThetaInvariantRatiosR0265.ComponentRatios (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) m hm A B (ArithmeticThetaInvariantRatiosR0265.unaryRatio k m hm) := by
+    ∀ (k : Type) [Field k] [CharZero k] (m : ℕ) (hm : 0 < m) (he : Even m)
+      (Vd : ArithmeticThetaTateCuspsR0181.TateLevel k (2 * m)) (ζ : kˣ)
+      (hζ : IsPrimitiveRoot (ζ : k) (2 * m))
+      (Q :
+        ArithmeticThetaSharpCoverR0194.FullLevelProjectiveRatiosR0194.ArithmeticFamily.LocalTheta.MarkedModel
+          k m hm Vd ζ),
+      ∀
+        (a :
+          ArithmeticThetaSchemeThetaMarkingR0259.Lift
+            (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) m
+            (ArithmeticThetaSchemeThetaMarkingR0259.translation
+              (ArithmeticThetaTateSchemeMarkingR0263.family k Vd)
+              (ArithmeticThetaTateSchemeMarkingR0263.pointX k Vd)))
+        (b :
+          ArithmeticThetaSchemeThetaMarkingR0259.Lift
+            (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) m
+            (ArithmeticThetaSchemeThetaMarkingR0259.translation
+              (ArithmeticThetaTateSchemeMarkingR0263.family k Vd)
+              (ArithmeticThetaTateSchemeMarkingR0263.pointY k Vd))),
+        ArithmeticThetaTateSchemeMarkingR0263.scalarLiftFacts k Vd Q he hζ a →
+          ArithmeticThetaTateSchemeMarkingR0263.shiftLiftFacts k Vd Q he b →
+            ∀
+              (A B :
+                CategoryTheory.End
+                  (ArithmeticThetaSchemeSchrodingerR0261.V
+                    (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) m)),
+              ArithmeticThetaSchemeSchrodingerR0261.IsAction
+                  (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) m
+                  (ArithmeticThetaSchemeThetaMarkingR0259.translation
+                    (ArithmeticThetaTateSchemeMarkingR0263.family k Vd)
+                    (ArithmeticThetaTateSchemeMarkingR0263.pointX k Vd))
+                  a A →
+                ArithmeticThetaSchemeSchrodingerR0261.IsAction
+                    (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) m
+                    (ArithmeticThetaSchemeThetaMarkingR0259.translation
+                      (ArithmeticThetaTateSchemeMarkingR0263.family k Vd)
+                      (ArithmeticThetaTateSchemeMarkingR0263.pointY k Vd))
+                    b B →
+                  ArithmeticThetaInvariantRatiosR0265.ComponentRatios
+                    (ArithmeticThetaTateSchemeMarkingR0263.family k Vd) m hm A B
+                    (ArithmeticThetaInvariantRatiosR0265.unaryRatio k m hm) := by
   intro k _ _ m hm he Vd ζ hζ Q a b ha hb A B hA hB
   exact TateInvariantComponentRatios.component_ratios k Vd Q he hζ a b ha hb A B hA hB
 

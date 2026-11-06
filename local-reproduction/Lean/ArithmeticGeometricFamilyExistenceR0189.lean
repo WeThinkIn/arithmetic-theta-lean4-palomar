@@ -17,7 +17,38 @@ open ArithmeticThetaCompatibleLevelR0178 ArithmeticThetaOpenHodgeR0180
 /-- All geometric inputs to the accepted section construction are produced
 from the valid positive-rank matrix family. -/
 theorem arithmetic_geometric_family_existence :
-∀ (n h : ℕ), 0 < n → 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∃ U : ArithmeticThetaLatticeSectionsR0188.Indexing A, ArithmeticThetaLatticeSectionsR0188.Indexed A U ∧ ArithmeticThetaLatticeSectionsR0188.FormalIdentity A U ∧ ∃ (D : ArithmeticThetaLevelCompactificationR0179.LevelData ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A))) (X : ArithmeticThetaLevelCompactificationR0179.Compactification ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X), ArithmeticThetaBoundaryHodgeR0182.Canonical ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) H ∧ ∃ (V : ArithmeticThetaBoundaryHodgeR0182.DiskTest ℂ (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) D X), ArithmeticThetaLatticeSectionsR0188.GeometricFamily A U H V := by
+    ∀ (n h : ℕ),
+      0 < n →
+        0 < h →
+          ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h),
+            (∀ i, ArithmeticThetaComputed.validGram (A i)) →
+              ∃ U : ArithmeticThetaLatticeSectionsR0188.Indexing A,
+                ArithmeticThetaLatticeSectionsR0188.Indexed A U ∧
+                  ArithmeticThetaLatticeSectionsR0188.FormalIdentity A U ∧
+                    ∃ (D :
+                      ArithmeticThetaLevelCompactificationR0179.LevelData ℂ
+                        (ArithmeticThetaCompactUnaryR0183.level
+                          (ArithmeticThetaLatticeSectionsR0188.commonN A)))
+                      (X :
+                      ArithmeticThetaLevelCompactificationR0179.Compactification ℂ
+                        (ArithmeticThetaCompactUnaryR0183.level
+                          (ArithmeticThetaLatticeSectionsR0188.commonN A))
+                        D)
+                      (H :
+                      ArithmeticThetaBoundaryHodgeR0182.Extension ℂ
+                        (ArithmeticThetaCompactUnaryR0183.level
+                          (ArithmeticThetaLatticeSectionsR0188.commonN A))
+                        D X),
+                      ArithmeticThetaBoundaryHodgeR0182.Canonical ℂ
+                          (ArithmeticThetaCompactUnaryR0183.level
+                            (ArithmeticThetaLatticeSectionsR0188.commonN A))
+                          H ∧
+                        ∃ (V :
+                          ArithmeticThetaBoundaryHodgeR0182.DiskTest ℂ
+                            (ArithmeticThetaCompactUnaryR0183.level
+                              (ArithmeticThetaLatticeSectionsR0188.commonN A))
+                            D X),
+                          ArithmeticThetaLatticeSectionsR0188.GeometricFamily A U H V := by
   intro n h hn hh A hA
   classical
   obtain ⟨hN, _, _, _, _, _, _⟩ := indexed_full_unary_factorization n h hn hh A hA

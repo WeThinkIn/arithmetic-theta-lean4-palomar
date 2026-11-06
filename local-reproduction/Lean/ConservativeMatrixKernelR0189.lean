@@ -79,10 +79,30 @@ private lemma kernel_of_vanishing {n h : ℕ} (A : Matrices n h)
 
 end ConservativeMatrixKernel
 
+/-- The coefficient prefix through `B` detects every full-series relation. -/
+abbrev PrefixDeterminesKernel {n h : ℕ} (A : Matrices n h) (B : ℕ) : Prop :=
+  LinearMap.ker (thetaMap A) =
+    LinearMap.ker ((coefficientMatrix A B).map (algebraMap ℚ ℂ)).mulVecLin
+
+/-- The conservative bound, including its rank-zero case and exact rational value.
+`Indexing`, `Indexed` and `FormalIdentity` retain the actual unary factorization
+and its complete formal-series identity. -/
+abbrev CutoffSpecification {n h : ℕ} (A : Matrices n h) (B : ℕ) : Prop :=
+  if n = 0 then B = 0
+  else ∃ U : Indexing A,
+    Indexed A U ∧ FormalIdentity A U ∧ B = cutoff A U ∧
+      (B : ℚ) = (n : ℚ) * (exponent (commonN A) : ℚ) ^ U.count *
+        ArithmeticThetaLevelCount.levelIndex (level (commonN A)) / 48
+
 /-- The full complex kernel equals every computed prefix kernel at and above
 its exact integral conservative bound. -/
 theorem conservative_matrix_kernel :
-∀ (n h : ℕ), 0 < h → ∀ (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∃ B : ℕ, (if n = 0 then B = 0 else ∃ U : ArithmeticThetaLatticeSectionsR0188.Indexing A, ArithmeticThetaLatticeSectionsR0188.Indexed A U ∧ ArithmeticThetaLatticeSectionsR0188.FormalIdentity A U ∧ B = ArithmeticThetaConservativeKernelR0189.cutoff A U ∧ (B : ℚ) = (n : ℚ) * ((ArithmeticThetaCompactUnaryR0183.exponent (ArithmeticThetaLatticeSectionsR0188.commonN A) : ℕ) : ℚ)^U.count * ArithmeticThetaLevelCount.levelIndex (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) / 48) ∧ (∀ B' : ℕ, B ≤ B' → LinearMap.ker (ArithmeticThetaComputed.thetaMap A) = LinearMap.ker (((ArithmeticThetaComputed.coefficientMatrix A B').map (algebraMap ℚ ℂ)).mulVecLin)) ∧ (n = 0 → ∀ c : Fin h → ℂ, ArithmeticThetaComputed.thetaMap A c = PowerSeries.C (∑ i : Fin h, c i)) := by
+    ∀ (n h : ℕ), 0 < h → ∀ (A : Matrices n h),
+      (∀ i, validGram (A i)) →
+      ∃ B : ℕ,
+        CutoffSpecification A B ∧
+        (∀ B' : ℕ, B ≤ B' → PrefixDeterminesKernel A B') ∧
+        (n = 0 → ∀ c : Fin h → ℂ, thetaMap A c = PowerSeries.C (∑ i, c i)) := by
   intro n h hh A hA
   classical
   by_cases hn : n = 0
@@ -99,7 +119,7 @@ theorem conservative_matrix_kernel :
     obtain ⟨U, hU, hformal, D, X, H, hH, V, hfamily⟩ :=
       arithmetic_geometric_family_existence n h hn' hh A hA
     refine ⟨cutoff A U, ?_, ?_, ?_⟩
-    · rw [if_neg hn]
+    · rw [CutoffSpecification, if_neg hn]
       exact ⟨U, hU, hformal, rfl, ConservativeMatrixKernel.cutoff_rational A U
         (indexed_full_unary_factorization n h hn' hh A hA).1⟩
     · exact ConservativeMatrixKernel.kernel_of_vanishing A hA (cutoff A U)

@@ -37,7 +37,20 @@ end RelativeTorsionCartier
 /-- The actual origin and every positive multiplication pullback are Cartier
 on the whole relative projective Weierstrass curve. -/
 theorem relative_torsion_cartier :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G), ArithmeticThetaPolygonCartierR0133.IsEffectiveCartierIdeal (ArithmeticThetaRelativeKatoNaturalityR0170.identityIdeal R W) ∧ ∀ n : ℕ, 0 < n → ArithmeticThetaPolygonCartierR0133.IsEffectiveCartierIdeal (ArithmeticThetaRelativeKatoNaturalityR0170.torsionIdeal R W G n) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G),
+      ArithmeticThetaPolygonCartierR0133.IsEffectiveCartierIdeal
+          (ArithmeticThetaRelativeKatoNaturalityR0170.identityIdeal R W) ∧
+        ∀ n : ℕ,
+          0 < n →
+            ArithmeticThetaPolygonCartierR0133.IsEffectiveCartierIdeal
+              (ArithmeticThetaRelativeKatoNaturalityR0170.torsionIdeal R W G n) := by
   intro R _ _ _ _ _ W _ _ _ _ _ G hG
   let : SmoothOfRelativeDimension 1 (structureMap R W) :=
     (relative_curve_geometry R W).2.2.2.2.2.1

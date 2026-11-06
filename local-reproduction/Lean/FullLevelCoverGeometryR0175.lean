@@ -433,7 +433,16 @@ open CoverGeometryR0175 AlgebraicGeometry ArithmeticThetaRelativeKatoR0169
 
 /-- The full GL level cover is finite étale and surjective, with its actual rank. -/
 theorem full_level_cover_geometry :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 0 < L) (Z : ArithmeticThetaFullLevelCoverR0175.LevelScheme R W G L) (hZ : ArithmeticThetaFullLevelCoverR0175.Represents R W G Z), AlgebraicGeometry.IsFinite Z.projection ∧ AlgebraicGeometry.Etale Z.projection ∧ AlgebraicGeometry.Surjective Z.projection ∧ ∀ z, Z.projection.finrank z = ArithmeticThetaFullLevelCoverR0175.levelDegree L := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 0 < L)
+      (Z : ArithmeticThetaFullLevelCoverR0175.LevelScheme R W G L)
+      (hZ : ArithmeticThetaFullLevelCoverR0175.Represents R W G Z),
+      AlgebraicGeometry.IsFinite Z.projection ∧
+        AlgebraicGeometry.Etale Z.projection ∧
+          AlgebraicGeometry.Surjective Z.projection ∧
+            ∀ z, Z.projection.finrank z = ArithmeticThetaFullLevelCoverR0175.levelDegree L := by
   intro R _ _ _ _ _ W _ G hG L hL Z hZ
   obtain ⟨hf,he⟩ := representing_finite_etale R W G hG L hL Z hZ
   letI := hf

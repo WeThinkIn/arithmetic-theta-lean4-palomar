@@ -29,7 +29,50 @@ private lemma thetaZ_complex {n : ℕ} (A : Matrix (Fin n) (Fin n) ℤ) :
   simp [thetaZ, ArithmeticThetaComputed.theta, castVec]
 
 /-- Complete common-parameter identity for every complex coefficient family. -/
-theorem computed_family_formal_unary_consumer : ∀ (n h : ℕ) (A : Fin h → Matrix (Fin n) (Fin n) ℤ), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∀ (D : ℕ) (hD : D ≠ 0), (∀ (i : Fin h) (j : Fin n), 2 * (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j) ∣ D) → ∃ (t : (i : Fin h) → Fin (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)).det.natAbs → ArithmeticThetaOrthogonalConsumerR0127.preimageLattice (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i))) (ν : (i : Fin h) → Fin (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)).det.natAbs → (j : Fin n) → Fin (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j)) (hw : ∀ (i : Fin h) (j : Fin n), D / (2 * (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j)) ≠ 0), (∀ i, ArithmeticThetaOrthogonalConsumerR0127.Representatives (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)) (t i)) ∧ (∀ (i : Fin h) (a : Fin (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)).det.natAbs) (j : Fin n), ∃ z : ℤ, ((ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j) : ℚ) * (t i a).val j = ((ν i a j).val : ℚ) + ((ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j) : ℚ) * (z : ℚ)) ∧ (∀ c : Fin h → ℂ, PowerSeries.expand D hD (ArithmeticThetaComputed.thetaMap A c) = ∑ i : Fin h, c i • (∑ a : Fin (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)).det.natAbs, ∏ j : Fin n, PowerSeries.expand (D / (2 * (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j))) (hw i j) (ArithmeticThetaSchrodingerR0119.unary ℂ (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j) (ν i a j)))) := by
+theorem computed_family_formal_unary_consumer :
+    ∀ (n h : ℕ) (A : Fin h → Matrix (Fin n) (Fin n) ℤ),
+      (∀ i, ArithmeticThetaComputed.validGram (A i)) →
+        ∀ (D : ℕ) (hD : D ≠ 0),
+          (∀ (i : Fin h) (j : Fin n),
+              2 * (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j) ∣ D) →
+            ∃ (t :
+              (i : Fin h) →
+                Fin (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)).det.natAbs →
+                  ArithmeticThetaOrthogonalConsumerR0127.preimageLattice
+                    (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)))
+              (ν :
+              (i : Fin h) →
+                Fin (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)).det.natAbs →
+                  (j : Fin n) → Fin (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j))
+              (hw :
+              ∀ (i : Fin h) (j : Fin n),
+                D / (2 * (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j)) ≠ 0),
+              (∀ i,
+                  ArithmeticThetaOrthogonalConsumerR0127.Representatives
+                    (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)) (t i)) ∧
+                (∀ (i : Fin h)
+                    (a : Fin (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)).det.natAbs)
+                    (j : Fin n),
+                    ∃ z : ℤ,
+                      ((ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j) : ℚ) *
+                          (t i a).val j =
+                        ((ν i a j).val : ℚ) +
+                          ((ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j) : ℚ) *
+                            (z : ℚ)) ∧
+                  (∀ c : Fin h → ℂ,
+                    PowerSeries.expand D hD (ArithmeticThetaComputed.thetaMap A c) =
+                      ∑ i : Fin h,
+                        c i •
+                          (∑ a :
+                            Fin (ArithmeticThetaOrthogonalAlgorithm.basisMatrix (A i)).det.natAbs,
+                            ∏ j : Fin n,
+                              PowerSeries.expand
+                                (D /
+                                  (2 * (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j)))
+                                (hw i j)
+                                (ArithmeticThetaSchrodingerR0119.unary ℂ
+                                  (ArithmeticThetaOrthogonalAlgorithm.naturalNorms (A i) j)
+                                  (ν i a j)))) := by
   intro n h A hA D hD hd
   classical
   have hc i := computed_orthogonalization n (A i) (hA i).1 (hA i).2.1 (hA i).2.2

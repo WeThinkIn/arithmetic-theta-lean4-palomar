@@ -115,7 +115,33 @@ open ArithmeticThetaGlobalFourTorsionR0190
 /-- Naturality for arbitrary normal-affine base changes, including noninjective
 specializations and changes of Weierstrass presentation. -/
 theorem relative_phase_base_change :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W), ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G → ∀ (M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))) (S : Type u) [CommRing S] [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S] (Ws : WeierstrassCurve S) [Ws.IsElliptic] (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws), ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs → ∀ (Ms : ArithmeticThetaFullLevelCoverR0175.FullLevel S Ws Gs 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base S))) (ι : R →+* S) (b : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws) (ArithmeticThetaRelativeKatoR0169.Curve R W)), ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b → ArithmeticThetaRelativeFourCharacterR0211.MarkingCompatible R W G M S Ws Gs Ms ι b → ∀ (z : R) (zs : S), ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase R W G M z → ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase S Ws Gs Ms zs → ι z = zs := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W),
+      ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G →
+        ∀
+          (M :
+            ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4
+              (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)))
+          (S : Type u) [CommRing S] [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S]
+          [Algebra ℚ S] (Ws : WeierstrassCurve S) [Ws.IsElliptic]
+          (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws),
+          ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs →
+            ∀
+              (Ms :
+                ArithmeticThetaFullLevelCoverR0175.FullLevel S Ws Gs 4
+                  (CategoryTheory.CategoryStruct.id
+                    (ArithmeticThetaRelativeDiscriminantR0171.Base S)))
+              (ι : R →+* S)
+              (b :
+                Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws)
+                  (ArithmeticThetaRelativeKatoR0169.Curve R W)),
+              ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b →
+                ArithmeticThetaRelativeFourCharacterR0211.MarkingCompatible R W G M S Ws Gs Ms ι b →
+                  ∀ (z : R) (zs : S),
+                    ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase R W G M z →
+                      ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase S Ws Gs Ms zs →
+                        ι z = zs := by
   intro R _ _ _ _ _ W _ G hG M S _ _ _ _ _ V _ H hH N ι b hb hM z zs hz hzs
   classical
   letI := (relative_curve_geometry S V).1

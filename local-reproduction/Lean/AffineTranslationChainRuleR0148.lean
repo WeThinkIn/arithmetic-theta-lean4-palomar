@@ -885,7 +885,39 @@ open AffineTranslationChainRule
 /-- The normalized actual affine translation chain rule, for every rational point
 and every regular function on the fixed complement. -/
 theorem affine_translation_chain_rule :
-∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s), ∀ (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2) (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3), ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X → ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y → ∀ (G : ArithmeticThetaMarkedGroupLawR0146.Law k M), ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G → ∀ (δ : ArithmeticThetaHodgeFourTorsionR0147.Frame k M), ArithmeticThetaCompactifiedDifferentialR0145.IsGlobalDifferentialFrame k M s X Y δ → ∀ (p : ArithmeticThetaHodgeFourTorsionR0147.Point k M), ∀ (a : (ArithmeticThetaGenericEvaluationR0140.genericScheme k M).presheaf.obj (Opposite.op (ArithmeticThetaCubicModelR0144.complement k M s))), ArithmeticThetaHodgeFourTorsionR0147.frameDerivative k M δ ((TopologicalSpace.Opens.map (ArithmeticThetaHodgeFourTorsionR0147.translation k M G p).base).obj (ArithmeticThetaCubicModelR0144.complement k M s)) ((ArithmeticThetaHodgeFourTorsionR0147.translation k M G p).app (ArithmeticThetaCubicModelR0144.complement k M s) a) = (ArithmeticThetaHodgeFourTorsionR0147.translation k M G p).app (ArithmeticThetaCubicModelR0144.complement k M s) (ArithmeticThetaHodgeFourTorsionR0147.frameDerivative k M δ (ArithmeticThetaCubicModelR0144.complement k M s) a) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s),
+      ∀ (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2)
+        (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3),
+        ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X →
+          ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y →
+            ∀ (G : ArithmeticThetaMarkedGroupLawR0146.Law k M),
+              ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G →
+                ∀ (δ : ArithmeticThetaHodgeFourTorsionR0147.Frame k M),
+                  ArithmeticThetaCompactifiedDifferentialR0145.IsGlobalDifferentialFrame k M s X Y
+                      δ →
+                    ∀ (p : ArithmeticThetaHodgeFourTorsionR0147.Point k M),
+                      ∀
+                        (a :
+                          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M).presheaf.obj
+                            (Opposite.op (ArithmeticThetaCubicModelR0144.complement k M s))),
+                        ArithmeticThetaHodgeFourTorsionR0147.frameDerivative k M δ
+                            ((TopologicalSpace.Opens.map
+                                  (ArithmeticThetaHodgeFourTorsionR0147.translation k M G
+                                      p).base).obj
+                              (ArithmeticThetaCubicModelR0144.complement k M s))
+                            ((ArithmeticThetaHodgeFourTorsionR0147.translation k M G p).app
+                              (ArithmeticThetaCubicModelR0144.complement k M s) a) =
+                          (ArithmeticThetaHodgeFourTorsionR0147.translation k M G p).app
+                            (ArithmeticThetaCubicModelR0144.complement k M s)
+                            (ArithmeticThetaHodgeFourTorsionR0147.frameDerivative k M δ
+                              (ArithmeticThetaCubicModelR0144.complement k M s) a) := by
   intro k _ _ r hr h3 T he M hM s hs X Y hX hY G hG e heN P a
   by_cases hP : P = G.one (𝟙 _)
   · subst P

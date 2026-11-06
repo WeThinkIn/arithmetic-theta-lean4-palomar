@@ -70,7 +70,16 @@ open GeneralKatoExistence
 /-- The unique function with the actual Kato divisor and every positive
 coprime multiplication norm, over the original coefficient field. -/
 theorem general_kato_existence :
-∀ (F : Type u) [Field F] [CharZero F] (W : WeierstrassCurve F) [W.IsElliptic] (G : ArithmeticThetaGeneralEllipticKatoR0168.Law F W) (hG : ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw F W G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)], ∀ (c : ℕ), 1 < c → Nat.Coprime c 6 → ∃! g : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField, ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction F W G c g := by
+    ∀ (F : Type u) [Field F] [CharZero F] (W : WeierstrassCurve F) [W.IsElliptic]
+      (G : ArithmeticThetaGeneralEllipticKatoR0168.Law F W)
+      (hG : ArithmeticThetaGeneralEllipticKatoR0168.IsOriginLaw F W G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W)],
+      ∀ (c : ℕ),
+        1 < c →
+          Nat.Coprime c 6 →
+            ∃! g : (ArithmeticThetaGeneralEllipticKatoR0168.Curve F W).functionField,
+              ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction F W G c g := by
   intro F _ _ W _ G hG _ _ c hc hc6
   letI : SmoothOfRelativeDimension 1 (structureMap F W) :=
     WeierstrassProjModel.projModelStrCR_smoothOfRelativeDimension_one W.toProjective

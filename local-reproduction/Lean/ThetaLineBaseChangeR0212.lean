@@ -111,7 +111,36 @@ end ThetaLineBaseChange
 /-- The canonical theta line and its section commute uniquely with the given
 pointed Cartesian comparison preserving the two full-four markings. -/
 theorem theta_line_base_change :
-    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W), ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G → ∀ M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)), ∀ (S : Type u) [CommRing S] [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S] (V : WeierstrassCurve S) [V.IsElliptic] (H : ArithmeticThetaRelativeKatoR0169.Law S V), ArithmeticThetaRelativeKatoR0169.IsOriginLaw S V H → ∀ (N : ArithmeticThetaFullLevelCoverR0175.FullLevel S V H 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base S))) (ι : R →+* S) (f : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S V) (ArithmeticThetaRelativeKatoR0169.Curve R W)) (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S V H ι f), ArithmeticThetaRelativeFourCharacterR0211.MarkingCompatible R W G M S V H N ι f → (ArithmeticThetaThetaEvaluationR0212.thetaIdeal R W G M).comap f = ArithmeticThetaThetaEvaluationR0212.thetaIdeal S V H N ∧ (∃! q : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback (f)).obj (ArithmeticThetaThetaEvaluationR0212.thetaLine R W G M)) (ArithmeticThetaThetaEvaluationR0212.thetaLine S V H N), ArithmeticThetaThetaEvaluationR0212.PreservesThetaSection R W G M S V H N f q) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W),
+      ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G →
+        ∀ M :
+          ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4
+            (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)),
+          ∀ (S : Type u) [CommRing S] [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S]
+            [Algebra ℚ S] (V : WeierstrassCurve S) [V.IsElliptic]
+            (H : ArithmeticThetaRelativeKatoR0169.Law S V),
+            ArithmeticThetaRelativeKatoR0169.IsOriginLaw S V H →
+              ∀
+                (N :
+                  ArithmeticThetaFullLevelCoverR0175.FullLevel S V H 4
+                    (CategoryTheory.CategoryStruct.id
+                      (ArithmeticThetaRelativeDiscriminantR0171.Base S)))
+                (ι : R →+* S)
+                (f :
+                  Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S V)
+                    (ArithmeticThetaRelativeKatoR0169.Curve R W))
+                (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S V H ι f),
+                ArithmeticThetaRelativeFourCharacterR0211.MarkingCompatible R W G M S V H N ι f →
+                  (ArithmeticThetaThetaEvaluationR0212.thetaIdeal R W G M).comap f =
+                      ArithmeticThetaThetaEvaluationR0212.thetaIdeal S V H N ∧
+                    (∃! q :
+                      CategoryTheory.Iso
+                        ((AlgebraicGeometry.Scheme.Modules.pullback (f)).obj
+                          (ArithmeticThetaThetaEvaluationR0212.thetaLine R W G M))
+                        (ArithmeticThetaThetaEvaluationR0212.thetaLine S V H N),
+                      ArithmeticThetaThetaEvaluationR0212.PreservesThetaSection R W G M S V H N f q) := by
   intro R _ _ _ _ _ W _ G hG M S _ _ _ _ _ V _ H hH N ι f hb hm
   have hI := ThetaLineBaseChange.thetaIdeal_comap R W G hG M S V H hH N ι f hb hm
   refine ⟨hI, ?_⟩

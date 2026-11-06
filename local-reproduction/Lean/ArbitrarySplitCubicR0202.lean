@@ -114,7 +114,15 @@ open ArithmeticThetaFullLevelCoverR0175 ArithmeticThetaLegendreComparisonR0177
 /-- Actual marked two-torsion coordinates split the completed cubic over every
 commutative rational base ring, with every pairwise difference a unit. -/
 theorem arbitrary_split_cubic :
-∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 2 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))) (e : Fin 3 → R), ArithmeticThetaLegendreComparisonR0177.TwoCoordinates R W G M e → ArithmeticThetaLegendreComparisonR0177.SplitCubic R W e := by
+    ∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G)
+      (M :
+        ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 2
+          (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)))
+      (e : Fin 3 → R),
+      ArithmeticThetaLegendreComparisonR0177.TwoCoordinates R W G M e →
+        ArithmeticThetaLegendreComparisonR0177.SplitCubic R W e := by
   intro R _ _ W _ G hG M e he
   have hu := ArbitrarySplitCubic.differences_units G hG M he
   obtain ⟨ha, hb, hc⟩ := ArbitrarySplitCubic.cubic_coefficients

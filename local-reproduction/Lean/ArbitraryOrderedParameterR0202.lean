@@ -16,7 +16,45 @@ open ArithmeticThetaLegendreComparisonR0177.OrderedLegendreParameterRigidity
 /-- Ordered marked Legendre parameters agree over arbitrary rational affine bases.
 Equality is tested in localizations, so no reducedness hypothesis is needed. -/
 theorem arbitrary_ordered_parameter :
-∀ (R : Type u) [CommRing R] [Algebra ℚ R] (lam mu : R), IsUnit (lam * (lam - 1)) → IsUnit (mu * (mu - 1)) → ∀ (p0 p1 : Quiver.Hom (ArithmeticThetaRelativeDiscriminantR0171.Base R) (ArithmeticThetaRelativeKatoR0169.Curve R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam))) (q0 q1 : Quiver.Hom (ArithmeticThetaRelativeDiscriminantR0171.Base R) (ArithmeticThetaRelativeKatoR0169.Curve R (ArithmeticThetaLegendreComparisonR0177.legendreAt R mu))), ArithmeticThetaLegendreComparisonR0177.HasCoordinates R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) p0 0 0 → ArithmeticThetaLegendreComparisonR0177.HasCoordinates R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) p1 1 0 → ArithmeticThetaLegendreComparisonR0177.HasCoordinates R (ArithmeticThetaLegendreComparisonR0177.legendreAt R mu) q0 0 0 → ArithmeticThetaLegendreComparisonR0177.HasCoordinates R (ArithmeticThetaLegendreComparisonR0177.legendreAt R mu) q1 1 0 → ∀ f : CategoryTheory.Iso (ArithmeticThetaRelativeKatoR0169.Curve R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam)) (ArithmeticThetaRelativeKatoR0169.Curve R (ArithmeticThetaLegendreComparisonR0177.legendreAt R mu)), CategoryTheory.CategoryStruct.comp (f.hom) (ArithmeticThetaRelativeKatoR0169.structureMap R (ArithmeticThetaLegendreComparisonR0177.legendreAt R mu)) = ArithmeticThetaRelativeKatoR0169.structureMap R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) → CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeKatoR0169.origin R (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam)) (f.hom) = ArithmeticThetaRelativeKatoR0169.origin R (ArithmeticThetaLegendreComparisonR0177.legendreAt R mu) → CategoryTheory.CategoryStruct.comp (p0) (f.hom) = q0 → CategoryTheory.CategoryStruct.comp (p1) (f.hom) = q1 → lam = mu := by
+    ∀ (R : Type u) [CommRing R] [Algebra ℚ R] (lam mu : R),
+      IsUnit (lam * (lam - 1)) →
+        IsUnit (mu * (mu - 1)) →
+          ∀
+            (p0 p1 :
+              Quiver.Hom (ArithmeticThetaRelativeDiscriminantR0171.Base R)
+                (ArithmeticThetaRelativeKatoR0169.Curve R
+                  (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam)))
+            (q0 q1 :
+              Quiver.Hom (ArithmeticThetaRelativeDiscriminantR0171.Base R)
+                (ArithmeticThetaRelativeKatoR0169.Curve R
+                  (ArithmeticThetaLegendreComparisonR0177.legendreAt R mu))),
+            ArithmeticThetaLegendreComparisonR0177.HasCoordinates R
+                (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) p0 0 0 →
+              ArithmeticThetaLegendreComparisonR0177.HasCoordinates R
+                  (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) p1 1 0 →
+                ArithmeticThetaLegendreComparisonR0177.HasCoordinates R
+                    (ArithmeticThetaLegendreComparisonR0177.legendreAt R mu) q0 0 0 →
+                  ArithmeticThetaLegendreComparisonR0177.HasCoordinates R
+                      (ArithmeticThetaLegendreComparisonR0177.legendreAt R mu) q1 1 0 →
+                    ∀ f :
+                      CategoryTheory.Iso
+                        (ArithmeticThetaRelativeKatoR0169.Curve R
+                          (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam))
+                        (ArithmeticThetaRelativeKatoR0169.Curve R
+                          (ArithmeticThetaLegendreComparisonR0177.legendreAt R mu)),
+                      CategoryTheory.CategoryStruct.comp (f.hom)
+                            (ArithmeticThetaRelativeKatoR0169.structureMap R
+                              (ArithmeticThetaLegendreComparisonR0177.legendreAt R mu)) =
+                          ArithmeticThetaRelativeKatoR0169.structureMap R
+                            (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam) →
+                        CategoryTheory.CategoryStruct.comp
+                              (ArithmeticThetaRelativeKatoR0169.origin R
+                                (ArithmeticThetaLegendreComparisonR0177.legendreAt R lam))
+                              (f.hom) =
+                            ArithmeticThetaRelativeKatoR0169.origin R
+                              (ArithmeticThetaLegendreComparisonR0177.legendreAt R mu) →
+                          CategoryTheory.CategoryStruct.comp (p0) (f.hom) = q0 →
+                            CategoryTheory.CategoryStruct.comp (p1) (f.hom) = q1 → lam = mu := by
   intro R _ _ lam mu _hlam _hmu p0 p1 q0 q1 hp0 hp1 hq0 hq1 f hf ho h0 h1
   apply Module.eq_of_localization_maximal
     (fun P _ => Localization.AtPrime P)

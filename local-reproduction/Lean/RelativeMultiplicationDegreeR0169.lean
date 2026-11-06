@@ -138,7 +138,23 @@ end RelativeMultiplicationDegree
 
 /-- Positive multiplication on the entire relative curve, with its actual field action. -/
 theorem relative_multiplication_degree :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G), ∀ (n : ℕ), 0 < n → AlgebraicGeometry.IsFinite (G.schemeNsmul n) ∧ AlgebraicGeometry.Etale (G.schemeNsmul n) ∧ AlgebraicGeometry.Surjective (G.schemeNsmul n) ∧ (∀ x, (G.schemeNsmul n).finrank x = n^2) ∧ ∃ φ : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField →+* (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField, ArithmeticThetaGeometricNormR0150.IsFieldMap (G.schemeNsmul n) φ ∧ ArithmeticThetaGeneralEllipticKatoR0168.HasFieldDegree φ (n^2) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G),
+      ∀ (n : ℕ),
+        0 < n →
+          AlgebraicGeometry.IsFinite (G.schemeNsmul n) ∧
+            AlgebraicGeometry.Etale (G.schemeNsmul n) ∧
+              AlgebraicGeometry.Surjective (G.schemeNsmul n) ∧
+                (∀ x, (G.schemeNsmul n).finrank x = n ^ 2) ∧
+                  ∃ φ :
+                    (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField →+*
+                      (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField,
+                    ArithmeticThetaGeometricNormR0150.IsFieldMap (G.schemeNsmul n) φ ∧
+                      ArithmeticThetaGeneralEllipticKatoR0168.HasFieldDegree φ (n ^ 2) := by
   intro R _ _ _ _ _ W _ _ _ G hG n hn
   letI : SmoothOfRelativeDimension 1 (structureMap R W) :=
     WeierstrassProjModel.projModelStrCR_smoothOfRelativeDimension_one W.toProjective

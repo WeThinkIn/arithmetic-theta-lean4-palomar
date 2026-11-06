@@ -173,7 +173,28 @@ open MultiplicationFiniteEtaleDegree
 /-- Multiplication by every positive integer on the actual algebraized generic
 curve is finite étale and surjective, of rank exactly the square of that integer. -/
 theorem multiplication_finite_etale_degree :
-∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s), ∀ (G : ArithmeticThetaMarkedGroupLawR0146.Law k M), ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G → ∀ (n : ℕ), 0 < n → AlgebraicGeometry.IsFinite (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n) ∧ AlgebraicGeometry.Etale (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n) ∧ AlgebraicGeometry.Surjective (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n) ∧ ∀ z : ArithmeticThetaGenericEvaluationR0140.genericScheme k M, AlgebraicGeometry.Scheme.Hom.finrank (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n) z = n^2 := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s),
+      ∀ (G : ArithmeticThetaMarkedGroupLawR0146.Law k M),
+        ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G →
+          ∀ (n : ℕ),
+            0 < n →
+              AlgebraicGeometry.IsFinite
+                  (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n) ∧
+                AlgebraicGeometry.Etale
+                    (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n) ∧
+                  AlgebraicGeometry.Surjective
+                      (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n) ∧
+                    ∀ z : ArithmeticThetaGenericEvaluationR0140.genericScheme k M,
+                      AlgebraicGeometry.Scheme.Hom.finrank
+                          (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n) z =
+                        n ^ 2 := by
   intro k _ _ r hr h3 T he M hM s hs G hG n hn
   classical
   obtain ⟨X,hX,_⟩ := algebraic_tate_coordinates k r hr h3 T M hM s hs false

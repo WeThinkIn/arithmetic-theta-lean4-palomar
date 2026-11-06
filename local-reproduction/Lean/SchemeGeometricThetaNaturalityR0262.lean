@@ -18,7 +18,75 @@ open ArithmeticThetaLocalWeierstrassR0203 ArithmeticThetaSchemeLevelR0204
 open ArithmeticThetaSchemeThetaMarkingR0259 ArithmeticThetaSchemeSchrodingerR0261
 
 theorem scheme_geometric_theta_naturality :
-    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S), ∀ (T : AlgebraicGeometry.Scheme.{u}) (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (b : Quiver.Hom T S) (f : Quiver.Hom F.curve E.curve) (hc : CategoryTheory.IsPullback f F.p E.p b) (hz : CategoryTheory.CategoryStruct.comp F.zero f = CategoryTheory.CategoryStruct.comp b E.zero), ∀ (m : ℕ), 0 < m → Even m → ArithmeticThetaSchemeLevelR0204.Multiplicative E F b f → ∀ (M : ArithmeticThetaSchemeLevelR0204.FullLevel E (2*m)) (N : ArithmeticThetaSchemeLevelR0204.FullLevel F (2*m)), CategoryTheory.CategoryStruct.comp N.x.val f = CategoryTheory.CategoryStruct.comp b M.x.val → CategoryTheory.CategoryStruct.comp N.y.val f = CategoryTheory.CategoryStruct.comp b M.y.val → ((∀ (hc : CategoryTheory.IsPullback (CategoryTheory.CategoryStruct.id E.curve) E.p E.p (CategoryTheory.CategoryStruct.id S)) (hz : CategoryTheory.CategoryStruct.comp E.zero (CategoryTheory.CategoryStruct.id E.curve) = CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.id S) E.zero), ArithmeticThetaSchemeThetaNaturalityR0262.thetaComparison E E (CategoryTheory.CategoryStruct.id S) (CategoryTheory.CategoryStruct.id E.curve) hc hz m = (AlgebraicGeometry.Scheme.Modules.pullbackId E.curve).app (ArithmeticThetaSchemeThetaMarkingR0259.thetaLine E m)) ∧ (∀ (T : AlgebraicGeometry.Scheme.{u}) (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (b : Quiver.Hom T S) (f : Quiver.Hom F.curve E.curve) (hc : CategoryTheory.IsPullback f F.p E.p b) (hz : CategoryTheory.CategoryStruct.comp F.zero f = CategoryTheory.CategoryStruct.comp b E.zero), ∀ (U : AlgebraicGeometry.Scheme.{u}) (H : ArithmeticThetaLocalWeierstrassR0203.Family U) (c : Quiver.Hom U T) (g : Quiver.Hom H.curve F.curve) (hd : CategoryTheory.IsPullback g H.p F.p c) (hw : CategoryTheory.CategoryStruct.comp H.zero g = CategoryTheory.CategoryStruct.comp c F.zero) (he : CategoryTheory.IsPullback (CategoryTheory.CategoryStruct.comp g f) H.p E.p (CategoryTheory.CategoryStruct.comp c b)) (hv : CategoryTheory.CategoryStruct.comp H.zero (CategoryTheory.CategoryStruct.comp g f) = CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.comp c b) E.zero), ArithmeticThetaSchemeThetaNaturalityR0262.thetaComparison E H (CategoryTheory.CategoryStruct.comp c b) (CategoryTheory.CategoryStruct.comp g f) he hv m = CategoryTheory.Iso.trans ((AlgebraicGeometry.Scheme.Modules.pullbackComp g f).app (ArithmeticThetaSchemeThetaMarkingR0259.thetaLine E m)).symm (CategoryTheory.Iso.trans ((AlgebraicGeometry.Scheme.Modules.pullback g).mapIso (ArithmeticThetaSchemeThetaNaturalityR0262.thetaComparison E F b f hc hz m)) (ArithmeticThetaSchemeThetaNaturalityR0262.thetaComparison F H c g hd hw m)))) ∧ ArithmeticThetaSchemeThetaNaturalityR0262.GeometricNaturality E F b f hc hz m M N := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S),
+      ∀ (T : AlgebraicGeometry.Scheme.{u}) (F : ArithmeticThetaLocalWeierstrassR0203.Family T)
+        (b : Quiver.Hom T S) (f : Quiver.Hom F.curve E.curve)
+        (hc : CategoryTheory.IsPullback f F.p E.p b)
+        (hz :
+          CategoryTheory.CategoryStruct.comp F.zero f =
+            CategoryTheory.CategoryStruct.comp b E.zero),
+        ∀ (m : ℕ),
+          0 < m →
+            Even m →
+              ArithmeticThetaSchemeLevelR0204.Multiplicative E F b f →
+                ∀ (M : ArithmeticThetaSchemeLevelR0204.FullLevel E (2 * m))
+                  (N : ArithmeticThetaSchemeLevelR0204.FullLevel F (2 * m)),
+                  CategoryTheory.CategoryStruct.comp N.x.val f =
+                      CategoryTheory.CategoryStruct.comp b M.x.val →
+                    CategoryTheory.CategoryStruct.comp N.y.val f =
+                        CategoryTheory.CategoryStruct.comp b M.y.val →
+                      ((∀
+                            (hc :
+                              CategoryTheory.IsPullback (CategoryTheory.CategoryStruct.id E.curve)
+                                E.p E.p (CategoryTheory.CategoryStruct.id S))
+                            (hz :
+                              CategoryTheory.CategoryStruct.comp E.zero
+                                  (CategoryTheory.CategoryStruct.id E.curve) =
+                                CategoryTheory.CategoryStruct.comp
+                                  (CategoryTheory.CategoryStruct.id S) E.zero),
+                            ArithmeticThetaSchemeThetaNaturalityR0262.thetaComparison E E
+                                (CategoryTheory.CategoryStruct.id S)
+                                (CategoryTheory.CategoryStruct.id E.curve) hc hz m =
+                              (AlgebraicGeometry.Scheme.Modules.pullbackId E.curve).app
+                                (ArithmeticThetaSchemeThetaMarkingR0259.thetaLine E m)) ∧
+                          (∀ (T : AlgebraicGeometry.Scheme.{u})
+                            (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (b : Quiver.Hom T S)
+                            (f : Quiver.Hom F.curve E.curve)
+                            (hc : CategoryTheory.IsPullback f F.p E.p b)
+                            (hz :
+                              CategoryTheory.CategoryStruct.comp F.zero f =
+                                CategoryTheory.CategoryStruct.comp b E.zero),
+                            ∀ (U : AlgebraicGeometry.Scheme.{u})
+                              (H : ArithmeticThetaLocalWeierstrassR0203.Family U)
+                              (c : Quiver.Hom U T) (g : Quiver.Hom H.curve F.curve)
+                              (hd : CategoryTheory.IsPullback g H.p F.p c)
+                              (hw :
+                                CategoryTheory.CategoryStruct.comp H.zero g =
+                                  CategoryTheory.CategoryStruct.comp c F.zero)
+                              (he :
+                                CategoryTheory.IsPullback (CategoryTheory.CategoryStruct.comp g f)
+                                  H.p E.p (CategoryTheory.CategoryStruct.comp c b))
+                              (hv :
+                                CategoryTheory.CategoryStruct.comp H.zero
+                                    (CategoryTheory.CategoryStruct.comp g f) =
+                                  CategoryTheory.CategoryStruct.comp
+                                    (CategoryTheory.CategoryStruct.comp c b) E.zero),
+                              ArithmeticThetaSchemeThetaNaturalityR0262.thetaComparison E H
+                                  (CategoryTheory.CategoryStruct.comp c b)
+                                  (CategoryTheory.CategoryStruct.comp g f) he hv m =
+                                CategoryTheory.Iso.trans
+                                  ((AlgebraicGeometry.Scheme.Modules.pullbackComp g f).app
+                                      (ArithmeticThetaSchemeThetaMarkingR0259.thetaLine E m)).symm
+                                  (CategoryTheory.Iso.trans
+                                    ((AlgebraicGeometry.Scheme.Modules.pullback g).mapIso
+                                      (ArithmeticThetaSchemeThetaNaturalityR0262.thetaComparison E F
+                                        b f hc hz m))
+                                    (ArithmeticThetaSchemeThetaNaturalityR0262.thetaComparison F H c
+                                      g hd hw m)))) ∧
+                        ArithmeticThetaSchemeThetaNaturalityR0262.GeometricNaturality E F b f hc hz
+                          m M N := by
   intro k _ _ S σ E T F b f hc hz m hm he hmul M N hx hy
   refine ⟨scheme_theta_comparison_coherence k S σ E m, ?_⟩
   obtain ⟨ι, α, β, c, A, B, hi, ha, hsa, hb, hsb, hcomm, hprim,

@@ -216,7 +216,22 @@ end InitialHodgeSection
 /-- The intrinsic initial Hodge tensor is obtained by gluing the actual
 unit quotients times the differential powers on every identity chart. -/
 theorem relative_initial_hodge_section :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (c : ℕ) (hc : 1 < c) (hc6 : Nat.Coprime c 6) (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField) (hg : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R W G c g), ∃! d : (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W (c^2-1)).presheaf.obj (Opposite.op ⊤), ArithmeticThetaRelativeDiscriminantR0171.RepresentsInitial R W G c g d ∧ ArithmeticThetaRelativeDiscriminantR0171.IsFrame (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W (c^2-1)) ⊤ d := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (c : ℕ) (hc : 1 < c)
+      (hc6 : Nat.Coprime c 6) (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField)
+      (hg : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R W G c g),
+      ∃! d :
+        (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W (c ^ 2 - 1)).presheaf.obj
+          (Opposite.op ⊤),
+        ArithmeticThetaRelativeDiscriminantR0171.RepresentsInitial R W G c g d ∧
+          ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+            (ArithmeticThetaRelativeDiscriminantR0171.HodgePower R W (c ^ 2 - 1)) ⊤ d := by
   intro R _ _ _ _ _ W _ _ _ _ _ G hG c hc hc6 g hg
   classical
   letI : IsProper (structureMap R W) :=

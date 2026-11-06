@@ -183,7 +183,28 @@ open ArithmeticThetaRelativeKatoNaturalityR0170
 
 /-- The marked residue combinations split the entire scheme-theoretic torsion. -/
 theorem full_level_torsion_splitting :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 0 < L) (A : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))) , ∃ e : CategoryTheory.Iso (ArithmeticThetaRelativeKatoNaturalityR0170.torsionIdeal R W G L).subscheme (AlgebraicGeometry.Spec (CommRingCat.of ((Fin L × Fin L) → R))), CategoryTheory.CategoryStruct.comp e.hom (ArithmeticThetaFullLevelCoverR0175.torsionStructure R L) = CategoryTheory.CategoryStruct.comp (ArithmeticThetaRelativeKatoNaturalityR0170.torsionIdeal R W G L).subschemeι (ArithmeticThetaRelativeKatoR0169.structureMap R W) ∧ ∀ i j : Fin L, CategoryTheory.CategoryStruct.comp (ArithmeticThetaFullLevelCoverR0175.torsionComponent R L i j) (CategoryTheory.CategoryStruct.comp e.inv (ArithmeticThetaRelativeKatoNaturalityR0170.torsionIdeal R W G L).subschemeι) = ArithmeticThetaFullLevelCoverR0175.coordinatePoint R W G A i j := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 0 < L)
+      (A :
+        ArithmeticThetaFullLevelCoverR0175.FullLevel R W G L
+          (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))),
+      ∃ e :
+        CategoryTheory.Iso
+          (ArithmeticThetaRelativeKatoNaturalityR0170.torsionIdeal R W G L).subscheme
+          (AlgebraicGeometry.Spec (CommRingCat.of ((Fin L × Fin L) → R))),
+        CategoryTheory.CategoryStruct.comp e.hom
+              (ArithmeticThetaFullLevelCoverR0175.torsionStructure R L) =
+            CategoryTheory.CategoryStruct.comp
+              (ArithmeticThetaRelativeKatoNaturalityR0170.torsionIdeal R W G L).subschemeι
+              (ArithmeticThetaRelativeKatoR0169.structureMap R W) ∧
+          ∀ i j : Fin L,
+            CategoryTheory.CategoryStruct.comp
+                (ArithmeticThetaFullLevelCoverR0175.torsionComponent R L i j)
+                (CategoryTheory.CategoryStruct.comp e.inv
+                  (ArithmeticThetaRelativeKatoNaturalityR0170.torsionIdeal R W G L).subschemeι) =
+              ArithmeticThetaFullLevelCoverR0175.coordinatePoint R W G A i j := by
   intro R _ _ _ _ _ W _ G hG L hL A
   letI : SmoothOfRelativeDimension 1 (structureMap R W) :=
     WeierstrassProjModel.projModelStrCR_smoothOfRelativeDimension_one W.toProjective

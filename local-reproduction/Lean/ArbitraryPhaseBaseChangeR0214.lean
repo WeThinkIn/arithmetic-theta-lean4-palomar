@@ -182,7 +182,31 @@ end ArbitraryPhaseBaseChange
 /-- The exact normalized Miller phase is natural for the specified pointed
 Cartesian family map, with no reducedness, flatness or nontriviality hypothesis. -/
 theorem arbitrary_phase_base_change :
-∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W), ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G → ∀ (M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R))) (S : Type u) [CommRing S] [Algebra ℚ S] (Ws : WeierstrassCurve S) [Ws.IsElliptic] (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws), ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs → ∀ (Ms : ArithmeticThetaFullLevelCoverR0175.FullLevel S Ws Gs 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base S))) (ι : R →+* S) (b : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws) (ArithmeticThetaRelativeKatoR0169.Curve R W)), ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b → ArithmeticThetaRelativeFourCharacterR0211.MarkingCompatible R W G M S Ws Gs Ms ι b → ∀ (z : R) (zs : S), ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M z → ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase S Ws Gs Ms zs → ι z = zs := by
+    ∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W),
+      ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G →
+        ∀
+          (M :
+            ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4
+              (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)))
+          (S : Type u) [CommRing S] [Algebra ℚ S] (Ws : WeierstrassCurve S) [Ws.IsElliptic]
+          (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws),
+          ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs →
+            ∀
+              (Ms :
+                ArithmeticThetaFullLevelCoverR0175.FullLevel S Ws Gs 4
+                  (CategoryTheory.CategoryStruct.id
+                    (ArithmeticThetaRelativeDiscriminantR0171.Base S)))
+              (ι : R →+* S)
+              (b :
+                Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws)
+                  (ArithmeticThetaRelativeKatoR0169.Curve R W)),
+              ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b →
+                ArithmeticThetaRelativeFourCharacterR0211.MarkingCompatible R W G M S Ws Gs Ms ι b →
+                  ∀ (z : R) (zs : S),
+                    ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase R W G M z →
+                      ArithmeticThetaArbitraryFourCharacterR0214.MillerPhase S Ws Gs Ms zs →
+                        ι z = zs := by
   intro R _ _ W _ G hG M S _ _ V _ H hH N ι b hb hM z w hz hw
   apply ArbitraryPhaseBaseChange.square_root_ext (ι z) w
   · have hs := congrArg ι ((arbitrary_geometric_phase R W G hG M).2 z hz).2.2.1

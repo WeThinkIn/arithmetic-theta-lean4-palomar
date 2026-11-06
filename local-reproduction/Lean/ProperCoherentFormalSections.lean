@@ -1310,7 +1310,26 @@ section
 universe u
 /-- Coherent formal sections on all actual infinitesimal thickenings. -/
 theorem ArithmeticThetaGlobalization.proper_coherent_formal_sections :
-    ∀ (R : Type u) [CommRing R] [IsNoetherianRing R] (t : R) [IsAdicComplete (Ideal.span {t}) R] (X : AlgebraicGeometry.Scheme.{u}) (f : Quiver.Hom X (AlgebraicGeometry.Spec (CommRingCat.of R))) [AlgebraicGeometry.IsProper f] (H : X.Modules), H.IsQuasicoherent → (∀ U : X.Opens, AlgebraicGeometry.IsAffineOpen U → Module.Finite (X.presheaf.obj (Opposite.op U)) (H.presheaf.obj (Opposite.op U))) → ∀ s : ArithmeticThetaRootTorsor.FormalLineSections X (ArithmeticThetaGeometricPrerequisites.parameterIdeal R X f t) H, ArithmeticThetaRootTorsor.CompatibleFormalLineSections X (ArithmeticThetaGeometricPrerequisites.parameterIdeal R X f t) H s → ∃! a : H.presheaf.obj (Opposite.op ⊤), ∀ n : ℕ, ArithmeticThetaPullback.pullbackGlobalSection ((ArithmeticThetaGeometricPrerequisites.parameterIdeal R X f t ^ n).subschemeι) H a = s n := by
+    ∀ (R : Type u) [CommRing R] [IsNoetherianRing R] (t : R) [IsAdicComplete (Ideal.span { t }) R]
+      (X : AlgebraicGeometry.Scheme.{u})
+      (f : Quiver.Hom X (AlgebraicGeometry.Spec (CommRingCat.of R))) [AlgebraicGeometry.IsProper f]
+      (H : X.Modules),
+      H.IsQuasicoherent →
+        (∀ U : X.Opens,
+            AlgebraicGeometry.IsAffineOpen U →
+              Module.Finite (X.presheaf.obj (Opposite.op U)) (H.presheaf.obj (Opposite.op U))) →
+          ∀ s :
+            ArithmeticThetaRootTorsor.FormalLineSections X
+              (ArithmeticThetaGeometricPrerequisites.parameterIdeal R X f t) H,
+            ArithmeticThetaRootTorsor.CompatibleFormalLineSections X
+                (ArithmeticThetaGeometricPrerequisites.parameterIdeal R X f t) H s →
+              ∃! a : H.presheaf.obj (Opposite.op ⊤),
+                ∀ n : ℕ,
+                  ArithmeticThetaPullback.pullbackGlobalSection
+                      ((ArithmeticThetaGeometricPrerequisites.parameterIdeal R X f t ^
+                          n).subschemeι)
+                      H a =
+                    s n := by
   intro R _ _ t _ X f _ H hq hc s hs
   letI := hq
   exact ArithmeticThetaGlobalization.CoherentBridge.algebraize R X f t H hc

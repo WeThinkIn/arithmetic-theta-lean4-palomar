@@ -115,7 +115,125 @@ end EvenKeyBaseChange
 /-- The key formula commutes with arbitrary pointed Cartesian base change.
 The existential witness is explicitly the dual square of the actual baseChangeHom. -/
 theorem even_key_base_change :
-    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom (S) (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E), ∀ (z : S.presheaf.obj (Opposite.op ⊤)), z^2 = -1 → ∀ (D : ArithmeticThetaEvenMarkingTorsorR0216.Cover E), ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D → ∀ (L : S.Modules) (m : ((AlgebraicGeometry.Scheme.Modules.pullback D.projection).obj (L)).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaMultiplierKeyR0217.Multiplier E D z L m → ∀ (T : AlgebraicGeometry.Scheme.{u}) (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (Q : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint F) (b : Quiver.Hom (T) (S)) (f : Quiver.Hom (F.curve) (E.curve)) (hb : ArithmeticThetaEvenMarkingTorsorR0216.Cartesian E F b f), CategoryTheory.CategoryStruct.comp Q.point.val f = CategoryTheory.CategoryStruct.comp b P.point.val → ∀ (C : ArithmeticThetaEvenMarkingTorsorR0216.Cover F), ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven F Q (b.appTop z) C → ∀ (K : T.Modules) (n : ((AlgebraicGeometry.Scheme.Modules.pullback C.projection).obj (K)).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaMultiplierKeyR0217.Multiplier F C (b.appTop z) K n → ∀ (B : ArithmeticThetaMultiplierKeyR0217.CoverChange E D F b f C) (c : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback b).obj (ArithmeticThetaSchemeHodgeR0205.Cotangent E)) (ArithmeticThetaSchemeHodgeR0205.Cotangent F)), ArithmeticThetaSchemeHodgeR0205.CotangentCompatible E F b f hb.2.1 c → ∀ (v : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback b).obj (L)) (K)), ArithmeticThetaMultiplierKeyR0217.MultiplierCompatible E D F b f C B L K m n v → ∀ (β : (ArithmeticThetaMultiplierKeyR0217.productLine E L).presheaf.obj (Opposite.op ⊤)) (γ : (ArithmeticThetaMultiplierKeyR0217.productLine F K).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaMultiplierKeyR0217.DescendsAlpha E D L m β → ArithmeticThetaMultiplierKeyR0217.DescendsAlpha F C K n γ → ∀ (eS : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback E.zero).obj (ArithmeticThetaMultiplierKeyR0217.thetaLine E P)) (SheafOfModules.unit S.ringCatSheaf)) (eT : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback F.zero).obj (ArithmeticThetaMultiplierKeyR0217.thetaLine F Q)) (SheafOfModules.unit T.ringCatSheaf)), ArithmeticThetaMultiplierKeyR0217.IsRigidification E P eS → ArithmeticThetaMultiplierKeyR0217.IsRigidification F Q eT → ∀ (κ : CategoryTheory.Iso (ArithmeticThetaMultiplierKeyR0217.inverseSquare E P) (ArithmeticThetaMultiplierKeyR0217.productLine E L)) (κT : CategoryTheory.Iso (ArithmeticThetaMultiplierKeyR0217.inverseSquare F Q) (ArithmeticThetaMultiplierKeyR0217.productLine F K)), ArithmeticThetaMultiplierKeyR0217.IsKey E P L eS β κ → ArithmeticThetaMultiplierKeyR0217.IsKey F Q K eT γ κT → (∃! j : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback b).obj (ArithmeticThetaMultiplierKeyR0217.inverseSquare E P)) (ArithmeticThetaMultiplierKeyR0217.inverseSquare F Q), ArithmeticThetaMultiplierKeyR0217.EvaluationSquareCompatible E P F Q b eS eT j) ∧ (∀ j : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback b).obj (ArithmeticThetaMultiplierKeyR0217.inverseSquare E P)) (ArithmeticThetaMultiplierKeyR0217.inverseSquare F Q), ArithmeticThetaMultiplierKeyR0217.EvaluationSquareCompatible E P F Q b eS eT j → CategoryTheory.CategoryStruct.comp ((AlgebraicGeometry.Scheme.Modules.pullback b).map κ.hom) (ArithmeticThetaMultiplierKeyR0217.productComparison E F b L K c v).hom = CategoryTheory.CategoryStruct.comp j.hom κT.hom) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom (S) (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (P : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint E),
+      ∀ (z : S.presheaf.obj (Opposite.op ⊤)),
+        z ^ 2 = -1 →
+          ∀ (D : ArithmeticThetaEvenMarkingTorsorR0216.Cover E),
+            ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven E P z D →
+              ∀ (L : S.Modules)
+                (m :
+                  ((AlgebraicGeometry.Scheme.Modules.pullback D.projection).obj (L)).presheaf.obj
+                    (Opposite.op ⊤)),
+                ArithmeticThetaMultiplierKeyR0217.Multiplier E D z L m →
+                  ∀ (T : AlgebraicGeometry.Scheme.{u})
+                    (F : ArithmeticThetaLocalWeierstrassR0203.Family T)
+                    (Q : ArithmeticThetaEvenMarkingTorsorR0216.EvenPoint F) (b : Quiver.Hom (T) (S))
+                    (f : Quiver.Hom (F.curve) (E.curve))
+                    (hb : ArithmeticThetaEvenMarkingTorsorR0216.Cartesian E F b f),
+                    CategoryTheory.CategoryStruct.comp Q.point.val f =
+                        CategoryTheory.CategoryStruct.comp b P.point.val →
+                      ∀ (C : ArithmeticThetaEvenMarkingTorsorR0216.Cover F),
+                        ArithmeticThetaEvenMarkingTorsorR0216.RepresentsEven F Q (b.appTop z) C →
+                          ∀ (K : T.Modules)
+                            (n :
+                              ((AlgebraicGeometry.Scheme.Modules.pullback C.projection).obj
+                                    (K)).presheaf.obj
+                                (Opposite.op ⊤)),
+                            ArithmeticThetaMultiplierKeyR0217.Multiplier F C (b.appTop z) K n →
+                              ∀ (B : ArithmeticThetaMultiplierKeyR0217.CoverChange E D F b f C)
+                                (c :
+                                  CategoryTheory.Iso
+                                    ((AlgebraicGeometry.Scheme.Modules.pullback b).obj
+                                      (ArithmeticThetaSchemeHodgeR0205.Cotangent E))
+                                    (ArithmeticThetaSchemeHodgeR0205.Cotangent F)),
+                                ArithmeticThetaSchemeHodgeR0205.CotangentCompatible E F b f hb.2.1
+                                    c →
+                                  ∀
+                                    (v :
+                                      CategoryTheory.Iso
+                                        ((AlgebraicGeometry.Scheme.Modules.pullback b).obj (L))
+                                        (K)),
+                                    ArithmeticThetaMultiplierKeyR0217.MultiplierCompatible E D F b f
+                                        C B L K m n v →
+                                      ∀
+                                        (β :
+                                          (ArithmeticThetaMultiplierKeyR0217.productLine E
+                                                L).presheaf.obj
+                                            (Opposite.op ⊤))
+                                        (γ :
+                                          (ArithmeticThetaMultiplierKeyR0217.productLine F
+                                                K).presheaf.obj
+                                            (Opposite.op ⊤)),
+                                        ArithmeticThetaMultiplierKeyR0217.DescendsAlpha E D L m β →
+                                          ArithmeticThetaMultiplierKeyR0217.DescendsAlpha F C K n
+                                              γ →
+                                            ∀
+                                              (eS :
+                                                CategoryTheory.Iso
+                                                  ((AlgebraicGeometry.Scheme.Modules.pullback
+                                                        E.zero).obj
+                                                    (ArithmeticThetaMultiplierKeyR0217.thetaLine E
+                                                      P))
+                                                  (SheafOfModules.unit S.ringCatSheaf))
+                                              (eT :
+                                                CategoryTheory.Iso
+                                                  ((AlgebraicGeometry.Scheme.Modules.pullback
+                                                        F.zero).obj
+                                                    (ArithmeticThetaMultiplierKeyR0217.thetaLine F
+                                                      Q))
+                                                  (SheafOfModules.unit T.ringCatSheaf)),
+                                              ArithmeticThetaMultiplierKeyR0217.IsRigidification E P
+                                                  eS →
+                                                ArithmeticThetaMultiplierKeyR0217.IsRigidification F
+                                                    Q eT →
+                                                  ∀
+                                                    (κ :
+                                                      CategoryTheory.Iso
+                                                        (ArithmeticThetaMultiplierKeyR0217.inverseSquare
+                                                          E P)
+                                                        (ArithmeticThetaMultiplierKeyR0217.productLine
+                                                          E L))
+                                                    (κT :
+                                                      CategoryTheory.Iso
+                                                        (ArithmeticThetaMultiplierKeyR0217.inverseSquare
+                                                          F Q)
+                                                        (ArithmeticThetaMultiplierKeyR0217.productLine
+                                                          F K)),
+                                                    ArithmeticThetaMultiplierKeyR0217.IsKey E P L eS
+                                                        β κ →
+                                                      ArithmeticThetaMultiplierKeyR0217.IsKey F Q K
+                                                          eT γ κT →
+                                                        (∃! j :
+                                                            CategoryTheory.Iso
+                                                              ((AlgebraicGeometry.Scheme.Modules.pullback
+                                                                    b).obj
+                                                                (ArithmeticThetaMultiplierKeyR0217.inverseSquare
+                                                                  E P))
+                                                              (ArithmeticThetaMultiplierKeyR0217.inverseSquare
+                                                                F Q),
+                                                            ArithmeticThetaMultiplierKeyR0217.EvaluationSquareCompatible
+                                                              E P F Q b eS eT j) ∧
+                                                          (∀ j :
+                                                            CategoryTheory.Iso
+                                                              ((AlgebraicGeometry.Scheme.Modules.pullback
+                                                                    b).obj
+                                                                (ArithmeticThetaMultiplierKeyR0217.inverseSquare
+                                                                  E P))
+                                                              (ArithmeticThetaMultiplierKeyR0217.inverseSquare
+                                                                F Q),
+                                                            ArithmeticThetaMultiplierKeyR0217.EvaluationSquareCompatible
+                                                                E P F Q b eS eT j →
+                                                              CategoryTheory.CategoryStruct.comp
+                                                                  ((AlgebraicGeometry.Scheme.Modules.pullback
+                                                                        b).map
+                                                                    κ.hom)
+                                                                  (ArithmeticThetaMultiplierKeyR0217.productComparison
+                                                                      E F b L K c v).hom =
+                                                                CategoryTheory.CategoryStruct.comp
+                                                                  j.hom κT.hom) := by
   intro k _ _ S σ E P z hz D hD L m hm T F Q b f hb hQ C hC K n hn
     B c hc v hv β γ hβ hγ eS eT heS heT κ κT hκ hκT
   have hE := even_point_theta_evaluation k S σ E P

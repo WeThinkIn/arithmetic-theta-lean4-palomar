@@ -423,7 +423,32 @@ open ArithmeticThetaFullLevelCoverR0175 ArithmeticThetaThetaEvaluationR0212
 /-- The specified theta generator is invertible over every rational algebra;
 the actual adjunction-defined evaluation is its inverse and frames the dual. -/
 theorem arbitrary_theta_generator_evaluation :
-    ∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W), ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G → ∀ M : ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4 (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)), CategoryTheory.IsIso (ArithmeticThetaThetaEvaluationR0212.generator R W G M) ∧ (∀ e : CategoryTheory.Iso ((AlgebraicGeometry.Scheme.Modules.pullback (ArithmeticThetaRelativeKatoR0169.origin R W)).obj (ArithmeticThetaThetaEvaluationR0212.thetaLine R W G M)) ((SheafOfModules.unit (ArithmeticThetaRelativeDiscriminantR0171.Base R).ringCatSheaf)), ArithmeticThetaThetaEvaluationR0212.IsRigidification R W G M e → CategoryTheory.IsIso (ArithmeticThetaThetaEvaluationR0212.evaluation R W G M e) ∧ CategoryTheory.CategoryStruct.comp (ArithmeticThetaThetaEvaluationR0212.generator R W G M) (ArithmeticThetaThetaEvaluationR0212.evaluation R W G M e) = CategoryTheory.CategoryStruct.id ((SheafOfModules.unit (ArithmeticThetaRelativeDiscriminantR0171.Base R).ringCatSheaf)) ∧ ArithmeticThetaRelativeDiscriminantR0171.IsFrame (AlgebraicGeometry.Scheme.Modules.dual (ArithmeticThetaThetaEvaluationR0212.pushforwardLine R W G M)) ⊤ (ArithmeticThetaThetaEvaluationR0212.evaluationSection R W G M e)) := by
+    ∀ (R : Type u) [CommRing R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W),
+      ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G →
+        ∀ M :
+          ArithmeticThetaFullLevelCoverR0175.FullLevel R W G 4
+            (CategoryTheory.CategoryStruct.id (ArithmeticThetaRelativeDiscriminantR0171.Base R)),
+          CategoryTheory.IsIso (ArithmeticThetaThetaEvaluationR0212.generator R W G M) ∧
+            (∀ e :
+              CategoryTheory.Iso
+                ((AlgebraicGeometry.Scheme.Modules.pullback
+                      (ArithmeticThetaRelativeKatoR0169.origin R W)).obj
+                  (ArithmeticThetaThetaEvaluationR0212.thetaLine R W G M))
+                ((SheafOfModules.unit
+                  (ArithmeticThetaRelativeDiscriminantR0171.Base R).ringCatSheaf)),
+              ArithmeticThetaThetaEvaluationR0212.IsRigidification R W G M e →
+                CategoryTheory.IsIso (ArithmeticThetaThetaEvaluationR0212.evaluation R W G M e) ∧
+                  CategoryTheory.CategoryStruct.comp
+                        (ArithmeticThetaThetaEvaluationR0212.generator R W G M)
+                        (ArithmeticThetaThetaEvaluationR0212.evaluation R W G M e) =
+                      CategoryTheory.CategoryStruct.id
+                        ((SheafOfModules.unit
+                          (ArithmeticThetaRelativeDiscriminantR0171.Base R).ringCatSheaf)) ∧
+                    ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+                      (AlgebraicGeometry.Scheme.Modules.dual
+                        (ArithmeticThetaThetaEvaluationR0212.pushforwardLine R W G M))
+                      ⊤ (ArithmeticThetaThetaEvaluationR0212.evaluationSection R W G M e)) := by
   intro R _ _ W _ G hG M
   haveI := ArbitraryGenerator.generator_isIso R W G hG M
   refine ⟨inferInstance, ?_⟩

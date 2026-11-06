@@ -3,7 +3,9 @@ open scoped BigOperators
 
 namespace ArithmeticThetaLattice
 
-theorem matrix_common_denominator : ∀ (n m : ℕ) (A : Matrix (Fin n) (Fin m) ℚ), ∃ D : ℕ, 0 < D ∧ ∃ Z : Matrix (Fin n) (Fin m) ℤ, ∀ i j, (Z i j : ℚ) = (D : ℚ) * A i j := by
+theorem matrix_common_denominator :
+    ∀ (n m : ℕ) (A : Matrix (Fin n) (Fin m) ℚ),
+      ∃ D : ℕ, 0 < D ∧ ∃ Z : Matrix (Fin n) (Fin m) ℤ, ∀ i j, (Z i j : ℚ) = (D : ℚ) * A i j := by
   intro n m A
   let D : ℕ := ∏ i : Fin n, ∏ j : Fin m, (A i j).den
   have hD : 0 < D := by

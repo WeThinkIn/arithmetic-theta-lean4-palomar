@@ -216,14 +216,35 @@ open ArithmeticThetaComponentDegreeR0184.GeometricComponentCuspBoundR0184
 
 /-- Every actual cusp has bijective structural residue map and residue degree one. -/
 theorem split_cusp_residue :
-    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (ζ : k), IsPrimitiveRoot ζ L → 3 ≤ L → Even L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space), ∀ y : ArithmeticThetaComponentDegreeR0184.Cusps k L D X x, Function.Bijective (ArithmeticThetaCurveDegree.baseToResidue k (ArithmeticThetaComponentDegreeR0184.projection k L D X x) y.val) ∧ ArithmeticThetaCurveDegree.placeDegree k (ArithmeticThetaComponentDegreeR0184.projection k L D X x) y.val = 1 := by
+    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (ζ : k),
+      IsPrimitiveRoot ζ L →
+        3 ≤ L →
+          Even L →
+            ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+              (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space),
+              ∀ y : ArithmeticThetaComponentDegreeR0184.Cusps k L D X x,
+                Function.Bijective
+                    (ArithmeticThetaCurveDegree.baseToResidue k
+                      (ArithmeticThetaComponentDegreeR0184.projection k L D X x) y.val) ∧
+                  ArithmeticThetaCurveDegree.placeDegree k
+                      (ArithmeticThetaComponentDegreeR0184.projection k L D X x) y.val =
+                    1 := by
   intro k _ _ L ζ hζ hL heven D X x y
   exact ⟨SplitCuspDegree.cusp_residue k L D X x hL heven ζ hζ y,
     SplitCuspDegree.placeDegree_one k L D X x hL heven ζ hζ y⟩
 
 /-- Count actual cusps through the disjoint 2L signed rotations in one pairing fiber. -/
 theorem split_component_cusp_bound :
-    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (ζ : k), IsPrimitiveRoot ζ L → 3 ≤ L → Even L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space), Finite (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ∧ Nonempty (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ∧ 2 * L * Nat.card (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ≤ Nat.card (Matrix.SpecialLinearGroup (Fin 2) (ZMod L)) := by
+    ∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (ζ : k),
+      IsPrimitiveRoot ζ L →
+        3 ≤ L →
+          Even L →
+            ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+              (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space),
+              Finite (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ∧
+                Nonempty (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ∧
+                  2 * L * Nat.card (ArithmeticThetaComponentDegreeR0184.Cusps k L D X x) ≤
+                    Nat.card (Matrix.SpecialLinearGroup (Fin 2) (ZMod L)) := by
   intro k _ _ L ζ hζ hL heven D X x
   refine ⟨cusps_finite k L D X x, cusps_nonempty k L D X x, ?_⟩
   letI : NeZero L := ⟨by omega⟩

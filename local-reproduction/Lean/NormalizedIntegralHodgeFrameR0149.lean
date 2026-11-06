@@ -1300,7 +1300,25 @@ open ArithmeticThetaPolygonCartierR0133.GlobalCartierIdealLineR0133
 open ArithmeticThetaCompactifiedDifferentialR0145
 open NormalizedIntegralHodgeFrameR0149
 
-theorem normalized_integral_hodge_frame : ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s), ∀ (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2) (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3), ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X → ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y → ∀ (δ : ArithmeticThetaHodgeFourTorsionR0147.Frame k M), ArithmeticThetaCompactifiedDifferentialR0145.IsGlobalDifferentialFrame k M s X Y δ → ∀ (b : ArithmeticThetaIntegralHodgeR0149.GenericComparison k M), ArithmeticThetaIntegralHodgeR0149.IsGenericComparison k M b → ∃! E : ArithmeticThetaIntegralHodgeR0149.IntegralFrame k M s, ArithmeticThetaIntegralHodgeR0149.ExtendsFrame k M s hs.1 b E δ := by
+theorem normalized_integral_hodge_frame :
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s),
+      ∀ (X : ArithmeticThetaIdentitySectionsR0138.Dual k M s 2)
+        (Y : ArithmeticThetaIdentitySectionsR0138.Dual k M s 3),
+        ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k false M s X →
+          ArithmeticThetaAlgebraicCoordinatesR0143.RealizesCoordinate k true M s Y →
+            ∀ (δ : ArithmeticThetaHodgeFourTorsionR0147.Frame k M),
+              ArithmeticThetaCompactifiedDifferentialR0145.IsGlobalDifferentialFrame k M s X Y δ →
+                ∀ (b : ArithmeticThetaIntegralHodgeR0149.GenericComparison k M),
+                  ArithmeticThetaIntegralHodgeR0149.IsGenericComparison k M b →
+                    ∃! E : ArithmeticThetaIntegralHodgeR0149.IntegralFrame k M s,
+                      ArithmeticThetaIntegralHodgeR0149.ExtendsFrame k M s hs.1 b E δ := by
   intro k _ _ r hr h3 T _ M hM s hs X Y hX hY δ hδ b hb
   obtain ⟨U,g,z,hU,hzg,hz,hg,hpow⟩ := integral_identity_local_equation k h3 M hM s hs
   obtain ⟨z₂,hz₂,hf₂⟩ := hpow 2

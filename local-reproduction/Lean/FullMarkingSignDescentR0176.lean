@@ -298,7 +298,26 @@ open ArithmeticThetaFullLevelCoverR0175 FullMarkingSignDescent
 
 /-- Both labels descend to the supplied elliptic family, with full torsion marking. -/
 theorem full_marking_sign_descent :
-∀ (k : Type u) [Field k] [CharZero k] (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] [Algebra k R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 3 ≤ L) (Z : ArithmeticThetaFullLevelCoverR0175.LevelScheme R W G L) (hZ : ArithmeticThetaFullLevelCoverR0175.Represents R W G Z) (σ : ArithmeticThetaLegendreAtlasR0176.SignAction R W G Z) (Q : ArithmeticThetaLegendreAtlasR0176.SignQuotient k (CategoryTheory.CategoryStruct.comp (Z.projection) (AlgebraicGeometry.Spec.map (CommRingCat.ofHom (algebraMap k R)))) σ.map) (D : ArithmeticThetaLegendreAtlasR0176.FamilyDescent k R W G Z σ Q), ∃ M : ArithmeticThetaLegendreAtlasR0176.FamilyLevel Q.ring D.family L, CategoryTheory.CategoryStruct.comp (ArithmeticThetaLegendreAtlasR0176.coverSection R W Z Z.level.x) (D.comparison) = CategoryTheory.CategoryStruct.comp (Q.q) (M.x.val) ∧ CategoryTheory.CategoryStruct.comp (ArithmeticThetaLegendreAtlasR0176.coverSection R W Z Z.level.y) (D.comparison) = CategoryTheory.CategoryStruct.comp (Q.q) (M.y.val) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (R : Type u) [CommRing R] [IsDomain R]
+      [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] [Algebra k R]
+      (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (L : ℕ) (hL : 3 ≤ L)
+      (Z : ArithmeticThetaFullLevelCoverR0175.LevelScheme R W G L)
+      (hZ : ArithmeticThetaFullLevelCoverR0175.Represents R W G Z)
+      (σ : ArithmeticThetaLegendreAtlasR0176.SignAction R W G Z)
+      (Q :
+        ArithmeticThetaLegendreAtlasR0176.SignQuotient k
+          (CategoryTheory.CategoryStruct.comp (Z.projection)
+            (AlgebraicGeometry.Spec.map (CommRingCat.ofHom (algebraMap k R))))
+          σ.map)
+      (D : ArithmeticThetaLegendreAtlasR0176.FamilyDescent k R W G Z σ Q),
+      ∃ M : ArithmeticThetaLegendreAtlasR0176.FamilyLevel Q.ring D.family L,
+        CategoryTheory.CategoryStruct.comp
+              (ArithmeticThetaLegendreAtlasR0176.coverSection R W Z Z.level.x) (D.comparison) =
+            CategoryTheory.CategoryStruct.comp (Q.q) (M.x.val) ∧
+          CategoryTheory.CategoryStruct.comp
+              (ArithmeticThetaLegendreAtlasR0176.coverSection R W Z Z.level.y) (D.comparison) =
+            CategoryTheory.CategoryStruct.comp (Q.q) (M.y.val) := by
   intro k _ _ R _ _ _ _ _ _ W _ G hG L hL Z hZ σ Q D
   obtain ⟨hf, _, _, _⟩ := full_level_cover_geometry R W G hG L (by omega) Z hZ
   letI := hf

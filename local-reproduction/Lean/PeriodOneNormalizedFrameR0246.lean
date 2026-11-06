@@ -169,7 +169,19 @@ open ArithmeticThetaTateCuspsR0181
 /-- The unique period-one normalized differential and its exact pullback through
  every coordinate-preserving pointed Cartesian comparison. -/
 theorem period_one_normalized_frame :
-    ∀ (k : Type) [Field k] [CharZero k] [hE : (ArithmeticThetaPeriodOneR0246.periodOneCurve k).IsElliptic], (∃! δ : ArithmeticThetaPeriodOneR0246.PeriodFrame k, ArithmeticThetaPeriodOneR0246.Normalized k δ) ∧ ∀ (ell : LaurentSeries k →+* LaurentSeries k), ArithmeticThetaRamifiedPeriodR0154.IsLaurentExtension k 4 (by decide) ell → ∀ (C : ArithmeticThetaPeriodOneR0246.CoordinateComparison k ell) (δ : ArithmeticThetaPeriodOneR0246.PeriodFrame k), ArithmeticThetaPeriodOneR0246.Normalized k δ → ∀ (δ₄ : ArithmeticThetaBoundaryHodgeR0182.CurveFrame k 4), ArithmeticThetaBoundaryHodgeR0182.Normalized k 4 δ₄ → ArithmeticThetaPeriodOneR0246.pulledGenerator k C δ = ArithmeticThetaBoundaryHodgeR0182.hodgeGenerator k 4 δ₄ := by
+    ∀ (k : Type) [Field k] [CharZero k]
+      [hE : (ArithmeticThetaPeriodOneR0246.periodOneCurve k).IsElliptic],
+      (∃! δ : ArithmeticThetaPeriodOneR0246.PeriodFrame k,
+          ArithmeticThetaPeriodOneR0246.Normalized k δ) ∧
+        ∀ (ell : LaurentSeries k →+* LaurentSeries k),
+          ArithmeticThetaRamifiedPeriodR0154.IsLaurentExtension k 4 (by decide) ell →
+            ∀ (C : ArithmeticThetaPeriodOneR0246.CoordinateComparison k ell)
+              (δ : ArithmeticThetaPeriodOneR0246.PeriodFrame k),
+              ArithmeticThetaPeriodOneR0246.Normalized k δ →
+                ∀ (δ₄ : ArithmeticThetaBoundaryHodgeR0182.CurveFrame k 4),
+                  ArithmeticThetaBoundaryHodgeR0182.Normalized k 4 δ₄ →
+                    ArithmeticThetaPeriodOneR0246.pulledGenerator k C δ =
+                      ArithmeticThetaBoundaryHodgeR0182.hodgeGenerator k 4 δ₄ := by
   intro k _ _ hE
   letI : CharZero (LaurentSeries k) := LaurentSeries.XAdic.charZero k
   refine ⟨NormalizedFrameProof.unique_frame k, ?_⟩

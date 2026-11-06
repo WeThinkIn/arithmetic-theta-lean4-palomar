@@ -125,7 +125,38 @@ open ArithmeticThetaOpenHodgeR0180.GlobalFamilyDiscriminantR0180
 /-- The common half-Hodge cover and all prescribed unary roots on one finite
 smooth proper curve, with the positive composite degree bounded by 24*K^s. -/
 theorem simultaneous_unary_common_cover :
-∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (N s : ℕ), 0 < N → Even N → ∀ (m : Fin s → ℕ) (ν : Fin s → ℤ), (∀ j, 0 < m j ∧ Even (m j) ∧ m j ∣ N ∧ (-(m j : ℤ) ≤ 2*ν j ∧ 2*ν j < (m j : ℤ))) → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (ArithmeticThetaCompactUnaryR0183.level N)) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k (ArithmeticThetaCompactUnaryR0183.level N) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k (ArithmeticThetaCompactUnaryR0183.level N) D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k (ArithmeticThetaCompactUnaryR0183.level N) H → ∀ (d2 : ArithmeticThetaSimultaneousUnaryR0187.Sections X.space (ArithmeticThetaTensorPower.tensorPower X.space (H.line) (24))), ArithmeticThetaComponentDegreeR0184.IsCompactD2 k (ArithmeticThetaCompactUnaryR0183.level N) D X H d2 → ∀ (V : ArithmeticThetaBoundaryHodgeR0182.DiskTest k (ArithmeticThetaCompactUnaryR0183.level N) D X) (ζ : k), IsPrimitiveRoot ζ (ArithmeticThetaCompactUnaryR0183.level N) → ArithmeticThetaTateCuspsR0181.CanonicalMarking k (ArithmeticThetaCompactUnaryR0183.level N) ζ V.level → ArithmeticThetaSimultaneousUnaryR0187.SimultaneousUnary k N s m ν H d2 V := by
+    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (N s : ℕ),
+      0 < N →
+        Even N →
+          ∀ (m : Fin s → ℕ) (ν : Fin s → ℤ),
+            (∀ j, 0 < m j ∧ Even (m j) ∧ m j ∣ N ∧ (-(m j : ℤ) ≤ 2 * ν j ∧ 2 * ν j < (m j : ℤ))) →
+              ∀
+                (D :
+                  ArithmeticThetaLevelCompactificationR0179.LevelData k
+                    (ArithmeticThetaCompactUnaryR0183.level N))
+                (X :
+                  ArithmeticThetaLevelCompactificationR0179.Compactification k
+                    (ArithmeticThetaCompactUnaryR0183.level N) D)
+                (H :
+                  ArithmeticThetaBoundaryHodgeR0182.Extension k
+                    (ArithmeticThetaCompactUnaryR0183.level N) D X),
+                ArithmeticThetaBoundaryHodgeR0182.Canonical k
+                    (ArithmeticThetaCompactUnaryR0183.level N) H →
+                  ∀
+                    (d2 :
+                      ArithmeticThetaSimultaneousUnaryR0187.Sections X.space
+                        (ArithmeticThetaTensorPower.tensorPower X.space (H.line) (24))),
+                    ArithmeticThetaComponentDegreeR0184.IsCompactD2 k
+                        (ArithmeticThetaCompactUnaryR0183.level N) D X H d2 →
+                      ∀
+                        (V :
+                          ArithmeticThetaBoundaryHodgeR0182.DiskTest k
+                            (ArithmeticThetaCompactUnaryR0183.level N) D X)
+                        (ζ : k),
+                        IsPrimitiveRoot ζ (ArithmeticThetaCompactUnaryR0183.level N) →
+                          ArithmeticThetaTateCuspsR0181.CanonicalMarking k
+                              (ArithmeticThetaCompactUnaryR0183.level N) ζ V.level →
+                            ArithmeticThetaSimultaneousUnaryR0187.SimultaneousUnary k N s m ν H d2 V := by
   intro k _ _ _ N s hN hNeven m ν hm D X H hH d2 hd2 V ζ hζ hmark
   have hL : 0 < level N := by dsimp [level]; positivity
   have h24 : 24 ∣ level N := dvd_mul_right 24 (N^2)

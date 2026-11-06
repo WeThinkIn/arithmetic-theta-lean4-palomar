@@ -127,7 +127,24 @@ end RelativeConormalHodgeGenerator
 /-- The actual differential of any local Cartier equation of the origin is
 an intrinsic frame of the relative Hodge sheaf on every subopen. -/
 theorem relative_conormal_hodge_generator :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (U : (ArithmeticThetaRelativeKatoR0169.Curve R W).affineOpens) [Nonempty U.1] (a : (ArithmeticThetaRelativeKatoR0169.Curve R W).presheaf.obj (Opposite.op U.1)) (ha : IsRegular a) (hI : (ArithmeticThetaRelativeKatoNaturalityR0170.identityIdeal R W).ideal U = Ideal.span ({a} : Set _)), ArithmeticThetaRelativeDiscriminantR0171.IsFrame (ArithmeticThetaRelativeDiscriminantR0171.Hodge R W) ((TopologicalSpace.Opens.map (ArithmeticThetaRelativeKatoR0169.origin R W).base).obj U.1) (ArithmeticThetaRelativeDiscriminantR0171.localDifferential R W U.1 a) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G)
+      (U : (ArithmeticThetaRelativeKatoR0169.Curve R W).affineOpens) [Nonempty U.1]
+      (a : (ArithmeticThetaRelativeKatoR0169.Curve R W).presheaf.obj (Opposite.op U.1))
+      (ha : IsRegular a)
+      (hI :
+        (ArithmeticThetaRelativeKatoNaturalityR0170.identityIdeal R W).ideal U =
+          Ideal.span ({ a } : Set _)),
+      ArithmeticThetaRelativeDiscriminantR0171.IsFrame
+        (ArithmeticThetaRelativeDiscriminantR0171.Hodge R W)
+        ((TopologicalSpace.Opens.map (ArithmeticThetaRelativeKatoR0169.origin R W).base).obj U.1)
+        (ArithmeticThetaRelativeDiscriminantR0171.localDifferential R W U.1 a) := by
   intro R _ _ _ _ _ W _ _ _ _ _ G hG U _ a ha hI
   let : SmoothOfRelativeDimension 1 (structureMap R W) :=
     (relative_curve_geometry R W).2.2.2.2.2.1

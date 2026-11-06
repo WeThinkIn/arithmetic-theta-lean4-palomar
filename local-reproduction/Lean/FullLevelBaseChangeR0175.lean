@@ -305,7 +305,28 @@ open CategoryTheory AlgebraicGeometry ArithmeticThetaRelativeKatoR0169
 
 /-- Both universal sections and the actual representing cover commute with arbitrary base change. -/
 theorem full_level_arbitrary_base_change :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (S : Type u) [CommRing S] [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S] (Ws : WeierstrassCurve S) [Ws.IsElliptic] (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws) (hGs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs) (ι : R →+* S) (b : Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws) (ArithmeticThetaRelativeKatoR0169.Curve R W)) (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b) (L : ℕ) (hL : 0 < L) (Z : ArithmeticThetaFullLevelCoverR0175.LevelScheme R W G L) (hZ : ArithmeticThetaFullLevelCoverR0175.Represents R W G Z) (Zs : ArithmeticThetaFullLevelCoverR0175.LevelScheme S Ws Gs L) (hZs : ArithmeticThetaFullLevelCoverR0175.Represents S Ws Gs Zs), ∃! β : Quiver.Hom Zs.space Z.space, CategoryTheory.IsPullback β Zs.projection Z.projection (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι) ∧ CategoryTheory.CategoryStruct.comp Zs.level.x.val b = CategoryTheory.CategoryStruct.comp β Z.level.x.val ∧ CategoryTheory.CategoryStruct.comp Zs.level.y.val b = CategoryTheory.CategoryStruct.comp β Z.level.y.val := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (S : Type u) [CommRing S]
+      [IsDomain S] [IsNoetherianRing S] [IsIntegrallyClosed S] [Algebra ℚ S]
+      (Ws : WeierstrassCurve S) [Ws.IsElliptic] (Gs : ArithmeticThetaRelativeKatoR0169.Law S Ws)
+      (hGs : ArithmeticThetaRelativeKatoR0169.IsOriginLaw S Ws Gs) (ι : R →+* S)
+      (b :
+        Quiver.Hom (ArithmeticThetaRelativeKatoR0169.Curve S Ws)
+          (ArithmeticThetaRelativeKatoR0169.Curve R W))
+      (hb : ArithmeticThetaRelativeKatoNaturalityR0170.IsBaseChange R W G S Ws Gs ι b) (L : ℕ)
+      (hL : 0 < L) (Z : ArithmeticThetaFullLevelCoverR0175.LevelScheme R W G L)
+      (hZ : ArithmeticThetaFullLevelCoverR0175.Represents R W G Z)
+      (Zs : ArithmeticThetaFullLevelCoverR0175.LevelScheme S Ws Gs L)
+      (hZs : ArithmeticThetaFullLevelCoverR0175.Represents S Ws Gs Zs),
+      ∃! β : Quiver.Hom Zs.space Z.space,
+        CategoryTheory.IsPullback β Zs.projection Z.projection
+            (ArithmeticThetaRelativeDiscriminantR0171.baseMap R S ι) ∧
+          CategoryTheory.CategoryStruct.comp Zs.level.x.val b =
+              CategoryTheory.CategoryStruct.comp β Z.level.x.val ∧
+            CategoryTheory.CategoryStruct.comp Zs.level.y.val b =
+              CategoryTheory.CategoryStruct.comp β Z.level.y.val := by
   intro R _ _ _ _ _ W _ G hG S _ _ _ _ _ Ws _ Gs hGs ι b hb L hL Z hZ Zs hZs
   exact BaseChange.representing_cartesian hb hG hGs Z hZ Zs hZs
 

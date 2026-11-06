@@ -31,7 +31,24 @@ end InvariantComponentNaturality
 /-- The unique comparison of actual invariant kernels respects every orbit
 inclusion and every identity-evaluation component. -/
 theorem scheme_invariant_component_naturality :
-    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S), ∀ (T : AlgebraicGeometry.Scheme.{u}) (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (b : Quiver.Hom T S) (f : Quiver.Hom F.curve E.curve) (hc : CategoryTheory.IsPullback f F.p E.p b) (hz : CategoryTheory.CategoryStruct.comp F.zero f = CategoryTheory.CategoryStruct.comp b E.zero), ∀ (m : ℕ), 0 < m → ∀ (A B : CategoryTheory.End (ArithmeticThetaSchemeSchrodingerR0261.V E m)) (A' B' : CategoryTheory.End (ArithmeticThetaSchemeSchrodingerR0261.V F m)), A ^ m = 1 → ArithmeticThetaSchemeThetaNaturalityR0262.Intertwines E F b f hc hz m A A' → ArithmeticThetaSchemeThetaNaturalityR0262.Intertwines E F b f hc hz m B B' → ArithmeticThetaSchemeThetaNaturalityR0262.InvariantComponents E F b f hc hz m A B A' B' := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S),
+      ∀ (T : AlgebraicGeometry.Scheme.{u}) (F : ArithmeticThetaLocalWeierstrassR0203.Family T)
+        (b : Quiver.Hom T S) (f : Quiver.Hom F.curve E.curve)
+        (hc : CategoryTheory.IsPullback f F.p E.p b)
+        (hz :
+          CategoryTheory.CategoryStruct.comp F.zero f =
+            CategoryTheory.CategoryStruct.comp b E.zero),
+        ∀ (m : ℕ),
+          0 < m →
+            ∀ (A B : CategoryTheory.End (ArithmeticThetaSchemeSchrodingerR0261.V E m))
+              (A' B' : CategoryTheory.End (ArithmeticThetaSchemeSchrodingerR0261.V F m)),
+              A ^ m = 1 →
+                ArithmeticThetaSchemeThetaNaturalityR0262.Intertwines E F b f hc hz m A A' →
+                  ArithmeticThetaSchemeThetaNaturalityR0262.Intertwines E F b f hc hz m B B' →
+                    ArithmeticThetaSchemeThetaNaturalityR0262.InvariantComponents E F b f hc hz m A
+                      B A' B' := by
   intro k _ _ S σ E T F b f hc hz m hm A B A' B' hA hAA hBB
   let P := Scheme.Modules.pullback b
   let p := pushforwardMap E F b f hc hz m

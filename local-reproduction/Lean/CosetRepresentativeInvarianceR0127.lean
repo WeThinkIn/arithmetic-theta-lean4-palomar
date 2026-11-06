@@ -33,7 +33,13 @@ lemma cosetSeries_integral_translation (n : ℕ) (m : Fin n → ℕ)
   exact Nat.card_congr (e.subtypeEquiv (fun x => by rw [he x]))
 
 /-- The rational-coordinate coset series depends only on the actual quotient class. -/
-theorem coset_representative_invariance : ∀ (n : ℕ) (B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ) (t v : ArithmeticThetaOrthogonalConsumerR0127.preimageLattice B), ArithmeticThetaOrthogonalConsumerR0127.cosetClass B t = ArithmeticThetaOrthogonalConsumerR0127.cosetClass B v → ArithmeticThetaOrthogonalConsumerR0127.cosetSeries m t.val = ArithmeticThetaOrthogonalConsumerR0127.cosetSeries m v.val := by
+theorem coset_representative_invariance :
+    ∀ (n : ℕ) (B : Matrix (Fin n) (Fin n) ℤ) (m : Fin n → ℕ)
+      (t v : ArithmeticThetaOrthogonalConsumerR0127.preimageLattice B),
+      ArithmeticThetaOrthogonalConsumerR0127.cosetClass B t =
+          ArithmeticThetaOrthogonalConsumerR0127.cosetClass B v →
+        ArithmeticThetaOrthogonalConsumerR0127.cosetSeries m t.val =
+          ArithmeticThetaOrthogonalConsumerR0127.cosetSeries m v.val := by
   intro n B m t v h
   have hp : t - v ∈ periods B := QuotientAddGroup.eq_iff_sub_mem.mp h
   change (t.val - v.val) ∈ (castVec n).range at hp

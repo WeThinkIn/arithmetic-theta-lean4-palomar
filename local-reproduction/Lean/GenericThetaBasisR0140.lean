@@ -354,7 +354,22 @@ open GenericThetaBasisR0140
 /-- The specified theta restrictions give unique Laurent-series coordinates
 for every actual generic dual morphism, on every open and every section. -/
 theorem generic_theta_basis :
-∀ (k : Type u) [Field k] [CharZero k], ∀ (m : ℕ) (hm : 0 < m) (he : Even m), ∀ (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k (2*m) (Nat.mul_pos (by decide) hm)) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex (2*m) (Nat.mul_pos (by decide) hm)) 1 s), ∀ φ : ArithmeticThetaGenericEvaluationR0140.GenericDual k M s m, ∃! c : Fin m → LaurentSeries k, ArithmeticThetaGenericEvaluationR0140.Combines k M s m m (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs) c φ := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (m : ℕ) (hm : 0 < m) (he : Even m),
+        ∀
+          (T :
+            ArithmeticThetaInfinitesimalPolygonR0129.Tower k (2 * m) (Nat.mul_pos (by decide) hm))
+          (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+          (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+          (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+          (hs :
+            ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+              (ArithmeticThetaIdentitySectionsR0138.zeroIndex (2 * m) (Nat.mul_pos (by decide) hm))
+              1 s),
+          ∀ φ : ArithmeticThetaGenericEvaluationR0140.GenericDual k M s m,
+            ∃! c : Fin m → LaurentSeries k,
+              ArithmeticThetaGenericEvaluationR0140.Combines k M s m m
+                (ArithmeticThetaGenericEvaluationR0140.genericTheta k m hm he M hM s hs) c φ := by
   intro k _ _ m hm he T M hM s hs φ
   obtain ⟨c, hc⟩ := generic_exists k m hm he M hM s hs φ
   exact ⟨c, hc, fun v hv => generic_unique k m hm he M hM s hs φ v c hv hc⟩

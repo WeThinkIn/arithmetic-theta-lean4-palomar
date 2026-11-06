@@ -8,7 +8,25 @@ namespace ArithmeticThetaFourTorsion
 universe u
 
 /-- Translation by the first labelled two-torsion point preserves the root expression. -/
-theorem two_torsion_translation : ∀ (k : Type u) [Field k] [CharZero k] [DecidableEq k] (e₁ e₂ e₃ x y : k), e₁ ≠ e₂ → e₁ ≠ e₃ → e₂ ≠ e₃ → (ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).Equation x y → y ≠ 0 → (ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).addX x e₁ ((ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).slope x e₁ y 0) = e₁ + (e₁-e₂)*(e₁-e₃)/(x-e₁) ∧ (ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).addY x e₁ y ((ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).slope x e₁ y 0) = -(e₁-e₂)*(e₁-e₃)*y/(x-e₁)^2 ∧ ArithmeticThetaFourTorsion.rootExpression e₁ e₂ e₃ ((ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).addX x e₁ ((ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).slope x e₁ y 0)) ((ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).addY x e₁ y ((ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).slope x e₁ y 0)) = ArithmeticThetaFourTorsion.rootExpression e₁ e₂ e₃ x y := by
+theorem two_torsion_translation :
+    ∀ (k : Type u) [Field k] [CharZero k] [DecidableEq k] (e₁ e₂ e₃ x y : k),
+      e₁ ≠ e₂ →
+        e₁ ≠ e₃ →
+          e₂ ≠ e₃ →
+            (ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).Equation x y →
+              y ≠ 0 →
+                (ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).addX x e₁
+                      ((ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).slope x e₁ y 0) =
+                    e₁ + (e₁ - e₂) * (e₁ - e₃) / (x - e₁) ∧
+                  (ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).addY x e₁ y
+                        ((ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).slope x e₁ y 0) =
+                      -(e₁ - e₂) * (e₁ - e₃) * y / (x - e₁) ^ 2 ∧
+                    ArithmeticThetaFourTorsion.rootExpression e₁ e₂ e₃
+                        ((ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).addX x e₁
+                          ((ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).slope x e₁ y 0))
+                        ((ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).addY x e₁ y
+                          ((ArithmeticThetaFourTorsion.splitCurve e₁ e₂ e₃).slope x e₁ y 0)) =
+                      ArithmeticThetaFourTorsion.rootExpression e₁ e₂ e₃ x y := by
   intro k _ _ _ e₁ e₂ e₃ x y h12 h13 _ hE hy
   -- Expand the actual Weierstrass equation into the split cubic.
   have hcurve : y ^ 2 = (x - e₁) * (x - e₂) * (x - e₃) := by

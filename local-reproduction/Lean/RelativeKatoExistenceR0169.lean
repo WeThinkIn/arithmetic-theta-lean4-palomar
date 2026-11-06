@@ -270,7 +270,23 @@ open CategoryTheory AlgebraicGeometry
 
 /-- The unique normalized relative Kato function and its genuine regular unit sections. -/
 theorem relative_kato_existence :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)], ∀ (c : ℕ), 1 < c → Nat.Coprime c 6 → ∃ G : ArithmeticThetaRelativeKatoR0169.Law R W, ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G ∧ ∃! g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField, ArithmeticThetaRelativeKatoR0169.IsRelativeKato R W G c g ∧ ArithmeticThetaRelativeKatoR0169.UnitOnComplement R W G c g ∧ (∀ C : ArithmeticThetaRelativeKatoR0169.GenericComparison R W G, ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction (FractionRing R) (W.map (algebraMap R (FractionRing R))) C.law c (C.field g)) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)],
+      ∀ (c : ℕ),
+        1 < c →
+          Nat.Coprime c 6 →
+            ∃ G : ArithmeticThetaRelativeKatoR0169.Law R W,
+              ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G ∧
+                ∃! g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField,
+                  ArithmeticThetaRelativeKatoR0169.IsRelativeKato R W G c g ∧
+                    ArithmeticThetaRelativeKatoR0169.UnitOnComplement R W G c g ∧
+                      (∀ C : ArithmeticThetaRelativeKatoR0169.GenericComparison R W G,
+                        ArithmeticThetaGeneralEllipticKatoR0168.IsKatoFunction (FractionRing R)
+                          (W.map (algebraMap R (FractionRing R))) C.law c (C.field g)) := by
   intro R _ _ _ _ _ W _ _ _ _ _ c hc hc6
   letI : CharZero R := charZero_of_injective_algebraMap (algebraMap ℚ R).injective
   letI : CharZero (FractionRing R) :=

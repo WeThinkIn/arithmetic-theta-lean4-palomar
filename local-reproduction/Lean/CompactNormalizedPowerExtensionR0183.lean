@@ -227,7 +227,36 @@ open CompactNormalizedPowerExtensionR0183
 /-- The unique compact extension of the same normalized open section, with
 nonzero full integral coefficients in every actual Tate disk. -/
 theorem compact_normalized_power_extension :
-    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (m N : ℕ) (hm : 0 < m) (hmeven : Even m) (hN : 0 < N) (hNeven : Even N) (hmN : m ∣ N) (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (ArithmeticThetaCompactUnaryR0183.level N)) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k (ArithmeticThetaCompactUnaryR0183.level N) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k (ArithmeticThetaCompactUnaryR0183.level N) D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k (ArithmeticThetaCompactUnaryR0183.level N) H → ∀ (a b : Fin N), (a.val ≠ 0 ∨ b.val ≠ 0) → ∀ A : ArithmeticThetaCompactUnaryR0183.OpenPower k m N D a b, ∃! s : (ArithmeticThetaTensorPower.tensorPower X.space H.line (ArithmeticThetaCompactUnaryR0183.weight N)).presheaf.obj (Opposite.op ⊤), ArithmeticThetaBoundaryHodgeR0182.restrictPower k (ArithmeticThetaCompactUnaryR0183.level N) H (ArithmeticThetaCompactUnaryR0183.weight N) s = ArithmeticThetaBoundaryHodgeR0182.pullToOpen k (ArithmeticThetaCompactUnaryR0183.level N) (ArithmeticThetaCompactUnaryR0183.weight N) A.section_ ∧ ∀ V : ArithmeticThetaBoundaryHodgeR0182.DiskTest k (ArithmeticThetaCompactUnaryR0183.level N) D X, ∃ f : PowerSeries k, f ≠ 0 ∧ ArithmeticThetaCompactUnaryR0183.DiskCoefficient k N H V s f := by
+    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (m N : ℕ) (hm : 0 < m) (hmeven : Even m)
+      (hN : 0 < N) (hNeven : Even N) (hmN : m ∣ N)
+      (D :
+        ArithmeticThetaLevelCompactificationR0179.LevelData k
+          (ArithmeticThetaCompactUnaryR0183.level N))
+      (X :
+        ArithmeticThetaLevelCompactificationR0179.Compactification k
+          (ArithmeticThetaCompactUnaryR0183.level N) D)
+      (H :
+        ArithmeticThetaBoundaryHodgeR0182.Extension k (ArithmeticThetaCompactUnaryR0183.level N) D
+          X),
+      ArithmeticThetaBoundaryHodgeR0182.Canonical k (ArithmeticThetaCompactUnaryR0183.level N) H →
+        ∀ (a b : Fin N),
+          (a.val ≠ 0 ∨ b.val ≠ 0) →
+            ∀ A : ArithmeticThetaCompactUnaryR0183.OpenPower k m N D a b,
+              ∃! s :
+                (ArithmeticThetaTensorPower.tensorPower X.space H.line
+                      (ArithmeticThetaCompactUnaryR0183.weight N)).presheaf.obj
+                  (Opposite.op ⊤),
+                ArithmeticThetaBoundaryHodgeR0182.restrictPower k
+                      (ArithmeticThetaCompactUnaryR0183.level N) H
+                      (ArithmeticThetaCompactUnaryR0183.weight N) s =
+                    ArithmeticThetaBoundaryHodgeR0182.pullToOpen k
+                      (ArithmeticThetaCompactUnaryR0183.level N)
+                      (ArithmeticThetaCompactUnaryR0183.weight N) A.section_ ∧
+                  ∀ V :
+                    ArithmeticThetaBoundaryHodgeR0182.DiskTest k
+                      (ArithmeticThetaCompactUnaryR0183.level N) D X,
+                    ∃ f : PowerSeries k,
+                      f ≠ 0 ∧ ArithmeticThetaCompactUnaryR0183.DiskCoefficient k N H V s f := by
   intro k _ _ _ m N hm hmeven hN hNeven hmN D X H hH a b hab A
   have hL : 3 ≤ level N := by
     dsimp [level]

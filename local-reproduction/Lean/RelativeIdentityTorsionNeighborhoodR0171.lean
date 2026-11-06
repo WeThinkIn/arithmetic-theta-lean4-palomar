@@ -69,7 +69,19 @@ end IdentityTorsionNeighborhood
 /-- Every point of the identity admits a regular chart where the actual torsion
 ideal equals the identity ideal. Positive multiplication includes c = 1. -/
 theorem relative_identity_torsion_neighborhood :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (c : ℕ) (hc : 0 < c) (x : ArithmeticThetaRelativeDiscriminantR0171.Base R), ∃ (U : (ArithmeticThetaRelativeKatoR0169.Curve R W).affineOpens) (a : (ArithmeticThetaRelativeKatoR0169.Curve R W).presheaf.obj (Opposite.op U.1)), ArithmeticThetaRelativeKatoR0169.origin R W x ∈ U.1 ∧ ArithmeticThetaRelativeDiscriminantR0171.IdentityChart R W G c U a := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (c : ℕ) (hc : 0 < c)
+      (x : ArithmeticThetaRelativeDiscriminantR0171.Base R),
+      ∃ (U : (ArithmeticThetaRelativeKatoR0169.Curve R W).affineOpens) (a :
+        (ArithmeticThetaRelativeKatoR0169.Curve R W).presheaf.obj (Opposite.op U.1)),
+        ArithmeticThetaRelativeKatoR0169.origin R W x ∈ U.1 ∧
+          ArithmeticThetaRelativeDiscriminantR0171.IdentityChart R W G c U a := by
   intro R _ _ _ _ _ W _ _ _ _ _ G hG c hc x
   letI : IsProper (structureMap R W) :=
     WeierstrassProjModel.projModelStrCR_isProper W.toProjective
@@ -126,7 +138,23 @@ theorem relative_identity_torsion_neighborhood :
 /-- Cancel the common regular generator in the accepted Cartier equation,
 then retain the exact scalar c as a unit in the actual section ring. -/
 theorem relative_initial_unit :
-∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R] [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)] [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)] (G : ArithmeticThetaRelativeKatoR0169.Law R W) (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (c : ℕ) (hc : 1 < c) (hc6 : Nat.Coprime c 6) (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField) (hg : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R W G c g) (U : (ArithmeticThetaRelativeKatoR0169.Curve R W).affineOpens) [Nonempty U.1] (a : (ArithmeticThetaRelativeKatoR0169.Curve R W).presheaf.obj (Opposite.op U.1)) (ha : ArithmeticThetaRelativeDiscriminantR0171.IdentityChart R W G c U a), ∃! ε : ((ArithmeticThetaRelativeKatoR0169.Curve R W).presheaf.obj (Opposite.op U.1))ˣ, (c : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField) * g = (ArithmeticThetaRelativeKatoR0169.Curve R W).germToFunctionField U.1 ((ε : _) * a^(c^2-1)) := by
+    ∀ (R : Type u) [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]
+      [Algebra ℚ R] (W : WeierstrassCurve R) [W.IsElliptic]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.Curve R W)]
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      [AlgebraicGeometry.IsLocallyNoetherian (ArithmeticThetaRelativeKatoR0169.GenericCurve R W)]
+      (G : ArithmeticThetaRelativeKatoR0169.Law R W)
+      (hG : ArithmeticThetaRelativeKatoR0169.IsOriginLaw R W G) (c : ℕ) (hc : 1 < c)
+      (hc6 : Nat.Coprime c 6) (g : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField)
+      (hg : ArithmeticThetaRelativeKatoNaturalityR0170.Normalized R W G c g)
+      (U : (ArithmeticThetaRelativeKatoR0169.Curve R W).affineOpens) [Nonempty U.1]
+      (a : (ArithmeticThetaRelativeKatoR0169.Curve R W).presheaf.obj (Opposite.op U.1))
+      (ha : ArithmeticThetaRelativeDiscriminantR0171.IdentityChart R W G c U a),
+      ∃! ε : ((ArithmeticThetaRelativeKatoR0169.Curve R W).presheaf.obj (Opposite.op U.1))ˣ,
+        (c : (ArithmeticThetaRelativeKatoR0169.Curve R W).functionField) * g =
+          (ArithmeticThetaRelativeKatoR0169.Curve R W).germToFunctionField U.1
+            ((ε : _) * a ^ (c ^ 2 - 1)) := by
   intro R _ _ _ _ _ W _ _ _ _ _ G hG c hc hc6 g hg U _ a ha
   obtain ⟨e, he⟩ := relative_kato_cartier_ratio R W G hG c hc hc6 g hg
     U a a ha.1 ha.1 ha.2.1 (ha.2.2.trans ha.2.1)

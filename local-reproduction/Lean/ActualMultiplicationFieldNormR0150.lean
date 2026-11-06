@@ -98,7 +98,47 @@ open ActualMultiplicationFieldNorm
 
 /-- The actual multiplication map determines the finite extension and its scalar norm. -/
 theorem actual_multiplication_field_norm :
-∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (G : ArithmeticThetaMarkedGroupLawR0146.Law k M) (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G) [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)], ∀ (n : ℕ), 0 < n → ∃ φ : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)), ArithmeticThetaGeometricNormR0150.IsFieldMap (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n) φ ∧ ArithmeticThetaGeometricNormR0150.FiniteFieldMap φ ∧ ArithmeticThetaGeometricNormR0150.fieldDegree φ = n^2 ∧ (∀ a : LaurentSeries k, ArithmeticThetaGeometricNormR0150.fieldNorm φ (ArithmeticThetaGeometricNormR0150.baseScalar (X := (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (LaurentSeries k) (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M) a) = ArithmeticThetaGeometricNormR0150.baseScalar (X := (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) (LaurentSeries k) (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M) (a^(n^2))) ∧ (∀ ψ : (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+* (AlgebraicGeometry.Scheme.functionField (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)), ArithmeticThetaGeometricNormR0150.IsFieldMap (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n) ψ → ψ = φ) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+      (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (he : Even r)
+      (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+      (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+      (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+      (hs :
+        ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+          (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+      (G : ArithmeticThetaMarkedGroupLawR0146.Law k M)
+      (hG : ArithmeticThetaMarkedGroupLawR0146.IsOriginLaw k M s hs.1 G)
+      [AlgebraicGeometry.IsIntegral (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)],
+      ∀ (n : ℕ),
+        0 < n →
+          ∃ φ :
+            (AlgebraicGeometry.Scheme.functionField
+                (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+              (AlgebraicGeometry.Scheme.functionField
+                (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)),
+            ArithmeticThetaGeometricNormR0150.IsFieldMap
+                (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n) φ ∧
+              ArithmeticThetaGeometricNormR0150.FiniteFieldMap φ ∧
+                ArithmeticThetaGeometricNormR0150.fieldDegree φ = n ^ 2 ∧
+                  (∀ a : LaurentSeries k,
+                      ArithmeticThetaGeometricNormR0150.fieldNorm φ
+                          (ArithmeticThetaGeometricNormR0150.baseScalar (X :=
+                            (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))
+                            (LaurentSeries k)
+                            (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M) a) =
+                        ArithmeticThetaGeometricNormR0150.baseScalar (X :=
+                          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M))
+                          (LaurentSeries k)
+                          (ArithmeticThetaProjectiveEffectivityR0135.genericStructure k M)
+                          (a ^ (n ^ 2))) ∧
+                    (∀ ψ :
+                      (AlgebraicGeometry.Scheme.functionField
+                          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)) →+*
+                        (AlgebraicGeometry.Scheme.functionField
+                          (ArithmeticThetaGenericEvaluationR0140.genericScheme k M)),
+                      ArithmeticThetaGeometricNormR0150.IsFieldMap
+                          (ArithmeticThetaHodgeFourTorsionR0147.multiplication k M G n) ψ →
+                        ψ = φ) := by
   intro k _ _ r hr h3 T he M hM s hs G hG _ n hn
   obtain ⟨hfinite, hetale, hsurj, hrank⟩ :=
     multiplication_finite_etale_degree k r hr h3 T he M hM s hs G hG n hn

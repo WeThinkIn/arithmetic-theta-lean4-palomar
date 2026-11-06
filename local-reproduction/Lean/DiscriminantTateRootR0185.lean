@@ -466,7 +466,38 @@ end ArithmeticThetaCommonHalfHodgeR0185.DiscriminantTateRootR0185
 namespace ArithmeticThetaCommonHalfHodgeR0185
 /-- The prescribed complete Tate root of the actual normalized twist. -/
 theorem discriminant_tate_root :
-    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L : ℕ), 0 < L → 24 ∣ L → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k L H → ∀ (s : (ArithmeticThetaTensorPower.tensorPower X.space H.line 24).presheaf.obj (Opposite.op ⊤)), ArithmeticThetaComponentDegreeR0184.IsCompactD2 k L D X H s → ∀ (A : ArithmeticThetaCommonHalfHodgeR0185.DivisorLine (ArithmeticThetaComponentDegreeR0184.Component k L D X x)), ArithmeticThetaCommonHalfHodgeR0185.IsCuspHalfLine k L D X x A → ∀ (W : ArithmeticThetaCommonHalfHodgeR0185.Twist k L D X x A H), ArithmeticThetaCommonHalfHodgeR0185.IsTwist k L D X x s W → ∀ (V : ArithmeticThetaBoundaryHodgeR0182.DiskTest k L D X) (f : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk k) (ArithmeticThetaComponentDegreeR0184.Component k L D X x)) (hf : CategoryTheory.CategoryStruct.comp f (ArithmeticThetaComponentDegreeR0184.inclusion k L D X x) = V.disk), ∃! v : ((AlgebraicGeometry.Scheme.Modules.pullback f).obj W.line).presheaf.obj (Opposite.op ⊤), ArithmeticThetaCommonHalfHodgeR0185.IsTateRoot k L D X x W V f hf v := by
+    ∀ (k : Type) [Field k] [CharZero k] [IsAlgClosed k] (L : ℕ),
+      0 < L →
+        24 ∣ L →
+          ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+            (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (x : X.space)
+            (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X),
+            ArithmeticThetaBoundaryHodgeR0182.Canonical k L H →
+              ∀
+                (s :
+                  (ArithmeticThetaTensorPower.tensorPower X.space H.line 24).presheaf.obj
+                    (Opposite.op ⊤)),
+                ArithmeticThetaComponentDegreeR0184.IsCompactD2 k L D X H s →
+                  ∀
+                    (A :
+                      ArithmeticThetaCommonHalfHodgeR0185.DivisorLine
+                        (ArithmeticThetaComponentDegreeR0184.Component k L D X x)),
+                    ArithmeticThetaCommonHalfHodgeR0185.IsCuspHalfLine k L D X x A →
+                      ∀ (W : ArithmeticThetaCommonHalfHodgeR0185.Twist k L D X x A H),
+                        ArithmeticThetaCommonHalfHodgeR0185.IsTwist k L D X x s W →
+                          ∀ (V : ArithmeticThetaBoundaryHodgeR0182.DiskTest k L D X)
+                            (f :
+                              Quiver.Hom (ArithmeticThetaTateCuspsR0181.Disk k)
+                                (ArithmeticThetaComponentDegreeR0184.Component k L D X x))
+                            (hf :
+                              CategoryTheory.CategoryStruct.comp f
+                                  (ArithmeticThetaComponentDegreeR0184.inclusion k L D X x) =
+                                V.disk),
+                            ∃! v :
+                              ((AlgebraicGeometry.Scheme.Modules.pullback f).obj
+                                    W.line).presheaf.obj
+                                (Opposite.op ⊤),
+                              ArithmeticThetaCommonHalfHodgeR0185.IsTateRoot k L D X x W V f hf v := by
   intro k _ _ _ L hL h24 D X x H hH s hs A hA W hW V f hf
   obtain ⟨v, hv, hbranch⟩ := DiscriminantTateRootR0185.branch_frame
     k L D X x hL h24 H hH A hA W hW.1 V f hf

@@ -326,7 +326,20 @@ open CategoryTheory AlgebraicGeometry
 /-- The exact normalized Miller ratio descends to a unique global regular
 function and retains its affine geometric pairing identification on every test. -/
 theorem scheme_miller_phase :
-∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4), (∃! z : S.presheaf.obj (Opposite.op ⊤), ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z) ∧ (∀ z : S.presheaf.obj (Opposite.op ⊤), ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z → IsUnit z ∧ z^2 = -1 ∧ (Nontrivial (S.presheaf.obj (Opposite.op ⊤)) → IsPrimitiveRoot z 4) ∧ (∀ P : ArithmeticThetaSchemeFourCharacterR0215.AffineTest E M, ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase P.ring P.equation P.law P.level (ArithmeticThetaSchemeFourCharacterR0215.affineScalar E M P z))) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4),
+      (∃! z : S.presheaf.obj (Opposite.op ⊤),
+          ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z) ∧
+        (∀ z : S.presheaf.obj (Opposite.op ⊤),
+          ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z →
+            IsUnit z ∧
+              z ^ 2 = -1 ∧
+                (Nontrivial (S.presheaf.obj (Opposite.op ⊤)) → IsPrimitiveRoot z 4) ∧
+                  (∀ P : ArithmeticThetaSchemeFourCharacterR0215.AffineTest E M,
+                    ArithmeticThetaRelativeFourCharacterR0211.GeometricPhase P.ring P.equation P.law
+                      P.level (ArithmeticThetaSchemeFourCharacterR0215.affineScalar E M P z))) := by
   intro k _ _ S σ E M
   refine ⟨SchemeMillerPhase.exists_unique E M k σ, ?_⟩
   intro z hz

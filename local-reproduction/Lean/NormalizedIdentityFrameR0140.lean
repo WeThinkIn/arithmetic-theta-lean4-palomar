@@ -894,7 +894,18 @@ open ArithmeticThetaIdentitySectionsR0138.AlgebraizedThetaSectionsR0138
 open NormalizedIdentityFrameR0140
 
 theorem normalized_identity_frame :
-    ∀ (k : Type u) [Field k] [CharZero k], ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r) (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr) (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T) (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M) (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X) (hs : ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s) (d : ℕ), ∃ e : ArithmeticThetaGenericEvaluationR0140.IdentityFrame k M s d, ArithmeticThetaGenericEvaluationR0140.NormalizedFrame k h3 M hM s hs d e := by
+    ∀ (k : Type u) [Field k] [CharZero k],
+      ∀ (r : ℕ) (hr : 0 < r) (h3 : 3 ≤ r)
+        (T : ArithmeticThetaInfinitesimalPolygonR0129.Tower k r hr)
+        (M : ArithmeticThetaProjectiveEffectivityR0135.Model k T)
+        (hM : ArithmeticThetaProjectiveEffectivityR0135.IsModel k T M)
+        (s : Quiver.Hom (ArithmeticThetaAlgebraizedMarkedLineR0136.baseScheme k) M.X)
+        (hs :
+          ArithmeticThetaAlgebraizedMarkedLineR0136.MarkedLift k M
+            (ArithmeticThetaIdentitySectionsR0138.zeroIndex r hr) 1 s)
+        (d : ℕ),
+        ∃ e : ArithmeticThetaGenericEvaluationR0140.IdentityFrame k M s d,
+          ArithmeticThetaGenericEvaluationR0140.NormalizedFrame k h3 M hM s hs d e := by
   intro k _ _ r hr h3 T M hM s hs d
   obtain ⟨e, he⟩ := exists_frame_reductions k
     ((Scheme.Modules.pullback s).obj (powerModule k M s d))

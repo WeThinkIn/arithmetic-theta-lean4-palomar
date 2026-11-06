@@ -72,7 +72,20 @@ end SchemePhaseNaturality
 
 /-- The normalized global phase commutes with every marked Cartesian base change. -/
 theorem scheme_phase_naturality :
-∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u}) (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k)) (E : ArithmeticThetaLocalWeierstrassR0203.Family S) (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4), ∀ (T : AlgebraicGeometry.Scheme.{u}) (τ : Quiver.Hom T (ArithmeticThetaLocalWeierstrassR0203.Base k)) (F : ArithmeticThetaLocalWeierstrassR0203.Family T) (N : ArithmeticThetaSchemeLevelR0204.FullLevel F 4) (b : Quiver.Hom T S) (f : Quiver.Hom F.curve E.curve), CategoryTheory.CategoryStruct.comp b σ = τ → ∀ (hb : ArithmeticThetaSchemeLevelR0204.MarkedCartesian E F M N b f), ∀ (z : S.presheaf.obj (Opposite.op ⊤)) (w : T.presheaf.obj (Opposite.op ⊤)), ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z → ArithmeticThetaSchemeFourCharacterR0215.MillerPhase F N w → b.appTop z = w := by
+    ∀ (k : Type u) [Field k] [CharZero k] (S : AlgebraicGeometry.Scheme.{u})
+      (σ : Quiver.Hom S (ArithmeticThetaLocalWeierstrassR0203.Base k))
+      (E : ArithmeticThetaLocalWeierstrassR0203.Family S)
+      (M : ArithmeticThetaSchemeLevelR0204.FullLevel E 4),
+      ∀ (T : AlgebraicGeometry.Scheme.{u})
+        (τ : Quiver.Hom T (ArithmeticThetaLocalWeierstrassR0203.Base k))
+        (F : ArithmeticThetaLocalWeierstrassR0203.Family T)
+        (N : ArithmeticThetaSchemeLevelR0204.FullLevel F 4) (b : Quiver.Hom T S)
+        (f : Quiver.Hom F.curve E.curve),
+        CategoryTheory.CategoryStruct.comp b σ = τ →
+          ∀ (hb : ArithmeticThetaSchemeLevelR0204.MarkedCartesian E F M N b f),
+            ∀ (z : S.presheaf.obj (Opposite.op ⊤)) (w : T.presheaf.obj (Opposite.op ⊤)),
+              ArithmeticThetaSchemeFourCharacterR0215.MillerPhase E M z →
+                ArithmeticThetaSchemeFourCharacterR0215.MillerPhase F N w → b.appTop z = w := by
   intro k _ _ S σ E M T τ F N b f _ hb z w hz hw
   exact (scheme_miller_phase k T τ F N).1.unique
     (SchemePhaseNaturality.pullback_phase E F M N b f hb z hz) hw

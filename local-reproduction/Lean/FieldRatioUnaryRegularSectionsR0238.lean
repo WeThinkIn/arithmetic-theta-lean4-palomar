@@ -48,7 +48,65 @@ end FieldRatioUnaryRegularSectionsR0238
 
 /-- Regular unary sections on the prescribed cover over the original coefficient field. -/
 theorem field_ratio_unary_regular_sections :
-    ∀ (k : Type) [Field k] [CharZero k] (N s : ℕ), 0 < N → Even N → ∀ (m : Fin s → ℕ) (ν : Fin s → ℤ), (∀ i, 0 < m i ∧ Even (m i) ∧ m i ∣ N ∧ (-(m i : ℤ) ≤ 2*ν i ∧ 2*ν i < (m i : ℤ))) → ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k (ArithmeticThetaCompactUnaryR0183.level N)) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k (ArithmeticThetaCompactUnaryR0183.level N) D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k (ArithmeticThetaCompactUnaryR0183.level N) D X), ArithmeticThetaBoundaryHodgeR0182.Canonical k (ArithmeticThetaCompactUnaryR0183.level N) H → ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H → ∀ (V : ArithmeticThetaBoundaryHodgeR0182.DiskTest k (ArithmeticThetaCompactUnaryR0183.level N) D X) (ζ : k), IsPrimitiveRoot ζ (ArithmeticThetaCompactUnaryR0183.level N) → ArithmeticThetaTateCuspsR0181.CanonicalMarking k (ArithmeticThetaCompactUnaryR0183.level N) ζ V.level → ∀ (J : ArithmeticThetaSquareLinesR0192.SquareLine (ArithmeticThetaComponentDegreeR0184.Component k (ArithmeticThetaCompactUnaryR0183.level N) D X (V.disk (ArithmeticThetaTateCuspsR0181.closedPoint k))) (ArithmeticThetaComponentDegreeR0184.hodge k (ArithmeticThetaCompactUnaryR0183.level N) D X (V.disk (ArithmeticThetaTateCuspsR0181.closedPoint k)) H)) (b : ℕ) (C : ArithmeticThetaSimultaneousUnaryR0187.RootCover k (ArithmeticThetaComponentDegreeR0184.Component k (ArithmeticThetaCompactUnaryR0183.level N) D X (V.disk (ArithmeticThetaTateCuspsR0181.closedPoint k))) (ArithmeticThetaComponentDegreeR0184.projection k (ArithmeticThetaCompactUnaryR0183.level N) D X (V.disk (ArithmeticThetaTateCuspsR0181.closedPoint k))) b) (F : ArithmeticThetaSharpKernelR0195.CoverFrame k N H V J b C) (t₀ : Fin s → ArithmeticThetaSimultaneousUnaryR0187.Sections C.space ((AlgebraicGeometry.Scheme.Modules.pullback C.map).obj J.line)), (∀ i, ArithmeticThetaPullback.pullbackGlobalSection F.disk ((AlgebraicGeometry.Scheme.Modules.pullback C.map).obj J.line) (t₀ i) = ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k) (ArithmeticThetaSimultaneousUnaryR0187.unarySeries k N (m i) 0) • F.frame) → ArithmeticThetaSharpKernelR0195.RegularUnary k N s m ν H V J b C F t₀ := by
+    ∀ (k : Type) [Field k] [CharZero k] (N s : ℕ),
+      0 < N →
+        Even N →
+          ∀ (m : Fin s → ℕ) (ν : Fin s → ℤ),
+            (∀ i, 0 < m i ∧ Even (m i) ∧ m i ∣ N ∧ (-(m i : ℤ) ≤ 2 * ν i ∧ 2 * ν i < (m i : ℤ))) →
+              ∀
+                (D :
+                  ArithmeticThetaLevelCompactificationR0179.LevelData k
+                    (ArithmeticThetaCompactUnaryR0183.level N))
+                (X :
+                  ArithmeticThetaLevelCompactificationR0179.Compactification k
+                    (ArithmeticThetaCompactUnaryR0183.level N) D)
+                (H :
+                  ArithmeticThetaBoundaryHodgeR0182.Extension k
+                    (ArithmeticThetaCompactUnaryR0183.level N) D X),
+                ArithmeticThetaBoundaryHodgeR0182.Canonical k
+                    (ArithmeticThetaCompactUnaryR0183.level N) H →
+                  ArithmeticThetaBoundaryConstantsR0235.GeometricallyCanonical H →
+                    ∀
+                      (V :
+                        ArithmeticThetaBoundaryHodgeR0182.DiskTest k
+                          (ArithmeticThetaCompactUnaryR0183.level N) D X)
+                      (ζ : k),
+                      IsPrimitiveRoot ζ (ArithmeticThetaCompactUnaryR0183.level N) →
+                        ArithmeticThetaTateCuspsR0181.CanonicalMarking k
+                            (ArithmeticThetaCompactUnaryR0183.level N) ζ V.level →
+                          ∀
+                            (J :
+                              ArithmeticThetaSquareLinesR0192.SquareLine
+                                (ArithmeticThetaComponentDegreeR0184.Component k
+                                  (ArithmeticThetaCompactUnaryR0183.level N) D X
+                                  (V.disk (ArithmeticThetaTateCuspsR0181.closedPoint k)))
+                                (ArithmeticThetaComponentDegreeR0184.hodge k
+                                  (ArithmeticThetaCompactUnaryR0183.level N) D X
+                                  (V.disk (ArithmeticThetaTateCuspsR0181.closedPoint k)) H))
+                            (b : ℕ)
+                            (C :
+                              ArithmeticThetaSimultaneousUnaryR0187.RootCover k
+                                (ArithmeticThetaComponentDegreeR0184.Component k
+                                  (ArithmeticThetaCompactUnaryR0183.level N) D X
+                                  (V.disk (ArithmeticThetaTateCuspsR0181.closedPoint k)))
+                                (ArithmeticThetaComponentDegreeR0184.projection k
+                                  (ArithmeticThetaCompactUnaryR0183.level N) D X
+                                  (V.disk (ArithmeticThetaTateCuspsR0181.closedPoint k)))
+                                b)
+                            (F : ArithmeticThetaSharpKernelR0195.CoverFrame k N H V J b C)
+                            (t₀ :
+                              Fin s →
+                                ArithmeticThetaSimultaneousUnaryR0187.Sections C.space
+                                  ((AlgebraicGeometry.Scheme.Modules.pullback C.map).obj J.line)),
+                            (∀ i,
+                                ArithmeticThetaPullback.pullbackGlobalSection F.disk
+                                    ((AlgebraicGeometry.Scheme.Modules.pullback C.map).obj J.line)
+                                    (t₀ i) =
+                                  ArithmeticThetaOpenHodgeR0180.scalar (PowerSeries k)
+                                      (ArithmeticThetaSimultaneousUnaryR0187.unarySeries k N (m i)
+                                        0) •
+                                    F.frame) →
+                              ArithmeticThetaSharpKernelR0195.RegularUnary k N s m ν H V J b C F t₀ := by
   intro k _ _ N s hN hNeven m ν hm D X H hH hgH V ζ hζ hmark J b C F t₀ ht₀
   classical
   letI := C.integral

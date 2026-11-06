@@ -359,7 +359,29 @@ end TateLevelClassifyingParameter
 /-- Classification of the specified Tate family, its actual invariant, and the
 complete Legendre parameter with the canonical ordered labels. -/
 theorem tate_level_classifying_parameter :
-∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L), ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (E : ArithmeticThetaTateCuspsR0181.TateLevel k L) (p : Quiver.Hom (ArithmeticThetaLevelCompactificationR0179.OpenBase k L D) (ArithmeticThetaRelativeDiscriminantR0171.Base (ArithmeticThetaLegendreAtlasR0176.LegendreRing k))), ArithmeticThetaLevelCompactificationR0179.IsParameter k L D p → ∃! b : Quiver.Hom (ArithmeticThetaTateCuspsR0181.Puncture k) (ArithmeticThetaLevelCompactificationR0179.OpenBase k L D), ArithmeticThetaTateCuspsR0181.ClassifiesTate k L D E b ∧ ArithmeticThetaTateCuspsR0181.legendreJ k (ArithmeticThetaTateCuspsR0181.pulledParameter k L D p b) = ArithmeticThetaTateCuspsR0181.tateJ k L ∧ (∀ ζ : k, IsPrimitiveRoot ζ L → ArithmeticThetaTateCuspsR0181.CanonicalMarking k L ζ E → ArithmeticThetaTateCuspsR0181.pulledParameter k L D p b = (ArithmeticThetaCompactifiedDifferentialR0145.root k L 2 - ArithmeticThetaCompactifiedDifferentialR0145.root k L 0) / (ArithmeticThetaCompactifiedDifferentialR0145.root k L 1 - ArithmeticThetaCompactifiedDifferentialR0145.root k L 0)) := by
+    ∀ (k : Type u) [Field k] [CharZero k] (L : ℕ) (hL : 3 ≤ L) (heven : Even L),
+      ∀ (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L)
+        (E : ArithmeticThetaTateCuspsR0181.TateLevel k L)
+        (p :
+          Quiver.Hom (ArithmeticThetaLevelCompactificationR0179.OpenBase k L D)
+            (ArithmeticThetaRelativeDiscriminantR0171.Base
+              (ArithmeticThetaLegendreAtlasR0176.LegendreRing k))),
+        ArithmeticThetaLevelCompactificationR0179.IsParameter k L D p →
+          ∃! b :
+            Quiver.Hom (ArithmeticThetaTateCuspsR0181.Puncture k)
+              (ArithmeticThetaLevelCompactificationR0179.OpenBase k L D),
+            ArithmeticThetaTateCuspsR0181.ClassifiesTate k L D E b ∧
+              ArithmeticThetaTateCuspsR0181.legendreJ k
+                    (ArithmeticThetaTateCuspsR0181.pulledParameter k L D p b) =
+                  ArithmeticThetaTateCuspsR0181.tateJ k L ∧
+                (∀ ζ : k,
+                  IsPrimitiveRoot ζ L →
+                    ArithmeticThetaTateCuspsR0181.CanonicalMarking k L ζ E →
+                      ArithmeticThetaTateCuspsR0181.pulledParameter k L D p b =
+                        (ArithmeticThetaCompactifiedDifferentialR0145.root k L 2 -
+                            ArithmeticThetaCompactifiedDifferentialR0145.root k L 0) /
+                          (ArithmeticThetaCompactifiedDifferentialR0145.root k L 1 -
+                            ArithmeticThetaCompactifiedDifferentialR0145.root k L 0)) := by
   intro k _ _ L hL heven D E p hp
   obtain ⟨b, hb, huniq⟩ := TateLevelClassifyingParameter.classifying_exists_unique k L hL heven D E
   refine ⟨b, ⟨hb, TateLevelClassifyingParameter.classifying_j k L D E p hp b hb, ?_⟩, ?_⟩
