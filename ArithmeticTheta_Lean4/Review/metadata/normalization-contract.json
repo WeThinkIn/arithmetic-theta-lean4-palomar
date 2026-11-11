@@ -1,0 +1,41 @@
+{
+  "spec": {
+    "schema_version": 1,
+    "kind": "generic-lean4",
+    "task_id": "arithmetic-theta-review-normalization-20261111",
+    "objective": "workspace/goal-tasks/arithmetic-theta-review-normalization-20261111/Objective.md",
+    "difficulty": "medium",
+    "deliverables_root": "workspace/deliveries/arithmetic-theta-review-normalization-20261111",
+    "model": "gpt-6-astra",
+    "obligations": [
+      {
+        "id": "normalization-source-chart-comparison",
+        "declaration": "ArithmeticThetaReview.Normalization.source_chart_comparison",
+        "file": "Lean/ReviewNormalizationBridges.lean",
+        "type": "∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X) (T : ArithmeticThetaBoundaryHodgeR0182.DiskTest k L D X), (ArithmeticThetaReview.Normalization.sourceChart H T).comparison = ArithmeticThetaBoundaryHodgeR0182.diskGenericIso k L H T",
+        "source_statement": "The generic pointed Cartesian Tate comparison is the exact original diskGenericIso, with no scalar replacement.",
+        "difficulty": "easy",
+        "depends_on": []
+      },
+      {
+        "id": "normalization-source-normalization-preserves",
+        "declaration": "ArithmeticThetaReview.Normalization.source_normalization_preserves",
+        "file": "Lean/ReviewNormalizationBridges.lean",
+        "type": "∀ (k : Type) [Field k] [CharZero k] (n h : ℕ) (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h) (G : ArithmeticThetaArithmeticFieldR0231.MatrixData k A) (u : ArithmeticThetaCompactModularityR0209.Universal G.root), (ArithmeticThetaReview.Normalization.sourceNormalization G u).map = ArithmeticThetaCompactModularityR0209.compactMap G.root ∧ (ArithmeticThetaReview.Normalization.sourceNormalization G u).square = ArithmeticThetaCompactModularityR0209.compactSquare G.root ∧ (ArithmeticThetaReview.Normalization.sourceNormalization G u).normalized.generator = G.frame.generator ∧ (ArithmeticThetaReview.Normalization.sourceNormalization G u).chart.differential = G.test.differential ∧ (ArithmeticThetaReview.Normalization.sourceNormalization G u).chart.comparison = ArithmeticThetaBoundaryHodgeR0182.diskGenericIso k (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) G.hodge G.test",
+        "source_statement": "The normalized review family retains the original compact map, compact square, regular Hodge generator, normalized Tate differential, and the full canonical disk comparison.",
+        "difficulty": "easy",
+        "depends_on": []
+      }
+    ],
+    "inputs": [],
+    "max_parallel": 2,
+    "delivery_policy": {
+      "stage": "round",
+      "pdf": "omit"
+    }
+  },
+  "spec_sha256": "4af22e3175b589c44f77b8877fbdded11972695a20e7bf3264e0b1922468d700",
+  "input_sha256": {
+    "workspace/goal-tasks/arithmetic-theta-review-normalization-20261111/Objective.md": "36e7981cd5af6c6eb0e0301c53d1cd96ec76633af424565a976506d2becd1cce"
+  }
+}

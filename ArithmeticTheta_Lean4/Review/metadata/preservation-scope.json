@@ -1,0 +1,12 @@
+{
+  "baseline_commit": "598b5e305fcc4a385ee45a6c2687d90acbb763d8",
+  "original_modules": 1199,
+  "original_endpoints": 103,
+  "original_sources_and_metadata_unchanged": true,
+  "palomar_unchanged": true,
+  "review_modules": 13,
+  "new_exact_type_obligations": 18,
+  "theorem_relationship": "Proved projections of the original richer construction results; the original types and witnesses remain unchanged.",
+  "combined_root": "Lean/ReviewRoot.lean",
+  "verification": "../verification/OriginalPreservationReport.json"
+}

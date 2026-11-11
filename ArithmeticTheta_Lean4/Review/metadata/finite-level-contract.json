@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "schema_version": 1,
+    "kind": "generic-lean4",
+    "task_id": "arithmetic-theta-review-finite-level-20261111",
+    "objective": "workspace/goal-tasks/arithmetic-theta-review-finite-level-20261111/Objective.md",
+    "difficulty": "medium",
+    "deliverables_root": "workspace/deliveries/arithmetic-theta-review-finite-level-20261111",
+    "model": "gpt-6-astra",
+    "obligations": [
+      {
+        "id": "finite-level-projection",
+        "declaration": "ArithmeticThetaReview.Geometry.finite_level_of_original",
+        "file": "Lean/ReviewFiniteLevel.lean",
+        "type": "∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (P : ArithmeticThetaActualLevelR0208.Provider k L) (C : ArithmeticThetaMetaplecticStackR0207.Coherence L (ArithmeticThetaLocalWeierstrassR0203.Base k)) (Y : CategoryTheory.Over (ArithmeticThetaLocalWeierstrassR0203.Base k)) (p : Quiver.Hom Y (ArithmeticThetaActualLevelR0208.base P)) (H : ArithmeticThetaSquareLinesR0192.SquareLine Y.left ((AlgebraicGeometry.Scheme.Modules.pullback p.left).obj (ArithmeticThetaActualLevelR0208.hodge P))) (j : ArithmeticThetaActualLevelR0208.AnchoredMap C Y (ArithmeticThetaActualLevelR0208.object P p H)), Nonempty (ArithmeticThetaActualLevelR0208.PullbackComparison j) → ArithmeticThetaActualLevelR0208.FiniteEtaleLevel P p H j → ∀ bound : ℕ, (∀ z : (ArithmeticThetaActualLevelR0208.base P).left, p.left.finrank z ≤ bound) → ArithmeticThetaReview.Geometry.FiniteLevel j (2 * bound)",
+        "source_statement": "Project the existing actual finite metaplectic level to its presentation-independent semantic content on every scheme-valued test. Preserve the existing classifying map, anchored comparison, actual marked elliptic families and square-line maps, both fiber projections and naturality. Deduce finite etale fibers of rank at most twice the original bound from the existing exact-rank formula. This does not replace or weaken the original theorem, which remains available unchanged.",
+        "difficulty": "easy",
+        "depends_on": []
+      }
+    ],
+    "inputs": [],
+    "max_parallel": 1,
+    "delivery_policy": {
+      "stage": "round",
+      "pdf": "omit"
+    }
+  },
+  "spec_sha256": "d318f2c263c5436f01676c8a682bf0a70fec074e6fe5c0d6ecbd0f22384aee3b",
+  "input_sha256": {
+    "workspace/goal-tasks/arithmetic-theta-review-finite-level-20261111/Objective.md": "a4144ab9ef602a640946e77dfe98694a3bb7042cae23d67c73fe70ec9012137d"
+  }
+}

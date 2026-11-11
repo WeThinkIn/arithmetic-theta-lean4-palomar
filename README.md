@@ -23,6 +23,17 @@ This repository presents the research manuscript, the complete Lean 4 formalizat
 
 **For mathematical review:** the [reading guide](ArithmeticTheta_Lean4/READING_GUIDE.md)
 explains the main theorem, its transparent abbreviations and the proof's structure.
+The additive [review interfaces](ArithmeticTheta_Lean4/Review/README.md) provide
+two proved main-theorem projections with actual finite metaplectic levels,
+canonical Tate normalization and the same compact sections for every cutoff.
+Their recursive statement-definition counts are **224 versus 340** and
+**188 versus 317** for the original construction statements. The
+[Chinese mathematical guide](ArithmeticTheta_Lean4/Review/REVIEW_GUIDE.zh-CN.md),
+[complete definition index](ArithmeticTheta_Lean4/Review/DEFINITION_INDEX.md) and
+[verification evidence](ArithmeticTheta_Lean4/Review/verification/README.md)
+explain the retained mathematics and the projection boundary. All original
+proof sources and stronger construction results remain unchanged; these
+interfaces do not imply that independent human semantic review is complete.
 The [103-endpoint index](ArithmeticTheta_Lean4/THEOREM_INDEX.md) links each original
 obligation to its defining declaration. The readability edition retains the
 original names and frozen type/axiom probes; its source changes are recorded
@@ -76,6 +87,14 @@ The following declarations provide entry points to the principal results. Each l
 | Actual finite metaplectic level and section image over the prescribed cyclotomic field | [`ArithmeticThetaCyclotomicModularityR0239.cyclotomic_matrix_modularity`](ArithmeticTheta_Lean4/Lean/CyclotomicMatrixModularityR0239.lean) |
 | Modularity, solver output, and complete expansions under coefficient-field extension | [`ArithmeticThetaExtendedMetaplecticR0241.cyclotomic_extended_modularity`](ArithmeticTheta_Lean4/Lean/CyclotomicExtendedModularityR0241.lean) |
 | Adaptive solver correctness, termination, and first-certified stopping on its schedule | [`ArithmeticThetaAdaptiveSolverR0230.adaptive_universal_solver`](ArithmeticTheta_Lean4/Lean/AdaptiveUniversalSolverR0230.lean) |
+
+For a smaller initial reading dependency, the
+[additive review main theorems](ArithmeticTheta_Lean4/Review/Lean/ReviewMainTheorems.lean)
+expose `ArithmeticThetaReview.Geometry.conservative_image_review` and
+`ArithmeticThetaReview.Geometry.cyclotomic_modularity_review`. Read these with
+the unchanged sharp-kernel theorem above. They are source-preserving
+consequences of the original richer construction results, with explicit
+bridges for the same geometry, square maps and normalized frame.
 
 The original Lean 4.33.1 proof entry point is [`ArithmeticTheta_Lean4/Lean/GoalRoot.lean`](ArithmeticTheta_Lean4/Lean/GoalRoot.lean), with final integration in [`FullSourceIntegrationR0268.lean`](ArithmeticTheta_Lean4/Lean/FullSourceIntegrationR0268.lean). The corresponding Palomar adaptation is under [`Palomar_lean/Proof/`](Palomar_lean/Proof/), with its own [`GoalRoot.lean`](Palomar_lean/Proof/GoalRoot.lean). The [formal specification](Palomar_lean/docs/SourceObligations.json) records the exact statements, hypotheses, and source correspondence of all **103 endpoints**, and the [requirement map](Palomar_lean/docs/RequirementCoverage.json) relates them to the **13 original requirements**.
 

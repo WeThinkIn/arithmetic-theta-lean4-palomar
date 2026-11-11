@@ -1,0 +1,604 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "original_modules": 1199,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "verify_only": false,
+  "provenance_note": "Local compiler and hash records, not an independent semantic review.",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "standard_init_sha256": "9ed3667be31b6ce04b831418a8bc9e99c44804b8ddaf52f6ebbdebfd26d8409e",
+  "original_bindings": {
+    "path": "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/verification/StatementReadabilityBuildReport.json",
+    "sha256": "0f5937a2894ae9838464c83afc8c94dc98a9229cdc9e8fe8a7173d11f72ec32c",
+    "verified_modules": 1199
+  },
+  "original_verification": {
+    "command": [
+      "/home/miniconda3/envs/lean4/bin/python",
+      "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/scripts/reproduce.py",
+      "--lean",
+      "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+      "--build-dir",
+      "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/original-recheck",
+      "--jobs",
+      "8",
+      "--lean-threads",
+      "2",
+      "--timeout",
+      "600",
+      "--verify-only"
+    ],
+    "returncode": 0,
+    "seconds": 66.248,
+    "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/original-verification.log",
+    "log_sha256": "cfbf3ea31b6a563a317a7701307a160d03875a0e624f806ce7e0f292cec988a8",
+    "report_sha256": "fdd8914a6c0dea7a8ce98e2bfe3f4a19a1311f1865cb13e85c75821b45eae652",
+    "exact_type_checks": 103
+  },
+  "compiles": [
+    {
+      "module": "ReviewRelationLinear",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/lib/lean/ReviewRelationLinear.olean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/Review/Lean/ReviewRelationLinear.lean"
+      ],
+      "returncode": 0,
+      "seconds": 0.515,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/ReviewRelationLinear.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ReviewArithmeticDefinitions",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/lib/lean/ReviewArithmeticDefinitions.olean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/Review/Lean/ReviewArithmeticDefinitions.lean"
+      ],
+      "returncode": 0,
+      "seconds": 2.718,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/ReviewArithmeticDefinitions.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ReviewRelationSections",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/lib/lean/ReviewRelationSections.olean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/Review/Lean/ReviewRelationSections.lean"
+      ],
+      "returncode": 0,
+      "seconds": 4.821,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/ReviewRelationSections.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ReviewArithmeticBridges",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/lib/lean/ReviewArithmeticBridges.olean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/Review/Lean/ReviewArithmeticBridges.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.869,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/ReviewArithmeticBridges.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ReviewNormalizationDefinitions",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/lib/lean/ReviewNormalizationDefinitions.olean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/Review/Lean/ReviewNormalizationDefinitions.lean"
+      ],
+      "returncode": 0,
+      "seconds": 22.291,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/ReviewNormalizationDefinitions.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ReviewGeometryDefinitions",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/lib/lean/ReviewGeometryDefinitions.olean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/Review/Lean/ReviewGeometryDefinitions.lean"
+      ],
+      "returncode": 0,
+      "seconds": 4.27,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/ReviewGeometryDefinitions.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ReviewFiniteLevel",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/lib/lean/ReviewFiniteLevel.olean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/Review/Lean/ReviewFiniteLevel.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.869,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/ReviewFiniteLevel.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ReviewGeometryBridges",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/lib/lean/ReviewGeometryBridges.olean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/Review/Lean/ReviewGeometryBridges.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.618,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/ReviewGeometryBridges.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ReviewNormalizationSource",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/lib/lean/ReviewNormalizationSource.olean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/Review/Lean/ReviewNormalizationSource.lean"
+      ],
+      "returncode": 0,
+      "seconds": 143.051,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/ReviewNormalizationSource.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ReviewFramedFamily",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/lib/lean/ReviewFramedFamily.olean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/Review/Lean/ReviewFramedFamily.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.719,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/ReviewFramedFamily.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ReviewNormalizationBridges",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/lib/lean/ReviewNormalizationBridges.olean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/Review/Lean/ReviewNormalizationBridges.lean"
+      ],
+      "returncode": 0,
+      "seconds": 4.219,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/ReviewNormalizationBridges.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ReviewMainTheorems",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/lib/lean/ReviewMainTheorems.olean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/Review/Lean/ReviewMainTheorems.lean"
+      ],
+      "returncode": 0,
+      "seconds": 4.169,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/ReviewMainTheorems.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ReviewRoot",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "-o",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/lib/lean/ReviewRoot.olean",
+        "/home/Palomar/workspace/arithmetic-theta/project/ArithmeticTheta_Lean4/Review/Lean/ReviewRoot.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.718,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/ReviewRoot.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "obligations": [
+    {
+      "id": "arithmetic-norms-agree",
+      "declaration": "ArithmeticThetaReview.Arithmetic.norms_agree",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "4b53e077b01d98173477cfaba5b639dcdb4faeb386fb6a1dad5a4b2dd7b86138",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-000.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.819,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-000.log",
+      "log_sha256": "ea2faf2599cfbf611f429b51872269d17d8f7d350f3ed1a50b4ba17e1c455331"
+    },
+    {
+      "id": "arithmetic-normcount-agree",
+      "declaration": "ArithmeticThetaReview.Arithmetic.normCount_agree",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "0cb6245d8af12c06a7a54d990c744a47554e9176b84efb359bc318caa5f3c646",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-001.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.82,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-001.log",
+      "log_sha256": "b43a7fd786be2b9d68c3708664a46e6258d979016594c08b349f994c6e397b9c"
+    },
+    {
+      "id": "arithmetic-commonnorm-agree",
+      "declaration": "ArithmeticThetaReview.Arithmetic.commonNorm_agree",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "1ed975122ab03c7365cb222e4c042e2df2e269940a1e167b53ea618574c77985",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-002.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.82,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-002.log",
+      "log_sha256": "5a3faec2d1e716406b845687dfad192885685cd45ec72d2afec0ecb4662a49c4"
+    },
+    {
+      "id": "arithmetic-level-agree",
+      "declaration": "ArithmeticThetaReview.Arithmetic.level_agree",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "041c85a7c8e5999645b207c44de7ad16ed99ee8203a7cc3f8b2aa0e5f1ce0ae0",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-003.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.87,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-003.log",
+      "log_sha256": "b328ad3e9deef89e39f42fa33116b712124e91c6db297ab879c8dba865c8ade5"
+    },
+    {
+      "id": "arithmetic-exponent-agree",
+      "declaration": "ArithmeticThetaReview.Arithmetic.exponent_agree",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "6a4e9beadf4e0b9c334d3a9feeff9eb1cd946fe521c96301e299a6fddc7c35eb",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-004.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.82,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-004.log",
+      "log_sha256": "55ab4eb52d0d8bee73f62f7a0a0b20acfc5b86e90a541c9f883e9648e677af2b"
+    },
+    {
+      "id": "arithmetic-index-agree",
+      "declaration": "ArithmeticThetaReview.Arithmetic.index_agree",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "20f7c832271bfedd3dc759d5a952479513917976efdfaa117d253c179cc2ac1e",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-005.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.82,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-005.log",
+      "log_sha256": "11d9aa4f8a61bfa81d808270f9d295ecfc7d0c436a82ba9296e68a0b0cf50b7b"
+    },
+    {
+      "id": "arithmetic-index-eq-card",
+      "declaration": "ArithmeticThetaReview.Arithmetic.index_eq_card",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "32b0ab2d72484ee7b69fd1f1f7ad070ad6bfdb0b193e38da5893d563635a5898",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-006.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.871,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-006.log",
+      "log_sha256": "abc5ae954dbd21298c39b6a3cbdb37b10a54b51cfe9495671248dba7046a3cb5"
+    },
+    {
+      "id": "arithmetic-sharpcutoff-eq",
+      "declaration": "ArithmeticThetaReview.Arithmetic.sharpCutoff_eq",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "b15088d8ec07ee3f553ccec5fbcbcdb92022e4b0f663d40844388537eb0d36f6",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-007.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.819,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-007.log",
+      "log_sha256": "ddaad0410bbc8b1a6317daa4be033e0b24d38801f2eb4cde0f446d97dbc39299"
+    },
+    {
+      "id": "arithmetic-sharpcutoff-computed",
+      "declaration": "ArithmeticThetaReview.Arithmetic.sharpCutoff_computed",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "222fa9cbba413ea90f80d8db0850cbeaa12cd6291bbd85cd0ef3de1839f6a608",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-008.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.869,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-008.log",
+      "log_sha256": "ddde87ed14fe788eb11efdc5e31b0ce34928e093ee44a45bdcfe8c32570e372c"
+    },
+    {
+      "id": "review-relation-equality",
+      "declaration": "ArithmeticThetaReview.Relations.equality_of_same_relations",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "89fbafb98e4bcc2ebbca996f1d3d53d18ac0e8a0e63b893c92da1c38f44f33ed",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-009.lean"
+      ],
+      "returncode": 0,
+      "seconds": 0.866,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-009.log",
+      "log_sha256": "300663080225182c3352a6cb112f285579c593c887988bc3e7ff9742b308c0f5"
+    },
+    {
+      "id": "review-relation-coordinates",
+      "declaration": "ArithmeticThetaReview.Relations.coordinates_of_same_relations",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "7c61a3e7f55218dbf1eb5a9314d34bc3d43f21c22d337e4f8e2a61d1d125f9cc",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-010.lean"
+      ],
+      "returncode": 0,
+      "seconds": 0.865,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-010.log",
+      "log_sha256": "02c2e4262594eb916e84141a890d22a9ea1d09b028bad35447092b342635d16d"
+    },
+    {
+      "id": "review-section-image-transfer",
+      "declaration": "ArithmeticThetaReview.Relations.section_image_of_series_image",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "6848926f1f71e6d48743d31f2c1843a75477df4b8d2d2a4644e8068331afb042",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-011.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.87,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-011.log",
+      "log_sha256": "9aabfae57fd9a2f8c5e0a845696882643d14129113fbdc246f62a0988078c59f"
+    },
+    {
+      "id": "finite-level-projection",
+      "declaration": "ArithmeticThetaReview.Geometry.finite_level_of_original",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "9d1819728650b640a16998cc45ddcbc70b2832ae167789f39c620189ac00f6b5",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-012.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.819,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-012.log",
+      "log_sha256": "b914385fdd12e5c17b393f61668a48860212b8c5132dcc21c14b68f05aa15634"
+    },
+    {
+      "id": "normalization-source-chart-comparison",
+      "declaration": "ArithmeticThetaReview.Normalization.source_chart_comparison",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "0837226629cea8af95a37626809584e73c844bceecf481c7c8e1c88ca6c3c2df",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-013.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.819,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-013.log",
+      "log_sha256": "3a27752e9e7dba466fe1d94e672bab1709aa4ce99ae799883d744730d25a9a73"
+    },
+    {
+      "id": "normalization-source-normalization-preserves",
+      "declaration": "ArithmeticThetaReview.Normalization.source_normalization_preserves",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "65e3d2a8c421155b62265a74222fa6bbdb8923447f517627b6034dee2e6eab8f",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-014.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.769,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-014.log",
+      "log_sha256": "2233ce2e43fabd3b4188d1a24f806ec44f423121a020e498c41c8ae3d6ba5679"
+    },
+    {
+      "id": "same-source-family",
+      "declaration": "ArithmeticThetaReview.Geometry.matrix_family_review",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "7da6dc9aaba7d8158c75f2a7d19a487d50b2cfade420d9e1ef467ece185dbe10",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-015.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.819,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-015.log",
+      "log_sha256": "9a33733575c8946c67cf653748bc45a7833a7bc93cd990c04336a3cb0d0f9b7a"
+    },
+    {
+      "id": "sharp-modularity-review",
+      "declaration": "ArithmeticThetaReview.Geometry.cyclotomic_modularity_review",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "2ea9d35999dd4397c36ffac4147870991373b1a33fc760574ae43973873ea8fe",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-016.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.969,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-016.log",
+      "log_sha256": "e904e7ed590a6621b2f03d8dfbca3e14338d9243ae07b10fa1ce05246720e9fe"
+    },
+    {
+      "id": "conservative-modularity-review",
+      "declaration": "ArithmeticThetaReview.Geometry.conservative_image_review",
+      "passed": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "probe_sha256": "2b5a986453a95dd1e783c4bdc3f546536af40aed69df58c4e72f1ff5d8e8fa8b",
+      "command": [
+        "/home/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+        "-j2",
+        "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-017.lean"
+      ],
+      "returncode": 0,
+      "seconds": 3.869,
+      "log": "/home/Palomar/workspace/arithmetic-theta-review-interface-20261111/portable-build/attempts/1794389246487996828/exact-017.log",
+      "log_sha256": "8374b6601c5869cc4d89a2999d85e772a2f9d579d524481e4ff8e83f0c21162d"
+    }
+  ],
+  "review_modules": 13,
+  "exact_type_checks": 18,
+  "original_exact_type_checks": 103,
+  "input_pins": {
+    "original_manifest_sha256": "c3d5f5e501b741511c88d9c662bc8a48a3838cb745303d1f54eff5c1f7964940",
+    "original_runner_sha256": "deae3e55bef0bb93a0c3a46a63c6df497c2418091e3f63e93e9bee77d4878811",
+    "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+    "standard_init_sha256": "9ed3667be31b6ce04b831418a8bc9e99c44804b8ddaf52f6ebbdebfd26d8409e",
+    "original_binding_sha256": "0f5937a2894ae9838464c83afc8c94dc98a9229cdc9e8fe8a7173d11f72ec32c",
+    "obligations_sha256": "67c6cf4e66ccd8f811990d64a468d45eeed29b53dc98af88a2b0adc40a779528",
+    "review_runner_sha256": "6becfd214f69f59df7c117ca9be9f7a6ef7e7508eb6bdfdde87461175d694400"
+  },
+  "bindings_sha256": "f342aef6d16ee0c3582925165098d8a6aacf0617743b74d91edc98cadb91679e",
+  "elapsed_seconds": 261.675
+}

@@ -1,0 +1,54 @@
+{
+  "spec": {
+    "schema_version": 1,
+    "kind": "generic-lean4",
+    "task_id": "arithmetic-theta-review-geometry-20261111",
+    "objective": "workspace/goal-tasks/arithmetic-theta-review-geometry-20261111/Objective.md",
+    "difficulty": "medium",
+    "deliverables_root": "workspace/deliveries/arithmetic-theta-review-geometry-20261111",
+    "model": "gpt-6-astra",
+    "obligations": [
+      {
+        "id": "same-source-family",
+        "declaration": "ArithmeticThetaReview.Geometry.matrix_family_review",
+        "file": "Lean/ReviewMainTheorems.lean",
+        "type": "∀ (k : Type) [Field k] [CharZero k] (n h : ℕ) (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h) (G : ArithmeticThetaArithmeticFieldR0231.MatrixData k A), ArithmeticThetaCompactModularityR0209.ActualLevel G.root → ∃ F : ArithmeticThetaReview.Geometry.FramedFamily k (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) (2 * 2 ^ (ArithmeticThetaSharpKernelR0195.normCount A - 1)) n h, ArithmeticThetaReview.Geometry.Realizes F A ∧ (∀ B : ℕ, ArithmeticThetaFieldImageR0233.SectionImage k A B (ArithmeticThetaArithmeticFieldR0231.structureMap G) G.sections ↔ ArithmeticThetaFieldImageR0233.SectionImage k A B F.curve.structureMap F.sections) ∧ F.curve.space = G.cover.space ∧ HEq F.curve.structureMap (ArithmeticThetaArithmeticFieldR0231.structureMap G) ∧ HEq F.curve.half (ArithmeticThetaArithmeticFieldR0231.half G) ∧ HEq F.disk G.frame.disk ∧ HEq F.frame G.frame.frame ∧ HEq F.sections G.sections ∧ HEq F.normalization.square (ArithmeticThetaCompactModularityR0209.compactSquare G.root) ∧ HEq F.normalization.normalized.generator G.frame.generator",
+        "source_statement": "Project the same original geometry, structure map, half line, disk, frame, sections, compact square and normalized generator; preserve every SectionImage clause at every cutoff and the complete expansion.",
+        "difficulty": "medium",
+        "depends_on": []
+      },
+      {
+        "id": "sharp-modularity-review",
+        "declaration": "ArithmeticThetaReview.Geometry.cyclotomic_modularity_review",
+        "file": "Lean/ReviewMainTheorems.lean",
+        "type": "∀ (n h : ℕ), 0 < n → 0 < h → ∀ A : ArithmeticThetaLatticeSectionsR0188.Matrices n h, (∀ i, ArithmeticThetaComputed.validGram (A i)) → FiniteDimensional ℚ (ArithmeticThetaCyclotomicModularityR0239.CoefficientField A) ∧ ∃ F : ArithmeticThetaReview.Geometry.FramedFamily (ArithmeticThetaCyclotomicModularityR0239.CoefficientField A) (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) (2 * 2 ^ (ArithmeticThetaSharpKernelR0195.normCount A - 1)) n h, ArithmeticThetaReview.Geometry.Realizes F A ∧ ∀ B : ℕ, ArithmeticThetaSharpKernelR0195.cutoff A ≤ B → ArithmeticThetaFieldImageR0233.SectionImage (ArithmeticThetaCyclotomicModularityR0239.CoefficientField A) A B F.curve.structureMap F.sections",
+        "source_statement": "Over the prescribed finite cyclotomic field, one normalized actual finite metaplectic family realizes the full theta expansions and their exact section image at every prefix at or above the sharp cutoff.",
+        "difficulty": "medium",
+        "depends_on": [
+          "same-source-family"
+        ]
+      },
+      {
+        "id": "conservative-modularity-review",
+        "declaration": "ArithmeticThetaReview.Geometry.conservative_image_review",
+        "file": "Lean/ReviewMainTheorems.lean",
+        "type": "∀ (n h : ℕ), 0 < h → ∀ A : ArithmeticThetaLatticeSectionsR0188.Matrices n h, (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∃ B : ℕ, ArithmeticThetaConservativeKernelR0189.CutoffSpecification A B ∧ (∀ Bp : ℕ, B ≤ Bp → ArithmeticThetaConservativeKernelR0189.PrefixDeterminesKernel A Bp) ∧ (n = 0 → ∀ c : Fin h → ℂ, ArithmeticThetaComputed.thetaMap A c = PowerSeries.C (∑ i, c i)) ∧ (∀ Bp : ℕ, B ≤ Bp → ArithmeticThetaDegreeAssembly.CertifiedImageData A Bp) ∧ (0 < n → FiniteDimensional ℚ (ArithmeticThetaCyclotomicModularityR0239.CoefficientField A) ∧ ∃ F : ArithmeticThetaReview.Geometry.FramedFamily (ArithmeticThetaCyclotomicModularityR0239.CoefficientField A) (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) (2 * 2 ^ (ArithmeticThetaSharpKernelR0195.normCount A - 1)) n h, ArithmeticThetaReview.Geometry.Realizes F A ∧ ∀ Bp : ℕ, B ≤ Bp → ArithmeticThetaFieldImageR0233.SectionImage (ArithmeticThetaCyclotomicModularityR0239.CoefficientField A) A Bp F.curve.structureMap F.sections)",
+        "source_statement": "Preserve the exact conservative cutoff specification, all prefix kernels and image data, zero-rank formula, and one normalized cyclotomic geometric family valid at every permitted cutoff.",
+        "difficulty": "medium",
+        "depends_on": [
+          "same-source-family"
+        ]
+      }
+    ],
+    "inputs": [],
+    "max_parallel": 3,
+    "delivery_policy": {
+      "stage": "round",
+      "pdf": "omit"
+    }
+  },
+  "spec_sha256": "b52efd7fee3f7a6e1c1728c2166d18596ddc8e140720ae112f84c0da4d9695c6",
+  "input_sha256": {
+    "workspace/goal-tasks/arithmetic-theta-review-geometry-20261111/Objective.md": "af59b954044e1261ce8acc8a8d531591da87c5b568ff4bff8714dc9d722ad31a"
+  }
+}

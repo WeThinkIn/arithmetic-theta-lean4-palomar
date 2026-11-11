@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "indexed_definitions": 225,
+  "new_review_interfaces": 12,
+  "groups": 6,
+  "exact_source_links": 225,
+  "source_docstrings": 107,
+  "generated_matcher_helpers": 6,
+  "unique_definition_anchors": 225,
+  "all_internal_links_valid": true,
+  "all_source_links_valid": true,
+  "all_target_modules_hash_bound": true,
+  "counted_names_unchanged_after_binding_fix": true,
+  "report_sha256": "408a66f25fa8242030a0908ff481e92d1810a6571a0c6d31df0d12bf8e7c2c7d",
+  "index_sha256": "dd6f6c85cb72fdf2a5a13a22e2f447916fdb65b1f55d713156a172fc5a57a67e",
+  "metadata_sha256": "41e5fa4e8bc8fa51d98469537bb611096f6b80bf3e5fe74f46d0ce9b641d2fad"
+}

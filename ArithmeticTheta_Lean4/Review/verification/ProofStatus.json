@@ -1,0 +1,177 @@
+{
+  "status": "complete_verified",
+  "task_id": "arithmetic-theta-review-combined-20261111",
+  "obligations": [
+    {
+      "id": "arithmetic-norms-agree",
+      "declaration": "ArithmeticThetaReview.Arithmetic.norms_agree",
+      "file": "Lean/ReviewArithmeticBridges.lean",
+      "type": "∀ (n h : ℕ) (A : ArithmeticThetaReview.Arithmetic.Matrices n h), ArithmeticThetaReview.Arithmetic.norms A = ArithmeticThetaOrthogonalAlgorithm.normSet A ∧ ArithmeticThetaReview.Arithmetic.norms A = ArithmeticThetaSharpKernelR0195.norms A",
+      "source_statement": "The same finite set of orthogonal norms is used by both original APIs.",
+      "difficulty": "easy",
+      "depends_on": []
+    },
+    {
+      "id": "arithmetic-normcount-agree",
+      "declaration": "ArithmeticThetaReview.Arithmetic.normCount_agree",
+      "file": "Lean/ReviewArithmeticBridges.lean",
+      "type": "∀ (n h : ℕ) (A : ArithmeticThetaReview.Arithmetic.Matrices n h), ArithmeticThetaReview.Arithmetic.normCount A = ArithmeticThetaOrthogonalAlgorithm.distinctNormCount A ∧ ArithmeticThetaReview.Arithmetic.normCount A = ArithmeticThetaSharpKernelR0195.normCount A",
+      "source_statement": "The number of distinct norms agrees in both APIs.",
+      "difficulty": "easy",
+      "depends_on": []
+    },
+    {
+      "id": "arithmetic-commonnorm-agree",
+      "declaration": "ArithmeticThetaReview.Arithmetic.commonNorm_agree",
+      "file": "Lean/ReviewArithmeticBridges.lean",
+      "type": "∀ (n h : ℕ) (A : ArithmeticThetaReview.Arithmetic.Matrices n h), ArithmeticThetaReview.Arithmetic.commonNorm A = ArithmeticThetaOrthogonalAlgorithm.commonModulus A ∧ ArithmeticThetaReview.Arithmetic.commonNorm A = ArithmeticThetaLatticeSectionsR0188.commonN A",
+      "source_statement": "The norm-set LCM equals both historical common-modulus definitions.",
+      "difficulty": "easy",
+      "depends_on": []
+    },
+    {
+      "id": "arithmetic-level-agree",
+      "declaration": "ArithmeticThetaReview.Arithmetic.level_agree",
+      "file": "Lean/ReviewArithmeticBridges.lean",
+      "type": "∀ (n h : ℕ) (A : ArithmeticThetaReview.Arithmetic.Matrices n h), ArithmeticThetaReview.Arithmetic.level A = ArithmeticThetaOrthogonalAlgorithm.level A ∧ ArithmeticThetaReview.Arithmetic.level A = ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)",
+      "source_statement": "Both historical levels are exactly 24 times the squared common norm.",
+      "difficulty": "easy",
+      "depends_on": []
+    },
+    {
+      "id": "arithmetic-exponent-agree",
+      "declaration": "ArithmeticThetaReview.Arithmetic.exponent_agree",
+      "file": "Lean/ReviewArithmeticBridges.lean",
+      "type": "∀ (n h : ℕ) (A : ArithmeticThetaReview.Arithmetic.Matrices n h), ArithmeticThetaReview.Arithmetic.exponent A = ArithmeticThetaOrthogonalAlgorithm.normExponent A ∧ ArithmeticThetaReview.Arithmetic.exponent A = ArithmeticThetaCompactUnaryR0183.exponent (ArithmeticThetaLatticeSectionsR0188.commonN A)",
+      "source_statement": "Both conservative construction exponents agree; no identification of conservative and sharp cutoffs is made.",
+      "difficulty": "easy",
+      "depends_on": []
+    },
+    {
+      "id": "arithmetic-index-agree",
+      "declaration": "ArithmeticThetaReview.Arithmetic.index_agree",
+      "file": "Lean/ReviewArithmeticBridges.lean",
+      "type": "∀ (L : ℕ), ArithmeticThetaReview.Arithmetic.index L = ArithmeticThetaLevelCount.levelIndex L ∧ ArithmeticThetaReview.Arithmetic.index L = ArithmeticThetaAdaptiveSolverR0230.indexValue L",
+      "source_statement": "The geometric count formula and executable arithmetic index have the same definition.",
+      "difficulty": "easy",
+      "depends_on": []
+    },
+    {
+      "id": "arithmetic-index-eq-card",
+      "declaration": "ArithmeticThetaReview.Arithmetic.index_eq_card",
+      "file": "Lean/ReviewArithmeticBridges.lean",
+      "type": "∀ (L : ℕ), 3 ≤ L → ArithmeticThetaReview.Arithmetic.index L = (Nat.card (Matrix.SpecialLinearGroup (Fin 2) (ZMod L)) : ℚ)",
+      "source_statement": "At levels at least three, the index formula is the cardinality of SL2 over Z/LZ.",
+      "difficulty": "easy",
+      "depends_on": []
+    },
+    {
+      "id": "arithmetic-sharpcutoff-eq",
+      "declaration": "ArithmeticThetaReview.Arithmetic.sharpCutoff_eq",
+      "file": "Lean/ReviewArithmeticBridges.lean",
+      "type": "∀ (n h : ℕ) (A : ArithmeticThetaReview.Arithmetic.Matrices n h), ArithmeticThetaReview.Arithmetic.sharpCutoff A = ArithmeticThetaSharpKernelR0195.cutoff A",
+      "source_statement": "The review sharp cutoff is exactly the original sharp cutoff, including empty and zero-rank inputs.",
+      "difficulty": "easy",
+      "depends_on": []
+    },
+    {
+      "id": "arithmetic-sharpcutoff-computed",
+      "declaration": "ArithmeticThetaReview.Arithmetic.sharpCutoff_computed",
+      "file": "Lean/ReviewArithmeticBridges.lean",
+      "type": "∀ (n h : ℕ) (A : ArithmeticThetaReview.Arithmetic.Matrices n h), (∀ i, ArithmeticThetaComputed.validGram (A i)) → ArithmeticThetaReview.Arithmetic.sharpCutoff A = ArithmeticThetaAdaptiveSolverR0230.bound A ∧ ArithmeticThetaReview.Arithmetic.sharpCutoff A = Int.toNat ⌊(n : ℚ) * 2 ^ (ArithmeticThetaReview.Arithmetic.normCount A - 1) * ArithmeticThetaReview.Arithmetic.index (ArithmeticThetaReview.Arithmetic.level A) / (48 * (ArithmeticThetaReview.Arithmetic.level A : ℚ))⌋",
+      "source_statement": "For valid Gram families, the sharp cutoff agrees with the executable bound and with the exact rational floor in the paper.",
+      "difficulty": "easy",
+      "depends_on": []
+    },
+    {
+      "id": "review-relation-equality",
+      "declaration": "ArithmeticThetaReview.Relations.equality_of_same_relations",
+      "file": "Lean/ReviewRelationLinear.lean",
+      "type": "∀ (V W Z : Type) [AddGroup V] [AddGroup W] [AddGroup Z] (f : V →+ W) (g : V →+ Z), (∀ v, f v = 0 ↔ g v = 0) → ∀ x y, f x = f y ↔ g x = g y",
+      "source_statement": "Two additive coefficient-combination maps with exactly the same zero relations have exactly the same equalities between combinations. This is a generic algebraic result, independent of any lattice or geometric presentation.",
+      "difficulty": "easy",
+      "depends_on": []
+    },
+    {
+      "id": "review-relation-coordinates",
+      "declaration": "ArithmeticThetaReview.Relations.coordinates_of_same_relations",
+      "file": "Lean/ReviewRelationLinear.lean",
+      "type": "∀ (V W Z D : Type) [AddGroup V] [AddGroup W] [AddGroup Z] (f : V →+ W) (g : V →+ Z), (∀ v, f v = 0 ↔ g v = 0) → ∀ p : D → V, (Function.Injective (g ∘ p) ∧ ∀ v, ∃! d, g v = g (p d)) ↔ (Function.Injective (f ∘ p) ∧ ∀ v, ∃! d, f v = f (p d))",
+      "source_statement": "The same parametrization of coefficient vectors gives injective selected combinations and unique coordinates for one additive combination map if and only if it does for the other, whenever the two maps have the same zero relations.",
+      "difficulty": "easy",
+      "depends_on": [
+        "review-relation-equality"
+      ]
+    },
+    {
+      "id": "review-section-image-transfer",
+      "declaration": "ArithmeticThetaReview.Relations.section_image_of_series_image",
+      "file": "Lean/ReviewRelationSections.lean",
+      "type": "∀ (k : Type) [Field k] [CharZero k] (n h : ℕ) (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h) (B : ℕ) (X : AlgebraicGeometry.Scheme.{0}) (b : Quiver.Hom X (AlgebraicGeometry.Spec (CommRingCat.of k))) (J : X.Modules) (s : Fin h → ArithmeticThetaFieldImageR0233.Sections J), (∀ c : Fin h → k, ArithmeticThetaFieldImageR0233.combination k b s c = 0 ↔ ArithmeticThetaFieldImageR0233.seriesCombination k A c = 0) → ArithmeticThetaFieldImageR0233.SeriesImage k A B → ArithmeticThetaFieldImageR0233.SectionImage k A B b s",
+      "source_statement": "For any actual scheme over k, sheaf and sections, full-series relation equivalence plus the certified series image transfers all six SectionImage clauses: full relations, finite prefix kernel, pivot independence, unique coordinates, the computed rational coordinates and their uniqueness. Scalars are the actual baseScalar induced by the displayed structure morphism b. No MatrixData, cover or modularity hypothesis is included or silently replaced.",
+      "difficulty": "medium",
+      "depends_on": [
+        "review-relation-equality"
+      ]
+    },
+    {
+      "id": "finite-level-projection",
+      "declaration": "ArithmeticThetaReview.Geometry.finite_level_of_original",
+      "file": "Lean/ReviewFiniteLevel.lean",
+      "type": "∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (P : ArithmeticThetaActualLevelR0208.Provider k L) (C : ArithmeticThetaMetaplecticStackR0207.Coherence L (ArithmeticThetaLocalWeierstrassR0203.Base k)) (Y : CategoryTheory.Over (ArithmeticThetaLocalWeierstrassR0203.Base k)) (p : Quiver.Hom Y (ArithmeticThetaActualLevelR0208.base P)) (H : ArithmeticThetaSquareLinesR0192.SquareLine Y.left ((AlgebraicGeometry.Scheme.Modules.pullback p.left).obj (ArithmeticThetaActualLevelR0208.hodge P))) (j : ArithmeticThetaActualLevelR0208.AnchoredMap C Y (ArithmeticThetaActualLevelR0208.object P p H)), Nonempty (ArithmeticThetaActualLevelR0208.PullbackComparison j) → ArithmeticThetaActualLevelR0208.FiniteEtaleLevel P p H j → ∀ bound : ℕ, (∀ z : (ArithmeticThetaActualLevelR0208.base P).left, p.left.finrank z ≤ bound) → ArithmeticThetaReview.Geometry.FiniteLevel j (2 * bound)",
+      "source_statement": "Project the existing actual finite metaplectic level to its presentation-independent semantic content on every scheme-valued test. Preserve the existing classifying map, anchored comparison, actual marked elliptic families and square-line maps, both fiber projections and naturality. Deduce finite etale fibers of rank at most twice the original bound from the existing exact-rank formula. This does not replace or weaken the original theorem, which remains available unchanged.",
+      "difficulty": "easy",
+      "depends_on": []
+    },
+    {
+      "id": "normalization-source-chart-comparison",
+      "declaration": "ArithmeticThetaReview.Normalization.source_chart_comparison",
+      "file": "Lean/ReviewNormalizationBridges.lean",
+      "type": "∀ (k : Type) [Field k] [CharZero k] (L : ℕ) (D : ArithmeticThetaLevelCompactificationR0179.LevelData k L) (X : ArithmeticThetaLevelCompactificationR0179.Compactification k L D) (H : ArithmeticThetaBoundaryHodgeR0182.Extension k L D X) (T : ArithmeticThetaBoundaryHodgeR0182.DiskTest k L D X), (ArithmeticThetaReview.Normalization.sourceChart H T).comparison = ArithmeticThetaBoundaryHodgeR0182.diskGenericIso k L H T",
+      "source_statement": "The generic pointed Cartesian Tate comparison is the exact original diskGenericIso, with no scalar replacement.",
+      "difficulty": "easy",
+      "depends_on": []
+    },
+    {
+      "id": "normalization-source-normalization-preserves",
+      "declaration": "ArithmeticThetaReview.Normalization.source_normalization_preserves",
+      "file": "Lean/ReviewNormalizationBridges.lean",
+      "type": "∀ (k : Type) [Field k] [CharZero k] (n h : ℕ) (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h) (G : ArithmeticThetaArithmeticFieldR0231.MatrixData k A) (u : ArithmeticThetaCompactModularityR0209.Universal G.root), (ArithmeticThetaReview.Normalization.sourceNormalization G u).map = ArithmeticThetaCompactModularityR0209.compactMap G.root ∧ (ArithmeticThetaReview.Normalization.sourceNormalization G u).square = ArithmeticThetaCompactModularityR0209.compactSquare G.root ∧ (ArithmeticThetaReview.Normalization.sourceNormalization G u).normalized.generator = G.frame.generator ∧ (ArithmeticThetaReview.Normalization.sourceNormalization G u).chart.differential = G.test.differential ∧ (ArithmeticThetaReview.Normalization.sourceNormalization G u).chart.comparison = ArithmeticThetaBoundaryHodgeR0182.diskGenericIso k (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) G.hodge G.test",
+      "source_statement": "The normalized review family retains the original compact map, compact square, regular Hodge generator, normalized Tate differential, and the full canonical disk comparison.",
+      "difficulty": "easy",
+      "depends_on": []
+    },
+    {
+      "id": "same-source-family",
+      "declaration": "ArithmeticThetaReview.Geometry.matrix_family_review",
+      "file": "Lean/ReviewMainTheorems.lean",
+      "type": "∀ (k : Type) [Field k] [CharZero k] (n h : ℕ) (A : ArithmeticThetaLatticeSectionsR0188.Matrices n h) (G : ArithmeticThetaArithmeticFieldR0231.MatrixData k A), ArithmeticThetaCompactModularityR0209.ActualLevel G.root → ∃ F : ArithmeticThetaReview.Geometry.FramedFamily k (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) (2 * 2 ^ (ArithmeticThetaSharpKernelR0195.normCount A - 1)) n h, ArithmeticThetaReview.Geometry.Realizes F A ∧ (∀ B : ℕ, ArithmeticThetaFieldImageR0233.SectionImage k A B (ArithmeticThetaArithmeticFieldR0231.structureMap G) G.sections ↔ ArithmeticThetaFieldImageR0233.SectionImage k A B F.curve.structureMap F.sections) ∧ F.curve.space = G.cover.space ∧ HEq F.curve.structureMap (ArithmeticThetaArithmeticFieldR0231.structureMap G) ∧ HEq F.curve.half (ArithmeticThetaArithmeticFieldR0231.half G) ∧ HEq F.disk G.frame.disk ∧ HEq F.frame G.frame.frame ∧ HEq F.sections G.sections ∧ HEq F.normalization.square (ArithmeticThetaCompactModularityR0209.compactSquare G.root) ∧ HEq F.normalization.normalized.generator G.frame.generator",
+      "source_statement": "Project the same original geometry, structure map, half line, disk, frame, sections, compact square and normalized generator; preserve every SectionImage clause at every cutoff and the complete expansion.",
+      "difficulty": "medium",
+      "depends_on": []
+    },
+    {
+      "id": "sharp-modularity-review",
+      "declaration": "ArithmeticThetaReview.Geometry.cyclotomic_modularity_review",
+      "file": "Lean/ReviewMainTheorems.lean",
+      "type": "∀ (n h : ℕ), 0 < n → 0 < h → ∀ A : ArithmeticThetaLatticeSectionsR0188.Matrices n h, (∀ i, ArithmeticThetaComputed.validGram (A i)) → FiniteDimensional ℚ (ArithmeticThetaCyclotomicModularityR0239.CoefficientField A) ∧ ∃ F : ArithmeticThetaReview.Geometry.FramedFamily (ArithmeticThetaCyclotomicModularityR0239.CoefficientField A) (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) (2 * 2 ^ (ArithmeticThetaSharpKernelR0195.normCount A - 1)) n h, ArithmeticThetaReview.Geometry.Realizes F A ∧ ∀ B : ℕ, ArithmeticThetaSharpKernelR0195.cutoff A ≤ B → ArithmeticThetaFieldImageR0233.SectionImage (ArithmeticThetaCyclotomicModularityR0239.CoefficientField A) A B F.curve.structureMap F.sections",
+      "source_statement": "Over the prescribed finite cyclotomic field, one normalized actual finite metaplectic family realizes the full theta expansions and their exact section image at every prefix at or above the sharp cutoff.",
+      "difficulty": "medium",
+      "depends_on": [
+        "same-source-family"
+      ]
+    },
+    {
+      "id": "conservative-modularity-review",
+      "declaration": "ArithmeticThetaReview.Geometry.conservative_image_review",
+      "file": "Lean/ReviewMainTheorems.lean",
+      "type": "∀ (n h : ℕ), 0 < h → ∀ A : ArithmeticThetaLatticeSectionsR0188.Matrices n h, (∀ i, ArithmeticThetaComputed.validGram (A i)) → ∃ B : ℕ, ArithmeticThetaConservativeKernelR0189.CutoffSpecification A B ∧ (∀ Bp : ℕ, B ≤ Bp → ArithmeticThetaConservativeKernelR0189.PrefixDeterminesKernel A Bp) ∧ (n = 0 → ∀ c : Fin h → ℂ, ArithmeticThetaComputed.thetaMap A c = PowerSeries.C (∑ i, c i)) ∧ (∀ Bp : ℕ, B ≤ Bp → ArithmeticThetaDegreeAssembly.CertifiedImageData A Bp) ∧ (0 < n → FiniteDimensional ℚ (ArithmeticThetaCyclotomicModularityR0239.CoefficientField A) ∧ ∃ F : ArithmeticThetaReview.Geometry.FramedFamily (ArithmeticThetaCyclotomicModularityR0239.CoefficientField A) (ArithmeticThetaCompactUnaryR0183.level (ArithmeticThetaLatticeSectionsR0188.commonN A)) (2 * 2 ^ (ArithmeticThetaSharpKernelR0195.normCount A - 1)) n h, ArithmeticThetaReview.Geometry.Realizes F A ∧ ∀ Bp : ℕ, B ≤ Bp → ArithmeticThetaFieldImageR0233.SectionImage (ArithmeticThetaCyclotomicModularityR0239.CoefficientField A) A Bp F.curve.structureMap F.sections)",
+      "source_statement": "Preserve the exact conservative cutoff specification, all prefix kernels and image data, zero-rank formula, and one normalized cyclotomic geometric family valid at every permitted cutoff.",
+      "difficulty": "medium",
+      "depends_on": [
+        "same-source-family"
+      ]
+    }
+  ],
+  "contract_sha256": "060ad5d062c0183f59d20cc7690640eaa23337ace1d6b4aba5ae28d1ad54a3ff"
+}

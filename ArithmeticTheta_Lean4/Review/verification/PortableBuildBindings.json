@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "pins": {
+    "original_manifest_sha256": "c3d5f5e501b741511c88d9c662bc8a48a3838cb745303d1f54eff5c1f7964940",
+    "original_runner_sha256": "deae3e55bef0bb93a0c3a46a63c6df497c2418091e3f63e93e9bee77d4878811",
+    "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+    "standard_init_sha256": "9ed3667be31b6ce04b831418a8bc9e99c44804b8ddaf52f6ebbdebfd26d8409e",
+    "original_binding_sha256": "0f5937a2894ae9838464c83afc8c94dc98a9229cdc9e8fe8a7173d11f72ec32c",
+    "obligations_sha256": "67c6cf4e66ccd8f811990d64a468d45eeed29b53dc98af88a2b0adc40a779528",
+    "review_runner_sha256": "6becfd214f69f59df7c117ca9be9f7a6ef7e7508eb6bdfdde87461175d694400"
+  },
+  "records": [
+    {
+      "module": "ReviewArithmeticBridges",
+      "source_sha256": "b6d0eb69f1c0aa6f26159b35f8110b43a427305eb9bedf369a833f8bc8bc8a8a",
+      "object_sha256": "705665a38afb2a16e2e009d4f07456c47ea5e9287def4f9babcaa6554755e4db",
+      "exit_code": 0
+    },
+    {
+      "module": "ReviewArithmeticDefinitions",
+      "source_sha256": "9f5695c34bc4adec4d88e31a0a12cfdcec40b462ea5d6ff49cd28cd4681e1bcb",
+      "object_sha256": "4140404ac33086d4f4c3ad2e62e3280138d8a02856eff9fde7a2b4fd4096fc3b",
+      "exit_code": 0
+    },
+    {
+      "module": "ReviewFiniteLevel",
+      "source_sha256": "496e1adc46d5a7f5131a2a18e15c5a56ab1e547badf6da068b84b95e80403bbb",
+      "object_sha256": "920f74921ac8e5877cc363934885c72623ebd59b561cdbc8d0cad41c47c46966",
+      "exit_code": 0
+    },
+    {
+      "module": "ReviewFramedFamily",
+      "source_sha256": "633c7f4cbab6c1befe9cd829b74e32c674512d12ceee377f5274d99dbcc00fc0",
+      "object_sha256": "a66db204f6fd76bb207559cd0a69f5032ec039430c6a40075f14256c8b6f2ad0",
+      "exit_code": 0
+    },
+    {
+      "module": "ReviewGeometryBridges",
+      "source_sha256": "71b5b6d92b263cd3ea9620513a70d3c9c4d5545a9a89b7b072df878c2d1ff788",
+      "object_sha256": "bbc26eea3aff9cf861a3f298faa2c87101c075a88a471c040ede65f782a1bcbe",
+      "exit_code": 0
+    },
+    {
+      "module": "ReviewGeometryDefinitions",
+      "source_sha256": "cc2eda50186d55e25ab3844fc06feb4201cf0fd5097eb7dd8c80eead9ab53b5b",
+      "object_sha256": "add0931747ec93a7d5294b44a82ef7a75cc996cdb8730829be5f0f830a4e1786",
+      "exit_code": 0
+    },
+    {
+      "module": "ReviewMainTheorems",
+      "source_sha256": "003a771654a10d7def2d030855bef1a8355323472e7f1bcbedaf99f7e7fd6a32",
+      "object_sha256": "90605c203b224ad9ba5d99ab512cc8fbf80a6beaa1e844b92415695e109c98f6",
+      "exit_code": 0
+    },
+    {
+      "module": "ReviewNormalizationBridges",
+      "source_sha256": "4ebe7d3966c620ac3fdcd7b333eedfbf1979b368cc92cc5deee517063454ea4e",
+      "object_sha256": "a4c1cc658d04bcc62eddb6324cf22550141060728aeb50238d3d84ee18a702cb",
+      "exit_code": 0
+    },
+    {
+      "module": "ReviewNormalizationDefinitions",
+      "source_sha256": "79f12703328301a3ee6b8ef1f21129802fab765745997760b54d7328a43a26ec",
+      "object_sha256": "bf13359a287c88595bcb03b48e00d292297b2ad66c24afc9a9d9aa86b5df6d60",
+      "exit_code": 0
+    },
+    {
+      "module": "ReviewNormalizationSource",
+      "source_sha256": "f8d328767cdb8f7c5bb9bcc9bc4125858e9e04b070b5ddf34d5a78a24d8eb944",
+      "object_sha256": "dfd6c960f0becc3f13fac4d481724bbc617ee7704647c87a7a729123ab23caef",
+      "exit_code": 0
+    },
+    {
+      "module": "ReviewRelationLinear",
+      "source_sha256": "79994022f2786ceef2dacbd5c46e2abe8f3ec5547e796302cc9dae063a6967bd",
+      "object_sha256": "3b9654bb605432de83e3ce2febf2cb633072abad42c1b3d24b042e1c4852e509",
+      "exit_code": 0
+    },
+    {
+      "module": "ReviewRelationSections",
+      "source_sha256": "e5e0d1d4ab50a061fa61bcb2e7d7526acfb23305a1db1b08a314a2fe4876f126",
+      "object_sha256": "6a9778537a2cb31dabb4877684d2ba89d238d3c47fc1ad66b8b3469ea072d925",
+      "exit_code": 0
+    },
+    {
+      "module": "ReviewRoot",
+      "source_sha256": "e9dfa4e0ba4f91952c32533a3cbcf6d5f64e88c1951d0e8850fbd40016aef1ab",
+      "object_sha256": "260d147b5260269f7d3663efff8bdc236e8dfb301271ade16bf2644815c1192f",
+      "exit_code": 0
+    }
+  ],
+  "imports": {
+    "ReviewArithmeticBridges": [
+      "ComputedSharpCutoffR0230",
+      "ReviewArithmeticDefinitions"
+    ],
+    "ReviewArithmeticDefinitions": [
+      "OrthogonalAlgorithm"
+    ],
+    "ReviewFiniteLevel": [
+      "ReviewGeometryDefinitions"
+    ],
+    "ReviewFramedFamily": [
+      "ReviewGeometryBridges",
+      "ReviewNormalizationSource"
+    ],
+    "ReviewGeometryBridges": [
+      "ConservativeImageConsumerR0268",
+      "ReviewFiniteLevel"
+    ],
+    "ReviewGeometryDefinitions": [
+      "ActualLevelDefinitionsR0208",
+      "FieldImageDefinitionsR0233",
+      "ReviewNormalizationDefinitions"
+    ],
+    "ReviewMainTheorems": [
+      "ReviewFramedFamily"
+    ],
+    "ReviewNormalizationBridges": [
+      "ReviewNormalizationSource"
+    ],
+    "ReviewNormalizationDefinitions": [
+      "BoundaryHodgeDefinitionsR0182",
+      "MetaplecticComparisonDefinitionsR0206"
+    ],
+    "ReviewNormalizationSource": [
+      "ArithmeticFieldDefinitionsR0231",
+      "ReviewNormalizationDefinitions"
+    ],
+    "ReviewRelationLinear": [
+      "Mathlib.Algebra.Group.Hom.Basic"
+    ],
+    "ReviewRelationSections": [
+      "FieldSectionImageR0233",
+      "ReviewRelationLinear"
+    ],
+    "ReviewRoot": [
+      "GoalRoot",
+      "ReviewArithmeticBridges",
+      "ReviewArithmeticDefinitions",
+      "ReviewFiniteLevel",
+      "ReviewFramedFamily",
+      "ReviewGeometryBridges",
+      "ReviewGeometryDefinitions",
+      "ReviewMainTheorems",
+      "ReviewNormalizationBridges",
+      "ReviewNormalizationDefinitions",
+      "ReviewNormalizationSource",
+      "ReviewRelationLinear",
+      "ReviewRelationSections"
+    ]
+  }
+}

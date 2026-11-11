@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "scope": "Additive review interfaces; original proof artifact preserved. This summary is derived from the linked auditor and reproduction reports, not a substitute acceptance receipt.",
+  "baseline_commit": "598b5e305fcc4a385ee45a6c2687d90acbb763d8",
+  "lean_version": "4.33.1",
+  "original_modules": 1199,
+  "original_exact_type_checks": 103,
+  "protected_original_files": 20724,
+  "new_lean_modules": 13,
+  "new_lean_lines": 1019,
+  "new_exact_type_checks": 18,
+  "authority_audit_passed": true,
+  "portable_reproduction_passed": true,
+  "statement_definition_counts": {
+    "conservative_original": 340,
+    "conservative_review": 224,
+    "cyclotomic_original": 317,
+    "cyclotomic_review": 188,
+    "review_union": 225
+  },
+  "relation_to_original": "Proved projections of richer construction witnesses; original statements, proofs and stronger witness details unchanged.",
+  "human_semantic_acceptance": "not claimed",
+  "reports_sha256": {
+    "AuditReport.json": "855ba361ba47ac8d0b0011a453d49e8c97a09a94b49f92b978199ca640130c25",
+    "DefinitionIndexMetadata.json": "41e5fa4e8bc8fa51d98469537bb611096f6b80bf3e5fe74f46d0ce9b641d2fad",
+    "DefinitionDependencyReport.json": "408a66f25fa8242030a0908ff481e92d1810a6571a0c6d31df0d12bf8e7c2c7d",
+    "PortableReproductionReport.json": "08c5d1dd239cb4d2054dcd25df917f76aebe595da4842844706441aaf902dbad",
+    "README.md": "2daf8aaed4129b97c2ca4b75b44baf01bffadd898eecce4e189caf293fd58432",
+    "DefinitionIndexValidation.json": "0405cff9a2a3a4ed6b3dfb17d62a88388d1d29d9fb2a2b1ef5c4a334c27375a0",
+    "ProofStatus.json": "7b163c5146380c3b99360237bee7d151553adc5aaf33cc84274375f5ba1ce2a0",
+    "DeliveryManifest.json": "40e00f90617a7444941b43c2ca2e49ba6fcd1814715233cba44dc40960162ded",
+    "PortableBuildBindings.json": "f342aef6d16ee0c3582925165098d8a6aacf0617743b74d91edc98cadb91679e",
+    "OriginalPreservationReport.json": "bfb059666fdc2d9cef41046d8498bfdb59ce08ee93782fc26d2ef4aeec15dcc9",
+    "SemanticInterfaceReview.md": "c950918737ad6993e5109c3c2390e538cb72efcc5647865c8457bfe595706015",
+    "DefinitionDifferences.json": "d7919a7a25003f8414a40d14e548731f567da54228187142d4785a2554d1f94b"
+  },
+  "public_sources_match_audited_snapshot": true
+}
